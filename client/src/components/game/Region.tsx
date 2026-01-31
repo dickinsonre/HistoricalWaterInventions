@@ -16,6 +16,7 @@ interface RegionProps {
 
 export default function Region({ region, isSelected, isHovered, onHover, onClick }: RegionProps) {
   const meshRef = useRef<THREE.Mesh>(null);
+  const glowRef = useRef<THREE.Mesh>(null);
   const textRef = useRef<THREE.Mesh>(null);
   const [showLocations, setShowLocations] = useState(false);
   const { progress } = useProgress();
@@ -25,16 +26,23 @@ export default function Region({ region, isSelected, isHovered, onHover, onClick
 
   useFrame((state) => {
     if (meshRef.current) {
-      // Floating animation
-      meshRef.current.position.y = region.position[1] + Math.sin(state.clock.elapsedTime * 2 + region.position[0]) * 0.2;
+      meshRef.current.position.y = region.position[1] + Math.sin(state.clock.elapsedTime * 2 + region.position[0]) * 0.3;
       
-      // Scale animation when hovered or selected
-      const targetScale = isHovered || isSelected ? 1.2 : 1.0;
+      const targetScale = isHovered || isSelected ? 1.3 : 1.0;
       meshRef.current.scale.lerp(new THREE.Vector3(targetScale, targetScale, targetScale), 0.1);
+      
+      meshRef.current.rotation.y = state.clock.elapsedTime * 0.5;
+    }
+    
+    if (glowRef.current) {
+      glowRef.current.position.y = region.position[1] + Math.sin(state.clock.elapsedTime * 2 + region.position[0]) * 0.3;
+      const pulseScale = 1.5 + Math.sin(state.clock.elapsedTime * 3) * 0.2;
+      glowRef.current.scale.set(pulseScale, pulseScale, pulseScale);
+      const material = glowRef.current.material as THREE.MeshBasicMaterial;
+      material.opacity = 0.3 + Math.sin(state.clock.elapsedTime * 3) * 0.1;
     }
     
     if (textRef.current) {
-      // Make text always face camera
       textRef.current.lookAt(state.camera.position);
     }
   });
@@ -46,15 +54,37 @@ export default function Region({ region, isSelected, isHovered, onHover, onClick
   };
 
   const getRegionColor = () => {
-    if (!isUnlocked) return "#666666";
-    if (completionPercentage >= 100) return "#00ff00";
-    if (completionPercentage >= 50) return "#ffff00";
+    if (!isUnlocked) return "#4a5568";
+    if (completionPercentage >= 100) return "#48bb78";
+    if (completionPercentage >= 50) return "#ecc94b";
     return region.color;
+  };
+
+  const getEraColor = () => {
+    switch (region.era) {
+      case "ancient": return "#c9a227";
+      case "classical": return "#4a90c2";
+      case "medieval": return "#48bb78";
+      default: return "#7bb3d9";
+    }
   };
 
   return (
     <group>
-      {/* Region marker */}
+      {isUnlocked && (
+        <mesh
+          ref={glowRef}
+          position={region.position}
+        >
+          <sphereGeometry args={[1.8, 16, 16]} />
+          <meshBasicMaterial 
+            color={getRegionColor()} 
+            transparent 
+            opacity={0.3}
+          />
+        </mesh>
+      )}
+
       <mesh
         ref={meshRef}
         position={region.position}
@@ -63,58 +93,76 @@ export default function Region({ region, isSelected, isHovered, onHover, onClick
         onPointerLeave={() => onHover(null)}
         castShadow
       >
-        <boxGeometry args={[2, 2, 2]} />
-        <meshLambertMaterial 
+        <dodecahedronGeometry args={[1.5, 0]} />
+        <meshStandardMaterial 
           color={getRegionColor()} 
-          opacity={isUnlocked ? 1.0 : 0.5}
+          opacity={isUnlocked ? 1.0 : 0.4}
           transparent={!isUnlocked}
+          metalness={0.3}
+          roughness={0.4}
+          emissive={isHovered || isSelected ? getRegionColor() : "#000000"}
+          emissiveIntensity={0.3}
         />
       </mesh>
 
-      {/* Region name */}
       <Text
         ref={textRef}
-        position={[region.position[0], region.position[1] + 2, region.position[2]]}
-        fontSize={0.8}
-        color={isUnlocked ? "#ffffff" : "#888888"}
+        position={[region.position[0], region.position[1] + 3, region.position[2]]}
+        fontSize={0.7}
+        color={isUnlocked ? "#f5f0e1" : "#666666"}
         anchorX="center"
         anchorY="middle"
-        outlineWidth={0.1}
-        outlineColor="#000000"
+        outlineWidth={0.08}
+        outlineColor="#1a3a52"
+        font="/fonts/inter-bold.woff"
       >
         {region.name}
       </Text>
 
-      {/* Progress indicator */}
+      <Text
+        position={[region.position[0], region.position[1] + 2.3, region.position[2]]}
+        fontSize={0.4}
+        color={getEraColor()}
+        anchorX="center"
+        anchorY="middle"
+        outlineWidth={0.04}
+        outlineColor="#1a3a52"
+      >
+        {region.dateRange}
+      </Text>
+
       {isUnlocked && completionPercentage > 0 && (
         <Text
-          position={[region.position[0], region.position[1] + 1.5, region.position[2]]}
-          fontSize={0.5}
-          color="#00ff00"
+          position={[region.position[0], region.position[1] + 1.8, region.position[2]]}
+          fontSize={0.35}
+          color="#48bb78"
           anchorX="center"
           anchorY="middle"
-          outlineWidth={0.05}
-          outlineColor="#000000"
+          outlineWidth={0.03}
+          outlineColor="#1a3a52"
         >
           {completionPercentage}% Complete
         </Text>
       )}
 
-      {/* Locations (when region is selected) */}
       {showLocations && isSelected && isUnlocked && (
         <group>
-          {region.locations.map((location, index) => (
-            <Location
-              key={location.id}
-              location={location}
-              regionId={region.id}
-              position={[
-                region.position[0] + (index - 1) * 3,
-                region.position[1] + 1,
-                region.position[2] + 3
-              ]}
-            />
-          ))}
+          {region.locations.map((location, index) => {
+            const angle = (index / region.locations.length) * Math.PI * 2;
+            const radius = 5;
+            return (
+              <Location
+                key={location.id}
+                location={location}
+                regionId={region.id}
+                position={[
+                  region.position[0] + Math.cos(angle) * radius,
+                  region.position[1] + 1,
+                  region.position[2] + Math.sin(angle) * radius
+                ]}
+              />
+            );
+          })}
         </group>
       )}
     </group>

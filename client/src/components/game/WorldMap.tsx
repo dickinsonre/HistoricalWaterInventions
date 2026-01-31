@@ -8,19 +8,22 @@ import { useGameState } from "../../lib/stores/useGameState";
 
 export default function WorldMap() {
   const meshRef = useRef<THREE.Mesh>(null);
+  const waterRef = useRef<THREE.Mesh>(null);
   const grassTexture = useTexture("/textures/grass.png");
   const { camera } = useThree();
   const { selectedRegion, setSelectedRegion } = useGameState();
   const [hoveredRegion, setHoveredRegion] = useState<string | null>(null);
 
-  // Configure grass texture
   grassTexture.wrapS = grassTexture.wrapT = THREE.RepeatWrapping;
   grassTexture.repeat.set(20, 20);
 
   useFrame((state) => {
     if (meshRef.current) {
-      // Gentle floating animation for the world
-      meshRef.current.position.y = Math.sin(state.clock.elapsedTime * 0.5) * 0.1;
+      meshRef.current.position.y = Math.sin(state.clock.elapsedTime * 0.5) * 0.05;
+    }
+    if (waterRef.current) {
+      const material = waterRef.current.material as THREE.MeshStandardMaterial;
+      material.opacity = 0.6 + Math.sin(state.clock.elapsedTime * 2) * 0.1;
     }
   });
 
@@ -31,13 +34,32 @@ export default function WorldMap() {
 
   return (
     <group>
-      {/* World base plane */}
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -1.5, 0]} receiveShadow>
+        <planeGeometry args={[150, 150]} />
+        <meshStandardMaterial color="#1a3a52" />
+      </mesh>
+
+      <mesh 
+        ref={waterRef}
+        rotation={[-Math.PI / 2, 0, 0]} 
+        position={[0, -1.4, 0]} 
+        receiveShadow
+      >
+        <planeGeometry args={[150, 150]} />
+        <meshStandardMaterial 
+          color="#2e5c8a" 
+          transparent 
+          opacity={0.6}
+          metalness={0.3}
+          roughness={0.2}
+        />
+      </mesh>
+
       <mesh ref={meshRef} rotation={[-Math.PI / 2, 0, 0]} position={[0, -1, 0]} receiveShadow>
         <planeGeometry args={[100, 100]} />
         <meshLambertMaterial map={grassTexture} />
       </mesh>
 
-      {/* Regions */}
       {gameData.regions.map((region) => (
         <Region
           key={region.id}

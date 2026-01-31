@@ -15,6 +15,7 @@ interface ArtifactProps {
 
 export default function Artifact({ artifact, locationId, position }: ArtifactProps) {
   const meshRef = useRef<THREE.Mesh>(null);
+  const glowRef = useRef<THREE.Mesh>(null);
   const textRef = useRef<THREE.Mesh>(null);
   const [isHovered, setIsHovered] = useState(false);
   const { progress, discoverArtifact } = useProgress();
@@ -25,16 +26,20 @@ export default function Artifact({ artifact, locationId, position }: ArtifactPro
 
   useFrame((state) => {
     if (meshRef.current) {
-      // Rotation animation
       meshRef.current.rotation.y = state.clock.elapsedTime * 2;
       meshRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 1.5) * 0.2;
-      
-      // Floating animation
       meshRef.current.position.y = position[1] + Math.sin(state.clock.elapsedTime * 4 + position[0]) * 0.15;
       
-      // Scale animation when hovered
-      const targetScale = isHovered ? 1.3 : 1.0;
+      const targetScale = isHovered ? 1.4 : 1.0;
       meshRef.current.scale.lerp(new THREE.Vector3(targetScale, targetScale, targetScale), 0.1);
+    }
+    
+    if (glowRef.current) {
+      glowRef.current.position.y = position[1] + Math.sin(state.clock.elapsedTime * 4 + position[0]) * 0.15;
+      const pulseScale = 1.3 + Math.sin(state.clock.elapsedTime * 4) * 0.2;
+      glowRef.current.scale.set(pulseScale, pulseScale, pulseScale);
+      const material = glowRef.current.material as THREE.MeshBasicMaterial;
+      material.opacity = 0.4 + Math.sin(state.clock.elapsedTime * 4) * 0.1;
     }
     
     if (textRef.current) {
@@ -45,30 +50,55 @@ export default function Artifact({ artifact, locationId, position }: ArtifactPro
   const handleClick = () => {
     if (isDiscovered) return;
     
-    console.log("Artifact discovered:", artifact.id);
+    console.log("Water invention discovered:", artifact.id);
     discoverArtifact(artifact.id, locationId);
     addArtifact(artifact);
     playSuccess();
   };
 
   const getArtifactColor = () => {
-    if (isDiscovered) return "#888888"; // Gray for discovered
+    if (isDiscovered) return "#4a5568";
     switch (artifact.rarity) {
-      case "common": return "#FFFFFF";
-      case "rare": return "#0000FF";
-      case "epic": return "#800080";
-      case "legendary": return "#FFD700";
-      default: return "#FFFFFF";
+      case "common": return "#a0aec0";
+      case "rare": return "#4a90c2";
+      case "epic": return "#9f7aea";
+      case "legendary": return "#c9a227";
+      default: return "#a0aec0";
+    }
+  };
+
+  const getCategoryIcon = () => {
+    switch (artifact.category) {
+      case "irrigation": return "droplet";
+      case "aqueduct": return "waves";
+      case "water-lifting": return "arrow-up";
+      case "sanitation": return "filter";
+      case "dam": return "container";
+      case "water-clock": return "clock";
+      case "fountain": return "sparkles";
+      case "canal": return "route";
+      default: return "droplet";
     }
   };
 
   if (isDiscovered) {
-    return null; // Don't render discovered artifacts
+    return null;
   }
 
   return (
     <group>
-      {/* Artifact */}
+      <mesh
+        ref={glowRef}
+        position={position}
+      >
+        <sphereGeometry args={[0.7, 16, 16]} />
+        <meshBasicMaterial 
+          color={getArtifactColor()} 
+          transparent 
+          opacity={0.4}
+        />
+      </mesh>
+
       <mesh
         ref={meshRef}
         position={position}
@@ -77,36 +107,50 @@ export default function Artifact({ artifact, locationId, position }: ArtifactPro
         onPointerLeave={() => setIsHovered(false)}
         castShadow
       >
-        <octahedronGeometry args={[0.5, 0]} />
-        <meshLambertMaterial 
-          color={getArtifactColor()} 
+        <icosahedronGeometry args={[0.4, 0]} />
+        <meshStandardMaterial 
+          color={getArtifactColor()}
+          metalness={0.6}
+          roughness={0.2}
           emissive={getArtifactColor()}
-          emissiveIntensity={0.2}
+          emissiveIntensity={0.4}
         />
       </mesh>
 
-      {/* Artifact name (when hovered) */}
       {isHovered && (
-        <Text
-          ref={textRef}
-          position={[position[0], position[1] + 1.5, position[2]]}
-          fontSize={0.4}
-          color="#ffffff"
-          anchorX="center"
-          anchorY="middle"
-          outlineWidth={0.05}
-          outlineColor="#000000"
-        >
-          {artifact.name}
-        </Text>
+        <>
+          <Text
+            ref={textRef}
+            position={[position[0], position[1] + 1.8, position[2]]}
+            fontSize={0.35}
+            color="#f5f0e1"
+            anchorX="center"
+            anchorY="middle"
+            outlineWidth={0.04}
+            outlineColor="#1a3a52"
+            maxWidth={3}
+          >
+            {artifact.name}
+          </Text>
+          <Text
+            position={[position[0], position[1] + 1.4, position[2]]}
+            fontSize={0.25}
+            color={getArtifactColor()}
+            anchorX="center"
+            anchorY="middle"
+            outlineWidth={0.03}
+            outlineColor="#1a3a52"
+          >
+            {artifact.rarity.toUpperCase()}
+          </Text>
+        </>
       )}
 
-      {/* Magical glow effect */}
       <pointLight 
         position={position} 
         color={getArtifactColor()} 
-        intensity={0.5} 
-        distance={5} 
+        intensity={0.6} 
+        distance={4} 
       />
     </group>
   );

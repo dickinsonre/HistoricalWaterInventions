@@ -19,7 +19,6 @@ function GameContent() {
   const { loadProgress } = useProgress();
 
   useEffect(() => {
-    // Initialize audio
     const bgMusic = new Audio("/sounds/background.mp3");
     const hitSound = new Audio("/sounds/hit.mp3");
     const successSound = new Audio("/sounds/success.mp3");
@@ -31,7 +30,6 @@ function GameContent() {
     setHitSound(hitSound);
     setSuccessSound(successSound);
 
-    // Load saved progress
     loadProgress();
   }, [setBackgroundMusic, setHitSound, setSuccessSound, loadProgress]);
 
@@ -40,7 +38,7 @@ function GameContent() {
       <Canvas
         shadows
         camera={{
-          position: [0, 20, 20],
+          position: [0, 25, 30],
           fov: 45,
           near: 0.1,
           far: 1000
@@ -50,7 +48,8 @@ function GameContent() {
           powerPreference: "default"
         }}
       >
-        <color attach="background" args={["#87CEEB"]} />
+        <color attach="background" args={["#1a3a52"]} />
+        <fog attach="fog" args={["#1a3a52", 30, 100]} />
         
         <Lights />
         <Camera />
