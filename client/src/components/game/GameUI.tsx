@@ -16,6 +16,7 @@ import WhyThisMatters from "./WhyThisMatters";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
 import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb, Globe, Building } from "lucide-react";
 import { gameData, getAllArtifacts } from "../../data/gameData";
 
@@ -45,108 +46,187 @@ export default function GameUI() {
   return (
     <div className="absolute inset-0 pointer-events-none">
       <div className="absolute top-4 left-4 right-4 flex justify-between items-start pointer-events-auto">
-        <div className="flex gap-2 flex-wrap">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={toggleMute}
-            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-          >
-            {isMuted ? <VolumeX size={16} /> : <Volume2 size={16} />}
-          </Button>
-          
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setShowInventory(!showInventory)}
-            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-          >
-            <Droplets size={16} className="text-[var(--aqua)]" />
-            <span className="ml-1">{totalArtifacts}</span>
-          </Button>
-          
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setShowProgress(!showProgress)}
-            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-          >
-            <Trophy size={16} className="text-[var(--gold)]" />
-            <span className="ml-1">{totalLocations}</span>
-          </Button>
+        <TooltipProvider delayDuration={300}>
+          <div className="flex gap-2 flex-wrap">
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={toggleMute}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  {isMuted ? <VolumeX size={16} /> : <Volume2 size={16} />}
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                {isMuted ? "Unmute Sound" : "Mute Sound"}
+              </TooltipContent>
+            </Tooltip>
+            
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowInventory(!showInventory)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Droplets size={16} className="text-[var(--aqua)]" />
+                  <span className="ml-1">{totalArtifacts}</span>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Water Inventions Collection
+              </TooltipContent>
+            </Tooltip>
+            
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowProgress(!showProgress)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Trophy size={16} className="text-[var(--gold)]" />
+                  <span className="ml-1">{totalLocations}</span>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Exploration Progress
+              </TooltipContent>
+            </Tooltip>
 
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setShowAchievements(!showAchievements)}
-            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-          >
-            <Award size={16} className="text-[var(--terracotta)]" />
-          </Button>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowAchievements(!showAchievements)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Award size={16} className="text-[var(--terracotta)]" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Achievements & Badges
+              </TooltipContent>
+            </Tooltip>
 
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setShowTimeline(!showTimeline)}
-            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-          >
-            <Clock size={16} className="text-[var(--aqua)]" />
-          </Button>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowTimeline(!showTimeline)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Clock size={16} className="text-[var(--aqua)]" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Timeline Filter
+              </TooltipContent>
+            </Tooltip>
 
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setShowComparison(!showComparison)}
-            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-          >
-            <Scale size={16} className="text-[var(--cerulean)]" />
-          </Button>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowComparison(!showComparison)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Scale size={16} className="text-[var(--cerulean)]" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Compare Inventions
+              </TooltipContent>
+            </Tooltip>
 
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setShowFeatured(!showFeatured)}
-            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-          >
-            <Star size={16} className="text-[var(--gold)]" />
-          </Button>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowFeatured(!showFeatured)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Star size={16} className="text-[var(--gold)]" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Featured Discoveries
+              </TooltipContent>
+            </Tooltip>
 
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setShowFacts(!showFacts)}
-            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-          >
-            <Lightbulb size={16} className="text-yellow-400" />
-          </Button>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowFacts(!showFacts)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Lightbulb size={16} className="text-yellow-400" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Did You Know?
+              </TooltipContent>
+            </Tooltip>
 
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setShowAbout(!showAbout)}
-            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-          >
-            <Info size={16} className="text-[var(--parchment)]" />
-          </Button>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowAbout(!showAbout)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Info size={16} className="text-[var(--parchment)]" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                About This Project
+              </TooltipContent>
+            </Tooltip>
 
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setShowWhyMatters(!showWhyMatters)}
-            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-          >
-            <Globe size={16} className="text-[var(--terracotta)]" />
-          </Button>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowWhyMatters(!showWhyMatters)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Globe size={16} className="text-[var(--terracotta)]" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Why This Matters Today
+              </TooltipContent>
+            </Tooltip>
 
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setSelectedCivilization("ancient-egypt")}
-            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-          >
-            <Building size={16} className="text-[var(--gold)]" />
-          </Button>
-        </div>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setSelectedCivilization("ancient-egypt")}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Building size={16} className="text-[var(--gold)]" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Explore Civilizations
+              </TooltipContent>
+            </Tooltip>
+          </div>
+        </TooltipProvider>
 
         <div className="flex gap-2 flex-wrap justify-end">
           <Badge variant="secondary" className="water-card text-[var(--parchment)] border-[var(--aqua)]/30">
@@ -291,14 +371,23 @@ export default function GameUI() {
       )}
 
       <div className="absolute bottom-4 right-4 pointer-events-auto">
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => setShowInfo(!showInfo)}
-          className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-        >
-          <BookOpen size={16} />
-        </Button>
+        <TooltipProvider delayDuration={300}>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setShowInfo(!showInfo)}
+                className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+              >
+                <BookOpen size={16} />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">
+              Game Information
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </div>
     </div>
   );
