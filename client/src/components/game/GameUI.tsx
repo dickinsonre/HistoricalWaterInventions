@@ -6,10 +6,11 @@ import Inventory from "./Inventory";
 import ProgressTracker from "./ProgressTracker";
 import Achievements from "./Achievements";
 import TimelineFilter from "./TimelineFilter";
+import ComparisonTool from "./ComparisonTool";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
-import { Volume2, VolumeX, Package, Trophy, BookOpen, Award, Clock, Droplets } from "lucide-react";
+import { Volume2, VolumeX, Package, Trophy, BookOpen, Award, Clock, Droplets, Scale } from "lucide-react";
 import { gameData, getAllArtifacts } from "../../data/gameData";
 
 export default function GameUI() {
@@ -20,6 +21,7 @@ export default function GameUI() {
   const [showProgress, setShowProgress] = useState(false);
   const [showAchievements, setShowAchievements] = useState(false);
   const [showTimeline, setShowTimeline] = useState(false);
+  const [showComparison, setShowComparison] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
 
   const totalArtifacts = progress.discoveredArtifacts.length;
@@ -76,6 +78,15 @@ export default function GameUI() {
             className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
           >
             <Clock size={16} className="text-[var(--aqua)]" />
+          </Button>
+
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setShowComparison(!showComparison)}
+            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+          >
+            <Scale size={16} className="text-[var(--cerulean)]" />
           </Button>
         </div>
 
@@ -145,6 +156,12 @@ export default function GameUI() {
       {showTimeline && (
         <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto">
           <TimelineFilter onClose={() => setShowTimeline(false)} />
+        </div>
+      )}
+
+      {showComparison && (
+        <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto">
+          <ComparisonTool onClose={() => setShowComparison(false)} />
         </div>
       )}
 
