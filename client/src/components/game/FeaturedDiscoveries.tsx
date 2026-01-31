@@ -5,6 +5,7 @@ import { gameData, getAllArtifacts } from "../../data/gameData";
 
 interface FeaturedDiscoveriesProps {
   onClose: () => void;
+  onViewInvention?: (id: string) => void;
 }
 
 const featuredInventions = [
@@ -31,7 +32,7 @@ const featuredInventions = [
   }
 ];
 
-export default function FeaturedDiscoveries({ onClose }: FeaturedDiscoveriesProps) {
+export default function FeaturedDiscoveries({ onClose, onViewInvention }: FeaturedDiscoveriesProps) {
   const allArtifacts = getAllArtifacts();
 
   const getFeaturedArtifact = (id: string) => {
@@ -66,7 +67,11 @@ export default function FeaturedDiscoveries({ onClose }: FeaturedDiscoveriesProp
             if (!artifact) return null;
 
             return (
-              <Card key={featured.id} className="bg-[var(--deep-ocean)]/60 border-[var(--aqua)]/20">
+              <Card 
+                key={featured.id} 
+                className="bg-[var(--deep-ocean)]/60 border-[var(--aqua)]/20 cursor-pointer hover:border-[var(--aqua)]/50 transition-colors"
+                onClick={() => onViewInvention?.(featured.id)}
+              >
                 <CardContent className="p-4">
                   <div className="flex items-start gap-4">
                     <span className="text-3xl">{featured.emoji}</span>
@@ -93,6 +98,7 @@ export default function FeaturedDiscoveries({ onClose }: FeaturedDiscoveriesProp
                         </span>
                       </div>
                       <p className="text-[var(--parchment)]/90 text-sm">{featured.highlight}</p>
+                      <p className="text-[var(--aqua)] text-xs mt-2">Click to learn more →</p>
                     </div>
                   </div>
                 </CardContent>

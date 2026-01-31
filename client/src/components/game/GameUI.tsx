@@ -10,10 +10,13 @@ import ComparisonTool from "./ComparisonTool";
 import FeaturedDiscoveries from "./FeaturedDiscoveries";
 import AboutSection from "./AboutSection";
 import DidYouKnow from "./DidYouKnow";
+import InventionDetail from "./InventionDetail";
+import CivilizationDetail from "./CivilizationDetail";
+import WhyThisMatters from "./WhyThisMatters";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
-import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb } from "lucide-react";
+import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb, Globe, Building } from "lucide-react";
 import { gameData, getAllArtifacts } from "../../data/gameData";
 
 export default function GameUI() {
@@ -29,6 +32,9 @@ export default function GameUI() {
   const [showAbout, setShowAbout] = useState(false);
   const [showFacts, setShowFacts] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
+  const [showWhyMatters, setShowWhyMatters] = useState(false);
+  const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
+  const [selectedCivilization, setSelectedCivilization] = useState<string | null>(null);
 
   const totalArtifacts = progress.discoveredArtifacts.length;
   const totalLocations = progress.exploredLocations.length;
@@ -122,6 +128,24 @@ export default function GameUI() {
           >
             <Info size={16} className="text-[var(--parchment)]" />
           </Button>
+
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setShowWhyMatters(!showWhyMatters)}
+            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+          >
+            <Globe size={16} className="text-[var(--terracotta)]" />
+          </Button>
+
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setSelectedCivilization("ancient-egypt")}
+            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+          >
+            <Building size={16} className="text-[var(--gold)]" />
+          </Button>
         </div>
 
         <div className="flex gap-2 flex-wrap justify-end">
@@ -178,7 +202,13 @@ export default function GameUI() {
 
       {showInventory && (
         <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto">
-          <Inventory onClose={() => setShowInventory(false)} />
+          <Inventory 
+            onClose={() => setShowInventory(false)} 
+            onViewInvention={(id) => {
+              setShowInventory(false);
+              setSelectedInvention(id);
+            }}
+          />
         </div>
       )}
 
@@ -208,7 +238,13 @@ export default function GameUI() {
 
       {showFeatured && (
         <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto">
-          <FeaturedDiscoveries onClose={() => setShowFeatured(false)} />
+          <FeaturedDiscoveries 
+            onClose={() => setShowFeatured(false)} 
+            onViewInvention={(id) => {
+              setShowFeatured(false);
+              setSelectedInvention(id);
+            }}
+          />
         </div>
       )}
 
@@ -221,6 +257,36 @@ export default function GameUI() {
       {showFacts && (
         <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto">
           <DidYouKnow onClose={() => setShowFacts(false)} />
+        </div>
+      )}
+
+      {selectedInvention && (
+        <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto">
+          <InventionDetail 
+            artifactId={selectedInvention} 
+            onClose={() => setSelectedInvention(null)}
+            onNavigate={(id) => setSelectedInvention(id)}
+          />
+        </div>
+      )}
+
+      {showWhyMatters && (
+        <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto">
+          <WhyThisMatters onClose={() => setShowWhyMatters(false)} />
+        </div>
+      )}
+
+      {selectedCivilization && (
+        <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto p-4">
+          <CivilizationDetail 
+            regionId={selectedCivilization}
+            onClose={() => setSelectedCivilization(null)}
+            onNavigate={(id) => setSelectedCivilization(id)}
+            onViewInvention={(id) => {
+              setSelectedCivilization(null);
+              setSelectedInvention(id);
+            }}
+          />
         </div>
       )}
 

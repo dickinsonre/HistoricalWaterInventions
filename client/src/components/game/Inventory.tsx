@@ -7,9 +7,10 @@ import { X, Droplets, Calendar, MapPin } from "lucide-react";
 
 interface InventoryProps {
   onClose: () => void;
+  onViewInvention?: (id: string) => void;
 }
 
-export default function Inventory({ onClose }: InventoryProps) {
+export default function Inventory({ onClose, onViewInvention }: InventoryProps) {
   const { artifacts } = useInventory();
 
   const getRarityStyle = (rarity: string) => {
@@ -76,7 +77,8 @@ export default function Inventory({ onClose }: InventoryProps) {
                 return (
                   <Card 
                     key={artifact.id} 
-                    className="bg-[var(--deep-ocean)]/50 border-[var(--aqua)]/20 hover:border-[var(--aqua)]/40 transition-colors"
+                    className="bg-[var(--deep-ocean)]/50 border-[var(--aqua)]/20 hover:border-[var(--aqua)]/40 transition-colors cursor-pointer"
+                    onClick={() => onViewInvention?.(artifact.id)}
                   >
                     <CardContent className="p-4">
                       <div className="flex items-start justify-between mb-2">
@@ -105,6 +107,7 @@ export default function Inventory({ onClose }: InventoryProps) {
                           {artifact.significance}
                         </p>
                       </div>
+                      <p className="text-[var(--aqua)] text-xs mt-2">Click for details →</p>
                     </CardContent>
                   </Card>
                 );
