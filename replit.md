@@ -60,11 +60,15 @@ The game showcases how water shaped human civilization through:
 - **useAudio**: Handles background music and sound effects
 
 ### UI Components
-- **GameUI**: Water-themed HUD with progress indicators
+- **GameUI**: Water-themed HUD with progress indicators and "Begin Your Journey" CTA
 - **Inventory**: Water invention collection viewer with category and rarity filters
 - **ProgressTracker**: Exploration progress by civilization and era
 - **Achievements**: 12+ badges across Explorer, Scholar, Collector, Time Traveler categories
 - **TimelineFilter**: Era and technology type filtering system
+- **ComparisonTool**: Side-by-side comparison of water inventions
+- **FeaturedDiscoveries**: Curated highlights with "Why This Matters" context
+- **AboutSection**: Creator attribution and project background
+- **DidYouKnow**: Carousel of 10 fascinating water engineering facts
 
 ### Data Structure
 - **Regions**: 8 civilizations with era, date range, position, color
