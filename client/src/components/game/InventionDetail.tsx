@@ -1,8 +1,8 @@
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { X, ChevronLeft, ChevronRight, Wrench, Sparkles, History, MessageSquare, MapPin, Calendar, Droplets } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Wrench, Sparkles, History, MessageSquare, MapPin, Calendar, Droplets, Image } from "lucide-react";
 import { getAllArtifacts, gameData, ArtifactData } from "../../data/gameData";
-import { getInventionDetail } from "../../data/inventionDetails";
+import { getInventionDetail, inventionDiagrams } from "../../data/inventionDetails";
 
 interface InventionDetailProps {
   artifactId: string;
@@ -95,6 +95,22 @@ export default function InventionDetail({ artifactId, onClose, onNavigate }: Inv
           <p className="text-[var(--parchment)]/90">{artifact.description}</p>
           <p className="text-[var(--aqua)] text-sm mt-2 italic">{artifact.significance}</p>
         </div>
+
+        {inventionDiagrams[artifactId] && (
+          <div className="mb-6 bg-[var(--deep-ocean)]/60 rounded-lg p-4 border border-[var(--gold)]/30">
+            <div className="flex items-center gap-2 mb-3">
+              <Image className="text-[var(--gold)]" size={20} />
+              <h3 className="font-heading text-lg text-[var(--gold)]">Technical Diagram</h3>
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src={inventionDiagrams[artifactId]} 
+                alt={`Diagram of ${artifact.name}`}
+                className="max-w-full h-auto rounded-lg border border-[var(--aqua)]/20 max-h-[300px] object-contain"
+              />
+            </div>
+          </div>
+        )}
 
         {details && (
           <div className="space-y-6">

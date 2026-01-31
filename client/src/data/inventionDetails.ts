@@ -3,7 +3,37 @@ export interface InventionDetailData {
   whyItMattered: string[];
   legacyToday: string[];
   robertsNote: string;
+  diagram?: string;
 }
+
+export const inventionDiagrams: Record<string, string> = {
+  "shaduf": "/diagrams/shaduf.png",
+  "nilometer": "/diagrams/nilometer.png",
+  "basin-irrigation": "/diagrams/irrigation-canal.png",
+  "roman-aqueduct": "/diagrams/aqueduct.png",
+  "cloaca-maxima": "/diagrams/cloaca-maxima.png",
+  "thermae": "/diagrams/thermae.png",
+  "roman-fountains": "/diagrams/roman-fountain.png",
+  "lead-pipes": "/diagrams/aqueduct.png",
+  "qanat": "/diagrams/qanat.png",
+  "jerwan-aqueduct": "/diagrams/aqueduct.png",
+  "irrigation-canals": "/diagrams/irrigation-canal.png",
+  "great-bath": "/diagrams/great-bath.png",
+  "covered-drains": "/diagrams/cloaca-maxima.png",
+  "dholavira-reservoirs": "/diagrams/ancient-dam.png",
+  "archimedes-screw": "/diagrams/archimedes-screw.png",
+  "water-clock": "/diagrams/water-clock.png",
+  "tunnel-of-eupalinos": "/diagrams/qanat.png",
+  "dujiangyan": "/diagrams/dujiangyan.png",
+  "grand-canal": "/diagrams/irrigation-canal.png",
+  "bamboo-pipes": "/diagrams/aqueduct.png",
+  "noria": "/diagrams/noria.png",
+  "alhambra-fountains": "/diagrams/roman-fountain.png",
+  "al-jazari-automata": "/diagrams/water-clock.png",
+  "chinampas": "/diagrams/chinampa.png",
+  "aztec-aqueduct": "/diagrams/aqueduct.png",
+  "aguadas": "/diagrams/ancient-dam.png"
+};
 
 export const inventionDetails: Record<string, InventionDetailData> = {
   "shaduf": {
