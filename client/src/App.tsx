@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useEffect } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useAudio } from "./lib/stores/useAudio";
 import { useGameState } from "./lib/stores/useGameState";
@@ -8,6 +8,7 @@ import WorldMap from "./components/game/WorldMap";
 import GameUI from "./components/game/GameUI";
 import Lights from "./components/game/Lights";
 import Camera from "./components/game/Camera";
+import Onboarding from "./components/game/Onboarding";
 import "@fontsource/inter";
 import "./index.css";
 
@@ -17,6 +18,15 @@ function GameContent() {
   const { setBackgroundMusic, setHitSound, setSuccessSound } = useAudio();
   const { phase } = useGameState();
   const { loadProgress } = useProgress();
+  const [showOnboarding, setShowOnboarding] = useState(() => {
+    const hasSeenOnboarding = localStorage.getItem("historical-mystery-onboarding");
+    return !hasSeenOnboarding;
+  });
+
+  const handleOnboardingComplete = () => {
+    localStorage.setItem("historical-mystery-onboarding", "true");
+    setShowOnboarding(false);
+  };
 
   useEffect(() => {
     const bgMusic = new Audio("/sounds/background.mp3");
@@ -32,6 +42,10 @@ function GameContent() {
 
     loadProgress();
   }, [setBackgroundMusic, setHitSound, setSuccessSound, loadProgress]);
+
+  if (showOnboarding) {
+    return <Onboarding onComplete={handleOnboardingComplete} />;
+  }
 
   return (
     <div style={{ width: '100vw', height: '100vh', position: 'relative', overflow: 'hidden' }}>
