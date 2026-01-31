@@ -7,10 +7,13 @@ import ProgressTracker from "./ProgressTracker";
 import Achievements from "./Achievements";
 import TimelineFilter from "./TimelineFilter";
 import ComparisonTool from "./ComparisonTool";
+import FeaturedDiscoveries from "./FeaturedDiscoveries";
+import AboutSection from "./AboutSection";
+import DidYouKnow from "./DidYouKnow";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
-import { Volume2, VolumeX, Package, Trophy, BookOpen, Award, Clock, Droplets, Scale } from "lucide-react";
+import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb } from "lucide-react";
 import { gameData, getAllArtifacts } from "../../data/gameData";
 
 export default function GameUI() {
@@ -22,12 +25,16 @@ export default function GameUI() {
   const [showAchievements, setShowAchievements] = useState(false);
   const [showTimeline, setShowTimeline] = useState(false);
   const [showComparison, setShowComparison] = useState(false);
+  const [showFeatured, setShowFeatured] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
+  const [showFacts, setShowFacts] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
 
   const totalArtifacts = progress.discoveredArtifacts.length;
   const totalLocations = progress.exploredLocations.length;
   const totalRegions = progress.unlockedRegions.length;
   const allArtifacts = getAllArtifacts();
+  const totalSites = gameData.regions.reduce((acc, r) => acc + r.locations.length, 0);
 
   return (
     <div className="absolute inset-0 pointer-events-none">
@@ -88,16 +95,43 @@ export default function GameUI() {
           >
             <Scale size={16} className="text-[var(--cerulean)]" />
           </Button>
+
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setShowFeatured(!showFeatured)}
+            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+          >
+            <Star size={16} className="text-[var(--gold)]" />
+          </Button>
+
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setShowFacts(!showFacts)}
+            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+          >
+            <Lightbulb size={16} className="text-yellow-400" />
+          </Button>
+
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setShowAbout(!showAbout)}
+            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+          >
+            <Info size={16} className="text-[var(--parchment)]" />
+          </Button>
         </div>
 
         <div className="flex gap-2 flex-wrap justify-end">
           <Badge variant="secondary" className="water-card text-[var(--parchment)] border-[var(--aqua)]/30">
             <span className="text-[var(--aqua)]">{totalRegions}</span>
-            <span className="ml-1 text-[var(--parchment)]/70">Civilizations</span>
+            <span className="ml-1 text-[var(--parchment)]/70">of {gameData.regions.length} Civilizations</span>
           </Badge>
           <Badge variant="secondary" className="water-card text-[var(--parchment)] border-[var(--aqua)]/30">
             <span className="text-[var(--cerulean)]">{totalLocations}</span>
-            <span className="ml-1 text-[var(--parchment)]/70">Sites</span>
+            <span className="ml-1 text-[var(--parchment)]/70">of {totalSites} Sites</span>
           </Badge>
           <Badge variant="secondary" className="water-card text-[var(--parchment)] border-[var(--aqua)]/30">
             <span className="text-[var(--gold)]">{totalArtifacts}</span>
@@ -112,9 +146,16 @@ export default function GameUI() {
             <h3 className="font-heading text-lg text-[var(--gold)] mb-2">
               Discover How Water Shaped History
             </h3>
-            <p className="text-[var(--parchment)]/90 text-sm">
+            <p className="text-[var(--parchment)]/90 text-sm mb-3">
               Explore 8 ancient civilizations and discover 25+ water inventions that transformed human history. From Egyptian shaduf to Roman aqueducts, uncover the genius of ancient hydraulic engineering.
             </p>
+            <Button
+              onClick={() => setShowFeatured(true)}
+              className="w-full bg-gradient-to-r from-[var(--cerulean)] to-[var(--river-blue)] hover:from-[var(--aqua)] hover:to-[var(--cerulean)] text-white font-heading"
+            >
+              <Compass size={18} className="mr-2" />
+              Begin Your Journey
+            </Button>
           </CardContent>
         </Card>
       </div>
@@ -162,6 +203,24 @@ export default function GameUI() {
       {showComparison && (
         <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto">
           <ComparisonTool onClose={() => setShowComparison(false)} />
+        </div>
+      )}
+
+      {showFeatured && (
+        <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto">
+          <FeaturedDiscoveries onClose={() => setShowFeatured(false)} />
+        </div>
+      )}
+
+      {showAbout && (
+        <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto">
+          <AboutSection onClose={() => setShowAbout(false)} />
+        </div>
+      )}
+
+      {showFacts && (
+        <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto">
+          <DidYouKnow onClose={() => setShowFacts(false)} />
         </div>
       )}
 
