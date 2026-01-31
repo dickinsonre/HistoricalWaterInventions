@@ -44,9 +44,9 @@ export default function GameUI() {
   const totalSites = gameData.regions.reduce((acc, r) => acc + r.locations.length, 0);
 
   return (
+    <TooltipProvider delayDuration={300}>
     <div className="absolute inset-0 pointer-events-none">
       <div className="absolute top-4 left-4 right-4 flex justify-between items-start pointer-events-auto">
-        <TooltipProvider delayDuration={300}>
           <div className="flex gap-2 flex-wrap">
             <Tooltip>
               <TooltipTrigger asChild>
@@ -226,7 +226,6 @@ export default function GameUI() {
               </TooltipContent>
             </Tooltip>
           </div>
-        </TooltipProvider>
 
         <div className="flex gap-2 flex-wrap justify-end">
           <Badge variant="secondary" className="water-card text-[var(--parchment)] border-[var(--aqua)]/30">
@@ -371,7 +370,6 @@ export default function GameUI() {
       )}
 
       <div className="absolute bottom-4 right-4 pointer-events-auto">
-        <TooltipProvider delayDuration={300}>
           <Tooltip>
             <TooltipTrigger asChild>
               <Button
@@ -387,8 +385,8 @@ export default function GameUI() {
               Game Information
             </TooltipContent>
           </Tooltip>
-        </TooltipProvider>
       </div>
     </div>
+    </TooltipProvider>
   );
 }
