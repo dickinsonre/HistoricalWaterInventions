@@ -2,13 +2,13 @@
 
 ## Overview
 
-Historical Mystery is a 3D interactive adventure game focused on humanity's water innovations throughout history. Players explore 9 civilizations (including Modern Era), discover 30+ water inventions from 6000 BCE to present, and learn about the genius of hydraulic engineering across ages. The application features the "Ancient Waters" visual theme with gamification elements including achievements, progress tracking, and interactive challenge modes.
+Historical Mystery is a 3D interactive adventure game focused on humanity's water innovations throughout history. Players explore 17 civilizations, discover 55+ water inventions from 6000 BCE to present, and learn about the genius of hydraulic engineering across ages. The application features the "Ancient Waters" visual theme with gamification elements including achievements, progress tracking, interactive challenge modes, and a Museum Mode for browsing all inventions.
 
 ## Theme: Ancient Waters
 
 The game showcases how water shaped human civilization through:
-- **10 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Minoan Crete, Ancient Greece, Roman Empire, Ancient China, Islamic Golden Age, Mesoamerica, Modern Era
-- **35+ Water Inventions**: Aqueducts, irrigation systems, water-lifting devices, sanitation, dams, water clocks, fountains, canals, modern mega-dams, desalination, flush toilets
+- **17 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Minoan Crete, Ancient Greece, Roman Empire, Ancient China, Islamic Golden Age, Mesoamerica, Ancient Persia, Khmer Empire, Nubia, Nabataean Kingdom, Ancient Sri Lanka, Ancestral Puebloans, Byzantine Empire, Modern Era
+- **55+ Water Inventions**: Aqueducts, irrigation systems, water-lifting devices, sanitation, dams, water clocks, fountains, canals, qanats, cisterns, valves, mega-dams, desalination, flush toilets
 - **Time Periods**: Ancient (6000-500 BCE), Classical (500 BCE-500 CE), Medieval (500-1400 CE), Modern (1750 CE-Present)
 
 ## System Architecture

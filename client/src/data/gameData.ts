@@ -772,6 +772,206 @@ export const gameData: GameData = {
       ]
     },
     {
+      id: "nabataean",
+      name: "Nabataean Kingdom",
+      description: "Desert water harvesting masters who made Petra flourish in one of Earth's driest regions",
+      position: [10, 0, -6],
+      color: "#D2691E",
+      era: "classical",
+      dateRange: "400 BCE - 106 CE",
+      locations: [
+        {
+          id: "petra",
+          name: "Petra",
+          description: "The Rose City with remarkable water management",
+          historicalContext: "Carved city thriving in the desert through ingenious water systems",
+          coordinates: { lat: 30.3285, lng: 35.4444 },
+          artifacts: [
+            {
+              id: "nabataean-cistern",
+              name: "Rock-Carved Cistern",
+              description: "Massive cisterns carved directly into solid sandstone cliffs",
+              rarity: "legendary",
+              historicalPeriod: "Nabataean Period (400 BCE - 106 CE)",
+              significance: "Stored enough water for 30,000 residents in one of Earth's driest regions",
+              yearBCE: 300,
+              category: "dam"
+            },
+            {
+              id: "petra-pipeline",
+              name: "Ceramic Pipeline",
+              description: "Terracotta pipes with settling tanks for water purification",
+              rarity: "epic",
+              historicalPeriod: "Nabataean Period (400 BCE - 106 CE)",
+              significance: "Delivered clean water through 12km of pipelines across the city",
+              yearBCE: 200,
+              category: "aqueduct"
+            },
+            {
+              id: "flash-flood-dam",
+              name: "Flash Flood Dam",
+              description: "Dams across narrow canyons to capture sudden desert floods",
+              rarity: "epic",
+              historicalPeriod: "Nabataean Period (400 BCE - 106 CE)",
+              significance: "Captured rare rainfall and channeled it into storage systems",
+              yearBCE: 250,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "sri-lanka",
+      name: "Ancient Sri Lanka",
+      description: "Most sophisticated ancient reservoir system with pioneering valve technology",
+      position: [14, 0, 4],
+      color: "#228B22",
+      era: "classical",
+      dateRange: "300 BCE - 1200 CE",
+      locations: [
+        {
+          id: "anuradhapura",
+          name: "Anuradhapura",
+          description: "Ancient capital with revolutionary water engineering",
+          historicalContext: "Center of the world's most advanced ancient irrigation",
+          coordinates: { lat: 8.3114, lng: 80.4037 },
+          artifacts: [
+            {
+              id: "biso-kotuwa",
+              name: "Biso Kotuwa (Valve Pit)",
+              description: "World's first valve tower for controlled water release from reservoirs",
+              rarity: "legendary",
+              historicalPeriod: "Anuradhapura Period (300 BCE - 1000 CE)",
+              significance: "Precision water level control that modern engineers still study",
+              yearBCE: 300,
+              category: "dam"
+            },
+            {
+              id: "tank-cascade",
+              name: "Tank Cascade System",
+              description: "Network of 30,000+ interconnected reservoirs",
+              rarity: "legendary",
+              historicalPeriod: "Anuradhapura Period (300 BCE - 1000 CE)",
+              significance: "Largest ancient irrigation network, still functioning today",
+              yearBCE: 200,
+              category: "irrigation"
+            },
+            {
+              id: "bisokotuwa-sluice",
+              name: "Precision Sluice Gate",
+              description: "Advanced water release mechanism preventing dam erosion",
+              rarity: "epic",
+              historicalPeriod: "Anuradhapura Period (300 BCE - 1000 CE)",
+              significance: "Solved dam erosion problems that plagued other civilizations",
+              yearBCE: 250,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ancestral-puebloans",
+      name: "Ancestral Puebloans",
+      description: "Arid climate water management masters of the American Southwest",
+      position: [-14, 0, 4],
+      color: "#CD853F",
+      era: "medieval",
+      dateRange: "100 CE - 1300 CE",
+      locations: [
+        {
+          id: "mesa-verde",
+          name: "Mesa Verde",
+          description: "Cliff dwellings with ingenious water collection",
+          historicalContext: "Ancient pueblo civilization adapting to harsh desert",
+          coordinates: { lat: 37.1836, lng: -108.4887 },
+          artifacts: [
+            {
+              id: "seep-reservoir",
+              name: "Seep-Fed Reservoir",
+              description: "Reservoir capturing water from natural rock seeps",
+              rarity: "epic",
+              historicalPeriod: "Pueblo III Period (1150-1300 CE)",
+              significance: "Sustained cliff dwelling communities through dry seasons",
+              yearBCE: -1200,
+              category: "dam"
+            },
+            {
+              id: "check-dam",
+              name: "Agricultural Check Dam",
+              description: "Stone barriers capturing runoff for crop irrigation",
+              rarity: "rare",
+              historicalPeriod: "Pueblo II-III Period (900-1300 CE)",
+              significance: "Enabled farming in areas with less than 25cm annual rainfall",
+              yearBCE: -1000,
+              category: "irrigation"
+            },
+            {
+              id: "bedrock-ditch",
+              name: "Bedrock Irrigation Ditch",
+              description: "Channels carved directly into sandstone bedrock",
+              rarity: "rare",
+              historicalPeriod: "Pueblo II-III Period (900-1300 CE)",
+              significance: "Permanent irrigation infrastructure lasting centuries",
+              yearBCE: -1100,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "byzantine",
+      name: "Byzantine Empire",
+      description: "Urban water supply at massive scale in Constantinople",
+      position: [2, 0, -6],
+      color: "#800080",
+      era: "medieval",
+      dateRange: "330 CE - 1453 CE",
+      locations: [
+        {
+          id: "constantinople",
+          name: "Constantinople",
+          description: "Capital with underground water cathedrals",
+          historicalContext: "Eastern Roman Empire's engineering marvels",
+          coordinates: { lat: 41.0082, lng: 28.9784 },
+          artifacts: [
+            {
+              id: "basilica-cistern",
+              name: "Basilica Cistern",
+              description: "Underground cathedral-sized reservoir with 336 columns",
+              rarity: "legendary",
+              historicalPeriod: "Byzantine Period (532 CE)",
+              significance: "Stored 80,000 cubic meters of water for the imperial palace",
+              yearBCE: -532,
+              category: "dam"
+            },
+            {
+              id: "valens-aqueduct",
+              name: "Valens Aqueduct Stone",
+              description: "Stone from the aqueduct still standing after 1,600 years",
+              rarity: "legendary",
+              historicalPeriod: "Late Roman/Early Byzantine (368 CE)",
+              significance: "Carried water 250km to Constantinople, still visible today",
+              yearBCE: -368,
+              category: "aqueduct"
+            },
+            {
+              id: "nymphaeum",
+              name: "Public Fountain (Nymphaeum)",
+              description: "Ornate public fountain distributing water to citizens",
+              rarity: "epic",
+              historicalPeriod: "Byzantine Period (400-600 CE)",
+              significance: "Free public water access for all citizens",
+              yearBCE: -500,
+              category: "fountain"
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "modern-era",
       name: "Modern Era",
       description: "The industrial revolution and beyond brought unprecedented scale to water engineering, from massive dams to desalination technology.",

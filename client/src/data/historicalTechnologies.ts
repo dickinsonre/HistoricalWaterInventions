@@ -764,6 +764,87 @@ export const historicalTechnologies: HistoricalTechnology[] = [
     primary_uses: ["Reservoir outlet control", "Sediment management"],
     key_principle: "Stone chamber with valved outlets reduces pressure and controls discharge from reservoirs.",
     notes: "Sophisticated valve system predated similar European technology by over 1,500 years."
+  },
+  {
+    name: "Nabataean rock-carved cisterns",
+    category: "Desert water harvesting",
+    civilizations: ["Nabataean Kingdom"],
+    period_BCE_CE: "4th century BCE - 1st century CE",
+    primary_uses: ["Water storage", "Desert survival"],
+    key_principle: "Massive cisterns carved directly into sandstone cliffs captured and stored scarce rainfall.",
+    notes: "Petra had over 200 cisterns storing millions of liters; supported 30,000+ residents in the desert."
+  },
+  {
+    name: "Nabataean ceramic pipelines",
+    category: "Water conveyance",
+    civilizations: ["Nabataean Kingdom"],
+    period_BCE_CE: "3rd-1st century BCE",
+    primary_uses: ["Urban water supply", "Water purification"],
+    key_principle: "Terracotta pipes with settling tanks removed sediment while transporting water.",
+    notes: "12km of pipelines delivered clean water throughout Petra; some sections still visible today."
+  },
+  {
+    name: "Flash flood channeling",
+    category: "Flood harvesting",
+    civilizations: ["Nabataean Kingdom"],
+    period_BCE_CE: "4th-1st century BCE",
+    primary_uses: ["Runoff capture", "Flood control"],
+    key_principle: "Dams across narrow canyons captured sudden desert floods and channeled water to storage.",
+    notes: "Turned the liability of flash floods into the city's primary water source."
+  },
+  {
+    name: "Byzantine underground cisterns",
+    category: "Urban water storage",
+    civilizations: ["Byzantine Empire"],
+    period_BCE_CE: "4th-6th century CE",
+    primary_uses: ["Urban water supply", "Siege preparation"],
+    key_principle: "Cathedral-sized underground reservoirs with columns stored water beneath the city.",
+    notes: "Basilica Cistern stored 80,000 cubic meters; could supply Constantinople for months during sieges."
+  },
+  {
+    name: "Valens Aqueduct system",
+    category: "Long-distance conveyance",
+    civilizations: ["Byzantine Empire"],
+    period_BCE_CE: "368 CE onward",
+    primary_uses: ["Urban water supply", "Public fountains"],
+    key_principle: "Gravity-fed masonry aqueduct carried water 250km to Constantinople.",
+    notes: "Still standing after 1,600 years; one of the longest ancient aqueducts ever built."
+  },
+  {
+    name: "Byzantine nymphaeum fountains",
+    category: "Public water distribution",
+    civilizations: ["Byzantine Empire"],
+    period_BCE_CE: "4th-7th century CE",
+    primary_uses: ["Public water access", "Urban beautification"],
+    key_principle: "Ornate public fountains distributed water to citizens throughout the city.",
+    notes: "Free water access for all citizens; combined Roman engineering with Greek aesthetics."
+  },
+  {
+    name: "Puebloan check dams",
+    category: "Runoff harvesting",
+    civilizations: ["Ancestral Puebloans"],
+    period_BCE_CE: "900-1300 CE",
+    primary_uses: ["Agricultural irrigation", "Soil moisture retention"],
+    key_principle: "Stone barriers across drainage channels captured runoff and reduced erosion.",
+    notes: "Enabled farming in areas receiving less than 25cm annual rainfall."
+  },
+  {
+    name: "Mesa Verde seep reservoirs",
+    category: "Natural water collection",
+    civilizations: ["Ancestral Puebloans"],
+    period_BCE_CE: "1150-1300 CE",
+    primary_uses: ["Drinking water", "Cliff dwelling supply"],
+    key_principle: "Reservoirs captured water from natural rock seeps and springs.",
+    notes: "Sustained cliff dwelling communities of several hundred people."
+  },
+  {
+    name: "Bedrock irrigation channels",
+    category: "Permanent irrigation",
+    civilizations: ["Ancestral Puebloans"],
+    period_BCE_CE: "900-1300 CE",
+    primary_uses: ["Agricultural irrigation", "Water distribution"],
+    key_principle: "Channels carved directly into sandstone bedrock created permanent irrigation infrastructure.",
+    notes: "Some channels still visible today; lasted centuries without maintenance."
   }
 ];
 
