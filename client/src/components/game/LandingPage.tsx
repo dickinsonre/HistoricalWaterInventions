@@ -16,8 +16,8 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
           Discover How Water Shaped Civilization
         </p>
         <p className="text-[var(--parchment)]/70 max-w-2xl mx-auto">
-          Explore 30 civilizations, 93+ water inventions across 6 continents and 40,000+ years. 
-          From Aboriginal fish traps to Dutch polders to Japanese water gardens.
+          Explore 44 civilizations, 130+ water inventions across 6 continents and 40,000+ years. 
+          From Aboriginal fish traps to Korean ondol to Nan Madol's mysterious canals.
         </p>
       </header>
 

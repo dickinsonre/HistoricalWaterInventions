@@ -1664,6 +1664,286 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "korean",
+      name: "Ancient Korea",
+      description: "Ondol heating, royal reservoirs, and the world's oldest hydraulic innovations",
+      position: [17, 0, 2],
+      color: "#E91E63",
+      era: "ancient",
+      dateRange: "330 BCE - 1897 CE",
+      locations: [
+        {
+          id: "joseon-seoul",
+          name: "Joseon Dynasty Seoul",
+          description: "Royal capital with sophisticated urban water management",
+          historicalContext: "Cheonggye Stream engineering shaped Korean capital for 600 years",
+          coordinates: { lat: 37.5665, lng: 126.9780 },
+          artifacts: [
+            {
+              id: "byeokgolje",
+              name: "Byeokgolje Reservoir",
+              description: "One of Asia's oldest reservoirs, built 330 BCE for rice irrigation",
+              rarity: "legendary",
+              historicalPeriod: "330 BCE",
+              significance: "Still exists after 2,300 years—demonstrates early Korean hydraulic engineering mastery",
+              yearBCE: 330,
+              category: "dam"
+            },
+            {
+              id: "cheonggye-stream",
+              name: "Cheonggye Stream Engineering",
+              description: "Stone-lined urban stream with flood control through Seoul",
+              rarity: "epic",
+              historicalPeriod: "1411 CE restoration",
+              significance: "Restored in 2005 from buried highway—model for urban stream restoration worldwide",
+              yearBCE: -1411,
+              category: "canal"
+            },
+            {
+              id: "ondol",
+              name: "Ondol Underfloor Heating",
+              description: "Bronze Age radiant floor heating using hot water/smoke channels",
+              rarity: "epic",
+              historicalPeriod: "1000 BCE onwards",
+              significance: "Inspired modern radiant floor heating—still used in Korean homes today",
+              yearBCE: 1000,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "great-zimbabwe",
+      name: "Great Zimbabwe",
+      description: "Africa's largest medieval city: stone walls with integrated water systems",
+      position: [6, 0, 8],
+      color: "#795548",
+      era: "medieval",
+      dateRange: "11th-15th Century CE",
+      locations: [
+        {
+          id: "great-enclosure",
+          name: "Great Enclosure",
+          description: "Largest pre-colonial structure in sub-Saharan Africa",
+          historicalContext: "Capital of the Kingdom of Zimbabwe, controlled gold trade",
+          coordinates: { lat: -20.2674, lng: 30.9339 },
+          artifacts: [
+            {
+              id: "zimbabwe-drainage",
+              name: "Great Zimbabwe Drainage Channels",
+              description: "Stone-lined drains integrated into massive curved walls",
+              rarity: "epic",
+              historicalPeriod: "11th-15th Century CE",
+              significance: "Sophisticated urban planning in a city of 10,000-20,000 people",
+              yearBCE: -1100,
+              category: "sanitation"
+            },
+            {
+              id: "zimbabwe-well",
+              name: "Great Enclosure Well",
+              description: "Stone-lined well providing water within fortress walls",
+              rarity: "rare",
+              historicalPeriod: "12th Century CE",
+              significance: "Enabled year-round habitation of the royal compound",
+              yearBCE: -1200,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "engaruka",
+      name: "Engaruka (Tanzania)",
+      description: "Mysterious abandoned irrigation city that fed 40,000 people",
+      position: [5, 0, 7],
+      color: "#4CAF50",
+      era: "medieval",
+      dateRange: "15th-17th Century CE",
+      locations: [
+        {
+          id: "engaruka-ruins",
+          name: "Engaruka Irrigation Ruins",
+          description: "Stone-lined canals feeding 6,000+ hectares of terraces",
+          historicalContext: "Abandoned around 1700 CE for unknown reasons—climate change suspected",
+          coordinates: { lat: -2.9833, lng: 35.9667 },
+          artifacts: [
+            {
+              id: "engaruka-canals",
+              name: "Engaruka Stone Canal System",
+              description: "Extensive stone-lined irrigation feeding terraced hillsides",
+              rarity: "legendary",
+              historicalPeriod: "15th-17th Century CE",
+              significance: "Supported 30,000-40,000 people—one of Africa's largest pre-colonial irrigation systems",
+              yearBCE: -1500,
+              category: "canal"
+            },
+            {
+              id: "engaruka-terraces",
+              name: "Engaruka Agricultural Terraces",
+              description: "Stone-walled terraces preventing erosion on steep slopes",
+              rarity: "epic",
+              historicalPeriod: "15th Century CE",
+              significance: "Complex multi-level farming enabled intensive agriculture in semi-arid region",
+              yearBCE: -1500,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "sahel",
+      name: "Sahel Africa",
+      description: "Zai pits and traditional water harvesting: turning desert green",
+      position: [4, 0, 5],
+      color: "#FFA726",
+      era: "ancient",
+      dateRange: "Ancient - Present",
+      locations: [
+        {
+          id: "burkina-faso",
+          name: "Burkina Faso",
+          description: "Birthplace of the Zai pit water harvesting revival",
+          historicalContext: "Yacouba Sawadogo revived ancient technique, transforming millions of hectares",
+          coordinates: { lat: 12.2383, lng: -1.5616 },
+          artifacts: [
+            {
+              id: "zai-pits",
+              name: "Zai Pits (Tassa)",
+              description: "Planting pits concentrating water and nutrients in degraded soil",
+              rarity: "epic",
+              historicalPeriod: "Ancient - Present",
+              significance: "Yacouba Sawadogo's revival transformed 3+ million hectares—won Right Livelihood Award",
+              yearBCE: 500,
+              category: "irrigation"
+            },
+            {
+              id: "half-moon",
+              name: "Demi-Lunes (Half-Moons)",
+              description: "Semi-circular earthen bunds capturing rainfall runoff",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Simple technique rehabilitates degraded land—spreading across Sahel",
+              yearBCE: 300,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "nan-madol",
+      name: "Nan Madol (Pohnpei)",
+      description: "Venice of the Pacific: mysterious stone city built on coral reef",
+      position: [12, 0, 8],
+      color: "#00BCD4",
+      era: "medieval",
+      dateRange: "1200-1500 CE",
+      locations: [
+        {
+          id: "nan-madol-ruins",
+          name: "Nan Madol Ruins",
+          description: "92 artificial islands connected by canals, built from basalt logs",
+          historicalContext: "Ceremonial center of Saudeleur Dynasty—how they got freshwater remains a mystery",
+          coordinates: { lat: 6.8433, lng: 158.3350 },
+          artifacts: [
+            {
+              id: "nan-madol-canals",
+              name: "Nan Madol Canal System",
+              description: "Network of canals between 92 artificial islands built from basalt",
+              rarity: "legendary",
+              historicalPeriod: "1200-1500 CE",
+              significance: "UNESCO World Heritage—'Venice of the Pacific' built with estimated 750,000 tons of basalt",
+              yearBCE: -1200,
+              category: "canal"
+            },
+            {
+              id: "nan-madol-cisterns",
+              name: "Nan Madol Freshwater Systems",
+              description: "Unknown method of freshwater supply to marine ceremonial center",
+              rarity: "epic",
+              historicalPeriod: "1200-1500 CE",
+              significance: "Mystery how 1,000+ residents got fresh water—possibly rainwater cisterns or underwater springs",
+              yearBCE: -1200,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "chamorro",
+      name: "Chamorro (Mariana Islands)",
+      description: "Latte stone houses with integrated rainwater harvesting",
+      position: [11, 0, 7],
+      color: "#9C27B0",
+      era: "ancient",
+      dateRange: "1000 BCE - 1700 CE",
+      locations: [
+        {
+          id: "guam",
+          name: "Guam Latte Sites",
+          description: "Ancient villages with iconic mushroom-shaped stone pillars",
+          historicalContext: "Latte stones served structural and water-harvesting functions",
+          coordinates: { lat: 13.4443, lng: 144.7937 },
+          artifacts: [
+            {
+              id: "latte-stones",
+              name: "Latte Stone Rain Catchers",
+              description: "Mushroom-shaped capstones caught rain and channeled to gardens",
+              rarity: "epic",
+              historicalPeriod: "1000 BCE - 1700 CE",
+              significance: "Dual-function architecture: structural support and water harvesting",
+              yearBCE: 1000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "tokyo-underground",
+      name: "Modern Japan",
+      description: "G-Cans: world's largest underground flood control cathedral",
+      position: [19, 0, 3],
+      color: "#607D8B",
+      era: "modern",
+      dateRange: "1993-Present",
+      locations: [
+        {
+          id: "kasukabe",
+          name: "G-Cans Project (Kasukabe)",
+          description: "World's largest underground flood diversion facility",
+          historicalContext: "Protects Tokyo from typhoon flooding—called 'Underground Temple'",
+          coordinates: { lat: 35.9761, lng: 139.7522 },
+          artifacts: [
+            {
+              id: "g-cans",
+              name: "G-Cans Underground Flood Control",
+              description: "5 massive silos connected by 6.4km of tunnels, moving 200 tons/second",
+              rarity: "legendary",
+              historicalPeriod: "1993-2006 CE",
+              significance: "World's largest underground flood facility—protects 13 million Tokyo residents",
+              yearBCE: -1993,
+              category: "sanitation"
+            },
+            {
+              id: "super-levee",
+              name: "Super Levees (High-Standard Levees)",
+              description: "30x height-to-width ratio levees designed to survive overtopping",
+              rarity: "epic",
+              historicalPeriod: "1987 CE onwards",
+              significance: "Philosophy shift: accept floods will overtop, design for resilience",
+              yearBCE: -1987,
+              category: "dam"
+            }
+          ]
+        }
+      ]
     }
   ]
 };

@@ -38,7 +38,14 @@ const civilizationLocations: Record<string, { x: number; y: number; region: stri
   "dutch-netherlands": { x: 50, y: 26, region: "Netherlands" },
   "ancient-india": { x: 70, y: 46, region: "India" },
   "hawaiian": { x: 10, y: 48, region: "Hawaii" },
-  "ethiopian": { x: 60, y: 52, region: "Ethiopia" }
+  "ethiopian": { x: 60, y: 52, region: "Ethiopia" },
+  "korean": { x: 85, y: 36, region: "Korea" },
+  "great-zimbabwe": { x: 58, y: 62, region: "Zimbabwe" },
+  "engaruka": { x: 60, y: 55, region: "Tanzania" },
+  "sahel": { x: 50, y: 46, region: "Sahel Africa" },
+  "nan-madol": { x: 92, y: 52, region: "Micronesia" },
+  "chamorro": { x: 90, y: 48, region: "Guam" },
+  "tokyo-underground": { x: 89, y: 35, region: "Japan" }
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {
@@ -82,69 +89,17 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
             <div 
               className="relative w-full aspect-[2/1] bg-[#1a4a6e]"
               style={{
-                backgroundImage: `
-                  radial-gradient(circle at 30% 40%, rgba(74, 144, 194, 0.2) 0%, transparent 40%),
-                  radial-gradient(circle at 70% 60%, rgba(74, 144, 194, 0.15) 0%, transparent 35%),
-                  linear-gradient(to bottom, #1a4a6e 0%, #0d2538 100%)
-                `
+                backgroundImage: `url('/images/world-map.jpg')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
               }}
             >
-              <svg 
-                viewBox="0 0 360 180" 
-                className="absolute inset-0 w-full h-full"
-                preserveAspectRatio="xMidYMid slice"
-              >
-                <path
-                  d="M 40 25 L 55 20 L 70 22 L 85 18 L 95 25 L 90 35 L 85 45 L 75 55 L 65 60 L 55 58 L 45 52 L 38 45 L 35 35 Z"
-                  fill="#4a6b52"
-                  opacity="0.7"
-                />
-                <path
-                  d="M 95 55 L 110 50 L 125 52 L 135 48 L 140 55 L 138 65 L 130 75 L 118 80 L 105 78 L 95 72 L 92 62 Z"
-                  fill="#4a6b52"
-                  opacity="0.7"
-                />
-                <path
-                  d="M 15 55 L 35 48 L 55 52 L 70 58 L 75 70 L 70 85 L 60 100 L 45 115 L 30 125 L 20 118 L 18 100 L 22 80 L 18 65 Z"
-                  fill="#5a7b62"
-                  opacity="0.7"
-                />
-                <path
-                  d="M 50 75 L 75 68 L 95 72 L 105 80 L 100 95 L 90 108 L 75 115 L 60 112 L 52 100 L 48 85 Z"
-                  fill="#5a7b62"
-                  opacity="0.7"
-                />
-                <path
-                  d="M 160 25 L 200 20 L 240 22 L 270 28 L 280 40 L 275 55 L 260 65 L 230 68 L 200 72 L 175 68 L 160 58 L 155 42 Z"
-                  fill="#4a6b52"
-                  opacity="0.7"
-                />
-                <path
-                  d="M 175 75 L 195 70 L 220 72 L 245 78 L 255 90 L 250 105 L 235 118 L 210 125 L 185 122 L 168 112 L 165 95 L 170 82 Z"
-                  fill="#5a7b62"
-                  opacity="0.7"
-                />
-                <path
-                  d="M 220 130 L 250 125 L 275 130 L 290 142 L 285 155 L 268 165 L 245 168 L 225 162 L 215 150 L 218 138 Z"
-                  fill="#4a6b52"
-                  opacity="0.7"
-                />
-                <path
-                  d="M 255 50 L 285 45 L 320 48 L 345 55 L 355 70 L 350 90 L 335 105 L 310 112 L 280 108 L 260 95 L 250 75 L 252 60 Z"
-                  fill="#4a6b52"
-                  opacity="0.7"
-                />
-                <path
-                  d="M 295 115 L 320 110 L 345 115 L 355 130 L 348 148 L 330 160 L 305 165 L 285 158 L 280 142 L 288 125 Z"
-                  fill="#5a7b62"
-                  opacity="0.7"
-                />
-                <path
-                  d="M 280 55 L 295 52 L 308 58 L 312 72 L 305 82 L 290 85 L 278 78 L 275 65 Z"
-                  fill="#6a8b72"
-                  opacity="0.6"
-                />
-              </svg>
+              <div 
+                className="absolute inset-0"
+                style={{
+                  background: 'linear-gradient(to bottom, rgba(26, 58, 82, 0.3) 0%, rgba(13, 37, 56, 0.4) 100%)'
+                }}
+              />
 
               {gameData.regions.map(region => {
                 const loc = civilizationLocations[region.id];

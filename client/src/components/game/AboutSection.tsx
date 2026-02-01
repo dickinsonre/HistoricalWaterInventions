@@ -39,19 +39,19 @@ export default function AboutSection({ onClose }: AboutSectionProps) {
             <div className="p-4 bg-[var(--deep-ocean)]/60 rounded-lg border border-[var(--aqua)]/20">
               <div className="flex items-center gap-2 mb-2">
                 <Globe className="text-[var(--aqua)]" size={18} />
-                <h4 className="font-heading text-[var(--aqua)]">21 Civilizations</h4>
+                <h4 className="font-heading text-[var(--aqua)]">44 Civilizations</h4>
               </div>
               <p className="text-[var(--parchment)]/70 text-xs">
-                Egypt, Rome, Greece, Mesopotamia, Indus Valley, China, Persia, Khmer, Nubia, and more
+                Egypt, Rome, Korea, Great Zimbabwe, Nan Madol, Japan, Aboriginal Australia, and more
               </p>
             </div>
             <div className="p-4 bg-[var(--deep-ocean)]/60 rounded-lg border border-[var(--aqua)]/20">
               <div className="flex items-center gap-2 mb-2">
                 <Lightbulb className="text-[var(--gold)]" size={18} />
-                <h4 className="font-heading text-[var(--gold)]">93+ Inventions</h4>
+                <h4 className="font-heading text-[var(--gold)]">130+ Inventions</h4>
               </div>
               <p className="text-[var(--parchment)]/70 text-xs">
-                Aqueducts, irrigation, water-lifting devices, sanitation, dams, canals, and more
+                Aqueducts, ondol heating, Zai pits, G-Cans flood control, latte stones, and more
               </p>
             </div>
           </div>
