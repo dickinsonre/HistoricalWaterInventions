@@ -3,8 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { Input } from "../ui/input";
-import { X, Download, FileCode, Search, Globe, Clock, Droplets, Info, ExternalLink, Archive } from "lucide-react";
-import { SWMM5_MODELS, downloadSWMM5Model, getAllModelContents } from "../../lib/swmm5Export";
+import { X, Download, FileCode, Search, Globe, Clock, Droplets, Info, ExternalLink, Copy, Check } from "lucide-react";
+import { SWMM5_MODELS, downloadSWMM5Model, getAllModelContents, generateSWMM5File } from "../../lib/swmm5Export";
 import JSZip from "jszip";
 
 interface SWMM5ModelsProps {
@@ -43,6 +43,21 @@ export default function SWMM5Models({ onClose }: SWMM5ModelsProps) {
 
   const models = Object.entries(SWMM5_MODELS);
   const [downloadingAll, setDownloadingAll] = useState(false);
+  const [copiedId, setCopiedId] = useState<string | null>(null);
+
+  const handleCopyToClipboard = async (modelId: string) => {
+    const content = generateSWMM5File(modelId);
+    if (content) {
+      try {
+        await navigator.clipboard.writeText(content);
+        setCopiedId(modelId);
+        setTimeout(() => setCopiedId(null), 2000);
+      } catch (err) {
+        console.error('Failed to copy:', err);
+        alert('Failed to copy to clipboard');
+      }
+    }
+  };
   
   const civilizations = Array.from(new Set(models.map(([, model]) => model.civilization))).sort();
   
@@ -254,21 +269,40 @@ END OF EDUCATIONAL MODELS DOCUMENT
                   )}
                 </div>
                 
-                <Button
-                  size="sm"
-                  onClick={() => handleDownload(id, model.name)}
-                  disabled={downloading === id}
-                  className="bg-[var(--cerulean)] hover:bg-[var(--river-blue)] text-white flex-shrink-0"
-                >
-                  {downloading === id ? (
-                    <span className="animate-pulse">...</span>
-                  ) : (
-                    <>
-                      <Download size={14} className="mr-1" />
-                      .inp
-                    </>
-                  )}
-                </Button>
+                <div className="flex flex-col gap-2 flex-shrink-0">
+                  <Button
+                    size="sm"
+                    onClick={() => handleCopyToClipboard(id)}
+                    className={`${copiedId === id ? 'bg-green-600 hover:bg-green-600' : 'bg-[var(--gold)] hover:bg-[var(--gold)]/80'} text-[var(--deep-ocean)] font-medium`}
+                  >
+                    {copiedId === id ? (
+                      <>
+                        <Check size={14} className="mr-1" />
+                        Copied!
+                      </>
+                    ) : (
+                      <>
+                        <Copy size={14} className="mr-1" />
+                        Copy
+                      </>
+                    )}
+                  </Button>
+                  <Button
+                    size="sm"
+                    onClick={() => handleDownload(id, model.name)}
+                    disabled={downloading === id}
+                    className="bg-[var(--cerulean)] hover:bg-[var(--river-blue)] text-white"
+                  >
+                    {downloading === id ? (
+                      <span className="animate-pulse">...</span>
+                    ) : (
+                      <>
+                        <Download size={14} className="mr-1" />
+                        .inp
+                      </>
+                    )}
+                  </Button>
+                </div>
               </div>
             </div>
           ))}
