@@ -6,7 +6,8 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/
 import { 
   MapPin, ChevronRight, ChevronDown, X, Home, Droplets, VolumeX, Volume2, Search, 
   Backpack, Trophy, Clock, BookOpen, BarChart3, Play, Star, Image, 
-  Lightbulb, Info, Globe, Grid3X3, Download, Route, Scroll, Filter, HelpCircle
+  Lightbulb, Info, Globe, Grid3X3, Download, Route, Scroll, Filter, HelpCircle,
+  ArrowUpDown, SortAsc, Calendar
 } from "lucide-react";
 import { gameData } from "../../data/gameData";
 import CivilizationDetail from "./CivilizationDetail";
@@ -168,6 +169,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
   const [eraFilter, setEraFilter] = useState<string | null>(null);
   const [continentFilter, setContinentFilter] = useState<string | null>(null);
   const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
+  const [sortOrder, setSortOrder] = useState<'default' | 'alphabetical' | 'oldest' | 'newest'>('default');
   
   const civilizationsRef = useRef<HTMLDivElement>(null);
   
@@ -177,6 +179,32 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
 
   const allArtifacts = gameData.regions.flatMap(r => r.locations.flatMap(l => l.artifacts));
   const totalLocations = gameData.regions.reduce((acc, r) => acc + r.locations.length, 0);
+
+  // Helper function to parse start year from dateRange (e.g., "3000 BCE - 30 BCE" -> -3000)
+  const parseStartYear = (dateRange: string): number => {
+    const match = dateRange.match(/^(\d+)\s*(BCE|CE|years ago)?/i);
+    if (!match) return 0;
+    const year = parseInt(match[1]);
+    const era = match[2]?.toUpperCase() || 'CE';
+    if (era === 'BCE' || dateRange.toLowerCase().includes('years ago')) {
+      return -year;
+    }
+    return year;
+  };
+
+  // Sort civilizations based on selected order
+  const sortedRegions = [...gameData.regions].sort((a, b) => {
+    switch (sortOrder) {
+      case 'alphabetical':
+        return a.name.localeCompare(b.name);
+      case 'oldest':
+        return parseStartYear(a.dateRange) - parseStartYear(b.dateRange);
+      case 'newest':
+        return parseStartYear(b.dateRange) - parseStartYear(a.dateRange);
+      default:
+        return 0; // Keep original order
+    }
+  });
 
   const selectedRegion = selectedCiv ? gameData.regions.find(r => r.id === selectedCiv) : null;
 
@@ -570,9 +598,50 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
           </div>
         </div>
 
-        <h2 ref={civilizationsRef} className="font-heading text-xl text-[var(--gold)] mb-4">All Civilizations & Their Inventions</h2>
+        <div ref={civilizationsRef} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+          <h2 className="font-heading text-xl text-[var(--gold)]">All Civilizations & Their Inventions</h2>
+          <div className="flex items-center gap-2">
+            <span className="text-xs text-[var(--parchment)]/60">Sort by:</span>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setSortOrder('default')}
+              className={`text-xs px-2 py-1 h-7 ${sortOrder === 'default' ? 'bg-[var(--cerulean)]/30 border-[var(--gold)]' : 'water-card border-[var(--aqua)]/30'} text-[var(--parchment)] hover:bg-[var(--cerulean)]/30`}
+            >
+              <Grid3X3 size={12} className="mr-1" />
+              Default
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setSortOrder('alphabetical')}
+              className={`text-xs px-2 py-1 h-7 ${sortOrder === 'alphabetical' ? 'bg-[var(--cerulean)]/30 border-[var(--gold)]' : 'water-card border-[var(--aqua)]/30'} text-[var(--parchment)] hover:bg-[var(--cerulean)]/30`}
+            >
+              <SortAsc size={12} className="mr-1" />
+              A-Z
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setSortOrder('oldest')}
+              className={`text-xs px-2 py-1 h-7 ${sortOrder === 'oldest' ? 'bg-[var(--cerulean)]/30 border-[var(--gold)]' : 'water-card border-[var(--aqua)]/30'} text-[var(--parchment)] hover:bg-[var(--cerulean)]/30`}
+            >
+              <Calendar size={12} className="mr-1" />
+              Oldest
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setSortOrder('newest')}
+              className={`text-xs px-2 py-1 h-7 ${sortOrder === 'newest' ? 'bg-[var(--cerulean)]/30 border-[var(--gold)]' : 'water-card border-[var(--aqua)]/30'} text-[var(--parchment)] hover:bg-[var(--cerulean)]/30`}
+            >
+              <Calendar size={12} className="mr-1" />
+              Newest
+            </Button>
+          </div>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {gameData.regions.map(region => {
+          {sortedRegions.map(region => {
             const inventions = region.locations.flatMap(l => l.artifacts);
             const inventionCount = inventions.length;
 

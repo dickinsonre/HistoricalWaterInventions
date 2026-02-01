@@ -30,8 +30,8 @@ export interface CivilizationsDatabase {
 
 export const expertCivilizationsDatabase: CivilizationsDatabase = {
   metadata: {
-    version: "1.3",
-    totalCivilizations: 40,
+    version: "1.4",
+    totalCivilizations: 51,
     lastUpdated: "2026-02-01",
     curator: "Robert Dickinson"
   },
@@ -1009,6 +1009,256 @@ export const expertCivilizationsDatabase: CivilizationsDatabase = {
       sources: [
         "Pikirayi, I. The Zimbabwe Culture",
         "Beach, D. The Shona and Zimbabwe"
+      ]
+    },
+    {
+      id: "tokyo-underground",
+      name: "Modern Japan (G-Cans)",
+      region: "Greater Tokyo Area, Japan",
+      period: {
+        start: 1993,
+        end: 2026,
+        era: "Modern Era"
+      },
+      summary: "The Metropolitan Area Outer Underground Discharge Channel (G-Cans) is the world's largest underground flood control facility—a cathedral-like space protecting 13 million Tokyo residents.",
+      waterChallenges: [
+        "Protecting Tokyo from typhoon flooding",
+        "Managing water in densely built urban area",
+        "Handling extreme rainfall events",
+        "Minimizing surface disruption during construction"
+      ],
+      inventions: ["g-cans", "super-levee"],
+      keyInsight: "G-Cans can move 200 tons of water per second—essentially an underground river protecting one of the world's largest cities from flooding.",
+      engineerNotes: "Walking into the G-Cans pressure-adjusting water tank is like entering a temple. 59 pillars, each 18 meters tall and 500 tons. The system connects 5 massive silos via 6.4 km of tunnels. It's captured the nickname 'Underground Temple' but it's pure engineering genius. The super-levees represent another innovation—accepting that floods will overtop and designing for resilience.",
+      modernLegacy: "G-Cans has become a model for urban flood control worldwide. Japanese flood management expertise is exported globally.",
+      sources: [
+        "Japan Ministry of Land, Infrastructure, Transport and Tourism",
+        "Nakamura, T. Tokyo's Underground Infrastructure"
+      ]
+    },
+    {
+      id: "cambodia-khmer",
+      name: "Khmer Empire (Angkor)",
+      region: "Cambodia and Southeast Asia",
+      period: {
+        start: 802,
+        end: 1431,
+        era: "Medieval Period"
+      },
+      summary: "Angkor was the world's largest pre-industrial city, supporting up to 1 million people through history's most extensive water management system—barays, canals, and moats spanning 1,000 square kilometers.",
+      waterChallenges: [
+        "Supporting massive urban population in tropical monsoon climate",
+        "Storing water through long dry season",
+        "Enabling 3-4 rice harvests per year",
+        "Managing flood and drought cycles"
+      ],
+      inventions: ["west-baray", "angkor-moat", "khmer-canals"],
+      keyInsight: "The West Baray held 56 million cubic meters of water in an 8km x 2km reservoir—the largest hand-dug reservoir in human history, still holding water today.",
+      engineerNotes: "The scale of Angkor's hydraulic system defies imagination. Over 1,000 km of canals connected to massive barays. The 200-meter-wide moat around Angkor Wat isn't just symbolic—it prevents foundation erosion and provides irrigation. Recent research suggests the water system's eventual failure may have contributed to Angkor's decline. They engineered a city for a million people—and when the system broke down, so did the empire.",
+      modernLegacy: "Angkor's hydraulic engineering influenced rice cultivation throughout Southeast Asia. The barays remain important for modern Cambodian agriculture and tourism.",
+      sources: [
+        "Fletcher, R. et al. The Water Management of Angkor",
+        "Coe, M. Angkor and the Khmer Civilization"
+      ]
+    },
+    {
+      id: "vietnam",
+      name: "Vietnam",
+      region: "Mainland Southeast Asia",
+      period: {
+        start: 200,
+        end: 2026,
+        era: "Classical through Modern"
+      },
+      summary: "Vietnam's civilization was built on managing two great deltas—the Red River and the Mekong. 3,000 km of dikes protect the north; 4,500 km of canals transformed the southern swamps.",
+      waterChallenges: [
+        "Protecting densely populated deltas from flooding",
+        "Managing 4-6 meter annual flood variations",
+        "Preventing saltwater intrusion in rice paddies",
+        "Continuous dike maintenance for 2,000 years"
+      ],
+      inventions: ["red-river-dikes", "cong-gates", "mekong-canals", "floating-rice"],
+      keyInsight: "Floating rice varieties can grow stems up to 6 meters as floodwaters rise—a genetic innovation allowing farming where conventional rice would drown.",
+      engineerNotes: "The Red River dike system represents 2,000 years of continuous maintenance. One breach could flood Hanoi. The cống sluice gates that prevent saltwater intrusion are elegant: simple gravity-operated floodgates. In the Mekong, I was fascinated by floating rice—varieties that literally grow with the flood, keeping their heads above water even as floods rise 4-6 meters annually.",
+      modernLegacy: "Vietnam is now a major rice exporter, built on this delta management heritage. Dutch engineers consult on Mekong Delta climate adaptation.",
+      sources: [
+        "Biggs, D. Quagmire: Nation-Building and Nature in the Mekong Delta",
+        "Mekong River Commission reports"
+      ]
+    },
+    {
+      id: "dubai-uae",
+      name: "Dubai & UAE",
+      region: "Arabian Peninsula",
+      period: {
+        start: -1000,
+        end: 2026,
+        era: "Ancient through Modern"
+      },
+      summary: "From ancient falaj channels to the world's largest desalination capacity—the UAE transformed from desert survival to water abundance through technology and determination.",
+      waterChallenges: [
+        "One of the world's driest climates",
+        "No permanent rivers or lakes",
+        "Explosive population growth (180,000 to 10 million in 50 years)",
+        "Maintaining artificial environments in extreme heat"
+      ],
+      inventions: ["falaj-system", "mega-desalination", "cloud-seeding", "palm-water-engineering"],
+      keyInsight: "The UAE went from total dependence on ancient falaj channels to producing 14+ million cubic meters of desalinated water per day—a complete transformation in one generation.",
+      engineerNotes: "The ancient falaj systems at Al Ain (UNESCO World Heritage) showed me how desert communities survived for 3,000 years using underground channels. Today's desalination plants are the opposite approach—brute force technology at massive scale. The cloud seeding program attempting to increase rainfall 10-30% represents yet another strategy. Palm Jumeirah's tidal flushing system maintaining lagoon water quality on an artificial island? Pure engineering audacity.",
+      modernLegacy: "UAE desalination technology deployed globally. Their experience informs water strategy for rapidly developing arid regions.",
+      sources: [
+        "Brook, D. A History of Future Cities (Dubai chapter)",
+        "Al Ain UNESCO World Heritage documentation"
+      ]
+    },
+    {
+      id: "ancient-yemen",
+      name: "Ancient Yemen (Sheba)",
+      region: "Southern Arabian Peninsula",
+      period: {
+        start: -1700,
+        end: 600,
+        era: "Ancient Period"
+      },
+      summary: "The Marib Dam supported the legendary Sheba kingdom for nearly 1,500 years. Its collapse around 575 CE triggered mass migrations that reshaped Arabia.",
+      waterChallenges: [
+        "Harvesting flash floods in seasonal wadis",
+        "Storing water through 9-month dry seasons",
+        "Irrigating enough land to support urban civilization",
+        "Maintaining massive infrastructure over centuries"
+      ],
+      inventions: ["marib-dam", "ghayl-irrigation"],
+      keyInsight: "The collapse of the Marib Dam around 575 CE triggered a diaspora mentioned in the Quran—proof that water infrastructure failure can end civilizations.",
+      engineerNotes: "The Marib Dam irrigated 9,600 hectares and supported 50,000 people for nearly 1,500 years. When it finally failed—undermined by centuries of silt accumulation—the population dispersed across Arabia. It's a sobering reminder: even the greatest infrastructure eventually fails without continuous maintenance. Yemen is rebuilding a modern Marib Dam today, directly inspired by the ancient one.",
+      modernLegacy: "The new Marib Dam (2012) was built near the ancient site. Yemeni terrace agriculture continues using traditional ghayl channels.",
+      sources: [
+        "Schippmann, K. Ancient South Arabia",
+        "Breton, J.F. Arabia Felix from the Time of the Queen of Sheba"
+      ]
+    },
+    {
+      id: "bengal",
+      name: "Bengal (Bangladesh)",
+      region: "Ganges-Brahmaputra Delta",
+      period: {
+        start: -500,
+        end: 2026,
+        era: "Ancient through Modern"
+      },
+      summary: "Bangladesh lives with the world's largest river delta—mastering annual flooding through floating gardens, khal canals, and cyclone shelters that have saved millions of lives.",
+      waterChallenges: [
+        "Annual monsoon flooding of vast areas",
+        "Cyclone storm surges from Bay of Bengal",
+        "Managing the world's largest river delta",
+        "Adapting to rising sea levels"
+      ],
+      inventions: ["floating-gardens-baira", "khal-system", "cyclone-shelter"],
+      keyInsight: "Baira floating gardens allow farming even when land is underwater—climate-resilient agriculture developed over centuries in one of Earth's most flood-prone regions.",
+      engineerNotes: "Bangladesh doesn't fight floods—they live with them. Baira floating gardens grow vegetables on water hyacinth rafts during monsoon floods. The khal canal system provides natural flood management while serving as transportation highways. After the 1970 cyclone killed 500,000 people, they built elevated cyclone shelters throughout coastal areas—saving millions in subsequent storms. This is adaptation at civilizational scale.",
+      modernLegacy: "Bangladesh's floating agriculture studied for climate adaptation. Their cyclone early warning and shelter system is a global model.",
+      sources: [
+        "Sultana, P. Participatory Floodplain Management in Bangladesh",
+        "World Bank. The Costs of Adapting to Climate Change for Bangladesh"
+      ]
+    },
+    {
+      id: "al-andalus",
+      name: "Al-Andalus (Islamic Spain)",
+      region: "Iberian Peninsula",
+      period: {
+        start: 711,
+        end: 1492,
+        era: "Medieval Islamic Period"
+      },
+      summary: "Islamic engineers transformed Spain with acequia irrigation, garden fountains, and the world's oldest continuously operating water court—still meeting every Thursday in Valencia.",
+      waterChallenges: [
+        "Irrigating semi-arid Mediterranean landscape",
+        "Bringing Persian/Middle Eastern techniques to Iberia",
+        "Managing water rights across multiple communities",
+        "Creating garden paradise in dry climate"
+      ],
+      inventions: ["acequia-system", "water-tribunal", "alhambra-fountains", "noria-seville"],
+      keyInsight: "The Water Tribunal of Valencia has met every Thursday for over 1,000 years—UNESCO Intangible Heritage and the world's oldest continuously operating water court.",
+      engineerNotes: "Al-Andalus brought qanat/falaj expertise to Spain, creating the acequia irrigation systems that still water Valencia's huerta. The Alhambra's water features demonstrate hydraulic sophistication—gravity-fed fountains, gardens designed around water sound and sight. But the Water Tribunal impresses me most: 1,000+ years of continuous democratic water governance. When Spanish colonizers went to the Americas, they brought acequia technology with them.",
+      modernLegacy: "Acequia irrigation still used in Spain and New Mexico. The Water Tribunal continues operating. Spanish water law influenced Latin America.",
+      sources: [
+        "Glick, T. Irrigation and Society in Medieval Valencia",
+        "Ruggles, D.F. Islamic Gardens and Landscapes"
+      ]
+    },
+    {
+      id: "philippines",
+      name: "Philippines (Ifugao)",
+      region: "Philippine Archipelago",
+      period: {
+        start: 0,
+        end: 2026,
+        era: "Ancient through Present"
+      },
+      summary: "The Banaue Rice Terraces are called the 'Eighth Wonder of the World'—2,000 years of continuous mountain cultivation with sophisticated irrigation protected by sacred forests.",
+      waterChallenges: [
+        "Creating farmland on steep mountain slopes",
+        "Distributing spring water across terraces",
+        "Preventing erosion on carved hillsides",
+        "Maintaining 10,000+ km of terrace walls"
+      ],
+      inventions: ["banaue-terraces", "bamboo-irrigation", "muyong"],
+      keyInsight: "Muyong sacred forests above the terraces were protected by death penalty for tree cutting—the Ifugao understood watershed protection 2,000 years before the term existed.",
+      engineerNotes: "If laid end-to-end, the Banaue terraces would stretch halfway around the Earth. Built entirely by hand, maintained for 2,000 years, still productive today. The bamboo pipe irrigation delivers 18-20 liters per minute using only gravity. But the muyong forests impressed me most: traditional conservation understanding that the terraces would fail without their watersheds. They protected forests with the death penalty when we were still draining wetlands.",
+      modernLegacy: "UNESCO World Heritage site. Ifugao water management informs sustainable agriculture and watershed conservation globally.",
+      sources: [
+        "Conklin, H. Ethnographic Atlas of Ifugao",
+        "UNESCO Banaue Rice Terraces documentation"
+      ]
+    },
+    {
+      id: "nan-madol",
+      name: "Nan Madol",
+      region: "Pohnpei, Federated States of Micronesia",
+      period: {
+        start: 1200,
+        end: 1500,
+        era: "Pacific Ceremonial Period"
+      },
+      summary: "The 'Venice of the Pacific'—92 artificial islands built from 750,000 tons of basalt, connected by canals, with a freshwater mystery archaeologists still debate.",
+      waterChallenges: [
+        "Building on coral reef with no freshwater source",
+        "Transporting 750,000 tons of basalt to reef",
+        "Supplying 1,000+ residents with drinking water",
+        "Managing tidal flows through canal network"
+      ],
+      inventions: ["nan-madol-canals", "nan-madol-cisterns"],
+      keyInsight: "How did 1,000+ people get fresh water on coral reef islands? Rainwater cisterns? Underwater springs? The mystery of Nan Madol's water supply remains unsolved.",
+      engineerNotes: "Nan Madol is the most enigmatic site I've studied. 92 artificial islands, 750,000 tons of basalt 'logs' transported to a coral reef, elaborate canal network. But where did they get freshwater? The site is surrounded by seawater. Possible rainwater cisterns, possible submarine springs—we still don't know. The canals themselves are engineering marvels, designed to handle tidal flows.",
+      modernLegacy: "UNESCO World Heritage site. Nan Madol demonstrates Pacific Island engineering sophistication and remains a subject of ongoing archaeological research.",
+      sources: [
+        "Athens, J.S. Nan Madol: The City Built on Coral",
+        "UNESCO Nan Madol documentation"
+      ]
+    },
+    {
+      id: "ethiopia",
+      name: "Ethiopian Highlands",
+      region: "East Africa (Horn of Africa)",
+      period: {
+        start: -500,
+        end: 2026,
+        era: "Ancient through Present"
+      },
+      summary: "From the rock-hewn reservoirs of Axum to the drainage systems protecting Lalibela's churches, Ethiopian engineering adapted brilliantly to highland terrain.",
+      waterChallenges: [
+        "Managing water on the 'Roof of Africa'",
+        "Storing water through long dry seasons",
+        "Protecting rock-cut architecture from water damage",
+        "Supplying ancient trading city with no nearby river"
+      ],
+      inventions: ["mai-shum", "lalibela-drainage"],
+      keyInsight: "Lalibela's 11 rock-hewn churches have survived 800 years because their builders understood water. Drainage channels carved into solid rock prevent the erosion that destroys most ancient sites.",
+      engineerNotes: "Mai Shum (Queen of Sheba's Bath) at Axum is a massive rock-cut reservoir still used for baptisms today. At Lalibela, the drainage engineering protecting the rock-hewn churches astonished me—channels carved from living rock that have prevented erosion for 800 years. Ethiopian engineers understood that protecting their monumental architecture meant controlling water.",
+      modernLegacy: "Ethiopian traditional water management informs modern highland agriculture. The Grand Ethiopian Renaissance Dam represents the latest chapter in Ethiopian hydraulic ambition.",
+      sources: [
+        "Finneran, N. The Archaeology of Ethiopia",
+        "Phillipson, D.W. Ancient Ethiopia"
       ]
     }
   ]
