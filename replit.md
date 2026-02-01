@@ -77,6 +77,10 @@ The game showcases how water shaped human civilization through:
 ### 3D Effects
 - **WaterParticles**: Animated falling water droplet particles in the 3D scene
 
+### Reference Data
+- **TechnologyLibrary**: Encyclopedia of 25 historical water technologies with filtering by category and civilization
+- **historicalTechnologies.ts**: Comprehensive dataset of water engineering innovations from 6000 BCE to 15th century CE
+
 ### Data Structure
 - **Regions**: 9 civilizations with era, date range, position, color (includes Modern Era)
 - **Locations**: Historical sites with coordinates and historical context

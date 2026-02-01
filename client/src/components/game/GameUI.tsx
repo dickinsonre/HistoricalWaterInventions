@@ -16,6 +16,7 @@ import WhyThisMatters from "./WhyThisMatters";
 import SmartSearch from "./SmartSearch";
 import TimeTravel from "./TimeTravel";
 import ChallengeModes from "./ChallengeModes";
+import TechnologyLibrary from "./TechnologyLibrary";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
@@ -40,6 +41,7 @@ export default function GameUI() {
   const [showSearch, setShowSearch] = useState(false);
   const [showTimeTravel, setShowTimeTravel] = useState(false);
   const [showChallenges, setShowChallenges] = useState(false);
+  const [showLibrary, setShowLibrary] = useState(false);
   const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
   const [selectedCivilization, setSelectedCivilization] = useState<string | null>(null);
 
@@ -149,6 +151,22 @@ export default function GameUI() {
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
                 Timeline Filter
+              </TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowLibrary(!showLibrary)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <BookOpen size={16} className="text-[var(--cerulean)]" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Technology Encyclopedia
               </TooltipContent>
             </Tooltip>
 
@@ -493,6 +511,11 @@ export default function GameUI() {
           <ChallengeModes onClose={() => setShowChallenges(false)} />
         </div>
       )}
+
+      <TechnologyLibrary
+        isOpen={showLibrary}
+        onClose={() => setShowLibrary(false)}
+      />
 
       <div className="absolute bottom-4 right-4 pointer-events-auto">
           <Tooltip>

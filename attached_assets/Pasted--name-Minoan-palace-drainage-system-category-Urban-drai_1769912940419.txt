@@ -1,0 +1,85 @@
+[
+  {
+    "name": "Minoan palace drainage system",
+    "category": "Urban drainage and sewerage",
+    "civilizations": ["Minoan (Crete)"],
+    "sites": ["Knossos", "Tylissos", "Phaistos", "Zakro", "Myrtos-Pyrgos"],
+    "period_BCE_CE": "c. 2000–1400 BCE",
+    "primary_uses": ["Stormwater drainage", "Wastewater conveyance", "Toilet flushing"],
+    "key_principle": "Network of stone channels and terracotta conduits, partly covered and partly open-topped, collects runoff and household wastewater and discharges it downslope away from the palace.",
+    "design_features": [
+      "Stone-lined floor channels with carefully graded slopes",
+      "Zigzag channel geometry and catchment basins to reduce flow velocity and capture sediment",
+      "Covered conduits and manholes for access and maintenance",
+      "Outfalls directing flows off the palace hill toward natural drainage paths"
+    ],
+    "notes": "Stormwater from courts and roofs, greywater from baths, and toilet wastes were routed into a common drainage network that protected the multi-story complexes from flooding and unsanitary ponding.",
+    "sources": ["web:12", "web:19", "web:22", "web:25"]
+  },
+  {
+    "name": "Knossos stormwater runoff system",
+    "category": "Storm drainage",
+    "civilizations": ["Minoan (Crete)"],
+    "sites": ["Knossos"],
+    "period_BCE_CE": "c. 1900–1400 BCE",
+    "primary_uses": ["Stormwater interception", "Flood risk reduction"],
+    "key_principle": "Surface channels in paved courts collect intense rainfall, route it into zigzag conduits with intermediate basins, and then into larger buried drains leading off the hill.",
+    "design_features": [
+      "Surface inlets and grooves in pavements to intercept sheet flow",
+      "Zigzag channels to dissipate energy during torrential rains",
+      "Catchment basins acting as local sumps and sediment traps",
+      "Buried trunk drains tied to the natural slope of the site"
+    ],
+    "notes": "The system reflects awareness of short, intense Mediterranean storms and the need to avoid erosion of the palace foundations.",
+    "sources": ["web:19", "web:22", "web:25"]
+  },
+  {
+    "name": "Terracotta drainage pipes",
+    "category": "Drainage conduits",
+    "civilizations": ["Minoan (Crete)"],
+    "sites": ["Knossos", "Tylissos", "Phaistos", "Zakro", "Myrtos-Pyrgos"],
+    "period_BCE_CE": "c. 2000–1400 BCE",
+    "primary_uses": ["Stormwater conveyance", "Wastewater drainage", "Water supply (dual use)"],
+    "key_principle": "Segmented terracotta conduits, often conical or rectangular, joined with flanged ends and mortar, convey water under gravity in closed or semi-closed sections.",
+    "design_features": [
+      "Pipe segments 0.6–0.75 m long with carefully shaped joints",
+      "Conical geometry unique to Minoan Crete, improving hydraulic behavior and joint fit",
+      "Use for both drainage and supply, depending on alignment and connection",
+      "Rectangular sections at sites like Myrtos-Pyrgos specifically for roof runoff drainage"
+    ],
+    "notes": "Quality of manufacture and jointing is comparable to later classical systems and allowed some pressurized or near-pressurized operation in parts of the network.",
+    "sources": ["web:20", "web:23", "web:26", "web:29"]
+  },
+  {
+    "name": "Minoan flush-type toilets and drains",
+    "category": "Sanitation and drainage",
+    "civilizations": ["Minoan (Crete)"],
+    "sites": ["Knossos"],
+    "period_BCE_CE": "c. 1700–1400 BCE",
+    "primary_uses": ["Human waste disposal"],
+    "key_principle": "Latrine seats located over vertical or sloping drains are cleared by poured water, which carries waste into the palace drainage system.",
+    "design_features": [
+      "Stone or built toilet seats over channels connected to main drains",
+      "Use of stored water from basins or cisterns to provide a flushing action",
+      "Integration of toilet outfalls with general drainage conduits"
+    ],
+    "notes": "These installations are among the earliest known examples of water-assisted toilet drainage in the Western world.",
+    "sources": ["web:19", "web:21", "web:22", "web:24", "web:27"]
+  },
+  {
+    "name": "Rainwater harvesting to cisterns via drains",
+    "category": "Rainwater harvesting and drainage",
+    "civilizations": ["Minoan (Crete)"],
+    "sites": ["Tylissos", "Myrtos-Pyrgos", "other palatial centers"],
+    "period_BCE_CE": "c. 1900–1400 BCE",
+    "primary_uses": ["Non-potable supply", "Supplemental potable use", "Palace water security"],
+    "key_principle": "Roof and courtyard runoff captured by surface channels and terracotta pipes is routed into storage cisterns before overflow continues to the drainage network.",
+    "design_features": [
+      "Dedicated roof drains feeding rectangular-section pipes",
+      "Cistern inlets located below grade to accept inflow from pipes",
+      "Overflow connections from cisterns back into drainage conduits"
+    ],
+    "notes": "This linkage between drainage and storage allowed palaces to buffer seasonal variability while still managing peak flows.",
+    "sources": ["web:16", "web:20", "web:23"]
+  }
+]
