@@ -4130,6 +4130,275 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "etruscan",
+      name: "Etruscan Civilization",
+      description: "Rome's teachers in hydraulic engineering. Drained marshes, built drainage tunnels, created underground water systems.",
+      position: [-3, 0, -8],
+      color: "#8B4513",
+      era: "classical",
+      dateRange: "900 BCE - 90 BCE",
+      locations: [
+        {
+          id: "etruscan-cuniculi",
+          name: "Cuniculi Networks of Veii",
+          description: "Underground drainage tunnels transforming marshes to farmland",
+          historicalContext: "Romans hired Etruscan engineers who'd been tunneling for centuries",
+          coordinates: { lat: 42.0, lng: 12.4 },
+          artifacts: [
+            {
+              id: "etruscan-cuniculi",
+              name: "Cuniculi Drainage Tunnel System",
+              description: "Sophisticated underground tunnel networks that drained marshes, captured groundwater, and transformed swamps into farmland",
+              rarity: "legendary",
+              historicalPeriod: "Etruscan (700-200 BCE)",
+              significance: "50+ km at Veii alone; hand-cut through volcanic tufa; vertical shafts every 30-35m; some STILL draining fields today after 2,500 years",
+              yearBCE: 700,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "etruscan-cloaca",
+          name: "Cloaca Maxima, Rome",
+          description: "The world's oldest major infrastructure still in continuous use",
+          historicalContext: "Etruscan-designed and built, 2,600 years and counting",
+          coordinates: { lat: 41.89, lng: 12.48 },
+          artifacts: [
+            {
+              id: "etruscan-cloaca-maxima",
+              name: "Cloaca Maxima (Great Sewer)",
+              description: "The greatest sewer of the ancient world, Etruscan-designed, that drained the Roman Forum and enabled Rome to exist",
+              rarity: "legendary",
+              historicalPeriod: "Etruscan-Roman (600 BCE - Present)",
+              significance: "4.2m diameter barrel vault; STILL drains central Rome; 2,600+ years continuous operation; made Rome possible as a city",
+              yearBCE: 600,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "etruscan-orvieto",
+          name: "Orvieto Underground City",
+          description: "1,200+ cisterns carved into solid rock plateau",
+          historicalContext: "A city that hollowed out its own foundation to survive",
+          coordinates: { lat: 42.72, lng: 12.11 },
+          artifacts: [
+            {
+              id: "etruscan-rock-cisterns",
+              name: "Etruscan Rock-Cut Water Systems",
+              description: "Sophisticated underground water storage carved into volcanic rock, supplying hilltop cities with no surface water",
+              rarity: "epic",
+              historicalPeriod: "Etruscan (800-200 BCE)",
+              significance: "Orvieto: 1,200+ cisterns, 500+ wells, 800+ tunnels; bottle-shaped chambers minimize evaporation; enabled siege resistance; still collects water today",
+              yearBCE: 800,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "etruscan-temples",
+          name: "Sacred Water Sites of Etruria",
+          description: "Temple complexes with sacred springs for divine communication",
+          historicalContext: "For Etruscans, springs were mouths of the gods",
+          coordinates: { lat: 42.05, lng: 11.95 },
+          artifacts: [
+            {
+              id: "etruscan-sacred-water",
+              name: "Etruscan Sacred Water Architecture",
+              description: "Temple complexes integrating sacred springs, ritual pools, and hydraulic features for religious ceremonies",
+              rarity: "rare",
+              historicalPeriod: "Etruscan (700-100 BCE)",
+              significance: "Springs = divine portals; votive anatomical offerings for healing; 50+ sanctuary sites documented; influenced Roman temple design",
+              yearBCE: 700,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "etruscan-terraces",
+          name: "Tuscan Wine Terraces",
+          description: "2,700 years of continuous wine production on Etruscan-terraced hillsides",
+          historicalContext: "When you drink Chianti, you're tasting 2,700 years of history",
+          coordinates: { lat: 43.3, lng: 11.4 },
+          artifacts: [
+            {
+              id: "etruscan-agricultural-terracing",
+              name: "Etruscan Agricultural Terracing",
+              description: "Terracing, irrigation channels, and water control systems that made Etruscan agriculture legendarily productive",
+              rarity: "common",
+              historicalPeriod: "Etruscan (700-100 BCE)",
+              significance: "Chianti wine region = Etruscan heartland; terraces still visible beneath modern vineyards; exported wine throughout Mediterranean",
+              yearBCE: 700,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "etruscan-marzabotto",
+          name: "Marzabotto Urban Grid",
+          description: "Best-preserved Etruscan city with integrated water infrastructure",
+          historicalContext: "Template for Roman colonial cities across the empire",
+          coordinates: { lat: 44.27, lng: 11.19 },
+          artifacts: [
+            {
+              id: "etruscan-urban-networks",
+              name: "Etruscan Urban Water Networks",
+              description: "Integrated urban systems combining supply, distribution, drainage, and wastewater in planned cities",
+              rarity: "epic",
+              historicalPeriod: "Etruscan (600-100 BCE)",
+              significance: "Every street has drainage; every block has water access; underground collector tunnels; Romans copied this template exactly",
+              yearBCE: 600,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "viking",
+      name: "Viking Civilization",
+      description: "Masters of water in all its forms. Didn't just cross oceans - understood water more deeply than any medieval civilization.",
+      position: [-2, 0, -12],
+      color: "#4682B4",
+      era: "medieval",
+      dateRange: "700 CE - 1200 CE",
+      locations: [
+        {
+          id: "viking-oseberg",
+          name: "Viking Ship Building Sites",
+          description: "Revolutionary clinker-built longship technology",
+          historicalContext: "The technology that made Vikings the dominant maritime power",
+          coordinates: { lat: 59.26, lng: 10.41 },
+          artifacts: [
+            {
+              id: "viking-clinker-longship",
+              name: "Clinker-Built Longship Technology",
+              description: "Revolutionary ship construction enabling ocean crossing, river navigation, beach landing, and overland portage",
+              rarity: "legendary",
+              historicalPeriod: "Viking Age (300-1200 CE)",
+              significance: "Enabled North America 500 years before Columbus; 0.5m draft = river penetration; Gokstad replica crossed Atlantic in 1893 averaging 10 knots",
+              yearBCE: -700,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "viking-voyages",
+          name: "North Atlantic Crossing Routes",
+          description: "Freshwater management for weeks-long ocean voyages",
+          historicalContext: "The main worry wasn't storms - it was whether water casks would last",
+          coordinates: { lat: 63.0, lng: -20.0 },
+          artifacts: [
+            {
+              id: "viking-freshwater-management",
+              name: "Viking Shipboard Freshwater Systems",
+              description: "Sophisticated techniques for carrying, preserving, and rationing freshwater during ocean voyages lasting weeks",
+              rarity: "epic",
+              historicalPeriod: "Viking Age (700-1100 CE)",
+              significance: "Charred barrel interiors; fermented whey additives; rain catchment via sail; strict rationing; knowledge of every coastal spring Norway to Newfoundland",
+              yearBCE: -800,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "viking-navigation",
+          name: "Viking Navigation Routes",
+          description: "Reading water itself for navigation without instruments",
+          historicalContext: "Found North America without compass, charts, or sextant",
+          coordinates: { lat: 64.0, lng: -18.0 },
+          artifacts: [
+            {
+              id: "viking-water-reading",
+              name: "Viking Navigational Water Reading",
+              description: "Extraordinary ability to read water conditions - currents, colors, temperatures, sea life, wave patterns - for navigation without instruments",
+              rarity: "legendary",
+              historicalPeriod: "Viking Age (700-1200 CE)",
+              significance: "Water color analysis (blue=deep, green=shallow); wave refraction patterns reveal distant land; birds indicate direction; found Iceland, Greenland, Vinland",
+              yearBCE: -800,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "viking-harbors",
+          name: "Norwegian Fjord Settlements",
+          description: "Naust boathouses and harbor infrastructure in extreme terrain",
+          historicalContext: "Some naust are still used today",
+          coordinates: { lat: 60.4, lng: 5.3 },
+          artifacts: [
+            {
+              id: "viking-fjord-harbors",
+              name: "Viking Fjord Harbor Engineering",
+              description: "Engineering harbors, boat shelters (naust), and waterfront structures in challenging fjord environments with extreme tides",
+              rarity: "rare",
+              historicalPeriod: "Viking Age (500-1200 CE)",
+              significance: "Naust up to 40m long; positioned at exact tidal boundary; stone breakwaters; Hedeby and Birka major trading ports",
+              yearBCE: -600,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "viking-portage",
+          name: "Varangian Trade Routes",
+          description: "Baltic to Black Sea via rivers and overland portages",
+          historicalContext: "Vikings created medieval intermodal shipping",
+          coordinates: { lat: 58.5, lng: 31.3 },
+          artifacts: [
+            {
+              id: "viking-portage-systems",
+              name: "Viking Portage & River Towing Systems",
+              description: "Techniques for moving ships overland between waterways and towing upstream - enabling routes from Baltic to Black Sea",
+              rarity: "epic",
+              historicalPeriod: "Viking Age (700-1100 CE)",
+              significance: "Stockholm to Constantinople = 3,000km navigable; log roller portages up to 30km; founded Kievan Rus (Russia); word 'Russia' from 'Rus' (rowers)",
+              yearBCE: -800,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "viking-greenland",
+          name: "Greenland Viking Settlements",
+          description: "400 years of Arctic water and ice survival",
+          historicalContext: "Colonized Greenland with no modern technology",
+          coordinates: { lat: 61.0, lng: -45.0 },
+          artifacts: [
+            {
+              id: "viking-arctic-ice",
+              name: "Viking Arctic Water & Ice Technology",
+              description: "Specialized techniques for dealing with sea ice, ice navigation, and survival in Arctic conditions during Greenland colonization",
+              rarity: "rare",
+              historicalPeriod: "Viking Age (800-1400 CE)",
+              significance: "Ice color reading (white=new/salty, blue=old/fresh); old sea ice becomes drinkable; 400-year Greenland colony; 5,000 peak population",
+              yearBCE: -985,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "viking-mills",
+          name: "Faroese Water Mills",
+          description: "Horizontal watermills still operating after 1,000 years",
+          historicalContext: "Vikings solved what Roman engineering couldn't: milling with tiny streams",
+          coordinates: { lat: 62.0, lng: -7.0 },
+          artifacts: [
+            {
+              id: "viking-horizontal-watermill",
+              name: "Viking Horizontal Watermill (Kvern)",
+              description: "Small-scale horizontal watermills that brought grain processing to scattered Scandinavian settlements with limited water flow",
+              rarity: "common",
+              historicalPeriod: "Viking Age - Present (700 CE - Present)",
+              significance: "No gears needed; works with tiny streams; individual farm scale; traditional mills STILL operate in Faeroes; 1,000 years continuous use",
+              yearBCE: -800,
+              category: "water-clock"
+            }
+          ]
+        }
+      ]
     }
   ]
 };

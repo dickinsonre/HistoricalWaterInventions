@@ -2,13 +2,13 @@
 
 ## Overview
 
-Historical Mystery is a 2D interactive educational game exploring humanity's water innovations throughout history. Players explore **72 civilizations** across 6 continents, discover **220+ water inventions** spanning 40,000+ years, and learn about the genius of hydraulic engineering across ages. Features an interactive world map with realistic Earth background, comprehensive encyclopedia with URL-based navigation, SWMM5 export functionality with **66+ downloadable hydraulic simulation models** (copy-to-clipboard to avoid antivirus issues), educational mini-games, and expert commentary from Robert Dickinson (50+ years water engineering experience).
+Historical Mystery is a 2D interactive educational game exploring humanity's water innovations throughout history. Players explore **74 civilizations** across 6 continents, discover **235+ water inventions** spanning 40,000+ years, and learn about the genius of hydraulic engineering across ages. Features an interactive world map with realistic Earth background, comprehensive encyclopedia with URL-based navigation, SWMM5 export functionality with **66+ downloadable hydraulic simulation models** (copy-to-clipboard to avoid antivirus issues), educational mini-games, and expert commentary from Robert Dickinson (50+ years water engineering experience).
 
 ## Theme: Ancient Waters
 
 The game showcases how water shaped human civilization through:
-- **72 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Medieval India, Ancient Greece, Roman Empire, Ancient China, Ancient Persia, Khmer Empire, Cambodia, Inca Empire, Aboriginal Australia, Ancient Korea, Great Zimbabwe, Nan Madol, Modern Japan (G-Cans), Siam (Thailand), Hawaiian, Ethiopian Highlands, Sahel Africa, Engaruka, Chamorro, Dutch Netherlands, Burma/Myanmar, Vietnam, Pre-Roman Europe, Philippines, Singapore, Malaysia, UAE, Israel, Yemen, Bangladesh, Al-Andalus, Oman, Venice, Silk Road, Amazon Basin, Mississippian Cahokia, Hohokam, Pacific Northwest, Siberia-Yakutia, Inuit Arctic, Swahili Coast, Kongo Kingdom, Mali-Timbuktu, Borneo, Papua New Guinea, Pre-Roman Iberia, Basque Country, Celtic Europe, Gaul, Germanic Europe, and more
-- **220+ Water Inventions**: Aqueducts, stepwells, irrigation, klongs, qanats, terraces, reservoirs, canals, moats, flood control, G-Cans, ondol heating, fish traps, tanada, suikinkutsu, barays, floating gardens, inverted siphons, orifice controls, hydraulic mining, terp mounds, bog iron extraction, timber trackways, and more
+- **74 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Medieval India, Ancient Greece, Roman Empire, Ancient China, Ancient Persia, Khmer Empire, Cambodia, Inca Empire, Aboriginal Australia, Ancient Korea, Great Zimbabwe, Nan Madol, Modern Japan (G-Cans), Siam (Thailand), Hawaiian, Ethiopian Highlands, Sahel Africa, Engaruka, Chamorro, Dutch Netherlands, Burma/Myanmar, Vietnam, Pre-Roman Europe, Philippines, Singapore, Malaysia, UAE, Israel, Yemen, Bangladesh, Al-Andalus, Oman, Venice, Silk Road, Amazon Basin, Mississippian Cahokia, Hohokam, Pacific Northwest, Siberia-Yakutia, Inuit Arctic, Swahili Coast, Kongo Kingdom, Mali-Timbuktu, Borneo, Papua New Guinea, Pre-Roman Iberia, Basque Country, Celtic Europe, Gaul, Germanic Europe, Etruscan, Viking, and more
+- **235+ Water Inventions**: Aqueducts, stepwells, irrigation, klongs, qanats, terraces, reservoirs, canals, moats, flood control, G-Cans, ondol heating, fish traps, tanada, suikinkutsu, barays, floating gardens, inverted siphons, orifice controls, hydraulic mining, terp mounds, bog iron extraction, timber trackways, cuniculi tunnels, Cloaca Maxima, clinker longships, portage systems, and more
 - **Time Periods**: Ancient (40,000-500 BCE), Classical (500 BCE-500 CE), Medieval (500-1400 CE), Modern (1400 CE-Present)
 - **SWMM5 Models**: 66+ downloadable hydraulic simulation models for educational use
 
@@ -94,14 +94,31 @@ The game showcases how water shaped human civilization through:
 - **SWMM5Models**: Modal for downloading/copying hydraulic simulation models
 
 ### Data Structure
-- **Regions**: 72 civilizations with era, date range, position, color
+- **Regions**: 74 civilizations with era, date range, position, color
 - **Locations**: Historical sites with coordinates and historical context
 - **Artifacts**: Water inventions with category, rarity, year, significance
 - **Categories**: irrigation, aqueduct, water-lifting, sanitation, dam, water-clock, fountain, canal
 - **Rarities**: common, rare, epic, legendary
-- **Diagrams**: 140+ technical illustrations in /diagrams/ folder
+- **Diagrams**: 152+ technical illustrations in /diagrams/ folder
 
 ## Recent Additions
+
+### Etruscan Civilization (900-90 BCE)
+- **Cuniculi Drainage Tunnels** (Legendary): 50+ km at Veii, some still draining after 2,500 years
+- **Cloaca Maxima** (Legendary): World's oldest infrastructure still in use - 2,600 years
+- **Rock-Cut Cisterns** (Epic): Orvieto's 1,200+ cisterns carved into rock
+- **Sacred Water Architecture** (Rare): Temple spring complexes, divine portals
+- **Agricultural Terracing** (Common): Tuscany wine landscapes shaped 2,700 years ago
+- **Urban Water Networks** (Epic): Template for Roman colonial cities
+
+### Viking Civilization (700-1200 CE)
+- **Clinker-Built Longships** (Legendary): Ocean crossing 500 years before Columbus
+- **Shipboard Freshwater Systems** (Epic): Charred casks, rain catchment, strict rationing
+- **Navigational Water Reading** (Legendary): Found Vinland without instruments
+- **Fjord Harbor Engineering** (Rare): 40m naust boathouses at tidal boundaries
+- **Portage & River Systems** (Epic): Baltic to Black Sea via ship-carrying
+- **Arctic Ice Technology** (Rare): 400-year Greenland colony survival
+- **Horizontal Watermills** (Common): Still operating in Faeroes after 1,000 years
 
 ### Pre-Roman & Early Medieval European Civilizations
 - **Pre-Roman Iberia** (3 inventions): Tartessian Hydraulic Mining, Iberian Cisterns, Celtiberian Irrigation
@@ -151,6 +168,11 @@ client/src/
 
 ## Changelog
 
+- February 01, 2026: Etruscan & Viking civilizations expansion
+  - Added Etruscan civilization (6 inventions): Cuniculi tunnels, Cloaca Maxima, rock-cut cisterns, sacred water, terracing, urban networks
+  - Added Viking civilization (7 inventions): Clinker longships, freshwater management, water reading navigation, fjord harbors, portage systems, Arctic ice tech, watermills
+  - Generated 12 new technical diagrams
+  - Total now: 74 civilizations, 235+ inventions
 - February 01, 2026: Pre-Roman European civilizations expansion
   - Added 5 new civilizations: Pre-Roman Iberia, Basque Country, Celtic Europe, Gaul, Germanic Europe
   - Added 19 new inventions with diagrams
