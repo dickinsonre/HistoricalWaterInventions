@@ -1434,6 +1434,236 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "ancient-japan",
+      name: "Ancient Japan",
+      description: "Masters of water gardens: from rice paddies to zen reflection pools",
+      position: [18, 0, 2],
+      color: "#DC143C",
+      era: "medieval",
+      dateRange: "300 BCE - 1600 CE",
+      locations: [
+        {
+          id: "nara-region",
+          name: "Nara & Kyoto Water Systems",
+          description: "Imperial capitals with sophisticated water management",
+          historicalContext: "Japanese engineers adapted Chinese techniques to local conditions",
+          coordinates: { lat: 34.6851, lng: 135.8048 },
+          artifacts: [
+            {
+              id: "suido",
+              name: "Suido (Water Conduit System)",
+              description: "Bamboo and ceramic pipe networks supplying castle towns and temples",
+              rarity: "rare",
+              historicalPeriod: "Edo Period (1600 CE)",
+              significance: "Tokyo's water supply system dates to 1590—still partially in use",
+              yearBCE: -1590,
+              category: "aqueduct"
+            },
+            {
+              id: "shishi-odoshi",
+              name: "Shishi-odoshi (Deer Scarer)",
+              description: "Bamboo water hammer device using water power to create sound",
+              rarity: "rare",
+              historicalPeriod: "Edo Period (1600 CE)",
+              significance: "Elegant fusion of water engineering and garden aesthetics",
+              yearBCE: -1600,
+              category: "fountain"
+            },
+            {
+              id: "tanada",
+              name: "Tanada (Terraced Rice Paddies)",
+              description: "Mountain rice terraces with intricate water distribution",
+              rarity: "epic",
+              historicalPeriod: "Yayoi Period (300 BCE)",
+              significance: "Transformed Japanese landscape and supported population growth",
+              yearBCE: 300,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "dutch-netherlands",
+      name: "Dutch Netherlands",
+      description: "Land from the sea: windmills, polders, and the battle against water",
+      position: [2, 0, -6],
+      color: "#FF8C00",
+      era: "medieval",
+      dateRange: "1200 CE - Present",
+      locations: [
+        {
+          id: "kinderdijk",
+          name: "Kinderdijk Windmills",
+          description: "UNESCO World Heritage windmill system for land drainage",
+          historicalContext: "Dutch reclaimed 1/3 of their country from sea and swamps",
+          coordinates: { lat: 51.8839, lng: 4.6381 },
+          artifacts: [
+            {
+              id: "polder-system",
+              name: "Polder System",
+              description: "Reclaimed land protected by dikes and drained by windmills",
+              rarity: "legendary",
+              historicalPeriod: "Medieval Period (1200 CE)",
+              significance: "Created a nation below sea level—model for land reclamation worldwide",
+              yearBCE: -1200,
+              category: "dam"
+            },
+            {
+              id: "windmill-pump",
+              name: "Drainage Windmill",
+              description: "Wind-powered scoop wheels lifting water from polders to canals",
+              rarity: "epic",
+              historicalPeriod: "15th Century CE",
+              significance: "At peak, 10,000 windmills drained the Netherlands",
+              yearBCE: -1400,
+              category: "water-lifting"
+            },
+            {
+              id: "gemaal",
+              name: "Gemaal (Pumping Station)",
+              description: "Steam and later electric pumps replacing windmills",
+              rarity: "rare",
+              historicalPeriod: "19th Century CE",
+              significance: "Ir.D.F. Woudagemaal (1920) is UNESCO World Heritage—world's largest steam pumping station",
+              yearBCE: -1920,
+              category: "water-lifting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ancient-india",
+      name: "Ancient India",
+      description: "Stepwells and tanks: water architecture as art and engineering",
+      position: [10, 0, 2],
+      color: "#FF6347",
+      era: "medieval",
+      dateRange: "3rd Century CE - 1800 CE",
+      locations: [
+        {
+          id: "rajasthan",
+          name: "Rajasthan Stepwells",
+          description: "Monumental subterranean architecture for water access",
+          historicalContext: "Desert state developed extraordinary water harvesting",
+          coordinates: { lat: 27.0238, lng: 74.2179 },
+          artifacts: [
+            {
+              id: "stepwell",
+              name: "Stepwell (Vav/Baoli)",
+              description: "Multi-story subterranean structures combining well, temple, and cooling retreat",
+              rarity: "legendary",
+              historicalPeriod: "3rd-19th Century CE",
+              significance: "Rani ki Vav (1063 CE) is UNESCO World Heritage—inverted temple descending 7 stories",
+              yearBCE: -300,
+              category: "fountain"
+            },
+            {
+              id: "johad",
+              name: "Johad (Earthen Dam)",
+              description: "Traditional rainwater harvesting structures reviving dried rivers",
+              rarity: "epic",
+              historicalPeriod: "Ancient - Present",
+              significance: "Modern revival brought 5 rivers back to life in Rajasthan",
+              yearBCE: -500,
+              category: "dam"
+            },
+            {
+              id: "tank-system",
+              name: "Tank Irrigation System",
+              description: "Interconnected reservoir networks across South India",
+              rarity: "rare",
+              historicalPeriod: "Chola Period (300 BCE)",
+              significance: "Grand Anicut dam (2nd century) is oldest water-diversion structure in the world still in use",
+              yearBCE: 200,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "hawaiian",
+      name: "Hawaiian",
+      description: "Lo'i kalo: taro pondfields as sustainable aquaculture",
+      position: [8, 0, 10],
+      color: "#20B2AA",
+      era: "medieval",
+      dateRange: "400 CE - Present",
+      locations: [
+        {
+          id: "kauai",
+          name: "Hanalei Valley",
+          description: "Traditional taro cultivation with sophisticated water management",
+          historicalContext: "Polynesians brought taro cultivation techniques to Hawaii",
+          coordinates: { lat: 22.1919, lng: -159.4693 },
+          artifacts: [
+            {
+              id: "loi-kalo",
+              name: "Lo'i Kalo (Taro Pondfield)",
+              description: "Flooded terraces for taro cultivation with continuous water flow",
+              rarity: "epic",
+              historicalPeriod: "400 CE onwards",
+              significance: "Sustainable aquaculture—water flows through fields, supporting fish and taro together",
+              yearBCE: -400,
+              category: "irrigation"
+            },
+            {
+              id: "auwai",
+              name: "'Auwai (Irrigation Ditch)",
+              description: "Stone-lined channels diverting stream water to taro fields",
+              rarity: "rare",
+              historicalPeriod: "400 CE onwards",
+              significance: "Community-managed water systems—ahupua'a land division followed watersheds",
+              yearBCE: -400,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ethiopian",
+      name: "Ethiopian Highlands",
+      description: "Ancient water systems at the roof of Africa",
+      position: [6, 0, 6],
+      color: "#006400",
+      era: "ancient",
+      dateRange: "500 BCE - Present",
+      locations: [
+        {
+          id: "axum",
+          name: "Axum & Lalibela",
+          description: "Rock-hewn reservoirs and churches with sophisticated drainage",
+          historicalContext: "Ethiopian engineering adapted to highland terrain",
+          coordinates: { lat: 14.1310, lng: 38.7189 },
+          artifacts: [
+            {
+              id: "mai-shum",
+              name: "Mai Shum (Queen of Sheba's Bath)",
+              description: "Ancient rock-carved reservoir still used for water storage and baptisms",
+              rarity: "epic",
+              historicalPeriod: "1st Millennium BCE",
+              significance: "Massive rock-cut pool demonstrates advanced Aksumite engineering",
+              yearBCE: 500,
+              category: "dam"
+            },
+            {
+              id: "lalibela-drainage",
+              name: "Lalibela Church Drainage",
+              description: "Sophisticated water management protecting rock-hewn churches",
+              rarity: "legendary",
+              historicalPeriod: "12th Century CE",
+              significance: "11 rock churches carved from single blocks—drainage prevents erosion after 800 years",
+              yearBCE: -1200,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
     }
   ]
 };

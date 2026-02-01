@@ -427,7 +427,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 Discover How Water Shaped History
               </h3>
               <p className="text-[var(--parchment)]/90 text-sm mb-3">
-                Explore 25 civilizations and discover 78+ water inventions in the 3D world, plus 80+ in our encyclopedia. From ancient shaduf to Roman aqueducts to Aboriginal fish traps.
+                Explore 30 civilizations and discover 93+ water inventions across 6 continents. From 40,000-year-old Aboriginal fish traps to Dutch polders to Indian stepwells.
               </p>
               <div className="flex gap-2">
                 <Button

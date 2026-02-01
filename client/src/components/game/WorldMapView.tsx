@@ -33,7 +33,12 @@ const civilizationLocations: Record<string, { x: number; y: number; region: stri
   "inca-empire": { x: 24, y: 62, region: "Peru" },
   "balinese": { x: 80, y: 56, region: "Indonesia" },
   "aboriginal-australia": { x: 86, y: 68, region: "Australia" },
-  "austronesian": { x: 88, y: 58, region: "Pacific" }
+  "austronesian": { x: 88, y: 58, region: "Pacific" },
+  "ancient-japan": { x: 88, y: 34, region: "Japan" },
+  "dutch-netherlands": { x: 50, y: 26, region: "Netherlands" },
+  "ancient-india": { x: 70, y: 46, region: "India" },
+  "hawaiian": { x: 10, y: 48, region: "Hawaii" },
+  "ethiopian": { x: 60, y: 52, region: "Ethiopia" }
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {
