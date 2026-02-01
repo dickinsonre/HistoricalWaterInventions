@@ -12,10 +12,10 @@ const slides = [
     icon: Droplets,
     title: "Welcome to Historical Mystery",
     subtitle: "Discover How Water Shaped Civilization",
-    content: "Explore 30 civilizations and discover 93+ water inventions across 6 continents. From 40,000-year-old Aboriginal fish traps to Dutch polders to Japanese water gardens.",
+    content: "Explore 44 civilizations and discover 130+ water inventions across 6 continents. From 40,000-year-old Aboriginal fish traps to Korean ondol to Tokyo's G-Cans flood control.",
     stats: [
-      { value: "30", label: "Civilizations" },
-      { value: "93+", label: "Inventions" },
+      { value: "44", label: "Civilizations" },
+      { value: "130+", label: "Inventions" },
       { value: "40,000+", label: "Years of History" }
     ]
   },
@@ -24,7 +24,7 @@ const slides = [
     title: "Explore the Ancient World",
     subtitle: "Journey Across Continents",
     content: "Travel from the Nile Valley to the canals of China, from Roman aqueducts to Mayan reservoirs. Each civilization developed unique solutions to water challenges that still inspire engineers today.",
-    regions: ["Ancient Egypt", "Roman Empire", "Ancient Greece", "Mesopotamia", "Indus Valley", "Minoan Crete", "Ancient China", "Islamic Golden Age", "Mesoamerica", "Ancient Persia", "Khmer Empire", "Nubia", "Nabataean Kingdom", "Ancient Sri Lanka", "Ancestral Puebloans", "Byzantine Empire", "Inca Empire", "Balinese (Subak)", "Aboriginal Australia", "Austronesian", "Ancient Japan", "Dutch Netherlands", "Ancient India", "Hawaiian", "Ethiopian Highlands", "Modern Era"]
+    regions: ["Ancient Egypt", "Roman Empire", "Ancient Greece", "Mesopotamia", "Indus Valley", "Ancient China", "Ancient Persia", "Khmer Empire", "Inca Empire", "Aboriginal Australia", "Ancient Korea", "Great Zimbabwe", "Nan Madol", "Modern Japan (G-Cans)", "Hawaiian", "Ethiopian Highlands", "Sahel Africa", "Engaruka", "Chamorro", "Dutch Netherlands", "and more..."]
   },
   {
     icon: Clock,

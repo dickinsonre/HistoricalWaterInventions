@@ -40,7 +40,7 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                   World Map Explorer
                 </h3>
                 <p className="text-[var(--parchment)]/80 text-sm mb-4">
-                  Explore 30 civilizations on an interactive map with 93+ water inventions
+                  Explore 44 civilizations on an interactive map with 130+ water inventions
                 </p>
                 <span className="inline-block px-3 py-1 bg-[var(--cerulean)]/30 rounded-full text-xs text-[var(--aqua)] border border-[var(--aqua)]/30">
                   Interactive Map

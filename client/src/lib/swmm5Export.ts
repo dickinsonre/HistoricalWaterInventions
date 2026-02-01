@@ -556,6 +556,177 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       roughness: 0.015
     },
     engineeringNotes: 'Stone channels run through streets of the last living Inca town. Original layout still intact. Residents still use the 500-year-old water system'
+  },
+  'african-foggara': {
+    name: 'African Foggara (Khettara) System',
+    description: 'Underground water channels bringing mountain groundwater to desert oases',
+    civilization: 'Berber/Moroccan',
+    period: '1000 BCE - Present',
+    parameters: {
+      length: 5000,
+      slope: 0.003,
+      flowRate: 0.02,
+      tunnelDiameter: 1.5,
+      shaftSpacing: 25,
+      roughness: 0.030
+    },
+    engineeringNotes: 'African adaptation of Persian qanat. Some systems extend 10+ km with hundreds of shafts. UNESCO-recognized in Morocco. Water allocation measured by traditional copper water clocks'
+  },
+  'g-cans-tokyo': {
+    name: 'G-Cans Metropolitan Flood Control',
+    description: 'World\'s largest underground flood diversion system protecting Tokyo',
+    civilization: 'Modern Japan',
+    period: '1993-2006 CE',
+    parameters: {
+      length: 6300,
+      tunnelDiameter: 10.0,
+      flowRate: 200,
+      volume: 670000,
+      roughness: 0.013
+    },
+    engineeringNotes: '5 massive silos (65m deep, 32m diameter), 6.3km main tunnel, can move 200 m³/s. Protects 13 million Tokyo residents. Known as the "Underground Temple"'
+  },
+  'korean-byeokgolje': {
+    name: 'Byeokgolje Reservoir System',
+    description: 'One of Asia\'s oldest reservoirs with sophisticated sluice gate system',
+    civilization: 'Ancient Korea',
+    period: '330 CE',
+    parameters: {
+      length: 3300,
+      volume: 20000000,
+      reservoirDepth: 5,
+      flowRate: 15,
+      channelWidth: 2,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Built during Baekje Kingdom. Featured 5 wooden sluice gates (Sumunji). Stone-faced earthen dam (Piseok technique). Community water-sharing (Durye associations)'
+  },
+  'korean-cheonggye': {
+    name: 'Cheonggye Stream Urban Water Management',
+    description: 'Stone-lined urban stream with flood control through Seoul',
+    civilization: 'Ancient Korea',
+    period: '1411 CE restoration',
+    parameters: {
+      length: 5800,
+      slope: 0.003,
+      flowRate: 5,
+      channelWidth: 10,
+      channelDepth: 2,
+      roughness: 0.020
+    },
+    engineeringNotes: 'Major urban waterway through Joseon capital. Buried under highway in 1958, restored 2005. Model for worldwide urban stream restoration movement'
+  },
+  'hawaiian-ahupuaa': {
+    name: 'Hawaiian Ahupua\'a Watershed System',
+    description: 'Complete mountain-to-sea watershed management with taro irrigation',
+    civilization: 'Hawaiian',
+    period: '1000 CE - Present',
+    parameters: {
+      length: 8000,
+      slope: 0.08,
+      flowRate: 2,
+      channelWidth: 0.5,
+      channelDepth: 0.3,
+      roughness: 0.028
+    },
+    engineeringNotes: 'Land divided mountain-to-sea, each ahupua\'a self-sufficient. Upper forests protected for water supply. Strict konohiki (water manager) allocation system. Model for modern integrated watershed management'
+  },
+  'nan-madol-canals': {
+    name: 'Nan Madol Canal System',
+    description: 'Venice of the Pacific: canal network connecting 92 artificial islands',
+    civilization: 'Saudeleur Dynasty (Pohnpei)',
+    period: '1200-1500 CE',
+    parameters: {
+      length: 2000,
+      channelWidth: 8,
+      channelDepth: 2,
+      roughness: 0.025
+    },
+    engineeringNotes: 'UNESCO World Heritage. Built with estimated 750,000 tons of basalt "logs". Mystery: how 1,000+ residents got freshwater on a marine site—possibly rainwater cisterns or underwater springs'
+  },
+  'great-zimbabwe-drainage': {
+    name: 'Great Zimbabwe Drainage System',
+    description: 'Stone-lined drains integrated into Africa\'s largest medieval city walls',
+    civilization: 'Great Zimbabwe',
+    period: '11th-15th Century CE',
+    parameters: {
+      length: 500,
+      slope: 0.02,
+      flowRate: 0.5,
+      channelWidth: 0.4,
+      channelDepth: 0.3,
+      roughness: 0.022
+    },
+    engineeringNotes: 'Largest pre-colonial structure in sub-Saharan Africa. Drainage channels embedded in 5m thick curved walls. Supported 10,000-20,000 people. Controlled regional gold trade'
+  },
+  'engaruka-irrigation': {
+    name: 'Engaruka Stone Canal System',
+    description: 'Mysterious abandoned irrigation city that fed 40,000 people',
+    civilization: 'Engaruka (Tanzania)',
+    period: '15th-17th Century CE',
+    parameters: {
+      length: 10000,
+      slope: 0.01,
+      flowRate: 5,
+      channelWidth: 1.5,
+      channelDepth: 0.8,
+      roughness: 0.028
+    },
+    engineeringNotes: 'Fed 6,000+ hectares of terraces. Stone-lined canals with sophisticated distribution. Supported 30,000-40,000 people. Abandoned ~1700 CE for unknown reasons—possibly climate change'
+  },
+  'sahel-zai-pits': {
+    name: 'Sahel Zai Pit Water Harvesting',
+    description: 'Traditional planting pits concentrating rainfall in degraded soil',
+    civilization: 'Sahel Africa',
+    period: 'Ancient - Present',
+    parameters: {
+      catchmentArea: 10000,
+      volume: 5000,
+      slope: 0.005,
+      roughness: 0.035
+    },
+    engineeringNotes: 'Yacouba Sawadogo (Burkina Faso) revived ancient technique, transforming 3+ million hectares. Won Right Livelihood Award. Simple 20-30cm diameter pits with profound impact on food security'
+  },
+  'chamorro-latte': {
+    name: 'Chamorro Latte Stone Rain Catchers',
+    description: 'Mushroom-shaped stone pillars catching rain and channeling to gardens',
+    civilization: 'Chamorro (Mariana Islands)',
+    period: '1000 BCE - 1700 CE',
+    parameters: {
+      catchmentArea: 100,
+      volume: 500,
+      slope: 0.02,
+      roughness: 0.020
+    },
+    engineeringNotes: 'Dual-function architecture: capstones (tasa) supported buildings while collecting rain. Water channeled to garden areas. Cultural symbol of Chamorro people'
+  },
+  'japanese-tanada': {
+    name: 'Japanese Tanada (Rice Terraces)',
+    description: 'Mountain rice paddies with gravity-fed irrigation and flood control',
+    civilization: 'Ancient Japan',
+    period: '300 BCE - Present',
+    parameters: {
+      length: 2000,
+      slope: 0.08,
+      flowRate: 1.5,
+      channelWidth: 0.4,
+      channelDepth: 0.25,
+      roughness: 0.028
+    },
+    engineeringNotes: 'Over 2.5 million hectares in Japan. Community water allocation (mizu-bugyō). Terraces act as flood control reservoirs. UNESCO Globally Important Agricultural Heritage Systems'
+  },
+  'japanese-suikinkutsu': {
+    name: 'Suikinkutsu (Water Koto Cave)',
+    description: 'Buried ceramic pot creating musical sounds from dripping water',
+    civilization: 'Edo Japan',
+    period: '17th-19th Century CE',
+    parameters: {
+      length: 2,
+      volume: 100,
+      slope: 0.5,
+      roughness: 0.013
+    },
+    engineeringNotes: 'Purely aesthetic water "instrument". Inverted pot buried in gravel, resonates like koto string instrument. Combines hydraulic engineering with art. Unique to Japanese garden culture'
   }
 };
 
