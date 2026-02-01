@@ -3049,6 +3049,463 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "amazon-basin",
+      name: "Amazon Basin",
+      description: "Sophisticated civilizations that engineered water, soil, and landscape on massive scale",
+      position: [-10, 0, 4],
+      color: "#2E7D32",
+      era: "ancient",
+      dateRange: "3000 BCE - Present",
+      locations: [
+        {
+          id: "llanos-mojos",
+          name: "Llanos de Mojos",
+          description: "Bolivia's Amazon with 20,000+ km² of raised fields",
+          historicalContext: "Largest engineered landscape in pre-Columbian Americas",
+          coordinates: { lat: -14.5, lng: -65.5 },
+          artifacts: [
+            {
+              id: "amazon-raised-fields",
+              name: "Raised Field Agriculture (Camellones)",
+              description: "Elevated planting platforms turning seasonal floodplains into year-round farmland",
+              rarity: "legendary",
+              historicalPeriod: "Ancient (1000 BCE - 1500 CE)",
+              significance: "Supported 1+ million people; 200-400% yield increase over modern methods",
+              yearBCE: 1000,
+              category: "irrigation"
+            },
+            {
+              id: "amazon-causeways",
+              name: "Amazon Causeway Networks",
+              description: "Raised roads and drainage canals connecting settlements across wetlands",
+              rarity: "epic",
+              historicalPeriod: "400 - 1400 CE",
+              significance: "1,000+ km documented; revealed by LiDAR in 2022",
+              yearBCE: -400,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "xingu-river",
+          name: "Xingu River Region",
+          description: "Fish weirs and artificial rapids for mass harvest",
+          historicalContext: "Pre-Columbian fishing infrastructure still visible",
+          coordinates: { lat: -3.1, lng: -52.0 },
+          artifacts: [
+            {
+              id: "amazon-fish-weirs",
+              name: "Amazonian Fish Weirs",
+              description: "Stone structures funneling migrating fish into harvest zones",
+              rarity: "epic",
+              historicalPeriod: "2000 BCE - Present",
+              significance: "Still in active use; sustainable harvest for millennia",
+              yearBCE: 2000,
+              category: "irrigation"
+            },
+            {
+              id: "terra-preta",
+              name: "Terra Preta (Amazonian Dark Earth)",
+              description: "Artificially created super-fertile soil that regenerates itself using biochar",
+              rarity: "legendary",
+              historicalPeriod: "450 BCE - 950 CE",
+              significance: "10,000+ km² documented; still fertile after 2,000 years",
+              yearBCE: 450,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "varzea-region",
+          name: "Várzea Floodplains",
+          description: "Intensive cultivation of seasonally flooded riverside lands",
+          historicalContext: "Amazon's highest natural fertility zone",
+          coordinates: { lat: -2.5, lng: -54.5 },
+          artifacts: [
+            {
+              id: "varzea-agriculture",
+              name: "Várzea Floodplain Agriculture",
+              description: "Intensive cultivation following the annual 10-15 meter flood pulse",
+              rarity: "epic",
+              historicalPeriod: "3000 BCE - Present",
+              significance: "10-50× more productive than upland; supported millions historically",
+              yearBCE: 3000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "mississippian",
+      name: "Mississippian (Cahokia)",
+      description: "North America's largest pre-Columbian city with engineered water systems",
+      position: [-8, 0, -6],
+      color: "#8D6E63",
+      era: "medieval",
+      dateRange: "800 - 1400 CE",
+      locations: [
+        {
+          id: "cahokia",
+          name: "Cahokia",
+          description: "City of 20,000 - larger than London in 1250 CE",
+          historicalContext: "Largest pre-Columbian settlement north of Mexico",
+          coordinates: { lat: 38.7, lng: -90.1 },
+          artifacts: [
+            {
+              id: "cahokia-reservoir",
+              name: "Cahokia Reservoir System",
+              description: "Clay-lined water storage basins supplying North America's largest ancient city",
+              rarity: "legendary",
+              historicalPeriod: "1050 - 1200 CE",
+              significance: "Supported 20,000 people; largest reservoir 15,000+ m³",
+              yearBCE: -1050,
+              category: "dam"
+            },
+            {
+              id: "mississippian-drainage",
+              name: "Floodplain Drainage Engineering",
+              description: "Channel systems managing Mississippi River flooding",
+              rarity: "epic",
+              historicalPeriod: "900 - 1400 CE",
+              significance: "Made floodplain habitation possible; UNESCO World Heritage",
+              yearBCE: -900,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "hohokam",
+      name: "Hohokam Civilization",
+      description: "Built the largest pre-Columbian irrigation system in North America",
+      position: [-12, 0, -4],
+      color: "#FF7043",
+      era: "ancient",
+      dateRange: "300 - 1450 CE",
+      locations: [
+        {
+          id: "phoenix-basin",
+          name: "Phoenix Basin",
+          description: "500+ miles of ancient canals in Arizona desert",
+          historicalContext: "Modern Phoenix built on Hohokam engineering",
+          coordinates: { lat: 33.4, lng: -111.9 },
+          artifacts: [
+            {
+              id: "hohokam-canals",
+              name: "Hohokam Canal System",
+              description: "800+ km of hand-dug canals turning Arizona desert into farmland",
+              rarity: "legendary",
+              historicalPeriod: "300 - 1450 CE",
+              significance: "Largest pre-Columbian irrigation in North America; modern Phoenix follows same routes",
+              yearBCE: -300,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "chinook",
+      name: "Pacific Northwest Nations",
+      description: "Engineered one of world's most productive fisheries",
+      position: [-14, 0, -8],
+      color: "#00796B",
+      era: "ancient",
+      dateRange: "3000 BCE - Present",
+      locations: [
+        {
+          id: "columbia-river",
+          name: "Columbia River",
+          description: "Site of Celilo Falls - largest Native fishery in North America",
+          historicalContext: "11,000 years of continuous habitation until drowned by dam in 1957",
+          coordinates: { lat: 46.2, lng: -123.8 },
+          artifacts: [
+            {
+              id: "columbia-fish-weirs",
+              name: "Columbia River Fish Weirs",
+              description: "Massive stone and wood structures harvesting millions of salmon annually",
+              rarity: "epic",
+              historicalPeriod: "3000 BCE - 1850s CE",
+              significance: "Celilo Falls processed 10-15 million salmon annually; sustainable for millennia",
+              yearBCE: 3000,
+              category: "irrigation"
+            },
+            {
+              id: "clam-gardens",
+              name: "Clam Gardens (Rock Terraces)",
+              description: "Intertidal rock walls increasing clam habitat by 300%",
+              rarity: "epic",
+              historicalPeriod: "3000 BCE - Present",
+              significance: "1,000+ documented; still in use; 2-4× productivity increase",
+              yearBCE: 3000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "siberia-yakutia",
+      name: "Siberian Peoples",
+      description: "Water and ice technologies enabling survival in Earth's coldest inhabited places",
+      position: [18, 0, -8],
+      color: "#90CAF9",
+      era: "ancient",
+      dateRange: "30000 BCE - Present",
+      locations: [
+        {
+          id: "yakutsk-region",
+          name: "Yakutia Region",
+          description: "Coldest permanently inhabited place on Earth (-60°C winters)",
+          historicalContext: "Permafrost-based technologies for extreme cold survival",
+          coordinates: { lat: 62.0, lng: 129.7 },
+          artifacts: [
+            {
+              id: "yakutian-ice-houses",
+              name: "Yakutian Permafrost Cellars",
+              description: "Underground storage in permanently frozen ground maintaining -10°C year-round",
+              rarity: "epic",
+              historicalPeriod: "Ancient - Present",
+              significance: "Zero energy refrigeration; food preserved for years; influenced Svalbard Seed Vault",
+              yearBCE: 5000,
+              category: "dam"
+            },
+            {
+              id: "siberian-fish-traps",
+              name: "Siberian Fish Traps (Zapor)",
+              description: "River-spanning weirs and cone traps for mass salmon and whitefish harvest",
+              rarity: "epic",
+              historicalPeriod: "5000 BCE - Present",
+              significance: "Primary protein source; includes under-ice fishing through 2m ice",
+              yearBCE: 5000,
+              category: "irrigation"
+            },
+            {
+              id: "ice-roads",
+              name: "Frozen River Highways (Zimnik)",
+              description: "Frozen rivers and constructed ice roads as winter transportation network",
+              rarity: "epic",
+              historicalPeriod: "Ancient - Present",
+              significance: "30,000+ km network; supports 80-ton trucks; critical infrastructure",
+              yearBCE: 5000,
+              category: "canal"
+            },
+            {
+              id: "buluus-ice",
+              name: "Buluus Natural Ice Formations",
+              description: "Natural ice springs staying frozen year-round, used as community refrigerators",
+              rarity: "rare",
+              historicalPeriod: "Ancient",
+              significance: "Free summer refrigeration; navigation landmarks; cultural gathering points",
+              yearBCE: 10000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "inuit",
+      name: "Inuit & Arctic Peoples",
+      description: "Turned ice and frozen water from obstacles into essential resources",
+      position: [-6, 0, -12],
+      color: "#B3E5FC",
+      era: "ancient",
+      dateRange: "4000 BCE - Present",
+      locations: [
+        {
+          id: "arctic-region",
+          name: "Arctic Circle",
+          description: "World's harshest climate turned habitable through ice engineering",
+          historicalContext: "Technologies enabling human life at -40°C and below",
+          coordinates: { lat: 64.2, lng: -51.7 },
+          artifacts: [
+            {
+              id: "iglu-engineering",
+              name: "Iglu (Snow House) Engineering",
+              description: "Shelter built from snow maintaining +16°C interior at -40°C outside",
+              rarity: "legendary",
+              historicalPeriod: "1000+ years ago - Present",
+              significance: "50°C+ temperature differential; built in 1-2 hours; physics perfected",
+              yearBCE: 1000,
+              category: "dam"
+            },
+            {
+              id: "kayak-qajaq",
+              name: "Qajaq (Kayak)",
+              description: "Closed-deck watercraft enabling hunting in Arctic waters with rolling capability",
+              rarity: "legendary",
+              historicalPeriod: "4000+ years ago - Present",
+              significance: "Most successful watercraft design in history; $3+ billion global industry",
+              yearBCE: 4000,
+              category: "canal"
+            },
+            {
+              id: "freshwater-ice-harvest",
+              name: "Freshwater Ice Harvesting",
+              description: "Identifying and harvesting drinkable ice from the salty sea ice environment",
+              rarity: "epic",
+              historicalPeriod: "Ancient - Present",
+              significance: "Multi-year sea ice loses salt; blue/green color indicates freshwater",
+              yearBCE: 4000,
+              category: "dam"
+            },
+            {
+              id: "arctic-ice-fishing",
+              name: "Arctic Ice Fishing Technology",
+              description: "Specialized tools for fishing through 2m Arctic ice including ivory lures and kakivak spears",
+              rarity: "epic",
+              historicalPeriod: "4000+ years ago - Present",
+              significance: "Year-round protein; fish freeze instantly at -40°C",
+              yearBCE: 4000,
+              category: "irrigation"
+            },
+            {
+              id: "arctic-ice-cellars",
+              name: "Ice Cellars (Sigluaq)",
+              description: "Underground permafrost storage for whale meat and community food supplies",
+              rarity: "epic",
+              historicalPeriod: "Ancient - Present",
+              significance: "Whale meat from 1970s still frozen; climate change now threatens cellars",
+              yearBCE: 2000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "swahili-coast",
+      name: "Swahili Coast",
+      description: "Monsoon water harvesting supporting major Indian Ocean trade cities",
+      position: [8, 0, 6],
+      color: "#26A69A",
+      era: "medieval",
+      dateRange: "100 CE - Present",
+      locations: [
+        {
+          id: "kilwa-lamu",
+          name: "Kilwa & Lamu",
+          description: "Medieval trade cities rivaling European ports",
+          historicalContext: "Coral island cities with no rivers or groundwater",
+          coordinates: { lat: -6.2, lng: 39.2 },
+          artifacts: [
+            {
+              id: "swahili-cisterns",
+              name: "Swahili Cistern Systems (Birika)",
+              description: "Coral-block rainwater cisterns supporting 20,000-person cities on water-scarce islands",
+              rarity: "epic",
+              historicalPeriod: "1000 - 1500 CE",
+              significance: "UNESCO World Heritage; Lamu cisterns still functional after centuries",
+              yearBCE: -1000,
+              category: "dam"
+            },
+            {
+              id: "swahili-fish-traps",
+              name: "Tidal Fish Traps (Uzio)",
+              description: "Stone walls trapping fish as tides recede, creating sustainable fisheries",
+              rarity: "epic",
+              historicalPeriod: "1000+ years ago - Present",
+              significance: "Still actively used; harvest 2× daily at tides; sustainable for millennia",
+              yearBCE: -1000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "kongo-kingdom",
+      name: "Kongo Kingdom",
+      description: "Water management in the world's second-largest rainforest",
+      position: [2, 0, 6],
+      color: "#66BB6A",
+      era: "medieval",
+      dateRange: "1390 - 1914 CE",
+      locations: [
+        {
+          id: "congo-basin",
+          name: "Congo Basin",
+          description: "Tropical rainforest with 2,000 mm annual rainfall",
+          historicalContext: "Challenge: draining excess water, not finding it",
+          coordinates: { lat: -4.3, lng: 15.3 },
+          artifacts: [
+            {
+              id: "kongo-raised-beds",
+              name: "Kongo Raised Bed Agriculture",
+              description: "Elevated planting beds draining excess water in world's wettest environment",
+              rarity: "epic",
+              historicalPeriod: "1400 - Present",
+              significance: "2-3× yield improvement; opposite of irrigation - it's drainage agriculture",
+              yearBCE: -1400,
+              category: "irrigation"
+            },
+            {
+              id: "palm-wine-tapping",
+              name: "Palm Wine Tapping System",
+              description: "Sustainable sap harvesting from palm trees - a living water tower",
+              rarity: "rare",
+              historicalPeriod: "Ancient - Present",
+              significance: "1-5 liters/day per tree without killing it; works with forest not clearing it",
+              yearBCE: -1000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "mali-timbuktu",
+      name: "Mali Empire & Timbuktu",
+      description: "Niger River systems making Timbuktu a city of 100,000 at desert's edge",
+      position: [-2, 0, 2],
+      color: "#FFA726",
+      era: "medieval",
+      dateRange: "1235 - 1600 CE",
+      locations: [
+        {
+          id: "niger-delta",
+          name: "Niger Inland Delta",
+          description: "World's largest inland fishery with integrated flood agriculture",
+          historicalContext: "Economic foundation of the Mali Empire",
+          coordinates: { lat: 14.0, lng: -4.0 },
+          artifacts: [
+            {
+              id: "niger-flood-agriculture",
+              name: "Niger Inland Delta Flood Agriculture",
+              description: "Integrated rice, fish, and cattle system exploiting annual Niger floods across 30,000 km²",
+              rarity: "legendary",
+              historicalPeriod: "3000 BCE - Present",
+              significance: "Still feeds 1+ million people; 100,000+ tonnes fish/year; 5,000 years sustainable",
+              yearBCE: 3000,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "timbuktu-city",
+          name: "Timbuktu",
+          description: "City of 100,000 at the Sahara's edge",
+          historicalContext: "Trans-Saharan trade terminus; center of Islamic learning",
+          coordinates: { lat: 16.8, lng: -3.0 },
+          artifacts: [
+            {
+              id: "timbuktu-wells",
+              name: "Timbuktu Deep Wells System",
+              description: "Hand-dug wells tapping 10,000-year-old Saharan aquifers to supply desert-edge city",
+              rarity: "epic",
+              historicalPeriod: "1100 - Present",
+              significance: "Supported 100,000 people; water is ancient rainfall from when Sahara was green",
+              yearBCE: -1100,
+              category: "fountain"
+            }
+          ]
+        }
+      ]
     }
   ]
 };

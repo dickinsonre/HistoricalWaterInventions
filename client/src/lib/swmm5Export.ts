@@ -71,7 +71,32 @@ export const inventionToSwmmModel: Record<string, string> = {
   'venice-cisterns': 'nabataean-cistern',
   'lagoon-management': 'singapore-barrage',
   'karez-system': 'qanat',
-  'caravanserai-wells': 'nabataean-cistern'
+  'caravanserai-wells': 'nabataean-cistern',
+  'amazon-raised-fields': 'subak',
+  'amazon-causeways': 'subak',
+  'amazon-fish-weirs': 'subak',
+  'terra-preta': 'subak',
+  'varzea-agriculture': 'subak',
+  'cahokia-reservoir': 'roman-aqueduct',
+  'mississippian-drainage': 'roman-aqueduct',
+  'hohokam-canals': 'hohokam-canal',
+  'columbia-fish-weirs': 'subak',
+  'clam-gardens': 'subak',
+  'yakutian-ice-houses': 'nabataean-cistern',
+  'siberian-fish-traps': 'subak',
+  'ice-roads': 'subak',
+  'buluus-ice': 'nabataean-cistern',
+  'iglu-engineering': 'nabataean-cistern',
+  'kayak-qajaq': 'subak',
+  'freshwater-ice-harvest': 'nabataean-cistern',
+  'arctic-ice-fishing': 'subak',
+  'arctic-ice-cellars': 'nabataean-cistern',
+  'swahili-cisterns': 'nabataean-cistern',
+  'swahili-fish-traps': 'subak',
+  'kongo-raised-beds': 'subak',
+  'palm-wine-tapping': 'subak',
+  'niger-flood-agriculture': 'niger-flood',
+  'timbuktu-wells': 'nabataean-cistern'
 };
 
 export function getSwmmModelForInvention(inventionId: string): SWMM5Model | null {
@@ -1046,6 +1071,37 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       roughness: 0.030
     },
     engineeringNotes: 'Largest ancient dam. Irrigated 9,600 hectares. Supported 50,000 people. Collapse around 600 CE caused mass migration mentioned in Quran'
+  },
+  'hohokam-canal': {
+    name: 'Hohokam Canal System',
+    description: '800+ km of hand-dug irrigation canals in Arizona desert',
+    civilization: 'Hohokam',
+    period: '300 - 1450 CE',
+    parameters: {
+      length: 800000,
+      channelWidth: 23,
+      channelDepth: 5,
+      flowRate: 50,
+      slope: 0.001,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Largest pre-Columbian irrigation in North America. Modern Phoenix follows same canal routes. 1,100+ years of continuous operation. Hand-dug with stone tools'
+  },
+  'niger-flood': {
+    name: 'Niger Inland Delta Flood System',
+    description: 'Integrated rice, fish, and cattle system across 30,000 km²',
+    civilization: 'Mali Empire',
+    period: '3000 BCE - Present',
+    parameters: {
+      length: 500000,
+      channelWidth: 100,
+      channelDepth: 6,
+      flowRate: 5000,
+      catchmentArea: 30000000000,
+      slope: 0.00005,
+      roughness: 0.035
+    },
+    engineeringNotes: 'World\'s largest inland fishery. Feeds 1+ million people. Floating rice varieties grow 20-30 cm/day with rising water. 5,000 years sustainable'
   }
 };
 

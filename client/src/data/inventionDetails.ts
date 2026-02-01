@@ -150,7 +150,32 @@ export const inventionDiagrams: Record<string, string> = {
   "venice-cisterns": "/diagrams/nabataean-cistern.png",
   "lagoon-management": "/diagrams/ancient-dam.png",
   "karez-system": "/diagrams/qanat.png",
-  "caravanserai-wells": "/diagrams/nabataean-cistern.png"
+  "caravanserai-wells": "/diagrams/nabataean-cistern.png",
+  "amazon-raised-fields": "/diagrams/floating-gardens.png",
+  "amazon-causeways": "/diagrams/irrigation-canal.png",
+  "amazon-fish-weirs": "/diagrams/fish-trap.png",
+  "terra-preta": "/diagrams/irrigation-canal.png",
+  "varzea-agriculture": "/diagrams/floating-gardens.png",
+  "cahokia-reservoir": "/diagrams/ancient-dam.png",
+  "mississippian-drainage": "/diagrams/irrigation-canal.png",
+  "hohokam-canals": "/diagrams/irrigation-canal.png",
+  "columbia-fish-weirs": "/diagrams/fish-trap.png",
+  "clam-gardens": "/diagrams/fish-trap.png",
+  "yakutian-ice-houses": "/diagrams/nabataean-cistern.png",
+  "siberian-fish-traps": "/diagrams/fish-trap.png",
+  "ice-roads": "/diagrams/irrigation-canal.png",
+  "buluus-ice": "/diagrams/nabataean-cistern.png",
+  "iglu-engineering": "/diagrams/ancient-dam.png",
+  "kayak-qajaq": "/diagrams/irrigation-canal.png",
+  "freshwater-ice-harvest": "/diagrams/nabataean-cistern.png",
+  "arctic-ice-fishing": "/diagrams/fish-trap.png",
+  "arctic-ice-cellars": "/diagrams/nabataean-cistern.png",
+  "swahili-cisterns": "/diagrams/nabataean-cistern.png",
+  "swahili-fish-traps": "/diagrams/fish-trap.png",
+  "kongo-raised-beds": "/diagrams/floating-gardens.png",
+  "palm-wine-tapping": "/diagrams/irrigation-canal.png",
+  "niger-flood-agriculture": "/diagrams/floating-gardens.png",
+  "timbuktu-wells": "/diagrams/nabataean-cistern.png"
 };
 
 export const inventionDetails: Record<string, InventionDetailData> = {
