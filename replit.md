@@ -7,7 +7,7 @@ Historical Mystery is a 3D interactive adventure game focused on humanity's wate
 ## Theme: Ancient Waters
 
 The game showcases how water shaped human civilization through:
-- **17 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Minoan Crete, Ancient Greece, Roman Empire, Ancient China, Islamic Golden Age, Mesoamerica, Ancient Persia, Khmer Empire, Nubia, Nabataean Kingdom, Ancient Sri Lanka, Ancestral Puebloans, Byzantine Empire, Modern Era
+- **18 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Minoan Crete, Ancient Greece, Roman Empire, Ancient China, Islamic Golden Age, Mesoamerica, Ancient Persia, Khmer Empire, Nubia, Nabataean Kingdom, Ancient Sri Lanka, Ancestral Puebloans, Byzantine Empire, Phoenicia, Modern Era
 - **55+ Water Inventions**: Aqueducts, irrigation systems, water-lifting devices, sanitation, dams, water clocks, fountains, canals, qanats, cisterns, valves, mega-dams, desalination, flush toilets
 - **Time Periods**: Ancient (6000-500 BCE), Classical (500 BCE-500 CE), Medieval (500-1400 CE), Modern (1750 CE-Present)
 

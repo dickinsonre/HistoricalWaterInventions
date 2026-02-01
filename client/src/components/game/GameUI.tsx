@@ -395,7 +395,7 @@ export default function GameUI() {
               Discover How Water Shaped History
             </h3>
             <p className="text-[var(--parchment)]/90 text-sm mb-3">
-              Explore 17 civilizations and discover 55+ water inventions in the 3D world, plus 80+ in our encyclopedia. From ancient shaduf to Roman aqueducts to modern mega-dams.
+              Explore 18 civilizations and discover 55+ water inventions in the 3D world, plus 80+ in our encyclopedia. From ancient shaduf to Roman aqueducts to modern mega-dams.
             </p>
             <div className="flex gap-2">
               <Button
