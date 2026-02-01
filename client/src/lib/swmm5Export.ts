@@ -36,7 +36,18 @@ export const inventionToSwmmModel: Record<string, string> = {
   'jerwan-aqueduct': 'roman-aqueduct',
   'reservoir-plans': 'sri-lanka-tank',
   'eri-cascade': 'sri-lanka-tank',
-  'ondol': 'ondol-ondol'
+  'ondol': 'ondol-ondol',
+  'newater': 'singapore-newater',
+  'marina-barrage': 'singapore-barrage',
+  'dtss': 'singapore-dtss',
+  'variable-salinity-plant': 'singapore-newater',
+  'floating-solar': 'singapore-barrage',
+  'lombong': 'malaysia-lombong',
+  'palong': 'malaysia-lombong',
+  'muda-irrigation': 'malaysia-muda',
+  'tasik-kolam': 'malaysia-muda',
+  'bamboo-aqueduct-my': 'malaysia-muda',
+  'greener-water': 'singapore-newater'
 };
 
 export function getSwmmModelForInvention(inventionId: string): SWMM5Model | null {
@@ -892,6 +903,80 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       roughness: 0.040
     },
     engineeringNotes: 'Floating gardens built on water hyacinth roots. Grows tomatoes, flowers. Farmers row with their legs. Unique adaptation to lake environment'
+  },
+  'singapore-newater': {
+    name: 'Singapore NEWater Reclamation System',
+    description: 'Ultra-purified reclaimed water using microfiltration, reverse osmosis, and UV treatment',
+    civilization: 'Singapore',
+    period: '2003 CE - Present',
+    parameters: {
+      length: 48000,
+      flowRate: 800000,
+      pipeDiameter: 6.0,
+      roughness: 0.010,
+      volume: 100000000
+    },
+    engineeringNotes: 'Supplies 40% of Singapore water needs. 5 NEWater plants produce 190 million gallons/day. Water exceeds WHO drinking standards. Global model for water-scarce cities'
+  },
+  'singapore-barrage': {
+    name: 'Marina Barrage Dam and Reservoir',
+    description: 'Multi-purpose dam converting Marina Bay from seawater to freshwater reservoir',
+    civilization: 'Singapore',
+    period: '2008 CE',
+    parameters: {
+      length: 350,
+      channelWidth: 200,
+      channelDepth: 5,
+      flowRate: 280,
+      volume: 12000000,
+      roughness: 0.015
+    },
+    engineeringNotes: '9 steel crest gates, 7 pumps at 280 m³/s. Created 15th reservoir in city center. Eliminated floods in Chinatown/Boat Quay. 10,000 hectare catchment'
+  },
+  'singapore-dtss': {
+    name: 'Deep Tunnel Sewerage System (DTSS)',
+    description: '48km underground superhighway for wastewater conveyance',
+    civilization: 'Singapore',
+    period: '2008-ongoing',
+    parameters: {
+      length: 48000,
+      tunnelDiameter: 6.0,
+      slope: 0.001,
+      flowRate: 100,
+      roughness: 0.012
+    },
+    engineeringNotes: 'World\'s largest deep tunnel sewer. 20-55m underground. Gravity-fed to minimize pumping. Frees up 150 hectares of surface land. Connects to Changi NEWater plant'
+  },
+  'malaysia-lombong': {
+    name: 'Lombong Hydraulic Tin Mining',
+    description: 'Water jets extracting tin ore from alluvial deposits',
+    civilization: 'Malaysia',
+    period: '1850s-1970s',
+    parameters: {
+      flowRate: 50,
+      channelWidth: 5,
+      channelDepth: 2,
+      length: 500,
+      slope: 0.02,
+      roughness: 0.030
+    },
+    engineeringNotes: 'Made Malaysia world\'s largest tin producer. High-pressure water jets (monitors) broke up tin-bearing gravel. Water-based separation in palongs (sluice boxes). Unique industrial water application'
+  },
+  'malaysia-muda': {
+    name: 'MUDA Irrigation Scheme',
+    description: 'Large-scale rice irrigation network in Kedah-Perlis',
+    civilization: 'Malaysia',
+    period: '1906-ongoing',
+    parameters: {
+      length: 200000,
+      channelWidth: 20,
+      channelDepth: 3,
+      flowRate: 100,
+      catchmentArea: 96000,
+      slope: 0.0005,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Irrigates 96,000 hectares of rice paddies. Enables double-cropping. British-designed, locally-adapted. Major contributor to Malaysia\'s rice self-sufficiency goal'
   }
 };
 

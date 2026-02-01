@@ -115,7 +115,18 @@ export const inventionDiagrams: Record<string, string> = {
   "thames-barrier-gate": "/diagrams/thames-barrier.png",
   "reverse-osmosis": "/diagrams/reverse-osmosis.png",
   "drip-irrigation": "/diagrams/drip-irrigation.png",
-  "desalination-plants": "/diagrams/reverse-osmosis.png"
+  "desalination-plants": "/diagrams/reverse-osmosis.png",
+  "newater": "/diagrams/reverse-osmosis.png",
+  "marina-barrage": "/diagrams/ancient-dam.png",
+  "dtss": "/diagrams/cloaca-maxima.png",
+  "variable-salinity-plant": "/diagrams/reverse-osmosis.png",
+  "floating-solar": "/diagrams/ancient-dam.png",
+  "lombong": "/diagrams/water-lifting.png",
+  "palong": "/diagrams/irrigation-canal.png",
+  "muda-irrigation": "/diagrams/irrigation-canal.png",
+  "tasik-kolam": "/diagrams/ancient-dam.png",
+  "bamboo-aqueduct-my": "/diagrams/bamboo-irrigation.png",
+  "greener-water": "/diagrams/reverse-osmosis.png"
 };
 
 export const inventionDetails: Record<string, InventionDetailData> = {

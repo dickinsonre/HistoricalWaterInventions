@@ -2427,6 +2427,192 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "singapore",
+      name: "Singapore",
+      description: "Global leader in water innovation and the 'Four National Taps' system",
+      position: [16, 0, 12],
+      color: "#E91E63",
+      era: "modern",
+      dateRange: "1965 CE - Present",
+      locations: [
+        {
+          id: "marina-bay",
+          name: "Marina Bay",
+          description: "Heart of Singapore's water infrastructure revolution",
+          historicalContext: "Transformed from seawater bay to freshwater reservoir",
+          coordinates: { lat: 1.2816, lng: 103.8636 },
+          artifacts: [
+            {
+              id: "newater",
+              name: "NEWater System",
+              description: "Ultra-purified reclaimed water using microfiltration, reverse osmosis, and UV treatment",
+              rarity: "legendary",
+              historicalPeriod: "Modern (2003 CE)",
+              significance: "Supplies 40% of Singapore's water; global model for water-scarce cities",
+              yearBCE: -2003,
+              category: "sanitation"
+            },
+            {
+              id: "marina-barrage",
+              name: "Marina Barrage",
+              description: "Dam converting Marina Bay from seawater to freshwater reservoir with flood control",
+              rarity: "epic",
+              historicalPeriod: "Modern (2008 CE)",
+              significance: "Created Singapore's 15th reservoir in the city center; eliminated floods in Chinatown",
+              yearBCE: -2008,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "changi",
+          name: "Changi Water Reclamation",
+          description: "World's largest deep tunnel sewerage system",
+          historicalContext: "Underground superhighway for wastewater treatment",
+          coordinates: { lat: 1.3644, lng: 103.9915 },
+          artifacts: [
+            {
+              id: "dtss",
+              name: "Deep Tunnel Sewerage System (DTSS)",
+              description: "48km underground tunnel carrying wastewater to Changi NEWater plant",
+              rarity: "epic",
+              historicalPeriod: "Modern (2008-ongoing)",
+              significance: "Frees up 150 hectares of land above; gravity-fed to minimize pumping",
+              yearBCE: -2008,
+              category: "sanitation"
+            },
+            {
+              id: "variable-salinity-plant",
+              name: "Variable Salinity Plant",
+              description: "World's first plant switching between desalination and NEWater production",
+              rarity: "rare",
+              historicalPeriod: "Modern (2017 CE)",
+              significance: "Adapts to seasonal water conditions; maximizes efficiency",
+              yearBCE: -2017,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "tengeh-reservoir",
+          name: "Tengeh Reservoir",
+          description: "Site of Singapore's floating solar innovation",
+          historicalContext: "Combining renewable energy with water storage",
+          coordinates: { lat: 1.3297, lng: 103.7050 },
+          artifacts: [
+            {
+              id: "floating-solar",
+              name: "Floating Solar Farm",
+              description: "Solar panels on reservoir surface reducing evaporation and generating clean energy",
+              rarity: "rare",
+              historicalPeriod: "Modern (2021 CE)",
+              significance: "One of world's largest inland floating solar farms; powers 5 water treatment plants",
+              yearBCE: -2021,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "malaysia",
+      name: "Malaysia",
+      description: "Traditional rice irrigation and innovative hydraulic mining techniques",
+      position: [14, 0, 10],
+      color: "#FF9800",
+      era: "modern",
+      dateRange: "Pre-colonial - Present",
+      locations: [
+        {
+          id: "perak-tin-fields",
+          name: "Perak Tin Mining Region",
+          description: "Heart of Malaysian tin mining industry",
+          historicalContext: "Made Malaysia the world's largest tin producer for decades",
+          coordinates: { lat: 4.5921, lng: 101.0901 },
+          artifacts: [
+            {
+              id: "lombong",
+              name: "Lombong (Hydraulic Tin Mining)",
+              description: "Water jets to extract tin ore from alluvial deposits",
+              rarity: "epic",
+              historicalPeriod: "Colonial Era (1850s-1970s)",
+              significance: "Made Malaysia world's largest tin producer; unique water-powered mining",
+              yearBCE: -1850,
+              category: "water-lifting"
+            },
+            {
+              id: "palong",
+              name: "Palong (Sluice Box System)",
+              description: "Water channels for separating tin ore from soil using gravity",
+              rarity: "rare",
+              historicalPeriod: "Colonial Era (1800s)",
+              significance: "Efficient ore separation using only water and gravity",
+              yearBCE: -1850,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "kedah-rice-bowl",
+          name: "Kedah-Perlis Rice Bowl",
+          description: "Malaysia's traditional rice growing heartland",
+          historicalContext: "British-designed, locally-adapted irrigation infrastructure",
+          coordinates: { lat: 6.1184, lng: 100.3685 },
+          artifacts: [
+            {
+              id: "muda-irrigation",
+              name: "MUDA Irrigation Scheme",
+              description: "Large-scale irrigation network supporting double-cropping of rice",
+              rarity: "epic",
+              historicalPeriod: "Modern (1906-ongoing)",
+              significance: "Irrigates 96,000 hectares; enables Malaysia's rice self-sufficiency goal",
+              yearBCE: -1906,
+              category: "irrigation"
+            },
+            {
+              id: "tasik-kolam",
+              name: "Tasik/Kolam Village Pond System",
+              description: "Traditional village ponds for water storage, fish farming, and irrigation",
+              rarity: "common",
+              historicalPeriod: "Traditional",
+              significance: "Multi-purpose water management integrated with village life",
+              yearBCE: -500,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "orang-asli-water",
+          name: "Orang Asli Territories",
+          description: "Indigenous water management systems",
+          historicalContext: "Traditional knowledge of forest water harvesting",
+          coordinates: { lat: 4.2105, lng: 101.9758 },
+          artifacts: [
+            {
+              id: "bamboo-aqueduct-my",
+              name: "Bamboo Gravity Aqueduct",
+              description: "Indigenous bamboo pipe systems carrying spring water to villages",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Zero-energy water transport using only gravity and bamboo engineering",
+              yearBCE: -1000,
+              category: "aqueduct"
+            },
+            {
+              id: "greener-water",
+              name: "Greener Water Dispenser",
+              description: "Reverse osmosis system processing raw sewage into drinking water with near-zero waste",
+              rarity: "legendary",
+              historicalPeriod: "Modern (2010s)",
+              significance: "Malaysian innovation by Ooi Seng Chye; processes 99.9% of input water",
+              yearBCE: -2010,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
     }
   ]
 };
