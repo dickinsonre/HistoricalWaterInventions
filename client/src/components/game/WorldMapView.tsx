@@ -538,8 +538,9 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
 
                     <div 
                       className={`
-                        absolute right-full mr-2 top-1/2 transform -translate-y-1/2
+                        absolute top-1/2 transform -translate-y-1/2
                         transition-all duration-200 pointer-events-none z-50
+                        ${loc.x < 20 ? 'left-full ml-2' : 'right-full mr-2'}
                         ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-2'}
                       `}
                     >
