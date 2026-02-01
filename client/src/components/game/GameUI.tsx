@@ -17,11 +17,12 @@ import SmartSearch from "./SmartSearch";
 import TimeTravel from "./TimeTravel";
 import ChallengeModes from "./ChallengeModes";
 import TechnologyLibrary from "./TechnologyLibrary";
+import MuseumMode from "./MuseumMode";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
-import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb, Globe, Building, Search, Play, Gamepad2 } from "lucide-react";
+import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb, Globe, Building, Search, Play, Gamepad2, Building2 } from "lucide-react";
 import { gameData, getAllArtifacts } from "../../data/gameData";
 
 export default function GameUI() {
@@ -42,6 +43,7 @@ export default function GameUI() {
   const [showTimeTravel, setShowTimeTravel] = useState(false);
   const [showChallenges, setShowChallenges] = useState(false);
   const [showLibrary, setShowLibrary] = useState(false);
+  const [showMuseum, setShowMuseum] = useState(false);
   const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
   const [selectedCivilization, setSelectedCivilization] = useState<string | null>(null);
 
@@ -167,6 +169,22 @@ export default function GameUI() {
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
                 Technology Encyclopedia
+              </TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowMuseum(true)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Building2 size={16} className="text-amber-400" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Water Museum
               </TooltipContent>
             </Tooltip>
 
@@ -516,6 +534,18 @@ export default function GameUI() {
         isOpen={showLibrary}
         onClose={() => setShowLibrary(false)}
       />
+
+      {showMuseum && (
+        <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto p-4">
+          <MuseumMode 
+            onClose={() => setShowMuseum(false)} 
+            onSelectInvention={(id) => {
+              setSelectedInvention(id);
+              setShowMuseum(false);
+            }}
+          />
+        </div>
+      )}
 
       <div className="absolute bottom-4 right-4 pointer-events-auto">
           <Tooltip>
