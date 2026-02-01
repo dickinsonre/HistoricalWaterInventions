@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
@@ -26,6 +27,7 @@ import SWMM5Models from "./SWMM5Models";
 import ThematicPathways from "./ThematicPathways";
 import QuestSystem from "./QuestSystem";
 import Onboarding from "./Onboarding";
+import QuickSearchBar from "./QuickSearchBar";
 import { useAudio } from "../../lib/stores/useAudio";
 import { useProgress } from "../../lib/stores/useProgress";
 
@@ -115,6 +117,7 @@ const civilizationContinents: Record<string, string> = {
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {
+  const navigate = useNavigate();
   const [selectedCiv, setSelectedCiv] = useState<string | null>(null);
   const [hoveredCiv, setHoveredCiv] = useState<string | null>(null);
   
@@ -372,11 +375,19 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
           )}
         </div>
 
-        <div className="flex items-center justify-between mb-4">
-          <div>
-            <h1 className="font-heading text-2xl text-[var(--gold)]">World Map</h1>
-            <p className="text-[var(--parchment)]/70 text-sm">Click on any civilization to explore</p>
+        <div className="mb-4">
+          <div className="flex items-center justify-between mb-3">
+            <div>
+              <h1 className="font-heading text-2xl text-[var(--gold)]">World Map of Water Innovations</h1>
+              <p className="text-[var(--parchment)]/70 text-sm">
+                Explore <span className="text-[var(--aqua)] font-semibold">{gameData.regions.length} civilizations</span> • <span className="text-[var(--cerulean)] font-semibold">{allArtifacts.length}+ water inventions</span> • <span className="text-[var(--gold)] font-semibold">60+ SWMM5 models</span> • 40,000 years of hydraulic engineering
+              </p>
+            </div>
           </div>
+          <QuickSearchBar 
+            onSelectCivilization={(id) => setSelectedCiv(id)} 
+            onSelectInvention={(civId, invId) => navigate(`/${civId}/${invId}/details`)}
+          />
         </div>
 
         <Card className="water-card overflow-hidden">
