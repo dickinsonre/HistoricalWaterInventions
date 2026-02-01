@@ -4,6 +4,7 @@ import { Button } from "../ui/button";
 import { ArrowLeft, ArrowRight, MapPin, Calendar, Droplets, Wrench, Sparkles, History, MessageSquare, Image, ChevronLeft, ChevronRight } from "lucide-react";
 import { gameData, getAllArtifacts } from "../../data/gameData";
 import { getInventionDetail, inventionDiagrams } from "../../data/inventionDetails";
+import InteractiveDiagram from "./InteractiveDiagram";
 
 interface InventionPageProps {
   showDiagram?: boolean;
@@ -157,16 +158,11 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
                   <Image className="text-[var(--gold)]" size={20} />
                   <h2 className="font-heading text-lg text-[var(--gold)]">Technical Diagram</h2>
                 </div>
-                <div className="flex justify-center">
-                  <img 
-                    src={diagramUrl} 
-                    alt={`Diagram of ${artifact.name}`}
-                    className="max-w-full h-auto rounded-lg border border-[var(--aqua)]/20 max-h-[400px] object-contain"
-                  />
-                </div>
-                <p className="text-center text-[var(--parchment)]/60 text-sm mt-2">
-                  Technical illustration showing how the {artifact.name} works
-                </p>
+                <InteractiveDiagram 
+                  src={diagramUrl} 
+                  alt={`Diagram of ${artifact.name}`}
+                  inventionId={inventionId || ""}
+                />
               </div>
             )}
 
