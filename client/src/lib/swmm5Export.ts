@@ -1946,30 +1946,22 @@ export function downloadSWMM5Model(inventionId: string, inventionName: string): 
     return;
   }
   
-  // Use application/octet-stream to avoid antivirus false positives
-  const blob = new Blob([content], { type: 'application/octet-stream' });
-  const url = URL.createObjectURL(blob);
-  
   // Create a safer filename
   const safeFilename = inventionName
     .replace(/[^a-zA-Z0-9\s]/g, '')
     .replace(/\s+/g, '_')
     .substring(0, 50);
   
+  // Use data URI approach for more reliable download
+  const dataUri = 'data:text/plain;charset=utf-8,' + encodeURIComponent(content);
+  
   const link = document.createElement('a');
-  link.href = url;
+  link.href = dataUri;
   link.download = `${safeFilename}_SWMM5_Model.inp`;
   link.style.display = 'none';
   document.body.appendChild(link);
-  
-  // Small delay before click to help with antivirus
-  setTimeout(() => {
-    link.click();
-    setTimeout(() => {
-      document.body.removeChild(link);
-      URL.revokeObjectURL(url);
-    }, 100);
-  }, 50);
+  link.click();
+  document.body.removeChild(link);
 }
 
 export function hasSwmm5Model(inventionId: string): boolean {

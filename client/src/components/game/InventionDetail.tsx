@@ -164,7 +164,7 @@ export default function InventionDetail({ artifactId, onClose, onNavigate }: Inv
                 <textarea
                   readOnly
                   value={swmmContent}
-                  className="w-full h-full bg-[var(--parchment)]/10 text-[var(--parchment)] font-mono text-sm p-4 rounded border border-[var(--cerulean)]/30 resize-none"
+                  className="w-full h-full bg-[#1a2a3a] text-[#e0e8f0] font-mono text-sm p-4 rounded border border-[var(--cerulean)]/30 resize-none"
                   style={{ minHeight: '100%' }}
                 />
               </div>
