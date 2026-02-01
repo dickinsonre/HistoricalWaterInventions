@@ -404,6 +404,114 @@ export const historicalTechnologies: HistoricalTechnology[] = [
     primary_uses: ["Power conversion", "Water lifting", "Milling"],
     key_principle: "Meshing wooden pegs convert horizontal rotary motion to vertical plane for water lifting.",
     notes: "Fundamental mechanical innovation enabling animal-powered irrigation and industrial water mills."
+  },
+  {
+    name: "Alum coagulation treatment",
+    category: "Water treatment",
+    civilizations: ["Egypt"],
+    period_BCE_CE: "c. 1500 BCE",
+    primary_uses: ["Drinking water purification", "Sediment removal"],
+    key_principle: "Adding potassium aluminum sulfate causes suspended particles to clump together and settle.",
+    notes: "First known chemical water treatment in history; principle still used in modern water treatment plants."
+  },
+  {
+    name: "Sanskrit purification methods",
+    category: "Water treatment",
+    civilizations: ["India"],
+    period_BCE_CE: "c. 1500 BCE",
+    primary_uses: ["Drinking water treatment", "Medical applications"],
+    key_principle: "Multiple techniques: boiling, solar heating, heated iron immersion, sand/gravel filtration, and plant-based clarifiers.",
+    notes: "Documented in Sus'ruta Samhita; earliest known comprehensive water treatment manual using Strychnos potatorum seeds."
+  },
+  {
+    name: "Amunas water collection",
+    category: "Groundwater recharge",
+    civilizations: ["Pre-Incan (Peru)"],
+    period_BCE_CE: "c. 500 CE",
+    primary_uses: ["Dry season water supply", "Groundwater storage"],
+    key_principle: "Mountain channels direct wet-season water into permeable soil for slow release during dry months.",
+    notes: "Being restored in modern Lima; Peru investing $24 million to address water scarcity using this ancient technique."
+  },
+  {
+    name: "Nilometer flood prediction",
+    category: "Water measurement",
+    civilizations: ["Egypt"],
+    period_BCE_CE: "c. 3000 BCE",
+    primary_uses: ["Flood prediction", "Tax assessment", "Agricultural planning"],
+    key_principle: "Marked columns, stairways, or wells measure Nile water levels to predict annual flood magnitude.",
+    notes: "One of earliest examples of predictive analytics; critical for calculating agricultural yields and taxes."
+  },
+  {
+    name: "Great Bath of Mohenjo-daro",
+    category: "Public bathing",
+    civilizations: ["Indus Valley"],
+    period_BCE_CE: "c. 2500 BCE",
+    primary_uses: ["Ritual bathing", "Public hygiene"],
+    key_principle: "Waterproof tank using bitumen sealant between bricks, fed by wells with complex drainage.",
+    notes: "Earliest known public water tank; measured 12m x 7m x 2.4m, held approximately 21,600 gallons."
+  },
+  {
+    name: "Mesopotamian canal systems",
+    category: "Irrigation",
+    civilizations: ["Mesopotamia"],
+    period_BCE_CE: "c. 6000 BCE onward",
+    primary_uses: ["Large-scale irrigation", "River water diversion"],
+    key_principle: "Network of primary and secondary canals divert river water to agricultural fields using gravity.",
+    notes: "Among the earliest large-scale civil engineering projects; enabled the rise of Sumerian city-states."
+  },
+  {
+    name: "Chorobates leveling tool",
+    category: "Surveying equipment",
+    civilizations: ["Rome"],
+    period_BCE_CE: "c. 300 BCE - 400 CE",
+    primary_uses: ["Aqueduct construction", "Gradient measurement"],
+    key_principle: "Water-filled channel on wooden frame provides precise horizontal reference for establishing slopes.",
+    notes: "Enabled Romans to maintain precise aqueduct gradients over distances of 80+ kilometers."
+  },
+  {
+    name: "Hydraulic concrete (opus caementicium)",
+    category: "Construction material",
+    civilizations: ["Rome"],
+    period_BCE_CE: "c. 300 BCE - 400 CE",
+    primary_uses: ["Aqueduct construction", "Harbor building", "Cisterns"],
+    key_principle: "Volcanic ash (pite) mixed with lime creates concrete that sets underwater and resists seawater.",
+    notes: "Revolutionary material enabling massive hydraulic infrastructure; some Roman concrete structures still standing after 2000 years."
+  },
+  {
+    name: "Maya sand filtration",
+    category: "Water treatment",
+    civilizations: ["Maya"],
+    period_BCE_CE: "c. 500 BCE",
+    primary_uses: ["Rainwater purification", "Reservoir water treatment"],
+    key_principle: "Sandboxes filter water as it flows from catchment areas into storage reservoirs.",
+    notes: "Tikal's elaborate system included paved catchment areas, channels, and sand filtration before giant reservoirs."
+  },
+  {
+    name: "Strychnos potatorum seed clarification",
+    category: "Water treatment",
+    civilizations: ["India"],
+    period_BCE_CE: "c. 1500 BCE onward",
+    primary_uses: ["Water clarification", "Turbidity removal"],
+    key_principle: "Seeds rubbed on inside of water vessels release proteins that bind suspended particles.",
+    notes: "Natural coagulant still used in rural India today; documented in ancient Sanskrit medical texts."
+  },
+  {
+    name: "Ctesibius feedback water clock",
+    category: "Mechanical timekeeping",
+    civilizations: ["Greece (Alexandria)"],
+    period_BCE_CE: "c. 270 BCE",
+    primary_uses: ["Precision timekeeping", "Astronomical observation"],
+    key_principle: "Float-controlled valve maintains constant water level, ensuring uniform flow rate and accurate time measurement.",
+    notes: "First known use of feedback control in mechanical systems; housed in Tower of the Winds in Athens."
+  },
+  {
+    name: "Tower of the Winds water clock",
+    category: "Monumental timekeeping",
+    civilizations: ["Greece"],
+    period_BCE_CE: "c. 50 BCE",
+    primary_uses: ["Public timekeeping", "Weather observation"],
+    key_principle: "Mechanized clepsydra with astronomical displays powered by regulated water flow.",
+    notes: "Octagonal marble tower in Athens combined water clock, sundials, and weather vane; still standing today."
   }
 ];
 
