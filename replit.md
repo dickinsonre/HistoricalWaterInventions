@@ -80,6 +80,13 @@ The game showcases how water shaped human civilization through:
 ### Reference Data
 - **TechnologyLibrary**: Encyclopedia of 25 historical water technologies with filtering by category and civilization
 - **historicalTechnologies.ts**: Comprehensive dataset of water engineering innovations from 6000 BCE to 15th century CE
+- **expertInventions.ts**: Curated database of 52 water inventions with expert commentary from Robert Dickinson (50+ years water engineering experience), including:
+  - Detailed technical specifications
+  - Expert engineer notes with professional insights
+  - Modern relevance and contemporary applications
+  - "Still in use" status with current locations
+  - Related inventions and tags for discovery
+  - Historical sources and references
 
 ### Data Structure
 - **Regions**: 9 civilizations with era, date range, position, color (includes Modern Era)

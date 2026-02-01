@@ -1,0 +1,350 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "totalCivilizations": 18,
+    "lastUpdated": "2026-02-01",
+    "curator": "Robert Dickinson"
+  },
+
+  "civilizations": [
+    {
+      "id": "egypt",
+      "name": "Ancient Egypt",
+      "region": "Nile Valley, Northeast Africa",
+      "period": {
+        "start": -3100,
+        "end": -30,
+        "era": "Bronze Age through Classical Antiquity"
+      },
+      "summary": "Egyptian civilization was defined by its relationship with the Nile. The annual flood cycle—predictable yet variable in magnitude—shaped everything from agriculture to religion to government. Egyptian water engineering focused on predicting, measuring, and extending the flood's benefits.",
+      "waterChallenges": [
+        "Unpredictable flood magnitude (too high = destruction, too low = famine)",
+        "Desert climate with almost no rainfall",
+        "Need to extend irrigation beyond flood reach",
+        "Seasonal water availability"
+      ],
+      "inventions": ["shaduf", "nilometer", "basin-irrigation", "sakia"],
+      "keyInsight": "The Egyptians understood that water management is information management—the Nilometer network was the world's first hydrological monitoring system.",
+      "engineerNotes": "What strikes me about Egyptian water engineering is its patience. Basin irrigation doesn't fight the flood—it welcomes it, captures it, and releases it slowly. There's no pumping, no pressure, just gravity and planning. They achieved food security for millions using essentially passive systems. Modern engineers, with our pumps and pipes, could learn from their approach of working WITH natural systems.",
+      "modernLegacy": "Basin irrigation principles appear in modern flood control and wetland management. The monitoring approach (measure → predict → plan) is the foundation of all water resources engineering.",
+      "images": {
+        "map": "egypt-nile-map.jpg",
+        "keyInvention": "shaduf-operation.jpg",
+        "landscape": "nile-irrigation.jpg"
+      },
+      "sources": [
+        "Butzer, K.W. Early Hydraulic Civilization in Egypt",
+        "Said, R. The River Nile: Geology, Hydrology and Utilization"
+      ]
+    },
+
+    {
+      "id": "mesopotamia",
+      "name": "Mesopotamia (Sumer, Babylon, Assyria)",
+      "region": "Tigris-Euphrates Valley (modern Iraq)",
+      "period": {
+        "start": -6000,
+        "end": -539,
+        "era": "Neolithic through Iron Age"
+      },
+      "summary": "The 'land between the rivers' gave birth to civilization itself, enabled by the world's first large-scale irrigation systems. Mesopotamian engineers faced unpredictable, destructive floods (unlike Egypt's benign inundation) and had to build elaborate canal networks to distribute water.",
+      "waterChallenges": [
+        "Unpredictable, violent floods (Tigris and Euphrates)",
+        "Floods arrive during growing season (unlike Egypt)",
+        "Flat terrain requiring extensive canal networks",
+        "Salinization from irrigation (long-term soil damage)"
+      ],
+      "inventions": ["irrigation-canal", "noria", "shaduf-powered-garden", "water-law"],
+      "keyInsight": "Mesopotamians invented both large-scale irrigation AND the legal frameworks to manage shared water resources—the Code of Hammurabi includes water rights laws.",
+      "engineerNotes": "Mesopotamia shows both the power and peril of irrigation. They turned desert into breadbasket, supporting the world's first cities. But they also salinized their soils through thousands of years of irrigation—ancient texts record crop yields declining over centuries. By 2000 BCE, wheat no longer grew in southern Mesopotamia due to salt accumulation. It's a 4,000-year-old lesson about irrigation sustainability that we're still learning in California's Central Valley.",
+      "modernLegacy": "Water law concepts (riparian rights, allocation systems) trace to Mesopotamian origins. The salinization lesson informs modern drainage requirements for irrigation projects.",
+      "images": {
+        "map": "mesopotamia-canal-map.jpg",
+        "keyInvention": "ancient-canal.jpg",
+        "landscape": "tigris-flood.jpg"
+      },
+      "sources": [
+        "Postgate, J.N. Early Mesopotamia: Society and Economy at the Dawn of History",
+        "Jacobsen, T. Salinity and Irrigation Agriculture in Antiquity"
+      ]
+    },
+
+    {
+      "id": "indus",
+      "name": "Indus Valley (Harappan) Civilization",
+      "region": "Indus River Valley (modern Pakistan/Northwest India)",
+      "period": {
+        "start": -3300,
+        "end": -1300,
+        "era": "Bronze Age"
+      },
+      "summary": "The Indus Valley civilization achieved the world's first urban sanitation systems—every house had a bathroom connected to covered drains. Their water engineering prioritized public health over agriculture, a unique emphasis among ancient civilizations.",
+      "waterChallenges": [
+        "Monsoon climate (seasonal extremes)",
+        "Dense urban population requiring sanitation",
+        "Water supply for bathing (ritual importance)",
+        "Flood management from monsoon rivers"
+      ],
+      "inventions": ["great-bath-mohenjo-daro", "covered-drains", "urban-wells", "household-bathrooms"],
+      "keyInsight": "The Indus people understood that urban health requires water infrastructure for EVERY household—not just public facilities.",
+      "engineerNotes": "Mohenjo-daro's drainage system wouldn't be matched until Roman times, 2,000 years later. Every house had a bathroom. Every bathroom connected to a covered drain. Every drain led to a main sewer. This systematic approach—from source to outlet—is exactly how modern sanitary engineering works. Then, around 1300 BCE, the civilization collapsed (possibly climate change, river course shifting, or invasion) and this knowledge vanished. It makes you wonder what we know today that might be lost.",
+      "modernLegacy": "The principle of universal household connection to sanitation is the foundation of modern public health. WHO guidelines for urban sanitation echo Harappan practice.",
+      "images": {
+        "map": "indus-valley-map.jpg",
+        "keyInvention": "great-bath.jpg",
+        "landscape": "mohenjo-daro-drains.jpg"
+      },
+      "sources": [
+        "Kenoyer, J.M. Ancient Cities of the Indus Valley Civilization",
+        "Jansen, M. Mohenjo-daro: City of the Indus Valley"
+      ]
+    },
+
+    {
+      "id": "persia",
+      "name": "Ancient Persia (Achaemenid, Parthian, Sasanian)",
+      "region": "Iranian Plateau and beyond",
+      "period": {
+        "start": -550,
+        "end": 651,
+        "era": "Iron Age through Late Antiquity"
+      },
+      "summary": "Persian engineers solved the most difficult water problem: supplying cities and farms on an arid plateau with no rivers. Their invention—the qanat—is one of the most sophisticated pre-industrial technologies ever developed, bringing mountain groundwater across deserts using only gravity.",
+      "waterChallenges": [
+        "Arid climate with minimal rainfall",
+        "No major rivers across vast plateau",
+        "High evaporation (surface water disappears quickly)",
+        "Long distances between water sources and settlements"
+      ],
+      "inventions": ["qanat", "persian-ice-house", "windcatcher", "underground-dam"],
+      "keyInsight": "By keeping water underground, Persians minimized evaporation losses that would doom surface channels in their climate.",
+      "engineerNotes": "The qanat is my favorite ancient technology. A 40km tunnel with a 1:1000 gradient means total drop of only 40 meters—requiring accuracy of centimeters per kilometer. They achieved this without theodolites, using only basic surveying tools and generations of accumulated expertise. The profession of 'muqanni' (qanat master) still exists in Iran. I've read accounts of muqannis navigating kilometers underground by touch and sound, able to sense the direction of water flow through rock. It's engineering knowledge encoded in human bodies through centuries of practice.",
+      "modernLegacy": "Qanats still operate across the arid world. Modern tunnel boring and groundwater engineering owe conceptual debts to Persian pioneers.",
+      "images": {
+        "map": "persian-empire-water.jpg",
+        "keyInvention": "qanat-cross-section.jpg",
+        "landscape": "iran-qanat-village.jpg"
+      },
+      "sources": [
+        "Beaumont, P. Qanat Systems in Iran",
+        "Lightfoot, D.R. Survey of Qanat Irrigation in Syria"
+      ]
+    },
+
+    {
+      "id": "greece",
+      "name": "Ancient Greece",
+      "region": "Greek Peninsula, Aegean Islands, Colonies",
+      "period": {
+        "start": -800,
+        "end": -31,
+        "era": "Archaic through Hellenistic"
+      },
+      "summary": "Greek engineers combined practical water technology with theoretical understanding. They created the first mechanical water-lifting devices documented with engineering principles, and their philosophers began explaining WHY water behaved as it did.",
+      "waterChallenges": [
+        "Mountainous terrain limiting agriculture",
+        "Limited freshwater on islands",
+        "Need for urban water supply to competing city-states",
+        "Ship-based civilization requiring harbors"
+      ],
+      "inventions": ["archimedes-screw", "force-pump", "water-clock", "cistern-ship", "harbor-engineering"],
+      "keyInsight": "Greeks added theory to practice—Archimedes explained the physics behind water displacement, flotation, and mechanical advantage.",
+      "engineerNotes": "Alexandria (Greek-ruled Egypt) was the world's first engineering research center. Ctesibius invented the force pump AND wrote about how it worked. Hero of Alexandria documented dozens of water devices, from automata to steam engines. This culture of recording and explaining—not just building—meant their knowledge could be transmitted across time. We know how Roman aqueducts worked because Greeks wrote engineering manuals. The engineer's obligation to document is a Greek gift to all who followed.",
+      "modernLegacy": "Archimedean physics underpins all hydraulic engineering. The Archimedes screw is still manufactured for pumping and power generation.",
+      "images": {
+        "map": "greek-world-water.jpg",
+        "keyInvention": "archimedes-screw.jpg",
+        "landscape": "greek-cistern.jpg"
+      },
+      "sources": [
+        "Oleson, J.P. Greek and Roman Mechanical Water-Lifting Devices",
+        "Wikander, Ö. Handbook of Ancient Water Technology"
+      ]
+    },
+
+    {
+      "id": "rome",
+      "name": "Roman Empire",
+      "region": "Mediterranean Basin, Western Europe, Middle East",
+      "period": {
+        "start": -509,
+        "end": 476,
+        "era": "Classical Antiquity"
+      },
+      "summary": "Rome built water infrastructure at unprecedented scale: 11 aqueducts supplied Rome with 1 million cubic meters daily. More importantly, they standardized water systems across their empire—similar aqueducts, sewers, and baths from Britain to Syria.",
+      "waterChallenges": [
+        "Supplying massive urban population (1 million in Rome)",
+        "Public health through sanitation and clean water",
+        "Standardizing infrastructure across diverse empire",
+        "Long-distance water transport"
+      ],
+      "inventions": ["roman-aqueduct", "cloaca-maxima", "roman-concrete", "public-baths", "lead-pipes", "siphon"],
+      "keyInsight": "Romans understood that water infrastructure builds political legitimacy—clean water and public baths made Roman rule desirable.",
+      "engineerNotes": "Frontinus, Rome's water commissioner (97 CE), wrote 'De aquaeductu'—the world's first water management manual. He documented every aqueduct, its capacity, who got how much water, and how the system was maintained. I think of him as history's first water utility manager. His problems were my problems: illegal connections, pipe leaks, political pressure to supply favored customers, inadequate maintenance budgets. Reading Frontinus, I feel professional kinship across 2,000 years. Water management changes less than you'd think.",
+      "modernLegacy": "Roman engineering principles—redundancy, overbuilding, standardization—define modern infrastructure practice. Their concrete is being studied for sustainable cement development.",
+      "images": {
+        "map": "roman-aqueduct-network.jpg",
+        "keyInvention": "pont-du-gard.jpg",
+        "landscape": "roman-baths.jpg"
+      },
+      "sources": [
+        "Frontinus, Sextus Julius. De aquaeductu urbis Romae",
+        "Hodge, A.T. Roman Aqueducts and Water Supply"
+      ]
+    },
+
+    {
+      "id": "phoenicia",
+      "name": "Phoenicia",
+      "region": "Levantine Coast (modern Lebanon, coastal Syria, Israel)",
+      "period": {
+        "start": -1500,
+        "end": -332,
+        "era": "Bronze Age through Iron Age"
+      },
+      "summary": "The Phoenicians were the Mediterranean's first great maritime traders, and their water engineering focused on harbors and ships. They pioneered artificial harbor construction, underwater building techniques, and water management for coastal cities on a narrow strip of land between mountains and sea.",
+      "waterChallenges": [
+        "Limited land area between mountains and sea",
+        "Need for protected harbors in variable weather",
+        "Fresh water supply for coastal cities",
+        "Water quality in enclosed harbors"
+      ],
+      "inventions": ["phoenician-harbor", "breakwater", "underwater-construction", "tidal-flushing"],
+      "keyInsight": "Phoenicians understood that harbors—like buildings—require engineering. Natural harbors weren't enough; they carved artificial ones from rock and built jetties to create calm water where none existed.",
+      "engineerNotes": "The Phoenician cothon (artificial inner harbor) at places like Motya (Sicily) and later Carthage shows remarkable understanding of coastal hydraulics. They carved sluice channels to flush enclosed basins with tidal flow—preventing the stagnation that would otherwise make inner harbors unusable. They also pioneered the cofferdam technique for underwater construction: building a watertight enclosure, pumping it dry, and building foundations on the exposed seabed. This exact technique is used for modern bridge piers and underwater construction. The Phoenicians were solving engineering problems that Mediterranean civilizations would rely on for millennia.",
+      "modernLegacy": "Phoenician harbor engineering principles—breakwaters, tidal flushing, artificial basins—are fundamental to modern port design. Their cofferdam technique remains standard practice.",
+      "phoenicianTradeRoutes": "Phoenician ships carried goods (and technology) across the entire Mediterranean and beyond—to Britain for tin, to West Africa for gold. Their water engineering knowledge spread with their trade.",
+      "cityDetails": {
+        "tyre": {
+          "description": "Island city with two harbors (north and south), heavily fortified",
+          "waterFeatures": ["Rock-cut channels for harbor flushing", "Rainwater collection (limited freshwater)", "Water shipped from mainland"]
+        },
+        "sidon": {
+          "description": "Major manufacturing center with protected harbor",
+          "waterFeatures": ["Inner harbor with sluice system", "Multiple cisterns"]
+        },
+        "byblos": {
+          "description": "One of oldest continuously inhabited cities, major port",
+          "waterFeatures": ["Spring-fed water supply", "Harbor improvements over millennia"]
+        }
+      },
+      "images": {
+        "map": "phoenicia-cities-map.jpg",
+        "keyInvention": "phoenician-harbor-reconstruction.jpg",
+        "landscape": "tyre-ancient-remains.jpg"
+      },
+      "sources": [
+        "Markoe, G. Phoenicians",
+        "Frost, H. Under the Mediterranean: Marine Antiquity",
+        "Carayon, N. Les ports phéniciens et puniques"
+      ]
+    },
+
+    {
+      "id": "carthage",
+      "name": "Carthage (Punic Civilization)",
+      "region": "North Africa (Tunisia), Western Mediterranean colonies",
+      "period": {
+        "start": -814,
+        "end": -146,
+        "era": "Iron Age"
+      },
+      "summary": "Founded by Phoenician colonists, Carthage became the western Mediterranean's greatest power before Rome. Carthaginian engineers faced a unique challenge: supplying a metropolis of 500,000 in semi-arid North Africa. Their solution—massive cistern networks and sophisticated rainwater harvesting—supported urban life in a region with only 500mm annual rainfall.",
+      "waterChallenges": [
+        "Semi-arid climate (500mm annual rainfall)",
+        "Large urban population (500,000+ at peak)",
+        "No major rivers near the city",
+        "Naval base requiring harbor facilities"
+      ],
+      "inventions": ["carthaginian-cisterns", "rainwater-harvesting-system", "cothon-harbor", "opus-signinum"],
+      "keyInsight": "Carthage treated every surface as a water catchment. The entire city was a rainwater harvesting machine—roofs, streets, and plazas all directed runoff to cisterns.",
+      "engineerNotes": "The La Malga cisterns at Carthage held 50,000+ cubic meters—enough to supply the city for months during drought. Every house had its own cistern, and the streets were graded to direct runoff into them. It's the ancient equivalent of modern 'green infrastructure' or 'sponge city' design—using the entire urban landscape for water management. The Carthaginians also invented opus signinum, a waterproof plite using crushed pottery that outlasted anything the Romans made. When Rome destroyed Carthage in 146 BCE, they destroyed not just a rival but an alternative model of urban water management adapted to dry climates.",
+      "modernLegacy": "Carthaginian rainwater harvesting principles are being rediscovered for sustainable urban design. The 'sponge city' concept gaining traction in China echoes Punic practice from 2,500 years ago.",
+      "harborsOfCarthage": {
+        "merchantHarbor": {
+          "shape": "Rectangular",
+          "capacity": "Large commercial fleet",
+          "features": ["Quays for loading/unloading", "Warehouses along shore"]
+        },
+        "navalHarbor": {
+          "shape": "Circular (the famous 'Cothon')",
+          "capacity": "220 warships",
+          "features": ["Island admiralty in center", "Covered ship sheds around circumference", "Connected to merchant harbor by channel"],
+          "engineering": "Entire complex artificially constructed, not natural harbor"
+        }
+      },
+      "waterSystemComponents": {
+        "householdCisterns": "Every Carthaginian house had at least one",
+        "publicCisterns": "Large vaulted chambers throughout city",
+        "laMalgaCisterns": {
+          "chambers": "24 parallel vaulted rooms",
+          "dimensions": "Each approximately 100m x 8m x 10m high",
+          "totalCapacity": "50,000-70,000 cubic meters",
+          "construction": "Opus caementicium with opus signinum lining"
+        },
+        "catchmentSystem": "Streets graded to direct runoff; drains at intersections"
+      },
+      "images": {
+        "map": "carthage-territory-map.jpg",
+        "keyInvention": "malga-cisterns.jpg",
+        "landscape": "carthage-harbor-reconstruction.jpg",
+        "detail": "opus-signinum-sample.jpg"
+      },
+      "sources": [
+        "Rakob, F. Die Wasserversorgung des antiken Karthago",
+        "Wilson, A. Water supply in ancient Carthage",
+        "Lancel, S. Carthage: A History",
+        "Fantar, M. Kerkouane: cité punique"
+      ]
+    },
+
+    {
+      "id": "china",
+      "name": "Ancient China",
+      "region": "Yellow River (Huang He), Yangtze River, and beyond",
+      "period": {
+        "start": -2000,
+        "end": 1912,
+        "era": "Bronze Age through Imperial Era"
+      },
+      "summary": "Chinese civilization developed along two great rivers with opposite characters: the unpredictable, silt-laden Yellow River (nicknamed 'China's Sorrow') and the more manageable Yangtze. Chinese engineers tackled both, creating history's longest canal and arguably its most ingenious flood control system.",
+      "waterChallenges": [
+        "Yellow River flooding (highly destructive, unpredictable)",
+        "Connecting north-south river systems for grain transport",
+        "Rice paddy irrigation requiring precise water control",
+        "Taming mountainous rivers (Min River at Dujiangyan)"
+      ],
+      "inventions": ["dujiangyan", "grand-canal-china", "canal-lock", "dragon-backbone-pump"],
+      "keyInsight": "Chinese engineers saw water control as essential to statecraft—floods could topple dynasties, and successful projects legitimized rulers.",
+      "engineerNotes": "The Dujiangyan system amazes me every time I read about it. Built in 256 BCE, it controls flooding and provides irrigation WITHOUT a dam—using only channel geometry. The 'fish mouth' dividing weir naturally adjusts the water split based on flow conditions: more to irrigation in low flow, more to spillway during floods. It has operated continuously for 2,270 years with only routine maintenance. No dam in history has that record. Li Bing's motto—'Dig the channel deep, keep the spillway low'—encapsulates flood engineering wisdom that took the West another two millennia to figure out.",
+      "modernLegacy": "The Grand Canal still carries 100 million tons of freight annually. Dujiangyan still irrigates the Chengdu Plain. China's modern engineering ambition (Three Gorges Dam, South-North Water Transfer) continues a 4,000-year tradition.",
+      "images": {
+        "map": "china-rivers-map.jpg",
+        "keyInvention": "dujiangyan.jpg",
+        "landscape": "grand-canal.jpg"
+      },
+      "sources": [
+        "Needham, J. Science and Civilisation in China, Vol. 4",
+        "Brook, T. The Troubled Empire: China in the Yuan and Ming Dynasties"
+      ]
+    },
+
+    {
+      "id": "khmer",
+      "name": "Khmer Empire",
+      "region": "Southeast Asia (modern Cambodia, Thailand, Laos, Vietnam)",
+      "period": {
+        "start": 802,
+        "end": 1431,
+        "era": "Medieval Era"
+      },
+      "summary": "The Khmer built Angkor, history's largest pre-industrial city, around an immense hydraulic network. Giant reservoirs (barays) and thousands of kilometers of canals transformed a seasonal flood plain into year-round rice production, supporting perhaps one million people.",
+      "waterChallenges": [
+        "Extreme monsoon seasonality (flood/drought cycle)",
+        "Need to store monsoon water for dry season",
+        "Supporting dense urban population",
+        "Rice cultivation requiring precise water levels"
+      ],
+      "inventions": ["baray", "angkor-canal-network", "rice-paddy-irrigation"],
+      "keyInsight": "The Khmer understood that controlling water meant controlling rice production, which meant controlling power. Angkor was a 'hydraulic state.'",
+      "engineerNotes": "The West Baray alone holds 50 million cubic meters—built using only earth embankments (no concrete) that have hel

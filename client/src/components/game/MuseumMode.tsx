@@ -1,8 +1,9 @@
 import { useState, useMemo } from "react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { X, Building2, ChevronLeft, ChevronRight, Droplets, Calendar, MapPin, Sparkles, Filter, Grid, List } from "lucide-react";
+import { X, Building2, ChevronLeft, ChevronRight, Droplets, Calendar, MapPin, Sparkles, Filter, Grid, List, User, Lightbulb, CheckCircle, Globe } from "lucide-react";
 import { getAllArtifacts, gameData, ArtifactData } from "../../data/gameData";
+import { getExpertInventionById, ExpertInvention, formatYear as formatExpertYear } from "../../data/expertInventions";
 
 interface MuseumModeProps {
   onClose: () => void;
@@ -110,9 +111,11 @@ export default function MuseumMode({ onClose, onSelectInvention }: MuseumModePro
   };
 
   if (detailArtifact) {
+    const expertData = getExpertInventionById(detailArtifact.id);
+    
     return (
-      <Card className="water-card max-w-2xl w-full max-h-[85vh] overflow-hidden">
-        <CardContent className="p-6">
+      <Card className="water-card max-w-3xl w-full max-h-[85vh] overflow-hidden">
+        <CardContent className="p-6 overflow-y-auto max-h-[80vh]">
           <div className="flex justify-between items-center mb-4">
             <Button
               variant="ghost"
@@ -139,32 +142,50 @@ export default function MuseumMode({ onClose, onSelectInvention }: MuseumModePro
             </div>
 
             <h2 className="font-heading text-2xl text-[var(--gold)] text-center mb-2">
-              {detailArtifact.name}
+              {expertData?.name || detailArtifact.name}
             </h2>
+            
+            {expertData?.alternateNames && expertData.alternateNames.length > 0 && (
+              <p className="text-[var(--parchment)]/60 text-xs italic mb-2">
+                Also known as: {expertData.alternateNames.slice(0, 3).join(", ")}
+              </p>
+            )}
 
-            <div className="flex gap-2 mb-4">
+            <div className="flex flex-wrap gap-2 mb-4 justify-center">
               <span className={`px-3 py-1 rounded-full text-xs font-medium bg-gradient-to-r ${rarityColors[detailArtifact.rarity]} text-white capitalize`}>
                 {detailArtifact.rarity}
               </span>
               <span className="px-3 py-1 rounded-full text-xs font-medium bg-[var(--cerulean)]/30 text-[var(--aqua)] capitalize">
                 {detailArtifact.category.replace("-", " ")}
               </span>
+              {expertData?.stillInUse && (
+                <span className="px-3 py-1 rounded-full text-xs font-medium bg-green-600/30 text-green-300 flex items-center gap-1">
+                  <CheckCircle size={12} />
+                  Still In Use
+                </span>
+              )}
             </div>
 
             <div className="w-full space-y-4 mt-4">
-              <div className="flex items-center gap-3 p-3 bg-[var(--deep-ocean)]/60 rounded-lg border border-[var(--aqua)]/30">
-                <Calendar className="text-[var(--gold)]" size={20} />
-                <div>
-                  <p className="text-[var(--parchment)]/70 text-xs">Time Period</p>
-                  <p className="text-[var(--parchment)]">{formatYear(detailArtifact.yearBCE)}</p>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="flex items-center gap-3 p-3 bg-[var(--deep-ocean)]/60 rounded-lg border border-[var(--aqua)]/30">
+                  <Calendar className="text-[var(--gold)] shrink-0" size={20} />
+                  <div>
+                    <p className="text-[var(--parchment)]/70 text-xs">Time Period</p>
+                    <p className="text-[var(--parchment)] text-sm">
+                      {expertData ? formatExpertYear(expertData.dateInvented) : formatYear(detailArtifact.yearBCE)}
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div className="flex items-center gap-3 p-3 bg-[var(--deep-ocean)]/60 rounded-lg border border-[var(--aqua)]/30">
-                <MapPin className="text-[var(--terracotta)]" size={20} />
-                <div>
-                  <p className="text-[var(--parchment)]/70 text-xs">Civilization</p>
-                  <p className="text-[var(--parchment)]">{getArtifactCivilization(detailArtifact.id)}</p>
+                <div className="flex items-center gap-3 p-3 bg-[var(--deep-ocean)]/60 rounded-lg border border-[var(--aqua)]/30">
+                  <MapPin className="text-[var(--terracotta)] shrink-0" size={20} />
+                  <div>
+                    <p className="text-[var(--parchment)]/70 text-xs">Region</p>
+                    <p className="text-[var(--parchment)] text-sm">
+                      {expertData?.region || getArtifactCivilization(detailArtifact.id)}
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -174,9 +195,62 @@ export default function MuseumMode({ onClose, onSelectInvention }: MuseumModePro
                   <p className="text-[var(--gold)] font-medium">Historical Significance</p>
                 </div>
                 <p className="text-[var(--parchment)]/90 text-sm leading-relaxed">
-                  {detailArtifact.description}
+                  {expertData?.description || detailArtifact.description}
                 </p>
               </div>
+
+              {expertData?.engineerNotes && (
+                <div className="p-4 bg-gradient-to-br from-[var(--terracotta)]/20 to-[var(--deep-ocean)]/60 rounded-lg border border-[var(--terracotta)]/40">
+                  <div className="flex items-center gap-2 mb-3">
+                    <User className="text-[var(--terracotta)]" size={18} />
+                    <div>
+                      <p className="text-[var(--terracotta)] font-medium text-sm">Expert Commentary</p>
+                      <p className="text-[var(--parchment)]/60 text-xs">Robert Dickinson, 50+ years water engineering</p>
+                    </div>
+                  </div>
+                  <p className="text-[var(--parchment)]/90 text-sm leading-relaxed italic">
+                    "{expertData.engineerNotes}"
+                  </p>
+                </div>
+              )}
+
+              {expertData?.modernRelevance && (
+                <div className="p-4 bg-[var(--cerulean)]/20 rounded-lg border border-[var(--cerulean)]/40">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Lightbulb className="text-[var(--aqua)]" size={18} />
+                    <p className="text-[var(--aqua)] font-medium text-sm">Modern Relevance</p>
+                  </div>
+                  <p className="text-[var(--parchment)]/90 text-sm leading-relaxed">
+                    {expertData.modernRelevance}
+                  </p>
+                </div>
+              )}
+
+              {expertData?.useLocations && expertData.useLocations.length > 0 && (
+                <div className="p-3 bg-[var(--deep-ocean)]/60 rounded-lg border border-[var(--aqua)]/30">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Globe className="text-[var(--gold)]" size={16} />
+                    <p className="text-[var(--gold)] font-medium text-xs">Where It's Used Today</p>
+                  </div>
+                  <div className="flex flex-wrap gap-1">
+                    {expertData.useLocations.map((loc, i) => (
+                      <span key={i} className="px-2 py-1 bg-[var(--river-blue)]/30 rounded text-[var(--parchment)]/80 text-xs">
+                        {loc}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {expertData?.tags && expertData.tags.length > 0 && (
+                <div className="flex flex-wrap gap-1">
+                  {expertData.tags.map((tag, i) => (
+                    <span key={i} className="px-2 py-1 bg-[var(--deep-ocean)]/40 rounded-full text-[var(--parchment)]/60 text-xs">
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              )}
 
               <Button
                 onClick={() => {
