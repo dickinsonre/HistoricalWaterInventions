@@ -119,11 +119,40 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
           </div>
         </section>
 
-        {/* Content Preview Section */}
+        {/* Visual Preview Section */}
         <section className="max-w-5xl mx-auto mt-12">
           <h2 className="font-heading text-xl text-center text-[var(--parchment)] mb-6">
             Discover What's Inside
           </h2>
+
+          {/* Featured Diagram Preview */}
+          <Card className="water-card mb-8">
+            <CardContent className="p-0">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="relative h-48 md:h-64 overflow-hidden rounded-l-lg">
+                  <img 
+                    src="/diagrams/aqueduct.png" 
+                    alt="Roman Aqueduct Diagram" 
+                    className="w-full h-full object-contain bg-[var(--aged-paper)] p-4"
+                  />
+                </div>
+                <div className="p-6 flex flex-col justify-center">
+                  <span className="text-[var(--terracotta)] text-xs uppercase tracking-wide mb-2">Featured Technology</span>
+                  <h3 className="font-heading text-xl text-[var(--gold)] mb-2">Roman Aqueducts</h3>
+                  <p className="text-[var(--parchment)]/80 text-sm mb-4">
+                    Engineering marvels that supplied ancient Rome with 1 billion liters of fresh water daily. 
+                    Built with precise gradients of 1:4800, these structures remain standing after 2,000 years.
+                  </p>
+                  <button 
+                    onClick={() => onSelectJourney("3d-world")}
+                    className="self-start px-4 py-2 bg-[var(--cerulean)] hover:bg-[var(--river-blue)] text-white rounded-lg text-sm transition-colors flex items-center gap-2"
+                  >
+                    Explore This Invention <ChevronRight size={16} />
+                  </button>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
           
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             {/* Featured Inventions */}
