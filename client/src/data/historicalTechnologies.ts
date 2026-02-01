@@ -575,6 +575,87 @@ export const historicalTechnologies: HistoricalTechnology[] = [
     primary_uses: ["Tunnel ventilation", "Maintenance access", "Debris removal"],
     key_principle: "Vertical shafts at regular intervals provide access for construction, maintenance, and ventilation of underground tunnels.",
     notes: "Tax exemptions granted to families maintaining qanats for up to 5 generations; over 30,000 qanats still function in Iran."
+  },
+  {
+    name: "Assyrian stone aqueduct to Nineveh",
+    category: "Water supply and conveyance",
+    civilizations: ["Assyria"],
+    period_BCE_CE: "c. 691 BCE",
+    primary_uses: ["Urban water supply", "Palace gardens"],
+    key_principle: "Constructed masonry channels and bridge structures to move water from source areas to cities by gravity.",
+    notes: "Early monumental aqueduct engineering; supplied Nineveh including possibly the Hanging Gardens."
+  },
+  {
+    name: "Eupalinos Tunnel",
+    category: "Water supply and conveyance",
+    civilizations: ["Greece"],
+    period_BCE_CE: "6th century BCE",
+    primary_uses: ["Urban water supply", "Siege-proof water access"],
+    key_principle: "Underground tunnel dug from both ends meeting in the middle using geometric calculations.",
+    notes: "1,036 meters long on Samos; remarkable surveying achievement. First tunnel excavated from both ends using geometry."
+  },
+  {
+    name: "Roman settling tanks",
+    category: "Water treatment",
+    civilizations: ["Rome"],
+    period_BCE_CE: "4th century BCE - 5th century CE",
+    primary_uses: ["Sediment removal", "Water clarification"],
+    key_principle: "Water held in tanks allows suspended particles to settle before distribution.",
+    notes: "Part of aqueduct system; water quality improved before reaching distribution tanks (castella)."
+  },
+  {
+    name: "Roman castella (distribution tanks)",
+    category: "Urban water distribution",
+    civilizations: ["Rome"],
+    period_BCE_CE: "4th century BCE - 5th century CE",
+    primary_uses: ["Flow regulation", "Water distribution"],
+    key_principle: "Central tanks divided aqueduct flow into multiple secondary lines serving different districts.",
+    notes: "Featured calibrated outlets; regulated water allocation to public fountains, baths, and private connections."
+  },
+  {
+    name: "Dholavira stepped reservoirs",
+    category: "Water collection and storage",
+    civilizations: ["Indus Valley"],
+    period_BCE_CE: "3rd-2nd millennium BCE",
+    primary_uses: ["Rainwater storage", "Monsoon capture", "Urban water security"],
+    key_principle: "Network of dams, channels, and stone-lined reservoirs captured seasonal flows with stepped access.",
+    notes: "UNESCO World Heritage Site; sophisticated system sustained urban center in arid Kutch region."
+  },
+  {
+    name: "Indus Valley brick-lined wells",
+    category: "Water collection",
+    civilizations: ["Indus Valley"],
+    period_BCE_CE: "3rd millennium BCE",
+    primary_uses: ["Household water supply", "Public water access"],
+    key_principle: "Numerous standardized brick-lined shafts provided distributed groundwater access throughout cities.",
+    notes: "Mohenjo-daro had over 700 wells; integrated with bathing rooms and drainage systems."
+  },
+  {
+    name: "Pont du Gard aqueduct bridge",
+    category: "Water supply and conveyance",
+    civilizations: ["Rome"],
+    period_BCE_CE: "c. 19 BCE",
+    primary_uses: ["Valley crossing", "Water transport"],
+    key_principle: "Three-tier stone arch bridge carried water channel across river valley using precise gradients.",
+    notes: "UNESCO World Heritage Site; 49 meters tall, supplied Nîmes with 200,000 cubic meters daily."
+  },
+  {
+    name: "Greek public fountains",
+    category: "Urban water distribution",
+    civilizations: ["Greece"],
+    period_BCE_CE: "6th century BCE onward",
+    primary_uses: ["Public water access", "Social gathering"],
+    key_principle: "Monumental fountain houses (krene) provided communal water access from spring-fed supplies.",
+    notes: "Centers of civic life; featured multiple spouts and decorative architecture."
+  },
+  {
+    name: "Roman thermae heating systems",
+    category: "Water heating",
+    civilizations: ["Rome"],
+    period_BCE_CE: "1st century BCE - 5th century CE",
+    primary_uses: ["Public bathing", "Heated water supply"],
+    key_principle: "Hypocaust underfloor heating and water circulation provided multiple temperature pools.",
+    notes: "Massive public baths like Caracalla served thousands daily; combined engineering with social institution."
   }
 ];
 

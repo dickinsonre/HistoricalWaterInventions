@@ -1,0 +1,684 @@
+[
+  {
+    "id": "irrigation_canals_mesopotamia",
+    "name": "Irrigation canals and field ditches",
+    "category": "Irrigation & agriculture",
+    "approx_period": "4th–3rd millennium BCE (Bronze Age)",
+    "civilizations_regions": [
+      "Mesopotamia (Sumer and later states)"
+    ],
+    "what_it_did": "Moved river water onto fields to expand farming beyond rainfall.",
+    "how_it_worked": "Networks of dug canals, ditches, and embankments diverted river flow and distributed it by gravity across agricultural plots.",
+    "key_features": [
+      "gravity-fed canals",
+      "field ditches",
+      "embankments/levees",
+      "community maintenance"
+    ],
+    "notable_examples": [
+      "Tigris–Euphrates alluvial plain canal networks"
+    ],
+    "references": [
+      "https://education.nationalgeographic.org/resource/early-agricultural-communities/",
+      "https://www.worldhistory.org/article/9/agriculture-in-mesopotamia/"
+    ]
+  },
+  {
+    "id": "basin_irrigation_nile",
+    "name": "Nile basin irrigation (earthen banks and basins)",
+    "category": "Irrigation & agriculture",
+    "approx_period": "3rd–2nd millennium BCE (Old–Middle Kingdom and later)",
+    "civilizations_regions": [
+      "Ancient Egypt"
+    ],
+    "what_it_did": "Captured annual Nile floodwater to soak fields and deposit fertile silt.",
+    "how_it_worked": "Earthen banks formed basins; channels guided floodwater into basins where it stood for weeks, then drained back as planting began.",
+    "key_features": [
+      "embanked basins",
+      "control gates/sluices",
+      "seasonal flood management"
+    ],
+    "notable_examples": [
+      "Nile floodplain basin systems"
+    ],
+    "references": [
+      "https://www.history.com/articles/ancient-egypt-nile-river",
+      "https://ancientengrtech.wisc.edu/ancient-egypt-water-engineering/"
+    ]
+  },
+  {
+    "id": "nilometer",
+    "name": "Nilometer (river level measurement)",
+    "category": "Measurement & management",
+    "approx_period": "Pharaonic period onward (used for centuries)",
+    "civilizations_regions": [
+      "Ancient Egypt"
+    ],
+    "what_it_did": "Measured Nile flood levels to anticipate harvest quality and support administration/tax planning.",
+    "how_it_worked": "Calibrated structures (columns, stairways, or wells) marked water height in cubits during the inundation.",
+    "key_features": [
+      "graduated scale",
+      "fixed reference point",
+      "flood forecasting"
+    ],
+    "notable_examples": [
+      "Nilometer tradition across Nile river sites"
+    ],
+    "references": [
+      "https://www.worldhistory.org/Nilometer/",
+      "https://en.wikipedia.org/wiki/Nilometer"
+    ]
+  },
+  {
+    "id": "shaduf",
+    "name": "Shaduf (counterweighted water-lifting lever)",
+    "category": "Lifting & pumping",
+    "approx_period": "2nd millennium BCE (and later)",
+    "civilizations_regions": [
+      "Ancient Egypt",
+      "Near East (wider adoption)"
+    ],
+    "what_it_did": "Lifted water from rivers/canals to higher fields or into channels.",
+    "how_it_worked": "A long lever with a bucket on one end and a counterweight on the other allowed a person to scoop and raise water with reduced effort.",
+    "key_features": [
+      "lever",
+      "counterweight",
+      "bucket",
+      "manual operation"
+    ],
+    "notable_examples": [
+      "Nile-side irrigation in Egypt"
+    ],
+    "references": [
+      "https://www.britannica.com/technology/shaduf",
+      "https://en.wikipedia.org/wiki/Shadoof"
+    ]
+  },
+  {
+    "id": "sakia",
+    "name": "Sakia (animal-powered water wheel with pots)",
+    "category": "Lifting & pumping",
+    "approx_period": "First millennium BCE onward (antiquity through later periods)",
+    "civilizations_regions": [
+      "Egypt and Mediterranean/Middle East (widespread)"
+    ],
+    "what_it_did": "Raised water continuously for irrigation and domestic supply.",
+    "how_it_worked": "An animal turned gears that rotated a vertical wheel carrying a chain of pots or buckets; water emptied at the top into a trough.",
+    "key_features": [
+      "animal power",
+      "geared drive",
+      "bucket chain",
+      "continuous lifting"
+    ],
+    "notable_examples": [
+      "Irrigation lifting in Egypt and surrounding regions"
+    ],
+    "references": [
+      "https://www.britannica.com/technology/sakia",
+      "https://www.mdpi.com/2073-4441/7/9/5031"
+    ]
+  },
+  {
+    "id": "noria",
+    "name": "Noria (current-driven water wheel with buckets)",
+    "category": "Lifting & pumping",
+    "approx_period": "Hellenistic/Roman periods and later (antiquity onward)",
+    "civilizations_regions": [
+      "Eastern Mediterranean and Near East (widespread)"
+    ],
+    "what_it_did": "Lifted water using river current, reducing human/animal labor.",
+    "how_it_worked": "A large wheel with attached buckets was turned by flowing water; buckets lifted water to an aqueduct or trough.",
+    "key_features": [
+      "river current power",
+      "bucketed wheel",
+      "elevated trough delivery"
+    ],
+    "notable_examples": [
+      "Large norias in the Near East (e.g., later famous at Hama)"
+    ],
+    "references": [
+      "https://www.britannica.com/technology/noria-water-wheel",
+      "https://www.waterhistory.org/histories/nile/"
+    ]
+  },
+  {
+    "id": "qanat",
+    "name": "Qanat (underground gently sloping water tunnel)",
+    "category": "Water supply & conveyance",
+    "approx_period": "1st millennium BCE (developed in ancient Iran; diffused widely)",
+    "civilizations_regions": [
+      "Ancient Iran (Persia) and arid regions across the Middle East/North Africa/Asia"
+    ],
+    "what_it_did": "Delivered groundwater to settlements and fields while minimizing evaporation.",
+    "how_it_worked": "A near-horizontal tunnel tapped an aquifer via a deep 'mother well'; vertical shafts provided access/ventilation; water flowed by gravity to an outlet.",
+    "key_features": [
+      "subsurface conveyance",
+      "gravity flow",
+      "vertical access shafts",
+      "evaporation reduction"
+    ],
+    "notable_examples": [
+      "Persian Qanat (UNESCO serial property)"
+    ],
+    "references": [
+      "https://www.britannica.com/technology/qanat",
+      "https://whc.unesco.org/en/list/1506/"
+    ]
+  },
+  {
+    "id": "assyria_stone_aqueduct",
+    "name": "Stone aqueducts (early monumental aqueduct engineering)",
+    "category": "Water supply & conveyance",
+    "approx_period": "7th century BCE",
+    "civilizations_regions": [
+      "Assyrian Empire"
+    ],
+    "what_it_did": "Carried fresh water over obstacles to supply cities.",
+    "how_it_worked": "Constructed channels and bridges of stone to move water from source areas to urban centers by gravity.",
+    "key_features": [
+      "masonry channels",
+      "bridge/aqueduct structures",
+      "gravity-fed conveyance"
+    ],
+    "notable_examples": [
+      "Aqueduct built to supply Nineveh (c. 691 BCE)"
+    ],
+    "references": [
+      "https://www.britannica.com/technology/aqueduct-engineering"
+    ]
+  },
+  {
+    "id": "roman_aqueducts",
+    "name": "Roman aqueducts and distribution tanks (castella)",
+    "category": "Water supply & urban infrastructure",
+    "approx_period": "4th century BCE–5th century CE (Republic through Empire)",
+    "civilizations_regions": [
+      "Roman Republic and Roman Empire"
+    ],
+    "what_it_did": "Supplied cities with large volumes of freshwater for fountains, baths, and households.",
+    "how_it_worked": "Gravity-fed channels (often covered) brought water from springs; distribution tanks regulated and routed flow into secondary lines and pipes.",
+    "key_features": [
+      "precise gradients",
+      "settling tanks",
+      "distribution tanks",
+      "public fountains/baths supply"
+    ],
+    "notable_examples": [
+      "Pont du Gard aqueduct bridge supplying Nîmes"
+    ],
+    "references": [
+      "https://education.nationalgeographic.org/resource/roman-aqueducts/",
+      "https://whc.unesco.org/en/list/344/"
+    ]
+  },
+  {
+    "id": "inverted_siphon_pressure_pipes",
+    "name": "Inverted siphons (pressurized aqueduct crossings)",
+    "category": "Water supply & conveyance",
+    "approx_period": "Hellenistic and Roman periods",
+    "civilizations_regions": [
+      "Ancient Greece",
+      "Roman world"
+    ],
+    "what_it_did": "Moved water across deep valleys without building extremely tall arcade bridges.",
+    "how_it_worked": "Water descended into pressure pipes, crossed a low point, then rose on the far side due to hydrostatic pressure (within structural limits).",
+    "key_features": [
+      "pressure pipes",
+      "hydrostatic head",
+      "valley crossing",
+      "leak control"
+    ],
+    "notable_examples": [
+      "Pressurized siphons in Roman aqueduct systems"
+    ],
+    "references": [
+      "https://www.pbs.org/wgbh/nova/lostempires/roman/manual.html",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7004096/",
+      "https://en.wikipedia.org/wiki/Roman_aqueduct"
+    ]
+  },
+  {
+    "id": "indus_urban_drainage",
+    "name": "Covered urban drainage and sewers (brick-lined drains)",
+    "category": "Sanitation & drainage",
+    "approx_period": "3rd millennium BCE (Mature Harappan period)",
+    "civilizations_regions": [
+      "Indus Valley Civilization"
+    ],
+    "what_it_did": "Removed wastewater and stormwater from dense urban neighborhoods.",
+    "how_it_worked": "Brick-lined drains ran along streets and from houses; many were covered with removable slabs for cleaning and maintenance.",
+    "key_features": [
+      "standardized brickwork",
+      "covered drains",
+      "inspection/cleanout access"
+    ],
+    "notable_examples": [
+      "Mohenjo-daro urban drainage"
+    ],
+    "references": [
+      "https://whc.unesco.org/en/list/138/",
+      "https://www.harappa.com/slide-show/drains"
+    ]
+  },
+  {
+    "id": "indus_wells",
+    "name": "Urban wells (decentralized groundwater access)",
+    "category": "Water collection & storage",
+    "approx_period": "3rd millennium BCE",
+    "civilizations_regions": [
+      "Indus Valley Civilization"
+    ],
+    "what_it_did": "Provided reliable local water access within cities.",
+    "how_it_worked": "Numerous brick-lined wells supplied households and public areas; wells supported daily needs independent of seasonal surface flows.",
+    "key_features": [
+      "brick-lined shafts",
+      "distributed access",
+      "integration with bathing/drainage"
+    ],
+    "notable_examples": [
+      "Wells at Mohenjo-daro"
+    ],
+    "references": [
+      "https://whc.unesco.org/en/list/138/"
+    ]
+  },
+  {
+    "id": "dholavira_reservoirs",
+    "name": "Stepped reservoirs and rainwater harvesting (Dholavira water system)",
+    "category": "Water collection & storage",
+    "approx_period": "3rd–2nd millennium BCE",
+    "civilizations_regions": [
+      "Indus Valley Civilization (Dholavira, Kutch)"
+    ],
+    "what_it_did": "Stored monsoon and runoff water in an arid environment to sustain an urban center.",
+    "how_it_worked": "A network of dams, channels, and large stone-lined reservoirs captured seasonal flows; stepped edges allowed access as levels changed.",
+    "key_features": [
+      "large reservoirs",
+      "runoff capture",
+      "dams/embankments",
+      "stepped access"
+    ],
+    "notable_examples": [
+      "Dholavira (UNESCO)"
+    ],
+    "references": [
+      "https://whc.unesco.org/en/list/1645/"
+    ]
+  },
+  {
+    "id": "minoans_plumbing_pipes",
+    "name": "Terracotta pipes, pressure-fed water supply, and drainage (Minoan hydro-technologies)",
+    "category": "Water supply & sanitation",
+    "approx_period": "2nd millennium BCE (Bronze Age Aegean)",
+    "civilizations_regions": [
+      "Minoan civilization (Crete)"
+    ],
+    "what_it_did": "Distributed freshwater and removed wastewater in palatial/urban settings.",
+    "how_it_worked": "Networks of terracotta pipes (including conical jointed sections) carried water; engineered drains conveyed wastewater and storm runoff.",
+    "key_features": [
+      "terracotta pipe networks",
+      "jointed/conical pipe design",
+      "drainage channels"
+    ],
+    "notable_examples": [
+      "Palatial complexes on Crete (e.g., Knossos region)"
+    ],
+    "references": [
+      "https://www.cambridge.org/core/journals/cambridge-archaeological-journal/article/drainage-systems-associated-with-minoan-architecture-in-crete-a-brief-review/1C777FB074D5D3D1B5649AF19C563A99",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0886779801000617",
+      "https://iwaponline.com/ws/article/5/3-4/1/27187/Hydro-technologies-in-the-Minoan-era"
+    ]
+  },
+  {
+    "id": "eupalinos_tunnel",
+    "name": "Tunnel aqueduct engineering (Eupalinos Tunnel)",
+    "category": "Water supply & conveyance",
+    "approx_period": "6th century BCE",
+    "civilizations_regions": [
+      "Ancient Greek world (Samos)"
+    ],
+    "what_it_did": "Delivered water securely to a city by routing an aqueduct through a mountain (hard to sabotage during siege).",
+    "how_it_worked": "A ~1 km tunnel was excavated from both ends using geometric surveying; water ran in a pipeline/channel within the tunnel system.",
+    "key_features": [
+      "bidirectional tunneling",
+      "geometric alignment",
+      "concealed route"
+    ],
+    "notable_examples": [
+      "Tunnel of Eupalinos (Samos)"
+    ],
+    "references": [
+      "https://www.britannica.com/topic/Tunnel-of-Eupalinos",
+      "https://hydriaproject.info/en/case-studies/the-aqueduct-of-eupalinos-at-samos/relevance"
+    ]
+  },
+  {
+    "id": "dujiangyan",
+    "name": "Dujiangyan irrigation and flood-control system (non-dam river diversion)",
+    "category": "Irrigation & flood control",
+    "approx_period": "3rd century BCE (c. 256 BCE)",
+    "civilizations_regions": [
+      "Qin State / early imperial China (Sichuan)"
+    ],
+    "what_it_did": "Reduced flooding and distributed irrigation water without building a blocking dam.",
+    "how_it_worked": "Engineered levees and channels split and regulated the river flow, diverting water to canals while managing sediment and flood peaks.",
+    "key_features": [
+      "river splitting/diversion",
+      "flood control",
+      "sediment management",
+      "gravity distribution"
+    ],
+    "notable_examples": [
+      "Dujiangyan (UNESCO)"
+    ],
+    "references": [
+      "https://whc.unesco.org/en/list/1001/",
+      "https://whc.unesco.org/uploads/nominations/1001.pdf"
+    ]
+  },
+  {
+    "id": "chain_pump_china",
+    "name": "Chain pump / 'dragon backbone' pump",
+    "category": "Lifting & pumping",
+    "approx_period": "Han dynasty (1st–2nd century CE and later use)",
+    "civilizations_regions": [
+      "China"
+    ],
+    "what_it_did": "Lifted water for irrigation and urban works more continuously than a bucket-and-rope.",
+    "how_it_worked": "An endless chain carrying paddles or discs moved through a tube/trough; as it turned (by pedals, animals, or waterwheels), it carried water upward.",
+    "key_features": [
+      "endless chain",
+      "paddles/discs",
+      "can be human/animal/water powered"
+    ],
+    "notable_examples": [
+      "Agricultural irrigation in Han China"
+    ],
+    "references": [
+      "https://www.mdpi.com/2073-4441/7/9/5031",
+      "https://en.wikipedia.org/wiki/Chain_pump"
+    ]
+  },
+  {
+    "id": "archimedes_screw",
+    "name": "Archimedes screw (helical water-raising machine)",
+    "category": "Lifting & pumping",
+    "approx_period": "3rd century BCE (traditionally associated with Archimedes)",
+    "civilizations_regions": [
+      "Hellenistic world; later Roman adoption"
+    ],
+    "what_it_did": "Raised water (or removed it from holds/mines) using a rotating screw mechanism.",
+    "how_it_worked": "A helix within a tube/cylinder rotated to carry trapped water upward along the incline.",
+    "key_features": [
+      "helical screw",
+      "rotational lifting",
+      "low-to-moderate lift heights"
+    ],
+    "notable_examples": [
+      "Use in irrigation/drainage in antiquity"
+    ],
+    "references": [
+      "https://www.britannica.com/technology/Archimedes-screw",
+      "https://www.britannica.com/biography/Archimedes"
+    ]
+  },
+  {
+    "id": "cloaca_maxima",
+    "name": "Large trunk sewers (Cloaca Maxima)",
+    "category": "Sanitation & drainage",
+    "approx_period": "6th century BCE onward",
+    "civilizations_regions": [
+      "Ancient Rome"
+    ],
+    "what_it_did": "Drained marshy areas and carried stormwater (and later wastewater) to the river, enabling dense urban development.",
+    "how_it_worked": "A major channel (later vaulted) conveyed runoff and connected infrastructure to the Tiber.",
+    "key_features": [
+      "large-scale drainage",
+      "stone construction",
+      "integration with urban planning"
+    ],
+    "notable_examples": [
+      "Cloaca Maxima (Rome)"
+    ],
+    "references": [
+      "https://www.britannica.com/topic/Cloaca-Maxima"
+    ]
+  },
+  {
+    "id": "roman_watermills_barbegal",
+    "name": "Water-powered milling complexes (Barbegal mills)",
+    "category": "Water power & industry",
+    "approx_period": "2nd–3rd century CE",
+    "civilizations_regions": [
+      "Roman Empire (Gaul/France)"
+    ],
+    "what_it_did": "Converted flowing water into mechanical power at industrial scale (grain milling).",
+    "how_it_worked": "Aqueduct water drove cascaded waterwheels (16 overshot wheels at Barbegal) to turn millstones and produce flour.",
+    "key_features": [
+      "aqueduct-fed hydropower",
+      "cascaded waterwheels",
+      "industrial-scale output"
+    ],
+    "notable_examples": [
+      "Barbegal watermill complex near Arles"
+    ],
+    "references": [
+      "https://www.britannica.com/place/Barbegal",
+      "https://www.science.org/doi/10.1126/sciadv.aar3620",
+      "https://www.britannica.com/technology/waterwheel-engineering"
+    ]
+  },
+  {
+    "id": "ancient_dams_kafara_marib",
+    "name": "Early dams for storage and flood control (e.g., Sadd el-Kafara; Marib Dam)",
+    "category": "Irrigation & flood control",
+    "approx_period": "3rd millennium BCE (Sadd el-Kafara); 1st millennium BCE–1st millennium CE (Marib, with later phases)",
+    "civilizations_regions": [
+      "Ancient Egypt",
+      "Kingdom of Saba (South Arabia)"
+    ],
+    "what_it_did": "Stored seasonal flows and reduced flood damage; enabled irrigation water regulation.",
+    "how_it_worked": "Earthen/stone embankments blocked wadis or valleys to impound water or divert it into canals.",
+    "key_features": [
+      "embankment dam",
+      "spillway/breach risk",
+      "reservoir formation"
+    ],
+    "notable_examples": [
+      "Sadd el-Kafara (Egypt)",
+      "Marib Dam (Yemen)"
+    ],
+    "references": [
+      "https://hydriaproject.info/en/case-studies/the-sadd-el-kafara-dam-at-wadi-garawi/",
+      "https://www.britannica.com/topic/Marib-Dam"
+    ]
+  },
+  {
+    "id": "water_clock_clepsydra",
+    "name": "Water clock (clepsydra)",
+    "category": "Measurement & management",
+    "approx_period": "2nd millennium BCE (Egyptian evidence) and later Greek/Roman use",
+    "civilizations_regions": [
+      "Ancient Egypt",
+      "Greek and Roman worlds"
+    ],
+    "what_it_did": "Measured time using controlled water flow, supporting ritual schedules and civic timing.",
+    "how_it_worked": "Either inflow or outflow vessels tracked time by water level changes against marked graduations.",
+    "key_features": [
+      "regulated flow",
+      "graduated markings",
+      "inflow/outflow designs"
+    ],
+    "notable_examples": [
+      "Temple-associated water clocks in Egypt"
+    ],
+    "references": [
+      "https://www.britannica.com/technology/clepsydra",
+      "https://www.metmuseum.org/art/collection/search/549190"
+    ]
+  },
+  {
+    "id": "nile_red_sea_canal",
+    "name": "Canal linking the Nile to the Red Sea (Canal of the Pharaohs)",
+    "category": "Navigation & waterworks",
+    "approx_period": "Late 2nd–1st millennium BCE (with major phases in 1st millennium BCE)",
+    "civilizations_regions": [
+      "Ancient Egypt; later Achaemenid Persia involvement"
+    ],
+    "what_it_did": "Enabled ship and goods movement between the Nile system and the Red Sea, supporting trade routes.",
+    "how_it_worked": "A canal corridor connected Nile branches to Red Sea in stages; required excavation, maintenance, and water management.",
+    "key_features": [
+      "inter-basin navigation",
+      "channel excavation",
+      "maintenance against silt"
+    ],
+    "notable_examples": [
+      "Ancient Nile–Red Sea canal alignments"
+    ],
+    "references": [
+      "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalHistory.aspx",
+      "https://en.wikipedia.org/wiki/Canal_of_the_Pharaohs"
+    ]
+  },
+  {
+    "id": "petra_water_engineering",
+    "name": "Desert-city water harvesting and distribution (Petra Nabataean system)",
+    "category": "Water collection & urban resilience",
+    "approx_period": "1st centuries BCE–CE",
+    "civilizations_regions": [
+      "Nabataean Kingdom (Petra, Jordan)"
+    ],
+    "what_it_did": "Captured scarce rainfall and spring flows to sustain a large desert city and control flash floods.",
+    "how_it_worked": "Diversion dams, tunnels, rock-cut channels, aqueducts, pipelines, reservoirs, and cisterns collected, stored, and distributed water.",
+    "key_features": [
+      "rainwater harvesting",
+      "cistern networks",
+      "flood-control dams",
+      "rock-cut channels/tunnels"
+    ],
+    "notable_examples": [
+      "Petra (UNESCO)"
+    ],
+    "references": [
+      "https://whc.unesco.org/en/list/326/",
+      "https://www.asce.org/about-civil-engineering/history-and-heritage/historic-landmarks/petra"
+    ]
+  },
+  {
+    "id": "maya_chultuns_aguadas",
+    "name": "Chultun cisterns and aguada reservoirs (Maya rainwater storage)",
+    "category": "Water collection & storage",
+    "approx_period": "Preclassic–Classic Maya (c. 600 BCE–900 CE, varies by region)",
+    "civilizations_regions": [
+      "Maya civilization (Mesoamerica)"
+    ],
+    "what_it_did": "Stored rainfall for dry seasons in regions with limited surface water and porous limestone.",
+    "how_it_worked": "Plastered underground cisterns (chultuns) and larger reservoirs captured runoff via channels and aprons; stored water for later use.",
+    "key_features": [
+      "underground storage",
+      "plaster waterproofing",
+      "runoff capture design"
+    ],
+    "notable_examples": [
+      "Maya sites in Guatemala and Yucatán where cenotes were absent"
+    ],
+    "references": [
+      "https://education.nationalgeographic.org/resource/technology-rainwater-survival-maya/",
+      "https://www.waterhistory.org/histories/aguadas/"
+    ]
+  },
+  {
+    "id": "maya_zeolite_water_filter",
+    "name": "Zeolite + quartz water filtration (Tikal reservoir filtration)",
+    "category": "Purification & quality",
+    "approx_period": "Late Preclassic–Classic Maya (evidence beginning ~3rd century BCE)",
+    "civilizations_regions": [
+      "Maya civilization (Tikal, Guatemala)"
+    ],
+    "what_it_did": "Improved drinking-water quality by filtering contaminants and clarifying water.",
+    "how_it_worked": "A reservoir filtration system used zeolite minerals and quartz sand (materials transported from distance) to filter and clarify stored water.",
+    "key_features": [
+      "mineral filtration media",
+      "gravity flow through filter bed",
+      "water-quality improvement"
+    ],
+    "notable_examples": [
+      "Corriental reservoir at Tikal"
+    ],
+    "references": [
+      "https://www.smithsonianmag.com/smart-news/researchers-uncover-2000-year-old-mayan-water-filtration-system-180976186/",
+      "https://www.chemistryworld.com/news/ancient-maya-communities-were-first-to-use-zeolite-to-purify-water/4012757.article"
+    ]
+  },
+  {
+    "id": "machu_picchu_water_supply_drainage",
+    "name": "Gravity-fed urban water supply and drainage (Machu Picchu)",
+    "category": "Water supply & urban resilience",
+    "approx_period": "15th century CE (Late Horizon Inca; often treated as 'ancient' in global surveys)",
+    "civilizations_regions": [
+      "Inca Empire (Andes)"
+    ],
+    "what_it_did": "Provided reliable spring water and managed heavy rainfall through engineered drainage on a steep mountain ridge.",
+    "how_it_worked": "A spring-capture system fed a gravity canal to fountains; extensive subsurface drainage and surface channels reduced erosion and instability.",
+    "key_features": [
+      "spring capture",
+      "gravity canal",
+      "fountain distribution",
+      "large-scale drainage"
+    ],
+    "notable_examples": [
+      "Historic Sanctuary of Machu Picchu (UNESCO)"
+    ],
+    "references": [
+      "https://whc.unesco.org/en/list/274/",
+      "https://www.waterhistory.org/histories/machu/machu.pdf",
+      "https://www.pbs.org/wgbh/nova/machupicchu/wright.html"
+    ]
+  },
+  {
+    "id": "tipon_inca_aqueducts",
+    "name": "Terrace irrigation canals and aqueducts (Tipón)",
+    "category": "Irrigation & agriculture",
+    "approx_period": "Inca period (Late Horizon, 15th century CE)",
+    "civilizations_regions": [
+      "Inca Empire (near Cusco, Peru)"
+    ],
+    "what_it_did": "Distributed water across terraces for agriculture and controlled flows for built environments.",
+    "how_it_worked": "Engineered aqueducts and canals carried water to terraces and fountains, demonstrating precise grade control and durable stone construction.",
+    "key_features": [
+      "terrace irrigation",
+      "aqueduct conveyance",
+      "stone channels",
+      "flow control"
+    ],
+    "notable_examples": [
+      "Tipón (ASCE historic landmark)"
+    ],
+    "references": [
+      "https://www.asce.org/about-civil-engineering/history-and-heritage/historic-landmarks/tipon",
+      "https://ancientengrtech.wisc.edu/machu-picchu/machu-picchu-water-management/"
+    ]
+  },
+  {
+    "id": "stepwells_india",
+    "name": "Stepwells (vav/baoli) and stepped water access architecture",
+    "category": "Water collection & access",
+    "approx_period": "From about the 3rd century CE (with earlier stepped tanks/reservoirs)",
+    "civilizations_regions": [
+      "South Asia (India and region)"
+    ],
+    "what_it_did": "Provided reliable access to groundwater and stored water through seasonal cycles in dry regions.",
+    "how_it_worked": "Deep wells were engineered with staircases and platforms allowing access as water levels rose and fell; often integrated with civic/ritual life.",
+    "key_features": [
+      "architectural stairs",
+      "deep groundwater access",
+      "seasonal-level usability"
+    ],
+    "notable_examples": [
+      "Stepwells across western India"
+    ],
+    "references": [
+      "https://www.britannica.com/technology/stepwell"
+    ]
+  }
+]
