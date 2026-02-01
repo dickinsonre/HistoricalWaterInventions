@@ -439,15 +439,24 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                         ${isHovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}
                       `}
                     >
-                      <div className="bg-[var(--deep-ocean)] border border-[var(--aqua)]/30 rounded-lg p-3 min-w-[180px] shadow-xl">
+                      <div className="bg-[var(--deep-ocean)] border border-[var(--aqua)]/30 rounded-lg p-3 min-w-[220px] shadow-xl">
                         <h3 className="font-heading text-[var(--gold)] text-sm mb-1">{region.name}</h3>
                         <p className="text-[var(--parchment)]/60 text-xs mb-2">{region.dateRange}</p>
-                        <div className="flex items-center gap-2 text-xs text-[var(--aqua)]">
+                        <div className="flex items-center gap-2 text-xs text-[var(--aqua)] mb-2">
                           <Droplets size={12} />
                           <span>{inventionCount} inventions</span>
                         </div>
-                        <div className="flex items-center gap-1 mt-2 text-xs text-[var(--parchment)]/80">
-                          <span>Click to explore</span>
+                        {/* Show first 3 invention names as preview */}
+                        <div className="text-xs text-[var(--parchment)]/70 mb-2 space-y-1">
+                          {region.locations.flatMap(l => l.artifacts).slice(0, 3).map((art, i) => (
+                            <div key={i} className="flex items-center gap-1">
+                              <span className="text-[var(--terracotta)]">•</span> {art.name}
+                            </div>
+                          ))}
+                          {inventionCount > 3 && <div className="text-[var(--aqua)]">+ {inventionCount - 3} more...</div>}
+                        </div>
+                        <div className="flex items-center gap-1 text-xs text-[var(--gold)] font-medium">
+                          <span>Click to explore all</span>
                           <ChevronRight size={12} />
                         </div>
                       </div>
@@ -474,10 +483,33 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
           </CardContent>
         </Card>
 
-        <div className="mt-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
+        {/* Summary Stats */}
+        <div className="mt-6 mb-4 p-4 water-card rounded-lg">
+          <div className="flex flex-wrap justify-center gap-8 text-center">
+            <div>
+              <div className="text-3xl font-heading text-[var(--gold)]">{gameData.regions.length}</div>
+              <div className="text-[var(--parchment)]/70 text-sm">Civilizations</div>
+            </div>
+            <div>
+              <div className="text-3xl font-heading text-[var(--aqua)]">{allArtifacts.length}</div>
+              <div className="text-[var(--parchment)]/70 text-sm">Water Inventions</div>
+            </div>
+            <div>
+              <div className="text-3xl font-heading text-[var(--terracotta)]">6</div>
+              <div className="text-[var(--parchment)]/70 text-sm">Continents</div>
+            </div>
+            <div>
+              <div className="text-3xl font-heading text-[var(--cerulean)]">40,000+</div>
+              <div className="text-[var(--parchment)]/70 text-sm">Years of History</div>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="font-heading text-xl text-[var(--gold)] mb-4">All Civilizations & Their Inventions</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {gameData.regions.map(region => {
-            const loc = civilizationLocations[region.id];
-            const inventionCount = region.locations.reduce((acc, l) => acc + l.artifacts.length, 0);
+            const inventions = region.locations.flatMap(l => l.artifacts);
+            const inventionCount = inventions.length;
 
             return (
               <Card 
@@ -485,18 +517,31 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 className="water-card cursor-pointer hover:border-[var(--gold)] transition-all"
                 onClick={() => setSelectedCiv(region.id)}
               >
-                <CardContent className="p-3">
-                  <div className="flex items-center gap-2 mb-1">
+                <CardContent className="p-4">
+                  <div className="flex items-center gap-2 mb-2">
                     <div 
-                      className="w-3 h-3 rounded-full"
+                      className="w-4 h-4 rounded-full"
                       style={{ backgroundColor: region.color }}
                     />
-                    <h3 className="font-heading text-sm text-[var(--parchment)] truncate">{region.name}</h3>
+                    <h3 className="font-heading text-base text-[var(--gold)]">{region.name}</h3>
                   </div>
-                  <p className="text-[var(--parchment)]/60 text-xs">{region.dateRange}</p>
-                  <div className="flex items-center justify-between mt-2">
-                    <span className="text-xs text-[var(--aqua)]">{inventionCount} inventions</span>
-                    <ChevronRight size={14} className="text-[var(--parchment)]/40" />
+                  <p className="text-[var(--parchment)]/60 text-xs mb-2">{region.era} • {region.dateRange}</p>
+                  <div className="text-xs text-[var(--aqua)] mb-2">{inventionCount} water inventions:</div>
+                  <div className="space-y-1 mb-3">
+                    {inventions.slice(0, 4).map((art, i) => (
+                      <div key={i} className="text-xs text-[var(--parchment)]/80 flex items-center gap-1">
+                        <Droplets size={10} className="text-[var(--cerulean)]" />
+                        <span>{art.name}</span>
+                        <span className="text-[var(--parchment)]/40">({art.historicalPeriod})</span>
+                      </div>
+                    ))}
+                    {inventionCount > 4 && (
+                      <div className="text-xs text-[var(--terracotta)]">+ {inventionCount - 4} more inventions</div>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-1 text-xs text-[var(--gold)] font-medium">
+                    <span>Click to explore details</span>
+                    <ChevronRight size={14} />
                   </div>
                 </CardContent>
               </Card>

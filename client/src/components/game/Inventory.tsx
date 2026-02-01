@@ -1,9 +1,10 @@
-import { useInventory } from "../../lib/stores/useInventory";
+import { useState } from "react";
 import { Button } from "../ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { ScrollArea } from "../ui/scroll-area";
-import { X, Droplets, Calendar, MapPin } from "lucide-react";
+import { X, Droplets, Calendar, MapPin, Filter } from "lucide-react";
+import { gameData, getAllArtifacts } from "../../data/gameData";
 
 interface InventoryProps {
   onClose: () => void;
@@ -11,7 +12,14 @@ interface InventoryProps {
 }
 
 export default function Inventory({ onClose, onViewInvention }: InventoryProps) {
-  const { artifacts } = useInventory();
+  const allArtifacts = getAllArtifacts();
+  const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
+  
+  const categories = ["irrigation", "aqueduct", "water-lifting", "sanitation", "dam", "water-clock", "fountain", "canal"];
+  
+  const filteredArtifacts = categoryFilter 
+    ? allArtifacts.filter(a => a.category === categoryFilter)
+    : allArtifacts;
 
   const getRarityStyle = (rarity: string) => {
     switch (rarity) {
@@ -38,15 +46,15 @@ export default function Inventory({ onClose, onViewInvention }: InventoryProps) 
   };
 
   return (
-    <Card className="w-full max-w-3xl max-h-[85vh] water-card">
+    <Card className="w-full max-w-4xl max-h-[90vh] water-card">
       <CardHeader className="flex flex-row items-center justify-between border-b border-[var(--aqua)]/20">
         <div>
           <CardTitle className="font-heading text-[var(--gold)] text-xl flex items-center gap-2">
             <Droplets className="w-5 h-5 text-[var(--aqua)]" />
-            Water Invention Collection
+            All Water Inventions
           </CardTitle>
           <p className="text-[var(--parchment)]/70 text-sm mt-1">
-            {artifacts.length} inventions discovered
+            {allArtifacts.length} inventions across {gameData.regions.length} civilizations
           </p>
         </div>
         <Button
@@ -59,20 +67,40 @@ export default function Inventory({ onClose, onViewInvention }: InventoryProps) 
         </Button>
       </CardHeader>
       <CardContent className="p-4">
-        <ScrollArea className="h-[60vh]">
-          {artifacts.length === 0 ? (
-            <div className="text-center py-12">
-              <Droplets className="w-16 h-16 mx-auto mb-4 text-[var(--aqua)]/30" />
-              <p className="text-[var(--parchment)]/70 text-lg mb-2">
-                No inventions discovered yet
-              </p>
-              <p className="text-[var(--parchment)]/50 text-sm">
-                Explore ancient civilizations to discover water engineering marvels!
-              </p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {artifacts.map((artifact) => {
+        {/* Category Filters */}
+        <div className="flex flex-wrap gap-2 mb-4">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setCategoryFilter(null)}
+            className={`text-xs ${!categoryFilter ? 'bg-[var(--cerulean)] text-white' : 'water-card text-[var(--parchment)]'}`}
+          >
+            All ({allArtifacts.length})
+          </Button>
+          {categories.map(cat => {
+            const count = allArtifacts.filter(a => a.category === cat).length;
+            if (count === 0) return null;
+            return (
+              <Button
+                key={cat}
+                variant="outline"
+                size="sm"
+                onClick={() => setCategoryFilter(cat)}
+                className={`text-xs ${categoryFilter === cat ? 'bg-[var(--cerulean)] text-white' : 'water-card text-[var(--parchment)]'}`}
+              >
+                {getCategoryLabel(cat)} ({count})
+              </Button>
+            );
+          })}
+        </div>
+
+        <p className="text-[var(--parchment)]/60 text-sm mb-3">
+          Showing {filteredArtifacts.length} inventions {categoryFilter && `in ${getCategoryLabel(categoryFilter)}`}
+        </p>
+
+        <ScrollArea className="h-[55vh]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {filteredArtifacts.map((artifact) => {
                 const style = getRarityStyle(artifact.rarity);
                 return (
                   <Card 
@@ -112,8 +140,7 @@ export default function Inventory({ onClose, onViewInvention }: InventoryProps) 
                   </Card>
                 );
               })}
-            </div>
-          )}
+          </div>
         </ScrollArea>
       </CardContent>
     </Card>
