@@ -3,6 +3,8 @@ export const inventionToSwmmModel: Record<string, string> = {
   'qanat-plans': 'qanat',
   'aqueduct': 'roman-aqueduct',
   'roman-aqueduct': 'roman-aqueduct',
+  'roman-inverted-siphon': 'inverted-siphon',
+  'roman-orifice-control': 'orifice-control',
   'dujiangyan': 'dujiangyan',
   'barays': 'baray',
   'west-baray': 'baray',
@@ -126,6 +128,12 @@ export interface SWMM5ModelParams {
   reservoirDepth?: number;
   numCisterns?: number;
   cisternVolume?: number;
+  valleyDepth?: number;
+  headPressure?: number;
+  orificeArea?: number;
+  orificeDiameter?: number;
+  dischargeCoeff?: number;
+  headDifference?: number;
 }
 
 export interface SWMM5Model {
@@ -256,6 +264,37 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       roughness: 0.018
     },
     engineeringNotes: 'Originally open channel, later vaulted. Still carries stormwater through Rome today'
+  },
+  'inverted-siphon': {
+    name: 'Roman Inverted Siphon (Lyon Gier Aqueduct)',
+    description: 'Pressurized pipe system crossing deep valley under hydraulic pressure',
+    civilization: 'Roman Empire',
+    period: '20 BCE',
+    parameters: {
+      length: 2600,
+      slope: 0.045,
+      flowRate: 0.014,
+      pipeDiameter: 0.25,
+      valleyDepth: 123,
+      headPressure: 12,
+      roughness: 0.012
+    },
+    engineeringNotes: 'Lyon had 9 siphons across 4 aqueducts. The Gier aqueduct siphon used 10,000+ lead pipes joined with bronze collars, handling 12 atmospheres pressure'
+  },
+  'orifice-control': {
+    name: 'Roman Quinaria Water Metering',
+    description: 'Calibrated orifice system for fair water distribution and taxation',
+    civilization: 'Roman Empire',
+    period: '50 BCE',
+    parameters: {
+      orificeArea: 0.00159,
+      orificeDiameter: 0.045,
+      dischargeCoeff: 0.6,
+      headDifference: 0.3,
+      flowRate: 0.0004,
+      roughness: 0.01
+    },
+    engineeringNotes: 'Frontinus documented 25 pipe sizes. The quinaria (4.5cm dia) became the standard unit. Bronze plates ensured consistent openings to prevent water theft'
   },
   'maalga-cisterns': {
     name: 'Carthage La Malga Cisterns',
@@ -1810,6 +1849,199 @@ TIBER_TIDE                  24:00      15.0
 `;
 }
 
+function generateInvertedSiphonModel(p: SWMM5ModelParams): string {
+  return `
+;; ============================================
+;; ROMAN INVERTED SIPHON (LYON GIER AQUEDUCT)
+;; ============================================
+;; Historical Context:
+;; - Lyon (Lugdunum) had 9 siphons across 4 aqueducts
+;; - Gier siphon: 2.6km long, 123m valley crossing
+;; - Lead pipes (fistulae) joined with bronze collars
+;; - Handled 12 atmospheres of water pressure
+;; - Delivered 1.2 million liters/day to the city
+;; ============================================
+
+[TITLE]
+Roman Inverted Siphon - Lyon Gier Aqueduct (20 BCE)
+
+[JUNCTIONS]
+;;Name           Elevation      MaxDepth       InitDepth      SurDepth       Aponded
+;; Header tank on approach side
+HEADER_TANK      ${175 + (p.valleyDepth || 123)}          3.0            2.5            0              500
+;; Siphon entry point
+SIPHON_START     ${170 + (p.valleyDepth || 123)}          1.0            0              0              0
+;; Valley bottom crossing
+VALLEY_LOW_1     52.00          0.5            0              0              0
+VALLEY_LOW_2     52.00          0.5            0              0              0
+;; Siphon exit point
+SIPHON_END       ${165 + (p.valleyDepth || 123)}          1.0            0              0              0
+;; Receiving tank
+RECEIVING_TANK   ${160 + (p.valleyDepth || 123)}          3.0            0              0              100
+
+[OUTFALLS]
+;;Name           Elevation      Type       Stage Data       Gated    Route To
+CITY_DIST        ${155 + (p.valleyDepth || 123)}          FREE                        NO
+
+[CONDUITS]
+;;Name           From Node        To Node          Length     Roughness  InOffset   OutOffset  InitFlow   MaxFlow
+;; Approach channel to header
+APPROACH_CHAN    HEADER_TANK      SIPHON_START     200        ${p.roughness || 0.012}   0          0          0          0
+;; Descending pipe (under pressure)
+DESCENT_PIPE_1   SIPHON_START     VALLEY_LOW_1     ${(p.length || 2600) / 4}        ${p.roughness || 0.012}   0          0          0          0
+DESCENT_PIPE_2   VALLEY_LOW_1     VALLEY_LOW_2     ${(p.length || 2600) / 4}        ${p.roughness || 0.012}   0          0          0          0
+;; Ascending pipe (under pressure)
+ASCENT_PIPE_1    VALLEY_LOW_2     SIPHON_END       ${(p.length || 2600) / 4}        ${p.roughness || 0.012}   0          0          0          0
+ASCENT_PIPE_2    SIPHON_END       RECEIVING_TANK   ${(p.length || 2600) / 4}        ${p.roughness || 0.012}   0          0          0          0
+;; Distribution to city
+DIST_CHAN        RECEIVING_TANK   CITY_DIST        150        ${p.roughness || 0.012}   0          0          0          0
+
+[XSECTIONS]
+;;Link           Shape        Geom1            Geom2      Geom3      Geom4      Barrels    Culvert
+APPROACH_CHAN    RECT_OPEN    0.8              0.6        0          0          1
+;; Lead pipes - multiple parallel fistulae
+DESCENT_PIPE_1   CIRCULAR     ${p.pipeDiameter || 0.25}              0          0          0          10
+DESCENT_PIPE_2   CIRCULAR     ${p.pipeDiameter || 0.25}              0          0          0          10
+ASCENT_PIPE_1    CIRCULAR     ${p.pipeDiameter || 0.25}              0          0          0          10
+ASCENT_PIPE_2    CIRCULAR     ${p.pipeDiameter || 0.25}              0          0          0          10
+DIST_CHAN        RECT_OPEN    0.8              0.6        0          0          1
+
+[INFLOWS]
+;;Node           Constituent      Time Series      Type       Mfactor    Sfactor    Baseline   Pattern
+;; Constant spring source flow
+HEADER_TANK      FLOW             ""               FLOW       1.0        1.0        ${(p.flowRate || 0.014) * 1000}        ""
+
+[OPTIONS]
+FLOW_UNITS       LPS
+INFILTRATION     HORTON
+FLOW_ROUTING     DYNWAVE
+START_DATE       06/01/0020
+START_TIME       00:00:00
+REPORT_START_DATE 06/01/0020
+REPORT_START_TIME 00:00:00
+END_DATE         06/01/0020
+END_TIME         24:00:00
+DRY_DAYS         0
+REPORT_STEP      00:05:00
+WET_STEP         00:01:00
+DRY_STEP         01:00:00
+ROUTING_STEP     0:00:10
+
+[REPORT]
+INPUT            YES
+CONTROLS         YES
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+
+;; Engineering Note: The 10 parallel barrels represent the bundle of
+;; lead pipes (fistulae) that made up each siphon section.
+;; Pressure at valley bottom: ${p.headPressure || 12} atmospheres (~${((p.headPressure || 12) * 10.33).toFixed(0)}m head)
+`;
+}
+
+function generateOrificeControlModel(p: SWMM5ModelParams): string {
+  return `
+;; ============================================
+;; ROMAN QUINARIA WATER METERING SYSTEM
+;; ============================================
+;; Historical Context:
+;; - Frontinus (97 CE) documented Rome's water system
+;; - Quinaria = standard pipe unit (4.5cm diameter)
+;; - Calibrated bronze orifices for fair distribution
+;; - 25 official pipe sizes documented
+;; - Used for water taxation and allocation
+;; ============================================
+
+[TITLE]
+Roman Quinaria Orifice Control System (50 BCE)
+
+[JUNCTIONS]
+;;Name           Elevation      MaxDepth       InitDepth      SurDepth       Aponded
+;; Castellum (distribution tank)
+CASTELLUM        10.00          2.0            1.5            0              1000
+;; Distribution chambers
+DIST_CHAMBER_1   9.50           1.0            0.5            0              0
+DIST_CHAMBER_2   9.50           1.0            0.5            0              0
+DIST_CHAMBER_3   9.50           1.0            0.5            0              0
+;; Consumer endpoints
+FOUNTAIN_1       8.00           0.5            0              0              0
+BATHS_1          7.50           0.5            0              0              0
+PRIVATE_1        8.50           0.5            0              0              0
+
+[OUTFALLS]
+;;Name           Elevation      Type       Stage Data       Gated    Route To
+OVERFLOW         9.00           FREE                        NO
+FOUNTAIN_OUT     7.50           FREE                        NO
+BATHS_OUT        7.00           FREE                        NO
+PRIVATE_OUT      8.00           FREE                        NO
+
+[CONDUITS]
+;;Name           From Node        To Node          Length     Roughness  InOffset   OutOffset  InitFlow   MaxFlow
+;; Main distribution pipes
+MAIN_PIPE_1      DIST_CHAMBER_1   FOUNTAIN_1       100        ${p.roughness || 0.01}    0          0          0          0
+MAIN_PIPE_2      DIST_CHAMBER_2   BATHS_1          100        ${p.roughness || 0.01}    0          0          0          0
+MAIN_PIPE_3      DIST_CHAMBER_3   PRIVATE_1        100        ${p.roughness || 0.01}    0          0          0          0
+;; Outlet pipes
+FOUNTAIN_PIPE    FOUNTAIN_1       FOUNTAIN_OUT     20         ${p.roughness || 0.01}    0          0          0          0
+BATHS_PIPE       BATHS_1          BATHS_OUT        20         ${p.roughness || 0.01}    0          0          0          0
+PRIVATE_PIPE     PRIVATE_1        PRIVATE_OUT      20         ${p.roughness || 0.01}    0          0          0          0
+
+[XSECTIONS]
+;;Link           Shape        Geom1            Geom2      Geom3      Geom4      Barrels    Culvert
+;; Lead pipes of various quinaria sizes
+MAIN_PIPE_1      CIRCULAR     ${(p.orificeDiameter || 0.045) * 2}              0          0          0          1
+MAIN_PIPE_2      CIRCULAR     ${(p.orificeDiameter || 0.045) * 3}              0          0          0          1
+MAIN_PIPE_3      CIRCULAR     ${p.orificeDiameter || 0.045}              0          0          0          1
+FOUNTAIN_PIPE    CIRCULAR     ${(p.orificeDiameter || 0.045) * 2}              0          0          0          1
+BATHS_PIPE       CIRCULAR     ${(p.orificeDiameter || 0.045) * 3}              0          0          0          1
+PRIVATE_PIPE     CIRCULAR     ${p.orificeDiameter || 0.045}              0          0          0          1
+
+[ORIFICES]
+;;Name           From Node        To Node          Type       Shape      Height     Width      InOffset   DisCoeff   Flap Gate
+;; Calibrated bronze orifices (quinaria)
+ORIFICE_FOUNTAIN CASTELLUM        DIST_CHAMBER_1   BOTTOM     CIRCULAR   ${(p.orificeDiameter || 0.045) * 2}          0          0          ${p.dischargeCoeff || 0.6}        NO
+ORIFICE_BATHS    CASTELLUM        DIST_CHAMBER_2   BOTTOM     CIRCULAR   ${(p.orificeDiameter || 0.045) * 3}          0          0          ${p.dischargeCoeff || 0.6}        NO
+ORIFICE_PRIVATE  CASTELLUM        DIST_CHAMBER_3   BOTTOM     CIRCULAR   ${p.orificeDiameter || 0.045}          0          0          ${p.dischargeCoeff || 0.6}        NO
+;; Overflow orifice
+ORIFICE_OVERFLOW CASTELLUM        OVERFLOW         SIDE       RECT_CLOSED 0.3          0.5        1.5        ${p.dischargeCoeff || 0.6}        NO
+
+[INFLOWS]
+;;Node           Constituent      Time Series      Type       Mfactor    Sfactor    Baseline   Pattern
+;; Constant aqueduct supply
+CASTELLUM        FLOW             ""               FLOW       1.0        1.0        ${(p.flowRate || 0.0004) * 1000}        ""
+
+[OPTIONS]
+FLOW_UNITS       LPS
+INFILTRATION     HORTON
+FLOW_ROUTING     DYNWAVE
+START_DATE       01/01/0050
+START_TIME       00:00:00
+REPORT_START_DATE 01/01/0050
+REPORT_START_TIME 00:00:00
+END_DATE         01/01/0050
+END_TIME         24:00:00
+DRY_DAYS         0
+REPORT_STEP      00:05:00
+WET_STEP         00:01:00
+DRY_STEP         01:00:00
+ROUTING_STEP     0:00:10
+
+[REPORT]
+INPUT            YES
+CONTROLS         YES
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+
+;; Engineering Note: The Roman quinaria system used calibrated
+;; bronze orifice plates to ensure fair water distribution.
+;; Standard quinaria = ${(p.orificeDiameter || 0.045) * 100}cm diameter = ${((p.orificeArea || 0.00159) * 10000).toFixed(2)} cm² area
+;; Discharge coefficient: ${p.dischargeCoeff || 0.6}
+;; Flow rate per quinaria: Q = Cd × A × sqrt(2gh)
+`;
+}
+
 function generateCisternModel(p: SWMM5ModelParams): string {
   const numCisterns = p.numCisterns || 24;
   
@@ -2140,6 +2372,12 @@ export function generateSWMM5File(inventionId: string): string | null {
       break;
     case 'cloaca-maxima':
       content += generateCloacaMaximaModel(model.parameters);
+      break;
+    case 'inverted-siphon':
+      content += generateInvertedSiphonModel(model.parameters);
+      break;
+    case 'orifice-control':
+      content += generateOrificeControlModel(model.parameters);
       break;
     case 'maalga-cisterns':
       content += generateCisternModel(model.parameters);

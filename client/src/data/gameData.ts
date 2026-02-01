@@ -414,6 +414,44 @@ export const gameData: GameData = {
               category: "aqueduct"
             }
           ]
+        },
+        {
+          id: "lyon-siphons",
+          name: "Lugdunum (Lyon) Siphons",
+          description: "Most impressive inverted siphon aqueducts in the Roman world",
+          historicalContext: "Roman Lyon had 4 major aqueducts with 9 siphons crossing deep valleys",
+          coordinates: { lat: 45.7640, lng: 4.8357 },
+          artifacts: [
+            {
+              id: "roman-inverted-siphon",
+              name: "Roman Inverted Siphon",
+              description: "Lead and stone pipes crossing valleys under pressure",
+              rarity: "legendary",
+              historicalPeriod: "Early Empire (27 BCE - 284 CE)",
+              significance: "Gier aqueduct siphon crossed 123m deep valley with 1.2 million liters/day capacity",
+              yearBCE: -20,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "rome-water-distribution",
+          name: "Roman Water Distribution",
+          description: "Sophisticated urban water metering and distribution system",
+          historicalContext: "Frontinus documented Rome's water supply in 97 CE",
+          coordinates: { lat: 41.8902, lng: 12.4922 },
+          artifacts: [
+            {
+              id: "roman-orifice-control",
+              name: "Quinaria Orifice Control",
+              description: "Calibrated bronze orifices for precise water measurement and distribution",
+              rarity: "epic",
+              historicalPeriod: "Early Empire (27 BCE - 284 CE)",
+              significance: "Standard unit (quinaria = 4.5cm diameter) allowed fair water taxation and allocation",
+              yearBCE: -50,
+              category: "aqueduct"
+            }
+          ]
         }
       ]
     },

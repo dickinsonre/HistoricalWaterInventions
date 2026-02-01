@@ -25,6 +25,8 @@ export const inventionDiagrams: Record<string, string> = {
   "thermae": "/diagrams/thermae.png",
   "roman-fountains": "/diagrams/roman-fountain.png",
   "lead-pipes": "/diagrams/aqueduct.png",
+  "roman-inverted-siphon": "/diagrams/inverted-siphon.png",
+  "roman-orifice-control": "/diagrams/orifice-control.png",
   "qanat": "/diagrams/qanat.png",
   "qanat-plans": "/diagrams/qanat.png",
   "jerwan-aqueduct": "/diagrams/aqueduct.png",
