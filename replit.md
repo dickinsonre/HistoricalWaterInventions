@@ -168,6 +168,12 @@ client/src/
 
 ## Changelog
 
+- February 01, 2026: SWMM5 Showcase & Enhanced Search
+  - Added SWMM5Showcase component with 10 featured hydraulic models on main page
+  - Enhanced QuickSearchBar with 9 category filters (All, Irrigation, Aqueducts, Canals, Dams, Sanitation, Fountains, Water Lifting, Clocks)
+  - Category badges displayed in search results
+  - 153 technical diagrams verified (100% coverage for key inventions)
+  - Copy-to-clipboard and download buttons for each model
 - February 01, 2026: Etruscan & Viking civilizations expansion
   - Added Etruscan civilization (6 inventions): Cuniculi tunnels, Cloaca Maxima, rock-cut cisterns, sacred water, terracing, urban networks
   - Added Viking civilization (7 inventions): Clinker longships, freshwater management, water reading navigation, fjord harbors, portage systems, Arctic ice tech, watermills
