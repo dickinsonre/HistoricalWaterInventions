@@ -107,7 +107,20 @@ const civilizationCoords: Record<string, { lat: number; lng: number; region: str
   "swahili-coast": { lat: -6.2, lng: 39.2, region: "East Africa Coast" },
   "kongo-kingdom": { lat: -4.3, lng: 15.3, region: "Congo Basin" },
   "mali-timbuktu": { lat: 16.8, lng: -3.0, region: "West Africa" },
-  "morocco": { lat: 31.6, lng: -6.0, region: "North Africa" }
+  "morocco": { lat: 31.6, lng: -6.0, region: "North Africa" },
+  "al-andalus": { lat: 37.4, lng: -6.0, region: "Islamic Spain" },
+  "ancient-yemen": { lat: 15.4, lng: 44.2, region: "Yemen" },
+  "bengal": { lat: 23.7, lng: 90.4, region: "Bangladesh" },
+  "central-asia": { lat: 39.0, lng: 66.0, region: "Silk Road" },
+  "chinook": { lat: 46.2, lng: -123.8, region: "Pacific Northwest" },
+  "dubai-uae": { lat: 25.2, lng: 55.3, region: "UAE" },
+  "inuit": { lat: 64.2, lng: -51.7, region: "Greenland" },
+  "israel": { lat: 31.5, lng: 34.9, region: "Israel" },
+  "malaysia": { lat: 4.2, lng: 103.4, region: "Malaysia" },
+  "mississippian": { lat: 38.7, lng: -90.1, region: "Mississippi Valley" },
+  "oman": { lat: 23.6, lng: 58.5, region: "Oman" },
+  "singapore": { lat: 1.3, lng: 103.8, region: "Singapore" },
+  "venice": { lat: 45.4, lng: 12.3, region: "Italy" }
 };
 
 // Convert to x/y percentages
@@ -141,7 +154,10 @@ const civilizationContinents: Record<string, string> = {
   "amazon-basin": "Americas", "mississippian-cahokia": "Americas", "hohokam": "Americas",
   "pacific-northwest": "Americas", "siberia-yakutia": "Asia", "inuit-arctic": "Americas",
   "swahili-coast": "Africa", "kongo-kingdom": "Africa", "mali-timbuktu": "Africa",
-  "morocco": "Africa"
+  "morocco": "Africa", "al-andalus": "Europe", "ancient-yemen": "Asia", "bengal": "Asia",
+  "central-asia": "Asia", "chinook": "Americas", "dubai-uae": "Asia", "inuit": "Americas",
+  "israel": "Asia", "malaysia": "Asia", "mississippian": "Americas", "oman": "Asia",
+  "singapore": "Asia", "venice": "Europe"
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {
