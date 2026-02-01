@@ -105,6 +105,30 @@ export const civilizationDetails: Record<string, CivilizationDetailData> = {
     ],
     expertNote: "When I model modern sewer systems, I'm applying principles the Indus Valley civilizations understood in 2500 BCE. Covered drains, consistent gradients, separate systems—they figured it out millennia ago."
   },
+  "minoan-crete": {
+    tagline: "Europe's First Plumbing Masters (2700 BCE - 1450 BCE)",
+    quote: { text: "The civilization that vanished left behind pipes that would last forever.", author: "Sir Arthur Evans, archaeologist" },
+    challenge: [
+      "Limited freshwater on Mediterranean island environment",
+      "Seasonal rainfall requiring storage for dry months",
+      "Palace complexes with large populations needing water supply",
+      "Waste removal for dense palace populations"
+    ],
+    summary: "The Minoans built Europe's first advanced plumbing. Their flush toilets, terracotta pipes, and drainage systems at Knossos wouldn't be matched for another 3,000 years.",
+    keyFacts: [
+      { label: "First Flush Toilet", value: "~1700 BCE" },
+      { label: "Pipe System Length", value: "Kilometers" },
+      { label: "Palace Complexes", value: "4+ major" },
+      { label: "Lost Technology", value: "3,000 years" }
+    ],
+    legacyTable: [
+      { ancient: "Tapered terracotta pipes", modern: "Modern interlocking pipe design" },
+      { ancient: "Flush toilet mechanism", modern: "Modern toilet design principles" },
+      { ancient: "Rainwater cisterns", modern: "Sustainable water harvesting" },
+      { ancient: "Settling chambers", modern: "Stormwater treatment systems" }
+    ],
+    expertNote: "Walking through Knossos, I was stunned by pipes with tapered ends designed for self-sealing connections—the same principle we use today. They had flush toilets connected to covered drains, settling chambers for sediment, and maintenance access points. Then their civilization collapsed around 1450 BCE and this knowledge simply vanished. It took 3,000 years for Europe to catch up."
+  },
   "ancient-greece": {
     tagline: "Innovators of Water Theory (800 BCE - 31 BCE)",
     quote: { text: "Eureka!", author: "Archimedes" },
@@ -200,31 +224,174 @@ export const civilizationDetails: Record<string, CivilizationDetailData> = {
       { ancient: "Lake-based cities", modern: "Floating architecture concepts" }
     ],
     expertNote: "The chinampas turned a lake into farmland without draining it. They created an ecosystem that was more productive than any land-based farm. That's not just engineering—that's ecological brilliance."
-  }
-,
-  "minoan-crete": {
-    tagline: "Europe's First Advanced Civilization (2000-1400 BCE)",
-    quote: { text: "The labyrinth hides not a monster, but the world's first plumbing.", author: "Archaeological interpretation" },
+  },
+  "ancient-persia": {
+    tagline: "Masters of Underground Water (550 BCE - 651 CE)",
+    quote: { text: "The qanat brings life where the sun would steal it.", author: "Persian proverb" },
     challenge: [
-      "Multi-story palace complexes requiring sophisticated drainage",
-      "Intense Mediterranean storms causing flooding risks",
-      "Need for sanitation in dense ceremonial and residential spaces",
-      "Seasonal rainfall requiring water storage"
+      "Arid plateau with minimal rainfall",
+      "High evaporation rates destroying surface water",
+      "Long distances between mountain sources and settlements",
+      "Extreme temperature variations"
     ],
-    summary: "The Minoans achieved water engineering sophistication that wouldn't be matched in Europe for over 1,500 years. Their flush toilets and drainage systems were remarkably advanced.",
+    summary: "Persian engineers solved the impossible: bringing water across deserts without it evaporating. The qanat system remains one of humanity's most ingenious water technologies.",
     keyFacts: [
-      { label: "First Flush Toilets", value: "~1700 BCE" },
-      { label: "Palace Stories", value: "4-5 levels" },
-      { label: "Pipe Technology", value: "Conical terracotta" },
-      { label: "Drainage Design", value: "Zigzag energy dissipation" }
+      { label: "Qanat Length", value: "Up to 70 km" },
+      { label: "Still Operating", value: "37,000+" },
+      { label: "Tunnel Depth", value: "Up to 300m" },
+      { label: "Daily Flow", value: "Millions of liters" }
     ],
     legacyTable: [
-      { ancient: "Flush-type toilets", modern: "Modern flush toilets" },
-      { ancient: "Terracotta pipes", modern: "Ceramic plumbing" },
-      { ancient: "Stormwater management", modern: "Urban drainage systems" },
-      { ancient: "Cistern integration", modern: "Rainwater harvesting" }
+      { ancient: "Qanat underground channels", modern: "Tunnel water transport" },
+      { ancient: "Yakhchal ice houses", modern: "Passive cooling technology" },
+      { ancient: "Windcatcher ventilation", modern: "Natural HVAC systems" },
+      { ancient: "Gradient engineering", modern: "Precision surveying" }
     ],
-    expertNote: "The Minoans had flush toilets 3,700 years ago. Their terracotta pipes used conical joints that improved flow and fit—a design principle we still use today. Europe wouldn't see this level of sanitation again until the 19th century."
+    expertNote: "The qanat is my favorite ancient technology. A 40km tunnel with a 1:1000 gradient means accuracy of centimeters per kilometer—achieved without modern surveying tools. The profession of 'muqanni' (qanat master) still exists in Iran."
+  },
+  "khmer-empire": {
+    tagline: "Hydraulic Masters of Southeast Asia (802 CE - 1431 CE)",
+    quote: { text: "Angkor was built on water.", author: "Archaeological consensus" },
+    challenge: [
+      "Extreme monsoon seasonality—flood then drought",
+      "Need to store monsoon water for 8-month dry season",
+      "Supporting a city of one million people",
+      "Rice cultivation requiring precise water control"
+    ],
+    summary: "The Khmer built Angkor, history's largest pre-industrial city, around an immense hydraulic network. Their barays (reservoirs) and canals made civilization possible in a seasonal flood plain.",
+    keyFacts: [
+      { label: "West Baray Volume", value: "50 million m³" },
+      { label: "Canal Network", value: "1,000+ km" },
+      { label: "Greater Angkor Area", value: "1,000 km²" },
+      { label: "Population Peak", value: "~1 million" }
+    ],
+    legacyTable: [
+      { ancient: "Baray reservoirs", modern: "Strategic water storage" },
+      { ancient: "Canal networks", modern: "Integrated water management" },
+      { ancient: "Temple moats", modern: "Urban water features" },
+      { ancient: "Rice paddy irrigation", modern: "Wet rice agriculture" }
+    ],
+    expertNote: "LIDAR surveys reveal that Greater Angkor covered over 1,000 square kilometers with an integrated water system. When climate shifts disrupted the monsoon in the 14th-15th centuries, the system failed and Angkor was abandoned. It's a reminder that even the most sophisticated water engineering depends on climate assumptions that may not hold forever."
+  },
+  "nubia": {
+    tagline: "Pioneers of Animal-Powered Water Lifting (2500 BCE - 350 CE)",
+    quote: { text: "Where the Nile narrows, ingenuity must widen.", author: "Archaeological interpretation" },
+    challenge: [
+      "Higher terrain above Nile than Lower Egypt",
+      "Cataracts limiting navigation and access",
+      "Need to lift water further for irrigation",
+      "Less predictable flood timing"
+    ],
+    summary: "Nubia developed water technologies for the more challenging Upper Nile. The sakia (ox-powered waterwheel) that spread across the ancient world likely originated here.",
+    keyFacts: [
+      { label: "Sakia Lift Height", value: "3-5 meters" },
+      { label: "Hafir Capacity", value: "Thousands of m³" },
+      { label: "Trade Routes", value: "Gold & incense" },
+      { label: "Civilization Span", value: "3,000+ years" }
+    ],
+    legacyTable: [
+      { ancient: "Sakia waterwheel", modern: "Animal-powered pumps" },
+      { ancient: "Hafir reservoirs", modern: "Rainwater harvesting ponds" },
+      { ancient: "Nubian shadouf", modern: "Lever-based lifting" },
+      { ancient: "Basin irrigation", modern: "Controlled flooding" }
+    ],
+    expertNote: "The sakia may be Nubian in origin—a vertical wheel with pots, driven by an ox walking in a circle. It could lift water 3-5 meters continuously, far more than a shaduf. Nubian kings controlled the gold routes, but their real power came from controlling the Upper Nile."
+  },
+  "nabataean": {
+    tagline: "Desert Water Geniuses (400 BCE - 106 CE)",
+    quote: { text: "Every drop is precious in the desert.", author: "Nabataean principle" },
+    challenge: [
+      "Extreme aridity (50-150mm annual rainfall)",
+      "No permanent surface water anywhere",
+      "Flash flood management",
+      "Supporting wealthy trading city in desert"
+    ],
+    summary: "The Nabataeans built a caravan trading empire in one of Earth's harshest deserts. At Petra, every surface became a water catchment, supporting 30,000 people with only 100mm annual rainfall.",
+    keyFacts: [
+      { label: "Annual Rainfall", value: "50-150mm" },
+      { label: "Petra Population", value: "30,000+" },
+      { label: "Catchment Ratio", value: "20:1" },
+      { label: "Cistern Capacity", value: "Millions of liters" }
+    ],
+    legacyTable: [
+      { ancient: "Desert water harvesting", modern: "Microcatchment farming" },
+      { ancient: "Flash flood diversion", modern: "Wadi management" },
+      { ancient: "Rock-cut cisterns", modern: "Underground storage" },
+      { ancient: "Pipeline networks", modern: "Ceramic water mains" }
+    ],
+    expertNote: "Israeli archaeologists reconstructed ancient Nabataean farms in the 1950s and successfully grew crops using only captured runoff—proving the system still works after 2,000 years. The Nabataeans understood that you don't need much water if you use it precisely."
+  },
+  "sri-lanka": {
+    tagline: "Tank Cascade Masters (500 BCE - 1200 CE)",
+    quote: { text: "Not a drop of rain should flow to the sea without first serving man.", author: "Ancient Sri Lankan principle" },
+    challenge: [
+      "Extreme monsoon seasonality",
+      "Need to store water for 8-month dry season",
+      "Preventing dam erosion from high-pressure outlets",
+      "Coordinating thousands of interconnected reservoirs"
+    ],
+    summary: "Ancient Sri Lanka built the world's most extensive pre-industrial reservoir system—over 30,000 tanks connected in cascade systems that maximized water efficiency.",
+    keyFacts: [
+      { label: "Ancient Tanks", value: "30,000+" },
+      { label: "Cascade Systems", value: "Interconnected" },
+      { label: "Biso Kotuwa Age", value: "2,000+ years" },
+      { label: "Still Operating", value: "Many tanks" }
+    ],
+    legacyTable: [
+      { ancient: "Biso kotuwa valve", modern: "Energy dissipation structures" },
+      { ancient: "Tank cascade systems", modern: "Integrated watershed management" },
+      { ancient: "Spillway control", modern: "Dam safety design" },
+      { ancient: "Interconnected reservoirs", modern: "Water grid systems" }
+    ],
+    expertNote: "The biso kotuwa is brilliant engineering. Water enters a stone chamber through the dam base, loses energy swirling inside, then exits calmly to irrigation channels. This prevents outlet erosion that destroys modern dams. Modern dam engineers study these ancient systems."
+  },
+  "ancestral-puebloans": {
+    tagline: "Masters of Arid Land Water Capture (100 CE - 1300 CE)",
+    quote: { text: "Water is life in the canyon.", author: "Puebloan wisdom" },
+    challenge: [
+      "Extreme aridity (200-400mm annual rainfall)",
+      "No permanent streams in many areas",
+      "Flash flood management",
+      "Supporting concentrated cliff populations"
+    ],
+    summary: "The Ancestral Puebloans built cliff dwellings and stone cities in one of North America's driest regions, using ingenious water capture and storage systems.",
+    keyFacts: [
+      { label: "Annual Rainfall", value: "200-400mm" },
+      { label: "Mesa Verde Pop.", value: "5,000+" },
+      { label: "Cliff Dwellings", value: "600+" },
+      { label: "Drought Abandonment", value: "~1300 CE" }
+    ],
+    legacyTable: [
+      { ancient: "Seep collection", modern: "Spring development" },
+      { ancient: "Check dams", modern: "Water spreading systems" },
+      { ancient: "Bedrock reservoirs", modern: "Rock-cut tanks" },
+      { ancient: "Runoff channels", modern: "Water harvesting" }
+    ],
+    expertNote: "Mesa Verde's water system collected runoff from sandstone surfaces into plastered reservoirs. Check dams slowed runoff to allow infiltration. When drought struck in the late 1200s, these ingenious systems couldn't compensate—the great cliff dwellings were abandoned. It's a sobering reminder that water engineering extends the limits of habitability but doesn't eliminate them."
+  },
+  "byzantine": {
+    tagline: "Keepers of Roman Water Knowledge (330 CE - 1453 CE)",
+    quote: { text: "Constantinople's cisterns made the city unconquerable.", author: "Historical assessment" },
+    challenge: [
+      "Supplying imperial capital on peninsula with no rivers",
+      "Siege preparedness requiring months of water",
+      "Maintaining Roman-era infrastructure across centuries",
+      "Transmitting engineering knowledge through turbulent times"
+    ],
+    summary: "The Byzantine Empire maintained and extended Roman water infrastructure for over a thousand years. Constantinople's massive cisterns could hold months of water, making the city nearly siege-proof.",
+    keyFacts: [
+      { label: "Basilica Cistern", value: "80,000 m³" },
+      { label: "Valens Aqueduct", value: "In use until 1912" },
+      { label: "Major Cisterns", value: "100+" },
+      { label: "Empire Duration", value: "1,123 years" }
+    ],
+    legacyTable: [
+      { ancient: "Underground cisterns", modern: "Strategic water reserves" },
+      { ancient: "Aqueduct maintenance", modern: "Infrastructure preservation" },
+      { ancient: "Knowledge transmission", modern: "Engineering education" },
+      { ancient: "Redundant systems", modern: "Resilient infrastructure" }
+    ],
+    expertNote: "The Basilica Cistern held 80,000 cubic meters beneath the streets of Constantinople—enough to supply the Great Palace for months during a siege. When I walked through it, still watertight after 1,500 years, I thought about modern infrastructure designed for 50-year lifespans. We've lost something."
   },
   "modern-era": {
     tagline: "Industrial Scale Engineering (1750 CE - Present)",

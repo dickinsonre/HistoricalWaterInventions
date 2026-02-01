@@ -87,6 +87,13 @@ The game showcases how water shaped human civilization through:
   - "Still in use" status with current locations
   - Related inventions and tags for discovery
   - Historical sources and references
+- **expertCivilizations.ts**: Comprehensive database of 18 civilizations with expert analysis, including:
+  - Water challenges each civilization faced
+  - Key inventions from each culture
+  - Expert engineer notes with professional insights
+  - Key insights about each civilization's water philosophy
+  - Modern legacy and relevance today
+  - Historical sources and references
 
 ### Data Structure
 - **Regions**: 9 civilizations with era, date range, position, color (includes Modern Era)
