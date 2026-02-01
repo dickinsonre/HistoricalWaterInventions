@@ -67,48 +67,49 @@ export default function SWMM5Models({ onClose }: SWMM5ModelsProps) {
   const handleDownloadAllAsZip = async () => {
     setDownloadingAll(true);
     try {
-      const zip = new JSZip();
       const allModels = getAllModelContents();
       
-      const readme = `ANCIENT WATER ENGINEERING - SWMM5 EDUCATIONAL MODELS
+      const combinedContent = `ANCIENT WATER ENGINEERING - SWMM5 EDUCATIONAL MODELS
 ====================================================
+Historical Mystery - Water Inventions Explorer
+Educational Hydraulic Simulation Data
 
-This archive contains educational hydraulic simulation models 
-for use with EPA SWMM5 (Storm Water Management Model).
-
-CONTENTS: ${allModels.length} simulation model files (.txt format)
+This document contains ${allModels.length} EPA SWMM5 hydraulic models
+recreating ancient water engineering systems for educational purposes.
 
 HOW TO USE:
 1. Download EPA SWMM5 free from: https://www.epa.gov/water-research/storm-water-management-model-swmm
-2. Rename any .txt file to .inp to load in SWMM5
-3. Open the .inp file in SWMM5 to run the simulation
+2. Copy the content between START and END markers for each model
+3. Save as a .inp file and open in SWMM5
 
-These models recreate historical water engineering systems for 
-educational purposes. Each model simulates the hydraulic behavior 
-of ancient aqueducts, irrigation systems, and water infrastructure.
+====================================================
 
-Created for: Historical Mystery - Water Inventions Explorer
-Purpose: Educational / Academic Research
+${allModels.map(({ filename, content }) => `
+${'='.repeat(60)}
+MODEL: ${filename.replace('_SWMM5_Model.txt', '')}
+${'='.repeat(60)}
+--- START OF MODEL ---
+${content}
+--- END OF MODEL ---
+`).join('\n')}
+
+====================================================
+END OF EDUCATIONAL MODELS DOCUMENT
+====================================================
 `;
       
-      zip.file('README.txt', readme);
-      
-      allModels.forEach(({ filename, content }) => {
-        zip.file(filename, content);
-      });
-      
-      const blob = await zip.generateAsync({ type: "blob" });
+      const blob = new Blob([combinedContent], { type: 'text/plain;charset=utf-8' });
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.download = 'Water_History_Educational_Models.zip';
+      link.download = 'Water_History_Educational_Models.txt';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
       URL.revokeObjectURL(url);
     } catch (error) {
-      console.error('Error creating zip:', error);
-      alert('Failed to create zip file');
+      console.error('Error creating file:', error);
+      alert('Failed to create file');
     } finally {
       setDownloadingAll(false);
     }
@@ -136,8 +137,8 @@ Purpose: Educational / Academic Research
               size="sm"
               className="bg-[var(--gold)] hover:bg-[var(--gold)]/80 text-[var(--deep-ocean)] font-semibold"
             >
-              <Archive size={16} className="mr-2" />
-              {downloadingAll ? "Creating..." : `Download All as ZIP`}
+              <Download size={16} className="mr-2" />
+              {downloadingAll ? "Creating..." : `Download All Models (.txt)`}
             </Button>
             <Button
               variant="ghost"
@@ -198,8 +199,8 @@ Purpose: Educational / Academic Research
             disabled={downloadingAll}
             className="bg-[var(--terracotta)] hover:bg-[var(--terracotta)]/80 text-white"
           >
-            <Archive size={16} className="mr-2" />
-            {downloadingAll ? "Creating ZIP..." : `Download All (${models.length}) as ZIP`}
+            <Download size={16} className="mr-2" />
+            {downloadingAll ? "Creating..." : `Download All (${models.length}) as .txt`}
           </Button>
         </div>
 
