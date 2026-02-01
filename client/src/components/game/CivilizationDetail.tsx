@@ -127,10 +127,10 @@ export default function CivilizationDetail({ regionId, onClose, onNavigate, onVi
                         {artifact.rarity}
                       </span>
                     </div>
-                    <p className="text-[var(--parchment)]/70 text-xs">{artifact.description}</p>
-                    <p className="text-[var(--aqua)] text-xs mt-2 flex items-center gap-1">
-                      Learn more <ArrowRight size={12} />
-                    </p>
+                    <p className="text-[var(--parchment)]/70 text-xs mb-2">{artifact.description}</p>
+                    <button className="w-full bg-[var(--cerulean)] hover:bg-[var(--river-blue)] text-white text-xs py-1.5 px-3 rounded flex items-center justify-center gap-1 transition-colors">
+                      View Details & Diagram <ArrowRight size={12} />
+                    </button>
                   </div>
                 ))}
               </div>

@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { gameData } from "../../data/gameData";
 import CivilizationDetail from "./CivilizationDetail";
+import InventionDetail from "./InventionDetail";
 import Inventory from "./Inventory";
 import ProgressTracker from "./ProgressTracker";
 import Achievements from "./Achievements";
@@ -138,6 +139,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
   const [showTutorial, setShowTutorial] = useState(false);
   const [eraFilter, setEraFilter] = useState<string | null>(null);
   const [continentFilter, setContinentFilter] = useState<string | null>(null);
+  const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
 
   const allArtifacts = gameData.regions.flatMap(r => r.locations.flatMap(l => l.artifacts));
   const totalLocations = gameData.regions.reduce((acc, r) => acc + r.locations.length, 0);
@@ -151,6 +153,10 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
           regionId={selectedCiv}
           onClose={() => setSelectedCiv(null)}
           onNavigate={(id) => setSelectedCiv(id)}
+          onViewInvention={(id) => {
+            setSelectedCiv(null);
+            setSelectedInvention(id);
+          }}
         />
       </div>
     );
@@ -553,7 +559,15 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
       {/* Modal Components */}
       {showInventory && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowInventory(false)}>
-          <div onClick={(e) => e.stopPropagation()}><Inventory onClose={() => setShowInventory(false)} /></div>
+          <div onClick={(e) => e.stopPropagation()}>
+            <Inventory 
+              onClose={() => setShowInventory(false)} 
+              onViewInvention={(id) => {
+                setShowInventory(false);
+                setSelectedInvention(id);
+              }}
+            />
+          </div>
         </div>
       )}
       {showProgress && (
@@ -630,6 +644,17 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
         <div className="fixed inset-0 bg-black/90 z-50" onClick={() => setShowTutorial(false)}>
           <div onClick={(e) => e.stopPropagation()} className="h-full">
             <Onboarding onComplete={() => setShowTutorial(false)} />
+          </div>
+        </div>
+      )}
+      {selectedInvention && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4" onClick={() => setSelectedInvention(null)}>
+          <div onClick={(e) => e.stopPropagation()}>
+            <InventionDetail 
+              artifactId={selectedInvention}
+              onClose={() => setSelectedInvention(null)}
+              onNavigate={(id) => setSelectedInvention(id)}
+            />
           </div>
         </div>
       )}

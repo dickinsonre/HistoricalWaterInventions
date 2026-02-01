@@ -135,7 +135,16 @@ export default function Inventory({ onClose, onViewInvention }: InventoryProps) 
                           {artifact.significance}
                         </p>
                       </div>
-                      <p className="text-[var(--aqua)] text-xs mt-2">Click for details →</p>
+                      <Button 
+                        size="sm"
+                        className="w-full mt-2 bg-[var(--cerulean)] hover:bg-[var(--river-blue)] text-white text-xs"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onViewInvention?.(artifact.id);
+                        }}
+                      >
+                        Explore Details & Diagram →
+                      </Button>
                     </CardContent>
                   </Card>
                 );
