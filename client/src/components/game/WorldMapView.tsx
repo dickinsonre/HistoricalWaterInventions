@@ -94,6 +94,24 @@ const civilizationLocations: Record<string, { x: number; y: number; region: stri
     })
   );
 
+// Continent mapping for filtering
+const civilizationContinents: Record<string, string> = {
+  "ancient-egypt": "Africa", "nubia": "Africa", "carthage": "Africa", 
+  "great-zimbabwe": "Africa", "engaruka": "Africa", "sahel": "Africa", "ethiopian": "Africa",
+  "mesopotamia": "Asia", "ancient-persia": "Asia", "indus-valley": "Asia", 
+  "ancient-china": "Asia", "khmer-empire": "Asia", "sri-lanka": "Asia",
+  "islamic-golden-age": "Asia", "ancient-japan": "Asia", "korean": "Asia",
+  "siam-thailand": "Asia", "medieval-india": "Asia", "cambodia-khmer": "Asia",
+  "burma-myanmar": "Asia", "vietnam": "Asia", "ancient-india": "Asia",
+  "balinese": "Asia", "nabataean": "Asia", "philippines": "Asia", "tokyo-underground": "Asia",
+  "ancient-greece": "Europe", "ancient-rome": "Europe", "minoan-crete": "Europe",
+  "byzantine": "Europe", "medieval-europe": "Europe", "dutch-netherlands": "Europe",
+  "pre-roman-europe": "Europe", "phoenicia": "Europe", "modern-era": "Europe",
+  "mesoamerica": "Americas", "ancestral-puebloans": "Americas", "inca-empire": "Americas",
+  "hawaiian": "Pacific", "aboriginal-australia": "Pacific", "austronesian": "Pacific",
+  "nan-madol": "Pacific", "chamorro": "Pacific"
+};
+
 export default function WorldMapView({ onBack }: WorldMapViewProps) {
   const [selectedCiv, setSelectedCiv] = useState<string | null>(null);
   const [hoveredCiv, setHoveredCiv] = useState<string | null>(null);
@@ -364,6 +382,18 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               {gameData.regions.map(region => {
                 const loc = civilizationLocations[region.id];
                 if (!loc) return null;
+
+                // Apply era filter
+                if (eraFilter) {
+                  const regionEra = region.era.toLowerCase();
+                  if (!regionEra.includes(eraFilter.toLowerCase())) return null;
+                }
+
+                // Apply continent filter
+                if (continentFilter) {
+                  const civContinent = civilizationContinents[region.id];
+                  if (civContinent !== continentFilter) return null;
+                }
 
                 const isHovered = hoveredCiv === region.id;
                 const inventionCount = region.locations.reduce((acc, l) => acc + l.artifacts.length, 0);
