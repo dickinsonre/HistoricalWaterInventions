@@ -28,7 +28,7 @@ interface ProgressState {
 export const useProgress = create<ProgressState>()(
   persist(
     (set, get) => ({
-      unlockedRegions: ["ancient-egypt"], // Start with Egypt unlocked
+      unlockedRegions: ["ancient-egypt", "ancient-rome", "mesopotamia", "indus-valley", "ancient-greece", "ancient-china", "islamic-golden-age", "mesoamerica", "modern-era", "minoan-crete", "ancient-persia", "khmer-empire", "nubia", "nabataean", "sri-lanka", "ancestral-puebloans", "byzantine"], // All regions unlocked for exploration
       exploredLocations: [],
       discoveredArtifacts: [],
       regionProgress: {},
