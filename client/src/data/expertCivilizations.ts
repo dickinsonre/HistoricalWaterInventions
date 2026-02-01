@@ -30,8 +30,8 @@ export interface CivilizationsDatabase {
 
 export const expertCivilizationsDatabase: CivilizationsDatabase = {
   metadata: {
-    version: "1.2",
-    totalCivilizations: 29,
+    version: "1.3",
+    totalCivilizations: 40,
     lastUpdated: "2026-02-01",
     curator: "Robert Dickinson"
   },
@@ -759,6 +759,256 @@ export const expertCivilizationsDatabase: CivilizationsDatabase = {
       sources: [
         "Denham, T. Early Agriculture and Plant Domestication in New Guinea",
         "Golson, J. Kuk Swamp and the Development of Agriculture in New Guinea"
+      ]
+    },
+    {
+      id: "medieval-europe",
+      name: "Medieval Europe",
+      region: "Western and Central Europe",
+      period: {
+        start: 500,
+        end: 1400,
+        era: "Medieval Period"
+      },
+      summary: "The often-overlooked 'Dark Ages' were actually a time of tremendous water innovation. Cistercian monks became master hydraulic engineers, and water mills powered Europe's first industrial revolution.",
+      waterChallenges: [
+        "Converting pagan water worship to Christian infrastructure",
+        "Powering industry without fossil fuels",
+        "Managing water rights across feudal territories",
+        "Harnessing tidal energy in coastal regions"
+      ],
+      inventions: ["water-mill", "tidal-mill", "fulling-mill"],
+      keyInsight: "By 1086, England alone had 5,624 water mills recorded in the Domesday Book. This was Europe's first industrial revolution—900 years before steam.",
+      engineerNotes: "Monasteries were the tech companies of the Middle Ages. Cistercian monks standardized water mill design, innovated fish pond management, and created industrial complexes powered entirely by water. The tidal mills amazed me—harvesting tidal energy 800 years before we thought we invented 'renewable energy.'",
+      modernLegacy: "The water mill technology that spread across medieval Europe laid the foundation for the Industrial Revolution. Many historic mills are preserved as UNESCO sites.",
+      sources: [
+        "Gies, F. Cathedral, Forge, and Waterwheel: Technology in the Middle Ages",
+        "Reynolds, T. Stronger than a Hundred Men: A History of the Vertical Water Wheel"
+      ]
+    },
+    {
+      id: "inca-empire",
+      name: "Inca Empire",
+      region: "Andes Mountains (Peru, Bolivia, Ecuador)",
+      period: {
+        start: 1438,
+        end: 1533,
+        era: "Pre-Columbian Period"
+      },
+      summary: "The Incas were masters of extreme-altitude hydraulic engineering. Machu Picchu's water system still works perfectly after 500+ years—no maintenance, no pumps, just brilliant gravity-fed design.",
+      waterChallenges: [
+        "Supplying water at elevations above 2,400 meters",
+        "Preventing erosion on steep mountain slopes",
+        "Managing seasonal rainfall extremes",
+        "Frost protection for crops in thin mountain air"
+      ],
+      inventions: ["inca-fountain-system", "inca-supply-canal", "tipon-terraces", "andenes", "stone-flow-controls"],
+      keyInsight: "The location of Machu Picchu wasn't chosen for its views—it was chosen because of a reliable spring. Water drove Inca urban planning, not the other way around.",
+      engineerNotes: "Machu Picchu's 16 fountains cascade perfectly after 500 years with zero maintenance. The 749-meter canal maintains exactly a 3% slope. At Tipón, I think we're looking at an ancient hydraulic engineering school—the terraces seem designed to teach water control principles. Their stone flow controls are genius: reliable valves with no moving parts.",
+      modernLegacy: "Inca terraces still irrigate farms throughout the Andes. Their spring assessment methods and gravity-fed systems inform modern sustainable water infrastructure.",
+      sources: [
+        "Wright, K. & Valencia Zegarra, A. Machu Picchu: A Civil Engineering Marvel",
+        "Bauer, B. Ancient Cuzco: Heartland of the Inca"
+      ]
+    },
+    {
+      id: "balinese",
+      name: "Balinese (Subak)",
+      region: "Bali, Indonesia",
+      period: {
+        start: 900,
+        end: 2026,
+        era: "Medieval through Present"
+      },
+      summary: "The Subak system proves that water management is fundamentally about social organization, not just pipes and channels. Temple priests coordinate irrigation across thousands of farmers using religious ceremonies.",
+      waterChallenges: [
+        "Coordinating water sharing among thousands of farmers",
+        "Synchronizing planting to control pests without chemicals",
+        "Balancing upstream and downstream water rights",
+        "Managing volcanic soil erosion"
+      ],
+      inventions: ["subak-system", "water-temple"],
+      keyInsight: "Balinese water temples don't just manage water—they control pests. By synchronizing flooding across the landscape, they starve rice pests of food. A 1,000-year-old solution that chemical companies couldn't match.",
+      engineerNotes: "I've seen world-class irrigation systems, but Subak is different. It's not just engineering—it's religion, democracy, and ecology combined. Temple ceremonies that seem purely spiritual are actually sophisticated scheduling algorithms. When researchers tried to 'modernize' with Green Revolution methods, pest outbreaks skyrocketed. The temples knew something we didn't.",
+      modernLegacy: "UNESCO World Heritage recognition. The Subak system influences modern thinking about commons governance and participatory water management.",
+      sources: [
+        "Lansing, J.S. Priests and Programmers: Technologies of Power in the Engineered Landscape of Bali",
+        "Geertz, C. Organization of the Balinese Subak"
+      ]
+    },
+    {
+      id: "aboriginal-australia",
+      name: "Aboriginal Australia",
+      region: "Australian Continent",
+      period: {
+        start: -40000,
+        end: 2026,
+        era: "Ancient through Present"
+      },
+      summary: "40,000 years of continuous water knowledge on Earth's driest inhabited continent. The Brewarrina fish traps may be the oldest human structure on Earth—and they still work.",
+      waterChallenges: [
+        "Surviving the world's driest inhabited continent",
+        "Finding water in landscapes with no permanent rivers",
+        "Passing water knowledge across 1,500+ generations",
+        "Managing fish populations without depleting stocks"
+      ],
+      inventions: ["brewarrina-traps", "gnamma-holes", "aboriginal-wells"],
+      keyInsight: "Songlines aren't just spiritual pathways—they're water maps. 40,000 years of accumulated knowledge encoded in songs that children still learn today.",
+      engineerNotes: "The Brewarrina fish traps humbled me. Possibly 40,000 years old, still functioning, designed to work WITH seasonal floods rather than against them. The gnamma holes—natural rock hollows enlarged and sealed with spinifex resin—are positioned along songlines that encode water location knowledge. This is engineering that thinks in millennia, not decades.",
+      modernLegacy: "Traditional Aboriginal water knowledge increasingly recognized for managing arid landscapes. Their fire-stick farming and water management are studied for climate adaptation.",
+      sources: [
+        "Pascoe, B. Dark Emu: Aboriginal Australia and the Birth of Agriculture",
+        "Gammage, B. The Biggest Estate on Earth"
+      ]
+    },
+    {
+      id: "ancient-japan",
+      name: "Ancient Japan",
+      region: "Japanese Archipelago",
+      period: {
+        start: -300,
+        end: 1600,
+        era: "Classical through Medieval"
+      },
+      summary: "Japanese water engineering fused aesthetics with function. Every garden pond, bamboo fountain, and rice terrace reflects a philosophy where water is art.",
+      waterChallenges: [
+        "Managing typhoon flooding on mountainous terrain",
+        "Irrigating rice paddies on steep slopes",
+        "Supplying growing castle towns",
+        "Creating beauty through water design"
+      ],
+      inventions: ["suido", "shishi-odoshi", "tanada"],
+      keyInsight: "Tokyo's water supply system dates to 1590—partially still in use. Japanese engineers thought in centuries.",
+      engineerNotes: "The shishi-odoshi (deer scarer) demonstrates Japanese genius: using water's rhythm to create sound, merging function with philosophy. Tanada rice terraces transform mountains into productive landscapes while preventing erosion. The suido pipe systems supplied castle towns using only gravity and bamboo engineering. Beauty and utility were never separated.",
+      modernLegacy: "Japanese water aesthetics influence global garden design. Their precision engineering philosophy shaped modern Japanese industry and technology.",
+      sources: [
+        "Shirahata, Y. The Japanese Tradition of Water",
+        "Totman, C. A History of Japan's Environment"
+      ]
+    },
+    {
+      id: "hawaiian",
+      name: "Hawaiian",
+      region: "Hawaiian Islands, Pacific Ocean",
+      period: {
+        start: 400,
+        end: 2026,
+        era: "Polynesian Settlement through Present"
+      },
+      summary: "Hawaiian ahupua'a land divisions followed watersheds from mountain to sea—an integrated water management philosophy 1,500 years ahead of modern watershed planning.",
+      waterChallenges: [
+        "Capturing rainfall on volcanic slopes",
+        "Irrigating taro on islands with no rivers",
+        "Managing water from mountain to sea sustainably",
+        "Balancing freshwater and marine ecosystems"
+      ],
+      inventions: ["loi-kalo", "auwai"],
+      keyInsight: "The ahupua'a system divided land from mountain peak to ocean, ensuring each community had access to water at every elevation. Modern watershed management reinvented this 1,500-year-old Hawaiian concept.",
+      engineerNotes: "Lo'i kalo (taro pondfields) are brilliant: continuous water flow through the fields grows taro while supporting fish and controlling mosquitoes. The 'auwai irrigation ditches used gravity and clever stone placement to distribute water fairly. Hawaiian chiefs could be removed for mismanaging water—accountability built into governance.",
+      modernLegacy: "Hawaiian traditional water rights (appurtenant rights) still recognized in law. Ahupua'a concepts inform modern integrated watershed management globally.",
+      sources: [
+        "Kirch, P. Feathered Gods and Fishhooks",
+        "Kelly, M. Na Mala o Kona: Gardens of Kona"
+      ]
+    },
+    {
+      id: "siam-thailand",
+      name: "Siam (Thailand)",
+      region: "Southeast Asia (Thailand)",
+      period: {
+        start: 1238,
+        end: 1782,
+        era: "Medieval Kingdoms"
+      },
+      summary: "Bangkok was called the 'Venice of the East' because water was its primary transportation network. Thai civilization organized around klongs (canals) the way Western cities organized around roads.",
+      waterChallenges: [
+        "Managing monsoon flooding in flat delta terrain",
+        "Defending island capitals with moat systems",
+        "Creating transportation networks without roads",
+        "Storing water through long dry seasons"
+      ],
+      inventions: ["ayutthaya-moats", "klong-network", "sukhothai-reservoir", "phra-ruang-dam", "floating-markets"],
+      keyInsight: "Ayutthaya survived 400 years by being an island—12km of moats created the perfect combination of defense, transport, and irrigation.",
+      engineerNotes: "The klong network is extraordinary. When I visited Bangkok's remaining canals, I understood why visitors called it 'Venice of the East.' Floating markets weren't quaint tradition—they were the most efficient distribution system for a water-based city. The Ayutthaya moat system shows how defensive infrastructure can serve multiple purposes: protection, transport, and irrigation simultaneously.",
+      modernLegacy: "Thailand's floating markets and canal culture influence tourism and urban planning. Modern Bangkok struggles with flooding partly because it filled in many historic klongs.",
+      sources: [
+        "Tanabe, S. Water Management in the Chao Phraya Delta",
+        "Jumsai, S. Naga: Cultural Origins in Siam and the West Pacific"
+      ]
+    },
+    {
+      id: "singapore",
+      name: "Singapore",
+      region: "Southeast Asian City-State",
+      period: {
+        start: 1965,
+        end: 2026,
+        era: "Modern Independence Era"
+      },
+      summary: "Singapore transformed from water-import dependency to global water innovation leader in 50 years. Their 'Four National Taps' strategy is studied worldwide by water-scarce nations.",
+      waterChallenges: [
+        "No natural aquifers or large rivers",
+        "Historical dependency on Malaysian water imports",
+        "Limited land area for reservoirs",
+        "Tropical climate with intense rainfall"
+      ],
+      inventions: ["newater", "marina-barrage", "dtss", "variable-salinity-plant", "floating-solar"],
+      keyInsight: "Singapore turned every raindrop and every flush into a resource. NEWater (ultra-purified reclaimed water) now supplies 40% of the nation's needs—purer than tap water.",
+      engineerNotes: "Singapore's water story is remarkable. Facing an existential threat from water dependency, they systematically developed four 'taps': imports, rainwater, desalination, and reclaimed water. The Marina Barrage converted a seawater bay into a freshwater reservoir in the city center. The Deep Tunnel Sewerage System runs 48km underground. They even put solar panels on reservoirs, reducing evaporation while generating power. This is what happens when a nation treats water as a matter of survival.",
+      modernLegacy: "Singapore exports water technology globally. Their PUB (Public Utilities Board) trains water professionals from around the world. NEWater technology now used in multiple countries.",
+      sources: [
+        "Tortajada, C. The Singapore Water Story",
+        "Lee, K.Y. From Third World to First"
+      ]
+    },
+    {
+      id: "israel",
+      name: "Israel",
+      region: "Eastern Mediterranean / Middle East",
+      period: {
+        start: -1500,
+        end: 2026,
+        era: "Ancient through Modern"
+      },
+      summary: "Israel transformed desert into agricultural export powerhouse through drip irrigation and 90%+ wastewater recycling—the highest rate in the world.",
+      waterChallenges: [
+        "Semi-arid climate with unreliable rainfall",
+        "Limited freshwater aquifers",
+        "Rapid population growth and agricultural demands",
+        "Political constraints on water sources"
+      ],
+      inventions: ["drip-irrigation", "negev-cisterns", "sorek-desalination", "wastewater-recycling"],
+      keyInsight: "Drip irrigation delivers water directly to plant roots, reducing water use by 50% while increasing yields. Invented in Israel 1965, now used in 110+ countries.",
+      engineerNotes: "Israel had no choice but to innovate. Drip irrigation (developed by Simcha Blass and Netafim) revolutionized global agriculture. They recycle 90% of wastewater for agriculture—four times the next closest country. The Sorek desalination plant produces the world's cheapest desalinated water. They've proven that water scarcity can be solved through technology and determination.",
+      modernLegacy: "Israeli water technology exported globally. Netafim drip irrigation serves 110+ countries. Israeli experts consult on water projects worldwide.",
+      sources: [
+        "Siegel, S. Let There Be Water: Israel's Solution for a Water-Starved World",
+        "Kislev, Y. The Water Economy of Israel"
+      ]
+    },
+    {
+      id: "great-zimbabwe",
+      name: "Great Zimbabwe",
+      region: "Southern Africa (Zimbabwe, Mozambique)",
+      period: {
+        start: 1100,
+        end: 1450,
+        era: "Medieval African Kingdom"
+      },
+      summary: "Africa's largest medieval city supported 20,000 people with sophisticated urban water management integrated into its famous stone walls.",
+      waterChallenges: [
+        "Supplying a large urban population on a granite plateau",
+        "Managing seasonal rainfall variability",
+        "Protecting royal compound water sources",
+        "Draining massive stone structures"
+      ],
+      inventions: ["zimbabwe-drainage", "zimbabwe-well"],
+      keyInsight: "The Great Enclosure walls incorporate sophisticated drainage channels—the builders understood that water management was essential to preserving their monumental architecture.",
+      engineerNotes: "Great Zimbabwe's stone walls are justly famous, but the drainage channels impressed me most. Water management was built into the architecture from the start. The stone-lined well within the Great Enclosure ensured the royal compound had secure water year-round. This was urban planning at a sophisticated level, serving 10,000-20,000 residents.",
+      modernLegacy: "Great Zimbabwe symbolizes African engineering achievement. Its water management techniques influenced settlement patterns throughout southern Africa.",
+      sources: [
+        "Pikirayi, I. The Zimbabwe Culture",
+        "Beach, D. The Shona and Zimbabwe"
       ]
     }
   ]
