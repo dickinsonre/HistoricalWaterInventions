@@ -1,9 +1,29 @@
 import { useState } from "react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { MapPin, ChevronRight, X, Home, Droplets } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
+import { 
+  MapPin, ChevronRight, X, Home, Droplets, VolumeX, Volume2, Search, 
+  Backpack, Trophy, Clock, BookOpen, BarChart3, Play, Star, Image, 
+  Lightbulb, Info, Globe, Grid3X3, Download
+} from "lucide-react";
 import { gameData } from "../../data/gameData";
 import CivilizationDetail from "./CivilizationDetail";
+import Inventory from "./Inventory";
+import ProgressTracker from "./ProgressTracker";
+import Achievements from "./Achievements";
+import TimelineFilter from "./TimelineFilter";
+import ComparisonTool from "./ComparisonTool";
+import FeaturedDiscoveries from "./FeaturedDiscoveries";
+import DidYouKnow from "./DidYouKnow";
+import AboutSection from "./AboutSection";
+import SmartSearch from "./SmartSearch";
+import TimeTravel from "./TimeTravel";
+import ChallengeModes from "./ChallengeModes";
+import TechnologyLibrary from "./TechnologyLibrary";
+import SWMM5Models from "./SWMM5Models";
+import { useAudio } from "../../lib/stores/useAudio";
+import { useProgress } from "../../lib/stores/useProgress";
 
 interface WorldMapViewProps {
   onBack: () => void;
@@ -75,6 +95,26 @@ const civilizationLocations: Record<string, { x: number; y: number; region: stri
 export default function WorldMapView({ onBack }: WorldMapViewProps) {
   const [selectedCiv, setSelectedCiv] = useState<string | null>(null);
   const [hoveredCiv, setHoveredCiv] = useState<string | null>(null);
+  
+  const { isMuted, toggleMute } = useAudio();
+  const { progress } = useProgress();
+  
+  const [showInventory, setShowInventory] = useState(false);
+  const [showProgress, setShowProgress] = useState(false);
+  const [showAchievements, setShowAchievements] = useState(false);
+  const [showTimeline, setShowTimeline] = useState(false);
+  const [showComparison, setShowComparison] = useState(false);
+  const [showFeatured, setShowFeatured] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
+  const [showFacts, setShowFacts] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
+  const [showTimeTravel, setShowTimeTravel] = useState(false);
+  const [showChallenges, setShowChallenges] = useState(false);
+  const [showLibrary, setShowLibrary] = useState(false);
+  const [showSWMM5, setShowSWMM5] = useState(false);
+
+  const allArtifacts = gameData.regions.flatMap(r => r.locations.flatMap(l => l.artifacts));
+  const totalLocations = gameData.regions.reduce((acc, r) => acc + r.locations.length, 0);
 
   const selectedRegion = selectedCiv ? gameData.regions.find(r => r.id === selectedCiv) : null;
 
@@ -91,21 +131,154 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
   }
 
   return (
+    <TooltipProvider>
     <div className="min-h-screen bg-[var(--deep-ocean)] p-4">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center justify-between mb-6">
+        {/* Toolbar */}
+        <div className="flex items-center justify-center gap-2 mb-4 flex-wrap">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={onBack} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Home size={16} className="text-[var(--gold)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Back to Home</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={toggleMute} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                {isMuted ? <VolumeX size={16} className="text-[var(--terracotta)]" /> : <Volume2 size={16} className="text-[var(--cerulean)]" />}
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">{isMuted ? "Unmute" : "Mute"}</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowSearch(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Search size={16} className="text-[var(--cerulean)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Smart Search</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowInventory(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Backpack size={16} className="text-[var(--aqua)]" />
+                <span className="ml-1 text-[var(--gold)]">{allArtifacts.length}</span>
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Inventions ({allArtifacts.length})</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowProgress(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Trophy size={16} className="text-[var(--gold)]" />
+                <span className="ml-1">{totalLocations}</span>
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Progress</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowAchievements(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Star size={16} className="text-[var(--gold)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Achievements</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowTimeline(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Clock size={16} className="text-[var(--cerulean)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Timeline</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowLibrary(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <BookOpen size={16} className="text-[var(--aqua)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Encyclopedia</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowComparison(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <BarChart3 size={16} className="text-[var(--cerulean)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Compare</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowTimeTravel(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Play size={16} className="text-[var(--gold)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Time Travel</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowFeatured(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Image size={16} className="text-[var(--terracotta)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Featured</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowFacts(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Lightbulb size={16} className="text-[var(--gold)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Did You Know</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowAbout(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Info size={16} className="text-[var(--cerulean)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">About</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowSWMM5(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Download size={16} className="text-[var(--aqua)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">SWMM5 Models</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowChallenges(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Grid3X3 size={16} className="text-[var(--terracotta)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Mini-Games</TooltipContent>
+          </Tooltip>
+        </div>
+
+        <div className="flex items-center justify-between mb-4">
           <div>
             <h1 className="font-heading text-2xl text-[var(--gold)]">World Map</h1>
             <p className="text-[var(--parchment)]/70 text-sm">Click on any civilization to explore</p>
           </div>
-          <Button
-            onClick={onBack}
-            variant="outline"
-            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-          >
-            <Home size={16} className="mr-2" />
-            Back to Home
-          </Button>
         </div>
 
         <Card className="water-card overflow-hidden">
@@ -227,6 +400,22 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
           })}
         </div>
       </div>
+
+      {/* Modal Components */}
+      {showInventory && <Inventory onClose={() => setShowInventory(false)} />}
+      {showProgress && <ProgressTracker onClose={() => setShowProgress(false)} />}
+      {showAchievements && <Achievements onClose={() => setShowAchievements(false)} />}
+      {showTimeline && <TimelineFilter onClose={() => setShowTimeline(false)} />}
+      {showComparison && <ComparisonTool onClose={() => setShowComparison(false)} />}
+      {showFeatured && <FeaturedDiscoveries onClose={() => setShowFeatured(false)} />}
+      {showFacts && <DidYouKnow onClose={() => setShowFacts(false)} />}
+      {showAbout && <AboutSection onClose={() => setShowAbout(false)} />}
+      {showSearch && <SmartSearch onClose={() => setShowSearch(false)} onSelectResult={() => setShowSearch(false)} />}
+      {showTimeTravel && <TimeTravel onClose={() => setShowTimeTravel(false)} />}
+      {showChallenges && <ChallengeModes onClose={() => setShowChallenges(false)} />}
+      {showLibrary && <TechnologyLibrary onClose={() => setShowLibrary(false)} />}
+      {showSWMM5 && <SWMM5Models onClose={() => setShowSWMM5(false)} />}
     </div>
+    </TooltipProvider>
   );
 }
