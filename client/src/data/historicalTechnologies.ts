@@ -512,6 +512,69 @@ export const historicalTechnologies: HistoricalTechnology[] = [
     primary_uses: ["Public timekeeping", "Weather observation"],
     key_principle: "Mechanized clepsydra with astronomical displays powered by regulated water flow.",
     notes: "Octagonal marble tower in Athens combined water clock, sundials, and weather vane; still standing today."
+  },
+  {
+    name: "Yakhchal (ice house)",
+    category: "Water storage and cooling",
+    civilizations: ["Persia"],
+    period_BCE_CE: "c. 400 BCE",
+    primary_uses: ["Ice storage", "Food preservation", "Desert cooling"],
+    key_principle: "Domed structures with thick heat-resistant walls use evaporative cooling to make and store ice year-round.",
+    notes: "Stored ice in desert climates for food preservation and desserts like faloodeh; some structures still stand in Yazd and Kerman."
+  },
+  {
+    name: "Baray reservoir system",
+    category: "Large-scale storage",
+    civilizations: ["Khmer Empire (Cambodia)"],
+    period_BCE_CE: "c. 9th-12th century CE",
+    primary_uses: ["Monsoon water storage", "Year-round irrigation", "Urban water supply"],
+    key_principle: "Massive rectangular reservoirs with automated overflow weirs and interconnected canal networks store seasonal floods.",
+    notes: "West Baray measured 8km x 2.2km; supported 200,000-1 million inhabitants at Angkor with sophisticated automated spillways."
+  },
+  {
+    name: "Neak Poan hospital temple",
+    category: "Medicinal water systems",
+    civilizations: ["Khmer Empire (Cambodia)"],
+    period_BCE_CE: "c. 12th century CE",
+    primary_uses: ["Healing rituals", "Medicinal bathing", "Water therapy"],
+    key_principle: "Island temple with five interconnected basins using infiltration/exfiltration hydraulics for medicinal water flow.",
+    notes: "Combined water engineering with healthcare; water flowed through central basin to peripheral healing pools. Still used in rain ceremonies."
+  },
+  {
+    name: "Nubian shadouf",
+    category: "Water lifting",
+    civilizations: ["Nubia", "Egypt"],
+    period_BCE_CE: "c. 3000 BCE or earlier",
+    primary_uses: ["Irrigation", "River water lifting"],
+    key_principle: "Counterbalanced lever device for lifting water from river to irrigation channels.",
+    notes: "First mechanical application of the lever principle, predating Greek mechanics by millennia; evolved into multi-stage systems."
+  },
+  {
+    name: "Eskale (Saqia) water wheel",
+    category: "Water lifting and power",
+    civilizations: ["Nubia (Kingdom of Kush)"],
+    period_BCE_CE: "c. 1000 BCE or earlier",
+    primary_uses: ["Automated irrigation", "Continuous water lifting"],
+    key_principle: "Animal-powered waterwheel with perpendicular gear transmission; buckets on rotating ropes lift water continuously.",
+    notes: "World's first automated machine; used wooden gears and oxen power. Water distribution managed with social equity systems for widows and elders."
+  },
+  {
+    name: "Bampenh Reach automated spillway",
+    category: "Flow control",
+    civilizations: ["Khmer Empire (Cambodia)"],
+    period_BCE_CE: "c. 9th-12th century CE",
+    primary_uses: ["Automated water distribution", "Seasonal flow management"],
+    key_principle: "Spillway system automatically directs water to different channels based on seasonal flow levels.",
+    notes: "Sophisticated hydraulic automation at Angkor; directed monsoon waters without human intervention."
+  },
+  {
+    name: "Qanat maintenance shaft system",
+    category: "Groundwater conveyance",
+    civilizations: ["Persia"],
+    period_BCE_CE: "c. 1000-800 BCE",
+    primary_uses: ["Tunnel ventilation", "Maintenance access", "Debris removal"],
+    key_principle: "Vertical shafts at regular intervals provide access for construction, maintenance, and ventilation of underground tunnels.",
+    notes: "Tax exemptions granted to families maintaining qanats for up to 5 generations; over 30,000 qanats still function in Iran."
   }
 ];
 
