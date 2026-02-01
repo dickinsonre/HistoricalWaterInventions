@@ -22,7 +22,7 @@ import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
-import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb, Globe, Building, Search, Play, Gamepad2, Building2 } from "lucide-react";
+import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb, Globe, Building, Search, Play, Gamepad2, Building2, Map } from "lucide-react";
 import { gameData, getAllArtifacts } from "../../data/gameData";
 
 export default function GameUI() {
@@ -58,6 +58,34 @@ export default function GameUI() {
     <div className="absolute inset-0 pointer-events-none">
       <div className="absolute top-4 left-4 right-4 flex justify-between items-start pointer-events-auto">
           <div className="flex gap-2 flex-wrap">
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => {
+                    setShowInventory(false);
+                    setShowProgress(false);
+                    setShowAchievements(false);
+                    setShowTimeline(false);
+                    setShowComparison(false);
+                    setShowFeatured(false);
+                    setShowLibrary(false);
+                    setShowMuseum(false);
+                    setShowChallenges(false);
+                    setShowTimeTravel(false);
+                    setShowSearch(false);
+                  }}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Map size={16} className="text-[var(--gold)]" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                3D World Map
+              </TooltipContent>
+            </Tooltip>
+
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button
