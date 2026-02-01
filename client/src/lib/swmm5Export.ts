@@ -2175,7 +2175,7 @@ export function downloadSWMM5Model(inventionId: string, inventionName: string): 
   
   const link = document.createElement('a');
   link.href = dataUri;
-  link.download = `${safeFilename}_SWMM5_Model.txt`;
+  link.download = `${safeFilename}_SWMM5_Model.inp`;
   link.style.display = 'none';
   document.body.appendChild(link);
   link.click();
