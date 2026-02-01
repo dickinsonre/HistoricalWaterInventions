@@ -3768,6 +3768,368 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "pre-roman-iberia",
+      name: "Pre-Roman Iberian Civilizations",
+      description: "Before Rome conquered Hispania, diverse peoples developed sophisticated water systems for mining, agriculture, and urban life",
+      position: [-12, 0, -8],
+      color: "#CD853F",
+      era: "ancient",
+      dateRange: "2000 BCE - 19 BCE",
+      locations: [
+        {
+          id: "rio-tinto",
+          name: "Río Tinto Mining Region",
+          description: "Legendary wealth of Tartessos with hydraulic mining",
+          historicalContext: "Tartessians may be Biblical 'Tarshish', traded with Phoenicians",
+          coordinates: { lat: 37.7, lng: -6.6 },
+          artifacts: [
+            {
+              id: "tartessian-hydraulic-mining",
+              name: "Tartessian Hydraulic Mining",
+              description: "Advanced water-powered mining techniques predating Roman 'ruina montium'",
+              rarity: "epic",
+              historicalPeriod: "Bronze/Iron Age (1000-500 BCE)",
+              significance: "Río Tinto still mined after 5,000 years continuous operation; exported gold, silver, copper to Phoenicia, Greece, Egypt",
+              yearBCE: 1000,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "ullastret-sagunto",
+          name: "Iberian Hilltop Oppida",
+          description: "Fortified settlements with sophisticated cistern systems",
+          historicalContext: "Sagunto withstood Hannibal for 8 months; Numancia resisted Rome for 13 years",
+          coordinates: { lat: 42.0, lng: 3.1 },
+          artifacts: [
+            {
+              id: "iberian-cisterns",
+              name: "Iberian Urban Cistern Networks",
+              description: "Rock-cut cisterns supplying hilltop fortified settlements (oppida)",
+              rarity: "rare",
+              historicalPeriod: "Iron Age (600-19 BCE)",
+              significance: "Bottle-shaped cisterns 5-15m deep, up to 500+ m³ capacity; enabled siege resistance",
+              yearBCE: 600,
+              category: "dam"
+            },
+            {
+              id: "celtiberian-irrigation",
+              name: "Celtiberian Valley Irrigation",
+              description: "River diversion systems for cereal agriculture in interior Iberia",
+              rarity: "common",
+              historicalPeriod: "Iron Age (500-19 BCE)",
+              significance: "Stone weirs (azudes precursors) and gravity channels predating Moorish acequia systems by 1,000 years",
+              yearBCE: 500,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "basque-country",
+      name: "Basque Civilization",
+      description: "Europe's oldest continuous culture with unique water engineering adapted to steep, rainy mountains",
+      position: [-10, 0, -6],
+      color: "#8B0000",
+      era: "classical",
+      dateRange: "Prehistoric - Present",
+      locations: [
+        {
+          id: "basque-valleys",
+          name: "Basque Mountain Valleys",
+          description: "Water-powered mills and iron forges in every valley",
+          historicalContext: "Basque iron industry supplied half of Europe with premium steel",
+          coordinates: { lat: 43.0, lng: -2.0 },
+          artifacts: [
+            {
+              id: "basque-water-mills",
+              name: "Basque Water Mills (Errota)",
+              description: "Sophisticated mountain stream mills for grain, cider, and iron forging",
+              rarity: "rare",
+              historicalPeriod: "Roman - Present (100 CE - Present)",
+              significance: "3,000+ mills at peak; horizontal wheel (rodezno) design; ~50 heritage mills still operating",
+              yearBCE: -100,
+              category: "fountain"
+            },
+            {
+              id: "basque-iron-forges",
+              name: "Basque Ironworks (Burdinola)",
+              description: "Water-powered iron forges producing Europe's finest steel",
+              rarity: "rare",
+              historicalPeriod: "Iron Age - Industrial (200 BCE - 1900 CE)",
+              significance: "Water wheels drove bellows and trip hammers; Basque steel armed Spanish conquistadors",
+              yearBCE: 200,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "basque-coast",
+          name: "Bay of Biscay Coast",
+          description: "Tidal fish traps and harbors for whaling fleets",
+          historicalContext: "Basque fishermen reached Newfoundland before Columbus",
+          coordinates: { lat: 43.3, lng: -2.9 },
+          artifacts: [
+            {
+              id: "basque-fish-traps",
+              name: "Basque Tidal Fish Traps & Harbor Works",
+              description: "Stone tidal traps and engineered harbors for fishing fleets",
+              rarity: "rare",
+              historicalPeriod: "Iron Age - Present (500 BCE - Present)",
+              significance: "V-shaped stone traps harvest at low tide; harbors launched Atlantic exploration",
+              yearBCE: 500,
+              category: "dam"
+            },
+            {
+              id: "basque-mountain-irrigation",
+              name: "Basque Mountain Terrace Irrigation",
+              description: "Spring-fed channel systems for mountain agriculture and cider orchards",
+              rarity: "common",
+              historicalPeriod: "Medieval - Present (500 CE - Present)",
+              significance: "Controls water timing for crops; many systems still function for cider apple orchards",
+              yearBCE: -500,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "celtic-europe",
+      name: "Celtic Civilizations",
+      description: "Dominated Europe for 800 years; sophisticated water management for ritual, agriculture, and mining",
+      position: [-6, 0, -8],
+      color: "#228B22",
+      era: "ancient",
+      dateRange: "800 BCE - 400 CE",
+      locations: [
+        {
+          id: "celtic-sacred-sites",
+          name: "Celtic Sacred Springs",
+          description: "Ritual water sites across Celtic Europe",
+          historicalContext: "Celts saw water as portals to the otherworld",
+          coordinates: { lat: 51.38, lng: -2.36 },
+          artifacts: [
+            {
+              id: "celtic-sacred-springs",
+              name: "Celtic Sacred Water Sites (Nemeton)",
+              description: "Engineered sacred springs and ritual wells with votive offerings",
+              rarity: "epic",
+              historicalPeriod: "Iron Age (800 BCE - 400 CE)",
+              significance: "Bath (Sulis), Seine Source (Sequana); weapons, gold, even humans offered to water; many became Roman then Christian sites",
+              yearBCE: 800,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "celtic-oppida",
+          name: "Celtic Oppida Towns",
+          description: "First true urban planning in temperate Europe",
+          historicalContext: "Julius Caesar spent years besieging water-supplied Celtic towns",
+          coordinates: { lat: 47.0, lng: 4.0 },
+          artifacts: [
+            {
+              id: "celtic-oppida-water",
+              name: "Celtic Oppida Water Systems",
+              description: "Fortified towns with springs, cisterns, and urban drainage",
+              rarity: "rare",
+              historicalPeriod: "Iron Age (200 BCE - 50 CE)",
+              significance: "Bibracte, Alesia, Numancia - water supply enabled siege resistance; foundations for later Roman cities",
+              yearBCE: 200,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "celtic-wetlands",
+          name: "Celtic Wetland Engineering",
+          description: "Bog trackways and field drainage systems",
+          historicalContext: "Sweet Track (3807 BCE) is among oldest engineered roads",
+          coordinates: { lat: 51.2, lng: -2.8 },
+          artifacts: [
+            {
+              id: "celtic-timber-trackways",
+              name: "Celtic Timber Trackways (Togher)",
+              description: "Engineered wooden roads across bogs and wetlands",
+              rarity: "rare",
+              historicalPeriod: "Neolithic - Iron Age (4000 BCE - 500 CE)",
+              significance: "Sweet Track 1.8km long built 3807 BCE; carried carts across bogs 5,000 years ago",
+              yearBCE: 4000,
+              category: "canal"
+            },
+            {
+              id: "celtic-field-drainage",
+              name: "Celtic Field Drainage Systems",
+              description: "Ditch-and-bank field systems managing waterlogged soils",
+              rarity: "common",
+              historicalPeriod: "Iron Age (500 BCE - 400 CE)",
+              significance: "Square/rectangular 'Celtic fields' still visible from air; boundaries were working drainage",
+              yearBCE: 500,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "gaul",
+      name: "Gaulish Civilization",
+      description: "Celtic peoples of France with wealthy urban centers and extensive river trade before Caesar's conquest",
+      position: [-8, 0, -4],
+      color: "#4169E1",
+      era: "ancient",
+      dateRange: "600 BCE - 50 BCE",
+      locations: [
+        {
+          id: "gaulish-rivers",
+          name: "Gaulish River Network",
+          description: "Engineered river transport connecting Mediterranean and Atlantic",
+          historicalContext: "Gaul's wealth based on transit trade controlling two worlds",
+          coordinates: { lat: 45.76, lng: 4.84 },
+          artifacts: [
+            {
+              id: "gaulish-river-navigation",
+              name: "Gaulish River Navigation Systems",
+              description: "Engineered river transport network across Gaul with improved channels and port facilities",
+              rarity: "rare",
+              historicalPeriod: "Iron Age (500-50 BCE)",
+              significance: "Rhône-Loire-Seine network moved Mediterranean wine north, British tin south; confluence cities like Lyon still major centers",
+              yearBCE: 500,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "gaulish-wine",
+          name: "Gaulish Wine Regions",
+          description: "Water management for viticulture adopted from Greeks",
+          historicalContext: "Gauls invented the wine barrel",
+          coordinates: { lat: 44.4, lng: 4.9 },
+          artifacts: [
+            {
+              id: "gaulish-viticulture",
+              name: "Gaulish Viticulture Water Systems",
+              description: "Water management for wine production - irrigation, cellar cooling, processing",
+              rarity: "common",
+              historicalPeriod: "Iron Age (200-50 BCE)",
+              significance: "Barrel innovation revolutionized wine transport; underground cellars with spring-fed cooling; foundation of French wine industry",
+              yearBCE: 200,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "gaulish-thermal",
+          name: "Gaulish Thermal Springs",
+          description: "Sacred thermal springs developed for healing cults",
+          historicalContext: "Every famous French spa sits on Gaulish sacred site",
+          coordinates: { lat: 46.13, lng: 3.43 },
+          artifacts: [
+            {
+              id: "gaulish-thermal-springs",
+              name: "Gaulish Thermal Spring Sites",
+              description: "Sacred thermal springs developed for healing cults before Roman monumentalization",
+              rarity: "common",
+              historicalPeriod: "Iron Age (300-50 BCE)",
+              significance: "Vichy, Aix, Bourbon all Celtic first; Romans expanded existing sites; continuous use to present",
+              yearBCE: 300,
+              category: "fountain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "germanic-europe",
+      name: "Germanic Civilizations",
+      description: "Water technologies suited to northern Europe's wet, cold climate - wetland reclamation and bog management",
+      position: [-4, 0, -10],
+      color: "#708090",
+      era: "ancient",
+      dateRange: "1000 BCE - 600 CE",
+      locations: [
+        {
+          id: "frisian-terps",
+          name: "Frisian Coastal Marshes",
+          description: "Terp mound settlements in tidal marshland",
+          historicalContext: "Dutch water expertise rooted in 2,000 years of terp-building",
+          coordinates: { lat: 53.2, lng: 5.8 },
+          artifacts: [
+            {
+              id: "germanic-terp-mounds",
+              name: "Terp/Wurt Dwelling Mounds",
+              description: "Artificial mounds 3-10+ meters high built for flood-safe settlement in coastal marshes",
+              rarity: "epic",
+              historicalPeriod: "Iron Age - Medieval (500 BCE - 1200 CE)",
+              significance: "~1,200 identified; many still inhabited; each generation built higher; foundation for later Dutch expertise",
+              yearBCE: 500,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "germanic-bogs",
+          name: "Germanic Boglands",
+          description: "Bog iron extraction and sacred water sites",
+          historicalContext: "Bogs preserve everything - including sacrificial victims",
+          coordinates: { lat: 55.4, lng: 9.4 },
+          artifacts: [
+            {
+              id: "germanic-bog-iron",
+              name: "Bog Iron Extraction",
+              description: "Harvesting iron from wetlands - the bog was their mine",
+              rarity: "rare",
+              historicalPeriod: "Iron Age - Medieval (500 BCE - 1000 CE)",
+              significance: "Iron dissolved from soil precipitates in bogs; renewable (reforms in 20-30 years); every village could produce tools",
+              yearBCE: 500,
+              category: "dam"
+            },
+            {
+              id: "germanic-sacred-wells",
+              name: "Germanic Sacred Well Shrines",
+              description: "Sacred wells and springs with votive deposits and bog bodies",
+              rarity: "rare",
+              historicalPeriod: "Iron Age (500 BCE - 800 CE)",
+              significance: "Tollund Man, Grauballe Man preserved 2,000 years; weapons deliberately destroyed for gods; many became Christian holy wells",
+              yearBCE: 500,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "germanic-boats",
+          name: "Germanic River & Coastal Navigation",
+          description: "Watercraft evolution from dugout to Viking ship",
+          historicalContext: "8,000 years of boat evolution led to Viking longships",
+          coordinates: { lat: 55.8, lng: 10.2 },
+          artifacts: [
+            {
+              id: "germanic-log-boats",
+              name: "Germanic Dugout & Plank Boats",
+              description: "Watercraft evolved from dugout canoes to sophisticated river and sea vessels",
+              rarity: "common",
+              historicalPeriod: "Mesolithic - Early Medieval (8000 BCE - 1000 CE)",
+              significance: "Pesse Canoe (8040 BCE) is oldest known boat; Nydam boat (320 CE) is Viking precursor; rivers = roads of northern Europe",
+              yearBCE: 8000,
+              category: "canal"
+            },
+            {
+              id: "germanic-salt-works",
+              name: "Germanic Coastal Salt Works",
+              description: "Extracting salt from seawater using peat-burning method",
+              rarity: "common",
+              historicalPeriod: "Iron Age - Present (500 BCE - Present)",
+              significance: "Salt = how you kept food from rotting; 'salary' from Latin sal (salt); Lüneburg, Halle still famous salt towns",
+              yearBCE: 500,
+              category: "dam"
+            }
+          ]
+        }
+      ]
     }
   ]
 };
