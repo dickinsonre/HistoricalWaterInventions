@@ -134,9 +134,9 @@ export default function SWMM5Showcase({ onViewAll }: SWMM5ShowcaseProps) {
             <FileCode className="text-[var(--cerulean)]" size={28} />
           </div>
           <div>
-            <h3 className="font-heading text-xl text-[var(--gold)]">SWMM5 Hydraulic Simulation Models</h3>
+            <h3 className="font-heading text-xl text-[var(--gold)]">SWMM5/ICM Invention Models</h3>
             <p className="text-sm text-[var(--parchment)]/70 mt-1">
-              {modelCount}+ EPA SWMM5 input files recreating ancient hydraulic systems for educational analysis
+              {modelCount}+ hydraulic simulation files compatible with EPA SWMM5 and InfoWorks ICM
             </p>
           </div>
         </div>
@@ -266,13 +266,13 @@ export default function SWMM5Showcase({ onViewAll }: SWMM5ShowcaseProps) {
         })}
       </div>
 
-      {/* What is SWMM5 Section */}
+      {/* What is SWMM5/ICM Section */}
       <div className="mt-5 p-4 bg-[var(--deep-ocean)]/60 rounded-lg border border-[var(--aqua)]/10">
-        <h4 className="font-heading text-sm text-[var(--gold)] mb-2">What is EPA SWMM5?</h4>
+        <h4 className="font-heading text-sm text-[var(--gold)] mb-2">Compatible with SWMM5 & InfoWorks ICM</h4>
         <p className="text-xs text-[var(--parchment)]/70 mb-3">
-          The Storm Water Management Model (SWMM) is the EPA's free, industry-standard software for hydraulic simulation. 
-          These .INP files recreate ancient water systems so you can analyze flow rates, pressures, and hydraulic behavior 
-          just as modern engineers do for contemporary infrastructure.
+          These .INP files work with EPA SWMM5 (free) and can be imported directly into Autodesk InfoWorks ICM 
+          for advanced 1D/2D hydraulic modeling. In ICM, use <span className="text-[var(--aqua)]">File → Import → SWMM</span> to 
+          load these ancient water system models and analyze flow rates, pressures, and hydraulic behavior with professional-grade tools.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
           <div className="flex items-center gap-2">

@@ -10,7 +10,7 @@ The game showcases how water shaped human civilization through:
 - **74 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Medieval India, Ancient Greece, Roman Empire, Ancient China, Ancient Persia, Khmer Empire, Cambodia, Inca Empire, Aboriginal Australia, Ancient Korea, Great Zimbabwe, Nan Madol, Modern Japan (G-Cans), Siam (Thailand), Hawaiian, Ethiopian Highlands, Sahel Africa, Engaruka, Chamorro, Dutch Netherlands, Burma/Myanmar, Vietnam, Pre-Roman Europe, Philippines, Singapore, Malaysia, UAE, Israel, Yemen, Bangladesh, Al-Andalus, Oman, Venice, Silk Road, Amazon Basin, Mississippian Cahokia, Hohokam, Pacific Northwest, Siberia-Yakutia, Inuit Arctic, Swahili Coast, Kongo Kingdom, Mali-Timbuktu, Borneo, Papua New Guinea, Pre-Roman Iberia, Basque Country, Celtic Europe, Gaul, Germanic Europe, Etruscan, Viking, and more
 - **235+ Water Inventions**: Aqueducts, stepwells, irrigation, klongs, qanats, terraces, reservoirs, canals, moats, flood control, G-Cans, ondol heating, fish traps, tanada, suikinkutsu, barays, floating gardens, inverted siphons, orifice controls, hydraulic mining, terp mounds, bog iron extraction, timber trackways, cuniculi tunnels, Cloaca Maxima, clinker longships, portage systems, and more
 - **Time Periods**: Ancient (40,000-500 BCE), Classical (500 BCE-500 CE), Medieval (500-1400 CE), Modern (1400 CE-Present)
-- **SWMM5 Models**: 66+ downloadable hydraulic simulation models for educational use
+- **SWMM5/ICM Models**: 66+ hydraulic simulation models compatible with EPA SWMM5 and importable into InfoWorks ICM via File → Import → SWMM
 
 ## System Architecture
 
@@ -59,11 +59,13 @@ The game showcases how water shaped human civilization through:
 - Instant navigation to invention or civilization pages
 - Real-time filtering as you type
 
-### SWMM5 Hydraulic Models
-- 66+ downloadable simulation models
+### SWMM5/ICM Invention Models
+- 66+ hydraulic simulation models compatible with EPA SWMM5 and InfoWorks ICM
+- Import into ICM via File → Import → SWMM for advanced 1D/2D modeling
 - Copy-to-clipboard functionality (avoids antivirus false positives)
 - Download all models as combined .txt file
 - Covers Roman aqueducts, qanats, siphons, orifices, reservoirs, and more
+- Technical specs: node counts, link counts, complexity indicators
 - Educational use for understanding ancient hydraulic engineering
 
 ### Invention Detail Pages
