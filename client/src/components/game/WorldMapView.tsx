@@ -29,7 +29,11 @@ const civilizationLocations: Record<string, { x: number; y: number; region: stri
   "phoenicia": { x: 59, y: 35, region: "Lebanon" },
   "carthage": { x: 52, y: 38, region: "Tunisia" },
   "medieval-europe": { x: 50, y: 28, region: "Western Europe" },
-  "modern-era": { x: 40, y: 30, region: "Global" }
+  "modern-era": { x: 40, y: 30, region: "Global" },
+  "inca-empire": { x: 24, y: 62, region: "Peru" },
+  "balinese": { x: 80, y: 56, region: "Indonesia" },
+  "aboriginal-australia": { x: 86, y: 68, region: "Australia" },
+  "austronesian": { x: 88, y: 58, region: "Pacific" }
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {

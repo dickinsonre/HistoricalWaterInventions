@@ -48,7 +48,7 @@ export default function AboutSection({ onClose }: AboutSectionProps) {
             <div className="p-4 bg-[var(--deep-ocean)]/60 rounded-lg border border-[var(--aqua)]/20">
               <div className="flex items-center gap-2 mb-2">
                 <Lightbulb className="text-[var(--gold)]" size={18} />
-                <h4 className="font-heading text-[var(--gold)]">62+ Inventions</h4>
+                <h4 className="font-heading text-[var(--gold)]">78+ Inventions</h4>
               </div>
               <p className="text-[var(--parchment)]/70 text-xs">
                 Aqueducts, irrigation, water-lifting devices, sanitation, dams, canals, and more

@@ -16,8 +16,8 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
           Discover How Water Shaped Civilization
         </p>
         <p className="text-[var(--parchment)]/70 max-w-2xl mx-auto">
-          Explore 21 civilizations, 62+ water inventions in 3D, and 80+ technologies in our encyclopedia. 
-          From ancient shaduf to Roman aqueducts to modern mega-dams.
+          Explore 25 civilizations, 78+ water inventions in 3D, and 80+ technologies in our encyclopedia. 
+          From ancient shaduf to Roman aqueducts to 40,000-year-old Aboriginal fish traps.
         </p>
       </header>
 
@@ -40,7 +40,7 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                   World Map Explorer
                 </h3>
                 <p className="text-[var(--parchment)]/80 text-sm mb-4">
-                  Explore 21 civilizations on an interactive map with 62+ water inventions
+                  Explore 25 civilizations on an interactive map with 78+ water inventions
                 </p>
                 <span className="inline-block px-3 py-1 bg-[var(--cerulean)]/30 rounded-full text-xs text-[var(--aqua)] border border-[var(--aqua)]/30">
                   Interactive Map

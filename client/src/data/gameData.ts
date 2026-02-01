@@ -1197,6 +1197,243 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "inca-empire",
+      name: "Inca Empire",
+      description: "Mountain water masters: terraces, fountains, and aqueducts at extreme altitudes",
+      position: [-10, 0, 4],
+      color: "#CD853F",
+      era: "medieval",
+      dateRange: "1438 - 1533 CE",
+      locations: [
+        {
+          id: "machu-picchu",
+          name: "Machu Picchu",
+          description: "Sacred city with sophisticated water supply system at 2,430m elevation",
+          historicalContext: "Complete urban water infrastructure still functioning after 500+ years",
+          coordinates: { lat: -13.1631, lng: -72.5450 },
+          artifacts: [
+            {
+              id: "inca-fountain-system",
+              name: "Machu Picchu Fountain System",
+              description: "16 cascading stone fountains fed by 749-meter canal from natural spring",
+              rarity: "legendary",
+              historicalPeriod: "Inca Period (1450 CE)",
+              significance: "Still functions today—designed for 25-300 L/min variable flow with emergency overflow",
+              yearBCE: -1450,
+              category: "fountain"
+            },
+            {
+              id: "inca-supply-canal",
+              name: "Machu Picchu Supply Canal",
+              description: "Stone-lined canal bringing spring water 749m at precisely 3% slope",
+              rarity: "epic",
+              historicalPeriod: "Inca Period (1450 CE)",
+              significance: "City location chosen based on spring assessment—water drove urban planning",
+              yearBCE: -1450,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "tipon",
+          name: "Tipón Hydraulic Complex",
+          description: "Royal water garden and engineering showcase near Cusco",
+          historicalContext: "May have been a hydraulic engineering laboratory",
+          coordinates: { lat: -13.5667, lng: -71.7833 },
+          artifacts: [
+            {
+              id: "tipon-terraces",
+              name: "Tipón Water Terraces",
+              description: "13 terraces with polished stone walls, decorative waterfalls and precisely calibrated canals",
+              rarity: "legendary",
+              historicalPeriod: "Inca Period (1400 CE)",
+              significance: "Controlled water flow between terraces—possibly an engineering school",
+              yearBCE: -1400,
+              category: "irrigation"
+            },
+            {
+              id: "stone-flow-controls",
+              name: "Movable Stone Flow Controls",
+              description: "Stone blocks that could redirect water flow between channels",
+              rarity: "rare",
+              historicalPeriod: "Inca Period (1400 CE)",
+              significance: "Simple but reliable valves with no moving mechanical parts",
+              yearBCE: -1400,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "cusco-region",
+          name: "Sacred Valley",
+          description: "Agricultural heartland with thousands of terraces",
+          historicalContext: "Andenes terraces still irrigate farms today",
+          coordinates: { lat: -13.3167, lng: -72.0833 },
+          artifacts: [
+            {
+              id: "andenes",
+              name: "Andenes (Agricultural Terraces)",
+              description: "Stepped terraces cut into mountainsides with integrated irrigation channels",
+              rarity: "epic",
+              historicalPeriod: "Inca Period (1400 CE)",
+              significance: "Stone walls absorbed heat during day, released at night for frost protection",
+              yearBCE: -1400,
+              category: "irrigation"
+            },
+            {
+              id: "inca-aqueduct",
+              name: "Inca Mountain Aqueduct",
+              description: "Gravity-fed canals cut from single stones spanning mountainous terrain",
+              rarity: "rare",
+              historicalPeriod: "Inca Period (1200-1500 CE)",
+              significance: "Covered 25,000 miles of road network with water access",
+              yearBCE: -1300,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "balinese",
+      name: "Balinese (Subak)",
+      description: "Sacred water temples and democratic irrigation: rice terraces as spiritual landscape",
+      position: [14, 0, 6],
+      color: "#228B22",
+      era: "medieval",
+      dateRange: "9th Century CE - Present",
+      locations: [
+        {
+          id: "bali-rice-terraces",
+          name: "Jatiluwih Rice Terraces",
+          description: "UNESCO World Heritage terraced landscape managed by water temples",
+          historicalContext: "Subak system integrates religion, ecology, and water management",
+          coordinates: { lat: -8.3694, lng: 115.1311 },
+          artifacts: [
+            {
+              id: "subak-system",
+              name: "Subak Irrigation System",
+              description: "Community-owned cooperative water management combining temples, terraces, and democratic governance",
+              rarity: "legendary",
+              historicalPeriod: "9th Century CE - Present",
+              significance: "UNESCO World Heritage—proves water management is social organization, not just engineering",
+              yearBCE: -900,
+              category: "irrigation"
+            },
+            {
+              id: "water-temple",
+              name: "Pura Ulun Danu (Water Temple)",
+              description: "Sacred temples that coordinate irrigation schedules across multiple villages",
+              rarity: "epic",
+              historicalPeriod: "9th Century CE - Present",
+              significance: "Religious ceremonies synchronize planting cycles and pest control through coordinated flooding",
+              yearBCE: -900,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "aboriginal-australia",
+      name: "Aboriginal Australia",
+      description: "40,000 years of water knowledge: surviving the world's driest inhabited continent",
+      position: [16, 0, 8],
+      color: "#8B4513",
+      era: "ancient",
+      dateRange: "40,000 BCE - Present",
+      locations: [
+        {
+          id: "brewarrina",
+          name: "Brewarrina Fish Traps",
+          description: "Possibly the oldest human structure on Earth, still functioning",
+          historicalContext: "Stone fish traps in Barwon River managed by multiple Aboriginal nations",
+          coordinates: { lat: -29.9583, lng: 146.8667 },
+          artifacts: [
+            {
+              id: "brewarrina-traps",
+              name: "Brewarrina Fish Traps (Baiame's Ngunnhu)",
+              description: "Elaborate dry stone fish trap system designed to work with seasonal flooding",
+              rarity: "legendary",
+              historicalPeriod: "40,000+ years BP",
+              significance: "World's oldest human construction still in use—managed communally for millennia",
+              yearBCE: 40000,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "western-australia",
+          name: "Gnamma Holes",
+          description: "Rock-cut water storage enabling survival in extreme aridity",
+          historicalContext: "Natural rock hollows enlarged and maintained along songlines",
+          coordinates: { lat: -31.9505, lng: 115.8605 },
+          artifacts: [
+            {
+              id: "gnamma-holes",
+              name: "Gnamma Holes",
+              description: "Natural rock hollows enlarged and sealed with spinifex resin for water storage",
+              rarity: "epic",
+              historicalPeriod: "10,000+ years BP",
+              significance: "Part of complex water route networks along dreaming tracks/songlines",
+              yearBCE: 10000,
+              category: "dam"
+            },
+            {
+              id: "aboriginal-wells",
+              name: "Aboriginal Wells (Native Wells)",
+              description: "Hand-dug wells up to 3+ meters deep, covered to prevent evaporation",
+              rarity: "rare",
+              historicalPeriod: "40,000+ years BP",
+              significance: "Knowledge passed through oral tradition—enabled survival in world's driest continent",
+              yearBCE: 40000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "austronesian",
+      name: "Austronesian Peoples",
+      description: "Ocean masters: outrigger canoes enabled the greatest human migration in history",
+      position: [15, 0, 5],
+      color: "#4169E1",
+      era: "ancient",
+      dateRange: "3500 BCE - Present",
+      locations: [
+        {
+          id: "pacific-voyaging",
+          name: "Pacific Voyaging Networks",
+          description: "Maritime technology enabling colonization from Taiwan to Easter Island to Madagascar",
+          historicalContext: "First true ocean-going vessels in human history",
+          coordinates: { lat: -17.6797, lng: 149.4068 },
+          artifacts: [
+            {
+              id: "outrigger-canoe",
+              name: "Outrigger Canoe",
+              description: "Stabilized watercraft enabling ocean voyaging across the Pacific and Indian Oceans",
+              rarity: "legendary",
+              historicalPeriod: "3500 BCE onwards",
+              significance: "Enabled colonization of Polynesia, Micronesia, and Madagascar—greatest human migration",
+              yearBCE: 3500,
+              category: "canal"
+            },
+            {
+              id: "junk-rig",
+              name: "Junk Rig Sail",
+              description: "Battened sail with multiple horizontal panels—self-reefing in strong winds",
+              rarity: "epic",
+              historicalPeriod: "Several hundred BCE",
+              significance: "Later adopted by Chinese—became dominant East Asian sail design",
+              yearBCE: 300,
+              category: "canal"
+            }
+          ]
+        }
+      ]
     }
   ]
 };
