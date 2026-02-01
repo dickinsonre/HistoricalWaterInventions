@@ -307,6 +307,255 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       roughness: 0.025
     },
     engineeringNotes: 'Stone walls absorbed heat during day, released at night for frost protection. Being revived today for climate adaptation'
+  },
+  'subak': {
+    name: 'Balinese Subak Irrigation System',
+    description: 'Community-owned rice terrace irrigation coordinated by water temples',
+    civilization: 'Balinese (Subak)',
+    period: '9th Century CE - Present',
+    parameters: {
+      length: 3000,
+      slope: 0.02,
+      flowRate: 2.0,
+      channelWidth: 0.5,
+      channelDepth: 0.3,
+      roughness: 0.025
+    },
+    engineeringNotes: 'UNESCO World Heritage. Water temples coordinate planting cycles—synchronized flooding controls pests. Proves water management is social organization, not just engineering'
+  },
+  'brewarrina-fish-traps': {
+    name: 'Brewarrina Fish Traps (Baiame\'s Ngunnhu)',
+    description: 'World\'s oldest human structure: 40,000-year-old stone fish traps',
+    civilization: 'Aboriginal Australia',
+    period: '40,000 BCE - Present',
+    parameters: {
+      length: 500,
+      slope: 0.001,
+      flowRate: 50,
+      channelWidth: 5,
+      channelDepth: 1.5,
+      roughness: 0.040
+    },
+    engineeringNotes: 'Dry stone walls in Barwon River designed for seasonal flooding. Managed communally by multiple Aboriginal nations for millennia. Still functioning today'
+  },
+  'gnamma-holes': {
+    name: 'Aboriginal Gnamma Holes',
+    description: 'Rock-cut water storage along songlines in world\'s driest continent',
+    civilization: 'Aboriginal Australia',
+    period: '10,000+ years BP',
+    parameters: {
+      volume: 500,
+      catchmentArea: 100,
+      slope: 0.01,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Natural rock hollows enlarged and sealed with spinifex resin. Covered to prevent evaporation. Part of complex water route networks passed through oral tradition'
+  },
+  'japanese-suido': {
+    name: 'Japanese Suido Water Conduit',
+    description: 'Bamboo and ceramic pipe networks supplying castle towns',
+    civilization: 'Ancient Japan',
+    period: '1590 CE - Present',
+    parameters: {
+      length: 5000,
+      slope: 0.01,
+      flowRate: 1.0,
+      pipeDiameter: 0.15,
+      roughness: 0.020
+    },
+    engineeringNotes: 'Tokyo\'s Tamagawa Josui (1653) supplied water for 300 years. Some sections still in use. Early closed-pipe urban water supply'
+  },
+  'tanada-terraces': {
+    name: 'Japanese Tanada Rice Terraces',
+    description: 'Mountain rice paddies with intricate water distribution',
+    civilization: 'Ancient Japan',
+    period: '300 BCE onwards',
+    parameters: {
+      length: 1000,
+      slope: 0.08,
+      flowRate: 0.5,
+      channelWidth: 0.3,
+      channelDepth: 0.2,
+      roughness: 0.030
+    },
+    engineeringNotes: 'Transformed Japanese landscape, supported population growth. Water rights (mizukumi) developed as sophisticated community agreements'
+  },
+  'dutch-polder': {
+    name: 'Dutch Polder Drainage System',
+    description: 'Land reclaimed from sea using dikes and windmill pumps',
+    civilization: 'Dutch Netherlands',
+    period: '1200 CE - Present',
+    parameters: {
+      length: 10000,
+      slope: 0.0001,
+      flowRate: 5.0,
+      channelWidth: 8,
+      channelDepth: 2,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Dutch reclaimed 1/3 of their country from sea. At peak, 10,000 windmills drained the polders. Kinderdijk is UNESCO World Heritage'
+  },
+  'kinderdijk-windmill': {
+    name: 'Kinderdijk Windmill Drainage',
+    description: 'UNESCO windmill system with scoop wheels lifting water',
+    civilization: 'Dutch Netherlands',
+    period: '15th Century CE',
+    parameters: {
+      length: 500,
+      slope: 0.001,
+      flowRate: 0.5,
+      channelWidth: 3,
+      channelDepth: 1.5,
+      roughness: 0.020
+    },
+    engineeringNotes: 'Wind-powered scoop wheels lift water from polders to canals, then to rivers. Living museum of water management engineering'
+  },
+  'indian-stepwell': {
+    name: 'Indian Stepwell (Vav/Baoli)',
+    description: 'Multi-story subterranean architecture combining well, temple, and cooling retreat',
+    civilization: 'Ancient India',
+    period: '3rd-19th Century CE',
+    parameters: {
+      length: 50,
+      reservoirDepth: 25,
+      volume: 10000,
+      slope: 0.5,
+      roughness: 0.015
+    },
+    engineeringNotes: 'Rani ki Vav (1063 CE) is UNESCO World Heritage—inverted temple descending 7 stories. Combines water access with shelter from 45°C heat'
+  },
+  'johad-dam': {
+    name: 'Indian Johad Rainwater Harvesting',
+    description: 'Traditional earthen dams reviving dried rivers in Rajasthan',
+    civilization: 'Ancient India',
+    period: 'Ancient - Present',
+    parameters: {
+      length: 200,
+      slope: 0.01,
+      volume: 50000,
+      catchmentArea: 100000,
+      roughness: 0.030
+    },
+    engineeringNotes: 'Modern revival by Rajendra Singh (Water Man of India) brought 5 rivers back to life. Simple earthen structures with profound impact'
+  },
+  'grand-anicut': {
+    name: 'Grand Anicut (Kallanai Dam)',
+    description: 'World\'s oldest water-diversion structure still in use',
+    civilization: 'Ancient India',
+    period: '2nd Century CE',
+    parameters: {
+      length: 329,
+      slope: 0.001,
+      flowRate: 500,
+      channelWidth: 50,
+      channelDepth: 5,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Built by Chola king Karikalan across Kaveri River. Still irrigates 400,000 hectares. Inspired later British irrigation works'
+  },
+  'loi-kalo': {
+    name: 'Hawaiian Lo\'i Kalo (Taro Pondfield)',
+    description: 'Sustainable flooded terraces for taro with continuous water flow',
+    civilization: 'Hawaiian',
+    period: '400 CE - Present',
+    parameters: {
+      length: 500,
+      slope: 0.02,
+      flowRate: 0.3,
+      channelWidth: 0.4,
+      channelDepth: 0.25,
+      roughness: 0.030
+    },
+    engineeringNotes: 'Sustainable aquaculture—water flows through fields, supporting fish and taro together. Ahupua\'a land division followed watersheds from mountain to sea'
+  },
+  'auwai-irrigation': {
+    name: 'Hawaiian \'Auwai Irrigation Ditch',
+    description: 'Stone-lined channels diverting stream water to taro fields',
+    civilization: 'Hawaiian',
+    period: '400 CE onwards',
+    parameters: {
+      length: 1000,
+      slope: 0.03,
+      flowRate: 0.5,
+      channelWidth: 0.5,
+      channelDepth: 0.3,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Community-managed water systems with strict allocation rules. Konohiki (water manager) ensured fair distribution'
+  },
+  'lalibela-drainage': {
+    name: 'Lalibela Church Drainage System',
+    description: 'Sophisticated drainage protecting 800-year-old rock-hewn churches',
+    civilization: 'Ethiopian Highlands',
+    period: '12th Century CE',
+    parameters: {
+      length: 500,
+      slope: 0.02,
+      flowRate: 0.2,
+      channelWidth: 0.3,
+      channelDepth: 0.3,
+      roughness: 0.020
+    },
+    engineeringNotes: '11 churches carved from single rock blocks. Drainage channels prevent erosion—system has protected churches for 800 years. UNESCO World Heritage'
+  },
+  'mai-shum': {
+    name: 'Mai Shum (Queen of Sheba\'s Bath)',
+    description: 'Ancient rock-carved reservoir in Axum still used for baptisms',
+    civilization: 'Ethiopian Highlands',
+    period: '1st Millennium BCE',
+    parameters: {
+      length: 50,
+      volume: 5000,
+      reservoirDepth: 10,
+      slope: 0.01,
+      roughness: 0.020
+    },
+    engineeringNotes: 'Massive rock-cut pool demonstrates advanced Aksumite engineering. Still fills with water and used for Timkat (Epiphany) celebrations'
+  },
+  'moray-terraces': {
+    name: 'Moray Circular Agricultural Terraces',
+    description: 'Inca experimental agricultural station with temperature-controlled microclimates',
+    civilization: 'Inca Empire',
+    period: '1400 CE',
+    parameters: {
+      length: 300,
+      slope: 0.10,
+      flowRate: 0.2,
+      channelWidth: 0.3,
+      channelDepth: 0.2,
+      roughness: 0.020
+    },
+    engineeringNotes: 'Each terrace level ~3°C different. May have been used to test crop varieties at different temperatures. Sophisticated irrigation from underground springs'
+  },
+  'tambomachay': {
+    name: 'Tambomachay Sacred Springs',
+    description: 'Bath of the Inca: sacred spring with ceremonial stone channels',
+    civilization: 'Inca Empire',
+    period: '1400 CE',
+    parameters: {
+      length: 100,
+      slope: 0.05,
+      flowRate: 0.3,
+      channelWidth: 0.25,
+      channelDepth: 0.2,
+      roughness: 0.013
+    },
+    engineeringNotes: 'Spring emerges from hillside into beautifully carved stone channels. Precise stone cutting creates waterfalls of exact dimensions. Still flowing today'
+  },
+  'ollantaytambo': {
+    name: 'Ollantaytambo Water Channels',
+    description: 'Living Inca town with original water channels still in daily use',
+    civilization: 'Inca Empire',
+    period: '1450 CE',
+    parameters: {
+      length: 2000,
+      slope: 0.02,
+      flowRate: 1.0,
+      channelWidth: 0.3,
+      channelDepth: 0.25,
+      roughness: 0.015
+    },
+    engineeringNotes: 'Stone channels run through streets of the last living Inca town. Original layout still intact. Residents still use the 500-year-old water system'
   }
 };
 
