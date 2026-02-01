@@ -5,7 +5,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/
 import { 
   MapPin, ChevronRight, X, Home, Droplets, VolumeX, Volume2, Search, 
   Backpack, Trophy, Clock, BookOpen, BarChart3, Play, Star, Image, 
-  Lightbulb, Info, Globe, Grid3X3, Download, Route, Scroll, Filter
+  Lightbulb, Info, Globe, Grid3X3, Download, Route, Scroll, Filter, HelpCircle
 } from "lucide-react";
 import { gameData } from "../../data/gameData";
 import CivilizationDetail from "./CivilizationDetail";
@@ -24,6 +24,7 @@ import TechnologyLibrary from "./TechnologyLibrary";
 import SWMM5Models from "./SWMM5Models";
 import ThematicPathways from "./ThematicPathways";
 import QuestSystem from "./QuestSystem";
+import Onboarding from "./Onboarding";
 import { useAudio } from "../../lib/stores/useAudio";
 import { useProgress } from "../../lib/stores/useProgress";
 
@@ -134,6 +135,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
   const [showSWMM5, setShowSWMM5] = useState(false);
   const [showPathways, setShowPathways] = useState(false);
   const [showQuests, setShowQuests] = useState(false);
+  const [showTutorial, setShowTutorial] = useState(false);
   const [eraFilter, setEraFilter] = useState<string | null>(null);
   const [continentFilter, setContinentFilter] = useState<string | null>(null);
 
@@ -167,6 +169,15 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               </Button>
             </TooltipTrigger>
             <TooltipContent className="water-card text-[var(--parchment)]">Back to Home</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowTutorial(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <HelpCircle size={16} className="text-[var(--aqua)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Tutorial</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -568,6 +579,13 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
       {showQuests && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowQuests(false)}>
           <div onClick={(e) => e.stopPropagation()}><QuestSystem onClose={() => setShowQuests(false)} onNavigateToCivilization={(id) => { setShowQuests(false); setSelectedCiv(id); }} /></div>
+        </div>
+      )}
+      {showTutorial && (
+        <div className="fixed inset-0 bg-black/90 z-50" onClick={() => setShowTutorial(false)}>
+          <div onClick={(e) => e.stopPropagation()} className="h-full">
+            <Onboarding onComplete={() => setShowTutorial(false)} />
+          </div>
         </div>
       )}
     </div>
