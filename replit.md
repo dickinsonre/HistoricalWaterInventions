@@ -2,7 +2,7 @@
 
 ## Overview
 
-Historical Mystery is a 2D interactive educational game exploring humanity's water innovations throughout history. Players explore **74 civilizations** across 6 continents, discover **235+ water inventions** spanning 40,000+ years, and learn about the genius of hydraulic engineering across ages. Features an interactive world map with realistic Earth background, comprehensive encyclopedia with URL-based navigation, SWMM5 export functionality with **66+ downloadable hydraulic simulation models** (copy-to-clipboard to avoid antivirus issues), educational mini-games, and expert commentary from Robert Dickinson (50+ years water engineering experience).
+Historical Mystery is a 2D interactive educational game exploring humanity's water innovations throughout history. Players explore **77 civilizations** across 6 continents, discover **256+ water inventions** spanning 40,000+ years, and learn about the genius of hydraulic engineering across ages. Features an interactive world map with realistic Earth background, comprehensive encyclopedia with URL-based navigation, SWMM5 export functionality with **66+ downloadable hydraulic simulation models** (copy-to-clipboard to avoid antivirus issues), educational mini-games, and expert commentary from Robert Dickinson (50+ years water engineering experience).
 
 ## Theme: Ancient Waters
 
