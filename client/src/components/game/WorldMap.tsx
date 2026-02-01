@@ -18,6 +18,13 @@ const geographicPositions: Record<string, [number, number, number]> = {
   "mesoamerica": [-22, 0.5, 4],
   "modern-era": [-18, 0.5, -6],
   "minoan-crete": [6, 0.5, -3],
+  "ancient-persia": [16, 0.5, -2],
+  "khmer-empire": [24, 0.5, 4],
+  "nubia": [10, 0.5, 6],
+  "nabataean": [11, 0.5, 0],
+  "sri-lanka": [20, 0.5, 6],
+  "ancestral-puebloans": [-26, 0.5, -2],
+  "byzantine": [6, 0.5, -6],
 };
 
 export default function WorldMap() {
