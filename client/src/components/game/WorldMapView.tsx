@@ -538,10 +538,9 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
 
                     <div 
                       className={`
-                        absolute left-1/2 transform -translate-x-1/2
+                        absolute right-full mr-2 top-1/2 transform -translate-y-1/2
                         transition-all duration-200 pointer-events-none z-50
-                        ${loc.y < 40 ? 'top-full mt-2' : 'bottom-full mb-2'}
-                        ${isHovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}
+                        ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-2'}
                       `}
                     >
                       <div className="bg-[var(--deep-ocean)] border border-[var(--aqua)]/30 rounded-lg p-3 min-w-[220px] shadow-xl">
