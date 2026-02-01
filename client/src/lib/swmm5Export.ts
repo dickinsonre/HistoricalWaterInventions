@@ -2209,7 +2209,7 @@ export function getAllModelContents(): Array<{ filename: string; content: string
         .replace(/\s+/g, '_')
         .substring(0, 50);
       results.push({
-        filename: `${safeFilename}_SWMM5_Model.inp`,
+        filename: `${safeFilename}_SWMM5_Model.txt`,
         content
       });
     }

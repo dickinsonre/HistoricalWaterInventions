@@ -70,6 +70,29 @@ export default function SWMM5Models({ onClose }: SWMM5ModelsProps) {
       const zip = new JSZip();
       const allModels = getAllModelContents();
       
+      const readme = `ANCIENT WATER ENGINEERING - SWMM5 EDUCATIONAL MODELS
+====================================================
+
+This archive contains educational hydraulic simulation models 
+for use with EPA SWMM5 (Storm Water Management Model).
+
+CONTENTS: ${allModels.length} simulation model files (.txt format)
+
+HOW TO USE:
+1. Download EPA SWMM5 free from: https://www.epa.gov/water-research/storm-water-management-model-swmm
+2. Rename any .txt file to .inp to load in SWMM5
+3. Open the .inp file in SWMM5 to run the simulation
+
+These models recreate historical water engineering systems for 
+educational purposes. Each model simulates the hydraulic behavior 
+of ancient aqueducts, irrigation systems, and water infrastructure.
+
+Created for: Historical Mystery - Water Inventions Explorer
+Purpose: Educational / Academic Research
+`;
+      
+      zip.file('README.txt', readme);
+      
       allModels.forEach(({ filename, content }) => {
         zip.file(filename, content);
       });
@@ -78,7 +101,7 @@ export default function SWMM5Models({ onClose }: SWMM5ModelsProps) {
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.download = 'Ancient_Water_Engineering_SWMM5_Models.zip';
+      link.download = 'Water_History_Educational_Models.zip';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
