@@ -1,10 +1,11 @@
+import { useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { ArrowLeft, ArrowRight, MapPin, Calendar, Droplets, Wrench, Sparkles, History, MessageSquare, Image, ChevronLeft, ChevronRight, FileCode, Download } from "lucide-react";
+import { ArrowLeft, ArrowRight, MapPin, Calendar, Droplets, Wrench, Sparkles, History, MessageSquare, Image, ChevronLeft, ChevronRight, FileCode, Download, Eye, X } from "lucide-react";
 import { gameData, getAllArtifacts } from "../../data/gameData";
 import { getInventionDetail, inventionDiagrams } from "../../data/inventionDetails";
-import { getSwmmModelForInvention, downloadSWMM5Model } from "../../lib/swmm5Export";
+import { getSwmmModelForInvention, downloadSWMM5Model, generateSWMM5File } from "../../lib/swmm5Export";
 import InteractiveDiagram from "./InteractiveDiagram";
 
 interface InventionPageProps {
@@ -12,6 +13,7 @@ interface InventionPageProps {
 }
 
 export default function InventionPage({ showDiagram }: InventionPageProps) {
+  const [showSwmmPreview, setShowSwmmPreview] = useState(false);
   const { civilizationId, inventionId } = useParams<{ civilizationId: string; inventionId: string }>();
   const navigate = useNavigate();
   
@@ -21,6 +23,7 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
   const details = inventionId ? getInventionDetail(inventionId) : null;
   const diagramUrl = inventionId ? inventionDiagrams[inventionId] : null;
   const swmmModel = inventionId ? getSwmmModelForInvention(inventionId) : null;
+  const swmmContent = showSwmmPreview && inventionId ? generateSWMM5File(inventionId) : null;
 
   const findRegionForArtifact = (artifactId: string) => {
     for (const region of gameData.regions) {
@@ -154,14 +157,75 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
                       <p className="text-[var(--parchment)]/60 text-xs">{swmmModel.name} • {swmmModel.period}</p>
                     </div>
                   </div>
-                  <Button 
-                    size="sm" 
-                    onClick={() => downloadSWMM5Model(inventionId || '', swmmModel.name)}
-                    className="bg-[var(--cerulean)] hover:bg-[var(--cerulean)]/80 text-white"
-                  >
-                    <Download size={14} className="mr-1" />
-                    Download .inp
-                  </Button>
+                  <div className="flex gap-2">
+                    <Button 
+                      size="sm" 
+                      onClick={() => setShowSwmmPreview(true)}
+                      className="bg-[var(--deep-ocean)] hover:bg-[var(--deep-ocean)]/80 text-[var(--parchment)] border border-[var(--cerulean)]/50"
+                    >
+                      <Eye size={14} className="mr-1" />
+                      Preview
+                    </Button>
+                    <Button 
+                      size="sm" 
+                      onClick={() => downloadSWMM5Model(inventionId || '', swmmModel.name)}
+                      className="bg-[var(--cerulean)] hover:bg-[var(--cerulean)]/80 text-white"
+                    >
+                      <Download size={14} className="mr-1" />
+                      Download .inp
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {showSwmmPreview && swmmContent && swmmModel && (
+              <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
+                <div 
+                  className="bg-[var(--deep-ocean)] border border-[var(--cerulean)]/50 rounded-lg shadow-2xl flex flex-col"
+                  style={{ width: '80%', maxWidth: '900px', height: '80%', maxHeight: '700px', resize: 'both', overflow: 'auto', minWidth: '400px', minHeight: '300px' }}
+                >
+                  <div className="flex items-center justify-between p-4 border-b border-[var(--cerulean)]/30">
+                    <div className="flex items-center gap-2">
+                      <FileCode size={20} className="text-[var(--cerulean)]" />
+                      <h3 className="font-heading text-lg text-[var(--gold)]">SWMM5 Model Preview</h3>
+                      <span className="text-[var(--parchment)]/60 text-sm">(.inp file)</span>
+                    </div>
+                    <Button 
+                      size="sm" 
+                      variant="ghost"
+                      onClick={() => setShowSwmmPreview(false)}
+                      className="text-[var(--parchment)] hover:bg-[var(--cerulean)]/30"
+                    >
+                      <X size={20} />
+                    </Button>
+                  </div>
+                  <div className="flex-1 p-4 overflow-hidden">
+                    <textarea
+                      readOnly
+                      value={swmmContent}
+                      className="w-full h-full bg-[var(--parchment)]/10 text-[var(--parchment)] font-mono text-sm p-4 rounded border border-[var(--cerulean)]/30 resize-none"
+                      style={{ minHeight: '100%' }}
+                    />
+                  </div>
+                  <div className="flex justify-end gap-2 p-4 border-t border-[var(--cerulean)]/30">
+                    <Button 
+                      size="sm" 
+                      onClick={() => downloadSWMM5Model(inventionId || '', swmmModel.name)}
+                      className="bg-[var(--cerulean)] hover:bg-[var(--cerulean)]/80 text-white"
+                    >
+                      <Download size={14} className="mr-1" />
+                      Download .inp File
+                    </Button>
+                    <Button 
+                      size="sm" 
+                      variant="ghost"
+                      onClick={() => setShowSwmmPreview(false)}
+                      className="text-[var(--parchment)] hover:bg-[var(--cerulean)]/30"
+                    >
+                      Close
+                    </Button>
+                  </div>
                 </div>
               </div>
             )}
