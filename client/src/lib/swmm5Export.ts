@@ -1866,7 +1866,11 @@ LINKS ALL
 }
 
 export function generateSWMM5File(inventionId: string): string | null {
-  const modelKey = Object.keys(SWMM5_MODELS).find(key => 
+  // First check explicit mapping
+  const mappedModelKey = inventionToSwmmModel[inventionId];
+  
+  // Then try loose matching as fallback
+  const modelKey = mappedModelKey || Object.keys(SWMM5_MODELS).find(key => 
     inventionId.toLowerCase().includes(key.toLowerCase()) ||
     key.toLowerCase().includes(inventionId.toLowerCase().replace(/-/g, ''))
   );
@@ -1937,20 +1941,35 @@ export function generateSWMM5File(inventionId: string): string | null {
 
 export function downloadSWMM5Model(inventionId: string, inventionName: string): void {
   const content = generateSWMM5File(inventionId);
-  if (!content) {
-    alert('SWMM5 model generation failed');
+  if (!content || content.trim().length === 0) {
+    alert('SWMM5 model generation failed - no content generated');
     return;
   }
   
-  const blob = new Blob([content], { type: 'text/plain' });
+  // Use application/octet-stream to avoid antivirus false positives
+  const blob = new Blob([content], { type: 'application/octet-stream' });
   const url = URL.createObjectURL(blob);
+  
+  // Create a safer filename
+  const safeFilename = inventionName
+    .replace(/[^a-zA-Z0-9\s]/g, '')
+    .replace(/\s+/g, '_')
+    .substring(0, 50);
+  
   const link = document.createElement('a');
   link.href = url;
-  link.download = `${inventionName.replace(/\s+/g, '_')}_SWMM5.inp`;
+  link.download = `${safeFilename}_SWMM5_Model.inp`;
+  link.style.display = 'none';
   document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-  URL.revokeObjectURL(url);
+  
+  // Small delay before click to help with antivirus
+  setTimeout(() => {
+    link.click();
+    setTimeout(() => {
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    }, 100);
+  }, 50);
 }
 
 export function hasSwmm5Model(inventionId: string): boolean {
