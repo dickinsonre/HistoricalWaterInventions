@@ -595,6 +595,183 @@ export const gameData: GameData = {
       ]
     },
     {
+      id: "ancient-persia",
+      name: "Ancient Persia",
+      description: "Masters of underground water transport and desert irrigation",
+      position: [10, 0, -6],
+      color: "#B8860B",
+      era: "ancient",
+      dateRange: "1000 BCE - 651 CE",
+      locations: [
+        {
+          id: "yazd",
+          name: "Yazd",
+          description: "City of qanats and wind catchers",
+          historicalContext: "Desert oasis sustained by underground water systems",
+          coordinates: { lat: 31.8974, lng: 54.3569 },
+          artifacts: [
+            {
+              id: "qanat-tunnel",
+              name: "Qanat Underground Tunnel",
+              description: "Gently sloping underground channel tapping distant aquifers",
+              rarity: "legendary",
+              historicalPeriod: "Achaemenid Period (550-330 BCE)",
+              significance: "Over 30,000 qanats still function in Iran today; some extend 70km",
+              yearBCE: 1000,
+              category: "aqueduct"
+            },
+            {
+              id: "yakhchal",
+              name: "Yakhchal Ice House",
+              description: "Domed structure for making and storing ice in desert climates",
+              rarity: "epic",
+              historicalPeriod: "Achaemenid Period (550-330 BCE)",
+              significance: "Made ice year-round using evaporative cooling; inspired modern sustainable architecture",
+              yearBCE: 400,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "persepolis",
+          name: "Persepolis",
+          description: "Royal capital with advanced drainage and water supply",
+          historicalContext: "Ceremonial capital of the Achaemenid Empire",
+          coordinates: { lat: 29.9352, lng: 52.8912 },
+          artifacts: [
+            {
+              id: "persepolis-drains",
+              name: "Persepolis Drainage System",
+              description: "Sophisticated underground drainage protecting the royal terrace",
+              rarity: "rare",
+              historicalPeriod: "Achaemenid Period (518-330 BCE)",
+              significance: "Protected elaborate stone carvings from water damage for 2,500 years",
+              yearBCE: 500,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "khmer-empire",
+      name: "Khmer Empire",
+      description: "Builders of the world's largest pre-industrial hydraulic cities",
+      position: [14, 0, 6],
+      color: "#2E8B57",
+      era: "medieval",
+      dateRange: "802 CE - 1431 CE",
+      locations: [
+        {
+          id: "angkor",
+          name: "Angkor",
+          description: "Largest pre-industrial city powered by water management",
+          historicalContext: "Home to up to 1 million people supported by massive reservoirs",
+          coordinates: { lat: 13.4125, lng: 103.8670 },
+          artifacts: [
+            {
+              id: "west-baray",
+              name: "West Baray Reservoir",
+              description: "Massive rectangular reservoir measuring 8km x 2.2km",
+              rarity: "legendary",
+              historicalPeriod: "Angkor Period (11th century CE)",
+              significance: "Stored monsoon water for year-round rice irrigation; supported millions",
+              yearBCE: -1050,
+              category: "dam"
+            },
+            {
+              id: "neak-poan",
+              name: "Neak Poan Temple",
+              description: "Island temple with five interconnected medicinal basins",
+              rarity: "epic",
+              historicalPeriod: "Angkor Period (12th century CE)",
+              significance: "Combined water engineering with healthcare; still used in rain ceremonies",
+              yearBCE: -1191,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "phnom-kulen",
+          name: "Phnom Kulen",
+          description: "Sacred mountain with river of thousand lingas",
+          historicalContext: "Spiritual source of Khmer Empire's water",
+          coordinates: { lat: 13.6150, lng: 104.0792 },
+          artifacts: [
+            {
+              id: "linga-river",
+              name: "River of Thousand Lingas",
+              description: "Carved riverbed blessing water flowing to Angkor",
+              rarity: "rare",
+              historicalPeriod: "Angkor Period (9th century CE)",
+              significance: "Sacred carvings blessed all water flowing downstream to Angkor",
+              yearBCE: -850,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "nubia",
+      name: "Nubia",
+      description: "Nile kingdom that pioneered water-lifting technology",
+      position: [4, 0, -10],
+      color: "#8B0000",
+      era: "ancient",
+      dateRange: "2500 BCE - 350 CE",
+      locations: [
+        {
+          id: "meroe",
+          name: "Meroe",
+          description: "Capital of the Kingdom of Kush",
+          historicalContext: "African kingdom with advanced irrigation",
+          coordinates: { lat: 16.9380, lng: 33.7489 },
+          artifacts: [
+            {
+              id: "saqia-wheel",
+              name: "Saqia (Eskale) Water Wheel",
+              description: "Animal-powered waterwheel with perpendicular gear transmission",
+              rarity: "legendary",
+              historicalPeriod: "Meroitic Period (300 BCE - 350 CE)",
+              significance: "World's first automated machine; predated Greek mechanisms by 1000+ years",
+              yearBCE: 1000,
+              category: "water-lifting"
+            },
+            {
+              id: "nubian-shadouf",
+              name: "Multi-Stage Shadouf",
+              description: "Series of counterweighted levers for lifting water to higher elevations",
+              rarity: "epic",
+              historicalPeriod: "Kingdom of Kush (2500-300 BCE)",
+              significance: "Enabled year-round agriculture beyond Nile flood season",
+              yearBCE: 2000,
+              category: "water-lifting"
+            }
+          ]
+        },
+        {
+          id: "kerma",
+          name: "Kerma",
+          description: "Ancient Nubian capital with sophisticated water systems",
+          historicalContext: "Pre-Kushite civilization on the Nile",
+          coordinates: { lat: 19.5990, lng: 30.4117 },
+          artifacts: [
+            {
+              id: "kerma-basin",
+              name: "Kerma Irrigation Basin",
+              description: "Early basin irrigation system adapted from Egyptian techniques",
+              rarity: "rare",
+              historicalPeriod: "Kerma Period (2500-1500 BCE)",
+              significance: "Independent development of Nile flood management",
+              yearBCE: 2000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "modern-era",
       name: "Modern Era",
       description: "The industrial revolution and beyond brought unprecedented scale to water engineering, from massive dams to desalination technology.",

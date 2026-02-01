@@ -656,6 +656,114 @@ export const historicalTechnologies: HistoricalTechnology[] = [
     primary_uses: ["Public bathing", "Heated water supply"],
     key_principle: "Hypocaust underfloor heating and water circulation provided multiple temperature pools.",
     notes: "Massive public baths like Caracalla served thousands daily; combined engineering with social institution."
+  },
+  {
+    name: "Persian wind catcher (Badgir)",
+    category: "Passive cooling",
+    civilizations: ["Persia"],
+    period_BCE_CE: "c. 3000 BCE onward",
+    primary_uses: ["Building ventilation", "Qanat cooling", "Food storage"],
+    key_principle: "Tall towers catch wind and direct it down into buildings, often over qanat water for evaporative cooling.",
+    notes: "Combined with qanats and yakhchals to create remarkably cool indoor spaces in desert climates."
+  },
+  {
+    name: "Angkor automated spillway",
+    category: "Flow control",
+    civilizations: ["Khmer Empire (Cambodia)"],
+    period_BCE_CE: "9th-12th century CE",
+    primary_uses: ["Seasonal water distribution", "Flood control"],
+    key_principle: "Weirs automatically direct water to different channels based on seasonal flow levels.",
+    notes: "Bampenh Reach spillway automatically managed monsoon waters without human intervention."
+  },
+  {
+    name: "Meroe iron production water systems",
+    category: "Industrial water use",
+    civilizations: ["Nubia (Kingdom of Kush)"],
+    period_BCE_CE: "c. 300 BCE - 350 CE",
+    primary_uses: ["Iron smelting", "Industrial cooling"],
+    key_principle: "Water channeled for quenching hot iron and cooling smelting operations.",
+    notes: "Meroe was one of Africa's largest iron production centers; water essential for metalworking."
+  },
+  {
+    name: "Nabataean cistern systems",
+    category: "Water collection and storage",
+    civilizations: ["Nabataea (Petra)"],
+    period_BCE_CE: "4th century BCE - 106 CE",
+    primary_uses: ["Desert water storage", "Urban water supply"],
+    key_principle: "Rock-cut cisterns collected rainwater runoff in arid terrain.",
+    notes: "Petra supported 30,000 people in the desert through sophisticated water harvesting."
+  },
+  {
+    name: "Incan hydraulic engineering",
+    category: "Mountain water management",
+    civilizations: ["Inca Empire"],
+    period_BCE_CE: "1438-1533 CE",
+    primary_uses: ["Terrace irrigation", "Ceremonial fountains"],
+    key_principle: "Stone channels conducted water down mountain slopes to agricultural terraces.",
+    notes: "Machu Picchu had 16 fountains fed by a 749-meter canal from a mountain spring."
+  },
+  {
+    name: "Moray agricultural laboratory",
+    category: "Experimental irrigation",
+    civilizations: ["Inca Empire"],
+    period_BCE_CE: "c. 1400 CE",
+    primary_uses: ["Crop experimentation", "Microclimate creation"],
+    key_principle: "Concentric circular terraces with irrigation created different temperature zones.",
+    notes: "Temperature difference of 15°C between top and bottom; tested crops for different climates."
+  },
+  {
+    name: "Tipón royal estate water system",
+    category: "Ceremonial water engineering",
+    civilizations: ["Inca Empire"],
+    period_BCE_CE: "15th century CE",
+    primary_uses: ["Garden irrigation", "Ceremonial fountains"],
+    key_principle: "Precisely cut stone channels and fountains demonstrated mastery over water.",
+    notes: "Wall fountains and channels still flow today; some researchers call it 'Incan hydraulic engineering museum.'"
+  },
+  {
+    name: "Ab-anbar (Persian cistern)",
+    category: "Urban water storage",
+    civilizations: ["Persia"],
+    period_BCE_CE: "c. 500 BCE onward",
+    primary_uses: ["Public water supply", "Community reservoir"],
+    key_principle: "Domed underground tanks stored water from qanats; wind catchers cooled the water.",
+    notes: "Some ab-anbars stored up to 3,000 cubic meters; served entire neighborhoods for months."
+  },
+  {
+    name: "Khmer temple moats",
+    category: "Ritual and practical water",
+    civilizations: ["Khmer Empire (Cambodia)"],
+    period_BCE_CE: "9th-13th century CE",
+    primary_uses: ["Temple symbolism", "Water storage", "Microclimate creation"],
+    key_principle: "Rectangular moats surrounding temples represented cosmic oceans and stored water.",
+    notes: "Angkor Wat moat is 1.5km x 1.3km; represented the mythical ocean surrounding Mount Meru."
+  },
+  {
+    name: "Polynesian fresh water lenses",
+    category: "Groundwater management",
+    civilizations: ["Polynesia"],
+    period_BCE_CE: "c. 1000 CE onward",
+    primary_uses: ["Island water supply", "Well construction"],
+    key_principle: "Fresh water floats on denser salt water in coral islands; shallow wells tap this lens.",
+    notes: "Indigenous understanding of Ghyben-Herzberg freshwater lenses on atolls."
+  },
+  {
+    name: "Sri Lankan tank cascade system",
+    category: "Interconnected reservoirs",
+    civilizations: ["Ancient Sri Lanka"],
+    period_BCE_CE: "c. 3rd century BCE onward",
+    primary_uses: ["Irrigation", "Flood control", "Groundwater recharge"],
+    key_principle: "Chains of tanks connected by spillways; overflow from upper tanks feeds lower ones.",
+    notes: "Over 30,000 ancient tanks; some cascades include 40+ interconnected reservoirs."
+  },
+  {
+    name: "Bisokotuwa sluice technology",
+    category: "Flow control",
+    civilizations: ["Ancient Sri Lanka"],
+    period_BCE_CE: "c. 3rd century BCE",
+    primary_uses: ["Reservoir outlet control", "Sediment management"],
+    key_principle: "Stone chamber with valved outlets reduces pressure and controls discharge from reservoirs.",
+    notes: "Sophisticated valve system predated similar European technology by over 1,500 years."
   }
 ];
 
