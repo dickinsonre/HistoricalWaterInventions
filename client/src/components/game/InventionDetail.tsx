@@ -1,8 +1,9 @@
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { X, ChevronLeft, ChevronRight, Wrench, Sparkles, History, MessageSquare, MapPin, Calendar, Droplets, Image } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Wrench, Sparkles, History, MessageSquare, MapPin, Calendar, Droplets, Image, FileCode, Download } from "lucide-react";
 import { getAllArtifacts, gameData, ArtifactData } from "../../data/gameData";
 import { getInventionDetail, inventionDiagrams } from "../../data/inventionDetails";
+import { getSwmmModelForInvention, downloadSWMM5Model } from "../../lib/swmm5Export";
 
 interface InventionDetailProps {
   artifactId: string;
@@ -15,6 +16,7 @@ export default function InventionDetail({ artifactId, onClose, onNavigate }: Inv
   const currentIndex = allArtifacts.findIndex(a => a.id === artifactId);
   const artifact = allArtifacts[currentIndex];
   const details = getInventionDetail(artifactId);
+  const swmmModel = getSwmmModelForInvention(artifactId);
 
   const findRegionAndLocation = (artifactId: string) => {
     for (const region of gameData.regions) {
@@ -69,6 +71,12 @@ export default function InventionDetail({ artifactId, onClose, onNavigate }: Inv
               <span className={`text-xs px-2 py-1 rounded-full ${rarityColors[artifact.rarity]}`}>
                 {artifact.rarity}
               </span>
+              {swmmModel && (
+                <span className="text-xs px-2 py-1 rounded-full bg-[var(--cerulean)]/20 text-[var(--cerulean)] flex items-center gap-1">
+                  <FileCode size={12} />
+                  SWMM5
+                </span>
+              )}
             </div>
             <div className="flex items-center gap-4 text-sm text-[var(--parchment)]/70">
               <span className="flex items-center gap-1">
@@ -95,6 +103,28 @@ export default function InventionDetail({ artifactId, onClose, onNavigate }: Inv
           <p className="text-[var(--parchment)]/90">{artifact.description}</p>
           <p className="text-[var(--aqua)] text-sm mt-2 italic">{artifact.significance}</p>
         </div>
+
+        {swmmModel && (
+          <div className="bg-[var(--cerulean)]/10 border border-[var(--cerulean)]/30 rounded-lg p-3 mb-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <FileCode size={18} className="text-[var(--cerulean)]" />
+                <div>
+                  <p className="text-[var(--parchment)] text-sm font-medium">SWMM5 Model Available</p>
+                  <p className="text-[var(--parchment)]/60 text-xs">{swmmModel.name} • {swmmModel.period}</p>
+                </div>
+              </div>
+              <Button 
+                size="sm" 
+                onClick={() => downloadSWMM5Model(artifactId, swmmModel.name)}
+                className="bg-[var(--cerulean)] hover:bg-[var(--cerulean)]/80 text-white"
+              >
+                <Download size={14} className="mr-1" />
+                Download
+              </Button>
+            </div>
+          </div>
+        )}
 
         {inventionDiagrams[artifactId] && (
           <div className="mb-6 bg-[var(--deep-ocean)]/60 rounded-lg p-4 border border-[var(--gold)]/30">

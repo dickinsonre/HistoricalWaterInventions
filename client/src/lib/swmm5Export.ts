@@ -1,3 +1,56 @@
+export const inventionToSwmmModel: Record<string, string> = {
+  'shaduf': 'shaduf',
+  'qanat-plans': 'qanat',
+  'aqueduct': 'roman-aqueduct',
+  'roman-aqueduct': 'roman-aqueduct',
+  'dujiangyan': 'dujiangyan',
+  'barays': 'baray',
+  'west-baray': 'baray',
+  'great-bath': 'indus-sewer',
+  'drain-system': 'indus-sewer',
+  'clepsydra': 'archimedes-screw',
+  'archimedes-screw': 'archimedes-screw',
+  'cloaca-maxima': 'cloaca-maxima',
+  'minoan-drainage': 'minoan-drainage',
+  'nabataean-cisterns': 'nabataean-cistern',
+  'petra-cistern': 'nabataean-cistern',
+  'greek-fountain': 'greek-fountain',
+  'aguada': 'mayan-aguada',
+  'mayan-aguada': 'mayan-aguada',
+  'machu-picchu': 'inca-machu-picchu',
+  'tipon': 'inca-tipon',
+  'andenes': 'andenes',
+  'inca-terraces': 'andenes',
+  'subak': 'subak',
+  'rice-terraces': 'subak',
+  'fish-traps': 'brewarrina-fish-traps',
+  'gnamma-holes': 'gnamma-holes',
+  'tanada': 'tanada',
+  'windmill': 'dutch-windmill',
+  'polders': 'dutch-polder',
+  'stepwell': 'indian-stepwell',
+  'ahupuaa': 'ahupuaa',
+  'qat-irrigation': 'ethiopian-terraces',
+  'nilometer': 'shaduf',
+  'irrigation-tablet': 'shaduf',
+  'jerwan-aqueduct': 'roman-aqueduct',
+  'reservoir-plans': 'sri-lanka-tank',
+  'eri-cascade': 'sri-lanka-tank',
+  'ondol': 'ondol-ondol'
+};
+
+export function getSwmmModelForInvention(inventionId: string): SWMM5Model | null {
+  const modelId = inventionToSwmmModel[inventionId];
+  if (modelId && SWMM5_MODELS[modelId]) {
+    return SWMM5_MODELS[modelId];
+  }
+  return null;
+}
+
+export function hasSwmmModel(inventionId: string): boolean {
+  return inventionId in inventionToSwmmModel;
+}
+
 export interface SWMM5ModelParams {
   length?: number;
   slope?: number;
