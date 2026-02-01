@@ -12,11 +12,11 @@ const slides = [
     icon: Droplets,
     title: "Welcome to Historical Mystery",
     subtitle: "Discover How Water Shaped Civilization",
-    content: "Explore 8 ancient civilizations and discover 25+ water inventions that transformed human history. From Egyptian shaduf to Roman aqueducts, uncover the genius of ancient hydraulic engineering.",
+    content: "Explore 10 civilizations and discover 35+ water inventions in the 3D world, plus 68+ technologies in our encyclopedia. From Egyptian shaduf to Roman aqueducts to modern mega-dams.",
     stats: [
-      { value: "8", label: "Civilizations" },
-      { value: "25+", label: "Inventions" },
-      { value: "5,000", label: "Years of History" }
+      { value: "10", label: "Civilizations" },
+      { value: "35+", label: "3D Inventions" },
+      { value: "8,000+", label: "Years of History" }
     ]
   },
   {
@@ -24,7 +24,7 @@ const slides = [
     title: "Explore the Ancient World",
     subtitle: "Journey Across Continents",
     content: "Travel from the Nile Valley to the canals of China, from Roman aqueducts to Mayan reservoirs. Each civilization developed unique solutions to water challenges that still inspire engineers today.",
-    regions: ["Ancient Egypt", "Roman Empire", "Ancient Greece", "Mesopotamia", "Indus Valley", "Ancient China", "Islamic Golden Age", "Mesoamerica"]
+    regions: ["Ancient Egypt", "Roman Empire", "Ancient Greece", "Mesopotamia", "Indus Valley", "Minoan Crete", "Ancient China", "Islamic Golden Age", "Mesoamerica", "Modern Era"]
   },
   {
     icon: Clock,
