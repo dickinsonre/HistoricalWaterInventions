@@ -120,7 +120,8 @@ const civilizationCoords: Record<string, { lat: number; lng: number; region: str
   "mississippian": { lat: 38.7, lng: -90.1, region: "Mississippi Valley" },
   "oman": { lat: 23.6, lng: 58.5, region: "Oman" },
   "singapore": { lat: 1.3, lng: 103.8, region: "Singapore" },
-  "venice": { lat: 45.4, lng: 12.3, region: "Italy" }
+  "venice": { lat: 45.4, lng: 12.3, region: "Italy" },
+  "imperial-soviet-russia": { lat: 55.75, lng: 37.6, region: "Russia" }
 };
 
 // Convert to x/y percentages
@@ -157,7 +158,7 @@ const civilizationContinents: Record<string, string> = {
   "morocco": "Africa", "al-andalus": "Europe", "ancient-yemen": "Asia", "bengal": "Asia",
   "central-asia": "Asia", "chinook": "Americas", "dubai-uae": "Asia", "inuit": "Americas",
   "israel": "Asia", "malaysia": "Asia", "mississippian": "Americas", "oman": "Asia",
-  "singapore": "Asia", "venice": "Europe"
+  "singapore": "Asia", "venice": "Europe", "imperial-soviet-russia": "Europe"
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {

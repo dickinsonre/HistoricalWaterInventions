@@ -629,6 +629,35 @@ export const gameData: GameData = {
               category: "dam"
             }
           ]
+        },
+        {
+          id: "palenque",
+          name: "Palenque",
+          description: "Maya city with first pressurized water system in Americas",
+          historicalContext: "Sophisticated hydraulic engineering in tropical rainforest",
+          coordinates: { lat: 17.4838, lng: -92.0461 },
+          artifacts: [
+            {
+              id: "maya-pressurized-system",
+              name: "Maya Pressurized Water System",
+              description: "Enclosed stone conduit using natural elevation drop to create pressurized water flow",
+              rarity: "legendary",
+              historicalPeriod: "750 CE or earlier",
+              significance: "First known pressurized water system in the Americas; used Venturi effect centuries before European understanding",
+              yearBCE: -750,
+              category: "aqueduct"
+            },
+            {
+              id: "palenque-aqueduct",
+              name: "Palenque Underground Aqueduct",
+              description: "Corbelled stone channels routing streams beneath plazas and pyramids",
+              rarity: "epic",
+              historicalPeriod: "600-800 CE",
+              significance: "9 separate aqueducts; longest runs 60+ meters under the palace complex",
+              yearBCE: -700,
+              category: "aqueduct"
+            }
+          ]
         }
       ]
     },
@@ -3419,6 +3448,94 @@ export const gameData: GameData = {
               significance: "Free summer refrigeration; navigation landmarks; cultural gathering points; still used today",
               yearBCE: 10000,
               category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "imperial-soviet-russia",
+      name: "Imperial & Soviet Russia",
+      description: "From Peter the Great's naval ambitions to Soviet megaprojects connecting five seas",
+      position: [14, 0, -6],
+      color: "#D32F2F",
+      era: "modern",
+      dateRange: "1700 - 1991 CE",
+      locations: [
+        {
+          id: "moscow-region",
+          name: "Moscow & Central Russia",
+          description: "Heart of Russia's unified deep water system",
+          historicalContext: "Soviet hydraulic engineering connecting Arctic to Mediterranean",
+          coordinates: { lat: 55.75, lng: 37.62 },
+          artifacts: [
+            {
+              id: "water-integrator",
+              name: "Lukyanov Water Integrator Computer",
+              description: "World's first analog computer using water flow through tubes to solve partial differential equations",
+              rarity: "legendary",
+              historicalPeriod: "1936",
+              significance: "Solved concrete curing calculations; used in Soviet construction until 1980s; physical SWMM before digital existed",
+              yearBCE: -1936,
+              category: "water-clock"
+            },
+            {
+              id: "moscow-volga-canal",
+              name: "Moscow-Volga Canal",
+              description: "128 km canal bringing Volga River water to Moscow, rerouting a major river to the capital",
+              rarity: "epic",
+              historicalPeriod: "1932-1937",
+              significance: "Supplies 80% of Moscow's water; 11 locks raising ships 38 meters; enabled Moscow's growth to 12+ million",
+              yearBCE: -1937,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "white-sea-region",
+          name: "White Sea-Baltic Region",
+          description: "Arctic-Baltic connection through 227 km of canals and locks",
+          historicalContext: "Strategic naval route from Arctic to Baltic",
+          coordinates: { lat: 64.5, lng: 34.8 },
+          artifacts: [
+            {
+              id: "belomor-canal",
+              name: "White Sea-Baltic Canal (Belomor)",
+              description: "227 km canal connecting White Sea to Baltic through 19 locks, built in just 20 months",
+              rarity: "epic",
+              historicalPeriod: "1931-1933",
+              significance: "Strategic naval route; enabled Arctic-Baltic shipping; controversial construction history",
+              yearBCE: -1933,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "volga-don-region",
+          name: "Volga-Don Waterway",
+          description: "Link between Europe's two mightiest rivers enabling five-sea navigation",
+          historicalContext: "Peter the Great's dream realized 250 years later",
+          coordinates: { lat: 48.7, lng: 43.5 },
+          artifacts: [
+            {
+              id: "volga-don-canal",
+              name: "Volga-Don Canal",
+              description: "101 km canal linking Volga and Don rivers through 13 locks, completing five-sea navigation system",
+              rarity: "legendary",
+              historicalPeriod: "1948-1952",
+              significance: "Ships can travel from Arctic Ocean to Mediterranean; Peter the Great first proposed it in 1697; dream took 250 years",
+              yearBCE: -1952,
+              category: "canal"
+            },
+            {
+              id: "unified-waterway",
+              name: "Unified Deep Water System of European Russia",
+              description: "Interconnected network of rivers, lakes, and canals linking 5 seas: White, Baltic, Caspian, Azov, and Black",
+              rarity: "legendary",
+              historicalPeriod: "1930s-1952",
+              significance: "6,500 km navigable waterway; ships travel from St. Petersburg to Astrakhan; largest inland waterway system in Europe",
+              yearBCE: -1952,
+              category: "canal"
             }
           ]
         }
