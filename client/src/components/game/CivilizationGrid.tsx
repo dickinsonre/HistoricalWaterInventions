@@ -91,6 +91,21 @@ const civilizationMeta: Record<string, { region: string; keyInvention: string; d
     region: "Global",
     keyInvention: "Mega Dams",
     description: "Industrial-scale water management with both triumphs and challenges."
+  },
+  "phoenicia": {
+    region: "Lebanon/Syria",
+    keyInvention: "Artificial Harbors",
+    description: "Maritime masters who engineered artificial ports enabling Mediterranean trade."
+  },
+  "carthage": {
+    region: "Tunisia/North Africa",
+    keyInvention: "Massive Cisterns",
+    description: "Built the ancient world's largest cistern network to supply 500,000 people."
+  },
+  "medieval-europe": {
+    region: "Western Europe",
+    keyInvention: "Water Mills",
+    description: "Water power revolution: 5,600+ mills in England alone by 1086."
   }
 };
 

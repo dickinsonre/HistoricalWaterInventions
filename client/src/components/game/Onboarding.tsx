@@ -12,10 +12,10 @@ const slides = [
     icon: Droplets,
     title: "Welcome to Historical Mystery",
     subtitle: "Discover How Water Shaped Civilization",
-    content: "Explore 18 civilizations and discover 55+ water inventions in the 3D world, plus 80+ technologies in our encyclopedia. From Egyptian shaduf to Roman aqueducts to modern mega-dams.",
+    content: "Explore 21 civilizations and discover 62+ water inventions in the 3D world, plus 80+ technologies in our encyclopedia. From Egyptian shaduf to Roman aqueducts to modern mega-dams.",
     stats: [
-      { value: "18", label: "Civilizations" },
-      { value: "55+", label: "3D Inventions" },
+      { value: "21", label: "Civilizations" },
+      { value: "62+", label: "3D Inventions" },
       { value: "8,000+", label: "Years of History" }
     ]
   },
