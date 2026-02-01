@@ -3,8 +3,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { Input } from "../ui/input";
-import { X, Download, FileCode, Search, Globe, Clock, Droplets, Info, ExternalLink } from "lucide-react";
-import { SWMM5_MODELS, downloadSWMM5Model } from "../../lib/swmm5Export";
+import { X, Download, FileCode, Search, Globe, Clock, Droplets, Info, ExternalLink, Archive } from "lucide-react";
+import { SWMM5_MODELS, downloadSWMM5Model, getAllModelContents } from "../../lib/swmm5Export";
+import JSZip from "jszip";
 
 interface SWMM5ModelsProps {
   onClose: () => void;
@@ -41,6 +42,7 @@ export default function SWMM5Models({ onClose }: SWMM5ModelsProps) {
   const [downloading, setDownloading] = useState<string | null>(null);
 
   const models = Object.entries(SWMM5_MODELS);
+  const [downloadingAll, setDownloadingAll] = useState(false);
   
   const civilizations = Array.from(new Set(models.map(([, model]) => model.civilization))).sort();
   
@@ -59,6 +61,33 @@ export default function SWMM5Models({ onClose }: SWMM5ModelsProps) {
       downloadSWMM5Model(modelId, modelName);
     } finally {
       setTimeout(() => setDownloading(null), 1000);
+    }
+  };
+
+  const handleDownloadAllAsZip = async () => {
+    setDownloadingAll(true);
+    try {
+      const zip = new JSZip();
+      const allModels = getAllModelContents();
+      
+      allModels.forEach(({ filename, content }) => {
+        zip.file(filename, content);
+      });
+      
+      const blob = await zip.generateAsync({ type: "blob" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Ancient_Water_Engineering_SWMM5_Models.zip';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error creating zip:', error);
+      alert('Failed to create zip file');
+    } finally {
+      setDownloadingAll(false);
     }
   };
 
@@ -110,8 +139,8 @@ export default function SWMM5Models({ onClose }: SWMM5ModelsProps) {
           </div>
         </div>
 
-        <div className="flex gap-3 mb-4">
-          <div className="relative flex-1">
+        <div className="flex gap-3 mb-4 flex-wrap">
+          <div className="relative flex-1 min-w-[200px]">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--aqua)]/50" size={16} />
             <Input
               placeholder="Search models..."
@@ -130,6 +159,14 @@ export default function SWMM5Models({ onClose }: SWMM5ModelsProps) {
               <option key={civ} value={civ}>{civ}</option>
             ))}
           </select>
+          <Button
+            onClick={handleDownloadAllAsZip}
+            disabled={downloadingAll}
+            className="bg-[var(--terracotta)] hover:bg-[var(--terracotta)]/80 text-white"
+          >
+            <Archive size={16} className="mr-2" />
+            {downloadingAll ? "Creating ZIP..." : `Download All (${models.length}) as ZIP`}
+          </Button>
         </div>
 
         <div className="text-xs text-[var(--parchment)]/60 mb-2">

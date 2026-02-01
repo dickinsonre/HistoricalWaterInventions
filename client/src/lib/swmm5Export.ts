@@ -2197,3 +2197,23 @@ export function getAvailableModels(): Array<{ id: string; name: string; civiliza
     period: model.period
   }));
 }
+
+export function getAllModelContents(): Array<{ filename: string; content: string }> {
+  const results: Array<{ filename: string; content: string }> = [];
+  
+  Object.entries(SWMM5_MODELS).forEach(([id, model]) => {
+    const content = generateSWMM5File(id);
+    if (content && content.trim().length > 0) {
+      const safeFilename = model.name
+        .replace(/[^a-zA-Z0-9\s]/g, '')
+        .replace(/\s+/g, '_')
+        .substring(0, 50);
+      results.push({
+        filename: `${safeFilename}_SWMM5_Model.inp`,
+        content
+      });
+    }
+  });
+  
+  return results;
+}
