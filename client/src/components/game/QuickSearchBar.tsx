@@ -105,11 +105,11 @@ export default function QuickSearchBar({ onSelectCivilization, onSelectInvention
   }, [results]);
 
   return (
-    <div className="relative max-w-md mx-auto mb-4">
+    <div className="relative max-w-xl mx-auto mb-4">
       <div className="relative">
         <Search 
-          size={18} 
-          className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--aqua)]" 
+          size={20} 
+          className="absolute left-4 top-1/2 -translate-y-1/2 text-[var(--aqua)]" 
         />
         <input
           ref={inputRef}
@@ -121,8 +121,8 @@ export default function QuickSearchBar({ onSelectCivilization, onSelectInvention
           }}
           onFocus={() => setIsOpen(true)}
           onKeyDown={handleKeyDown}
-          placeholder="Find invention: qanat, shaduf, aqueduct..."
-          className="w-full pl-10 pr-10 py-2 rounded-full bg-[var(--deep-ocean)]/80 border border-[var(--aqua)]/30 text-[var(--parchment)] placeholder-[var(--parchment)]/50 focus:outline-none focus:border-[var(--gold)] focus:ring-1 focus:ring-[var(--gold)]/50 text-sm"
+          placeholder="Search inventions & civilizations..."
+          className="w-full pl-12 pr-12 py-3 rounded-full bg-[var(--deep-ocean)]/80 border-2 border-[var(--aqua)]/40 text-[var(--parchment)] placeholder-[var(--parchment)]/50 focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/50 text-base"
         />
         {query && (
           <button
@@ -130,47 +130,47 @@ export default function QuickSearchBar({ onSelectCivilization, onSelectInvention
               setQuery("");
               setIsOpen(false);
             }}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--parchment)]/50 hover:text-[var(--parchment)]"
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-[var(--parchment)]/50 hover:text-[var(--parchment)]"
           >
-            <X size={16} />
+            <X size={20} />
           </button>
         )}
       </div>
 
       {isOpen && results.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-[var(--deep-ocean)] border border-[var(--aqua)]/30 rounded-lg shadow-xl z-50 overflow-hidden">
+        <div className="absolute top-full left-0 right-0 mt-2 bg-[var(--deep-ocean)] border-2 border-[var(--aqua)]/30 rounded-xl shadow-xl z-50 overflow-hidden">
           {results.map((result, idx) => (
             <button
               key={`${result.type}-${result.id}`}
               onClick={() => handleSelect(result)}
-              className={`w-full px-4 py-3 flex items-center gap-3 text-left transition-colors ${
+              className={`w-full px-5 py-4 flex items-center gap-4 text-left transition-colors ${
                 idx === selectedIndex 
                   ? 'bg-[var(--cerulean)]/20' 
                   : 'hover:bg-[var(--cerulean)]/10'
               }`}
             >
               {result.type === "invention" ? (
-                <Droplets size={16} className="text-[var(--aqua)] flex-shrink-0" />
+                <Droplets size={20} className="text-[var(--aqua)] flex-shrink-0" />
               ) : (
-                <Building size={16} className="text-[var(--gold)] flex-shrink-0" />
+                <Building size={20} className="text-[var(--gold)] flex-shrink-0" />
               )}
               <div className="flex-1 min-w-0">
-                <div className="text-[var(--parchment)] text-sm font-medium truncate">
+                <div className="text-[var(--parchment)] text-base font-medium truncate">
                   {result.name}
                 </div>
-                <div className="text-[var(--parchment)]/60 text-xs truncate">
+                <div className="text-[var(--parchment)]/60 text-sm truncate">
                   {result.subtitle}
                 </div>
               </div>
-              <ArrowRight size={14} className="text-[var(--aqua)]/50 flex-shrink-0" />
+              <ArrowRight size={18} className="text-[var(--aqua)]/50 flex-shrink-0" />
             </button>
           ))}
         </div>
       )}
 
       {isOpen && query && results.length === 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-[var(--deep-ocean)] border border-[var(--aqua)]/30 rounded-lg shadow-xl z-50 p-4 text-center">
-          <p className="text-[var(--parchment)]/60 text-sm">No results for "{query}"</p>
+        <div className="absolute top-full left-0 right-0 mt-2 bg-[var(--deep-ocean)] border-2 border-[var(--aqua)]/30 rounded-xl shadow-xl z-50 p-5 text-center">
+          <p className="text-[var(--parchment)]/60 text-base">No results for "{query}"</p>
         </div>
       )}
     </div>
