@@ -201,7 +201,105 @@ export const civilizationDetails: Record<string, CivilizationDetailData> = {
     ],
     expertNote: "The chinampas turned a lake into farmland without draining it. They created an ecosystem that was more productive than any land-based farm. That's not just engineering—that's ecological brilliance."
   }
+,
+  "minoan-crete": {
+    tagline: "Europe's First Advanced Civilization (2000-1400 BCE)",
+    quote: { text: "The labyrinth hides not a monster, but the world's first plumbing.", author: "Archaeological interpretation" },
+    challenge: [
+      "Multi-story palace complexes requiring sophisticated drainage",
+      "Intense Mediterranean storms causing flooding risks",
+      "Need for sanitation in dense ceremonial and residential spaces",
+      "Seasonal rainfall requiring water storage"
+    ],
+    summary: "The Minoans achieved water engineering sophistication that wouldn't be matched in Europe for over 1,500 years. Their flush toilets and drainage systems were remarkably advanced.",
+    keyFacts: [
+      { label: "First Flush Toilets", value: "~1700 BCE" },
+      { label: "Palace Stories", value: "4-5 levels" },
+      { label: "Pipe Technology", value: "Conical terracotta" },
+      { label: "Drainage Design", value: "Zigzag energy dissipation" }
+    ],
+    legacyTable: [
+      { ancient: "Flush-type toilets", modern: "Modern flush toilets" },
+      { ancient: "Terracotta pipes", modern: "Ceramic plumbing" },
+      { ancient: "Stormwater management", modern: "Urban drainage systems" },
+      { ancient: "Cistern integration", modern: "Rainwater harvesting" }
+    ],
+    expertNote: "The Minoans had flush toilets 3,700 years ago. Their terracotta pipes used conical joints that improved flow and fit—a design principle we still use today. Europe wouldn't see this level of sanitation again until the 19th century."
+  },
+  "modern-era": {
+    tagline: "Industrial Scale Engineering (1750 CE - Present)",
+    quote: { text: "Water is the driving force of all nature.", author: "Leonardo da Vinci" },
+    challenge: [
+      "Growing megacities requiring massive water infrastructure",
+      "Climate change affecting water availability",
+      "Providing clean water to billions of people",
+      "Managing flood risks from rising sea levels"
+    ],
+    summary: "Modern water engineering operates at unprecedented scale, from mega-dams generating electricity for millions to desalination plants creating freshwater from the sea.",
+    keyFacts: [
+      { label: "Three Gorges Capacity", value: "22,500 MW" },
+      { label: "Hoover Dam Height", value: "221 meters" },
+      { label: "Global Desalination", value: "100 million m³/day" },
+      { label: "Thames Barrier Closures", value: "200+" }
+    ],
+    legacyTable: [
+      { ancient: "Ancient dams", modern: "Mega-dams (Three Gorges)" },
+      { ancient: "Qanat evaporation control", modern: "Desalination technology" },
+      { ancient: "Roman aqueducts", modern: "Continental water grids" },
+      { ancient: "Nile flood basins", modern: "Computerized flood barriers" }
+    ],
+    expertNote: "Every modern water system builds on ancient principles. The Hoover Dam uses the same gravity concepts as Roman aqueducts. Our desalination plants solve the same problem qanats addressed—getting water where nature doesn't provide it."
+  }
 };
+
+export interface DrainageSystem {
+  civilization: string;
+  time_period: string;
+  drainage_scope: string;
+  primary_functions: string[];
+  infrastructure_elements: string[];
+  app_summary: string;
+}
+
+export const drainageSystems: DrainageSystem[] = [
+  {
+    civilization: "Minoan (Knossos, Crete)",
+    time_period: "c. 2000–1400 BCE",
+    drainage_scope: "Palace-centered",
+    primary_functions: ["Stormwater drainage", "Greywater removal", "Toilet waste conveyance"],
+    infrastructure_elements: ["Stone-lined floor channels", "Terracotta conduits", "Sediment basins", "Multi-story drains"],
+    app_summary: "At Knossos, the Minoans built a palace-wide drainage network of stone channels and conical terracotta pipes that removed stormwater, greywater, and toilet wastes from multi-story buildings."
+  },
+  {
+    civilization: "Indus Valley (Mohenjo-Daro, Harappa)",
+    time_period: "c. 2600–1900 BCE",
+    drainage_scope: "Citywide, integrated with street grid",
+    primary_functions: ["Household wastewater removal", "Street runoff drainage", "Latrine conveyance"],
+    infrastructure_elements: ["Covered brick street drains", "Household connections", "Inspection chambers", "Standardized bricks"],
+    app_summary: "Indus cities used standardized brick drains along streets, with most homes discharging bath and latrine wastewater into covered channels."
+  },
+  {
+    civilization: "Rome (Cloaca Maxima)",
+    time_period: "From c. 6th century BCE",
+    drainage_scope: "City-scale trunk system",
+    primary_functions: ["Marsh drainage", "Stormwater conveyance", "Combined sewage"],
+    infrastructure_elements: ["Masonry trunk sewer", "Subsidiary sewers", "Public latrine connections", "Tiber outfalls"],
+    app_summary: "Rome's Cloaca Maxima and connected sewers drained marshy areas, carried stormwater, and removed sewage from public baths and latrines."
+  }
+];
+
+export interface CivilizationComparison {
+  axis: string;
+  minoan: string;
+  indus: string;
+  rome: string;
+}
+
+export const civilizationComparisons: CivilizationComparison[] = [
+  { axis: "Scale", minoan: "Palace complexes", indus: "Entire planned cities", rome: "City-scale trunk systems" },
+  { axis: "Coverage", minoan: "Elite architecture", indus: "Near-universal households", rome: "Public facilities focus" },
+  { axis: "Innovation", minoan: "First palace-scale drainage", indus: "First universal urban network", rome: "Pioneering trunk sewers" }
+];
 
 export function getCivilizationDetail(regionId: string): CivilizationDetailData | undefined {
   return civilizationDetails[regionId];

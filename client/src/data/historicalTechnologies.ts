@@ -278,6 +278,132 @@ export const historicalTechnologies: HistoricalTechnology[] = [
     primary_uses: ["Non-potable supply", "Supplemental potable use", "Palace water security"],
     key_principle: "Roof and courtyard runoff captured by surface channels and terracotta pipes is routed into storage cisterns before overflow continues to the drainage network.",
     notes: "This linkage between drainage and storage allowed palaces to buffer seasonal variability while still managing peak flows."
+  },
+  {
+    name: "Copper drainage pipes",
+    category: "Drainage conduits",
+    civilizations: ["Egypt"],
+    period_BCE_CE: "c. 2400 BCE",
+    primary_uses: ["Temple drainage", "Pyramid drainage"],
+    key_principle: "Copper pipes used for wastewater removal in monumental architecture.",
+    notes: "Found in the Pyramid of Sahure, representing early metal plumbing technology."
+  },
+  {
+    name: "Square-pallet chain pump (Dragon backbone)",
+    category: "Water lifting",
+    civilizations: ["China"],
+    period_BCE_CE: "c. 200 BCE - 200 CE",
+    primary_uses: ["Irrigation", "Field drainage"],
+    key_principle: "Continuous chain with paddles lifts water through an inclined trough using human or animal power.",
+    notes: "Labor-saving device that could irrigate large areas efficiently."
+  },
+  {
+    name: "Chultuns (underground reservoirs)",
+    category: "Water storage",
+    civilizations: ["Maya"],
+    period_BCE_CE: "c. 1000 BCE - 1500 CE",
+    primary_uses: ["Water storage", "Rainwater collection", "Ritual use"],
+    key_principle: "Bell-shaped underground cisterns carved into limestone store rainwater for dry seasons.",
+    notes: "Essential for Maya cities in areas without permanent water sources."
+  },
+  {
+    name: "Puquios (Nazca aqueducts)",
+    category: "Groundwater conveyance",
+    civilizations: ["Nazca (Peru)"],
+    period_BCE_CE: "c. 400 BCE - 600 CE",
+    primary_uses: ["Irrigation", "Urban supply"],
+    key_principle: "Spiral-well and tunnel systems tap underground aquifers and bring water to the surface.",
+    notes: "Innovative solution for one of the driest deserts on Earth."
+  },
+  {
+    name: "Water clock (Clepsydra)",
+    category: "Timekeeping",
+    civilizations: ["Egypt", "Babylon", "Greece", "Rome", "China"],
+    period_BCE_CE: "c. 1500 BCE - 1100 CE",
+    primary_uses: ["Night timekeeping", "Religious rituals", "Court proceedings", "Astronomy"],
+    key_principle: "Regulated water flow measures time intervals; evolved from simple outflow vessels to complex gear-driven mechanisms.",
+    notes: "Demonstrates how water technology served diverse purposes beyond supply and sanitation."
+  },
+  {
+    name: "Su Song astronomical clock tower",
+    category: "Mechanical timekeeping",
+    civilizations: ["China"],
+    period_BCE_CE: "1088 CE",
+    primary_uses: ["Astronomical observation", "Imperial timekeeping"],
+    key_principle: "Water-powered escapement mechanism drives rotating armillary sphere and celestial globe.",
+    notes: "One of the most sophisticated water-powered machines of the medieval world."
+  },
+  {
+    name: "Cenote water systems",
+    category: "Natural water access",
+    civilizations: ["Maya"],
+    period_BCE_CE: "c. 1000 BCE - 1500 CE",
+    primary_uses: ["Water supply", "Sacred rituals", "Urban foundation"],
+    key_principle: "Natural limestone sinkholes provide access to underground water table.",
+    notes: "Many Maya cities were deliberately founded near cenotes; they served both practical and spiritual purposes."
+  },
+  {
+    name: "Saqiya (Persian Wheel)",
+    category: "Water lifting and power",
+    civilizations: ["Persia", "Egypt", "Islamic World"],
+    period_BCE_CE: "c. 500-300 BCE onward",
+    primary_uses: ["Deep well irrigation", "Agricultural expansion"],
+    key_principle: "Right-angle gearing converts horizontal animal motion to vertical rotary lifting using pot garland or compartmentalized rim.",
+    notes: "Revolutionary for using animal power instead of human labor, allowing irrigation of significantly more land than shaduf teams."
+  },
+  {
+    name: "Series shaduf system",
+    category: "Water lifting",
+    civilizations: ["Egypt", "Mesopotamia"],
+    period_BCE_CE: "c. 2000 BCE onward",
+    primary_uses: ["High-elevation irrigation", "Terrace farming"],
+    key_principle: "Multiple shadufs arranged in stepped sequence lift water progressively higher through intermediate basins.",
+    notes: "Allowed irrigation of upper terraces during dry season; a team of workers could lift water 10+ meters in stages."
+  },
+  {
+    name: "Noria of Hama",
+    category: "Water lifting and power",
+    civilizations: ["Syria", "Islamic World"],
+    period_BCE_CE: "c. 1000 BCE - present",
+    primary_uses: ["Automated irrigation", "Urban water supply"],
+    key_principle: "River current drives large paddle wheel that lifts water to elevated aqueduct without fuel or labor.",
+    notes: "Monumental norias at Hama reach 20+ meters diameter; early example of water-powered automation operating continuously."
+  },
+  {
+    name: "Assyrian water screw",
+    category: "Water lifting",
+    civilizations: ["Assyria"],
+    period_BCE_CE: "c. 705-681 BCE",
+    primary_uses: ["Garden irrigation", "Palace water supply"],
+    key_principle: "Bronze helical screw in cylinder lifts water continuously; predates Archimedes by 400 years.",
+    notes: "Cuneiform inscriptions from Sennacherib's palace at Nineveh describe bronze screws cast using lost-wax technique for the Hanging Gardens."
+  },
+  {
+    name: "Tympanum water wheel",
+    category: "Water lifting",
+    civilizations: ["Rome", "Greece"],
+    period_BCE_CE: "c. 300 BCE - 400 CE",
+    primary_uses: ["Mining drainage", "Irrigation"],
+    key_principle: "Hollow compartmentalized wheel rim traps water at bottom and discharges near axle at top.",
+    notes: "Extremely robust design limited to half wheel diameter lift; used extensively in Roman mining operations."
+  },
+  {
+    name: "Lost-wax bronze casting for hydraulics",
+    category: "Manufacturing technology",
+    civilizations: ["Assyria", "Egypt", "Greece"],
+    period_BCE_CE: "c. 2500 BCE onward",
+    primary_uses: ["Pump components", "Pipe fittings", "Valve manufacturing"],
+    key_principle: "Wax model coated in clay creates precise mold for casting complex bronze mechanical parts.",
+    notes: "Enabled manufacture of precision water-lifting components; essential for Assyrian water screws and later Greek mechanisms."
+  },
+  {
+    name: "Right-angle gear transmission",
+    category: "Mechanical engineering",
+    civilizations: ["Persia", "Greece", "Rome"],
+    period_BCE_CE: "c. 500 BCE onward",
+    primary_uses: ["Power conversion", "Water lifting", "Milling"],
+    key_principle: "Meshing wooden pegs convert horizontal rotary motion to vertical plane for water lifting.",
+    notes: "Fundamental mechanical innovation enabling animal-powered irrigation and industrial water mills."
   }
 ];
 
