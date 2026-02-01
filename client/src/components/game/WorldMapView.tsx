@@ -431,8 +431,6 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
           />
         </div>
 
-        <SWMM5Showcase onViewAll={() => setShowSWMM5(true)} />
-
         <Card className="water-card overflow-hidden">
           <CardContent className="p-0">
             <div 
@@ -615,6 +613,9 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
             );
           })}
         </div>
+
+        {/* SWMM5 Hydraulic Models Showcase - at end of page */}
+        <SWMM5Showcase onViewAll={() => setShowSWMM5(true)} />
       </div>
 
       {/* Modal Components */}
