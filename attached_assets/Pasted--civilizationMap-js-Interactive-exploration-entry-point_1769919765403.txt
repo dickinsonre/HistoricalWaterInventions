@@ -1,0 +1,68 @@
+// civilizationMap.js - Interactive exploration entry point
+
+const civilizations = [
+  {
+    id: 'mesopotamia',
+    name: 'Mesopotamia',
+    period: '4000-500 BCE',
+    region: 'Iraq/Syria',
+    coords: { lat: 33.3, lng: 44.4 },
+    inventionCount: 5,
+    keyInvention: 'Irrigation Canals',
+    color: '#C4A35A',
+    description: 'Where agriculture—and civilization—began with controlled water.'
+  },
+  {
+    id: 'egypt',
+    name: 'Ancient Egypt',
+    period: '3100-30 BCE',
+    region: 'Nile Valley',
+    coords: { lat: 26.8, lng: 30.8 },
+    inventionCount: 6,
+    keyInvention: 'Shaduf',
+    color: '#D4AF37',
+    description: 'The Nile\'s predictable floods enabled history\'s longest-lasting civilization.'
+  },
+  {
+    id: 'persia',
+    name: 'Ancient Persia',
+    period: '1000 BCE-651 CE',
+    region: 'Iran/Central Asia',
+    coords: { lat: 32.4, lng: 53.7 },
+    inventionCount: 4,
+    keyInvention: 'Qanat',
+    color: '#1E90FF',
+    description: 'Underground aqueducts brought mountain water across deserts—still operating today.'
+  },
+  // ... add all 18 civilizations
+];
+
+function renderCivilizationSelector() {
+  const container = document.getElementById('civilization-grid');
+
+  civilizations.forEach(civ => {
+    const card = document.createElement('div');
+    card.className = 'civilization-card';
+    card.style.borderColor = civ.color;
+
+    card.innerHTML = `
+      <div class="civ-header" style="background: ${civ.color}20">
+        <h3>${civ.name}</h3>
+        <span class="period">${civ.period}</span>
+      </div>
+      <div class="civ-body">
+        <p class="region">📍 ${civ.region}</p>
+        <p class="description">${civ.description}</p>
+        <div class="civ-stats">
+          <span class="invention-count">${civ.inventionCount} inventions</span>
+          <span class="key-invention">Key: ${civ.keyInvention}</span>
+        </div>
+      </div>
+      <a href="/civilization/${civ.id}" class="explore-btn">
+        Explore ${civ.name} →
+      </a>
+    `;
+
+    container.appendChild(card);
+  });
+}

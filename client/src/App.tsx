@@ -8,24 +8,28 @@ import WorldMap from "./components/game/WorldMap";
 import GameUI from "./components/game/GameUI";
 import Lights from "./components/game/Lights";
 import Camera from "./components/game/Camera";
-import Onboarding from "./components/game/Onboarding";
+import LandingPage from "./components/game/LandingPage";
+import MuseumMode from "./components/game/MuseumMode";
+import TimelineFilter from "./components/game/TimelineFilter";
 import "@fontsource/inter";
 import "./index.css";
 
 const queryClient = new QueryClient();
 
+type JourneyMode = "landing" | "3d-world" | "encyclopedia" | "timeline";
+
 function GameContent() {
   const { setBackgroundMusic, setHitSound, setSuccessSound } = useAudio();
   const { phase } = useGameState();
   const { loadProgress } = useProgress();
-  const [showOnboarding, setShowOnboarding] = useState(() => {
-    const hasSeenOnboarding = localStorage.getItem("historical-mystery-onboarding");
-    return !hasSeenOnboarding;
-  });
+  const [journeyMode, setJourneyMode] = useState<JourneyMode>("landing");
 
-  const handleOnboardingComplete = () => {
-    localStorage.setItem("historical-mystery-onboarding", "true");
-    setShowOnboarding(false);
+  const handleSelectJourney = (journey: "3d-world" | "encyclopedia" | "timeline") => {
+    setJourneyMode(journey);
+  };
+
+  const handleBackToLanding = () => {
+    setJourneyMode("landing");
   };
 
   useEffect(() => {
@@ -43,8 +47,24 @@ function GameContent() {
     loadProgress();
   }, [setBackgroundMusic, setHitSound, setSuccessSound, loadProgress]);
 
-  if (showOnboarding) {
-    return <Onboarding onComplete={handleOnboardingComplete} />;
+  if (journeyMode === "landing") {
+    return <LandingPage onSelectJourney={handleSelectJourney} />;
+  }
+
+  if (journeyMode === "encyclopedia") {
+    return (
+      <div className="min-h-screen bg-[var(--deep-ocean)]">
+        <MuseumMode onClose={handleBackToLanding} />
+      </div>
+    );
+  }
+
+  if (journeyMode === "timeline") {
+    return (
+      <div className="min-h-screen bg-[var(--deep-ocean)] flex items-center justify-center">
+        <TimelineFilter onClose={handleBackToLanding} />
+      </div>
+    );
   }
 
   return (
@@ -73,7 +93,7 @@ function GameContent() {
         </Suspense>
       </Canvas>
       
-      <GameUI />
+      <GameUI onBackToLanding={handleBackToLanding} />
     </div>
   );
 }

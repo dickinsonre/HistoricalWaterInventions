@@ -7,7 +7,7 @@ import { getExpertInventionById, ExpertInvention, formatYear as formatExpertYear
 
 interface MuseumModeProps {
   onClose: () => void;
-  onSelectInvention: (id: string) => void;
+  onSelectInvention?: (id: string) => void;
 }
 
 type ViewMode = "gallery" | "timeline" | "civilization";
@@ -252,16 +252,18 @@ export default function MuseumMode({ onClose, onSelectInvention }: MuseumModePro
                 </div>
               )}
 
-              <Button
-                onClick={() => {
-                  onSelectInvention(detailArtifact.id);
-                  onClose();
-                }}
-                className="w-full bg-gradient-to-r from-[var(--cerulean)] to-[var(--river-blue)] hover:from-[var(--aqua)] hover:to-[var(--cerulean)] text-white"
-              >
-                <Droplets size={16} className="mr-2" />
-                View in 3D World
-              </Button>
+              {onSelectInvention && (
+                <Button
+                  onClick={() => {
+                    onSelectInvention(detailArtifact.id);
+                    onClose();
+                  }}
+                  className="w-full bg-gradient-to-r from-[var(--cerulean)] to-[var(--river-blue)] hover:from-[var(--aqua)] hover:to-[var(--cerulean)] text-white"
+                >
+                  <Droplets size={16} className="mr-2" />
+                  View in 3D World
+                </Button>
+              )}
             </div>
           </div>
         </CardContent>
