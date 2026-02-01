@@ -3,6 +3,7 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { useTexture, Text } from "@react-three/drei";
 import * as THREE from "three";
 import Region from "./Region";
+import WaterParticles from "./WaterParticles";
 import { gameData } from "../../data/gameData";
 import { useGameState } from "../../lib/stores/useGameState";
 
@@ -15,6 +16,7 @@ const geographicPositions: Record<string, [number, number, number]> = {
   "ancient-china": [28, 0.5, -2],
   "islamic-golden-age": [14, 0.5, 2],
   "mesoamerica": [-22, 0.5, 4],
+  "modern-era": [-18, 0.5, -6],
 };
 
 export default function WorldMap() {
@@ -103,6 +105,8 @@ export default function WorldMap() {
           </group>
         );
       })}
+
+      <WaterParticles count={150} spread={70} />
 
       <Text
         position={[0, 0.5, 22]}

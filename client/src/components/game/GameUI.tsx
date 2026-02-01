@@ -13,11 +13,14 @@ import DidYouKnow from "./DidYouKnow";
 import InventionDetail from "./InventionDetail";
 import CivilizationDetail from "./CivilizationDetail";
 import WhyThisMatters from "./WhyThisMatters";
+import SmartSearch from "./SmartSearch";
+import TimeTravel from "./TimeTravel";
+import ChallengeModes from "./ChallengeModes";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
-import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb, Globe, Building } from "lucide-react";
+import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb, Globe, Building, Search, Play, Gamepad2 } from "lucide-react";
 import { gameData, getAllArtifacts } from "../../data/gameData";
 
 export default function GameUI() {
@@ -34,6 +37,9 @@ export default function GameUI() {
   const [showFacts, setShowFacts] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
   const [showWhyMatters, setShowWhyMatters] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
+  const [showTimeTravel, setShowTimeTravel] = useState(false);
+  const [showChallenges, setShowChallenges] = useState(false);
   const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
   const [selectedCivilization, setSelectedCivilization] = useState<string | null>(null);
 
@@ -61,6 +67,22 @@ export default function GameUI() {
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
                 {isMuted ? "Unmute Sound" : "Mute Sound"}
+              </TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowSearch(true)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Search size={16} className="text-[var(--cerulean)]" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Smart Search
               </TooltipContent>
             </Tooltip>
             
@@ -135,6 +157,22 @@ export default function GameUI() {
                 <Button
                   variant="outline"
                   size="sm"
+                  onClick={() => setShowTimeTravel(true)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Play size={16} className="text-[var(--gold)]" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Time Travel Mode
+              </TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
                   onClick={() => setShowComparison(!showComparison)}
                   className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
                 >
@@ -159,6 +197,22 @@ export default function GameUI() {
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
                 Featured Discoveries
+              </TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowChallenges(true)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Gamepad2 size={16} className="text-purple-400" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                Challenge Modes
               </TooltipContent>
             </Tooltip>
 
@@ -243,6 +297,33 @@ export default function GameUI() {
         </div>
       </div>
 
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 pointer-events-auto">
+        <div className="flex gap-4 bg-[var(--deep-ocean)]/90 backdrop-blur-sm rounded-full px-6 py-3 border border-[var(--aqua)]/30 shadow-lg">
+          <div className="flex items-center gap-2 text-[var(--parchment)]">
+            <Droplets className="text-[var(--aqua)]" size={20} />
+            <span className="font-heading text-lg text-[var(--gold)]">{allArtifacts.length}+</span>
+            <span className="text-sm opacity-80">Inventions</span>
+          </div>
+          <div className="w-px bg-[var(--aqua)]/30" />
+          <div className="flex items-center gap-2 text-[var(--parchment)]">
+            <Building className="text-[var(--terracotta)]" size={20} />
+            <span className="font-heading text-lg text-[var(--gold)]">{gameData.regions.length}</span>
+            <span className="text-sm opacity-80">Civilizations</span>
+          </div>
+          <div className="w-px bg-[var(--aqua)]/30" />
+          <div className="flex items-center gap-2 text-[var(--parchment)]">
+            <Clock className="text-[var(--cerulean)]" size={20} />
+            <span className="font-heading text-lg text-[var(--gold)]">8000+</span>
+            <span className="text-sm opacity-80">Years</span>
+          </div>
+          <div className="w-px bg-[var(--aqua)]/30" />
+          <div className="flex items-center gap-2 text-[var(--parchment)]">
+            <Globe className="text-[var(--aqua)]" size={20} />
+            <span className="text-sm opacity-80">Global</span>
+          </div>
+        </div>
+      </div>
+
       <div className="absolute bottom-4 left-4 pointer-events-auto max-w-md">
         <Card className="water-card">
           <CardContent className="p-4">
@@ -252,13 +333,23 @@ export default function GameUI() {
             <p className="text-[var(--parchment)]/90 text-sm mb-3">
               Explore 8 ancient civilizations and discover 25+ water inventions that transformed human history. From Egyptian shaduf to Roman aqueducts, uncover the genius of ancient hydraulic engineering.
             </p>
-            <Button
-              onClick={() => setShowFeatured(true)}
-              className="w-full bg-gradient-to-r from-[var(--cerulean)] to-[var(--river-blue)] hover:from-[var(--aqua)] hover:to-[var(--cerulean)] text-white font-heading"
-            >
-              <Compass size={18} className="mr-2" />
-              Begin Your Journey
-            </Button>
+            <div className="flex gap-2">
+              <Button
+                onClick={() => setShowFeatured(true)}
+                className="flex-1 bg-gradient-to-r from-[var(--cerulean)] to-[var(--river-blue)] hover:from-[var(--aqua)] hover:to-[var(--cerulean)] text-white font-heading"
+              >
+                <Compass size={18} className="mr-2" />
+                Explore the Map
+              </Button>
+              <Button
+                onClick={() => setShowTimeline(true)}
+                variant="outline"
+                className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+              >
+                <Clock size={18} className="mr-2" />
+                Start Journey
+              </Button>
+            </div>
           </CardContent>
         </Card>
       </div>
@@ -366,6 +457,40 @@ export default function GameUI() {
               setSelectedInvention(id);
             }}
           />
+        </div>
+      )}
+
+      {showSearch && (
+        <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto p-4">
+          <SmartSearch
+            onClose={() => setShowSearch(false)}
+            onSelectInvention={(id) => {
+              setShowSearch(false);
+              setSelectedInvention(id);
+            }}
+            onSelectCivilization={(id) => {
+              setShowSearch(false);
+              setSelectedCivilization(id);
+            }}
+          />
+        </div>
+      )}
+
+      {showTimeTravel && (
+        <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto p-4">
+          <TimeTravel
+            onClose={() => setShowTimeTravel(false)}
+            onSelectInvention={(id) => {
+              setShowTimeTravel(false);
+              setSelectedInvention(id);
+            }}
+          />
+        </div>
+      )}
+
+      {showChallenges && (
+        <div className="absolute inset-0 bg-[var(--deep-ocean)]/80 flex items-center justify-center pointer-events-auto p-4">
+          <ChallengeModes onClose={() => setShowChallenges(false)} />
         </div>
       )}
 

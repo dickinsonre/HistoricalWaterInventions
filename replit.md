@@ -2,14 +2,14 @@
 
 ## Overview
 
-Historical Mystery is a 3D interactive adventure game focused on humanity's water innovations throughout history. Players explore 8 ancient civilizations, discover 25+ water inventions from 6000 BCE to present, and learn about the genius of ancient hydraulic engineering. The application features the "Ancient Waters" visual theme with gamification elements including achievements and progress tracking.
+Historical Mystery is a 3D interactive adventure game focused on humanity's water innovations throughout history. Players explore 9 civilizations (including Modern Era), discover 30+ water inventions from 6000 BCE to present, and learn about the genius of hydraulic engineering across ages. The application features the "Ancient Waters" visual theme with gamification elements including achievements, progress tracking, and interactive challenge modes.
 
 ## Theme: Ancient Waters
 
 The game showcases how water shaped human civilization through:
-- **8 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Ancient Greece, Roman Empire, Ancient China, Islamic Golden Age, Mesoamerica
-- **25+ Water Inventions**: Aqueducts, irrigation systems, water-lifting devices, sanitation, dams, water clocks, fountains, canals
-- **Time Periods**: Ancient (6000-500 BCE), Classical (500 BCE-500 CE), Medieval (500-1400 CE)
+- **9 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Ancient Greece, Roman Empire, Ancient China, Islamic Golden Age, Mesoamerica, Modern Era
+- **30+ Water Inventions**: Aqueducts, irrigation systems, water-lifting devices, sanitation, dams, water clocks, fountains, canals, modern mega-dams, desalination
+- **Time Periods**: Ancient (6000-500 BCE), Classical (500 BCE-500 CE), Medieval (500-1400 CE), Modern (1750 CE-Present)
 
 ## System Architecture
 
@@ -60,7 +60,11 @@ The game showcases how water shaped human civilization through:
 - **useAudio**: Handles background music and sound effects
 
 ### UI Components
-- **GameUI**: Water-themed HUD with progress indicators and "Begin Your Journey" CTA
+- **GameUI**: Water-themed HUD with progress indicators, Quick Stats bar, and CTAs
+- **QuickStats**: Floating stats bar showing [30+ Inventions] [9 Civilizations] [8000+ Years] [Global]
+- **SmartSearch**: Autocomplete search for inventions, civilizations, eras, and technology types
+- **TimeTravel**: Auto-playback mode through history with speed controls and era skip buttons
+- **ChallengeModes**: Timeline Puzzle and Geography Quest games for knowledge testing
 - **Inventory**: Water invention collection viewer with category and rarity filters
 - **ProgressTracker**: Exploration progress by civilization and era
 - **Achievements**: 12+ badges across Explorer, Scholar, Collector, Time Traveler categories
@@ -70,12 +74,16 @@ The game showcases how water shaped human civilization through:
 - **AboutSection**: Creator attribution and project background
 - **DidYouKnow**: Carousel of 10 fascinating water engineering facts
 
+### 3D Effects
+- **WaterParticles**: Animated falling water droplet particles in the 3D scene
+
 ### Data Structure
-- **Regions**: 8 civilizations with era, date range, position, color
+- **Regions**: 9 civilizations with era, date range, position, color (includes Modern Era)
 - **Locations**: Historical sites with coordinates and historical context
 - **Artifacts**: Water inventions with category, rarity, year, significance
 - **Categories**: irrigation, aqueduct, water-lifting, sanitation, dam, water-clock, fountain, canal
 - **Rarities**: common, rare, epic, legendary
+- **Diagrams**: Technical illustrations for 15+ inventions in /diagrams/ folder
 
 ## Game Features
 

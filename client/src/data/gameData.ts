@@ -524,6 +524,103 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "modern-era",
+      name: "Modern Era",
+      description: "The industrial revolution and beyond brought unprecedented scale to water engineering, from massive dams to desalination technology.",
+      position: [-10, 0.5, -8],
+      color: "#6366f1",
+      era: "modern",
+      dateRange: "1750 CE - Present",
+      locations: [
+        {
+          id: "hoover-dam",
+          name: "Hoover Dam, USA",
+          description: "Iconic American mega-dam on the Colorado River",
+          historicalContext: "Depression-era engineering marvel",
+          coordinates: { lat: 36.0156, lng: -114.7377 },
+          artifacts: [
+            {
+              id: "hoover-dam-turbine",
+              name: "Hoover Dam Turbine",
+              description: "One of the massive hydroelectric turbines powering the American Southwest",
+              rarity: "legendary",
+              historicalPeriod: "Modern Era (1936 CE)",
+              significance: "221 meters tall, powers 1.3 million homes",
+              yearBCE: -1936,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "three-gorges",
+          name: "Three Gorges Dam, China",
+          description: "World's largest power station by installed capacity",
+          historicalContext: "Modern China's engineering ambition",
+          coordinates: { lat: 30.8228, lng: 111.0036 },
+          artifacts: [
+            {
+              id: "three-gorges-lock",
+              name: "Three Gorges Ship Lock",
+              description: "Five-stage ship lock lifting vessels 113 meters",
+              rarity: "legendary",
+              historicalPeriod: "Modern Era (2006 CE)",
+              significance: "Largest hydroelectric dam in the world, 22,500 MW capacity",
+              yearBCE: -2006,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "desalination-plants",
+          name: "Desalination Technology",
+          description: "Converting seawater to freshwater for arid regions",
+          historicalContext: "Solution for water-scarce nations",
+          coordinates: { lat: 24.4539, lng: 54.3773 },
+          artifacts: [
+            {
+              id: "reverse-osmosis",
+              name: "Reverse Osmosis Membrane",
+              description: "Modern water purification technology",
+              rarity: "epic",
+              historicalPeriod: "Modern Era (1960s CE)",
+              significance: "Provides freshwater to millions in arid regions",
+              yearBCE: -1965,
+              category: "sanitation"
+            },
+            {
+              id: "drip-irrigation",
+              name: "Drip Irrigation System",
+              description: "Water-efficient agricultural technology from Israel",
+              rarity: "epic",
+              historicalPeriod: "Modern Era (1960s CE)",
+              significance: "Reduces water usage by 30-70% compared to flood irrigation",
+              yearBCE: -1965,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "thames-barrier",
+          name: "Thames Barrier, UK",
+          description: "World's second-largest movable flood barrier",
+          historicalContext: "Protecting London from rising seas",
+          coordinates: { lat: 51.4967, lng: 0.0336 },
+          artifacts: [
+            {
+              id: "thames-barrier-gate",
+              name: "Thames Barrier Gate",
+              description: "Rotating steel gates protecting London from flooding",
+              rarity: "epic",
+              historicalPeriod: "Modern Era (1984 CE)",
+              significance: "Has prevented over 200 flood events since 1984",
+              yearBCE: -1984,
+              category: "dam"
+            }
+          ]
+        }
+      ]
     }
   ]
 };
