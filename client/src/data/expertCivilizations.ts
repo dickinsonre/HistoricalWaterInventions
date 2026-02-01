@@ -30,8 +30,8 @@ export interface CivilizationsDatabase {
 
 export const expertCivilizationsDatabase: CivilizationsDatabase = {
   metadata: {
-    version: "1.1",
-    totalCivilizations: 28,
+    version: "1.2",
+    totalCivilizations: 29,
     lastUpdated: "2026-02-01",
     curator: "Robert Dickinson"
   },
@@ -509,6 +509,31 @@ export const expertCivilizationsDatabase: CivilizationsDatabase = {
       sources: [
         "Gleick, P. The World's Water (biennial)",
         "Postel, S. Pillar of Sand: Can the Irrigation Miracle Last?"
+      ]
+    },
+    {
+      id: "dutch-netherlands",
+      name: "Dutch Netherlands",
+      region: "Low Countries (modern Netherlands, Belgium)",
+      period: {
+        start: 1200,
+        end: 2026,
+        era: "Medieval through Present"
+      },
+      summary: "The Dutch are arguably the world's most influential civilization in water engineering history. Living where 26% of land sits below sea level, they developed water management technologies out of absolute necessity for survival—and then exported that expertise worldwide.",
+      waterChallenges: [
+        "26% of country below sea level",
+        "Constant battle against North Sea flooding",
+        "River delta with multiple flood sources",
+        "Subsiding peat soils requiring continuous pumping"
+      ],
+      inventions: ["polder-system", "windmill-pump", "gemaal", "delta-works", "waterschap", "inundation-lines", "room-for-rivers"],
+      keyInsight: "The Dutch saying 'God created the world, but the Dutch created the Netherlands' reflects how they literally built their nation from the sea—and did it through democratic water boards that predate their parliament.",
+      engineerNotes: "The Delta Works took my breath away. The Maeslantkering—each arm weighing as much as the Eiffel Tower—automatically closes when water exceeds 3 meters. But what impresses me more is the institutional innovation: Water Boards (Waterschappen) have operated for 800 years, making them the oldest democratic institutions in the country. The Netherlands exports water expertise worldwide—after Katrina, after Sandy, it's Dutch engineers the world calls. Their recent 'Room for the Rivers' program represents a paradigm shift: instead of fighting water with higher dikes, make space for it. After 800 years of engineering dominance over water, they're learning to work WITH it.",
+      modernLegacy: "Dutch water expertise is exported globally. Henk Ovink advised Obama on post-Sandy rebuilding. Dutch engineers consult on Bangladesh, Vietnam, and New Orleans flood management. The Delta Works is one of the Seven Wonders of the Modern World.",
+      sources: [
+        "TeBrake, W.H. Medieval Frontier: Culture and Ecology in Rijnland",
+        "Hoeksema, R.J. Three Stages in the History of Land Reclamation in the Netherlands"
       ]
     },
     {

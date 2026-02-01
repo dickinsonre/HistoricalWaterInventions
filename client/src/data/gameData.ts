@@ -1568,6 +1568,75 @@ export const gameData: GameData = {
               significance: "Ir.D.F. Woudagemaal (1920) is UNESCO World Heritage—world's largest steam pumping station",
               yearBCE: -1920,
               category: "water-lifting"
+            },
+            {
+              id: "waterschap",
+              name: "Water Board (Waterschap)",
+              description: "Democratic water management authorities with power to levy taxes and make binding decisions",
+              rarity: "legendary",
+              historicalPeriod: "13th Century CE",
+              significance: "Oldest democratic institution in the Netherlands—still operating essentially unchanged after 800 years",
+              yearBCE: -1200,
+              category: "dam"
+            },
+            {
+              id: "boezem-system",
+              name: "Boezem (Buffer Canal System)",
+              description: "Interconnected canals and lakes storing water pumped from polders before release to sea",
+              rarity: "epic",
+              historicalPeriod: "Medieval Period",
+              significance: "Critical infrastructure connecting entire drainage regions; buffers against both flooding and drought",
+              yearBCE: -1300,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "delta-works",
+          name: "Delta Works Region",
+          description: "One of the Seven Wonders of the Modern World",
+          historicalContext: "Built after 1953 flood that killed 1,836 people—shortened coastline by 700km",
+          coordinates: { lat: 51.6283, lng: 3.8967 },
+          artifacts: [
+            {
+              id: "delta-works",
+              name: "Delta Works Storm Surge Barriers",
+              description: "13 massive dams and barriers protecting the Netherlands from the sea, including the 9km Oosterscheldekering",
+              rarity: "legendary",
+              historicalPeriod: "1954-1997 CE",
+              significance: "American Society of Civil Engineers Modern Wonder of the World; Maeslantkering arms weigh as much as Eiffel Tower each",
+              yearBCE: -1997,
+              category: "dam"
+            },
+            {
+              id: "inundation-lines",
+              name: "Waterlinies (Inundation Defense Lines)",
+              description: "Military defense using controlled flooding—water 30-50cm deep stops both boats and infantry",
+              rarity: "epic",
+              historicalPeriod: "16th-20th Century CE",
+              significance: "Stopped French invasion (1672); Stelling van Amsterdam with 42 forts is UNESCO World Heritage",
+              yearBCE: -1672,
+              category: "dam"
+            },
+            {
+              id: "room-for-rivers",
+              name: "Room for the Rivers (Ruimte voor de Rivier)",
+              description: "Paradigm shift: instead of fighting water with higher dikes, make space for it with wider floodplains",
+              rarity: "epic",
+              historicalPeriod: "2006-2015 CE",
+              significance: "Revolutionary approach now exported worldwide—lowering floodplains, creating bypass channels, relocating dikes inland",
+              yearBCE: -2015,
+              category: "canal"
+            },
+            {
+              id: "veluwemeer-aqueduct",
+              name: "Veluwemeer Aqueduct (Water Bridge)",
+              description: "Aqueduct for boats crossing OVER a highway—inverted bridge design",
+              rarity: "rare",
+              historicalPeriod: "2002 CE",
+              significance: "25m long, 3m deep water channel; elegant solution to bridge-or-tunnel dilemma",
+              yearBCE: -2002,
+              category: "aqueduct"
             }
           ]
         }
