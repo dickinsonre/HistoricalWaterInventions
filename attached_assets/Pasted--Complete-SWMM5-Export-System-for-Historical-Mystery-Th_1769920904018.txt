@@ -1,0 +1,3051 @@
+# Complete SWMM5 Export System for Historical Mystery
+This is a comprehensive package that implements all four features. Let's build something truly unique!
+---
+## **Part 1: Extended SWMM5 Model Library (12 Ancient Systems)**
+### **swmm5_models.py** — Complete Model Generator
+```python
+"""
+SWMM5 Ancient Water Systems Model Generator
+Created by Robert Dickinson | 50+ Years SWMM Expertise
+This module generates hydraulically accurate SWMM5 input files (.inp)
+for ancient water systems, bridging 8,000 years of history with
+modern engineering simulation.
+Historical data sourced from archaeological studies, ancient texts,
+and engineering analysis of surviving structures.
+"""
+from dataclasses import dataclass, field
+from typing import List, Dict, Optional, Tuple
+from datetime import datetime
+from enum import Enum
+import math
+class FlowUnits(Enum):
+    CFS = "CFS"      # Cubic feet per second
+    GPM = "GPM"      # Gallons per minute
+    MGD = "MGD"      # Million gallons per day
+    CMS = "CMS"      # Cubic meters per second
+    LPS = "LPS"      # Liters per second
+    MLD = "MLD"      # Million liters per day
+class InfiltrationModel(Enum):
+    HORTON = "HORTON"
+    GREEN_AMPT = "GREEN_AMPT"
+    CURVE_NUMBER = "CURVE_NUMBER"
+class RoutingModel(Enum):
+    STEADY = "STEADY"
+    KINWAVE = "KINWAVE"
+    DYNWAVE = "DYNWAVE"
+@dataclass
+class HistoricalValidation:
+    """Archaeological and historical data for model validation"""
+    source: str
+    date_of_study: str
+    measured_flow: Optional[float] = None  # m³/s
+    measured_flow_range: Optional[Tuple[float, float]] = None
+    channel_dimensions: Optional[Dict[str, float]] = None
+    construction_date: Optional[str] = None
+    confidence_level: str = "estimated"  # measured, estimated, reconstructed
+    notes: str = ""
+    references: List[str] = field(default_factory=list)
+@dataclass
+class Node:
+    """SWMM5 Junction/Node"""
+    name: str
+    x: float
+    y: float
+    elevation: float
+    max_depth: float = 0
+    init_depth: float = 0
+    surcharge_depth: float = 0
+    ponded_area: float = 0
+    description: str = ""
+@dataclass
+class Outfall:
+    """SWMM5 Outfall Node"""
+    name: str
+    x: float
+    y: float
+    elevation: float
+    outfall_type: str = "FREE"  # FREE, NORMAL, FIXED, TIDAL, TIMESERIES
+    stage: float = 0
+    description: str = ""
+@dataclass
+class Storage:
+    """SWMM5 Storage Unit"""
+    name: str
+    x: float
+    y: float
+    elevation: float
+    max_depth: float
+    init_depth: float = 0
+    storage_curve: str = "TABULAR"  # TABULAR, FUNCTIONAL
+    curve_name: str = ""
+    # For FUNCTIONAL: A * depth^B + C
+    coeff_a: float = 1000  # surface area coefficient
+    coeff_b: float = 0     # exponent (0 = constant area)
+    coeff_c: float = 0     # constant
+    ponded_area: float = 0
+    evap_factor: float = 0
+    description: str = ""
+@dataclass
+class Conduit:
+    """SWMM5 Conduit/Link"""
+    name: str
+    from_node: str
+    to_node: str
+    length: float
+    roughness: float
+    in_offset: float = 0
+    out_offset: float = 0
+    init_flow: float = 0
+    max_flow: float = 0
+    description: str = ""
+@dataclass
+class XSection:
+    """SWMM5 Cross Section"""
+    link: str
+    shape: str  # CIRCULAR, RECT_OPEN, RECT_CLOSED, TRAPEZOIDAL, IRREGULAR, CUSTOM
+    geom1: float  # Height or diameter
+    geom2: float = 0  # Width (for rectangular)
+    geom3: float = 0  # Side slopes (for trapezoidal)
+    geom4: float = 0  # Additional parameter
+    barrels: int = 1
+    culvert: str = ""
+@dataclass
+class Inflow:
+    """SWMM5 External Inflow"""
+    node: str
+    constituent: str = "FLOW"
+    time_series: str = ""
+    inflow_type: str = "FLOW"  # FLOW, CONCEN, MASS
+    units_factor: float = 1.0
+    scale_factor: float = 1.0
+    baseline: float = 0
+    pattern: str = ""
+@dataclass
+class Weir:
+    """SWMM5 Weir"""
+    name: str
+    from_node: str
+    to_node: str
+    weir_type: str  # TRANSVERSE, SIDEFLOW, V-NOTCH, TRAPEZOIDAL
+    crest_height: float
+    discharge_coeff: float
+    flap_gate: str = "NO"
+    end_contractions: int = 0
+    end_coeff: float = 0
+    surcharge: str = "YES"
+    width: float = 0  # For TRAPEZOIDAL
+    side_slope: float = 0  # For V-NOTCH or TRAPEZOIDAL
+    description: str = ""
+@dataclass
+class Orifice:
+    """SWMM5 Orifice"""
+    name: str
+    from_node: str
+    to_node: str
+    orifice_type: str  # SIDE, BOTTOM
+    offset: float
+    discharge_coeff: float
+    flap_gate: str = "NO"
+    orate: float = 0  # Time to open/close
+    shape: str = "CIRCULAR"  # CIRCULAR, RECT_CLOSED
+    height: float = 0
+    width: float = 0
+    description: str = ""
+@dataclass
+class Pump:
+    """SWMM5 Pump (for systems like Archimedes Screw)"""
+    name: str
+    from_node: str
+    to_node: str
+    pump_curve: str
+    status: str = "ON"  # ON, OFF
+    startup_depth: float = 0
+    shutoff_depth: float = 0
+    description: str = ""
+@dataclass
+class TimeSeries:
+    """SWMM5 Time Series"""
+    name: str
+    description: str = ""List[Tuple[str, float]] = field(default_factory=list)  # (time, value)
+@dataclass
+class Curve:
+    """SWMM5 Curve (Pump, Storage, etc.)"""
+    name: str
+    curve_type: str  # STORAGE, PUMP1, PUMP2, PUMP3, PUMP4, RATING, CONTROL, etc.
+    description: str = ""List[Tuple[float, float]] = field(default_factory=list)  # (x, y)
+@dataclass
+class Subcatchment:
+    """SWMM5 Subcatchment (for rainfall-runoff)"""
+    name: str
+    rain_gage: str
+    outlet: str
+    area: float  # hectares
+    percent_imperv: float
+    width: float
+    slope: float
+    curb_length: float = 0
+    snow_pack: str = ""
+    x: float = 0
+    y: float = 0
+    description: str = ""
+@dataclass
+class RainGage:
+    """SWMM5 Rain Gage"""
+    name: str
+    form: str = "INTENSITY"  # INTENSITY, VOLUME, CUMULATIVE
+    interval: str = "1:00"
+    scf: float = 1.0  # Snow catch factor
+    source_type: str = "TIMESERIES"  # TIMESERIES, FILE
+    source: str = ""
+    station: str = ""
+    units: str = ""
+    x: float = 0
+    y: float = 0
+    description: str = ""
+@dataclass
+class AncientWaterSystem:
+    """Complete ancient water system model"""
+    name: str
+    civilization: str
+    period: str
+    location: str
+    description: str
+    engineering_notes: str
+    historical_significance: str
+    # SWMM5 Components
+    nodes: List[Node] = field(default_factory=list)
+    outfalls: List[Outfall] = field(default_factory=list)
+    storage_units: List[Storage] = field(default_factory=list)
+    conduits: List[Conduit] = field(default_factory=list)
+    xsections: List[XSection] = field(default_factory=list)
+    weirs: List[Weir] = field(default_factory=list)
+    orifices: List[Orifice] = field(default_factory=list)
+    pumps: List[Pump] = field(default_factory=list)
+    inflows: List[Inflow] = field(default_factory=list)
+    time_series: List[TimeSeries] = field(default_factory=list)
+    curves: List[Curve] = field(default_factory=list)
+    subcatchments: List[Subcatchment] = field(default_factory=list)
+    rain_gages: List[RainGage] = field(default_factory=list)
+    # Validation data
+    validation: Optional[HistoricalValidation] = None
+    # Model settings
+    flow_units: FlowUnits = FlowUnits.LPS
+    infiltration: InfiltrationModel = InfiltrationModel.HORTON
+    routing: RoutingModel = RoutingModel.DYNWAVE
+    # Simulation settings
+    start_date: str = "01/01/2024"
+    start_time: str = "00:00:00"
+    end_date: str = "01/02/2024"
+    end_time: str = "00:00:00"
+    report_step: str = "00:05:00"
+    wet_step: str = "00:01:00"
+    dry_step: str = "01:00:00"
+    routing_step: str = "00:00:30"
+    # Map coordinates
+    map_x_range: Tuple[float, float] = (0, 10000)
+    map_y_range: Tuple[float, float] = (0, 10000)
+class SWMM5ModelGenerator:
+    """
+    Generates SWMM5 .inp files for ancient water systems
+    Author: Robert Dickinson
+    Experience: 50+ years in water infrastructure engineering
+    """
+    def __init__(self):
+        self.models: Dict[str, AncientWaterSystem] = {}
+        self._initialize_models()
+    def _initialize_models(self):
+        """Initialize all ancient water system models"""
+        # ========================================
+        # 1. ROMAN AQUEDUCT (Aqua Claudia style)
+        # ========================================
+        self.models['roman-aqueduct'] = self._create_roman_aqueduct()
+        # ========================================
+        # 2. PERSIAN QANAT
+        # ========================================
+        self.models['qanat'] = self._create_persian_qanat()
+        # ========================================
+        # 3. EGYPTIAN IRRIGATION CANAL
+        # ========================================
+        self.models['egyptian-canal'] = self._create_egyptian_canal()
+        # ========================================
+        # 4. DUJIANGYAN (Chinese)
+        # ========================================
+        self.models['dujiangyan'] = self._create_dujiangyan()
+        # ========================================
+        # 5. ANGKOR BARAY (Khmer)
+        # ========================================
+        self.models['angkor-baray'] = self._create_angkor_baray()
+        # ========================================
+        # 6. MINOAN PALACE DRAINAGE
+        # ========================================
+        self.models['minoan-drainage'] = self._create_minoan_drainage()
+        # ========================================
+        # 7. INDUS VALLEY SEWER
+        # ========================================
+        self.models['indus-sewer'] = self._create_indus_sewer()
+        # ========================================
+        # 8. ROMAN CLOACA MAXIMA
+        # ========================================
+        self.models['cloaca-maxima'] = self._create_cloaca_maxima()
+        # ========================================
+        # 9. NABATAEAN CISTERN (Petra)
+        # ========================================
+        self.models['nabataean-cistern'] = self._create_nabataean_cistern()
+        # ========================================
+        # 10. GREEK FOUNTAIN HOUSE
+        # ========================================
+        self.models['greek-fountain'] = self._create_greek_fountain()
+        # ========================================
+        # 11. ARCHIMEDES SCREW (Egyptian/Greek)
+        # ========================================
+        self.models['archimedes-screw'] = self._create_archimedes_screw()
+        # ========================================
+        # 12. MAYAN AGUADA (Reservoir)
+        # ========================================
+        self.models['mayan-aguada'] = self._create_mayan_aguada()
+    # ================================================================
+    # MODEL CREATION METHODS
+    # ================================================================
+    def _create_roman_aqueduct(self) -> AncientWaterSystem:
+        """
+        Roman Aqueduct - Based on Aqua Claudia (38-52 CE)
+        Engineering Achievement:
+        - 69 km total length
+        - 15 km on arched bridges
+        - Delivered 184,000 m³/day to Rome
+        - Slope: 0.2% average (precisely maintained)
+        """
+        system = AncientWaterSystem(
+            id='roman-aqueduct',
+            name='Roman Aqueduct (Aqua Claudia Style)',
+            civilization='Roman Empire',
+            period='38-52 CE',
+            location='Rome, Italy',
+            description='''
+The Aqua Claudia was one of Rome's greatest aqueducts, bringing pristine
+water from springs 69 km away. The channel (specus) was primarily
+underground but featured dramatic arched bridges up to 33 meters high.
+This model represents a 5km section including:
+- Mountain source intake
+- Underground tunnel section
+- Arched bridge crossing (arcade)
+- Distribution castellum (tank)
+''',
+            engineering_notes='''
+ROMAN AQUEDUCT ENGINEERING:
+1. GRADIENT CONTROL: Romans maintained 0.1-0.5% slopes over tens of
+   kilometers using the chorobates (ancient surveying level) and
+   groma (alignment tool). This model uses 0.2% grade.
+2. SPECUS (CHANNEL): Rectangular cross-section lined with opus
+   signinum (waterproof cement). Typical dimensions 0.9m x 1.2m.
+3. ARCADE CONSTRUCTION: Stone arches with concrete core. The arcade
+   allowed continuous grade while crossing valleys.
+4. CASTELLUM DIVISORIUM: Distribution tank at destination where water
+   was divided to different parts of the city. Three outlets at
+   different heights provided priority during low flow.
+5. INVERTED SIPHONS: When crossing deep valleys, lead pipes formed
+   U-shaped pressure conduits. The Gier aqueduct siphon reached
+   122m pressure head (12 atmospheres).
+HYDRAULICS:
+- Flow is gravity-driven, open channel
+- Typical velocity: 1.0-1.5 m/s (to prevent erosion and deposition)
+- Manning's n ≈ 0.014 for opus signinum lining
+''',
+            historical_significance='''
+Rome's 11 aqueducts delivered over 1 million cubic meters daily by
+300 CE - approximately 1,000 liters per person per day, exceeding
+modern consumption rates. The system represented the largest
+infrastructure investment in the ancient world.
+The aqueducts enabled:
+- Public fountains and baths (over 900 public baths)
+- Industrial water for mills and fulling
+- Ornamental fountains displaying imperial power
+- Fire fighting capabilities
+Many aqueducts operated for over 500 years. The Acqua Vergine
+(19 BCE) still feeds Rome's Trevi Fountain today.
+''',
+            flow_units=FlowUnits.LPS,
+            routing=RoutingModel.DYNWAVE
+        )
+        # === NODES ===
+        # Source spring
+        system.nodes.append(Node(
+            name='SOURCE',
+            x=0, y=5000,
+            elevation=150.0,
+            max_depth=2.0,
+            description='Mountain spring intake (caput aquae)'
+        ))
+        # Tunnel section nodes
+        for i in range(1, 6):
+            system.nodes.append(Node(
+                name=f'TUNNEL_{i}',
+                x=500 + i*600, y=5000,
+                elevation=150.0 - i*0.6,  # 0.2% slope over 300m sections
+                max_depth=1.5,
+                description=f'Underground tunnel inspection point {i}'
+            ))
+        # Arcade (bridge) section
+        system.nodes.append(Node(
+            name='ARCADE_START',
+            x=4100, y=5000,
+            elevation=147.0,
+            max_depth=1.5,
+            description='Start of arcade bridge section'
+        ))
+        for i in range(1, 4):
+            system.nodes.append(Node(
+                name=f'ARCADE_{i}',
+                x=4100 + i*300, y=5000,
+                elevation=147.0 - i*0.3,
+                max_depth=1.5,
+                description=f'Arcade pier {i}'
+            ))
+        # Distribution castellum
+        system.nodes.append(Node(
+            name='CASTELLUM',
+            x=5500, y=5000,
+            elevation=145.5,
+            max_depth=3.0,
+            description='Castellum divisorium (distribution tank)'
+        ))
+        # === OUTFALLS (Distribution points) ===
+        system.outfalls.append(Outfall(
+            name='PRIORITY_1',
+            x=6000, y=5200,
+            elevation=145.0,
+            outfall_type='FREE',
+            description='High priority outlet (imperial buildings)'
+        ))
+        system.outfalls.append(Outfall(
+            name='PRIORITY_2',
+            x=6000, y=5000,
+            elevation=144.5,
+            outfall_type='FREE',
+            description='Medium priority outlet (public baths)'
+        ))
+        system.outfalls.append(Outfall(
+            name='PRIORITY_3',
+            x=6000, y=4800,
+            elevation=144.0,
+            outfall_type='FREE',
+            description='Low priority outlet (public fountains)'
+        ))
+        # === CONDUITS (Specus channel sections) ===
+        # Source to tunnel
+        system.conduits.append(Conduit(
+            name='INTAKE',
+            from_node='SOURCE',
+            to_node='TUNNEL_1',
+            length=500,
+            roughness=0.018,  # Rougher at intake
+            description='Spring intake channel'
+        ))
+        # Tunnel sections
+        for i in range(1, 5):
+            system.conduits.append(Conduit(
+                name=f'SPECUS_T{i}',
+                from_node=f'TUNNEL_{i}',
+                to_node=f'TUNNEL_{i+1}',
+                length=600,
+                roughness=0.014,  # Opus signinum lining
+                description=f'Underground specus section {i}'
+            ))
+        # Tunnel to arcade
+        system.conduits.append(Conduit(
+            name='SPECUS_T5',
+            from_node='TUNNEL_5',
+            to_node='ARCADE_START',
+            length=600,
+            roughness=0.014,
+            description='Tunnel to arcade transition'
+        ))
+        # Arcade sections
+        system.conduits.append(Conduit(
+            name='ARCADE_C1',
+            from_node='ARCADE_START',
+            to_node='ARCADE_1',
+            length=300,
+            roughness=0.014,
+            description='Arcade span 1'
+        ))
+        for i in range(1, 3):
+            system.conduits.append(Conduit(
+                name=f'ARCADE_C{i+1}',
+                from_node=f'ARCADE_{i}',
+                to_node=f'ARCADE_{i+1}',
+                length=300,
+                roughness=0.014,
+                description=f'Arcade span {i+1}'
+            ))
+        system.conduits.append(Conduit(
+            name='ARCADE_C4',
+            from_node='ARCADE_3',
+            to_node='CASTELLUM',
+            length=400,
+            roughness=0.014,
+            description='Final approach to castellum'
+        ))
+        # Distribution pipes from castellum
+        system.conduits.append(Conduit(
+            name='DIST_1',
+            from_node='CASTELLUM',
+            to_node='PRIORITY_1',
+            length=500,
+            roughness=0.012,  # Lead pipe
+            description='Imperial supply pipe'
+        ))
+        system.conduits.append(Conduit(
+            name='DIST_2',
+            from_node='CASTELLUM',
+            to_node='PRIORITY_2',
+            length=500,
+            roughness=0.012,
+            description='Public baths supply'
+        ))
+        system.conduits.append(Conduit(
+            name='DIST_3',
+            from_node='CASTELLUM',
+            to_node='PRIORITY_3',
+            length=500,
+            roughness=0.012,
+            description='Public fountains supply'
+        ))
+        # === CROSS SECTIONS ===
+        # Main specus - rectangular open channel
+        for conduit in ['INTAKE', 'SPECUS_T1', 'SPECUS_T2', 'SPECUS_T3',
+                        'SPECUS_T4', 'SPECUS_T5', 'ARCADE_C1', 'ARCADE_C2',
+                        'ARCADE_C3', 'ARCADE_C4']:
+            system.xsections.append(XSection(
+                link=conduit,
+                shape='RECT_OPEN',
+                geom1=1.2,  # Height 1.2m
+                geom2=0.9   # Width 0.9m
+            ))
+        # Distribution pipes - circular
+        for conduit in ['DIST_1', 'DIST_2', 'DIST_3']:
+            system.xsections.append(XSection(
+                link=conduit,
+                shape='CIRCULAR',
+                geom1=0.25  # 250mm lead pipe (quinaria multiple)
+            ))
+        # === INFLOWS ===
+        # Constant spring flow
+        system.inflows.append(Inflow(
+            node='SOURCE',
+            constituent='FLOW',
+            baseline=2130,  # L/s = 184,000 m³/day
+            time_series='',
+            inflow_type='FLOW'
+        ))
+        # === VALIDATION DATA ===
+        system.validation = HistoricalValidation(
+            source='Frontinus, De Aquaeductu Urbis Romae (97 CE)',
+            date_of_study='Archaeological surveys 1990-2010',
+            measured_flow=2.13,  # m³/s (184,000 m³/day)
+            measured_flow_range=(1.8, 2.5),
+            channel_dimensions={
+                'width': 0.9,
+                'height': 1.2,
+                'wall_thickness': 0.6
+            },
+            construction_date='38-52 CE',
+            confidence_level='measured',
+            notes='''
+Flow rate from Frontinus who was water commissioner (curator aquarum).
+Dimensions from archaeological excavations at Porta Maggiore.
+Arcade height measured at 33m at highest point.
+''',
+            references=[
+                'Frontinus, De Aquaeductu (97 CE)',
+                'Ashby, T. (1935) The Aqueducts of Ancient Rome',
+                'Hodge, A.T. (1992) Roman Aqueducts and Water Supply',
+                'Taylor, R. (2000) Public Needs and Private Pleasures: Water Distribution'
+            ]
+        )
+        return system
+    def _create_persian_qanat(self) -> AncientWaterSystem:
+        """
+        Persian Qanat - Ancient Underground Water System
+        Engineering Achievement:
+        - Tunnels up to 70 km long
+        - Taps groundwater without pumping
+        - Over 3,000 years of continuous use
+        - Still supplies 75% of Iran's water
+        """
+        system = AncientWaterSystem(
+            id='qanat',
+            name='Persian Qanat System',
+            civilization='Persian Empire',
+            period='1000 BCE - Present',
+            location='Iranian Plateau',
+            description='''
+The qanat is perhaps humanity's most sustainable water technology -
+underground tunnels that tap mountain aquifers and deliver water to
+arid lowlands entirely by gravity, requiring no external energy.
+This model represents a typical 10km qanat including:
+- Mother well (madarchah) at aquifer
+- Tunnel (qanat gallery) with gentle slope
+- Vertical shafts (chah) for construction/maintenance
+- Surface outlet with distribution channels
+''',
+            engineering_notes='''
+QANAT ENGINEERING:
+1. MOTHER WELL (MADARCHAH): Dug into water table at mountain base.
+   Depth: 30-100m typically. Must penetrate below water table.
+2. TUNNEL (GALLERY):
+   - Width: 0.5-1.0m (just wide enough for muqanni worker)
+   - Height: 1.2-1.8m (allows crouching work)
+   - Slope: 0.1-0.5% (gentler than aquifer slope to stay wet)
+   - The slope must be gentler than the water table slope to
+     ensure the tunnel remains in the saturated zone.
+3. VERTICAL SHAFTS:
+   - Spaced 20-50m apart
+   - Used for excavation, debris removal, ventilation
+   - Also help locate tunnel alignment from surface
+4. SURVEYING: The muqanni (qanat master) used:
+   - Oil lamps to check alignment (smoke rises to shafts)
+   - Plumb bobs for vertical shafts
+   - Water-filled channels for level checking
+   - Achieved slopes of 1:1000 to 1:1500
+HYDROLOGY:
+- Flow depends on aquifer yield, not tunnel size
+- Typical flows: 10-200 L/s
+- Flow varies seasonally with water table
+- Many qanats have flowed continuously for 2000+ years
+CONSTRUCTION:
+- Dug upslope from outlet to source
+- Water drains away during construction
+- Took years to decades to complete
+''',
+            historical_significance='''
+UNESCO World Heritage: The Persian Qanat (2016) recognized qanats as
+"a testimony to cultural traditions and civilizations in desert areas."
+Impact:
+- Enabled civilization in otherwise uninhabitable arid regions
+- Over 50,000 qanats built in Iran alone
+- Technology spread to North Africa, Spain, China, and Americas
+- Sustainable: requires no energy, minimal maintenance
+- Climate-resilient: underground water resists evaporation
+The qanat principle - passive, gravity-fed transport - is being
+rediscovered for "zero-energy" water systems as we face climate
+change and energy constraints.
+''',
+            flow_units=FlowUnits.LPS,
+            routing=RoutingModel.DYNWAVE
+        )
+        # Create qanat model
+        # Mother well location
+        system.nodes.append(Node(
+            name='MOTHER_WELL',
+            x=0, y=5000,
+            elevation=200.0,
+            max_depth=50.0,  # 50m deep into aquifer
+            description='Madarchah - mother well tapping aquifer'
+        ))
+        # Tunnel with shaft nodes every 500m for 10km
+        for i in range(1, 21):
+            system.nodes.append(Node(
+                name=f'SHAFT_{i}',
+                x=i * 500, y=5000,
+                elevation=200.0 - (i * 500 * 0.001),  # 0.1% slope
+                max_depth=2.0,
+                description=f'Vertical shaft {i} (chah) - depth varies'
+            ))
+        # Outlet
+        system.outfalls.append(Outfall(
+            name='OUTLET',
+            x=10500, y=5000,
+            elevation=189.5,
+            outfall_type='FREE',
+            description='Surface outlet for irrigation distribution'
+        ))
+        # Tunnel conduits
+        system.conduits.append(Conduit(
+            name='GALLERY_0',
+            from_node='MOTHER_WELL',
+            to_node='SHAFT_1',
+            length=500,
+            roughness=0.025,  # Rough-hewn rock
+            description='Initial gallery from mother well'
+        ))
+        for i in range(1, 20):
+            system.conduits.append(Conduit(
+                name=f'GALLERY_{i}',
+                from_node=f'SHAFT_{i}',
+                to_node=f'SHAFT_{i+1}',
+                length=500,
+                roughness=0.025,
+                description=f'Tunnel section {i}'
+            ))
+        system.conduits.append(Conduit(
+            name='GALLERY_20',
+            from_node='SHAFT_20',
+            to_node='OUTLET',
+            length=500,
+            roughness=0.025,
+            description='Final section to outlet'
+        ))
+        # Cross sections - small rectangular tunnel
+        for i in range(21):
+            system.xsections.append(XSection(
+                link=f'GALLERY_{i}',
+                shape='RECT_CLOSED',
+                geom1=1.5,  # Height 1.5m
+                geom2=0.8   # Width 0.8m
+            ))
+        # Groundwater inflow at mother well
+        system.inflows.append(Inflow(
+            node='MOTHER_WELL',
+            baseline=50,  # 50 L/s - moderate qanat
+            time_series='',
+            inflow_type='FLOW'
+        ))
+        # Add seasonal variation time series
+        system.time_series.append(TimeSeries(
+            name='SEASONAL_GW',
+            description='Seasonal groundwater variation',
+            data=[
+                ('0:00', 1.0),   # January - baseline
+                ('730:00', 1.2), # March - snowmelt recharge
+                ('1460:00', 0.8), # July - summer low
+                ('2190:00', 0.9), # October - recovering
+                ('2920:00', 1.0)  # December
+            ]
+        ))
+        # Validation
+        system.validation = HistoricalValidation(
+            source='UNESCO World Heritage Nomination, Archaeological surveys',
+            date_of_study='2014-2016',
+            measured_flow=0.05,  # 50 L/s
+            measured_flow_range=(0.01, 0.3),
+            channel_dimensions={
+                'width': 0.8,
+                'height': 1.5,
+                'shaft_spacing': 30
+            },
+            construction_date='1000 BCE - ongoing',
+            confidence_level='measured',
+            notes='''
+Flow varies dramatically by qanat - from 10 L/s to over 300 L/s.
+This model represents a moderate-yield qanat.
+Dimensions from surveys of Gonabad qanat (45km, 2700 years old).
+''',
+            references=[
+                'Beaumont, P. (1971) Qanat Systems in Iran',
+                'English, P. (1966) City and Village in Iran',
+                'Lightfoot, D. (1996) Syrian Qanat Romani',
+                'UNESCO (2016) Persian Qanat World Heritage Nomination'
+            ]
+        )
+        return system
+    def _create_angkor_baray(self) -> AncientWaterSystem:
+        """
+        Angkor Baray - Khmer Water Management
+        Engineering Achievement:
+        - West Baray: 8km x 2.3km x 5m deep
+        - Stored 50+ million cubic meters
+        - Managed extreme monsoon/dry season cycle
+        """
+        system = AncientWaterSystem(
+            id='angkor-baray',
+            name='Angkor Baray Reservoir System',
+            civilization='Khmer Empire',
+            period='802-1431 CE',
+            location='Angkor, Cambodia',
+            description='''
+The Khmer Empire built the most sophisticated water management system of
+the pre-industrial world. The barays (reservoirs) captured monsoon rains
+and released water during the dry season, enabling triple-crop rice
+production that supported over 1 million people.
+This model represents the West Baray including:
+- Monsoon inflow channels
+- Main reservoir storage
+- Controlled outlet structures (sluice gates)
+- Distribution canal network
+''',
+            engineering_notes='''
+BARAY ENGINEERING:
+1. RESERVOIR DESIGN:
+   - West Baray: 7.8km x 2.1km = 1,600 hectares
+   - Depth: 5-7m maximum
+   - Volume: ~50 million cubic meters
+   - Embankment height: 5-6m with clay core
+2. WATER BALANCE:
+   - Monsoon (May-October): ~1,500mm rainfall
+   - Dry season (November-April): ~200mm
+   - Must store 6 months of irrigation needs
+3. INLET STRUCTURES:
+   - Multiple inlet channels from Siem Reap River
+   - Earthen channels with stone check structures
+   - Designed to capture floods without breaching
+4. OUTLET CONTROL:
+   - Stone sluice gates (possibly wooden originally)
+   - Multiple levels for different water stages
+   - Gradual release over dry season
+5. DISTRIBUTION:
+   - Network of canals radiating from baray
+   - Secondary channels to rice paddies
+   - Return flow channels
+HYDRAULICS:
+- Very low gradients (nearly flat terrain)
+- Sheet flow management critical
+- Evaporation loss ~1.5m/year in reservoir
+''',
+            historical_significance='''
+The Angkor water system supported:
+- Over 1 million people in the metropolitan area
+- 1,000+ temples including Angkor Wat
+- Triple-crop wet rice agriculture
+- The largest pre-industrial city in the world
+Collapse Theory:
+Research suggests the civilization's decline was partly due to
+water infrastructure failure - the complex system became too
+difficult to maintain as the climate shifted and political
+instability grew.
+Modern Relevance:
+The Khmer approach of "living with water" through storage and
+managed flooding is being studied for climate adaptation in
+Southeast Asia today.
+''',
+            flow_units=FlowUnits.CMS,  # Large scale
+            routing=RoutingModel.DYNWAVE
+        )
+        # Create simplified Baray model
+        # Inlet from river
+        system.nodes.append(Node(
+            name='RIVER_INTAKE',
+            x=0, y=5000,
+            elevation=15.0,
+            max_depth=3.0,
+            description='Siem Reap River intake'
+        ))
+        # Inlet channel nodes
+        system.nodes.append(Node(
+            name='INLET_CHANNEL',
+            x=500, y=5000,
+            elevation=14.5,
+            max_depth=2.5,
+            description='Main inlet channel'
+        ))
+        # Baray (storage unit - simplified as nodes at corners)
+        system.storage_units.append(Storage(
+            name='WEST_BARAY',
+            x=4000, y=5000,
+            elevation=10.0,
+            max_depth=7.0,
+            init_depth=3.0,
+            storage_curve='FUNCTIONAL',
+            coeff_a=16000000,  # 16 km² at surface
+            coeff_b=0,  # Constant area (simplified)
+            coeff_c=0,
+            evap_factor=0.8,
+            description='West Baray main reservoir'
+        ))
+        # Outlet structure
+        system.nodes.append(Node(
+            name='OUTLET_STRUCTURE',
+            x=8000, y=5000,
+            elevation=10.0,
+            max_depth=5.0,
+            description='Outlet sluice gate structure'
+        ))
+        # Distribution nodes
+        for i in range(1, 4):
+            system.outfalls.append(Outfall(
+                name=f'CANAL_{i}',
+                x=8500, y=4500 + i*500,
+                elevation=9.5,
+                outfall_type='FREE',
+                description=f'Distribution canal {i}'
+            ))
+        # Conduits
+        system.conduits.append(Conduit(
+            name='INLET_MAIN',
+            from_node='RIVER_INTAKE',
+            to_node='INLET_CHANNEL',
+            length=500,
+            roughness=0.035,  # Earthen
+            description='Main inlet channel from river'
+        ))
+        system.conduits.append(Conduit(
+            name='TO_BARAY',
+            from_node='INLET_CHANNEL',
+            to_node='WEST_BARAY',
+            length=3500,
+            roughness=0.035,
+            description='Inlet channel to reservoir'
+        ))
+        system.conduits.append(Conduit(
+            name='FROM_BARAY',
+            from_node='WEST_BARAY',
+            to_node='OUTLET_STRUCTURE',
+            length=4000,
+            roughness=0.025,  # Stone lined outlet
+            description='Reservoir to outlet structure'
+        ))
+        # Cross sections
+        system.xsections.append(XSection(
+            link='INLET_MAIN',
+            shape='TRAPEZOIDAL',
+            geom1=3.0,   # Depth
+            geom2=10.0,  # Bottom width
+            geom3=2.0,   # Side slope
+            geom4=2.0
+        ))
+        system.xsections.append(XSection(
+            link='TO_BARAY',
+            shape='TRAPEZOIDAL',
+            geom1=2.5,
+            geom2=15.0,
+            geom3=2.5,
+            geom4=2.5
+        ))
+        system.xsections.append(XSection(
+            link='FROM_BARAY',
+            shape='RECT_OPEN',
+            geom1=3.0,
+            geom2=5.0
+        ))
+        # Outlet weirs (sluice gates simplified as weirs)
+        for i in range(1, 4):
+            system.weirs.append(Weir(
+                name=f'SLUICE_{i}',
+                from_node='OUTLET_STRUCTURE',
+                to_node=f'CANAL_{i}',
+                weir_type='TRANSVERSE',
+                crest_height=0.5 * i,  # Staggered heights
+                discharge_coeff=0.6,
+                width=2.0,
+                description=f'Sluice gate level {i}'
+            ))
+        # Monsoon inflow time series
+        system.time_series.append(TimeSeries(
+            name='MONSOON_INFLOW',
+            description='Seasonal monsoon inflow pattern',
+            data=[
+                ('0:00', 10.0),     # January - dry
+                ('730:00', 15.0),   # March - pre-monsoon
+                ('1095:00', 50.0),  # May - monsoon starts
+                ('1460:00', 150.0), # July - peak monsoon
+                ('1825:00', 100.0), # September - late monsoon
+                ('2190:00', 30.0),  # November - monsoon ends
+                ('2555:00', 10.0)   # December - dry
+            ]
+        ))
+        system.inflows.append(Inflow(
+            node='RIVER_INTAKE',
+            time_series='MONSOON_INFLOW',
+            scale_factor=1.0,
+            inflow_type='FLOW'
+        ))
+        # Validation
+        system.validation = HistoricalValidation(
+            source='Greater Angkor Project (GAP) research',
+            date_of_study='2000-2015',
+            measured_flow=None,  # Historical flow unknown
+            measured_flow_range=(50.0, 200.0),  # Estimated monsoon peak
+            channel_dimensions={
+                'baray_length': 7800,
+                'baray_width': 2100,
+                'baray_depth': 5.0
+            },
+            construction_date='1050 CE (West Baray)',
+            confidence_level='reconstructed',
+            notes='''
+Dimensions from LIDAR surveys by Greater Angkor Project.
+Flow rates estimated from catchment analysis.
+Water balance modeling suggests system could supply
+26,000 hectares of irrigated rice.
+''',
+            references=[
+                'Fletcher et al. (2008) The water management network of Angkor',
+                'Kummu, M. (2009) Water management in Angkor',
+                'Evans et al. (2007) LIDAR survey of Angkor',
+                'Buckley et al. (2010) Climate as contributing factor to Angkor collapse'
+            ]
+        )
+        return system
+    def _create_minoan_drainage(self) -> AncientWaterSystem:
+        """
+        Minoan Palace Drainage - Knossos
+        Engineering Achievement:
+        - First known closed-pipe water system
+        - Terracotta pressure pipes
+        - Sophisticated stormwater management
+        - Flushing toilets by 1700 BCE
+        """
+        system = AncientWaterSystem(
+            id='minoan-drainage',
+            name='Minoan Palace Drainage (Knossos)',
+            civilization='Minoan',
+            period='2000-1450 BCE',
+            location='Crete, Greece',
+            description='''
+The Palace of Knossos featured remarkably modern water systems including
+terracotta pipes, flush toilets, and sophisticated stormwater drainage.
+The Minoans understood hydraulic principles that wouldn't be
+rediscovered for millennia.
+This model represents the palace drainage including:
+- Courtyard stormwater collection
+- Terracotta pipe network
+- Light well drainage
+- Sewer outfall to stream
+''',
+            engineering_notes='''
+MINOAN DRAINAGE ENGINEERING:
+1. TERRACOTTA PIPES:
+   - Tapered sections (wider at one end)
+   - Cemented joints with lime mortar
+   - Diameter: 10-15cm typical
+   - The taper created self-cleaning velocity
+2. LIGHT WELLS:
+   - Vertical shafts in palace for light
+   - Also served as stormwater collection points
+   - Drained via pipe network
+3. STORMWATER SYSTEM:
+   - Courtyard drains with stone grates
+   - Channels alongside corridors
+   - Combined system (storm + wastewater)
+4. FLUSH TOILET:
+   - Found in Queen's quarters
+   - Wooden seat over terracotta drain
+   - Flushed with water from pitcher
+   - Connected to main sewer
+5. SEWER:
+   - Large stone-lined channel
+   - Variable cross-section for self-cleaning
+   - Outfall to stream east of palace
+HYDRAULICS:
+- Designed for Mediterranean storm patterns
+- Short, intense rainfall events
+- System sized for rapid drainage
+''',
+            historical_significance='''
+The Minoan water systems were so advanced that when Arthur Evans
+excavated Knossos in 1900, he initially couldn't believe they
+were 3,500 years old.
+Innovations:
+- First closed-pipe water systems
+- First flush toilets
+- Sophisticated stormwater management
+- Understanding of hydraulic principles
+The Minoans achieved sanitation standards that Europe wouldn't
+see again until the 19th century.
+''',
+            flow_units=FlowUnits.LPS,
+            routing=RoutingModel.DYNWAVE
+        )
+        # Create drainage network
+        # Courtyard collection points
+        courtyards = [
+            ('CENTRAL_COURT', 500, 5000, 35.0),
+            ('WEST_COURT', 200, 5200, 36.0),
+            ('EAST_WING', 800, 4800, 34.5),
+        ]
+        for name, x, y, elev in courtyards:
+            system.nodes.append(Node(
+                name=name,
+                x=x, y=y,
+                elevation=elev,
+                max_depth=0.5,
+                description=f'{name.replace("_", " ").title()} drainage inlet'
+            ))
+        # Light wells
+        for i in range(1, 4):
+            system.nodes.append(Node(
+                name=f'LIGHT_WELL_{i}',
+                x=400 + i*150, y=5100,
+                elevation=35.5 - i*0.2,
+                max_depth=0.3,
+                description=f'Light well {i} drain'
+            ))
+        # Main collector
+        system.nodes.append(Node(
+            name='MAIN_COLLECTOR',
+            x=600, y=4600,
+            elevation=33.0,
+            max_depth=1.5,
+            description='Main sewer collector junction'
+        ))
+        # Sewer sections
+        system.nodes.append(Node(
+            name='SEWER_MID',
+            x=800, y=4400,
+            elevation=32.0,
+            max_depth=1.5,
+            description='Sewer mid-point'
+        ))
+        # Outfall
+        system.outfalls.append(Outfall(
+            name='STREAM_OUTFALL',
+            x=1000, y=4200,
+            elevation=30.0,
+            outfall_type='FREE',
+            description='Outfall to stream east of palace'
+        ))
+        # Terracotta pipes from courts to collector
+        system.conduits.append(Conduit(
+            name='PIPE_CENTRAL',
+            from_node='CENTRAL_COURT',
+            to_node='MAIN_COLLECTOR',
+            length=50,
+            roughness=0.013,  # Smooth terracotta
+            description='Central court drain pipe'
+        ))
+        system.conduits.append(Conduit(
+            name='PIPE_WEST',
+            from_node='WEST_COURT',
+            to_node='MAIN_COLLECTOR',
+            length=65,
+            roughness=0.013,
+            description='West court drain pipe'
+        ))
+        system.conduits.append(Conduit(
+            name='PIPE_EAST',
+            from_node='EAST_WING',
+            to_node='MAIN_COLLECTOR',
+            length=55,
+            roughness=0.013,
+            description='East wing drain pipe'
+        ))
+        # Light well drains
+        for i in range(1, 4):
+            target = 'LIGHT_WELL_1' if i == 1 else f'LIGHT_WELL_{i-1}'
+            if i == 1:
+                target = 'MAIN_COLLECTOR'
+            system.conduits.append(Conduit(
+                name=f'PIPE_LW_{i}',
+                from_node=f'LIGHT_WELL_{i}',
+                to_node='MAIN_COLLECTOR' if i == 1 else f'LIGHT_WELL_{i-1}',
+                length=30,
+                roughness=0.013,
+                description=f'Light well {i} drain'
+            ))
+        # Main sewer
+        system.conduits.append(Conduit(
+            name='SEWER_1',
+            from_node='MAIN_COLLECTOR',
+            to_node='SEWER_MID',
+            length=80,
+            roughness=0.018,  # Stone-lined
+            description='Main sewer section 1'
+        ))
+        system.conduits.append(Conduit(
+            name='SEWER_2',
+            from_node='SEWER_MID',
+            to_node='STREAM_OUTFALL',
+            length=100,
+            roughness=0.018,
+            description='Main sewer to outfall'
+        ))
+        # Cross sections
+        # Terracotta pipes - circular
+        for pipe in ['PIPE_CENTRAL', 'PIPE_WEST', 'PIPE_EAST',
+                     'PIPE_LW_1', 'PIPE_LW_2', 'PIPE_LW_3']:
+            system.xsections.append(XSection(
+                link=pipe,
+                shape='CIRCULAR',
+                geom1=0.15  # 150mm terracotta pipe
+            ))
+        # Main sewer - rectangular
+        system.xsections.append(XSection(
+            link='SEWER_1',
+            shape='RECT_CLOSED',
+            geom1=1.2,  # Height
+            geom2=0.8   # Width
+        ))
+        system.xsections.append(XSection(
+            link='SEWER_2',
+            shape='RECT_CLOSED',
+            geom1=1.5,
+            geom2=1.0
+        ))
+        # Rain gage for storm simulation
+        system.rain_gages.append(RainGage(
+            name='PALACE_RAIN',
+            form='INTENSITY',
+            interval='0:05',
+            source_type='TIMESERIES',
+            source='STORM_1',
+            description='Mediterranean storm event'
+        ))
+        # Storm time series
+        system.time_series.append(TimeSeries(
+            name='STORM_1',
+            description='Typical Mediterranean convective storm',
+            data=[
+                ('0:00', 0),
+                ('0:05', 20),
+                ('0:10', 60),   # Intense burst
+                ('0:15', 120),  # Peak intensity
+                ('0:20', 80),
+                ('0:25', 40),
+                ('0:30', 20),
+                ('0:35', 5),
+                ('0:40', 0)
+            ]
+        ))
+        # Subcatchments for rainfall-runoff
+        system.subcatchments.append(Subcatchment(
+            name='CENTRAL_COURT_SC',
+            rain_gage='PALACE_RAIN',
+            outlet='CENTRAL_COURT',
+            area=0.2,  # 0.2 hectares
+            percent_imperv=100,  # Paved courtyard
+            width=40,
+            slope=1.5,
+            description='Central Court paved area'
+        ))
+        system.subcatchments.append(Subcatchment(
+            name='WEST_COURT_SC',
+            rain_gage='PALACE_RAIN',
+            outlet='WEST_COURT',
+            area=0.15,
+            percent_imperv=100,
+            width=30,
+            slope=2.0,
+            description='West Court paved area'
+        ))
+        system.subcatchments.append(Subcatchment(
+            name='EAST_WING_SC',
+            rain_gage='PALACE_RAIN',
+            outlet='EAST_WING',
+            area=0.25,
+            percent_imperv=90,
+            width=50,
+            slope=1.0,
+            description='East Wing roofs and courts'
+        ))
+        # Validation
+        system.validation = HistoricalValidation(
+            source='Archaeological excavations by Arthur Evans (1900-1931)',
+            date_of_study='1900-present',
+            channel_dimensions={
+                'pipe_diameter': 0.15,
+                'sewer_width': 0.8,
+                'sewer_height': 1.2
+            },
+            construction_date='1700-1450 BCE',
+            confidence_level='measured',
+            notes='''
+Dimensions from excavated terracotta pipes and stone channels.
+The tapered pipe design is well-documented with intact examples.
+Flow rates estimated from catchment and pipe sizing.
+''',
+            references=[
+                'Evans, A. (1921-1935) The Palace of Minos at Knossos',
+                'Graham, J.W. (1962) The Palaces of Crete',
+                'Angelakis, A. (2005) Minoan and Etruscan Water Technologies',
+                'Koutsoyiannis, D. (2008) Water Technologies in Ancient Greece'
+            ]
+        )
+        return system
+    def _create_indus_sewer(self) -> AncientWaterSystem:
+        """
+        Indus Valley Sewerage System - Mohenjo-daro
+        Engineering Achievement:
+        - World's first urban sanitation system
+        - Every house connected to covered drains
+        - Standardized brick sizes
+        - Functioning 4,500 years ago
+        """
+        system = AncientWaterSystem(
+            id='indus-sewer',
+            name='Indus Valley Urban Sewerage (Mohenjo-daro)',
+            civilization='Indus Valley',
+            period='2600-1900 BCE',
+            location='Sindh, Pakistan',
+            description='''
+Mohenjo-daro featured the world's first comprehensive urban sanitation
+system. Every house had a bathroom connected via brick-lined drains to
+covered street sewers. The system wouldn't be matched until
+Roman times, 2,000 years later.
+This model represents a typical residential block including:
+- House drains with soak pits
+- Street drains (covered brick channels)
+- Main collector sewer
+- Outfall to agricultural absorption fields
+''',
+            engineering_notes='''
+INDUS VALLEY SANITATION ENGINEERING:
+1. HOUSEHOLD DRAINS:
+   - Every house had a bathroom/toilet
+   - Brick-lined drains from each house
+   - Soak pits (cesspit) for initial treatment
+   - Overflow to street drains
+2. STREET DRAINS:
+   - Covered brick channels under streets
+   - Standardized brick: 7:14:28 cm ratio
+   - Removable covers for cleaning
+   - Manholes at intersections
+3. MAIN SEWERS:
+   - Larger collectors under main roads
+   - Corbelled brick roof construction
+   - Typical dimensions: 50cm wide, 60cm high
+   - Slope toward outfall ~0.5%
+4. OUTFALL:
+   - Appears to drain to absorption fields
+   - No evidence of treatment
+   - Agricultural reuse likely
+5. CONSTRUCTION:
+   - Fired bricks (not sun-dried)
+   - Bitumen waterproofing at joints
+   - Remarkably uniform across city
+URBAN PLANNING:
+- Grid street layout facilitated drainage
+- Houses set back from drains
+- Central authority clearly planned system
+''',
+            historical_significance='''
+The Indus Valley sanitation achievement is remarkable:
+- 4,500 years ago, every house had a toilet
+- Covered drains prevented disease transmission
+- Standardized construction shows central planning
+- System served 40,000+ residents
+This level of urban sanitation wasn't achieved again until:
+- Roman Empire (1st century CE) - 2,000 years later
+- London (1860s CE) - 4,000 years later!
+The system demonstrates that sophisticated public health
+infrastructure doesn't require modern technology -
+just social organization and engineering knowledge.
+''',
+            flow_units=FlowUnits.LPS,
+            routing=RoutingModel.DYNWAVE
+        )
+        # Create urban block drainage
+        # 4x4 grid of houses
+        house_positions = []
+        for row in range(4):
+            for col in range(4):
+                house_positions.append((
+                    f'HOUSE_{row}_{col}',
+                    100 + col * 50,  # 50m spacing
+                    100 + row * 50,
+                    10.0 - row * 0.1  # Slight slope
+                ))
+        # House drains
+        for name, x, y, elev in house_positions:
+            system.nodes.append(Node(
+                name=name,
+                x=x, y=y,
+                elevation=elev,
+                max_depth=0.5,
+                description=f'House drain/soak pit at {name}'
+            ))
+        # Street drain nodes (along streets)
+        street_nodes = [
+            ('STREET_N1', 75, 250, 9.5),
+            ('STREET_N2', 175, 250, 9.4),
+            ('STREET_N3', 275, 250, 9.3),
+            ('STREET_S1', 75, 50, 9.6),
+            ('STREET_S2', 175, 50, 9.5),
+            ('STREET_S3', 275, 50, 9.4),
+        ]
+        for name, x, y, elev in street_nodes:
+            system.nodes.append(Node(
+                name=name,
+                x=x, y=y,
+                elevation=elev,
+                max_depth=0.6,
+                description=f'Street drain manhole at {name}'
+            ))
+        # Main collector
+        system.nodes.append(Node(
+            name='MAIN_COLLECTOR',
+            x=350, y=150,
+            elevation=9.0,
+            max_depth=1.0,
+            description='Main sewer collector'
+        ))
+        # Outfall
+        system.outfalls.append(Outfall(
+            name='ABSORPTION_FIELD',
+            x=450, y=150,
+            elevation=8.5,
+            outfall_type='FREE',
+            description='Outfall to agricultural absorption fields'
+        ))
+        # House to street connections (simplified - connect to nearest street node)
+        for row in range(4):
+            for col in range(4):
+                house = f'HOUSE_{row}_{col}'
+                street = 'STREET_N2' if row >= 2 else 'STREET_S2'
+                system.conduits.append(Conduit(
+                    name=f'DRAIN_{row}_{col}',
+                    from_node=house,
+                    to_node=street,
+                    length=30,
+                    roughness=0.015,  # Brick
+                    description=f'House drain from {house}'
+                ))
+                system.xsections.append(XSection(
+                    link=f'DRAIN_{row}_{col}',
+                    shape='RECT_CLOSED',
+                    geom1=0.15,
+                    geom2=0.20
+                ))
+        # Street drain connections
+        system.conduits.append(Conduit(
+            name='STREET_N_1_2',
+            from_node='STREET_N1',
+            to_node='STREET_N2',
+            length=100,
+            roughness=0.015,
+            description='North street drain section'
+        ))
+        system.conduits.append(Conduit(
+            name='STREET_N_2_3',
+            from_node='STREET_N2',
+            to_node='STREET_N3',
+            length=100,
+            roughness=0.015,
+            description='North street drain section'
+        ))
+        system.conduits.append(Conduit(
+            name='STREET_S_1_2',
+            from_node='STREET_S1',
+            to_node='STREET_S2',
+            length=100,
+            roughness=0.015,
+            description='South street drain section'
+        ))
+        system.conduits.append(Conduit(
+            name='STREET_S_2_3',
+            from_node='STREET_S2',
+            to_node='STREET_S3',
+            length=100,
+            roughness=0.015,
+            description='South street drain section'
+        ))
+        # Connect street drains to collector
+        system.conduits.append(Conduit(
+            name='STREET_N_TO_MAIN',
+            from_node='STREET_N3',
+            to_node='MAIN_COLLECTOR',
+            length=120,
+            roughness=0.015,
+            description='North street to main collector'
+        ))
+        system.conduits.append(Conduit(
+            name='STREET_S_TO_MAIN',
+            from_node='STREET_S3',
+            to_node='MAIN_COLLECTOR',
+            length=120,
+            roughness=0.015,
+            description='South street to main collector'
+        ))
+        # Main sewer
+        system.conduits.append(Conduit(
+            name='MAIN_SEWER',
+            from_node='MAIN_COLLECTOR',
+            to_node='ABSORPTION_FIELD',
+            length=100,
+            roughness=0.015,
+            description='Main sewer outfall'
+        ))
+        # Street drain cross sections
+        for conduit in ['STREET_N_1_2', 'STREET_N_2_3', 'STREET_S_1_2',
+                        'STREET_S_2_3', 'STREET_N_TO_MAIN', 'STREET_S_TO_MAIN']:
+            system.xsections.append(XSection(
+                link=conduit,
+                shape='RECT_CLOSED',
+                geom1=0.50,  # 50cm high
+                geom2=0.40   # 40cm wide
+            ))
+        system.xsections.append(XSection(
+            link='MAIN_SEWER',
+            shape='RECT_CLOSED',
+            geom1=0.60,
+            geom2=0.50
+        ))
+        # Dry weather flow (wastewater)
+        for row in range(4):
+            for col in range(4):
+                system.inflows.append(Inflow(
+                    node=f'HOUSE_{row}_{col}',
+                    baseline=0.1,  # 0.1 L/s per house (low estimate)
+                    inflow_type='FLOW'
+                ))
+        # Validation
+        system.validation = HistoricalValidation(
+            source='Archaeological excavations 1920-present',
+            date_of_study='1920-ongoing',
+            channel_dimensions={
+                'house_drain_width': 0.20,
+                'house_drain_height': 0.15,
+                'street_drain_width': 0.40,
+                'street_drain_height': 0.50,
+                'brick_size': '7x14x28 cm'
+            },
+            construction_date='2600-1900 BCE',
+            confidence_level='measured',
+            notes='''
+Dimensions from excavations at Mohenjo-daro and Harappa.
+Remarkably consistent brick sizes across 1000+ km suggest
+central authority and standardized production.
+Flow rates estimated from household usage patterns.
+''',
+            references=[
+                'Marshall, J. (1931) Mohenjo-daro and the Indus Civilization',
+                'Jansen, M. (1989) Water Supply and Sewage Disposal at Mohenjo-Daro',
+                'Kenoyer, J.M. (1998) Ancient Cities of the Indus Valley',
+                'Wright, R. (2010) The Ancient Indus'
+            ]
+        )
+        return system
+    def _create_egyptian_canal(self) -> AncientWaterSystem:
+        """Egyptian Irrigation Canal"""
+        system = AncientWaterSystem(
+            id='egyptian-canal',
+            name='Egyptian Nile Irrigation Canal',
+            civilization='Ancient Egypt',
+            period='3100 BCE - Present',
+            location='Nile Valley, Egypt',
+            description='''
+Egyptian irrigation exploited the Nile's annual flood cycle. Basin
+irrigation captured flood waters in diked fields, allowing sediment
+to settle and water to soak in. A network of canals extended the
+flood's reach beyond natural inundation zones.
+This model represents a typical irrigation canal system including:
+- Nile intake during flood season
+- Main canal with regulating structures
+- Secondary distribution canals
+- Basin fields with controlled flooding
+''',
+            engineering_notes='''
+EGYPTIAN IRRIGATION ENGINEERING:
+1. BASIN IRRIGATION:
+   - Diked fields 1,000-4,000 hectares each
+   - Flooded 1-2m deep during inundation
+   - Water held 40-60 days
+   - Sediment deposition renewed soil fertility
+2. CANALS:
+   - Earth-lined (minimal lining)
+   - Low velocity to prevent erosion
+   - Regulators to control water levels
+   - Must handle flood stage variations
+3. SHADUF AND LATER SAQIYA:
+   - Shaduf: lever-and-bucket lift (1-2m)
+   - Saqiya: ox-powered water wheel (introduced later)
+   - Allowed irrigation above flood level
+4. NILOMETER:
+   - Measured flood height
+   - Predicted agricultural success
+   - Used for tax assessment
+''',
+            historical_significance='''
+Egyptian civilization existed solely because of Nile irrigation:
+- Predictable annual floods
+- Rich sediment (no fertilizer needed)
+- Gravity distribution (minimal energy)
+- Supported one of the most stable civilizations in history
+The system operated successfully for over 5,000 years until
+the Aswan High Dam (1970) ended the natural flood cycle.
+''',
+            flow_units=FlowUnits.CMS,
+            routing=RoutingModel.DYNWAVE
+        )
+        # Create model components
+        system.nodes.append(Node(
+            name='NILE_INTAKE',
+            x=0, y=5000,
+            elevation=100.0,
+            max_depth=5.0,
+            description='Nile River intake'
+        ))
+        system.nodes.append(Node(
+            name='MAIN_CANAL_1',
+            x=1000, y=5000,
+            elevation=99.5,
+            max_depth=3.0,
+            description='Main canal head'
+        ))
+        system.nodes.append(Node(
+            name='MAIN_CANAL_2',
+            x=3000, y=5000,
+            elevation=98.5,
+            max_depth=3.0,
+            description='Main canal mid-point'
+        ))
+        system.nodes.append(Node(
+            name='REGULATOR',
+            x=5000, y=5000,
+            elevation=97.5,
+            max_depth=3.0,
+            description='Canal regulator structure'
+        ))
+        # Distribution to basins
+        for i, y_offset in enumerate([-500, 0, 500]):
+            system.outfalls.append(Outfall(
+                name=f'BASIN_{i+1}',
+                x=6000, y=5000 + y_offset,
+                elevation=96.5,
+                outfall_type='FREE',
+                description=f'Basin field {i+1}'
+            ))
+        # Conduits
+        system.conduits.append(Conduit(
+            name='INTAKE_CHANNEL',
+            from_node='NILE_INTAKE',
+            to_node='MAIN_CANAL_1',
+            length=1000,
+            roughness=0.030,
+            description='Intake from Nile'
+        ))
+        system.conduits.append(Conduit(
+            name='MAIN_1',
+            from_node='MAIN_CANAL_1',
+            to_node='MAIN_CANAL_2',
+            length=2000,
+            roughness=0.030,
+            description='Main canal upper section'
+        ))
+        system.conduits.append(Conduit(
+            name='MAIN_2',
+            from_node='MAIN_CANAL_2',
+            to_node='REGULATOR',
+            length=2000,
+            roughness=0.030,
+            description='Main canal lower section'
+        ))
+        # Distribution weirs
+        for i in range(1, 4):
+            system.weirs.append(Weir(
+                name=f'DIST_WEIR_{i}',
+                from_node='REGULATOR',
+                to_node=f'BASIN_{i}',
+                weir_type='TRANSVERSE',
+                crest_height=0.3,
+                discharge_coeff=0.6,
+                width=3.0,
+                description=f'Distribution weir to basin {i}'
+            ))
+        # Cross sections - large earthen canals
+        for conduit in ['INTAKE_CHANNEL', 'MAIN_1', 'MAIN_2']:
+            system.xsections.append(XSection(
+                link=conduit,
+                shape='TRAPEZOIDAL',
+                geom1=2.5,   # Depth
+                geom2=8.0,   # Bottom width
+                geom3=2.0,   # Left slope
+                geom4=2.0    # Right slope
+            ))
+        # Nile flood inflow
+        system.time_series.append(TimeSeries(
+            name='NILE_FLOOD',
+            description='Annual Nile flood pattern (simplified)',
+            data=[
+                ('0:00', 50),      # Base flow
+                ('2160:00', 80),   # June - rising
+                ('2880:00', 300),  # August - peak flood
+                ('3600:00', 200),  # October - recession
+                ('4320:00', 80),   # December - falling
+                ('5040:00', 50)    # February - base
+            ]
+        ))
+        system.inflows.append(Inflow(
+            node='NILE_INTAKE',
+            time_series='NILE_FLOOD',
+            scale_factor=1.0,
+            inflow_type='FLOW'
+        ))
+        # Validation
+        system.validation = HistoricalValidation(
+            source='Historical records and archaeological surveys',
+            date_of_study='Various',
+            measured_flow_range=(50, 400),  # m³/s varies with flood
+            channel_dimensions={
+                'typical_canal_width': 8,
+                'typical_canal_depth': 2.5
+            },
+            construction_date='3100 BCE - ongoing',
+            confidence_level='reconstructed',
+            references=[
+                'Butzer, K.W. (1976) Early Hydraulic Civilization in Egypt',
+                'Said, R. (1993) The River Nile',
+                'Willcocks, W. (1889) Egyptian Irrigation'
+            ]
+        )
+        return system
+    def _create_dujiangyan(self) -> AncientWaterSystem:
+        """
+        Dujiangyan Irrigation System - China
+        Engineering Achievement:
+        - Still functioning after 2,200+ years
+        - No dam - divides flow naturally
+        - Irrigates 5.6 million hectares
+        - Automatic flood/drought response
+        """
+        system = AncientWaterSystem(
+            id='dujiangyan',
+            name='Dujiangyan Irrigation System',
+            civilization='Ancient China',
+            period='256 BCE - Present',
+            location='Sichuan Province, China',
+            description='''
+Built by Li Bing in 256 BCE, Dujiangyan is the world's oldest
+still-functioning major infrastructure project. Instead of a dam,
+it uses the river's own dynamics to divide water for irrigation
+and divert floods - a masterpiece of "working with nature."
+Key components:
+- Fish Mouth (Yuzui) - divides river into inner/outer channels
+- Flying Sand Weir (Feishayan) - spillway for floods and sediment
+- Bottle Neck (Baopingkou) - controls flow to irrigation canals
+''',
+            engineering_notes='''
+DUJIANGYAN ENGINEERING PRINCIPLES:
+1. FISH MOUTH (YUZUI):
+   - Dividing weir shaped like fish mouth
+   - Inner channel (neijang): 40% of normal flow
+   - Outer channel (waijang): 60% of normal flow
+   - Ratio reverses during floods!
+2. FLYING SAND WEIR (FEISHAYAN):
+   - Low weir allows flood water to overflow
+   - Vortex action deposits sediment in outer channel
+   - Self-cleaning design
+3. BOTTLE NECK (BAOPINGKOU):
+   - Narrow cut through mountain
+   - Fixed width controls maximum intake
+   - Prevents excessive flooding downstream
+4. HYDRAULIC PRINCIPLE:
+   During normal flow:
+   - More water to outer channel (60%)
+   - Gentle curve directs sediment outward
+   During floods:
+   - Water surface rises, hits inner bank
+   - Flow reversal - more to inner channel
+   - But Baopingkou limits intake!
+5. MAINTENANCE:
+   - Annual dredging (still done today!)
+   - "Clear 6 zhang, leave 4" - maintain depths
+   - Work traditionally done in dry season
+''',
+            historical_significance='''
+Dujiangyan's genius lies in its simplicity and sustainability:
+- 2,200+ years of continuous operation
+- No gates, no machinery
+- Self-regulating flood/drought response
+- Irrigates 5.6 million hectares today
+- Supports Chengdu metropolitan area
+UNESCO World Heritage Site (2000) cited it as:
+"An ecological engineering concept that remains
+relevant in the 21st century."
+Compare to modern dams:
+- Three Gorges: ~100 year lifespan
+- Dujiangyan: 2,200+ years and counting
+''',
+            flow_units=FlowUnits.CMS,
+            routing=RoutingModel.DYNWAVE
+        )
+        # Create Dujiangyan model
+        # Upstream river
+        system.nodes.append(Node(
+            name='MIN_RIVER_UP',
+            x=0, y=5000,
+            elevation=730.0,
+            max_depth=8.0,
+            description='Min River upstream approach'
+        ))
+        # Fish Mouth divider
+        system.nodes.append(Node(
+            name='FISH_MOUTH',
+            x=500, y=5000,
+            elevation=728.0,
+            max_depth=6.0,
+            description='Yuzui (Fish Mouth) dividing weir'
+        ))
+        # Inner channel nodes
+        system.nodes.append(Node(
+            name='INNER_CH_1',
+            x=800, y=4800,
+            elevation=727.0,
+            max_depth=5.0,
+            description='Inner channel (Neijang) start'
+        ))
+        system.nodes.append(Node(
+            name='FLYING_SAND',
+            x=1200, y=4700,
+            elevation=725.0,
+            max_depth=4.0,
+            description='Feishayan (Flying Sand Weir) location'
+        ))
+        # Outer channel nodes
+        system.nodes.append(Node(
+            name='OUTER_CH_1',
+            x=800, y=5200,
+            elevation=727.0,
+            max_depth=6.0,
+            description='Outer channel (Waijang) start'
+        ))
+        # Bottle Neck (cut through mountain)
+        system.nodes.append(Node(
+            name='BOTTLE_NECK',
+            x=1600, y=4700,
+            elevation=723.0,
+            max_depth=5.0,
+            description='Baopingkou (Bottle Neck) channel'
+        ))
+        # Irrigation distribution
+        system.nodes.append(Node(
+            name='IRRIGATION_HEAD',
+            x=2000, y=4700,
+            elevation=720.0,
+            max_depth=4.0,
+            description='Head of irrigation canal network'
+        ))
+        # Outfalls
+        system.outfalls.append(Outfall(
+            name='CHENGDU_PLAIN',
+            x=2500, y=4700,
+            elevation=718.0,
+            outfall_type='FREE',
+            description='Irrigation canals to Chengdu Plain'
+        ))
+        system.outfalls.append(Outfall(
+            name='OUTER_RIVER',
+            x=2000, y=5400,
+            elevation=722.0,
+            outfall_type='FREE',
+            description='Outer channel continues as Min River'
+        ))
+        # Flying Sand Weir spillway outfall
+        system.outfalls.append(Outfall(
+            name='SPILLWAY_OUT',
+            x=1200, y=5000,
+            elevation=725.0,
+            outfall_type='FREE',
+            description='Flying Sand Weir overflow to outer channel'
+        ))
+        # Conduits
+        # Upstream approach
+        system.conduits.append(Conduit(
+            name='APPROACH',
+            from_node='MIN_RIVER_UP',
+            to_node='FISH_MOUTH',
+            length=500,
+            roughness=0.035,
+            description='River approach to Fish Mouth'
+        ))
+        # Inner channel to Flying Sand Weir
+        system.conduits.append(Conduit(
+            name='INNER_1',
+            from_node='FISH_MOUTH',
+            to_node='INNER_CH_1',
+            length=300,
+            roughness=0.030,
+            description='Fish Mouth to inner channel'
+        ))
+        system.conduits.append(Conduit(
+            name='INNER_2',
+            from_node='INNER_CH_1',
+            to_node='FLYING_SAND',
+            length=400,
+            roughness=0.030,
+            description='Inner channel to Flying Sand Weir'
+        ))
+        # Bottle Neck
+        system.conduits.append(Conduit(
+            name='BOTTLE_NECK_CH',
+            from_node='FLYING_SAND',
+            to_node='BOTTLE_NECK',
+            length=400,
+            roughness=0.025,
+            description='Baopingkou narrow channel'
+        ))
+        # To irrigation
+        system.conduits.append(Conduit(
+            name='TO_IRRIGATION',
+            from_node='BOTTLE_NECK',
+            to_node='IRRIGATION_HEAD',
+            length=400,
+            roughness=0.030,
+            description='Channel to irrigation network'
+        ))
+        system.conduits.append(Conduit(
+            name='IRRIGATION_DIST',
+            from_node='IRRIGATION_HEAD',
+            to_node='CHENGDU_PLAIN',
+            length=500,
+            roughness=0.030,
+            description='Main irrigation distribution'
+        ))
+        # Outer channel
+        system.conduits.append(Conduit(
+            name='OUTER_1',
+            from_node='FISH_MOUTH',
+            to_node='OUTER_CH_1',
+            length=300,
+            roughness=0.035,
+            description='Fish Mouth to outer channel'
+        ))
+        system.conduits.append(Conduit(
+            name='OUTER_2',
+            from_node='OUTER_CH_1',
+            to_node='OUTER_RIVER',
+            length=1200,
+            roughness=0.035,
+            description='Outer channel continues downstream'
+        ))
+        # Flying Sand Weir spillway
+        system.weirs.append(Weir(
+            name='FEISHAYAN',
+            from_node='FLYING_SAND',
+            to_node='SPILLWAY_OUT',
+            weir_type='TRANSVERSE',
+            crest_height=2.0,  # Low weir
+            discharge_coeff=0.55,
+            width=200,  # Wide spillway
+            description='Flying Sand Weir - flood spillway'
+        ))
+        # Cross sections
+        # Main river - wide and deep
+        system.xsections.append(XSection(
+            link='APPROACH',
+            shape='TRAPEZOIDAL',
+            geom1=6.0,
+            geom2=100.0,
+            geom3=2.0,
+            geom4=2.0
+        ))
+        # Inner channel
+        for link in ['INNER_1', 'INNER_2']:
+            system.xsections.append(XSection(
+                link=link,
+                shape='TRAPEZOIDAL',
+                geom1=5.0,
+                geom2=40.0,
+                geom3=1.5,
+                geom4=1.5
+            ))
+        # Bottle Neck - narrow, deep
+        system.xsections.append(XSection(
+            link='BOTTLE_NECK_CH',
+            shape='RECT_OPEN',
+            geom1=6.0,   # Deep
+            geom2=20.0   # Narrow!
+        ))
+        # Irrigation channels
+        for link in ['TO_IRRIGATION', 'IRRIGATION_DIST']:
+            system.xsections.append(XSection(
+                link=link,
+                shape='TRAPEZOIDAL',
+                geom1=4.0,
+                geom2=30.0,
+                geom3=1.5,
+                geom4=1.5
+            ))
+        # Outer channel - larger
+        for link in ['OUTER_1', 'OUTER_2']:
+            system.xsections.append(XSection(
+                link=link,
+                shape='TRAPEZOIDAL',
+                geom1=6.0,
+                geom2=60.0,
+                geom3=2.0,
+                geom4=2.0
+            ))
+        # River inflow
+        system.time_series.append(TimeSeries(
+            name='MIN_RIVER_FLOW',
+            description='Min River seasonal flow pattern',
+            data=[
+                ('0:00', 400),     # Winter base flow
+                ('2160:00', 600),  # Spring rising
+                ('3240:00', 1500), # Summer monsoon peak
+                ('4320:00', 800),  # Fall recession
+                ('5040:00', 400)   # Winter base
+            ]
+        ))
+        system.inflows.append(Inflow(
+            node='MIN_RIVER_UP',
+            time_series='MIN_RIVER_FLOW',
+            scale_factor=1.0,
+            inflow_type='FLOW'
+        ))
+        # Validation
+        system.validation = HistoricalValidation(
+            source='Chinese historical records, UNESCO surveys',
+            date_of_study='2000 (UNESCO nomination)',
+            measured_flow_range=(200, 2000),
+            channel_dimensions={
+                'fish_mouth_width': 200,
+                'bottle_neck_width': 20,
+                'inner_channel_width': 40,
+                'outer_channel_width': 60
+            },
+            construction_date='256 BCE',
+            confidence_level='measured',
+            notes='''
+Modern measurements confirm historical accounts.
+Fish Mouth flow division varies with water level as designed.
+System still irrigates 5.6 million hectares.
+Annual maintenance continues using traditional methods.
+''',
+            references=[
+                'Needham, J. (1971) Science and Civilisation in China',
+                'Li Bing historical records (256 BCE)',
+                'UNESCO (2000) World Heritage Nomination',
+                'Sage, S. (1992) Ancient Sichuan and Unification of China'
+            ]
+        )
+        return system
+    def _create_cloaca_maxima(self) -> AncientWaterSystem:
+        """
+        Cloaca Maxima - Rome's Great Sewer
+        """
+        system = AncientWaterSystem(
+            id='cloaca-maxima',
+            name='Cloaca Maxima (Great Sewer of Rome)',
+            civilization='Roman Empire',
+            period='600 BCE - Present',
+            location='Rome, Italy',
+            description='''
+The Cloaca Maxima is one of the world's oldest sewers still in use.
+Originally an open channel draining the Roman Forum marshlands, it
+was enclosed and expanded over centuries to become the main
+collector for Rome's sophisticated drainage system.
+This model represents the main trunk sewer including:
+- Forum drainage inlets
+- Major tributary connections
+- Main barrel-vaulted sewer
+- Tiber River outfall
+''',
+            engineering_notes='''
+CLOACA MAXIMA ENGINEERING:
+1. CONSTRUCTION PHASES:
+   - 600 BCE: Open channel draining Forum marsh
+   - 200 BCE: Enclosed with stone vault
+   - 33 BCE: Major expansion under Agrippa
+   - Imperial era: Full system integration
+2. DIMENSIONS:
+   - Width: 3-4 meters
+   - Height: 4+ meters (could navigate by boat!)
+   - Total length: ~1.6 km (main trunk)
+   - Construction: Tufa blocks, later brick/concrete
+3. TRIBUTARIES:
+   - Collected all Forum drainage
+   - Connected to public latrines
+   - Received overflow from aqueduct system
+   - Later: private connections (with fee)
+4. HYDRAULICS:
+   - Gravity flow to Tiber
+   - Sized for major storm events
+   - Continuous aqueduct overflow maintained flush
+   - Tidal influence at outlet
+5. MODERN STATUS:
+   - Still functions today!
+   - Carries stormwater from central Rome
+   - Original stonework visible at Tiber outlet
+''',
+            historical_significance='''
+The Cloaca Maxima represents:
+- World's oldest functioning sewer
+- Engineering continuity across 2,600+ years
+- Symbol of Roman urban planning
+- Foundation for modern sanitation concepts
+The system was so effective that:
+- Enabled dense urban development in Rome
+- Prevented Forum from reverting to swamp
+- Supported 1 million+ population
+- Basic design influenced sewers worldwide
+''',
+            flow_units=FlowUnits.CMS,
+            routing=RoutingModel.DYNWAVE
+        )
+        # Create sewer network model
+        # Forum drainage points
+        forum_nodes = [
+            ('FORUM_NORTH', 100, 5200, 25.0),
+            ('FORUM_CENTRAL', 300, 5000, 24.0),
+            ('FORUM_SOUTH', 100, 4800, 24.5),
+        ]
+        for name, x, y, elev in forum_nodes:
+            system.nodes.append(Node(
+                name=name,
+                x=x, y=y,
+                elevation=elev,
+                max_depth=3.0,
+                description=f'{name.replace("_", " ")} drainage inlet'
+            ))
+        # Main sewer trunk
+        trunk_nodes = [
+            ('TRUNK_1', 400, 5000, 22.0),
+            ('TRUNK_2', 700, 5000, 19.0),
+            ('TRUNK_3', 1000, 5000, 16.0),
+            ('TRUNK_4', 1300, 4900, 13.0),
+        ]
+        for name, x, y, elev in trunk_nodes:
+            system.nodes.append(Node(
+                name=name,
+                x=x, y=y,
+                elevation=elev,
+                max_depth=4.5,
+                description=f'Main trunk sewer at {name}'
+            ))
+        # Tiber outfall
+        system.outfalls.append(Outfall(
+            name='TIBER_OUTFALL',
+            x=1600, y=4900,
+            elevation=10.0,
+            outfall_type='TIDAL',
+            stage=11.0,  # Tiber normal level
+            description='Cloaca Maxima outlet to Tiber River'
+        ))
+        # Forum drainage conduits
+        system.conduits.append(Conduit(
+            name='DRAIN_N',
+            from_node='FORUM_NORTH',
+            to_node='TRUNK_1',
+            length=100,
+            roughness=0.020,
+            description='North Forum drain'
+        ))
+        system.conduits.append(Conduit(
+            name='DRAIN_C',
+            from_node='FORUM_CENTRAL',
+            to_node='TRUNK_1',
+            length=50,
+            roughness=0.020,
+            description='Central Forum drain'
+        ))
+        system.conduits.append(Conduit(
+            name='DRAIN_S',
+            from_node='FORUM_SOUTH',
+            to_node='TRUNK_1',
+            length=100,
+            roughness=0.020,
+            description='South Forum drain'
+        ))
+        # Main trunk sections
+        system.conduits.append(Conduit(
+            name='CLOACA_1',
+            from_node='TRUNK_1',
+            to_node='TRUNK_2',
+            length=300,
+            roughness=0.018,  # Dressed stone
+            description='Cloaca Maxima section 1'
+        ))
+        system.conduits.append(Conduit(
+            name='CLOACA_2',
+            from_node='TRUNK_2',
+            to_node='TRUNK_3',
+            length=300,
+            roughness=0.018,
+            description='Cloaca Maxima section 2'
+        ))
+        system.conduits.append(Conduit(
+            name='CLOACA_3',
+            from_node='TRUNK_3',
+            to_node='TRUNK_4',
+            length=300,
+            roughness=0.018,
+            description='Cloaca Maxima section 3'
+        ))
+        system.conduits.append(Conduit(
+            name='CLOACA_4',
+            from_node='TRUNK_4',
+            to_node='TIBER_OUTFALL',
+            length=300,
+            roughness=0.018,
+            description='Cloaca Maxima to Tiber outfall'
+        ))
+        # Cross sections
+        # Forum drains - smaller
+        for drain in ['DRAIN_N', 'DRAIN_C', 'DRAIN_S']:
+            system.xsections.append(XSection(
+                link=drain,
+                shape='ARCH',
+                geom1=2.0,  # Height
+                geom2=1.5   # Width
+            ))
+        # Main sewer - massive barrel vault
+        for section in ['CLOACA_1', 'CLOACA_2', 'CLOACA_3', 'CLOACA_4']:
+            system.xsections.append(XSection(
+                link=section,
+                shape='ARCH',  # Barrel vault
+                geom1=4.5,     # 4.5m height
+                geom2=3.2      # 3.2m width
+            ))
+        # Storm inflow
+        system.rain_gages.append(RainGage(
+            name='ROME_RAIN',
+            form='INTENSITY',
+            interval='0:05',
+            source_type='TIMESERIES',
+            source='ROME_STORM',
+            description='Rome rainfall'
+        ))
+        system.time_series.append(TimeSeries(
+            name='ROME_STORM',
+            description='Mediterranean storm event',
+            data=[
+                ('0:00', 0),
+                ('0:10', 30),
+                ('0:20', 80),
+                ('0:30', 50),
+                ('0:40', 20),
+                ('0:50', 5),
+                ('1:00', 0)
+            ]
+        ))
+        # Forum subcatchments
+        system.subcatchments.append(Subcatchment(
+            name='FORUM_SC',
+            rain_gage='ROME_RAIN',
+            outlet='FORUM_CENTRAL',
+            area=5.0,  # 5 hectares
+            percent_imperv=80,
+            width=200,
+            slope=2.0,
+            description='Roman Forum paved area'
+        ))
+        # Base flow from aqueduct overflow
+        system.inflows.append(Inflow(
+            node='TRUNK_1',
+            baseline=0.5,  # Constant aqueduct overflow
+            inflow_type='FLOW'
+        ))
+        # Validation
+        system.validation = HistoricalValidation(
+            source='Archaeological measurements, Roman texts (Livy, Pliny)',
+            date_of_study='Ongoing since 19th century',
+            channel_dimensions={
+                'width': 3.2,
+                'height': 4.5,
+                'wall_thickness': 0.8
+            },
+            construction_date='600 BCE - ongoing',
+            confidence_level='measured',
+            notes='''
+Dimensions from modern surveys and historical accounts.
+Original outfall arch still visible at Tiber.
+System continues to function for stormwater.
+''',
+            references=[
+                'Hopkins, J. (2007) The Cloaca Maxima and the Monumental Manipulation of Water',
+                'Livy, Ab Urbe Condita',
+                'Pliny the Elder, Natural History',
+                'Taylor, R. (2000) Public Needs and Private Pleasures'
+            ]
+        )
+        return system
+    def _create_nabataean_cistern(self) -> AncientWaterSystem:
+        """
+        Nabataean Water Harvesting - Petra
+        """
+        system = AncientWaterSystem(
+            id='nabataean-cistern',
+            name='Nabataean Water Harvesting System (Petra)',
+            civilization='Nabataean Kingdom',
+            period='400 BCE - 106 CE',
+            location='Petra, Jordan',
+            description='''
+In one of the driest environments on Earth (150mm annual rainfall),
+the Nabataeans built a sophisticated water collection system that
+supported 20,000+ people at Petra. They captured every drop of
+rainfall and stored it in rock-cut cisterns.
+This model represents a typical hillside catchment including:
+- Runoff collection channels carved in rock
+- Settling basins for sediment
+- Rock-cut cisterns
+- Distribution channels to city
+''',
+            engineering_notes='''
+NABATAEAN WATER ENGINEERING:
+1. CATCHMENT OPTIMIZATION:
+   - Smoothed rock surfaces to improve runoff
+   - Channels carved into hillsides
+   - Plastered surfaces in critical areas
+   - Achieved ~80% runoff efficiency
+2. CHANNELS:
+   - Rock-cut with 0.5-1% slopes
+   - Carefully graded to move water without erosion
+   - Protected from contamination
+3. SETTLING BASINS:
+   - Located before cisterns
+   - Trapped sediment and debris
+   - Easy to clean
+4. CISTERNS:
+   - Rock-cut chambers, plastered
+   - Capacities from 40 to 300+ cubic meters
+   - Covered to prevent evaporation
+   - Some carved to follow rock strata
+5. DISTRIBUTION:
+   - Terracotta pipes from cisterns
+   - Gravity flow to lower city
+   - Public fountains and private connections
+WATER BUDGET:
+- 150mm annual rainfall
+- ~100mm effective after losses
+- 1 hectare catchment = 1,000 m³/year
+- Per capita need ~20 L/day = 7.3 m³/year
+- 1 hectare could support ~130 people
+''',
+            historical_significance='''
+The Nabataeans proved that civilization can thrive in extreme
+aridity with sophisticated water management:
+- Supported 20,000+ population in desert
+- Became wealthy controlling trade routes
+- Techniques spread throughout Middle East
+- Many cisterns still hold water today
+Lessons for modern water scarcity:
+- Decentralized collection resilient to failure
+- Passive systems require no energy
+- Every surface is potential catchment
+- Storage essential for seasonal variation
+''',
+            flow_units=FlowUnits.LPS,
+            routing=RoutingModel.DYNWAVE
+        )
+        # Create water harvesting model
+        # Hillside catchment areas (represented as subcatchment outlets)
+        system.nodes.append(Node(
+            name='CATCH_UPPER',
+            x=100, y=5300,
+            elevation=1050.0,
+            max_depth=0.3,
+            description='Upper hillside catchment outlet'
+        ))
+        system.nodes.append(Node(
+            name='CATCH_MIDDLE',
+            x=200, y=5100,
+            elevation=1040.0,
+            max_depth=0.3,
+            description='Middle catchment outlet'
+        ))
+        system.nodes.append(Node(
+            name='CATCH_LOWER',
+            x=300, y=4900,
+            elevation=1030.0,
+            max_depth=0.3,
+            description='Lower catchment outlet'
+        ))
+        # Settling basins
+        system.storage_units.append(Storage(
+            name='SETTLING_1',
+            x=400, y=5000,
+            elevation=1020.0,
+            max_depth=1.5,
+            init_depth=0,
+            storage_curve='FUNCTIONAL',
+            coeff_a=20,  # 20 m² area
+            coeff_b=0,
+            coeff_c=0,
+            description='Settling basin 1'
+        ))
+        # Main cisterns
+        system.storage_units.append(Storage(
+            name='CISTERN_MAIN',
+            x=600, y=5000,
+            elevation=1010.0,
+            max_depth=5.0,
+            init_depth=2.0,  # Partial storage
+            storage_curve='FUNCTIONAL',
+            coeff_a=50,  # 50 m² = 250 m³ capacity
+            coeff_b=0,
+            coeff_c=0,
+            evap_factor=0.1,  # Covered, low evaporation
+            description='Main rock-cut cistern'
+        ))
+        system.storage_units.append(Storage(
+            name='CISTERN_RESERVE',
+            x=700, y=5200,
+            elevation=1005.0,
+            max_depth=4.0,
+            init_depth=1.5,
+            storage_curve='FUNCTIONAL',
+            coeff_a=40,  # 160 m³ capacity
+            coeff_b=0,
+            coeff_c=0,
+            evap_factor=0.1,
+            description='Reserve cistern'
+        ))
+        # Distribution point
+        system.nodes.append(Node(
+            name='DISTRIBUTION',
+            x=800, y=5000,
+            elevation=1000.0,
+            max_depth=1.0,
+            description='Distribution point to city'
+        ))
+        # Outfall (city supply)
+        system.outfalls.append(Outfall(
+            name='CITY_SUPPLY',
+            x=1000, y=5000,
+            elevation=995.0,
+            outfall_type='FREE',
+            description='Supply to city fountains'
+        ))
+        # Overflow outfall
+        system.outfalls.append(Outfall(
+            name='OVERFLOW',
+            x=800, y=4700,
+            elevation=1005.0,
+            outfall_type='FREE',
+            description='Cistern overflow outlet'
+        ))
+        # Rock-cut channels
+        system.conduits.append(Conduit(
+            name='CHANNEL_UPPER',
+            from_node='CATCH_UPPER',
+            to_node='SETTLING_1',
+            length=100,
+            roughness=0.020,  # Rock-cut
+            description='Upper catchment channel'
+        ))
+        system.conduits.append(Conduit(
+            name='CHANNEL_MIDDLE',
+            from_node='CATCH_MIDDLE',
+            to_node='SETTLING_1',
+            length=80,
+            roughness=0.020,
+            description='Middle catchment channel'
+        ))
+        system.conduits.append(Conduit(
+            name='CHANNEL_LOWER',
+            from_node='CATCH_LOWER',
+            to_node='SETTLING_1',
+            length=60,
+            roughness=0.020,
+            description='Lower catchment channel'
+        ))
+        # Settling to cisterns
+        system.conduits.append(Conduit(
+            name='TO_CISTERN_MAIN',
+            from_node='SETTLING_1',
+            to_node='CISTERN_MAIN',
+            length=50,
+            roughness=0.015,
+            description='Channel to main cistern'
+        ))
+        # Between cisterns
+        system.conduits.append(Conduit(
+            name='CISTERN_LINK',
+            from_node='CISTERN_MAIN',
+            to_node='CISTERN_RESERVE',
+            length=30,
+            roughness=0.015,
+            description='Overflow link between cisterns'
+        ))
+        # To distribution
+        system.conduits.append(Conduit(
+            name='TO_DISTRIBUTION',
+            from_node='CISTERN_MAIN',
+            to_node='DISTRIBUTION',
+            length=50,
+            roughness=0.013,  # Terracotta pipe
+            description='Supply pipe to distribution'
+        ))
+        system.conduits.append(Conduit(
+            name='CITY_PIPE',
+            from_node='DISTRIBUTION',
+            to_node='CITY_SUPPLY',
+            length=200,
+            roughness=0.013,
+            description='Main supply to city'
+        ))
+        # Overflow weir
+        system.weirs.append(Weir(
+            name='OVERFLOW_WEIR',
+            from_node='CISTERN_RESERVE',
+            to_node='OVERFLOW',
+            weir_type='TRANSVERSE',
+            crest_height=3.5,
+            discharge_coeff=0.6,
+            width=1.0,
+            description='Overflow weir for excess water'
+        ))
+        # Cross sections
+        # Rock channels - small rectangular
+        for ch in ['CHANNEL_UPPER', 'CHANNEL_MIDDLE', 'CHANNEL_LOWER']:
+            system.xsections.append(XSection(
+                link=ch,
+                shape='RECT_OPEN',
+                geom1=0.3,
+                geom2=0.4
+            ))
+        for ch in ['TO_CISTERN_MAIN', 'CISTERN_LINK']:
+            system.xsections.append(XSection(
+                link=ch,
+                shape='RECT_OPEN',
+                geom1=0.25,
+                geom2=0.3
+            ))
+        # Terracotta distribution pipes
+        for pipe in ['TO_DISTRIBUTION', 'CITY_PIPE']:
+            system.xsections.append(XSection(
+                link=pipe,
+                shape='CIRCULAR',
+                geom1=0.15
+            ))
+        # Rain gage
+        system.rain_gages.append(RainGage(
+            name='PETRA_RAIN',
+            form='INTENSITY',
+            interval='0:05',
+            source_type='TIMESERIES',
+            source='DESERT_STORM',
+            description='Petra desert rainfall'
+        ))
+        # Desert storm - short, intense
+        system.time_series.append(TimeSeries(
+            name='DESERT_STORM',
+            description='Typical desert flash flood storm',
+            data=[
+                ('0:00', 0),
+                ('0:05', 10),
+                ('0:10', 50),
+                ('0:15', 100),  # Intense!
+                ('0:20', 60),
+                ('0:25', 20),
+                ('0:30', 0)
+            ]
+        ))
+        # Subcatchments
+        system.subcatchments.append(Subcatchment(
+            name='HILLSIDE_1',
+            rain_gage='PETRA_RAIN',
+            outlet='CATCH_UPPER',
+            area=2.0,  # 2 hectares
+            percent_imperv=70,  # Rock surfaces
+            width=100,
+            slope=15.0,  # Steep!
+            description='Upper hillside catchment'
+        ))
+        system.subcatchments.append(Subcatchment(
+            name='HILLSIDE_2',
+            rain_gage='PETRA_RAIN',
+            outlet='CATCH_MIDDLE',
+            area=1.5,
+            percent_imperv=65,
+            width=80,
+            slope=12.0,
+            description='Middle hillside catchment'
+        ))
+        system.subcatchments.append(Subcatchment(
+            name='HILLSIDE_3',
+            rain_gage='PETRA_RAIN',
+            outlet='CATCH_LOWER',
+            area=1.0,
+            percent_imperv=60,
+            width=60,
+            slope=10.0,
+            description='Lower hillside catchment'
+        ))
+        # Validation
+        system.validation = HistoricalValidation(
+            source='Archaeological surveys, Schmid et al.',
+            date_of_study='1990s-present',
+            channel_dimensions={
+                'channel_width': 0.4,
+                'channel_depth': 0.3,
+                'cistern_depth': 5.0
+            },
+            construction_date='400 BCE - 106 CE',
+            confidence_level='measured',
+            notes='''
+Petra's water system supported 20,000+ in 150mm rainfall zone.
+Over 200 cisterns identified in surveys.
+Many still collect and hold water today.
+Rock-cut channels precisely graded for optimal flow.
+''',
+            references=[
+                'Schmid, S. (2001) The Nabataeans: Travellers between Lifestyles',
+                'Oleson, J. (2007) Nabataean Water Supply and the Petra Hydrology',
+                'Bedal, L. (2004) The Petra Pool-Complex',
+                'UNESCO Petra World Heritage nomination'
+            ]
+        )
+        return system
+    def _create_greek_fountain(self) -> AncientWaterSystem:
+        """Greek Fountain House"""
+        system = AncientWaterSystem(
+            id='greek-fountain',
+            name='Greek Public Fountain House (Krene)',
+            civilization='Ancient Greece',
+            period='600-300 BCE',
+            location='Athens/Corinth, Greece',
+            description='''
+Greek fountain houses (krene) were public buildings where water from
+springs or aqueducts was distributed through lion-head spouts.
+They were social gathering places, architectural showpieces, and
+essential public infrastructure.
+This model represents a typical krene including:
+- Spring or aqueduct supply
+- Settling/distribution chamber
+- Multiple spout outlets
+- Overflow to drainage
+''',
+            engineering_notes='''
+GREEK FOUNTAIN HOUSE ENGINEERING:
+1. WATER SOURCE:
+   - Springs captured in tunnels
+   - Small aqueducts (terracotta pipes)
+   - Flow typically 5-20 L/s
+2. DISTRIBUTION CHAMBER:
+   - Underground settling tank
+   - Removes sediment before spouts
+   - Maintains constant head
+3. SPOUT DESIGN:
+   - Lion head (or other animal) motifs
+   - Bronze or stone construction
+   - Orifice sized for desired flow
+   - Typically 3-12 spouts per fountain
+4. COLLECTION BASINS:
+   - Stone basins below each spout
+   - Overflow to secondary uses
+   - Connected to drainage system
+5. ARCHITECTURAL SETTING:
+   - Columned portico for shelter
+   - Oriented for shade
+   - Benches for waiting
+   - Often decorated with sculpture
+''',
+            historical_significance='''
+Greek fountain houses served multiple functions:
+Social:
+- Women's gathering place (primary water carriers)
+- Site for conversation and news
+- Meeting place for all classes
+Public health:
+- Clean, controlled water supply
+- Reduced waterborne disease
+- Available to all citizens
+Urban planning:
+- Central to agora design
+- Landmarks and meeting points
+- Civic pride and beautification
+The concept influenced Roman nymphaea and modern
+public drinking fountains worldwide.
+''',
+            flow_units=FlowUnits.LPS,
+            routing=RoutingModel.DYNWAVE
+        )
+        # Create fountain house model
+        # Spring/aqueduct supply
+        system.nodes.append(Node(
+            name='SPRING_SOURCE',
+            x=0, y=5000,
+            elevation=120.0,
+            max_depth=2.0,
+            description='Spring capture or aqueduct terminus'
+        ))
+        # Settling/distribution chamber
+        system.storage_units.append(Storage(
+            name='DISTRIBUTION_CHAMBER',
+            x=200, y=5000,
+            elevation=115.0,
+            max_depth=1.5,
+            init_depth=1.0,
+            storage_curve='FUNCTIONAL',
+            coeff_a=10,  # 10 m²
+            coeff_b=0,
+            coeff_c=0,
+            description='Underground distribution chamber'
+        ))
+        # Spout manifold node
+        system.nodes.append(Node(
+            name='SPOUT_MANIFOLD',
+            x=300, y=5000,
+            elevation=114.5,
+            max_depth=0.5,
+            description='Manifold feeding spouts'
+        ))
+        # Individual spouts (6 total)
+        for i in range(1, 7):
+            system.outfalls.append(Outfall(
+                name=f'SPOUT_{i}',
+                x=350, y=4850 + i*50,
+                elevation=114.0,
+                outfall_type='FREE',
+                description=f'Lion head spout {i}'
+            ))
+        # Overflow drain
+        system.outfalls.append(Outfall(
+            name='OVERFLOW_DRAIN',
+            x=400, y=5000,
+            elevation=113.5,
+            outfall_type='FREE',
+            description='Overflow to city drain'
+        ))
+        # Supply conduit
+        system.conduits.append(Conduit(
+            name='SUPPLY_PIPE',
+            from_node='SPRING_SOURCE',
+            to_node='DISTRIBUTION_CHAMBER',
+            length=200,
+            roughness=0.013,  # Terracotta
+            description='Terracotta supply pipe from spring'
+        ))
+        # Distribution to manifold
+        system.conduits.append(Conduit(
+            name='TO_MANIFOLD',
+            from_node='DISTRIBUTION_CHAMBER',
+            to_node='SPOUT_MANIFOLD',
+            length=50,
+            roughness=0.013,
+            description='Pipe to spout manifold'
+        ))
+        # Spout orifices
+        for i in range(1, 7):
+            system.orifices.append(Orifice(
+                name=f'ORIFICE_{i}',
+                from_node='SPOUT_MANIFOLD',
+                to_node=f'SPOUT_{i}',
+                orifice_type='SIDE',
+                offset=0.1,
+                discharge_coeff=0.62,
+                shape='CIRCULAR',
+                height=0.05,  # 50mm opening
+                description=f'Spout orifice {i}'
+            ))
+        # Overflow weir
+        system.weirs.append(Weir(
+            name='OVERFLOW_WEIR',
+            from_node='SPOUT_MANIFOLD',
+            to_node='OVERFLOW_DRAIN',
+            weir_type='TRANSVERSE',
+            crest_height=0.4,
+            discharge_coeff=0.6,
+            width=0.5,
+            description='Overflow weir to drain'
+        ))
+        # Cross sections
+        system.xsections.append(XSection(
+            link='SUPPLY_PIPE',
+            shape='CIRCULAR',
+            geom1=0.20  # 200mm terracotta pipe
+        ))
+        system.xsections.append(XSection(
+            link='TO_MANIFOLD',
+            shape='CIRCULAR',
+            geom1=0.25
+        ))
+        # Constant spring flow
+        system.inflows.append(Inflow(
+            node='SPRING_SOURCE',
+            baseline=15.0,  # 15 L/s
+            inflow_type='FLOW'
+        ))
+        # Validation
+        system.validation = HistoricalValidation(
+            source='Archaeological excavations, Camp (1977)',
+            date_of_study='19th-20th century excavations',
+            channel_dimensions={
+                'supply_pipe_diameter': 0.2,
+                'spout_diameter': 0.05,
+                'chamber_size': 10  # m²
+            },
+            construction_date='600-300 BCE',
+            confidence_level='measured',
+            notes='''
+Based on Athenian Agora fountain houses.
+Enneakrounos fountain had 9 spouts.
+Flow rates estimated from orifice analysis.
+''',
+            references=[
+                'Camp, J.M. (1977) The Water Supply of Ancient Athens',
+                'Crouch, D. (1993) Water Management in Ancient Greek Cities',
+                'Lang, M. (1968) Waterworks in the Athenian Agora'
+            ]
+        )
+        return system
+    def _create_archimedes_screw(self) -> AncientWaterSystem:
+        """Archimedes Screw Pump System"""
+        system = AncientWaterSystem(
+            id='archimedes-screw',
+            name='Archimedes Screw Pump System',
+            civilization='Hellenistic/Roman',
+            period='250 BCE - Present',
+            location='Mediterranean Region',
+            description='''
+The Archimedes screw is one of the oldest machines still in use.
+Attributed to Archimedes of Syracuse (287-212 BCE), it lifts water
+through a helical surface inside a tube. Originally human-powered,
+it was later adapted for animal and water power.
+This model represents a typical irrigation lift station:
+- Lower reservoir (river/canal level)
+- Screw pump lifting water
+- Upper distribution channel
+- Gravity distribution to fields
+''',
+            engineering_notes='''
+ARCHIMEDES SCREW ENGINEERING:
+1. GEOMETRY:
+   - Inclination: typically 30-40° from horizontal
+   - Diameter: 0.3-1.5m historical, up to 4m modern
+   - Pitch: 1-3 turns per diameter length
+   - Length: typically 3-10m
+2. OPERATING PRINCIPLE:
+   - Rotating helix captures water at bottom
+   - Water "climbs" helical surface as screw turns
+   - Efficiency: 60-80% mechanical
+   - Self-regulating: flow matches rotation speed
+3. POWER SOURCES:
+   - Human: treadmill or hand crank
+   - Animal: donkey/ox walking in circle
+   - Water: undershot wheel driving screw
+   - Modern: electric motor
+4. LIFT CAPACITY:
+   - Single screw: typically 1-3m lift
+   - Multiple screws: can be staged
+   - Flow: proportional to RPM and diameter
+   - Typical: 100-500 L/s for large agricultural screws
+5. ADVANTAGES:
+   - Can handle debris, fish, vegetation
+   - No valves or suction required
+   - Low speed = long life
+   - Simple construction with local materials
+MODERN USE:
+Still used for low-head, high-volume pumping:
+- Wastewater treatment plants
+- Fish-safe hydropower
+- Flood control pumping
+''',
+            historical_significance='''
+The Archimedes screw represents a key transition:
+From passive to active water management:
+- Lifted water above natural levels
+- Enabled irrigation of higher ground
+- Extended growing season
+- Drained mines and ships
+Longevity:
+- 2,300+ years of continuous use
+- Same design still manufactured today
+- Adapted to modern applications
+Archimedes may not have invented it (possibly Egyptian
+origin), but his name became synonymous with the device.
+''',
+            flow_units=FlowUnits.LPS,
+            routing=RoutingModel.DYNWAVE
+        )
+        # Create lift station model
+        # Lower reservoir (river level)
+        system.storage_units.append(Storage(
+            name='LOWER_RESERVOIR',
+            x=100, y=5000,
+            elevation=100.0,
+            max_depth=2.0,
+            init_depth=1.5,
+            storage_curve='FUNCTIONAL',
+            coeff_a=100,  # 100 m² area
+            coeff_b=0,
+            coeff_c=0,
+            description='Lower water source (river/canal)'
+        ))
+        # Pump wet well
+        system.nodes.append(Node(
+            name='SCREW_INLET',
+            x=200, y=5000,
+            elevation=100.0,
+            max_depth=1.5,
+            description='Archimedes screw inlet'
+        ))
+        # Upper delivery point
+        system.nodes.append(Node(
+            name='SCREW_OUTLET',
+            x=250, y=5000,
+            elevation=103.0,  # 3m lift
+            max_depth=1.0,
+            description='Archimedes screw outlet'
+        ))
+        # Upper distribution channel
+        system.nodes.append(Node(
+            name='UPPER_CHANNEL',
+            x=400, y=5000,
+            elevation=102.8,
+            max_depth=0.5,
+            description='Upper distribution channel'
+        ))
+        # Field outlets
+        for i in range(1, 4):
+            system.outfalls.append(Outfall(
+                name=f'FIELD_{i}',
+                x=600, y=4800 + i*200,
+                elevation=102.5,
+                outfall_type='FREE',
+                description=f'Field irrigation outlet {i}'
+            ))
+        # River inflow (constant source)
+        system.inflows.append(Inflow(
+            node='LOWER_RESERVOIR',
+            baseline=500,  # Abundant river supply
+            inflow_type='FLOW'
+        ))
+        # Intake channel
+        system.conduits.append(Conduit(
+            name='INTAKE',
+            from_node='LOWER_RESERVOIR',
+            to_node='SCREW_INLET',
+            length=50,
+            roughness=0.025,
+            description='Intake channel to screw'
+        ))
+        # Upper channel
+        system.conduits.append(Conduit(
+            name='DELIVERY',
+            from_node='SCREW_OUTLET',
+            to_node='UPPER_CHANNEL',
+            length=150,
+            roughness=0.025,
+            description='Delivery channel from screw'
+        ))
+        # Distribution to fields
+        for i in range(1, 4):
+            system.conduits.append(Conduit(
+                name=f'TO_FIELD_{i}',
+                from_node='UPPER_CHANNEL',
+                to_node=f'FIELD_{i}',
+                length=200,
+                roughness=0.030,
+                description=f'Distribution to field {i}'
+            ))
+        # Cross sections
+        system.xsections.append(XSection(
+            link='INTAKE',
+            shape='TRAPEZOIDAL',
+            geom1=1.0,
+            geom2=1.5,
+            geom3=1.0,
+            geom4=1.0
+        ))
+        system.xsections.append(XSection(
+            link='DELIVERY',
+            shape='RECT_OPEN',
+            geom1=0.5,
+            geom2=1.0
+        ))
+        for i in range(1, 4):
+            system.xsections.append(XSection(
+                link=f'TO_FIELD_{i}',
+                shape='TRAPEZOIDAL',
+                geom1=0.4,
+                geom2=0.6,
+                geom3=1.0,
+                geom4=1.0
+            ))
+        # Archimedes screw as pump
+        system.curves.append(Curve(
+            name='SCREW_CURVE',
+            curve_type='PUMP3',  # Head vs. flow curve
+            description='Archimedes screw pump curve',
+            data=[
+                (0, 3.5),    # Shutoff head 3.5m
+                (50, 3.2),
+                (100, 3.0),  # Design point
+                (150, 2.5),
+                (200, 1.5),
+                (250, 0)     # Max flow at zero head
+            ]
+        ))
+        system.pumps.append(Pump(
+            name='ARCHIMEDES_SCREW',
+            from_node='SCREW_INLET',
+            to_node='SCREW_OUTLET',
+            pump_curve='SCREW_CURVE',
+            status='ON',
+            startup_depth=0.3,
+            shutoff_depth=0.1,
+            description='Archimedes screw pump (3m lift)'
+        ))
+        # Validation
+        system.validation = HistoricalValidation(
+            source='Historical texts, modern engineering analysis',
+            date_of_study='Various',
+            channel_dimensions={
+                'screw_diameter': 0.5,
+                'screw_length': 5.0,
+                'lift_height': 3.0
+            },
+            construction_date='250 BCE origin',
+            confidence_level='reconstructed',
+            notes='''
+Pump curve based on modern screw pump data scaled to
+historical dimensions. Efficiency assumed 65%.
+Flow rate depends on rotation speed.
+''',
+            references=[
+                'Vitruvius, De Architectura (Book X)',
+                'Oleson, J. (1984) Greek and Roman Mechanical Water-Lifting Devices',
+                'Rorres, C. (2000) The Turn of the Screw: Optimal Design of an Archimedes Screw'
+            ]
+        )
+        return system
+    def _create_mayan_aguada(self) -> AncientWaterSystem:
+        """Mayan Aguada Reservoir System"""
+        system = AncientWaterSystem(
+            id='mayan-aguada',
+            name='Mayan Aguada (Reservoir) System',
+            civilization='Maya',
+            period='300 BCE - 900 CE',
+            location='Tikal, Guatemala',
+            description='''
+In the limestone karst of the Yucatan, there are no surface rivers.
+The Maya survived by capturing rainfall in reservoirs called aguadas.
+At Tikal, a sophisticated system of catchments, channels, and
+reservoirs supported 60,000+ people.
+This model represents the Tikal central reservoir system:
+- Plaza catchment surfaces
+- Channel network to reservoirs
+- Multiple storage reservoirs
+- Controlled distribution
+''',
+            engineering_notes='''
+MAYAN WATER ENGINEERING:
+1. CATCHMENT SURFACES:
+   - Plastered plazas (lime concrete)
+   - Sloped toward reservoir channels
+   - Total catchment: hundreds of hectares
+2. CHANNELS:
+   - Cut limestone or plastered masonry
+   - Grades toward central reservoirs
+   - Some with settling basins
+3. RESERVOIRS (AGUADAS):
+   - Natural depressions lined with clay
+   - Some artificial excavations
+   - Tikal: 10 major reservoirs
+   - Total capacity: ~100,000+ m³
+4. WATER TREATMENT:
+   - Sand/gravel filtration areas
+   - Settlement tanks
+   - Some evidence of aquatic plants for treatment
+5. DISTRIBUTION:
+   - Controlled release to lower areas
+   - Possible household cisterns
+   - Priority system during drought
+WATER BUDGET (Tikal):
+- Annual rainfall: ~1,800mm
+- Dry season: 4-5 months
+- Population: 60,000+
+- Need: ~20 L/person/day = 1,200 m³/day
+- Dry season need: 150,000 m³
+- System capacity: sufficient with conservation
+''',
+            historical_significance='''
+The Maya water system at Tikal demonstrates:
+Adaptive engineering:
+- Worked with porous limestone landscape
+- Turned plazas into catchments
+- Created storage where none existed naturally
+Scale:
+- One of the largest pre-Columbian cities
+- Sustained for 1,500+ years
+- Supported complex society in challenging environment
+Collapse:
+- Prolonged droughts (9th century) stressed system
+- May have contributed to abandonment
+- Cautionary tale for modern water security
+Lessons:
+- Decentralized storage provides resilience
+- Demand management essential in variable climates
+- Infrastructure requires ongoing maintenance
+''',
+            flow_units=FlowUnits.LPS,
+            routing=RoutingModel.DYNWAVE
+        )
+        # Create Tikal reservoir system model
+        # Major plaza catchments
+        plazas = [
+            ('PLAZA_MAJOR', 200, 5500, 250.0, 5.0),   # 5 hectares
+            ('PLAZA_EAST', 600, 5300, 252.0, 3.0

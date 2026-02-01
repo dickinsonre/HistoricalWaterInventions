@@ -10,26 +10,26 @@ interface WorldMapViewProps {
 }
 
 const civilizationLocations: Record<string, { x: number; y: number; region: string }> = {
-  "ancient-egypt": { x: 55, y: 45, region: "Nile Valley" },
-  "mesopotamia": { x: 58, y: 38, region: "Iraq/Syria" },
-  "ancient-persia": { x: 62, y: 40, region: "Iran" },
-  "indus-valley": { x: 68, y: 42, region: "Pakistan/India" },
-  "ancient-greece": { x: 52, y: 36, region: "Greece" },
-  "ancient-rome": { x: 50, y: 34, region: "Italy" },
-  "minoan-crete": { x: 53, y: 38, region: "Crete" },
-  "byzantine": { x: 54, y: 34, region: "Turkey" },
-  "ancient-china": { x: 78, y: 38, region: "China" },
-  "khmer-empire": { x: 76, y: 52, region: "Cambodia" },
-  "sri-lanka": { x: 70, y: 55, region: "Sri Lanka" },
-  "islamic-golden-age": { x: 60, y: 42, region: "Middle East" },
+  "ancient-egypt": { x: 58, y: 42, region: "Nile Valley" },
+  "mesopotamia": { x: 62, y: 36, region: "Iraq/Syria" },
+  "ancient-persia": { x: 67, y: 38, region: "Iran" },
+  "indus-valley": { x: 72, y: 42, region: "Pakistan/India" },
+  "ancient-greece": { x: 55, y: 34, region: "Greece" },
+  "ancient-rome": { x: 51, y: 32, region: "Italy" },
+  "minoan-crete": { x: 56, y: 36, region: "Crete" },
+  "byzantine": { x: 58, y: 32, region: "Turkey" },
+  "ancient-china": { x: 82, y: 36, region: "China" },
+  "khmer-empire": { x: 80, y: 52, region: "Cambodia" },
+  "sri-lanka": { x: 74, y: 54, region: "Sri Lanka" },
+  "islamic-golden-age": { x: 64, y: 40, region: "Middle East" },
   "mesoamerica": { x: 22, y: 48, region: "Mexico" },
-  "ancestral-puebloans": { x: 18, y: 38, region: "US Southwest" },
-  "nubia": { x: 56, y: 52, region: "Sudan" },
-  "nabataean": { x: 57, y: 42, region: "Jordan" },
-  "phoenicia": { x: 56, y: 38, region: "Lebanon" },
-  "carthage": { x: 48, y: 40, region: "Tunisia" },
-  "medieval-europe": { x: 48, y: 30, region: "Western Europe" },
-  "modern-era": { x: 38, y: 32, region: "Global" }
+  "ancestral-puebloans": { x: 18, y: 36, region: "US Southwest" },
+  "nubia": { x: 59, y: 50, region: "Sudan" },
+  "nabataean": { x: 60, y: 40, region: "Jordan" },
+  "phoenicia": { x: 59, y: 35, region: "Lebanon" },
+  "carthage": { x: 52, y: 38, region: "Tunisia" },
+  "medieval-europe": { x: 50, y: 28, region: "Western Europe" },
+  "modern-era": { x: 40, y: 30, region: "Global" }
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {
@@ -71,38 +71,69 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
         <Card className="water-card overflow-hidden">
           <CardContent className="p-0">
             <div 
-              className="relative w-full aspect-[2/1] bg-[#0d2538]"
+              className="relative w-full aspect-[2/1] bg-[#1a4a6e]"
               style={{
                 backgroundImage: `
-                  radial-gradient(circle at 50% 50%, rgba(46, 92, 138, 0.3) 0%, transparent 50%),
-                  linear-gradient(to bottom, #0d2538 0%, #1a3a52 100%)
+                  radial-gradient(circle at 30% 40%, rgba(74, 144, 194, 0.2) 0%, transparent 40%),
+                  radial-gradient(circle at 70% 60%, rgba(74, 144, 194, 0.15) 0%, transparent 35%),
+                  linear-gradient(to bottom, #1a4a6e 0%, #0d2538 100%)
                 `
               }}
             >
               <svg 
-                viewBox="0 0 100 50" 
+                viewBox="0 0 360 180" 
                 className="absolute inset-0 w-full h-full"
-                style={{ opacity: 0.3 }}
+                preserveAspectRatio="xMidYMid slice"
               >
                 <path
-                  d="M 15 20 Q 20 18, 25 22 Q 30 25, 28 30 Q 25 35, 20 38 Q 15 40, 12 35 Q 10 30, 15 20"
-                  fill="#3d5a4a"
-                  opacity="0.5"
+                  d="M 40 25 L 55 20 L 70 22 L 85 18 L 95 25 L 90 35 L 85 45 L 75 55 L 65 60 L 55 58 L 45 52 L 38 45 L 35 35 Z"
+                  fill="#4a6b52"
+                  opacity="0.7"
                 />
                 <path
-                  d="M 45 25 Q 50 20, 55 22 Q 60 25, 58 35 Q 55 42, 48 40 Q 42 38, 45 25"
-                  fill="#3d5a4a"
-                  opacity="0.5"
+                  d="M 95 55 L 110 50 L 125 52 L 135 48 L 140 55 L 138 65 L 130 75 L 118 80 L 105 78 L 95 72 L 92 62 Z"
+                  fill="#4a6b52"
+                  opacity="0.7"
                 />
                 <path
-                  d="M 52 40 Q 58 38, 62 42 Q 65 48, 60 52 Q 55 54, 52 50 Q 50 46, 52 40"
-                  fill="#3d5a4a"
-                  opacity="0.5"
+                  d="M 15 55 L 35 48 L 55 52 L 70 58 L 75 70 L 70 85 L 60 100 L 45 115 L 30 125 L 20 118 L 18 100 L 22 80 L 18 65 Z"
+                  fill="#5a7b62"
+                  opacity="0.7"
                 />
                 <path
-                  d="M 65 30 Q 75 25, 85 30 Q 90 40, 82 50 Q 75 55, 68 50 Q 62 45, 65 30"
-                  fill="#3d5a4a"
-                  opacity="0.5"
+                  d="M 50 75 L 75 68 L 95 72 L 105 80 L 100 95 L 90 108 L 75 115 L 60 112 L 52 100 L 48 85 Z"
+                  fill="#5a7b62"
+                  opacity="0.7"
+                />
+                <path
+                  d="M 160 25 L 200 20 L 240 22 L 270 28 L 280 40 L 275 55 L 260 65 L 230 68 L 200 72 L 175 68 L 160 58 L 155 42 Z"
+                  fill="#4a6b52"
+                  opacity="0.7"
+                />
+                <path
+                  d="M 175 75 L 195 70 L 220 72 L 245 78 L 255 90 L 250 105 L 235 118 L 210 125 L 185 122 L 168 112 L 165 95 L 170 82 Z"
+                  fill="#5a7b62"
+                  opacity="0.7"
+                />
+                <path
+                  d="M 220 130 L 250 125 L 275 130 L 290 142 L 285 155 L 268 165 L 245 168 L 225 162 L 215 150 L 218 138 Z"
+                  fill="#4a6b52"
+                  opacity="0.7"
+                />
+                <path
+                  d="M 255 50 L 285 45 L 320 48 L 345 55 L 355 70 L 350 90 L 335 105 L 310 112 L 280 108 L 260 95 L 250 75 L 252 60 Z"
+                  fill="#4a6b52"
+                  opacity="0.7"
+                />
+                <path
+                  d="M 295 115 L 320 110 L 345 115 L 355 130 L 348 148 L 330 160 L 305 165 L 285 158 L 280 142 L 288 125 Z"
+                  fill="#5a7b62"
+                  opacity="0.7"
+                />
+                <path
+                  d="M 280 55 L 295 52 L 308 58 L 312 72 L 305 82 L 290 85 L 278 78 L 275 65 Z"
+                  fill="#6a8b72"
+                  opacity="0.6"
                 />
               </svg>
 
