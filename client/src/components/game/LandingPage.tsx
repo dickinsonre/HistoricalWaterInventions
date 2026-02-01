@@ -37,13 +37,13 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                   <Globe className="w-8 h-8 text-[var(--parchment)]" />
                 </div>
                 <h3 className="font-heading text-xl text-[var(--gold)] mb-2">
-                  3D World Explorer
+                  World Map Explorer
                 </h3>
                 <p className="text-[var(--parchment)]/80 text-sm mb-4">
-                  Walk through 21 ancient civilizations and interact with 62+ water inventions
+                  Explore 21 civilizations on an interactive map with 62+ water inventions
                 </p>
                 <span className="inline-block px-3 py-1 bg-[var(--cerulean)]/30 rounded-full text-xs text-[var(--aqua)] border border-[var(--aqua)]/30">
-                  Immersive Experience
+                  Interactive Map
                 </span>
               </CardContent>
             </Card>
