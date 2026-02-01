@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { Droplets, MapPin, Award, BookOpen, ChevronRight, ChevronLeft, Compass, Globe, Clock } from "lucide-react";
+import { Droplets, MapPin, Award, BookOpen, ChevronRight, ChevronLeft, Compass, Globe, Clock, X } from "lucide-react";
 
 interface OnboardingProps {
   onComplete: () => void;
@@ -66,6 +66,14 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
       <div className="absolute inset-0 bg-gradient-to-b from-[var(--river-blue)]/20 to-transparent" />
       
       <Card className="water-card max-w-2xl w-full relative">
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={onComplete}
+          className="absolute top-4 right-4 text-[var(--parchment)]/70 hover:text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 z-10"
+        >
+          <X size={20} />
+        </Button>
         <CardContent className="p-8">
           <div className="text-center mb-8">
             <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[var(--cerulean)] to-[var(--river-blue)] flex items-center justify-center">
