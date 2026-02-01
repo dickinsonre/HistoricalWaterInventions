@@ -111,7 +111,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 return (
                   <div
                     key={region.id}
-                    className="absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group"
+                    className="absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group z-10"
                     style={{ left: `${loc.x}%`, top: `${loc.y}%` }}
                     onMouseEnter={() => setHoveredCiv(region.id)}
                     onMouseLeave={() => setHoveredCiv(null)}
@@ -119,15 +119,15 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                   >
                     <div 
                       className={`
-                        w-4 h-4 rounded-full border-2 transition-all duration-300
+                        w-5 h-5 rounded-full border-2 transition-all duration-300
                         ${isHovered ? 'scale-150' : 'scale-100'}
                       `}
                       style={{ 
                         backgroundColor: region.color,
-                        borderColor: isHovered ? '#c9a227' : region.color,
+                        borderColor: isHovered ? '#c9a227' : '#ffffff',
                         boxShadow: isHovered 
                           ? `0 0 20px ${region.color}, 0 0 40px ${region.color}50`
-                          : `0 0 10px ${region.color}50`
+                          : `0 0 12px ${region.color}, 0 0 4px rgba(255,255,255,0.5)`
                       }}
                     />
 
@@ -155,7 +155,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 );
               })}
 
-              <div className="absolute bottom-4 left-4 flex flex-wrap gap-2">
+              <div className="absolute bottom-4 left-4 flex flex-wrap gap-2 z-20">
                 {["ancient", "classical", "medieval", "modern"].map(era => (
                   <span 
                     key={era}
@@ -166,7 +166,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 ))}
               </div>
 
-              <div className="absolute bottom-4 right-4 text-xs text-[var(--parchment)]/50">
+              <div className="absolute bottom-4 right-4 text-xs text-[var(--parchment)]/50 z-20">
                 {gameData.regions.length} civilizations
               </div>
             </div>
