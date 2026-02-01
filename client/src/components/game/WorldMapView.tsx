@@ -240,6 +240,16 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
 
           <Tooltip>
             <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={scrollToCivilizations} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Globe size={16} className="text-[var(--terracotta)]" />
+                <span className="ml-1 text-[var(--gold)]">{gameData.regions.length}</span>
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Civilizations ({gameData.regions.length})</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
               <Button variant="outline" size="sm" onClick={() => setShowProgress(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
                 <Trophy size={16} className="text-[var(--gold)]" />
                 <span className="ml-1">{totalLocations}</span>
