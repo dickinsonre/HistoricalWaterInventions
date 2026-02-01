@@ -2042,6 +2042,391 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "medieval-india",
+      name: "Medieval India",
+      description: "Stepwells, tanks, and traditional water harvesting",
+      position: [13, 0, 8],
+      color: "#FF5722",
+      era: "medieval",
+      dateRange: "600-1600 CE",
+      locations: [
+        {
+          id: "gujarat-stepwells",
+          name: "Gujarat Stepwells",
+          description: "Multi-story architectural wonders combining water access with cooling",
+          historicalContext: "Stepwells served as social gathering places and refuges from heat",
+          coordinates: { lat: 23.0225, lng: 72.5714 },
+          artifacts: [
+            {
+              id: "rani-ki-vav",
+              name: "Rani ki Vav (Queen's Stepwell)",
+              description: "7-story stepwell with 500+ sculptures, UNESCO World Heritage",
+              rarity: "legendary",
+              historicalPeriod: "1063 CE",
+              significance: "Most ornate stepwell ever built; inverted temple going 7 stories underground",
+              yearBCE: -1063,
+              category: "dam"
+            },
+            {
+              id: "adalaj-vav",
+              name: "Adalaj Stepwell",
+              description: "Five-story stepwell with Hindu-Islamic architecture fusion",
+              rarity: "epic",
+              historicalPeriod: "1498 CE",
+              significance: "Octagonal shape creates natural cooling; temperature 6°C lower than outside",
+              yearBCE: -1498,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "rajasthan-water",
+          name: "Rajasthan Water Harvesting",
+          description: "Desert water collection in one of Earth's driest regions",
+          historicalContext: "Innovative systems turned arid land into thriving kingdoms",
+          coordinates: { lat: 26.9124, lng: 75.7873 },
+          artifacts: [
+            {
+              id: "johad",
+              name: "Johad (Check Dam)",
+              description: "Crescent-shaped earthen dams for groundwater recharge",
+              rarity: "rare",
+              historicalPeriod: "Medieval - Present",
+              significance: "Rajendra Singh revived 8,600 johads, bringing water back to 1,000 villages",
+              yearBCE: -1200,
+              category: "dam"
+            },
+            {
+              id: "kund",
+              name: "Kund/Kundi",
+              description: "Circular underground cisterns with stepped access",
+              rarity: "rare",
+              historicalPeriod: "800 CE onwards",
+              significance: "Stores rainwater for year-round use in areas with 4-inch annual rainfall",
+              yearBCE: -800,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "tamil-tanks",
+          name: "Tamil Nadu Tank System",
+          description: "39,000 interconnected tanks forming massive irrigation network",
+          historicalContext: "Eri system fed South India for millennia",
+          coordinates: { lat: 11.1271, lng: 78.6569 },
+          artifacts: [
+            {
+              id: "grand-anicut",
+              name: "Grand Anicut (Kallanai)",
+              description: "2,000-year-old dam across Kaveri River, still in use",
+              rarity: "legendary",
+              historicalPeriod: "2nd century CE",
+              significance: "World's oldest water-diversion structure still in use; 329m long stone dam",
+              yearBCE: -150,
+              category: "dam"
+            },
+            {
+              id: "eri-cascade",
+              name: "Eri Tank Cascade System",
+              description: "Up to 39,000 tanks linked in gravity-fed network",
+              rarity: "epic",
+              historicalPeriod: "300 BCE onwards",
+              significance: "Each tank's overflow feeds the next; covers entire watersheds",
+              yearBCE: 300,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "cambodia-khmer",
+      name: "Cambodia (Khmer)",
+      description: "Angkor's massive barays and hydraulic city",
+      position: [16, 0, 7],
+      color: "#E91E63",
+      era: "medieval",
+      dateRange: "802-1431 CE",
+      locations: [
+        {
+          id: "angkor-hydraulics",
+          name: "Angkor Hydraulic System",
+          description: "Largest pre-industrial city supported by massive water infrastructure",
+          historicalContext: "At its peak, Angkor was larger than modern Paris",
+          coordinates: { lat: 13.4125, lng: 103.8670 },
+          artifacts: [
+            {
+              id: "west-baray",
+              name: "West Baray Reservoir",
+              description: "8km x 2km reservoir holding 56 million cubic meters",
+              rarity: "legendary",
+              historicalPeriod: "1050 CE",
+              significance: "Largest hand-dug reservoir in history; still holds water today",
+              yearBCE: -1050,
+              category: "dam"
+            },
+            {
+              id: "angkor-moat",
+              name: "Angkor Wat Moat",
+              description: "200m wide moat surrounding the temple complex",
+              rarity: "epic",
+              historicalPeriod: "12th century CE",
+              significance: "Symbolic ocean around sacred mountain; also prevented foundation erosion",
+              yearBCE: -1150,
+              category: "canal"
+            },
+            {
+              id: "khmer-canals",
+              name: "Khmer Canal Network",
+              description: "1,000+ km of canals connecting barays to rice fields",
+              rarity: "epic",
+              historicalPeriod: "9th-13th century CE",
+              significance: "Supported population of 1 million; enabled 3-4 rice harvests per year",
+              yearBCE: -900,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "burma-myanmar",
+      name: "Burma (Myanmar)",
+      description: "Dry zone irrigation and Inle Lake floating gardens",
+      position: [14, 0, 6],
+      color: "#795548",
+      era: "medieval",
+      dateRange: "200 BCE - 1885 CE",
+      locations: [
+        {
+          id: "kyaukse-weirs",
+          name: "Kyaukse Weir System",
+          description: "Stone and earth weirs that powered the Pagan Empire",
+          historicalContext: "Irrigated the dry zone that became Burma's rice bowl",
+          coordinates: { lat: 21.6027, lng: 96.1342 },
+          artifacts: [
+            {
+              id: "kyaukse-irrigation",
+              name: "Kyaukse Weir Irrigation",
+              description: "Stone weirs across Zawgyi River feeding 70km channels",
+              rarity: "epic",
+              historicalPeriod: "9th-11th century CE",
+              significance: "Irrigated 20,000+ hectares; made Pagan Empire possible",
+              yearBCE: -850,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "inle-lake",
+          name: "Inle Lake Floating Gardens",
+          description: "Floating agricultural beds on 116 km² lake",
+          historicalContext: "Created farmland where none existed",
+          coordinates: { lat: 20.5353, lng: 96.9108 },
+          artifacts: [
+            {
+              id: "floating-gardens",
+              name: "Inle Floating Gardens",
+              description: "Agricultural beds floating on water hyacinth roots",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Grows tomatoes, flowers on lake; farmers row with their legs",
+              yearBCE: -1000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "vietnam",
+      name: "Vietnam",
+      description: "Red River dikes and Mekong Delta canals",
+      position: [17, 0, 5],
+      color: "#F44336",
+      era: "classical",
+      dateRange: "200 CE - Present",
+      locations: [
+        {
+          id: "red-river-delta",
+          name: "Red River Delta",
+          description: "3,000+ km dike network protecting millions",
+          historicalContext: "Continuously maintained for 2,000 years",
+          coordinates: { lat: 21.0285, lng: 105.8542 },
+          artifacts: [
+            {
+              id: "red-river-dikes",
+              name: "Red River Dike System",
+              description: "3,000+ km of dikes protecting the delta from flooding",
+              rarity: "legendary",
+              historicalPeriod: "200 CE onwards",
+              significance: "Protecting Hanoi for 2,000 years; requires constant maintenance",
+              yearBCE: -200,
+              category: "dam"
+            },
+            {
+              id: "cong-gates",
+              name: "Cống (Tidal Sluice Gates)",
+              description: "Brick and stone gates preventing saltwater intrusion",
+              rarity: "rare",
+              historicalPeriod: "11th century CE",
+              significance: "Protected rice paddies from sea water; enabled delta agriculture",
+              yearBCE: -1050,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "mekong-delta",
+          name: "Mekong Delta",
+          description: "4,500 km of canals transforming swamps into Vietnam's rice bowl",
+          historicalContext: "Floating rice adapts to 4-6m annual flooding",
+          coordinates: { lat: 10.0452, lng: 105.7469 },
+          artifacts: [
+            {
+              id: "mekong-canals",
+              name: "Mekong Canal Network",
+              description: "4,500 km of canals for transport and irrigation",
+              rarity: "epic",
+              historicalPeriod: "1800s expanded",
+              significance: "Transformed swampland into Vietnam's most productive rice region",
+              yearBCE: -1800,
+              category: "canal"
+            },
+            {
+              id: "floating-rice",
+              name: "Floating Rice Varieties",
+              description: "Rice that grows up to 6m tall as floods rise",
+              rarity: "rare",
+              historicalPeriod: "Ancient",
+              significance: "Adapted to annual 4-6m flooding; unique Vietnamese innovation",
+              yearBCE: 500,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "pre-roman-europe",
+      name: "Pre-Roman Europe",
+      description: "Celtic, Germanic, and Etruscan water engineering",
+      position: [8, 0, 2],
+      color: "#607D8B",
+      era: "ancient",
+      dateRange: "3000 BCE - 43 CE",
+      locations: [
+        {
+          id: "celtic-water",
+          name: "Celtic Water Technology",
+          description: "Crannogs, holy wells, and fish weirs",
+          historicalContext: "Water was sacred to Celtic peoples",
+          coordinates: { lat: 53.3498, lng: -6.2603 },
+          artifacts: [
+            {
+              id: "crannogs",
+              name: "Crannogs (Lake Dwellings)",
+              description: "Artificial islands built in lakes for settlement",
+              rarity: "rare",
+              historicalPeriod: "3000 BCE onwards",
+              significance: "Water as defense; some crannogs used for 3,000+ years",
+              yearBCE: 3000,
+              category: "dam"
+            },
+            {
+              id: "holy-wells",
+              name: "Celtic Holy Wells",
+              description: "Sacred springs with stone chambers for water worship",
+              rarity: "common",
+              historicalPeriod: "Ancient",
+              significance: "Over 3,000 holy wells in Ireland alone; healing water traditions",
+              yearBCE: 2000,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "etruscan-engineering",
+          name: "Etruscan Engineering",
+          description: "Underground drainage and cisterns that preceded Rome",
+          historicalContext: "Etruscan technology influenced Roman engineering",
+          coordinates: { lat: 42.7262, lng: 12.1066 },
+          artifacts: [
+            {
+              id: "cuniculi",
+              name: "Cuniculi (Drainage Tunnels)",
+              description: "Underground tunnels draining marshes for agriculture",
+              rarity: "epic",
+              historicalPeriod: "600 BCE",
+              significance: "Pre-dated Roman engineering; drained malaria-prone wetlands",
+              yearBCE: 600,
+              category: "sanitation"
+            },
+            {
+              id: "etruscan-cisterns",
+              name: "Etruscan Rock-Cut Cisterns",
+              description: "Water storage carved into tufa rock",
+              rarity: "rare",
+              historicalPeriod: "700 BCE",
+              significance: "Supplied hilltop settlements; some still hold water",
+              yearBCE: 700,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "philippines",
+      name: "Philippines",
+      description: "Banaue rice terraces and traditional water systems",
+      position: [18, 0, 8],
+      color: "#4CAF50",
+      era: "ancient",
+      dateRange: "2000 years ago - Present",
+      locations: [
+        {
+          id: "ifugao-terraces",
+          name: "Ifugao Rice Terraces",
+          description: "10,000 km² of mountain terraces carved by hand",
+          historicalContext: "Called the 'Eighth Wonder of the World'",
+          coordinates: { lat: 16.9117, lng: 121.0536 },
+          artifacts: [
+            {
+              id: "banaue-terraces",
+              name: "Banaue Rice Terraces",
+              description: "2,000-year-old terraces with sophisticated irrigation",
+              rarity: "legendary",
+              historicalPeriod: "2000 years ago",
+              significance: "UNESCO World Heritage; if laid end-to-end would circle half the globe",
+              yearBCE: 0,
+              category: "irrigation"
+            },
+            {
+              id: "bamboo-irrigation",
+              name: "Ifugao Bamboo Pipe System",
+              description: "Bamboo pipes carrying spring water up to 2km",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Delivers 18-20 liters/minute using only gravity and bamboo",
+              yearBCE: -500,
+              category: "aqueduct"
+            },
+            {
+              id: "muyong",
+              name: "Muyong (Forest Watershed)",
+              description: "Protected forests above terraces ensuring water supply",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Traditional conservation; cutting muyong trees was punishable by death",
+              yearBCE: -500,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
     }
   ]
 };

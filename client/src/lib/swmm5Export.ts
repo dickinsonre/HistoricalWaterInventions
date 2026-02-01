@@ -769,6 +769,90 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       roughness: 0.025
     },
     engineeringNotes: 'UNESCO World Heritage. Multiple trapang (ponds) supplied city and symbolized royal power. Phra Ruang Dam attributed to legendary king. Sophisticated for 13th century Southeast Asia'
+  },
+  'rani-ki-vav': {
+    name: 'Rani ki Vav Stepwell',
+    description: '7-story inverted temple stepwell with 500+ sculptures',
+    civilization: 'Medieval India (Gujarat)',
+    period: '1063 CE',
+    parameters: {
+      length: 64,
+      volume: 10000,
+      reservoirDepth: 27,
+      slope: 0.15,
+      roughness: 0.020
+    },
+    engineeringNotes: 'UNESCO World Heritage. Most ornate stepwell ever built. 27m deep with 7 levels of stairs. Natural cooling 6°C below surface. Water table access via ceremonial descent'
+  },
+  'grand-anicut': {
+    name: 'Grand Anicut (Kallanai Dam)',
+    description: 'World\'s oldest water-diversion dam still in use after 2,000 years',
+    civilization: 'Chola Dynasty (Tamil Nadu)',
+    period: '2nd century CE',
+    parameters: {
+      length: 329,
+      channelWidth: 20,
+      channelDepth: 5,
+      slope: 0.002,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Built by Karikala Chola. Stone dam diverts Kaveri River. Still irrigates 1 million acres. Inspired British engineers who expanded the system in 1800s'
+  },
+  'west-baray': {
+    name: 'West Baray Reservoir',
+    description: 'Largest hand-dug reservoir in history: 8km x 2km holding 56 million m³',
+    civilization: 'Khmer Empire',
+    period: '1050 CE',
+    parameters: {
+      length: 8000,
+      volume: 56000000,
+      reservoirDepth: 5,
+      slope: 0.0002,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Supported Angkor\'s 1 million people. Connected to 1,000+ km canal network. Still holds water today. Mystery: was it for irrigation, ritual, or both?'
+  },
+  'red-river-dikes': {
+    name: 'Red River Dike System',
+    description: '3,000+ km of dikes protecting Hanoi delta for 2,000 years',
+    civilization: 'Vietnam',
+    period: '200 CE - Present',
+    parameters: {
+      length: 3000000,
+      channelWidth: 100,
+      channelDepth: 10,
+      slope: 0.0001,
+      roughness: 0.030
+    },
+    engineeringNotes: 'Continuously maintained for 2,000 years. Red River floods 8-10m annually. Dikes require constant community effort. Breaches cause catastrophic flooding'
+  },
+  'banaue-terraces': {
+    name: 'Banaue/Ifugao Rice Terraces',
+    description: '2,000-year-old mountain terraces called "Eighth Wonder of the World"',
+    civilization: 'Ifugao (Philippines)',
+    period: '2000 years ago',
+    parameters: {
+      length: 20000,
+      slope: 0.15,
+      flowRate: 0.5,
+      channelWidth: 0.3,
+      channelDepth: 0.2,
+      roughness: 0.035
+    },
+    engineeringNotes: 'UNESCO World Heritage. 10,000 km² carved by hand. Bamboo pipes carry water from muyong (protected forests). Community water rights (dayo system) ensure equity'
+  },
+  'inle-floating-gardens': {
+    name: 'Inle Lake Floating Gardens',
+    description: 'Agricultural beds floating on 116 km² lake surface',
+    civilization: 'Intha People (Myanmar)',
+    period: 'Traditional',
+    parameters: {
+      catchmentArea: 116000000,
+      volume: 1000000,
+      slope: 0.0001,
+      roughness: 0.040
+    },
+    engineeringNotes: 'Floating gardens built on water hyacinth roots. Grows tomatoes, flowers. Farmers row with their legs. Unique adaptation to lake environment'
   }
 };
 

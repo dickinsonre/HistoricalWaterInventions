@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useAudio } from "./lib/stores/useAudio";
 import { useProgress } from "./lib/stores/useProgress";
+import Onboarding from "./components/game/Onboarding";
 import LandingPage from "./components/game/LandingPage";
 import WorldMapView from "./components/game/WorldMapView";
 import MuseumMode from "./components/game/MuseumMode";
@@ -12,18 +13,22 @@ import "./index.css";
 
 const queryClient = new QueryClient();
 
-type JourneyMode = "landing" | "3d-world" | "encyclopedia" | "timeline" | "minigames";
+type JourneyMode = "onboarding" | "landing" | "3d-world" | "encyclopedia" | "timeline" | "minigames";
 
 function GameContent() {
   const { setBackgroundMusic, setHitSound, setSuccessSound } = useAudio();
   const { loadProgress } = useProgress();
-  const [journeyMode, setJourneyMode] = useState<JourneyMode>("landing");
+  const [journeyMode, setJourneyMode] = useState<JourneyMode>("onboarding");
 
   const handleSelectJourney = (journey: "3d-world" | "encyclopedia" | "timeline" | "minigames") => {
     setJourneyMode(journey);
   };
 
   const handleBackToLanding = () => {
+    setJourneyMode("landing");
+  };
+
+  const handleOnboardingComplete = () => {
     setJourneyMode("landing");
   };
 
@@ -41,6 +46,10 @@ function GameContent() {
 
     loadProgress();
   }, [setBackgroundMusic, setHitSound, setSuccessSound, loadProgress]);
+
+  if (journeyMode === "onboarding") {
+    return <Onboarding onComplete={handleOnboardingComplete} />;
+  }
 
   if (journeyMode === "landing") {
     return <LandingPage onSelectJourney={handleSelectJourney} />;

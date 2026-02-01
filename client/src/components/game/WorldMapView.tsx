@@ -54,7 +54,13 @@ const civilizationCoords: Record<string, { lat: number; lng: number; region: str
   "nan-madol": { lat: 6.8, lng: 158.3, region: "Micronesia" },
   "chamorro": { lat: 13.4, lng: 144.8, region: "Guam" },
   "tokyo-underground": { lat: 35.9, lng: 139.8, region: "Japan" },
-  "siam-thailand": { lat: 13.75, lng: 100.5, region: "Thailand" }
+  "siam-thailand": { lat: 13.75, lng: 100.5, region: "Thailand" },
+  "medieval-india": { lat: 23.0, lng: 72.6, region: "India" },
+  "cambodia-khmer": { lat: 13.4, lng: 103.9, region: "Cambodia" },
+  "burma-myanmar": { lat: 21.6, lng: 96.1, region: "Myanmar" },
+  "vietnam": { lat: 21.0, lng: 105.9, region: "Vietnam" },
+  "pre-roman-europe": { lat: 53.3, lng: -6.3, region: "Ireland" },
+  "philippines": { lat: 16.9, lng: 121.1, region: "Philippines" }
 };
 
 // Convert to x/y percentages
