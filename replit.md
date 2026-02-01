@@ -2,22 +2,21 @@
 
 ## Overview
 
-Historical Mystery is a 2D interactive educational game exploring humanity's water innovations throughout history. Players explore 52 civilizations across 6 continents, discover 160+ water inventions spanning 40,000+ years, and learn about the genius of hydraulic engineering across ages. Features an interactive world map with realistic Earth background, plus comprehensive encyclopedia. Includes expert commentary from Robert Dickinson (50+ years water engineering experience), SWMM5 export functionality with 60+ downloadable hydraulic simulation models, and educational mini-games.
+Historical Mystery is a 2D interactive educational game exploring humanity's water innovations throughout history. Players explore **72 civilizations** across 6 continents, discover **220+ water inventions** spanning 40,000+ years, and learn about the genius of hydraulic engineering across ages. Features an interactive world map with realistic Earth background, comprehensive encyclopedia with URL-based navigation, SWMM5 export functionality with **66+ downloadable hydraulic simulation models** (copy-to-clipboard to avoid antivirus issues), educational mini-games, and expert commentary from Robert Dickinson (50+ years water engineering experience).
 
 ## Theme: Ancient Waters
 
 The game showcases how water shaped human civilization through:
-- **52 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Medieval India, Ancient Greece, Roman Empire, Ancient China, Ancient Persia, Khmer Empire, Cambodia, Inca Empire, Aboriginal Australia, Ancient Korea, Great Zimbabwe, Nan Madol, Modern Japan (G-Cans), Siam (Thailand), Hawaiian, Ethiopian Highlands, Sahel Africa, Engaruka, Chamorro, Dutch Netherlands, Burma/Myanmar, Vietnam, Pre-Roman Europe, Philippines, and more
-- **160+ Water Inventions**: Aqueducts, stepwells, irrigation, klongs, qanats, terraces, reservoirs, canals, moats, flood control, G-Cans, ondol heating, fish traps, tanada, suikinkutsu, barays, floating gardens, and more
+- **72 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Medieval India, Ancient Greece, Roman Empire, Ancient China, Ancient Persia, Khmer Empire, Cambodia, Inca Empire, Aboriginal Australia, Ancient Korea, Great Zimbabwe, Nan Madol, Modern Japan (G-Cans), Siam (Thailand), Hawaiian, Ethiopian Highlands, Sahel Africa, Engaruka, Chamorro, Dutch Netherlands, Burma/Myanmar, Vietnam, Pre-Roman Europe, Philippines, Singapore, Malaysia, UAE, Israel, Yemen, Bangladesh, Al-Andalus, Oman, Venice, Silk Road, Amazon Basin, Mississippian Cahokia, Hohokam, Pacific Northwest, Siberia-Yakutia, Inuit Arctic, Swahili Coast, Kongo Kingdom, Mali-Timbuktu, Borneo, Papua New Guinea, Pre-Roman Iberia, Basque Country, Celtic Europe, Gaul, Germanic Europe, and more
+- **220+ Water Inventions**: Aqueducts, stepwells, irrigation, klongs, qanats, terraces, reservoirs, canals, moats, flood control, G-Cans, ondol heating, fish traps, tanada, suikinkutsu, barays, floating gardens, inverted siphons, orifice controls, hydraulic mining, terp mounds, bog iron extraction, timber trackways, and more
 - **Time Periods**: Ancient (40,000-500 BCE), Classical (500 BCE-500 CE), Medieval (500-1400 CE), Modern (1400 CE-Present)
-- **SWMM5 Models**: 50+ downloadable hydraulic simulation models for educational use
+- **SWMM5 Models**: 66+ downloadable hydraulic simulation models for educational use
 
 ## System Architecture
 
 ### Frontend Architecture
 - **React 18** with TypeScript for the user interface
-- **React Three Fiber** for 3D rendering and scene management
-- **@react-three/drei** for 3D utilities and components
+- **React Router** for URL-based navigation
 - **Tailwind CSS** with custom "Ancient Waters" color palette
 - **Zustand** for state management across game components
 - **React Query** for server state management and API calls
@@ -45,140 +44,137 @@ The game showcases how water shaped human civilization through:
 - **Memory-based storage** with interface abstraction for future database migration
 - **Session-based game progress tracking**
 
-## Key Components
+## Key Features
 
-### 3D Game World
-- **WorldMap**: Main 3D scene with water-themed background and 8 civilization regions
-- **Region Components**: Dodecahedron shapes representing civilizations with era-based coloring
-- **Location Components**: Octahedron markers for historical sites
-- **Artifact Components**: Icosahedron water inventions with rarity-based coloring
-- **Lighting System**: Ocean-themed ambient lighting with fog effects
+### Interactive World Map
+- 2D world map with realistic Earth background
+- Civilization markers positioned at actual geographic coordinates
+- Continent-based filtering (Africa, Asia, Europe, Americas, Pacific)
+- Click civilization count or globe icon to scroll to grid view
+- Hover effects showing civilization details
 
-### Game State Management
-- **useGameState**: Manages current game phase and selections
-- **useProgress**: Tracks player progress, unlocked regions, explored locations
-- **useInventory**: Manages discovered water invention collection
-- **useAudio**: Handles background music and sound effects
+### Smart Search
+- Large, accessible search bar with autocomplete
+- Search inventions, civilizations, eras, and technology types
+- Instant navigation to invention or civilization pages
+- Real-time filtering as you type
+
+### SWMM5 Hydraulic Models
+- 66+ downloadable simulation models
+- Copy-to-clipboard functionality (avoids antivirus false positives)
+- Download all models as combined .txt file
+- Covers Roman aqueducts, qanats, siphons, orifices, reservoirs, and more
+- Educational use for understanding ancient hydraulic engineering
+
+### Invention Detail Pages
+- Technical diagrams for every invention (140+ diagrams)
+- Tagline, key facts, and technical specifications
+- Expert commentary from Robert Dickinson
+- Historical sources and references
+- Related inventions and discovery tags
+- SWMM5 model indicator with copy button
+
+### Civilization Pages
+- Overview of water challenges and solutions
+- List of all inventions from that civilization
+- Expert insights on water engineering philosophy
+- Modern legacy and relevance
+- Geographic and historical context
 
 ### UI Components
-- **GameUI**: Water-themed HUD with progress indicators, Quick Stats bar, and CTAs
-- **QuickStats**: Floating stats bar showing [30+ Inventions] [9 Civilizations] [8000+ Years] [Global]
-- **SmartSearch**: Autocomplete search for inventions, civilizations, eras, and technology types
-- **TimeTravel**: Auto-playback mode through history with speed controls and era skip buttons
-- **ChallengeModes**: Timeline Puzzle and Geography Quest games for knowledge testing
+- **GameUI**: Water-themed HUD with progress indicators
+- **QuickSearchBar**: Large autocomplete search for inventions and civilizations
+- **TimeTravel**: Auto-playback mode through history with speed controls
+- **ChallengeModes**: Timeline Puzzle and Geography Quest mini-games
 - **Inventory**: Water invention collection viewer with category and rarity filters
 - **ProgressTracker**: Exploration progress by civilization and era
 - **Achievements**: 12+ badges across Explorer, Scholar, Collector, Time Traveler categories
-- **TimelineFilter**: Era and technology type filtering system
 - **ComparisonTool**: Side-by-side comparison of water inventions
 - **FeaturedDiscoveries**: Curated highlights with "Why This Matters" context
-- **AboutSection**: Creator attribution and project background
-- **DidYouKnow**: Carousel of 10 fascinating water engineering facts
-
-### 3D Effects
-- **WaterParticles**: Animated falling water droplet particles in the 3D scene
-
-### Reference Data
-- **TechnologyLibrary**: Encyclopedia of 25 historical water technologies with filtering by category and civilization
-- **historicalTechnologies.ts**: Comprehensive dataset of water engineering innovations from 6000 BCE to 15th century CE
-- **expertInventions.ts**: Curated database of 52 water inventions with expert commentary from Robert Dickinson (50+ years water engineering experience), including:
-  - Detailed technical specifications
-  - Expert engineer notes with professional insights
-  - Modern relevance and contemporary applications
-  - "Still in use" status with current locations
-  - Related inventions and tags for discovery
-  - Historical sources and references
-- **expertCivilizations.ts**: Comprehensive database of 18 civilizations with expert analysis, including:
-  - Water challenges each civilization faced
-  - Key inventions from each culture
-  - Expert engineer notes with professional insights
-  - Key insights about each civilization's water philosophy
-  - Modern legacy and relevance today
-  - Historical sources and references
+- **SWMM5Models**: Modal for downloading/copying hydraulic simulation models
 
 ### Data Structure
-- **Regions**: 9 civilizations with era, date range, position, color (includes Modern Era)
+- **Regions**: 72 civilizations with era, date range, position, color
 - **Locations**: Historical sites with coordinates and historical context
 - **Artifacts**: Water inventions with category, rarity, year, significance
 - **Categories**: irrigation, aqueduct, water-lifting, sanitation, dam, water-clock, fountain, canal
 - **Rarities**: common, rare, epic, legendary
-- **Diagrams**: Technical illustrations for 15+ inventions in /diagrams/ folder
+- **Diagrams**: 140+ technical illustrations in /diagrams/ folder
 
-## Game Features
+## Recent Additions
 
-### Exploration
-- Click regions to unlock civilizations
-- Explore locations within each civilization
-- Discover water inventions with historical significance
-- Progress automatically saved across devices
+### Pre-Roman & Early Medieval European Civilizations
+- **Pre-Roman Iberia** (3 inventions): Tartessian Hydraulic Mining, Iberian Cisterns, Celtiberian Irrigation
+- **Basque Country** (4 inventions): Water Mills (Errota), Iron Forges (Burdinola), Tidal Fish Traps, Mountain Irrigation
+- **Celtic Europe** (4 inventions): Sacred Springs (Nemeton), Oppida Water Systems, Timber Trackways, Field Drainage
+- **Gaul** (3 inventions): River Navigation, Viticulture Water Systems, Thermal Springs
+- **Germanic Europe** (5 inventions): Terp Mounds, Bog Iron Extraction, Sacred Wells, Log Boats, Salt Works
 
-### Achievement System
-- **Explorer Badges**: Water Seeker, Aqua Explorer, Global Citizen, Master Explorer
-- **Scholar Badges**: History Buff, Professor
-- **Collector Badges**: Curator, Archivist
-- **Time Traveler Badges**: Ancient Visitor, Classical Scholar, Medieval Wanderer, Time Master
+### Roman Engineering Additions
+- **Roman Inverted Siphon**: Pressurized pipes crossing 123m valleys under 12 atmospheres pressure
+- **Quinaria Orifice Control**: Calibrated bronze orifices for fair water distribution and taxation
 
-### Timeline Filtering
-- Filter by era: Ancient, Classical, Medieval, Modern
-- Filter by technology type: 8 categories of water inventions
-- View all 25+ inventions with detailed historical information
-
-## External Dependencies
-
-### Core Framework Dependencies
-- **React Three Fiber**: 3D rendering engine
-- **@react-three/drei**: 3D utilities (Text, useTexture, etc.)
-- **Radix UI**: Accessible component primitives
-- **React Query**: Server state management
-- **Lucide React**: Icon library
-
-### Development Tools
-- **Vite**: Build tool and development server
-- **TypeScript**: Type safety and developer experience
-- **Tailwind CSS**: Utility-first styling
-- **Google Fonts**: Cinzel, Source Sans Pro, Inter
+### Southeast Asian & Pacific Additions
+- **Borneo Indigenous Civilizations** (6 inventions): Longhouses, Bamboo Aqueducts, Peat Canals, Floating Rice, Tagal System, Fish Traps
+- **Papua New Guinea** (7 inventions): Kuk Swamp (UNESCO), Highland Terraces, Taro Pondfields, Sepik Fish Traps, Sago Processing, Stilt Villages, Atoll Rainwater
 
 ## File Structure
 
 ```
 client/src/
-├── App.tsx                 # Main app with 3D canvas
+├── App.tsx                 # Main app with React Router
 ├── index.css               # Ancient Waters color palette
 ├── components/
 │   └── game/
-│       ├── WorldMap.tsx    # 3D world with water theme
-│       ├── Region.tsx      # Civilization markers
-│       ├── Location.tsx    # Historical site markers
-│       ├── Artifact.tsx    # Water invention objects
-│       ├── GameUI.tsx      # Main HUD
-│       ├── Inventory.tsx   # Invention collection
-│       ├── ProgressTracker.tsx  # Exploration progress
-│       ├── Achievements.tsx     # Badge system
-│       └── TimelineFilter.tsx   # Era/category filters
+│       ├── WorldMapView.tsx    # 2D world map with civilization markers
+│       ├── CivilizationDetail.tsx  # Civilization page
+│       ├── InventionDetail.tsx     # Invention page with diagrams
+│       ├── QuickSearchBar.tsx      # Large autocomplete search
+│       ├── SWMM5Models.tsx         # SWMM5 export modal
+│       ├── Inventory.tsx           # Invention collection
+│       ├── ProgressTracker.tsx     # Exploration progress
+│       ├── Achievements.tsx        # Badge system
+│       └── TimelineFilter.tsx      # Era/category filters
 ├── data/
-│   └── gameData.ts         # 8 civilizations, 25+ inventions
-└── lib/stores/
-    ├── useGameState.tsx    # Game phase management
-    ├── useProgress.tsx     # Progress tracking
-    ├── useInventory.tsx    # Collection management
-    └── useAudio.tsx        # Sound management
+│   ├── gameData.ts             # 72 civilizations, 220+ inventions
+│   ├── inventionDetails.ts     # Diagram mappings and details
+│   ├── expertInventions.ts     # Expert commentary database
+│   └── expertCivilizations.ts  # Civilization expert analysis
+└── lib/
+    ├── swmm5Export.ts          # SWMM5 model generation
+    └── stores/
+        ├── useGameState.tsx    # Game phase management
+        ├── useProgress.tsx     # Progress tracking
+        ├── useInventory.tsx    # Collection management
+        └── useAudio.tsx        # Sound management
 ```
 
 ## Changelog
 
+- February 01, 2026: Pre-Roman European civilizations expansion
+  - Added 5 new civilizations: Pre-Roman Iberia, Basque Country, Celtic Europe, Gaul, Germanic Europe
+  - Added 19 new inventions with diagrams
+  - Added Roman Inverted Siphon and Quinaria Orifice Control
+  - Generated 10 new technical diagrams
+  - Updated continent mappings and world map coordinates
+- February 01, 2026: Borneo and Papua New Guinea expansion
+  - Added 2 new civilizations with 13 inventions
+  - Kuk Swamp UNESCO World Heritage site featured
+- February 01, 2026: SWMM5 antivirus fix
+  - Changed to copy-to-clipboard as primary method
+  - Download all creates single .txt file to avoid false positives
+- February 01, 2026: UI improvements
+  - Increased search bar size for better readability
+  - Added Globe icon for scrolling to civilizations grid
+  - Fixed page scrolling with proper overflow handling
 - February 01, 2026: Comprehensive invention template expansion
-  - Generated 129 technical diagrams for ALL inventions (100% coverage)
-  - Enhanced InventionPage with tagline, key fact, technical specs, and sources sections
-  - Added comprehensive template data to key inventions (shaduf, nilometer, clepsydra, qanat, irrigation-tablet, jerwan-aqueduct, great-bath)
+  - Generated 140+ technical diagrams for ALL inventions (100% coverage)
+  - Enhanced InventionPage with tagline, key fact, technical specs, and sources
   - URL-based navigation system: /civilization/invention/details routes
-  - Made template fields optional for backward compatibility
 - January 31, 2026: Major update - Water Inventions theme
   - Added "Ancient Waters" color palette and typography
-  - Expanded to 8 civilizations (added Mesopotamia, Indus Valley, China, Islamic Golden Age, Mesoamerica)
-  - Added 25+ water inventions with categories and historical context
   - Implemented Achievement system with 12 badges
   - Added Timeline filtering by era and technology type
-  - Updated all UI components with water-themed styling
 - July 08, 2025: Initial setup
 
 ## User Preferences
