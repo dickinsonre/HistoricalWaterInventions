@@ -28,6 +28,7 @@ import ThematicPathways from "./ThematicPathways";
 import QuestSystem from "./QuestSystem";
 import Onboarding from "./Onboarding";
 import QuickSearchBar from "./QuickSearchBar";
+import SWMM5Showcase from "./SWMM5Showcase";
 import { useAudio } from "../../lib/stores/useAudio";
 import { useProgress } from "../../lib/stores/useProgress";
 
@@ -429,6 +430,8 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
             onSelectInvention={(civId, invId) => navigate(`/${civId}/${invId}/details`)}
           />
         </div>
+
+        <SWMM5Showcase onViewAll={() => setShowSWMM5(true)} />
 
         <Card className="water-card overflow-hidden">
           <CardContent className="p-0">
