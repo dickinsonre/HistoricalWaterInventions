@@ -18,7 +18,7 @@ type JourneyMode = "onboarding" | "landing" | "3d-world" | "encyclopedia" | "tim
 function GameContent() {
   const { setBackgroundMusic, setHitSound, setSuccessSound } = useAudio();
   const { loadProgress } = useProgress();
-  const [journeyMode, setJourneyMode] = useState<JourneyMode>("onboarding");
+  const [journeyMode, setJourneyMode] = useState<JourneyMode>("3d-world");
 
   const handleSelectJourney = (journey: "3d-world" | "encyclopedia" | "timeline" | "minigames") => {
     setJourneyMode(journey);
