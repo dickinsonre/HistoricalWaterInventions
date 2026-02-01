@@ -1,8 +1,8 @@
-import { Globe, BookOpen, Clock, ExternalLink } from "lucide-react";
+import { Globe, BookOpen, Clock, Gamepad2, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 
 interface LandingPageProps {
-  onSelectJourney: (journey: "3d-world" | "encyclopedia" | "timeline") => void;
+  onSelectJourney: (journey: "3d-world" | "encyclopedia" | "timeline" | "minigames") => void;
 }
 
 export default function LandingPage({ onSelectJourney }: LandingPageProps) {
@@ -16,7 +16,7 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
           Discover How Water Shaped Civilization
         </p>
         <p className="text-[var(--parchment)]/70 max-w-2xl mx-auto">
-          Explore 44 civilizations, 130+ water inventions across 6 continents and 40,000+ years. 
+          Explore 45 civilizations, 140+ water inventions across 6 continents and 40,000+ years. 
           From Aboriginal fish traps to Korean ondol to Nan Madol's mysterious canals.
         </p>
       </header>
@@ -27,7 +27,7 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
             Choose Your Journey
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card 
               className="water-card cursor-pointer hover:border-[var(--gold)] transition-all hover:scale-105 group"
               onClick={() => onSelectJourney("3d-world")}
@@ -40,7 +40,7 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                   World Map Explorer
                 </h3>
                 <p className="text-[var(--parchment)]/80 text-sm mb-4">
-                  Explore 44 civilizations on an interactive map with 130+ water inventions
+                  Explore 45 civilizations on an interactive map with 140+ water inventions
                 </p>
                 <span className="inline-block px-3 py-1 bg-[var(--cerulean)]/30 rounded-full text-xs text-[var(--aqua)] border border-[var(--aqua)]/30">
                   Interactive Map
@@ -84,6 +84,26 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                 </p>
                 <span className="inline-block px-3 py-1 bg-[var(--cerulean)]/30 rounded-full text-xs text-[var(--aqua)] border border-[var(--aqua)]/30">
                   Historical View
+                </span>
+              </CardContent>
+            </Card>
+
+            <Card 
+              className="water-card cursor-pointer hover:border-[var(--gold)] transition-all hover:scale-105 group"
+              onClick={() => onSelectJourney("minigames")}
+            >
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[var(--terracotta)] flex items-center justify-center group-hover:bg-[var(--gold)] transition-colors">
+                  <Gamepad2 className="w-8 h-8 text-[var(--parchment)]" />
+                </div>
+                <h3 className="font-heading text-xl text-[var(--gold)] mb-2">
+                  Mini-Games
+                </h3>
+                <p className="text-[var(--parchment)]/80 text-sm mb-4">
+                  Learn hydraulics through fun quizzes and challenges
+                </p>
+                <span className="inline-block px-3 py-1 bg-[var(--terracotta)]/30 rounded-full text-xs text-[var(--gold)] border border-[var(--gold)]/30">
+                  Educational Games
                 </span>
               </CardContent>
             </Card>

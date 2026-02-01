@@ -2,14 +2,15 @@
 
 ## Overview
 
-Historical Mystery is a 3D interactive adventure game focused on humanity's water innovations throughout history. Players explore 17 civilizations, discover 55+ water inventions from 6000 BCE to present, and learn about the genius of hydraulic engineering across ages. The application features the "Ancient Waters" visual theme with gamification elements including achievements, progress tracking, interactive challenge modes, and a Museum Mode for browsing all inventions.
+Historical Mystery is a 2D interactive educational game exploring humanity's water innovations throughout history. Players explore 45 civilizations across 6 continents, discover 140+ water inventions spanning 40,000+ years, and learn about the genius of hydraulic engineering across ages. Features an interactive world map with realistic Earth background, plus comprehensive encyclopedia. Includes expert commentary from Robert Dickinson (50+ years water engineering experience) and SWMM5 export functionality with 50+ downloadable hydraulic simulation models.
 
 ## Theme: Ancient Waters
 
 The game showcases how water shaped human civilization through:
-- **21 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Minoan Crete, Ancient Greece, Roman Empire, Ancient China, Islamic Golden Age, Mesoamerica, Ancient Persia, Khmer Empire, Nubia, Nabataean Kingdom, Ancient Sri Lanka, Ancestral Puebloans, Byzantine Empire, Phoenicia, Carthage, Medieval Europe, Modern Era
-- **62+ Water Inventions**: Aqueducts, irrigation systems, water-lifting devices, sanitation, dams, water clocks, fountains, canals, qanats, cisterns, valves, mega-dams, desalination, flush toilets, water mills, tidal mills, artificial harbors
-- **Time Periods**: Ancient (6000-500 BCE), Classical (500 BCE-500 CE), Medieval (500-1400 CE), Modern (1750 CE-Present)
+- **45 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Ancient Greece, Roman Empire, Ancient China, Ancient Persia, Khmer Empire, Inca Empire, Aboriginal Australia, Ancient Korea, Great Zimbabwe, Nan Madol, Modern Japan (G-Cans), Siam (Thailand), Hawaiian, Ethiopian Highlands, Sahel Africa, Engaruka, Chamorro, Dutch Netherlands, and more
+- **140+ Water Inventions**: Aqueducts, irrigation, klongs, qanats, terraces, reservoirs, canals, moats, flood control, G-Cans, ondol heating, fish traps, tanada, suikinkutsu, and more
+- **Time Periods**: Ancient (40,000-500 BCE), Classical (500 BCE-500 CE), Medieval (500-1400 CE), Modern (1400 CE-Present)
+- **SWMM5 Models**: 50+ downloadable hydraulic simulation models for educational use
 
 ## System Architecture
 

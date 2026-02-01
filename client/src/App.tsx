@@ -6,19 +6,20 @@ import LandingPage from "./components/game/LandingPage";
 import WorldMapView from "./components/game/WorldMapView";
 import MuseumMode from "./components/game/MuseumMode";
 import TimelineFilter from "./components/game/TimelineFilter";
+import MiniGames from "./components/game/MiniGames";
 import "@fontsource/inter";
 import "./index.css";
 
 const queryClient = new QueryClient();
 
-type JourneyMode = "landing" | "3d-world" | "encyclopedia" | "timeline";
+type JourneyMode = "landing" | "3d-world" | "encyclopedia" | "timeline" | "minigames";
 
 function GameContent() {
   const { setBackgroundMusic, setHitSound, setSuccessSound } = useAudio();
   const { loadProgress } = useProgress();
   const [journeyMode, setJourneyMode] = useState<JourneyMode>("landing");
 
-  const handleSelectJourney = (journey: "3d-world" | "encyclopedia" | "timeline") => {
+  const handleSelectJourney = (journey: "3d-world" | "encyclopedia" | "timeline" | "minigames") => {
     setJourneyMode(journey);
   };
 
@@ -63,6 +64,10 @@ function GameContent() {
         <TimelineFilter onClose={handleBackToLanding} />
       </div>
     );
+  }
+
+  if (journeyMode === "minigames") {
+    return <MiniGames onBack={handleBackToLanding} />;
   }
 
   return <LandingPage onSelectJourney={handleSelectJourney} />;

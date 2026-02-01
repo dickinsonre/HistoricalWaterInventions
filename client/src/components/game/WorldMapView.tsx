@@ -9,44 +9,62 @@ interface WorldMapViewProps {
   onBack: () => void;
 }
 
-const civilizationLocations: Record<string, { x: number; y: number; region: string }> = {
-  "ancient-egypt": { x: 58, y: 38, region: "Nile Valley" },
-  "mesopotamia": { x: 63, y: 34, region: "Iraq/Syria" },
-  "ancient-persia": { x: 67, y: 35, region: "Iran" },
-  "indus-valley": { x: 70, y: 38, region: "Pakistan/India" },
-  "ancient-greece": { x: 55, y: 32, region: "Greece" },
-  "ancient-rome": { x: 52, y: 30, region: "Italy" },
-  "minoan-crete": { x: 55, y: 33, region: "Crete" },
-  "byzantine": { x: 58, y: 30, region: "Turkey" },
-  "ancient-china": { x: 80, y: 34, region: "China" },
-  "khmer-empire": { x: 78, y: 48, region: "Cambodia" },
-  "sri-lanka": { x: 72, y: 52, region: "Sri Lanka" },
-  "islamic-golden-age": { x: 62, y: 36, region: "Middle East" },
-  "mesoamerica": { x: 25, y: 44, region: "Mexico" },
-  "ancestral-puebloans": { x: 22, y: 34, region: "US Southwest" },
-  "nubia": { x: 59, y: 44, region: "Sudan" },
-  "nabataean": { x: 60, y: 36, region: "Jordan" },
-  "phoenicia": { x: 59, y: 33, region: "Lebanon" },
-  "carthage": { x: 52, y: 34, region: "Tunisia" },
-  "medieval-europe": { x: 50, y: 26, region: "Western Europe" },
-  "modern-era": { x: 48, y: 28, region: "Global" },
-  "inca-empire": { x: 28, y: 56, region: "Peru" },
-  "balinese": { x: 80, y: 54, region: "Indonesia" },
-  "aboriginal-australia": { x: 84, y: 64, region: "Australia" },
-  "austronesian": { x: 86, y: 52, region: "Pacific" },
-  "ancient-japan": { x: 84, y: 32, region: "Japan" },
-  "dutch-netherlands": { x: 51, y: 24, region: "Netherlands" },
-  "ancient-india": { x: 72, y: 44, region: "India" },
-  "hawaiian": { x: 12, y: 44, region: "Hawaii" },
-  "ethiopian": { x: 60, y: 48, region: "Ethiopia" },
-  "korean": { x: 82, y: 32, region: "Korea" },
-  "great-zimbabwe": { x: 59, y: 58, region: "Zimbabwe" },
-  "engaruka": { x: 60, y: 52, region: "Tanzania" },
-  "sahel": { x: 52, y: 42, region: "Sahel Africa" },
-  "nan-madol": { x: 90, y: 50, region: "Micronesia" },
-  "chamorro": { x: 88, y: 46, region: "Guam" },
-  "tokyo-underground": { x: 85, y: 33, region: "Japan" }
+// Convert lat/lng to x/y percentage (equirectangular projection)
+function latLngToXY(lat: number, lng: number): { x: number; y: number } {
+  const x = ((lng + 180) / 360) * 100;
+  const y = ((90 - lat) / 180) * 100;
+  return { x, y };
+}
+
+// Civilization coordinates using real lat/lng
+const civilizationCoords: Record<string, { lat: number; lng: number; region: string }> = {
+  "ancient-egypt": { lat: 26.8, lng: 30.8, region: "Nile Valley" },
+  "mesopotamia": { lat: 33.3, lng: 44.4, region: "Iraq/Syria" },
+  "ancient-persia": { lat: 32.4, lng: 53.7, region: "Iran" },
+  "indus-valley": { lat: 27.3, lng: 68.0, region: "Pakistan/India" },
+  "ancient-greece": { lat: 37.98, lng: 23.73, region: "Greece" },
+  "ancient-rome": { lat: 41.9, lng: 12.5, region: "Italy" },
+  "minoan-crete": { lat: 35.24, lng: 24.90, region: "Crete" },
+  "byzantine": { lat: 41.0, lng: 29.0, region: "Turkey" },
+  "ancient-china": { lat: 34.0, lng: 108.9, region: "China" },
+  "khmer-empire": { lat: 13.4, lng: 103.9, region: "Cambodia" },
+  "sri-lanka": { lat: 7.9, lng: 80.6, region: "Sri Lanka" },
+  "islamic-golden-age": { lat: 33.3, lng: 44.4, region: "Middle East" },
+  "mesoamerica": { lat: 19.4, lng: -99.1, region: "Mexico" },
+  "ancestral-puebloans": { lat: 36.0, lng: -108.0, region: "US Southwest" },
+  "nubia": { lat: 19.0, lng: 33.0, region: "Sudan" },
+  "nabataean": { lat: 30.3, lng: 35.4, region: "Jordan" },
+  "phoenicia": { lat: 33.9, lng: 35.5, region: "Lebanon" },
+  "carthage": { lat: 36.8, lng: 10.2, region: "Tunisia" },
+  "medieval-europe": { lat: 48.8, lng: 2.3, region: "Western Europe" },
+  "modern-era": { lat: 51.5, lng: -0.1, region: "Global" },
+  "inca-empire": { lat: -13.5, lng: -72.0, region: "Peru" },
+  "balinese": { lat: -8.4, lng: 115.2, region: "Indonesia" },
+  "aboriginal-australia": { lat: -25.0, lng: 134.0, region: "Australia" },
+  "austronesian": { lat: -5.0, lng: 145.0, region: "Pacific" },
+  "ancient-japan": { lat: 35.0, lng: 135.8, region: "Japan" },
+  "dutch-netherlands": { lat: 52.4, lng: 4.9, region: "Netherlands" },
+  "ancient-india": { lat: 20.6, lng: 78.9, region: "India" },
+  "hawaiian": { lat: 20.8, lng: -156.3, region: "Hawaii" },
+  "ethiopian": { lat: 9.0, lng: 38.7, region: "Ethiopia" },
+  "korean": { lat: 37.5, lng: 127.0, region: "Korea" },
+  "great-zimbabwe": { lat: -20.3, lng: 30.9, region: "Zimbabwe" },
+  "engaruka": { lat: -3.0, lng: 35.9, region: "Tanzania" },
+  "sahel": { lat: 14.0, lng: -1.5, region: "Sahel Africa" },
+  "nan-madol": { lat: 6.8, lng: 158.3, region: "Micronesia" },
+  "chamorro": { lat: 13.4, lng: 144.8, region: "Guam" },
+  "tokyo-underground": { lat: 35.9, lng: 139.8, region: "Japan" },
+  "siam-thailand": { lat: 13.75, lng: 100.5, region: "Thailand" }
 };
+
+// Convert to x/y percentages
+const civilizationLocations: Record<string, { x: number; y: number; region: string }> = 
+  Object.fromEntries(
+    Object.entries(civilizationCoords).map(([id, { lat, lng, region }]) => {
+      const { x, y } = latLngToXY(lat, lng);
+      return [id, { x, y, region }];
+    })
+  );
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {
   const [selectedCiv, setSelectedCiv] = useState<string | null>(null);

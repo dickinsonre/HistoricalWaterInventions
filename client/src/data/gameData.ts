@@ -1944,6 +1944,104 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "siam-thailand",
+      name: "Siam (Thailand)",
+      description: "Venice of the East: canal networks and floating markets",
+      position: [15, 0, 6],
+      color: "#9C27B0",
+      era: "medieval",
+      dateRange: "1238-1782 CE",
+      locations: [
+        {
+          id: "ayutthaya",
+          name: "Ayutthaya Island Capital",
+          description: "City built on an island at the confluence of three rivers",
+          historicalContext: "Second Siamese capital—controlled by intricate canal and moat systems",
+          coordinates: { lat: 14.3532, lng: 100.5685 },
+          artifacts: [
+            {
+              id: "ayutthaya-moats",
+              name: "Ayutthaya Moat System",
+              description: "12km of defensive moats surrounding the island capital",
+              rarity: "epic",
+              historicalPeriod: "1350-1767 CE",
+              significance: "Protected the city for 400+ years, also used for transport and irrigation",
+              yearBCE: -1350,
+              category: "canal"
+            },
+            {
+              id: "klong-network",
+              name: "Klong (Canal) Network",
+              description: "Extensive canal system for transport, irrigation, and flood control",
+              rarity: "legendary",
+              historicalPeriod: "13th century CE onwards",
+              significance: "Bangkok called 'Venice of the East'—canals were main transport until 20th century",
+              yearBCE: -1238,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "sukhothai",
+          name: "Sukhothai Kingdom",
+          description: "First Thai kingdom with sophisticated water management",
+          historicalContext: "UNESCO World Heritage with moats, ponds, and channels",
+          coordinates: { lat: 17.0168, lng: 99.7062 },
+          artifacts: [
+            {
+              id: "sukhothai-reservoir",
+              name: "Sukhothai Royal Reservoir",
+              description: "Large reservoir (Trapang) system for the royal city",
+              rarity: "rare",
+              historicalPeriod: "1238-1438 CE",
+              significance: "Stored water for dry season, symbolic of royal power over water",
+              yearBCE: -1250,
+              category: "dam"
+            },
+            {
+              id: "phra-ruang-dam",
+              name: "Phra Ruang Dam",
+              description: "Ancient earthen dam attributed to legendary king",
+              rarity: "epic",
+              historicalPeriod: "13th century CE",
+              significance: "One of the oldest dams in Southeast Asia, shows Thai hydraulic knowledge",
+              yearBCE: -1250,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "bangkok-canals",
+          name: "Bangkok Canal System",
+          description: "Network of klongs that made Bangkok the 'Venice of the East'",
+          historicalContext: "Extensive waterway network for transport, commerce, and flood control",
+          coordinates: { lat: 13.7563, lng: 100.5018 },
+          artifacts: [
+            {
+              id: "chao-phraya-locks",
+              name: "Chao Phraya River Management",
+              description: "Gates and locks controlling flow into Bangkok's canal network",
+              rarity: "rare",
+              historicalPeriod: "18th-19th century CE",
+              significance: "Managed flooding and enabled floating markets that defined Thai culture",
+              yearBCE: -1782,
+              category: "canal"
+            },
+            {
+              id: "floating-markets",
+              name: "Floating Market Infrastructure",
+              description: "Canals designed for waterborne commerce and daily life",
+              rarity: "common",
+              historicalPeriod: "Traditional",
+              significance: "Unique water-based economy and lifestyle continuing today",
+              yearBCE: -1800,
+              category: "canal"
+            }
+          ]
+        }
+      ]
     }
   ]
 };

@@ -727,6 +727,48 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       roughness: 0.013
     },
     engineeringNotes: 'Purely aesthetic water "instrument". Inverted pot buried in gravel, resonates like koto string instrument. Combines hydraulic engineering with art. Unique to Japanese garden culture'
+  },
+  'ayutthaya-moats': {
+    name: 'Ayutthaya Island Moat System',
+    description: 'Defensive moats and canals protecting the island capital of Siam',
+    civilization: 'Siam (Ayutthaya Kingdom)',
+    period: '1350-1767 CE',
+    parameters: {
+      length: 12000,
+      channelWidth: 50,
+      channelDepth: 4,
+      slope: 0.0005,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Built at confluence of Chao Phraya, Pa Sak, and Lopburi rivers. 12km of moats plus internal klongs. Controlled by wooden gates. City lasted 400+ years until Burmese invasion'
+  },
+  'thai-klong-network': {
+    name: 'Bangkok Klong (Canal) Network',
+    description: 'Venice of the East: extensive canal system for transport and flood control',
+    civilization: 'Siam (Rattanakosin)',
+    period: '1782 CE - Present',
+    parameters: {
+      length: 100000,
+      channelWidth: 15,
+      channelDepth: 3,
+      slope: 0.0002,
+      roughness: 0.028
+    },
+    engineeringNotes: 'Over 1,100 klongs in Bangkok at peak. Floating markets, waterborne commerce. Many filled in for roads, but major klongs remain. Now integrated with modern flood control'
+  },
+  'sukhothai-reservoir': {
+    name: 'Sukhothai Trapang Reservoir System',
+    description: 'Royal reservoir system for the first Thai capital',
+    civilization: 'Sukhothai Kingdom',
+    period: '1238-1438 CE',
+    parameters: {
+      length: 500,
+      volume: 500000,
+      reservoirDepth: 3,
+      slope: 0.005,
+      roughness: 0.025
+    },
+    engineeringNotes: 'UNESCO World Heritage. Multiple trapang (ponds) supplied city and symbolized royal power. Phra Ruang Dam attributed to legendary king. Sophisticated for 13th century Southeast Asia'
   }
 };
 
