@@ -3250,8 +3250,8 @@ export const gameData: GameData = {
     },
     {
       id: "siberia-yakutia",
-      name: "Siberian Peoples",
-      description: "Water and ice technologies enabling survival in Earth's coldest inhabited places",
+      name: "Siberian Peoples (Yakut, Evenk, Chukchi)",
+      description: "Ice engineering masters surviving -60°C winters through permafrost cellars, frozen river highways, and under-ice fishing - 30,000+ years of Arctic innovation",
       position: [18, 0, -8],
       color: "#90CAF9",
       era: "ancient",
@@ -3259,48 +3259,57 @@ export const gameData: GameData = {
       locations: [
         {
           id: "yakutsk-region",
-          name: "Yakutia Region",
-          description: "Coldest permanently inhabited place on Earth (-60°C winters)",
-          historicalContext: "Permafrost-based technologies for extreme cold survival",
+          name: "Yakutia (Sakha Republic)",
+          description: "Coldest permanently inhabited place on Earth - winter temperatures reach -60°C",
+          historicalContext: "Permafrost-based technologies for extreme cold survival; 95% underlain by permafrost",
           coordinates: { lat: 62.0, lng: 129.7 },
           artifacts: [
             {
               id: "yakutian-ice-houses",
-              name: "Yakutian Permafrost Cellars",
-              description: "Underground storage in permanently frozen ground maintaining -10°C year-round",
+              name: "Yakutian Permafrost Cellars (Buluus)",
+              description: "Underground storage chambers carved into permanently frozen ground, maintaining -10°C year-round without energy",
               rarity: "epic",
               historicalPeriod: "Ancient - Present",
-              significance: "Zero energy refrigeration; food preserved for years; influenced Svalbard Seed Vault",
+              significance: "Zero energy refrigeration; food preserved for years; influenced Svalbard Global Seed Vault design",
               yearBCE: 5000,
               category: "dam"
             },
             {
               id: "siberian-fish-traps",
               name: "Siberian Fish Traps (Zapor)",
-              description: "River-spanning weirs and cone traps for mass salmon and whitefish harvest",
+              description: "River-spanning weirs and cone traps for mass salmon and whitefish harvest, including under-ice fishing through 2m thick ice",
               rarity: "epic",
               historicalPeriod: "5000 BCE - Present",
-              significance: "Primary protein source; includes under-ice fishing through 2m ice",
+              significance: "Primary protein source for millions; sophisticated ice-hole fishing techniques",
               yearBCE: 5000,
               category: "irrigation"
-            },
+            }
+          ]
+        },
+        {
+          id: "siberian-transport",
+          name: "Siberian River Network",
+          description: "Lena, Yenisei, and Ob rivers - the world's largest frozen highway system",
+          historicalContext: "Rivers become transportation corridors in winter, impassable barriers in summer",
+          coordinates: { lat: 65.0, lng: 120.0 },
+          artifacts: [
             {
               id: "ice-roads",
               name: "Frozen River Highways (Zimnik)",
-              description: "Frozen rivers and constructed ice roads as winter transportation network",
+              description: "Frozen rivers and constructed ice roads serving as winter transportation network spanning thousands of kilometers",
               rarity: "epic",
               historicalPeriod: "Ancient - Present",
-              significance: "30,000+ km network; supports 80-ton trucks; critical infrastructure",
+              significance: "30,000+ km network; supports 80-ton trucks; critical infrastructure connecting remote communities",
               yearBCE: 5000,
               category: "canal"
             },
             {
               id: "buluus-ice",
-              name: "Buluus Natural Ice Formations",
-              description: "Natural ice springs staying frozen year-round, used as community refrigerators",
+              name: "Buluus Natural Ice Springs",
+              description: "Natural ice formations staying frozen through summer (+30°C), used as community refrigerators and sacred sites",
               rarity: "rare",
-              historicalPeriod: "Ancient",
-              significance: "Free summer refrigeration; navigation landmarks; cultural gathering points",
+              historicalPeriod: "Ancient - Present",
+              significance: "Free summer refrigeration; navigation landmarks; cultural gathering points; still used today",
               yearBCE: 10000,
               category: "dam"
             }
