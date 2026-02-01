@@ -1067,6 +1067,136 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "phoenicia",
+      name: "Phoenicia",
+      description: "Maritime masters who engineered artificial harbors and shipboard water systems",
+      position: [5, 0, -5],
+      color: "#8B4513",
+      era: "ancient",
+      dateRange: "1500 - 300 BCE",
+      locations: [
+        {
+          id: "tyre-harbor",
+          name: "Tyre Harbor Complex",
+          description: "Ancient artificial harbor with sophisticated water management",
+          historicalContext: "Phoenicians built the Mediterranean's most advanced ports",
+          coordinates: { lat: 33.2708, lng: 35.1956 },
+          artifacts: [
+            {
+              id: "artificial-harbor",
+              name: "Artificial Harbor (Cothon)",
+              description: "Man-made protected harbors with sophisticated water circulation systems",
+              rarity: "epic",
+              historicalPeriod: "Phoenician Period (1000 BCE)",
+              significance: "First large-scale artificial harbors, enabling Mediterranean trade dominance",
+              yearBCE: 1000,
+              category: "canal"
+            },
+            {
+              id: "maritime-cistern",
+              name: "Maritime Cisterns",
+              description: "Shipboard and dockside freshwater storage systems for long voyages",
+              rarity: "rare",
+              historicalPeriod: "Phoenician Period (1200 BCE)",
+              significance: "Enabled voyages to Britain and possibly beyond, carrying months of water",
+              yearBCE: 1200,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "carthage",
+      name: "Carthage",
+      description: "Phoenician colony that built the ancient world's largest cistern network",
+      position: [3, 0, 0],
+      color: "#8B0000",
+      era: "classical",
+      dateRange: "814 - 146 BCE",
+      locations: [
+        {
+          id: "carthage-cisterns",
+          name: "Carthage Cistern Network",
+          description: "Massive underground water storage system",
+          historicalContext: "Supplied a city of 500,000 with no nearby river",
+          coordinates: { lat: 36.8528, lng: 10.3233 },
+          artifacts: [
+            {
+              id: "maalga-cisterns",
+              name: "La Malga Cisterns",
+              description: "24 parallel cisterns holding 60 million liters of water",
+              rarity: "legendary",
+              historicalPeriod: "Punic Period (200 BCE)",
+              significance: "Largest ancient cistern complex ever built, supplied by 132km aqueduct",
+              yearBCE: 200,
+              category: "dam"
+            },
+            {
+              id: "opus-signinum",
+              name: "Opus Signinum Waterproofing",
+              description: "Crushed pottery mixed with lime to create waterproof cement",
+              rarity: "rare",
+              historicalPeriod: "Punic Period (300 BCE)",
+              significance: "Revolutionary waterproofing technology adopted by Rome",
+              yearBCE: 300,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "medieval-europe",
+      name: "Medieval Europe",
+      description: "Water power revolution: mills transformed manufacturing and agriculture",
+      position: [-2, 0, -8],
+      color: "#4A4A4A",
+      era: "medieval",
+      dateRange: "500 - 1400 CE",
+      locations: [
+        {
+          id: "monastery-mills",
+          name: "Cistercian Monasteries",
+          description: "Monks as hydraulic engineers: systematizing water power",
+          historicalContext: "Monasteries became centers of water engineering innovation",
+          coordinates: { lat: 47.9281, lng: 4.0833 },
+          artifacts: [
+            {
+              id: "water-mill",
+              name: "Vertical Water Mill",
+              description: "Overshot and undershot wheels powering grain mills, forges, and textile works",
+              rarity: "rare",
+              historicalPeriod: "Medieval Period (800 CE)",
+              significance: "By 1086, England alone had 5,624 water mills—Europe's first industrial revolution",
+              yearBCE: -800,
+              category: "water-lifting"
+            },
+            {
+              id: "tidal-mill",
+              name: "Tidal Mill",
+              description: "Mills powered by the rise and fall of tides in coastal estuaries",
+              rarity: "epic",
+              historicalPeriod: "Medieval Period (1000 CE)",
+              significance: "Harvested tidal energy 800 years before modern tidal power plants",
+              yearBCE: -1000,
+              category: "water-lifting"
+            },
+            {
+              id: "fulling-mill",
+              name: "Fulling Mill",
+              description: "Water-powered hammers for processing wool cloth",
+              rarity: "rare",
+              historicalPeriod: "Medieval Period (1100 CE)",
+              significance: "Mechanized textile production, precursor to Industrial Revolution",
+              yearBCE: -1100,
+              category: "water-lifting"
+            }
+          ]
+        }
+      ]
     }
   ]
 };

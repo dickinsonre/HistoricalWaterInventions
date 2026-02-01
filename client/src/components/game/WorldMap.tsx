@@ -1,9 +1,8 @@
 import { useRef, useState } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
-import { useTexture, Text } from "@react-three/drei";
+import { Text } from "@react-three/drei";
 import * as THREE from "three";
 import Region from "./Region";
-import WaterParticles from "./WaterParticles";
 import { gameData } from "../../data/gameData";
 import { useGameState } from "../../lib/stores/useGameState";
 
@@ -25,20 +24,20 @@ const geographicPositions: Record<string, [number, number, number]> = {
   "sri-lanka": [20, 0.5, 6],
   "ancestral-puebloans": [-26, 0.5, -2],
   "byzantine": [6, 0.5, -6],
+  "phoenicia": [9, 0.5, -2],
+  "carthage": [4, 0.5, 2],
+  "medieval-europe": [-2, 0.5, -8],
 };
 
 export default function WorldMap() {
-  const mapRef = useRef<THREE.Mesh>(null);
   const waterRef = useRef<THREE.Mesh>(null);
-  const worldMapTexture = useTexture("/textures/world-map.jpg");
-  const { camera } = useThree();
   const { selectedRegion, setSelectedRegion } = useGameState();
   const [hoveredRegion, setHoveredRegion] = useState<string | null>(null);
 
   useFrame((state) => {
     if (waterRef.current) {
       const material = waterRef.current.material as THREE.MeshStandardMaterial;
-      material.opacity = 0.15 + Math.sin(state.clock.elapsedTime * 1.5) * 0.05;
+      material.opacity = 0.2 + Math.sin(state.clock.elapsedTime * 1.5) * 0.05;
     }
   });
 
@@ -54,36 +53,20 @@ export default function WorldMap() {
         position={[0, -2, 0]} 
         receiveShadow
       >
-        <planeGeometry args={[100, 50]} />
-        <meshStandardMaterial color="#1a3a52" />
-      </mesh>
-
-      <mesh 
-        ref={mapRef}
-        rotation={[-Math.PI / 2, 0, 0]} 
-        position={[0, -1.5, 0]} 
-        receiveShadow
-      >
-        <planeGeometry args={[80, 40]} />
-        <meshStandardMaterial 
-          map={worldMapTexture}
-          roughness={0.8}
-          metalness={0.1}
-        />
+        <planeGeometry args={[120, 60]} />
+        <meshStandardMaterial color="#0d2538" />
       </mesh>
 
       <mesh 
         ref={waterRef}
         rotation={[-Math.PI / 2, 0, 0]} 
-        position={[0, -1.4, 0]}
+        position={[0, -1.5, 0]}
       >
-        <planeGeometry args={[100, 50]} />
+        <planeGeometry args={[120, 60]} />
         <meshStandardMaterial 
           color="#2e5c8a" 
           transparent 
-          opacity={0.15}
-          metalness={0.3}
-          roughness={0.2}
+          opacity={0.25}
         />
       </mesh>
 
@@ -114,7 +97,6 @@ export default function WorldMap() {
         );
       })}
 
-      <WaterParticles count={150} spread={70} />
 
       <Text
         position={[0, 0.5, 22]}
