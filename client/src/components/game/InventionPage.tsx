@@ -135,8 +135,21 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
               </div>
             </div>
 
+            {details?.tagline && (
+              <p className="text-[var(--gold)] text-lg italic mb-2">"{details.tagline}"</p>
+            )}
+
             <p className="text-[var(--parchment)]/90 mb-2">{artifact.description}</p>
-            <p className="text-[var(--aqua)] text-sm italic mb-6">{artifact.significance}</p>
+            <p className="text-[var(--aqua)] text-sm italic mb-4">{artifact.significance}</p>
+
+            {details?.keyFact && (
+              <div className="bg-[var(--gold)]/10 border border-[var(--gold)]/30 rounded-lg p-3 mb-6">
+                <p className="text-[var(--parchment)] text-sm">
+                  <span className="text-[var(--gold)] font-bold">Key Fact: </span>
+                  {details.keyFact}
+                </p>
+              </div>
+            )}
 
             {diagramUrl && (
               <div className="mb-6 bg-[var(--deep-ocean)]/60 rounded-lg p-4 border border-[var(--gold)]/30">
@@ -212,6 +225,49 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
                   </div>
                   <p className="text-[var(--parchment)]/90 italic">"{details.robertsNote}"</p>
                 </div>
+
+                {details.technicalSpecs && (
+                  <div className="bg-[var(--deep-ocean)]/60 rounded-lg p-4 border border-[var(--aqua)]/20">
+                    <h2 className="font-heading text-lg text-[var(--aqua)] mb-3">Technical Specifications</h2>
+                    <table className="w-full text-sm">
+                      <tbody>
+                        <tr className="border-b border-[var(--aqua)]/10">
+                          <td className="py-2 text-[var(--gold)] font-medium">Materials</td>
+                          <td className="py-2 text-[var(--parchment)]/80">{details.technicalSpecs.materials}</td>
+                        </tr>
+                        {details.technicalSpecs.dimensions && (
+                          <tr className="border-b border-[var(--aqua)]/10">
+                            <td className="py-2 text-[var(--gold)] font-medium">Dimensions</td>
+                            <td className="py-2 text-[var(--parchment)]/80">{details.technicalSpecs.dimensions}</td>
+                          </tr>
+                        )}
+                        {details.technicalSpecs.capacity && (
+                          <tr className="border-b border-[var(--aqua)]/10">
+                            <td className="py-2 text-[var(--gold)] font-medium">Capacity</td>
+                            <td className="py-2 text-[var(--parchment)]/80">{details.technicalSpecs.capacity}</td>
+                          </tr>
+                        )}
+                        {details.technicalSpecs.laborRequired && (
+                          <tr>
+                            <td className="py-2 text-[var(--gold)] font-medium">Labor Required</td>
+                            <td className="py-2 text-[var(--parchment)]/80">{details.technicalSpecs.laborRequired}</td>
+                          </tr>
+                        )}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+
+                {details.sources && details.sources.length > 0 && (
+                  <div className="bg-[var(--deep-ocean)]/40 rounded-lg p-4 border border-[var(--aqua)]/10">
+                    <h2 className="font-heading text-sm text-[var(--aqua)]/70 mb-2">Sources & References</h2>
+                    <ul className="text-xs text-[var(--parchment)]/60 space-y-1">
+                      {details.sources.map((source, idx) => (
+                        <li key={idx}>• {source}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             )}
 

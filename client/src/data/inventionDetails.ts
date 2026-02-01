@@ -1,9 +1,19 @@
+export interface TechnicalSpecs {
+  materials: string;
+  dimensions?: string;
+  capacity?: string;
+  laborRequired?: string;
+}
+
 export interface InventionDetailData {
+  tagline?: string;
+  keyFact?: string;
   howItWorks: string[];
   whyItMattered: string[];
   legacyToday: string[];
+  technicalSpecs?: TechnicalSpecs;
   robertsNote: string;
-  diagram?: string;
+  sources?: string[];
 }
 
 export const inventionDiagrams: Record<string, string> = {
@@ -110,68 +120,96 @@ export const inventionDiagrams: Record<string, string> = {
 
 export const inventionDetails: Record<string, InventionDetailData> = {
   "shaduf": {
+    tagline: "The lever that lifted civilization—one bucket at a time",
+    keyFact: "A single operator could lift 2,500 liters of water per day using only the physics of counterweights",
     howItWorks: [
-      "A long wooden pole balanced on a vertical post",
-      "Bucket or container attached to one end with rope",
-      "Heavy counterweight (mud, stone, or clay) on opposite end",
-      "Operator pulls bucket down into water, fills it",
-      "Counterweight lifts the full bucket effortlessly",
-      "Water poured into irrigation channel or higher field"
+      "A long wooden pole (3-5 meters) is balanced on a vertical mud-brick or wooden post",
+      "A bucket or clay container is attached to one end with sturdy rope",
+      "A heavy counterweight of mud, stone, or clay (15-20 kg) is fixed to the opposite end",
+      "The operator pulls the bucket down into the water source and fills it",
+      "Releasing tension allows the counterweight to lift the full bucket effortlessly",
+      "Water is poured into an irrigation channel or higher-level field basin"
     ],
     whyItMattered: [
-      "Enabled irrigation of fields above river level",
-      "Allowed year-round agriculture, not just flood season",
-      "Could lift 2,500 liters per day with one operator",
-      "Required only human power—no animals or fuel needed",
-      "Simple enough for any farmer to build and maintain"
+      "Enabled irrigation of fields above river level for the first time",
+      "Allowed year-round agriculture, not just during flood season",
+      "Could lift 2,500 liters per day with one operator—revolutionary efficiency",
+      "Required only human power—no animals, fuel, or complex machinery needed",
+      "Simple enough for any farmer to build and maintain with local materials"
     ],
     legacyToday: [
-      "Modern well pumps use the same lever principle",
-      "Construction cranes apply counterweight physics",
-      "Still actively used in rural Egypt and India",
-      "Any lever-based lifting system owes debt to this design"
+      "Modern well pumps use the same lever and counterweight principle",
+      "Construction cranes apply identical counterweight physics at massive scale",
+      "Still actively used in rural Egypt, India, and parts of Africa today",
+      "Any lever-based lifting system owes a debt to this 4,000-year-old design"
     ],
-    robertsNote: "The shaduf is elegant engineering—maximum output from minimum input. Ancient engineers understood efficiency intuitively. In my 50 years of hydraulic modeling, I've learned that the best solutions are often the simplest."
+    technicalSpecs: {
+      materials: "Wooden pole, mud-brick pillar, clay bucket, palm-fiber rope, mud/stone counterweight",
+      dimensions: "Pole: 3-5m long; Post: 1.5-2m high; Bucket: 10-20 liter capacity",
+      capacity: "2,500 liters per day per operator; Lift height: 1-3 meters",
+      laborRequired: "1 operator; Construction: 2-3 people for 1-2 days"
+    },
+    robertsNote: "The shaduf is elegant engineering—maximum output from minimum input. Ancient engineers understood efficiency intuitively. In my 50 years of hydraulic modeling, I've learned that the best solutions are often the simplest. The counterweight principle is timeless.",
+    sources: [
+      "Butzer, K.W. (1976) 'Early Hydraulic Civilization in Egypt'",
+      "Shaw, I. (2000) 'The Oxford History of Ancient Egypt'",
+      "Mays, L.W. (2010) 'Ancient Water Technologies'"
+    ]
   },
   "nilometer": {
+    tagline: "Ancient Egypt's supercomputer for predicting the future",
+    keyFact: "Nilometer readings directly determined tax rates—high water meant high taxes, low water meant relief",
     howItWorks: [
       "Vertical column or staircase descending into the Nile",
-      "Marked with cubits (ancient Egyptian measurement)",
-      "Priests recorded water levels during annual floods",
-      "Low readings predicted drought and famine",
-      "High readings warned of destructive flooding",
-      "Optimal readings meant bountiful harvests"
+      "Marked with cubits (ancient Egyptian measurement, ~52.4 cm)",
+      "Priests recorded water levels during annual floods (June-September)",
+      "Low readings (below 16 cubits) predicted drought and famine",
+      "High readings (above 19 cubits) warned of destructive flooding",
+      "Optimal readings (16-18 cubits) meant bountiful harvests"
     ],
     whyItMattered: [
       "First systematic water monitoring system in history",
       "Predicted agricultural yields months in advance",
-      "Government used readings to calculate tax rates",
+      "Government used readings to calculate tax rates for the year",
       "Enabled food storage planning for lean years",
       "Operated continuously for over 5,000 years"
     ],
     legacyToday: [
       "Modern river gauging stations use same principles",
       "Flood warning systems evolved from nilometer concept",
-      "Hydrological data collection began here",
-      "Water level monitoring remains essential for water management"
+      "Hydrological data collection began with this innovation",
+      "Water level monitoring remains essential for water management worldwide"
     ],
-    robertsNote: "The nilometer was ancient Egypt's supercomputer—it processed water data into economic predictions. Modern SCADA systems do the same thing, just with more sensors. The principle hasn't changed in 5,000 years."
+    technicalSpecs: {
+      materials: "Stone or marble columns, granite steps, limestone walls",
+      dimensions: "Depth: 10-15m below ground; Width: 2-4m diameter",
+      capacity: "N/A—measurement device, not storage",
+      laborRequired: "Daily readings by trained priests; Construction: 50-100 workers over 1-2 years"
+    },
+    robertsNote: "The nilometer was ancient Egypt's supercomputer—it processed water data into economic predictions. Modern SCADA systems do the same thing, just with more sensors. The principle hasn't changed in 5,000 years.",
+    sources: [
+      "Bonneau, D. (1971) 'La crue du Nil, divinité égyptienne'",
+      "Said, R. (1993) 'The River Nile: Geology, Hydrology and Utilization'",
+      "Popper, W. (1951) 'The Cairo Nilometer'"
+    ]
   },
   "clepsydra": {
+    tagline: "The water clock that gave humanity mastery over time itself",
+    keyFact: "In Athenian courts, speakers were limited to exactly 6 minutes measured by a clepsydra—the original time limit for arguments",
     howItWorks: [
-      "Bowl or vessel with small hole in the bottom",
-      "Filled with water that drains at consistent rate",
-      "Time measured by water level against marked scales",
-      "Some designs used inflow rather than outflow",
+      "Bowl or vessel with small calibrated hole in the bottom",
+      "Filled with water that drains at a consistent, measurable rate",
+      "Time measured by water level against marked scales on interior",
+      "Some designs used inflow rather than outflow for greater precision",
       "Advanced versions had multiple vessels for longer periods",
-      "Temperature compensation added in later designs"
+      "Temperature compensation added in later designs (water viscosity changes with temperature)"
     ],
     whyItMattered: [
       "First accurate timekeeping device in human history",
       "Worked at night when sundials were useless",
-      "Used in courts to limit speech time fairly",
-      "Enabled scheduling of temple rituals",
-      "Military applications for timing watch shifts"
+      "Used in courts to limit speech time fairly—democracy in action",
+      "Enabled scheduling of temple rituals with precision",
+      "Military applications for timing watch shifts and coordinating attacks"
     ],
     legacyToday: [
       "Hourglasses descended from this concept",
@@ -179,103 +217,166 @@ export const inventionDetails: Record<string, InventionDetailData> = {
       "Water features in gardens echo decorative clepsydrae",
       "Foundation for understanding time as a measurable quantity"
     ],
-    robertsNote: "The clepsydra proved that water flow could be precisely controlled and measured. This insight—that water behaves predictably—is the foundation of all hydraulic engineering."
+    technicalSpecs: {
+      materials: "Terracotta, bronze, or stone vessels; calibrated holes (1-3mm diameter)",
+      dimensions: "Height: 30-50 cm; Diameter: 15-30 cm; Hole: 1-3mm",
+      capacity: "1-5 liters of water; Drainage time: 6 minutes to 12 hours depending on design",
+      laborRequired: "Skilled potter for precision construction; 1 operator for readings"
+    },
+    robertsNote: "The clepsydra proved that water flow could be precisely controlled and measured. This insight—that water behaves predictably—is the foundation of all hydraulic engineering.",
+    sources: [
+      "Lewis, M.J.T. (2000) 'Surveying Instruments of Greece and Rome'",
+      "Young, S.P. (1939) 'An Athenian Clepsydra'",
+      "Humphrey, J.W. (2006) 'Ancient Technology'"
+    ]
   },
   "qanat-plans": {
+    tagline: "Underground rivers carved by hand through solid rock—for 3,000 years",
+    keyFact: "Iran alone has 50,000 qanats totaling 300,000 km of tunnels—enough to circle Earth 7.5 times",
     howItWorks: [
-      "Gently sloping tunnel from mountain aquifer to surface",
-      "Vertical shafts every 20-50 meters for construction access",
-      "Gravity carries water underground for kilometers",
-      "No pumping required—uses natural slope",
-      "Underground path prevents evaporation in desert heat",
-      "Mother well taps into groundwater at source"
+      "Survey identifies mountain aquifer above target area",
+      "Mother well (sometimes 100+ meters deep) is dug to reach groundwater",
+      "Gently sloping tunnel (0.5-1% grade) is dug toward destination",
+      "Vertical shafts every 20-50 meters allow debris removal and ventilation",
+      "Gravity carries water underground for kilometers without pumping",
+      "Underground path prevents evaporation—zero water loss in scorching desert"
     ],
     whyItMattered: [
-      "Transported water 50+ kilometers without pumps",
-      "Zero evaporation loss in scorching desert climate",
-      "Enabled cities to thrive in arid regions",
-      "Sustainable—doesn't deplete aquifers if maintained",
-      "Some qanats have operated for 3,000 years"
+      "Transported water 50+ kilometers without any pumps or energy",
+      "Zero evaporation loss in climates where 90% of surface water evaporates",
+      "Enabled cities like Persepolis, Yazd, and Marrakech to thrive",
+      "Sustainable extraction—if properly maintained, doesn't deplete aquifers",
+      "Some qanats have operated continuously for over 3,000 years"
     ],
     legacyToday: [
-      "Still operating in Iran, Afghanistan, and Morocco",
-      "Inspires modern sustainable water harvesting",
-      "Gravity-fed systems reduce energy consumption",
-      "UNESCO World Heritage recognition for surviving qanats"
+      "Still actively operating in Iran, Afghanistan, Morocco, and Oman",
+      "Inspires modern sustainable water harvesting techniques",
+      "Gravity-fed systems reduce energy consumption in modern design",
+      "UNESCO World Heritage recognition for surviving qanat systems"
     ],
-    robertsNote: "Qanats are gravity-fed genius. They solve the eternal engineering challenge: how do you move water uphill? Answer: you don't—you find the slope and let gravity do the work. Ancient Persians understood hydraulic gradients perfectly."
+    technicalSpecs: {
+      materials: "Hand tools, clay brick lining, windlass for debris removal",
+      dimensions: "Tunnel: 50cm wide x 150cm high; Shafts: 20-50m apart; Length: up to 70 km",
+      capacity: "10-500 liters per second; Total network: 300,000 km in Iran alone",
+      laborRequired: "Muqannis (specialized diggers): 2-3 per team; Construction: months to years per qanat"
+    },
+    robertsNote: "Qanats are gravity-fed genius. They solve the eternal engineering challenge: how do you move water uphill? Answer: you don't—you find the slope and let gravity do the work. Ancient Persians understood hydraulic gradients perfectly.",
+    sources: [
+      "Beaumont, P. (1971) 'Qanat Systems in Iran'",
+      "Lightfoot, D.R. (1996) 'Syrian Qanat Romani'",
+      "Wulff, H.E. (1968) 'The Qanats of Iran', Scientific American"
+    ]
   },
   "irrigation-tablet": {
+    tagline: "The world's first engineering manual—carved in clay",
+    keyFact: "The Code of Hammurabi included 282 laws, with specific penalties for engineers whose irrigation works failed",
     howItWorks: [
-      "Cuneiform text describing canal dimensions and layout",
-      "Specified water allocation quotas for different users",
-      "Included maintenance schedules for dredging",
-      "Documented water rights and dispute resolution",
+      "Cuneiform text describing canal dimensions and layout on clay tablets",
+      "Specified water allocation quotas for different users and time periods",
+      "Included maintenance schedules for dredging and repair",
+      "Documented water rights and dispute resolution procedures",
       "Showed how to calculate flow based on canal cross-section",
-      "Instructions for building weirs and control gates"
+      "Instructions for building weirs, sluice gates, and distributary canals"
     ],
     whyItMattered: [
-      "Earliest written engineering documentation",
-      "Enabled knowledge transfer across generations",
-      "Standardized construction practices",
-      "Created legal framework for water sharing",
+      "Earliest written engineering documentation in human history",
+      "Enabled knowledge transfer across generations—immortal knowledge",
+      "Standardized construction practices across Mesopotamia",
+      "Created legal framework for water sharing—the first water laws",
       "Foundation of irrigation as organized science"
     ],
     legacyToday: [
       "Technical documentation standards began here",
-      "Water rights law evolved from these tablets",
-      "Engineering drawing practices have ancient roots",
+      "Water rights law evolved from these ancient tablets",
+      "Engineering drawing practices have roots in cuneiform specifications",
       "Knowledge preservation remains critical to engineering"
     ],
-    robertsNote: "These tablets remind us that documentation matters. The Sumerians knew that engineering knowledge must be recorded and shared. Every specification I write today follows a 4,000-year-old tradition."
+    technicalSpecs: {
+      materials: "Clay tablets, reed stylus for cuneiform writing",
+      dimensions: "Tablets: 5-15 cm; Described canals up to 50 km long",
+      capacity: "Documented systems irrigating 100,000+ hectares",
+      laborRequired: "Trained scribes for writing; Corvée labor (conscripted workers) for construction"
+    },
+    robertsNote: "These tablets remind us that documentation matters. The Sumerians knew that engineering knowledge must be recorded and shared. Every specification I write today follows a 4,000-year-old tradition.",
+    sources: [
+      "Potts, D.T. (1997) 'Mesopotamian Civilization: The Material Foundations'",
+      "Jacobsen, T. (1960) 'The Waters of Ur'",
+      "Driver, G.R. & Miles, J.C. (1952) 'The Babylonian Laws'"
+    ]
   },
   "jerwan-aqueduct": {
+    tagline: "Built when Rome was still a village—400 years before Roman aqueducts",
+    keyFact: "King Sennacherib's inscription boasted he built it in just 15 months with 2 million stone blocks",
     howItWorks: [
-      "Stone channel carried water across valley on bridge",
-      "Over 2 million stone blocks precisely fitted",
-      "Waterproofed with bitumen (natural asphalt)",
-      "Gentle 1:80 gradient maintained over 50km",
-      "Fed by mountain streams, delivered to Nineveh",
-      "Inscription boasted of King Sennacherib's achievement"
+      "Stone channel carried water across a deep valley on massive bridge",
+      "Over 2 million precisely-cut limestone blocks fitted without mortar",
+      "Waterproofed with bitumen (natural asphalt from Mesopotamian oil seeps)",
+      "Gentle 1:80 gradient maintained over entire 50km length",
+      "Fed by mountain streams in the Zagros, delivered to Nineveh",
+      "Royal inscription carved into the bridge boasted of Sennacherib's achievement"
     ],
     whyItMattered: [
-      "World's oldest large-scale aqueduct",
-      "Predated Roman aqueducts by 400 years",
-      "Supplied water to capital of 120,000 people",
-      "Demonstrated empire's engineering capabilities",
-      "Enabled famous gardens of Nineveh"
+      "World's oldest surviving large-scale aqueduct",
+      "Predated famous Roman aqueducts by 400 years",
+      "Supplied water to capital city of 120,000 people",
+      "Demonstrated Assyrian Empire's engineering capabilities",
+      "Enabled the famous Hanging Gardens (possibly at Nineveh, not Babylon)"
     ],
     legacyToday: [
-      "Influenced later Roman aqueduct design",
-      "Proved large-scale water infrastructure possible",
-      "Archaeological treasure revealing ancient methods",
-      "Inspiration for modern long-distance water transfer"
+      "Directly influenced later Roman aqueduct design",
+      "Proved large-scale water infrastructure was achievable",
+      "Archaeological treasure revealing ancient construction methods",
+      "Inspiration for modern long-distance water transfer projects"
     ],
-    robertsNote: "The Jerwan Aqueduct proves that Romans didn't invent aqueducts—they perfected them. The Assyrians were building 50km water supply systems when Rome was still a village."
+    technicalSpecs: {
+      materials: "Limestone blocks, bitumen waterproofing, stone corbel arches",
+      dimensions: "Length: 50 km total; Bridge: 280m long, 22m high; Channel: 1.5m wide",
+      capacity: "Estimated 450,000 cubic meters per day",
+      laborRequired: "Thousands of workers; Construction: 15 months according to inscription"
+    },
+    robertsNote: "The Jerwan Aqueduct proves that Romans didn't invent aqueducts—they perfected them. The Assyrians were building 50km water supply systems when Rome was still a village.",
+    sources: [
+      "Jacobsen, T. & Lloyd, S. (1935) 'Sennacherib's Aqueduct at Jerwan'",
+      "Dalley, S. (2013) 'The Mystery of the Hanging Garden of Babylon'",
+      "Bagg, A.M. (2000) 'Assyrische Wasserbauten'"
+    ]
   },
   "great-bath": {
+    tagline: "The world's first public swimming pool—4,500 years old",
+    keyFact: "The bitumen waterproofing was so effective that archaeologists found it still intact after 4,500 years",
     howItWorks: [
-      "Brick-lined pool 12m x 7m, nearly 3m deep",
-      "Waterproofed with natural bitumen between bricks",
-      "Surrounded by changing rooms with private wells",
-      "Sophisticated drainage to remove used water",
-      "Fresh water inlet from nearby well",
-      "Steps led into pool for ritual purification"
+      "Brick-lined pool measuring 12m x 7m, nearly 3m deep",
+      "Waterproofed with natural bitumen between bricks—still intact today",
+      "Surrounded by changing rooms with private wells for washing",
+      "Sophisticated drainage through a large corbeled drain",
+      "Fresh water inlet from a nearby deep well",
+      "Wide steps led into pool from each end for ritual purification"
     ],
     whyItMattered: [
-      "First known public bathing facility in history",
-      "Advanced waterproofing technology for 2600 BCE",
-      "Demonstrated understanding of hygiene",
-      "Sophisticated drainage infrastructure",
-      "Center of civic and possibly religious life"
+      "First known public bathing facility in human history",
+      "Advanced waterproofing technology unprecedented for 2600 BCE",
+      "Demonstrated sophisticated understanding of hygiene and public health",
+      "Sophisticated drainage infrastructure—planned sanitation",
+      "Center of civic and possibly religious life in Mohenjo-Daro"
     ],
     legacyToday: [
-      "Public swimming pools descend from this concept",
-      "Waterproofing techniques influenced later cultures",
-      "Communal bathing traditions worldwide",
-      "Established link between water and public health"
+      "Public swimming pools descend from this ancient concept",
+      "Waterproofing techniques influenced later cultures worldwide",
+      "Communal bathing traditions from Roman baths to Japanese onsen",
+      "Established enduring link between water and public health"
     ],
-    robertsNote: "The Great Bath shows that 4,500 years ago, people understood water and public health were connected. The pool's drainage system is remarkably sophisticated—these weren't primitive people."
+    technicalSpecs: {
+      materials: "Fired bricks, natural bitumen (asphalt), gypsum mortar",
+      dimensions: "Length: 12m; Width: 7m; Depth: 2.4m; Walls: 1m thick",
+      capacity: "Approximately 160,000 liters when full",
+      laborRequired: "Skilled brick-layers and bitumen workers; Construction: months to years"
+    },
+    robertsNote: "The Great Bath shows that 4,500 years ago, people understood water and public health were connected. The pool's drainage system is remarkably sophisticated—these weren't primitive people.",
+    sources: [
+      "Marshall, J. (1931) 'Mohenjo-Daro and the Indus Civilization'",
+      "Kenoyer, J.M. (1998) 'Ancient Cities of the Indus Valley Civilization'",
+      "Jansen, M. (1989) 'Water Supply and Sewage Disposal at Mohenjo-Daro'"
+    ]
   },
   "drain-system": {
     howItWorks: [

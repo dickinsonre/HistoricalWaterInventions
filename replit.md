@@ -166,6 +166,12 @@ client/src/
 
 ## Changelog
 
+- February 01, 2026: Comprehensive invention template expansion
+  - Generated 129 technical diagrams for ALL inventions (100% coverage)
+  - Enhanced InventionPage with tagline, key fact, technical specs, and sources sections
+  - Added comprehensive template data to key inventions (shaduf, nilometer, clepsydra, qanat, irrigation-tablet, jerwan-aqueduct, great-bath)
+  - URL-based navigation system: /civilization/invention/details routes
+  - Made template fields optional for backward compatibility
 - January 31, 2026: Major update - Water Inventions theme
   - Added "Ancient Waters" color palette and typography
   - Expanded to 8 civilizations (added Mesopotamia, Indus Valley, China, Islamic Golden Age, Mesoamerica)
