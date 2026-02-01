@@ -16,6 +16,8 @@ const featuredModels = [
   { id: 'baray', diagram: '/diagrams/baray.png' },
   { id: 'inverted-siphon', diagram: '/diagrams/inverted-siphon.png' },
   { id: 'indian-stepwell', diagram: '/diagrams/stepwell.png' },
+  { id: 'shaduf', diagram: '/diagrams/shaduf.png' },
+  { id: 'minoan-drainage', diagram: '/diagrams/cloaca-maxima.png' },
 ];
 
 export default function SWMM5Showcase({ onViewAll }: SWMM5ShowcaseProps) {

@@ -21,10 +21,11 @@ const categoryFilters = [
   { id: "irrigation", label: "Irrigation", icon: "🌾" },
   { id: "aqueduct", label: "Aqueducts", icon: "🏛️" },
   { id: "canal", label: "Canals", icon: "⛵" },
-  { id: "dam", label: "Dams/Storage", icon: "🏔️" },
+  { id: "dam", label: "Dams", icon: "🏔️" },
   { id: "sanitation", label: "Sanitation", icon: "🚿" },
   { id: "fountain", label: "Fountains", icon: "⛲" },
-  { id: "water-clock", label: "Water Tech", icon: "⚙️" }
+  { id: "water-lifting", label: "Water Lifting", icon: "⚙️" },
+  { id: "water-clock", label: "Clocks", icon: "⏰" }
 ];
 
 export default function QuickSearchBar({ onSelectCivilization, onSelectInvention }: QuickSearchBarProps) {
