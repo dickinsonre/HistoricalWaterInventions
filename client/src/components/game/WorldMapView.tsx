@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
 import { 
-  MapPin, ChevronRight, X, Home, Droplets, VolumeX, Volume2, Search, 
+  MapPin, ChevronRight, ChevronDown, X, Home, Droplets, VolumeX, Volume2, Search, 
   Backpack, Trophy, Clock, BookOpen, BarChart3, Play, Star, Image, 
   Lightbulb, Info, Globe, Grid3X3, Download, Route, Scroll, Filter, HelpCircle
 } from "lucide-react";
@@ -143,6 +143,12 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
   const [eraFilter, setEraFilter] = useState<string | null>(null);
   const [continentFilter, setContinentFilter] = useState<string | null>(null);
   const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
+  
+  const civilizationsRef = useRef<HTMLDivElement>(null);
+  
+  const scrollToCivilizations = () => {
+    civilizationsRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   const allArtifacts = gameData.regions.flatMap(r => r.locations.flatMap(l => l.artifacts));
   const totalLocations = gameData.regions.reduce((acc, r) => acc + r.locations.length, 0);
@@ -503,9 +509,16 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
         {/* Summary Stats */}
         <div className="mt-6 mb-4 p-4 water-card rounded-lg">
           <div className="flex flex-wrap justify-center gap-8 text-center">
-            <div>
+            <div 
+              className="cursor-pointer hover:scale-105 transition-transform"
+              onClick={scrollToCivilizations}
+              title="Click to view all civilizations"
+            >
               <div className="text-3xl font-heading text-[var(--gold)]">{gameData.regions.length}</div>
-              <div className="text-[var(--parchment)]/70 text-sm">Civilizations</div>
+              <div className="text-[var(--parchment)]/70 text-sm flex items-center gap-1">
+                Civilizations
+                <ChevronDown size={14} className="text-[var(--aqua)]" />
+              </div>
             </div>
             <div>
               <div className="text-3xl font-heading text-[var(--aqua)]">{allArtifacts.length}</div>
@@ -522,7 +535,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
           </div>
         </div>
 
-        <h2 className="font-heading text-xl text-[var(--gold)] mb-4">All Civilizations & Their Inventions</h2>
+        <h2 ref={civilizationsRef} className="font-heading text-xl text-[var(--gold)] mb-4">All Civilizations & Their Inventions</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {gameData.regions.map(region => {
             const inventions = region.locations.flatMap(l => l.artifacts);
