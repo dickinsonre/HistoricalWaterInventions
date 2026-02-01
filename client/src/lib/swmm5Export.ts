@@ -784,20 +784,6 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
     },
     engineeringNotes: 'UNESCO World Heritage. Most ornate stepwell ever built. 27m deep with 7 levels of stairs. Natural cooling 6°C below surface. Water table access via ceremonial descent'
   },
-  'grand-anicut': {
-    name: 'Grand Anicut (Kallanai Dam)',
-    description: 'World\'s oldest water-diversion dam still in use after 2,000 years',
-    civilization: 'Chola Dynasty (Tamil Nadu)',
-    period: '2nd century CE',
-    parameters: {
-      length: 329,
-      channelWidth: 20,
-      channelDepth: 5,
-      slope: 0.002,
-      roughness: 0.025
-    },
-    engineeringNotes: 'Built by Karikala Chola. Stone dam diverts Kaveri River. Still irrigates 1 million acres. Inspired British engineers who expanded the system in 1800s'
-  },
   'west-baray': {
     name: 'West Baray Reservoir',
     description: 'Largest hand-dug reservoir in history: 8km x 2km holding 56 million m³',

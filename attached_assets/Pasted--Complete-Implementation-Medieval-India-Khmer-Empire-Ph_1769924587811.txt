@@ -1,0 +1,2078 @@
+# Complete Implementation: Medieval India, Khmer Empire & Philippines (Ifugao)
+
+Here's the full package with JSON database entries, SWMM5 models, and fascinating details for your Historical Mystery platform.
+
+---
+
+## 1. JSON Database Entries
+
+### Medieval India (Complete)
+
+```json
+{
+  "civilization": {
+    "id": "medieval-india",
+    "name": "Medieval India",
+    "alternateNames": ["Post-Mauryan India", "Classical India", "Hindu Kingdoms"],
+    "period": {
+      "start": -322,
+      "end": 1600,
+      "display": "322 BCE - 1600 CE",
+      "phases": [
+        {
+          "name": "Maurya-Gupta Period",
+          "years": "322 BCE - 550 CE",
+          "description": "Empire building and first major hydraulic projects"
+        },
+        {
+          "name": "South Indian Kingdoms",
+          "years": "300 BCE - 1300 CE",
+          "description": "Chola, Pandya, Pallava tank cascade systems"
+        },
+        {
+          "name": "Sultanate & Regional Powers",
+          "years": "1200 - 1600 CE",
+          "description": "Stepwell architecture reaches peak; baoli traditions"
+        }
+      ]
+    },
+    "regions": [
+      {
+        "name": "Gujarat",
+        "modernCountry": "India",
+        "coordinates": { "lat": 22.2587, "lng": 71.1924 },
+        "specialization": "Stepwells (Vav)",
+        "keyInventions": ["rani-ki-vav", "adalaj-stepwell", "dholavira-reservoir"]
+      },
+      {
+        "name": "Rajasthan",
+        "modernCountry": "India",
+        "coordinates": { "lat": 27.0238, "lng": 74.2179 },
+        "specialization": "Desert water harvesting",
+        "keyInventions": ["johad", "kund", "tanka", "khadin"]
+      },
+      {
+        "name": "Tamil Nadu",
+        "modernCountry": "India",
+        "coordinates": { "lat": 11.1271, "lng": 78.6569 },
+        "specialization": "Cascade tank systems",
+        "keyInventions": ["eri-system", "grand-anicut", "sluice-gates"]
+      },
+      {
+        "name": "Karnataka",
+        "modernCountry": "India",
+        "coordinates": { "lat": 15.3173, "lng": 75.7139 },
+        "specialization": "Temple tanks and irrigation",
+        "keyInventions": ["kalyani", "kere-system"]
+      },
+      {
+        "name": "Maharashtra",
+        "modernCountry": "India",
+        "coordinates": { "lat": 19.7515, "lng": 75.7139 },
+        "specialization": "Community irrigation",
+        "keyInventions": ["phad-system", "bandharas"]
+      },
+      {
+        "name": "Northeast India",
+        "modernCountry": "India",
+        "coordinates": { "lat": 25.4670, "lng": 91.3662 },
+        "specialization": "Bamboo engineering",
+        "keyInventions": ["bamboo-drip-irrigation", "zabo"]
+      }
+    ],
+    "mapPosition": { "x": 72.5, "y": 38.5 },
+    "color": "#FF6B35",
+    "icon": "🕌",
+    "connectionToIndus": "Direct cultural and technological continuity. Many Medieval Indian innovations refined and scaled Indus Valley concepts like water storage, brick-lined channels, and urban drainage.",
+    "population": {
+      "peak": "100-150 million (Mughal era)",
+      "urbanization": "10-15%"
+    },
+    "climate": {
+      "type": "Monsoon-dependent",
+      "challenge": "4 months of rain must sustain 12 months of agriculture",
+      "annualRainfall": "400-3000mm depending on region"
+    }
+  },
+  
+  "inventions": [
+    {
+      "id": "rani-ki-vav",
+      "name": "Rani ki Vav (Queen's Stepwell)",
+      "category": "Water Storage & Access",
+      "subcategory": "Stepwell",
+      "period": {
+        "invented": 1063,
+        "display": "1063 CE",
+        "dynasty": "Solanki (Chaulukya)"
+      },
+      "location": {
+        "site": "Patan",
+        "region": "Gujarat",
+        "coordinates": { "lat": 23.8589, "lng": 72.1017 }
+      },
+      "dimensions": {
+        "length": "64 meters",
+        "width": "20 meters",
+        "depth": "27 meters (7 stories underground)",
+        "steps": "Over 500 steps",
+        "levels": 7
+      },
+      "description": "The most ornate stepwell ever built, constructed by Queen Udayamati in memory of her husband King Bhima I. Designed as an inverted temple celebrating the sanctity of water.",
+      "fascinatingDetails": [
+        "Contains over 500 principal sculptures and 1,000 minor sculptures",
+        "Was buried under silt for centuries until excavated in 1980s",
+        "Temperature at bottom stays 5-6°C cooler than surface",
+        "Featured on India's ₹100 currency note since 2018",
+        "UNESCO World Heritage Site since 2014",
+        "Sculptures include Vishnu's 10 avatars, apsaras (celestial dancers), and scenes from epics",
+        "The lowest level has a gate that was sealed - its purpose remains a mystery"
+      ],
+      "engineeringPrinciples": [
+        {
+          "principle": "Inverted Architecture",
+          "explanation": "Built downward into earth rather than upward, symbolizing descent to water's sacred source"
+        },
+        {
+          "principle": "Corbelled Construction",
+          "explanation": "Each level slightly overhangs the one below, distributing weight outward"
+        },
+        {
+          "principle": "Passive Cooling",
+          "explanation": "Deep underground design with water creates natural air conditioning"
+        },
+        {
+          "principle": "Hydraulic Connectivity",
+          "explanation": "Connected to local aquifer through porous stone layers"
+        }
+      ],
+      "socialFunction": {
+        "primary": "Year-round water access",
+        "secondary": "Social gathering space",
+        "tertiary": "Religious ceremonies",
+        "cooling": "Refuge from summer heat (up to 47°C surface)"
+      },
+      "images": [
+        {
+          "url": "/images/rani-ki-vav-aerial.jpg",
+          "caption": "Aerial view showing the 64-meter length"
+        },
+        {
+          "url": "/images/rani-ki-vav-sculptures.jpg",
+          "caption": "Intricate sculptures preserved for 1,000 years"
+        },
+        {
+          "url": "/images/rani-ki-vav-steps.jpg",
+          "caption": "Seven stories descending to the water table"
+        }
+      ],
+      "swmmModel": "rani-ki-vav.inp",
+      "status": "UNESCO World Heritage Site",
+      "preservation": "Well-preserved after excavation; active conservation",
+      "modernRelevance": "Inspiration for passive cooling architecture and groundwater recharge systems"
+    },
+    {
+      "id": "eri-system",
+      "name": "Eri Tank Cascade System",
+      "category": "Irrigation",
+      "subcategory": "Interconnected Reservoirs",
+      "period": {
+        "invented": -300,
+        "refinedUntil": 1300,
+        "display": "300 BCE - 1300 CE"
+      },
+      "location": {
+        "region": "Tamil Nadu",
+        "extent": "Entire state",
+        "coordinates": { "lat": 11.1271, "lng": 78.6569 }
+      },
+      "scale": {
+        "totalTanks": "39,000+ tanks recorded historically",
+        "currentlyActive": "About 30,000",
+        "irrigatedArea": "3 million hectares at peak",
+        "cascadeLength": "Up to 30 tanks in single chain"
+      },
+      "description": "The world's largest interconnected rainwater harvesting system. Each tank (eri) is connected to tanks above and below, allowing water to cascade through entire watersheds while being stored at multiple points.",
+      "fascinatingDetails": [
+        "At peak, Tamil Nadu had one tank for every 2.5 square kilometers",
+        "Some cascade chains span 50+ kilometers",
+        "Each tank supports distinct ecosystems including fish, lotuses, and water birds",
+        "Sluice gates (talaivaasal) allow selective release at different heights for different crop needs",
+        "System designed to lose only 10-15% to evaporation despite hot climate",
+        "British colonial neglect led to 30% of tanks falling into disuse",
+        "Modern revival movements restoring tanks for climate resilience"
+      ],
+      "components": [
+        {
+          "name": "Eri (Tank)",
+          "function": "Primary storage reservoir"
+        },
+        {
+          "name": "Kodangi (Bund)",
+          "function": "Earthen embankment forming the tank"
+        },
+        {
+          "name": "Talaivaasal (Sluice)",
+          "function": "Outlet with multiple gates at different heights"
+        },
+        {
+          "name": "Madagu (Weir)",
+          "function": "Overflow structure connecting to downstream tank"
+        },
+        {
+          "name": "Vaaikaal (Channel)",
+          "function": "Distribution canal to fields"
+        },
+        {
+          "name": "Kadavathu (Inlet)",
+          "function": "Receives water from upstream tank or stream"
+        }
+      ],
+      "waterManagement": {
+        "monsoonCapture": "Northeast monsoon (Oct-Dec) provides 60% of inflow",
+        "drySeasonUse": "Stored water used Jan-May for second crop",
+        "groundwaterRecharge": "20-30% of stored water percolates to aquifer",
+        "cycleTime": "Complete watershed cycle: 3-6 months"
+      },
+      "swmmModel": "eri-cascade-system.inp",
+      "status": "Partially active; revival efforts underway",
+      "modernRelevance": "Model for climate adaptation; tanks being restored across Tamil Nadu"
+    },
+    {
+      "id": "grand-anicut",
+      "name": "Grand Anicut (Kallanai)",
+      "category": "Diversion",
+      "subcategory": "Stone Dam",
+      "period": {
+        "invented": 150,
+        "display": "~150 CE (2nd century)",
+        "builder": "Karikala Chola"
+      },
+      "location": {
+        "river": "Kaveri River",
+        "site": "Near Tiruchirappalli",
+        "region": "Tamil Nadu",
+        "coordinates": { "lat": 10.9520, "lng": 78.8211 }
+      },
+      "dimensions": {
+        "length": "329 meters (1,080 feet)",
+        "width": "20 meters (66 feet)",
+        "height": "5.4 meters (18 feet)"
+      },
+      "description": "The oldest water-diversion structure in the world still in use. Built nearly 2,000 years ago to divert Kaveri River waters into irrigation channels for the fertile Thanjavur delta.",
+      "fascinatingDetails": [
+        "Still functions today after nearly 2,000 years",
+        "Predates Roman aqueducts that served similar purpose",
+        "British engineer Arthur Cotton studied it in 1829 and called it 'the proudest achievement of ancient engineering'",
+        "Diverts water into Kollidam and Kaveri distributaries",
+        "Irrigates over 400,000 hectares of the Thanjavur delta",
+        "Original unhewn stone construction with later brick additions",
+        "No mortar used in original construction - stones keyed together"
+      ],
+      "engineeringPrinciples": [
+        {
+          "principle": "Run-of-river design",
+          "explanation": "Doesn't store water; only raises level for diversion"
+        },
+        {
+          "principle": "Stone interlocking",
+          "explanation": "Unhewn stones fitted together without mortar"
+        },
+        {
+          "principle": "Flood resilience",
+          "explanation": "Low profile allows flood waters to pass over safely"
+        }
+      ],
+      "swmmModel": "grand-anicut.inp",
+      "status": "Fully operational",
+      "modernRelevance": "Proof that low-tech solutions can outlast high-tech ones"
+    },
+    {
+      "id": "johad",
+      "name": "Johad (Crescent Dam)",
+      "category": "Rainwater Harvesting",
+      "subcategory": "Check Dam",
+      "period": {
+        "invented": 800,
+        "display": "~800 CE onwards"
+      },
+      "location": {
+        "region": "Rajasthan",
+        "terrain": "Arid and semi-arid zones",
+        "coordinates": { "lat": 27.5, "lng": 76.5 }
+      },
+      "description": "Crescent-shaped earthen check dams that capture monsoon runoff and recharge groundwater. Simple but effective technology that has been revived spectacularly in modern times.",
+      "fascinatingDetails": [
+        "Rajendra Singh ('Waterman of India') has revived 11,800+ johads since 1985",
+        "Five rivers that had gone dry now flow again due to johad revival",
+        "Cost: Only ₹100,000-500,000 ($1,200-6,000) per johad",
+        "Each johad can recharge groundwater in 5-10 km² area",
+        "Traditional johads built and maintained by village communities",
+        "Singh won Stockholm Water Prize (2015) for this work"
+      ],
+      "construction": {
+        "shape": "Crescent or half-moon",
+        "materials": "Earth, stone, local materials only",
+        "labor": "Community construction (shramdaan - labor donation)",
+        "maintenance": "Annual de-silting before monsoon",
+        "lifespan": "Indefinite with maintenance"
+      },
+      "hydrology": {
+        "catchmentRatio": "10:1 to 20:1 (catchment to storage area)",
+        "rechargePortion": "60-80% of captured water percolates",
+        "evaporationLoss": "20-40% depending on depth and climate"
+      },
+      "swmmModel": "johad-system.inp",
+      "status": "Revival movement active",
+      "modernRelevance": "Proven climate adaptation strategy; replicable worldwide"
+    },
+    {
+      "id": "bamboo-drip-irrigation",
+      "name": "Bamboo Drip Irrigation",
+      "category": "Irrigation",
+      "subcategory": "Micro-irrigation",
+      "period": {
+        "invented": -200,
+        "display": "~200 BCE (estimated)",
+        "continuity": "Continuously used for 2,000+ years"
+      },
+      "location": {
+        "region": "Meghalaya (Khasi and Jaintia Hills)",
+        "terrain": "Steep mountain slopes",
+        "coordinates": { "lat": 25.5788, "lng": 91.8933 }
+      },
+      "description": "An indigenous drip irrigation system using only bamboo pipes to transport water over hundreds of meters across steep terrain, delivering precise amounts to individual plants.",
+      "fascinatingDetails": [
+        "Predates modern drip irrigation by 2,000 years",
+        "Delivers 18-20 liters per minute over 200+ meter distances",
+        "Uses no pumps, electricity, or metal - only bamboo and gravity",
+        "Different bamboo diameters used for trunk lines (10cm) vs drip lines (1cm)",
+        "Water divided progressively: main channel → secondary → tertiary → individual plants",
+        "Primarily used for betel leaf (paan) and black pepper cultivation",
+        "Recently recognized by ICAR as model for sustainable agriculture"
+      ],
+      "components": [
+        {
+          "name": "Main channel (Raj-Sha)",
+          "diameter": "10-15 cm",
+          "function": "Primary water transport from spring"
+        },
+        {
+          "name": "Secondary channels",
+          "diameter": "5-10 cm",
+          "function": "Distribution to field sections"
+        },
+        {
+          "name": "Tertiary channels",
+          "diameter": "2-5 cm",
+          "function": "Row-level distribution"
+        },
+        {
+          "name": "Drip outlets",
+          "diameter": "0.5-1 cm",
+          "function": "Individual plant delivery"
+        }
+      ],
+      "efficiency": {
+        "waterUse": "90-95% (comparable to modern drip systems)",
+        "evaporationLoss": "Minimal - water enclosed in bamboo",
+        "laborRequirement": "High for initial setup; low for maintenance"
+      },
+      "swmmModel": "bamboo-drip-irrigation.inp",
+      "status": "Active in Meghalaya",
+      "modernRelevance": "Inspiration for low-cost drip systems; sustainable materials"
+    }
+  ],
+  
+  "culturalContext": {
+    "waterPhilosophy": {
+      "concept": "Jal (Water) as Deva (Divine)",
+      "practices": [
+        "Water as first offering (arghya) in worship",
+        "Sacred rivers (Ganga, Yamuna, Kaveri) as goddesses",
+        "Stepwells as temples - descent to water equals spiritual descent",
+        "Community ownership of water as sacred trust"
+      ]
+    },
+    "socialOrganization": {
+      "kudimaramathu": "Tamil tradition of community maintenance of tanks",
+      "neerkatti": "Water managers/distributors in villages",
+      "panchayat": "Village council managing water rights"
+    },
+    "literature": {
+      "arthashastra": "Kautilya's 4th century BCE treatise includes water laws",
+      "thirukkural": "Tamil classic mentions tank maintenance as virtue",
+      "brhatsamhita": "6th century CE text on locating groundwater"
+    }
+  },
+  
+  "timeline": [
+    {
+      "year": -322,
+      "event": "Chandragupta Maurya builds Sudarshana Lake",
+      "significance": "First major state-sponsored reservoir"
+    },
+    {
+      "year": -300,
+      "event": "Arthashastra written with water regulations",
+      "significance": "First codified water law in South Asia"
+    },
+    {
+      "year": 150,
+      "event": "Karikala Chola builds Grand Anicut",
+      "significance": "World's oldest surviving dam in use"
+    },
+    {
+      "year": 500,
+      "event": "Stepwell architecture begins in Gujarat",
+      "significance": "New form combining utility and spirituality"
+    },
+    {
+      "year": 1063,
+      "event": "Rani ki Vav constructed",
+      "significance": "Peak of stepwell art and engineering"
+    },
+    {
+      "year": 1300,
+      "event": "Tamil tank system reaches 39,000 tanks",
+      "significance": "World's largest interconnected water system"
+    },
+    {
+      "year": 1985,
+      "event": "Rajendra Singh begins johad revival",
+      "significance": "Traditional technology addresses modern crisis"
+    },
+    {
+      "year": 2014,
+      "event": "Rani ki Vav inscribed as UNESCO World Heritage Site",
+      "significance": "Global recognition of Indian water heritage"
+    }
+  ]
+}
+```
+
+---
+
+### Khmer Empire (Complete)
+
+```json
+{
+  "civilization": {
+    "id": "khmer-empire",
+    "name": "Khmer Empire",
+    "alternateNames": ["Angkor Civilization", "Kambuja"],
+    "period": {
+      "start": 802,
+      "end": 1431,
+      "display": "802 - 1431 CE",
+      "peakPeriod": "1113-1220 CE (Suryavarman II to Jayavarman VII)"
+    },
+    "region": {
+      "core": "Northwest Cambodia",
+      "extent": "Cambodia, Thailand, Laos, Vietnam",
+      "modernCountry": "Cambodia",
+      "coordinates": { "lat": 13.4125, "lng": 103.8670 }
+    },
+    "mapPosition": { "x": 77.5, "y": 46.5 },
+    "color": "#8B4513",
+    "icon": "🏛️",
+    "capital": "Angkor",
+    "population": {
+      "peak": "750,000 - 1,000,000 in Greater Angkor",
+      "density": "High for pre-industrial (comparable to Mayan cities)",
+      "urbanArea": "1,000+ km² (largest pre-industrial city)"
+    },
+    "climate": {
+      "type": "Tropical monsoon",
+      "challenge": "4-month deluge (May-Oct) followed by 8-month drought",
+      "annualRainfall": "1,400mm, 90% falling in monsoon"
+    },
+    "significance": "Created the most extensive and sophisticated hydraulic system of the pre-industrial world, transforming a challenging monsoon environment into an agricultural powerhouse"
+  },
+  
+  "inventions": [
+    {
+      "id": "baray-reservoir",
+      "name": "Baray (Giant Reservoir)",
+      "category": "Water Storage",
+      "subcategory": "Mega-reservoir",
+      "period": {
+        "first": 877,
+        "last": 1200,
+        "display": "9th-12th century CE"
+      },
+      "examples": [
+        {
+          "name": "West Baray",
+          "built": "1019-1025 CE",
+          "builder": "Suryavarman I",
+          "dimensions": {
+            "length": "8 km",
+            "width": "2.2 km",
+            "depth": "5-7 meters",
+            "capacity": "56,000,000 cubic meters",
+            "surfaceArea": "17.6 km²"
+          },
+          "coordinates": { "lat": 13.4230, "lng": 103.7291 },
+          "status": "Still holds water today"
+        },
+        {
+          "name": "East Baray",
+          "built": "889 CE",
+          "builder": "Yasovarman I",
+          "dimensions": {
+            "length": "7.5 km",
+            "width": "1.8 km",
+            "capacity": "37,000,000 cubic meters"
+          },
+          "status": "Now dry; farmland"
+        },
+        {
+          "name": "Jayatataka (North Baray)",
+          "built": "1191 CE",
+          "builder": "Jayavarman VII",
+          "dimensions": {
+            "length": "3.7 km",
+            "width": "0.9 km"
+          },
+          "specialFeature": "Contains Neak Pean temple island"
+        },
+        {
+          "name": "Indratataka",
+          "built": "877 CE",
+          "builder": "Indravarman I",
+          "significance": "First baray at Angkor",
+          "dimensions": {
+            "length": "3.8 km",
+            "width": "0.8 km"
+          }
+        }
+      ],
+      "description": "Massive artificial reservoirs that stored monsoon water for dry season irrigation. The largest (West Baray) is visible from space and held more water than many modern reservoirs.",
+      "fascinatingDetails": [
+        "West Baray is so large it's visible from the International Space Station",
+        "Combined capacity of all barays exceeded 100 million cubic meters",
+        "Stored enough water to supply 1 million people for 8 months",
+        "Built entirely with hand labor - no machinery",
+        "Banks constructed from compacted earth, still standing 1,000 years later",
+        "Islands in center (Mebon temples) held sacred shrines",
+        "Water released through sophisticated sluice gates",
+        "Network supported 2-3 rice crops per year instead of the usual 1"
+      ],
+      "engineeringPrinciples": [
+        {
+          "principle": "Gravity-fed filling",
+          "explanation": "Channels from Kulen Hills brought water downhill to reservoirs"
+        },
+        {
+          "principle": "Compacted earthen banks",
+          "explanation": "Laterite and clay layered and compacted for water-tightness"
+        },
+        {
+          "principle": "Overflow management",
+          "explanation": "Spillways prevented catastrophic bank failures during floods"
+        },
+        {
+          "principle": "Sluice control",
+          "explanation": "Stone gates allowed precise release to downstream channels"
+        }
+      ],
+      "laborEstimate": {
+        "westBaray": "300,000 person-years of labor",
+        "method": "Corvée (mandatory labor service) during dry season"
+      },
+      "swmmModel": "angkor-baray-system.inp",
+      "status": "West Baray functional; others dry",
+      "modernRelevance": "Demonstrates viability of large-scale rainwater harvesting"
+    },
+    {
+      "id": "angkor-channel-network",
+      "name": "Angkor Channel Network",
+      "category": "Distribution",
+      "subcategory": "Canal System",
+      "period": {
+        "developed": "9th-13th century CE"
+      },
+      "scale": {
+        "totalLength": "1,000+ km of channels",
+        "urbanArea": "1,000 km²",
+        "coordinatedBy": "Central state authority"
+      },
+      "description": "An interconnected network of canals, moats, channels, and sluices that distributed water throughout the vast Angkor urban complex. The most extensive water management infrastructure of the pre-industrial world.",
+      "fascinatingDetails": [
+        "Satellite imagery revealed full extent only in 2007",
+        "Network covered area larger than New York City's five boroughs",
+        "Channels served triple purpose: irrigation, transport, fish cultivation",
+        "Moats around temples served structural (floating foundations) and spiritual purposes",
+        "Rice fields were integrated into urban fabric - not separated as in modern cities",
+        "Each neighborhood had access to water channels",
+        "Collapse of system contributed to empire's fall"
+      ],
+      "components": [
+        {
+          "name": "Prasat moats",
+          "function": "Temple moats providing foundation stability"
+        },
+        {
+          "name": "Inlet channels",
+          "function": "Bring water from barays to fields"
+        },
+        {
+          "name": "Outlet channels",
+          "function": "Drain excess to Tonle Sap lake"
+        },
+        {
+          "name": "Cross-channels",
+          "function": "Connect parallel systems for redundancy"
+        },
+        {
+          "name": "Sluice gates",
+          "function": "Control flow at intersections"
+        }
+      ],
+      "swmmModel": "angkor-channel-network.inp",
+      "status": "Mostly dry; some restored",
+      "discoveryMethod": "LIDAR and satellite imagery (2007)"
+    },
+    {
+      "id": "temple-moat-system",
+      "name": "Temple Moat Engineering",
+      "category": "Structural & Spiritual",
+      "subcategory": "Foundation System",
+      "period": {
+        "developed": "9th-13th century CE"
+      },
+      "examples": [
+        {
+          "name": "Angkor Wat Moat",
+          "dimensions": {
+            "length": "1.5 km each side",
+            "width": "190 meters",
+            "depth": "3-5 meters"
+          },
+          "volume": "12 million cubic meters",
+          "function": "Structural foundation + spiritual symbolism"
+        },
+        {
+          "name": "Angkor Thom Moat",
+          "dimensions": {
+            "perimeter": "12 km",
+            "width": "100 meters"
+          }
+        }
+      ],
+      "description": "Khmer engineers discovered that water-filled moats stabilize temple foundations in the wet-dry cycle. The moat keeps the water table constant, preventing the massive stone temples from sinking or tilting.",
+      "fascinatingDetails": [
+        "Angkor Wat's moat is not decorative - it's essential structural engineering",
+        "Without moat, the temple would sink during dry season when water table drops",
+        "Moat maintains constant water pressure against foundations",
+        "Represents cosmic ocean surrounding Mount Meru (axis of universe) in Hindu cosmology",
+        "Contains fish and lotus - both sacred and practical (food/water plants)",
+        "Modern engineers confirmed this 'floating foundation' principle in 2015 research"
+      ],
+      "engineeringPrinciple": {
+        "problem": "Massive stone temples on sandy soil that swells/shrinks with water table",
+        "solution": "Moat maintains constant water table under and around temple",
+        "result": "Temple 'floats' on stable water cushion"
+      },
+      "swmmModel": "angkor-wat-moat.inp",
+      "status": "Functional; actively maintained",
+      "modernRelevance": "Principle used in modern geotechnical engineering"
+    },
+    {
+      "id": "neak-pean",
+      "name": "Neak Pean (Sacred Water Treatment)",
+      "category": "Water Treatment",
+      "subcategory": "Temple-Spa-Hospital",
+      "period": {
+        "built": 1191,
+        "builder": "Jayavarman VII"
+      },
+      "location": {
+        "site": "Center of Jayatataka (North Baray)",
+        "coordinates": { "lat": 13.4647, "lng": 103.9004 }
+      },
+      "layout": {
+        "centralPool": "70m x 70m",
+        "surroundingPools": "4 pools, 25m x 25m each",
+        "totalPonds": "5 interconnected",
+        "orientation": "Cardinal directions"
+      },
+      "description": "A sophisticated water purification and healing temple. The central pond fed four smaller pools through carved stone spouts in the shapes of an elephant (north), horse (west), lion (south), and human (east), each believed to heal different ailments.",
+      "fascinatingDetails": [
+        "Water flowed through spouts shaped as sacred animals",
+        "Each directional pool treated different ailments according to Hindu-Buddhist medicine",
+        "Central pond represents the sacred lake Anavatapta in the Himalayas",
+        "Pilgrims bathed in pools for healing - an ancient hospital concept",
+        "Architecture represents the Bodhisattva Avalokiteshvara's healing power",
+        "Water naturally filtered as it passed through stone structures",
+        "Part of Jayavarman VII's network of 102 hospitals across the empire"
+      ],
+      "healingSystem": {
+        "north": { "spout": "Elephant", "element": "Water", "treatment": "Circulatory issues" },
+        "east": { "spout": "Human", "element": "Earth", "treatment": "Mental illness" },
+        "south": { "spout": "Lion", "element": "Fire", "treatment": "Fevers" },
+        "west": { "spout": "Horse", "element": "Air", "treatment": "Respiratory illness" }
+      },
+      "swmmModel": "neak-pean.inp",
+      "status": "Temple preserved; pools restored",
+      "modernRelevance": "Early example of combined water treatment and healthcare infrastructure"
+    },
+    {
+      "id": "srah-srang",
+      "name": "Srah Srang (Royal Bathing Pool)",
+      "category": "Water Recreation",
+      "subcategory": "Royal Reservoir",
+      "period": {
+        "built": "10th century, rebuilt 12th century"
+      },
+      "dimensions": {
+        "length": "700 meters",
+        "width": "300 meters"
+      },
+      "description": "A large artificial lake used for royal ceremonies and bathing, featuring an elaborate landing stage with naga (serpent) balustrades.",
+      "fascinatingDetails": [
+        "Landing platform aligned to watch sunrise over Banteay Kdei temple",
+        "Water heated naturally by sun - pleasant year-round bathing",
+        "Lions and naga (serpent) sculptures guard the steps",
+        "Modern locals still use it for swimming and fishing"
+      ],
+      "swmmModel": null,
+      "status": "Active - still holds water"
+    }
+  ],
+  
+  "systemCollapse": {
+    "period": "14th-15th century",
+    "causes": [
+      {
+        "factor": "Climate change",
+        "description": "Severe droughts (1345-1370s) followed by mega-monsoons (1390s-1410s)",
+        "evidence": "Tree ring data from Vietnam; sediment cores from barays"
+      },
+      {
+        "factor": "Infrastructure overload",
+        "description": "Network became too complex; single failures cascaded through system",
+        "evidence": "Archaeological evidence of emergency repairs and failures"
+      },
+      {
+        "factor": "Deforestation",
+        "description": "Clearing forests in Kulen Hills increased erosion and flash floods",
+        "evidence": "Sediment layers in barays show rapid siltation"
+      },
+      {
+        "factor": "Invasion",
+        "description": "Thai Ayutthaya kingdom attacks weakened central authority",
+        "evidence": "Historical chronicles"
+      }
+    ],
+    "lessons": [
+      "Complex water systems require constant central management",
+      "Climate resilience requires redundancy",
+      "Deforestation in catchments can destroy downstream infrastructure",
+      "Larger systems are more vulnerable to cascading failures"
+    ]
+  },
+  
+  "modernResearch": {
+    "lidarSurvey2012": {
+      "discovery": "Revealed entire city network previously hidden under forest",
+      "area": "370 km² surveyed in single flight",
+      "findings": [
+        "Water network even more extensive than previously known",
+        "Geometric rice field layouts integrated into urban plan",
+        "Evidence of multiple failed reservoir projects"
+      ]
+    },
+    "hydrologyStudies": {
+      "institution": "University of Sydney",
+      "leader": "Dr. Dan Penny",
+      "findings": "Climate-infrastructure feedback loop caused collapse"
+    }
+  },
+  
+  "timeline": [
+    {
+      "year": 802,
+      "event": "Jayavarman II establishes Khmer Empire",
+      "significance": "Foundation of Angkor civilization"
+    },
+    {
+      "year": 877,
+      "event": "First baray (Indratataka) constructed",
+      "significance": "Beginning of systematic water management"
+    },
+    {
+      "year": 889,
+      "event": "East Baray completed",
+      "significance": "Scale of ambition increases"
+    },
+    {
+      "year": 1025,
+      "event": "West Baray completed",
+      "significance": "Largest pre-industrial reservoir in the world"
+    },
+    {
+      "year": 1150,
+      "event": "Angkor Wat completed",
+      "significance": "Integration of hydraulic and temple engineering"
+    },
+    {
+      "year": 1191,
+      "event": "Neak Pean and Jayatataka completed",
+      "significance": "Peak of hydraulic-spiritual fusion"
+    },
+    {
+      "year": 1300,
+      "event": "Angkor reaches 1 million population",
+      "significance": "World's largest pre-industrial city"
+    },
+    {
+      "year": 1350,
+      "event": "Climate instability begins",
+      "significance": "Multi-decade droughts stress water system"
+    },
+    {
+      "year": 1431,
+      "event": "Angkor abandoned after Thai attacks",
+      "significance": "End of Khmer Empire; water system collapses"
+    },
+    {
+      "year": 2007,
+      "event": "Full extent of water network revealed",
+      "significance": "Modern technology reveals ancient engineering"
+    }
+  ]
+}
+```
+
+---
+
+### Philippines - Ifugao Rice Terraces (Complete)
+
+```json
+{
+  "civilization": {
+    "id": "ifugao",
+    "name": "Ifugao Rice Terrace Civilization",
+    "alternateNames": ["Cordillera Rice Terrace Builders"],
+    "period": {
+      "start": -1000,
+      "continuity": "Ongoing - continuously maintained for 2,000+ years",
+      "display": "1000 BCE - Present"
+    },
+    "region": {
+      "location": "Cordillera Mountains, Northern Luzon",
+      "modernCountry": "Philippines",
+      "coordinates": { "lat": 16.9113, "lng": 121.0542 },
+      "provinces": ["Ifugao", "Mountain Province", "Benguet", "Kalinga"]
+    },
+    "mapPosition": { "x": 83.5, "y": 44.5 },
+    "color": "#228B22",
+    "icon": "🌾",
+    "population": {
+      "historical": "Unknown - isolated until Spanish contact",
+      "current": "~200,000 Ifugao people",
+      "terraceFarmers": "~50,000 active"
+    },
+    "climate": {
+      "type": "Tropical highland",
+      "challenge": "Steep terrain (45-70° slopes), heavy rainfall (2,500-4,000mm/year)",
+      "advantage": "Abundant water from mountain springs and rainfall"
+    },
+    "significance": "Created one of the world's largest and most sophisticated agricultural terrace systems entirely by hand, without metal tools, demonstrating extraordinary engineering and sustainable agriculture over 2,000 years",
+    "recentResearch": {
+      "note": "Recent archaeological studies suggest the terraces may be 400-500 years old rather than 2,000, but this remains debated. Either way, they represent extraordinary engineering."
+    }
+  },
+  
+  "inventions": [
+    {
+      "id": "rice-terrace-engineering",
+      "name": "Ifugao Rice Terrace Engineering",
+      "category": "Agricultural Engineering",
+      "subcategory": "Terrace System",
+      "period": {
+        "developed": "1000 BCE - 1500 CE (traditional dating)",
+        "alternative": "1500-1600 CE (recent archaeological dating)",
+        "display": "Traditional: 2,000+ years"
+      },
+      "scale": {
+        "totalArea": "10,360 km² of mountain terrace landscape",
+        "terraceLength": "If laid end-to-end: ~20,000 km (halfway around Earth)",
+        "elevation": "700-1,500 meters above sea level",
+        "slopeAngles": "45-70 degrees"
+      },
+      "description": "An immense system of hand-carved mountain terraces that follow natural contours, capturing rainfall and spring water for wet-rice cultivation on seemingly impossible terrain.",
+      "fascinatingDetails": [
+        "If all terrace walls were laid end-to-end, they would stretch halfway around the Earth (20,000 km)",
+        "Built without metal tools - only wood, stone, and human hands",
+        "Average terrace wall height: 2-6 meters, some up to 15 meters",
+        "UNESCO World Heritage Site since 1995",
+        "Each terrace must be perfectly level - slope error less than 1 degree",
+        "Some walls have stood for centuries without mortar",
+        "Requires constant maintenance - walls rebuilt every 3-5 years",
+        "Traditional belief: the gods taught the first Ifugao to build terraces"
+      ],
+      "construction": {
+        "wallTypes": [
+          {
+            "type": "Stone-walled (locally called 'hagabi')",
+            "material": "Stacked stones without mortar",
+            "slope": "Used on steeper terrain",
+            "maintenance": "Every 3-5 years"
+          },
+          {
+            "type": "Earth-walled (called 'mud terraces')",
+            "material": "Compacted clay and soil",
+            "slope": "Gentler slopes",
+            "maintenance": "Annual"
+          }
+        ],
+        "soilLayers": [
+          "Base: Large stones for drainage",
+          "Middle: Gravel and small stones",
+          "Top: Clay layer (puddled) to hold water",
+          "Surface: Topsoil for planting"
+        ],
+        "tools": "Wooden spades, stone implements, bare hands",
+        "laborSystem": "Ubbu (cooperative labor exchange)"
+      },
+      "images": [
+        {
+          "url": "/images/ifugao-batad-terraces.jpg",
+          "caption": "Batad amphitheater terraces"
+        },
+        {
+          "url": "/images/ifugao-aerial.jpg",
+          "caption": "Aerial view showing contour-following design"
+        }
+      ],
+      "swmmModel": "ifugao-terrace-cascade.inp",
+      "status": "UNESCO World Heritage Site - active",
+      "unescoInscription": 1995,
+      "dangerList": "Listed 2001-2012 due to neglect; removed after restoration"
+    },
+    {
+      "id": "muyong-watershed",
+      "name": "Muyong (Private Forest Watershed)",
+      "category": "Watershed Management",
+      "subcategory": "Sacred Forest",
+      "period": {
+        "developed": "Traditional",
+        "continuity": "Ongoing"
+      },
+      "description": "Privately-owned sacred forests above the terraces that serve as the watershed source. Each family maintains their muyong, which supplies water to their terraces below.",
+      "fascinatingDetails": [
+        "Each terrace owner must maintain the forest above their terraces",
+        "Cutting trees in another's muyong is a serious offense under customary law",
+        "Forests capture 20-30% more rainfall than bare slopes due to fog drip",
+        "Over 264 plant species recorded in muyong forests",
+        "System creates direct link between forest conservation and irrigation",
+        "Muyong trees selected over generations for water retention properties",
+        "Outsiders are forbidden from entering muyong without permission"
+      ],
+      "components": {
+        "pinnuchu": "Headwaters zone - sacred, rarely entered",
+        "muyong": "Main forest area - selective harvesting allowed",
+        "habal": "Swidden zone - rotational farming area",
+        "payoh": "Terraced rice fields below"
+      },
+      "hydrology": {
+        "waterYield": "Springs at forest edge flow year-round",
+        "fogDrip": "Forest canopy captures fog moisture, increasing water availability 20-30%",
+        "regulation": "Forest acts as sponge - absorbs monsoon, releases slowly"
+      },
+      "swmmModel": "muyong-watershed.inp",
+      "status": "Active but under pressure from logging",
+      "modernRelevance": "Model for integrated watershed management"
+    },
+    {
+      "id": "payo-irrigation",
+      "name": "Payo (Terrace Water System)",
+      "category": "Irrigation",
+      "subcategory": "Cascade Irrigation",
+      "period": {
+        "developed": "Traditional"
+      },
+      "description": "A gravity-fed irrigation system where water flows from terraces above to terraces below through carefully designed outlets in each terrace wall.",
+      "fascinatingDetails": [
+        "Water depth maintained at exactly 5-10 cm - optimal for rice",
+        "Each terrace has multiple outlets at precise heights",
+        "Farmers 'read' water flow patterns to diagnose problems upstream",
+        "Night irrigation shifts (water distribution at night) still practiced",
+        "Stone dividers split water flow proportionally to land area owned",
+        "Disputes over water resolved by traditional councils (amah)",
+        "Water temperature rises as it cascades - naturally warms seedlings"
+      ],
+      "waterManagement": {
+        "sources": [
+          "Muyong forest springs",
+          "Direct rainfall",
+          "Fog drip collection"
+        ],
+        "distribution": "Gravity cascade - no pumps needed",
+        "timing": "Water rights rotate among farmers",
+        "maintenance": "Communal canal cleaning before planting"
+      },
+      "swmmModel": "payo-cascade.inp",
+      "status": "Active",
+      "efficiency": "Estimated 70-80% irrigation efficiency"
+    },
+    {
+      "id": "alak-outlet",
+      "name": "Alak (Stone Outlet System)",
+      "category": "Flow Control",
+      "subcategory": "Terrace Outlet",
+      "period": {
+        "developed": "Traditional"
+      },
+      "description": "Carefully positioned stone outlets in terrace walls that control water overflow from one terrace to the next. The position, size, and number of alak determine water distribution.",
+      "fascinatingDetails": [
+        "Each alak's position calibrated over generations",
+        "Size varies based on terrace area - larger terrace = larger outlet",
+        "Stone placement prevents erosion at outlet points",
+        "Moving someone's alak is a serious offense",
+        "Some families have outlet configurations passed down for centuries"
+      ],
+      "engineering": {
+        "placement": "At lowest point of each terrace",
+        "material": "Flat stones, sometimes carved",
+        "overflow": "Water exceeding depth flows to next terrace automatically"
+      },
+      "swmmModel": "alak-system.inp",
+      "status": "Active"
+    },
+    {
+      "id": "stonewalling-technique",
+      "name": "Stone Wall Construction",
+      "category": "Construction",
+      "subcategory": "Retaining Walls",
+      "period": {
+        "developed": "Traditional"
+      },
+      "description": "Dry stone walling technique used to build terrace retaining walls up to 15 meters high without mortar, relying only on stone selection and placement skill.",
+      "fascinatingDetails": [
+        "Walls up to 15 meters high built without mortar",
+        "Each stone selected for shape to interlock with neighbors",
+        "Wall angle (batter) calculated to resist soil pressure",
+        "Drainage gaps left deliberately to prevent water pressure buildup",
+        "Skilled stone-wallers highly respected - knowledge passed father to son",
+        "Rebuilding a collapsed wall is community responsibility"
+      ],
+      "technique": {
+        "foundation": "Largest stones placed at base",
+        "batter": "Wall leans inward ~15 degrees",
+        "drainage": "Gaps every 1-2 meters allow water seepage",
+        "capping": "Top stones placed to prevent dislodging"
+      },
+      "swmmModel": null,
+      "status": "Traditional skills declining; training programs active"
+    }
+  ],
+  
+  "culturalContext": {
+    "worldview": {
+      "concept": "Rice as sacred gift from gods",
+      "practices": [
+        "Bulul (rice god) figures guard granaries",
+        "Complex ritual calendar tied to rice cycle",
+        "Harvest festivals (punnuk) last for days",
+        "Ancestral spirits inhabit muyong forests"
+      ]
+    },
+    "socialOrganization": {
+      "ubbu": "Cooperative labor exchange for terrace work",
+      "tomok": "Village council resolving water disputes",
+      "amah": "Elder mediators for serious conflicts",
+      "kadangyan": "Wealthy families who own most terraces"
+    },
+    "rituals": {
+      "bogwa": "Cleansing ritual before planting",
+      "punnuk": "Harvest thanksgiving festival",
+      "tungul": "Ritual to ensure good water supply"
+    }
+  },
+  
+  "worldHeritage": {
+    "inscribed": 1995,
+    "criteria": "Cultural landscape reflecting traditional land-use",
+    "sites": [
+      {
+        "name": "Batad Rice Terraces",
+        "feature": "Amphitheater shape",
+        "municipality": "Banaue"
+      },
+      {
+        "name": "Bangaan Rice Terraces",
+        "feature": "Traditional village integration",
+        "municipality": "Banaue"
+      },
+      {
+        "name": "Hungduan Rice Terraces",
+        "feature": "Largest contiguous terrace cluster",
+        "municipality": "Hungduan"
+      },
+      {
+        "name": "Mayoyao Rice Terraces",
+        "feature": "Most isolated, best preserved",
+        "municipality": "Mayoyao"
+      }
+    ],
+    "dangerListPeriod": {
+      "listed": 2001,
+      "removed": 2012,
+      "reason": "Deterioration due to neglect and abandonment"
+    },
+    "threats": [
+      "Youth migration to cities",
+      "Climate change altering rainfall patterns",
+      "Earthworm species damaging terrace walls",
+      "Loss of traditional stone-working skills"
+    ]
+  },
+  
+  "timeline": [
+    {
+      "year": -1000,
+      "event": "Traditional dating: Terrace construction begins",
+      "note": "Now debated - may be much more recent"
+    },
+    {
+      "year": 1500,
+      "event": "Alternative dating: Terraces built in response to Spanish colonization",
+      "evidence": "Recent archaeological research"
+    },
+    {
+      "year": 1801,
+      "event": "First European description of terraces",
+      "source": "Spanish colonial reports"
+    },
+    {
+      "year": 1973,
+      "event": "Declared National Cultural Treasure",
+      "significance": "Philippine government protection begins"
+    },
+    {
+      "year": 1995,
+      "event": "UNESCO World Heritage inscription",
+      "significance": "Global recognition"
+    },
+    {
+      "year": 2001,
+      "event": "Listed as World Heritage in Danger",
+      "cause": "Abandonment and deterioration"
+    },
+    {
+      "year": 2012,
+      "event": "Removed from Danger List",
+      "cause": "Successful restoration and revitalization"
+    }
+  ]
+}
+```
+
+---
+
+## 2. SWMM5 Models
+
+### Medieval India - Rani ki Vav Stepwell
+
+```
+[TITLE]
+;;Project Title/Notes
+;; RANI KI VAV STEPWELL - PATAN, GUJARAT (1063 CE)
+;; 7-story underground stepwell with groundwater access
+;; Models groundwater inflow, evaporation, and ceremonial water use
+
+[OPTIONS]
+FLOW_UNITS           LPS
+INFILTRATION         HORTON
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS         DEPTH
+MIN_SLOPE            0.001
+ALLOW_PONDING        YES
+SKIP_STEADY_STATE    NO
+
+START_DATE           06/01/2024
+START_TIME           00:00:00
+REPORT_START_DATE    06/01/2024
+REPORT_START_TIME    00:00:00
+END_DATE             06/07/2024
+END_TIME             00:00:00
+SWEEP_START          01/01
+SWEEP_END            12/31
+DRY_DAYS             30
+REPORT_STEP          00:15:00
+WET_STEP             00:05:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+
+[EVAPORATION]
+;;Data Source    Parameters
+CONSTANT         8.0
+;; Hot Gujarat climate - 8mm/day evaporation
+
+[RAINGAGES]
+;;Name           Format    Interval SCF      Source
+MONSOON_GAUGE    INTENSITY 1:00     1.0      TIMESERIES MONSOON_RAIN
+
+[SUBCATCHMENTS]
+;;Name           Rain Gage        Outlet          Area     %Imperv  Width    %Slope   CurbLen  SnowPack
+;; Surface drainage area feeding stepwell
+SURFACE_CATCH    MONSOON_GAUGE    STEP_INLET      0.5      20       50       2.0      0
+
+[SUBAREAS]
+;;Subcatchment   N-Imperv   N-Perv     S-Imperv   S-Perv     PctZero    RouteTo    PctRouted
+SURFACE_CATCH    0.015      0.15       2.0        5.0        25         OUTLET
+
+[INFILTRATION]
+;;Subcatchment   MaxRate    MinRate    Decay      DryTime    MaxInfil
+SURFACE_CATCH    75         10         4          7          0
+
+[JUNCTIONS]
+;;Name           Elevation  MaxDepth   InitDepth  SurDepth   Aponded
+;; Entry platform - ground level
+STEP_INLET       27.0       1.0        0          0          0
+
+;; 7 LEVELS OF DESCENT (each ~3.5-4m deep)
+LEVEL_1          23.5       4.0        0          0          100
+LEVEL_2          19.5       4.5        0          0          200
+LEVEL_3          15.5       4.5        0          0          300
+LEVEL_4          11.5       4.5        0          0          400
+LEVEL_5          7.5        4.5        0          0          500
+LEVEL_6          3.5        4.5        0          0          600
+LEVEL_7          0.0        4.0        2.0        0          1000
+
+;; Groundwater access at base
+AQUIFER_CONN     -2.0       3.0        2.0        0          0
+
+[OUTFALLS]
+;;Name           Elevation  Type       Stage Data       Gated    Route To
+;; Groundwater table (source, not sink)
+GROUNDWATER      -3.0       FREE                        NO
+
+[STORAGE]
+;;Name           Elev.      MaxDepth   InitDepth  Shape      Curve Type/Params              SurDepth  Fevap     Psi       Ksat      IMD
+;; Main well shaft at bottom of stepwell
+SACRED_WELL      0.0        5.0        3.0        TABULAR    WELL_STORAGE                   0         0.5
+
+;; Overflow cistern
+CISTERN          0.5        2.0        1.0        FUNCTIONAL 100 0 0                        0         0.3
+
+[CONDUITS]
+;;Name           From Node        To Node          Length     Roughness  InOffset   OutOffset  InitFlow   MaxFlow
+;; Steps connecting levels (wide ceremonial stairs)
+STEPS_0_1        STEP_INLET       LEVEL_1          15         0.015      0          0          0          0
+STEPS_1_2        LEVEL_1          LEVEL_2          12         0.015      0          0          0          0
+STEPS_2_3        LEVEL_2          LEVEL_3          12         0.015      0          0          0          0
+STEPS_3_4        LEVEL_3          LEVEL_4          12         0.015      0          0          0          0
+STEPS_4_5        LEVEL_4          LEVEL_5          12         0.015      0          0          0          0
+STEPS_5_6        LEVEL_5          LEVEL_6          12         0.015      0          0          0          0
+STEPS_6_7        LEVEL_6          LEVEL_7          12         0.015      0          0          0          0
+STEPS_TO_WELL    LEVEL_7          SACRED_WELL      8          0.015      0          0          0          0
+
+;; Groundwater inflow pipe (natural seepage)
+GW_INFLOW        GROUNDWATER      AQUIFER_CONN     5          0.020      0          0          0          0
+AQUIFER_WELL     AQUIFER_CONN     SACRED_WELL      3          0.020      0          0          0          0
+
+;; Overflow to cistern
+OVERFLOW_PIPE    SACRED_WELL      CISTERN          5          0.015      4.5        0          0          0
+
+[XSECTIONS]
+;;Link           Shape        Geom1            Geom2      Geom3      Geom4      Barrels    Culvert
+STEPS_0_1        RECT_OPEN    6.0              1.0        0          0          1
+STEPS_1_2        RECT_OPEN    6.0              1.0        0          0          1
+STEPS_2_3        RECT_OPEN    6.0              1.0        0          0          1
+STEPS_3_4        RECT_OPEN    5.5              1.0        0          0          1
+STEPS_4_5        RECT_OPEN    5.0              1.0        0          0          1
+STEPS_5_6        RECT_OPEN    4.5              1.0        0          0          1
+STEPS_6_7        RECT_OPEN    4.0              1.0        0          0          1
+STEPS_TO_WELL    RECT_OPEN    3.0              1.0        0          0          1
+GW_INFLOW        CIRCULAR     0.5              0          0          0          1
+AQUIFER_WELL     CIRCULAR     0.5              0          0          0          1
+OVERFLOW_PIPE    CIRCULAR     0.3              0          0          0          1
+
+[INFLOWS]
+;;Node           Constituent      Time Series      Type     Mfactor  Sfactor  Baseline Pattern
+;; Constant groundwater inflow (aquifer recharge)
+AQUIFER_CONN     FLOW             ""               FLOW     1.0      1.0      2.0      
+
+[CURVES]
+;;Name           Type       X-Value    Y-Value
+;; Well storage curve (circular well ~10m diameter)
+WELL_STORAGE     STORAGE    0.0        78.5
+WELL_STORAGE     STORAGE    1.0        78.5
+WELL_STORAGE     STORAGE    2.0        78.5
+WELL_STORAGE     STORAGE    3.0        78.5
+WELL_STORAGE     STORAGE    4.0        78.5
+WELL_STORAGE     STORAGE    5.0        78.5
+
+[TIMESERIES]
+;;Name           Date       Time       Value
+;; Monsoon rainfall pattern (mm/hr)
+MONSOON_RAIN                0:00       0
+MONSOON_RAIN                6:00       0
+MONSOON_RAIN                12:00      5
+MONSOON_RAIN                18:00      25
+MONSOON_RAIN                24:00      15
+MONSOON_RAIN                30:00      5
+MONSOON_RAIN                36:00      0
+MONSOON_RAIN                48:00      0
+MONSOON_RAIN                60:00      0
+MONSOON_RAIN                72:00      10
+MONSOON_RAIN                78:00      30
+MONSOON_RAIN                84:00      20
+MONSOON_RAIN                90:00      5
+
+[REPORT]
+;;Reporting Options
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+
+[COORDINATES]
+;;Node           X-Coord            Y-Coord
+STEP_INLET       100                270
+LEVEL_1          100                230
+LEVEL_2          100                190
+LEVEL_3          100                150
+LEVEL_4          100                110
+LEVEL_5          100                70
+LEVEL_6          100                30
+LEVEL_7          100                0
+SACRED_WELL      130                0
+CISTERN          160                10
+AQUIFER_CONN     70                 -20
+GROUNDWATER      30                 -30
+
+[LABELS]
+;;X-Coord   Y-Coord   Label
+50          290       "GROUND LEVEL - ENTRY"
+20          230       "LEVEL 1 - 500+ SCULPTURES"
+20          190       "LEVEL 2 - VISHNU AVATARS"
+20          150       "LEVEL 3 - APSARAS"
+20          110       "LEVEL 4 - PAVILIONS"
+20          70        "LEVEL 5 - COOLING ZONE"
+20          30        "LEVEL 6 - NEAR WATER"
+20          0         "LEVEL 7 - WATER ACCESS"
+140         -30       "SACRED WELL"
+30          -50       "AQUIFER CONNECTION"
+```
+
+---
+
+### Khmer Empire - Angkor Baray System
+
+```
+[TITLE]
+;;Project Title/Notes
+;; ANGKOR HYDRAULIC SYSTEM - KHMER EMPIRE (9th-13th CENTURY CE)
+;; Models barays, channels, and distribution to Angkor Wat complex
+;; West Baray: 8km x 2.2km x 5-7m = 56 million cubic meters
+
+[OPTIONS]
+FLOW_UNITS           CMS
+INFILTRATION         GREEN_AMPT
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS         DEPTH
+MIN_SLOPE            0.0001
+ALLOW_PONDING        YES
+SKIP_STEADY_STATE    NO
+
+START_DATE           05/01/2024
+START_TIME           00:00:00
+REPORT_START_DATE    05/01/2024
+REPORT_START_TIME    00:00:00
+END_DATE             10/31/2024
+END_TIME             00:00:00
+SWEEP_START          05/01
+SWEEP_END            10/31
+DRY_DAYS             180
+REPORT_STEP          01:00:00
+WET_STEP             00:15:00
+DRY_STEP             02:00:00
+ROUTING_STEP         0:01:00
+
+[EVAPORATION]
+;;Data Source    Parameters
+MONTHLY          5.5 6.0 6.5 7.0 6.0 5.0 4.5 4.5 5.0 5.5 5.5 5.0
+;; mm/day by month
+
+[RAINGAGES]
+;;Name           Format    Interval SCF      Source
+ANGKOR_GAUGE     INTENSITY 1:00     1.0      TIMESERIES MONSOON_SEASON
+
+[SUBCATCHMENTS]
+;;Name           Rain Gage        Outlet          Area     %Imperv  Width    %Slope   CurbLen  SnowPack
+;; Kulen Hills catchment (source of all water)
+KULEN_HILLS      ANGKOR_GAUGE     KULEN_OUTLET    150      5        5000     8.0      0
+;; Local catchment around West Baray
+LOCAL_WEST       ANGKOR_GAUGE     WEST_BARAY      50       10       3000     0.5      0
+;; Angkor urban area
+URBAN_ANGKOR     ANGKOR_GAUGE     ANGKOR_CHANNEL  100      25       5000     0.3      0
+
+[SUBAREAS]
+;;Subcatchment   N-Imperv   N-Perv     S-Imperv   S-Perv     PctZero    RouteTo    PctRouted
+KULEN_HILLS      0.015      0.25       1.5        8.0        15         OUTLET
+LOCAL_WEST       0.015      0.20       2.0        6.0        20         OUTLET
+URBAN_ANGKOR     0.015      0.15       2.5        5.0        30         OUTLET
+
+[INFILTRATION]
+;;Subcatchment   Suction    Ksat       IMD
+KULEN_HILLS      150        25         0.30
+LOCAL_WEST       100        15         0.25
+URBAN_ANGKOR     75         10         0.20
+
+[JUNCTIONS]
+;;Name           Elevation  MaxDepth   InitDepth  SurDepth   Aponded
+;; Kulen Hills collection point
+KULEN_OUTLET     80.0       5.0        0          0          10000
+
+;; Main channel junctions
+SIEM_REAP_J1     25.0       4.0        0          0          5000
+SIEM_REAP_J2     20.0       4.0        0          0          5000
+ANGKOR_CHANNEL   15.0       3.0        0          0          5000
+
+;; Temple moat inlets
+ANGKOR_WAT_IN    12.0       2.0        0          0          1000
+ANGKOR_THOM_IN   14.0       2.0        0          0          1000
+
+;; Rice field distribution
+RICE_NORTH       10.0       1.5        0          0          2000
+RICE_SOUTH       9.0        1.5        0          0          2000
+RICE_EAST        9.5        1.5        0          0          2000
+
+[OUTFALLS]
+;;Name           Elevation  Type       Stage Data       Gated    Route To
+;; Tonle Sap Lake (ultimate outlet)
+TONLE_SAP        5.0        FREE                        NO
+
+[STORAGE]
+;;Name           Elev.      MaxDepth   InitDepth  Shape      Curve Type/Params              SurDepth  Fevap     Psi       Ksat      IMD
+;; WEST BARAY - The massive reservoir (8km x 2.2km = 17.6 km²)
+WEST_BARAY       10.0       7.0        3.0        TABULAR    WEST_BARAY_CURVE               0         0.5
+
+;; EAST BARAY - Second largest (7.5km x 1.8km = 13.5 km²)
+EAST_BARAY       12.0       6.0        2.0        TABULAR    EAST_BARAY_CURVE               0         0.5
+
+;; JAYATATAKA (North Baray - 3.7km x 0.9km = 3.3 km²)
+NORTH_BARAY      15.0       4.0        2.0        TABULAR    NORTH_BARAY_CURVE              0         0.5
+
+;; ANGKOR WAT MOAT (1.5km x 1.5km perimeter, 190m wide)
+ANGKOR_WAT_MOAT  11.0       5.0        3.0        TABULAR    MOAT_CURVE                     0         0.3
+
+;; ANGKOR THOM MOAT (3km x 3km perimeter, 100m wide)
+ANGKOR_THOM_MOAT 13.0       4.0        2.5        TABULAR    THOM_MOAT_CURVE                0         0.3
+
+;; NEAK PEAN (Healing pools complex)
+NEAK_PEAN        14.5       2.0        1.5        FUNCTIONAL 10000 0 0                      0         0.4
+
+[CONDUITS]
+;;Name           From Node        To Node          Length     Roughness  InOffset   OutOffset  InitFlow   MaxFlow
+;; MAIN CHANNELS FROM KULEN HILLS
+KULEN_CHANNEL    KULEN_OUTLET     SIEM_REAP_J1     15000      0.030      0          0          0          0
+SIEM_REAP_R      SIEM_REAP_J1     SIEM_REAP_J2     5000       0.025      0          0          0          0
+MAIN_INLET       SIEM_REAP_J2     NORTH_BARAY      3000       0.025      0          0          0          0
+
+;; BARAY INTERCONNECTIONS
+NORTH_TO_WEST    NORTH_BARAY      WEST_BARAY       4000       0.020      0          0          0          0
+NORTH_TO_EAST    NORTH_BARAY      EAST_BARAY       3000       0.020      0          0          0          0
+WEST_TO_ANGKOR   WEST_BARAY       ANGKOR_CHANNEL   2000       0.020      0          0          0          0
+EAST_TO_ANGKOR   EAST_BARAY       ANGKOR_CHANNEL   2500       0.020      0          0          0          0
+
+;; TO NEAK PEAN (from North Baray)
+TO_NEAK_PEAN     NORTH_BARAY      NEAK_PEAN        500        0.015      0          0          0          0
+
+;; TEMPLE MOAT SUPPLY
+TO_ANGKOR_WAT    ANGKOR_CHANNEL   ANGKOR_WAT_IN    1500       0.020      0          0          0          0
+TO_ANGKOR_THOM   ANGKOR_CHANNEL   ANGKOR_THOM_IN   1000       0.020      0          0          0          0
+WAT_MOAT_FILL    ANGKOR_WAT_IN    ANGKOR_WAT_MOAT  200        0.015      0          0          0          0
+THOM_MOAT_FILL   ANGKOR_THOM_IN   ANGKOR_THOM_MOAT 200        0.015      0          0          0          0
+
+;; RICE FIELD DISTRIBUTION
+TO_RICE_N        ANGKOR_CHANNEL   RICE_NORTH       2000       0.025      0          0          0          0
+TO_RICE_S        ANGKOR_CHANNEL   RICE_SOUTH       2500       0.025      0          0          0          0
+TO_RICE_E        EAST_BARAY       RICE_EAST        2000       0.025      0          0          0          0
+
+;; DRAINAGE TO TONLE SAP
+RICE_N_DRAIN     RICE_NORTH       TONLE_SAP        5000       0.030      0          0          0          0
+RICE_S_DRAIN     RICE_SOUTH       TONLE_SAP        4000       0.030      0          0          0          0
+RICE_E_DRAIN     RICE_EAST        TONLE_SAP        6000       0.030      0          0          0          0
+MOAT_OVERFLOW    ANGKOR_WAT_MOAT  TONLE_SAP        8000       0.025      4.0        0          0          0
+THOM_OVERFLOW    ANGKOR_THOM_MOAT TONLE_SAP        7000       0.025      3.0        0          0          0
+
+[XSECTIONS]
+;;Link           Shape        Geom1            Geom2      Geom3      Geom4      Barrels    Culvert
+KULEN_CHANNEL    TRAPEZOIDAL  4.0              15.0       1.5        1.5        1
+SIEM_REAP_R      TRAPEZOIDAL  3.5              12.0       1.5        1.5        1
+MAIN_INLET       TRAPEZOIDAL  3.0              10.0       1.5        1.5        1
+NORTH_TO_WEST    TRAPEZOIDAL  3.0              12.0       1.0        1.0        1
+NORTH_TO_EAST    TRAPEZOIDAL  3.0              10.0       1.0        1.0        1
+WEST_TO_ANGKOR   TRAPEZOIDAL  2.5              8.0        1.0        1.0        1
+EAST_TO_ANGKOR   TRAPEZOIDAL  2.5              8.0        1.0        1.0        1
+TO_NEAK_PEAN     RECT_OPEN    2.0              3.0        0          0          1
+TO_ANGKOR_WAT    TRAPEZOIDAL  2.0              6.0        1.0        1.0        1
+TO_ANGKOR_THOM   TRAPEZOIDAL  2.0              6.0        1.0        1.0        1
+WAT_MOAT_FILL    RECT_OPEN    2.0              3.0        0          0          1
+THOM_MOAT_FILL   RECT_OPEN    2.0              3.0        0          0          1
+TO_RICE_N        TRAPEZOIDAL  1.5              5.0        1.0        1.0        1
+TO_RICE_S        TRAPEZOIDAL  1.5              5.0        1.0        1.0        1
+TO_RICE_E        TRAPEZOIDAL  1.5              5.0        1.0        1.0        1
+RICE_N_DRAIN     TRAPEZOIDAL  2.0              8.0        1.5        1.5        1
+RICE_S_DRAIN     TRAPEZOIDAL  2.0              8.0        1.5        1.5        1
+RICE_E_DRAIN     TRAPEZOIDAL  2.0              8.0        1.5        1.5        1
+MOAT_OVERFLOW    TRAPEZOIDAL  2.0              6.0        1.0        1.0        1
+THOM_OVERFLOW    TRAPEZOIDAL  2.0              6.0        1.0        1.0        1
+
+[CURVES]
+;;Name           Type       X-Value    Y-Value
+;; West Baray storage curve (17.6 km² = 17,600,000 m²)
+WEST_BARAY_CURVE STORAGE    0.0        15000000
+WEST_BARAY_CURVE STORAGE    1.0        16000000
+WEST_BARAY_CURVE STORAGE    2.0        16500000
+WEST_BARAY_CURVE STORAGE    3.0        17000000
+WEST_BARAY_CURVE STORAGE    4.0        17300000
+WEST_BARAY_CURVE STORAGE    5.0        17500000
+WEST_BARAY_CURVE STORAGE    6.0        17600000
+WEST_BARAY_CURVE STORAGE    7.0        17600000
+
+;; East Baray storage curve (13.5 km² = 13,500,000 m²)
+EAST_BARAY_CURVE STORAGE    0.0        12000000
+EAST_BARAY_CURVE STORAGE    2.0        13000000
+EAST_BARAY_CURVE STORAGE    4.0        13400000
+EAST_BARAY_CURVE STORAGE    6.0        13500000
+
+;; North Baray storage curve (3.3 km² = 3,300,000 m²)
+NORTH_BARAY_CURVE STORAGE   0.0        3000000
+NORTH_BARAY_CURVE STORAGE   2.0        3200000
+NORTH_BARAY_CURVE STORAGE   4.0        3300000
+
+;; Angkor Wat moat (~1 km²)
+MOAT_CURVE       STORAGE    0.0        800000
+MOAT_CURVE       STORAGE    2.0        900000
+MOAT_CURVE       STORAGE    4.0        1000000
+MOAT_CURVE       STORAGE    5.0        1000000
+
+;; Angkor Thom moat (~1.2 km²)
+THOM_MOAT_CURVE  STORAGE    0.0        1000000
+THOM_MOAT_CURVE  STORAGE    2.0        1100000
+THOM_MOAT_CURVE  STORAGE    4.0        1200000
+
+[TIMESERIES]
+;;Name           Date       Time       Value
+;; MONSOON SEASON RAINFALL (mm/hr) - 6 months
+MONSOON_SEASON              0:00       0
+MONSOON_SEASON              24:00      0
+;; May - onset
+MONSOON_SEASON              720:00     3
+MONSOON_SEASON              744:00     8
+;; June - building
+MONSOON_SEASON              1440:00    5
+MONSOON_SEASON              1464:00    15
+;; July - peak month
+MONSOON_SEASON              2160:00    8
+MONSOON_SEASON              2184:00    25
+MONSOON_SEASON              2208:00    35
+MONSOON_SEASON              2232:00    20
+;; August - sustained
+MONSOON_SEASON              2880:00    10
+MONSOON_SEASON              2904:00    30
+MONSOON_SEASON              2928:00    25
+;; September - second peak
+MONSOON_SEASON              3600:00    15
+MONSOON_SEASON              3624:00    40
+MONSOON_SEASON              3648:00    30
+;; October - diminishing
+MONSOON_SEASON              4320:00    10
+MONSOON_SEASON              4344:00    15
+MONSOON_SEASON              4368:00    5
+MONSOON_SEASON              4392:00    0
+
+[REPORT]
+;;Reporting Options
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+
+[COORDINATES]
+;;Node           X-Coord            Y-Coord
+KULEN_OUTLET     800                900
+SIEM_REAP_J1     600                700
+SIEM_REAP_J2     500                550
+NORTH_BARAY      450                450
+WEST_BARAY       200                350
+EAST_BARAY       700                400
+NEAK_PEAN        500                420
+ANGKOR_CHANNEL   450                300
+ANGKOR_THOM_IN   380                280
+ANGKOR_WAT_IN    520                250
+ANGKOR_THOM_MOAT 350                250
+ANGKOR_WAT_MOAT  550                220
+RICE_NORTH       300                180
+RICE_SOUTH       450                150
+RICE_EAST        650                200
+TONLE_SAP        400                50
+
+[VERTICES]
+;;Link           X-Coord    Y-Coord
+KULEN_CHANNEL    700        800
+KULEN_CHANNEL    650        750
+
+[LABELS]
+;;X-Coord   Y-Coord   Label
+850         920       "KULEN HILLS (SACRED WATERSHED)"
+150         380       "WEST BARAY (56 MILLION m³)"
+750         430       "EAST BARAY (37 MILLION m³)"
+400         480       "NORTH BARAY (JAYATATAKA)"
+530         450       "NEAK PEAN HEALING TEMPLE"
+600         220       "ANGKOR WAT"
+300         220       "ANGKOR THOM"
+350         30        "TONLE SAP LAKE"
+
+[BACKDROP]
+FILE      ""
+DIMENSIONS 0.0 0.0 1000.0 1000.0
+```
+
+---
+
+### Philippines - Ifugao Terrace Cascade
+
+```
+[TITLE]
+;;Project Title/Notes
+;; IFUGAO RICE TERRACE CASCADE - BATAD, PHILIPPINES
+;; UNESCO World Heritage site - 2000+ year old terrace irrigation
+;; Models muyong forest, terrace cascade, and traditional water management
+
+[OPTIONS]
+FLOW_UNITS           LPS
+INFILTRATION         HORTON
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS         DEPTH
+MIN_SLOPE            0.01
+ALLOW_PONDING        YES
+SKIP_STEADY_STATE    NO
+
+START_DATE           06/01/2024
+START_TIME           00:00:00
+REPORT_START_DATE    06/01/2024
+REPORT_START_TIME    00:00:00
+END_DATE             06/15/2024
+END_TIME             00:00:00
+SWEEP_START          01/01
+SWEEP_END            12/31
+DRY_DAYS             3
+REPORT_STEP          00:15:00
+WET_STEP             00:05:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+
+[EVAPORATION]
+;;Data Source    Parameters
+CONSTANT         3.5
+;; Tropical highland - moderate evaporation
+
+[RAINGAGES]
+;;Name           Format    Interval SCF      Source
+CORDILLERA_RAIN  INTENSITY 0:15     1.0      TIMESERIES MOUNTAIN_RAIN
+
+[SUBCATCHMENTS]
+;;Name           Rain Gage        Outlet          Area     %Imperv  Width    %Slope   CurbLen  SnowPack
+;; Muyong (sacred watershed forest)
+MUYONG_FOREST_1  CORDILLERA_RAIN  SPRING_1        2.0      2        100      45       0
+MUYONG_FOREST_2  CORDILLERA_RAIN  SPRING_2        1.5      2        80       50       0
+MUYONG_FOREST_3  CORDILLERA_RAIN  SPRING_3        2.5      2        120      40       0
+
+;; Terrace surfaces (each catches rain directly)
+TERRACE_1_CATCH  CORDILLERA_RAIN  TERR_1          0.3      5        60       2        0
+TERRACE_2_CATCH  CORDILLERA_RAIN  TERR_2          0.35     5        65       2        0
+TERRACE_3_CATCH  CORDILLERA_RAIN  TERR_3          0.4      5        70       2        0
+TERRACE_4_CATCH  CORDILLERA_RAIN  TERR_4          0.45     5        75       2        0
+TERRACE_5_CATCH  CORDILLERA_RAIN  TERR_5          0.5      5        80       2        0
+TERRACE_6_CATCH  CORDILLERA_RAIN  TERR_6          0.55     5        85       2        0
+TERRACE_7_CATCH  CORDILLERA_RAIN  TERR_7          0.6      5        90       2        0
+TERRACE_8_CATCH  CORDILLERA_RAIN  TERR_8          0.65     5        95       2        0
+
+[SUBAREAS]
+;;Subcatchment   N-Imperv   N-Perv     S-Imperv   S-Perv     PctZero    RouteTo    PctRouted
+MUYONG_FOREST_1  0.02       0.40       2.0        15.0       5          OUTLET
+MUYONG_FOREST_2  0.02       0.40       2.0        15.0       5          OUTLET
+MUYONG_FOREST_3  0.02       0.40       2.0        15.0       5          OUTLET
+TERRACE_1_CATCH  0.02       0.15       1.0        5.0        25         OUTLET
+TERRACE_2_CATCH  0.02       0.15       1.0        5.0        25         OUTLET
+TERRACE_3_CATCH  0.02       0.15       1.0        5.0        25         OUTLET
+TERRACE_4_CATCH  0.02       0.15       1.0        5.0        25         OUTLET
+TERRACE_5_CATCH  0.02       0.15       1.0        5.0        25         OUTLET
+TERRACE_6_CATCH  0.02       0.15       1.0        5.0        25         OUTLET
+TERRACE_7_CATCH  0.02       0.15       1.0        5.0        25         OUTLET
+TERRACE_8_CATCH  0.02       0.15       1.0        5.0        25         OUTLET
+
+[INFILTRATION]
+;;Subcatchment   MaxRate    MinRate    Decay      DryTime    MaxInfil
+MUYONG_FOREST_1  150        30         3          5          0
+MUYONG_FOREST_2  150        30         3          5          0
+MUYONG_FOREST_3  150        30         3          5          0
+TERRACE_1_CATCH  25         5          4          3          0
+TERRACE_2_CATCH  25         5          4          3          0
+TERRACE_3_CATCH  25         5          4          3          0
+TERRACE_4_CATCH  25         5          4          3          0
+TERRACE_5_CATCH  25         5          4          3          0
+TERRACE_6_CATCH  25         5          4          3          0
+TERRACE_7_CATCH  25         5          4          3          0
+TERRACE_8_CATCH  25         5          4          3          0
+
+[JUNCTIONS]
+;;Name           Elevation  MaxDepth   InitDepth  SurDepth   Aponded
+;; SPRING SOURCES (emerging from muyong forest)
+SPRING_1         200        1.0        0          0          50
+SPRING_2         195        1.0        0          0          50
+SPRING_3         205        1.0        0          0          50
+
+;; COLLECTION CHANNEL
+MAIN_COLLECT     185        0.5        0          0          100
+
+;; DISTRIBUTION POINT
+DISTRIB_1        180        0.3        0          0          50
+
+;; TERRACE INPUTS (where water enters each terrace)
+TERR_1           175        0.3        0          0          30
+TERR_2           168        0.3        0          0          30
+TERR_3           161        0.3        0          0          30
+TERR_4           154        0.3        0          0          30
+TERR_5           147        0.3        0          0          30
+TERR_6           140        0.3        0          0          30
+TERR_7           133        0.3        0          0          30
+TERR_8           126        0.3        0          0          30
+
+;; TERRACE OUTLETS (alak - stone overflow outlets)
+ALAK_1           174.9      0.15       0.10       0          20
+ALAK_2           167.9      0.15       0.10       0          20
+ALAK_3           160.9      0.15       0.10       0          20
+ALAK_4           153.9      0.15       0.10       0          20
+ALAK_5           146.9      0.15       0.10       0          20
+ALAK_6           139.9      0.15       0.10       0          20
+ALAK_7           132.9      0.15       0.10       0          20
+ALAK_8           125.9      0.15       0.10       0          20
+
+[OUTFALLS]
+;;Name           Elevation  Type       Stage Data       Gated    Route To
+;; Valley stream (collector of all terrace drainage)
+VALLEY_STREAM    120        FREE                        NO
+
+[STORAGE]
+;;Name           Elev.      MaxDepth   InitDepth  Shape      Curve Type/Params              SurDepth  Fevap     Psi       Ksat      IMD
+;; PAYO (Rice Terraces) - each flooded paddy is a storage unit
+PAYO_1           174.85     0.15       0.08       TABULAR    PAYO_CURVE_1                   0.02      0.3
+PAYO_2           167.85     0.15       0.08       TABULAR    PAYO_CURVE_2                   0.02      0.3
+PAYO_3           160.85     0.15       0.08       TABULAR    PAYO_CURVE_3                   0.02      0.3
+PAYO_4           153.85     0.15       0.08       TABULAR    PAYO_CURVE_4                   0.02      0.3
+PAYO_5           146.85     0.15       0.08       TABULAR    PAYO_CURVE_5                   0.02      0.3
+PAYO_6           139.85     0.15       0.08       TABULAR    PAYO_CURVE_6                   0.02      0.3
+PAYO_7           132.85     0.15       0.08       TABULAR    PAYO_CURVE_7                   0.02      0.3
+PAYO_8           125.85     0.15       0.08       TABULAR    PAYO_CURVE_8                   0.02      0.3
+
+[CONDUITS]
+;;Name           From Node        To Node          Length     Roughness  InOffset   OutOffset  InitFlow   MaxFlow
+;; SPRING FLOWS TO COLLECTION
+SPRING_CH_1      SPRING_1         MAIN_COLLECT     50         0.035      0          0          0          0
+SPRING_CH_2      SPRING_2         MAIN_COLLECT     45         0.035      0          0          0          0
+SPRING_CH_3      SPRING_3         MAIN_COLLECT     60         0.035      0          0          0          0
+
+;; MAIN COLLECTION TO DISTRIBUTION
+MAIN_CHANNEL     MAIN_COLLECT     DISTRIB_1        30         0.030      0          0          0          0
+
+;; DISTRIBUTION TO FIRST TERRACE
+TO_TERR_1        DISTRIB_1        TERR_1           20         0.030      0          0          0          0
+
+;; TERRACE INFLOWS TO PADDIES
+INLET_1          TERR_1           PAYO_1           5          0.025      0          0          0          0
+INLET_2          TERR_2           PAYO_2           5          0.025      0          0          0          0
+INLET_3          TERR_3           PAYO_3           5          0.025      0          0          0          0
+INLET_4          TERR_4           PAYO_4           5          0.025      0          0          0          0
+INLET_5          TERR_5           PAYO_5           5          0.025      0          0          0          0
+INLET_6          TERR_6           PAYO_6           5          0.025      0          0          0          0
+INLET_7          TERR_7           PAYO_7           5          0.025      0          0          0          0
+INLET_8          TERR_8           PAYO_8           5          0.025      0          0          0          0
+
+;; PADDY TO ALAK (overflow outlets)
+TO_ALAK_1        PAYO_1           ALAK_1           8          0.025      0.10       0          0          0
+TO_ALAK_2        PAYO_2           ALAK_2           9          0.025      0.10       0          0          0
+TO_ALAK_3        PAYO_3           ALAK_3           10         0.025      0.10       0          0          0
+TO_ALAK_4        PAYO_4           ALAK_4           11         0.025      0.10       0          0          0
+TO_ALAK_5        PAYO_5           ALAK_5           12         0.025      0.10       0          0          0
+TO_ALAK_6        PAYO_6           ALAK_6           13         0.025      0.10       0          0          0
+TO_ALAK_7        PAYO_7           ALAK_7           14         0.025      0.10       0          0          0
+TO_ALAK_8        PAYO_8           ALAK_8           15         0.025      0.10       0          0          0
+
+;; CASCADE CONNECTIONS (alak to next terrace input)
+CASCADE_1_2      ALAK_1           TERR_2           3          0.030      0          0          0          0
+CASCADE_2_3      ALAK_2           TERR_3           3          0.030      0          0          0          0
+CASCADE_3_4      ALAK_3           TERR_4           3          0.030      0          0          0          0
+CASCADE_4_5      ALAK_4           TERR_5           3          0.030      0          0          0          0
+CASCADE_5_6      ALAK_5           TERR_6           3          0.030      0          0          0          0
+CASCADE_6_7      ALAK_6           TERR_7           3          0.030      0          0          0          0
+CASCADE_7_8      ALAK_7           TERR_8           3          0.030      0          0          0          0
+
+;; FINAL DRAINAGE TO VALLEY
+VALLEY_DRAIN     ALAK_8           VALLEY_STREAM    25         0.030      0          0          0          0
+
+[WEIRS]
+;;Name           From Node        To Node          Type         CrestHt    Qcoeff     Gated    EndCon   EndCoeff   Surcharge  RoadWidth  RoadSurf
+;; Alak (stone outlets) modeled as weirs
+ALAK_WEIR_1      PAYO_1           ALAK_1           TRANSVERSE   0.08       1.5        NO       0        0          YES
+ALAK_WEIR_2      PAYO_2           ALAK_2           TRANSVERSE   0.08       1.5        NO       0        0          YES
+ALAK_WEIR_3      PAYO_3           ALAK_3           TRANSVERSE   0.08       1.5        NO       0        0          YES
+ALAK_WEIR_4      PAYO_4           ALAK_4           TRANSVERSE   0.08       1.5        NO       0        0          YES
+ALAK_WEIR_5      PAYO_5           ALAK_5           TRANSVERSE   0.08       1.5        NO       0        0          YES
+ALAK_WEIR_6      PAYO_6           ALAK_6           TRANSVERSE   0.08       1.5        NO       0        0          YES
+ALAK_WEIR_7      PAYO_7           ALAK_7           TRANSVERSE   0.08       1.5        NO       0        0          YES
+ALAK_WEIR_8      PAYO_8           ALAK_8           TRANSVERSE   0.08       1.5        NO       0        0          YES
+
+[XSECTIONS]
+;;Link           Shape        Geom1            Geom2      Geom3      Geom4      Barrels    Culvert
+SPRING_CH_1      TRAPEZOIDAL  0.3              0.5        1          1          1
+SPRING_CH_2      TRAPEZOIDAL  0.3              0.5        1          1          1
+SPRING_CH_3      TRAPEZOIDAL  0.3              0.6        1          1          1
+MAIN_CHANNEL     TRAPEZOIDAL  0.4              0.8        1          1          1
+TO_TERR_1        TRAPEZOIDAL  0.3              0.6        1          1          1
+INLET_1          RECT_OPEN    0.3              0.2        0          0          1
+INLET_2          RECT_OPEN    0.35             0.2        0          0          1
+INLET_3          RECT_OPEN    0.4              0.2        0          0          1
+INLET_4          RECT_OPEN    0.45             0.2        0          0          1
+INLET_5          RECT_OPEN    0.5              0.2        0          0          1
+INLET_6          RECT_OPEN    0.55             0.2        0          0          1
+INLET_7          RECT_OPEN    0.6              0.2        0          0          1
+INLET_8          RECT_OPEN    0.65             0.2        0          0          1
+TO_ALAK_1        RECT_OPEN    0.3              0.15       0          0          1
+TO_ALAK_2        RECT_OPEN    0.35             0.15       0          0          1
+TO_ALAK_3        RECT_OPEN    0.4              0.15       0          0          1
+TO_ALAK_4        RECT_OPEN    0.45             0.15       0          0          1
+TO_ALAK_5        RECT_OPEN    0.5              0.15       0          0          1
+TO_ALAK_6        RECT_OPEN    0.55             0.15       0          0          1
+TO_ALAK_7        RECT_OPEN    0.6              0.15       0          0          1
+TO_ALAK_8        RECT_OPEN    0.65             0.15       0          0          1
+CASCADE_1_2      TRAPEZOIDAL  0.2              0.4        0.5        0.5        1
+CASCADE_2_3      TRAPEZOIDAL  0.2              0.4        0.5        0.5        1
+CASCADE_3_4      TRAPEZOIDAL  0.2              0.5        0.5        0.5        1
+CASCADE_4_5      TRAPEZOIDAL  0.2              0.5        0.5        0.5        1
+CASCADE_5_6      TRAPEZOIDAL  0.2              0.6        0.5        0.5        1
+CASCADE_6_7      TRAPEZOIDAL  0.2              0.6        0.5        0.5        1
+CASCADE_7_8      TRAPEZOIDAL  0.2              0.7        0.5        0.5        1
+VALLEY_DRAIN     TRAPEZOIDAL  0.3              1.0        1          1          1
+
+;; Weir xsections
+ALAK_WEIR_1      RECT_OPEN    0.3              0.1        0          0
+ALAK_WEIR_2      RECT_OPEN    0.35             0.1        0          0
+ALAK_WEIR_3      RECT_OPEN    0.4              0.1        0          0
+ALAK_WEIR_4      RECT_OPEN    0.45             0.1        0          0
+ALAK_WEIR_5      RECT_OPEN    0.5              0.1        0          0
+ALAK_WEIR_6      RECT_OPEN    0.55             0.1        0          0
+ALAK_WEIR_7      RECT_OPEN    0.6              0.1        0          0
+ALAK_WEIR_8      RECT_OPEN    0.65             0.1        0          0
+
+[INFLOWS]
+;;Node           Constituent      Time Series      Type     Mfactor  Sfactor  Baseline Pattern
+;; Baseflow from springs (constant groundwater contribution)
+SPRING_1         FLOW             ""               FLOW     1.0      1.0      3.0
+SPRING_2         FLOW             ""               FLOW     1.0      1.0      2.5
+SPRING_3         FLOW             ""               FLOW     1.0      1.0      4.0
+
+[CURVES]
+;;Name           Type       X-Value    Y-Value
+;; Terrace storage curves (increasing area downhill)
+PAYO_CURVE_1     STORAGE    0.00       250
+PAYO_CURVE_1     STORAGE    0.05       260
+PAYO_CURVE_1     STORAGE    0.10       270
+PAYO_CURVE_1     STORAGE    0.15       280
+
+PAYO_CURVE_2     STORAGE    0.00       300
+PAYO_CURVE_2     STORAGE    0.05       315
+PAYO_CURVE_2     STORAGE    0.10       330
+PAYO_CURVE_2     STORAGE    0.15       345
+
+PAYO_CURVE_3     STORAGE    0.00       350
+PAYO_CURVE_3     STORAGE    0.05       370
+PAYO_CURVE_3     STORAGE    0.10       390
+PAYO_CURVE_3     STORAGE    0.15       410
+
+PAYO_CURVE_4     STORAGE    0.00       400
+PAYO_CURVE_4     STORAGE    0.05       425
+PAYO_CURVE_4     STORAGE    0.10       450
+PAYO_CURVE_4     STORAGE    0.15       475
+
+PAYO_CURVE_5     STORAGE    0.00       450
+PAYO_CURVE_5     STORAGE    0.05       480
+PAYO_CURVE_5     STORAGE    0.10       510
+PAYO_CURVE_5     STORAGE    0.15       540
+
+PAYO_CURVE_6     STORAGE    0.00       500
+PAYO_CURVE_6     STORAGE    0.05       535
+PAYO_CURVE_6     STORAGE    0.10       570
+PAYO_CURVE_6     STORAGE    0.15       605
+
+PAYO_CURVE_7     STORAGE    0.00       550
+PAYO_CURVE_7     STORAGE    0.05       590
+PAYO_CURVE_7     STORAGE    0.10       630
+PAYO_CURVE_7     STORAGE    0.15       670
+
+PAYO_CURVE_8     STORAGE    0.00       600
+PAYO_CURVE_8     STORAGE    0.05       645
+PAYO_CURVE_8     STORAGE    0.10       690
+PAYO_CURVE_8     STORAGE    0.15       735
+
+[TIMESERIES]
+;;Name           Date       Time       Value
+;; Tropical highland rainfall (mm/hr) - intense afternoon storms
+MOUNTAIN_RAIN               0:00       0
+MOUNTAIN_RAIN               6:00       0
+MOUNTAIN_RAIN               10:00      2
+MOUNTAIN_RAIN               12:00      5
+MOUNTAIN_RAIN               14:00      15
+MOUNTAIN_RAIN               15:00      35
+MOUNTAIN_RAIN               16:00      25
+MOUNTAIN_RAIN               17:00      15
+MOUNTAIN_RAIN               18:00      8
+MOUNTAIN_RAIN               20:00      2
+MOUNTAIN_RAIN               24:00      0
+;; Next day
+MOUNTAIN_RAIN               30:00      0
+MOUNTAIN_RAIN               36:00      3
+MOUNTAIN_RAIN               38:00      12
+MOUNTAIN_RAIN               39:00      28
+MOUNTAIN_RAIN               40:00      45
+MOUNTAIN_RAIN               41:00      30
+MOUNTAIN_RAIN               42:00      18
+MOUNTAIN_RAIN               44:00      5
+MOUNTAIN_RAIN               48:00      0
+
+[REPORT]
+;;Reporting Options
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+
+[COORDINATES]
+;;Node           X-Coord            Y-Coord
+;; Springs
+SPRING_1         50                 280
+SPRING_2         80                 290
+SPRING_3         110                275
+;; Collection
+MAIN_COLLECT     80                 250
+DISTRIB_1        80                 230
+;; Terraces (stairstepping down)
+TERR_1           80                 210
+TERR_2           85                 190
+TERR_3           90                 170
+TERR_4           95                 150
+TERR_5           100                130
+TERR_6           105                110
+TERR_7           110                90
+TERR_8           115                70
+;; Paddies
+PAYO_1           120                210
+PAYO_2           125                190
+PAYO_3           130                170
+PAYO_4           135                150
+PAYO_5           140                130
+PAYO_6           145                110
+PAYO_7           150                90
+PAYO_8           155                70
+;; Alak outlets
+ALAK_1           160                205
+ALAK_2           165                185
+ALAK_3           170                165
+ALAK_4           175                145
+ALAK_5           180                125
+ALAK_6           185                105
+ALAK_7           190                85
+ALAK_8           195                65
+;; Outfall
+VALLEY_STREAM    200                40
+
+[VERTICES]
+
+[LABELS]
+;;X-Coord   Y-Coord   Label
+20          295       "MUYONG SACRED FOREST"
+20          250       "SPRING ZONE"
+20          210       "UPPER TERRACES"
+20          130       "MIDDLE TERRACES"
+20          70        "LOWER TERRACES"
+170         290       "(Watershed Protection)"
+210         40        "TO VALLEY"
+
+[BACKDROP]
+FILE      ""
+DIMENSIONS 0.0 0.0 250.0 320.0
+```
+
+---
+
+## 3. Summary & Integration Guide
+
+### Files Created
+
+| | File | Type | Content | |
+|------|------|---------|
+|`medieval-india.json`| | Database | Complete civilization entry with 5+ inventions | |
+|`khmer-empire.json`| | Database | Complete civilization with baray system details | |
+|`ifugao.json`| | Database | Complete civilization with UNESCO site data | |
+|`rani-ki-vav.inp`| | SWMM5 | 7-story stepwell hydraulic model | |
+|`angkor-baray-system.inp`| | SWMM5 | Full Khmer water network model | |
+|`ifugao-terrace-cascade.inp`| | SWMM5 | 8-terrace cascade with muyong watershed | |
+
+### Key Fascinating Facts for Display
+
+| | | Civilization | Amazing Fact | Visual Hook | |  |
+|--------------|--------------|--------------|
+| | | **Medieval India** | Rani ki Vav has 7 underground stories with 500 sculptures | Cross-section animation showing descent | |  |
+| | | **Medieval India** | Johad revival brought 5 dead rivers back to life | Before/after satellite imagery | |  |
+| | | **Khmer Empire** | Angkor was 1,000 km² - larger than NYC's 5 boroughs | Size comparison map | |  |
+| | | **Khmer Empire** | West Baray held 56 million m³ - visible from space | Satellite image with scale | |  |
+| | | **Khmer Empire** | Temple moats aren't decoration - they're structural engineering | Animated "floating temple" diagram | |  |
+| | | **Ifugao** | Terrace walls stretch halfway around Earth (20,000 km) | Globe visualization | |  |
+| | | **Ifugao** | Built without metal tools over 2,000 years | Tool comparison infographic | |  |
+| | | **Ifugao** | Each family owns forest that feeds their terraces | Muyong-to-terrace water flow diagram | |  |
+
+### Map Marker Positions
+
+```javascript
+const newCivilizations = [
+  {
+    id: 'medieval-india',
+    name: 'Medieval India',
+    coordinates: { lat: 23.0, lng: 72.5 },  // Gujarat focus
+    mapPosition: { x: 72.5, y: 38.5 },
+    color: '#FF6B35',
+    period: '322 BCE - 1600 CE',
+    inventions: ['Stepwells', 'Tank Cascades', 'Johads', 'Bamboo Drip']
+  },
+  {
+    id: 'khmer-empire',
+    name: 'Khmer Empire',
+    coordinates: { lat: 13.4, lng: 103.9 },  // Angkor
+    mapPosition: { x: 77.5, y: 46.5 },
+    color: '#8B4513',
+    period: '802 - 1431 CE',
+    inventions: ['Giant Barays', 'Channel Network', 'Temple Moats', 'Neak Pean']
+  },
+  {
+    id: 'ifugao',
+    name: 'Ifugao',
+    coordinates: { lat: 16.9, lng: 121.0 },  // Banaue
+    mapPosition: { x: 83.5, y: 44.5 },
+    color: '#228B22',
+    period: '1000 BCE - Present',
+    inventions: ['Rice Terraces', 'Muyong Forests', 'Stone Walls', 'Alak Outlets']
+  }
+];
+```
+
+Would you like me to:
+1. Create additional SWMM5 models for specific inventions (Grand Anicut, Bamboo Drip, Neak Pean)?
+2. Develop the UI components for these civilization pages?
+3. Add more detailed timelines or cultural context?
+4. Create comparison visualizations between these water systems?
