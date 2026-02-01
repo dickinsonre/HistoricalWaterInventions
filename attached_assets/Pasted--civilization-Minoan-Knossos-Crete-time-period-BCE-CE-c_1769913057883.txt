@@ -1,0 +1,154 @@
+[
+  {
+    "civilization": "Minoan (Knossos, Crete)",
+    "time_period_BCE_CE": "c. 2000–1400 BCE",
+    "drainage_scope": "Palace-centered (Knossos and other palatial complexes)",
+    "primary_functions": [
+      "Stormwater drainage",
+      "Greywater removal (baths, kitchens)",
+      "Toilet and latrine waste conveyance"
+    ],
+    "infrastructure_elements": [
+      "Stone-lined floor channels and courtyard gutters",
+      "Covered and open terracotta conduits (often conical)",
+      "Local sumps and basins for sediment capture",
+      "Vertical and sloping drains from upper stories",
+      "Outfalls discharging downslope away from the palace"
+    ],
+    "coverage_pattern": "Focused on palaces and elite architecture; integrated across multiple rooms, stories, and courtyards.",
+    "hydraulic_design_features": [
+      "Carefully graded slopes in floor channels and pipes",
+      "Zigzag channels and intermediate basins for energy dissipation during intense storms",
+      "Conical pipe segments with tight male–female joints that improve fit and flow",
+      "Combination of surface inlets, covered drains, and trunk outlets"
+    ],
+    "sanitation_features": [
+      "Early ‘flush-type’ latrines using poured water to clear waste",
+      "Separation of living spaces from standing wastewater via rapid conveyance",
+      "Use of masonry to protect structural elements from moisture"
+    ],
+    "integration_with_water_supply": {
+      "relationship": "Partial integration",
+      "description": "Some terracotta conduits and roof drains also feed cisterns, linking rainwater harvesting and drainage before excess flows enter the outfall system."
+    },
+    "innovation_level": {
+      "relative_to_period": "High",
+      "notes": "Among the earliest known integrated palace-scale drainage and toilet systems in the Aegean and Mediterranean."
+    },
+    "app_summary": "At Knossos, the Minoans built a palace-wide drainage network of stone channels and conical terracotta pipes that removed stormwater, greywater, and toilet wastes from multi-story buildings.",
+    "sources": ["web:12", "web:16", "web:20", "web:22", "web:25", "web:30", "web:35"]
+  },
+  {
+    "civilization": "Indus Valley (e.g., Mohenjo-Daro, Harappa)",
+    "time_period_BCE_CE": "c. 2600–1900 BCE",
+    "drainage_scope": "Citywide, integrated with planned street grid",
+    "primary_functions": [
+      "Household wastewater removal",
+      "Street runoff drainage",
+      "Latrine and bathing wastewater conveyance"
+    ],
+    "infrastructure_elements": [
+      "Brick-lined, covered street drains along major streets and lanes",
+      "Household drains from baths and latrines into street drains",
+      "Soak pits and small inspection chambers in some areas",
+      "Standardized baked bricks used for drains and manholes"
+    ],
+    "coverage_pattern": "Very high; most houses in planned neighborhoods have direct or indirect connections to the street drainage system.",
+    "hydraulic_design_features": [
+      "Uniform brick dimensions that simplify channel sizing and slopes",
+      "Regular street gradients supporting gravity flow along orthogonal grids",
+      "Covered drains with removable slabs for access and cleaning"
+    ],
+    "sanitation_features": [
+      "Numerous private latrines within houses connected to drains",
+      "Bathing platforms with dedicated wastewater outlets",
+      "Separation of clean water from waste streams via wells and separate drains"
+    ],
+    "integration_with_water_supply": {
+      "relationship": "Coordinated but mostly separate networks",
+      "description": "Wells and reservoirs provide water, while drains carry away used water; both are planned together in the urban layout but use distinct structures."
+    },
+    "innovation_level": {
+      "relative_to_period": "Very high",
+      "notes": "One of the earliest known examples of near-universal household connection to a planned urban drainage and sanitation network."
+    },
+    "app_summary": "Indus cities used standardized brick drains along streets, with most homes discharging bath and latrine wastewater into covered channels that carried it away from the settlement.",
+    "sources": ["web:31", "web:33", "web:36"]
+  },
+  {
+    "civilization": "Rome (Cloaca Maxima and urban sewers)",
+    "time_period_BCE_CE": "From c. 6th century BCE",
+    "drainage_scope": "City-scale trunk system serving low-lying urban basins",
+    "primary_functions": [
+      "Marsh drainage and land reclamation",
+      "Stormwater conveyance",
+      "Later: combined sewage and stormwater conveyance"
+    ],
+    "infrastructure_elements": [
+      "Large masonry trunk sewer (Cloaca Maxima) initially open, later vaulted",
+      "Network of subsidiary sewers and street drains feeding the trunk",
+      "Connections from public latrines, baths, fountains, and some buildings",
+      "Outfalls to the Tiber and other receiving waters"
+    ],
+    "coverage_pattern": "High for central Rome and major districts; emphasis on main basins and public structures rather than every dwelling.",
+    "hydraulic_design_features": [
+      "Use of natural stream courses as alignments for trunk sewers",
+      "Massive stone and later concrete vaults allowing large discharges",
+      "Long-lived conduits designed to be walkable for inspection and maintenance"
+    ],
+    "sanitation_features": [
+      "Multi-seat public latrines directly connected to sewers",
+      "Continuous flows from aqueduct-fed baths and fountains helping flush sewers",
+      "Limited direct connections from poorer housing compared to public structures"
+    ],
+    "integration_with_water_supply": {
+      "relationship": "Functionally linked but structurally separate",
+      "description": "Aqueducts provide abundant water for baths, fountains, and latrines; their outflows help flush the sewers, but conveyance structures for clean and waste water are distinct."
+    },
+    "innovation_level": {
+      "relative_to_period": "High",
+      "notes": "Pioneering use of large, durable trunk sewers for urban drainage and later wastewater, influencing many later European systems."
+    },
+    "app_summary": "Rome’s Cloaca Maxima and connected sewers drained marshy areas, carried stormwater, and later removed sewage from public baths and latrines across the city.",
+    "sources": ["web:32", "web:34", "web:37"]
+  },
+  {
+    "civilization": "High-level comparison (drainage focus)",
+    "comparison_axes": [
+      "scale",
+      "primary_functions",
+      "coverage_pattern",
+      "hydraulic_nuance",
+      "sanitation_coverage",
+      "integration_with_supply"
+    ],
+    "Minoan_vs_Indus": {
+      "scale": "Minoan systems focus on palaces and adjacent structures; Indus systems cover entire planned neighborhoods and cities.",
+      "primary_functions": "Both convey household wastewater and stormwater; Minoan adds palace-focused toilet drainage, Indus emphasizes universal household service.",
+      "coverage_pattern": "Minoan high-end plumbing is concentrated in elite complexes; Indus drainage reaches most residences in planned sectors.",
+      "hydraulic_nuance": "Minoans use conical pipes, zigzag conduits, and basins for energy control; Indus relies on standardized brick drains and consistent street gradients.",
+      "sanitation_coverage": "Minoan toilets are notable but limited in number; Indus latrines and baths are widespread at the household level."
+    },
+    "Minoan_vs_Rome": {
+      "scale": "Minoan drainage protects single palaces; Roman sewers serve major parts of a metropolis.",
+      "primary_functions": "Both handle stormwater and waste; Rome also reclaims marshes and manages large urban basins.",
+      "coverage_pattern": "Minoan systems are dense within palaces; Rome emphasizes trunk sewers and public facilities more than every dwelling.",
+      "hydraulic_nuance": "Minoans focus on detailed building-scale hydraulics; Romans build massive, long-lived trunk conduits following natural topography.",
+      "sanitation_coverage": "Minoans pioneer palace toilets with water-assisted flushing; Romans later develop large public latrines integrated with sewers."
+    },
+    "sources": [
+      "web:12",
+      "web:16",
+      "web:20",
+      "web:22",
+      "web:25",
+      "web:30",
+      "web:31",
+      "web:33",
+      "web:36",
+      "web:32",
+      "web:34",
+      "web:37"
+    ]
+  }
+]

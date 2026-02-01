@@ -231,6 +231,75 @@ export const gameData: GameData = {
       ]
     },
     {
+      id: "minoan-crete",
+      name: "Minoan Crete",
+      description: "Europe's first advanced civilization with sophisticated water and sanitation systems that wouldn't be matched for millennia.",
+      position: [6, 0, -3],
+      color: "#9333ea",
+      era: "ancient",
+      dateRange: "2000-1400 BCE",
+      locations: [
+        {
+          id: "knossos",
+          name: "Palace of Knossos",
+          description: "The legendary palace with advanced water systems",
+          historicalContext: "Center of Minoan civilization and hydraulic innovation",
+          coordinates: { lat: 35.2979, lng: 25.1631 },
+          artifacts: [
+            {
+              id: "knossos-drainage",
+              name: "Palace Drainage System",
+              description: "Network of stone channels and terracotta conduits for stormwater and wastewater",
+              rarity: "legendary",
+              historicalPeriod: "Minoan (2000-1400 BCE)",
+              significance: "Protected multi-story palace from flooding with zigzag channels and sediment traps",
+              yearBCE: 1900,
+              category: "sanitation"
+            },
+            {
+              id: "minoan-toilet",
+              name: "Flush-Type Toilet",
+              description: "Water-assisted toilet with drains connected to palace drainage",
+              rarity: "legendary",
+              historicalPeriod: "Minoan (1700-1400 BCE)",
+              significance: "Earliest known water-flushed toilets in the Western world",
+              yearBCE: 1700,
+              category: "sanitation"
+            },
+            {
+              id: "terracotta-pipes",
+              name: "Terracotta Drainage Pipes",
+              description: "Conical pipe segments with flanged joints for water conveyance",
+              rarity: "epic",
+              historicalPeriod: "Minoan (2000-1400 BCE)",
+              significance: "Quality rivaled classical systems 1500 years later",
+              yearBCE: 1800,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "phaistos",
+          name: "Phaistos Palace",
+          description: "Second largest Minoan palace with water management systems",
+          historicalContext: "Major administrative center in southern Crete",
+          coordinates: { lat: 35.0512, lng: 24.8142 },
+          artifacts: [
+            {
+              id: "phaistos-cistern",
+              name: "Rainwater Harvesting Cistern",
+              description: "Underground cistern fed by roof and courtyard drains",
+              rarity: "epic",
+              historicalPeriod: "Minoan (1900-1400 BCE)",
+              significance: "Buffered seasonal water variability for palace water security",
+              yearBCE: 1850,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "ancient-greece",
       name: "Ancient Greece",
       description: "Innovators of water theory and mechanical engineering",

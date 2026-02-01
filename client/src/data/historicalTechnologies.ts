@@ -233,6 +233,51 @@ export const historicalTechnologies: HistoricalTechnology[] = [
     primary_uses: ["City water storage"],
     key_principle: "Subterranean vaulted chambers store large volumes of aqueduct water within cities.",
     notes: "The Basilica Cistern in Istanbul is a prominent example."
+  },
+  {
+    name: "Minoan palace drainage system",
+    category: "Urban drainage and sewerage",
+    civilizations: ["Minoan (Crete)"],
+    period_BCE_CE: "c. 2000–1400 BCE",
+    primary_uses: ["Stormwater drainage", "Wastewater conveyance", "Toilet flushing"],
+    key_principle: "Network of stone channels and terracotta conduits, partly covered and partly open-topped, collects runoff and household wastewater and discharges it downslope away from the palace.",
+    notes: "Stormwater from courts and roofs, greywater from baths, and toilet wastes were routed into a common drainage network that protected the multi-story complexes from flooding and unsanitary ponding."
+  },
+  {
+    name: "Knossos stormwater runoff system",
+    category: "Storm drainage",
+    civilizations: ["Minoan (Crete)"],
+    period_BCE_CE: "c. 1900–1400 BCE",
+    primary_uses: ["Stormwater interception", "Flood risk reduction"],
+    key_principle: "Surface channels in paved courts collect intense rainfall, route it into zigzag conduits with intermediate basins, and then into larger buried drains leading off the hill.",
+    notes: "The system reflects awareness of short, intense Mediterranean storms and the need to avoid erosion of the palace foundations."
+  },
+  {
+    name: "Terracotta drainage pipes",
+    category: "Drainage conduits",
+    civilizations: ["Minoan (Crete)"],
+    period_BCE_CE: "c. 2000–1400 BCE",
+    primary_uses: ["Stormwater conveyance", "Wastewater drainage", "Water supply"],
+    key_principle: "Segmented terracotta conduits, often conical or rectangular, joined with flanged ends and mortar, convey water under gravity in closed or semi-closed sections.",
+    notes: "Quality of manufacture and jointing is comparable to later classical systems and allowed some pressurized or near-pressurized operation in parts of the network."
+  },
+  {
+    name: "Minoan flush-type toilets and drains",
+    category: "Sanitation and drainage",
+    civilizations: ["Minoan (Crete)"],
+    period_BCE_CE: "c. 1700–1400 BCE",
+    primary_uses: ["Human waste disposal"],
+    key_principle: "Latrine seats located over vertical or sloping drains are cleared by poured water, which carries waste into the palace drainage system.",
+    notes: "These installations are among the earliest known examples of water-assisted toilet drainage in the Western world."
+  },
+  {
+    name: "Rainwater harvesting to cisterns via drains",
+    category: "Rainwater harvesting and drainage",
+    civilizations: ["Minoan (Crete)"],
+    period_BCE_CE: "c. 1900–1400 BCE",
+    primary_uses: ["Non-potable supply", "Supplemental potable use", "Palace water security"],
+    key_principle: "Roof and courtyard runoff captured by surface channels and terracotta pipes is routed into storage cisterns before overflow continues to the drainage network.",
+    notes: "This linkage between drainage and storage allowed palaces to buffer seasonal variability while still managing peak flows."
   }
 ];
 

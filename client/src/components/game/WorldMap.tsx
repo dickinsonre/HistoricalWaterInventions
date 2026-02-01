@@ -17,6 +17,7 @@ const geographicPositions: Record<string, [number, number, number]> = {
   "islamic-golden-age": [14, 0.5, 2],
   "mesoamerica": [-22, 0.5, 4],
   "modern-era": [-18, 0.5, -6],
+  "minoan-crete": [6, 0.5, -3],
 };
 
 export default function WorldMap() {
