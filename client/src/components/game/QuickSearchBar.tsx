@@ -144,7 +144,7 @@ export default function QuickSearchBar({ onSelectCivilization, onSelectInvention
             }}
             onFocus={() => setIsOpen(true)}
             onKeyDown={handleKeyDown}
-            placeholder={activeCategory === "all" ? "Search 235+ inventions & 74 civilizations..." : `Search ${inventionCount} ${activeCategory} inventions...`}
+            placeholder={activeCategory === "all" ? "Search 256+ inventions & 73 civilizations..." : `Search ${inventionCount} ${activeCategory} inventions...`}
             className="w-full pl-12 pr-12 py-3 rounded-full bg-[var(--deep-ocean)]/80 border-2 border-[var(--aqua)]/40 text-[var(--parchment)] placeholder-[var(--parchment)]/50 focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/50 text-base"
           />
           {query && (

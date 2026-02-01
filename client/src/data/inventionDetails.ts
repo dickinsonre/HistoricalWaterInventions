@@ -890,6 +890,335 @@ export const inventionDetails: Record<string, InventionDetailData> = {
       "Inspiration for sustainable water management"
     ],
     robertsNote: "The Maya built one of history's largest cities in a jungle with no permanent water source. Their entire water system depended on collecting and storing rain. That took incredible planning and engineering."
+  },
+  "water-integrator": {
+    tagline: "The computer that ran on water—solving equations through fluid dynamics",
+    keyFact: "Used in Soviet construction until the 1980s, decades after digital computers were available",
+    howItWorks: [
+      "Water levels in tanks represent mathematical variable values",
+      "Flow rates between tanks represent derivatives (rates of change)",
+      "Tube resistance encodes equation coefficients",
+      "Tank capacity represents integration constants",
+      "Time evolution of water levels traces solution curves",
+      "Accuracy of ±2-3% compared to analytical solutions"
+    ],
+    whyItMattered: [
+      "First computer to solve partial differential equations in real-time",
+      "Enabled complex thermal calculations for dam construction",
+      "Predicted concrete curing rates and permafrost thawing",
+      "Trusted by engineers for its physical intuition",
+      "Operated without electricity in remote locations"
+    ],
+    legacyToday: [
+      "Ancestor of modern Computational Fluid Dynamics (CFD)",
+      "Physical SWMM model decades before digital simulation",
+      "Demonstrates fluid behavior can represent mathematical solutions",
+      "Inspired analog computing research"
+    ],
+    technicalSpecs: {
+      dimensions: "2m × 3m × 1.5m typical installation",
+      materials: "Glass tubes, precision valves, calibrated tanks, water",
+      capacity: "Solve systems of PDEs in real-time"
+    },
+    robertsNote: "This is essentially a physical SWMM model! Lukyanov used actual fluid mechanics to compute solutions to differential equations. When I run a SWMM simulation, I'm doing digitally what this machine did with real water. It's the most literal possible example of 'computational fluid dynamics.'"
+  },
+  "moscow-volga-canal": {
+    tagline: "Rerouting a river to feed the capital",
+    keyFact: "Supplies 80% of Moscow's water today—the city couldn't exist at its current size without it",
+    howItWorks: [
+      "128 km of canal connecting Volga River to Moscow",
+      "11 locks raise ships 38 meters to the summit level",
+      "Reservoir system stores water for dry periods",
+      "Pumping stations lift water against natural flow",
+      "Gravity feeds the Moscow River throughout the year",
+      "Serves both navigation and water supply"
+    ],
+    whyItMattered: [
+      "Enabled Moscow to grow from 4 million to 12+ million people",
+      "Solved chronic water shortages in the capital",
+      "Created major shipping route to Volga basin",
+      "Engineering triumph completed in just 5 years"
+    ],
+    legacyToday: [
+      "Still Moscow's primary water supply",
+      "Active shipping route for goods and passengers",
+      "Reservoirs now serve recreation and fishing"
+    ],
+    robertsNote: "Moscow is the largest city in the world built away from a major water source. The canal essentially moved the Volga to Moscow. It's massive hydraulic engineering—lift stations, reservoirs, 11 locks. Without it, modern Moscow couldn't exist."
+  },
+  "belomor-canal": {
+    tagline: "The controversial shortcut from Arctic to Baltic",
+    keyFact: "227 km built in just 20 months—one of the fastest major canal constructions in history",
+    howItWorks: [
+      "227 km connecting White Sea to Lake Onega and Baltic",
+      "19 locks handle 70-meter elevation changes",
+      "Series of lakes used as natural reservoirs",
+      "Wooden and concrete lock chambers",
+      "Designed for naval vessels up to 3,000 tons",
+      "Operates during ice-free season (May-November)"
+    ],
+    whyItMattered: [
+      "Strategic naval route from Arctic to Baltic",
+      "Avoided vulnerable route around Scandinavia",
+      "Opened northern timber resources to transport",
+      "First major Soviet canal project"
+    ],
+    legacyToday: [
+      "Part of Unified Deep Water System",
+      "Timber and cargo transport route",
+      "Expanded and modernized since original construction"
+    ],
+    robertsNote: "The Belomor Canal is controversial—built with forced labor at terrible human cost. But hydraulically, it's impressive: 19 locks, 227 km, crossing the watershed between Arctic and Baltic drainage."
+  },
+  "volga-don-canal": {
+    tagline: "Peter the Great's 250-year-old dream realized",
+    keyFact: "Completes five-sea navigation—ships can travel from Arctic Ocean to Mediterranean",
+    howItWorks: [
+      "101 km connecting Europe's two mightiest rivers",
+      "13 locks overcome 88-meter elevation difference",
+      "Tsimlyansk Reservoir provides summit-level water",
+      "Pumping stations supplement natural flow",
+      "Three-flight staircase locks at key points",
+      "Designed for 5,000-ton vessels"
+    ],
+    whyItMattered: [
+      "Peter the Great proposed it in 1697—completed 1952",
+      "Links Caspian, Azov, Black, Baltic, and White Seas",
+      "Enables ships to cross from Arctic to Mediterranean",
+      "Strategic military and commercial significance"
+    ],
+    legacyToday: [
+      "Critical freight route for Russian economy",
+      "Carries 10+ million tons annually",
+      "Enables landlocked Caspian access to world oceans"
+    ],
+    robertsNote: "This canal took 250 years from conception to completion—Peter the Great first proposed it in 1697. When you can sail from the Arctic Ocean to the Mediterranean through Russia's interior, that's transformative infrastructure."
+  },
+  "unified-waterway": {
+    tagline: "Connecting five seas through rivers, lakes, and human ambition",
+    keyFact: "6,500 km navigable waterway—ships travel from St. Petersburg to Astrakhan through one system",
+    howItWorks: [
+      "Integrates Volga, Don, Neva, and other major rivers",
+      "Canals link natural waterways at watershed divides",
+      "Lock systems handle elevation changes",
+      "Reservoirs regulate seasonal flow variations",
+      "Standardized channel depths for large vessels",
+      "Year-round operation with icebreaker assistance"
+    ],
+    whyItMattered: [
+      "Largest inland waterway system in Europe",
+      "Connects White, Baltic, Caspian, Azov, and Black Seas",
+      "Transformed Russia's internal transportation",
+      "Enabled industrial development of interior regions"
+    ],
+    legacyToday: [
+      "Carries 100+ million tons of freight annually",
+      "Cruise ships travel the historic routes",
+      "Hydroelectric dams generate renewable energy"
+    ],
+    robertsNote: "The Unified Deep Water System is essentially a continent-scale SWMM model made real. Rivers as conduits, reservoirs as storage, locks as control structures. It's hydraulic engineering at the largest possible scale."
+  },
+  "maya-pressurized-system": {
+    tagline: "The first pressurized water in the Americas—750 CE",
+    keyFact: "Used Venturi effect to create pressure centuries before European engineers understood the physics",
+    howItWorks: [
+      "Spring water collected at elevation above city",
+      "Open channel guides water toward destination",
+      "Channel constricts into enclosed stone conduit",
+      "Smaller cross-section increases water velocity",
+      "Pressure builds from hydraulic head and velocity",
+      "Water emerges under pressure at lower elevation"
+    ],
+    whyItMattered: [
+      "First pressurized water system in the Americas",
+      "Demonstrated advanced understanding of hydraulics",
+      "Predates European pressurized systems",
+      "Enabled water delivery to specific locations"
+    ],
+    legacyToday: [
+      "Proves indigenous engineering sophistication",
+      "Studied by hydraulic engineers and archaeologists",
+      "Demonstrates universal physics understanding"
+    ],
+    technicalSpecs: {
+      materials: "Cut limestone blocks, lime mortar",
+      dimensions: "Channel narrows from 50cm to 10cm width",
+      capacity: "Pressurized flow to designated outlets"
+    },
+    robertsNote: "Palenque's pressurized system is remarkable. The Maya understood that restricting flow in an enclosed conduit creates pressure—the Venturi effect. They did this 750 years before Venturi was born."
+  },
+  "palenque-aqueduct": {
+    tagline: "Underground rivers beneath a Maya palace",
+    keyFact: "9 separate aqueducts route streams beneath plazas and pyramids—still flowing today",
+    howItWorks: [
+      "Corbelled stone arches create underground channels",
+      "Natural streams diverted from surface to subsurface",
+      "Channels route water beneath buildings and plazas",
+      "Outlets return water to natural drainage",
+      "Cross-sections sized for monsoon peak flows",
+      "Stone lining prevents erosion and collapse"
+    ],
+    whyItMattered: [
+      "Allowed construction of palace over stream channels",
+      "Prevented flooding of ceremonial spaces",
+      "Longest runs 60+ meters under palace complex",
+      "Still functional after 1,200+ years"
+    ],
+    legacyToday: [
+      "UNESCO World Heritage Site",
+      "Active archaeological research continues",
+      "Model for sustainable urban drainage"
+    ],
+    robertsNote: "The Maya built their palace over nine separate streams. Instead of moving the palace, they moved the water—underground. These corbelled tunnels are still carrying water 1,200 years later."
+  },
+  "khettara-system": {
+    tagline: "Underground rivers carrying mountain water to desert oases",
+    keyFact: "800+ khettaras in Tafilalet alone—some still irrigating date palms after 3,000 years",
+    howItWorks: [
+      "Mother well dug at mountain base to tap aquifer",
+      "Gently sloping tunnel (0.1-0.5%) carries water by gravity",
+      "Vertical shafts every 20-50m provide access and ventilation",
+      "Tunnel extends 10-20 km to oasis destination",
+      "Water emerges at surface to irrigate fields",
+      "No pumping required—pure gravity flow"
+    ],
+    whyItMattered: [
+      "Brought mountain groundwater to desert settlements",
+      "Enabled civilization in Saharan oases",
+      "Minimal evaporation in underground channels",
+      "Sustainable for millennia without external energy"
+    ],
+    legacyToday: [
+      "Still irrigating Moroccan oases today",
+      "UNESCO heritage candidate",
+      "Being restored as climate adaptation strategy"
+    ],
+    technicalSpecs: {
+      dimensions: "Tunnels: 0.5-1.5m wide, 1-2m high; Length: up to 20km",
+      materials: "Hand-dug through rock and sediment",
+      capacity: "5-50 liters/second depending on aquifer"
+    },
+    robertsNote: "Khettaras are the Moroccan version of Persian qanats—same brilliant concept. Gravity-fed underground channels that have supplied oases for 3,000 years. No pumps, no fuel, no electricity. Just precise surveying and backbreaking labor."
+  },
+  "fogarra-well": {
+    tagline: "The mother of all oasis water—where khettaras are born",
+    keyFact: "Hand-dug through solid rock to depths of 60 meters",
+    howItWorks: [
+      "Located at piedmont where mountain meets plain",
+      "Dug vertically to reach mountain aquifer",
+      "Water table intersection determines system yield",
+      "Horizontal gallery extends upslope into aquifer",
+      "Multiple collection galleries maximize yield",
+      "Coordinates entire downstream tunnel alignment"
+    ],
+    whyItMattered: [
+      "Determines success or failure of entire khettara",
+      "Requires expert hydrogeological knowledge",
+      "Investment of years of labor to complete",
+      "Water rights defined at mother well"
+    ],
+    legacyToday: [
+      "Traditional well-digging knowledge endangered",
+      "Historic wells still functioning",
+      "Cultural significance to oasis communities"
+    ],
+    robertsNote: "The mother well is where the magic happens—or doesn't. Get it wrong, and you've wasted years of labor on a dry tunnel. Get it right, and you've created water for a thousand years."
+  },
+  "marrakech-seguias": {
+    tagline: "950 years of water rights flowing through the Red City",
+    keyFact: "125 km of channels still distributing Atlas Mountain water to famous Marrakech gardens",
+    howItWorks: [
+      "Channels capture snowmelt from High Atlas Mountains",
+      "Main canals divide into smaller seguias",
+      "Stone weirs control flow distribution",
+      "Traditional water masters regulate timing",
+      "Gardens receive water on rotating schedule",
+      "Surplus returns to groundwater"
+    ],
+    whyItMattered: [
+      "Created the famous gardens of Marrakech",
+      "Sustained city of 500,000+ in semi-arid climate",
+      "Water rights allocation dates back 950 years",
+      "Model for equitable water distribution"
+    ],
+    legacyToday: [
+      "Still supplies Marrakech's historic gardens",
+      "Traditional water masters continue role",
+      "Tourism depends on garden irrigation"
+    ],
+    robertsNote: "The seguia system made Marrakech possible. 125 km of channels carrying mountain water through the city. Water rights here date back 950 years and are still enforced."
+  },
+  "riad-fountains": {
+    tagline: "Microclimate engineering in courtyard paradise gardens",
+    keyFact: "Evaporative cooling drops temperatures 10°C—natural air conditioning",
+    howItWorks: [
+      "Central courtyard designed as thermal buffer",
+      "Fountain creates evaporative cooling effect",
+      "High walls shade interior from direct sun",
+      "Cool air sinks and pools in courtyard",
+      "Cross-ventilation draws cool air through rooms",
+      "Plants add humidity and additional cooling"
+    ],
+    whyItMattered: [
+      "Provided comfort in extreme heat",
+      "No energy required—passive cooling",
+      "Combined utility with aesthetic beauty",
+      "Essential feature of Islamic architecture"
+    ],
+    legacyToday: [
+      "Riads now popular tourist accommodations",
+      "Passive cooling studied for sustainable design",
+      "Model for courtyard architecture worldwide"
+    ],
+    robertsNote: "A riad fountain isn't just pretty—it's engineering. The evaporation cools the air, the high walls trap that cool air, and the courtyard becomes a refuge from 45°C summer heat."
+  },
+  "fez-hammam": {
+    tagline: "Where thermal engineering meets social institution",
+    keyFact: "100+ historic hammams in Fez—some operating continuously for 800+ years",
+    howItWorks: [
+      "Wood-fired furnace heats water and floors",
+      "Hot room reaches 50°C with steam",
+      "Warm room at intermediate temperature",
+      "Cool room for rest and relaxation",
+      "Water recycled from hot to warm to cold uses",
+      "Heat recovery from furnace gases warms entry rooms"
+    ],
+    whyItMattered: [
+      "Ritual purification required by Islam",
+      "Public health through regular bathing",
+      "Social gathering place for communities",
+      "Thermal engineering at sophisticated level"
+    ],
+    legacyToday: [
+      "100+ hammams still operating in Fez",
+      "Tourism major revenue source",
+      "Model for heat recovery systems"
+    ],
+    robertsNote: "A hammam is a thermal cascade system. The hottest room uses the most energy, but heat flows through progressively cooler rooms before being exhausted. That's heat recovery engineering."
+  },
+  "tannery-water": {
+    tagline: "1,000 years of leather and water at Chouara",
+    keyFact: "World's oldest working tannery—continuous operation since 1000 CE",
+    howItWorks: [
+      "Fresh water flows through honeycomb of stone vats",
+      "Sequential processing: lime, pigeon dung, dyes",
+      "Water carries chemicals and removes waste",
+      "Gravity-fed system from seguia network",
+      "Effluent channeled to treatment areas",
+      "Color-coded vats for different processes"
+    ],
+    whyItMattered: [
+      "Moroccan leather famous worldwide for centuries",
+      "Water management essential to quality",
+      "Continuous operation proves sustainability",
+      "Economic engine for Fez medina"
+    ],
+    legacyToday: [
+      "Major tourist attraction in Fez",
+      "Traditional leather production continues",
+      "UNESCO World Heritage component"
+    ],
+    robertsNote: "The Chouara tannery has operated for 1,000 years. Same vats, same water channels, same methods. The water system is the key—you need continuous flow for quality leather."
   }
 };
 
