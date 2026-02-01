@@ -3506,6 +3506,221 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "borneo",
+      name: "Borneo Indigenous Civilizations",
+      description: "Sophisticated water management in Earth's wettest environments - 40,000+ years",
+      position: [16, 0, 6],
+      color: "#8BC34A",
+      era: "ancient",
+      dateRange: "40000 BCE - Present",
+      locations: [
+        {
+          id: "sarawak-longhouses",
+          name: "Sarawak Longhouse Region",
+          description: "Iban, Bidayuh, and Kayan-Kenyah longhouse territories",
+          historicalContext: "Communal flood-resistant architecture on rivers",
+          coordinates: { lat: 2.5, lng: 113.0 },
+          artifacts: [
+            {
+              id: "longhouse-settlements",
+              name: "Longhouse River Settlement System",
+              description: "Elevated communal dwellings on ironwood stilts housing 20-100 families, withstanding 5-10m floods",
+              rarity: "epic",
+              historicalPeriod: "2000 BCE - Present",
+              significance: "400+ meter structures; entire village under one roof; still inhabited today",
+              yearBCE: 2000,
+              category: "dam"
+            },
+            {
+              id: "bamboo-talang",
+              name: "Bamboo Aqueduct Systems (Talang)",
+              description: "Gravity-fed water supply using split bamboo channels spanning kilometers",
+              rarity: "rare",
+              historicalPeriod: "Ancient - Present",
+              significance: "Zero energy cost; spans 2+ km; gradient engineering without tools",
+              yearBCE: 2000,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "kalimantan-peat",
+          name: "Kalimantan Peat Swamps",
+          description: "World's largest tropical peatlands",
+          historicalContext: "Sustainable peat management vs. modern destruction",
+          coordinates: { lat: -2.5, lng: 114.5 },
+          artifacts: [
+            {
+              id: "peat-canals",
+              name: "Peat Swamp Canal Systems (Tatah/Anjir)",
+              description: "Shallow canals through 15m-deep peat, maintaining water table to prevent fires",
+              rarity: "rare",
+              historicalPeriod: "500 CE - Present",
+              significance: "Traditional shallow canals prevented fires; modern deep drainage caused catastrophic fires",
+              yearBCE: -500,
+              category: "canal"
+            },
+            {
+              id: "floating-rice-borneo",
+              name: "Floating Rice Cultivation (Padi Pasang Surut)",
+              description: "Rice varieties with stems elongating 5 meters to keep pace with rising floods",
+              rarity: "rare",
+              historicalPeriod: "Ancient - Present",
+              significance: "Stems grow 10+ cm/day; climate-resilient food production",
+              yearBCE: 1000,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "sabah-tagal",
+          name: "Sabah Tagal Rivers",
+          description: "Community-managed fish sanctuary system",
+          historicalContext: "Indigenous conservation legally recognized since 2003",
+          coordinates: { lat: 5.5, lng: 116.5 },
+          artifacts: [
+            {
+              id: "tagal-system",
+              name: "Tagal Fish Conservation System",
+              description: "Community river sanctuaries closed 1-5 years, producing 3-10× more fish than open waters",
+              rarity: "epic",
+              historicalPeriod: "Ancient - Present",
+              significance: "400+ registered sites; legally backed since 2003; model for global fisheries",
+              yearBCE: 1000,
+              category: "irrigation"
+            },
+            {
+              id: "rattan-fish-traps",
+              name: "Rattan Fish Traps (Bubu)",
+              description: "Ingenious basket traps with one-way funnel entrance for sustainable fishing",
+              rarity: "common",
+              historicalPeriod: "Ancient - Present",
+              significance: "Size-selective (small fish escape); live capture allows release; zero bycatch",
+              yearBCE: 3000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "papua-new-guinea",
+      name: "Papua New Guinea",
+      description: "World's oldest wetland agriculture (9,000 years) with 800+ languages",
+      position: [20, 0, 4],
+      color: "#FF9800",
+      era: "ancient",
+      dateRange: "50000 BCE - Present",
+      locations: [
+        {
+          id: "kuk-swamp",
+          name: "Kuk Swamp",
+          description: "UNESCO World Heritage - oldest wetland agriculture on Earth",
+          historicalContext: "Independent agricultural invention 4,000 years before Egypt",
+          coordinates: { lat: -5.8, lng: 144.3 },
+          artifacts: [
+            {
+              id: "kuk-drainage",
+              name: "Kuk Swamp Drainage Agriculture",
+              description: "The world's oldest known wetland agriculture - 9,000-year-old drainage channels predating Egyptian civilization",
+              rarity: "legendary",
+              historicalPeriod: "7000 BCE - Present",
+              significance: "UNESCO World Heritage 2008; one of only 3-4 independent agricultural origins",
+              yearBCE: 7000,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "png-highlands",
+          name: "PNG Highlands",
+          description: "Terrace irrigation supporting millions",
+          historicalContext: "Dense populations using stone-age technology",
+          coordinates: { lat: -6.0, lng: 145.5 },
+          artifacts: [
+            {
+              id: "highland-terraces",
+              name: "Highland Terrace Irrigation (Wola/Huli)",
+              description: "Engineered hillside terraces with water control supporting 150 people/km²",
+              rarity: "epic",
+              historicalPeriod: "2000 BCE - Present",
+              significance: "Feeds 3+ million highlanders; sweet potato yields 10-20 tons/hectare",
+              yearBCE: 2000,
+              category: "irrigation"
+            },
+            {
+              id: "taro-pondfields",
+              name: "Taro Pondfield Irrigation",
+              description: "Flooded field systems for wetland taro with precise water control",
+              rarity: "rare",
+              historicalPeriod: "2000 BCE - Present",
+              significance: "Continuous cultivation 4,000+ years; 15-30 tons/hectare yield",
+              yearBCE: 2000,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "sepik-river",
+          name: "Sepik River",
+          description: "World's largest uncontaminated river system",
+          historicalContext: "Famous for art and sophisticated fish trap systems",
+          coordinates: { lat: -4.0, lng: 143.5 },
+          artifacts: [
+            {
+              id: "sepik-fish-traps",
+              name: "Sepik River Fish Trap Systems",
+              description: "Elaborate weirs and portable traps harvesting 100+ species year-round",
+              rarity: "epic",
+              historicalPeriod: "Ancient - Present",
+              significance: "Primary protein for river populations; sustainable for millennia",
+              yearBCE: 5000,
+              category: "irrigation"
+            },
+            {
+              id: "sago-processing",
+              name: "Sago Palm Water Processing",
+              description: "Hydraulic food engineering washing 3 million calories from one tree using 2,000 liters of water",
+              rarity: "rare",
+              historicalPeriod: "Ancient - Present",
+              significance: "One palm = 3 years of calories for one person; most efficient extraction known",
+              yearBCE: 5000,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "coastal-png",
+          name: "Coastal & Island PNG",
+          description: "Stilt villages and atoll survival engineering",
+          historicalContext: "Complete water-based urbanism",
+          coordinates: { lat: -2.5, lng: 140.7 },
+          artifacts: [
+            {
+              id: "stilt-villages",
+              name: "Stilt Village Water Architecture",
+              description: "Complete villages built 2-5 meters over water with tidal sanitation and fish traps attached to piles",
+              rarity: "epic",
+              historicalPeriod: "Ancient - Present",
+              significance: "Thousands still live in stilt villages; flood-proof, malaria-reduced, protein at doorstep",
+              yearBCE: 3000,
+              category: "dam"
+            },
+            {
+              id: "atoll-rainwater",
+              name: "Coral Atoll Rainwater Harvesting",
+              description: "Survival engineering on coral islands with zero freshwater sources, managing thin freshwater lens",
+              rarity: "rare",
+              historicalPeriod: "Ancient - Present",
+              significance: "Traditional rules prevent saltwater intrusion; coconut water = emergency backup",
+              yearBCE: 2000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
     }
   ]
 };

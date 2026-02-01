@@ -86,7 +86,18 @@ const civilizationCoords: Record<string, { lat: number; lng: number; region: str
   "burma-myanmar": { lat: 21.6, lng: 96.1, region: "Myanmar" },
   "vietnam": { lat: 21.0, lng: 105.9, region: "Vietnam" },
   "pre-roman-europe": { lat: 53.3, lng: -6.3, region: "Ireland" },
-  "philippines": { lat: 16.9, lng: 121.1, region: "Philippines" }
+  "philippines": { lat: 16.9, lng: 121.1, region: "Philippines" },
+  "borneo": { lat: 0.96, lng: 114.55, region: "Malaysia/Indonesia/Brunei" },
+  "papua-new-guinea": { lat: -5.5, lng: 145.8, region: "Papua New Guinea" },
+  "amazon-basin": { lat: -3.5, lng: -62.0, region: "Brazil/Peru/Colombia" },
+  "mississippian-cahokia": { lat: 38.7, lng: -90.1, region: "Mississippi Valley" },
+  "hohokam": { lat: 33.4, lng: -111.9, region: "Arizona Desert" },
+  "pacific-northwest": { lat: 47.6, lng: -122.3, region: "US/Canada Pacific Coast" },
+  "siberia-yakutia": { lat: 62.0, lng: 129.7, region: "Russian Far East" },
+  "inuit-arctic": { lat: 71.3, lng: -156.8, region: "Arctic Circle" },
+  "swahili-coast": { lat: -6.2, lng: 39.2, region: "East Africa Coast" },
+  "kongo-kingdom": { lat: -4.3, lng: 15.3, region: "Congo Basin" },
+  "mali-timbuktu": { lat: 16.8, lng: -3.0, region: "West Africa" }
 };
 
 // Convert to x/y percentages
@@ -113,7 +124,11 @@ const civilizationContinents: Record<string, string> = {
   "pre-roman-europe": "Europe", "phoenicia": "Europe", "modern-era": "Europe",
   "mesoamerica": "Americas", "ancestral-puebloans": "Americas", "inca-empire": "Americas",
   "hawaiian": "Pacific", "aboriginal-australia": "Pacific", "austronesian": "Pacific",
-  "nan-madol": "Pacific", "chamorro": "Pacific"
+  "nan-madol": "Pacific", "chamorro": "Pacific",
+  "borneo": "Asia", "papua-new-guinea": "Pacific",
+  "amazon-basin": "Americas", "mississippian-cahokia": "Americas", "hohokam": "Americas",
+  "pacific-northwest": "Americas", "siberia-yakutia": "Asia", "inuit-arctic": "Americas",
+  "swahili-coast": "Africa", "kongo-kingdom": "Africa", "mali-timbuktu": "Africa"
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {

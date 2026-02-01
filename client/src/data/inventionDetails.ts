@@ -172,7 +172,20 @@ export const inventionDiagrams: Record<string, string> = {
   "kongo-raised-beds": "/diagrams/floating-gardens.png",
   "palm-wine-tapping": "/diagrams/irrigation-canal.png",
   "niger-flood-agriculture": "/diagrams/floating-gardens.png",
-  "timbuktu-wells": "/diagrams/nabataean-cistern.png"
+  "timbuktu-wells": "/diagrams/nabataean-cistern.png",
+  "longhouse-settlements": "/diagrams/stilt-village.png",
+  "bamboo-talang": "/diagrams/bamboo-irrigation.png",
+  "peat-canals": "/diagrams/irrigation-canal.png",
+  "floating-rice-borneo": "/diagrams/floating-gardens.png",
+  "tagal-system": "/diagrams/brewarrina-fish-traps.png",
+  "rattan-fish-traps": "/diagrams/brewarrina-fish-traps.png",
+  "kuk-drainage": "/diagrams/irrigation-canal.png",
+  "highland-terraces": "/diagrams/rice-terraces.png",
+  "taro-pondfields": "/diagrams/rice-terraces.png",
+  "sepik-fish-traps": "/diagrams/brewarrina-fish-traps.png",
+  "sago-processing": "/diagrams/ancient-dam.png",
+  "stilt-villages": "/diagrams/stilt-village.png",
+  "atoll-rainwater": "/diagrams/nabataean-cistern.png"
 };
 
 export const inventionDetails: Record<string, InventionDetailData> = {
