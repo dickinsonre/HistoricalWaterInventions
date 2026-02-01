@@ -47,7 +47,31 @@ export const inventionToSwmmModel: Record<string, string> = {
   'muda-irrigation': 'malaysia-muda',
   'tasik-kolam': 'malaysia-muda',
   'bamboo-aqueduct-my': 'malaysia-muda',
-  'greener-water': 'singapore-newater'
+  'greener-water': 'singapore-newater',
+  'falaj-system': 'uae-falaj',
+  'mega-desalination': 'singapore-newater',
+  'cloud-seeding': 'uae-falaj',
+  'palm-water-engineering': 'singapore-barrage',
+  'drip-irrigation': 'israel-drip',
+  'negev-cisterns': 'nabataean-cistern',
+  'sorek-desalination': 'singapore-newater',
+  'wastewater-recycling': 'singapore-newater',
+  'marib-dam': 'yemen-marib',
+  'ghayl-irrigation': 'uae-falaj',
+  'floating-gardens-baira': 'subak',
+  'khal-system': 'subak',
+  'cyclone-shelter': 'singapore-barrage',
+  'acequia-system': 'subak',
+  'water-tribunal': 'subak',
+  'alhambra-fountains': 'greek-fountain',
+  'noria-wheel': 'archimedes-screw',
+  'aflaj-system': 'uae-falaj',
+  'date-palm-oasis': 'uae-falaj',
+  'mose-barriers': 'singapore-barrage',
+  'venice-cisterns': 'nabataean-cistern',
+  'lagoon-management': 'singapore-barrage',
+  'karez-system': 'qanat',
+  'caravanserai-wells': 'nabataean-cistern'
 };
 
 export function getSwmmModelForInvention(inventionId: string): SWMM5Model | null {
@@ -977,6 +1001,51 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       roughness: 0.025
     },
     engineeringNotes: 'Irrigates 96,000 hectares of rice paddies. Enables double-cropping. British-designed, locally-adapted. Major contributor to Malaysia\'s rice self-sufficiency goal'
+  },
+  'uae-falaj': {
+    name: 'UAE Falaj Irrigation System',
+    description: 'Underground channels carrying mountain water across desert',
+    civilization: 'Dubai & UAE',
+    period: '1000 BCE - Present',
+    parameters: {
+      length: 14000,
+      tunnelDiameter: 1.5,
+      slope: 0.001,
+      flowRate: 0.5,
+      shaftSpacing: 30,
+      roughness: 0.025
+    },
+    engineeringNotes: 'UNESCO World Heritage. 4,000+ systems historically, ~30 still active. Zero energy required - pure gravity flow. Sustained communities for 3,000+ years'
+  },
+  'israel-drip': {
+    name: 'Israeli Drip Irrigation System',
+    description: 'Precision water delivery directly to plant roots',
+    civilization: 'Israel',
+    period: '1965 - Present',
+    parameters: {
+      length: 1000,
+      pipeDiameter: 0.016,
+      flowRate: 0.002,
+      slope: 0.001,
+      roughness: 0.010
+    },
+    engineeringNotes: 'Revolutionized global agriculture. Reduces water use by 50%. Used in 110+ countries. Netafim invention changed farming worldwide'
+  },
+  'yemen-marib': {
+    name: 'Marib Dam',
+    description: 'Ancient engineering marvel that fed the Sheba kingdom',
+    civilization: 'Ancient Yemen',
+    period: '1700 BCE - 600 CE',
+    parameters: {
+      length: 680,
+      channelWidth: 60,
+      channelDepth: 15,
+      flowRate: 500,
+      volume: 30000000,
+      slope: 0.001,
+      roughness: 0.030
+    },
+    engineeringNotes: 'Largest ancient dam. Irrigated 9,600 hectares. Supported 50,000 people. Collapse around 600 CE caused mass migration mentioned in Quran'
   }
 };
 

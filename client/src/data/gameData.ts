@@ -2613,6 +2613,442 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "dubai-uae",
+      name: "Dubai & UAE",
+      description: "From ancient falaj to world's largest desalination - desert water mastery",
+      position: [10, 0, -6],
+      color: "#00BCD4",
+      era: "modern",
+      dateRange: "1000 BCE - Present",
+      locations: [
+        {
+          id: "al-ain-oasis",
+          name: "Al Ain Oasis",
+          description: "UNESCO World Heritage falaj irrigation system",
+          historicalContext: "Ancient underground channels sustaining desert agriculture",
+          coordinates: { lat: 24.2075, lng: 55.7447 },
+          artifacts: [
+            {
+              id: "falaj-system",
+              name: "Falaj Irrigation System",
+              description: "Underground channels carrying mountain water across desert for 3,000 years",
+              rarity: "legendary",
+              historicalPeriod: "Ancient (1000 BCE - Present)",
+              significance: "UNESCO World Heritage; 4,000+ systems historically, ~30 still active",
+              yearBCE: 1000,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "dubai-desal",
+          name: "Dubai Desalination Complex",
+          description: "World's largest seawater conversion facilities",
+          historicalContext: "Enabled growth from 180,000 (1968) to 10 million (2024)",
+          coordinates: { lat: 25.0657, lng: 55.1713 },
+          artifacts: [
+            {
+              id: "mega-desalination",
+              name: "Mega-Scale Desalination Plants",
+              description: "Multi-stage flash and reverse osmosis converting seawater to drinking water",
+              rarity: "legendary",
+              historicalPeriod: "Modern (1976 - Present)",
+              significance: "14+ million m³/day capacity; supplies 42% of UAE freshwater",
+              yearBCE: -1976,
+              category: "sanitation"
+            },
+            {
+              id: "cloud-seeding",
+              name: "Cloud Seeding Program",
+              description: "Weather modification using salt particles to increase rainfall 10-30%",
+              rarity: "rare",
+              historicalPeriod: "Modern (2002 - Present)",
+              significance: "300+ annual missions; global research hub for arid region rainfall",
+              yearBCE: -2002,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "palm-jumeirah",
+          name: "Palm Jumeirah",
+          description: "Artificial island with revolutionary coastal water management",
+          historicalContext: "World's largest man-made island requiring innovative hydrology",
+          coordinates: { lat: 25.1124, lng: 55.1390 },
+          artifacts: [
+            {
+              id: "palm-water-engineering",
+              name: "Palm Jumeirah Water Engineering",
+              description: "Tidal flushing system maintaining lagoon water quality through breakwater gaps",
+              rarity: "epic",
+              historicalPeriod: "Modern (2001-2006)",
+              significance: "78 km new coastline; complete water exchange every 14 days",
+              yearBCE: -2001,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "israel",
+      name: "Israel",
+      description: "Pioneers of drip irrigation and wastewater recycling",
+      position: [6, 0, -10],
+      color: "#2196F3",
+      era: "modern",
+      dateRange: "Ancient - Present",
+      locations: [
+        {
+          id: "negev-desert",
+          name: "Negev Desert",
+          description: "Birthplace of modern drip irrigation",
+          historicalContext: "Transformed desert into agricultural land",
+          coordinates: { lat: 30.8, lng: 34.8 },
+          artifacts: [
+            {
+              id: "drip-irrigation",
+              name: "Drip Irrigation (Netafim)",
+              description: "Precision water delivery directly to plant roots, reducing water use by 50%",
+              rarity: "legendary",
+              historicalPeriod: "Modern (1965)",
+              significance: "Revolutionized global agriculture; used in 110+ countries",
+              yearBCE: -1965,
+              category: "irrigation"
+            },
+            {
+              id: "negev-cisterns",
+              name: "Ancient Negev Cisterns",
+              description: "Nabataean-style rock-cut water storage in the desert",
+              rarity: "rare",
+              historicalPeriod: "Ancient (300 BCE)",
+              significance: "Sustained desert communities for millennia",
+              yearBCE: 300,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "sorek-plant",
+          name: "Sorek Desalination Plant",
+          description: "World's largest reverse osmosis desalination facility",
+          historicalContext: "Provides 20% of Israel's drinking water",
+          coordinates: { lat: 31.9, lng: 34.7 },
+          artifacts: [
+            {
+              id: "sorek-desalination",
+              name: "Sorek Desalination Plant",
+              description: "World's largest and most efficient RO desalination producing 624,000 m³/day",
+              rarity: "epic",
+              historicalPeriod: "Modern (2013)",
+              significance: "Lowest cost desalination globally; energy recovery systems",
+              yearBCE: -2013,
+              category: "sanitation"
+            },
+            {
+              id: "wastewater-recycling",
+              name: "Wastewater Recycling System",
+              description: "National system recycling 90%+ of wastewater for agriculture",
+              rarity: "epic",
+              historicalPeriod: "Modern (1970s-Present)",
+              significance: "World's highest wastewater reuse rate; global model",
+              yearBCE: -1970,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ancient-yemen",
+      name: "Ancient Yemen (Sheba)",
+      description: "Land of the legendary Marib Dam and Queen of Sheba",
+      position: [8, 0, -4],
+      color: "#795548",
+      era: "ancient",
+      dateRange: "1700 BCE - 600 CE",
+      locations: [
+        {
+          id: "marib",
+          name: "Marib",
+          description: "Ancient capital of the Sabaean kingdom",
+          historicalContext: "Legendary wealth built on water engineering",
+          coordinates: { lat: 15.4, lng: 45.3 },
+          artifacts: [
+            {
+              id: "marib-dam",
+              name: "Marib Dam",
+              description: "Ancient engineering marvel that irrigated 9,600 hectares and fed the Sheba kingdom",
+              rarity: "legendary",
+              historicalPeriod: "Ancient (1700 BCE - 600 CE)",
+              significance: "Largest ancient dam; supported 50,000 people; collapse caused mass migration",
+              yearBCE: 1700,
+              category: "dam"
+            },
+            {
+              id: "ghayl-irrigation",
+              name: "Ghayl Spring Channels",
+              description: "Mountain spring-fed irrigation channels for terrace agriculture",
+              rarity: "rare",
+              historicalPeriod: "Ancient",
+              significance: "Sustained highland agriculture for 3,000+ years",
+              yearBCE: 1500,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "bengal",
+      name: "Bengal (Bangladesh)",
+      description: "Masters of delta water management and floating agriculture",
+      position: [14, 0, 2],
+      color: "#4CAF50",
+      era: "medieval",
+      dateRange: "Traditional - Present",
+      locations: [
+        {
+          id: "bengal-delta",
+          name: "Bengal Delta",
+          description: "World's largest river delta with unique water challenges",
+          historicalContext: "Annual floods shape agriculture and life",
+          coordinates: { lat: 23.8, lng: 90.4 },
+          artifacts: [
+            {
+              id: "floating-gardens-baira",
+              name: "Floating Gardens (Baira)",
+              description: "Agriculture on rafts of water hyacinth in waterlogged areas",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Grows vegetables during monsoon flooding; climate-resilient farming",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "khal-system",
+              name: "Khal Canal System",
+              description: "Traditional interconnected canal networks for drainage and transport",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Natural flood management and water highways",
+              yearBCE: -1000,
+              category: "canal"
+            },
+            {
+              id: "cyclone-shelter",
+              name: "Elevated Cyclone Shelters",
+              description: "Multi-story flood refuges built on raised platforms",
+              rarity: "rare",
+              historicalPeriod: "Modern (1970s-Present)",
+              significance: "Saved millions of lives from storm surges; integrated water management",
+              yearBCE: -1970,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "al-andalus",
+      name: "Al-Andalus (Islamic Spain)",
+      description: "Islamic Golden Age water engineering in the Iberian Peninsula",
+      position: [-6, 0, -8],
+      color: "#E91E63",
+      era: "medieval",
+      dateRange: "711 - 1492 CE",
+      locations: [
+        {
+          id: "valencia",
+          name: "Valencia",
+          description: "Home of the world's oldest water court",
+          historicalContext: "1000+ years of continuous water governance",
+          coordinates: { lat: 39.4, lng: -0.4 },
+          artifacts: [
+            {
+              id: "acequia-system",
+              name: "Acequia Irrigation System",
+              description: "Islamic-inherited gravity-fed irrigation channels still in use",
+              rarity: "epic",
+              historicalPeriod: "Medieval (8th Century CE)",
+              significance: "Model for irrigation in Americas; still irrigates Valencia's huerta",
+              yearBCE: -711,
+              category: "irrigation"
+            },
+            {
+              id: "water-tribunal",
+              name: "Water Tribunal of Valencia",
+              description: "World's oldest continuously operating water court (1000+ years)",
+              rarity: "legendary",
+              historicalPeriod: "Medieval (960 CE - Present)",
+              significance: "UNESCO Intangible Heritage; resolves disputes every Thursday",
+              yearBCE: -960,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "granada",
+          name: "Alhambra, Granada",
+          description: "Palace complex with masterful water features",
+          historicalContext: "Pinnacle of Islamic garden hydraulics",
+          coordinates: { lat: 37.2, lng: -3.6 },
+          artifacts: [
+            {
+              id: "alhambra-fountains",
+              name: "Alhambra Fountain System",
+              description: "Gravity-fed fountains and channels creating paradise gardens",
+              rarity: "epic",
+              historicalPeriod: "Medieval (1238-1358 CE)",
+              significance: "Water as art; influenced European garden design for centuries",
+              yearBCE: -1238,
+              category: "fountain"
+            },
+            {
+              id: "noria-wheel",
+              name: "Noria Water Wheel",
+              description: "Large water-lifting wheels powered by river current",
+              rarity: "rare",
+              historicalPeriod: "Medieval",
+              significance: "Lifted water 10+ meters using only river power; still used in Syria",
+              yearBCE: -800,
+              category: "water-lifting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "oman",
+      name: "Oman",
+      description: "Aflaj irrigation system - UNESCO World Heritage",
+      position: [12, 0, -4],
+      color: "#FF5722",
+      era: "ancient",
+      dateRange: "500 BCE - Present",
+      locations: [
+        {
+          id: "aflaj-region",
+          name: "Aflaj Irrigation Region",
+          description: "Heart of Oman's 3,000+ ancient irrigation channels",
+          historicalContext: "Underground water channels sustaining oasis agriculture",
+          coordinates: { lat: 23.6, lng: 58.5 },
+          artifacts: [
+            {
+              id: "aflaj-system",
+              name: "Aflaj Irrigation System",
+              description: "3,000+ ancient underground channels distributing spring and groundwater",
+              rarity: "legendary",
+              historicalPeriod: "Ancient (500 BCE - Present)",
+              significance: "UNESCO World Heritage; still irrigates date palms and farms today",
+              yearBCE: 500,
+              category: "aqueduct"
+            },
+            {
+              id: "date-palm-oasis",
+              name: "Date Palm Oasis Management",
+              description: "Integrated water-agriculture system maximizing scarce water",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Multi-layer farming: dates above, crops below, efficient water use",
+              yearBCE: 1000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "venice",
+      name: "Venice",
+      description: "1,500 years of lagoon city water engineering",
+      position: [-2, 0, -10],
+      color: "#3F51B5",
+      era: "medieval",
+      dateRange: "421 CE - Present",
+      locations: [
+        {
+          id: "venice-lagoon",
+          name: "Venice Lagoon",
+          description: "World's most famous water city",
+          historicalContext: "Built on 118 islands in a tidal lagoon",
+          coordinates: { lat: 45.4, lng: 12.3 },
+          artifacts: [
+            {
+              id: "mose-barriers",
+              name: "MOSE Flood Barriers",
+              description: "78 mobile gates protecting Venice from high tides and storm surges",
+              rarity: "legendary",
+              historicalPeriod: "Modern (2003-2020)",
+              significance: "World's largest flood barrier system; protects UNESCO heritage city",
+              yearBCE: -2003,
+              category: "dam"
+            },
+            {
+              id: "venice-cisterns",
+              name: "Venetian Cistern System",
+              description: "Underground freshwater collection beneath every campo (square)",
+              rarity: "epic",
+              historicalPeriod: "Medieval (800 CE onwards)",
+              significance: "Rainwater harvesting in a saltwater lagoon; 6,000+ historic cisterns",
+              yearBCE: -800,
+              category: "dam"
+            },
+            {
+              id: "lagoon-management",
+              name: "Lagoon Hydraulic Management",
+              description: "1,500 years of balancing tides, sediment, and city survival",
+              rarity: "epic",
+              historicalPeriod: "Medieval - Present",
+              significance: "Diverted rivers, built sea walls, managed unique ecosystem",
+              yearBCE: -421,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "central-asia",
+      name: "Central Asia (Silk Road)",
+      description: "Karez underground channels sustaining oasis cities",
+      position: [12, 0, 2],
+      color: "#9C27B0",
+      era: "ancient",
+      dateRange: "1000 BCE - Present",
+      locations: [
+        {
+          id: "turpan",
+          name: "Turpan Basin",
+          description: "One of the world's lowest and hottest inhabited places",
+          historicalContext: "Karez systems enabled Silk Road oasis cities",
+          coordinates: { lat: 42.9, lng: 89.2 },
+          artifacts: [
+            {
+              id: "karez-system",
+              name: "Karez Underground Channels",
+              description: "Underground water channels bringing snowmelt from Tian Shan mountains",
+              rarity: "legendary",
+              historicalPeriod: "Ancient (1000 BCE - Present)",
+              significance: "1,100+ karez systems; total length 5,000+ km; still functioning",
+              yearBCE: 1000,
+              category: "aqueduct"
+            },
+            {
+              id: "caravanserai-wells",
+              name: "Silk Road Caravanserai Wells",
+              description: "Deep wells at trading post stations along the Silk Road",
+              rarity: "rare",
+              historicalPeriod: "Medieval",
+              significance: "Enabled trans-continental trade; some over 100m deep",
+              yearBCE: -500,
+              category: "fountain"
+            }
+          ]
+        }
+      ]
     }
   ]
 };

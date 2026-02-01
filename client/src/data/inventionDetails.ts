@@ -126,7 +126,31 @@ export const inventionDiagrams: Record<string, string> = {
   "muda-irrigation": "/diagrams/irrigation-canal.png",
   "tasik-kolam": "/diagrams/ancient-dam.png",
   "bamboo-aqueduct-my": "/diagrams/bamboo-irrigation.png",
-  "greener-water": "/diagrams/reverse-osmosis.png"
+  "greener-water": "/diagrams/reverse-osmosis.png",
+  "falaj-system": "/diagrams/qanat.png",
+  "mega-desalination": "/diagrams/reverse-osmosis.png",
+  "cloud-seeding": "/diagrams/irrigation-canal.png",
+  "palm-water-engineering": "/diagrams/ancient-dam.png",
+  "drip-irrigation": "/diagrams/drip-irrigation.png",
+  "negev-cisterns": "/diagrams/nabataean-cistern.png",
+  "sorek-desalination": "/diagrams/reverse-osmosis.png",
+  "wastewater-recycling": "/diagrams/reverse-osmosis.png",
+  "marib-dam": "/diagrams/ancient-dam.png",
+  "ghayl-irrigation": "/diagrams/qanat.png",
+  "floating-gardens-baira": "/diagrams/floating-gardens.png",
+  "khal-system": "/diagrams/irrigation-canal.png",
+  "cyclone-shelter": "/diagrams/ancient-dam.png",
+  "acequia-system": "/diagrams/irrigation-canal.png",
+  "water-tribunal": "/diagrams/irrigation-canal.png",
+  "alhambra-fountains": "/diagrams/roman-fountain.png",
+  "noria-wheel": "/diagrams/archimedes-screw.png",
+  "aflaj-system": "/diagrams/qanat.png",
+  "date-palm-oasis": "/diagrams/qanat.png",
+  "mose-barriers": "/diagrams/thames-barrier.png",
+  "venice-cisterns": "/diagrams/nabataean-cistern.png",
+  "lagoon-management": "/diagrams/ancient-dam.png",
+  "karez-system": "/diagrams/qanat.png",
+  "caravanserai-wells": "/diagrams/nabataean-cistern.png"
 };
 
 export const inventionDetails: Record<string, InventionDetailData> = {
