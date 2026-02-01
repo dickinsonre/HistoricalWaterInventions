@@ -402,19 +402,71 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
       </div>
 
       {/* Modal Components */}
-      {showInventory && <Inventory onClose={() => setShowInventory(false)} />}
-      {showProgress && <ProgressTracker onClose={() => setShowProgress(false)} />}
-      {showAchievements && <Achievements onClose={() => setShowAchievements(false)} />}
-      {showTimeline && <TimelineFilter onClose={() => setShowTimeline(false)} />}
-      {showComparison && <ComparisonTool onClose={() => setShowComparison(false)} />}
-      {showFeatured && <FeaturedDiscoveries onClose={() => setShowFeatured(false)} />}
-      {showFacts && <DidYouKnow onClose={() => setShowFacts(false)} />}
-      {showAbout && <AboutSection onClose={() => setShowAbout(false)} />}
-      {showSearch && <SmartSearch onClose={() => setShowSearch(false)} onSelectResult={() => setShowSearch(false)} />}
-      {showTimeTravel && <TimeTravel onClose={() => setShowTimeTravel(false)} />}
-      {showChallenges && <ChallengeModes onClose={() => setShowChallenges(false)} />}
-      {showLibrary && <TechnologyLibrary onClose={() => setShowLibrary(false)} />}
-      {showSWMM5 && <SWMM5Models onClose={() => setShowSWMM5(false)} />}
+      {showInventory && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowInventory(false)}>
+          <div onClick={(e) => e.stopPropagation()}><Inventory onClose={() => setShowInventory(false)} /></div>
+        </div>
+      )}
+      {showProgress && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowProgress(false)}>
+          <div onClick={(e) => e.stopPropagation()}><ProgressTracker onClose={() => setShowProgress(false)} /></div>
+        </div>
+      )}
+      {showAchievements && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowAchievements(false)}>
+          <div onClick={(e) => e.stopPropagation()}><Achievements onClose={() => setShowAchievements(false)} /></div>
+        </div>
+      )}
+      {showTimeline && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowTimeline(false)}>
+          <div onClick={(e) => e.stopPropagation()}><TimelineFilter onClose={() => setShowTimeline(false)} /></div>
+        </div>
+      )}
+      {showComparison && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowComparison(false)}>
+          <div onClick={(e) => e.stopPropagation()}><ComparisonTool onClose={() => setShowComparison(false)} /></div>
+        </div>
+      )}
+      {showFeatured && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowFeatured(false)}>
+          <div onClick={(e) => e.stopPropagation()}><FeaturedDiscoveries onClose={() => setShowFeatured(false)} /></div>
+        </div>
+      )}
+      {showFacts && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowFacts(false)}>
+          <div onClick={(e) => e.stopPropagation()}><DidYouKnow onClose={() => setShowFacts(false)} /></div>
+        </div>
+      )}
+      {showAbout && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowAbout(false)}>
+          <div onClick={(e) => e.stopPropagation()}><AboutSection onClose={() => setShowAbout(false)} /></div>
+        </div>
+      )}
+      {showSearch && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowSearch(false)}>
+          <div onClick={(e) => e.stopPropagation()}><SmartSearch onClose={() => setShowSearch(false)} onSelectInvention={() => setShowSearch(false)} onSelectCivilization={(id) => { setShowSearch(false); setSelectedCiv(id); }} /></div>
+        </div>
+      )}
+      {showTimeTravel && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowTimeTravel(false)}>
+          <div onClick={(e) => e.stopPropagation()}><TimeTravel onClose={() => setShowTimeTravel(false)} onSelectInvention={() => setShowTimeTravel(false)} /></div>
+        </div>
+      )}
+      {showChallenges && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowChallenges(false)}>
+          <div onClick={(e) => e.stopPropagation()}><ChallengeModes onClose={() => setShowChallenges(false)} /></div>
+        </div>
+      )}
+      {showLibrary && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowLibrary(false)}>
+          <div onClick={(e) => e.stopPropagation()}><TechnologyLibrary isOpen={showLibrary} onClose={() => setShowLibrary(false)} /></div>
+        </div>
+      )}
+      {showSWMM5 && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowSWMM5(false)}>
+          <div onClick={(e) => e.stopPropagation()}><SWMM5Models onClose={() => setShowSWMM5(false)} /></div>
+        </div>
+      )}
     </div>
     </TooltipProvider>
   );
