@@ -30,8 +30,8 @@ export interface CivilizationsDatabase {
 
 export const expertCivilizationsDatabase: CivilizationsDatabase = {
   metadata: {
-    version: "1.0",
-    totalCivilizations: 18,
+    version: "1.1",
+    totalCivilizations: 28,
     lastUpdated: "2026-02-01",
     curator: "Robert Dickinson"
   },
@@ -509,6 +509,231 @@ export const expertCivilizationsDatabase: CivilizationsDatabase = {
       sources: [
         "Gleick, P. The World's Water (biennial)",
         "Postel, S. Pillar of Sand: Can the Irrigation Miracle Last?"
+      ]
+    },
+    {
+      id: "etruscan",
+      name: "Etruscan Civilization",
+      region: "Central Italy (modern Tuscany, Umbria, Lazio)",
+      period: {
+        start: -900,
+        end: -90,
+        era: "Iron Age through Roman Republic"
+      },
+      summary: "The Etruscans were Rome's teachers in hydraulic engineering. Before Rome was anything but a muddy village, Etruscans were draining marshes with sophisticated tunnel networks, building sewers, and creating underground water systems. The famous Cloaca Maxima was designed and built by Etruscan engineers.",
+      waterChallenges: [
+        "Swampy lowlands between volcanic highlands",
+        "Hilltop cities without natural water sources",
+        "Need to convert marshland to productive agriculture",
+        "Volcanic rock terrain requiring tunnel excavation"
+      ],
+      inventions: ["cuniculi-tunnel", "cloaca-maxima", "rock-cut-cistern", "urban-drainage"],
+      keyInsight: "Etruscans understood that controlling water means controlling land—their cuniculi tunnels transformed malaria-ridden swamps into the richest farmland in Italy.",
+      engineerNotes: "When I first saw the cuniculi at Veii, I was amazed—over 50 kilometers of hand-cut tunnels through volcanic tufa, some STILL draining fields after 2,500 years. The Cloaca Maxima in Rome, built by Etruscan engineers around 600 BCE, is the world's oldest infrastructure still in continuous use. Rome exists because Etruscans drained the swamp where the Forum sits. Every Roman engineering achievement stands on Etruscan foundations.",
+      modernLegacy: "The Cloaca Maxima still drains central Rome. Etruscan urban planning principles—integrated drainage, water access for every block—became the template for Roman colonial cities across the Mediterranean.",
+      sources: [
+        "Bizzarri, C. and Quilici Gigli, S. Etruscan Hydraulic Engineering",
+        "Taylor, R. Public Needs and Private Pleasures: Water Distribution in Roman Italy"
+      ]
+    },
+    {
+      id: "viking",
+      name: "Viking Civilization",
+      region: "Scandinavia, North Atlantic, River routes to Black Sea",
+      period: {
+        start: 700,
+        end: 1200,
+        era: "Early Medieval Period"
+      },
+      summary: "Vikings weren't just raiders—they were the most sophisticated maritime civilization of the medieval world. They crossed the North Atlantic 500 years before Columbus, navigated from the Baltic to Constantinople via Russian rivers, and colonized Greenland for 400 years. Their relationship with water was comprehensive: ships, navigation, freshwater management, and environmental adaptation.",
+      waterChallenges: [
+        "Ocean crossing without instruments",
+        "Freshwater supply during weeks at sea",
+        "Navigating shallow rivers with ocean-going ships",
+        "Surviving Arctic conditions with medieval technology"
+      ],
+      inventions: ["clinker-longship", "water-navigation", "shipboard-freshwater", "portage-systems", "arctic-ice-tech"],
+      keyInsight: "Vikings didn't conquer the sea with force—they observed it. Their navigation was based on reading water color, wave patterns, wildlife behavior, and the feel of currents.",
+      engineerNotes: "The Viking longship is arguably the greatest watercraft ever designed for its purpose. A Gokstad replica crossed the Atlantic in 1893, averaging 10 knots. With a draft of only 0.5 meters, they could sail up rivers deep into continents. In 1893, a replica proved what sagas claimed: you could cross the Atlantic in Viking ships. But what impresses me most is their water reading skills—finding Vinland without maps, compasses, or sextants, using only observation of waves, water color, and wildlife.",
+      modernLegacy: "Clinker construction remains in traditional Scandinavian boatbuilding. Viking river routes became trade highways. Their environmental observation skills are studied by modern sailors.",
+      sources: [
+        "Crumlin-Pedersen, O. Viking-Age Ships and Shipbuilding",
+        "Jones, G. A History of the Vikings"
+      ]
+    },
+    {
+      id: "pre-roman-iberia",
+      name: "Pre-Roman Iberian Cultures",
+      region: "Iberian Peninsula (modern Spain and Portugal)",
+      period: {
+        start: -1000,
+        end: -19,
+        era: "Iron Age"
+      },
+      summary: "Before Rome conquered Iberia, diverse cultures—Iberians, Tartessians, Celtiberians—developed sophisticated water technologies adapted to the peninsula's challenging semi-arid climate and mineral-rich geology. Tartessian hydraulic mining and Iberian cistern systems show engineering creativity independent of Mediterranean influence.",
+      waterChallenges: [
+        "Semi-arid climate with seasonal drought",
+        "Mountainous terrain with difficult water transport",
+        "Mining operations requiring water management",
+        "Diverse microclimates across the peninsula"
+      ],
+      inventions: ["tartessian-hydraulic-mining", "iberian-cisterns", "celtiberian-irrigation"],
+      keyInsight: "Iberian cultures independently developed water storage and mining techniques that Romans later industrialized—proof that hydraulic engineering innovation arose wherever water was scarce and valuable.",
+      engineerNotes: "The Tartessian hydraulic mining at Rio Tinto predates Roman ruina montium techniques. When Romans arrived, they didn't invent Iberian water technology—they scaled it up. The rock-cut cisterns at sites like Ullastret show sophisticated water storage for fortified settlements in dry summers.",
+      modernLegacy: "Spanish water law retains pre-Roman concepts of shared water rights. Traditional irrigation communities (acequias) in arid regions trace organizational roots to pre-Roman practice.",
+      sources: [
+        "Domergue, C. Les Mines Antiques: La Production des Métaux aux Époques Grecque et Romaine",
+        "Almagro-Gorbea, M. Los Iberos: Príncipes de Occidente"
+      ]
+    },
+    {
+      id: "basque",
+      name: "Basque Country",
+      region: "Western Pyrenees (modern Spain/France border)",
+      period: {
+        start: -500,
+        end: 2026,
+        era: "Iron Age through Present"
+      },
+      summary: "The Basque people, with Europe's oldest pre-Indo-European language, developed water technologies uniquely adapted to their mountainous, rainy terrain. Their water mills (errota), iron forges (burdinola), tidal fish traps, and mountain irrigation systems remained unchanged for millennia.",
+      waterChallenges: [
+        "Steep mountain terrain with fast-flowing streams",
+        "Abundant rainfall but difficult terrain for agriculture",
+        "Coastal tidal zones for fishing",
+        "Need for iron production water power"
+      ],
+      inventions: ["basque-errota", "basque-burdinola", "tidal-fish-traps", "mountain-irrigation"],
+      keyInsight: "Basque water engineering emphasizes small-scale, distributed systems—every valley had its mill, every village its forge. This resilience through redundancy sustained their independence for millennia.",
+      engineerNotes: "Walking Basque country, you see water mills on streams too small for Roman engineering to notice. The errota (horizontal mill) works with flows that would be useless for vertical wheels. The burdinola iron forges combined water power with charcoal to produce famous Basque steel. This is engineering scaled to human community, not empire.",
+      modernLegacy: "Traditional Basque fishing and water rights continue to operate under ancient customary law. The model of small-scale, community-controlled water infrastructure inspires modern sustainability movements.",
+      sources: [
+        "Azurmendi, J. Basque Technology: Traditional Knowledge Systems",
+        "Collins, R. The Basques"
+      ]
+    },
+    {
+      id: "celtic",
+      name: "Celtic Europe",
+      region: "Atlantic Europe (Ireland, Britain, Gaul, Iberia)",
+      period: {
+        start: -800,
+        end: 400,
+        era: "Iron Age through Roman Period"
+      },
+      summary: "Celtic peoples across Atlantic Europe shared a relationship with water that combined practical engineering with deep spiritual significance. Sacred springs, timber trackways across wetlands, oppida water systems, and sophisticated field drainage supported Iron Age Europe's largest populations outside the Mediterranean.",
+      waterChallenges: [
+        "Waterlogged Atlantic climate",
+        "Wetlands blocking land travel",
+        "Need to drain fields in wet regions",
+        "Fortified settlements (oppida) requiring water supply"
+      ],
+      inventions: ["sacred-springs-nemeton", "oppida-water", "timber-trackways", "celtic-field-drainage"],
+      keyInsight: "Celts saw water as a boundary between worlds. Springs were portals to the divine, and the votive offerings thrown into them tell us water was the medium of communication with the gods.",
+      engineerNotes: "The timber trackways like the Sweet Track (3807 BCE in Britain) show Neolithic and Celtic peoples building sophisticated infrastructure across wetlands. Irish crannogs (artificial islands) demonstrate another approach—rather than draining wetlands, they lived on them. The thousands of votive offerings recovered from Celtic springs and bogs reveal water's spiritual importance, but also show metal-working skills applied to religious purposes.",
+      modernLegacy: "Many European holy wells and healing springs trace to Celtic sacred sites. Irish and Welsh water folklore preserves pre-Christian Celtic water beliefs.",
+      sources: [
+        "Green, M. The Gods of the Celts",
+        "Coles, B. and Coles, J. People of the Wetlands"
+      ]
+    },
+    {
+      id: "gaul",
+      name: "Ancient Gaul",
+      region: "Modern France, Belgium, Switzerland",
+      period: {
+        start: -600,
+        end: 50,
+        era: "Iron Age"
+      },
+      summary: "Gaul before Roman conquest was densely populated and economically sophisticated. Gallic engineering focused on river navigation, viticulture, and exploiting the numerous thermal springs. Caesar's descriptions of Gallic oppida reveal complex water systems, and Gallic river navigation techniques impressed Romans.",
+      waterChallenges: [
+        "Major river systems requiring navigation infrastructure",
+        "Wine production demanding specialized water management",
+        "Natural thermal springs requiring engineering development",
+        "Oppidum hillforts needing water supply"
+      ],
+      inventions: ["gallic-river-navigation", "viticulture-water", "thermal-spring-development"],
+      keyInsight: "Gauls made rivers work as highways. Their boat designs, portage routes, and river port systems moved goods across Europe centuries before Roman roads.",
+      engineerNotes: "When Romans arrived in Gaul, they found a sophisticated civilization. The oppida were proto-cities with water infrastructure. Gallic river boats, flat-bottomed for shallow navigation, were adapted by Romans. The thermal springs at sites like Aix-les-Bains (Aquae Gratianae) were developed before and after Roman conquest. French wine regions today follow Celtic viticulture patterns.",
+      modernLegacy: "French river navigation traditions, wine terroir concepts, and thermal spa development all have Gallic roots. The word 'barrel' itself is Gallic—they invented the wooden barrel for wine storage.",
+      sources: [
+        "Cunliffe, B. The Ancient Celts",
+        "Woolf, G. Becoming Roman: The Origins of Provincial Civilization in Gaul"
+      ]
+    },
+    {
+      id: "germanic",
+      name: "Germanic Europe",
+      region: "Northern Germany, Netherlands, Scandinavia pre-Viking",
+      period: {
+        start: -500,
+        end: 700,
+        era: "Iron Age through Early Medieval"
+      },
+      summary: "Germanic peoples of the North Sea coast and northern Europe developed unique water technologies for their challenging environment: terp mounds in flood-prone coastal areas, bog iron extraction, sacred wells, log boats, and salt works. They lived WITH water rather than trying to control it.",
+      waterChallenges: [
+        "North Sea coastal flooding",
+        "Waterlogged terrain across northern plains",
+        "Long winters with frozen waters",
+        "Iron ore only available in bogs"
+      ],
+      inventions: ["terp-mounds", "bog-iron-extraction", "sacred-wells", "germanic-log-boats", "germanic-salt-works"],
+      keyInsight: "Germanic peoples didn't fight the sea—they rose above it on artificial mounds (terpen) that grew over centuries, creating landscapes of elevated villages in flooded coastal zones.",
+      engineerNotes: "The terpen of Frisia are engineering marvels created by ordinary people over generations. Some rise 10 meters above the surrounding flood plain, built from turf, manure, and refuse over centuries. The Pesse Canoe (8040 BCE) is the world's oldest known boat. Bog iron extraction—smelting iron from ore deposits in swamps—enabled Iron Age metallurgy without mineral mines. Germanic peoples turned their waterlogged environment from obstacle to resource.",
+      modernLegacy: "Dutch water management descends from these traditions. The terpen approach—working with floods rather than fighting them—informs modern 'room for the river' policies.",
+      sources: [
+        "Knottnerus, O.S. The Wadden Sea Region: Cultural Heritage and Environment",
+        "Roymans, N. From the Sword to the Plough"
+      ]
+    },
+    {
+      id: "borneo",
+      name: "Borneo Indigenous Civilizations",
+      region: "Borneo (modern Malaysia, Indonesia, Brunei)",
+      period: {
+        start: -2000,
+        end: 2026,
+        era: "Bronze Age through Present"
+      },
+      summary: "Borneo's indigenous peoples developed water engineering for the world's oldest rainforest. Longhouse communities, bamboo aqueducts, peat swamp canals, and floating rice cultivation represent 4,000 years of adaptation to tropical wetland environments.",
+      waterChallenges: [
+        "World's highest rainfall and constant humidity",
+        "Extensive peat swamps and flooded forests",
+        "River navigation through dense rainforest",
+        "Sustainable resource management in fragile ecosystems"
+      ],
+      inventions: ["dayak-longhouse", "bamboo-aqueducts", "peat-swamp-canals", "floating-rice", "tagal-system", "borneo-fish-traps"],
+      keyInsight: "Borneo's indigenous water management is about living within ecological limits. The tagal system of protected fish pools enforced by village custom sustained fish stocks for millennia.",
+      engineerNotes: "Borneo indigenous engineering works WITH the rainforest, not against it. Longhouses raised on stilts above seasonal floods, bamboo aqueducts carrying fresh water from springs, dugout canoes navigating flooded forests—this is engineering scaled to ecosystem capacity. The tagal system of fish conservation shows social engineering as sophisticated as any physical infrastructure.",
+      modernLegacy: "Indigenous Borneo water management practices inform modern tropical forest conservation. Traditional ecological knowledge is increasingly valued as industrial approaches fail in rainforest environments.",
+      sources: [
+        "Padoch, C. Borneo in Transition",
+        "Cramb, R.A. Land and Longhouse: Agrarian Transformation in the Uplands of Sarawak"
+      ]
+    },
+    {
+      id: "papua",
+      name: "Papua New Guinea",
+      region: "Papua New Guinea, Pacific Islands",
+      period: {
+        start: -7000,
+        end: 2026,
+        era: "Neolithic through Present"
+      },
+      summary: "Papua New Guinea contains some of the world's oldest agricultural systems. The Kuk Swamp UNESCO World Heritage site shows drainage and cultivation from 7000 BCE—contemporary with Mesopotamia. Highland terraces, coastal fish traps, and atoll rainwater systems represent 9,000 years of continuous innovation.",
+      waterChallenges: [
+        "Extreme rainfall and mountain terrain",
+        "Swamp drainage for agriculture",
+        "Low-lying coral atolls with no freshwater",
+        "Tropical disease management in wet environments"
+      ],
+      inventions: ["kuk-swamp-drainage", "highland-terraces", "taro-pondfields", "sepik-fish-traps", "sago-water-processing", "stilt-villages", "atoll-rainwater"],
+      keyInsight: "The Kuk Swamp drainage system is 9,000 years old—making Papua New Guinea one of the world's independent centers of agricultural invention, alongside Mesopotamia and China.",
+      engineerNotes: "When I studied the Kuk Swamp archaeological record, I was humbled. People were draining swamps for agriculture 9,000 years ago, in complete isolation from the rest of the world. The highland terraces, taro pondfields, and fish trap systems show continuous innovation. On coral atolls with no freshwater, people developed rainwater harvesting and lens water extraction that NASA studied for space station life support.",
+      modernLegacy: "UNESCO World Heritage recognition of Kuk Swamp acknowledges Papua New Guinea's contribution to human agricultural innovation. Traditional water management practices offer models for climate adaptation in tropical regions.",
+      sources: [
+        "Denham, T. Early Agriculture and Plant Domestication in New Guinea",
+        "Golson, J. Kuk Swamp and the Development of Agriculture in New Guinea"
       ]
     }
   ]
