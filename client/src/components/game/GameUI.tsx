@@ -22,7 +22,7 @@ import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
-import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb, Globe, Building, Search, Play, Gamepad2, Building2, Map } from "lucide-react";
+import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb, Globe, Building, Search, Play, Gamepad2, Building2, Map, X } from "lucide-react";
 import { gameData, getAllArtifacts } from "../../data/gameData";
 
 export default function GameUI() {
@@ -44,6 +44,7 @@ export default function GameUI() {
   const [showChallenges, setShowChallenges] = useState(false);
   const [showLibrary, setShowLibrary] = useState(false);
   const [showMuseum, setShowMuseum] = useState(false);
+  const [showIntroCard, setShowIntroCard] = useState(true);
   const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
   const [selectedCivilization, setSelectedCivilization] = useState<string | null>(null);
 
@@ -388,35 +389,45 @@ export default function GameUI() {
         </div>
       </div>
 
-      <div className="absolute bottom-4 left-4 pointer-events-auto max-w-md">
-        <Card className="water-card">
-          <CardContent className="p-4">
-            <h3 className="font-heading text-lg text-[var(--gold)] mb-2">
-              Discover How Water Shaped History
-            </h3>
-            <p className="text-[var(--parchment)]/90 text-sm mb-3">
-              Explore 18 civilizations and discover 55+ water inventions in the 3D world, plus 80+ in our encyclopedia. From ancient shaduf to Roman aqueducts to modern mega-dams.
-            </p>
-            <div className="flex gap-2">
-              <Button
-                onClick={() => setShowFeatured(true)}
-                className="flex-1 bg-gradient-to-r from-[var(--cerulean)] to-[var(--river-blue)] hover:from-[var(--aqua)] hover:to-[var(--cerulean)] text-white font-heading"
-              >
-                <Compass size={18} className="mr-2" />
-                Explore the Map
-              </Button>
-              <Button
-                onClick={() => setShowTimeline(true)}
-                variant="outline"
-                className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-              >
-                <Clock size={18} className="mr-2" />
-                Start Journey
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
+      {showIntroCard && (
+        <div className="absolute bottom-4 left-4 pointer-events-auto max-w-md">
+          <Card className="water-card relative">
+            <Button
+              onClick={() => setShowIntroCard(false)}
+              variant="ghost"
+              size="icon"
+              className="absolute top-2 right-2 h-6 w-6 text-[var(--parchment)]/60 hover:text-[var(--parchment)] hover:bg-[var(--river-blue)]/30"
+            >
+              <X size={14} />
+            </Button>
+            <CardContent className="p-4">
+              <h3 className="font-heading text-lg text-[var(--gold)] mb-2">
+                Discover How Water Shaped History
+              </h3>
+              <p className="text-[var(--parchment)]/90 text-sm mb-3">
+                Explore 18 civilizations and discover 55+ water inventions in the 3D world, plus 80+ in our encyclopedia. From ancient shaduf to Roman aqueducts to modern mega-dams.
+              </p>
+              <div className="flex gap-2">
+                <Button
+                  onClick={() => setShowFeatured(true)}
+                  className="flex-1 bg-gradient-to-r from-[var(--cerulean)] to-[var(--river-blue)] hover:from-[var(--aqua)] hover:to-[var(--cerulean)] text-white font-heading"
+                >
+                  <Compass size={18} className="mr-2" />
+                  Explore the Map
+                </Button>
+                <Button
+                  onClick={() => setShowTimeline(true)}
+                  variant="outline"
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <Clock size={18} className="mr-2" />
+                  Start Journey
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      )}
 
       {showInfo && (
         <div className="absolute bottom-4 right-20 pointer-events-auto">
