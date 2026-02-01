@@ -188,8 +188,8 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
 
   return (
     <TooltipProvider>
-    <div className="min-h-screen bg-[var(--deep-ocean)] p-4">
-      <div className="max-w-6xl mx-auto">
+    <div className="h-screen bg-[var(--deep-ocean)] overflow-y-auto">
+      <div className="max-w-6xl mx-auto p-4">
         {/* Toolbar */}
         <div className="flex items-center justify-center gap-2 mb-4 flex-wrap">
           <Tooltip>
