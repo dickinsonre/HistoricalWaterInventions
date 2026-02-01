@@ -5,7 +5,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/
 import { 
   MapPin, ChevronRight, X, Home, Droplets, VolumeX, Volume2, Search, 
   Backpack, Trophy, Clock, BookOpen, BarChart3, Play, Star, Image, 
-  Lightbulb, Info, Globe, Grid3X3, Download
+  Lightbulb, Info, Globe, Grid3X3, Download, Route, Scroll, Filter
 } from "lucide-react";
 import { gameData } from "../../data/gameData";
 import CivilizationDetail from "./CivilizationDetail";
@@ -22,6 +22,8 @@ import TimeTravel from "./TimeTravel";
 import ChallengeModes from "./ChallengeModes";
 import TechnologyLibrary from "./TechnologyLibrary";
 import SWMM5Models from "./SWMM5Models";
+import ThematicPathways from "./ThematicPathways";
+import QuestSystem from "./QuestSystem";
 import { useAudio } from "../../lib/stores/useAudio";
 import { useProgress } from "../../lib/stores/useProgress";
 
@@ -112,6 +114,10 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
   const [showChallenges, setShowChallenges] = useState(false);
   const [showLibrary, setShowLibrary] = useState(false);
   const [showSWMM5, setShowSWMM5] = useState(false);
+  const [showPathways, setShowPathways] = useState(false);
+  const [showQuests, setShowQuests] = useState(false);
+  const [eraFilter, setEraFilter] = useState<string | null>(null);
+  const [continentFilter, setContinentFilter] = useState<string | null>(null);
 
   const allArtifacts = gameData.regions.flatMap(r => r.locations.flatMap(l => l.artifacts));
   const totalLocations = gameData.regions.reduce((acc, r) => acc + r.locations.length, 0);
@@ -266,12 +272,69 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
 
           <Tooltip>
             <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowPathways(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Route size={16} className="text-[var(--cerulean)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Thematic Pathways</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowQuests(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Scroll size={16} className="text-[var(--gold)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Story Quests</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
               <Button variant="outline" size="sm" onClick={() => setShowChallenges(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
                 <Grid3X3 size={16} className="text-[var(--terracotta)]" />
               </Button>
             </TooltipTrigger>
             <TooltipContent className="water-card text-[var(--parchment)]">Mini-Games</TooltipContent>
           </Tooltip>
+        </div>
+
+        {/* Quick Filters */}
+        <div className="flex items-center justify-center gap-2 mb-4 flex-wrap">
+          <span className="text-[var(--parchment)]/60 text-xs mr-2">Filter by Era:</span>
+          {["Ancient", "Classical", "Medieval", "Modern"].map(era => (
+            <Button 
+              key={era}
+              variant="outline" 
+              size="sm" 
+              onClick={() => setEraFilter(eraFilter === era ? null : era)}
+              className={`text-xs px-2 py-1 h-7 ${eraFilter === era ? 'bg-[var(--cerulean)] text-white' : 'water-card text-[var(--parchment)]/70'}`}
+            >
+              {era}
+            </Button>
+          ))}
+          <span className="text-[var(--parchment)]/40 mx-2">|</span>
+          <span className="text-[var(--parchment)]/60 text-xs mr-2">Region:</span>
+          {["Africa", "Asia", "Europe", "Americas", "Pacific"].map(continent => (
+            <Button 
+              key={continent}
+              variant="outline" 
+              size="sm" 
+              onClick={() => setContinentFilter(continentFilter === continent ? null : continent)}
+              className={`text-xs px-2 py-1 h-7 ${continentFilter === continent ? 'bg-[var(--terracotta)] text-white' : 'water-card text-[var(--parchment)]/70'}`}
+            >
+              {continent}
+            </Button>
+          ))}
+          {(eraFilter || continentFilter) && (
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              onClick={() => { setEraFilter(null); setContinentFilter(null); }}
+              className="text-xs text-[var(--aqua)] hover:text-[var(--gold)]"
+            >
+              Clear
+            </Button>
+          )}
         </div>
 
         <div className="flex items-center justify-between mb-4">
@@ -465,6 +528,16 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
       {showSWMM5 && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowSWMM5(false)}>
           <div onClick={(e) => e.stopPropagation()}><SWMM5Models onClose={() => setShowSWMM5(false)} /></div>
+        </div>
+      )}
+      {showPathways && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowPathways(false)}>
+          <div onClick={(e) => e.stopPropagation()}><ThematicPathways onClose={() => setShowPathways(false)} onSelectCivilization={(id) => { setShowPathways(false); setSelectedCiv(id); }} /></div>
+        </div>
+      )}
+      {showQuests && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowQuests(false)}>
+          <div onClick={(e) => e.stopPropagation()}><QuestSystem onClose={() => setShowQuests(false)} onNavigateToCivilization={(id) => { setShowQuests(false); setSelectedCiv(id); }} /></div>
         </div>
       )}
     </div>

@@ -1,9 +1,18 @@
-import { Globe, BookOpen, Clock, Gamepad2, ExternalLink } from "lucide-react";
+import { Globe, BookOpen, Clock, Gamepad2, ExternalLink, Droplets, MapPin, ChevronRight } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
+import { gameData, getAllArtifacts } from "../../data/gameData";
 
 interface LandingPageProps {
   onSelectJourney: (journey: "3d-world" | "encyclopedia" | "timeline" | "minigames") => void;
 }
+
+const FEATURED_INVENTIONS = [
+  { name: "Roman Aqueducts", civ: "Ancient Rome", year: "312 BCE", fact: "Supplied 1 million people with 1 billion liters daily" },
+  { name: "Rani ki Vav Stepwell", civ: "Medieval India", year: "1063 CE", fact: "7-story underground temple to water, UNESCO site" },
+  { name: "Angkor Baray", civ: "Khmer Empire", year: "802 CE", fact: "53 million cubic meters - city-sized reservoirs" },
+  { name: "Persian Qanats", civ: "Ancient Persia", year: "1000 BCE", fact: "Underground channels up to 70km long, still working" },
+  { name: "G-Cans Tokyo", civ: "Modern Japan", year: "2006 CE", fact: "Cathedral-sized underground flood control system" },
+];
 
 export default function LandingPage({ onSelectJourney }: LandingPageProps) {
   return (
@@ -109,9 +118,107 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
             </Card>
           </div>
         </section>
+
+        {/* Content Preview Section */}
+        <section className="max-w-5xl mx-auto mt-12">
+          <h2 className="font-heading text-xl text-center text-[var(--parchment)] mb-6">
+            Discover What's Inside
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            {/* Featured Inventions */}
+            <Card className="water-card md:col-span-2">
+              <CardContent className="p-4">
+                <h3 className="font-heading text-[var(--gold)] mb-4 flex items-center gap-2">
+                  <Droplets size={18} className="text-[var(--aqua)]" />
+                  Featured Water Inventions
+                </h3>
+                <div className="space-y-3">
+                  {FEATURED_INVENTIONS.map((inv, i) => (
+                    <div key={i} className="flex items-start gap-3 p-2 bg-[var(--deep-ocean)]/50 rounded-lg">
+                      <div className="w-8 h-8 rounded-full bg-[var(--cerulean)]/30 flex items-center justify-center text-[var(--aqua)] text-xs font-bold flex-shrink-0">
+                        {i + 1}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="text-[var(--parchment)] font-medium text-sm">{inv.name}</span>
+                          <span className="text-[var(--parchment)]/40 text-xs">•</span>
+                          <span className="text-[var(--aqua)] text-xs">{inv.civ}</span>
+                          <span className="text-[var(--parchment)]/40 text-xs">•</span>
+                          <span className="text-[var(--gold)] text-xs">{inv.year}</span>
+                        </div>
+                        <p className="text-[var(--parchment)]/70 text-xs mt-1">{inv.fact}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <button 
+                  onClick={() => onSelectJourney("3d-world")}
+                  className="mt-4 text-[var(--aqua)] text-sm hover:text-[var(--gold)] transition-colors flex items-center gap-1"
+                >
+                  Explore all 160+ inventions <ChevronRight size={14} />
+                </button>
+              </CardContent>
+            </Card>
+
+            {/* Quick Stats */}
+            <Card className="water-card">
+              <CardContent className="p-4">
+                <h3 className="font-heading text-[var(--gold)] mb-4 flex items-center gap-2">
+                  <MapPin size={18} className="text-[var(--terracotta)]" />
+                  What You'll Explore
+                </h3>
+                <div className="space-y-4">
+                  <div className="text-center p-3 bg-[var(--deep-ocean)]/50 rounded-lg">
+                    <div className="text-3xl font-heading text-[var(--gold)]">{gameData.regions.length}</div>
+                    <div className="text-[var(--parchment)]/70 text-xs">Civilizations</div>
+                  </div>
+                  <div className="text-center p-3 bg-[var(--deep-ocean)]/50 rounded-lg">
+                    <div className="text-3xl font-heading text-[var(--aqua)]">{getAllArtifacts().length}+</div>
+                    <div className="text-[var(--parchment)]/70 text-xs">Water Inventions</div>
+                  </div>
+                  <div className="text-center p-3 bg-[var(--deep-ocean)]/50 rounded-lg">
+                    <div className="text-3xl font-heading text-[var(--terracotta)]">6</div>
+                    <div className="text-[var(--parchment)]/70 text-xs">Continents</div>
+                  </div>
+                  <div className="text-center p-3 bg-[var(--deep-ocean)]/50 rounded-lg">
+                    <div className="text-3xl font-heading text-[var(--cerulean)]">40,000+</div>
+                    <div className="text-[var(--parchment)]/70 text-xs">Years of History</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Regions Preview */}
+          <Card className="water-card">
+            <CardContent className="p-4">
+              <h3 className="font-heading text-[var(--gold)] mb-4">Explore by Region</h3>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+                {[
+                  { name: "Africa", count: 5, color: "bg-amber-500" },
+                  { name: "Asia", count: 18, color: "bg-red-500" },
+                  { name: "Europe", count: 8, color: "bg-blue-500" },
+                  { name: "Americas", count: 5, color: "bg-green-500" },
+                  { name: "Pacific", count: 6, color: "bg-teal-500" },
+                ].map(region => (
+                  <div 
+                    key={region.name}
+                    className="p-3 bg-[var(--deep-ocean)]/50 rounded-lg text-center hover:bg-[var(--river-blue)]/30 transition-colors cursor-pointer"
+                    onClick={() => onSelectJourney("3d-world")}
+                  >
+                    <div className={`w-4 h-4 rounded-full ${region.color} mx-auto mb-2`} />
+                    <div className="text-[var(--parchment)] text-sm font-medium">{region.name}</div>
+                    <div className="text-[var(--parchment)]/60 text-xs">{region.count} civilizations</div>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </section>
       </main>
 
-      <footer className="bg-[var(--deep-ocean)] border-t border-[var(--aqua)]/20 py-6 px-4">
+      <footer className="bg-[var(--deep-ocean)] border-t border-[var(--aqua)]/20 py-6 px-4 mt-8">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
             <div className="flex items-center gap-4">
