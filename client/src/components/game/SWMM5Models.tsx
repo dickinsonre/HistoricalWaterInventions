@@ -106,14 +106,25 @@ export default function SWMM5Models({ onClose }: SWMM5ModelsProps) {
               </p>
             </div>
           </div>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={onClose}
-            className="text-[var(--parchment)] hover:bg-[var(--cerulean)]/20"
-          >
-            <X size={18} />
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button
+              onClick={handleDownloadAllAsZip}
+              disabled={downloadingAll}
+              size="sm"
+              className="bg-[var(--gold)] hover:bg-[var(--gold)]/80 text-[var(--deep-ocean)] font-semibold"
+            >
+              <Archive size={16} className="mr-2" />
+              {downloadingAll ? "Creating..." : `Download All as ZIP`}
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={onClose}
+              className="text-[var(--parchment)] hover:bg-[var(--cerulean)]/20"
+            >
+              <X size={18} />
+            </Button>
+          </div>
         </div>
       </CardHeader>
 
