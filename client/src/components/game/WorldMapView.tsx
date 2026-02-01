@@ -106,7 +106,8 @@ const civilizationCoords: Record<string, { lat: number; lng: number; region: str
   "inuit-arctic": { lat: 71.3, lng: -156.8, region: "Arctic Circle" },
   "swahili-coast": { lat: -6.2, lng: 39.2, region: "East Africa Coast" },
   "kongo-kingdom": { lat: -4.3, lng: 15.3, region: "Congo Basin" },
-  "mali-timbuktu": { lat: 16.8, lng: -3.0, region: "West Africa" }
+  "mali-timbuktu": { lat: 16.8, lng: -3.0, region: "West Africa" },
+  "morocco": { lat: 31.6, lng: -6.0, region: "North Africa" }
 };
 
 // Convert to x/y percentages
@@ -139,7 +140,8 @@ const civilizationContinents: Record<string, string> = {
   "borneo": "Asia", "papua-new-guinea": "Pacific",
   "amazon-basin": "Americas", "mississippian-cahokia": "Americas", "hohokam": "Americas",
   "pacific-northwest": "Americas", "siberia-yakutia": "Asia", "inuit-arctic": "Americas",
-  "swahili-coast": "Africa", "kongo-kingdom": "Africa", "mali-timbuktu": "Africa"
+  "swahili-coast": "Africa", "kongo-kingdom": "Africa", "mali-timbuktu": "Africa",
+  "morocco": "Africa"
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {

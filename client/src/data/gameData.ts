@@ -3624,6 +3624,104 @@ export const gameData: GameData = {
       ]
     },
     {
+      id: "morocco",
+      name: "Morocco (Khettara)",
+      description: "Ancient underground water channels sustaining life in North Africa's arid regions",
+      position: [-5, 0, 8],
+      color: "#E65100",
+      era: "ancient",
+      dateRange: "1000 BCE - Present",
+      locations: [
+        {
+          id: "tafilalet-oasis",
+          name: "Tafilalet Oasis",
+          description: "World's largest traditional oasis with 800+ khettaras",
+          historicalContext: "Gateway between Sahara and Mediterranean world",
+          coordinates: { lat: 31.5, lng: -4.3 },
+          artifacts: [
+            {
+              id: "khettara-system",
+              name: "Khettara Underground Channels",
+              description: "Gravity-fed underground galleries bringing mountain aquifer water to desert oases across 20+ km",
+              rarity: "legendary",
+              historicalPeriod: "1000 BCE - Present",
+              significance: "800+ khettaras in Tafilalet alone; still irrigating date palms; UNESCO heritage candidate",
+              yearBCE: 1000,
+              category: "aqueduct"
+            },
+            {
+              id: "fogarra-well",
+              name: "Mother Well (Ain Umm)",
+              description: "Deep collection wells where khettara begins, tapping mountain aquifers 20-50m deep",
+              rarity: "epic",
+              historicalPeriod: "1000 BCE - Present",
+              significance: "Hand-dug through solid rock; some reach 60m depth; defines entire system's water yield",
+              yearBCE: 1000,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "marrakech",
+          name: "Marrakech",
+          description: "The Red City built on a network of underground channels",
+          historicalContext: "Imperial capital with sophisticated water distribution",
+          coordinates: { lat: 31.6, lng: -8.0 },
+          artifacts: [
+            {
+              id: "marrakech-seguias",
+              name: "Marrakech Seguia Network",
+              description: "125 km of surface channels distributing Atlas Mountain water throughout the medina",
+              rarity: "epic",
+              historicalPeriod: "1070 CE - Present",
+              significance: "Still supplies the famous Marrakech gardens; water rights date back 950 years",
+              yearBCE: -1070,
+              category: "canal"
+            },
+            {
+              id: "riad-fountains",
+              name: "Riad Courtyard Fountains",
+              description: "Cooling fountains in inner courtyards providing microclimate oases in the desert city",
+              rarity: "rare",
+              historicalPeriod: "1000 CE - Present",
+              significance: "Evaporative cooling drops temperatures 10°C; architectural water integration",
+              yearBCE: -1000,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "fez",
+          name: "Fez",
+          description: "Medieval city with 300+ fountains and the world's oldest university",
+          historicalContext: "Spiritual capital with Islamic water heritage",
+          coordinates: { lat: 34.0, lng: -5.0 },
+          artifacts: [
+            {
+              id: "fez-hammam",
+              name: "Fez Hammam Tradition",
+              description: "Public bath houses with sophisticated water heating, recycling, and distribution",
+              rarity: "epic",
+              historicalPeriod: "800 CE - Present",
+              significance: "100+ historic hammams; thermal water management; social/religious function",
+              yearBCE: -800,
+              category: "sanitation"
+            },
+            {
+              id: "tannery-water",
+              name: "Chouara Tannery Water System",
+              description: "1000-year-old water management for leather processing using traditional methods",
+              rarity: "rare",
+              historicalPeriod: "1000 CE - Present",
+              significance: "World's oldest working tannery; complex water flow for dyeing and processing",
+              yearBCE: -1000,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "borneo",
       name: "Borneo Indigenous Civilizations",
       description: "Sophisticated water management in Earth's wettest environments - 40,000+ years",
