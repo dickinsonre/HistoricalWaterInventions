@@ -1052,6 +1052,13 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
 function generateHeader(model: SWMM5Model): string {
   const timestamp = new Date().toISOString();
   return `[TITLE]
+;;=============================================================================
+;; EDUCATIONAL TEXT FILE - Historical Mystery Water Engineering Explorer
+;; This is a plain text file for SWMM5 hydraulic simulation software.
+;; File Type: EPA SWMM5 Input File (Educational/Research Use)
+;; Safe to open in any text editor (Notepad, VS Code, etc.)
+;;=============================================================================
+;;
 ;;Project Title/Notes
 ${model.name}
 ${model.description}
@@ -1063,6 +1070,7 @@ ${model.description}
 ;; Period: ${model.period}
 ;; 
 ;; This model recreates ancient hydraulic engineering using modern SWMM5 simulation.
+;; For use with EPA SWMM5 software: https://www.epa.gov/water-research/storm-water-management-model-swmm
 ;; Learn more at: https://swmm5.org
 ;;
 ;; EDUCATIONAL NOTES:
@@ -2111,7 +2119,7 @@ export function downloadSWMM5Model(inventionId: string, inventionName: string): 
   
   const link = document.createElement('a');
   link.href = dataUri;
-  link.download = `${safeFilename}_SWMM5_Model.inp`;
+  link.download = `${safeFilename}_SWMM5_Model.txt`;
   link.style.display = 'none';
   document.body.appendChild(link);
   link.click();
