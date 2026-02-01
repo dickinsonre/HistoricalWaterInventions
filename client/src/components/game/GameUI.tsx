@@ -18,11 +18,12 @@ import TimeTravel from "./TimeTravel";
 import ChallengeModes from "./ChallengeModes";
 import TechnologyLibrary from "./TechnologyLibrary";
 import MuseumMode from "./MuseumMode";
+import SWMM5Models from "./SWMM5Models";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
-import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb, Globe, Building, Search, Play, Gamepad2, Building2, Map, X, Home } from "lucide-react";
+import { Volume2, VolumeX, Trophy, BookOpen, Award, Clock, Droplets, Scale, Compass, Star, Info, Lightbulb, Globe, Building, Search, Play, Gamepad2, Building2, Map, X, Home, FileCode } from "lucide-react";
 import { gameData, getAllArtifacts } from "../../data/gameData";
 
 interface GameUIProps {
@@ -48,6 +49,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
   const [showChallenges, setShowChallenges] = useState(false);
   const [showLibrary, setShowLibrary] = useState(false);
   const [showMuseum, setShowMuseum] = useState(false);
+  const [showSWMM5, setShowSWMM5] = useState(false);
   const [showIntroCard, setShowIntroCard] = useState(true);
   const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
   const [selectedCivilization, setSelectedCivilization] = useState<string | null>(null);
@@ -300,6 +302,22 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
                 Challenge Modes
+              </TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowSWMM5(true)}
+                  className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+                >
+                  <FileCode size={16} className="text-cyan-400" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent className="water-card text-[var(--parchment)]">
+                SWMM5 Hydraulic Models
               </TooltipContent>
             </Tooltip>
 
@@ -606,6 +624,10 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
             }}
           />
         </div>
+      )}
+
+      {showSWMM5 && (
+        <SWMM5Models onClose={() => setShowSWMM5(false)} />
       )}
 
       <div className="absolute bottom-4 right-4 pointer-events-auto">
