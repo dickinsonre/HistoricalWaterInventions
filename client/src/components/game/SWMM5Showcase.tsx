@@ -136,7 +136,7 @@ export default function SWMM5Showcase({ onViewAll }: SWMM5ShowcaseProps) {
           <div>
             <h3 className="font-heading text-xl text-[var(--gold)]">SWMM5/ICM Invention Models</h3>
             <p className="text-sm text-[var(--parchment)]/70 mt-1">
-              {modelCount}+ hydraulic simulation files compatible with EPA SWMM5 and InfoWorks ICM
+              {modelCount}+ SWMM5, ICM, Civil 3D networks for hydraulic simulation
             </p>
           </div>
         </div>

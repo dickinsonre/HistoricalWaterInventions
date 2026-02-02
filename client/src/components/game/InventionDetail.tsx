@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { X, ChevronLeft, ChevronRight, Wrench, Sparkles, History, MessageSquare, MapPin, Calendar, Droplets, Image, FileCode, Download, Eye } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Wrench, Sparkles, History, MessageSquare, MapPin, Calendar, Droplets, Image, FileCode, Download, Eye, FileSpreadsheet, FileText } from "lucide-react";
 import { getAllArtifacts, gameData, ArtifactData } from "../../data/gameData";
 import { getInventionDetail, inventionDiagrams } from "../../data/inventionDetails";
 import { getSwmmModelForInvention, downloadSWMM5Model, generateSWMM5File } from "../../lib/swmm5Export";
+import { generateICMCSV, generateCivil3DScript, downloadExport } from "../../lib/civil3dExport";
 
 interface InventionDetailProps {
   artifactId: string;
@@ -109,15 +110,15 @@ export default function InventionDetail({ artifactId, onClose, onNavigate }: Inv
 
         {swmmModel && (
           <div className="bg-[var(--cerulean)]/10 border border-[var(--cerulean)]/30 rounded-lg p-3 mb-4">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between flex-wrap gap-2">
               <div className="flex items-center gap-2">
                 <FileCode size={18} className="text-[var(--cerulean)]" />
                 <div>
-                  <p className="text-[var(--parchment)] text-sm font-medium">SWMM5 Model Available</p>
+                  <p className="text-[var(--parchment)] text-sm font-medium">SWMM5, ICM, Civil 3D Network Available</p>
                   <p className="text-[var(--parchment)]/60 text-xs">{swmmModel.name} • {swmmModel.period}</p>
                 </div>
               </div>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
                 <Button 
                   size="sm" 
                   onClick={() => setShowSwmmPreview(true)}
@@ -132,7 +133,29 @@ export default function InventionDetail({ artifactId, onClose, onNavigate }: Inv
                   className="bg-[var(--cerulean)] hover:bg-[var(--cerulean)]/80 text-white"
                 >
                   <Download size={14} className="mr-1" />
-                  Download
+                  SWMM5
+                </Button>
+                <Button 
+                  size="sm" 
+                  onClick={() => {
+                    const content = generateICMCSV(artifactId);
+                    downloadExport(content, `${artifactId}_ICM.csv`);
+                  }}
+                  className="bg-[var(--gold)] hover:bg-[var(--gold)]/80 text-[var(--deep-ocean)]"
+                >
+                  <FileSpreadsheet size={14} className="mr-1" />
+                  ICM
+                </Button>
+                <Button 
+                  size="sm" 
+                  onClick={() => {
+                    const content = generateCivil3DScript(artifactId, artifact.name);
+                    downloadExport(content, `${artifactId}_Civil3D.scr`);
+                  }}
+                  className="bg-[var(--terracotta)] hover:bg-[var(--terracotta)]/80 text-white"
+                >
+                  <FileText size={14} className="mr-1" />
+                  Civil 3D
                 </Button>
               </div>
             </div>
