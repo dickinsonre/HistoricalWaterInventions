@@ -7,6 +7,7 @@ import WorldMapView from "./components/game/WorldMapView";
 import CivilizationPage from "./components/game/CivilizationPage";
 import InventionPage from "./components/game/InventionPage";
 import MiniGames from "./components/game/MiniGames";
+import SimulatorHub from "./components/game/SimulatorHub";
 import "@fontsource/inter";
 import "./index.css";
 
@@ -34,6 +35,7 @@ function GameContent() {
   return (
     <Routes>
       <Route path="/" element={<WorldMapView onBack={() => {}} />} />
+      <Route path="/simulators" element={<SimulatorHub />} />
       <Route path="/minigames" element={<MiniGames onBack={() => window.location.href = '/'} />} />
       <Route path="/:civilizationId" element={<CivilizationPage />} />
       <Route path="/:civilizationId/:inventionId" element={<InventionPage />} />

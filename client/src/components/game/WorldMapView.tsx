@@ -7,7 +7,7 @@ import {
   MapPin, ChevronRight, ChevronDown, X, Home, Droplets, VolumeX, Volume2, Search, 
   Backpack, Trophy, Clock, BookOpen, BarChart3, Play, Star, Image, 
   Lightbulb, Info, Globe, Grid3X3, Download, Route, Scroll, Filter, HelpCircle,
-  ArrowUpDown, SortAsc, Calendar
+  ArrowUpDown, SortAsc, Calendar, Beaker
 } from "lucide-react";
 import { gameData } from "../../data/gameData";
 import CivilizationDetail from "./CivilizationDetail";
@@ -422,6 +422,15 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               </Button>
             </TooltipTrigger>
             <TooltipContent className="water-card text-[var(--parchment)]">Mini-Games</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => navigate('/simulators')} className="water-card text-[var(--parchment)] hover:bg-[var(--gold)]/30 border-[var(--gold)]/30">
+                <Beaker size={16} className="text-[var(--gold)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Interactive Simulators</TooltipContent>
           </Tooltip>
         </div>
 
