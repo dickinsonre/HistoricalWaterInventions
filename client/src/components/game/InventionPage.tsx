@@ -2,11 +2,12 @@ import { useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { ArrowLeft, ArrowRight, MapPin, Calendar, Droplets, Wrench, Sparkles, History, MessageSquare, Image, ChevronLeft, ChevronRight, FileCode, Download, Eye, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, MapPin, Calendar, Droplets, Wrench, Sparkles, History, MessageSquare, Image, ChevronLeft, ChevronRight, FileCode, Download, Eye, X, FileOutput } from "lucide-react";
 import { gameData, getAllArtifacts } from "../../data/gameData";
 import { getInventionDetail, inventionDiagrams } from "../../data/inventionDetails";
 import { getSwmmModelForInvention, downloadSWMM5Model, generateSWMM5File } from "../../lib/swmm5Export";
 import InteractiveDiagram from "./InteractiveDiagram";
+import ExportFormats from "./ExportFormats";
 
 const categoryImages: Record<string, string> = {
   "aqueduct": "/images/inventions/aqueduct.jpg",
@@ -26,6 +27,7 @@ interface InventionPageProps {
 
 export default function InventionPage({ showDiagram }: InventionPageProps) {
   const [showSwmmPreview, setShowSwmmPreview] = useState(false);
+  const [showExportFormats, setShowExportFormats] = useState(false);
   const { civilizationId, inventionId } = useParams<{ civilizationId: string; inventionId: string }>();
   const navigate = useNavigate();
   
@@ -195,6 +197,14 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
                     >
                       <Download size={14} className="mr-1" />
                       Download .inp
+                    </Button>
+                    <Button 
+                      size="sm" 
+                      onClick={() => setShowExportFormats(true)}
+                      className="bg-[var(--gold)] hover:bg-[var(--gold)]/80 text-[var(--deep-ocean)]"
+                    >
+                      <FileOutput size={14} className="mr-1" />
+                      All Formats
                     </Button>
                   </div>
                 </div>
@@ -392,6 +402,19 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
             )}
           </CardContent>
         </Card>
+
+        {showExportFormats && artifact && regionInfo && (
+          <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowExportFormats(false)}>
+            <div onClick={(e) => e.stopPropagation()}>
+              <ExportFormats 
+                inventionId={inventionId || ''}
+                inventionName={artifact.name}
+                civilization={regionInfo.region.name}
+                onClose={() => setShowExportFormats(false)}
+              />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
