@@ -171,6 +171,26 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
               </div>
             )}
 
+            <div className="bg-[var(--gold)]/10 border border-[var(--gold)]/30 rounded-lg p-3 mb-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <FileOutput size={18} className="text-[var(--gold)]" />
+                  <div>
+                    <p className="text-[var(--parchment)] text-sm font-medium">Export to CAD/Modeling Software</p>
+                    <p className="text-[var(--parchment)]/60 text-xs">SWMM5, Civil 3D, LandXML, DXF, InfoWorks ICM</p>
+                  </div>
+                </div>
+                <Button 
+                  size="sm" 
+                  onClick={() => setShowExportFormats(true)}
+                  className="bg-[var(--gold)] hover:bg-[var(--gold)]/80 text-[var(--deep-ocean)]"
+                >
+                  <FileOutput size={14} className="mr-1" />
+                  Export All Formats
+                </Button>
+              </div>
+            </div>
+
             {swmmModel && (
               <div className="bg-[var(--cerulean)]/10 border border-[var(--cerulean)]/30 rounded-lg p-3 mb-4">
                 <div className="flex items-center justify-between">
@@ -197,14 +217,6 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
                     >
                       <Download size={14} className="mr-1" />
                       Download .inp
-                    </Button>
-                    <Button 
-                      size="sm" 
-                      onClick={() => setShowExportFormats(true)}
-                      className="bg-[var(--gold)] hover:bg-[var(--gold)]/80 text-[var(--deep-ocean)]"
-                    >
-                      <FileOutput size={14} className="mr-1" />
-                      All Formats
                     </Button>
                   </div>
                 </div>

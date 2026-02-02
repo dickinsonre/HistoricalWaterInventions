@@ -87,9 +87,22 @@ export default function ExportFormats({ inventionId, inventionName, civilization
     }
     
     if (content) {
-      await navigator.clipboard.writeText(content);
-      setCopiedFormat(formatId);
-      setTimeout(() => setCopiedFormat(null), 2000);
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(content);
+        } else {
+          const textArea = document.createElement('textarea');
+          textArea.value = content;
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textArea);
+        }
+        setCopiedFormat(formatId);
+        setTimeout(() => setCopiedFormat(null), 2000);
+      } catch (err) {
+        console.error('Copy failed:', err);
+      }
     }
   };
 
