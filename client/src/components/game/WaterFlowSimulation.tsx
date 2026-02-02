@@ -73,10 +73,14 @@ export default function WaterFlowSimulation() {
   const sim = {
     ...baseSim,
     gradient: baseSim.gradient * gradientMultiplier,
-    pathPoints: baseSim.pathPoints.map((p, i) => ({
-      x: p.x,
-      y: baseSim.pathPoints[0].y + (p.y - baseSim.pathPoints[0].y) * gradientMultiplier
-    }))
+    pathPoints: baseSim.pathPoints.map((p, i) => {
+      const baseY = baseSim.pathPoints[0].y;
+      const adjustedY = baseY + (p.y - baseY) * gradientMultiplier;
+      return {
+        x: p.x,
+        y: Math.min(Math.max(adjustedY, 5), 75)
+      };
+    })
   };
 
   const interpolatePath = useCallback((progress: number) => {
