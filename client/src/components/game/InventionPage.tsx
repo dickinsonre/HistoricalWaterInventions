@@ -8,6 +8,18 @@ import { getInventionDetail, inventionDiagrams } from "../../data/inventionDetai
 import { getSwmmModelForInvention, downloadSWMM5Model, generateSWMM5File } from "../../lib/swmm5Export";
 import InteractiveDiagram from "./InteractiveDiagram";
 
+const categoryImages: Record<string, string> = {
+  "aqueduct": "/images/inventions/aqueduct.jpg",
+  "irrigation": "/images/inventions/terrace.jpg",
+  "water-lifting": "/images/inventions/noria.jpg",
+  "sanitation": "/images/inventions/well.jpg",
+  "dam": "/images/inventions/dam.jpg",
+  "fountain": "/images/inventions/fountain.jpg",
+  "canal": "/images/inventions/canal.jpg",
+  "water-clock": "/images/inventions/well.jpg",
+  "qanat": "/images/inventions/qanat.jpg",
+};
+
 interface InventionPageProps {
   showDiagram?: boolean;
 }
@@ -146,6 +158,16 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
                 </div>
               </div>
             </div>
+
+            {categoryImages[artifact.category] && (
+              <div className="mb-4 rounded-lg overflow-hidden">
+                <img 
+                  src={categoryImages[artifact.category]} 
+                  alt={artifact.category}
+                  className="w-full h-40 object-cover opacity-80"
+                />
+              </div>
+            )}
 
             {swmmModel && (
               <div className="bg-[var(--cerulean)]/10 border border-[var(--cerulean)]/30 rounded-lg p-3 mb-4">
