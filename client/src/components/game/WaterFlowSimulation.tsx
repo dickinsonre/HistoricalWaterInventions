@@ -11,7 +11,7 @@ interface WaterParticle {
   size: number;
 }
 
-type SimulationType = "aqueduct" | "qanat" | "siphon" | "reservoir";
+type SimulationType = "aqueduct" | "qanat" | "siphon" | "reservoir" | "screw" | "noria" | "cloaca" | "spillway" | "subak" | "shafts" | "cascade" | "stepwell";
 
 const simulations: Record<SimulationType, {
   title: string;
@@ -58,6 +58,86 @@ const simulations: Record<SimulationType, {
     pathPoints: [
       { x: 10, y: 20 }, { x: 30, y: 25 }, { x: 35, y: 40 },
       { x: 40, y: 50 }, { x: 45, y: 50 }, { x: 60, y: 55 }, { x: 95, y: 65 }
+    ]
+  },
+  screw: {
+    title: "Archimedes Screw",
+    description: "Helical pump attributed to Archimedes (287-212 BCE). Still used today for pumping water, grain, and wastewater due to gentle handling and self-priming capability.",
+    gradient: 1.5,
+    flowRate: 1.3,
+    pathPoints: [
+      { x: 10, y: 65 }, { x: 25, y: 55 }, { x: 40, y: 45 },
+      { x: 55, y: 35 }, { x: 70, y: 28 }, { x: 85, y: 22 }, { x: 95, y: 18 }
+    ]
+  },
+  noria: {
+    title: "Noria Wheel",
+    description: "Water-powered lifting wheel using river current. Syrian city of Hama still operates 2000-year-old norias on the Orontes River. Lifted water up to 20m without any external power.",
+    gradient: 3.0,
+    flowRate: 0.9,
+    pathPoints: [
+      { x: 10, y: 70 }, { x: 20, y: 55 }, { x: 30, y: 35 },
+      { x: 40, y: 20 }, { x: 50, y: 15 }, { x: 70, y: 18 }, { x: 95, y: 22 }
+    ]
+  },
+  cloaca: {
+    title: "Cloaca Maxima",
+    description: "One of the oldest sewer systems in the world, dating to 600 BCE. The name means 'Greatest Sewer'. Sections remain in use today after 2,600 years in Rome.",
+    gradient: 0.3,
+    flowRate: 1.4,
+    pathPoints: [
+      { x: 10, y: 25 }, { x: 25, y: 28 }, { x: 40, y: 32 },
+      { x: 55, y: 38 }, { x: 70, y: 45 }, { x: 85, y: 52 }, { x: 95, y: 60 }
+    ]
+  },
+  spillway: {
+    title: "Stepped Spillway",
+    description: "Energy-dissipating spillway design prevents erosion at dam bases. Ancient stepped spillways at Marib Dam (Yemen, 750 BCE) show remarkable engineering sophistication.",
+    gradient: 4.0,
+    flowRate: 1.8,
+    pathPoints: [
+      { x: 10, y: 15 }, { x: 20, y: 22 }, { x: 30, y: 30 },
+      { x: 40, y: 38 }, { x: 50, y: 46 }, { x: 60, y: 54 }, { x: 70, y: 62 }, { x: 80, y: 68 }, { x: 95, y: 72 }
+    ]
+  },
+  subak: {
+    title: "Subak Irrigation",
+    description: "UNESCO World Heritage Balinese water temple system. Coordinates planting schedules and water sharing among thousands of farmers without central authority since 9th century CE.",
+    gradient: 1.2,
+    flowRate: 0.7,
+    pathPoints: [
+      { x: 10, y: 15 }, { x: 25, y: 25 }, { x: 35, y: 32 },
+      { x: 50, y: 40 }, { x: 65, y: 50 }, { x: 80, y: 58 }, { x: 95, y: 65 }
+    ]
+  },
+  shafts: {
+    title: "Qanat Shafts",
+    description: "Vertical access and ventilation shafts spaced 20-50m apart allowed construction and maintenance of underground qanats. Spoil mounds around each shaft are visible for kilometers.",
+    gradient: 0.4,
+    flowRate: 0.6,
+    pathPoints: [
+      { x: 10, y: 55 }, { x: 25, y: 45 }, { x: 35, y: 50 },
+      { x: 50, y: 42 }, { x: 65, y: 48 }, { x: 80, y: 40 }, { x: 95, y: 55 }
+    ]
+  },
+  cascade: {
+    title: "Tank Cascade",
+    description: "Ancient Sri Lanka built over 30,000 interconnected tanks. The cascade maximizes water use—runoff from one tank becomes supply for the next. Biso Kotuwa valve pits controlled releases.",
+    gradient: 2.5,
+    flowRate: 1.1,
+    pathPoints: [
+      { x: 10, y: 12 }, { x: 20, y: 18 }, { x: 25, y: 25 },
+      { x: 35, y: 32 }, { x: 45, y: 40 }, { x: 55, y: 48 }, { x: 65, y: 55 }, { x: 80, y: 62 }, { x: 95, y: 70 }
+    ]
+  },
+  stepwell: {
+    title: "Indian Stepwell",
+    description: "Elaborate stepped wells (vav/baoli) of India provided year-round water access. Descending steps follow the water table, often with ornate pavilions for rest and worship.",
+    gradient: 5.0,
+    flowRate: 0.5,
+    pathPoints: [
+      { x: 10, y: 10 }, { x: 20, y: 20 }, { x: 30, y: 32 },
+      { x: 40, y: 42 }, { x: 50, y: 52 }, { x: 60, y: 60 }, { x: 70, y: 68 }, { x: 80, y: 72 }, { x: 90, y: 72 }
     ]
   }
 };
