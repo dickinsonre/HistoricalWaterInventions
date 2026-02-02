@@ -20,6 +20,7 @@ import ComparisonTool from "./ComparisonTool";
 import FeaturedDiscoveries from "./FeaturedDiscoveries";
 import DidYouKnow from "./DidYouKnow";
 import AboutSection from "./AboutSection";
+import GuidedTour from "./GuidedTour";
 import SmartSearch from "./SmartSearch";
 import TimeTravel from "./TimeTravel";
 import ChallengeModes from "./ChallengeModes";
@@ -724,6 +725,11 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
 
         {/* Interactive Water Flow Simulation */}
         <WaterFlowSimulation />
+
+        {/* Guided Educational Tour */}
+        <div className="px-4 sm:px-6 lg:px-8">
+          <GuidedTour />
+        </div>
 
         {/* SWMM5 Hydraulic Models Showcase - at end of page */}
         <SWMM5Showcase onViewAll={() => setShowSWMM5(true)} />

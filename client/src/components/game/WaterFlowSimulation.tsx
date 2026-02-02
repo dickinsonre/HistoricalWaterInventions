@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { Play, Pause, RotateCcw, Droplets, Gauge, ArrowDown, Info } from "lucide-react";
+import { Play, Pause, RotateCcw, Droplets, Gauge, ArrowDown, Info, Calculator, Eye, EyeOff } from "lucide-react";
 
 interface WaterParticle {
   id: number;
@@ -148,8 +148,33 @@ export default function WaterFlowSimulation() {
   const [particles, setParticles] = useState<WaterParticle[]>([]);
   const [flowMultiplier, setFlowMultiplier] = useState(1);
   const [gradientMultiplier, setGradientMultiplier] = useState(1);
+  const [showPhysics, setShowPhysics] = useState(false);
 
   const baseSim = simulations[activeSimulation];
+
+  const calculatePhysics = useCallback(() => {
+    const gradient = baseSim.gradient * gradientMultiplier / 100;
+    const baseFlowRate = baseSim.flowRate * flowMultiplier;
+    const channelWidth = 1.5;
+    const channelDepth = 0.8;
+    const area = channelWidth * channelDepth;
+    const wetPerimeter = channelWidth + 2 * channelDepth;
+    const hydraulicRadius = area / wetPerimeter;
+    const manningsN = 0.015;
+    const velocity = (1 / manningsN) * Math.pow(hydraulicRadius, 2/3) * Math.pow(gradient, 0.5);
+    const discharge = velocity * area * baseFlowRate;
+    const froudeNumber = velocity / Math.sqrt(9.81 * channelDepth);
+    const reynoldsNumber = (velocity * hydraulicRadius * 1000) / 0.001;
+    
+    return {
+      velocity: velocity.toFixed(2),
+      discharge: (discharge * 1000).toFixed(1),
+      froudeNumber: froudeNumber.toFixed(3),
+      reynoldsNumber: (reynoldsNumber / 1000).toFixed(0),
+      flowRegime: froudeNumber < 1 ? "Subcritical" : froudeNumber > 1 ? "Supercritical" : "Critical",
+      hydraulicRadius: hydraulicRadius.toFixed(3)
+    };
+  }, [baseSim.gradient, baseSim.flowRate, gradientMultiplier, flowMultiplier]);
   const sim = {
     ...baseSim,
     gradient: baseSim.gradient * gradientMultiplier,
@@ -360,6 +385,64 @@ export default function WaterFlowSimulation() {
             </div>
           </div>
         </div>
+
+        <div className="mt-4 flex items-center justify-between">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => setShowPhysics(!showPhysics)}
+            className={`${showPhysics ? 'bg-[var(--gold)]/20 border-[var(--gold)]' : 'border-[var(--aqua)]/30'} text-[var(--parchment)]`}
+          >
+            <Calculator size={14} className="mr-1" />
+            {showPhysics ? 'Hide' : 'Show'} Physics
+          </Button>
+        </div>
+
+        {showPhysics && (
+          <div className="mt-4 p-4 bg-[var(--deep-ocean)]/80 rounded-lg border border-[var(--gold)]/40">
+            <div className="flex items-center gap-2 mb-3">
+              <Calculator size={18} className="text-[var(--gold)]" />
+              <h4 className="font-heading text-sm text-[var(--gold)]">Real-Time Hydraulic Calculations</h4>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm">
+              <div className="bg-[var(--river-blue)]/30 p-2 rounded">
+                <p className="text-[var(--parchment)]/60 text-xs">Velocity (m/s)</p>
+                <p className="text-[var(--aqua)] font-mono">{calculatePhysics().velocity}</p>
+                <p className="text-[var(--parchment)]/40 text-xs mt-1">v = (1/n) × R^(2/3) × S^(1/2)</p>
+              </div>
+              <div className="bg-[var(--river-blue)]/30 p-2 rounded">
+                <p className="text-[var(--parchment)]/60 text-xs">Discharge (L/s)</p>
+                <p className="text-[var(--aqua)] font-mono">{calculatePhysics().discharge}</p>
+                <p className="text-[var(--parchment)]/40 text-xs mt-1">Q = v × A</p>
+              </div>
+              <div className="bg-[var(--river-blue)]/30 p-2 rounded">
+                <p className="text-[var(--parchment)]/60 text-xs">Froude Number</p>
+                <p className="text-[var(--aqua)] font-mono">{calculatePhysics().froudeNumber}</p>
+                <p className="text-[var(--parchment)]/40 text-xs mt-1">Fr = v / √(g×d)</p>
+              </div>
+              <div className="bg-[var(--river-blue)]/30 p-2 rounded">
+                <p className="text-[var(--parchment)]/60 text-xs">Reynolds (×10³)</p>
+                <p className="text-[var(--aqua)] font-mono">{calculatePhysics().reynoldsNumber}</p>
+                <p className="text-[var(--parchment)]/40 text-xs mt-1">Re = v×R×ρ/μ</p>
+              </div>
+              <div className="bg-[var(--river-blue)]/30 p-2 rounded">
+                <p className="text-[var(--parchment)]/60 text-xs">Flow Regime</p>
+                <p className={`font-mono ${calculatePhysics().flowRegime === 'Subcritical' ? 'text-green-400' : calculatePhysics().flowRegime === 'Supercritical' ? 'text-red-400' : 'text-yellow-400'}`}>
+                  {calculatePhysics().flowRegime}
+                </p>
+                <p className="text-[var(--parchment)]/40 text-xs mt-1">Fr {'<'} 1 or Fr {'>'} 1</p>
+              </div>
+              <div className="bg-[var(--river-blue)]/30 p-2 rounded">
+                <p className="text-[var(--parchment)]/60 text-xs">Hydraulic Radius (m)</p>
+                <p className="text-[var(--aqua)] font-mono">{calculatePhysics().hydraulicRadius}</p>
+                <p className="text-[var(--parchment)]/40 text-xs mt-1">R = A / P</p>
+              </div>
+            </div>
+            <p className="mt-3 text-xs text-[var(--parchment)]/50 italic">
+              Manning's equation used for open channel flow. n = 0.015 (smooth stone channel)
+            </p>
+          </div>
+        )}
 
         <div className="mt-4 p-3 bg-[var(--deep-ocean)]/60 rounded-lg border border-[var(--aqua)]/20">
           <div className="flex items-start gap-2">
