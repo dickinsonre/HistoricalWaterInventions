@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { X, ChevronLeft, ChevronRight, Wrench, Sparkles, History, MessageSquare, MapPin, Calendar, Droplets, Image, FileCode, Download, Eye, FileSpreadsheet, FileText } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Wrench, Sparkles, History, MessageSquare, MapPin, Calendar, Droplets, Image, FileCode, Download, Eye, FileSpreadsheet, FileText, Copy, Check } from "lucide-react";
 import { getAllArtifacts, gameData, ArtifactData } from "../../data/gameData";
 import { getInventionDetail, inventionDiagrams } from "../../data/inventionDetails";
 import { getSwmmModelForInvention, downloadSWMM5Model, generateSWMM5File } from "../../lib/swmm5Export";
 import { generateICMCSV, generateCivil3DScript, downloadExport } from "../../lib/civil3dExport";
+
+type PreviewType = "swmm5" | "icm" | "civil3d" | null;
 
 interface InventionDetailProps {
   artifactId: string;
@@ -14,13 +16,45 @@ interface InventionDetailProps {
 }
 
 export default function InventionDetail({ artifactId, onClose, onNavigate }: InventionDetailProps) {
-  const [showSwmmPreview, setShowSwmmPreview] = useState(false);
+  const [activePreview, setActivePreview] = useState<PreviewType>(null);
+  const [copied, setCopied] = useState(false);
   const allArtifacts = getAllArtifacts();
   const currentIndex = allArtifacts.findIndex(a => a.id === artifactId);
   const artifact = allArtifacts[currentIndex];
   const details = getInventionDetail(artifactId);
   const swmmModel = getSwmmModelForInvention(artifactId);
-  const swmmContent = showSwmmPreview ? generateSWMM5File(artifactId) : null;
+
+  const getPreviewContent = (): string => {
+    if (activePreview === "swmm5") return generateSWMM5File(artifactId) || "";
+    if (activePreview === "icm") return generateICMCSV(artifactId);
+    if (activePreview === "civil3d") return generateCivil3DScript(artifactId, artifact?.name || "");
+    return "";
+  };
+
+  const getPreviewTitle = (): { title: string; ext: string; color: string } => {
+    if (activePreview === "swmm5") return { title: "SWMM5 Model", ext: ".inp", color: "var(--cerulean)" };
+    if (activePreview === "icm") return { title: "ICM CSV Export", ext: ".csv", color: "var(--gold)" };
+    if (activePreview === "civil3d") return { title: "Civil 3D Script", ext: ".scr", color: "var(--terracotta)" };
+    return { title: "", ext: "", color: "" };
+  };
+
+  const handleCopy = async () => {
+    const content = getPreviewContent();
+    await navigator.clipboard.writeText(content);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleDownload = () => {
+    const content = getPreviewContent();
+    if (activePreview === "swmm5") {
+      downloadSWMM5Model(artifactId, swmmModel?.name || artifact?.name || "model");
+    } else if (activePreview === "icm") {
+      downloadExport(content, `${artifactId}_ICM.csv`);
+    } else if (activePreview === "civil3d") {
+      downloadExport(content, `${artifactId}_Civil3D.scr`);
+    }
+  };
 
   const findRegionAndLocation = (artifactId: string) => {
     for (const region of gameData.regions) {
@@ -110,74 +144,119 @@ export default function InventionDetail({ artifactId, onClose, onNavigate }: Inv
 
         {swmmModel && (
           <div className="bg-[var(--cerulean)]/10 border border-[var(--cerulean)]/30 rounded-lg p-3 mb-4">
-            <div className="flex items-center justify-between flex-wrap gap-2">
-              <div className="flex items-center gap-2">
-                <FileCode size={18} className="text-[var(--cerulean)]" />
-                <div>
-                  <p className="text-[var(--parchment)] text-sm font-medium">SWMM5, ICM, Civil 3D Network Available</p>
-                  <p className="text-[var(--parchment)]/60 text-xs">{swmmModel.name} • {swmmModel.period}</p>
+            <div className="flex items-center gap-2 mb-3">
+              <FileCode size={18} className="text-[var(--cerulean)]" />
+              <div>
+                <p className="text-[var(--parchment)] text-sm font-medium">SWMM5, ICM, Civil 3D Network Available</p>
+                <p className="text-[var(--parchment)]/60 text-xs">{swmmModel.name} • {swmmModel.period}</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+              <div className="bg-[var(--cerulean)]/20 border border-[var(--cerulean)]/40 rounded-lg p-2">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[var(--cerulean)] text-sm font-medium">SWMM5</span>
+                  <span className="text-[var(--parchment)]/50 text-xs">.inp</span>
+                </div>
+                <div className="flex gap-1">
+                  <Button 
+                    size="sm" 
+                    onClick={() => setActivePreview("swmm5")}
+                    className="flex-1 bg-[var(--deep-ocean)] hover:bg-[var(--deep-ocean)]/80 text-[var(--parchment)] border border-[var(--cerulean)]/50 text-xs px-2"
+                  >
+                    <Eye size={12} className="mr-1" />
+                    Preview
+                  </Button>
+                  <Button 
+                    size="sm" 
+                    onClick={() => downloadSWMM5Model(artifactId, swmmModel.name)}
+                    className="bg-[var(--cerulean)] hover:bg-[var(--cerulean)]/80 text-white text-xs px-2"
+                  >
+                    <Download size={12} />
+                  </Button>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-2">
-                <Button 
-                  size="sm" 
-                  onClick={() => setShowSwmmPreview(true)}
-                  className="bg-[var(--deep-ocean)] hover:bg-[var(--deep-ocean)]/80 text-[var(--parchment)] border border-[var(--cerulean)]/50"
-                >
-                  <Eye size={14} className="mr-1" />
-                  Preview
-                </Button>
-                <Button 
-                  size="sm" 
-                  onClick={() => downloadSWMM5Model(artifactId, swmmModel.name)}
-                  className="bg-[var(--cerulean)] hover:bg-[var(--cerulean)]/80 text-white"
-                >
-                  <Download size={14} className="mr-1" />
-                  SWMM5
-                </Button>
-                <Button 
-                  size="sm" 
-                  onClick={() => {
-                    const content = generateICMCSV(artifactId);
-                    downloadExport(content, `${artifactId}_ICM.csv`);
-                  }}
-                  className="bg-[var(--gold)] hover:bg-[var(--gold)]/80 text-[var(--deep-ocean)]"
-                >
-                  <FileSpreadsheet size={14} className="mr-1" />
-                  ICM
-                </Button>
-                <Button 
-                  size="sm" 
-                  onClick={() => {
-                    const content = generateCivil3DScript(artifactId, artifact.name);
-                    downloadExport(content, `${artifactId}_Civil3D.scr`);
-                  }}
-                  className="bg-[var(--terracotta)] hover:bg-[var(--terracotta)]/80 text-white"
-                >
-                  <FileText size={14} className="mr-1" />
-                  Civil 3D
-                </Button>
+              <div className="bg-[var(--gold)]/20 border border-[var(--gold)]/40 rounded-lg p-2">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[var(--gold)] text-sm font-medium">ICM</span>
+                  <span className="text-[var(--parchment)]/50 text-xs">.csv</span>
+                </div>
+                <div className="flex gap-1">
+                  <Button 
+                    size="sm" 
+                    onClick={() => setActivePreview("icm")}
+                    className="flex-1 bg-[var(--deep-ocean)] hover:bg-[var(--deep-ocean)]/80 text-[var(--parchment)] border border-[var(--gold)]/50 text-xs px-2"
+                  >
+                    <Eye size={12} className="mr-1" />
+                    Preview
+                  </Button>
+                  <Button 
+                    size="sm" 
+                    onClick={() => {
+                      const content = generateICMCSV(artifactId);
+                      downloadExport(content, `${artifactId}_ICM.csv`);
+                    }}
+                    className="bg-[var(--gold)] hover:bg-[var(--gold)]/80 text-[var(--deep-ocean)] text-xs px-2"
+                  >
+                    <Download size={12} />
+                  </Button>
+                </div>
+              </div>
+              <div className="bg-[var(--terracotta)]/20 border border-[var(--terracotta)]/40 rounded-lg p-2">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[var(--terracotta)] text-sm font-medium">Civil 3D</span>
+                  <span className="text-[var(--parchment)]/50 text-xs">.scr</span>
+                </div>
+                <div className="flex gap-1">
+                  <Button 
+                    size="sm" 
+                    onClick={() => setActivePreview("civil3d")}
+                    className="flex-1 bg-[var(--deep-ocean)] hover:bg-[var(--deep-ocean)]/80 text-[var(--parchment)] border border-[var(--terracotta)]/50 text-xs px-2"
+                  >
+                    <Eye size={12} className="mr-1" />
+                    Preview
+                  </Button>
+                  <Button 
+                    size="sm" 
+                    onClick={() => {
+                      const content = generateCivil3DScript(artifactId, artifact.name);
+                      downloadExport(content, `${artifactId}_Civil3D.scr`);
+                    }}
+                    className="bg-[var(--terracotta)] hover:bg-[var(--terracotta)]/80 text-white text-xs px-2"
+                  >
+                    <Download size={12} />
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
         )}
 
-        {showSwmmPreview && swmmContent && swmmModel && (
+        {activePreview && (
           <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
             <div 
-              className="bg-[var(--deep-ocean)] border border-[var(--cerulean)]/50 rounded-lg shadow-2xl flex flex-col"
-              style={{ width: '80%', maxWidth: '900px', height: '80%', maxHeight: '700px', resize: 'both', overflow: 'auto', minWidth: '400px', minHeight: '300px' }}
+              className="bg-[var(--deep-ocean)] border rounded-lg shadow-2xl flex flex-col"
+              style={{ 
+                width: '80%', 
+                maxWidth: '900px', 
+                height: '80%', 
+                maxHeight: '700px', 
+                resize: 'both', 
+                overflow: 'auto', 
+                minWidth: '400px', 
+                minHeight: '300px',
+                borderColor: getPreviewTitle().color 
+              }}
             >
-              <div className="flex items-center justify-between p-4 border-b border-[var(--cerulean)]/30">
+              <div className="flex items-center justify-between p-4 border-b" style={{ borderColor: `${getPreviewTitle().color}50` }}>
                 <div className="flex items-center gap-2">
-                  <FileCode size={20} className="text-[var(--cerulean)]" />
-                  <h3 className="font-heading text-lg text-[var(--gold)]">SWMM5 Model Preview</h3>
-                  <span className="text-[var(--parchment)]/60 text-sm">(.inp file)</span>
+                  <FileCode size={20} style={{ color: getPreviewTitle().color }} />
+                  <h3 className="font-heading text-lg text-[var(--gold)]">{getPreviewTitle().title} Preview</h3>
+                  <span className="text-[var(--parchment)]/60 text-sm">({getPreviewTitle().ext} file)</span>
                 </div>
                 <Button 
                   size="sm" 
                   variant="ghost"
-                  onClick={() => setShowSwmmPreview(false)}
+                  onClick={() => setActivePreview(null)}
                   className="text-[var(--parchment)] hover:bg-[var(--cerulean)]/30"
                 >
                   <X size={20} />
@@ -186,24 +265,34 @@ export default function InventionDetail({ artifactId, onClose, onNavigate }: Inv
               <div className="flex-1 p-4 overflow-hidden">
                 <textarea
                   readOnly
-                  value={swmmContent}
-                  className="w-full h-full bg-[#1a2a3a] text-[#e0e8f0] font-mono text-sm p-4 rounded border border-[var(--cerulean)]/30 resize-none"
-                  style={{ minHeight: '100%' }}
+                  value={getPreviewContent()}
+                  className="w-full h-full bg-[#1a2a3a] text-[#e0e8f0] font-mono text-sm p-4 rounded border resize-none"
+                  style={{ minHeight: '100%', borderColor: `${getPreviewTitle().color}50` }}
                 />
               </div>
-              <div className="flex justify-end gap-2 p-4 border-t border-[var(--cerulean)]/30">
+              <div className="flex justify-end gap-2 p-4 border-t" style={{ borderColor: `${getPreviewTitle().color}50` }}>
                 <Button 
                   size="sm" 
-                  onClick={() => downloadSWMM5Model(artifactId, swmmModel.name)}
-                  className="bg-[var(--cerulean)] hover:bg-[var(--cerulean)]/80 text-white"
+                  onClick={handleCopy}
+                  className="bg-[var(--deep-ocean)] hover:bg-[var(--deep-ocean)]/80 text-[var(--parchment)] border"
+                  style={{ borderColor: `${getPreviewTitle().color}50` }}
+                >
+                  {copied ? <Check size={14} className="mr-1 text-green-400" /> : <Copy size={14} className="mr-1" />}
+                  {copied ? "Copied!" : "Copy to Clipboard"}
+                </Button>
+                <Button 
+                  size="sm" 
+                  onClick={handleDownload}
+                  style={{ backgroundColor: getPreviewTitle().color }}
+                  className="hover:opacity-80 text-white"
                 >
                   <Download size={14} className="mr-1" />
-                  Download .inp File
+                  Download {getPreviewTitle().ext}
                 </Button>
                 <Button 
                   size="sm" 
                   variant="ghost"
-                  onClick={() => setShowSwmmPreview(false)}
+                  onClick={() => setActivePreview(null)}
                   className="text-[var(--parchment)] hover:bg-[var(--cerulean)]/30"
                 >
                   Close
