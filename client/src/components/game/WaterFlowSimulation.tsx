@@ -67,8 +67,17 @@ export default function WaterFlowSimulation() {
   const [isPlaying, setIsPlaying] = useState(true);
   const [particles, setParticles] = useState<WaterParticle[]>([]);
   const [flowMultiplier, setFlowMultiplier] = useState(1);
+  const [gradientMultiplier, setGradientMultiplier] = useState(1);
 
-  const sim = simulations[activeSimulation];
+  const baseSim = simulations[activeSimulation];
+  const sim = {
+    ...baseSim,
+    gradient: baseSim.gradient * gradientMultiplier,
+    pathPoints: baseSim.pathPoints.map((p, i) => ({
+      x: p.x,
+      y: baseSim.pathPoints[0].y + (p.y - baseSim.pathPoints[0].y) * gradientMultiplier
+    }))
+  };
 
   const interpolatePath = useCallback((progress: number) => {
     const points = sim.pathPoints;
@@ -95,19 +104,23 @@ export default function WaterFlowSimulation() {
 
     const spawnInterval = setInterval(() => {
       setParticles(prev => {
-        const newParticle: WaterParticle = {
-          id: Date.now() + Math.random(),
-          x: 0,
-          y: 0,
-          speed: (0.003 + Math.random() * 0.002) * sim.flowRate * flowMultiplier,
-          size: 4 + Math.random() * 3
-        };
-        return [...prev.slice(-30), newParticle];
+        const particlesToAdd = Math.ceil(flowMultiplier * 2);
+        const newParticles: WaterParticle[] = [];
+        for (let i = 0; i < particlesToAdd; i++) {
+          newParticles.push({
+            id: Date.now() + Math.random() + i,
+            x: i * 0.02,
+            y: 0,
+            speed: (0.004 + Math.random() * 0.003) * baseSim.flowRate * flowMultiplier * gradientMultiplier,
+            size: 5 + Math.random() * 4
+          });
+        }
+        return [...prev.slice(-80), ...newParticles];
       });
-    }, 200 / flowMultiplier);
+    }, 80 / flowMultiplier);
 
     return () => clearInterval(spawnInterval);
-  }, [isPlaying, sim.flowRate, flowMultiplier]);
+  }, [isPlaying, baseSim.flowRate, flowMultiplier, gradientMultiplier]);
 
   useEffect(() => {
     if (!isPlaying) return;
@@ -231,24 +244,35 @@ export default function WaterFlowSimulation() {
           </div>
         </div>
 
-        <div className="mt-4 flex items-center justify-between">
-          <div className="flex items-center gap-4">
+        <div className="mt-4 flex items-center justify-between flex-wrap gap-4">
+          <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Gauge size={16} className="text-[var(--terracotta)]" />
               <span className="text-sm text-[var(--parchment)]/70">Flow Rate:</span>
               <input
                 type="range"
                 min="0.5"
-                max="2"
+                max="3"
                 step="0.1"
                 value={flowMultiplier}
                 onChange={(e) => setFlowMultiplier(parseFloat(e.target.value))}
-                className="w-20 accent-[var(--cerulean)]"
+                className="w-24 accent-[var(--cerulean)]"
               />
-              <span className="text-sm text-[var(--aqua)]">{(flowMultiplier * 100).toFixed(0)}%</span>
+              <span className="text-sm text-[var(--aqua)] w-12">{(flowMultiplier * 100).toFixed(0)}%</span>
             </div>
-            <div className="text-sm text-[var(--parchment)]/70">
-              Gradient: <span className="text-[var(--gold)]">{sim.gradient}%</span>
+            <div className="flex items-center gap-2">
+              <ArrowDown size={16} className="text-[var(--gold)]" />
+              <span className="text-sm text-[var(--parchment)]/70">Gradient:</span>
+              <input
+                type="range"
+                min="0.2"
+                max="3"
+                step="0.1"
+                value={gradientMultiplier}
+                onChange={(e) => setGradientMultiplier(parseFloat(e.target.value))}
+                className="w-24 accent-[var(--gold)]"
+              />
+              <span className="text-sm text-[var(--gold)] w-12">{(baseSim.gradient * gradientMultiplier).toFixed(1)}%</span>
             </div>
           </div>
         </div>
