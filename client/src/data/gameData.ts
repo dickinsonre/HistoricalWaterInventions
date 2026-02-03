@@ -4683,6 +4683,333 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "sumer",
+      name: "Sumer",
+      description: "Pioneers of water management technology in southern Mesopotamia",
+      position: [9, 0, -7],
+      color: "#CD853F",
+      era: "ancient",
+      dateRange: "4500-1900 BCE",
+      locations: [
+        {
+          id: "uruk",
+          name: "Uruk",
+          description: "World's first major city with advanced irrigation",
+          historicalContext: "Center of Sumerian civilization and water engineering",
+          coordinates: { lat: 31.3233, lng: 45.6369 },
+          artifacts: [
+            {
+              id: "sumerian-irrigation-canals",
+              name: "Sumerian Irrigation Canals",
+              description: "First large-scale artificial water distribution systems with primary, secondary, and tertiary channels",
+              rarity: "legendary",
+              historicalPeriod: "6000 BCE onwards",
+              significance: "Foundation of all irrigation engineering; dug with pickaxes, controlled by gates; each farmer allocated specific water amounts",
+              yearBCE: 6000,
+              category: "canal"
+            },
+            {
+              id: "sumerian-levees",
+              name: "Sumerian Levees & Flood Control",
+              description: "Earthen embankments to contain Tigris and Euphrates flooding",
+              rarity: "epic",
+              historicalPeriod: "4000 BCE onwards",
+              significance: "First flood control systems; protected crops and cities from seasonal floods",
+              yearBCE: 4000,
+              category: "dam"
+            },
+            {
+              id: "sumerian-water-laws",
+              name: "Sumerian Water Laws",
+              description: "World's first codified water rights and irrigation regulations",
+              rarity: "legendary",
+              historicalPeriod: "2100-1790 BCE",
+              significance: "Code of Hammurabi devoted hundreds of laws to water; addressed theft, negligence, allocation rights",
+              yearBCE: 1790,
+              category: "canal"
+            },
+            {
+              id: "sumerian-shadoof",
+              name: "Sumerian Shadoof (Precursor)",
+              description: "Lever-based water lifting device predating Egyptian adaptation",
+              rarity: "rare",
+              historicalPeriod: "3000 BCE",
+              significance: "Earliest known mechanical water-lifting device; influenced all subsequent designs",
+              yearBCE: 3000,
+              category: "water-lifting"
+            },
+            {
+              id: "sumerian-seed-drill",
+              name: "Sumerian Seed Drill with Irrigation",
+              description: "Combined planting technology with water delivery channels",
+              rarity: "epic",
+              historicalPeriod: "3500 BCE",
+              significance: "First combined planting and irrigation system; dramatically increased crop yields",
+              yearBCE: 3500,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "hittites",
+      name: "Hittite Empire",
+      description: "Masters of dam construction in the challenging terrain of Anatolia",
+      position: [6, 0, -3],
+      color: "#A0522D",
+      era: "ancient",
+      dateRange: "1700-1200 BCE",
+      locations: [
+        {
+          id: "hattusa",
+          name: "Hattusa",
+          description: "Hittite capital with sophisticated water infrastructure",
+          historicalContext: "UNESCO World Heritage site with remarkable water systems",
+          coordinates: { lat: 40.0217, lng: 34.6153 },
+          artifacts: [
+            {
+              id: "hittite-clay-dams",
+              name: "Hittite Clay Dams",
+              description: "Large hand-built dams using arc-shaped clay construction, some still functioning today",
+              rarity: "legendary",
+              historicalPeriod: "1400-1200 BCE",
+              significance: "Köylütolu Dam: 900m long, 25-30m high; some Hittite dams still provide water after 3,000+ years!",
+              yearBCE: 1400,
+              category: "dam"
+            },
+            {
+              id: "hittite-reservoirs",
+              name: "Hittite Reservoirs",
+              description: "Large-scale water storage systems for agricultural and urban use",
+              rarity: "epic",
+              historicalPeriod: "1500-1200 BCE",
+              significance: "Stored seasonal water for year-round use; multiple reservoirs around Hattusa",
+              yearBCE: 1500,
+              category: "dam"
+            },
+            {
+              id: "hittite-sacred-tunnels",
+              name: "Hittite Sacred Water Tunnels",
+              description: "Underground passages accessing 'holy water' for religious ceremonies",
+              rarity: "rare",
+              historicalPeriod: "1400-1200 BCE",
+              significance: "Connected underground water to spiritual beliefs about the underworld; water sources treated as divine portals",
+              yearBCE: 1400,
+              category: "aqueduct"
+            },
+            {
+              id: "hittite-urban-drainage",
+              name: "Hittite Urban Drainage",
+              description: "Sophisticated sewage systems with oval cleaning holes for maintenance",
+              rarity: "rare",
+              historicalPeriod: "1400-1200 BCE",
+              significance: "Advanced sanitation; cleaning holes prevented blockages; strict cleanliness laws—negligence punishable by death",
+              yearBCE: 1400,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "canaan",
+      name: "Canaan & Ancient Israel",
+      description: "Pioneers of siege-proof urban water systems in a water-scarce land",
+      position: [7, 0, -5],
+      color: "#DEB887",
+      era: "ancient",
+      dateRange: "3300-586 BCE",
+      locations: [
+        {
+          id: "jerusalem",
+          name: "Jerusalem",
+          description: "City of tunnels and hidden water sources",
+          historicalContext: "Strategic water systems enabled survival during sieges",
+          coordinates: { lat: 31.7683, lng: 35.2137 },
+          artifacts: [
+            {
+              id: "hezekiahs-tunnel",
+              name: "Hezekiah's Tunnel (Siloam Tunnel)",
+              description: "533-meter underground tunnel bringing Gihon Spring water inside Jerusalem's walls",
+              rarity: "legendary",
+              historicalPeriod: "701 BCE",
+              significance: "Cut through solid rock from both ends; workers met in the middle; still carries water today after 2,700 years",
+              yearBCE: 701,
+              category: "aqueduct"
+            },
+            {
+              id: "pool-of-siloam",
+              name: "Pool of Siloam",
+              description: "Stone-lined pool receiving water from Hezekiah's Tunnel for ritual purification",
+              rarity: "epic",
+              historicalPeriod: "700 BCE",
+              significance: "'Living water' (running water) considered ritually pure; stone jars held 20-30 gallons each",
+              yearBCE: 700,
+              category: "fountain"
+            },
+            {
+              id: "canaanite-cisterns",
+              name: "Canaanite Stone Cisterns",
+              description: "Plastered underground chambers for rainwater collection and storage",
+              rarity: "rare",
+              historicalPeriod: "2000-500 BCE",
+              significance: "Lime plaster waterproofing enabled settlement in areas without springs; crucial for survival",
+              yearBCE: 2000,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "megiddo",
+          name: "Megiddo",
+          description: "Strategic city with remarkable water shaft system",
+          historicalContext: "Armageddon—site of many battles due to strategic water access",
+          coordinates: { lat: 32.5847, lng: 35.1847 },
+          artifacts: [
+            {
+              id: "megiddo-water-system",
+              name: "Megiddo Water System",
+              description: "Vertical shaft and horizontal tunnel reaching underground spring from inside city walls",
+              rarity: "epic",
+              historicalPeriod: "1200-900 BCE",
+              significance: "37m deep shaft + 70m tunnel; accessed water during sieges without leaving protection of walls",
+              yearBCE: 1100,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "syria-orontes",
+      name: "Syria (Orontes Valley)",
+      description: "Home of the legendary norias—most efficient pre-industrial water lifting",
+      position: [8, 0, -4],
+      color: "#CD5C5C",
+      era: "classical",
+      dateRange: "200 BCE - Present",
+      locations: [
+        {
+          id: "hama",
+          name: "Hama",
+          description: "City of the Giant Water Wheels",
+          historicalContext: "Norias have operated here for nearly 2,000 years",
+          coordinates: { lat: 35.1318, lng: 36.7518 },
+          artifacts: [
+            {
+              id: "hama-norias",
+              name: "Norias of Hama",
+              description: "Giant wooden water wheels up to 20 meters in diameter, powered solely by river current",
+              rarity: "legendary",
+              historicalPeriod: "200 BCE - Present",
+              significance: "Up to 153,000 liters per HOUR (10th century record); 120+ compartments per wheel; no animals or humans needed—pure river power",
+              yearBCE: 200,
+              category: "water-lifting"
+            },
+            {
+              id: "syrian-aqueducts",
+              name: "Syrian Aqueduct Networks",
+              description: "Stone and wood channels carrying noria-lifted water to distant fields and cities",
+              rarity: "epic",
+              historicalPeriod: "100 BCE onwards",
+              significance: "Extended irrigation far from river banks; enabled agriculture in otherwise dry areas",
+              yearBCE: 100,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "syrian-qanat",
+          name: "Syrian Qanat Region",
+          description: "239 documented qanat systems in Syria",
+          historicalContext: "Underground irrigation across Syrian landscape",
+          coordinates: { lat: 33.5, lng: 36.3 },
+          artifacts: [
+            {
+              id: "syrian-qanats",
+              name: "Syrian Qanat Systems",
+              description: "Underground gravity-fed tunnel networks from mountain aquifers to lowland settlements",
+              rarity: "legendary",
+              historicalPeriod: "1000 BCE onwards",
+              significance: "239 qanats documented (1993-94 survey); no pumps needed—pure gravity; shafts for construction and maintenance; protected from evaporation",
+              yearBCE: 1000,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "mongol-steppe",
+      name: "Mongol & Steppe Peoples",
+      description: "Nomadic transmitters of water technology across Eurasia",
+      position: [14, 0, -2],
+      color: "#8B0000",
+      era: "medieval",
+      dateRange: "200 BCE - 1400 CE",
+      locations: [
+        {
+          id: "karakorum",
+          name: "Karakorum",
+          description: "Mongol capital with remarkable drinking fountain",
+          historicalContext: "Center of the largest contiguous land empire",
+          coordinates: { lat: 47.2, lng: 102.8 },
+          artifacts: [
+            {
+              id: "mongke-khan-fountain",
+              name: "Möngke Khan's Silver Tree Fountain",
+              description: "Elaborate automaton fountain with silver tree dispensing four different drinks",
+              rarity: "legendary",
+              historicalPeriod: "1250s CE",
+              significance: "Built by Parisian craftsman Guillaume Boucher; angel automaton with trumpet; dispensed wine, mead, koumiss, and rice wine from separate spouts",
+              yearBCE: -1254,
+              category: "fountain"
+            },
+            {
+              id: "mongol-water-transfer",
+              name: "Mongol Technology Transfer Network",
+              description: "Systematic relocation of artisans spreading water technologies across Eurasia",
+              rarity: "epic",
+              historicalPeriod: "1200-1400 CE",
+              significance: "Connected Chinese irrigation to Middle East; spread noria technology; relocated engineers across empire; accelerated water tech development",
+              yearBCE: -1200,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "steppe-camps",
+          name: "Central Asian Steppe",
+          description: "Nomadic water knowledge passed through generations",
+          historicalContext: "Vast grasslands between Lake Baikal and Aral Sea",
+          coordinates: { lat: 46.0, lng: 100.0 },
+          artifacts: [
+            {
+              id: "steppe-water-knowledge",
+              name: "Steppe Water Location Knowledge",
+              description: "Oral traditions passing down locations of springs, wells, and lakes across the vast steppe",
+              rarity: "rare",
+              historicalPeriod: "Ancient - Medieval",
+              significance: "Camps positioned within days of major water sources; knowledge passed father to son for generations",
+              yearBCE: 500,
+              category: "irrigation"
+            },
+            {
+              id: "portable-water-storage",
+              name: "Nomadic Portable Water Systems",
+              description: "Leather bags, containers, and carts for water transport across dry terrain",
+              rarity: "common",
+              historicalPeriod: "Ancient - Medieval",
+              significance: "Enabled survival across waterless stretches; water one of 'Three Chandmani' (three gems) on State Banner since 15th century",
+              yearBCE: 200,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
     }
   ]
 };
