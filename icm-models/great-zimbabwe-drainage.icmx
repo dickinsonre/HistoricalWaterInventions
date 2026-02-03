@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ICMExchange version="1.0">
+  <Model>
+    <Name>Great Zimbabwe Drainage System</Name>
+    <Description>Stone-lined drains integrated into Africa\</Description>
+    <Civilization>Great Zimbabwe</Civilization>
+    <Period>11th-15th Century CE</Period>
+    <EngineeringNotes></EngineeringNotes>
+    <CreatedBy>Robert Dickinson - Historical Water Inventions</CreatedBy>
+    <Units>Metric</Units>
+  </Model>
+  
+  <Nodes>
+    <Node id="J1" type="Manhole">
+      <X>1000.0</X>
+      <Y>5000.0</Y>
+      <GroundLevel>12.0</GroundLevel>
+      <ChamberFloor>10.0</ChamberFloor>
+      <ChamberArea>3.14</ChamberArea>
+    </Node>
+    <Node id="J2" type="Manhole">
+      <X>5000.0</X>
+      <Y>5000.0</Y>
+      <GroundLevel>11.99</GroundLevel>
+      <ChamberFloor>9.99</ChamberFloor>
+      <ChamberArea>3.14</ChamberArea>
+    </Node>
+    <Node id="Out1" type="Outfall">
+      <X>9000.0</X>
+      <Y>5000.0</Y>
+      <GroundLevel>11.98</GroundLevel>
+      <InvertLevel>9.98</InvertLevel>
+      <OutfallType>Free</OutfallType>
+    </Node>
+  </Nodes>
+  
+  <Links>
+    <Link id="C1" type="Conduit">
+      <USNode>J1</USNode>
+      <DSNode>J2</DSNode>
+      <Length>500</Length>
+      <Shape>Rectangular</Shape>
+      <Width>0.4</Width>
+      <Height>0.3</Height>
+      <Roughness type="Manning">0.022</Roughness>
+      <USInvert>10.0</USInvert>
+      <DSInvert>9.99</DSInvert>
+    </Link>
+    <Link id="C2" type="Conduit">
+      <USNode>J2</USNode>
+      <DSNode>Out1</DSNode>
+      <Length>250</Length>
+      <Shape>Rectangular</Shape>
+      <Width>0.4</Width>
+      <Height>0.3</Height>
+      <Roughness type="Manning">0.022</Roughness>
+      <USInvert>9.99</USInvert>
+      <DSInvert>9.98</DSInvert>
+    </Link>
+  </Links>
+  
+  <Inflows>
+    <Inflow node="J1">
+      <Type>Constant</Type>
+      <FlowRate unit="m3/s">0.5</FlowRate>
+    </Inflow>
+  </Inflows>
+  
+  <SimulationParameters>
+    <StartDate>2024-01-01</StartDate>
+    <EndDate>2024-01-02</EndDate>
+    <TimeStep>30</TimeStep>
+    <RoutingMethod>DynamicWave</RoutingMethod>
+  </SimulationParameters>
+</ICMExchange>

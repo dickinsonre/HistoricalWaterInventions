@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StormAndSanitaryAnalysis version="2024">
+  <ProjectInfo>
+    <Name>Rani ki Vav Stepwell</Name>
+    <Description>7-story inverted temple stepwell with 500+ sculptures</Description>
+    <Client>Historical Water Inventions Project</Client>
+    <Engineer>Robert Dickinson</Engineer>
+    <Civilization>Medieval India (Gujarat)</Civilization>
+    <HistoricalPeriod>1063 CE</HistoricalPeriod>
+    <Notes></Notes>
+    <Units>Metric</Units>
+    <FlowUnits>CMS</FlowUnits>
+  </ProjectInfo>
+  
+  <AnalysisOptions>
+    <FlowRouting>DynamicWave</FlowRouting>
+    <InfiltrationMethod>Horton</InfiltrationMethod>
+    <LinkOffsetConvention>Depth</LinkOffsetConvention>
+    <MinSlope>0.0001</MinSlope>
+  </AnalysisOptions>
+  
+  <TimeSettings>
+    <StartDate>01/01/2024</StartDate>
+    <StartTime>00:00:00</StartTime>
+    <EndDate>01/02/2024</EndDate>
+    <EndTime>00:00:00</EndTime>
+    <ReportingStep>00:05:00</ReportingStep>
+    <RoutingStep>00:00:30</RoutingStep>
+  </TimeSettings>
+  
+  <Structures>
+    <Structure id="J1" type="Junction">
+      <Easting>1000.000</Easting>
+      <Northing>5000.000</Northing>
+      <RimElevation>12.000</RimElevation>
+      <InvertElevation>10.000</InvertElevation>
+      <MaxDepth>2</MaxDepth>
+      <InitialDepth>0.000</InitialDepth>
+    </Structure>
+    <Structure id="J2" type="Junction">
+      <Easting>5000.000</Easting>
+      <Northing>5000.000</Northing>
+      <RimElevation>11.9904</RimElevation>
+      <InvertElevation>9.9904</InvertElevation>
+      <MaxDepth>2</MaxDepth>
+      <InitialDepth>0.000</InitialDepth>
+    </Structure>
+    <Structure id="Out1" type="Outfall">
+      <Easting>9000.000</Easting>
+      <Northing>5000.000</Northing>
+      <InvertElevation>9.9808</InvertElevation>
+      <OutfallType>FREE</OutfallType>
+      <Gated>NO</Gated>
+    </Structure>
+  </Structures>
+  
+  <Pipes>
+    <Pipe id="C1">
+      <FromStructure>J1</FromStructure>
+      <ToStructure>J2</ToStructure>
+      <Length>64</Length>
+      <Shape>RECT_OPEN</Shape>
+      <Rise>1</Rise>
+      <Span>2</Span>
+      <ManningsN>0.02</ManningsN>
+      <UpstreamInvert>10.000</UpstreamInvert>
+      <DownstreamInvert>9.9904</DownstreamInvert>
+      <Material>Stone/Masonry</Material>
+    </Pipe>
+    <Pipe id="C2">
+      <FromStructure>J2</FromStructure>
+      <ToStructure>Out1</ToStructure>
+      <Length>32</Length>
+      <Shape>RECT_OPEN</Shape>
+      <Rise>1</Rise>
+      <Span>2</Span>
+      <ManningsN>0.02</ManningsN>
+      <UpstreamInvert>9.9904</UpstreamInvert>
+      <DownstreamInvert>9.9808</DownstreamInvert>
+      <Material>Stone/Masonry</Material>
+    </Pipe>
+  </Pipes>
+  
+  <Inflows>
+    <DirectInflow structure="J1">
+      <Constituent>FLOW</Constituent>
+      <BaselineFlow>1</BaselineFlow>
+      <ScaleFactor>1.0</ScaleFactor>
+    </DirectInflow>
+  </Inflows>
+</StormAndSanitaryAnalysis>
