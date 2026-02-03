@@ -29,7 +29,6 @@ export const inventionDiagrams: Record<string, string> = {
   "roman-orifice-control": "/diagrams/orifice-control.png",
   "qanat": "/diagrams/qanat.png",
   "qanat-plans": "/diagrams/qanat.png",
-  "jerwan-aqueduct": "/diagrams/aqueduct.png",
   "irrigation-canals": "/diagrams/irrigation-canal.png",
   "great-bath": "/diagrams/great-bath.png",
   "covered-drains": "/diagrams/cloaca-maxima.png",
@@ -46,6 +45,40 @@ export const inventionDiagrams: Record<string, string> = {
   "bamboo-pipe": "/diagrams/aqueduct.png",
   "noria": "/diagrams/noria.png",
   "noria-wheel": "/diagrams/noria.png",
+  "hama-norias": "/diagrams/noria.png",
+  "sumerian-irrigation-canals": "/diagrams/irrigation-canal.png",
+  "sumerian-levees": "/diagrams/ancient-dam.png",
+  "sumerian-water-laws": "/diagrams/irrigation-canal.png",
+  "sumerian-shadoof": "/diagrams/shaduf.png",
+  "sumerian-seed-drill": "/diagrams/irrigation-canal.png",
+  "hittite-clay-dams": "/diagrams/ancient-dam.png",
+  "hittite-reservoirs": "/diagrams/ancient-dam.png",
+  "hittite-sacred-tunnels": "/diagrams/qanat.png",
+  "hittite-urban-drainage": "/diagrams/cloaca-maxima.png",
+  "hezekiahs-tunnel": "/diagrams/qanat.png",
+  "pool-of-siloam": "/diagrams/roman-fountain.png",
+  "canaanite-cisterns": "/diagrams/ancient-dam.png",
+  "megiddo-water-system": "/diagrams/qanat.png",
+  "syrian-aqueducts": "/diagrams/aqueduct.png",
+  "syrian-qanats": "/diagrams/qanat.png",
+  "mongke-khan-fountain": "/diagrams/roman-fountain.png",
+  "mongol-water-transfer": "/diagrams/irrigation-canal.png",
+  "steppe-water-knowledge": "/diagrams/irrigation-canal.png",
+  "portable-water-storage": "/diagrams/irrigation-canal.png",
+  "jerwan-aqueduct": "/diagrams/aqueduct.png",
+  "assyrian-canals": "/diagrams/irrigation-canal.png",
+  "assyrian-water-warfare": "/diagrams/ancient-dam.png",
+  "assyrian-qanats": "/diagrams/qanat.png",
+  "hanging-gardens": "/diagrams/hanging-gardens.png",
+  "hammurabi-water-code": "/diagrams/irrigation-canal.png",
+  "babylonian-drainage": "/diagrams/cloaca-maxima.png",
+  "babylonian-flood-basins": "/diagrams/ancient-dam.png",
+  "subak-system": "/diagrams/subak.png",
+  "sawah-terraces": "/diagrams/rice-terraces.png",
+  "telaga-sacred-pools": "/diagrams/roman-fountain.png",
+  "segaran-reservoir": "/diagrams/ancient-dam.png",
+  "javanese-sluice-gates": "/diagrams/ancient-dam.png",
+  "petirtaan-pools": "/diagrams/roman-fountain.png",
   "alhambra-fountains": "/diagrams/roman-fountain.png",
   "fountain-lions": "/diagrams/roman-fountain.png",
   "al-jazari-automata": "/diagrams/water-clock.png",
@@ -81,7 +114,6 @@ export const inventionDiagrams: Record<string, string> = {
   "tipon-terraces": "/diagrams/tipon.png",
   "tipon": "/diagrams/tipon.png",
   "machu-picchu": "/diagrams/machu-picchu.png",
-  "subak-system": "/diagrams/subak.png",
   "bali-rice-terraces": "/diagrams/subak.png",
   "water-temple": "/diagrams/subak.png",
   "klong-network": "/diagrams/klongs.png",
@@ -1219,6 +1251,482 @@ export const inventionDetails: Record<string, InventionDetailData> = {
       "UNESCO World Heritage component"
     ],
     robertsNote: "The Chouara tannery has operated for 1,000 years. Same vats, same water channels, same methods. The water system is the key—you need continuous flow for quality leather."
+  },
+  "sumerian-irrigation-canals": {
+    tagline: "The foundation of all irrigation engineering",
+    keyFact: "6000+ years ago, Sumerians created the blueprint for every irrigation system since",
+    howItWorks: [
+      "Main canal (primary) diverts water from Tigris/Euphrates rivers",
+      "Controlled by sluice gates made of wood and clay",
+      "Secondary canals distribute water to regional areas",
+      "Tertiary channels deliver water to individual farm plots",
+      "Each farmer allocated specific water amounts based on land size",
+      "Dug with pickaxes and maintained by community labor"
+    ],
+    whyItMattered: [
+      "Created the Fertile Crescent—transformed desert into farmland",
+      "Supported first large cities in human history",
+      "Enabled food surplus for civilization development",
+      "Established water allocation principles still used today"
+    ],
+    legacyToday: [
+      "Same hierarchical canal system used in modern irrigation",
+      "Water rights laws descended from Sumerian codes",
+      "Mesopotamian irrigation principles in use for 8,000 years"
+    ],
+    technicalSpecs: {
+      materials: "Earthen embankments, wooden gates, clay linings",
+      dimensions: "Main canals 5-10m wide, secondary 2-3m wide",
+      capacity: "Irrigated millions of hectares of farmland"
+    },
+    robertsNote: "Every irrigation system you see today—from California to China—uses the same hierarchical principle the Sumerians invented. Main canal, distributaries, field channels. They figured out the fundamental architecture 6,000 years ago."
+  },
+  "sumerian-water-laws": {
+    tagline: "World's first water rights legislation",
+    keyFact: "Hammurabi's Code devoted hundreds of laws to water—theft, negligence, and fair allocation",
+    howItWorks: [
+      "Laws defined water rights for each landowner",
+      "Penalties for water theft or negligence",
+      "Community maintenance obligations specified",
+      "Dispute resolution procedures established",
+      "Allocation based on land area and crop needs",
+      "Canal inspectors enforced regulations"
+    ],
+    whyItMattered: [
+      "First codified water rights in human history",
+      "Prevented conflicts over scarce water resources",
+      "Enabled large-scale agricultural cooperation",
+      "Template for all subsequent water law"
+    ],
+    legacyToday: [
+      "Modern water law descends from these principles",
+      "Prior appropriation doctrine echoes Sumerian allocation",
+      "Community irrigation districts mirror ancient systems"
+    ],
+    robertsNote: "When I work on water rights cases today, I'm essentially applying principles the Sumerians codified 4,000 years ago. Who has priority? What are the maintenance obligations? How do you resolve disputes? They solved all of it."
+  },
+  "sumerian-levees": {
+    tagline: "Humanity's first battle against floods",
+    keyFact: "4000 BCE—Sumerians built earthen walls to tame the unpredictable Tigris and Euphrates",
+    howItWorks: [
+      "Earthen embankments built along river banks",
+      "Compacted clay and soil construction",
+      "Raised above expected flood levels",
+      "Gates allowed controlled flooding for irrigation",
+      "Maintained by conscripted community labor",
+      "Breach repair was emergency priority"
+    ],
+    whyItMattered: [
+      "Protected cities and crops from devastating floods",
+      "Enabled permanent settlement in floodplains",
+      "Transformed unpredictable rivers into assets",
+      "First large-scale civil engineering project"
+    ],
+    legacyToday: [
+      "New Orleans levees use same principles",
+      "Dutch dikes evolved from ancient concepts",
+      "Flood control levees protect billions worldwide"
+    ],
+    robertsNote: "The Tigris and Euphrates were wild rivers—flooding unpredictably and devastating crops. The Sumerians said 'we're going to control these rivers.' That decision created civilization."
+  },
+  "sumerian-shadoof": {
+    tagline: "The original water-lifting machine",
+    keyFact: "Lever physics applied to irrigation—predating Egyptian adaptation by centuries",
+    howItWorks: [
+      "Vertical post with horizontal pivoting beam",
+      "Bucket attached to one end of beam",
+      "Counterweight (stone or mud) on opposite end",
+      "Operator pulls bucket down into water source",
+      "Counterweight lifts filled bucket with minimal effort",
+      "Water poured into irrigation channel at top"
+    ],
+    whyItMattered: [
+      "First mechanical water-lifting device in history",
+      "Reduced labor for irrigation dramatically",
+      "Enabled farming above river level",
+      "Principle used in all subsequent lifting devices"
+    ],
+    legacyToday: [
+      "Still used in parts of Africa and Middle East",
+      "4,000+ years of continuous use",
+      "Lever principle in modern machinery"
+    ],
+    technicalSpecs: {
+      materials: "Wood pole, rope, clay bucket, stone counterweight",
+      capacity: "600-2,500 liters per hour per operator",
+      laborRequired: "One person can lift water 3-4 meters"
+    },
+    robertsNote: "The shadoof is beautiful engineering. You're using gravity and leverage to defeat gravity. The counterweight does most of the work—you just guide the bucket. It's still the most efficient way to lift small amounts of water by hand."
+  },
+  "hittite-clay-dams": {
+    tagline: "Engineering that outlasted empires",
+    keyFact: "Some Hittite dams still provide water after 3,000+ years of continuous service",
+    howItWorks: [
+      "Arc-shaped clay construction for structural strength",
+      "Built during droughts when rivers were low",
+      "Hand-compacted clay in layers for impermeability",
+      "Spillway channels for overflow control",
+      "Irrigation channels below dam deliver water to fields",
+      "Silt traps extend reservoir life"
+    ],
+    whyItMattered: [
+      "Stored water from seasonal rains for year-round use",
+      "Enabled agriculture in semi-arid Anatolia",
+      "Supported Hittite capital of Hattusa",
+      "Remarkably durable construction technique"
+    ],
+    legacyToday: [
+      "Köylütolu Dam: 900m long, 25-30m high—still functioning",
+      "Techniques studied by modern dam engineers",
+      "Proof that simple materials can last millennia"
+    ],
+    technicalSpecs: {
+      materials: "Compacted clay, stone foundations",
+      dimensions: "Köylütolu Dam: 900 meters long, 25-30 meters high",
+      capacity: "Stored millions of cubic meters of water"
+    },
+    robertsNote: "I've seen modern dams fail after 50 years. The Hittites built dams 3,000 years ago that still work. They understood clay compaction, arc geometry, and spillway design. We could learn a lot from studying their techniques."
+  },
+  "hittite-urban-drainage": {
+    tagline: "Ancient sanitation with modern features",
+    keyFact: "Oval cleaning holes for maintenance—a design still used today",
+    howItWorks: [
+      "Stone-lined channels beneath city streets",
+      "Oval access holes for cleaning and inspection",
+      "Graded slopes for gravity flow",
+      "Separation of wastewater from drinking water",
+      "Outfall channels to areas outside city",
+      "Strict cleanliness laws—negligence punishable by death"
+    ],
+    whyItMattered: [
+      "Protected public health in dense urban areas",
+      "Prevented disease from standing water",
+      "Enabled larger city populations",
+      "Set standard for urban sanitation"
+    ],
+    legacyToday: [
+      "Maintenance access points in all modern sewers",
+      "Separation of waste and potable water universal",
+      "Hittite principles in modern stormwater design"
+    ],
+    robertsNote: "The Hittites understood something critical: a drainage system is only as good as its maintenance. Those oval cleaning holes meant workers could actually clean the pipes. That's practical engineering."
+  },
+  "hezekiahs-tunnel": {
+    tagline: "533 meters through solid rock for survival",
+    keyFact: "Cut from both ends simultaneously—workers met in the middle with remarkable precision",
+    howItWorks: [
+      "Tunneled through 533 meters of solid limestone",
+      "Two teams worked from opposite ends simultaneously",
+      "Followed sound of pickaxes to meet in middle",
+      "Slight S-curve shows course corrections during construction",
+      "Gentle grade allows gravity flow from spring to pool",
+      "Gihon Spring hidden outside walls, water delivered inside"
+    ],
+    whyItMattered: [
+      "Jerusalem survived Assyrian siege of 701 BCE",
+      "Citizens accessed water without leaving city walls",
+      "Model for siege-proof urban water supply",
+      "Engineering marvel of the ancient world"
+    ],
+    legacyToday: [
+      "Still carries water after 2,700 years",
+      "Major archaeological and tourist site",
+      "Studied by engineers worldwide"
+    ],
+    technicalSpecs: {
+      materials: "Hand-cut through limestone rock",
+      dimensions: "533 meters long, 0.5m gradient over entire length",
+      laborRequired: "Estimated 2 years with hundreds of workers"
+    },
+    robertsNote: "Two teams, no surveying instruments, cutting through solid rock from opposite ends—and they met in the middle. The inscription they left describes hearing the other team's pickaxes. That's precision engineering by sound."
+  },
+  "megiddo-water-system": {
+    tagline: "Vertical shaft to underground spring—siege survival",
+    keyFact: "37 meters down, 70 meters across—accessing water without leaving city protection",
+    howItWorks: [
+      "Vertical shaft cut 37 meters down through rock",
+      "Horizontal tunnel extends 70 meters to underground spring",
+      "Hidden entrance outside city walls sealed and concealed",
+      "Stairs allow water carriers to descend and ascend",
+      "Spring water collected in underground pool",
+      "Continuous access during siege conditions"
+    ],
+    whyItMattered: [
+      "Megiddo controlled strategic trade routes",
+      "Water access determined if city could withstand siege",
+      "Protected spring from enemy discovery and poisoning",
+      "Model replicated at Hazor, Gibeon, Gezer"
+    ],
+    legacyToday: [
+      "Armageddon—site of prophesied final battle",
+      "UNESCO World Heritage archaeological site",
+      "Testament to Bronze Age engineering"
+    ],
+    technicalSpecs: {
+      materials: "Cut through limestone bedrock",
+      dimensions: "37m vertical shaft + 70m horizontal tunnel"
+    },
+    robertsNote: "Megiddo is where the word 'Armageddon' comes from. The city controlled the only pass through the Carmel ridge. Whoever held Megiddo controlled trade between Egypt and Mesopotamia. That water system kept the city alive through dozens of sieges."
+  },
+  "hama-norias": {
+    tagline: "Giant water wheels powered by river current alone",
+    keyFact: "153,000 liters per HOUR—using only flowing water, no animals or humans needed",
+    howItWorks: [
+      "Giant wooden wheel up to 20 meters in diameter",
+      "Paddles around rim catch river current to turn wheel",
+      "120+ compartments scoop water as wheel rotates",
+      "Water discharged at top into aqueduct channel",
+      "Aqueduct carries water to distant irrigation fields",
+      "Self-operating 24/7 as long as river flows"
+    ],
+    whyItMattered: [
+      "Most efficient pre-industrial water lifting technology",
+      "Zero operating cost—river provides all power",
+      "Enabled irrigation far from river banks",
+      "Operated for nearly 2,000 years"
+    ],
+    legacyToday: [
+      "17 norias still standing in Hama, Syria",
+      "UNESCO tentative World Heritage list",
+      "Principle used in modern hydropower"
+    ],
+    technicalSpecs: {
+      materials: "Wooden construction, iron fittings",
+      dimensions: "Up to 20 meters diameter",
+      capacity: "153,000 liters per hour (10th century record)"
+    },
+    robertsNote: "The Hama norias are the most elegant water machines ever built. No fuel, no labor, no maintenance costs—just the river turning a wheel. Some are nearly 2,000 years old and they still work. That's sustainable engineering."
+  },
+  "syrian-qanats": {
+    tagline: "Underground rivers tapping mountain aquifers",
+    keyFact: "239 qanat systems documented in Syria—gravity-fed water without any pumping",
+    howItWorks: [
+      "Mother well dug to reach water table in highlands",
+      "Gently sloping tunnel carries water by gravity",
+      "Vertical shafts every 20-50 meters for construction and maintenance",
+      "Tunnel protected from evaporation unlike surface canals",
+      "Water emerges at outlet in lowland settlement",
+      "System operates indefinitely without power input"
+    ],
+    whyItMattered: [
+      "Enabled desert cities to thrive",
+      "No pumps, no energy cost—pure gravity",
+      "Evaporation losses minimal in underground tunnel",
+      "Sustainable for millennia"
+    ],
+    legacyToday: [
+      "239 qanats documented in Syria (1993-94 survey)",
+      "Some operating for over 2,500 years",
+      "UNESCO World Heritage in several countries"
+    ],
+    technicalSpecs: {
+      materials: "Hand-dug tunnels in earth and rock",
+      dimensions: "1-50+ km length, 1% gradient typical",
+      capacity: "10-500 liters per second depending on aquifer"
+    },
+    robertsNote: "I've studied qanat systems for decades. The concept is simple—tap groundwater where it's high, deliver it by gravity where it's needed. No pumps to break, no fuel to buy. Some qanats have operated for 2,700 years. Try that with a diesel pump."
+  },
+  "mongke-khan-fountain": {
+    tagline: "Silver tree dispensing four drinks from four spouts",
+    keyFact: "Built by Parisian craftsman for grandson of Genghis Khan—engineering marvel of the medieval world",
+    howItWorks: [
+      "Silver tree sculpture with fruit decorations",
+      "Four lions at base dispensing different drinks",
+      "Wine, mead, koumiss, and rice wine from separate pipes",
+      "Angelic automaton at top blows trumpet to signal drinks",
+      "Bellows system hidden below to power automaton",
+      "Servants below pumped drinks through hidden conduits"
+    ],
+    whyItMattered: [
+      "Demonstrated Mongol wealth and power",
+      "Combined Eastern and Western engineering knowledge",
+      "Symbolized Mongol control of trade routes",
+      "Automata technology centuries ahead of Europe"
+    ],
+    legacyToday: [
+      "Described by William of Rubruck (1254)",
+      "Example of medieval precision engineering",
+      "Symbol of Mongol capital Karakorum"
+    ],
+    robertsNote: "The Mongols conquered the world, then hired the best craftsmen from everywhere to build wonders like this. Guillaume Boucher was a Parisian goldsmith—captured or hired—who built this fountain. It shows how the Mongols spread technology across continents."
+  },
+  "mongol-water-transfer": {
+    tagline: "Connecting Chinese and Middle Eastern water knowledge",
+    keyFact: "Mongols relocated artisans across Eurasia, spreading irrigation and water technology faster than any empire before",
+    howItWorks: [
+      "Conquered regions forced to share technical knowledge",
+      "Artisans relocated across the empire",
+      "Chinese irrigation experts sent to Persia",
+      "Middle Eastern noria technology spread to China",
+      "Trade routes protected, allowing knowledge flow",
+      "Imperial standardization of measurements and methods"
+    ],
+    whyItMattered: [
+      "Accelerated water technology development",
+      "Connected previously isolated innovations",
+      "Created largest technology transfer network in history",
+      "Spread agricultural improvements across Asia"
+    ],
+    legacyToday: [
+      "Modern globalized technology transfer echoes this",
+      "Mongol period innovations still visible in regional techniques",
+      "Template for imperial knowledge management"
+    ],
+    robertsNote: "The Mongols weren't inventors—they were connectors. They moved a Chinese irrigation engineer to Persia, a Persian astronomer to China. Water technology that took centuries to spread now traveled in years. That's the real Mongol contribution to water engineering."
+  },
+  "assyrian-water-warfare": {
+    tagline: "Water as a weapon of conquest and siege",
+    keyFact: "Assyrians diverted the Euphrates to flood Babylon in 689 BCE—turning the river into a weapon",
+    howItWorks: [
+      "River diversion: cut enemy off from water supply",
+      "Dam and release: build reservoir, release to flood enemy",
+      "Cut aqueducts and destroy cisterns during siege",
+      "Poison or contaminate wells with corpses and waste",
+      "Control upstream water to threaten downstream cities",
+      "Use water access as negotiating leverage"
+    ],
+    whyItMattered: [
+      "First systematic military use of water control",
+      "Psychological warfare—threat of flooding",
+      "Could take cities without direct assault",
+      "Water control = political control"
+    ],
+    legacyToday: [
+      "Military water strategy still studied",
+      "Geneva Conventions now protect water infrastructure",
+      "Modern dam security concerns echo ancient tactics"
+    ],
+    robertsNote: "The Assyrians understood something modern generals still know: control the water, control the battlefield. When Sennacherib wanted to destroy Babylon, he didn't need to storm the walls. He just moved the river."
+  },
+  "hanging-gardens": {
+    tagline: "Water lifted 25 meters to terraced gardens—if they existed",
+    keyFact: "One of the Seven Wonders—thousands of gallons lifted daily by chain pumps or Archimedes screw",
+    howItWorks: [
+      "Water drawn from Euphrates River",
+      "Chain of buckets or Archimedes screw lifts water",
+      "Slaves or animals power the lifting mechanism",
+      "Water distributed to top terrace first",
+      "Cascades through middle and lower terraces",
+      "Drainage collects and recycles water to bottom"
+    ],
+    whyItMattered: [
+      "Demonstrated mastery of water lifting technology",
+      "Created impossible garden in desert climate",
+      "Symbol of Babylonian wealth and engineering",
+      "One of Seven Wonders of the Ancient World"
+    ],
+    legacyToday: [
+      "Inspiration for rooftop gardens worldwide",
+      "Vertical garden movement echoes concept",
+      "Symbol of environmental engineering ambition"
+    ],
+    technicalSpecs: {
+      materials: "Stone terraces, waterproofed with bitumen",
+      dimensions: "Estimated 20-25 meter lift height",
+      capacity: "Thousands of gallons daily"
+    },
+    robertsNote: "Whether the Hanging Gardens were in Babylon or Nineveh—or mythical—the engineering concept is real. Lifting water 25 meters requires serious technology. The chain pump or screw mechanism described could absolutely work."
+  },
+  "hammurabi-water-code": {
+    tagline: "First comprehensive water law—still echoed in modern courts",
+    keyFact: "Laws 53-56: negligent dam maintenance means you pay for ruined crops; irrigation flooding liability = 10 gur per gan",
+    howItWorks: [
+      "Law 53: Dam breaches—owner replaces damaged grain",
+      "Law 55: Irrigation negligence—pay crop value of flooded field",
+      "Law 56: Flood damage liability—10 gur grain per gan land",
+      "Canal inspectors enforce regulations",
+      "Local overseers manage day-to-day disputes",
+      "King serves as ultimate authority"
+    ],
+    whyItMattered: [
+      "First written water rights in history",
+      "Established liability for water damages",
+      "Created enforcement hierarchy",
+      "Template for all subsequent water law"
+    ],
+    legacyToday: [
+      "Modern tort liability for water damage echoes these laws",
+      "Prior appropriation doctrine in Western US",
+      "Community irrigation district governance"
+    ],
+    robertsNote: "I've testified in water rights cases that basically applied Hammurabi's principles. Who's liable when the canal floods? What's fair compensation? He figured this out 3,700 years ago."
+  },
+  "babylonian-drainage": {
+    tagline: "Terracotta pipes and brick conduits for city sanitation",
+    keyFact: "Precisely fitted clay pipes drained streets to brick-lined collectors emptying to the Euphrates",
+    howItWorks: [
+      "Drain grates in street surfaces",
+      "Terracotta pipe network under streets",
+      "Fired clay pipes precisely fitted together",
+      "Main collector channels brick-lined",
+      "Gravity flow to river outfall",
+      "Separate from drinking water systems"
+    ],
+    whyItMattered: [
+      "Enabled dense urban population",
+      "Prevented disease from standing water",
+      "Managed monsoon and flood waters",
+      "Set standard for urban sanitation"
+    ],
+    legacyToday: [
+      "Same basic principles in modern storm drains",
+      "Separated storm and sanitary sewers",
+      "Gravity-flow drainage universal"
+    ],
+    robertsNote: "The Babylonians understood urban drainage fundamentals that some modern cities still struggle with: get the water off the streets, get it into pipes, get it to the river. Simple concept, but requires infrastructure investment."
+  },
+  "subak-system": {
+    tagline: "Water democracy—one farmer, one vote, regardless of land size",
+    keyFact: "UNESCO World Heritage: thousands of farmers coordinate through temple meetings with no central authority",
+    howItWorks: [
+      "Water from volcanic highlands distributed by primary canal",
+      "Each Subak unit is a village cooperative",
+      "Local temple coordinates water allocation",
+      "Democratic council: one farmer = one vote",
+      "Tektek formula: water share = land × crop × season / total",
+      "Regional water temple coordinates multiple Subaks"
+    ],
+    whyItMattered: [
+      "Community-based water governance",
+      "No central authority needed",
+      "Integrates religion with resource management",
+      "Sustainable for 1,000+ years"
+    ],
+    legacyToday: [
+      "UNESCO World Heritage Cultural Landscape",
+      "Model for sustainable irrigation worldwide",
+      "Still operating exactly as designed"
+    ],
+    robertsNote: "The Subak system is the best example of sustainable water governance I've ever studied. No bureaucracy, no central authority—just farmers meeting at temples and figuring it out together. It's worked for a thousand years."
+  },
+  "segaran-reservoir": {
+    tagline: "6.5 hectares of water engineering for Majapahit's capital",
+    keyFact: "1 million+ cubic meters capacity with brick-lined channels and overflow spillways",
+    howItWorks: [
+      "Intake canal from Brantas River",
+      "Multiple reservoirs for redundancy",
+      "Segaran main reservoir: 6.5 hectares",
+      "Brick-lined channels with precise gradients",
+      "Overflow spillways for flood control",
+      "Distribution to palace, temples, markets, craft quarters"
+    ],
+    whyItMattered: [
+      "Supported largest pre-colonial Indonesian city",
+      "Enabled year-round water supply",
+      "Integration with urban planning",
+      "Template for Javanese hydraulic cities"
+    ],
+    legacyToday: [
+      "Archaeological evidence of sophisticated engineering",
+      "Study of ancient urban water systems",
+      "Majapahit period tourism"
+    ],
+    technicalSpecs: {
+      materials: "Brick channels, earth embankments",
+      dimensions: "Segaran reservoir 6.5 hectares",
+      capacity: "1 million+ cubic meters"
+    },
+    robertsNote: "Trowulan had sophisticated water infrastructure that rivals anything in medieval Europe. Multiple reservoirs, precise gradients, integration with city planning—this was serious hydraulic engineering."
   }
 };
 

@@ -5010,6 +5010,215 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "assyria",
+      name: "Assyria",
+      description: "Military engineers who transformed water into both a tool of empire-building and a weapon of war",
+      position: [9, 0, -5],
+      color: "#4A0E4E",
+      era: "ancient",
+      dateRange: "2500-609 BCE",
+      locations: [
+        {
+          id: "nineveh",
+          name: "Nineveh",
+          description: "Assyrian capital with 80+ km canal system",
+          historicalContext: "One of the ancient world's greatest cities, supported by advanced water engineering",
+          coordinates: { lat: 36.3594, lng: 43.1530 },
+          artifacts: [
+            {
+              id: "jerwan-aqueduct",
+              name: "Jerwan Aqueduct",
+              description: "World's oldest known stone aqueduct—predated Roman aqueducts by 500 years",
+              rarity: "legendary",
+              historicalPeriod: "690 BCE",
+              significance: "280m long, 22m wide, 9m tall; 2 million+ dressed limestone blocks; part of 80+ km canal system to Nineveh",
+              yearBCE: 690,
+              category: "aqueduct"
+            },
+            {
+              id: "assyrian-canals",
+              name: "Assyrian Canal Network",
+              description: "50+ km of channels bringing mountain spring water to the capital",
+              rarity: "epic",
+              historicalPeriod: "705-690 BCE",
+              significance: "Supplied city of 100,000+ people; included sluice gates, settling basins, and distribution channels",
+              yearBCE: 700,
+              category: "canal"
+            },
+            {
+              id: "assyrian-water-warfare",
+              name: "Assyrian Water Warfare",
+              description: "Systematic military use of water control—diversion, damming, and flooding as siege tactics",
+              rarity: "epic",
+              historicalPeriod: "720-609 BCE",
+              significance: "Diverted Euphrates to flood Babylon (689 BCE); cut water supplies to force surrenders; poisoned wells; pioneered water as weapon",
+              yearBCE: 689,
+              category: "dam"
+            },
+            {
+              id: "assyrian-qanats",
+              name: "Assyrian Qanat Expansion",
+              description: "Underground tunnel systems adopted from earlier civilizations and expanded across the empire",
+              rarity: "rare",
+              historicalPeriod: "700 BCE",
+              significance: "Reliable water supply in semi-arid regions; protected from evaporation and enemy interference",
+              yearBCE: 700,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "babylonia",
+      name: "Babylonia",
+      description: "Refiners of Sumerian techniques who created the world's first comprehensive water laws",
+      position: [8, 0, -6],
+      color: "#FFD700",
+      era: "ancient",
+      dateRange: "1894-539 BCE",
+      locations: [
+        {
+          id: "babylon-city",
+          name: "Babylon",
+          description: "City of the Hanging Gardens and Hammurabi's Code",
+          historicalContext: "One of the Seven Wonders of the Ancient World was here",
+          coordinates: { lat: 32.5422, lng: 44.4226 },
+          artifacts: [
+            {
+              id: "hanging-gardens",
+              name: "Hanging Gardens Water System",
+              description: "Multi-level irrigation lifting water 20-25 meters to terraced gardens (if historical)",
+              rarity: "legendary",
+              historicalPeriod: "600 BCE",
+              significance: "Chain of buckets or Archimedes screw mechanism; thousands of gallons daily; one of Seven Wonders",
+              yearBCE: 600,
+              category: "water-lifting"
+            },
+            {
+              id: "hammurabi-water-code",
+              name: "Hammurabi's Water Code",
+              description: "World's first comprehensive written water regulations—Laws 53-56 specifically address irrigation",
+              rarity: "legendary",
+              historicalPeriod: "1754 BCE",
+              significance: "Negligent dam maintenance: replace damaged grain; irrigation negligence: pay crop value; enforcement hierarchy from King to farmers",
+              yearBCE: 1754,
+              category: "canal"
+            },
+            {
+              id: "babylonian-drainage",
+              name: "Babylonian Urban Drainage",
+              description: "Terracotta pipe networks with drain grates, main collectors, and river outfalls",
+              rarity: "epic",
+              historicalPeriod: "1800 BCE",
+              significance: "Sophisticated stormwater management; fired clay pipes precisely fitted; brick-lined underground conduits",
+              yearBCE: 1800,
+              category: "sanitation"
+            },
+            {
+              id: "babylonian-flood-basins",
+              name: "Babylonian Flood Control Basins",
+              description: "Seasonal flood management infrastructure protecting the city from Euphrates flooding",
+              rarity: "rare",
+              historicalPeriod: "1700 BCE",
+              significance: "Controlled flooding for irrigation while protecting urban areas; enabled year-round habitation in floodplain",
+              yearBCE: 1700,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ancient-indonesia",
+      name: "Ancient Indonesia (Nusantara)",
+      description: "Unique water management adapted to tropical monsoons and volcanic landscapes",
+      position: [18, 0, 2],
+      color: "#228B22",
+      era: "classical",
+      dateRange: "2000 BCE - 1500 CE",
+      locations: [
+        {
+          id: "bali-subak",
+          name: "Bali",
+          description: "UNESCO World Heritage Subak irrigation landscape",
+          historicalContext: "Democratic water-sharing cooperatives guided by water temples",
+          coordinates: { lat: -8.4095, lng: 115.1889 },
+          artifacts: [
+            {
+              id: "subak-system",
+              name: "Subak Irrigation System",
+              description: "Democratic water-sharing cooperatives coordinated by water temples—one farmer, one vote regardless of land size",
+              rarity: "legendary",
+              historicalPeriod: "900 CE onwards",
+              significance: "UNESCO World Heritage; no central authority—thousands of farmers coordinate through temple meetings; 'tektek' water allocation formula",
+              yearBCE: -900,
+              category: "irrigation"
+            },
+            {
+              id: "sawah-terraces",
+              name: "Sawah (Wet Rice Terraces)",
+              description: "Terraced flooded field agriculture adapted to volcanic mountain slopes",
+              rarity: "epic",
+              historicalPeriod: "2000 BCE onwards",
+              significance: "Austronesian innovation spread across Southeast Asia; transforms steep terrain into productive farmland",
+              yearBCE: 2000,
+              category: "irrigation"
+            },
+            {
+              id: "telaga-sacred-pools",
+              name: "Telaga (Sacred Pools)",
+              description: "Ritual purification pools combining spiritual significance with water supply",
+              rarity: "rare",
+              historicalPeriod: "100 CE onwards",
+              significance: "Hindu-Buddhist influence; temples built at volcanic springs; combines religion with water management",
+              yearBCE: -100,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "java-majapahit",
+          name: "Trowulan (Majapahit)",
+          description: "Capital of Majapahit Empire with massive reservoir system",
+          historicalContext: "Largest empire in Indonesian history with sophisticated water infrastructure",
+          coordinates: { lat: -7.5499, lng: 112.3804 },
+          artifacts: [
+            {
+              id: "segaran-reservoir",
+              name: "Segaran Reservoir",
+              description: "6.5 hectare reservoir system with brick-lined channels and overflow spillways",
+              rarity: "legendary",
+              historicalPeriod: "14th century CE",
+              significance: "1 million+ cubic meters capacity; supplied palace, temples, markets; multiple reservoirs for redundancy",
+              yearBCE: -1350,
+              category: "dam"
+            },
+            {
+              id: "javanese-sluice-gates",
+              name: "Javanese Sluice Gate Systems",
+              description: "Precise water flow control for flood management and irrigation",
+              rarity: "epic",
+              historicalPeriod: "800 CE onwards",
+              significance: "Brick-lined channels with precise gradients; integration with urban planning; monsoon runoff control",
+              yearBCE: -800,
+              category: "dam"
+            },
+            {
+              id: "petirtaan-pools",
+              name: "Petirtaan (Temple Bathing Pools)",
+              description: "Sacred bathing pools at temple complexes with ornamental makara spouts",
+              rarity: "rare",
+              historicalPeriod: "800-1500 CE",
+              significance: "Ritual purification + public bathing + water storage; gravity-fed from volcanic springs; Borobudur/Prambanan era",
+              yearBCE: -800,
+              category: "fountain"
+            }
+          ]
+        }
+      ]
     }
   ]
 };
