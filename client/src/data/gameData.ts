@@ -56,7 +56,7 @@ export const gameData: GameData = {
     {
       id: "ancient-egypt",
       name: "Ancient Egypt",
-      description: "Masters of Nile irrigation and water management",
+      description: "Masters of Nile irrigation (3100-30 BCE). Invented the shaduf water-lifting device still used today, nilometers to predict floods and calculate taxes for 5,000 years, and the clepsydra water clock—humanity's first accurate timekeeper. Annual floods deposited fertile silt across the valley.",
       position: [0, 0, -12],
       color: "#DAA520",
       era: "ancient",
@@ -115,7 +115,7 @@ export const gameData: GameData = {
     {
       id: "mesopotamia",
       name: "Mesopotamia",
-      description: "Birthplace of irrigation agriculture between the Tigris and Euphrates",
+      description: "Birthplace of irrigation agriculture (6000-539 BCE). Created world's first canal networks between the Tigris and Euphrates rivers. Hammurabi's Code included water laws. Home of the legendary Hanging Gardens of Babylon—one of the Seven Wonders, watered by sophisticated pump systems.",
       position: [8, 0, -8],
       color: "#8B4513",
       era: "ancient",
@@ -174,7 +174,7 @@ export const gameData: GameData = {
     {
       id: "indus-valley",
       name: "Indus Valley",
-      description: "Pioneers of urban water and sanitation systems",
+      description: "World's first urban water infrastructure (3300-1300 BCE). Mohenjo-daro had covered drains along every street, the Great Bath for ritual purification, and indoor wells in most homes. First flush toilets connected to city-wide sewers—2,000 years before Rome achieved similar sanitation.",
       position: [12, 0, 0],
       color: "#4B0082",
       era: "ancient",
@@ -302,7 +302,7 @@ export const gameData: GameData = {
     {
       id: "ancient-greece",
       name: "Ancient Greece",
-      description: "Innovators of water theory and mechanical engineering",
+      description: "Pioneers of hydraulic science (800-31 BCE). Archimedes invented the screw pump for irrigation and discovered buoyancy principles. The Tunnel of Eupalinos was an engineering marvel—1 km aqueduct dug from both ends meeting perfectly. Greeks also developed early hydrostatics theory.",
       position: [-8, 0, -8],
       color: "#4169E1",
       era: "classical",
@@ -458,7 +458,7 @@ export const gameData: GameData = {
     {
       id: "ancient-china",
       name: "Ancient China",
-      description: "Grand canal builders and irrigation masters",
+      description: "Yu the Great established flood control philosophy—'channel, don't block' (2200 BCE). Dujiangyan irrigation system (256 BCE) still waters 5.3 million hectares after 2,250 years! Self-regulating with no dam that could break, it uses natural river dynamics to divide water flow.",
       position: [0, 0, 12],
       color: "#FFD700",
       era: "ancient",
@@ -576,7 +576,7 @@ export const gameData: GameData = {
     {
       id: "mesoamerica",
       name: "Mesoamerica",
-      description: "Chinampas and floating garden engineers",
+      description: "Aztec and Maya water masters (2000 BCE-1521 CE). Aztec chinampas (floating gardens) fed Tenochtitlan's 200,000 people from artificial islands. Maya built aguadas (reservoirs) and the world's first known pressurized water system at Palenque palace.",
       position: [-8, 0, 8],
       color: "#20B2AA",
       era: "medieval",
@@ -664,7 +664,7 @@ export const gameData: GameData = {
     {
       id: "ancient-persia",
       name: "Ancient Persia",
-      description: "Masters of underground water transport and desert irrigation",
+      description: "Inventors of the qanat underground water system (1000 BCE). These gravity-fed tunnels up to 70 km long transported mountain water beneath deserts without evaporation—still watering Persian gardens today. Also developed yakhchals (ice houses) for storing ice in summer desert heat.",
       position: [10, 0, -6],
       color: "#B8860B",
       era: "ancient",
@@ -723,7 +723,7 @@ export const gameData: GameData = {
     {
       id: "khmer-empire",
       name: "Khmer Empire",
-      description: "Builders of the world's largest pre-industrial hydraulic cities",
+      description: "World's largest pre-industrial hydraulic city (802-1431 CE). Angkor's barays (reservoirs) held 53 million cubic meters—city-sized water storage. West Baray alone is 8 km x 2 km. Sophisticated canal networks supported 1 million people when London had only 50,000.",
       position: [14, 0, 6],
       color: "#2E8B57",
       era: "medieval",
@@ -891,7 +891,7 @@ export const gameData: GameData = {
     {
       id: "sri-lanka",
       name: "Ancient Sri Lanka",
-      description: "Most sophisticated ancient reservoir system with pioneering valve technology",
+      description: "Most sophisticated ancient reservoir system (300 BCE-1200 CE). Invented the bisokotuwa—an ingenious valve pit using water pressure to control outflow. Built 10,000+ tanks in cascade systems. Anuradhapura's reservoirs still supply water after 2,000 years.",
       position: [14, 0, 4],
       color: "#228B22",
       era: "classical",
@@ -1268,7 +1268,7 @@ export const gameData: GameData = {
     {
       id: "inca-empire",
       name: "Inca Empire",
-      description: "Mountain water masters: terraces, fountains, and aqueducts at extreme altitudes",
+      description: "Mountain water masters at extreme altitudes (1438-1533 CE). Machu Picchu's fountains flow continuously from spring 750m away. Moray's circular terraces created 15°C temperature difference—an agricultural research station. Tipón features synchronized cascades still working today.",
       position: [-10, 0, 4],
       color: "#CD853F",
       era: "medieval",
@@ -1406,7 +1406,7 @@ export const gameData: GameData = {
     {
       id: "aboriginal-australia",
       name: "Aboriginal Australia",
-      description: "40,000 years of water knowledge: surviving the world's driest inhabited continent",
+      description: "World's oldest continuous water culture (40,000+ years). Brewarrina fish traps are humanity's oldest man-made structure. Gnamma holes carved in rock store water for desert crossings. Songlines encode water locations across thousands of kilometers.",
       position: [16, 0, 8],
       color: "#8B4513",
       era: "ancient",
@@ -1555,7 +1555,7 @@ export const gameData: GameData = {
     {
       id: "dutch-netherlands",
       name: "Dutch Netherlands",
-      description: "Land from the sea: windmills, polders, and the battle against water",
+      description: "Land reclaimed from the sea (1200 CE-present). Created 17% of their country through polders (drained land below sea level). Kinderdijk's 19 windmills (UNESCO) pumped water 24/7. Modern gemaal pumping stations now protect 4 million people living below sea level.",
       position: [2, 0, -6],
       color: "#FF8C00",
       era: "medieval",
@@ -1804,7 +1804,7 @@ export const gameData: GameData = {
     {
       id: "korean",
       name: "Ancient Korea",
-      description: "Ondol heating, royal reservoirs, and the world's oldest hydraulic innovations",
+      description: "Pioneers of hydraulic technology (330 BCE-1897 CE). Byeokgolje reservoir (330 BCE) is one of Asia's oldest. Invented the cheugugi rain gauge (1441 CE)—200 years before Europe. Ondol underfloor heating used water and smoke channels for efficiency.",
       position: [17, 0, 2],
       color: "#E91E63",
       era: "ancient",
@@ -2084,7 +2084,7 @@ export const gameData: GameData = {
     {
       id: "siam-thailand",
       name: "Siam (Thailand)",
-      description: "Venice of the East: canal networks and floating markets",
+      description: "'Venice of the East' (1238-1782 CE). Bangkok's klongs (canals) served as streets—people commuted by boat. Ayutthaya island capital was protected by rivers and moats. Floating markets still operate today, continuing centuries-old water-based commerce traditions.",
       position: [15, 0, 6],
       color: "#9C27B0",
       era: "medieval",
@@ -2379,7 +2379,7 @@ export const gameData: GameData = {
     {
       id: "vietnam",
       name: "Vietnam",
-      description: "Red River dikes and Mekong Delta canals",
+      description: "Masters of river delta cultivation (200 CE-present). Red River dike system stretches 3,000+ km—continuously maintained for 2,000 years. Mekong Delta floating rice grows 20-30 cm/day to match rising flood waters. Traditional water puppetry celebrates rice culture.",
       position: [17, 0, 5],
       color: "#F44336",
       era: "classical",
@@ -5323,7 +5323,7 @@ export const gameData: GameData = {
     {
       id: "han-dynasty",
       name: "Han Dynasty",
-      description: "Golden age of Chinese hydraulics—chain pump, water mills, Grand Canal beginnings",
+      description: "Golden age of Chinese hydraulics (206 BCE-220 CE). Invented the chain pump that one person could use to irrigate 2+ acres daily, first water-powered grain mills, and began Yellow River flood control levees. Technology spread to Korea, Japan, and Southeast Asia.",
       position: [21, 0, -2],
       color: "#DC143C",
       era: "classical",
@@ -5373,7 +5373,7 @@ export const gameData: GameData = {
     {
       id: "sui-tang-dynasty",
       name: "Sui & Tang Dynasties",
-      description: "Grand Canal completion—world's longest artificial waterway connecting Beijing to Hangzhou",
+      description: "Built the Grand Canal (587-608 CE)—world's longest artificial waterway at 1,776 km connecting Beijing to Hangzhou. Millions of workers connected 5 major river systems. Tang Chang'an was world's largest city (1 million people) with 108 walled wards, each with wells and canal access.",
       position: [23, 0, -1],
       color: "#FFD700",
       era: "medieval",
@@ -5432,7 +5432,7 @@ export const gameData: GameData = {
     {
       id: "song-dynasty",
       name: "Song Dynasty",
-      description: "Technological peak—invented the pound lock 500 years before Europe",
+      description: "Technological peak of pre-modern Chinese water engineering (960-1279 CE). Qiao Weiyue invented the pound lock in 984 CE—500 years before Europe. Su Song built a 40-foot water-powered astronomical clock tower. Also developed tidal mills and paddle-wheel military boats.",
       position: [24, 0, -2],
       color: "#9932CC",
       era: "medieval",
@@ -5482,7 +5482,7 @@ export const gameData: GameData = {
     {
       id: "ming-dynasty",
       name: "Ming Dynasty",
-      description: "Yellow River regulation—Pan Jixun's 'confine water to scour sand' principle",
+      description: "Revolutionary Yellow River flood control (1368-1644 CE). Pan Jixun's '束水攻沙' (confine water to scour sand) used narrow channels to create fast flow that washes sediment to sea—opposite of traditional widening. Also built extensive coastal seawalls against typhoons.",
       position: [25, 0, -3],
       color: "#FF4500",
       era: "medieval",
@@ -5522,7 +5522,7 @@ export const gameData: GameData = {
     {
       id: "vedic-mauryan-india",
       name: "Vedic & Mauryan India",
-      description: "Sacred water philosophy and world's first water policy document (Arthashastra)",
+      description: "Sacred water philosophy (1500-185 BCE). Rigveda declared 'Waters, you bring us life'—rivers Ganga, Yamuna, Saraswati worshipped as divine. Kautilya's Arthashastra (~300 BCE) created world's first water policy: state builds dams, water tax 1/4 harvest for canal irrigation.",
       position: [14, 0, 2],
       color: "#FF8C00",
       era: "ancient",
@@ -5572,7 +5572,7 @@ export const gameData: GameData = {
     {
       id: "chola-dynasty",
       name: "Chola Dynasty (South India)",
-      description: "Tank cascade systems and the Grand Anicut—oldest functional dam in the world",
+      description: "Masters of gravity-fed tank cascades (300 BCE-1279 CE). Built 10,000+ interconnected tanks in Tamil Nadu alone—each feeds the next, no pumping needed, still functioning today. Grand Anicut dam (329m long) still irrigates 1 million+ acres after 1,900 years.",
       position: [13, 0, 4],
       color: "#B8860B",
       era: "classical",
@@ -5622,7 +5622,7 @@ export const gameData: GameData = {
     {
       id: "delhi-sultanate",
       name: "Delhi Sultanate",
-      description: "Persian-influenced stepwells and architectural water storage",
+      description: "Persian-influenced water architecture (1206-1526 CE). Built monumental stepwells like Chand Baori with 13 stories and 3,500 steps! Stepwells served as water supply, cool retreats (10-15°C cooler), and social spaces. Also introduced Persian wheels and underground karez tunnels.",
       position: [12, 0, 1],
       color: "#2E8B57",
       era: "medieval",
@@ -5672,7 +5672,7 @@ export const gameData: GameData = {
     {
       id: "mughal-empire",
       name: "Mughal Empire",
-      description: "Char Bagh paradise gardens with 400+ fountains—Taj Mahal water system",
+      description: "Paradise garden water systems (1526-1857 CE). Taj Mahal features 400+ fountains fed by raised marble channels, underground terra-cotta pipes, and water lifted from Yamuna by Persian wheels. Shalimar Gardens in Kashmir has 410 fountains across three cascading terraces.",
       position: [15, 0, 0],
       color: "#800020",
       era: "medieval",
@@ -5722,7 +5722,7 @@ export const gameData: GameData = {
     {
       id: "rajasthan-desert",
       name: "Rajasthan (Desert Water Harvesting)",
-      description: "Ingenious water harvesting in extreme desert—Kund, Tanka, Johad",
+      description: "Survival water systems for extreme desert (800-1900 CE). Only 100-200mm rainfall annually—every drop precious. Kund underground tanks store 2+ million liters with domed roofs keeping water cool. Tanka household tanks (~20,000 liters) last the full dry season.",
       position: [11, 0, 2],
       color: "#DAA520",
       era: "medieval",
