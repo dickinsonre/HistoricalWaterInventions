@@ -11,7 +11,7 @@ interface WaterParticle {
   size: number;
 }
 
-type SimulationType = "aqueduct" | "qanat" | "siphon" | "reservoir" | "screw" | "noria" | "cloaca" | "spillway" | "subak" | "shafts" | "cascade" | "stepwell";
+type SimulationType = "aqueduct" | "qanat" | "siphon" | "reservoir" | "screw" | "noria" | "cloaca" | "spillway" | "subak" | "shafts" | "cascade" | "stepwell" | "dujiangyan" | "aztec-dike" | "chain-pump" | "shaduf" | "angkor-baray" | "venetian-cistern" | "inca-fountain" | "dutch-polder" | "hohokam" | "khettara";
 
 const simulations: Record<SimulationType, {
   title: string;
@@ -138,6 +138,106 @@ const simulations: Record<SimulationType, {
     pathPoints: [
       { x: 10, y: 10 }, { x: 20, y: 20 }, { x: 30, y: 32 },
       { x: 40, y: 42 }, { x: 50, y: 52 }, { x: 60, y: 60 }, { x: 70, y: 68 }, { x: 80, y: 72 }, { x: 90, y: 72 }
+    ]
+  },
+  dujiangyan: {
+    title: "Dujiangyan Fish Mouth",
+    description: "Ancient China's 2,270-year-old irrigation system (256 BCE). The Fish Mouth divides the Min River: 60% outer channel for flood discharge, 40% inner channel for irrigation. Still waters 5.3 million hectares today.",
+    gradient: 1.8,
+    flowRate: 2.0,
+    pathPoints: [
+      { x: 5, y: 25 }, { x: 20, y: 30 }, { x: 35, y: 28 },
+      { x: 45, y: 35 }, { x: 55, y: 42 }, { x: 65, y: 38 }, { x: 75, y: 45 }, { x: 90, y: 55 }
+    ]
+  },
+  "aztec-dike": {
+    title: "Aztec Nezahualcóyotl Dike",
+    description: "16km stone dike (1449 CE) separating fresh western from saline eastern Lake Texcoco. Protected Tenochtitlan's chinampas and drinking water. Sluice gates managed water levels for 100,000+ residents.",
+    gradient: 0.2,
+    flowRate: 0.6,
+    pathPoints: [
+      { x: 5, y: 40 }, { x: 20, y: 42 }, { x: 35, y: 40 },
+      { x: 50, y: 38 }, { x: 65, y: 42 }, { x: 80, y: 40 }, { x: 95, y: 38 }
+    ]
+  },
+  "chain-pump": {
+    title: "Chinese Chain Pump",
+    description: "Dragon backbone water-lift (龙骨水车) from Han Dynasty (200 CE). Continuous chain of wooden pallets lifts water 3-5m. Human, ox, or water-powered versions produced 45-65,000 liters/day.",
+    gradient: 4.5,
+    flowRate: 1.2,
+    pathPoints: [
+      { x: 10, y: 70 }, { x: 20, y: 62 }, { x: 30, y: 52 },
+      { x: 40, y: 42 }, { x: 50, y: 32 }, { x: 60, y: 25 }, { x: 70, y: 20 }, { x: 85, y: 18 }, { x: 95, y: 20 }
+    ]
+  },
+  shaduf: {
+    title: "Egyptian Shaduf",
+    description: "Counterweighted lever for lifting irrigation water (1500 BCE). A single operator lifts 2,500 liters/day up to 3m. Simple yet efficient—still used along the Nile today after 3,500 years.",
+    gradient: 2.5,
+    flowRate: 0.4,
+    pathPoints: [
+      { x: 10, y: 65 }, { x: 25, y: 50 }, { x: 35, y: 35 },
+      { x: 45, y: 28 }, { x: 55, y: 32 }, { x: 70, y: 38 }, { x: 85, y: 45 }, { x: 95, y: 52 }
+    ]
+  },
+  "angkor-baray": {
+    title: "Angkor Baray Reservoir",
+    description: "Khmer Empire's massive reservoirs (800-1200 CE). West Baray stored 40 million m³, supporting 750,000 people—world's largest pre-industrial city. Seasonal monsoon storage fed year-round rice irrigation.",
+    gradient: 0.15,
+    flowRate: 1.5,
+    pathPoints: [
+      { x: 5, y: 30 }, { x: 15, y: 32 }, { x: 30, y: 35 },
+      { x: 45, y: 38 }, { x: 60, y: 42 }, { x: 75, y: 48 }, { x: 90, y: 55 }
+    ]
+  },
+  "venetian-cistern": {
+    title: "Venetian Cistern",
+    description: "Venice built 6,000+ underground cisterns (800 CE onwards). Sloped campo pavements collected rain, sand-filtered through clay-lined chambers. Self-sufficient freshwater despite salt lagoon location.",
+    gradient: 0.8,
+    flowRate: 0.3,
+    pathPoints: [
+      { x: 10, y: 15 }, { x: 20, y: 25 }, { x: 30, y: 38 },
+      { x: 45, y: 48 }, { x: 55, y: 52 }, { x: 65, y: 52 }, { x: 80, y: 55 }, { x: 95, y: 58 }
+    ]
+  },
+  "inca-fountain": {
+    title: "Inca Fountain Cascade",
+    description: "Machu Picchu's 16 fountains (1450 CE) fed by 749m stone-lined canal. Each fountain's carved orifice regulated flow—royal fountain first (25 L/min), common people last (10 L/min). 90% water delivery efficiency.",
+    gradient: 2.4,
+    flowRate: 0.8,
+    pathPoints: [
+      { x: 5, y: 12 }, { x: 15, y: 18 }, { x: 25, y: 26 },
+      { x: 35, y: 34 }, { x: 45, y: 42 }, { x: 55, y: 50 }, { x: 65, y: 56 }, { x: 75, y: 62 }, { x: 85, y: 66 }, { x: 95, y: 70 }
+    ]
+  },
+  "dutch-polder": {
+    title: "Dutch Polder System",
+    description: "Reclaimed land protected by dikes and drained by windmills (1200 CE onwards). Ring canals at multiple levels pump water uphill to sea level. Netherlands reclaimed 17% of its land from the sea.",
+    gradient: 0.5,
+    flowRate: 1.0,
+    pathPoints: [
+      { x: 5, y: 65 }, { x: 15, y: 58 }, { x: 25, y: 50 },
+      { x: 40, y: 42 }, { x: 55, y: 35 }, { x: 70, y: 28 }, { x: 85, y: 22 }, { x: 95, y: 18 }
+    ]
+  },
+  hohokam: {
+    title: "Hohokam Canal System",
+    description: "Pre-Columbian Arizona canals (300-1450 CE) stretched 800+ km. Hand-dug earthen channels with drop structures and headgates irrigated 40,000+ hectares of desert. Largest ancient canal system in North America.",
+    gradient: 0.4,
+    flowRate: 1.1,
+    pathPoints: [
+      { x: 5, y: 22 }, { x: 20, y: 28 }, { x: 35, y: 35 },
+      { x: 50, y: 42 }, { x: 65, y: 48 }, { x: 80, y: 55 }, { x: 95, y: 62 }
+    ]
+  },
+  khettara: {
+    title: "Moroccan Khettara",
+    description: "North African qanat variant (800 CE) tapping Atlas Mountain aquifers. Underground galleries up to 15km long with vertical shafts every 10-20m. Tafilalet oasis supported by 400+ khettaras for over 1,000 years.",
+    gradient: 0.25,
+    flowRate: 0.7,
+    pathPoints: [
+      { x: 5, y: 28 }, { x: 15, y: 45 }, { x: 25, y: 48 },
+      { x: 40, y: 52 }, { x: 55, y: 55 }, { x: 70, y: 58 }, { x: 85, y: 60 }, { x: 95, y: 62 }
     ]
   }
 };
