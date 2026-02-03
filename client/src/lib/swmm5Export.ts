@@ -190,6 +190,7 @@ export interface SWMM5ModelParams {
   orificeDiameter?: number;
   dischargeCoeff?: number;
   headDifference?: number;
+  numOutlets?: number;
 }
 
 export interface SWMM5Model {
@@ -1298,20 +1299,123 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
     },
     engineeringNotes: '10,000+ tanks in Tamil Nadu alone. Gravity-fed, no pumping. Community managed. Still functioning after 1,000+ years. Arthashastra defined water tax: 1/4 harvest for state canal'
   },
-  'grand-anicut': {
-    name: 'Grand Anicut (Kallanai)',
-    description: 'Oldest functional dam in the world—still irrigating after 1,900 years',
-    civilization: 'Chola Dynasty',
-    period: '2nd Century CE',
+  'basin-irrigation': {
+    name: 'Egyptian Basin Irrigation System',
+    description: 'Flood-taming system that fed Egypt for 5,000 years using earthen embankments',
+    civilization: 'Ancient Egypt',
+    period: '3100 BCE - 1970 CE',
     parameters: {
-      length: 329,
-      channelWidth: 20,
-      reservoirDepth: 5.4,
-      flowRate: 500,
-      slope: 0.001,
+      length: 10000,
+      channelWidth: 500,
+      channelDepth: 1.5,
+      flowRate: 100,
+      slope: 0.0002,
+      roughness: 0.035
+    },
+    engineeringNotes: 'Basin sizes 1,000-40,000 acres. Flood held 40-60 days. 1mm silt annually. Fed 3-5 million people. In use until Aswan High Dam (1970)'
+  },
+  'sakia-waterwheel': {
+    name: 'Sakia (Animal-Powered Water Wheel)',
+    description: 'Continuous water lifting using animal power—10x more efficient than shaduf',
+    civilization: 'Ancient Egypt',
+    period: '300 BCE - Present',
+    parameters: {
+      length: 100,
+      channelWidth: 2,
+      channelDepth: 0.5,
+      flowRate: 25,
+      slope: 0.01,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Lift capacity: 15-30 m³/hour to 3-8m height. 12-24 ceramic pots on wheel. 2-4 rpm. Still used in Egypt and Sudan today'
+  },
+  'sacred-lake-karnak': {
+    name: 'Sacred Temple Lake (Karnak)',
+    description: 'Artificial sacred lakes for ritual purification at Egyptian temples',
+    civilization: 'Ancient Egypt',
+    period: '2600 BCE - 30 BCE',
+    parameters: {
+      length: 120,
+      channelWidth: 77,
+      reservoirDepth: 4,
+      volume: 20000,
+      flowRate: 5,
+      roughness: 0.015
+    },
+    engineeringNotes: 'Karnak: 120m x 77m x 2-4m deep. Stone-lined walls. Underground Nile connection. Priests bathed 4x daily. Represented primordial ocean (Nun)'
+  },
+  'heros-fountain': {
+    name: 'Hero\'s Fountain (Pneumatic)',
+    description: 'Self-powered fountain using air pressure physics—appeared to defy gravity',
+    civilization: 'Ancient Greece',
+    period: '60 CE',
+    parameters: {
+      length: 2,
+      pipeDiameter: 0.02,
+      flowRate: 0.001,
+      slope: 0,
+      roughness: 0.010
+    },
+    engineeringNotes: 'Three-vessel closed system. Falling water compresses air. Air pushes water up fountain tube. Described in Hero\'s Pneumatica with 78 devices'
+  },
+  'ctesibius-pump': {
+    name: 'Ctesibius Force Pump',
+    description: 'First reciprocating pump with valves—ancestor of all piston pumps',
+    civilization: 'Ancient Greece',
+    period: '270 BCE',
+    parameters: {
+      length: 50,
+      pipeDiameter: 0.12,
+      flowRate: 0.5,
+      headPressure: 3,
+      slope: 0,
+      roughness: 0.012
+    },
+    engineeringNotes: 'Bronze cylinders with leather valves. Air chamber smooths flow. Used for firefighting (could spray 20m). Roman fire brigades on wheeled carts'
+  },
+  'castellum-divisorium': {
+    name: 'Roman Castellum Divisorium',
+    description: 'Water distribution hub dividing aqueduct flow to different city zones',
+    civilization: 'Roman Empire',
+    period: '1st Century BCE',
+    parameters: {
+      length: 100,
+      channelWidth: 5.5,
+      reservoirDepth: 1.45,
+      flowRate: 230,
+      numOutlets: 10,
+      roughness: 0.015
+    },
+    engineeringNotes: 'Nîmes: 5.5m diameter, 10 outlet pipes. Higher outlets = luxury users (dry first in shortage). Lower = public fountains (guaranteed). Frontinus documented 247 in Rome'
+  },
+  'opus-caementicium': {
+    name: 'Roman Hydraulic Concrete (Opus Caementicium)',
+    description: 'Self-healing concrete that strengthens in seawater over millennia',
+    civilization: 'Roman Empire',
+    period: '300 BCE - 400 CE',
+    parameters: {
+      length: 1000,
+      channelWidth: 10,
+      channelDepth: 5,
+      volume: 50000,
       roughness: 0.018
     },
-    engineeringNotes: 'Built by Karikala Chola. 329m long, 20m wide, 5.4m high. Still irrigates 1 million+ acres. British studied and expanded but kept the original dam. Template for submerged weir design'
+    engineeringNotes: 'Volcanic ash + quicklime + seawater. Al-tobermorite crystals grow in cracks = self-healing. Pantheon dome still stands after 1,900 years. 90% less CO2 than Portland cement'
+  },
+  'grand-canal-china': {
+    name: 'Grand Canal of China',
+    description: 'World\'s longest artificial waterway—1,776 km from Beijing to Hangzhou',
+    civilization: 'Ancient China',
+    period: '486 BCE - 1293 CE',
+    parameters: {
+      length: 1776000,
+      channelWidth: 50,
+      channelDepth: 3,
+      flowRate: 500,
+      slope: 0.00002,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Connected 5 river basins. 60+ pound locks. Peak: 10,000+ boats/day, 400,000 tonnes grain/year. Summit section required 380+ feeder streams. UNESCO World Heritage'
   },
   'mughal-garden': {
     name: 'Mughal Char Bagh Water Garden',

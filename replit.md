@@ -2,15 +2,15 @@
 
 ## Overview
 
-Historical Mystery is a 2D interactive educational game exploring humanity's water innovations throughout history. Players explore **73 civilizations** across 6 continents, discover **256+ water inventions** spanning 40,000+ years, and learn about the genius of hydraulic engineering across ages. Features an interactive world map with realistic Earth background, comprehensive encyclopedia with URL-based navigation, SWMM5 export functionality with **68+ downloadable hydraulic simulation models** (copy-to-clipboard to avoid antivirus issues), educational mini-games, and expert commentary from Robert Dickinson (50+ years water engineering experience).
+Historical Mystery is a 2D interactive educational game exploring humanity's water innovations throughout history. Players explore **99 civilizations** across 6 continents, discover **350+ water inventions** spanning 40,000+ years, and learn about the genius of hydraulic engineering across ages. Features an interactive world map with realistic Earth background, comprehensive encyclopedia with URL-based navigation, SWMM5 export functionality with **241 downloadable hydraulic simulation models** (copy-to-clipboard to avoid antivirus issues), educational mini-games, and expert commentary from Robert Dickinson (50+ years water engineering experience).
 
 ## Theme: Ancient Waters
 
 The game showcases how water shaped human civilization through:
-- **73 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Medieval India, Ancient Greece, Roman Empire, Ancient China, Ancient Persia, Khmer Empire, Cambodia, Inca Empire, Aboriginal Australia, Ancient Korea, Great Zimbabwe, Nan Madol, Modern Japan (G-Cans), Siam (Thailand), Hawaiian, Ethiopian Highlands, Sahel Africa, Engaruka, Chamorro, Dutch Netherlands, Burma/Myanmar, Vietnam, Pre-Roman Europe, Philippines, Singapore, Malaysia, UAE, Israel, Yemen, Bangladesh, Al-Andalus, Oman, Venice, Silk Road, Amazon Basin, Mississippian Cahokia, Hohokam, Pacific Northwest, Siberia-Yakutia, Inuit Arctic, Swahili Coast, Kongo Kingdom, Mali-Timbuktu, Borneo, Papua New Guinea, Pre-Roman Iberia, Basque Country, Celtic Europe, Gaul, Germanic Europe, Etruscan, Viking, Imperial & Soviet Russia, Morocco, and more
-- **256+ Water Inventions**: Aqueducts, stepwells, irrigation, klongs, qanats, terraces, reservoirs, canals, moats, flood control, G-Cans, ondol heating, fish traps, tanada, suikinkutsu, barays, floating gardens, inverted siphons, orifice controls, hydraulic mining, terp mounds, bog iron extraction, timber trackways, cuniculi tunnels, Cloaca Maxima, clinker longships, portage systems, Soviet canals, Water Computer, khettaras, and more
+- **99 Civilizations**: Ancient Egypt, Mesopotamia, Indus Valley, Medieval India, Ancient Greece, Roman Empire, Ancient China, Ancient Persia, Khmer Empire, Cambodia, Inca Empire, Aboriginal Australia, Ancient Korea, Great Zimbabwe, Nan Madol, Modern Japan (G-Cans), Siam (Thailand), Hawaiian, Ethiopian Highlands, Sahel Africa, Engaruka, Chamorro, Dutch Netherlands, Burma/Myanmar, Vietnam, Pre-Roman Europe, Philippines, Singapore, Malaysia, UAE, Israel, Yemen, Bangladesh, Al-Andalus, Oman, Venice, Silk Road, Amazon Basin, Mississippian Cahokia, Hohokam, Pacific Northwest, Siberia-Yakutia, Inuit Arctic, Swahili Coast, Kongo Kingdom, Mali-Timbuktu, Borneo, Papua New Guinea, Pre-Roman Iberia, Basque Country, Celtic Europe, Gaul, Germanic Europe, Etruscan, Viking, Imperial & Soviet Russia, Morocco, Urartu, Dilmun, Bactria-Margiana, Majapahit, Kanem-Bornu, Benin Kingdom, and more
+- **350+ Water Inventions**: Aqueducts, stepwells, irrigation, klongs, qanats, terraces, reservoirs, canals, moats, flood control, G-Cans, ondol heating, fish traps, tanada, suikinkutsu, barays, floating gardens, inverted siphons, orifice controls, hydraulic mining, terp mounds, bog iron extraction, timber trackways, cuniculi tunnels, Cloaca Maxima, clinker longships, portage systems, Soviet canals, Water Computer, khettaras, basin irrigation, sakia, sacred lakes, Hero's Fountain, Ctesibius pump, castellum divisorium, opus caementicium, Grand Canal, and more
 - **Time Periods**: Ancient (40,000-500 BCE), Classical (500 BCE-500 CE), Medieval (500-1400 CE), Modern (1400 CE-Present)
-- **SWMM5/ICM Models**: 68+ hydraulic simulation models compatible with EPA SWMM5 and importable into InfoWorks ICM via File → Import → SWMM
+- **SWMM5/ICM Models**: 241 hydraulic simulation models compatible with EPA SWMM5 and importable into InfoWorks ICM via File → Import → SWMM
 
 ## System Architecture
 
@@ -96,7 +96,7 @@ The game showcases how water shaped human civilization through:
 - **SWMM5Models**: Modal for downloading/copying hydraulic simulation models
 
 ### Data Structure
-- **Regions**: 74 civilizations with era, date range, position, color
+- **Regions**: 99 civilizations with era, date range, position, color
 - **Locations**: Historical sites with coordinates and historical context
 - **Artifacts**: Water inventions with category, rarity, year, significance
 - **Categories**: irrigation, aqueduct, water-lifting, sanitation, dam, water-clock, fountain, canal
@@ -155,7 +155,7 @@ client/src/
 │       ├── Achievements.tsx        # Badge system
 │       └── TimelineFilter.tsx      # Era/category filters
 ├── data/
-│   ├── gameData.ts             # 72 civilizations, 220+ inventions
+│   ├── gameData.ts             # 99 civilizations, 350+ inventions
 │   ├── inventionDetails.ts     # Diagram mappings and details
 │   ├── expertInventions.ts     # Expert commentary database
 │   └── expertCivilizations.ts  # Civilization expert analysis
@@ -170,6 +170,11 @@ client/src/
 
 ## Changelog
 
+- February 03, 2026: Major content expansion with detailed write-ups
+  - Added 9 new SWMM5 models: Basin Irrigation, Sakia, Sacred Lakes, Hero's Fountain, Ctesibius Pump, Castellum Divisorium, Opus Caementicium, Grand Canal
+  - Added comprehensive detailed write-ups with technical specs, historical sources, and expert commentary
+  - Total now: 99 civilizations, 350+ inventions, 241 SWMM5 models
+  - Updated all documentation totals across the application
 - February 01, 2026: SWMM5 Showcase & Enhanced Search
   - Added SWMM5Showcase component with 10 featured hydraulic models on main page
   - Enhanced QuickSearchBar with 9 category filters (All, Irrigation, Aqueducts, Canals, Dams, Sanitation, Fountains, Water Lifting, Clocks)
@@ -180,7 +185,7 @@ client/src/
   - Added Etruscan civilization (6 inventions): Cuniculi tunnels, Cloaca Maxima, rock-cut cisterns, sacred water, terracing, urban networks
   - Added Viking civilization (7 inventions): Clinker longships, freshwater management, water reading navigation, fjord harbors, portage systems, Arctic ice tech, watermills
   - Generated 12 new technical diagrams
-  - Total now: 74 civilizations, 235+ inventions
+  - Total now: 99 civilizations, 350+ inventions
 - February 01, 2026: Pre-Roman European civilizations expansion
   - Added 5 new civilizations: Pre-Roman Iberia, Basque Country, Celtic Europe, Gaul, Germanic Europe
   - Added 19 new inventions with diagrams

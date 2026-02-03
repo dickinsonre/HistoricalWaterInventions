@@ -25,7 +25,7 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
           Discover How Water Shaped Civilization
         </p>
         <p className="text-[var(--parchment)]/70 max-w-2xl mx-auto">
-          Explore 92+ civilizations, 300+ water inventions across 6 continents and 40,000+ years. 
+          Explore 99 civilizations, 350+ water inventions across 6 continents and 40,000+ years. 
           From Aboriginal fish traps to Korean ondol to Nan Madol's mysterious canals.
         </p>
       </header>
@@ -49,7 +49,7 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                   World Map Explorer
                 </h3>
                 <p className="text-[var(--parchment)]/80 text-sm mb-4">
-                  Explore 92+ civilizations on an interactive map with 300+ water inventions
+                  Explore 99 civilizations on an interactive map with 350+ water inventions
                 </p>
                 <span className="inline-block px-3 py-1 bg-[var(--cerulean)]/30 rounded-full text-xs text-[var(--aqua)] border border-[var(--aqua)]/30">
                   Interactive Map
@@ -69,7 +69,7 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                   Technology Encyclopedia
                 </h3>
                 <p className="text-[var(--parchment)]/80 text-sm mb-4">
-                  Deep-dive into 80+ water technologies with technical details
+                  Deep-dive into 100+ water technologies with technical details
                 </p>
                 <span className="inline-block px-3 py-1 bg-[var(--cerulean)]/30 rounded-full text-xs text-[var(--aqua)] border border-[var(--aqua)]/30">
                   Reference Guide
@@ -185,7 +185,7 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                   onClick={() => onSelectJourney("3d-world")}
                   className="mt-4 text-[var(--aqua)] text-sm hover:text-[var(--gold)] transition-colors flex items-center gap-1"
                 >
-                  Explore all 300+ inventions <ChevronRight size={14} />
+                  Explore all 350+ inventions <ChevronRight size={14} />
                 </button>
               </CardContent>
             </Card>
