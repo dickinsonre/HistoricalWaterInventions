@@ -94,9 +94,23 @@ export const inventionToSwmmModel: Record<string, string> = {
   'aflaj-system': 'uae-falaj',
   'date-palm-oasis': 'uae-falaj',
   'mose-barriers': 'singapore-barrage',
-  'venice-cisterns': 'nabataean-cistern',
+  'venice-cisterns': 'venetian-cistern',
+  'venetian-cistern': 'venetian-cistern',
+  'venetian-cisterns': 'venetian-cistern',
+  'campo-cistern': 'venetian-cistern',
   'lagoon-management': 'singapore-barrage',
   'karez-system': 'qanat',
+  'aztec-dike': 'aztec-dike',
+  'nezahualcoyotl-dike': 'aztec-dike',
+  'tenochtitlan-dike': 'aztec-dike',
+  'lake-texcoco': 'aztec-dike',
+  'chinampas': 'aztec-dike',
+  'inca-fountain': 'inca-fountain',
+  'machu-picchu-fountain': 'inca-fountain',
+  'fountain-cascade': 'inca-fountain',
+  'khettara': 'khettara',
+  'moroccan-khettara': 'khettara',
+  'tafilalet': 'khettara',
   'caravanserai-wells': 'nabataean-cistern',
   'amazon-raised-fields': 'subak',
   'amazon-causeways': 'subak',
@@ -1269,6 +1283,65 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       roughness: 0.025
     },
     engineeringNotes: 'UNESCO World Heritage (2014). Connects 5 major river systems. Still used for shipping. Cost millions of lives to build. Unified Chinese economy for 1,400 years'
+  },
+  'aztec-dike': {
+    name: 'Albarradón de Nezahualcóyotl (Great Dike)',
+    description: '16 km stone dike separating fresh from saline water in Lake Texcoco',
+    civilization: 'Aztec Empire',
+    period: '1449 CE',
+    parameters: {
+      length: 16000,
+      channelWidth: 20,
+      channelDepth: 4,
+      flowRate: 50,
+      slope: 0.0001,
+      roughness: 0.030
+    },
+    engineeringNotes: 'Protected Tenochtitlan chinampas from salt intrusion. 12 sluice gates controlled water levels. Supported 200,000+ residents. Destroyed by Spanish in 1521'
+  },
+  'venetian-cistern': {
+    name: 'Venetian Campo Cistern System',
+    description: 'Underground rainwater collection with sand filtration in salt lagoon city',
+    civilization: 'Venice',
+    period: '800 CE - Present',
+    parameters: {
+      volume: 50000,
+      catchmentArea: 450,
+      reservoirDepth: 2.5,
+      flowRate: 0.1,
+      roughness: 0.015
+    },
+    engineeringNotes: '6,000+ cisterns made Venice self-sufficient. Sloped pavements → sand filter → clay-lined chamber → pozzo wellhead. Freshwater in salt lagoon for 1,200 years'
+  },
+  'inca-fountain': {
+    name: 'Machu Picchu Fountain Cascade',
+    description: '16 sequential fountains with precision stone orifices for hierarchical distribution',
+    civilization: 'Inca Empire',
+    period: '1450 CE',
+    parameters: {
+      length: 749,
+      slope: 0.024,
+      flowRate: 0.4,
+      channelWidth: 0.12,
+      channelDepth: 0.1,
+      roughness: 0.020
+    },
+    engineeringNotes: 'Spring source at 2,458m elevation. 90% delivery efficiency with only stone tools. Royal fountain got first/purest water. Social hierarchy encoded in hydraulics'
+  },
+  'khettara': {
+    name: 'Moroccan Khettara Qanat',
+    description: 'North African underground gravity tunnel from Atlas Mountain aquifers',
+    civilization: 'Morocco',
+    period: '800 CE - Present',
+    parameters: {
+      length: 15000,
+      slope: 0.001,
+      flowRate: 0.03,
+      tunnelDiameter: 0.8,
+      shaftSpacing: 15,
+      roughness: 0.028
+    },
+    engineeringNotes: 'Tafilalet oasis has 400+ khettaras. Vertical shafts every 10-20m. Some tunnels 15+ km. Sustained caravan trade for over 1,000 years. Climate change threatening survival'
   },
   'pound-lock': {
     name: 'Song Dynasty Pound Lock',
