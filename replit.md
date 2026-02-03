@@ -170,6 +170,9 @@ client/src/
 
 ## Changelog
 
+- February 03, 2026: Interactive Water Flow Simulation expansion
+  - Added 10 new interactive flow simulations: Dujiangyan Fish Mouth, Aztec Nezahualcóyotl Dike, Chinese Chain Pump, Egyptian Shaduf, Angkor Baray Reservoir, Venetian Cistern, Inca Fountain Cascade, Dutch Polder System, Hohokam Canal, Moroccan Khettara
+  - Total now: 22 interactive water flow simulations with real-time physics calculations
 - February 03, 2026: Major content expansion with detailed write-ups
   - Added 9 new SWMM5 models: Basin Irrigation, Sakia, Sacred Lakes, Hero's Fountain, Ctesibius Pump, Castellum Divisorium, Opus Caementicium, Grand Canal
   - Added comprehensive detailed write-ups with technical specs, historical sources, and expert commentary
