@@ -10,6 +10,7 @@ import {
   ArrowUpDown, SortAsc, Calendar, Beaker, Glasses
 } from "lucide-react";
 import { gameData } from "../../data/gameData";
+import { SWMM5_MODELS } from "../../lib/swmm5Export";
 import CivilizationDetail from "./CivilizationDetail";
 import InventionDetail from "./InventionDetail";
 import Inventory from "./Inventory";
@@ -513,7 +514,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
             <div>
               <h1 className="font-heading text-2xl text-[var(--gold)]">World Map of Water Innovations</h1>
               <p className="text-[var(--parchment)]/70 text-sm">
-                Explore <span onClick={scrollToCivilizations} className="text-[var(--aqua)] font-semibold cursor-pointer hover:underline">{gameData.regions.length} civilizations</span> • <span className="text-[var(--cerulean)] font-semibold">{allArtifacts.length}+ water inventions</span> • <span className="text-[var(--gold)] font-semibold">241 SWMM5, ICM, Civil 3D networks</span> • 40,000 years of hydraulic engineering
+                Explore <span onClick={scrollToCivilizations} className="text-[var(--aqua)] font-semibold cursor-pointer hover:underline">{gameData.regions.length} civilizations</span> • <span className="text-[var(--cerulean)] font-semibold">{allArtifacts.length}+ water inventions</span> • <span className="text-[var(--gold)] font-semibold">{Object.keys(SWMM5_MODELS).length} SWMM5, ICM, Civil 3D networks</span> • 40,000 years of hydraulic engineering
               </p>
             </div>
           </div>
