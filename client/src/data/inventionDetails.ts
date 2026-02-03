@@ -2594,6 +2594,302 @@ export const inventionDetails: Record<string, InventionDetailData> = {
       "Model for community water management"
     ],
     robertsNote: "The johad revival in Rajasthan is one of the great water success stories of our time. Communities came together to rebuild these simple earthen dams, and dead rivers started flowing again. Traditional knowledge solving modern problems."
+  },
+  "basin-irrigation": {
+    tagline: "The flood-taming system that fed Egypt for 5,000 years",
+    keyFact: "Basin sizes ranged from 1,000 to 40,000 acres, with 1mm of nutrient-rich silt deposited annually—no fertilizer ever needed",
+    howItWorks: [
+      "Earthen embankments 1-2 meters high divided floodplain into basins",
+      "Intake canals directed Nile floodwaters into each basin",
+      "Water held at 1-1.5 meter depth for 40-60 days while silt settled",
+      "Sluice gates drained basins sequentially from high to low elevation",
+      "Crops planted in moist, silt-enriched soil after drainage",
+      "Gravity-powered system required no pumping or mechanical energy"
+    ],
+    whyItMattered: [
+      "Fed a population of 3-5 million people reliably for millennia",
+      "Created the economic surplus that built the pyramids",
+      "Required centralized government for coordination—birth of organized civilization",
+      "Word 'chemistry' derives from 'Khem' (black land = fertile silt)",
+      "System remained in use until the Aswan High Dam in 1970"
+    ],
+    legacyToday: [
+      "Modern controlled flooding techniques derive from this concept",
+      "Silt fertilization principle applied in sustainable agriculture",
+      "Basin irrigation still used in parts of Sudan and Mali",
+      "Geometry was invented to resurvey field boundaries after floods"
+    ],
+    technicalSpecs: {
+      materials: "Earthen embankments, wooden/stone sluice gates, intake canals",
+      dimensions: "Basins: 1,000-40,000 acres; Embankments: 1-2m high; Flood depth: 1-1.5m",
+      capacity: "Flood held for 40-60 days; Silt deposit: 1mm annually",
+      laborRequired: "Massive coordinated labor for embankment construction and maintenance"
+    },
+    robertsNote: "The basin irrigation system is engineering at civilizational scale. The Egyptians didn't fight the flood—they worked with it. Every year, 1mm of free fertilizer. In 5,000 years, that's 5 meters of accumulated soil. The pyramids were built by the surplus this system created.",
+    sources: [
+      "Butzer, K.W. (1976) 'Early Hydraulic Civilization in Egypt'",
+      "Willcocks, W. (1904) 'The Nile in 1904'",
+      "Scorpion Macehead (c. 3100 BCE) - earliest depiction of canal ritual"
+    ]
+  },
+  "sakia-waterwheel": {
+    tagline: "The animal-powered revolution that lifted Egypt's water 10 times higher",
+    keyFact: "A single sakia could raise 15-30 cubic meters per hour to heights of 3-8 meters—10-20 times more efficient than the shaduf",
+    howItWorks: [
+      "Horizontal drive wheel connected to vertical wheel by wooden gears",
+      "Ox, donkey, or camel walks in circle to turn the horizontal wheel",
+      "Gear system transfers rotation to vertical wheel submerged in water",
+      "12-24 ceramic pots (qawadis) attached to the rim scoop water continuously",
+      "Pots tip at the top, emptying into a discharge channel",
+      "Operates at 2-4 rotations per minute with characteristic creaking sound"
+    ],
+    whyItMattered: [
+      "Enabled irrigation of higher terraces previously unreachable",
+      "Freed humans from exhausting shaduf labor",
+      "Continuous operation increased agricultural output dramatically",
+      "Spread throughout Middle East, North Africa, and to Spain via Arab conquest",
+      "The distinctive creaking became an iconic sound of the Egyptian countryside"
+    ],
+    legacyToday: [
+      "Still used in rural Egypt, Sudan, and parts of the Middle East today",
+      "Spanish 'noria' water wheels descend directly from this design",
+      "Gear mechanisms influenced development of mechanical engineering",
+      "Water wheel technology foundation for industrial revolution mills"
+    ],
+    technicalSpecs: {
+      materials: "Acacia/sycamore wood wheels, wooden pegs/cogs, fired clay pots, palm fiber rope",
+      dimensions: "Wheel diameter: 2-5m; Number of pots: 12-24; Pot capacity: 5-15 liters",
+      capacity: "15-30 m³/hour; Lift height: 3-8 meters; Speed: 2-4 rpm",
+      laborRequired: "1 person + 1-2 animals; Construction: 5-10 skilled workers"
+    },
+    robertsNote: "The sakia was the first true pump in history—continuous flow, mechanical advantage, animal power. The Ptolemaic engineers understood gear ratios. This design lifted water for 2,300 years before anyone improved on it. I've heard that creaking in the Nile Valley—it's the sound of history.",
+    sources: [
+      "Vitruvius, De Architectura (1st century BCE)",
+      "Terracotta models from Ptolemaic tombs",
+      "Schioler, T. (1973) 'Roman and Islamic Water-Lifting Wheels'"
+    ]
+  },
+  "sacred-lake-karnak": {
+    tagline: "Where priests purified themselves in the waters of creation",
+    keyFact: "The Sacred Lake at Karnak measures 120m x 77m—the largest surviving temple lake, representing the primordial waters of Nun",
+    howItWorks: [
+      "Stone-lined artificial lake with limestone/sandstone block walls",
+      "Underground channels connected to the Nile for seasonal water supply",
+      "Stepped access points allowed priests gradual entry for ritual purification",
+      "Water level fluctuated with Nile flood, some lakes served as nilometers",
+      "Sacred geese and fish were kept in the waters as offerings to deities",
+      "Drainage systems allowed periodic cleaning and maintenance"
+    ],
+    whyItMattered: [
+      "Priests bathed four times daily before temple rituals",
+      "Sacred boats for divine processions were stored on or near the water",
+      "Represented the primordial ocean (Nun) from which creation emerged",
+      "Osiris mysteries reenacted on the water during religious festivals",
+      "Water stored for emergency supply to the temple complex"
+    ],
+    legacyToday: [
+      "Temple pools in many religions trace back to this concept",
+      "Ritual purification remains central to many faiths",
+      "Karnak's Sacred Lake still holds water after 3,500 years",
+      "Tourist landmark and UNESCO World Heritage component"
+    ],
+    technicalSpecs: {
+      materials: "Limestone/sandstone block walls, waterproof mortar, stone steps",
+      dimensions: "Karnak: 120m x 77m x 2-4m deep; Dendera: 35m x 25m; Medinet Habu: 45m x 35m",
+      capacity: "Karnak: ~20,000 cubic meters; Water source: Nile via underground tunnel",
+      laborRequired: "Massive construction workforce; Daily maintenance by temple staff"
+    },
+    robertsNote: "These weren't just pretty pools—they were essential infrastructure. The water was functional: purification, ceremonies, storage. But the symbolism was profound: every temple had its own piece of the primordial ocean. Engineering and religion unified.",
+    sources: [
+      "Wilkinson, R.H. (2000) 'The Complete Temples of Ancient Egypt'",
+      "Arnold, D. (1999) 'Temples of the Last Pharaohs'",
+      "Karnak Great Temple project archaeological surveys"
+    ]
+  },
+  "heros-fountain": {
+    tagline: "The self-powered fountain that mystified ancient audiences",
+    keyFact: "Hero's Fountain uses no external power—only air pressure physics to make water appear to flow upward by magic",
+    howItWorks: [
+      "Three vessels connected by two tubes in a closed system",
+      "Upper basin receives water, which flows down to sealed middle chamber",
+      "Falling water compresses air in middle chamber",
+      "Compressed air pushes water from bottom sealed chamber up through fountain tube",
+      "Fountain sprays higher than the supply level—appearing to defy gravity",
+      "System runs until middle chamber fills and air pressure equalizes"
+    ],
+    whyItMattered: [
+      "Demonstrated principles that became pneumatics and hydraulics",
+      "Used in temple 'miracles' to astonish worshippers",
+      "Hero of Alexandria's 'Pneumatica' described 78 such devices",
+      "Influenced Islamic water engineers—Al-Jazari cited Hero directly",
+      "Precursor to understanding Pascal's Law"
+    ],
+    legacyToday: [
+      "Fundamental to development of pneumatics",
+      "Principle used in some modern compressed-air water systems",
+      "Still built as educational physics demonstration worldwide",
+      "Inspired Renaissance fountain designers in Italy and France"
+    ],
+    technicalSpecs: {
+      materials: "Bronze or ceramic vessels, copper tubes, water-tight seals",
+      dimensions: "Typical demonstration: 3 vessels of 1-5 liter capacity",
+      capacity: "Fountain height depends on air column and water drop height",
+      laborRequired: "Skilled craftsman for precision sealing; Periodic refilling required"
+    },
+    robertsNote: "Hero understood something modern engineers often forget: you don't need external power if you understand physics. This fountain uses gravity and air pressure—nothing else. He described 78 devices in his 'Pneumatica.' The man was 2,000 years ahead of his time.",
+    sources: [
+      "Hero of Alexandria, 'Pneumatica' (c. 60 CE)",
+      "Drachmann, A.G. (1963) 'The Mechanical Technology of Greek and Roman Antiquity'",
+      "Woodcroft, B. (1851) translation of 'The Pneumatics of Hero of Alexandria'"
+    ]
+  },
+  "ctesibius-pump": {
+    tagline: "The first true pump—father of all reciprocating machinery",
+    keyFact: "Roman fire brigades used Ctesibius pumps on wheeled carts that could project water streams 20+ meters horizontally",
+    howItWorks: [
+      "Two cylinders with bronze pistons operate in alternating strokes",
+      "Leather-flap clack valves allow water in on upstroke, seal on downstroke",
+      "Downstroke forces water through outlet valve into common chamber",
+      "Air chamber (invention of Ctesibius) smooths pulsing flow into steady stream",
+      "Manual levers operated by 2-4 workers create continuous pumping action",
+      "Discharge nozzle produces pressurized stream for firefighting or fountains"
+    ],
+    whyItMattered: [
+      "First reciprocating pump with valves in human history",
+      "Emperor Augustus organized Rome's first fire department using these pumps",
+      "Spanish silver mines used banks of pumps to drain 100+ meters deep",
+      "Enabled large Roman ships to be pumped dry in bilge operations",
+      "Basic design unchanged until the steam engine era"
+    ],
+    legacyToday: [
+      "Direct ancestor of all reciprocating pumps and piston engines",
+      "Fire engine pumps used identical principle until steam power",
+      "Influenced development of steam engine piston design",
+      "Modern bicycle pumps and hand pumps use the same physics"
+    ],
+    technicalSpecs: {
+      materials: "Bronze cylinders and pistons, leather seals and valves, wooden frame",
+      dimensions: "Cylinder diameter: 10-15cm; Typical lift: 10-20 meters",
+      capacity: "20-50 liters/minute; Discharge pressure: 2-3 atmospheres",
+      laborRequired: "2-4 operators working levers; Skilled bronze worker for construction"
+    },
+    robertsNote: "Ctesibius was the 'Father of Pneumatics'—and this pump proves it. The air chamber was his stroke of genius: it smooths pulsing flow into a steady stream. We still use air chambers in modern pumping stations. The man invented them in 270 BCE.",
+    sources: [
+      "Vitruvius, De Architectura, Book X (1st century BCE)",
+      "Complete pump found at Sotiel Coronada mine, Spain",
+      "Silchester pump (Roman Britain)—British Museum"
+    ]
+  },
+  "castellum-divisorium": {
+    tagline: "Rome's water distribution hub—democracy in liquid form",
+    keyFact: "The castellum at Nîmes distributed 20,000 cubic meters daily through 10 precisely-sized lead pipes based on legal water rights",
+    howItWorks: [
+      "Aqueduct water enters a circular settling basin to remove debris",
+      "Main distribution basin (5.5m diameter at Nîmes) serves as reservoir",
+      "10 outlet pipes at different heights serve different user classes",
+      "Highest outlets (for luxury private users) dry first during shortage",
+      "Lowest outlets (public fountains) receive water even in drought",
+      "Lead pipes (fistulae) calibrated by official quinaria measure"
+    ],
+    whyItMattered: [
+      "Fair distribution system based on legal water rights",
+      "Public fountains guaranteed water even when wealthy homes lost supply",
+      "Frontinus documented 247 such distribution points in Rome alone",
+      "Created system of water metering and taxation still used today",
+      "Enabled Roman cities to manage water for 1+ million residents"
+    ],
+    legacyToday: [
+      "Modern water distribution networks use same zoned pressure principles",
+      "Tiered water rights systems derive from Roman legal framework",
+      "Municipal water departments function like ancient water commissioners",
+      "Nîmes castellum still stands as monument to Roman engineering"
+    ],
+    technicalSpecs: {
+      materials: "Stone/concrete basin, lead pipes (fistulae), bronze calibration rings",
+      dimensions: "Nîmes: 5.5m diameter, 1.45m deep; 10 outlet pipes",
+      capacity: "Nîmes: ~20,000 m³ daily throughput; Rome: 1 million m³ daily total",
+      laborRequired: "Aquarii (water officials) for daily monitoring; Plumbarii for repairs"
+    },
+    robertsNote: "The castellum is where engineering meets law. Those different outlet heights weren't random—they encoded social priorities. Public fountains were guaranteed; private villas were luxury. When water ran short, the rich lost their gardens first. That's ancient Roman democracy in action.",
+    sources: [
+      "Frontinus, 'De Aquaeductu' (97 CE)",
+      "Nîmes castellum archaeological surveys",
+      "Hodge, A.T. (2002) 'Roman Aqueducts and Water Supply'"
+    ]
+  },
+  "opus-caementicium": {
+    tagline: "The 2,000-year-old concrete that gets stronger in seawater",
+    keyFact: "Roman maritime concrete grows Al-tobermorite crystals when exposed to seawater—it literally heals itself and strengthens over millennia",
+    howItWorks: [
+      "Volcanic ash (pozzolana) from Pozzuoli mixed with quicklite at low temperature",
+      "Seawater used for mixing in maritime structures",
+      "Aggregate of broken brick (testae) or volcanic rock (tuff) added",
+      "Poured into wooden forms (caissons) even underwater",
+      "Chemical reaction between seawater and volcanic ash creates mineral crystals",
+      "Al-tobermorite crystals grow in cracks, actually strengthening concrete over time"
+    ],
+    whyItMattered: [
+      "Enabled construction of harbors, aqueduct linings, and massive domes",
+      "Pantheon's unreinforced concrete dome (43m) still stands after 1,900 years",
+      "Underwater harbor construction revolutionized Mediterranean trade",
+      "Produced 90% less CO2 than modern Portland cement",
+      "No steel reinforcement needed—no corrosion problems"
+    ],
+    legacyToday: [
+      "Scientists studying Roman concrete to develop sustainable alternatives",
+      "Could reduce cement industry's 8% of global CO2 emissions",
+      "Self-healing concrete research inspired by Roman discoveries",
+      "2017 University of Utah study revealed the self-strengthening mechanism"
+    ],
+    technicalSpecs: {
+      materials: "Volcanic ash (pozzolana), quicklime, seawater, brick/tuff aggregate",
+      dimensions: "Varied by application; Pantheon dome: 43.3m diameter",
+      capacity: "Compressive strength: 10 MPa initial → 20+ MPa over centuries",
+      laborRequired: "Specialized concretarii guilds; Low-temperature curing (reduced fuel)"
+    },
+    robertsNote: "Roman concrete is the engineering mystery of the ancient world. Modern concrete lasts 50-100 years in seawater before cracking. Roman harbor structures are still intact after 2,000 years—and getting stronger. The secret is the volcanic ash. We're only now understanding why it works.",
+    sources: [
+      "Vitruvius, De Architectura, Book II (1st century BCE)",
+      "Jackson, M.D. et al. (2017) 'Phillipsite and Al-tobermorite mineral cements...' American Mineralogist",
+      "Piscina Mirabilis, Caesarea harbor archaeological studies"
+    ]
+  },
+  "grand-canal-china": {
+    tagline: "The world's longest artificial waterway—1,776 km unifying an empire",
+    keyFact: "At its peak, 10,000+ boats daily transported 400,000 tonnes of grain annually to feed imperial capitals for 1,500 years",
+    howItWorks: [
+      "Five major river basins connected: Hai, Yellow, Huai, Yangtze, Qiantang",
+      "Summit section at Jining required feeder lakes and 60+ pound locks",
+      "Flash lock gates (invented 984 CE) evolved into pound locks by 1100s",
+      "Canal width: 30-70 meters; Depth: 2-3 meters for barge traffic",
+      "Yellow River crossing required constant dredging and bank reinforcement",
+      "Water supply maintained by 380+ feeder streams and lakes"
+    ],
+    whyItMattered: [
+      "Unified China economically when roads couldn't handle grain transport",
+      "Enabled capitals in Beijing to be fed from rice-growing south",
+      "Created first truly national economy through internal trade",
+      "Built in stages over 1,800 years (486 BCE - 1293 CE completion)",
+      "UNESCO World Heritage Site since 2014"
+    ],
+    legacyToday: [
+      "Still partially navigable—world's oldest operating canal",
+      "Sections carry 100 million tonnes of cargo annually",
+      "South-North Water Transfer Project uses parts of the alignment",
+      "Model for modern mega-infrastructure projects"
+    ],
+    technicalSpecs: {
+      materials: "Stone embankments, wooden lock gates, earthen levees",
+      dimensions: "Length: 1,776 km; Width: 30-70m; Depth: 2-3m",
+      capacity: "Peak: 10,000+ boats/day; 400,000 tonnes grain annually",
+      laborRequired: "Sui Dynasty: 1+ million laborers (605-610 CE); Continuous maintenance army"
+    },
+    robertsNote: "The Grand Canal is infrastructure at civilizational scale. It connected five river basins across 1,776 kilometers. The summit section is the engineering marvel—they had to pump water uphill using a network of feeder lakes. China was unified by water, not just walls.",
+    sources: [
+      "Needham, J. (1971) 'Science and Civilisation in China', Vol. 4",
+      "UNESCO World Heritage nomination document (2014)",
+      "Pan Jixun, 'Treatise on River Control' (1590)"
+    ]
   }
 };
 
