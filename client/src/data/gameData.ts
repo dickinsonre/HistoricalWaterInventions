@@ -675,6 +675,65 @@ export const gameData: GameData = {
               significance: "Invention of modern canal lock system",
               yearBCE: -984,
               category: "canal"
+            },
+            {
+              id: "grand-canal-system",
+              name: "Grand Canal (大运河)",
+              description: "World's longest artificial waterway at 1,776 km connecting Beijing to Hangzhou. Sui Dynasty (605-610 CE) unified earlier sections using 5 million workers. Enabled grain transport from south to feed northern capitals for 1,400 years.",
+              rarity: "legendary",
+              historicalPeriod: "Sui Dynasty (581-618 CE)",
+              significance: "Longest canal in world—still operational, now UNESCO World Heritage",
+              yearBCE: -610,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "han-dynasty-engineering",
+          name: "Han Dynasty Engineering Center",
+          description: "Innovations in water lifting and flood control",
+          historicalContext: "Golden age of Chinese hydraulic technology",
+          coordinates: { lat: 34.2658, lng: 108.9541 },
+          artifacts: [
+            {
+              id: "chain-pump",
+              name: "Chain Pump (翻车 Fanche)",
+              description: "Square-pallet chain pump for continuous irrigation. Wooden pallets on endless chain drag water up inclined trough. Operated by pedal, hand crank, or animal power. One person could irrigate 2 hectares daily.",
+              rarity: "epic",
+              historicalPeriod: "Han Dynasty (206 BCE-220 CE)",
+              significance: "Standard Chinese irrigation device for 2,000 years—still used in some areas",
+              yearBCE: 100,
+              category: "water-lifting"
+            },
+            {
+              id: "dragon-backbone",
+              name: "Dragon Backbone Machine (龙骨水车)",
+              description: "Treadle-operated water lifting device named for its spine-like appearance. Wooden frame with chain of paddles lifted water 2-5 meters. Required 2-3 workers operating foot pedals continuously.",
+              rarity: "epic",
+              historicalPeriod: "Han Dynasty (206 BCE-220 CE)",
+              significance: "Powered wet rice cultivation across China for millennia",
+              yearBCE: 100,
+              category: "water-lifting"
+            },
+            {
+              id: "zhengguo-canal",
+              name: "Zhengguo Canal",
+              description: "Major irrigation canal (246 BCE) transforming Guanzhong Plain from desert to breadbasket of Qin state. 150 km long, irrigated 40,000 hectares. Designed by engineer Zheng Guo—ironically sent by rival state to exhaust Qin resources.",
+              rarity: "legendary",
+              historicalPeriod: "Warring States (475-221 BCE)",
+              significance: "Made Qin powerful enough to unify China—canal intended as sabotage became advantage",
+              yearBCE: 246,
+              category: "irrigation"
+            },
+            {
+              id: "spillway-weir",
+              name: "Stepped Spillway Weir System",
+              description: "Graduated stone weirs for Yellow River flood control. Energy dissipation through multiple steps prevented erosion. Combined with levee systems for integrated flood management across thousands of kilometers.",
+              rarity: "epic",
+              historicalPeriod: "Han Dynasty (206 BCE-220 CE)",
+              significance: "Philosophy of 'channel, don't block' from legendary Yu the Great (2200 BCE)",
+              yearBCE: 100,
+              category: "dam"
             }
           ]
         }
@@ -774,6 +833,16 @@ export const gameData: GameData = {
               significance: "Twin channels allowed cleaning without interrupting supply",
               yearBCE: -1466,
               category: "aqueduct"
+            },
+            {
+              id: "tenochtitlan-dike",
+              name: "Tenochtitlan Dike System (Albarradón de Nezahualcóyotl)",
+              description: "16-kilometer dike separating fresh and salt water in Lake Texcoco. Built by poet-king Nezahualcoyotl in 1449 CE after catastrophic flood. Featured sluice gates for controlled drainage and multiple causeways with removable bridges.",
+              rarity: "legendary",
+              historicalPeriod: "Aztec Empire (1449 CE)",
+              significance: "Protected 200,000 people—Spanish destruction caused flooding that persists 500 years later",
+              yearBCE: -1449,
+              category: "dam"
             }
           ]
         },
@@ -793,6 +862,35 @@ export const gameData: GameData = {
               significance: "Supported 100,000 people in jungle without rivers",
               yearBCE: -600,
               category: "dam"
+            }
+          ]
+        },
+        {
+          id: "yucatan-cenotes",
+          name: "Yucatan Cenote Region",
+          description: "Sacred sinkholes providing water access in limestone terrain",
+          historicalContext: "Natural wells served as primary water sources and spiritual centers",
+          coordinates: { lat: 20.6843, lng: -88.5678 },
+          artifacts: [
+            {
+              id: "cenote-management",
+              name: "Cenote Management Systems",
+              description: "Sacred sinkholes with carved stone stairways, platforms for water collection, and ritual spaces. Some cenotes had rope-and-bucket systems; others featured carved channels directing water to settlement areas. Chichen Itza's Sacred Cenote was 60m wide, 27m deep.",
+              rarity: "legendary",
+              historicalPeriod: "Classic Maya (600-1200 CE)",
+              significance: "Only water source in northern Yucatan—settlements located based on cenote access",
+              yearBCE: -600,
+              category: "dam"
+            },
+            {
+              id: "raised-field-agriculture",
+              name: "Raised Field Wetland Agriculture",
+              description: "Bajo (seasonal swamp) cultivation using raised planting beds surrounded by canals. Muck from canals fertilized beds while fish in channels provided protein. Similar to chinampas but adapted to jungle wetlands.",
+              rarity: "epic",
+              historicalPeriod: "Classic Maya (250-900 CE)",
+              significance: "Enabled intensive farming in jungle wetlands—recent LiDAR reveals massive scale",
+              yearBCE: -400,
+              category: "irrigation"
             }
           ]
         },
@@ -1524,6 +1622,35 @@ export const gameData: GameData = {
               significance: "Covered 25,000 miles of road network with water access",
               yearBCE: -1300,
               category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "nazca-region",
+          name: "Nazca Desert Region",
+          description: "Pre-Inca underground aqueducts in world's driest desert",
+          historicalContext: "Ingenious spiral wells accessing underground aquifers",
+          coordinates: { lat: -14.8388, lng: -74.9430 },
+          artifacts: [
+            {
+              id: "puquios",
+              name: "Puquios (Underground Spiral Wells)",
+              description: "Ingenious corkscrew-shaped wells accessing underground aquifers in one of Earth's driest deserts. 36 puquios still function near Nazca after 1,500+ years. Spiral design allowed maintenance access and wind to push water through horizontal tunnels (filtration galleries).",
+              rarity: "legendary",
+              historicalPeriod: "Nazca Culture (500-700 CE)",
+              significance: "Pre-Inca engineering—still supplies water to 40+ towns; inspired modern groundwater engineering",
+              yearBCE: -500,
+              category: "aqueduct"
+            },
+            {
+              id: "moray-terraces",
+              name: "Moray Circular Terraces",
+              description: "Concentric circular terraces creating 15°C temperature difference between top and bottom. Each level simulates different altitude growing conditions. Ingenious agricultural research station testing crops from coast to high Andes in one location.",
+              rarity: "legendary",
+              historicalPeriod: "Inca Period (1400 CE)",
+              significance: "World's first agricultural experiment station—tested crops from multiple ecosystems",
+              yearBCE: -1400,
+              category: "irrigation"
             }
           ]
         }
