@@ -5219,6 +5219,555 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "xia-shang-dynasty",
+      name: "Xia & Shang Dynasties",
+      description: "Legendary foundations of Chinese hydraulic engineering—Yu the Great's flood control philosophy",
+      position: [22, 0, -3],
+      color: "#8B4513",
+      era: "ancient",
+      dateRange: "2070-1046 BCE",
+      locations: [
+        {
+          id: "anyang-yinxu",
+          name: "Yinxu (Anyang)",
+          description: "Shang Dynasty capital with earliest Chinese water infrastructure",
+          historicalContext: "Bronze Age civilization with sophisticated wells and moats",
+          coordinates: { lat: 36.1167, lng: 114.3500 },
+          artifacts: [
+            {
+              id: "yu-flood-control",
+              name: "Yu the Great's Flood Philosophy",
+              description: "'Don't block water—channel it!' Revolutionary principle that influenced all Chinese water engineering",
+              rarity: "legendary",
+              historicalPeriod: "2200 BCE (legendary)",
+              significance: "Yu worked 13 years channeling floods; 'passed his door three times without entering'; established water management as imperial duty",
+              yearBCE: 2200,
+              category: "canal"
+            },
+            {
+              id: "shang-wells",
+              name: "Shang Dynasty Deep Wells",
+              description: "Wooden-lined wells found at Yinxu—earliest systematic groundwater extraction in China",
+              rarity: "rare",
+              historicalPeriod: "1300-1046 BCE",
+              significance: "Archaeological evidence at Yinxu; wooden linings preserved; oracle bone inscriptions mention wells",
+              yearBCE: 1300,
+              category: "irrigation"
+            },
+            {
+              id: "shang-moats",
+              name: "Shang Palace Moat Systems",
+              description: "Defensive water barriers around palace complexes—earliest Chinese urban water features",
+              rarity: "rare",
+              historicalPeriod: "1600-1046 BCE",
+              significance: "Surrounded palace complexes; combined defense with drainage; prototype for later city water systems",
+              yearBCE: 1500,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "zhou-qin-dynasty",
+      name: "Zhou & Qin Dynasties",
+      description: "Systematization of water management—Dujiangyan and the Lingqu Canal",
+      position: [20, 0, -4],
+      color: "#4169E1",
+      era: "ancient",
+      dateRange: "1046-206 BCE",
+      locations: [
+        {
+          id: "dujiangyan-site",
+          name: "Dujiangyan",
+          description: "2,250-year-old irrigation system still watering 5+ million hectares",
+          historicalContext: "Built by Li Bing in 256 BCE—still functioning today",
+          coordinates: { lat: 31.0000, lng: 103.6100 },
+          artifacts: [
+            {
+              id: "dujiangyan-system",
+              name: "Dujiangyan Irrigation System",
+              description: "Fish Mouth divides river 40/60; Flying Sand Weir removes sediment; Bottle Neck controls flow—no dam to break",
+              rarity: "legendary",
+              historicalPeriod: "256 BCE",
+              significance: "UNESCO World Heritage; still irrigates 5.3 million hectares; feeds 10+ million people; no dam—uses natural river dynamics",
+              yearBCE: 256,
+              category: "irrigation"
+            },
+            {
+              id: "zhengguo-canal",
+              name: "Zhengguo Canal",
+              description: "150 km irrigation canal that transformed Qin agriculture and enabled empire-building",
+              rarity: "epic",
+              historicalPeriod: "246 BCE",
+              significance: "Transformed arid Qin heartland into breadbasket; 40,000+ hectares irrigated; key to Qin conquest",
+              yearBCE: 246,
+              category: "canal"
+            },
+            {
+              id: "lingqu-canal",
+              name: "Lingqu Canal",
+              description: "First contour canal connecting Yangtze and Pearl River systems—enabled conquest of southern China",
+              rarity: "legendary",
+              historicalPeriod: "214 BCE",
+              significance: "36 km long; 36 lock gates; plough-shaped spillway; still functioning as navigation canal; UNESCO World Heritage",
+              yearBCE: 214,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "han-dynasty",
+      name: "Han Dynasty",
+      description: "Golden age of Chinese hydraulics—chain pump, water mills, Grand Canal beginnings",
+      position: [21, 0, -2],
+      color: "#DC143C",
+      era: "classical",
+      dateRange: "206 BCE - 220 CE",
+      locations: [
+        {
+          id: "chang-an-han",
+          name: "Chang'an (Han)",
+          description: "Han Dynasty capital with revolutionary water technology",
+          historicalContext: "First great flowering of Chinese water engineering",
+          coordinates: { lat: 34.2667, lng: 108.9500 },
+          artifacts: [
+            {
+              id: "chain-pump",
+              name: "Han Dynasty Chain Pump (翻车)",
+              description: "Square-pallet chain pump—one person could irrigate 2+ acres daily",
+              rarity: "legendary",
+              historicalPeriod: "~100 CE",
+              significance: "Could lift water 4-5 meters; used for 2,000+ years; spread to Korea, Japan, Southeast Asia",
+              yearBCE: -100,
+              category: "water-lifting"
+            },
+            {
+              id: "han-water-mills",
+              name: "Han Dynasty Water Mills",
+              description: "First water-powered grain milling in China",
+              rarity: "epic",
+              historicalPeriod: "~30 CE",
+              significance: "Revolutionized grain processing; spread throughout empire; basis for later industrial applications",
+              yearBCE: -30,
+              category: "water-lifting"
+            },
+            {
+              id: "yellow-river-levees",
+              name: "Yellow River Flood Control Levees",
+              description: "Systematic embankment construction to contain China's 'Sorrow'",
+              rarity: "epic",
+              historicalPeriod: "~100 BCE",
+              significance: "Attempted to control world's most sediment-laden river; mixed success but established precedent",
+              yearBCE: 100,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "sui-tang-dynasty",
+      name: "Sui & Tang Dynasties",
+      description: "Grand Canal completion—world's longest artificial waterway connecting Beijing to Hangzhou",
+      position: [23, 0, -1],
+      color: "#FFD700",
+      era: "medieval",
+      dateRange: "581-907 CE",
+      locations: [
+        {
+          id: "grand-canal",
+          name: "Grand Canal",
+          description: "1,776 km canal connecting 5 major river systems—UNESCO World Heritage",
+          historicalContext: "Millions of workers, many deaths; enabled unified China",
+          coordinates: { lat: 32.0000, lng: 118.7800 },
+          artifacts: [
+            {
+              id: "grand-canal-system",
+              name: "Grand Canal (大运河)",
+              description: "World's longest artificial waterway—1,776 km connecting Beijing to Hangzhou",
+              rarity: "legendary",
+              historicalPeriod: "587-608 CE",
+              significance: "Connected 5 river systems; still used today; UNESCO World Heritage (2014); enabled grain transport to capital",
+              yearBCE: -600,
+              category: "canal"
+            },
+            {
+              id: "flash-lock-gates",
+              name: "Tang Dynasty Flash Lock Gates",
+              description: "Improved navigation through elevation changes on the Grand Canal",
+              rarity: "epic",
+              historicalPeriod: "618-907 CE",
+              significance: "Allowed boats to transit between different water levels; precursor to pound locks",
+              yearBCE: -700,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "chang-an-tang",
+          name: "Chang'an (Tang)",
+          description: "World's largest city with most advanced urban water system",
+          historicalContext: "Population ~1 million; 108 walled wards each with wells and canal access",
+          coordinates: { lat: 34.2667, lng: 108.9500 },
+          artifacts: [
+            {
+              id: "chang-an-water-system",
+              name: "Tang Chang'an Urban Water System",
+              description: "108 walled wards, each with wells and canal access; lotus ponds and fountains in Imperial Palace",
+              rarity: "epic",
+              historicalPeriod: "618-907 CE",
+              significance: "World's most advanced urban water system of its era; population 1 million; main canals through city",
+              yearBCE: -700,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "song-dynasty",
+      name: "Song Dynasty",
+      description: "Technological peak—invented the pound lock 500 years before Europe",
+      position: [24, 0, -2],
+      color: "#9932CC",
+      era: "medieval",
+      dateRange: "960-1279 CE",
+      locations: [
+        {
+          id: "kaifeng",
+          name: "Kaifeng (Northern Song)",
+          description: "Song capital with peak of pre-modern water technology",
+          historicalContext: "Most innovative era for Chinese water engineering",
+          coordinates: { lat: 34.7917, lng: 114.3478 },
+          artifacts: [
+            {
+              id: "pound-lock",
+              name: "Song Dynasty Pound Lock",
+              description: "First true canal lock invented by Qiao Weiyue in 984 CE—500 years before Europe",
+              rarity: "legendary",
+              historicalPeriod: "984 CE",
+              significance: "Safe, gradual water transfer; ships rise/lower smoothly; minimal water loss; revolutionized canal navigation",
+              yearBCE: -984,
+              category: "canal"
+            },
+            {
+              id: "su-song-clock",
+              name: "Su Song's Water Clock Tower",
+              description: "40-foot astronomical clock tower powered by water—most complex machine of medieval world",
+              rarity: "legendary",
+              historicalPeriod: "1088 CE",
+              significance: "Hydraulic-powered automaton; astronomical observations; bells and gongs announced time; destroyed 1127 CE",
+              yearBCE: -1088,
+              category: "water-clock"
+            },
+            {
+              id: "song-tidal-mills",
+              name: "Song Dynasty Tidal Mills",
+              description: "Harnessing tidal power for grain milling on coastal estuaries",
+              rarity: "epic",
+              historicalPeriod: "~1050 CE",
+              significance: "Early tidal energy; operated twice daily; spread along coast",
+              yearBCE: -1050,
+              category: "water-lifting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ming-dynasty",
+      name: "Ming Dynasty",
+      description: "Yellow River regulation—Pan Jixun's 'confine water to scour sand' principle",
+      position: [25, 0, -3],
+      color: "#FF4500",
+      era: "medieval",
+      dateRange: "1368-1644 CE",
+      locations: [
+        {
+          id: "yellow-river-ming",
+          name: "Yellow River Basin",
+          description: "Pan Jixun's systematic flood control",
+          historicalContext: "Innovative approach to sediment management",
+          coordinates: { lat: 35.0000, lng: 110.0000 },
+          artifacts: [
+            {
+              id: "pan-jixun-method",
+              name: "Pan Jixun's Yellow River Control",
+              description: "'束水攻沙' (Confine water to scour sand)—narrow channels create fast flow that washes sediment to sea",
+              rarity: "legendary",
+              historicalPeriod: "16th century CE",
+              significance: "Revolutionary approach; opposite of traditional widening; reduced flooding for generations",
+              yearBCE: -1550,
+              category: "dam"
+            },
+            {
+              id: "ming-seawalls",
+              name: "Ming Coastal Seawalls",
+              description: "Protection against typhoons and flooding along China's coast",
+              rarity: "epic",
+              historicalPeriod: "1368-1644 CE",
+              significance: "Protected agricultural land; enabled coastal settlement; some still standing",
+              yearBCE: -1400,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "vedic-mauryan-india",
+      name: "Vedic & Mauryan India",
+      description: "Sacred water philosophy and world's first water policy document (Arthashastra)",
+      position: [14, 0, 2],
+      color: "#FF8C00",
+      era: "ancient",
+      dateRange: "1500 BCE - 185 BCE",
+      locations: [
+        {
+          id: "pataliputra",
+          name: "Pataliputra",
+          description: "Mauryan capital with state-managed water systems",
+          historicalContext: "Kautilya's Arthashastra defined world's first comprehensive water policy",
+          coordinates: { lat: 25.6100, lng: 85.1400 },
+          artifacts: [
+            {
+              id: "arthashastra-water",
+              name: "Kautilya's Arthashastra Water Policy",
+              description: "World's first comprehensive water policy document (~300 BCE)—taxes based on water source",
+              rarity: "legendary",
+              historicalPeriod: "~300 BCE",
+              significance: "State builds dams and tanks; water tax: 1/4 harvest for canal, 1/5 for tank; private wells tax-free",
+              yearBCE: 300,
+              category: "irrigation"
+            },
+            {
+              id: "sudarshana-lake",
+              name: "Sudarshana Lake Dam",
+              description: "First documented dam in India—built by Chandragupta Maurya in Gujarat",
+              rarity: "epic",
+              historicalPeriod: "~300 BCE",
+              significance: "Repaired multiple times over 800 years; inscription records repairs; early dam engineering",
+              yearBCE: 300,
+              category: "dam"
+            },
+            {
+              id: "vedic-water-philosophy",
+              name: "Vedic Water Philosophy",
+              description: "'Waters, you are the ones who bring us life' (Rigveda)—dharmic duty to preserve water",
+              rarity: "rare",
+              historicalPeriod: "1500-500 BCE",
+              significance: "Varuna god of waters; rivers sacred (Ganga, Yamuna, Saraswati); monsoon as Indra's gift",
+              yearBCE: 1500,
+              category: "fountain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "chola-dynasty",
+      name: "Chola Dynasty (South India)",
+      description: "Tank cascade systems and the Grand Anicut—oldest functional dam in the world",
+      position: [13, 0, 4],
+      color: "#B8860B",
+      era: "classical",
+      dateRange: "300 BCE - 1279 CE",
+      locations: [
+        {
+          id: "thanjavur",
+          name: "Thanjavur",
+          description: "Heart of Chola water engineering",
+          historicalContext: "10,000+ tanks in Tamil Nadu alone; community-managed cascade systems",
+          coordinates: { lat: 10.7867, lng: 79.1378 },
+          artifacts: [
+            {
+              id: "grand-anicut",
+              name: "Grand Anicut (Kallanai)",
+              description: "Oldest functional dam in the world—still irrigates 1 million+ acres after 1,900 years",
+              rarity: "legendary",
+              historicalPeriod: "~2nd century CE",
+              significance: "329m long, 20m wide, 5.4m high; built by Karikala Chola; model for British irrigation works",
+              yearBCE: -150,
+              category: "dam"
+            },
+            {
+              id: "tank-cascade-system",
+              name: "South Indian Tank Cascade",
+              description: "Gravity-fed interconnected tanks—highest to lowest, each feeds the next, returns to river",
+              rarity: "legendary",
+              historicalPeriod: "900-1200 CE",
+              significance: "10,000+ tanks in Tamil Nadu; no pumping needed; community managed; still functioning",
+              yearBCE: -900,
+              category: "irrigation"
+            },
+            {
+              id: "chola-sluices",
+              name: "Chola Stone Sluice Gates",
+              description: "Precisely engineered stone sluices for controlling water release from tanks",
+              rarity: "epic",
+              historicalPeriod: "900-1200 CE",
+              significance: "Village-level water councils managed sluice operation; fair water distribution",
+              yearBCE: -1000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "delhi-sultanate",
+      name: "Delhi Sultanate",
+      description: "Persian-influenced stepwells and architectural water storage",
+      position: [12, 0, 1],
+      color: "#2E8B57",
+      era: "medieval",
+      dateRange: "1206-1526 CE",
+      locations: [
+        {
+          id: "delhi-stepwells",
+          name: "Delhi & Gujarat",
+          description: "Architectural masterpieces of water storage",
+          historicalContext: "Combined Persian and Indian water traditions",
+          coordinates: { lat: 28.6139, lng: 77.2090 },
+          artifacts: [
+            {
+              id: "stepwell-architecture",
+              name: "Stepwell Architecture (Baoli/Vav)",
+              description: "Multi-story architectural water access—Chand Baori has 13 stories and 3,500 steps!",
+              rarity: "legendary",
+              historicalPeriod: "11th-16th century CE",
+              significance: "Water supply + cool retreat (10-15°C cooler) + social space; Rani ki Vav UNESCO World Heritage",
+              yearBCE: -1100,
+              category: "irrigation"
+            },
+            {
+              id: "persian-wheel-india",
+              name: "Persian Wheel (Rahat)",
+              description: "Animal-powered vertical water wheel for lifting irrigation water",
+              rarity: "rare",
+              historicalPeriod: "1206-1526 CE",
+              significance: "Introduced from Persia; spread across North India; still used in some areas",
+              yearBCE: -1300,
+              category: "water-lifting"
+            },
+            {
+              id: "karez-india",
+              name: "Karez (Indian Qanats)",
+              description: "Underground gravity-flow tunnels adapted from Persian technology",
+              rarity: "rare",
+              historicalPeriod: "1206-1526 CE",
+              significance: "Built in arid regions of Rajasthan and Deccan; protected from evaporation",
+              yearBCE: -1300,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "mughal-empire",
+      name: "Mughal Empire",
+      description: "Char Bagh paradise gardens with 400+ fountains—Taj Mahal water system",
+      position: [15, 0, 0],
+      color: "#800020",
+      era: "medieval",
+      dateRange: "1526-1857 CE",
+      locations: [
+        {
+          id: "agra-taj",
+          name: "Agra (Taj Mahal)",
+          description: "Peak of Mughal water garden design",
+          historicalContext: "Combined Persian, Central Asian, and Indian traditions",
+          coordinates: { lat: 27.1751, lng: 78.0421 },
+          artifacts: [
+            {
+              id: "taj-mahal-water",
+              name: "Taj Mahal Char Bagh Water System",
+              description: "400+ fountains fed by raised marble channels—copper pipes, reflecting pools, geometric perfection",
+              rarity: "legendary",
+              historicalPeriod: "1632-1653 CE",
+              significance: "Water lifted from Yamuna by Persian wheels; underground terra-cotta pipes; gravity-fed from elevated tanks",
+              yearBCE: -1650,
+              category: "fountain"
+            },
+            {
+              id: "shalimar-gardens",
+              name: "Shalimar Gardens Water Features",
+              description: "Cascading fountains across three terraces at Lahore and Kashmir",
+              rarity: "epic",
+              historicalPeriod: "1641 CE",
+              significance: "UNESCO World Heritage; 410 fountains at Kashmir Shalimar; geometric water channels",
+              yearBCE: -1641,
+              category: "fountain"
+            },
+            {
+              id: "mughal-canal-restoration",
+              name: "Western Yamuna Canal Restoration",
+              description: "Mughal revival of ancient waterways for irrigation and urban supply",
+              rarity: "rare",
+              historicalPeriod: "17th century CE",
+              significance: "Restored ancient channels; expanded irrigation; supplied Delhi",
+              yearBCE: -1650,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "rajasthan-desert",
+      name: "Rajasthan (Desert Water Harvesting)",
+      description: "Ingenious water harvesting in extreme desert—Kund, Tanka, Johad",
+      position: [11, 0, 2],
+      color: "#DAA520",
+      era: "medieval",
+      dateRange: "800-1900 CE",
+      locations: [
+        {
+          id: "jaisalmer",
+          name: "Jaisalmer & Thar Desert",
+          description: "Survival water systems in extreme arid conditions",
+          historicalContext: "Only 100-200mm rainfall annually; every drop precious",
+          coordinates: { lat: 26.9157, lng: 70.9083 },
+          artifacts: [
+            {
+              id: "kund-system",
+              name: "Kund/Kundi (Underground Tanks)",
+              description: "Limestone catchment beds channel rainwater through gravel filters to domed underground tanks",
+              rarity: "epic",
+              historicalPeriod: "Medieval period",
+              significance: "Community shared; stores 2+ million liters; domed roof keeps water cool; gravel filtration",
+              yearBCE: -1200,
+              category: "irrigation"
+            },
+            {
+              id: "tanka-household",
+              name: "Tanka (Household Tanks)",
+              description: "Underground cylindrical tanks below courtyards collecting roof runoff",
+              rarity: "rare",
+              historicalPeriod: "Medieval period",
+              significance: "Stores ~20,000 liters; lasts full dry season; every household has one in desert towns",
+              yearBCE: -1000,
+              category: "irrigation"
+            },
+            {
+              id: "johad-pond",
+              name: "Johad (Community Ponds)",
+              description: "Earthen check dams creating community water reservoirs",
+              rarity: "rare",
+              historicalPeriod: "Medieval period",
+              significance: "Recharged groundwater; community maintained; connected in chains across watersheds",
+              yearBCE: -1200,
+              category: "dam"
+            }
+          ]
+        }
+      ]
     }
   ]
 };
