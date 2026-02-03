@@ -122,7 +122,39 @@ export const inventionToSwmmModel: Record<string, string> = {
   'kongo-raised-beds': 'subak',
   'palm-wine-tapping': 'subak',
   'niger-flood-agriculture': 'niger-flood',
-  'timbuktu-wells': 'nabataean-cistern'
+  'timbuktu-wells': 'nabataean-cistern',
+  'yu-flood-control': 'chinese-flood-control',
+  'shang-wells': 'nabataean-cistern',
+  'shang-moats': 'chinese-flood-control',
+  'dujiangyan-system': 'dujiangyan',
+  'zhengguo-canal': 'chinese-canal',
+  'lingqu-canal': 'lingqu-canal',
+  'chain-pump': 'chinese-chain-pump',
+  'han-water-mills': 'archimedes-screw',
+  'yellow-river-levees': 'chinese-flood-control',
+  'grand-canal-system': 'grand-canal',
+  'flash-lock-gates': 'grand-canal',
+  'chang-an-water-system': 'grand-canal',
+  'pound-lock': 'pound-lock',
+  'su-song-clock': 'archimedes-screw',
+  'song-tidal-mills': 'archimedes-screw',
+  'pan-jixun-method': 'chinese-flood-control',
+  'ming-seawalls': 'chinese-flood-control',
+  'arthashastra-water': 'indian-tank',
+  'sudarshana-lake': 'indian-tank',
+  'vedic-water-philosophy': 'indian-tank',
+  'grand-anicut': 'grand-anicut',
+  'tank-cascade-system': 'indian-tank',
+  'chola-sluices': 'indian-tank',
+  'stepwell-architecture': 'indian-stepwell',
+  'persian-wheel-india': 'archimedes-screw',
+  'karez-india': 'qanat',
+  'taj-mahal-water': 'mughal-garden',
+  'shalimar-gardens': 'mughal-garden',
+  'mughal-canal-restoration': 'indian-tank',
+  'kund-system': 'rajasthan-kund',
+  'tanka-household': 'rajasthan-kund',
+  'johad-pond': 'indian-tank'
 };
 
 export function getSwmmModelForInvention(inventionId: string): SWMM5Model | null {
@@ -1165,6 +1197,150 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       roughness: 0.035
     },
     engineeringNotes: 'World\'s largest inland fishery. Feeds 1+ million people. Floating rice varieties grow 20-30 cm/day with rising water. 5,000 years sustainable'
+  },
+  'chinese-flood-control': {
+    name: 'Chinese Flood Control System',
+    description: 'Yellow River levee and drainage philosophy: channel, don\'t block',
+    civilization: 'Chinese Dynasties',
+    period: '2200 BCE - Present',
+    parameters: {
+      length: 100000,
+      channelWidth: 500,
+      channelDepth: 10,
+      flowRate: 8000,
+      slope: 0.0002,
+      roughness: 0.028
+    },
+    engineeringNotes: 'Yu the Great\'s principle: work WITH water, not against it. Yellow River carries 1.6 billion tons sediment annually. Pan Jixun\'s method: narrow channel creates fast flow to scour sediment to sea'
+  },
+  'chinese-canal': {
+    name: 'Ancient Chinese Canal System',
+    description: 'Large-scale irrigation and navigation canals like Zhengguo Canal',
+    civilization: 'Qin Dynasty',
+    period: '246 BCE',
+    parameters: {
+      length: 150000,
+      channelWidth: 20,
+      channelDepth: 3,
+      flowRate: 100,
+      slope: 0.0003,
+      roughness: 0.022
+    },
+    engineeringNotes: 'Zhengguo Canal: 150 km irrigating 40,000+ hectares. Originally spy sabotage plan, instead made Qin wealthy enough to conquer China'
+  },
+  'lingqu-canal': {
+    name: 'Lingqu Canal (Magic Canal)',
+    description: 'First contour canal connecting Yangtze and Pearl River systems',
+    civilization: 'Qin Dynasty',
+    period: '214 BCE',
+    parameters: {
+      length: 36000,
+      channelWidth: 5,
+      channelDepth: 2,
+      flowRate: 20,
+      slope: 0.001,
+      roughness: 0.020
+    },
+    engineeringNotes: '36 lock gates for navigation. Plough-shaped spillway divides water. UNESCO World Heritage. Enabled conquest of southern China. Still navigable today'
+  },
+  'chinese-chain-pump': {
+    name: 'Han Dynasty Chain Pump (翻车)',
+    description: 'Square-pallet chain pump for lifting water 4-5 meters',
+    civilization: 'Han Dynasty',
+    period: '100 CE',
+    parameters: {
+      flowRate: 0.02,
+      reservoirDepth: 5
+    },
+    engineeringNotes: 'One person irrigates 2+ acres/day. Used for 2,000+ years. Spread to Korea, Japan, Southeast Asia. Ancestor of modern chain conveyors'
+  },
+  'grand-canal': {
+    name: 'Grand Canal (大运河)',
+    description: 'World\'s longest artificial waterway: 1,776 km connecting Beijing to Hangzhou',
+    civilization: 'Sui/Tang Dynasty',
+    period: '587-608 CE',
+    parameters: {
+      length: 1776000,
+      channelWidth: 40,
+      channelDepth: 3,
+      flowRate: 500,
+      slope: 0.00005,
+      roughness: 0.025
+    },
+    engineeringNotes: 'UNESCO World Heritage (2014). Connects 5 major river systems. Still used for shipping. Cost millions of lives to build. Unified Chinese economy for 1,400 years'
+  },
+  'pound-lock': {
+    name: 'Song Dynasty Pound Lock',
+    description: 'First true canal lock with two gates—500 years before Europe',
+    civilization: 'Song Dynasty',
+    period: '984 CE',
+    parameters: {
+      length: 30,
+      channelWidth: 6,
+      channelDepth: 4,
+      flowRate: 10,
+      roughness: 0.015
+    },
+    engineeringNotes: 'Invented by Qiao Weiyue. Safe, gradual water transfer. Ships rise/lower smoothly. Minimal water loss. Template for all modern canal locks including Panama'
+  },
+  'indian-tank': {
+    name: 'South Indian Tank Cascade System',
+    description: 'Gravity-fed interconnected tanks from mountains to sea',
+    civilization: 'Chola Dynasty',
+    period: '900-1200 CE',
+    parameters: {
+      length: 5000,
+      volume: 500000,
+      reservoirDepth: 3,
+      flowRate: 5,
+      slope: 0.005,
+      roughness: 0.025
+    },
+    engineeringNotes: '10,000+ tanks in Tamil Nadu alone. Gravity-fed, no pumping. Community managed. Still functioning after 1,000+ years. Arthashastra defined water tax: 1/4 harvest for state canal'
+  },
+  'grand-anicut': {
+    name: 'Grand Anicut (Kallanai)',
+    description: 'Oldest functional dam in the world—still irrigating after 1,900 years',
+    civilization: 'Chola Dynasty',
+    period: '2nd Century CE',
+    parameters: {
+      length: 329,
+      channelWidth: 20,
+      reservoirDepth: 5.4,
+      flowRate: 500,
+      slope: 0.001,
+      roughness: 0.018
+    },
+    engineeringNotes: 'Built by Karikala Chola. 329m long, 20m wide, 5.4m high. Still irrigates 1 million+ acres. British studied and expanded but kept the original dam. Template for submerged weir design'
+  },
+  'mughal-garden': {
+    name: 'Mughal Char Bagh Water Garden',
+    description: 'Geometric paradise gardens with 400+ fountains (Taj Mahal style)',
+    civilization: 'Mughal Empire',
+    period: '1632-1653 CE',
+    parameters: {
+      length: 300,
+      channelWidth: 1,
+      channelDepth: 0.3,
+      flowRate: 2,
+      slope: 0.002,
+      roughness: 0.012
+    },
+    engineeringNotes: 'Persian wheels lift water from Yamuna. Underground terra-cotta pipes. 400+ gravity-fed fountains. Raised marble channels. Shalimar Gardens: 410 fountains at Kashmir'
+  },
+  'rajasthan-kund': {
+    name: 'Rajasthan Kund (Underground Cistern)',
+    description: 'Desert water harvesting: limestone catchments to domed underground storage',
+    civilization: 'Rajasthan',
+    period: 'Medieval period',
+    parameters: {
+      volume: 2000000,
+      catchmentArea: 10000,
+      reservoirDepth: 6,
+      numCisterns: 1,
+      cisternVolume: 2000000
+    },
+    engineeringNotes: 'Limestone catchment beds, gravel filtration. Domed roof prevents evaporation and keeps water cool. Community shared. Some hold 2+ million liters. Tanka household version: ~20,000 liters'
   }
 };
 

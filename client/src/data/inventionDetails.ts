@@ -1727,6 +1727,811 @@ export const inventionDetails: Record<string, InventionDetailData> = {
       capacity: "1 million+ cubic meters"
     },
     robertsNote: "Trowulan had sophisticated water infrastructure that rivals anything in medieval Europe. Multiple reservoirs, precise gradients, integration with city planning—this was serious hydraulic engineering."
+  },
+  "yu-flood-control": {
+    tagline: "Don't block water—channel it! The philosophy that built China",
+    keyFact: "Yu worked 13 years channeling floods, 'passing his door three times without entering'—establishing water management as imperial duty",
+    howItWorks: [
+      "Yu's father Gun tried to dam the Great Flood for 9 years (failed)",
+      "Yu realized the principle: work WITH water, not against it",
+      "13 years of channeling and drainage work",
+      "Created drainage canals to lead water to the sea",
+      "Established systematic river management",
+      "Philosophy influenced all subsequent Chinese hydraulics"
+    ],
+    whyItMattered: [
+      "Founded Chinese hydraulic philosophy",
+      "Established flood control as emperor's responsibility",
+      "Template for all subsequent water management",
+      "Created the Xia Dynasty's legitimacy"
+    ],
+    legacyToday: [
+      "Modern Chinese water engineering still follows 'channel, don't block'",
+      "Yu the Great temples throughout China",
+      "Water management as state responsibility"
+    ],
+    robertsNote: "Yu the Great might be legendary, but his philosophy is real and still relevant. When modern engineers say 'work with nature,' they're echoing a 4,000-year-old idea. Don't dam the river—give it somewhere to go."
+  },
+  "shang-wells": {
+    tagline: "Bronze Age groundwater extraction—the foundation of Chinese wells",
+    keyFact: "Wooden-lined wells at Yinxu preserved for 3,000+ years, with oracle bone inscriptions documenting well construction",
+    howItWorks: [
+      "Excavation through soil to water table",
+      "Wooden lining to prevent collapse",
+      "Square or round cross-section",
+      "Rope and bucket lifting system",
+      "Located near palace complexes and workshops",
+      "Oracle bones record well construction and maintenance"
+    ],
+    whyItMattered: [
+      "First systematic groundwater in China",
+      "Enabled permanent settlements",
+      "Bronze Age water technology",
+      "Archaeological evidence of early engineering"
+    ],
+    legacyToday: [
+      "Traditional well designs still in use in rural China",
+      "Archaeological study at Yinxu UNESCO site",
+      "Foundation for Chinese well technology"
+    ],
+    robertsNote: "The Shang wells at Anyang tell us these weren't primitive people—they had organized water infrastructure 3,000 years ago. When you see the wooden linings still preserved, you understand how much care went into these systems."
+  },
+  "shang-moats": {
+    tagline: "Water as defense—the birth of Chinese city planning",
+    keyFact: "Shang palace complexes surrounded by defensive moats, combining military protection with urban drainage",
+    howItWorks: [
+      "Excavated channels around palace compounds",
+      "Water source from rivers or groundwater",
+      "Combined defense with drainage function",
+      "Connected to larger water systems",
+      "Crossed by bridges at controlled entry points",
+      "Regular maintenance recorded in oracle inscriptions"
+    ],
+    whyItMattered: [
+      "First urban water features in China",
+      "Combined military and civic functions",
+      "Template for later Chinese city planning",
+      "Defense through landscape engineering"
+    ],
+    legacyToday: [
+      "Moated cities throughout Chinese history",
+      "Beijing's moat system inherited this tradition",
+      "Archaeological evidence at Yinxu"
+    ],
+    robertsNote: "The Shang understood something fundamental: water can protect you. Their moats weren't just defensive—they managed drainage and created a psychological boundary. This idea lasted 3,000 years in Chinese city design."
+  },
+  "dujiangyan-system": {
+    tagline: "No dam to break—2,250 years of continuous irrigation",
+    keyFact: "Li Bing's masterpiece still irrigates 5.3 million hectares and feeds 10+ million people—no mechanical parts, no dam",
+    howItWorks: [
+      "Fish Mouth (Yuzui): Dividing dam splits Min River 40/60 in dry season, 60/40 in flood",
+      "Flying Sand Weir (Feisha Yan): Spillway removes sediment and prevents flooding",
+      "Bottle Neck Gate (Baopingkou): Controls water entering Chengdu Plain",
+      "Self-regulating based on water level",
+      "Annual 'weir clearing' ceremony for maintenance",
+      "2,200+ km of canals distribute water"
+    ],
+    whyItMattered: [
+      "No dam that could catastrophically fail",
+      "Self-regulating without human intervention",
+      "Transformed Sichuan into 'Land of Abundance'",
+      "UNESCO World Heritage Site"
+    ],
+    legacyToday: [
+      "Still functioning after 2,250+ years",
+      "Irrigates 5.3 million hectares",
+      "Model for modern sustainable engineering",
+      "Annual festival maintains traditions"
+    ],
+    technicalSpecs: {
+      materials: "Stone, bamboo cages filled with rocks",
+      dimensions: "Fish Mouth: 1,000m+ long dividing wall",
+      capacity: "Irrigates 5.3 million hectares"
+    },
+    robertsNote: "Dujiangyan is the greatest irrigation system ever built. Not because it's the biggest—but because it works with nature instead of against it. No dam to break, no mechanical parts to fail. Li Bing understood something we're still learning."
+  },
+  "zhengguo-canal": {
+    tagline: "The canal that built an empire",
+    keyFact: "150 km irrigation canal transformed Qin agriculture, enabling the conquests that unified China",
+    howItWorks: [
+      "Intake from Jing River diversion",
+      "150 km main channel across Guanzhong Plain",
+      "Gravity-fed to 40,000+ hectares",
+      "Sediment-laden water deposited nutrients",
+      "Secondary channels for local distribution",
+      "Transformed arid land into farmland"
+    ],
+    whyItMattered: [
+      "Made Qin heartland into breadbasket",
+      "Funded Qin conquest of rival states",
+      "Enabled unification of China",
+      "Template for state water projects"
+    ],
+    legacyToday: [
+      "Modern Jing-Wei Canal follows the route",
+      "Foundation of Shaanxi agriculture",
+      "Example of water as strategic resource"
+    ],
+    robertsNote: "A Korean spy designed this canal to weaken Qin by diverting resources. Instead, it made Qin so wealthy they conquered all of China. Unintended consequences—the canal that built an empire."
+  },
+  "lingqu-canal": {
+    tagline: "First contour canal connecting river systems—still navigable today",
+    keyFact: "36 km canal with 36 lock gates united Yangtze and Pearl River basins, enabling Qin conquest of southern China",
+    howItWorks: [
+      "Plough-shaped spillway divides Xiang River",
+      "Canal cuts through watershed at low pass",
+      "36 flash lock gates for navigation",
+      "Connects Yangtze system to Pearl system",
+      "Follows natural contours to minimize excavation",
+      "Military supply route for southern campaigns"
+    ],
+    whyItMattered: [
+      "First canal connecting major river systems",
+      "Enabled conquest of southern China",
+      "Template for later contour canals",
+      "UNESCO World Heritage Site"
+    ],
+    legacyToday: [
+      "Still functional as navigation canal",
+      "Tourist attraction in Guangxi",
+      "Model for trans-watershed engineering"
+    ],
+    technicalSpecs: {
+      materials: "Stone locks, excavated channel",
+      dimensions: "36 km length, 36 lock gates",
+      capacity: "Navigable by ancient boats"
+    },
+    robertsNote: "Lingqu is one of the three great hydraulic works of ancient China—connecting river systems that flow to different seas. The engineering principle of following contours to minimize excavation is still taught today."
+  },
+  "chain-pump": {
+    tagline: "One person could irrigate 2+ acres daily—for 2,000 years",
+    keyFact: "Square-pallet chain pump spread from China to Korea, Japan, and Southeast Asia—used until the 20th century",
+    howItWorks: [
+      "Endless chain with wooden pallets",
+      "Upper and lower gears for drive mechanism",
+      "Pallets fit inside wooden trough",
+      "Rotation lifts water in continuous flow",
+      "Manual, animal, or water-powered options",
+      "Could lift water 4-5 meters"
+    ],
+    whyItMattered: [
+      "Revolutionary efficiency improvement",
+      "One person could irrigate 2+ acres/day",
+      "Enabled terrace irrigation",
+      "Spread throughout East Asia"
+    ],
+    legacyToday: [
+      "Used for 2,000+ years",
+      "Still in use in some areas",
+      "Ancestor of modern chain conveyors"
+    ],
+    technicalSpecs: {
+      materials: "Wood, metal fittings",
+      dimensions: "Typically 4-5 meter lift",
+      capacity: "~15-20 liters per rotation"
+    },
+    robertsNote: "The chain pump is elegant in its simplicity. No valves, no seals—just pallets on a chain. A farmer in Vietnam today uses essentially the same technology as a Han Dynasty farmer 2,000 years ago."
+  },
+  "han-water-mills": {
+    tagline: "Water power harnessed for grain milling—industrial revolution's ancestor",
+    keyFact: "First water-powered grain mills in China, spreading throughout the empire by 30 CE",
+    howItWorks: [
+      "Horizontal or vertical waterwheel",
+      "River or canal flow drives rotation",
+      "Gearing connects to millstones",
+      "Grain fed through hopper",
+      "Flour collected below stones",
+      "Multiple mills on single race"
+    ],
+    whyItMattered: [
+      "First industrial use of water power in China",
+      "Freed labor from grinding grain",
+      "Enabled population growth",
+      "Foundation for later water machinery"
+    ],
+    legacyToday: [
+      "Template for all water-powered machinery",
+      "Historic mills preserved in China",
+      "Ancestor of hydroelectric power"
+    ],
+    robertsNote: "Before water mills, grinding grain was the most labor-intensive task in agriculture. The Han Dynasty figured out how to make the river do the work. That's not just engineering—it's civilization."
+  },
+  "yellow-river-levees": {
+    tagline: "Taming 'China's Sorrow'—the endless battle with sediment",
+    keyFact: "Yellow River carries 1.6 billion tons of sediment annually—more than any river on Earth",
+    howItWorks: [
+      "Earthen levees confine river channel",
+      "Continuous repair and raising required",
+      "Sediment deposits raise riverbed annually",
+      "Levees must rise above surrounding plain",
+      "'Suspended river' phenomenon develops",
+      "Breaches cause catastrophic flooding"
+    ],
+    whyItMattered: [
+      "Enabled civilization in North China Plain",
+      "Constant struggle against nature",
+      "Millions of lives lost to floods",
+      "Template for sediment management"
+    ],
+    legacyToday: [
+      "Yellow River now runs meters above surrounding land",
+      "Modern dams trap sediment upstream",
+      "Ongoing engineering challenge"
+    ],
+    robertsNote: "The Yellow River has killed more people than any natural feature on Earth. Fighting it with levees is like building walls against the tide—necessary, but never enough. That's why Pan Jixun's approach was revolutionary."
+  },
+  "grand-canal-system": {
+    tagline: "World's longest artificial waterway—1,776 km still in use",
+    keyFact: "UNESCO World Heritage Site connecting Beijing to Hangzhou through 5 major river systems",
+    howItWorks: [
+      "Yongji Canal (608 CE): Northern section to Beijing",
+      "Tongji Canal: Connects to Yellow River",
+      "Bian Canal: Yellow River to Huai River",
+      "Shanyang Canal: Huai River to Yangtze",
+      "Jiangnan Canal: Yangtze to Hangzhou",
+      "Lock gates manage elevation changes"
+    ],
+    whyItMattered: [
+      "Unified Chinese economy north-south",
+      "Enabled grain transport to capital",
+      "Imperial communication and control",
+      "Largest engineering project in ancient world"
+    ],
+    legacyToday: [
+      "UNESCO World Heritage Site (2014)",
+      "Still used for shipping",
+      "Major tourist attraction",
+      "Engineering landmark"
+    ],
+    technicalSpecs: {
+      materials: "Excavated earth, stone locks",
+      dimensions: "1,776 km total length",
+      capacity: "Millions of tons annually"
+    },
+    robertsNote: "The Grand Canal cost millions of lives to build—but it held China together for 1,400 years. Without it, there might not be one China today. It's the most consequential water project in history."
+  },
+  "flash-lock-gates": {
+    tagline: "Getting boats over elevation changes—the precursor to pound locks",
+    keyFact: "Tang Dynasty improved navigation by creating controlled rushes of water to carry boats between levels",
+    howItWorks: [
+      "Single gate holds water at different levels",
+      "Gate opened to create rush of water",
+      "Boats ride the rush up or downstream",
+      "Dangerous for crew and cargo",
+      "Lost significant water with each use",
+      "Replaced by pound locks in Song Dynasty"
+    ],
+    whyItMattered: [
+      "Enabled navigation on the Grand Canal",
+      "Precursor to modern canal locks",
+      "Demonstrated need for better solution",
+      "Engineering learning process"
+    ],
+    legacyToday: [
+      "Historical engineering milestone",
+      "Replaced by pound locks",
+      "Demonstrates technological evolution"
+    ],
+    robertsNote: "Flash locks were terrifying—boats would shoot through on a rush of water, often capsizing. But they worked, and they taught engineers what they needed to invent the pound lock."
+  },
+  "chang-an-water-system": {
+    tagline: "World's largest city with world's most advanced water system",
+    keyFact: "108 walled wards, each with wells and canal access—population 1 million, largest city in the world",
+    howItWorks: [
+      "Main canals through city grid",
+      "108 wards each with local wells and canal access",
+      "Imperial Palace with lotus ponds and fountains",
+      "Drainage to external rivers",
+      "Night soil collection and composting",
+      "Wells regulated by ward authorities"
+    ],
+    whyItMattered: [
+      "Most advanced urban water system of its era",
+      "Supported largest city in the world",
+      "Template for later Chinese capitals",
+      "Integration of water with urban planning"
+    ],
+    legacyToday: [
+      "Xi'an preserves some Tang features",
+      "Model for urban water planning",
+      "Archaeological study continues"
+    ],
+    robertsNote: "Tang Chang'an was the New York of its day—a million people, cosmopolitan, sophisticated. And it worked because they had water figured out. Every ward had wells and canal access. That's urban planning."
+  },
+  "pound-lock": {
+    tagline: "First true canal lock—500 years before Europe figured it out",
+    keyFact: "Invented by Qiao Weiyue in 984 CE, the pound lock enabled safe, gradual transitions between water levels",
+    howItWorks: [
+      "Two gates create enclosed chamber",
+      "Boat enters chamber, first gate closes",
+      "Water level raised or lowered to match next section",
+      "Second gate opens, boat proceeds",
+      "Minimal water loss compared to flash locks",
+      "Safe and controlled operation"
+    ],
+    whyItMattered: [
+      "Revolutionized canal navigation",
+      "Safe passage between water levels",
+      "Minimal water loss",
+      "500 years before European invention"
+    ],
+    legacyToday: [
+      "Still used on Grand Canal",
+      "Template for all modern canal locks",
+      "Panama and Suez use same principle"
+    ],
+    technicalSpecs: {
+      materials: "Stone or wood gates, masonry chamber",
+      dimensions: "Varied by vessel size",
+      capacity: "Safe passage for loaded cargo boats"
+    },
+    robertsNote: "When Leonardo da Vinci 'invented' the canal lock in the 15th century, the Chinese had been using them for 500 years. Qiao Weiyue solved the problem first—and his solution is still the standard today."
+  },
+  "su-song-clock": {
+    tagline: "40-foot astronomical clock tower—powered by water, medieval marvel",
+    keyFact: "Su Song's water clock of 1088 CE was the most complex machine in the medieval world, destroyed when the Jin captured Kaifeng in 1127",
+    howItWorks: [
+      "Water-powered escapement mechanism",
+      "Constant flow drives wheel rotation",
+      "Astronomical sphere tracks celestial positions",
+      "Automata announce time with bells and drums",
+      "Multiple levels of complexity",
+      "Required constant water supply"
+    ],
+    whyItMattered: [
+      "Most complex machine of medieval world",
+      "Automated astronomical observation",
+      "Demonstrated Song technological peak",
+      "Water as precision power source"
+    ],
+    legacyToday: [
+      "Replica in National Museum of China",
+      "Studied by historians of technology",
+      "Inspiration for later clockwork"
+    ],
+    robertsNote: "Su Song's clock is one of the most underrated achievements in engineering history. A 40-foot tower with water-powered automata announcing the hours while tracking the stars. And it was destroyed because of war. What else did we lose?"
+  },
+  "song-tidal-mills": {
+    tagline: "Harnessing the ocean's rhythm—tidal power 1,000 years ago",
+    keyFact: "Song Dynasty millers captured tidal energy twice daily for grain milling on coastal estuaries",
+    howItWorks: [
+      "Mill positioned at tidal boundary",
+      "Incoming tide fills reservoir behind dam",
+      "Gates close at high tide",
+      "Water released through waterwheel as tide ebbs",
+      "Operates twice daily with tidal cycle",
+      "Multiple mills on single estuary"
+    ],
+    whyItMattered: [
+      "Early renewable energy",
+      "Reliable twice-daily power",
+      "Coastal community self-sufficiency",
+      "Integration with natural cycles"
+    ],
+    legacyToday: [
+      "Ancestor of modern tidal power plants",
+      "Sustainable energy principle",
+      "Historical engineering study"
+    ],
+    robertsNote: "The Song Chinese figured out tidal power a thousand years ago. Twice a day, the tide does the work. It's the kind of thinking we need more of—working with natural rhythms instead of fighting them."
+  },
+  "pan-jixun-method": {
+    tagline: "Confine water to scour sand—revolutionary Yellow River control",
+    keyFact: "'束水攻沙' (Shu Shui Gong Sha): narrow the channel to increase velocity, washing sediment to the sea",
+    howItWorks: [
+      "Narrow levees instead of wide channels",
+      "Faster flow velocity from confinement",
+      "Sediment carried out to sea instead of depositing",
+      "Regular levee maintenance required",
+      "Works against intuition (narrower = safer?)",
+      "Successful for generations"
+    ],
+    whyItMattered: [
+      "Revolutionary approach to sediment rivers",
+      "Counter-intuitive but effective",
+      "Reduced flooding for centuries",
+      "Still relevant to modern engineering"
+    ],
+    legacyToday: [
+      "Principle still used in sediment management",
+      "Studied in hydraulic engineering courses",
+      "Modern Three Gorges Dam changes dynamics"
+    ],
+    robertsNote: "Everyone before Pan Jixun thought wider channels meant safer rivers. He realized the opposite—make the river narrow and fast, and it cleans itself. That's the kind of insight that changes engineering forever."
+  },
+  "ming-seawalls": {
+    tagline: "Protecting farmland from typhoons and storm surge",
+    keyFact: "Massive coastal defenses constructed under Ming Dynasty, some still standing after 600 years",
+    howItWorks: [
+      "Stone and earth construction",
+      "Sloped face to dissipate wave energy",
+      "Gates for drainage and fish migration",
+      "Reclaimed land behind walls",
+      "Regular repair and raising",
+      "Combined with tide gates"
+    ],
+    whyItMattered: [
+      "Protected agricultural land",
+      "Enabled coastal settlement expansion",
+      "Defended against Japanese pirates",
+      "Long-term coastal management"
+    ],
+    legacyToday: [
+      "Some sections still functional",
+      "Template for modern seawalls",
+      "Archaeological study"
+    ],
+    robertsNote: "Ming seawalls weren't just about water—they were about pirates, too. The Japanese Wako raids made coastal defense a military priority. But the engineering had to work against nature first."
+  },
+  "arthashastra-water": {
+    tagline: "World's first comprehensive water policy—2,300 years old",
+    keyFact: "Kautilya's Arthashastra specified tax rates based on water source: 1/4 harvest for state canal, 1/5 for state tank, none for private wells",
+    howItWorks: [
+      "State responsible for dams, lakes, and wells",
+      "Water tax proportional to irrigation benefit",
+      "State canals: 1/4 harvest tax",
+      "State tanks: 1/5 harvest tax",
+      "Private wells: no tax",
+      "Maintenance at state expense"
+    ],
+    whyItMattered: [
+      "First documented water policy",
+      "State investment in infrastructure",
+      "Equitable taxation principles",
+      "Template for governance"
+    ],
+    legacyToday: [
+      "Principles still relevant to water policy",
+      "Studied in public administration",
+      "Foundation of Indian water law"
+    ],
+    robertsNote: "2,300 years ago, Kautilya figured out that water infrastructure should be a public good with proportional taxation. We're still arguing about this today. He had it right the first time."
+  },
+  "sudarshana-lake": {
+    tagline: "First documented dam in India—repaired for 800 years",
+    keyFact: "Built by Chandragupta Maurya (~300 BCE) in Gujarat, inscriptions record repairs by multiple dynasties over 800 years",
+    howItWorks: [
+      "Earth and stone dam across stream",
+      "Reservoir for year-round water storage",
+      "Sluice gates for controlled release",
+      "Irrigation channels downstream",
+      "Regular repair recorded in inscriptions",
+      "Survived multiple dynasties"
+    ],
+    whyItMattered: [
+      "First documented dam in India",
+      "800+ years of continuous use",
+      "Model for state water infrastructure",
+      "Inscription records maintenance history"
+    ],
+    legacyToday: [
+      "Archaeological site in Gujarat",
+      "Study of long-term infrastructure",
+      "Example of sustainable investment"
+    ],
+    robertsNote: "Sudarshana Lake tells an amazing story through its inscriptions—different dynasties, different centuries, all investing in the same dam. That's 800 years of water policy continuity. We should learn from that."
+  },
+  "vedic-water-philosophy": {
+    tagline: "'Waters, you are the ones who bring us life'—sacred water tradition",
+    keyFact: "Rigveda established dharmic duty to preserve water; Varuna god of waters; rivers as sacred beings",
+    howItWorks: [
+      "Varuna oversees cosmic and terrestrial waters",
+      "Rivers personified as goddesses (Ganga, Yamuna)",
+      "Monsoon as Indra's gift",
+      "Ritual purity through water",
+      "Dharmic duty to conserve water",
+      "Wells and tanks as merit-earning projects"
+    ],
+    whyItMattered: [
+      "Established water conservation as religious duty",
+      "Rivers as sacred beings to protect",
+      "Community responsibility for water",
+      "Foundation of Indian water culture"
+    ],
+    legacyToday: [
+      "Ganga and Yamuna given legal personhood",
+      "Water in Hindu ritual practice",
+      "Community water management traditions"
+    ],
+    robertsNote: "When a civilization makes water sacred, it creates an ethic of conservation that lasts millennia. India's water philosophy isn't just religion—it's ecological wisdom encoded in tradition."
+  },
+  "grand-anicut": {
+    tagline: "Oldest functional dam in the world—still irrigating after 1,900 years",
+    keyFact: "329 meters long, built by Karikala Chola around 2nd century CE, still irrigating 1 million+ acres",
+    howItWorks: [
+      "Stone dam across Kaveri River",
+      "Not a barrier dam—submerged weir",
+      "Raises water level to feed channels",
+      "Splits flow to Kollidam and Kaveri branches",
+      "Delta irrigation through channel network",
+      "Minimal maintenance required"
+    ],
+    whyItMattered: [
+      "Oldest water regulator still in operation",
+      "1,900+ years of continuous use",
+      "Template for British irrigation works",
+      "Made Kaveri Delta the rice bowl of South India"
+    ],
+    legacyToday: [
+      "Still irrigating 1 million+ acres",
+      "British expanded but used same dam",
+      "Engineering pilgrimage site"
+    ],
+    technicalSpecs: {
+      materials: "Stone blocks, mortar",
+      dimensions: "329m long, 20m wide, 5.4m high",
+      capacity: "1 million+ acres irrigation"
+    },
+    robertsNote: "The Grand Anicut is 1,900 years old and still working. When British engineers arrived in the 19th century, they didn't replace it—they studied it and expanded its channels. That's a 2,000-year engineering tradition."
+  },
+  "tank-cascade-system": {
+    tagline: "Gravity does the work—interconnected tanks from mountains to sea",
+    keyFact: "10,000+ tanks in Tamil Nadu alone, gravity-fed, community-managed, still functioning after 1,000+ years",
+    howItWorks: [
+      "Highest tank captures monsoon runoff",
+      "Overflow weirs connect to next tank downhill",
+      "Each tank serves local village",
+      "Sluice gates control release to fields",
+      "Lowest tank returns excess to river",
+      "No pumping required—pure gravity"
+    ],
+    whyItMattered: [
+      "Maximum water use efficiency",
+      "Community self-governance",
+      "Resilient to drought",
+      "No energy required"
+    ],
+    legacyToday: [
+      "Still functioning across South India",
+      "Revival movements restoring tanks",
+      "Model for decentralized water management"
+    ],
+    robertsNote: "Tank cascades are pure genius—water flows downhill through a chain of reservoirs, each serving a village, until it returns to the river. No pumps, no energy, no central authority. Just communities managing their own water."
+  },
+  "chola-sluices": {
+    tagline: "Precision water control for fair distribution",
+    keyFact: "Stone sluice gates with calibrated openings ensured equitable water distribution managed by village councils",
+    howItWorks: [
+      "Stone construction for durability",
+      "Calibrated opening sizes for flow control",
+      "Village council manages operations",
+      "Rotation schedules during shortage",
+      "Night and day watering rights",
+      "Penalties for water theft"
+    ],
+    whyItMattered: [
+      "Ensured fair water distribution",
+      "Community governance mechanism",
+      "Prevented water conflicts",
+      "Technical precision for equity"
+    ],
+    legacyToday: [
+      "Village water councils still exist",
+      "Traditional rotation systems continue",
+      "Model for water governance"
+    ],
+    robertsNote: "The genius of Chola sluices isn't the engineering—it's the governance. Each village had a council that managed the sluice, rotating water rights fairly. Technology serving democracy."
+  },
+  "stepwell-architecture": {
+    tagline: "Descend to water through architectural masterpieces",
+    keyFact: "Chand Baori has 13 stories and 3,500 steps; Rani ki Vav is UNESCO World Heritage—stepwells as temples to water",
+    howItWorks: [
+      "Stairs descend to water table level",
+      "Multiple levels for changing water levels",
+      "Pavilions and galleries at each level",
+      "Cool refuge 10-15°C below surface temperature",
+      "Social gathering spaces",
+      "Sculptural decoration with religious themes"
+    ],
+    whyItMattered: [
+      "Guaranteed water access year-round",
+      "Cool retreat in desert heat",
+      "Social and religious center",
+      "Architectural achievement"
+    ],
+    legacyToday: [
+      "Rani ki Vav UNESCO World Heritage",
+      "Tourist attractions in Gujarat and Rajasthan",
+      "Studied as climate-responsive architecture"
+    ],
+    robertsNote: "Stepwells are the most beautiful water infrastructure ever built. Chand Baori has 3,500 steps descending 13 stories—it's breathtaking. And practical: 10-15 degrees cooler than the surface. Form and function unified."
+  },
+  "persian-wheel-india": {
+    tagline: "Animal power lifting water—spreading irrigation across North India",
+    keyFact: "Oxen-powered vertical wheels with earthenware pots, introduced from Persia during Delhi Sultanate",
+    howItWorks: [
+      "Vertical wheel with attached pots",
+      "Oxen walk in circle to turn wheel",
+      "Pots descend empty, rise full",
+      "Water empties into channel at top",
+      "Continuous operation while animal walks",
+      "Can lift water from deep wells"
+    ],
+    whyItMattered: [
+      "Enabled deep well irrigation",
+      "Spread across Indo-Gangetic plain",
+      "Low maintenance, high reliability",
+      "Animal power for water lifting"
+    ],
+    legacyToday: [
+      "Still used in some areas",
+      "Replaced by diesel and electric pumps",
+      "Cultural heritage symbol"
+    ],
+    robertsNote: "The Persian wheel spread wherever there were deep wells and oxen. Simple, reliable, and powered by animals that need water themselves—creating a natural limit on over-extraction. We should have kept that wisdom."
+  },
+  "karez-india": {
+    tagline: "Underground tunnels delivering water without evaporation",
+    keyFact: "Persian qanat technology adapted to Indian conditions—gravity-fed tunnels from mountain aquifers to desert settlements",
+    howItWorks: [
+      "Vertical shafts for construction and maintenance",
+      "Horizontal tunnel at water table level",
+      "Gravity carries water downhill underground",
+      "Outlets at lower elevation for distribution",
+      "Protected from evaporation",
+      "Regulated by community"
+    ],
+    whyItMattered: [
+      "Water delivery in extreme aridity",
+      "No evaporation losses",
+      "No energy required",
+      "Technology transfer from Persia"
+    ],
+    legacyToday: [
+      "Some still functional in Rajasthan and Deccan",
+      "Studied for sustainable water",
+      "Revival interest in some areas"
+    ],
+    robertsNote: "Karez systems are qanat technology adapted to India. In the driest parts of the subcontinent, underground tunnels delivered water without losing a drop to evaporation. Pure efficiency."
+  },
+  "taj-mahal-water": {
+    tagline: "400+ fountains powered by Persian wheels and gravity",
+    keyFact: "Char Bagh design with raised marble channels, reflecting pools, and 400+ fountains fed by underground terra-cotta pipes",
+    howItWorks: [
+      "Persian wheels lift water from Yamuna River",
+      "Elevated tanks provide head pressure",
+      "Underground terra-cotta pipe network",
+      "Raised marble channels carry water",
+      "Gravity-fed fountains throughout garden",
+      "Reflecting pools create symmetry"
+    ],
+    whyItMattered: [
+      "Peak of Mughal water garden design",
+      "Integration of Persian and Indian traditions",
+      "Paradise garden symbolism",
+      "Engineering for aesthetic effect"
+    ],
+    legacyToday: [
+      "UNESCO World Heritage Site",
+      "Most visited monument in India",
+      "Inspiration for gardens worldwide"
+    ],
+    technicalSpecs: {
+      materials: "Marble channels, terra-cotta pipes, copper fittings",
+      dimensions: "17 hectares of gardens",
+      capacity: "400+ fountains"
+    },
+    robertsNote: "The Taj Mahal is famous for its architecture, but the water system is equally brilliant. 400+ fountains, all gravity-fed from Persian wheel-filled tanks. The garden is a hydraulic machine disguised as paradise."
+  },
+  "shalimar-gardens": {
+    tagline: "Cascading terraces of royal pleasure—water as spectacle",
+    keyFact: "410 fountains at Kashmir Shalimar Gardens across three terraces, UNESCO World Heritage Site",
+    howItWorks: [
+      "Three descending terraces",
+      "Central water channel connects levels",
+      "Cascades between terraces",
+      "410+ fountains (Kashmir version)",
+      "Black marble pavilions for viewing",
+      "Nighttime illumination with oil lamps behind cascades"
+    ],
+    whyItMattered: [
+      "Peak of Mughal garden design",
+      "Water as aesthetic element",
+      "Royal pleasure and politics",
+      "Persian garden tradition perfected"
+    ],
+    legacyToday: [
+      "UNESCO World Heritage (Lahore)",
+      "Kashmir gardens major attraction",
+      "Influence on garden design worldwide"
+    ],
+    robertsNote: "Shalimar means 'abode of love'—and the gardens used water to create an atmosphere of paradise. Cascades, fountains, and at night, oil lamps behind the water creating dancing light. Engineering as romance."
+  },
+  "mughal-canal-restoration": {
+    tagline: "Reviving ancient waterways for a new empire",
+    keyFact: "Mughals restored and extended ancient canal networks including the Western Yamuna Canal",
+    howItWorks: [
+      "Survey of ancient canal routes",
+      "Clearing sediment and debris",
+      "Repairing breached sections",
+      "Extending to new areas",
+      "Integrating with new infrastructure",
+      "Managing with traditional and imperial systems"
+    ],
+    whyItMattered: [
+      "Restored productive capacity",
+      "Lower cost than new construction",
+      "Connected to historical legitimacy",
+      "Pragmatic approach to infrastructure"
+    ],
+    legacyToday: [
+      "Some restored canals still function",
+      "British further extended systems",
+      "Model for infrastructure restoration"
+    ],
+    robertsNote: "The Mughals were smart about infrastructure—why build new when you can restore what worked before? The Western Yamuna Canal they restored had been built centuries earlier. Good engineering endures."
+  },
+  "kund-system": {
+    tagline: "Community cisterns storing millions of liters in the desert",
+    keyFact: "Limestone catchment beds channel rainwater through gravel filters to domed underground tanks—some hold 2+ million liters",
+    howItWorks: [
+      "Limestone catchment area (low permeability)",
+      "Channels direct runoff to filter bed",
+      "Gravel and sand filtration",
+      "Underground domed storage chamber",
+      "Dome prevents evaporation and keeps water cool",
+      "Community managed access"
+    ],
+    whyItMattered: [
+      "Year-round water in extreme desert",
+      "Community water security",
+      "No mechanical parts to fail",
+      "Ingenious desert adaptation"
+    ],
+    legacyToday: [
+      "Revival movements in Rajasthan",
+      "Studied for climate adaptation",
+      "Cultural heritage preservation"
+    ],
+    robertsNote: "In the Thar Desert, every drop counts. Kunds are perfectly adapted—limestone catchments, gravel filters, domed storage that stays cool. Communities have depended on these for centuries."
+  },
+  "tanka-household": {
+    tagline: "Every household has underground water storage",
+    keyFact: "Cylindrical underground tanks below courtyards, collecting roof runoff, storing ~20,000 liters—enough for a family's dry season",
+    howItWorks: [
+      "Sloped roof directs rainwater to spout",
+      "Channel leads to underground tank",
+      "First flush diverted (cleaning the roof)",
+      "Storage below courtyard floor",
+      "Cool underground temperature preserves water",
+      "Family access through covered opening"
+    ],
+    whyItMattered: [
+      "Household water security",
+      "Independence from communal sources",
+      "Efficient use of monsoon rains",
+      "Architectural integration"
+    ],
+    legacyToday: [
+      "Still used throughout Rajasthan",
+      "Modern rainwater harvesting adapts concept",
+      "Cultural practice continues"
+    ],
+    robertsNote: "Tankas are personal water security. Every family has their own underground tank—20,000 liters from roof runoff. In the desert, that's the difference between life and death during drought."
+  },
+  "johad-pond": {
+    tagline: "Earthen dams creating community watersheds",
+    keyFact: "Connected chains of johads across watersheds recharge groundwater and store surface water—revival movement restoring thousands",
+    howItWorks: [
+      "Earthen dam across drainage line",
+      "Monsoon runoff fills reservoir",
+      "Water infiltrates to recharge aquifer",
+      "Surface storage for dry season",
+      "Overflow connects to next johad downstream",
+      "Community construction and maintenance"
+    ],
+    whyItMattered: [
+      "Groundwater recharge",
+      "Surface storage",
+      "Community cooperation",
+      "Drought resilience"
+    ],
+    legacyToday: [
+      "Johad revival movement active",
+      "Thousands restored since 1985",
+      "Model for community water management"
+    ],
+    robertsNote: "The johad revival in Rajasthan is one of the great water success stories of our time. Communities came together to rebuild these simple earthen dams, and dead rivers started flowing again. Traditional knowledge solving modern problems."
   }
 };
 

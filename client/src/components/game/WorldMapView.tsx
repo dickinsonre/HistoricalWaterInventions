@@ -131,7 +131,18 @@ const civilizationCoords: Record<string, { lat: number; lng: number; region: str
   "oman": { lat: 23.6, lng: 58.5, region: "Oman" },
   "singapore": { lat: 1.3, lng: 103.8, region: "Singapore" },
   "venice": { lat: 45.4, lng: 12.3, region: "Italy" },
-  "imperial-soviet-russia": { lat: 55.75, lng: 37.6, region: "Russia" }
+  "imperial-soviet-russia": { lat: 55.75, lng: 37.6, region: "Russia" },
+  "xia-shang-dynasty": { lat: 36.1, lng: 114.4, region: "Yellow River Basin" },
+  "zhou-qin-dynasty": { lat: 31.0, lng: 103.6, region: "Sichuan" },
+  "han-dynasty": { lat: 34.3, lng: 108.9, region: "Chang'an" },
+  "sui-tang-dynasty": { lat: 32.0, lng: 118.8, region: "Grand Canal" },
+  "song-dynasty": { lat: 34.8, lng: 114.3, region: "Kaifeng" },
+  "ming-dynasty": { lat: 35.0, lng: 110.0, region: "Yellow River" },
+  "vedic-mauryan-india": { lat: 25.6, lng: 85.1, region: "Pataliputra" },
+  "chola-dynasty": { lat: 10.8, lng: 79.1, region: "Tamil Nadu" },
+  "delhi-sultanate": { lat: 28.6, lng: 77.2, region: "Delhi" },
+  "mughal-empire": { lat: 27.2, lng: 78.0, region: "Agra" },
+  "rajasthan-desert": { lat: 26.9, lng: 70.9, region: "Thar Desert" }
 };
 
 // Convert to x/y percentages
@@ -170,7 +181,11 @@ const civilizationContinents: Record<string, string> = {
   "morocco": "Africa", "al-andalus": "Europe", "ancient-yemen": "Asia", "bengal": "Asia",
   "central-asia": "Asia", "chinook": "Americas", "dubai-uae": "Asia", "inuit": "Americas",
   "israel": "Asia", "malaysia": "Asia", "mississippian": "Americas", "oman": "Asia",
-  "singapore": "Asia", "venice": "Europe", "imperial-soviet-russia": "Europe"
+  "singapore": "Asia", "venice": "Europe", "imperial-soviet-russia": "Europe",
+  "xia-shang-dynasty": "Asia", "zhou-qin-dynasty": "Asia", "han-dynasty": "Asia",
+  "sui-tang-dynasty": "Asia", "song-dynasty": "Asia", "ming-dynasty": "Asia",
+  "vedic-mauryan-india": "Asia", "chola-dynasty": "Asia", "delhi-sultanate": "Asia",
+  "mughal-empire": "Asia", "rajasthan-desert": "Asia"
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {
