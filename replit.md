@@ -60,7 +60,7 @@ The game showcases how water shaped human civilization through:
 - Real-time filtering as you type
 
 ### SWMM5/ICM Invention Models
-- 66+ hydraulic simulation models compatible with EPA SWMM5 and InfoWorks ICM
+- 241 hydraulic simulation models compatible with EPA SWMM5 and InfoWorks ICM
 - Import into ICM via File → Import → SWMM for advanced 1D/2D modeling
 - Copy-to-clipboard functionality (avoids antivirus false positives)
 - Download all models as combined .txt file
