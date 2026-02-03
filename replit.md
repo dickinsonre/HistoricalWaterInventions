@@ -52,7 +52,7 @@ Preferred communication style: Simple, everyday language.
 - Instant navigation and real-time filtering.
 
 #### SWMM5/ICM Invention Models
-- 94 unique hydraulic simulation models compatible with EPA SWMM5 and InfoWorks ICM (with 170+ invention mappings).
+- 89 unique hydraulic simulation models compatible with EPA SWMM5 and InfoWorks ICM (with 170+ invention mappings).
 - Copy-to-clipboard functionality to avoid antivirus issues.
 - Option to download all models as a combined .txt file.
 - Covers a wide range of ancient hydraulic engineering examples.
