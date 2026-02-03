@@ -4347,6 +4347,246 @@ export const gameData: GameData = {
       ]
     },
     {
+      id: "urartu",
+      name: "Urartu (Ancient Armenia)",
+      description: "Masters of mountain hydraulics (860-590 BCE). Built the Menua Canal stretching 56 km to irrigate Tuspa (modern Van). Lake Van reservoir management supported 50,000+ people in harsh mountain terrain. Fortress cisterns enabled resistance to Assyrian sieges.",
+      position: [10, 0, -6],
+      color: "#8B0000",
+      era: "ancient",
+      dateRange: "860 BCE - 590 BCE",
+      locations: [
+        {
+          id: "van-region",
+          name: "Lake Van Region",
+          description: "Heartland of Urartian hydraulic engineering",
+          historicalContext: "Mountain kingdom rivaling Assyria in engineering sophistication",
+          coordinates: { lat: 38.5, lng: 43.3 },
+          artifacts: [
+            {
+              id: "menua-canal",
+              name: "Menua Canal (Shamram Su)",
+              description: "56-kilometer canal carved through rock to bring water from mountains to capital Tuspa. Named after King Menua who ordered construction around 800 BCE. Still flows today, now called 'Shamram Water' after legendary queen Semiramis.",
+              rarity: "legendary",
+              historicalPeriod: "Urartian Kingdom (800 BCE)",
+              significance: "Among oldest continuously functioning canals—still irrigates Van region after 2,800 years",
+              yearBCE: 800,
+              category: "canal"
+            },
+            {
+              id: "urartian-cisterns",
+              name: "Urartian Fortress Cisterns",
+              description: "Rock-cut cisterns in mountain fortresses like Çavuştepe and Van Castle. Stored hundreds of thousands of liters. Enabled months-long siege resistance against Assyrian armies.",
+              rarity: "epic",
+              historicalPeriod: "Urartian Kingdom (860-590 BCE)",
+              significance: "Strategic water storage was key to Urartu's military survival",
+              yearBCE: 800,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "dilmun",
+      name: "Dilmun (Ancient Bahrain)",
+      description: "Paradise of sweet water springs in the Persian Gulf (3000-800 BCE). Ancient texts describe Dilmun as 'land where the sun rises' and 'place of eternal life.' Natural artesian springs provided freshwater in the middle of the sea—considered miraculous by ancients.",
+      position: [11, 0, -3],
+      color: "#00CED1",
+      era: "ancient",
+      dateRange: "3000 BCE - 800 BCE",
+      locations: [
+        {
+          id: "bahrain-springs",
+          name: "Bahrain Island Springs",
+          description: "Artesian freshwater springs rising from seafloor",
+          historicalContext: "Mythical 'paradise' fed by underground aquifers from Arabian Peninsula",
+          coordinates: { lat: 26.0275, lng: 50.5500 },
+          artifacts: [
+            {
+              id: "dilmun-springs",
+              name: "Dilmun Sacred Springs",
+              description: "Natural artesian springs emerging both on land and underwater in the Persian Gulf. Fresh water rising from the sea floor seemed miraculous to ancient peoples. Adaru spring and the 'Tree of Life' at Qal'at al-Bahrain were pilgrimage sites.",
+              rarity: "legendary",
+              historicalPeriod: "Dilmun Period (3000-800 BCE)",
+              significance: "Inspired Sumerian Paradise myths—may be origin of Eden garden legends",
+              yearBCE: 3000,
+              category: "fountain"
+            },
+            {
+              id: "dilmun-irrigation",
+              name: "Dilmun Date Palm Irrigation",
+              description: "Spring-fed channels irrigating date palm gardens on desert islands. Created oasis agriculture where none should exist. Trade in dates made Dilmun wealthy—intermediary between Mesopotamia and Indus Valley.",
+              rarity: "epic",
+              historicalPeriod: "Dilmun Period (2500-1200 BCE)",
+              significance: "Strategic trade hub—Mesopotamian texts describe Dilmun as 'emporium of the world'",
+              yearBCE: 2500,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "bactria",
+      name: "Bactria-Margiana (Ancient Afghanistan)",
+      description: "Oasis civilizations of Central Asia (2200-500 BCE). Developed karez (qanat-like) underground channels in some of Earth's harshest terrain. Helmand River irrigation supported cities like Balkh (ancient Bactra) that controlled Silk Road trade for millennia.",
+      position: [12, 0, -4],
+      color: "#DAA520",
+      era: "ancient",
+      dateRange: "2200 BCE - 500 BCE",
+      locations: [
+        {
+          id: "margiana-oasis",
+          name: "Margiana Oasis (Merv)",
+          description: "Ancient oasis civilization in Karakum Desert",
+          historicalContext: "BMAC culture rivaled contemporary Mesopotamia and Indus Valley",
+          coordinates: { lat: 37.6, lng: 62.2 },
+          artifacts: [
+            {
+              id: "bactrian-karez",
+              name: "Bactrian Karez Systems",
+              description: "Underground water channels similar to Persian qanats, bringing snowmelt from Hindu Kush mountains to desert oases. Some stretched 30+ kilometers. Mother wells accessed aquifers 30-50 meters deep.",
+              rarity: "epic",
+              historicalPeriod: "Bactrian Period (1000 BCE onwards)",
+              significance: "Enabled Silk Road caravansaries—without karez, no east-west trade route",
+              yearBCE: 1000,
+              category: "aqueduct"
+            },
+            {
+              id: "gonur-depe",
+              name: "Gonur Depe Water Temple",
+              description: "Monumental water structures at Margiana capital including ritual basins, channels, and the 'White Room' temple with sophisticated hydraulic features. Possible proto-Zoroastrian water worship.",
+              rarity: "legendary",
+              historicalPeriod: "BMAC Period (2200-1700 BCE)",
+              significance: "Bronze Age 'lost civilization' rivaling Mesopotamia—rediscovered 1970s",
+              yearBCE: 2000,
+              category: "fountain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "majapahit",
+      name: "Majapahit Empire (Java)",
+      description: "Maritime empire with vast irrigation networks (1293-1527 CE). Controlled trade across 3,000 islands with sophisticated wet-rice cultivation. Trowulan capital covered 100 sq km with integrated canal networks. Rice surplus funded naval power.",
+      position: [16, 0, 5],
+      color: "#FF6347",
+      era: "medieval",
+      dateRange: "1293 CE - 1527 CE",
+      locations: [
+        {
+          id: "trowulan",
+          name: "Trowulan (Majapahit Capital)",
+          description: "Vast capital city with canal networks spanning 100 sq km",
+          historicalContext: "Largest city in medieval Southeast Asia",
+          coordinates: { lat: -7.55, lng: 112.38 },
+          artifacts: [
+            {
+              id: "majapahit-canals",
+              name: "Trowulan Canal Network",
+              description: "Grid of canals totaling 60+ km crisscrossing the capital for transport, drainage, and irrigation. Large reservoirs (called segaran) stored water during dry season. Supported population of 500,000+ people.",
+              rarity: "legendary",
+              historicalPeriod: "Majapahit Period (1350-1400 CE)",
+              significance: "Largest medieval city outside China—water infrastructure enabled urban density",
+              yearBCE: -1350,
+              category: "canal"
+            },
+            {
+              id: "javanese-sawah",
+              name: "Javanese Sawah Rice Terraces",
+              description: "Wet rice cultivation integrated with temple water management. Volcanic soil + irrigation = multiple harvests yearly. Village cooperatives (subak-like) managed water sharing across watersheds.",
+              rarity: "epic",
+              historicalPeriod: "Majapahit Period (1293-1527 CE)",
+              significance: "Rice surplus funded maritime empire controlling spice trade",
+              yearBCE: -1300,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "kanem-bornu",
+      name: "Kanem-Bornu Empire",
+      description: "Lake Chad water masters (700-1900 CE). Managed Africa's largest lake through centuries of climate fluctuation. Fadama (floodplain) agriculture fed trans-Saharan trade. Capital Ngazargamu had 200,000+ people dependent on integrated water systems.",
+      position: [3, 0, -2],
+      color: "#8FBC8F",
+      era: "medieval",
+      dateRange: "700 CE - 1900 CE",
+      locations: [
+        {
+          id: "lake-chad",
+          name: "Lake Chad Basin",
+          description: "Fluctuating lake supporting millions across four modern nations",
+          historicalContext: "Empire that endured 1,000+ years through water management",
+          coordinates: { lat: 13.0, lng: 14.0 },
+          artifacts: [
+            {
+              id: "fadama-agriculture",
+              name: "Fadama Floodplain Agriculture",
+              description: "Seasonal floodplain farming using Lake Chad's natural rise and fall. Planted as waters recede, harvested from nutrient-rich mud. Different crops at different elevations maximized annual production.",
+              rarity: "epic",
+              historicalPeriod: "Kanem-Bornu Period (1000-1800 CE)",
+              significance: "Sustainable system—30 million still practice fadama farming today",
+              yearBCE: -1000,
+              category: "irrigation"
+            },
+            {
+              id: "chad-fishing-systems",
+              name: "Lake Chad Fishing Infrastructure",
+              description: "Fish weirs, breeding pools, and harvest rotation systems sustaining protein supply across seasonal lake variations. Dried fish traded across Sahara. Specialized fishing villages on floating islands.",
+              rarity: "rare",
+              historicalPeriod: "Kanem-Bornu Period (1200-1800 CE)",
+              significance: "Integrated fish-crop-livestock system; model of sustainable lake management",
+              yearBCE: -1200,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "benin-kingdom",
+      name: "Benin Kingdom (Nigeria)",
+      description: "Builders of Earth's largest pre-mechanical earthworks (1180-1897 CE). Benin City walls totaled 16,000 km—larger than Great Wall of China. Sophisticated drainage and moat systems protected 'Great Benin' with 100,000+ residents.",
+      position: [1, 0, 0],
+      color: "#B22222",
+      era: "medieval",
+      dateRange: "1180 CE - 1897 CE",
+      locations: [
+        {
+          id: "benin-city",
+          name: "Benin City",
+          description: "Capital protected by world's largest earthworks",
+          historicalContext: "European visitors compared it favorably to Amsterdam",
+          coordinates: { lat: 6.335, lng: 5.627 },
+          artifacts: [
+            {
+              id: "benin-walls",
+              name: "Benin City Walls and Moats",
+              description: "16,000 km of earthen walls and moats—more than four times the Great Wall. Inner walls rose 20 meters. Water-filled moats provided defense and drainage. Construction over 650 years required more earth-moving than Egyptian pyramids.",
+              rarity: "legendary",
+              historicalPeriod: "Benin Kingdom (1200-1500 CE)",
+              significance: "Largest earthwork ever built—destroyed by British in 1897, now being excavated",
+              yearBCE: -1200,
+              category: "dam"
+            },
+            {
+              id: "benin-drainage",
+              name: "Benin City Drainage System",
+              description: "Sophisticated urban drainage keeping 100,000+ people dry in tropical rainforest. Streets designed for runoff. Moats doubled as waste management—crocodiles disposed of organic matter.",
+              rarity: "epic",
+              historicalPeriod: "Benin Kingdom (1400-1800 CE)",
+              significance: "Dutch visitors (1602) called it 'great citie' cleaner than Amsterdam",
+              yearBCE: -1400,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "pre-roman-iberia",
       name: "Pre-Roman Iberian Civilizations",
       description: "Before Rome conquered Hispania, diverse peoples developed sophisticated water systems for mining, agriculture, and urban life",
