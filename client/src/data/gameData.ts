@@ -107,6 +107,55 @@ export const gameData: GameData = {
               significance: "First accurate timekeeper in human history",
               yearBCE: 1417,
               category: "water-clock"
+            },
+            {
+              id: "sacred-lake-karnak",
+              name: "Sacred Lake of Karnak",
+              description: "Massive artificial lake (120m x 77m) for ritual purification and nocturnal priestly ceremonies. Water level connected to underground springs, symbolizing primordial waters of creation (Nun). Priests bathed here before entering the temple.",
+              rarity: "legendary",
+              historicalPeriod: "New Kingdom (1550-1077 BCE)",
+              significance: "Largest sacred lake in Egypt, still holds water after 3,500 years",
+              yearBCE: 1470,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "delta-agriculture",
+          name: "Nile Delta Agricultural Zone",
+          description: "Basin irrigation heartland of ancient Egypt",
+          historicalContext: "Systematic flood management across 22,000 sq km of fertile delta",
+          coordinates: { lat: 30.8703, lng: 30.7618 },
+          artifacts: [
+            {
+              id: "basin-irrigation",
+              name: "Basin Irrigation System",
+              description: "Systematic flooding and drainage of fields using natural Nile floods. Earth dykes divided land into basins that held floodwater for 40-60 days, depositing nutrient-rich silt. Covered 3 million acres at peak usage.",
+              rarity: "legendary",
+              historicalPeriod: "Early Dynastic (3100-2686 BCE)",
+              significance: "Fed Egyptian civilization for 5,000 years using only natural flooding",
+              yearBCE: 3100,
+              category: "irrigation"
+            },
+            {
+              id: "sakia-waterwheel",
+              name: "Sakia (Animal-Powered Water Wheel)",
+              description: "Ox-driven water wheel with clay pots attached to endless chain. Evolved from the shaduf, lifting 10x more water per hour. Enabled year-round irrigation beyond Nile flood season.",
+              rarity: "epic",
+              historicalPeriod: "Ptolemaic Period (305-30 BCE)",
+              significance: "Revolutionized Egyptian agriculture, still used in Egypt today",
+              yearBCE: 300,
+              category: "water-lifting"
+            },
+            {
+              id: "ship-bilge-pump",
+              name: "Composite Bow Bilge Pump",
+              description: "Early form of bilge pump for Egyptian ships documented in tomb paintings. Used lever mechanism similar to shaduf to remove water from boat hulls. Essential for Nile commerce and naval expeditions.",
+              rarity: "rare",
+              historicalPeriod: "New Kingdom (1550-1077 BCE)",
+              significance: "Enabled long-distance maritime trade expeditions to Punt",
+              yearBCE: 1500,
+              category: "water-lifting"
             }
           ]
         }
@@ -338,6 +387,64 @@ export const gameData: GameData = {
           ]
         },
         {
+          id: "samos-tunnel",
+          name: "Island of Samos",
+          description: "Site of the legendary Tunnel of Eupalinos",
+          historicalContext: "Engineering marvel commissioned by tyrant Polycrates",
+          coordinates: { lat: 37.7565, lng: 26.9453 },
+          artifacts: [
+            {
+              id: "tunnel-eupalinos",
+              name: "Tunnel of Eupalinos (Samos Aqueduct)",
+              description: "1,036-meter tunnel dug through Mount Kastro from both ends meeting in the middle. Earliest known use of geometry and surveying for tunnel construction. Separate water channel ran along floor with terracotta pipes.",
+              rarity: "legendary",
+              historicalPeriod: "Archaic Period (530 BCE)",
+              significance: "First geometrically surveyed tunnel—teams started from both ends and met with only 60cm error",
+              yearBCE: 530,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "alexandria-engineering",
+          name: "Alexandria",
+          description: "Center of Hellenistic hydraulic innovation",
+          historicalContext: "Home of Hero and the great library's engineering knowledge",
+          coordinates: { lat: 31.2001, lng: 29.9187 },
+          artifacts: [
+            {
+              id: "heros-fountain",
+              name: "Hero's Fountain (Self-Pressurizing)",
+              description: "Pneumatic fountain demonstrating air pressure principles. Water from upper container compresses air in sealed lower container, pushing water up through central pipe. Operates without external power source.",
+              rarity: "epic",
+              historicalPeriod: "Hellenistic Period (1st c. CE)",
+              significance: "Demonstrated air pressure and vacuum principles 1,600 years before Torricelli",
+              yearBCE: -60,
+              category: "fountain"
+            },
+            {
+              id: "aeolipile",
+              name: "Aeolipile (Hero's Steam Engine)",
+              description: "First known steam-powered device. Hollow sphere with angled nozzles spins when water inside is heated. Steam escaping through bent tubes creates reactive thrust. Pure demonstration device, never scaled for work.",
+              rarity: "legendary",
+              historicalPeriod: "Hellenistic Period (1st c. CE)",
+              significance: "First steam engine—1,700 years before Industrial Revolution, though never applied",
+              yearBCE: -60,
+              category: "water-lifting"
+            },
+            {
+              id: "perachora-waterwheel",
+              name: "Perachora Water Wheel",
+              description: "Earliest known water mill for grinding grain. Horizontal wheel with vertical shaft turned millstones. Archaeological remains at Perachora in Corinth region date to 3rd century BCE.",
+              rarity: "epic",
+              historicalPeriod: "Hellenistic Period (3rd c. BCE)",
+              significance: "First water-powered industrial machinery—freed human labor from grinding",
+              yearBCE: 250,
+              category: "water-lifting"
+            }
+          ]
+        },
+        {
           id: "athens",
           name: "Athens",
           description: "Water fountains and public infrastructure",
@@ -450,6 +557,65 @@ export const gameData: GameData = {
               significance: "Standard unit (quinaria = 4.5cm diameter) allowed fair water taxation and allocation",
               yearBCE: -50,
               category: "aqueduct"
+            },
+            {
+              id: "castellum-divisorium",
+              name: "Castellum Divisorium (Distribution Castle)",
+              description: "Terminal distribution tank dividing aqueduct flow to different city sectors. Featured multiple outlet channels with calibrated openings. The Pompeii and Nîmes examples show three main pipes: public fountains, public baths, and private customers.",
+              rarity: "legendary",
+              historicalPeriod: "Early Empire (27 BCE - 284 CE)",
+              significance: "First water utility infrastructure—prioritized public access during shortages",
+              yearBCE: -50,
+              category: "aqueduct"
+            },
+            {
+              id: "roman-fistulae",
+              name: "Lead Pipe Manufacturing (Fistulae)",
+              description: "Standardized lead pipes with inscribed gauges and owner marks. Made from rolled sheets soldered along bottom. Names stamped on pipes enabled tracking of illegal taps. 25 standard sizes from quinaria to centenaria.",
+              rarity: "epic",
+              historicalPeriod: "Early Empire (27 BCE - 284 CE)",
+              significance: "Earliest standardized pipe manufacturing—created water utility regulation",
+              yearBCE: -100,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "rome-construction",
+          name: "Roman Harbor Construction",
+          description: "Revolutionary underwater concrete for Mediterranean harbors",
+          historicalContext: "Enabled massive port construction at Caesarea, Puteoli, and Ostia",
+          coordinates: { lat: 41.7590, lng: 12.2910 },
+          artifacts: [
+            {
+              id: "opus-caementicium",
+              name: "Roman Concrete (Opus Caementicium)",
+              description: "Volcanic ash (pozzolana) mixed with lime creates hydraulic concrete that sets underwater. Portus harbor moles survive 2,000 years of wave action. Modern analysis shows it actually strengthens over time through mineral crystallization.",
+              rarity: "legendary",
+              historicalPeriod: "Late Republic (133-27 BCE)",
+              significance: "Revolutionary material—modern concrete deteriorates in seawater while Roman concrete strengthens",
+              yearBCE: 100,
+              category: "dam"
+            },
+            {
+              id: "thermae-system",
+              name: "Thermae Heating System",
+              description: "Hypocaust-heated bath water circulation system. Furnaces heated floors and walls via hollow channels, warming 50,000+ liters daily. Baths of Caracalla served 6,000-8,000 bathers simultaneously.",
+              rarity: "epic",
+              historicalPeriod: "Early Empire (27 BCE - 284 CE)",
+              significance: "Combined water heating, circulation, and drainage in massive public works",
+              yearBCE: -50,
+              category: "sanitation"
+            },
+            {
+              id: "ctesibius-pump",
+              name: "Ctesibius Force Pump (Roman Fire Engine)",
+              description: "Double-acting piston pump (sipho) for firefighting. Adopted from Greek invention. Two pistons alternately pushed water through check valves to maintain constant stream. Mounted on carts for mobility.",
+              rarity: "epic",
+              historicalPeriod: "Early Empire (27 BCE - 284 CE)",
+              significance: "First organized firefighting—Vigiles used these to protect Rome",
+              yearBCE: -50,
+              category: "water-lifting"
             }
           ]
         }
