@@ -328,7 +328,7 @@ export default function SWMM5Showcase({ onViewAll }: SWMM5ShowcaseProps) {
         <span className="hidden sm:inline">•</span>
         <span className="text-center">Copy models to clipboard to avoid antivirus false positives</span>
         <span className="hidden sm:inline">•</span>
-        <span>Models by Robert Dickinson, PE</span>
+        <span>Models by Robert Dickinson</span>
       </div>
     </div>
   );

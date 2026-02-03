@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 export default function CreatorFooter() {
   return (
@@ -25,6 +25,15 @@ export default function CreatorFooter() {
           
           <div className="flex items-center gap-2 text-xs">
             <span className="text-[var(--parchment)]/60">Also explore:</span>
+            <a 
+              href="https://github.com/dickinsonre/HistoricalWaterInventions" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[var(--aqua)] hover:text-[var(--gold)] transition-colors flex items-center gap-1"
+            >
+              <Github size={12} /> GitHub
+            </a>
+            <span className="text-[var(--parchment)]/40">•</span>
             <a 
               href="https://swmm5.org" 
               target="_blank" 
