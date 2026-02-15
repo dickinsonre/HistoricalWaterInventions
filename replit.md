@@ -61,6 +61,7 @@ Preferred communication style: Simple, everyday language.
 - Technical diagrams for each invention (140+ diagrams).
 - Includes tagline, key facts, technical specifications, expert commentary, historical sources, and related inventions.
 - SWMM5 model indicator with copy button.
+- **References & Citations** section with type-coded badges (Academic Paper, Archaeological Report, Museum Collection, Book, UNESCO Heritage, Journal Article) for ~60 key inventions.
 
 #### Civilization Pages
 - Overviews of water challenges and solutions specific to each civilization.
@@ -75,7 +76,7 @@ Preferred communication style: Simple, everyday language.
 - **Inventory**: Water invention collection viewer.
 - **ProgressTracker**: Tracks exploration progress.
 - **Achievements**: Badge system.
-- **ComparisonTool**: Side-by-side invention comparison.
+- **ComparisonTool**: Side-by-side comparison with dual modes (Inventions and Civilizations), search in dropdowns, technology focus analysis, shared technology insights, and clickable navigation to invention details.
 - **FeaturedDiscoveries**: Curated highlights.
 - **SWMM5Models**: Modal for model downloads.
 - **TimelineSlider**: Interactive slider spanning 40,000 years with auto-play and overlap mode.
