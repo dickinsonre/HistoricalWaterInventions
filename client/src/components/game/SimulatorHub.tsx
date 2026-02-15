@@ -118,11 +118,11 @@ export default function SimulatorHub() {
 
       {activeSimulator && (
         <div 
-          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 bg-black/70 flex items-start justify-center z-50 p-4 overflow-y-auto"
           onClick={() => setActiveSimulator(null)}
         >
           <div 
-            className="max-h-[90vh] overflow-auto"
+            className="w-full max-w-4xl my-4"
             onClick={(e) => e.stopPropagation()}
           >
             {renderSimulator()}
