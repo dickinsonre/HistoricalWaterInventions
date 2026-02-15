@@ -4232,7 +4232,7 @@ export const gameData: GameData = {
     {
       id: "papua-new-guinea",
       name: "Papua New Guinea",
-      description: "World's oldest wetland agriculture (9,000 years) with 800+ languages",
+      description: "Home to the world's oldest known wetland agriculture—Kuk Swamp's 9,000-year-old drainage channels (UNESCO World Heritage 2008) predate Egyptian farming by 4,000 years, making PNG one of only 3–4 places where agriculture was independently invented. Over 800 language groups developed distinct water management traditions across dramatically different environments: highland terraces supporting 150 people/km², Sepik River fish trap complexes harvesting 100+ species, sago palm hydraulic processing yielding 3 million calories per tree, and stilt villages built 2–5 meters over water with integrated tidal sanitation. PNG's engineers achieved some of the highest population densities in the pre-industrial world using only stone-age tools.",
       position: [20, 0, 4],
       color: "#FF9800",
       era: "ancient",
@@ -4241,17 +4241,17 @@ export const gameData: GameData = {
         {
           id: "kuk-swamp",
           name: "Kuk Swamp",
-          description: "UNESCO World Heritage - oldest wetland agriculture on Earth",
-          historicalContext: "Independent agricultural invention 4,000 years before Egypt",
+          description: "UNESCO World Heritage site (2008) in the Wahgi Valley at 1,550 m elevation—the oldest known wetland agriculture on Earth",
+          historicalContext: "Jack Golson's 1972 excavations revealed 9,000-year-old drainage channels, proving independent agricultural invention 4,000 years before Egypt. One of only 3–4 places worldwide where farming was independently invented.",
           coordinates: { lat: -5.8, lng: 144.3 },
           artifacts: [
             {
               id: "kuk-drainage",
               name: "Kuk Swamp Drainage Agriculture",
-              description: "The world's oldest known wetland agriculture - 9,000-year-old drainage channels predating Egyptian civilization",
+              description: "The world's oldest known wetland agriculture system. Archaeological excavations at Kuk Swamp in the Wahgi Valley (1,550 m elevation) revealed drainage channels dating to 7000 BCE—4,000 years before Egypt's first farms. Phase 1 (7000–6400 BCE) shows mounding and draining of wetland margins. Phase 2 (4350–3000 BCE) introduced formal ditch networks with cross-channels. Phase 3 (2000–1000 BCE) added grid-pattern drainage serving entire communities. Jack Golson's 1972 excavations revolutionized understanding of independent agricultural origins. Banana, taro, and yam domestication occurred here before spreading across Southeast Asia and the Pacific.",
               rarity: "legendary",
               historicalPeriod: "7000 BCE - Present",
-              significance: "UNESCO World Heritage 2008; one of only 3-4 independent agricultural origins",
+              significance: "UNESCO World Heritage 2008; one of only 3-4 independent agricultural origins worldwide. Channels up to 2 m wide and 1.5 m deep. Transformed global understanding of human innovation—agriculture was not a Middle Eastern monopoly",
               yearBCE: 7000,
               category: "canal"
             }
@@ -4260,27 +4260,27 @@ export const gameData: GameData = {
         {
           id: "png-highlands",
           name: "PNG Highlands",
-          description: "Terrace irrigation supporting millions",
-          historicalContext: "Dense populations using stone-age technology",
+          description: "Central highlands at 1,500–2,800 m elevation where terrace irrigation feeds 3+ million people across the Wola, Huli, Enga, and Chimbu territories",
+          historicalContext: "Achieved population densities of 150 people/km²—comparable to medieval Europe—using only stone-age technology. Sweet potato introduction (~1700 CE) triggered a population explosion.",
           coordinates: { lat: -6.0, lng: 145.5 },
           artifacts: [
             {
               id: "highland-terraces",
               name: "Highland Terrace Irrigation (Wola/Huli)",
-              description: "Engineered hillside terraces with water control supporting 150 people/km²",
+              description: "Engineered hillside terraces carved into steep slopes at 1,500–2,800 m elevation across the central highlands. The Wola, Huli, Enga, and Chimbu peoples constructed elaborate drainage and irrigation networks supporting population densities of 150 people/km²—comparable to medieval Europe but achieved with stone tools. Sweet potato (introduced ~1700 CE) revolutionized highland agriculture, enabling yields of 10–20 tons/hectare. Composting mounds (up to 5 m diameter) with internal drainage channels control waterlogging. The Huli people manage 30+ named varieties of sweet potato in terraced gardens reaching 2,800 m. These systems feed 3+ million highland residents today.",
               rarity: "epic",
               historicalPeriod: "2000 BCE - Present",
-              significance: "Feeds 3+ million highlanders; sweet potato yields 10-20 tons/hectare",
+              significance: "Supports 3+ million people; sweet potato yields 10-20 tons/hectare; population densities rival medieval Europe using only stone-age technology",
               yearBCE: 2000,
               category: "irrigation"
             },
             {
               id: "taro-pondfields",
               name: "Taro Pondfield Irrigation",
-              description: "Flooded field systems for wetland taro with precise water control",
+              description: "Precision-engineered flooded field systems for wetland taro (Colocasia esculenta) with carefully controlled water depth of 5–15 cm. Inlet and outlet channels maintain constant slow flow that suppresses weeds, prevents soil temperature extremes, and delivers dissolved nutrients. Fields are leveled by hand to within 2 cm tolerance. Multiple taro varieties are cultivated in rotation, with fallow periods managed through controlled flooding and draining. The Chimbu and Kainantu peoples developed pondfield complexes producing 15–30 tons/hectare—among the highest yields of any pre-industrial system. Continuous cultivation documented for 4,000+ years at some sites.",
               rarity: "rare",
               historicalPeriod: "2000 BCE - Present",
-              significance: "Continuous cultivation 4,000+ years; 15-30 tons/hectare yield",
+              significance: "Continuous cultivation 4,000+ years; 15-30 tons/hectare yield; water depth controlled to within centimeters using stone-age tools",
               yearBCE: 2000,
               category: "irrigation"
             }
@@ -4289,27 +4289,27 @@ export const gameData: GameData = {
         {
           id: "sepik-river",
           name: "Sepik River",
-          description: "World's largest uncontaminated river system",
-          historicalContext: "Famous for art and sophisticated fish trap systems",
+          description: "One of the world's largest uncontaminated river systems—1,126 km long with vast seasonal floodplains supporting elaborate aquatic food production",
+          historicalContext: "The Iatmul, Chambri, and other Sepik peoples developed sophisticated fish trap complexes and sago palm processing that sustain 500,000+ people. Smoked fish traded up to 100 km inland.",
           coordinates: { lat: -4.0, lng: 143.5 },
           artifacts: [
             {
               id: "sepik-fish-traps",
               name: "Sepik River Fish Trap Systems",
-              description: "Elaborate weirs and portable traps harvesting 100+ species year-round",
+              description: "The Sepik River—1,126 km long and one of the world's largest uncontaminated rivers—supports elaborate fish trap complexes harvesting 100+ freshwater species year-round. Woven bamboo funnel traps (up to 3 m long) are anchored in strategic positions where seasonal flooding concentrates fish migration. V-shaped weirs constructed from stakes and woven panels direct fish into holding pens. The Iatmul and Chambri peoples manage seasonal fishing calendars aligned with water levels, rotating trap locations to prevent overharvesting. Smoked fish from the Sepik is traded up to 100 km inland. These systems have provided the primary protein source for river populations for thousands of years with no evidence of stock depletion.",
               rarity: "epic",
               historicalPeriod: "Ancient - Present",
-              significance: "Primary protein for river populations; sustainable for millennia",
+              significance: "Primary protein for 500,000+ river populations; sustainable for millennia; 100+ species harvested; traded 100 km inland",
               yearBCE: 5000,
               category: "irrigation"
             },
             {
               id: "sago-processing",
               name: "Sago Palm Water Processing",
-              description: "Hydraulic food engineering washing 3 million calories from one tree using 2,000 liters of water",
+              description: "One of the most ingenious hydraulic food-processing systems ever devised. A single sago palm (Metroxylon sagu) contains 200–400 kg of starch—roughly 3 million calories—locked in the trunk pith. Extraction requires felling the 15 m palm, splitting it lengthwise, and using a carved hardwood adze to pulverize the pith. The pulverized material is then washed with approximately 2,000 liters of water through a series of coconut-fiber filters and bark troughs. Starch settles in collection basins, is dried, and stored for months. The Sepik and coastal peoples process 2–3 palms per week to feed a village. Sago groves are actively managed, with individual trees planted and tended for 10–15 years before harvest.",
               rarity: "rare",
               historicalPeriod: "Ancient - Present",
-              significance: "One palm = 3 years of calories for one person; most efficient extraction known",
+              significance: "One palm = 3 million calories (feeds 1 person for 3 years); 2,000 liters of water per extraction; most calorically efficient food processing known",
               yearBCE: 5000,
               category: "irrigation"
             }
@@ -4318,27 +4318,27 @@ export const gameData: GameData = {
         {
           id: "coastal-png",
           name: "Coastal & Island PNG",
-          description: "Stilt villages and atoll survival engineering",
-          historicalContext: "Complete water-based urbanism",
+          description: "Stilt villages housing 500+ residents over lagoons and coral atoll communities surviving on zero freshwater sources",
+          historicalContext: "Complete water-based urbanism with tidal sanitation, integrated fish traps, and Ghyben-Herzberg freshwater lens management. Malaria reduced 40–60% compared to shore dwellings.",
           coordinates: { lat: -2.5, lng: 140.7 },
           artifacts: [
             {
               id: "stilt-villages",
               name: "Stilt Village Water Architecture",
-              description: "Complete villages built 2-5 meters over water with tidal sanitation and fish traps attached to piles",
+              description: "Complete villages built 2–5 meters above water on hardwood piles driven into lagoon or river beds. The largest stilt settlements house 500+ residents in interconnected structures with plank walkways, communal platforms, and specialized areas for food preparation, ceremony, and trade. Tidal flow provides natural sanitation—waste is carried away twice daily. Fish traps are integrated directly into the pile structures, providing protein literally at the doorstep. The design eliminates mosquito-borne malaria (reduced by 40–60% compared to shore dwellings), prevents flooding damage, and creates defensible positions. Thousands of people in the Sepik delta, Gulf Province, and offshore islands still live in stilt villages today.",
               rarity: "epic",
               historicalPeriod: "Ancient - Present",
-              significance: "Thousands still live in stilt villages; flood-proof, malaria-reduced, protein at doorstep",
+              significance: "Thousands still live in stilt villages; flood-proof; malaria reduced 40-60%; integrated fish traps provide daily protein; defensible architecture",
               yearBCE: 3000,
               category: "dam"
             },
             {
               id: "atoll-rainwater",
               name: "Coral Atoll Rainwater Harvesting",
-              description: "Survival engineering on coral islands with zero freshwater sources, managing thin freshwater lens",
+              description: "Survival engineering on coral atolls with zero surface freshwater. Islanders manage the Ghyben-Herzberg freshwater lens—a thin layer of rainwater floating atop saltwater within the coral substrate. Wells are dug to precisely the right depth (typically 1–2 m) to tap this lens without drawing salt. Coconut palm leaf catchments direct rainfall into clay-lined pits and hollowed log cisterns. Strict traditional rules (tambu) prohibit activities that contaminate groundwater: no burial near wells, no pig pens uphill, no washing in collection areas. During droughts, coconut water serves as emergency hydration (300–500 ml per nut). These systems sustained populations of 200–500 people on islands as small as 1 km² for millennia.",
               rarity: "rare",
               historicalPeriod: "Ancient - Present",
-              significance: "Traditional rules prevent saltwater intrusion; coconut water = emergency backup",
+              significance: "Sustained populations on waterless coral atolls; Ghyben-Herzberg lens management; traditional tambu rules prevent contamination; coconut water emergency backup",
               yearBCE: 2000,
               category: "dam"
             }
