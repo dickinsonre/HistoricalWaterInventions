@@ -33,6 +33,7 @@ import Onboarding from "./Onboarding";
 import QuickSearchBar from "./QuickSearchBar";
 import SWMM5Showcase from "./SWMM5Showcase";
 import WaterFlowSimulation from "./WaterFlowSimulation";
+import TimelineSlider from "./TimelineSlider";
 import { useAudio } from "../../lib/stores/useAudio";
 import { useProgress } from "../../lib/stores/useProgress";
 
@@ -252,6 +253,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
   const [showPathways, setShowPathways] = useState(false);
   const [showQuests, setShowQuests] = useState(false);
   const [showTutorial, setShowTutorial] = useState(false);
+  const [showTimelineSlider, setShowTimelineSlider] = useState(false);
   const [eraFilter, setEraFilter] = useState<string | null>(null);
   const [continentFilter, setContinentFilter] = useState<string | null>(null);
   const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
@@ -398,6 +400,15 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               </Button>
             </TooltipTrigger>
             <TooltipContent className="water-card text-[var(--parchment)]">Timeline</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowTimelineSlider(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--gold)]/30">
+                <Calendar size={16} className="text-[var(--gold)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Timeline Slider</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -882,6 +893,17 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
       {showQuests && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowQuests(false)}>
           <div onClick={(e) => e.stopPropagation()}><QuestSystem onClose={() => setShowQuests(false)} onNavigateToCivilization={(id) => { setShowQuests(false); setSelectedCiv(id); }} /></div>
+        </div>
+      )}
+      {showTimelineSlider && (
+        <div className="fixed inset-0 bg-black/70 flex items-start justify-center z-50 p-4 overflow-y-auto" onClick={() => setShowTimelineSlider(false)}>
+          <div onClick={(e) => e.stopPropagation()} className="w-full max-w-6xl">
+            <TimelineSlider 
+              onClose={() => setShowTimelineSlider(false)} 
+              onSelectCivilization={(id) => { setShowTimelineSlider(false); setSelectedCiv(id); }}
+              onSelectInvention={(id) => { setShowTimelineSlider(false); setSelectedInvention(id); }}
+            />
+          </div>
         </div>
       )}
       {showTutorial && (
