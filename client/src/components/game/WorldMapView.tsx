@@ -143,7 +143,33 @@ const civilizationCoords: Record<string, { lat: number; lng: number; region: str
   "chola-dynasty": { lat: 10.8, lng: 79.1, region: "Tamil Nadu" },
   "delhi-sultanate": { lat: 28.6, lng: 77.2, region: "Delhi" },
   "mughal-empire": { lat: 27.2, lng: 78.0, region: "Agra" },
-  "rajasthan-desert": { lat: 26.9, lng: 70.9, region: "Thar Desert" }
+  "rajasthan-desert": { lat: 26.9, lng: 70.9, region: "Thar Desert" },
+  "ottoman-empire": { lat: 41.0, lng: 28.9, region: "Istanbul/Anatolia" },
+  "safavid-persia": { lat: 32.65, lng: 51.68, region: "Isfahan, Iran" },
+  "ptolemaic-egypt": { lat: 31.2, lng: 29.9, region: "Alexandria, Egypt" },
+  "aksumite-empire": { lat: 14.1, lng: 38.7, region: "Aksum, Ethiopia/Eritrea" },
+  "tiwanaku-empire": { lat: -16.55, lng: -68.68, region: "Lake Titicaca, Bolivia" },
+  "chimu-empire": { lat: -8.1, lng: -79.07, region: "Chan Chan, Peru" },
+  "wari-empire": { lat: -13.5, lng: -74.2, region: "Ayacucho, Peru" },
+  "joseon-korea": { lat: 37.57, lng: 126.98, region: "Seoul, Korea" },
+  "polynesian-voyaging": { lat: -17.5, lng: -149.5, region: "Central Polynesia" },
+  "southern-african-kingdoms": { lat: -26.5, lng: 31.5, region: "Eswatini/KwaZulu-Natal" },
+  "garamantes": { lat: 26.5, lng: 13.0, region: "Fezzan, Libya" },
+  "mapuche": { lat: -38.7, lng: -72.6, region: "Araucanía, Chile" },
+  "maori-new-zealand": { lat: -38.1, lng: 176.2, region: "New Zealand" },
+  "tibetan-civilizations": { lat: 29.65, lng: 91.1, region: "Lhasa, Tibet" },
+  "georgian-kingdom": { lat: 41.69, lng: 44.8, region: "Tbilisi, Georgia" },
+  "nuragic-sardinia": { lat: 39.9, lng: 9.1, region: "Sardinia, Italy" },
+  "lapita-culture": { lat: -17.8, lng: 177.9, region: "Fiji/Tonga/Samoa" },
+  "toltec-empire": { lat: 20.06, lng: -99.34, region: "Tula, Mexico" },
+  "khwarezmian-empire": { lat: 41.55, lng: 60.63, region: "Urgench, Uzbekistan" },
+  "liao-jin-yuan": { lat: 39.9, lng: 116.4, region: "Beijing Region" },
+  "urartu": { lat: 38.5, lng: 43.3, region: "Van, Turkey" },
+  "dilmun": { lat: 26.2, lng: 50.5, region: "Bahrain" },
+  "bactria": { lat: 36.7, lng: 66.9, region: "Afghanistan" },
+  "majapahit": { lat: -7.55, lng: 112.4, region: "East Java, Indonesia" },
+  "kanem-bornu": { lat: 12.0, lng: 14.0, region: "Chad/Nigeria" },
+  "benin-kingdom": { lat: 6.3, lng: 5.6, region: "Benin City, Nigeria" }
 };
 
 // Convert to x/y percentages
@@ -186,7 +212,16 @@ const civilizationContinents: Record<string, string> = {
   "xia-shang-dynasty": "Asia", "zhou-qin-dynasty": "Asia", "han-dynasty": "Asia",
   "sui-tang-dynasty": "Asia", "song-dynasty": "Asia", "ming-dynasty": "Asia",
   "vedic-mauryan-india": "Asia", "chola-dynasty": "Asia", "delhi-sultanate": "Asia",
-  "mughal-empire": "Asia", "rajasthan-desert": "Asia"
+  "mughal-empire": "Asia", "rajasthan-desert": "Asia",
+  "ottoman-empire": "Europe", "safavid-persia": "Asia", "ptolemaic-egypt": "Africa",
+  "aksumite-empire": "Africa", "tiwanaku-empire": "Americas", "chimu-empire": "Americas",
+  "wari-empire": "Americas", "joseon-korea": "Asia", "polynesian-voyaging": "Pacific",
+  "southern-african-kingdoms": "Africa", "garamantes": "Africa", "mapuche": "Americas",
+  "maori-new-zealand": "Pacific", "tibetan-civilizations": "Asia", "georgian-kingdom": "Asia",
+  "nuragic-sardinia": "Europe", "lapita-culture": "Pacific", "toltec-empire": "Americas",
+  "khwarezmian-empire": "Asia", "liao-jin-yuan": "Asia", "urartu": "Asia",
+  "dilmun": "Asia", "bactria": "Asia", "majapahit": "Asia",
+  "kanem-bornu": "Africa", "benin-kingdom": "Africa"
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {
