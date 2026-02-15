@@ -2810,48 +2810,145 @@ export const gameData: GameData = {
     {
       id: "philippines",
       name: "Philippines",
-      description: "Banaue rice terraces and traditional water systems",
+      description: "The Philippine archipelago produced some of the ancient world's most remarkable water engineering achievements. The Ifugao Rice Terraces of the Cordillera mountains—carved entirely by hand over 2,000 years ago—stretch an estimated 20,100 kilometers if laid end-to-end, roughly half the Earth's circumference. The American Society of Civil Engineers designated them an International Historic Civil Engineering Landmark in 1997, recognizing their mastery of hydrology, sustainable development, and gravity-fed irrigation. Beyond the terraces, the Philippines developed diverse water traditions across its 7,000+ islands: the Ilocos region's zanjera cooperative irrigation societies (over 1,000 self-governing cooperatives managing 33,000 hectares), the Cordillera's lampisa community water management systems, and ingenious bamboo pipe networks delivering spring water across kilometers of mountainous terrain. The Ifugao invented hydraulicking (bulubul)—using controlled water force as a construction tool to transport massive stones and soil across steep terrain—a technique unique in world engineering. During the Spanish colonial era, Manila received Southeast Asia's most ambitious urban waterworks: the Carriedo system (1882) with its 56,000-cubic-meter underground El Deposito reservoir, serving 300,000 people through gravity-fed cast-iron pipes. UNESCO inscribed five terrace clusters as World Heritage Sites in 1995, and the muyong forest watershed system—where cutting protected trees was traditionally punishable by death—represents one of humanity's oldest conservation programs.",
       position: [18, 0, 8],
       color: "#4CAF50",
       era: "ancient",
-      dateRange: "2000 years ago - Present",
+      dateRange: "100 BCE - Present",
       locations: [
         {
           id: "ifugao-terraces",
-          name: "Ifugao Rice Terraces",
-          description: "10,000 km² of mountain terraces carved by hand",
-          historicalContext: "Called the 'Eighth Wonder of the World'",
+          name: "Ifugao Rice Terraces (Banaue, Batad, Hungduan)",
+          description: "UNESCO World Heritage rice terraces spanning 10,360 km² across the Cordillera mountains, carved entirely by hand at elevations up to 1,500 meters with slope angles reaching 70%",
+          historicalContext: "The ASCE designated the terraces as the 19th International Historic Civil Engineering Landmark in 1997. Five clusters (Batad, Bangaan, Hungduan, Mayoyao Central, Nagacadan) were inscribed as UNESCO World Heritage Sites in 1995. Added to the UNESCO Danger List in 2001 when over 30% were abandoned due to urban migration, then successfully removed in 2012 after community restoration efforts.",
           coordinates: { lat: 16.9117, lng: 121.0536 },
           artifacts: [
             {
               id: "banaue-terraces",
               name: "Banaue Rice Terraces",
-              description: "2,000-year-old terraces with sophisticated irrigation",
+              description: "The iconic terraces of Banaue represent 2,000 years of continuous hydraulic engineering on the steep mountainsides of Ifugao province. Built without any machinery or modern tools, these terraces feature stone and mud retaining walls that follow natural mountain contours, with some walls reaching 6 meters (20 feet) in height. The gravity-fed irrigation system harvests water from mountain forest watersheds and channels it through bamboo pipes, carved stone channels, and canals in a self-balancing cascade where water flows gently from terrace to terrace without causing erosion. The total estimated length of all terrace walls, if laid end-to-end, would stretch approximately 20,100 kilometers—roughly half the Earth's circumference. Each terrace functions as a miniature hydraulic system: water enters through field inlets, floods the level pond field for rice cultivation, then overflows to the next terrace below. Natural filtration through soil layers cleans the water as it cascades downward, while the terraces themselves serve as flood control, slowing monsoon runoff across steep terrain.",
               rarity: "legendary",
-              historicalPeriod: "2000 years ago",
-              significance: "UNESCO World Heritage; if laid end-to-end would circle half the globe",
-              yearBCE: 0,
+              historicalPeriod: "100 BCE - Present",
+              significance: "UNESCO World Heritage Site (1995); ASCE International Historic Civil Engineering Landmark (1997); 20,100 km total wall length; elevation up to 1,500m; slopes up to 70%",
+              yearBCE: 100,
               category: "irrigation"
             },
             {
               id: "bamboo-irrigation",
               name: "Ifugao Bamboo Pipe System",
-              description: "Bamboo pipes carrying spring water up to 2km",
+              description: "The Ifugao developed an ingenious gravity-fed water delivery system using hollow bamboo pipes (locally called 'salup') to transport spring water across distances of up to 5-6 kilometers from mountain forest sources to terrace fields. Giant bamboo culms are split, hollowed, and joined end-to-end, supported on wooden trestles that follow the mountainside contours. The system delivers 18-20 liters per minute without any pumping mechanism, relying entirely on precise gradient calculations passed down through oral tradition. Bamboo pipes are supplemented with hollow logs and carved stone channels at critical junctions. The network includes main canals bringing water from forest sources, secondary channels branching to terrace clusters, individual field inlets for each terrace, and overflow systems handling excess water during monsoon season. The entire system requires annual replacement of bamboo sections, making maintenance a continuous community activity governed by traditional cooperative labor arrangements.",
               rarity: "rare",
-              historicalPeriod: "Traditional",
-              significance: "Delivers 18-20 liters/minute using only gravity and bamboo",
+              historicalPeriod: "Traditional (pre-colonial)",
+              significance: "Delivers 18-20 liters/minute using only gravity and bamboo; spans up to 5-6 km from source to field; requires no metal or manufactured components",
               yearBCE: -500,
               category: "aqueduct"
             },
             {
               id: "muyong",
-              name: "Muyong (Forest Watershed)",
-              description: "Protected forests above terraces ensuring water supply",
+              name: "Muyong Forest Watershed System",
+              description: "The muyong is a privately owned and communally managed woodlot system positioned on the mountaintops above the rice terraces, functioning as a living watershed that ensures year-round water supply to the terraces below. Each muyong is a carefully managed micro-forest containing hundreds of native tree species, medicinal plants, and wildlife, maintained by specific Ifugao families under strict customary law. Cutting trees in a muyong was traditionally punishable by death or the payment of heavy fines, making it one of the world's oldest formal conservation programs. The muyong system demonstrates sophisticated understanding of hydrology: the dense forest canopy intercepts rainfall, the root systems prevent erosion and landslides, the forest floor acts as a natural sponge absorbing monsoon rains and releasing water slowly throughout the dry season, and the biodiversity supports natural pest control for the terraces. Modern hydrological studies confirm that muyong forests maintain soil moisture levels 40-60% higher than deforested hillsides, validating 2,000 years of indigenous ecological knowledge.",
               rarity: "epic",
-              historicalPeriod: "Traditional",
-              significance: "Traditional conservation; cutting muyong trees was punishable by death",
+              historicalPeriod: "Traditional (pre-colonial)",
+              significance: "One of humanity's oldest conservation programs; cutting protected trees punishable by death; maintains 40-60% higher soil moisture than deforested areas",
               yearBCE: -500,
               category: "irrigation"
+            },
+            {
+              id: "bulubul-hydraulicking",
+              name: "Bulubul (Hydraulicking)",
+              description: "The Ifugao invented a construction technique called bulubul (also budubud)—hydraulicking—that is unique in world engineering: using controlled water force as a tool to transport massive quantities of soil, gravel, stones, and rocks from upper elevations to pond fields below. During the rainy season (July-September), temporary channels are constructed across existing terraces, and water is diverted from irrigation and drainage sources to create powerful sluicing flows. The water force carries fill materials—including boulders too heavy for human transport—downslope to receiving pond fields where the materials are deposited as structural fill, topsoil, or retaining wall components. Bamboo conveyors guide the sluicing materials across pond fields to prevent damage. This technique solved the fundamental engineering challenge of terrace construction on slopes up to 70%: how to move thousands of tons of stone and earth across steep terrain using only pre-industrial technology. The Ifugao essentially invented a gravity-powered conveyor system that predates modern hydraulic mining techniques by nearly two millennia.",
+              rarity: "epic",
+              historicalPeriod: "Traditional (pre-colonial)",
+              significance: "Unique worldwide engineering technique; uses water force to transport boulders and soil across 70% slopes; predates modern hydraulic mining by ~2,000 years",
+              yearBCE: -200,
+              category: "water-lifting"
+            },
+            {
+              id: "tuping-stone-walls",
+              name: "Tuping (Dry-Stone Terrace Walls)",
+              description: "The tuping is the Ifugao technique for constructing dry-fitted stone retaining walls that hold back the soil and water of each terrace level. Foundation stones are laid on excavated hardened earth, then angular stones are positioned on top with elongated stones tilted backward so the heavier end faces outward, creating natural resistance against the water and soil pressure behind the wall. No mortar is used—instead, wedge stones and chinking stones called 'tabab' are fitted generously as fillers between larger stones, and the gaps are packed with soil and compacted using wooden poles or pestles. Walls reach heights of up to 6 meters (20 feet), with protruding header stones built in as climbing steps for maintenance access. The engineering genius lies in the wall's ability to simultaneously retain water for rice cultivation while allowing controlled drainage through the stone interstices, preventing catastrophic wall failure during heavy monsoon rains. Each wall represents precise knowledge of stone selection, weight distribution, and hydrostatic pressure accumulated over generations of oral tradition.",
+              rarity: "rare",
+              historicalPeriod: "Traditional (pre-colonial)",
+              significance: "Dry-fitted walls up to 6 meters high using no mortar; withstand monsoon hydrostatic pressure; knowledge transmitted orally for 2,000+ years",
+              yearBCE: -100,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "ilocos-zanjera",
+          name: "Ilocos Region (Zanjera Cooperatives)",
+          description: "The Ilocos provinces of northern Luzon host over 1,000 self-governing zanjera irrigation cooperatives managing 33,000 hectares of rice land, representing one of the world's most successful community-managed water systems",
+          historicalContext: "The zanjera system blends Spanish colonial irrigation models with pre-existing indigenous water-sharing practices. The Spanish term 'zanja' (ditch/canal) gave the system its name, but the cooperative governance structure reflects indigenous Filipino values of communal resource management. Some zanjeras like Zanjera San Marcelino have operated continuously for over 300 years. Academic studies by researchers at the University of New Mexico and Ateneo de Manila have documented zanjeras as globally exemplary models of sustainable commons governance.",
+          coordinates: { lat: 18.1647, lng: 120.5936 },
+          artifacts: [
+            {
+              id: "zanjera-cooperative",
+              name: "Zanjera Cooperative Irrigation",
+              description: "The zanjera system of the Ilocos region represents one of the world's most remarkable examples of community-managed irrigation. Over 1,000 self-governing cooperatives collectively manage approximately 33,000 hectares of rice land across Ilocos Norte and Ilocos Sur, with some individual zanjeras (such as Zanjera Danum in Dingras) managing 1,500 hectares divided into 32 sub-units called sitios. Each zanjera operates under elected officers including a maestro (water master) who manages distribution, a secretario, tesorero, and even a cocinero (cook for communal work days). The system's genius lies in its water-for-land exchange: landless farmers build and maintain irrigation infrastructure in exchange for farming rights, giving 25% of produce to landowners—a social contract sustained by the cultural value of biang ti daga (land sharing). Land is subdivided into blocks with each farmer receiving plots in different blocks to ensure equitable access to high-flow and low-flow areas. During shortages, water is limited to one unit per farmer. Members contribute 3-5 days per year of communal labor (faenas) for dam and canal repair, using traditional materials: bamboo poles, rocks, banana leaves, and sandbags.",
+              rarity: "epic",
+              historicalPeriod: "1600s - Present",
+              significance: "1,000+ self-governing cooperatives; 33,000 hectares managed; 300+ years continuous operation; globally recognized model of commons governance",
+              yearBCE: -400,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "cordillera-lampisa",
+          name: "Cordillera Mountains (Sagada & Mountain Province)",
+          description: "The Cordillera region's indigenous Kankanaey and Bontoc peoples developed the lampisa system of community water management, where appointed water managers ensure equitable distribution across mountain rice fields",
+          historicalContext: "The Cordillera Administrative Region is home to eight major indigenous ethnic groups (Ifugao, Bontoc, Kankanaey, Kalinga, Ibaloy, Tingguian, Applai, and Isnag), each with distinct water management traditions. Traditional water rights in the Cordillera are governed by customary law rather than formal permits, and water is considered sacred communal property. The Pidlisan tribe of northern Sagada developed the lampisa system, where violations of water-sharing rules result in ma-aptangan (community fines) used to buy food for repair workers.",
+          coordinates: { lat: 17.0913, lng: 120.9065 },
+          artifacts: [
+            {
+              id: "lampisa-system",
+              name: "Lampisa Water Management System",
+              description: "The lampisa system of the Pidlisan tribe in Sagada, Mountain Province, is a community-based water management framework where appointed officials called lampisa ensure fair and equitable water distribution throughout the cropping season. Each rice field owner contributes 3-5 days per year of communal labor (pumayas) for system rehabilitation—repairing canals, clearing blockages, and reinforcing diversion structures. Non-participation triggers ma-aptangan, community fines whose proceeds buy food for the workers performing repairs. The system operates on the principle that water is sacred communal property that cannot be owned individually, only managed collectively. Water rights are governed by customary law rather than formal government permits, and disputes over water allocation are resolved by community elders using traditional mediation practices. Water theft is punished not only by community sanctions but is believed to invite karmic retribution in the form of illness or crop failure. This integration of practical governance, spiritual beliefs, and social enforcement has maintained equitable water distribution across mountain rice fields for centuries without formal legal frameworks.",
+              rarity: "rare",
+              historicalPeriod: "Traditional (pre-colonial)",
+              significance: "Community water governance without formal legal framework; 3-5 days annual communal labor per farmer; spiritual enforcement of water rights",
+              yearBCE: -300,
+              category: "irrigation"
+            },
+            {
+              id: "barekbek-fish-trap",
+              name: "Barekbek (Bamboo Fish Trap)",
+              description: "The barekbek is a traditional woven bamboo basket trap used by Cordillera highland communities for harvesting fish and freshwater shrimp from mountain rivers and streams. Set in groups of 3 or 5 traps (always odd numbers, following traditional belief), the barekbek features a funnel-shaped entrance positioned opposite to the current—easy for fish to enter but nearly impossible to escape. The trap exploits the natural behavior of fish swimming upstream against the current, funneling them into a conical chamber. Barekbek are constructed entirely from locally harvested bamboo strips woven in a specific pattern passed down through family traditions, with each trap lasting approximately one season before replacement. The placement of traps requires intimate knowledge of river hydrology: reading current patterns, identifying fish migration routes, understanding seasonal water level changes, and selecting locations where natural rock formations concentrate fish movement. This indigenous fishing technology represents the intersection of water engineering and food production, demonstrating how Cordillera communities developed integrated systems for managing both agricultural water (terraces) and aquatic resources (river fisheries) within the same watershed.",
+              rarity: "common",
+              historicalPeriod: "Traditional (pre-colonial)",
+              significance: "Integrates water engineering with sustainable fisheries; set in ritual odd-number groups; requires deep knowledge of river hydrology",
+              yearBCE: -500,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "manila-waterworks",
+          name: "Manila (El Deposito & Carriedo Waterworks)",
+          description: "Southeast Asia's most ambitious 19th-century urban waterworks, featuring a 56,000-cubic-meter underground reservoir carved from volcanic tuff, gravity-fed cast-iron pipes spanning 5 km, and public fountains serving 300,000 people",
+          historicalContext: "Spanish naval officer Francisco Carriedo y Peredo bequeathed 10,000 pesos in 1733 for a public water system, but construction was delayed 149 years by the British occupation (1762-1764) which raided the fund, bad investments, and colonial bureaucracy. Engineer Genaro Palacios finally completed the system in 1882. On August 30, 1896, Andres Bonifacio's Katipunan revolutionaries attacked El Deposito in the Battle of San Juan del Monte—the first major armed clash of the Philippine Revolution against Spain—making this water infrastructure a site of national independence. The reservoir was declared a National Shrine in 1973 and Museo El Deposito opened in 2019.",
+          coordinates: { lat: 14.5989, lng: 121.04 },
+          artifacts: [
+            {
+              id: "el-deposito",
+              name: "El Deposito Underground Reservoir",
+              description: "El Deposito is the largest surviving Spanish-era infrastructure artifact in the Philippines: a massive underground reservoir carved from volcanic tuff and reinforced with molave hardwood, built between 1878 and 1882 beneath a hill in San Juan. The reservoir stretches 150 meters in length and contains one central canal flanked by 25 smaller chambers, each 5 meters high and 3 meters wide, with ventilation shafts to keep the stored water fresh. Its total capacity of 56,000 cubic meters (approximately 15 million gallons) served Manila's population of 300,000 through gravity-fed cast-iron pipes. Water was pumped from the Marikina River at Santolan through 5 kilometers of pipes to the reservoir, then distributed by gravity to public fountains, fire hydrants, and household connections across Manila and its suburbs. Before this system, Manila's residents relied on contaminated shallow wells, the polluted Pasig River, and aguadores (water porters) carrying clay jars—conditions that made waterborne disease endemic. The Carriedo system's inauguration on July 24, 1882 was celebrated with a week-long festival featuring civic parades, fireworks, and holy masses. Engineer Genaro Palacios, who also designed San Sebastian Church, oversaw construction.",
+              rarity: "legendary",
+              historicalPeriod: "1878-1882",
+              significance: "Largest Spanish-era artifact in Philippines; 56,000 m³ capacity; 150m long; served 300,000 people; site of 1896 Revolution's first battle",
+              yearBCE: -1882,
+              category: "sanitation"
+            },
+            {
+              id: "carriedo-fountain",
+              name: "Carriedo Public Fountain System",
+              description: "The Carriedo fountain system transformed Manila from a city plagued by waterborne disease into one with reliable public water access. Named after benefactor Francisco Carriedo y Peredo, who donated 10,000 pesos in 1733 (a fortune delayed 149 years by the British raid on Manila and subsequent bad investments), the system distributed water from El Deposito through cast-iron mains to public fountains, fire hydrants, and private household connections across Manila and its suburbs. The Primera Fuente (Main Fountain) at Rotonda de Sampaloc became the centerpiece of the system's inauguration ceremony. The gravity-fed distribution network eliminated the aguadores (professional water carriers) who had previously transported water in clay jars from the Pasig River, and dramatically reduced cholera, dysentery, and typhoid epidemics that had plagued Spanish Manila for three centuries. A replica of the original Carriedo Fountain stands at the Metropolitan Waterworks and Sewerage System (MWSS) headquarters in Balara, Quezon City, while remnants of the original cast-iron pipe network occasionally surface during Manila road construction.",
+              rarity: "rare",
+              historicalPeriod: "1882",
+              significance: "Funded by 1733 bequest delayed 149 years; eliminated aguadores water-carrier system; dramatically reduced cholera and typhoid in Manila",
+              yearBCE: -1882,
+              category: "fountain"
             }
           ]
         }
