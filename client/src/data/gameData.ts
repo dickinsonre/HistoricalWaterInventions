@@ -3534,6 +3534,35 @@ export const gameData: GameData = {
               category: "sanitation"
             }
           ]
+        },
+        {
+          id: "dubai-stormwater-2024",
+          name: "Dubai $8 Billion Stormwater Network",
+          description: "Following the catastrophic April 2024 floods—when 164 mm of rain fell at Dubai Airport in 24 hours (more than a year's average in a single day), the heaviest rainfall in 75 years—Dubai announced an $8 billion stormwater drainage network to be completed by 2033. This represents the largest single urban drainage investment in Middle East history.",
+          historicalContext: "The April 16, 2024 deluge caused an estimated $2.9-3.4 billion in insurance losses, cancelled 1,244+ flights at the world's second-busiest airport, flooded Sheikh Zayed Road, suspended the Dubai Metro, and submerged entire neighborhoods. The event exposed critical gaps in Dubai's drainage infrastructure, which had been designed for a city receiving under 120 mm of annual rainfall. Climate analysis shows Dubai's average annual rainfall has increased 40% in recent decades, making extreme events more likely.",
+          coordinates: { lat: 25.2048, lng: 55.2708 },
+          artifacts: [
+            {
+              id: "dubai-stormwater-network",
+              name: "Dubai Stormwater Drainage Network ($8B)",
+              description: "Announced in June 2024 by Dubai ruler Sheikh Mohammed bin Rashid Al Maktoum, this $8 billion stormwater drainage network will be the most expensive urban drainage project in the Middle East. Designed to absorb more than 20 million cubic meters of water per day, the network will cover all areas of Dubai with construction beginning immediately and completion targeted for 2033. The system includes underground storage tunnels, pumping stations, outfall structures, and surface drainage channels designed to handle rainfall intensities far exceeding the April 2024 event. Modern hydraulic modeling software—including EPA SWMM5, Autodesk InfoWorks ICM, and Civil 3D with Storm and Sanitary Analysis (SSA)—plays a critical role in designing this infrastructure, enabling engineers to simulate extreme rainfall scenarios, optimize pipe network sizing, and model 1D/2D flood interactions across Dubai's complex urban terrain. InfoWorks ICM's integrated catchment modeling capability is particularly suited to projects of this scale, handling combined stormwater and wastewater networks with 2D overland flood analysis. The April 2024 storm (164-250 mm in 24 hours) provides invaluable calibration data for these hydraulic models, allowing engineers to validate designs against a real-world extreme event.",
+              rarity: "legendary",
+              historicalPeriod: "Modern (2024 - 2033)",
+              significance: "$8 billion investment; 20+ million m³/day capacity; response to worst flooding in 75 years; modeled using EPA SWMM5 and Autodesk InfoWorks ICM",
+              yearBCE: -2024,
+              category: "canal"
+            },
+            {
+              id: "dubai-flood-resilience",
+              name: "Dubai Urban Flood Resilience Program",
+              description: "In the aftermath of the April 2024 floods, the UAE government allocated 2 billion dirhams ($544.6 million) for immediate flood damage repair and launched a comprehensive urban flood resilience program. The program integrates multiple approaches: expanding underground stormwater storage capacity, upgrading pump stations, incorporating green infrastructure (permeable surfaces, bioswales, rain gardens) into new developments, and deploying real-time flood warning systems with IoT sensor networks. Engineers use Autodesk's suite of water infrastructure tools—Civil 3D for detailed drainage design and pipe network layout, InfoDrainage for site-scale hydraulic analysis including sustainable drainage systems (SuDS), and InfoWorks ICM for city-scale flood modeling with 1D/2D coupled analysis. The program also incorporates climate change projections, modeling scenarios where extreme rainfall events become 10-40% more intense by 2050 due to warming Persian Gulf sea surface temperatures. SWMM's Climate Adjustment Tool (SWMM-CAT) and InfoWorks ICM's scenario management capabilities enable engineers to stress-test designs against future climate conditions—a critical requirement for infrastructure with a 50+ year design life.",
+              rarity: "epic",
+              historicalPeriod: "Modern (2024 - Present)",
+              significance: "2 billion dirham immediate allocation; integrates green infrastructure with gray; uses Autodesk InfoWorks ICM and Civil 3D for climate-adapted design",
+              yearBCE: -2024,
+              category: "sanitation"
+            }
+          ]
         }
       ]
     },
