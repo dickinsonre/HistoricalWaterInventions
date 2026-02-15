@@ -21,6 +21,19 @@ const categoryImages: Record<string, string> = {
   "qanat": "/images/inventions/qanat.jpg",
 };
 
+const inventionImages: Record<string, string> = {
+  "banaue-terraces": "/images/civilizations/philippines.png",
+  "bamboo-irrigation": "/images/inventions/bamboo-irrigation.png",
+  "muyong": "/images/inventions/muyong-forest.png",
+  "bulubul-hydraulicking": "/images/civilizations/philippines.png",
+  "tuping-stone-walls": "/images/inventions/tuping-stone-wall.png",
+  "zanjera-cooperative": "/images/inventions/zanjera-irrigation.png",
+  "lampisa-system": "/images/inventions/muyong-forest.png",
+  "barekbek-fish-trap": "/images/inventions/bamboo-irrigation.png",
+  "el-deposito": "/images/inventions/el-deposito.png",
+  "carriedo-fountain": "/images/inventions/el-deposito.png",
+};
+
 interface InventionPageProps {
   showDiagram?: boolean;
 }
@@ -138,7 +151,7 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
             <div 
               className="absolute inset-0 bg-cover bg-center"
               style={{ 
-                backgroundImage: `url('${categoryImages[artifact.category] || "/images/hero-aqueduct.png"}')`,
+                backgroundImage: `url('${inventionImages[artifact.id] || categoryImages[artifact.category] || "/images/hero-aqueduct.png"}')`,
                 backgroundSize: 'cover'
               }}
             />

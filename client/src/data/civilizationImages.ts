@@ -30,7 +30,7 @@ export const civilizationImages: Record<string, string> = {
   "siam-thailand": "/images/civilizations/southeast-asia.png",
   "vietnam": "/images/civilizations/southeast-asia.png",
   "malaysia": "/images/civilizations/southeast-asia.png",
-  "philippines": "/images/civilizations/southeast-asia.png",
+  "philippines": "/images/civilizations/philippines.png",
   "ancient-indonesia": "/images/civilizations/southeast-asia.png",
   "majapahit": "/images/civilizations/southeast-asia.png",
   "balinese": "/images/civilizations/southeast-asia.png",

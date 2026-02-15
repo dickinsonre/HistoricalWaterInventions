@@ -5,6 +5,30 @@ import { gameData } from "../../data/gameData";
 import { getCivilizationDetail } from "../../data/civilizationDetails";
 import { getCivilizationImage } from "../../data/civilizationImages";
 
+const inventionImages: Record<string, string> = {
+  "banaue-terraces": "/images/civilizations/philippines.png",
+  "bamboo-irrigation": "/images/inventions/bamboo-irrigation.png",
+  "muyong": "/images/inventions/muyong-forest.png",
+  "bulubul-hydraulicking": "/images/civilizations/philippines.png",
+  "tuping-stone-walls": "/images/inventions/tuping-stone-wall.png",
+  "zanjera-cooperative": "/images/inventions/zanjera-irrigation.png",
+  "lampisa-system": "/images/inventions/muyong-forest.png",
+  "barekbek-fish-trap": "/images/inventions/bamboo-irrigation.png",
+  "el-deposito": "/images/inventions/el-deposito.png",
+  "carriedo-fountain": "/images/inventions/el-deposito.png",
+};
+
+const categoryImages: Record<string, string> = {
+  "aqueduct": "/images/inventions/aqueduct.jpg",
+  "irrigation": "/images/inventions/terrace.jpg",
+  "water-lifting": "/images/inventions/noria.jpg",
+  "sanitation": "/images/inventions/well.jpg",
+  "dam": "/images/inventions/dam.jpg",
+  "fountain": "/images/inventions/fountain.jpg",
+  "canal": "/images/inventions/canal.jpg",
+  "water-clock": "/images/inventions/well.jpg",
+};
+
 interface CivilizationDetailProps {
   regionId: string;
   onClose: () => void;
@@ -119,29 +143,37 @@ export default function CivilizationDetail({ regionId, onClose, onNavigate, onVi
                 Key Water Inventions
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {allArtifacts.map(artifact => (
+                {allArtifacts.map(artifact => {
+                  const imgSrc = inventionImages[artifact.id] || categoryImages[artifact.category];
+                  return (
                   <div 
                     key={artifact.id}
                     onClick={() => onViewInvention?.(artifact.id)}
-                    className="bg-[var(--deep-ocean)]/60 rounded-lg p-3 border border-[var(--aqua)]/20 cursor-pointer hover:border-[var(--aqua)]/50 transition-colors"
+                    className="bg-[var(--deep-ocean)]/60 rounded-lg overflow-hidden border border-[var(--aqua)]/20 cursor-pointer hover:border-[var(--aqua)]/50 transition-colors"
                   >
-                    <div className="flex items-center justify-between mb-1">
-                      <h4 className="font-heading text-[var(--gold)] text-sm">{artifact.name}</h4>
-                      <span className={`text-xs px-2 py-0.5 rounded-full ${
-                        artifact.rarity === 'legendary' ? 'bg-[var(--gold)]/20 text-[var(--gold)]' :
-                        artifact.rarity === 'epic' ? 'bg-purple-500/20 text-purple-300' :
-                        artifact.rarity === 'rare' ? 'bg-[var(--cerulean)]/20 text-[var(--cerulean)]' :
-                        'bg-gray-500/20 text-gray-300'
-                      }`}>
-                        {artifact.rarity}
-                      </span>
+                    {imgSrc && (
+                      <img src={imgSrc} alt={artifact.name} className="w-full h-24 object-cover" />
+                    )}
+                    <div className="p-3">
+                      <div className="flex items-center justify-between mb-1">
+                        <h4 className="font-heading text-[var(--gold)] text-sm">{artifact.name}</h4>
+                        <span className={`text-xs px-2 py-0.5 rounded-full ${
+                          artifact.rarity === 'legendary' ? 'bg-[var(--gold)]/20 text-[var(--gold)]' :
+                          artifact.rarity === 'epic' ? 'bg-purple-500/20 text-purple-300' :
+                          artifact.rarity === 'rare' ? 'bg-[var(--cerulean)]/20 text-[var(--cerulean)]' :
+                          'bg-gray-500/20 text-gray-300'
+                        }`}>
+                          {artifact.rarity}
+                        </span>
+                      </div>
+                      <p style={{ color: 'rgba(245, 240, 225, 0.7)' }} className="text-xs mb-2 line-clamp-2">{artifact.description}</p>
+                      <button className="w-full bg-[var(--cerulean)] hover:bg-[var(--river-blue)] text-white text-xs py-1.5 px-3 rounded flex items-center justify-center gap-1 transition-colors">
+                        View Details & Diagram <ArrowRight size={12} />
+                      </button>
                     </div>
-                    <p className="text-[var(--parchment)]/70 text-xs mb-2">{artifact.description}</p>
-                    <button className="w-full bg-[var(--cerulean)] hover:bg-[var(--river-blue)] text-white text-xs py-1.5 px-3 rounded flex items-center justify-center gap-1 transition-colors">
-                      View Details & Diagram <ArrowRight size={12} />
-                    </button>
                   </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
 
