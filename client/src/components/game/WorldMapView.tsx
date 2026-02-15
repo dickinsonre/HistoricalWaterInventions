@@ -7,7 +7,7 @@ import {
   MapPin, ChevronRight, ChevronDown, X, Home, Droplets, VolumeX, Volume2, Search, 
   Backpack, Trophy, Clock, BookOpen, BarChart3, Play, Star, Image, 
   Lightbulb, Info, Globe, Grid3X3, Download, Route, Scroll, Filter, HelpCircle,
-  ArrowUpDown, SortAsc, Calendar, Beaker, Glasses
+  ArrowUpDown, SortAsc, Calendar, Beaker, Glasses, Tag, GitBranch, Brain, Share2
 } from "lucide-react";
 import { gameData } from "../../data/gameData";
 import { SWMM5_MODELS } from "../../lib/swmm5Export";
@@ -34,6 +34,10 @@ import QuickSearchBar from "./QuickSearchBar";
 import SWMM5Showcase from "./SWMM5Showcase";
 import WaterFlowSimulation from "./WaterFlowSimulation";
 import TimelineSlider from "./TimelineSlider";
+import InventionTags from "./InventionTags";
+import TechnologyTrees from "./TechnologyTrees";
+import QuizSystem from "./QuizSystem";
+import DiffusionMap from "./DiffusionMap";
 import { useAudio } from "../../lib/stores/useAudio";
 import { useProgress } from "../../lib/stores/useProgress";
 
@@ -254,6 +258,10 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
   const [showQuests, setShowQuests] = useState(false);
   const [showTutorial, setShowTutorial] = useState(false);
   const [showTimelineSlider, setShowTimelineSlider] = useState(false);
+  const [showTags, setShowTags] = useState(false);
+  const [showTechTrees, setShowTechTrees] = useState(false);
+  const [showQuiz, setShowQuiz] = useState(false);
+  const [showDiffusion, setShowDiffusion] = useState(false);
   const [eraFilter, setEraFilter] = useState<string | null>(null);
   const [continentFilter, setContinentFilter] = useState<string | null>(null);
   const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
@@ -517,6 +525,42 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               </Button>
             </TooltipTrigger>
             <TooltipContent className="water-card text-[var(--parchment)]">VR Experience</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowTags(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--aqua)]/30 border-[var(--aqua)]/30">
+                <Tag size={16} className="text-[var(--aqua)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Invention Tags</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowTechTrees(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--cerulean)]/30">
+                <GitBranch size={16} className="text-[var(--cerulean)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Technology Trees</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowQuiz(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--gold)]/30 border-[var(--gold)]/30">
+                <Brain size={16} className="text-[var(--gold)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Quiz & Assessment</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowDiffusion(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--terracotta)]/30 border-[var(--terracotta)]/30">
+                <Share2 size={16} className="text-[var(--terracotta)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Innovation Diffusion</TooltipContent>
           </Tooltip>
         </div>
 
@@ -902,6 +946,44 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               onClose={() => setShowTimelineSlider(false)} 
               onSelectCivilization={(id) => { setShowTimelineSlider(false); setSelectedCiv(id); }}
               onSelectInvention={(id) => { setShowTimelineSlider(false); setSelectedInvention(id); }}
+            />
+          </div>
+        </div>
+      )}
+      {showTags && (
+        <div className="fixed inset-0 bg-black/70 flex items-start justify-center z-50 p-4 overflow-y-auto" onClick={() => setShowTags(false)}>
+          <div onClick={(e) => e.stopPropagation()} className="w-full max-w-5xl">
+            <InventionTags 
+              onClose={() => setShowTags(false)} 
+              onSelectInvention={(id) => { setShowTags(false); setSelectedInvention(id); }}
+              onSelectCivilization={(id) => { setShowTags(false); setSelectedCiv(id); }}
+            />
+          </div>
+        </div>
+      )}
+      {showTechTrees && (
+        <div className="fixed inset-0 bg-black/70 flex items-start justify-center z-50 p-4 overflow-y-auto" onClick={() => setShowTechTrees(false)}>
+          <div onClick={(e) => e.stopPropagation()} className="w-full max-w-6xl">
+            <TechnologyTrees 
+              onClose={() => setShowTechTrees(false)} 
+              onSelectInvention={(id) => { setShowTechTrees(false); setSelectedInvention(id); }}
+            />
+          </div>
+        </div>
+      )}
+      {showQuiz && (
+        <div className="fixed inset-0 bg-black/70 flex items-start justify-center z-50 p-4 overflow-y-auto" onClick={() => setShowQuiz(false)}>
+          <div onClick={(e) => e.stopPropagation()} className="w-full max-w-2xl">
+            <QuizSystem onClose={() => setShowQuiz(false)} />
+          </div>
+        </div>
+      )}
+      {showDiffusion && (
+        <div className="fixed inset-0 bg-black/70 flex items-start justify-center z-50 p-4 overflow-y-auto" onClick={() => setShowDiffusion(false)}>
+          <div onClick={(e) => e.stopPropagation()} className="w-full max-w-5xl">
+            <DiffusionMap 
+              onClose={() => setShowDiffusion(false)} 
+              onSelectCivilization={(id) => { setShowDiffusion(false); setSelectedCiv(id); }}
             />
           </div>
         </div>

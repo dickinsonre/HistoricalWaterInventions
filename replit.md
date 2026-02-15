@@ -78,9 +78,14 @@ Preferred communication style: Simple, everyday language.
 - **ComparisonTool**: Side-by-side invention comparison.
 - **FeaturedDiscoveries**: Curated highlights.
 - **SWMM5Models**: Modal for model downloads.
+- **TimelineSlider**: Interactive slider spanning 40,000 years with auto-play and overlap mode.
+- **InventionTags**: 20 clickable discovery tags (#irrigation, #floodcontrol, etc.) for cross-civilization search.
+- **TechnologyTrees**: Visual tech progression trees (7 paths: Water Lifting, Irrigation, Aqueducts, Sanitation, Dams, Water Clocks, Canals).
+- **QuizSystem**: 6 quiz modes (Civilization, Era, Invention, Category, Geography, Mixed Challenge) with timer and scoring.
+- **DiffusionMap**: Technology diffusion visualization showing geographic spread of 8 key technologies over time.
 
 ### Data Structure
-- **Regions**: 99 civilizations with era, date range, position, color.
+- **Regions**: 124 civilizations with era, date range, position, color.
 - **Locations**: Historical sites with coordinates and context.
 - **Artifacts**: Water inventions with category, rarity, year, significance.
 - **Categories**: irrigation, aqueduct, water-lifting, sanitation, dam, water-clock, fountain, canal.
