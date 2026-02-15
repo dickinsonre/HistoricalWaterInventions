@@ -3569,67 +3569,125 @@ export const gameData: GameData = {
     {
       id: "israel",
       name: "Israel",
-      description: "Pioneers of drip irrigation and wastewater recycling",
+      description: "Israel is arguably the world's most important water technology innovator of the modern era, having transformed a semi-arid nation with severely limited freshwater resources into an agricultural export powerhouse and global water technology leader. Facing existential water scarcity from its founding in 1948—with 60% of the country classified as desert and annual rainfall as low as 25 mm in the Negev—Israel had no choice but to innovate or perish. The results have been extraordinary: drip irrigation (invented by Simcha Blass and commercialized by Netafim in 1965) now serves 110+ countries and reduced agricultural water use by 50% while increasing crop yields. Israel recycles over 90% of its wastewater for agriculture—four times the rate of the next closest country (Spain at ~20%)—and operates five major Mediterranean desalination plants that now supply approximately 80% of the nation's domestic water. The ancient heritage is equally remarkable: Nabataean desert cisterns dating to 300 BCE, Hezekiah's Tunnel (700 BCE) carved through 533 meters of solid rock beneath Jerusalem, and the elaborate ritual baths (mikvaot) of the Second Temple period all demonstrate millennia of water engineering innovation in one of the world's most water-stressed regions.",
       position: [6, 0, -10],
       color: "#2196F3",
       era: "modern",
-      dateRange: "Ancient - Present",
+      dateRange: "1500 BCE - Present",
       locations: [
         {
           id: "negev-desert",
           name: "Negev Desert",
-          description: "Birthplace of modern drip irrigation",
-          historicalContext: "Transformed desert into agricultural land",
+          description: "The Negev Desert covers over 13,000 km² (more than half of Israel's total land area) and receives as little as 25 mm of annual rainfall in its southern reaches. Despite these extreme conditions, the Negev has been the cradle of revolutionary water technologies—from ancient Nabataean runoff farming systems that sustained desert cities 2,000 years ago to modern drip irrigation that has transformed global agriculture.",
+          historicalContext: "The Nabataeans (4th century BCE – 2nd century CE) developed sophisticated runoff agriculture in the Negev, channeling rare rainfall from large catchment areas into terraced fields through stone-lined channels. Their techniques sustained cities like Avdat, Shivta, and Haluza with populations of 10,000+ in areas receiving under 100 mm of annual rain. Modern Israeli settlers studied these ancient systems when developing the Negev in the 1950s-60s, and their insights helped inspire the drip irrigation revolution.",
           coordinates: { lat: 30.8, lng: 34.8 },
           artifacts: [
             {
               id: "drip-irrigation",
               name: "Drip Irrigation (Netafim)",
-              description: "Precision water delivery directly to plant roots, reducing water use by 50%",
+              description: "Drip irrigation—the slow, precise delivery of water directly to plant root zones through a network of emitters, pipes, and tubing—was developed by Israeli engineer Simcha Blass in the late 1950s after observing a tree growing larger than its neighbors near a leaking water pipe. Blass patented his emitter design and partnered with Kibbutz Hatzerim to found Netafim in 1965, launching commercial production. The technology reduces water consumption by 30-50% compared to flood or sprinkler irrigation while simultaneously increasing crop yields by 20-90%, because plants receive exactly the water they need at the root zone with minimal evaporation or runoff loss. By 2024, Netafim (acquired by Mexichem/Orbia for $1.9 billion in 2018) operates in 110+ countries, and drip irrigation is used on an estimated 12+ million hectares worldwide. The technology has been particularly transformative in arid regions of India, sub-Saharan Africa, and the American West, where water savings directly translate to food security. Israel's own agricultural sector now produces $3+ billion in annual exports despite farming in conditions that would be considered impossible by conventional standards.",
               rarity: "legendary",
-              historicalPeriod: "Modern (1965)",
-              significance: "Revolutionized global agriculture; used in 110+ countries",
+              historicalPeriod: "Modern (1965 - Present)",
+              significance: "Revolutionized global agriculture; used in 110+ countries on 12+ million hectares; reduces water use 30-50% while increasing yields 20-90%; $1.9 billion Netafim acquisition",
               yearBCE: -1965,
               category: "irrigation"
             },
             {
               id: "negev-cisterns",
-              name: "Ancient Negev Cisterns",
-              description: "Nabataean-style rock-cut water storage in the desert",
-              rarity: "rare",
-              historicalPeriod: "Ancient (300 BCE)",
-              significance: "Sustained desert communities for millennia",
+              name: "Nabataean Negev Cisterns & Runoff Farms",
+              description: "The Nabataeans, an ancient Arab people who controlled trade routes across the Negev and Jordanian deserts from the 4th century BCE to the 2nd century CE, developed remarkably sophisticated water harvesting systems that sustained thriving cities in areas receiving under 100 mm of annual rainfall. Their technique centered on large catchment areas (up to 30:1 ratio of catchment to cultivated land) where natural hillsides and stone-cleared slopes channeled rare rainfall through stone-lined channels into terraced agricultural plots and underground cisterns. At the UNESCO World Heritage sites of Avdat, Shivta, Haluza, and Mamshit, archaeologists have documented hundreds of bell-shaped cisterns carved into soft limestone bedrock, each capable of storing 50-200 cubic meters of water. These cisterns were plastered with waterproof lime mortar and covered with stone slabs to minimize evaporation. The Nabataean system was so effective that Israeli researchers in the 1950s-60s (notably Michael Evenari) reconstructed ancient Nabataean farms at Avdat and successfully grew crops using only the original 2,000-year-old water harvesting infrastructure.",
+              rarity: "epic",
+              historicalPeriod: "Nabataean Period (300 BCE - 200 CE)",
+              significance: "Sustained desert cities of 10,000+ people in areas with under 100 mm rainfall; UNESCO World Heritage; 30:1 catchment ratios; reconstructed farms still functional after 2,000 years",
               yearBCE: 300,
               category: "dam"
+            },
+            {
+              id: "nabataean-runoff-agriculture",
+              name: "Nabataean Runoff Agriculture Revival",
+              description: "In the 1950s and 1960s, Israeli botanist and ecologist Michael Evenari led groundbreaking research at Avdat in the central Negev, reconstructing ancient Nabataean runoff farms using the original 2,000-year-old stone channels and terraces. His team demonstrated that the ancient water harvesting systems could still support productive agriculture in an area receiving only 86 mm of average annual rainfall—proving that the Nabataean techniques were not lost knowledge but reproducible engineering. Evenari's research, published in his landmark book 'The Negev: The Challenge of a Desert' (1971), showed that the Nabataeans achieved catchment efficiencies of 20-40% on limestone slopes and could sustain orchards, vineyards, and field crops through careful water management. This work influenced modern water harvesting programs across the developing world, from sub-Saharan Africa to India, where millions of small farmers now use variations of ancient runoff-farming principles.",
+              rarity: "rare",
+              historicalPeriod: "Modern Research (1950s-1970s)",
+              significance: "Proved 2,000-year-old Nabataean water systems still functional; influenced water harvesting programs across the developing world",
+              yearBCE: -1958,
+              category: "irrigation"
             }
           ]
         },
         {
           id: "sorek-plant",
-          name: "Sorek Desalination Plant",
-          description: "World's largest reverse osmosis desalination facility",
-          historicalContext: "Provides 20% of Israel's drinking water",
+          name: "Mediterranean Desalination Corridor",
+          description: "Israel operates five major seawater reverse osmosis (SWRO) desalination plants along its Mediterranean coastline—Ashkelon (2005), Palmachim (2007), Hadera (2010), Sorek (2013), and Sorek B (2023)—collectively producing over 600 million cubic meters of freshwater annually and supplying approximately 80% of Israel's domestic water needs.",
+          historicalContext: "Israel's turn to large-scale desalination was driven by a severe multi-year drought (1998-2002) that depleted the Sea of Galilee to dangerously low levels and threatened the country's primary freshwater source. The government launched an emergency desalination program that transformed Israel from a water-scarce nation facing crisis to one with a water surplus within 15 years. The Sorek plant, when completed in 2013, produced the world's cheapest desalinated water at $0.58 per cubic meter—a price point that made desalination economically competitive with natural freshwater sources for the first time.",
           coordinates: { lat: 31.9, lng: 34.7 },
           artifacts: [
             {
               id: "sorek-desalination",
               name: "Sorek Desalination Plant",
-              description: "World's largest and most efficient RO desalination producing 624,000 m³/day",
-              rarity: "epic",
-              historicalPeriod: "Modern (2013)",
-              significance: "Lowest cost desalination globally; energy recovery systems",
+              description: "When it opened in 2013, the Sorek desalination plant near Rishon LeZion was the world's largest and most advanced seawater reverse osmosis (SWRO) facility, producing 624,000 cubic meters of freshwater per day—enough to supply 1.5 million people. Built by IDE Technologies at a cost of $400 million, Sorek pioneered several breakthrough technologies: 16-inch diameter RO membranes (versus the industry standard 8-inch), pressure-center design reducing energy consumption to just 3.5 kWh per cubic meter, and advanced energy recovery devices that recapture 97% of the pressure energy from the brine reject stream. The result was desalinated water at $0.58 per cubic meter—approximately half the cost of desalination just a decade earlier. Sorek B, completed in 2023 adjacent to the original plant, added another 200 million cubic meters of annual capacity, making the combined Sorek complex one of the largest desalination sites in the world. Israel's five Mediterranean plants collectively produce over 600 million cubic meters annually, supplying approximately 80% of domestic water consumption and transforming Israel from a water-scarce nation to one that actually exports water to neighboring Jordan.",
+              rarity: "legendary",
+              historicalPeriod: "Modern (2013 - Present)",
+              significance: "World's largest SWRO plant at opening; $0.58/m³ (cheapest globally); 624,000 m³/day; 16-inch membranes; 97% energy recovery; Israel now supplies 80% of domestic water from desalination",
               yearBCE: -2013,
               category: "sanitation"
             },
             {
               id: "wastewater-recycling",
-              name: "Wastewater Recycling System",
-              description: "National system recycling 90%+ of wastewater for agriculture",
-              rarity: "epic",
-              historicalPeriod: "Modern (1970s-Present)",
-              significance: "World's highest wastewater reuse rate; global model",
+              name: "National Wastewater Recycling System (Shafdan)",
+              description: "Israel recycles over 90% of its treated wastewater for agricultural irrigation—by far the highest rate in the world (the next closest country, Spain, recycles approximately 20%). The centerpiece of this system is the Shafdan (Dan Region Wastewater Treatment Plant) near Tel Aviv, which treats 370,000 cubic meters per day from 2.5 million residents, then recharges the treated effluent into a coastal sand aquifer where natural filtration further purifies the water over 6-12 months. The recovered water, known as Mekorot's 'Third Line,' is then pumped to the Negev Desert through a dedicated pipeline network, irrigating thousands of hectares of agriculture that would otherwise be impossible. This soil aquifer treatment (SAT) approach produces water quality that exceeds WHO drinking water standards for most parameters—though it is used exclusively for agriculture. Israel's national water utility, Mekorot, operates 250+ wastewater treatment plants across the country, and the recycled water now constitutes approximately 50% of all agricultural irrigation water nationally. This system effectively creates a circular water economy where urban wastewater becomes the desert's most valuable agricultural input.",
+              rarity: "legendary",
+              historicalPeriod: "Modern (1970s - Present)",
+              significance: "90%+ wastewater reuse rate—4x the next closest country; Shafdan treats 370,000 m³/day; soil aquifer treatment exceeds WHO standards; recycled water = 50% of agricultural irrigation",
               yearBCE: -1970,
               category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "jerusalem-ancient",
+          name: "Jerusalem Ancient Water Systems",
+          description: "Jerusalem's survival as a major city for over 3,000 years has always depended on ingenious water engineering solutions. Built on rocky hills with no river, the city relied on springs, tunnels, cisterns, and aqueducts to sustain populations that reached 80,000+ during the Second Temple period.",
+          historicalContext: "The Gihon Spring on the eastern slope of the City of David was Jerusalem's only perennial water source, making its control essential to the city's survival. Every major power that ruled Jerusalem—from the Jebusites to the Israelites, Romans, Crusaders, Ottomans, and British—invested in water infrastructure to sustain the holy city.",
+          coordinates: { lat: 31.7767, lng: 35.2345 },
+          artifacts: [
+            {
+              id: "hezekiahs-tunnel",
+              name: "Hezekiah's Tunnel (Siloam Tunnel)",
+              description: "One of the most remarkable ancient engineering achievements, Hezekiah's Tunnel was carved through 533 meters of solid limestone bedrock beneath the City of David around 700 BCE, during the reign of King Hezekiah of Judah. The tunnel redirected water from the vulnerable Gihon Spring (outside the city walls) to the Pool of Siloam (inside the walls) in preparation for the Assyrian siege by Sennacherib in 701 BCE. Two teams of miners carved toward each other from opposite ends, meeting in the middle with only minor course corrections—an extraordinary feat of surveying and engineering for the 8th century BCE. The famous Siloam Inscription, discovered in 1880, describes the dramatic moment when the two tunneling teams heard each other's pickaxes through the remaining rock. The tunnel maintains a gradient of just 0.06% over its length, dropping only 30 cm from inlet to outlet, ensuring a continuous gravity-fed flow. Still intact after 2,700 years, visitors can wade through the tunnel today—water still flows from the Gihon Spring through Hezekiah's original channel.",
+              rarity: "legendary",
+              historicalPeriod: "Iron Age (c. 700 BCE)",
+              significance: "533 m tunnel carved from both ends through solid rock in 700 BCE; 0.06% gradient; still flowing after 2,700 years; Siloam Inscription is earliest known Hebrew monumental text",
+              yearBCE: 700,
+              category: "aqueduct"
+            },
+            {
+              id: "jerusalem-aqueducts",
+              name: "Jerusalem Aqueducts (Solomon's Pools)",
+              description: "A system of aqueducts stretching over 20 km from Solomon's Pools near Bethlehem to the Temple Mount in Jerusalem, built in stages from the Hasmonean period (2nd century BCE) through the Roman and Ottoman eras. The three large reservoirs known as Solomon's Pools (though likely constructed in the Hellenistic or Roman periods) had a combined capacity of approximately 290,000 cubic meters. The lower aqueduct followed a sinuous 21 km route maintaining a barely perceptible gradient to deliver water by gravity to the Temple Mount, where it supplied the enormous ritual purification needs of the Second Temple. The upper aqueduct, built by the Romans, followed a more direct 40 km route using inverted siphons to cross valleys. Pontius Pilate famously used Temple treasury funds to finance one of these aqueduct extensions, provoking public outrage described by the historian Josephus. Sections of both aqueducts are still visible today, and the Ottoman-era restoration (16th century) continued to supply Jerusalem's Old City into the early 20th century.",
+              rarity: "epic",
+              historicalPeriod: "Hasmonean through Ottoman (2nd century BCE - 20th century CE)",
+              significance: "20+ km aqueduct system supplying Jerusalem for 2,000+ years; Solomon's Pools = 290,000 m³ capacity; inverted siphon technology; served the Temple Mount",
+              yearBCE: 150,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "national-water-carrier",
+          name: "National Water Carrier",
+          description: "Israel's National Water Carrier (Movil Artzi HaMayim), completed in 1964, is the largest water infrastructure project in the country's history—a 130 km pipeline and canal system transporting water from the Sea of Galilee in the north to the populated center and arid Negev Desert in the south.",
+          historicalContext: "Conceived during the British Mandate period and planned throughout the 1950s, the National Water Carrier was Israel's answer to a fundamental geographic mismatch: 80% of the country's water resources were in the north, but 60% of the arable land was in the south. The project was politically contentious—Syria and Jordan objected to Israel's diversion of Jordan River basin water, contributing to regional tensions that preceded the 1967 Six-Day War.",
+          coordinates: { lat: 32.5, lng: 35.0 },
+          artifacts: [
+            {
+              id: "national-water-carrier",
+              name: "National Water Carrier of Israel",
+              description: "Completed in 1964, the National Water Carrier is a 130 km integrated system of giant pipelines (up to 2.74 meters in diameter), open canals, tunnels, reservoirs, and pumping stations that transports water from the Sea of Galilee (Lake Kinneret, at 209 meters below sea level) to the populated coastal plain and the Negev Desert. The system first lifts water 400+ meters from the Sea of Galilee up to the Tsalmon Reservoir using massive pumps consuming 7% of Israel's total electricity, then distributes it southward through a combination of gravity flow and pressurized pipelines. At peak operation, the carrier transported 400+ million cubic meters annually—approximately one-third of Israel's total water consumption. The project employed 3,000+ workers over its 10-year construction period and cost $150 million (equivalent to $1.4 billion in 2024 dollars). Since Israel's desalination revolution began in the 2000s, the National Water Carrier has been partially reversed in some years—desalinated Mediterranean water now flows northward to replenish the Sea of Galilee, an ironic reversal that speaks to how dramatically Israel's water equation has changed.",
+              rarity: "legendary",
+              historicalPeriod: "Modern (1964 - Present)",
+              significance: "130 km water carrier; pumps water 400+ m uphill; once supplied 1/3 of Israel's water; now partially reversed to replenish Sea of Galilee from desalination",
+              yearBCE: -1964,
+              category: "canal"
             }
           ]
         }

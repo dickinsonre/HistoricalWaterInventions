@@ -970,20 +970,26 @@ export const expertCivilizationsDatabase: CivilizationsDatabase = {
         end: 2026,
         era: "Ancient through Modern"
       },
-      summary: "Israel transformed desert into agricultural export powerhouse through drip irrigation and 90%+ wastewater recycling—the highest rate in the world.",
+      summary: "Israel transformed a semi-arid nation where 60% of the land is desert into a $3+ billion agricultural export powerhouse and the world's most influential water technology innovator. The country recycles over 90% of its wastewater for agriculture (four times the next closest country), operates five Mediterranean desalination plants supplying 80% of domestic water, invented drip irrigation (now used in 110+ countries on 12+ million hectares), and built ancient water systems—including Hezekiah's 533-meter tunnel carved through solid rock in 700 BCE—that still function after millennia.",
       waterChallenges: [
-        "Semi-arid climate with unreliable rainfall",
-        "Limited freshwater aquifers",
-        "Rapid population growth and agricultural demands",
-        "Political constraints on water sources"
+        "Semi-arid climate with 60% of land classified as desert—southern Negev receives as little as 25 mm annual rainfall",
+        "No major rivers—the Jordan River, Lake Kinneret (Sea of Galilee), and coastal aquifers are the only significant natural freshwater sources",
+        "Population grew from 806,000 (1948) to 9.8+ million (2024), with proportional water demand increases",
+        "Geographic mismatch: 80% of water resources in the north, 60% of arable land in the south—requiring massive infrastructure to redistribute",
+        "Political complexity: shared aquifers and water sources with Palestinian territories, Jordan, Syria, and Lebanon",
+        "Climate change projections indicate 10-20% rainfall decline in the eastern Mediterranean by 2050"
       ],
-      inventions: ["drip-irrigation", "negev-cisterns", "sorek-desalination", "wastewater-recycling"],
-      keyInsight: "Drip irrigation delivers water directly to plant roots, reducing water use by 50% while increasing yields. Invented in Israel 1965, now used in 110+ countries.",
-      engineerNotes: "Israel had no choice but to innovate. Drip irrigation (developed by Simcha Blass and Netafim) revolutionized global agriculture. They recycle 90% of wastewater for agriculture—four times the next closest country. The Sorek desalination plant produces the world's cheapest desalinated water. They've proven that water scarcity can be solved through technology and determination.",
-      modernLegacy: "Israeli water technology exported globally. Netafim drip irrigation serves 110+ countries. Israeli experts consult on water projects worldwide.",
+      inventions: ["drip-irrigation", "negev-cisterns", "nabataean-runoff-agriculture", "sorek-desalination", "wastewater-recycling", "hezekiahs-tunnel", "jerusalem-aqueducts", "national-water-carrier"],
+      keyInsight: "Israel proves that water scarcity is a solvable problem. In 1948 the country faced existential water crisis; by 2024 it had a water surplus, exporting water to Jordan and offering technology to 150+ countries. The key was treating water as a national security priority and investing relentlessly in technology: drip irrigation (50% water savings), desalination ($0.58/m³—competitive with natural sources), and 90%+ wastewater recycling creating a near-circular water economy. The ancient Nabataean runoff farms in the Negev—reconstructed by Michael Evenari in the 1950s and still productive using 2,000-year-old infrastructure—prove that the ingenuity goes back millennia.",
+      engineerNotes: "Israel's water story is the most complete technology-driven transformation I've seen anywhere. Walking through Hezekiah's Tunnel—carved from both ends through 533 meters of solid limestone in 700 BCE, meeting in the middle with only minor deviations—gives you chills. That's 8th century BCE surveying accuracy we'd respect today. The Nabataean cisterns at Avdat are equally impressive: bell-shaped chambers carved into bedrock with waterproof plaster, collecting runoff from 30:1 catchment ratios in areas with under 100 mm of rain. Michael Evenari proved in the 1950s that these 2,000-year-old farms still work—that's engineering durability. Fast forward to the Sorek desalination plant: 624,000 m³/day through 16-inch RO membranes at $0.58/m³, with 97% pressure-energy recovery from the brine stream. The National Water Carrier pumps water 400+ meters uphill from the Sea of Galilee (209 m below sea level) to the Negev—and now, ironically, desalinated Mediterranean water flows the other direction to replenish the lake. The Shafdan wastewater plant treats 370,000 m³/day from 2.5 million Tel Aviv residents, recharges it through coastal sand aquifers for natural filtration, then pumps it to the Negev for agriculture. This kind of integrated water cycle thinking—where every drop is used multiple times—is what every water-scarce nation should study.",
+      modernLegacy: "Israeli water technology is exported to 150+ countries. Netafim drip irrigation ($1.9 billion acquisition by Orbia in 2018) serves 110+ countries on 12+ million hectares. IDE Technologies builds desalination plants across the Middle East, India, China, and the Americas. Israel's Mekorot water utility provides consulting services globally. The country's water technology sector generates $2.5+ billion in annual exports and employs 300+ specialized companies. Perhaps most remarkably, Israel now exports water to Jordan under a 2021 agreement—a geopolitical transformation enabled entirely by desalination technology. The Sorek plant's cost breakthrough ($0.58/m³) proved that desalination can compete economically with natural freshwater, fundamentally changing the global calculus on water scarcity.",
       sources: [
-        "Siegel, S. Let There Be Water: Israel's Solution for a Water-Starved World",
-        "Kislev, Y. The Water Economy of Israel"
+        "Siegel, S. Let There Be Water: Israel's Solution for a Water-Starved World (2015)",
+        "Kislev, Y. The Water Economy of Israel (Hebrew University)",
+        "Evenari, M., Shanan, L., & Tadmor, N. The Negev: The Challenge of a Desert (1971)",
+        "IDE Technologies, Sorek Desalination Plant technical documentation",
+        "Israel Water Authority Annual Reports",
+        "Mekorot National Water Company technical publications"
       ]
     },
     {
