@@ -88,6 +88,36 @@ export const gameData: GameData = {
               significance: "Used for 5,000 years to predict harvests and calculate taxes",
               yearBCE: 3000,
               category: "water-clock"
+            },
+            {
+              id: "josephs-canal",
+              name: "Joseph's Canal (Bahr Yussef)",
+              description: "Major artificial canal built during the 12th Dynasty (~1850 BCE) diverting Nile water to the Fayum Basin. Stretching approximately 24 km, this canal was one of the earliest large-scale water diversion projects in history. Named in later Arabic tradition after the biblical Joseph, this engineering feat transformed the Fayum depression into one of ancient Egypt's most fertile agricultural regions, supporting tens of thousands of people through regulated Nile floodwater distribution.",
+              rarity: "epic",
+              historicalPeriod: "Middle Kingdom (12th Dynasty)",
+              significance: "One of the earliest large-scale canal diversions in history",
+              yearBCE: 1850,
+              category: "canal"
+            },
+            {
+              id: "lake-moeris",
+              name: "Lake Moeris Reservoir",
+              description: "Massive artificial reservoir constructed during the reign of Amenemhat III (~1850 BCE) in the Fayum Basin. At its peak, Lake Moeris covered approximately 1,700 km² and could store an estimated 13 billion cubic meters of water. Connected to the Nile via Joseph's Canal, this reservoir served as a critical flood control mechanism, absorbing excess floodwaters during high Nile seasons and releasing stored water during low periods. Classical authors Herodotus and Strabo both marveled at its scale, with Herodotus describing it as one of the wonders of Egypt. This represents one of the earliest and largest water storage projects ever attempted.",
+              rarity: "legendary",
+              historicalPeriod: "Middle Kingdom",
+              significance: "One of the largest ancient water storage projects",
+              yearBCE: 1850,
+              category: "dam"
+            },
+            {
+              id: "sadd-el-kafara",
+              name: "Sadd el-Kafara Dam",
+              description: "The oldest known large-scale dam, constructed approximately 2600 BCE in Wadi al-Garawi, about 30 km south of Cairo. Standing 14 meters high and 113 meters wide at the crest, this rockfill dam with a central core of silty gravel was designed to control flash floods in the wadi. The dam failed catastrophically during or shortly after construction when floodwaters overtopped the structure before completion. Despite its failure, Sadd el-Kafara represents humanity's first known attempt at major dam engineering and provides crucial evidence of early Egyptian ambitions in large-scale hydraulic construction.",
+              rarity: "epic",
+              historicalPeriod: "Old Kingdom",
+              significance: "Oldest known large-scale dam in history",
+              yearBCE: 2600,
+              category: "dam"
             }
           ]
         },
@@ -255,6 +285,16 @@ export const gameData: GameData = {
               significance: "First covered drainage system in any ancient city",
               yearBCE: 2500,
               category: "sanitation"
+            },
+            {
+              id: "harappan-soak-pits",
+              name: "Harappan Soak Pits",
+              description: "The Indus Valley Civilization (2600-1900 BCE) developed specialized soak pits (also called soakage jars) for wastewater management in cities like Mohenjo-daro and Harappa. These cylindrical brick-lined pits, typically 1 meter deep, were placed at the base of household drain outlets to filter solid waste from wastewater before it entered the street drains. The filtered water then flowed through covered brick channels to larger civic drains. With over 700 wells and an estimated 600 soak pits documented at Mohenjo-daro alone, this represents the earliest known systematic urban wastewater treatment system, predating comparable European infrastructure by over 4,000 years.",
+              rarity: "rare",
+              historicalPeriod: "Mature Harappan Phase",
+              significance: "Earliest known systematic urban wastewater treatment",
+              yearBCE: 2600,
+              category: "sanitation"
             }
           ]
         },
@@ -383,6 +423,16 @@ export const gameData: GameData = {
               significance: "Foundation of fluid mechanics and buoyancy principles",
               yearBCE: 250,
               category: "water-clock"
+            },
+            {
+              id: "perachora-wheel",
+              name: "Perachora Water Wheel",
+              description: "The earliest known water wheel, dating to the 3rd century BCE, discovered at the Heraion sanctuary near Perachora in the Corinthian peninsula. This horizontal water wheel predates Roman adoption of the technology and represents a crucial link in the development of water-powered machinery. Archaeological evidence suggests it was used for grinding grain, converting the kinetic energy of flowing water into rotational mechanical power—a breakthrough that would eventually power the Industrial Revolution two millennia later.",
+              rarity: "epic",
+              historicalPeriod: "Hellenistic Period",
+              significance: "Earliest known water wheel, predating Roman adoption",
+              yearBCE: 250,
+              category: "water-lifting"
             }
           ]
         },
@@ -460,6 +510,16 @@ export const gameData: GameData = {
               significance: "First recorded water filtration device for health",
               yearBCE: 400,
               category: "sanitation"
+            },
+            {
+              id: "agora-fountain-house",
+              name: "Athenian Agora Fountain House",
+              description: "Public water distribution facility built in the Athenian Agora during the reign of the tyrant Peisistratos around 530 BCE. This fountain house featured multiple spouts fed by a terracotta pipeline from springs on the slopes of Mount Hymettos, some 7 km away. By providing clean, publicly accessible water in the heart of Athens' civic center, the fountain house democratized access to clean water—previously available only through private wells. Archaeological excavations have revealed the stone basins, overflow channels, and distribution pipes that made this one of the most important public health innovations of the ancient Greek world.",
+              rarity: "rare",
+              historicalPeriod: "Archaic Period",
+              significance: "Democratized access to clean water in ancient Athens",
+              yearBCE: 530,
+              category: "fountain"
             }
           ]
         }
@@ -499,6 +559,46 @@ export const gameData: GameData = {
               historicalPeriod: "Roman Kingdom (753-509 BCE)",
               significance: "One of world's earliest sewage systems, still partially in use",
               yearBCE: 600,
+              category: "sanitation"
+            },
+            {
+              id: "roman-thermae",
+              name: "Roman Thermae Water Systems",
+              description: "The great public bath complexes (thermae) of Rome featured the most complex plumbing systems of the ancient world. The Baths of Caracalla (216 CE), covering 25 acres, could accommodate 1,600 bathers simultaneously with heated pools (caldarium), warm rooms (tepidarium), cold plunge pools (frigidarium), and swimming pools (natatio). Water was heated using hypocaust systems—raised floors with furnace-heated air circulating beneath—and distributed through a network of lead and bronze pipes. These complexes required 8+ million liters of water daily, supplied by dedicated aqueduct branches.",
+              rarity: "epic",
+              historicalPeriod: "Roman Empire",
+              significance: "Most complex ancient plumbing systems",
+              yearBCE: -25,
+              category: "sanitation"
+            },
+            {
+              id: "pont-du-gard",
+              name: "Pont du Gard",
+              description: "The iconic three-tier Roman aqueduct bridge spanning the Gardon River near Nîmes, France, built around 19 BCE during the reign of Augustus. Standing 49 meters tall with three tiers of arches (6 on bottom, 11 in middle, 35 on top), the Pont du Gard carried water over 50 km from the springs at Uzès to the Roman colony of Nemausus (Nîmes). The water channel at the top maintains a precise gradient of just 0.04% (a drop of only 17 meters over 50 km). Built from 50,400 tonnes of limestone blocks fitted without mortar, this UNESCO World Heritage Site remains one of the most impressive surviving examples of Roman engineering.",
+              rarity: "legendary",
+              historicalPeriod: "Augustan Period",
+              significance: "One of the most iconic Roman engineering achievements",
+              yearBCE: -19,
+              category: "aqueduct"
+            },
+            {
+              id: "roman-foricae",
+              name: "Roman Public Latrines (Foricae)",
+              description: "Roman public latrines (foricae) were remarkable sanitation facilities found throughout the empire, with over 140 documented in Rome alone by the 4th century CE. These multi-seat facilities (some accommodating 60+ users simultaneously) featured continuously flowing water beneath marble seats for waste removal, with channels fed directly from bath complex overflow water. A shallow channel in front of the seats carried flowing water for users to clean their sponge-on-a-stick (tersorium). The latrines drained into the Cloaca Maxima sewer system, which emptied into the Tiber River. While lacking privacy by modern standards, these facilities represented the ancient world's most advanced public sanitation infrastructure.",
+              rarity: "rare",
+              historicalPeriod: "Roman Republic-Empire",
+              significance: "Most advanced ancient public sanitation infrastructure",
+              yearBCE: -50,
+              category: "sanitation"
+            },
+            {
+              id: "roman-snow-storage",
+              name: "Roman Snow Storage (Frigidarium Supply)",
+              description: "Romans developed systematic snow and ice harvesting, storage, and distribution systems beginning in the 1st century BCE. Snow was collected from mountain peaks (particularly the Apennines and Alps) during winter and stored in insulated underground chambers (nivaria) lined with straw and covered with tree branches. Emperor Nero was famously known for having mountain snow transported to Rome for cooling drinks and foods. By the imperial period, commercial snow sellers (nivariae) operated throughout Italian cities. The stored snow also supplied the frigidarium (cold room) pools in thermae bath complexes, where cold plunge baths were an essential part of the bathing ritual. This represents one of the earliest known cold-chain supply systems.",
+              rarity: "rare",
+              historicalPeriod: "Late Republic - Empire",
+              significance: "One of the earliest cold-chain supply systems",
+              yearBCE: -50,
               category: "sanitation"
             }
           ]
@@ -734,6 +834,36 @@ export const gameData: GameData = {
               significance: "Philosophy of 'channel, don't block' from legendary Yu the Great (2200 BCE)",
               yearBCE: 100,
               category: "dam"
+            },
+            {
+              id: "water-hammer-mill",
+              name: "Tu Shui Fa (Water Hammer Mill)",
+              description: "First documented in the 1st century CE during the Han Dynasty, the water hammer mill (tu shui fa) was the world's first application of hydraulic power to industrial metallurgy. Using a water wheel to drive trip hammers and bellows for iron smelting, this innovation dramatically increased iron production efficiency. The technology spread along the Silk Road and eventually influenced European water mill development. Du Shi, a prefect of Nanyang, is credited with the invention around 31 CE, using it to power blast furnace bellows that previously required dozens of laborers.",
+              rarity: "epic",
+              historicalPeriod: "Han Dynasty",
+              significance: "First industrial use of hydraulic power",
+              yearBCE: -50,
+              category: "water-lifting"
+            },
+            {
+              id: "sluice-gate-dou-men",
+              name: "Sluice Gate (Dou Men)",
+              description: "Standardized water control gates (dou men) developed during the late Warring States and Qin-Han periods (~100 BCE). These wooden and stone sluice gates allowed precise regulation of water flow in irrigation canals, flood control channels, and navigation locks. The technology was fundamental to managing China's extensive canal networks, including sections of what would become the Grand Canal. Records from the Qin Dynasty indicate standardized gate sizes and operating procedures, making this one of the earliest examples of codified hydraulic infrastructure management.",
+              rarity: "rare",
+              historicalPeriod: "Qin-Han Period",
+              significance: "Fundamental water control infrastructure element",
+              yearBCE: 100,
+              category: "canal"
+            },
+            {
+              id: "chinese-dry-dock",
+              name: "Chinese Dry Dock",
+              description: "The world's first known dry dock was described by the Chinese polymath Shen Kuo in his 1088 CE work \"Dream Pool Essays.\" Located at the Jinming Pool naval yard near Kaifeng during the Song Dynasty, this engineering innovation allowed ships to be constructed and repaired on dry land using a gated basin that could be flooded and drained. Ships were floated in, the gates closed, and water pumped out using mechanical devices to expose the hull for maintenance. This technology gave the Song Dynasty a significant naval advantage, enabling the maintenance of fleets of hundreds of warships. European dry docks did not appear until the 15th century, nearly 400 years later.",
+              rarity: "epic",
+              historicalPeriod: "Song Dynasty",
+              significance: "World's first known dry dock, predating European versions by 400 years",
+              yearBCE: -1088,
+              category: "canal"
             }
           ]
         }
@@ -774,6 +904,46 @@ export const gameData: GameData = {
               significance: "Could lift water 20 meters high using river current",
               yearBCE: -800,
               category: "water-lifting"
+            },
+            {
+              id: "karaji-qanat-math",
+              name: "Al-Karaji's Qanat Mathematics",
+              description: "Around 1000 CE, Persian mathematician Abu Bakr al-Karaji authored \"The Extraction of Hidden Waters\" (Inbat al-miyah al-khafiyya), the first known mathematical treatise on groundwater hydrology and qanat engineering. This groundbreaking work provided formulas for calculating water flow rates in underground channels, methods for surveying and constructing qanats, techniques for locating groundwater, and mathematical models for predicting well yields. Al-Karaji's work elevated qanat engineering from empirical craft to applied science, establishing foundational principles that would influence hydraulic engineering for centuries.",
+              rarity: "epic",
+              historicalPeriod: "Islamic Golden Age",
+              significance: "First mathematical treatise on groundwater hydrology",
+              yearBCE: -1000,
+              category: "irrigation"
+            },
+            {
+              id: "shushtar-hydraulic",
+              name: "Shushtar Historical Hydraulic System",
+              description: "A UNESCO World Heritage Site in Khuzestan province, Iran, the Shushtar Historical Hydraulic System is an integrated ensemble of dams, canals, tunnels, and water mills dating from the 3rd century CE (expanded significantly during the Islamic era). The system includes the Mizan diversion dam, the Gargar canal, 40+ water mills, and the Shushtar Band-e Kaisar (Bridge of Valerian), considered the first dam-bridge in the world. The system diverts the Karun River through an intricate network of channels serving irrigation, urban water supply, and industrial milling for a population of over 100,000. UNESCO describes it as a 'masterpiece of creative genius' representing the pinnacle of Sassanid and Islamic hydraulic engineering.",
+              rarity: "legendary",
+              historicalPeriod: "Sassanid-Islamic Period",
+              significance: "UNESCO World Heritage masterpiece of hydraulic engineering",
+              yearBCE: -200,
+              category: "canal"
+            },
+            {
+              id: "bimaristan-water",
+              name: "Islamic Hospital Water Systems",
+              description: "Islamic hospitals (bimaristans), beginning with the first major facility in Baghdad around 750 CE, featured remarkably sophisticated water supply and sanitation systems far ahead of their time. These facilities incorporated running water in patient wards, fountain-cooled ventilation systems, separate water supplies for kitchens, pharmacies, and bathing areas, and carefully designed drainage to prevent cross-contamination. The great bimaristan of Damascus (1154 CE) and the Mansuri Hospital in Cairo (1284 CE) each served thousands of patients and featured dedicated water channels for each ward. These systems established standards for hospital sanitation not matched in Europe for another 600 years.",
+              rarity: "rare",
+              historicalPeriod: "Islamic Golden Age",
+              significance: "Advanced medical facility water and sanitation systems",
+              yearBCE: -750,
+              category: "sanitation"
+            },
+            {
+              id: "hauz-khas",
+              name: "Hauz Khas Reservoir",
+              description: "Major urban reservoir complex in Delhi, India, originally built by Alauddin Khalji in 1296 CE and later expanded by Firuz Shah Tughlaq in 1352 CE. The reservoir covered approximately 50 hectares and served as the primary water supply for the second city of Delhi (Siri). Firuz Shah's renovations included stone-stepped ghats for public access, a madrasa complex along its shores, and sophisticated sluice gates for regulating water distribution to surrounding neighborhoods. The Hauz Khas exemplifies Islamic urban water engineering in South Asia and demonstrates how reservoir systems served both practical water supply and social/educational functions.",
+              rarity: "epic",
+              historicalPeriod: "Delhi Sultanate",
+              significance: "Major Islamic urban reservoir system in South Asia",
+              yearBCE: -1296,
+              category: "dam"
             }
           ]
         },
@@ -843,6 +1013,26 @@ export const gameData: GameData = {
               significance: "Protected 200,000 people—Spanish destruction caused flooding that persists 500 years later",
               yearBCE: -1449,
               category: "dam"
+            },
+            {
+              id: "monte-alban-water",
+              name: "Zapotec Monte Albán Water Systems",
+              description: "Sophisticated water management systems at the hilltop city of Monte Albán in Oaxaca, Mexico, occupied from approximately 500 BCE to 750 CE. Built atop a mountain at 1,940 meters elevation with no natural water sources, this city of 25,000+ people relied on an extensive network of cisterns, drainage channels, and collection surfaces to capture and store rainwater. Over 170 subterranean storage chambers have been identified, along with elaborate stone-lined drainage channels that directed runoff from plazas and building roofs into these cisterns. This represents one of the most remarkable examples of mountaintop urban water engineering in the ancient world.",
+              rarity: "epic",
+              historicalPeriod: "Zapotec Classic Period",
+              significance: "Remarkable mountaintop urban water engineering for 25,000+ people",
+              yearBCE: 500,
+              category: "sanitation"
+            },
+            {
+              id: "purepecha-lake",
+              name: "Purépecha Lake Pátzcuaro Management",
+              description: "The Purépecha (Tarascan) civilization of western Mexico developed sophisticated management systems for Lake Pátzcuaro between 1300-1530 CE. Their engineering controlled lake levels, managed fisheries supporting 80,000+ people, and created artificial islands (similar to chinampas) for intensive agriculture. The Purépecha also constructed canal systems connecting lakeside settlements and managed the watershed through controlled forestry practices. As the only major Mesoamerican civilization to resist Aztec conquest, the Purépecha maintained their independent hydraulic engineering traditions until the Spanish arrival.",
+              rarity: "rare",
+              historicalPeriod: "Postclassic Mesoamerican",
+              significance: "Sophisticated lake-level management and fishery engineering",
+              yearBCE: -1400,
+              category: "irrigation"
             }
           ]
         },
@@ -960,6 +1150,16 @@ export const gameData: GameData = {
               significance: "Made ice year-round using evaporative cooling; inspired modern sustainable architecture",
               yearBCE: 400,
               category: "dam"
+            },
+            {
+              id: "ab-anbar",
+              name: "Ab-Anbar Underground Reservoir",
+              description: "The ab-anbar (literally \"water reservoir\") is a traditional Persian underground water storage cistern, in use since approximately 500 BCE and perfected over millennia. These large underground domed chambers, built from waterproof sarooj plite mortar (a mixture of sand, clay, lime, goat hair, and egg whites), could store 100+ cubic meters of water at temperatures 10-15°C below the surface. Many ab-anbars featured paired wind towers (badgirs) that created natural air circulation to keep the stored water cool even in desert temperatures exceeding 50°C. Over 100 historic ab-anbars survive in Yazd province alone, with some still functional after 1,000+ years. This technology was essential for sustaining urban populations in one of the world's most arid climates.",
+              rarity: "epic",
+              historicalPeriod: "Achaemenid-Islamic Period",
+              significance: "Essential desert water storage technology spanning 2,500+ years",
+              yearBCE: 500,
+              category: "dam"
             }
           ]
         },
@@ -987,7 +1187,7 @@ export const gameData: GameData = {
     {
       id: "khmer-empire",
       name: "Khmer Empire",
-      description: "World's largest pre-industrial hydraulic city (802-1431 CE). Angkor's barays (reservoirs) held 53 million cubic meters—city-sized water storage. West Baray alone is 8 km x 2 km. Sophisticated canal networks supported 1 million people when London had only 50,000.",
+      description: "World's largest pre-industrial hydraulic city (802-1431 CE). Angkor's barays (reservoirs) held 53 million cubic meters—city-sized water storage. West Baray alone is 8 km x 2 km. Sophisticated canal networks supported 1 million people when London had only 50,000. See also Cambodia (Khmer) for additional hydraulic engineering details including the Angkor Wat moat and the full 1,000+ km canal network.",
       position: [14, 0, 6],
       color: "#2E8B57",
       era: "medieval",
@@ -1001,7 +1201,7 @@ export const gameData: GameData = {
           coordinates: { lat: 13.4125, lng: 103.8670 },
           artifacts: [
             {
-              id: "west-baray",
+              id: "west-baray-overview",
               name: "West Baray Reservoir",
               description: "Massive rectangular reservoir measuring 8km x 2.2km",
               rarity: "legendary",
@@ -1564,6 +1764,26 @@ export const gameData: GameData = {
               significance: "City location chosen based on spring assessment—water drove urban planning",
               yearBCE: -1450,
               category: "aqueduct"
+            },
+            {
+              id: "tambomachay",
+              name: "Tambomachay Water Temple",
+              description: "Sacred Inca water temple located 8 km from Cusco at 3,700 meters elevation, constructed around 1400 CE. This site features precisely carved stone channels that split a single spring into two identical cascading streams, demonstrating the Inca mastery of hydraulic engineering for ritual purposes. The water flows through a series of three tiered stone-carved falls into ceremonial basins, and remarkably maintains equal flow in both channels year-round. Believed to have served as a site for ritual bathing and water worship, Tambomachay exemplifies how Inca engineering seamlessly combined practical hydraulics with spiritual practice.",
+              rarity: "epic",
+              historicalPeriod: "Inca Imperial Period",
+              significance: "Sacred spring channeling combining engineering and ritual",
+              yearBCE: -1400,
+              category: "fountain"
+            },
+            {
+              id: "cumbe-mayo",
+              name: "Cumbe Mayo Aqueduct",
+              description: "Pre-Inca aqueduct near Cajamarca, Peru, dating to approximately 1500 BCE, making it one of the oldest known engineered water channels in South America. Stretching 9 km across rugged mountain terrain at 3,500 meters elevation, this remarkable channel was carved directly from volcanic rock. The aqueduct features deliberately carved zigzag sections that archaeologists believe served to slow water flow and reduce erosion, as well as carved petroglyphs along its length suggesting ceremonial significance. Predating the Inca Empire by approximately 3,000 years, Cumbe Mayo provides evidence of sophisticated hydraulic engineering knowledge in the Andean highlands far earlier than previously believed.",
+              rarity: "legendary",
+              historicalPeriod: "Pre-Inca (Cajamarca Culture)",
+              significance: "One of the oldest engineered water channels in South America",
+              yearBCE: 1500,
+              category: "aqueduct"
             }
           ]
         },
@@ -1659,7 +1879,7 @@ export const gameData: GameData = {
     {
       id: "balinese",
       name: "Balinese (Subak)",
-      description: "Sacred water temples and democratic irrigation: rice terraces as spiritual landscape",
+      description: "Sacred water temples and democratic irrigation: rice terraces as spiritual landscape. The Subak system, recognized as UNESCO World Heritage, demonstrates how water management can be organized through religious and social institutions rather than centralized bureaucracy. See also Ancient Indonesia (Nusantara) for the broader context of Indonesian water engineering including Majapahit-era reservoirs.",
       position: [14, 0, 6],
       color: "#228B22",
       era: "medieval",
@@ -1840,6 +2060,36 @@ export const gameData: GameData = {
               significance: "Transformed Japanese landscape and supported population growth",
               yearBCE: 300,
               category: "irrigation"
+            },
+            {
+              id: "mizukumi-water-rights",
+              name: "Japanese Water Rights System (Mizukumi)",
+              description: "The Edo Period (1603-1868) formalized complex water rights allocation systems known as mizukumi, governing the distribution of irrigation water among farming communities. These customary rules specified the exact timing, duration, and volume of water each village could draw from shared canals and rivers, with rotating schedules enforced by appointed water managers (mizuban). Disputes were adjudicated by designated officials, and violations could result in severe penalties. This system supported rice cultivation for a population of 30 million and represents one of the most sophisticated pre-modern water governance frameworks in the world.",
+              rarity: "rare",
+              historicalPeriod: "Edo Period",
+              significance: "Sophisticated pre-modern water governance framework",
+              yearBCE: -1600,
+              category: "canal"
+            },
+            {
+              id: "shimogoe-nightsoil",
+              name: "Nightsoil Collection System (Shimogoe)",
+              description: "Edo Period Japan (1603-1868) developed history's most sophisticated human waste recycling system, known as shimogoe. Urban human waste was a valuable commodity—landlords sold tenants' waste to specialized collectors who transported it to surrounding farms as fertilizer. This created a circular economy where rural farmers supplied food to cities and purchased back urban waste to enrich their fields. In Edo (Tokyo), with a population exceeding 1 million by 1720, this system kept the city remarkably clean compared to European capitals of the same era. The waste was carefully composted before application, reducing pathogen transmission. This system is now studied as an early model of sustainable urban metabolism.",
+              rarity: "rare",
+              historicalPeriod: "Edo Period",
+              significance: "History's most sophisticated pre-modern waste recycling system",
+              yearBCE: -1650,
+              category: "sanitation"
+            },
+            {
+              id: "yukimuro-snow-storage",
+              name: "Yukimuro Snow Storage",
+              description: "The yukimuro (snow room) system of Japan's snow country (particularly Niigata and surrounding regions) developed during the Edo Period as a method of preserving food and cooling spaces using stored winter snow. Large underground or semi-underground chambers were packed with compacted snow during winter, insulated with rice straw and earth, and used throughout the summer to refrigerate perishable foods, preserve sake, and cool living spaces. Some yukimuro could store 100+ tonnes of snow, lasting well into autumn. Modern revivals of this traditional technology in Niigata prefecture now use yukimuro for aging rice, sake, and vegetables, with the consistent near-freezing temperature producing distinctly smooth flavors recognized by Japan's food industry.",
+              rarity: "rare",
+              historicalPeriod: "Edo Period",
+              significance: "Traditional snow storage and refrigeration technology",
+              yearBCE: -1600,
+              category: "dam"
             }
           ]
         }
@@ -1910,6 +2160,26 @@ export const gameData: GameData = {
               significance: "Critical infrastructure connecting entire drainage regions; buffers against both flooding and drought",
               yearBCE: -1300,
               category: "canal"
+            },
+            {
+              id: "afsluitdijk",
+              name: "Afsluitdijk (Enclosure Dam)",
+              description: "The Afsluitdijk is a 32 km dam and causeway completed in 1932, separating the Zuiderzee (a shallow inlet of the North Sea) from the outer Wadden Sea and transforming it into the freshwater IJsselmeer lake. Designed by engineer Cornelis Lely and built over five years by 4,000-5,000 workers, the dam stands 7.25 meters above sea level and 90 meters wide at its base. This monumental project was the largest hydraulic engineering achievement of its era, enabling the subsequent reclamation of 1,650 km² of polderland (the Flevopolders) for agriculture and settlement. The Afsluitdijk fundamentally reshaped the Dutch coastline and remains a cornerstone of the Netherlands' defense against the North Sea.",
+              rarity: "legendary",
+              historicalPeriod: "Modern Era",
+              significance: "Largest hydraulic engineering project of its era",
+              yearBCE: -1932,
+              category: "dam"
+            },
+            {
+              id: "room-for-river",
+              name: "Room for the River Program",
+              description: "A revolutionary Dutch flood management program launched in 2006 and completed in 2015, costing 2.3 billion euros across 39 locations along the Rhine, Meuse, Waal, and IJssel rivers. Rather than the traditional Dutch approach of building ever-higher dikes, this program gave rivers more space to flood safely by lowering floodplains, creating bypass channels, relocating dikes further inland, and removing obstacles. The program lowered flood water levels by up to 30 cm at critical points and has become a globally influential model for climate-adaptive water management. It represents a paradigm shift in Dutch water engineering philosophy from fighting nature to working with it.",
+              rarity: "epic",
+              historicalPeriod: "21st Century",
+              significance: "Modern paradigm shift in flood management philosophy",
+              yearBCE: -2006,
+              category: "dam"
             }
           ]
         },
@@ -1966,11 +2236,11 @@ export const gameData: GameData = {
     },
     {
       id: "ancient-india",
-      name: "Ancient India",
-      description: "Stepwells and tanks: water architecture as art and engineering",
+      name: "Classical India",
+      description: "India's water engineering traditions span millennia, from the Indus Valley civilization's sophisticated urban drainage to the spectacular stepwells (vav) of Gujarat and Rajasthan that combined architecture, art, and hydraulic engineering. The subcontinent developed diverse regional solutions: tank irrigation systems (eris) in Tamil Nadu supporting millions of farmers, elaborate stepwell complexes descending 7+ stories underground, and the grand canal networks of Vijayanagara Empire. These traditions represent water architecture as both practical infrastructure and cultural expression unmatched anywhere in the world.",
       position: [10, 0, 2],
       color: "#FF6347",
-      era: "medieval",
+      era: "classical",
       dateRange: "3rd Century CE - 1800 CE",
       locations: [
         {
@@ -2572,8 +2842,8 @@ export const gameData: GameData = {
     },
     {
       id: "cambodia-khmer",
-      name: "Cambodia (Khmer)",
-      description: "The Khmer Empire (802–1431 CE) built the largest pre-industrial city on Earth at Angkor, supported by the most ambitious hydraulic infrastructure of the medieval world. The West Baray reservoir (8 km × 2 km, holding 56 million cubic meters) remains the largest hand-dug reservoir in history and still holds water today. Over 1,000 km of canals connected barays to rice fields, enabling 3–4 harvests per year and supporting a population exceeding 1 million. Angkor Wat's 200-meter-wide moat served both as a symbolic ocean around the sacred mountain and as structural protection against foundation erosion. The empire's collapse around 1431 CE is now attributed partly to failure of this hydraulic network during severe droughts revealed by tree-ring analysis.",
+      name: "Cambodia (Khmer) - Extended",
+      description: "Extended details on the Khmer Empire (802–1431 CE), which built the largest pre-industrial city on Earth at Angkor, supported by the most ambitious hydraulic infrastructure of the medieval world. The West Baray reservoir (8 km × 2 km, holding 56 million cubic meters) remains the largest hand-dug reservoir in history and still holds water today. Over 1,000 km of canals connected barays to rice fields, enabling 3–4 harvests per year and supporting a population exceeding 1 million. Angkor Wat's 200-meter-wide moat served both as a symbolic ocean around the sacred mountain and as structural protection against foundation erosion. The empire's collapse around 1431 CE is now attributed partly to failure of this hydraulic network during severe droughts revealed by tree-ring analysis. See also Khmer Empire for the Neak Poan temple basins and River of Thousand Lingas.",
       position: [16, 0, 7],
       color: "#E91E63",
       era: "medieval",
@@ -2989,6 +3259,16 @@ export const gameData: GameData = {
               significance: "Created Singapore's 15th reservoir in the city center; eliminated floods in Chinatown",
               yearBCE: -2008,
               category: "dam"
+            },
+            {
+              id: "bishan-abc-waters",
+              name: "Bishan-Ang Mo Kio Park (ABC Waters)",
+              description: "Completed in 2012, the Bishan-Ang Mo Kio Park transformation is Singapore's flagship Active, Beautiful, Clean (ABC) Waters project. This $76 million project converted a 2.7 km concrete drainage canal into a naturalized, meandering river with bioengineered banks, creating 62 hectares of green space while increasing the waterway's capacity by 40%. The park integrates cleansing biotopes, rain gardens, and constructed wetlands that naturally filter stormwater before it enters the reservoir system. This project has become a global model for urban blue-green infrastructure, demonstrating how cities can combine flood management, biodiversity, recreation, and water treatment in a single integrated design.",
+              rarity: "epic",
+              historicalPeriod: "21st Century",
+              significance: "Global model for urban blue-green water infrastructure",
+              yearBCE: -2012,
+              category: "canal"
             }
           ]
         },
@@ -3143,7 +3423,7 @@ export const gameData: GameData = {
     {
       id: "dubai-uae",
       name: "Dubai & UAE",
-      description: "From ancient falaj to world's largest desalination - desert water mastery",
+      description: "The United Arab Emirates represents perhaps the most dramatic water engineering transformation in human history—from nomadic Bedouin communities surviving on ancient underground falaj channels in one of the world's driest climates (annual rainfall under 120 mm) to a modern nation producing over 14 million cubic meters of desalinated water per day. The Al Ain oasis, continuously inhabited for over 4,000 years, preserves UNESCO World Heritage falaj (aflaj) systems—gravity-fed underground channels originating in the Hajar Mountains that sustained date palm agriculture and settlement in the heart of the Arabian Desert. The UAE's modern era, beginning with the discovery of oil in the 1960s, triggered an explosion of water infrastructure: the population surged from 180,000 in 1968 to over 10 million by 2024, requiring a complete reinvention of water supply through mega-scale desalination, treated wastewater reuse, cloud seeding, and artificial island engineering. Today the UAE operates the world's largest desalination capacity, recycles 89% of its treated wastewater, and conducts 300+ cloud seeding missions annually—a multi-billion-dollar commitment to solving the fundamental challenge of sustaining millions of people in a land with no permanent rivers or freshwater lakes.",
       position: [10, 0, -6],
       color: "#00BCD4",
       era: "modern",
@@ -3152,67 +3432,106 @@ export const gameData: GameData = {
         {
           id: "al-ain-oasis",
           name: "Al Ain Oasis",
-          description: "UNESCO World Heritage falaj irrigation system",
-          historicalContext: "Ancient underground channels sustaining desert agriculture",
+          description: "The Al Ain oasis complex is one of the world's oldest continuously inhabited settlements, sustained for over 4,000 years by an ingenious network of underground water channels (falaj). Designated a UNESCO World Heritage Site in 2011, Al Ain contains 147,000 date palms across six major oases irrigated by the ancient aflaj system.",
+          historicalContext: "Al Ain sits at the foot of Jebel Hafeet (1,249 m), where the Hajar Mountains provide the water source for the gravity-fed falaj tunnels. Archaeological evidence from the Hili site within Al Ain dates human settlement to the Bronze Age (3000 BCE), making this one of the longest-running examples of sustained desert agriculture on Earth.",
           coordinates: { lat: 24.2075, lng: 55.7447 },
           artifacts: [
             {
               id: "falaj-system",
               name: "Falaj Irrigation System",
-              description: "Underground channels carrying mountain water across desert for 3,000 years",
+              description: "The falaj (plural: aflaj) system is a gravity-fed underground water channel network originating in the Hajar Mountains and carrying groundwater across the desert floor to oasis settlements. Dating back approximately 3,000 years in the UAE, these channels can extend 5-20 km from their mountain source, running through hand-dug tunnels at depths of 10-30 meters to minimize evaporation in temperatures exceeding 50°C. The Al Ain oasis preserves the finest examples, with channels (both daudi/underground and ghaili/surface types) distributing water to 147,000 date palms through a precisely timed rotation system. Historically, the UAE had over 4,000 falaj systems; approximately 30 remain active today. The aflaj at Al Ain were inscribed as UNESCO World Heritage in 2011, recognized as a 'masterpiece of human interaction with the environment.' Water distribution follows an ancient timing system using sundials and star positions, with each landowner receiving water for a specific duration proportional to their holdings.",
               rarity: "legendary",
               historicalPeriod: "Ancient (1000 BCE - Present)",
-              significance: "UNESCO World Heritage; 4,000+ systems historically, ~30 still active",
+              significance: "UNESCO World Heritage; 3,000+ year-old gravity-fed underground channels; 4,000+ systems historically, ~30 still active; sustained desert agriculture in one of Earth's driest climates",
               yearBCE: 1000,
               category: "aqueduct"
+            },
+            {
+              id: "al-ain-traditional-wells",
+              name: "Al Ain Traditional Wells (Tawi)",
+              description: "Before the modern era, Bedouin communities across what is now the UAE relied on hand-dug wells (tawi) at oasis sites to access shallow groundwater. These wells, typically 5-15 meters deep, were lined with stone or palm trunk sections and often featured animal-powered water-lifting using leather buckets drawn by camels or donkeys. The locations of reliable wells determined trade routes, tribal territories, and seasonal migration patterns across the Arabian Peninsula for millennia. Many place names in the modern UAE derive from historic well locations—Dubai itself may derive from a word related to its creek (khor), a tidal inlet that provided the settlement's original water access. The communal management of wells followed strict tribal protocols, with water rights (shurb) governing access and usage.",
+              rarity: "rare",
+              historicalPeriod: "Ancient - 20th Century",
+              significance: "Foundation of Bedouin desert survival; determined trade routes and settlement patterns across the Arabian Peninsula",
+              yearBCE: 2000,
+              category: "irrigation"
             }
           ]
         },
         {
           id: "dubai-desal",
           name: "Dubai Desalination Complex",
-          description: "World's largest seawater conversion facilities",
-          historicalContext: "Enabled growth from 180,000 (1968) to 10 million (2024)",
+          description: "Dubai and Abu Dhabi host the world's largest concentration of seawater desalination plants, collectively producing over 14 million cubic meters of freshwater daily. The Jebel Ali desalination facility in Dubai alone is one of the largest in the world, capable of producing over 2 million cubic meters per day.",
+          historicalContext: "When the UAE was founded in 1971, its population was approximately 280,000 and water came primarily from wells and falaj systems. By 2024 the population exceeded 10 million, requiring a complete transformation of water supply infrastructure. The UAE now derives approximately 42% of its water from desalination, 36% from groundwater, and 12% from treated wastewater reuse—a portfolio approach necessitated by having no permanent rivers or natural freshwater lakes.",
           coordinates: { lat: 25.0657, lng: 55.1713 },
           artifacts: [
             {
               id: "mega-desalination",
               name: "Mega-Scale Desalination Plants",
-              description: "Multi-stage flash and reverse osmosis converting seawater to drinking water",
+              description: "The UAE operates the world's largest desalination capacity through a network of mega-scale plants using both multi-stage flash distillation (MSF) and reverse osmosis (RO) technologies. The Jebel Ali complex in Dubai, operated by DEWA (Dubai Electricity and Water Authority), uses MSF technology to heat seawater through multiple stages at progressively lower pressures, producing fresh water from Persian Gulf seawater with salinity of 40,000-45,000 parts per million—among the highest of any desalination source worldwide. The newer Hassyan facility (completed 2023) uses energy-efficient RO membranes, reducing energy consumption by 75% compared to thermal methods. Collectively, UAE desalination plants produce over 14 million cubic meters per day, supplying approximately 42% of the nation's total freshwater. The cost has dropped from $4-5 per cubic meter in the 1980s to under $0.60 per cubic meter with modern RO technology, making desalination economically viable at national scale.",
               rarity: "legendary",
               historicalPeriod: "Modern (1976 - Present)",
-              significance: "14+ million m³/day capacity; supplies 42% of UAE freshwater",
+              significance: "World's largest desalination capacity; 14+ million m³/day; supplies 42% of UAE freshwater; enabled population growth from 280,000 to 10+ million",
               yearBCE: -1976,
               category: "sanitation"
             },
             {
               id: "cloud-seeding",
-              name: "Cloud Seeding Program",
-              description: "Weather modification using salt particles to increase rainfall 10-30%",
-              rarity: "rare",
+              name: "UAE Cloud Seeding Program",
+              description: "The UAE's National Center of Meteorology operates one of the world's most advanced cloud seeding programs, conducting 300+ missions annually since the program's expansion in 2002. Specially equipped aircraft release hygroscopic salt flares (containing potassium chloride and sodium chloride nanoparticles) into developing cumulus clouds over the Hajar Mountains and Al Ain region, nucleating water droplets and increasing precipitation by an estimated 10-30%. The UAE has invested over $20 million in cloud seeding research, partnering with NASA, the National Center for Atmospheric Research (NCAR), and universities worldwide. In 2024, the program expanded to include drone-based seeding and advanced weather radar networks covering the entire country. While cloud seeding cannot create rain from clear skies, it enhances existing weather systems—particularly important in a country averaging only 78 mm of annual rainfall. The program represents a cutting-edge frontier in human attempts to modify weather for water security.",
+              rarity: "epic",
               historicalPeriod: "Modern (2002 - Present)",
-              significance: "300+ annual missions; global research hub for arid region rainfall",
+              significance: "300+ annual missions; 10-30% rainfall increase; $20+ million research investment; global hub for arid-region weather modification",
               yearBCE: -2002,
               category: "irrigation"
+            },
+            {
+              id: "uae-wastewater-reuse",
+              name: "UAE Treated Wastewater Reuse System",
+              description: "The UAE recycles approximately 89% of its treated wastewater—one of the highest rates in the world—through a comprehensive network of tertiary treatment plants producing water suitable for landscape irrigation, district cooling, and industrial use. Abu Dhabi alone treats over 800,000 cubic meters of wastewater daily, with treated effluent irrigating parks, golf courses, roadside landscaping, and agricultural operations across the emirate. The treated sewage effluent (TSE) network includes dedicated purple-pipe distribution systems (distinguished from potable blue pipes) extending hundreds of kilometers across urban areas. Advanced treatment processes including membrane bioreactors, UV disinfection, and activated carbon filtration produce effluent meeting stringent quality standards. This system reduces pressure on desalination capacity and represents a critical component of the UAE Water Security Strategy 2036, which aims to reduce total water demand by 21%.",
+              rarity: "epic",
+              historicalPeriod: "Modern (1990s - Present)",
+              significance: "89% wastewater reuse rate—among world's highest; 800,000+ m³/day treated in Abu Dhabi alone; dedicated purple-pipe distribution network",
+              yearBCE: -1995,
+              category: "sanitation"
             }
           ]
         },
         {
           id: "palm-jumeirah",
           name: "Palm Jumeirah",
-          description: "Artificial island with revolutionary coastal water management",
-          historicalContext: "World's largest man-made island requiring innovative hydrology",
+          description: "The Palm Jumeirah is the world's largest artificial island, a palm tree-shaped archipelago extending 5.72 km into the Persian Gulf. Completed in 2006 at a cost of $12 billion, this engineering marvel added 78 km of new coastline to Dubai and required solving unprecedented challenges in coastal water management.",
+          historicalContext: "Constructed by Nakheel using 94 million cubic meters of sand dredged from the seafloor, the Palm Jumeirah required innovative solutions to maintain water quality in its enclosed lagoons and fronds. Without engineering intervention, the stagnant water between the palm fronds would rapidly become oxygen-depleted and ecologically dead. The project represents the extreme frontier of human water engineering—literally reshaping the ocean.",
           coordinates: { lat: 25.1124, lng: 55.1390 },
           artifacts: [
             {
               id: "palm-water-engineering",
-              name: "Palm Jumeirah Water Engineering",
-              description: "Tidal flushing system maintaining lagoon water quality through breakwater gaps",
+              name: "Palm Jumeirah Tidal Flushing System",
+              description: "The Palm Jumeirah's 11 km crescent-shaped breakwater creates a semi-enclosed lagoon that would stagnate without active water management. Engineers designed a system of two 100-meter-wide openings in the breakwater that allow tidal exchange with the open Gulf, achieving a complete water exchange cycle every 14 days. The design underwent extensive computational fluid dynamics modeling and physical model testing at the Danish Hydraulic Institute to optimize flow patterns. Additional features include submerged diffusers along the fronds' inner edges that promote circulation, and a water quality monitoring network with 20+ real-time sensors tracking dissolved oxygen, temperature, salinity, and turbidity. The system maintains dissolved oxygen levels above 4 mg/L throughout the lagoon—sufficient to support marine life including fish, rays, and sea turtles. This represented one of the most complex coastal hydrodynamic engineering challenges ever attempted.",
               rarity: "epic",
               historicalPeriod: "Modern (2001-2006)",
-              significance: "78 km new coastline; complete water exchange every 14 days",
+              significance: "78 km new coastline; complete water exchange every 14 days; 94 million m³ of dredged sand; computational fluid dynamics-optimized design",
               yearBCE: -2001,
               category: "canal"
+            }
+          ]
+        },
+        {
+          id: "masdar-city",
+          name: "Masdar City",
+          description: "Masdar City is a planned sustainable urban development in Abu Dhabi designed to be one of the world's most water-efficient cities. Launched in 2008, this 6 km² development integrates cutting-edge water conservation technologies aimed at reducing per-capita water consumption by 54% compared to Abu Dhabi's average.",
+          historicalContext: "Located 17 km from Abu Dhabi city center, Masdar City was conceived as a laboratory for sustainable desert urbanism. The project incorporates lessons from both ancient Middle Eastern architecture (narrow streets, wind towers, courtyard buildings) and modern technology to minimize water and energy consumption in extreme heat.",
+          coordinates: { lat: 24.4284, lng: 54.6155 },
+          artifacts: [
+            {
+              id: "masdar-water-conservation",
+              name: "Masdar City Water Systems",
+              description: "Masdar City integrates multiple water conservation technologies achieving 54% reduction in per-capita water use compared to Abu Dhabi averages. The system includes greywater recycling (shower, sink, and laundry water treated and reused for toilet flushing and landscape irrigation), smart water meters with real-time leak detection, low-flow fixtures throughout all buildings, and a condensate recovery system that captures water from air conditioning units—which in Abu Dhabi's humid climate can produce significant volumes. Landscape design uses only native drought-tolerant species (ghaf trees, date palms, desert grasses) irrigated by subsurface drip systems using recycled greywater. The city's personal rapid transit system and underground service tunnels eliminate road runoff contamination. Masdar City demonstrates that modern desert cities can dramatically reduce water consumption through integrated design rather than single-technology solutions.",
+              rarity: "epic",
+              historicalPeriod: "Modern (2008 - Present)",
+              significance: "54% reduction in per-capita water use; integrated greywater recycling, smart metering, and condensate recovery; model for sustainable desert urbanism",
+              yearBCE: -2008,
+              category: "sanitation"
             }
           ]
         }
@@ -3433,7 +3752,7 @@ export const gameData: GameData = {
               category: "fountain"
             },
             {
-              id: "noria-wheel",
+              id: "moorish-noria-wheel",
               name: "Noria Water Wheel",
               description: "Large water-lifting wheels powered by river current",
               rarity: "rare",
@@ -5764,7 +6083,7 @@ export const gameData: GameData = {
     {
       id: "ancient-indonesia",
       name: "Ancient Indonesia (Nusantara)",
-      description: "Unique water management adapted to tropical monsoons and volcanic landscapes",
+      description: "The Indonesian archipelago developed unique water management systems adapted to tropical monsoons, volcanic landscapes, and maritime environments across 17,000+ islands. From the Subak irrigation cooperatives of Bali (see also Balinese Subak entry) to the massive Segaran reservoir of the Majapahit Empire at Trowulan, Indonesian civilizations created diverse solutions to water challenges spanning 4,000 years.",
       position: [18, 0, 2],
       color: "#228B22",
       era: "classical",
@@ -5778,7 +6097,7 @@ export const gameData: GameData = {
           coordinates: { lat: -8.4095, lng: 115.1889 },
           artifacts: [
             {
-              id: "subak-system",
+              id: "nusantara-subak-system",
               name: "Subak Irrigation System",
               description: "Democratic water-sharing cooperatives coordinated by water temples—one farmer, one vote regardless of land size",
               rarity: "legendary",
@@ -6394,6 +6713,964 @@ export const gameData: GameData = {
               significance: "Recharged groundwater; community maintained; connected in chains across watersheds",
               yearBCE: -1200,
               category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ottoman-empire",
+      name: "Ottoman Empire",
+      description: "The Ottoman Empire (1299–1922 CE) ruled vast territories spanning three continents and became one of history's most sophisticated hydraulic civilizations. At its zenith under Suleiman the Magnificent in the 16th century, the empire commanded a population exceeding 25 million people, all dependent on elaborate water infrastructure for drinking, agriculture, and ritual bathing. The imperial capital Istanbul—formerly Constantinople—inherited Roman and Byzantine water systems but dramatically expanded them under the genius of chief architect Mimar Sinan, who constructed over 50 kilometers of gravity-fed aqueducts and distribution networks. Ottoman water culture was inseparable from Islamic charitable traditions: wealthy patrons endowed sebil fountains, hammam bath complexes, and public drinking facilities across cities from Baghdad to Budapest, making clean water a religious duty and a civic virtue that shaped urban life for six centuries.",
+      position: [8, 0, -2],
+      color: "#B71C1C",
+      era: "medieval",
+      dateRange: "1299-1922 CE",
+      locations: [
+        {
+          id: "istanbul",
+          name: "Istanbul",
+          description: "Imperial capital and center of Ottoman hydraulic engineering",
+          historicalContext: "Straddling Europe and Asia, Istanbul required massive water infrastructure to serve its population of over 500,000 during the 16th century",
+          coordinates: { lat: 41.0082, lng: 28.9784 },
+          artifacts: [
+            {
+              id: "kirkchesme-system",
+              name: "Kırkçeşme Water Supply System",
+              description: "Commissioned by Sultan Suleiman the Magnificent and designed by the legendary architect Mimar Sinan in 1554 CE, the Kırkçeşme system was one of the most ambitious hydraulic engineering projects of the medieval world. Spanning over 50 kilometers from the Belgrade Forest north of Istanbul to the city center, the system used pure gravity flow through a network of stone aqueducts, underground tunnels, and distribution chambers. Water was collected from multiple forest springs and streams, channeled through sediment-settling basins, and delivered to 33 distribution points (çeşme) throughout the city. The system featured the magnificent Maglova Aqueduct—a two-tiered stone bridge spanning 258 meters across the valley at a height of 35 meters—which remains standing today as a UNESCO-recognized masterpiece of Ottoman engineering.",
+              rarity: "legendary",
+              historicalPeriod: "Ottoman Classical Period (1554 CE)",
+              significance: "Supplied water to over 500,000 residents through 33 distribution points using pure gravity; Mimar Sinan's engineering masterpiece",
+              yearBCE: -1554,
+              category: "aqueduct"
+            },
+            {
+              id: "ottoman-hammam",
+              name: "Ottoman Hammam Water Systems",
+              description: "The Ottoman hammam (bathhouse) represented the pinnacle of pre-industrial heated water engineering, combining Roman thermae traditions with Islamic purification requirements. Each hammam contained a sophisticated water circulation system with three distinct temperature zones: the soğukluk (cold room), ılıklık (warm room), and sıcaklık (hot room), heated by a wood-fired furnace (külhan) beneath the marble floor. Water was drawn from city aqueducts into rooftop cisterns, then gravity-fed through lead and terracotta pipes to individual basins (kurna) throughout the bathing chambers. The heated floor (göbek taşı) was a massive marble slab warmed by flue gases circulating through hollow channels beneath—a system called cehennemlik. Istanbul alone contained over 300 hammams at the empire's peak, each recycling and heating thousands of liters of water daily through ingenious thermal management systems.",
+              rarity: "epic",
+              historicalPeriod: "Ottoman Classical Period (1400-1700 CE)",
+              significance: "Over 300 hammams in Istanbul alone; integrated heated water circulation serving millions for ritual purification and hygiene",
+              yearBCE: -1500,
+              category: "sanitation"
+            },
+            {
+              id: "sebil-fountain",
+              name: "Sebil Public Fountain Culture",
+              description: "The sebil—from the Arabic word for 'path' or 'way'—was a distinctly Ottoman charitable institution providing free drinking water to passersby in public spaces. Wealthy patrons, sultans, and their families endowed ornate stone fountain structures at crossroads, mosque courtyards, and market squares throughout the empire. Each sebil featured brass taps or grilled windows through which attendants dispensed water in shared cups, funded in perpetuity through waqf (charitable endowment) revenues from shops, farms, or caravanserais. The most elaborate sebils, such as the Fountain of Ahmed III (1728) at Topkapı Palace, were decorated with carved marble, calligraphy, and floral reliefs, functioning as both civic infrastructure and artistic monuments. At the empire's height, Istanbul alone had over 700 public fountains and sebils, making it one of the best-watered cities in the pre-modern world.",
+              rarity: "rare",
+              historicalPeriod: "Ottoman Period (1400-1900 CE)",
+              significance: "Over 700 public fountains in Istanbul; embodied Islamic charitable water distribution tradition",
+              yearBCE: -1500,
+              category: "fountain"
+            },
+            {
+              id: "valide-sultan-aqueduct",
+              name: "Valide Sultan Aqueduct",
+              description: "Also known as the Uzun Kemer (Long Aqueduct), this monumental structure was completed in 1554 CE as part of Mimar Sinan's comprehensive water supply system for Istanbul. Stretching over 50 kilometers from water sources in the Belgrade Forest to the imperial capital, it was the longest aqueduct constructed during the Ottoman period. The system incorporated multiple bridge-aqueducts crossing deep valleys, with the tallest sections rising over 35 meters above the valley floor. Commissioned by Mihrimah Sultan, daughter of Suleiman the Magnificent, the aqueduct exemplified the Ottoman practice of royal women sponsoring major infrastructure projects as acts of piety and public service. The stone-and-mortar construction employed pointed arches characteristic of Ottoman architectural style, and the system continued to supply water to Istanbul well into the 19th century.",
+              rarity: "epic",
+              historicalPeriod: "Ottoman Classical Period (1554 CE)",
+              significance: "Longest Ottoman aqueduct at 50+ km; supplied water to the imperial capital for over 300 years",
+              yearBCE: -1554,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "safavid-persia",
+      name: "Safavid Persia",
+      description: "The Safavid dynasty (1501–1736 CE) transformed Persia into one of the Islamic world's most culturally refined civilizations, with their capital Isfahan becoming legendary as 'half the world' (Esfahān nesf-e jahān). Under Shah Abbas I (r. 1588–1629), Isfahan was redesigned as a garden city centered on the magnificent Naqsh-e Jahan Square, with an elaborate network of water channels, fountains, and cascading gardens fed by the Zayandeh River. The Safavids inherited and dramatically expanded the ancient Persian qanat system, maintaining over 40,000 underground water tunnels across the Iranian plateau that collectively transported billions of liters annually without any mechanical pumping. Their bridge-dams across the Zayandeh River—notably the Si-o-se-pol and Khaju Bridge—were engineering marvels that simultaneously served as river crossings, water level regulators, social gathering spaces, and architectural monuments, representing an integrated approach to water management unmatched anywhere in the contemporary world.",
+      position: [6, 0, 0],
+      color: "#4A148C",
+      era: "medieval",
+      dateRange: "1501-1736 CE",
+      locations: [
+        {
+          id: "isfahan",
+          name: "Isfahan",
+          description: "Safavid capital renowned as 'half the world' for its beauty and engineering",
+          historicalContext: "Shah Abbas I transformed Isfahan into a garden city with population exceeding 600,000 in the early 17th century",
+          coordinates: { lat: 32.6546, lng: 51.6680 },
+          artifacts: [
+            {
+              id: "si-o-se-pol-bridge",
+              name: "Si-o-se-pol Bridge",
+              description: "Completed in 1602 CE under the patronage of Allahverdi Khan, chancellor to Shah Abbas I, the Si-o-se-pol (Bridge of 33 Arches) is one of the most remarkable dual-purpose hydraulic structures ever constructed. Spanning 298 meters across the Zayandeh River with 33 elegant stone arches, the bridge functions simultaneously as a pedestrian crossing, a dam controlling river flow levels, and a social gathering space with enclosed lower-level tea houses. The lower tier contains sluice gates that can be opened or closed to regulate water levels upstream, effectively creating a weir that raises water for diversion into irrigation canals feeding Isfahan's famous gardens. The bridge's two-tiered design channels water through the lower arches while pedestrians walk above, with hexagonal alcoves providing rest areas along the 14.5-meter-wide walkway. This ingenious combination of transportation infrastructure and water management has kept the bridge in continuous use for over four centuries.",
+              rarity: "legendary",
+              historicalPeriod: "Safavid Period (1602 CE)",
+              significance: "298-meter bridge-dam with 33 arches; simultaneously serves as crossing, weir, and social space for over 400 years",
+              yearBCE: -1602,
+              category: "dam"
+            },
+            {
+              id: "chahar-bagh-water",
+              name: "Chahar Bagh Garden Water System",
+              description: "The Chahar Bagh (Four Gardens) boulevard in Isfahan, constructed under Shah Abbas I beginning in 1596 CE, featured one of the most elaborate urban garden irrigation systems of the pre-modern world. A central water channel ran the entire 1.5-kilometer length of the avenue, fed by gravity from the Zayandeh River through underground conduits and elevated aqueducts. The channel cascaded through a series of terraced pools, fountains, and waterfalls, with subsidiary channels branching to irrigate the eight royal gardens flanking the boulevard. Each garden employed the classical Persian chahar bagh (four-part) layout with intersecting water channels symbolizing the four rivers of paradise, while sophisticated stone-carved water chutes created decorative patterns in the flowing water. The system demonstrated the Safavid mastery of hydraulic gradient management, maintaining steady water flow across varying terrain without mechanical assistance.",
+              rarity: "epic",
+              historicalPeriod: "Safavid Period (1596-1630 CE)",
+              significance: "1.5 km garden boulevard with gravity-fed cascading fountains and channels irrigating eight royal gardens",
+              yearBCE: -1596,
+              category: "fountain"
+            },
+            {
+              id: "safavid-qanat-expansion",
+              name: "Expanded Qanat Networks",
+              description: "The Safavid dynasty inherited the ancient Persian qanat system—underground water tunnels tapping mountain aquifers—and expanded it to unprecedented scale across the Iranian plateau. By the 17th century, Persia maintained over 40,000 qanat tunnels with a combined length exceeding 270,000 kilometers, collectively transporting an estimated 75% of all water used in the country. Safavid engineers refined qanat construction techniques, developing specialized tools for surveying underground gradients and ventilation shaft spacing, with some qanats extending over 70 kilometers from their mountain source to desert settlements. The empire established a formal guild of muqannis (qanat diggers) who passed their specialized knowledge of hydrogeology and tunnel construction through generations, making qanat maintenance a respected hereditary profession. This vast underground water network sustained agriculture, drinking water, and urban life across one of the world's most arid regions entirely without mechanical pumping or external energy inputs.",
+              rarity: "rare",
+              historicalPeriod: "Safavid Period (1501-1736 CE)",
+              significance: "Maintained 40,000+ qanats totaling 270,000 km; supplied 75% of Persia's water without mechanical pumping",
+              yearBCE: -1600,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ptolemaic-egypt",
+      name: "Ptolemaic & Hellenistic Egypt",
+      description: "The Ptolemaic dynasty (323–30 BCE) ruled Egypt following Alexander the Great's conquest, blending Greek engineering knowledge with millennia of Egyptian hydraulic tradition to create some of the ancient world's most ambitious water management projects. Under Ptolemy II Philadelphus (r. 285–246 BCE), the Fayum Depression was transformed from seasonal marshland into a vast agricultural breadbasket through systematic canal construction and the expansion of the legendary Lake Moeris reservoir. Alexandria, the capital city founded by Alexander himself, became the intellectual center of the Mediterranean world, housing the Great Library and the Mouseion where engineers like Ctesibius and later Hero of Alexandria developed revolutionary hydraulic devices including the first force pump and pneumatic fountains. The Ptolemaic administration maintained a sophisticated bureaucracy overseeing irrigation schedules, canal dredging, and flood management across the Nile Delta, supporting a population that may have reached 7–8 million people—making Ptolemaic Egypt the most densely populated and agriculturally productive region in the ancient Mediterranean.",
+      position: [-2, 0, -4],
+      color: "#FFD54F",
+      era: "classical",
+      dateRange: "323-30 BCE",
+      locations: [
+        {
+          id: "alexandria-ptolemaic",
+          name: "Alexandria",
+          description: "Capital of Ptolemaic Egypt and center of Hellenistic engineering",
+          historicalContext: "Home to the Great Library and Mouseion where Ctesibius invented the force pump circa 270 BCE",
+          coordinates: { lat: 31.2001, lng: 29.9187 },
+          artifacts: [
+            {
+              id: "lake-moeris-expansion",
+              name: "Lake Moeris Reservoir Expansion",
+              description: "Ptolemy II Philadelphus undertook one of antiquity's most ambitious hydraulic engineering projects by dramatically expanding the ancient Lake Moeris (modern Birket Qarun) in the Fayum Depression, approximately 80 kilometers southwest of Cairo. The natural lake had been used for flood storage since the Middle Kingdom (circa 1850 BCE), but Ptolemaic engineers constructed massive embankments, regulating sluices, and a network of feeder canals from the Nile to transform it into a controlled reservoir with an estimated capacity of 13 billion cubic meters of water. The Bahr Yussef canal—a natural Nile branch enhanced by human engineering—served as the primary feeder channel, with stone-and-earth control structures regulating inflow during the annual flood season. This enormous reservoir moderated downstream flooding, stored water for year-round irrigation of the surrounding Fayum basin, and reclaimed approximately 1,200 square kilometers of previously barren desert for productive agriculture. Ancient sources including Herodotus and Strabo marveled at the lake's scale, with Strabo noting it was 'like a sea in extent.'",
+              rarity: "legendary",
+              historicalPeriod: "Ptolemaic Period (285-246 BCE)",
+              significance: "13 billion cubic meter reservoir; reclaimed 1,200 km² of desert for agriculture; one of antiquity's largest hydraulic projects",
+              yearBCE: 270,
+              category: "dam"
+            },
+            {
+              id: "alexandria-harbor-hydraulics",
+              name: "Alexandria Harbor Hydraulics",
+              description: "The harbor of Alexandria, designed under Ptolemy I Soter and expanded by his successors, was the most technologically sophisticated port facility in the ancient Mediterranean. The Great Harbor and the Eunostos (Harbor of Good Return) were separated by the Heptastadion—a 1,200-meter causeway connecting the mainland to the island of Pharos. Ptolemaic engineers constructed massive limestone breakwaters extending hundreds of meters into the sea to protect the harbors from storm surges, while sluice gates built into the Heptastadion allowed controlled water exchange between the two harbors, flushing sediment and maintaining water quality. The harbor infrastructure included stone-lined channels for directing freshwater from Lake Mareotis into the harbor to reduce salinity and prevent marine fouling of ship hulls. Archaeological surveys have revealed submerged quay walls, loading platforms, and hydraulic mechanisms that regulated water levels within the inner harbor basins.",
+              rarity: "epic",
+              historicalPeriod: "Ptolemaic Period (305-30 BCE)",
+              significance: "Most advanced ancient harbor with 1,200m causeway, sluice gates, and freshwater flushing systems",
+              yearBCE: 290,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "fayum-oasis",
+          name: "Fayum Oasis",
+          description: "Vast agricultural region transformed by Ptolemaic irrigation engineering",
+          historicalContext: "The Fayum Depression was converted from seasonal marshland to Egypt's most productive agricultural zone",
+          coordinates: { lat: 29.3084, lng: 30.8428 },
+          artifacts: [
+            {
+              id: "fayum-irrigation-expansion",
+              name: "Fayum Irrigation Expansion",
+              description: "Under Ptolemy II Philadelphus, Ptolemaic engineers undertook a systematic expansion of irrigation infrastructure in the Fayum oasis that transformed it into the breadbasket of Hellenistic Egypt. The project involved deepening and widening the Bahr Yussef canal, constructing a network of secondary and tertiary irrigation channels totaling hundreds of kilometers, and building stone-and-earthen embankments to control water distribution across 1,200 square kilometers of newly reclaimed farmland. Greek settler-soldiers (cleruchs) were granted parcels of this newly irrigated land, creating a hybrid Greco-Egyptian agricultural community that produced wheat, barley, olives, and grapes for export throughout the Mediterranean. Papyrus records from the period detail sophisticated irrigation schedules coordinated by a bureaucracy of water officials (epistates) who managed canal maintenance, water allocation disputes, and annual dredging operations. The Fayum's agricultural output was so prodigious that it helped finance Ptolemaic military campaigns and the construction of Alexandria's monumental architecture.",
+              rarity: "epic",
+              historicalPeriod: "Ptolemaic Period (285-200 BCE)",
+              significance: "Expanded irrigation to 1,200 km² of farmland; financed Ptolemaic military and architectural ambitions",
+              yearBCE: 260,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "aksumite-empire",
+      name: "Aksumite Empire",
+      description: "The Aksumite Empire (100–940 CE) was one of the four great powers of the ancient world alongside Rome, Persia, and China, ruling from its highland capital in modern-day Ethiopia and Eritrea. Controlling the lucrative Red Sea trade routes between the Roman Mediterranean and Indian Ocean commerce, Aksum grew wealthy from ivory, gold, and incense exports, supporting a population center that may have housed 20,000–50,000 people at its peak. The Aksumites were master stone carvers who shaped their semi-arid highland environment through sophisticated water harvesting systems including rock-cut reservoirs, underground cisterns, and elaborate palace drainage networks. Their engineering adapted to the challenging Ethiopian highland terrain—elevations exceeding 2,000 meters with dramatic seasonal rainfall patterns—by carving water storage directly into volcanic bedrock and constructing gravity-fed distribution channels that collected monsoon rains for year-round use in a region where water availability could vary dramatically between wet and dry seasons.",
+      position: [0, 0, -1],
+      color: "#FF6F00",
+      era: "classical",
+      dateRange: "100-940 CE",
+      locations: [
+        {
+          id: "aksum-city",
+          name: "Aksum",
+          description: "Capital of the Aksumite Empire and center of Ethiopian highland water engineering",
+          historicalContext: "One of the ancient world's four great powers, Aksum controlled Red Sea trade and developed sophisticated highland water management",
+          coordinates: { lat: 14.1211, lng: 38.7469 },
+          artifacts: [
+            {
+              id: "mai-shum-reservoir",
+              name: "Mai Shum Reservoir",
+              description: "The Mai Shum (Queen of Sheba's Bath) is a monumental rock-cut reservoir located in the heart of ancient Aksum, carved directly from the volcanic bedrock of the Ethiopian highlands. Measuring approximately 17 meters wide, 53 meters long, and up to 3 meters deep, this rectangular basin was hewn from solid granite using iron tools and served as both a royal water supply and a ceremonial bathing pool associated with the legendary Queen of Sheba. Stone-carved channels directed seasonal rainwater from surrounding hillsides into the reservoir through a series of settling basins that removed sediment before the water entered the main pool. Steps carved into the rock walls allowed access at varying water levels throughout the dry season, while overflow channels prevented flooding during heavy monsoon rains. The reservoir remains in use today—over 1,700 years after its construction—serving the modern city of Aksum as a water source and gathering place, making it one of the longest continuously used water infrastructure systems in Africa.",
+              rarity: "epic",
+              historicalPeriod: "Aksumite Period (300-600 CE)",
+              significance: "Rock-cut reservoir still in use after 1,700 years; associated with the Queen of Sheba legend",
+              yearBCE: -350,
+              category: "dam"
+            },
+            {
+              id: "dungur-palace-water",
+              name: "Dungur Palace Water System",
+              description: "The Dungur Palace, identified by archaeologists as a major Aksumite elite residence dating to the 6th–7th century CE, featured an elaborate integrated water management system that rivaled contemporary Roman and Persian facilities. The palace complex covered approximately 3,000 square meters and incorporated stone-lined drainage channels beneath its floors that collected rainwater from the building's flat roofs and courtyard surfaces, directing it to underground cisterns for storage. Separate channels managed wastewater from kitchen and bathing areas, routing it away from the living quarters through carefully graded stone conduits. The system included a sophisticated separation of clean water collection from wastewater disposal—a sanitary engineering principle that many contemporary civilizations had not yet adopted. Archaeological excavations revealed terracotta pipe segments and stone-carved junction boxes that allowed maintenance access to the underground drainage network.",
+              rarity: "rare",
+              historicalPeriod: "Aksumite Period (500-700 CE)",
+              significance: "3,000 m² palace with integrated rainwater collection and wastewater separation; advanced for its era",
+              yearBCE: -600,
+              category: "sanitation"
+            },
+            {
+              id: "aksumite-cisterns",
+              name: "Aksumite Cistern Engineering",
+              description: "Throughout the Aksumite highlands, engineers carved extensive underground cistern networks from the local volcanic tuff and basalt rock, creating reliable water storage in a region with highly seasonal rainfall patterns. These cisterns ranged from small household installations holding 5,000–10,000 liters to large community reservoirs capable of storing over 100,000 liters through the 6-month dry season. The cisterns featured carved intake channels with stone grates to filter debris, plastered interior walls to prevent seepage, and narrow openings at the surface to minimize evaporation—critical in the semi-arid highland climate where daytime temperatures can exceed 30°C. Some cisterns were interconnected through underground channels, creating networked storage systems that distributed water across neighborhoods and allowed overflow from full cisterns to fill those still below capacity. This technology spread throughout the Ethiopian highlands and influenced water management practices in the region for over a millennium.",
+              rarity: "rare",
+              historicalPeriod: "Aksumite Period (200-800 CE)",
+              significance: "Underground cistern networks storing 100,000+ liters; influenced Ethiopian water engineering for over 1,000 years",
+              yearBCE: -400,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "tiwanaku-empire",
+      name: "Tiwanaku Empire",
+      description: "The Tiwanaku Empire (300–1000 CE) arose on the harsh altiplano surrounding Lake Titicaca at an elevation of 3,812 meters—the world's highest navigable lake—in modern-day Bolivia. Despite the extreme altitude, freezing temperatures, and limited rainfall, Tiwanaku engineers developed the suka kollu (raised field) agricultural system that was up to 10 times more productive than modern dry farming techniques in the same region. At its peak around 700 CE, the empire's influence extended across 600,000 square kilometers of the Andean highlands, supporting an estimated 365,000–1,000,000 people through ingenious water management that turned one of Earth's most challenging environments into productive agricultural land. The capital city of Tiwanaku itself was a planned urban center with stone-lined aqueducts, monumental temple complexes with sophisticated drainage, and residential areas served by channeled spring water—all constructed at an altitude where most modern cities struggle to function.",
+      position: [-20, 0, 6],
+      color: "#4DB6AC",
+      era: "ancient",
+      dateRange: "300-1000 CE",
+      locations: [
+        {
+          id: "tiwanaku-site",
+          name: "Tiwanaku",
+          description: "Capital of the Tiwanaku Empire on the shores of Lake Titicaca",
+          historicalContext: "Built at 3,812 meters elevation, one of the highest urban centers in the ancient world",
+          coordinates: { lat: -16.5546, lng: -68.6738 },
+          artifacts: [
+            {
+              id: "suka-kollus",
+              name: "Suka Kollus (Raised Field Agriculture)",
+              description: "The suka kollu system was the Tiwanaku Empire's most revolutionary agricultural innovation, consisting of raised planting platforms 5–15 meters wide and up to 200 meters long, elevated 1 meter above the surrounding terrain and separated by water-filled channels 2–4 meters wide. The channels served multiple critical functions at the extreme 3,812-meter altitude: water absorbed solar heat during the day and released it as thermal radiation at night, protecting crops from the devastating frosts that regularly destroy conventional agriculture on the altiplano. Nutrient-rich sediment accumulated in the channels and was periodically dredged and spread on the planting surfaces as fertilizer, while aquatic plants and fish in the channels provided additional food sources. Modern experimental reconstructions by archaeologist Clark Erickson demonstrated that suka kollus produced yields of 10 tonnes per hectare—compared to just 1–2 tonnes from conventional dry farming in the same region—without any chemical fertilizers or irrigation pumps. At the empire's peak, an estimated 120,000 hectares of raised fields surrounded Lake Titicaca, producing enough food to sustain the entire Tiwanaku population.",
+              rarity: "legendary",
+              historicalPeriod: "Tiwanaku Period (300-1000 CE)",
+              significance: "10x more productive than modern dry farming; 120,000 hectares of raised fields fed the entire empire without mechanical aid",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "tiwanaku-aqueducts",
+              name: "Tiwanaku Urban Aqueducts",
+              description: "The capital city of Tiwanaku featured a network of stone-lined aqueducts that brought fresh spring water from the surrounding mountains to the urban core, serving a population estimated at 20,000–40,000 residents. These channels were constructed from precisely cut andesite and sandstone blocks, fitted together without mortar using a technique of interlocking copper clamps that made the joints watertight and earthquake-resistant. The aqueduct system included settling basins where sediment was removed before water entered the city's distribution network, and overflow channels that directed excess water to agricultural fields on the city's periphery. The monumental Akapana pyramid—the largest structure at Tiwanaku—incorporated an internal water circulation system with channels carved into each of its seven terraced levels, creating a cascading water feature that may have had both practical drainage and ceremonial significance. Archaeological evidence suggests the system operated continuously for over 500 years, demonstrating remarkable engineering durability at extreme altitude.",
+              rarity: "epic",
+              historicalPeriod: "Tiwanaku Period (400-900 CE)",
+              significance: "Stone aqueducts with copper-clamped joints served 20,000-40,000 residents at 3,812m elevation for 500+ years",
+              yearBCE: -600,
+              category: "aqueduct"
+            },
+            {
+              id: "titicaca-water-management",
+              name: "Lake Titicaca Water Management",
+              description: "Managing the world's highest navigable lake at 3,812 meters elevation required the Tiwanaku to develop unique water engineering approaches adapted to extreme altitude conditions. Engineers constructed stone-reinforced canal networks connecting Lake Titicaca's shoreline to inland agricultural zones, using the lake's relatively stable water temperature to moderate the harsh altiplano climate along the canal corridors. Raised causeways built across shallow lake margins created controlled wetland zones where totora reeds were cultivated for boat-building, construction material, and food. The Tiwanaku also managed fish populations in the lake through constructed stone weirs and breeding pools, supplementing agricultural food production. This integrated lake management system sustained communities across the Titicaca Basin for over 700 years, creating one of the densest pre-Columbian population concentrations in South America outside of coastal Peru.",
+              rarity: "rare",
+              historicalPeriod: "Tiwanaku Period (300-1000 CE)",
+              significance: "Managed the world's highest navigable lake for agriculture and aquaculture; supported dense altiplano populations for 700 years",
+              yearBCE: -500,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "chimu-empire",
+      name: "Chimú Empire",
+      description: "The Chimú Empire (900–1470 CE) dominated the arid northern coast of Peru, building the largest adobe city in the Americas—Chan Chan—which at its peak housed 60,000–100,000 residents in one of the driest deserts on Earth. The Chimú inherited and vastly expanded the hydraulic engineering traditions of their Moche predecessors, constructing the remarkable La Cumbre Intervalley Canal that carried water 80 kilometers across barren desert between the Chicama and Moche river valleys. Their engineers developed innovative solutions for desert water management including walk-in wells (puquios) that tapped the water table, sunken gardens (wachaques) that used capillary action to irrigate crops below ground level, and sophisticated filtration galleries that cleaned sediment from irrigation water before it reached agricultural fields. The Chimú's mastery of desert water engineering was so renowned that when the Inca Empire conquered them in 1470 CE, the Inca deliberately relocated Chimú hydraulic engineers to Cusco to apply their expertise throughout the Inca realm.",
+      position: [-18, 0, 8],
+      color: "#E65100",
+      era: "medieval",
+      dateRange: "900-1470 CE",
+      locations: [
+        {
+          id: "chan-chan",
+          name: "Chan Chan",
+          description: "Capital of the Chimú Empire and largest adobe city in the Americas",
+          historicalContext: "Chan Chan covered 20 km² in the bone-dry Moche Valley, requiring extraordinary water engineering to sustain its population",
+          coordinates: { lat: -8.1043, lng: -79.0746 },
+          artifacts: [
+            {
+              id: "la-cumbre-canal",
+              name: "La Cumbre Intervalley Canal",
+              description: "The La Cumbre Canal was one of the most ambitious hydraulic engineering projects in pre-Columbian South America, stretching approximately 80 kilometers across the Atacama-adjacent desert to transfer water from the Chicama River valley to the Moche River valley where Chan Chan was located. Constructed between 1050 and 1300 CE, the canal traversed extremely challenging terrain including rocky ridges, sand dunes, and steep ravines, requiring the construction of stone-lined channels, elevated aqueduct sections, and at least three major tunnel segments cut through solid rock. The canal maintained a precise gradient of approximately 0.1% over its entire length, requiring sophisticated surveying techniques that modern engineers have found remarkably accurate. Along its route, the Chimú built settling basins, distribution junctions, and fortified guard posts to protect this critical water lifeline, as the canal represented the primary water supply augmenting Chan Chan's inadequate local water sources. When the Inca besieged Chan Chan in the 1460s, they reportedly cut the La Cumbre Canal to force the city's surrender—recognizing that controlling water meant controlling the empire.",
+              rarity: "legendary",
+              historicalPeriod: "Chimú Period (1050-1300 CE)",
+              significance: "80 km intervalley canal across desert; one of the longest pre-Columbian canals; its severing by Inca forces led to Chan Chan's fall",
+              yearBCE: -1100,
+              category: "canal"
+            },
+            {
+              id: "chan-chan-water-distribution",
+              name: "Chan Chan Urban Water Distribution",
+              description: "Chan Chan, covering approximately 20 square kilometers, was the largest adobe city in the Americas and required innovative water solutions to sustain its estimated 60,000–100,000 residents in the hyper-arid Moche Valley (annual rainfall under 10mm). The Chimú developed walk-in wells called puquios—deep rectangular excavations lined with stone and adobe that reached the water table 10–15 meters below the surface, providing reliable groundwater access independent of seasonal river flow. Adjacent to the wells, the Chimú constructed wachaques (sunken gardens)—large rectangular depressions excavated to within 1–2 meters of the water table, where crops grew using capillary moisture rising through the soil without surface irrigation. The nine royal compounds (ciudadelas) of Chan Chan each contained their own wells, reservoirs, and bathing platforms, while an elaborate system of stone-lined channels distributed water from the La Cumbre Canal to gardens, kitchens, and workshop areas throughout the city. This multi-layered water infrastructure allowed Chan Chan to flourish for over 500 years in a desert environment that receives virtually no rainfall.",
+              rarity: "epic",
+              historicalPeriod: "Chimú Period (900-1470 CE)",
+              significance: "Sustained 60,000-100,000 residents in a desert with under 10mm annual rainfall using walk-in wells and sunken gardens",
+              yearBCE: -1000,
+              category: "sanitation"
+            },
+            {
+              id: "chimu-filtration-galleries",
+              name: "Chimú Filtration Galleries",
+              description: "The Chimú developed underground filtration galleries—horizontal tunnels lined with graded gravel and sand layers—to remove sediment and organic matter from irrigation water before it reached agricultural fields and urban distribution networks. These galleries were typically 1.5–2 meters in height, allowing maintenance workers to enter for cleaning and repair, and extended 50–200 meters along the margins of main irrigation canals. Water percolated laterally through carefully layered filtration media of progressively finer gravel, coarse sand, and fine sand, emerging from collection channels on the downstream side substantially clearer than the turbid canal water entering the gallery. This filtration was critical because the Chicama and Moche rivers carry heavy sediment loads during seasonal floods, and unfiltered water would rapidly clog the narrow secondary channels serving individual agricultural plots. The technology demonstrated an empirical understanding of particle filtration principles that would not be formally described by Western science until the 18th century.",
+              rarity: "rare",
+              historicalPeriod: "Chimú Period (1000-1400 CE)",
+              significance: "Underground filtration galleries removing sediment; demonstrated empirical filtration principles centuries before Western science",
+              yearBCE: -1100,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "wari-empire",
+      name: "Wari Empire",
+      description: "The Wari Empire (500–1000 CE) was the first expansionist state to unify much of the Peruvian highlands, predating the more famous Inca Empire by over 400 years and establishing many of the administrative and engineering traditions the Inca would later adopt. From their capital near modern Ayacucho at 2,700 meters elevation, the Wari controlled a territory stretching over 1,300 kilometers along the Andean cordillera, administering diverse ecological zones from coastal deserts to high-altitude grasslands through a network of planned administrative cities. Their most impressive planned settlement, Pikillacta near Cusco, was a precisely laid-out city of over 700 structures covering 47 hectares, served by an integrated water supply and drainage system that supported an estimated 10,000 residents. The Wari pioneered highland terrace agriculture with stone-lined irrigation canals that would later be refined and expanded by the Inca, making them arguably the original architects of Andean highland water engineering.",
+      position: [-19, 0, 7],
+      color: "#AD1457",
+      era: "ancient",
+      dateRange: "500-1000 CE",
+      locations: [
+        {
+          id: "pikillacta",
+          name: "Pikillacta",
+          description: "Major Wari administrative city near modern Cusco",
+          historicalContext: "One of the most precisely planned cities in pre-Columbian South America, covering 47 hectares with 700+ structures",
+          coordinates: { lat: -13.6141, lng: -71.7140 },
+          artifacts: [
+            {
+              id: "wari-terrace-irrigation",
+              name: "Wari Highland Terrace Irrigation",
+              description: "Wari engineers constructed elaborate agricultural terraces across the steep Andean hillsides, transforming otherwise unusable slopes into productive farmland through a combination of stone-walled platforms and integrated irrigation channels. These terraces featured stone-lined canals that captured water from highland springs and seasonal streams, distributing it through a gravity-fed network across multiple terrace levels with stone drop structures controlling flow velocity on steep gradients. Each terrace platform was carefully constructed with layers of gravel for drainage, subsoil for moisture retention, and topsoil for planting—an engineered soil profile that prevented waterlogging while maintaining adequate moisture for crops at elevations between 2,500 and 4,000 meters. The Wari terrace systems covered thousands of hectares across the highlands and represented the first large-scale implementation of irrigated terrace agriculture in the Andes, establishing techniques that the Inca Empire would later adopt and expand across their much larger territory. Archaeological evidence from sites like Cerro Baúl shows that Wari terraces supported diverse crops including maize, quinoa, and potatoes, along with chicha beer production facilities that required reliable water supplies.",
+              rarity: "epic",
+              historicalPeriod: "Wari Period (600-900 CE)",
+              significance: "First large-scale Andean terrace irrigation; precursor to Inca terrace systems across thousands of hectares",
+              yearBCE: -700,
+              category: "irrigation"
+            },
+            {
+              id: "pikillacta-water-system",
+              name: "Pikillacta Urban Water System",
+              description: "Pikillacta was one of the most precisely planned cities in pre-Columbian South America, and its integrated water supply and drainage system reflects the sophisticated urban engineering capabilities of the Wari state. The city's 47-hectare rectangular grid layout incorporated stone-lined channels running beneath the main streets, collecting rainwater from building roofs and courtyard surfaces and directing it to central drainage conduits that exited the city walls. Fresh water was supplied from springs located at higher elevation through a stone-and-mortar aqueduct approximately 2 kilometers long, feeding distribution basins that served the city's estimated 10,000 residents in residential compounds, administrative buildings, and ceremonial plazas. The drainage system was designed to handle the intense seasonal rains of the highland wet season (November–March) while maintaining dry conditions within the city's enclosed compounds during storms. The sophistication of Pikillacta's water infrastructure suggests centralized state planning and engineering expertise that would not be matched in the region until the Inca built Cusco five centuries later.",
+              rarity: "rare",
+              historicalPeriod: "Wari Period (600-1000 CE)",
+              significance: "Integrated water system for 10,000+ residents; most precisely planned pre-Columbian highland city",
+              yearBCE: -700,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "joseon-korea",
+      name: "Joseon Dynasty Korea",
+      description: "The Joseon Dynasty (1392–1897 CE) was one of the longest-ruling monarchies in world history, governing the Korean Peninsula for over five centuries and producing remarkable innovations in water science and engineering. Under King Sejong the Great (r. 1418–1450), Korea became the first nation to develop standardized rain measurement with the cheugugi rain gauge in 1441—predating European equivalents by nearly 200 years—establishing a nationwide meteorological observation network that informed agricultural planning and flood preparedness. The dynasty's capital, Hanyang (modern Seoul), was designed according to pungsu (geomancy) principles that integrated natural waterways into urban planning, with the Cheonggyecheon stream channelized and lined with stone to manage flooding while providing water for the city's 200,000+ residents. Joseon engineers also constructed the Hwaseong Fortress (1794–1796), a UNESCO World Heritage Site that incorporated sophisticated moats, wells, reservoirs, and drainage systems into its defensive architecture, demonstrating the dynasty's integration of hydraulic engineering with military architecture.",
+      position: [15, 0, -2],
+      color: "#1B5E20",
+      era: "medieval",
+      dateRange: "1392-1897 CE",
+      locations: [
+        {
+          id: "seoul-hanyang",
+          name: "Seoul (Hanyang)",
+          description: "Capital of the Joseon Dynasty for over 500 years",
+          historicalContext: "Designed according to geomantic principles integrating natural waterways into urban planning for 200,000+ residents",
+          coordinates: { lat: 37.5665, lng: 126.9780 },
+          artifacts: [
+            {
+              id: "cheonggyecheon-stream",
+              name: "Cheonggyecheon Stream Restoration",
+              description: "The Cheonggyecheon stream runs 10.9 kilometers through the heart of Seoul, and its engineering history spans the entire Joseon Dynasty from the 14th through 19th centuries. Joseon engineers channelized this natural waterway with stone-lined embankments up to 3 meters high, constructing 24 stone bridges across its width and building stepped stone walls that could accommodate water level variations of over 2 meters during monsoon flooding. The stream served as Seoul's primary drainage artery, collecting stormwater and wastewater from the city's northern and southern districts and channeling it eastward to the Han River, while stone weirs at intervals created pools used for laundering, vegetable washing, and fire-fighting water reserves. During the reign of King Yeongjo (1724–1776), a major dredging and reconstruction project mobilized over 200,000 laborers to widen and deepen the channel after catastrophic flooding had devastated the capital. The stream's stone infrastructure survived for over 500 years before being covered by a highway in 1958, then was spectacularly restored as an urban waterway in 2005 in one of the world's most celebrated urban renewal projects.",
+              rarity: "epic",
+              historicalPeriod: "Joseon Period (1394-1897 CE)",
+              significance: "10.9 km stone-lined urban stream with 24 bridges; managed flooding for 500+ years; iconic 2005 restoration",
+              yearBCE: -1394,
+              category: "canal"
+            },
+            {
+              id: "hwaseong-fortress-water",
+              name: "Hwaseong Fortress Water Systems",
+              description: "Hwaseong Fortress, constructed between 1794 and 1796 in Suwon under King Jeongjo, is a UNESCO World Heritage Site that represents the pinnacle of Joseon military hydraulic engineering. The 5.7-kilometer fortress wall incorporated a continuous moat system fed by diverted stream water, with sluice gates at strategic points that could flood approach corridors to impede attackers. Within the fortress, engineers constructed multiple deep wells (some reaching 15+ meters to the water table), rainwater collection cisterns at each guard tower, and underground stone-lined channels draining the interior streets and parade grounds. The Hwahongmun Water Gate—a seven-arched stone bridge built into the fortress wall where the Suwoncheon stream passes through—served simultaneously as a flood control structure, defensive position, and aesthetic centerpiece, with its arches designed to accelerate water flow during floods while preventing enemy passage. The fortress demonstrated the Joseon integration of practical hydraulic engineering with Confucian ideals of harmonious design.",
+              rarity: "rare",
+              historicalPeriod: "Late Joseon Period (1796 CE)",
+              significance: "UNESCO World Heritage fortress with integrated moats, wells, cisterns, and the iconic Hwahongmun Water Gate",
+              yearBCE: -1796,
+              category: "sanitation"
+            },
+            {
+              id: "cheugugi-rain-gauge",
+              name: "Joseon Rain Gauge (Cheugugi)",
+              description: "In 1441 CE, during the reign of King Sejong the Great, Korean scientists developed the cheugugi—the world's first standardized rain gauge—predating the earliest European rain gauges (by Benedetto Castelli in Italy, 1639) by nearly 200 years. The device consisted of a cylindrical bronze or iron vessel 30 cm tall and 15 cm in diameter, placed on a stone pedestal at standardized height, with graduated markings on a measuring stick used to record rainfall depth after each precipitation event. King Sejong distributed cheugugi instruments to every provincial government office across the Korean Peninsula, establishing a nationwide meteorological observation network that reported rainfall data to the central government at regular intervals. This systematic data collection enabled the Joseon court to predict agricultural yields, prepare for droughts and floods, calibrate tax assessments based on actual growing conditions, and allocate emergency grain reserves to regions experiencing poor harvests. The cheugugi system represented an unprecedented integration of scientific measurement, bureaucratic data collection, and evidence-based governance that would not be matched anywhere else in the world for two centuries.",
+              rarity: "legendary",
+              historicalPeriod: "Joseon Period (1441 CE)",
+              significance: "World's first standardized rain gauge; nationwide meteorological network 200 years before Europe; enabled evidence-based governance",
+              yearBCE: -1441,
+              category: "water-clock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "polynesian-voyaging",
+      name: "Polynesian Voyaging Civilizations",
+      description: "The Polynesian voyaging civilizations (1000 BCE–1600 CE) accomplished the most extraordinary maritime expansion in human history, colonizing virtually every habitable island across the vast Pacific Ocean—an area covering over 16 million square kilometers—using double-hulled canoes navigated by stars, currents, and wave patterns. Fresh water management was the critical limiting factor for these trans-oceanic voyages of 3,000 kilometers or more between island groups, requiring ingenious storage and conservation techniques that sustained crews of 20–80 people for weeks at sea. From their ancestral homeland in Tonga and Samoa (settled circa 900 BCE), Polynesian navigators reached the Hawaiian Islands by 400 CE, New Zealand by 1250 CE, and the remote Rapa Nui (Easter Island) by 800–1200 CE, each colonization requiring solutions to unique freshwater challenges. On the islands they settled, Polynesians developed diverse water management systems adapted to local geology and climate, from volcanic rock cisterns and spring-fed irrigation terraces to the elaborate ahu platform drainage systems that protected their monumental stone architecture from water damage.",
+      position: [25, 0, 15],
+      color: "#00BCD4",
+      era: "ancient",
+      dateRange: "1000 BCE-1600 CE",
+      locations: [
+        {
+          id: "tonga-homeland",
+          name: "Tonga",
+          description: "Ancestral homeland of Polynesian voyaging culture",
+          historicalContext: "One of the first island groups settled by Lapita peoples circa 900 BCE, becoming the staging ground for Pacific exploration",
+          coordinates: { lat: -21.1790, lng: -175.1982 },
+          artifacts: [
+            {
+              id: "voyaging-water-storage",
+              name: "Voyaging Water Storage Systems",
+              description: "Polynesian trans-oceanic voyages of 3,000 kilometers or more required sophisticated freshwater storage and rationing systems that represented the difference between successful colonization and death at sea. Double-hulled voyaging canoes (vaka hourua) carried freshwater in a combination of sealed bamboo tubes (each holding 2–5 liters), hollowed-out coconut shells plugged with fiber stoppers, and large gourd vessels (ipu) lashed securely between the hulls. A typical colonization voyage carrying 30–80 people required 500–2,000 liters of freshwater for a 2–4 week crossing, supplemented by rainwater collected in sail-cloth catchments and the liquid from green drinking coconuts carried as both food and emergency water reserves. Navigators developed sophisticated water rationing protocols based on estimated voyage duration and weather patterns, with the navigator-priest controlling water distribution and reducing rations when calms extended travel time. Some voyaging traditions also carried water-purifying plants and used evaporation techniques with plant-fiber wicks to desalinate seawater in emergencies, demonstrating empirical knowledge of water purification principles.",
+              rarity: "epic",
+              historicalPeriod: "Polynesian Expansion (500 BCE-1300 CE)",
+              significance: "Enabled colonization of the Pacific Ocean across 16 million km²; sophisticated rationing sustained crews for weeks at sea",
+              yearBCE: 500,
+              category: "sanitation"
+            },
+            {
+              id: "tongan-water-management",
+              name: "Tongan Water Management",
+              description: "The Tongan archipelago's Tu'i Tonga maritime empire developed specialized water management systems adapted to the challenges of low-lying coral and volcanic islands where surface freshwater is scarce. Royal water systems included stone-lined bathing pools (vai) reserved for the Tu'i Tonga paramount chief and aristocratic families, fed by springs channeled through underground coral-rock conduits. Commoner communities constructed communal water collection points where rainwater was directed from village rooftops and cleared limestone surfaces into natural sinkholes and excavated storage pits lined with compacted clay. On the main island of Tongatapu, the Tongans developed a network of freshwater wells sunk into the Ghyben-Herzberg freshwater lens floating atop saltwater within the coral limestone, demonstrating empirical understanding of island hydrology. These water management practices were fundamental to supporting the Tongan population of approximately 40,000 people across 170+ islands, many of which had no permanent surface water sources.",
+              rarity: "rare",
+              historicalPeriod: "Tu'i Tonga Period (950-1500 CE)",
+              significance: "Sustained 40,000+ people across 170 islands; empirical understanding of freshwater lens hydrology on coral atolls",
+              yearBCE: -1000,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "rapa-nui",
+          name: "Rapa Nui (Easter Island)",
+          description: "Most remote inhabited island in the Pacific with unique water challenges",
+          historicalContext: "Settled by Polynesian voyagers circa 800-1200 CE, 3,500 km from the nearest inhabited island",
+          coordinates: { lat: -27.1127, lng: -109.3497 },
+          artifacts: [
+            {
+              id: "ahu-platform-drainage",
+              name: "Ahu Platform Drainage",
+              description: "The monumental ahu platforms of Rapa Nui—massive stone structures supporting the famous moai statues—incorporated sophisticated internal drainage systems that have preserved these structures for over 800 years despite the island's heavy rainfall and salt-laden marine winds. Each ahu was constructed with a carefully layered interior of fitted basalt blocks, coral rubble fill, and graded gravel that functioned as a French drain system, allowing rainwater to percolate downward and outward rather than pooling within the structure where freeze-thaw cycles could cause cracking. Surface channels carved into the platform's upper stones directed rainwater away from the moai statue foundations, while weep holes in the seaward walls allowed internal moisture to escape. The largest ahu, Tongariki, stretches 100 meters in length and supports 15 moai statues weighing up to 86 tonnes each, requiring drainage engineering capable of managing enormous hydrostatic loads during storms. Archaeological analysis suggests the Rapa Nui builders understood that water management was essential to structural longevity, as ahu without proper drainage deteriorated significantly faster than those with engineered drainage systems.",
+              rarity: "rare",
+              historicalPeriod: "Rapa Nui Period (1000-1500 CE)",
+              significance: "Internal drainage preserved 100m-long stone platforms and 86-tonne moai statues for 800+ years",
+              yearBCE: -1200,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "southern-african-kingdoms",
+      name: "Swazi/Zulu Southern African Kingdoms",
+      description: "The Southern African kingdoms of the Swazi, Zulu, and related Nguni-speaking peoples (1400–1900 CE) developed practical water management systems adapted to the subtropical savanna landscape of modern-day KwaZulu-Natal, eSwatini, and surrounding regions. These societies, organized around cattle-keeping and mixed agriculture, engineered their homestead (umuzi) layouts and cattle enclosure (kraal) designs to manage seasonal rainfall that ranges from 500–1,200 mm annually, concentrated in intense summer thunderstorms between October and March. The Zulu kingdom under Shaka (r. 1816–1828) organized settlement patterns along river systems to maximize water access for cattle herds numbering in the tens of thousands, while the circular kraal design served dual purposes as livestock enclosure and rainwater collection system. River ford engineering—constructing stone-reinforced crossing points along major trade and migration routes—facilitated the movement of people, cattle, and trade goods across the region's numerous rivers, which could swell from fordable streams to raging torrents during summer rains.",
+      position: [-4, 0, -6],
+      color: "#795548",
+      era: "medieval",
+      dateRange: "1400-1900 CE",
+      locations: [
+        {
+          id: "kwazulu-natal",
+          name: "KwaZulu-Natal",
+          description: "Heartland of the Zulu kingdom and related Nguni-speaking peoples",
+          historicalContext: "Subtropical savanna region where cattle-keeping societies developed practical water management for herds and agriculture",
+          coordinates: { lat: -28.5306, lng: 30.8958 },
+          artifacts: [
+            {
+              id: "cattle-kraal-water",
+              name: "Cattle Kraal Water Management",
+              description: "The circular cattle kraal (isibaya) was far more than a simple livestock enclosure—it was an ingeniously designed water management system that directed seasonal rainfall runoff to collection points while keeping cattle on dry ground. Kraals were constructed on slight slopes with the entrance positioned at the lowest point, where compacted cattle dung and trampled earth created an impermeable surface that channeled rainwater toward external collection ditches or natural depressions used as drinking troughs. The circular layout, typically 30–50 meters in diameter, maximized the ratio of collection area to perimeter, efficiently concentrating rainfall from an area of 700–2,000 square meters toward designated drainage exits. In larger royal kraals housing hundreds of cattle, multiple drainage channels radiated outward from the enclosure, directing water to storage pits that provided drinking water for livestock during dry periods between summer rainstorms. This integrated approach to combining animal husbandry with water harvesting reflected a deep understanding of local hydrology developed over centuries of cattle-keeping in the subtropical savanna environment.",
+              rarity: "rare",
+              historicalPeriod: "Southern African Kingdoms (1400-1900 CE)",
+              significance: "Circular kraal design harvested rainfall from 700-2,000 m² for cattle; integrated livestock management with water collection",
+              yearBCE: -1500,
+              category: "irrigation"
+            },
+            {
+              id: "umuzi-drainage",
+              name: "Umuzi Drainage Systems",
+              description: "The umuzi (homestead) was the fundamental settlement unit of Nguni-speaking peoples, and its layout reflected centuries of empirical knowledge about managing water flow across the sloped terrain of the KwaZulu-Natal landscape. Each umuzi was sited on a hillside with the main hut (indlu) positioned upslope and subsidiary structures arranged in a downward arc, creating natural drainage pathways between buildings that directed rainwater away from living spaces and toward the central cattle kraal below. The floors of each beehive-shaped hut were constructed from a mixture of ant-heap clay and cattle dung, polished to a smooth, water-resistant surface that shed rainfall dripping through the thatch roof toward the doorway and external drainage channels. Pathways between huts were graded and sometimes lined with flat stones to prevent erosion during intense summer thunderstorms that can deliver 50+ mm of rainfall in a single hour. The overall homestead layout functioned as an integrated drainage system where every structure and pathway contributed to managing water flow, preventing erosion, and maintaining habitable conditions during the wet season—a vernacular engineering tradition passed through generations without written documentation.",
+              rarity: "common",
+              historicalPeriod: "Southern African Kingdoms (1400-1900 CE)",
+              significance: "Vernacular drainage engineering managing intense tropical rainfall; every homestead element contributed to water management",
+              yearBCE: -1500,
+              category: "sanitation"
+            },
+            {
+              id: "river-ford-engineering",
+              name: "River Ford Engineering",
+              description: "Southern African communities constructed stone-reinforced river crossings at strategic points along major trade and migration routes, enabling the movement of people and cattle across rivers that could transform from gentle streams to powerful torrents during the summer rainy season. These ford structures consisted of lines of large boulders and flat stones placed across shallow river sections, creating a stable walking surface above the normal water level while allowing flood waters to pass over and between the stones without washing them away. Ford sites were carefully selected at natural wide, shallow points in rivers where bedrock was close to the surface, and the stone reinforcements were positioned to break the current's force and create calmer passages for cattle crossings. Some fords incorporated wing walls—lines of stones extending upstream at angles—that deflected the main current away from the crossing point, reducing water velocity in the ford zone by an estimated 30–40%. These engineered crossings were critical infrastructure for the cattle-based economy, as herds of hundreds or thousands of animals needed to cross rivers during seasonal migrations between summer and winter grazing areas, and a failed crossing could result in devastating livestock losses.",
+              rarity: "rare",
+              historicalPeriod: "Southern African Kingdoms (1500-1900 CE)",
+              significance: "Stone-reinforced river crossings enabling cattle trade and migration; wing walls reduced current velocity by 30-40%",
+              yearBCE: -1600,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "garamantes",
+      name: "Garamantes",
+      description: "The Garamantes (500 BCE–700 CE) were a Saharan civilization based in the Fezzan region of modern-day Libya, centered on their capital Garama (modern Germa). Far from being simple desert nomads, they built a sophisticated urban civilization sustaining over 100,000 people in one of the harshest environments on Earth—the central Sahara Desert, where surface water is virtually nonexistent. Their greatest achievement was the construction of over 600 kilometers of foggara (qanat-like) underground water tunnels, which tapped fossil aquifers deep beneath the desert surface and transported water to irrigated fields, gardens, and urban centers without any evaporation losses. At their peak around 200 CE, the Garamantes controlled a territory spanning roughly 250,000 square kilometers and operated a complex trade network linking sub-Saharan Africa with the Roman Mediterranean, exchanging gold, slaves, salt, and exotic animals. Roman authors including Pliny the Elder and Herodotus documented this remarkable desert civilization, which ultimately declined when the fossil aquifers were depleted after over a millennium of extraction.",
+      position: [1, 0, -3],
+      color: "#FFA726",
+      era: "ancient",
+      dateRange: "500 BCE-700 CE",
+      locations: [
+        {
+          id: "garama-germa",
+          name: "Garama (Germa)",
+          description: "Capital of the Garamantes civilization in the Fezzan desert",
+          historicalContext: "Urban center sustained by underground water tunnels in the heart of the Sahara Desert",
+          coordinates: { lat: 26.5547, lng: 13.0789 },
+          artifacts: [
+            {
+              id: "foggara-tunnels",
+              name: "Foggara Underground Tunnels",
+              description: "Qanat-like subterranean water tunnels totaling over 600 kilometers beneath the Sahara Desert, tapping into fossil aquifers at depths of 30–40 meters and channeling water to the surface through gravity-fed conduits. Each foggara consisted of a gently sloping underground channel connecting a series of vertical access shafts spaced 10–20 meters apart, allowing construction, maintenance, and ventilation. The system sustained a population of over 100,000 people in the deep desert for over 1,000 years, irrigating fields of wheat, barley, figs, grapes, and olives in an environment receiving less than 20 mm of annual rainfall. Archaeological surveys by Professor David Mattingly's team from the University of Leicester have mapped over 750 individual foggaras across the Fezzan, representing one of the largest pre-industrial water extraction systems ever constructed.",
+              rarity: "legendary",
+              historicalPeriod: "Garamantian Period (500 BCE-700 CE)",
+              significance: "Over 600 km of underground tunnels sustained 100,000+ people in the Sahara—one of humanity's greatest hydraulic achievements",
+              yearBCE: 500,
+              category: "irrigation"
+            },
+            {
+              id: "garamantes-oasis-agriculture",
+              name: "Garamantes Oasis Agriculture",
+              description: "An extensive irrigated farming system in the deep Sahara Desert, using water drawn from underground foggara tunnels to cultivate over 3,000 hectares of arable land in the Wadi al-Ajal valley. The Garamantes grew Mediterranean crops including wheat, barley, dates, figs, olives, and grapes in a region where natural agriculture is impossible, creating artificial oases that supported dense urban settlements. Sophisticated water distribution networks divided the foggara outflow among fields, orchards, and gardens using stone-lined channels and clay distribution basins. This agricultural system demonstrated that even the most arid environments on Earth could be transformed into productive farmland through ingenious hydraulic engineering.",
+              rarity: "epic",
+              historicalPeriod: "Garamantian Period (500 BCE-700 CE)",
+              significance: "Irrigated 3,000+ hectares of desert farmland using fossil groundwater in one of Earth's driest regions",
+              yearBCE: 400,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "mapuche",
+      name: "Mapuche",
+      description: "The Mapuche people (500 CE–Present) of south-central Chile and western Argentina represent one of the most resilient indigenous civilizations in the Americas, famously resisting both Inca and Spanish conquest for over 300 years. Inhabiting the temperate rainforests and wetlands of Araucanía, a region receiving 1,200–2,500 mm of annual rainfall, the Mapuche developed sophisticated wetland management systems that transformed waterlogged terrain into productive agricultural land. Their engineering approach was fundamentally different from arid-region civilizations—rather than bringing water to dry land, they managed excess water to create cultivable spaces within naturally saturated landscapes. The Mapuche constructed kuel (ceremonial earth mounds) that served dual purposes as ritual gathering places and functional water management structures, integrating drainage channels and raised platforms that controlled water flow across the landscape. At their peak, an estimated 1–2 million Mapuche people inhabited a territory spanning over 100,000 square kilometers between the Biobío and Toltén rivers, sustaining themselves through a combination of wetland agriculture, fishing, and forest management.",
+      position: [-22, 0, 8],
+      color: "#43A047",
+      era: "medieval",
+      dateRange: "500 CE-Present",
+      locations: [
+        {
+          id: "araucania",
+          name: "Araucanía",
+          description: "Heartland of Mapuche civilization in south-central Chile",
+          historicalContext: "Temperate rainforest and wetland region where the Mapuche developed unique water management adapted to excess rainfall",
+          coordinates: { lat: -38.7396, lng: -72.5903 },
+          artifacts: [
+            {
+              id: "kuel-water-mounds",
+              name: "Kuel Water Management Mounds",
+              description: "Ceremonial and functional earth mounds (kuel) integrating water drainage and wetland management into monumental architecture. These raised platforms, typically 10–15 meters in diameter and 2–5 meters high, were constructed from compacted earth and served as both ritual gathering sites and elevated dry-ground refuges in seasonally flooded landscapes. Drainage channels radiating from the mound bases directed excess rainfall and surface runoff away from inhabited areas, while the raised mound surfaces provided year-round habitable space above the waterlogged terrain. Archaeological surveys in the Purén-Lumaco valley have identified over 300 kuel sites, suggesting a coordinated regional approach to landscape water management spanning centuries of continuous use.",
+              rarity: "rare",
+              historicalPeriod: "Mapuche Period (500 CE-Present)",
+              significance: "Over 300 ceremonial mounds integrated water drainage and wetland management across the Araucanía region",
+              yearBCE: -800,
+              category: "irrigation"
+            },
+            {
+              id: "mapuche-wetland-agriculture",
+              name: "Mapuche Wetland Agriculture",
+              description: "A managed wetland cultivation system transforming waterlogged terrain into productive agricultural land through a combination of raised fields, drainage ditches, and controlled flooding. The Mapuche constructed linear ridged fields (camellones) by piling soil from excavated channels into elevated planting surfaces 1–2 meters wide and 30–50 centimeters above the water table, creating alternating strips of dry cultivable land and water-filled channels. The channels served multiple functions: draining excess water during heavy rains, retaining moisture during drier periods, providing habitat for fish and edible aquatic plants, and accumulating nutrient-rich sediment that could be periodically scooped onto the raised beds as fertilizer. This system supported cultivation of potatoes, quinoa, and other crops in areas that would otherwise be too wet for agriculture.",
+              rarity: "rare",
+              historicalPeriod: "Mapuche Period (500 CE-Present)",
+              significance: "Transformed waterlogged terrain into productive farmland using raised-field and drainage-channel systems",
+              yearBCE: -700,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "maori-new-zealand",
+      name: "Māori",
+      description: "The Māori people (1200 CE–Present) of Aotearoa/New Zealand developed remarkable water engineering systems adapted to a volcanic island environment spanning subtropical to subantarctic climates. Arriving from eastern Polynesia around 1250–1300 CE, the Māori brought tropical agricultural knowledge and adapted it to New Zealand's cooler temperate climate, developing extensive irrigation systems for kūmara (sweet potato) cultivation that pushed the crop to its southernmost global limit at approximately 44°S latitude. Their pa tuna (eel weirs) represent some of the most sophisticated aquatic harvesting structures in the Pacific, with stone and wooden weir complexes spanning rivers and wetland channels, some continuously maintained and operational for over 500 years. The Māori also engineered their famous pā (fortified hilltop villages) with integrated water supply systems including internal springs, wells, and rainwater collection, enabling these defensive positions to withstand prolonged sieges. At their peak before European contact in 1769, an estimated 100,000–200,000 Māori inhabited New Zealand, organized into iwi (tribal groups) that managed water resources across carefully defined territorial boundaries extending from mountain peaks to the sea.",
+      position: [28, 0, 18],
+      color: "#263238",
+      era: "medieval",
+      dateRange: "1200 CE-Present",
+      locations: [
+        {
+          id: "aotearoa",
+          name: "Aotearoa / New Zealand",
+          description: "Island homeland of the Māori people in the southwestern Pacific",
+          historicalContext: "Volcanic island environment where Polynesian settlers adapted tropical water engineering to temperate climates",
+          coordinates: { lat: -38.4161, lng: 176.2544 },
+          artifacts: [
+            {
+              id: "pa-tuna-eel-weirs",
+              name: "Pā Tuna Eel Weirs",
+              description: "Sophisticated stone and wooden weir structures constructed across rivers, streams, and wetland channels for harvesting tuna (freshwater eels), a staple protein source for Māori communities. These weirs featured V-shaped or funnel-shaped designs that directed migrating eels into woven flax (harakeke) traps called hīnaki, exploiting the eels' annual downstream migration to the sea for breeding. Some pā tuna complexes spanned entire river widths of 20–50 meters and incorporated multiple weir stages, fish-holding pools, and stone-lined channels that could be selectively opened or closed to regulate water flow and fish movement. Archaeological evidence from sites in the Wairarapa and Horowhenua regions shows continuous use and maintenance spanning 500+ years, with some structures still functioning into the 20th century—a testament to the durability and effectiveness of their engineering.",
+              rarity: "epic",
+              historicalPeriod: "Māori Period (1200 CE-Present)",
+              significance: "Stone and wooden eel weirs spanning rivers, some continuously operational for 500+ years",
+              yearBCE: -1300,
+              category: "dam"
+            },
+            {
+              id: "kumara-irrigation",
+              name: "Kūmara Irrigation",
+              description: "Irrigation channel systems developed by Māori horticulturalists for cultivating kūmara (sweet potato, Ipomoea batatas), the most important crop in pre-European New Zealand agriculture. These systems consisted of shallow earth channels 20–40 centimeters wide diverting water from streams and springs to raised gravel garden beds where kūmara were planted in carefully prepared mounds of sandy, free-draining soil. The irrigation channels served a dual purpose: providing water during dry summer growing periods and warming the water as it flowed through sun-exposed channels before reaching the frost-sensitive plants, effectively extending the growing season by 2–3 weeks. Māori gardeners pushed kūmara cultivation to approximately 44°S latitude on the South Island's east coast, the southernmost limit for this tropical crop anywhere in the world.",
+              rarity: "rare",
+              historicalPeriod: "Māori Period (1200 CE-Present)",
+              significance: "Irrigation channels pushed tropical sweet potato cultivation to its southernmost global limit at 44°S",
+              yearBCE: -1350,
+              category: "irrigation"
+            },
+            {
+              id: "pa-fortification-water",
+              name: "Pā Fortification Water Systems",
+              description: "Integrated water supply systems within pā (fortified hilltop villages), incorporating internal springs, hand-dug wells, and rainwater collection infrastructure designed to sustain defenders during prolonged sieges. Many pā were deliberately sited on hills with natural springs or high water tables, and defensive earthworks were engineered to protect these water sources within the innermost defensive perimeter. Rainwater was collected from the roofs of wharenui (meeting houses) and whare (houses) using carved wooden gutters that directed flow into underground storage pits lined with puddled clay. Some large pā such as Ōtāhuhu in Auckland incorporated multiple water sources and could sustain garrisons of several hundred warriors for weeks, a critical military advantage in the frequent inter-tribal conflicts of pre-European New Zealand.",
+              rarity: "rare",
+              historicalPeriod: "Māori Period (1200 CE-Present)",
+              significance: "Hilltop fortress water systems with internal springs, wells, and rainwater collection for siege resilience",
+              yearBCE: -1400,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "tibetan-civilizations",
+      name: "Tibetan Civilizations",
+      description: "The civilizations of the Tibetan Plateau (600 CE–Present) developed extraordinary water engineering systems adapted to the most extreme high-altitude environment inhabited by any major human civilization, with settlements routinely located at 3,500–5,000 meters above sea level. The Tibetan Empire under Songtsen Gampo (r. 604–650 CE) unified the plateau and initiated large-scale infrastructure projects including irrigation canals, monastery water systems, and the early development of Lhasa as a major urban center. Tibetan engineers uniquely combined Buddhist spiritual practices with hydraulic technology, creating water-powered prayer wheels (mani wheels) that harnessed mountain streams to continuously spin cylinders inscribed with sacred mantras—a remarkable fusion of faith and engineering found nowhere else in the world. The glacier-fed irrigation systems of the Tibetan Plateau channel meltwater from Himalayan glaciers through canals operating at altitudes of 3,000–5,000 meters, where extreme temperature variations, seasonal freezing, and steep terrain present engineering challenges unlike any faced by lowland civilizations. At its height, the Tibetan Empire controlled territory spanning from the Tarim Basin to Bengal, managing water resources across the headwaters of Asia's greatest rivers—the Yangtze, Yellow, Mekong, Brahmaputra, and Indus—which collectively supply freshwater to over 2 billion people downstream.",
+      position: [12, 0, 1],
+      color: "#F57F17",
+      era: "medieval",
+      dateRange: "600 CE-Present",
+      locations: [
+        {
+          id: "lhasa",
+          name: "Lhasa",
+          description: "Sacred capital of Tibet and center of high-altitude hydraulic engineering",
+          historicalContext: "Urban center at 3,650 meters elevation where Buddhist culture merged with practical water engineering",
+          coordinates: { lat: 29.6520, lng: 91.1721 },
+          artifacts: [
+            {
+              id: "prayer-wheel-water-mills",
+              name: "Prayer Wheel Water Mills (Mani Wheels)",
+              description: "Water-powered prayer wheels combining Buddhist spiritual practice with sophisticated hydraulic engineering at elevations exceeding 3,500 meters. These devices consist of large cylindrical drums inscribed with the mantra 'Om mani padme hum' (up to 100 million times per wheel), mounted on vertical axles and driven by horizontal water wheels fed by diverted mountain streams. The water channels feature precisely calibrated intakes with stone weirs and wooden sluice gates that regulate flow to maintain consistent rotational speed despite seasonal variations in stream discharge ranging from trickle to torrent. Some monastery complexes such as those at Labrang and Drepung operate banks of 20–50 water-powered prayer wheels simultaneously, each spinning continuously day and night, accumulating spiritual merit while demonstrating practical mastery of hydraulic power transmission at extreme altitudes.",
+              rarity: "epic",
+              historicalPeriod: "Tibetan Period (600 CE-Present)",
+              significance: "Unique fusion of Buddhist spirituality and hydraulic engineering, operating prayer wheels at 3,500+ meter elevations",
+              yearBCE: -700,
+              category: "water-lifting"
+            },
+            {
+              id: "glacier-fed-irrigation",
+              name: "High-Altitude Glacier-Fed Irrigation",
+              description: "Canal systems fed by Himalayan glacier meltwater, operating at extreme altitudes of 3,000–5,000 meters where engineering challenges include seasonal freezing, extreme UV degradation of materials, low oxygen levels affecting labor capacity, and temperature swings of 30–40°C between day and night. These canals are typically unlined earth channels 30–60 centimeters wide, following mountain contours for distances of 5–20 kilometers from glacier snouts to terraced barley and buckwheat fields. Tibetan engineers developed techniques for managing the highly variable and sediment-laden glacial discharge, including settling basins where glacial flour (finely ground rock particles) is deposited before water enters the irrigation network, and bypass channels that divert excess flow during summer melt peaks. The system supports agriculture at altitudes where most civilizations would consider farming impossible, enabling the cultivation of highland barley (nas), the staple crop that sustains Tibetan civilization.",
+              rarity: "rare",
+              historicalPeriod: "Tibetan Period (600 CE-Present)",
+              significance: "Irrigation canals operating at 3,000-5,000 meters, among the highest-altitude agricultural water systems ever constructed",
+              yearBCE: -800,
+              category: "irrigation"
+            },
+            {
+              id: "lhasa-urban-water",
+              name: "Lhasa Urban Water System",
+              description: "The water supply infrastructure for the Potala Palace and the surrounding city of Lhasa, drawing from mountain springs, snowmelt, and the Kyi Chu (Lhasa River) to serve a high-altitude urban population at 3,650 meters elevation. The Potala Palace complex, rising 117 meters above the city on Marpo Ri hill, required an ingenious water supply system utilizing natural springs at multiple levels within the hill, supplemented by rainwater collection from the palace's massive 400-meter-long roof surfaces. Stone-lined channels and copper pipes distributed water throughout the palace's 1,000+ rooms, 10,000+ shrines, and multiple kitchens, bathrooms, and ceremonial halls. The broader city of Lhasa was served by a network of public wells and spring-fed fountains, with water quality protected by Buddhist prohibitions against polluting water sources—one of the earliest forms of religious environmental protection law.",
+              rarity: "rare",
+              historicalPeriod: "Tibetan Period (600 CE-Present)",
+              significance: "Urban water supply at 3,650 meters elevation serving the Potala Palace and city of Lhasa from mountain springs",
+              yearBCE: -650,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "georgian-kingdom",
+      name: "Georgian Kingdom",
+      description: "The Georgian kingdoms (300 BCE–1800 CE) of the Caucasus region developed distinctive water engineering traditions shaped by the unique geology of their mountainous homeland, where natural hot springs, mineral waters, and steep river valleys created both challenges and opportunities for hydraulic innovation. The city of Tbilisi itself was founded in the 5th century CE specifically because of its natural hot sulfur springs—King Vakhtang I Gorgasali reportedly discovered the springs while hunting when his wounded falcon fell into the hot water and was healed, leading him to establish a new capital on the site. Georgian engineers harnessed these thermal springs to create the famous abanotubani (bathhouse district), where sulfur-rich water at 40–50°C has been channeled through increasingly sophisticated public bath complexes for over 1,500 years, attracting visitors from Alexander Dumas to Alexander Pushkin. The Georgian tradition of qvevri winemaking—fermenting wine in large clay vessels buried underground—required precise water and humidity management systems that have been recognized by UNESCO as Intangible Cultural Heritage of Humanity since 2013. Georgian mountain fortresses such as Narikala, Ananuri, and Khertvisi incorporated sophisticated cistern systems that enabled garrisons to withstand prolonged sieges in the strategically vital Caucasus corridor between Europe and Asia.",
+      position: [7, 0, -2],
+      color: "#5D4037",
+      era: "medieval",
+      dateRange: "300 BCE-1800 CE",
+      locations: [
+        {
+          id: "tbilisi",
+          name: "Tbilisi",
+          description: "Capital of Georgia, founded on natural hot sulfur springs",
+          historicalContext: "Caucasus crossroads city where thermal spring engineering and winemaking water systems developed over millennia",
+          coordinates: { lat: 41.6941, lng: 44.8337 },
+          artifacts: [
+            {
+              id: "tbilisi-sulfur-springs",
+              name: "Tbilisi Sulfur Spring Engineering",
+              description: "A 1,500-year tradition of harnessing natural hot sulfur springs (40–50°C) for public baths in the abanotubani (bathhouse district) of Tbilisi, involving increasingly sophisticated systems of stone channels, underground conduits, heating regulation chambers, and distribution networks. The springs emerge from a geological fault zone beneath the Narikala fortress, producing sulfur-rich water at consistent temperatures year-round. Georgian engineers developed techniques for blending spring water of different temperatures, filtering sulfur sediments, and distributing water to multiple bath complexes simultaneously through a gravity-fed network of ceramic and stone pipes. The bath complexes evolved from simple rock pools in the 5th century to elaborate domed structures with marble interiors, cold plunge pools, heated rooms, and sophisticated drainage systems by the 17th century, rivaling Ottoman hammams in architectural sophistication.",
+              rarity: "epic",
+              historicalPeriod: "Georgian Period (300 BCE-1800 CE)",
+              significance: "1,500+ years of continuous sulfur spring engineering; thermal bath tradition attracting visitors from Dumas to Pushkin",
+              yearBCE: 200,
+              category: "sanitation"
+            },
+            {
+              id: "qvevri-water-systems",
+              name: "Qvevri Wine-Making Water Systems",
+              description: "Underground clay vessels (qvevri) up to 2 meters tall and holding 1,000–4,000 liters of wine, requiring precisely controlled water and humidity environments for the fermentation and aging process that defines Georgian winemaking—the world's oldest continuous winemaking tradition, dating back 8,000 years. Qvevri are buried in the floors of purpose-built wine cellars (marani) where the surrounding soil provides natural temperature regulation between 12–15°C year-round. Water management is critical: the marani floor must maintain specific moisture levels to keep the qvevri's porous clay walls slightly damp (preventing cracking) without becoming waterlogged (which would compromise the wine). Drainage channels beneath the marani floor direct groundwater away from the vessels while maintaining ambient humidity of 70–80%. This tradition was inscribed on UNESCO's Intangible Cultural Heritage list in 2013, recognizing the sophisticated interplay between water management, clay technology, and viticulture.",
+              rarity: "rare",
+              historicalPeriod: "Georgian Period (300 BCE-1800 CE)",
+              significance: "UNESCO Intangible Heritage winemaking requiring precise underground water/humidity control; 8,000-year tradition",
+              yearBCE: 300,
+              category: "sanitation"
+            },
+            {
+              id: "georgian-fortress-cisterns",
+              name: "Georgian Fortress Cisterns",
+              description: "Water storage systems integrated into mountain fortresses across the Georgian Caucasus, enabling garrisons to withstand prolonged sieges at the strategically vital crossroads between Europe and Asia. Fortresses like Narikala (4th century CE), Ananuri (16th century), and Khertvisi (2nd century BCE) were constructed on steep rocky outcrops where natural water access was limited, necessitating sophisticated cistern engineering. These cisterns were typically carved from bedrock or constructed from mortared stone, with capacities ranging from 50,000 to 200,000 liters, fed by a combination of rooftop rainwater collection, spring capture, and in some cases, underground tunnels connecting to water sources outside the fortress walls. The Narikala fortress in Tbilisi incorporated a multi-level cistern system with settling chambers to filter sediment and separate compartments for drinking water and utility water.",
+              rarity: "rare",
+              historicalPeriod: "Georgian Period (300 BCE-1800 CE)",
+              significance: "Mountain fortress cisterns holding 50,000-200,000 liters; critical for siege defense in the Caucasus corridor",
+              yearBCE: 200,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "nuragic-sardinia",
+      name: "Nuragic Sardinia",
+      description: "The Nuragic civilization of Sardinia (1900–238 BCE) constructed one of the most distinctive architectural and hydraulic legacies in the ancient Mediterranean world, building over 7,000 stone tower complexes (nuraghi) and approximately 40 monumental sacred wells (pozzi sacri) across the island. Named after the nuraghe—massive dry-stone towers unique to Sardinia, some standing over 20 meters tall with walls 3 meters thick—this Bronze Age civilization flourished for over 1,600 years before absorption into the Carthaginian and later Roman spheres of influence. Their sacred wells represent a pinnacle of prehistoric hydraulic architecture, combining precise astronomical alignments with advanced stone-cutting techniques to create underground temple-wells that captured and celebrated water as a divine element. The most famous example, the Sacred Well of Santa Cristina near Paulilatino, features a perfectly constructed tholos (beehive-shaped) chamber accessed by a monumental 20-step staircase, engineered so that sunlight illuminates the water surface only during the equinoxes—demonstrating a synthesis of astronomy, architecture, and hydraulic engineering unmatched in contemporary Mediterranean cultures. The Nuragic people controlled water resources across Sardinia's diverse landscape, from coastal lagoons to mountainous interior springs, supporting an estimated population of 300,000–500,000 people at the civilization's peak around 1200 BCE.",
+      position: [2, 0, -4],
+      color: "#78909C",
+      era: "ancient",
+      dateRange: "1900-238 BCE",
+      locations: [
+        {
+          id: "sardinia",
+          name: "Sardinia",
+          description: "Mediterranean island home to the Nuragic civilization and its sacred wells",
+          historicalContext: "Bronze Age island civilization that built 7,000+ stone towers and monumental temple-wells with astronomical alignments",
+          coordinates: { lat: 39.9106, lng: 8.6098 },
+          artifacts: [
+            {
+              id: "sacred-wells",
+              name: "Sacred Wells (Pozzi Sacri)",
+              description: "Monumental underground temple-wells constructed with extraordinary precision, featuring tholos (beehive-shaped) stone chambers, ceremonial staircases, and precise astronomical alignments that allowed sunlight or moonlight to illuminate the water surface on specific dates. The most celebrated example, the Sacred Well of Santa Cristina near Paulilatino, consists of a vestibule, a trapezoidal staircase of 20 perfectly cut basalt steps descending 7 meters, and a circular well chamber with a tholos dome constructed from 32 courses of precisely fitted stones without mortar. The staircase is aligned so that during the lunar standstill (every 18.6 years) and at the equinoxes, light penetrates to the water surface at the bottom—demonstrating sophisticated astronomical knowledge combined with hydraulic architecture. Over 40 sacred wells have been identified across Sardinia, each serving as a religious center where water was venerated as a divine gift, with votive offerings of bronze statuettes, weapons, and jewelry found at many sites.",
+              rarity: "legendary",
+              historicalPeriod: "Nuragic Period (1900-238 BCE)",
+              significance: "Monumental temple-wells with astronomical alignments; Santa Cristina's 20-step staircase illuminated during equinoxes",
+              yearBCE: 1200,
+              category: "fountain"
+            },
+            {
+              id: "nuraghe-cisterns",
+              name: "Nuraghe Fortress Cisterns",
+              description: "Integrated water collection and storage systems within Sardinia's massive dry-stone tower complexes (nuraghi), of which over 7,000 were constructed across the island between 1900 and 900 BCE. These multi-story towers, built from basalt blocks weighing up to several tonnes each, incorporated internal cisterns fed by rooftop rainwater collection, with stone channels directing runoff from the tower's upper terraces into underground storage chambers. The largest nuraghe complexes, such as Su Nuraxi di Barumini (a UNESCO World Heritage Site), featured central towers surrounded by multiple subsidiary towers connected by curtain walls, with shared cistern systems capable of supporting communities of several hundred people. The cisterns were constructed using the same corbelling technique as the towers themselves—successively overlapping stone courses creating domed chambers that were naturally waterproof without mortar or lining materials.",
+              rarity: "epic",
+              historicalPeriod: "Nuragic Period (1900-238 BCE)",
+              significance: "Over 7,000 stone tower complexes with integrated rainwater cisterns; Su Nuraxi di Barumini is a UNESCO World Heritage Site",
+              yearBCE: 1500,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "lapita-culture",
+      name: "Ancestral Polynesian (Lapita)",
+      description: "The Lapita culture (1600–500 BCE) represents the ancestral seafaring civilization that colonized the vast Pacific Ocean, spreading from the Bismarck Archipelago near New Guinea across 4,000 kilometers of open ocean to Fiji, Tonga, and Samoa over roughly a millennium. Named after the distinctive dentate-stamped pottery first identified at a site in New Caledonia, the Lapita people were the greatest maritime explorers of the ancient world, navigating by stars, ocean swells, wind patterns, and the behavior of seabirds to locate islands invisible below the horizon. Their most critical survival skill was the ability to identify and manage freshwater sources on thousands of islands scattered across the world's largest ocean, ranging from high volcanic islands with abundant rainfall to low coral atolls where freshwater exists only as thin lenses floating on saltwater beneath the surface. Lapita settlements have been identified at over 200 archaeological sites across Melanesia and western Polynesia, consistently located near reliable freshwater sources—streams, springs, or manageable freshwater lenses—demonstrating that water resource assessment was a primary factor in colonization decisions. The Lapita cultural complex gave rise to all subsequent Polynesian, Micronesian, and many Melanesian maritime traditions, representing one of humanity's most remarkable episodes of exploration and adaptation.",
+      position: [24, 0, 14],
+      color: "#26C6DA",
+      era: "ancient",
+      dateRange: "1600-500 BCE",
+      locations: [
+        {
+          id: "bismarck-archipelago",
+          name: "Bismarck Archipelago",
+          description: "Origin point of the Lapita expansion into the Pacific Ocean",
+          historicalContext: "Island chain near New Guinea where the greatest maritime colonization in human history began",
+          coordinates: { lat: -4.0000, lng: 150.0000 },
+          artifacts: [
+            {
+              id: "oceanic-freshwater-navigation",
+              name: "Oceanic Freshwater Navigation",
+              description: "Comprehensive knowledge systems for locating freshwater sources across thousands of Pacific islands, incorporating observational techniques for detecting underground freshwater from the sea—including reading vegetation patterns on distant islands (coconut palms and pandanus indicating freshwater presence), tasting ocean water near shorelines for salinity reduction indicating submarine spring discharge, and identifying geological formations likely to contain freshwater springs or aquifers. Lapita navigators assessed potential colonization sites by evaluating freshwater availability before committing to settlement, using techniques passed down through oral tradition across generations. This knowledge encompassed understanding of the Ghyben-Herzberg freshwater lens principle (though not in those terms)—knowing that low coral atolls contain a lens of fresh rainwater floating on denser saltwater, and that the lens thickness depends on island width, rainfall, and extraction rate. Without this water-finding knowledge, the colonization of thousands of Pacific islands would have been impossible.",
+              rarity: "epic",
+              historicalPeriod: "Lapita Period (1600-500 BCE)",
+              significance: "Knowledge systems enabling colonization of thousands of Pacific islands by identifying freshwater sources from the sea",
+              yearBCE: 1500,
+              category: "canal"
+            },
+            {
+              id: "lapita-coastal-water",
+              name: "Lapita Coastal Water Management",
+              description: "Techniques for managing the fragile freshwater lenses that form beneath coral atolls and low-lying coastal areas, where rainwater percolates through porous coral rock and floats as a thin layer (typically 1–5 meters thick) above denser saltwater. Lapita settlers developed protocols for sustainable extraction including shallow hand-dug wells penetrating just the upper portion of the freshwater lens, restrictions on well spacing to prevent saltwater upconing, and communal water rationing during drought periods when the lens could thin to dangerously low levels. Archaeological evidence from Lapita sites on low coral islands shows wells deliberately positioned at the island's center where the freshwater lens is thickest, demonstrating empirical understanding of the lens geometry. This knowledge was critical for sustaining communities of 50–200 people on islands as small as a few hectares, where the margin between sustainable water use and catastrophic saltwater intrusion was measured in centimeters of lens thickness.",
+              rarity: "rare",
+              historicalPeriod: "Lapita Period (1600-500 BCE)",
+              significance: "Managed freshwater lenses on coral atolls where margins between sustainability and saltwater intrusion were centimeters",
+              yearBCE: 1400,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "toltec-empire",
+      name: "Toltec Empire",
+      description: "The Toltec Empire (900–1168 CE) was the dominant Mesoamerican civilization of the Early Postclassic period, centered on their capital city of Tula (Tollan) in the modern Mexican state of Hidalgo. At its height, Tula was one of the largest cities in the pre-Columbian Americas, with a population estimated at 30,000–60,000 people spread across an urban area of approximately 16 square kilometers. The Toltecs were renowned as master engineers and artisans—the Aztecs, who later claimed Toltec descent, used the word 'toltecatl' as a synonym for 'craftsman' or 'artist,' and regarded Tula as a mythical golden age of civilization. Tula's urban water infrastructure included a sophisticated distribution system drawing from the Tula River and local springs, supplying public spaces, residential areas, and the massive ceremonial center through a network of stone-lined channels and underground conduits. The city's monumental architecture, including the famous Atlantean warrior columns of Pyramid B, incorporated ceremonial water features—fountains, reflecting pools, and ritual water channels—that demonstrated Toltec mastery of hydraulic engineering and prefigured the even more elaborate water systems later developed by the Aztecs at Tenochtitlan.",
+      position: [-11, 0, 5],
+      color: "#6D4C41",
+      era: "medieval",
+      dateRange: "900-1168 CE",
+      locations: [
+        {
+          id: "tula",
+          name: "Tula (Tollan)",
+          description: "Capital of the Toltec Empire in central Mexico",
+          historicalContext: "Major Mesoamerican urban center whose hydraulic engineering directly influenced Aztec water technology",
+          coordinates: { lat: 20.0543, lng: -99.3397 },
+          artifacts: [
+            {
+              id: "tula-water-distribution",
+              name: "Tula Water Distribution System",
+              description: "An urban water network supplying a city of 30,000–60,000 people through a combination of river diversion channels, spring capture systems, and stone-lined distribution conduits spanning Tula's 16 square kilometer urban area. The system drew primary supply from the Tula River via diversion weirs and intake channels, with secondary supply from hillside springs captured in stone-walled collection basins. Distribution channels, typically 30–50 centimeters wide and lined with cut stone and hydraulic plaster, ran along major avenues and branched into residential neighborhoods through a hierarchical network. Archaeological evidence indicates that the system included settling basins at key junctions for sediment removal, overflow channels for flood management, and controlled distribution points where water was allocated to different neighborhoods—a level of urban hydraulic infrastructure that would directly influence the Aztec engineers who later built Tenochtitlan's famous aqueducts.",
+              rarity: "epic",
+              historicalPeriod: "Toltec Period (900-1168 CE)",
+              significance: "Urban water network serving 30,000-60,000 people; direct precursor to Aztec hydraulic engineering at Tenochtitlan",
+              yearBCE: -950,
+              category: "aqueduct"
+            },
+            {
+              id: "toltec-ceremonial-water",
+              name: "Toltec Ceremonial Water Features",
+              description: "Monumental fountains, reflecting pools, and ritual water channels integrated into Tula's ceremonial center, where water played a central role in Toltec religious practice and political display. The main ceremonial precinct, dominated by Pyramid B with its famous 4.6-meter-tall Atlantean warrior columns, incorporated stone-lined water channels that fed into reflecting pools positioned to mirror the pyramid's facade—creating dramatic visual effects during ceremonies viewed by thousands of assembled subjects. Excavations have revealed ceramic pipe segments and stone junction boxes indicating a pressurized water supply to elevated fountain features within the temple complex, suggesting hydraulic engineering capabilities previously attributed only to Old World civilizations. These ceremonial water installations served both religious functions—water was sacred in Mesoamerican cosmology, associated with Tlaloc and fertility—and political purposes, as the ability to command and display flowing water was a demonstration of elite power and divine favor.",
+              rarity: "rare",
+              historicalPeriod: "Toltec Period (900-1168 CE)",
+              significance: "Ceremonial fountains and reflecting pools at Pyramid B; pressurized water features in temple complexes",
+              yearBCE: -1000,
+              category: "fountain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "khwarezmian-empire",
+      name: "Khwarezmian Empire",
+      description: "The Khwarezmian civilization (300 BCE–1220 CE) flourished in the arid lowlands along the lower Amu Darya (Oxus) river in modern-day Uzbekistan and Turkmenistan, transforming one of Central Asia's driest regions into a prosperous agricultural and urban civilization through massive irrigation engineering. At its peak under the Khwarezmshahs in the 12th–13th centuries, the empire controlled a territory stretching from the Caspian Sea to Afghanistan, with its capital at Urgench (Gurganj) serving as one of the great cities of the Islamic world with an estimated population of 200,000–300,000 people. The civilization's foundation was its extraordinary irrigation network—massive canal systems diverting the Amu Darya's snowmelt-fed waters across 3+ million hectares of otherwise barren Central Asian steppe, supporting intensive cultivation of cotton, wheat, rice, melons, and grapes. Khwarezmian irrigation engineers developed specialized water-lifting devices adapted to the flat terrain where gravity-fed canal systems required enormous intake structures to maintain sufficient elevation for water distribution across the broad, nearly level floodplain. The civilization met a catastrophic end when Genghis Khan's Mongol armies destroyed Urgench in 1221, deliberately breaching the Amu Darya's dams and levees to flood the city—an act of hydraulic warfare that demonstrated the civilization's total dependence on its engineered water systems.",
+      position: [8, 0, 0],
+      color: "#FF7043",
+      era: "medieval",
+      dateRange: "300 BCE-1220 CE",
+      locations: [
+        {
+          id: "urgench",
+          name: "Urgench (Konye-Urgench)",
+          description: "Capital of the Khwarezmian Empire on the Amu Darya river",
+          historicalContext: "One of the great cities of the medieval Islamic world, sustained by massive irrigation networks across Central Asian steppe",
+          coordinates: { lat: 42.3271, lng: 59.1548 },
+          artifacts: [
+            {
+              id: "amu-darya-irrigation",
+              name: "Amu Darya Irrigation Networks",
+              description: "Massive canal systems diverting water from the Amu Darya (Oxus) river to irrigate over 3 million hectares of Central Asian steppe—one of the largest pre-industrial irrigation networks in world history. The primary canals, some exceeding 100 kilometers in length and 20 meters in width, diverted water from the Amu Darya through massive headworks (band) constructed from timber, stone, and fascine bundles, requiring annual reconstruction after spring floods. Secondary and tertiary canals distributed water through a hierarchical network managed by an elaborate system of water rights (mirab-bashi) administered by professional water masters who allocated shares among communities based on complex traditional formulas. The system supported a dense agricultural landscape producing cotton (Khwarezm was a major cotton exporter to the Islamic world), wheat, rice, sesame, and the region's famous melons, sustaining urban centers with combined populations exceeding 500,000 people across the Khwarezmian oasis.",
+              rarity: "legendary",
+              historicalPeriod: "Khwarezmian Period (300 BCE-1220 CE)",
+              significance: "Over 3 million hectares irrigated from the Amu Darya; one of the largest pre-industrial irrigation systems ever built",
+              yearBCE: 200,
+              category: "canal"
+            },
+            {
+              id: "khwarezmian-water-lifts",
+              name: "Khwarezmian Water Lifts",
+              description: "Specialized water-lifting devices developed for the flat Central Asian terrain where the broad Amu Darya floodplain lacks the elevation differences needed for gravity-fed irrigation. Khwarezmian engineers adapted and improved upon Persian and Indian water-lifting technologies, creating large animal-powered water wheels (chigir) mounted on timber frames at canal intakes, capable of raising water 3–6 meters from the main canal level to elevated distribution channels. These devices featured wooden bucket chains with ceramic or leather containers, driven by oxen or camels walking in circles, and could lift approximately 2,000–4,000 liters per hour depending on the lift height and animal power available. The chigir installations were concentrated at critical elevation transition points along the canal network, forming pumping stations that extended the irrigated area far beyond what gravity-fed canals alone could serve across the nearly level terrain of the Amu Darya delta.",
+              rarity: "rare",
+              historicalPeriod: "Khwarezmian Period (300 BCE-1220 CE)",
+              significance: "Animal-powered water lifts raising 2,000-4,000 liters/hour across flat Central Asian terrain",
+              yearBCE: 100,
+              category: "water-lifting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "liao-jin-yuan",
+      name: "Liao/Jin/Yuan Dynasties",
+      description: "The Liao (907–1125 CE), Jin (1115–1234 CE), and Yuan (1271–1368 CE) dynasties represent the successive conquest dynasties of northern China and Mongolia that made transformative contributions to hydraulic engineering by synthesizing nomadic steppe water management knowledge with Chinese urban engineering traditions. The Yuan Dynasty, founded by Kublai Khan (grandson of Genghis Khan), was particularly significant for hydraulic history—it established Dadu (modern Beijing) as the imperial capital and constructed the water infrastructure that would serve this mega-city for the next 700 years, including the Kunming Lake reservoir system and the Tongji Canal connecting the city to the Grand Canal. The Yuan Dynasty's most ambitious hydraulic project was the restoration, expansion, and straightening of the Grand Canal, creating a direct north-south waterway of 1,776 kilometers—the longest artificial waterway in world history—connecting the grain-surplus regions of the Yangtze Delta with the political capital at Dadu. This engineering feat, directed by the astronomer-engineer Guo Shoujing, required solving complex problems of elevation change, river crossing, and water supply across diverse terrain, and enabled the annual transport of 3–4 million shi (approximately 180,000–240,000 tonnes) of grain from south to north. The steppe-urban hybridization of water knowledge—combining Mongol expertise in managing water across vast grassland territories with Chinese expertise in urban infrastructure—produced innovations in long-distance water transport, flood control, and urban water supply that influenced East Asian hydraulic engineering for centuries.",
+      position: [14, 0, -1],
+      color: "#546E7A",
+      era: "medieval",
+      dateRange: "907-1368 CE",
+      locations: [
+        {
+          id: "beijing-dadu",
+          name: "Beijing (Dadu)",
+          description: "Yuan Dynasty capital and center of conquest-dynasty hydraulic engineering",
+          historicalContext: "Imperial capital where nomadic Mongol and Chinese engineering traditions merged to create transformative water infrastructure",
+          coordinates: { lat: 39.9042, lng: 116.4074 },
+          artifacts: [
+            {
+              id: "beijing-water-supply",
+              name: "Beijing Water Supply Origins",
+              description: "Construction of the foundational water infrastructure for Dadu (later Beijing), designed by the polymath engineer Guo Shoujing (1231–1316 CE) and including the Kunming Lake reservoir system, the Tongji Canal, and the Jishuitan (Accumulated Water Pool) that served as the terminal basin for the Grand Canal within the capital. Guo Shoujing surveyed and engineered a water supply system drawing from the Baifu Spring in the Western Hills, channeling water through a 30-kilometer canal to fill Kunming Lake (now in the Summer Palace grounds), which served as the primary reservoir for the capital's water needs. The system supplied water for the imperial palace, public fountains, urban canals for transportation, and fire-fighting reserves for a city that grew to house over 1 million people by the late Yuan period. This infrastructure proved so well-designed that it continued to function, with modifications, through the Ming and Qing dynasties and into the modern era—the Kunming Lake remains a functional reservoir today, over 700 years after its construction.",
+              rarity: "epic",
+              historicalPeriod: "Yuan Dynasty (1271-1368 CE)",
+              significance: "Guo Shoujing's water infrastructure for Dadu/Beijing served 1 million+ people and still functions 700+ years later",
+              yearBCE: -1293,
+              category: "canal"
+            },
+            {
+              id: "grand-canal-maintenance",
+              name: "Grand Canal Maintenance Systems",
+              description: "The Yuan Dynasty restoration and expansion of the Grand Canal into the world's longest artificial waterway at 1,776 kilometers, connecting Hangzhou in the south to Dadu (Beijing) in the north through a continuous navigable channel crossing five major river systems (Qiantang, Yangtze, Huai, Yellow, and Hai). Under Kublai Khan's orders and Guo Shoujing's engineering direction, the Yuan canal project (1279–1293 CE) straightened the earlier Sui Dynasty route, eliminating the detour through Kaifeng and reducing the total distance by approximately 700 kilometers. The engineering challenges were immense: the canal crossed terrain ranging from sea level to 42 meters elevation, requiring a system of 60+ pound locks (flash locks and later gate locks) to manage elevation changes, and at the Yellow River crossing, massive dike and sluice systems prevented the notoriously silt-laden river from flooding and blocking the canal. Annual maintenance required a permanent workforce of 20,000–30,000 laborers to dredge sediment, repair embankments, operate locks, and manage water levels—making it one of the largest permanent infrastructure operations in the pre-industrial world.",
+              rarity: "legendary",
+              historicalPeriod: "Yuan Dynasty (1271-1368 CE)",
+              significance: "World's longest artificial waterway at 1,776 km with 60+ locks; transported 180,000-240,000 tonnes of grain annually",
+              yearBCE: -1293,
+              category: "canal"
+            },
+            {
+              id: "steppe-urban-hybridization",
+              name: "Steppe-Urban Water Hybridization",
+              description: "The synthesis of nomadic Mongol water management knowledge—gained from centuries of managing water resources across the vast Eurasian steppe—with Chinese urban engineering traditions, producing innovations that neither tradition could have achieved alone. Mongol expertise included techniques for locating groundwater sources in arid grasslands, constructing temporary dams and diversions for watering massive horse herds (the Mongol army required water for 300,000–400,000 horses), and managing water supply across continental-scale military campaigns spanning from Hungary to Korea. When the Mongols established the Yuan Dynasty, this steppe knowledge was combined with Chinese expertise in canal engineering, urban water distribution, rice paddy irrigation, and flood control, creating hybrid solutions such as the multi-purpose reservoir systems that served both nomadic cavalry encampments and permanent urban populations. The resulting hydraulic innovations—including improved surveying techniques using astronomical instruments, long-distance water transport systems, and integrated military-civilian water infrastructure—influenced water engineering across the entire Mongol Empire, from Persia to China.",
+              rarity: "rare",
+              historicalPeriod: "Liao-Jin-Yuan Period (907-1368 CE)",
+              significance: "Fusion of Mongol steppe and Chinese urban water traditions; managed water for 300,000+ horse armies and million-person cities",
+              yearBCE: -1000,
+              category: "irrigation"
             }
           ]
         }

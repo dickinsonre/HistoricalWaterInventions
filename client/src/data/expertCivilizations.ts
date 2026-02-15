@@ -1095,20 +1095,25 @@ export const expertCivilizationsDatabase: CivilizationsDatabase = {
         end: 2026,
         era: "Ancient through Modern"
       },
-      summary: "From ancient falaj channels to the world's largest desalination capacity—the UAE transformed from desert survival to water abundance through technology and determination.",
+      summary: "The UAE's water story is the most compressed transformation in hydraulic engineering history—from 3,000-year-old underground falaj channels sustaining tiny oasis settlements to a modern nation producing over 14 million cubic meters of desalinated water per day, all within a single generation. With no permanent rivers, under 120 mm annual rainfall, and a population that exploded from 180,000 to over 10 million in 50 years, the UAE has deployed every conceivable water technology: ancient gravity-fed tunnels, mega-scale desalination, cloud seeding, wastewater reuse at 89%, and the hydrodynamic engineering of artificial islands.",
       waterChallenges: [
-        "One of the world's driest climates",
-        "No permanent rivers or lakes",
-        "Explosive population growth (180,000 to 10 million in 50 years)",
-        "Maintaining artificial environments in extreme heat"
+        "One of the world's driest climates—under 120 mm annual rainfall, temperatures exceeding 50°C",
+        "No permanent rivers, lakes, or natural freshwater sources",
+        "Explosive population growth from 180,000 (1968) to 10+ million (2024) requiring complete water infrastructure reinvention",
+        "Persian Gulf source water has exceptionally high salinity (40,000-45,000 ppm)—among the most challenging for desalination globally",
+        "Maintaining marine ecology around 78 km of artificial coastline (Palm Jumeirah) and managing brine discharge from desalination",
+        "Groundwater depletion: natural aquifers being consumed 25x faster than natural recharge rates"
       ],
-      inventions: ["falaj-system", "mega-desalination", "cloud-seeding", "palm-water-engineering"],
-      keyInsight: "The UAE went from total dependence on ancient falaj channels to producing 14+ million cubic meters of desalinated water per day—a complete transformation in one generation.",
-      engineerNotes: "The ancient falaj systems at Al Ain (UNESCO World Heritage) showed me how desert communities survived for 3,000 years using underground channels. Today's desalination plants are the opposite approach—brute force technology at massive scale. The cloud seeding program attempting to increase rainfall 10-30% represents yet another strategy. Palm Jumeirah's tidal flushing system maintaining lagoon water quality on an artificial island? Pure engineering audacity.",
-      modernLegacy: "UAE desalination technology deployed globally. Their experience informs water strategy for rapidly developing arid regions.",
+      inventions: ["falaj-system", "al-ain-traditional-wells", "mega-desalination", "cloud-seeding", "uae-wastewater-reuse", "palm-water-engineering", "masdar-water-conservation"],
+      keyInsight: "The UAE went from total dependence on ancient falaj channels to producing 14+ million cubic meters of desalinated water per day—a complete transformation in one generation. But the real lesson is their portfolio approach: no single technology solves desert water scarcity. The UAE combines desalination (42% of supply), groundwater (36%), treated wastewater reuse (12%), cloud seeding, and aggressive conservation—each technology filling a different niche in the water security puzzle.",
+      engineerNotes: "Walking through the Al Ain oasis (UNESCO World Heritage) and seeing falaj channels still flowing after 3,000 years—then driving 90 minutes to Dubai's Jebel Ali desalination plant producing 2 million cubic meters per day—captures the full arc of human water engineering in one afternoon. The falaj builders solved the same problem as modern engineers (getting water to people in a desert) but with opposite approaches: underground channels that minimize evaporation versus brute-force thermal distillation at industrial scale. The cloud seeding program conducting 300+ annual missions represents yet a third strategy—modifying weather itself. And Palm Jumeirah? Engineering a tidal flushing system to maintain water quality across 78 km of artificial coastline on a palm-shaped island is pure audacity. What impresses me most is the UAE's wastewater reuse rate at 89%—they understand that in a desert, you use every drop multiple times. Masdar City's 54% reduction in per-capita water use through integrated design shows the future direction: not just producing more water, but fundamentally rethinking how cities consume it.",
+      modernLegacy: "UAE desalination technology and operational expertise deployed globally, informing water strategy for rapidly developing arid regions from Saudi Arabia to North Africa to Australia. The Masdar City model influences sustainable desert urbanism worldwide. The UAE's Water Security Strategy 2036 aims to reduce total water demand by 21% and ensure 100% of wastewater is treated and reused—a blueprint for water-scarce nations everywhere.",
       sources: [
         "Brook, D. A History of Future Cities (Dubai chapter)",
-        "Al Ain UNESCO World Heritage documentation"
+        "Al Ain UNESCO World Heritage documentation (2011 inscription)",
+        "Dubai Electricity and Water Authority (DEWA) Annual Reports",
+        "UAE Water Security Strategy 2036, Ministry of Energy and Infrastructure",
+        "Dawoud, M.A. (2012). 'Environmental Impacts of Seawater Desalination: Arabian Gulf Case Study.' International Journal of Environment and Sustainability"
       ]
     },
     {
