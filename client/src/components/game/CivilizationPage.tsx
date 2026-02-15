@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, MapPin, Calendar, Droplets, Lightbulb, Image } f
 import { gameData } from "../../data/gameData";
 import { getCivilizationDetail } from "../../data/civilizationDetails";
 import { inventionDiagrams } from "../../data/inventionDetails";
+import { getCivilizationImage } from "../../data/civilizationImages";
 
 export default function CivilizationPage() {
   const { civilizationId } = useParams<{ civilizationId: string }>();
@@ -47,7 +48,7 @@ export default function CivilizationPage() {
             <div 
               className="absolute inset-0 bg-cover bg-center"
               style={{ 
-                backgroundImage: `url('/images/civilizations/${civilizationId}.jpg'), url('/images/hero-map.png')`,
+                backgroundImage: `url('${getCivilizationImage(civilizationId || "")}')`,
                 backgroundSize: 'cover'
               }}
             />

@@ -3,24 +3,7 @@ import { Button } from "../ui/button";
 import { X, ChevronLeft, ChevronRight, MapPin, Calendar, Quote, AlertTriangle, Lightbulb, ArrowRight, MessageSquare } from "lucide-react";
 import { gameData } from "../../data/gameData";
 import { getCivilizationDetail } from "../../data/civilizationDetails";
-
-const civilizationImages: Record<string, string> = {
-  "ancient-egypt": "/images/civilizations/egypt.jpg",
-  "roman-empire": "/images/civilizations/rome.jpg",
-  "ancient-china": "/images/civilizations/china.jpg",
-  "maya": "/images/civilizations/maya.jpg",
-  "ancient-greece": "/images/civilizations/greece.jpg",
-  "ancient-persia": "/images/civilizations/persia.jpg",
-  "khmer-empire": "/images/civilizations/khmer.jpg",
-  "inca-empire": "/images/civilizations/inca.jpg",
-  "medieval-india": "/images/civilizations/india.jpg",
-  "indus-valley": "/images/civilizations/india.jpg",
-  "mesopotamia": "/images/civilizations/mesopotamia.jpg",
-  "al-andalus": "/images/civilizations/andalus.jpg",
-  "venice": "/images/civilizations/venice.jpg",
-  "dutch-netherlands": "/images/civilizations/dutch.jpg",
-  "modern-japan": "/images/civilizations/japan.jpg",
-};
+import { getCivilizationImage } from "../../data/civilizationImages";
 
 interface CivilizationDetailProps {
   regionId: string;
@@ -81,15 +64,13 @@ export default function CivilizationDetail({ regionId, onClose, onNavigate, onVi
           </Button>
         </div>
 
-        {civilizationImages[regionId] && (
-          <div className="mb-6 rounded-lg overflow-hidden">
-            <img 
-              src={civilizationImages[regionId]} 
-              alt={region.name}
-              className="w-full h-48 object-cover"
-            />
-          </div>
-        )}
+        <div className="mb-6 rounded-lg overflow-hidden">
+          <img 
+            src={getCivilizationImage(regionId)} 
+            alt={region.name}
+            className="w-full h-48 object-cover"
+          />
+        </div>
 
         {details?.quote && (
           <div className="mb-6 p-4 bg-[var(--deep-ocean)]/60 rounded-lg border-l-4 border-[var(--gold)]">
