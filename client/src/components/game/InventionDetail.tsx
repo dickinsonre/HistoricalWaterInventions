@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { X, ChevronLeft, ChevronRight, Wrench, Sparkles, History, MessageSquare, MapPin, Calendar, Droplets, Image, FileCode, Download, Eye, FileSpreadsheet, FileText, Copy, Check } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Wrench, Sparkles, History, MessageSquare, MapPin, Calendar, Droplets, Image, FileCode, Download, Eye, FileSpreadsheet, FileText, Copy, Check, BookOpen, ExternalLink } from "lucide-react";
 import { getAllArtifacts, gameData, ArtifactData } from "../../data/gameData";
 import { getInventionDetail, inventionDiagrams } from "../../data/inventionDetails";
 import { getSwmmModelForInvention, downloadSWMM5Model, generateSWMM5File } from "../../lib/swmm5Export";
 import { generateICMCSV, generateCivil3DScript, downloadExport } from "../../lib/civil3dExport";
+import { getReferencesForInvention, getReferenceTypeLabel, getReferenceTypeColor } from "../../data/inventionReferences";
 
 type PreviewType = "swmm5" | "icm" | "civil3d" | null;
 
@@ -23,6 +24,7 @@ export default function InventionDetail({ artifactId, onClose, onNavigate }: Inv
   const artifact = allArtifacts[currentIndex];
   const details = getInventionDetail(artifactId);
   const swmmModel = getSwmmModelForInvention(artifactId);
+  const references = getReferencesForInvention(artifactId);
 
   const getPreviewContent = (): string => {
     if (activePreview === "swmm5") return generateSWMM5File(artifactId) || "";
@@ -382,6 +384,38 @@ export default function InventionDetail({ artifactId, onClose, onNavigate }: Inv
             <p className="text-[var(--parchment)]/70 text-sm italic">
               Detailed information for this invention is being researched. Check back soon!
             </p>
+          </div>
+        )}
+
+        {references.length > 0 && (
+          <div className="bg-[var(--deep-ocean)]/60 rounded-lg p-4 border border-[var(--aqua)]/20 mt-6">
+            <div className="flex items-center gap-2 mb-3">
+              <BookOpen className="text-[var(--cerulean)]" size={20} />
+              <h3 className="font-heading text-lg text-[var(--aqua)]">References & Citations</h3>
+              <span className="text-[var(--parchment)]/50 text-xs ml-auto">{references.length} source{references.length !== 1 ? "s" : ""}</span>
+            </div>
+            <div className="space-y-3">
+              {references.map((ref, idx) => (
+                <div key={idx} className="flex items-start gap-3 p-2 rounded-lg bg-[var(--deep-ocean)]/40 hover:bg-[var(--deep-ocean)]/60 transition-colors">
+                  <span className={`text-xs px-2 py-0.5 rounded-full whitespace-nowrap mt-0.5 ${getReferenceTypeColor(ref.type)}`}>
+                    {getReferenceTypeLabel(ref.type)}
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-[var(--parchment)]/90 text-sm font-medium leading-snug">
+                      {ref.url ? (
+                        <a href={ref.url} target="_blank" rel="noopener noreferrer" className="hover:text-[var(--aqua)] transition-colors inline-flex items-center gap-1">
+                          {ref.title}
+                          <ExternalLink size={11} className="text-[var(--aqua)] flex-shrink-0" />
+                        </a>
+                      ) : ref.title}
+                    </p>
+                    <p className="text-[var(--parchment)]/50 text-xs mt-0.5">
+                      {[ref.author, ref.year, ref.publisher].filter(Boolean).join(" · ")}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         )}
 

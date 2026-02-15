@@ -886,7 +886,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
       )}
       {showComparison && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowComparison(false)}>
-          <div onClick={(e) => e.stopPropagation()}><ComparisonTool onClose={() => setShowComparison(false)} /></div>
+          <div onClick={(e) => e.stopPropagation()}><ComparisonTool onClose={() => setShowComparison(false)} onSelectArtifact={(id) => { setShowComparison(false); setSelectedInvention(id); }} /></div>
         </div>
       )}
       {showFeatured && (
