@@ -169,7 +169,10 @@ const civilizationCoords: Record<string, { lat: number; lng: number; region: str
   "bactria": { lat: 36.7, lng: 66.9, region: "Afghanistan" },
   "majapahit": { lat: -7.55, lng: 112.4, region: "East Java, Indonesia" },
   "kanem-bornu": { lat: 12.0, lng: 14.0, region: "Chad/Nigeria" },
-  "benin-kingdom": { lat: 6.3, lng: 5.6, region: "Benin City, Nigeria" }
+  "benin-kingdom": { lat: 6.3, lng: 5.6, region: "Benin City, Nigeria" },
+  "moche-civilization": { lat: -8.1, lng: -79.0, region: "Trujillo, Peru" },
+  "yoruba-civilization": { lat: 7.5, lng: 4.6, region: "Southwestern Nigeria" },
+  "funan-kingdom": { lat: 10.25, lng: 105.15, region: "Mekong Delta, Vietnam" }
 };
 
 // Convert to x/y percentages
@@ -221,7 +224,8 @@ const civilizationContinents: Record<string, string> = {
   "nuragic-sardinia": "Europe", "lapita-culture": "Pacific", "toltec-empire": "Americas",
   "khwarezmian-empire": "Asia", "liao-jin-yuan": "Asia", "urartu": "Asia",
   "dilmun": "Asia", "bactria": "Asia", "majapahit": "Asia",
-  "kanem-bornu": "Africa", "benin-kingdom": "Africa"
+  "kanem-bornu": "Africa", "benin-kingdom": "Africa",
+  "moche-civilization": "Americas", "yoruba-civilization": "Africa", "funan-kingdom": "Asia"
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {

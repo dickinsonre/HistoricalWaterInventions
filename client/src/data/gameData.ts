@@ -718,6 +718,25 @@ export const gameData: GameData = {
               category: "water-lifting"
             }
           ]
+        },
+        {
+          id: "rio-tinto-mining",
+          name: "Las Médulas & Rio Tinto Hydraulic Mining",
+          description: "Roman hydraulic gold mining operations in Hispania",
+          historicalContext: "Pliny the Elder documented the devastation of entire mountains by water power",
+          coordinates: { lat: 42.4678, lng: -6.7673 },
+          artifacts: [
+            {
+              id: "ruina-montium",
+              name: "Ruina Montium (Hydraulic Mining)",
+              description: "The Roman technique of ruina montium ('wrecking of mountains') was the most powerful application of hydraulic engineering in the ancient world. Miners diverted rivers and stored millions of gallons in elevated reservoirs, then released massive volumes of water through tunnels cut into gold-bearing hillsides. The sudden release—described by Pliny the Elder as producing a noise 'beyond human comprehension'—collapsed entire mountainsides, exposing gold-bearing rock. At Las Médulas in northwestern Spain, the Romans moved an estimated 240 million cubic meters of earth over 200 years, creating a surreal landscape of red spires and lakes that survives today as a UNESCO World Heritage site. The technique required complex hydraulic infrastructure: aqueducts up to 30 km long, multiple reservoir tanks (piscinae), hushing channels, and sluice systems with settling basins (agogae) to separate gold from debris. Roman engineers at Rio Tinto in southern Spain applied similar techniques at industrial scale, creating open-pit mines visible from space. Pliny estimated that Hispania's hydraulic mines produced 20,000 Roman pounds (6,500 kg) of gold annually for the Empire.",
+              rarity: "legendary",
+              historicalPeriod: "Early Empire (27 BCE - 284 CE)",
+              significance: "Most powerful pre-industrial earth-moving technique; Las Médulas is now UNESCO World Heritage; moved 240M cubic meters of earth",
+              yearBCE: -100,
+              category: "water-lifting"
+            }
+          ]
         }
       ]
     },
@@ -1110,6 +1129,25 @@ export const gameData: GameData = {
               significance: "9 separate aqueducts; longest runs 60+ meters under the palace complex",
               yearBCE: -700,
               category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "teotihuacan",
+          name: "Teotihuacan",
+          description: "Largest pre-Columbian city in the Americas with sophisticated reservoir system",
+          historicalContext: "Peak population of 100,000-200,000 people required massive water infrastructure",
+          coordinates: { lat: 19.6925, lng: -98.8438 },
+          artifacts: [
+            {
+              id: "teotihuacan-reservoir",
+              name: "Teotihuacan Reservoir System",
+              description: "The metropolis of Teotihuacan (100 BCE–550 CE), at its peak the sixth-largest city in the world with 100,000–200,000 inhabitants, developed one of the most sophisticated urban water systems in the pre-Columbian Americas. Engineers constructed a network of reservoirs, canals, and drains that collected seasonal rainfall and spring water to sustain this massive population in the semi-arid Valley of Mexico at 2,300 meters elevation. The city's famous Avenue of the Dead was not merely ceremonial—recent archaeological discoveries reveal it functioned as an integrated stormwater management system, with cross-channels, settling basins, and drainage canals that directed rainwater to underground cisterns and agricultural plots. The Ciudadela compound featured a sophisticated system of canals and reservoirs that could store an estimated 100,000 cubic meters of water. Teotihuacan's engineers also developed an early form of wastewater management, with covered stone drains running beneath residential compounds that separated gray water for irrigation from stormwater runoff.",
+              rarity: "legendary",
+              historicalPeriod: "100 BCE - 550 CE",
+              significance: "Urban water supply for 100,000-200,000 people; Avenue of the Dead doubled as stormwater management",
+              yearBCE: 100,
+              category: "dam"
             }
           ]
         }
@@ -1842,6 +1880,16 @@ export const gameData: GameData = {
               significance: "Covered 25,000 miles of road network with water access",
               yearBCE: -1300,
               category: "aqueduct"
+            },
+            {
+              id: "inca-road-drainage",
+              name: "Inca Road Culverts & Drainage (Qhapaq Ñan)",
+              description: "The Inca road network (Qhapaq Ñan), stretching over 40,000 kilometers from Colombia to Chile through some of the most challenging terrain on Earth, required an extraordinarily sophisticated drainage infrastructure to remain passable year-round across deserts, mountains, and tropical forests. Inca engineers designed an integrated system of stone-lined culverts, cross-drains, stepped causeways, and retaining walls that channeled water away from road surfaces while preventing erosion on steep mountain grades. In the Andes, where roads climbed to over 5,000 meters elevation, engineers carved drainage channels directly into bedrock and constructed stone-lined ditches along both sides of the road, with transverse culverts at regular intervals to carry water beneath the roadway. In coastal desert sections, roads were elevated on causeways above seasonal flood levels, with permeable stone bases that allowed flash floods to pass underneath without damaging the surface. The road system connected to the broader Inca hydraulic infrastructure—tambos (rest stations) every 20-30 km featured water storage facilities, and many road segments ran parallel to irrigation canals, sharing engineering infrastructure. This integrated approach to road drainage was not matched in Europe until the Roman road system's principles were rediscovered in the 18th century by engineers like John McAdam.",
+              rarity: "epic",
+              historicalPeriod: "Inca Period (1400-1530 CE)",
+              significance: "40,000 km road network with integrated drainage; engineered for terrain from sea level to 5,000+ meters",
+              yearBCE: -1400,
+              category: "sanitation"
             }
           ]
         },
@@ -1968,6 +2016,16 @@ export const gameData: GameData = {
               rarity: "rare",
               historicalPeriod: "40,000+ years BP",
               significance: "Knowledge passed through oral tradition—enabled survival in world's driest continent",
+              yearBCE: 40000,
+              category: "irrigation"
+            },
+            {
+              id: "aboriginal-water-protocols",
+              name: "Aboriginal Water Sharing Protocols",
+              description: "Aboriginal Australians developed the world's oldest known system of customary water law, governing access to water resources across the continent for over 40,000 years. These protocols—embedded in Dreamtime law, kinship systems, and ceremonial obligations—regulated who could access specific water sources, when water could be drawn, how much could be taken, and the reciprocal obligations of visitors to water-holding country. Water sharing was not merely utilitarian but formed the foundation of inter-clan diplomacy: granting access to water sources in another group's country required formal permission and created binding social obligations, effectively making water the currency of Aboriginal political relations. Songlines—the oral maps encoding routes across thousands of kilometers of landscape—are fundamentally water route maps, connecting gnamma holes, soakages, springs, and rock pools in sequences that enabled survival across the world's driest inhabited continent. The protocols included sophisticated ecological management: fire-stick farming to maintain water catchments, selective clearing around water sources to prevent contamination, and seasonal restrictions on water use during drought periods. These represent humanity's longest-running experiment in sustainable water governance, operating continuously for over 2,000 generations without the written laws, courts, or enforcement mechanisms used by all other civilizations.",
+              rarity: "legendary",
+              historicalPeriod: "40,000+ years BP to Present",
+              significance: "World's oldest water governance system; 40,000+ years of sustainable management without written law",
               yearBCE: 40000,
               category: "irrigation"
             }
@@ -7758,6 +7816,156 @@ export const gameData: GameData = {
               significance: "Fusion of Mongol steppe and Chinese urban water traditions; managed water for 300,000+ horse armies and million-person cities",
               yearBCE: -1000,
               category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "moche-civilization",
+      name: "Moche Civilization",
+      description: "The Moche civilization (100–700 CE) dominated the coastal river valleys of northern Peru, building one of the most hydraulically sophisticated societies in pre-Columbian South America. Thriving in one of the world's driest coastal deserts—where some areas receive less than 10 mm of rainfall annually—the Moche engineered extensive canal systems that diverted water from Andean rivers across the desert to irrigate over 30,000 hectares of farmland. Their intervalley canal networks, connecting separate river systems through engineered channels crossing desert ridgelines, represent some of the most ambitious hydraulic projects in the ancient Americas. The Moche's massive adobe pyramid complexes, the Huaca del Sol and Huaca de la Luna near modern Trujillo, required sophisticated drainage systems to protect their sun-dried brick structures from the occasional El Niño floods that could deliver months' worth of rainfall in hours. Moche engineers developed early versions of the intervalley water transfer systems later perfected by the Chimú, including the precursor infrastructure for the La Cumbre Canal. Their irrigation networks supported a population estimated at 50,000–100,000 people and enabled the cultivation of corn, squash, beans, and cotton in an environment that would otherwise be uninhabitable desert.",
+      position: [-20, 0, 5],
+      color: "#CD853F",
+      era: "ancient",
+      dateRange: "100-700 CE",
+      locations: [
+        {
+          id: "huaca-sol-luna",
+          name: "Huaca del Sol & Huaca de la Luna",
+          description: "Massive adobe pyramid complex requiring sophisticated water management",
+          historicalContext: "Capital of the Moche civilization near modern Trujillo, Peru",
+          coordinates: { lat: -8.1236, lng: -78.9983 },
+          artifacts: [
+            {
+              id: "moche-valley-canals",
+              name: "Moche Valley Canal Network",
+              description: "The Moche Valley canal system was one of the most extensive irrigation networks in the pre-Columbian Americas, channeling water from the Moche River through a branching network of primary, secondary, and tertiary canals that irrigated over 15,000 hectares of coastal desert. The primary canal, running approximately 30 kilometers from an intake point in the foothills to the coastal agricultural fields, maintained a precisely engineered gradient of 0.2–0.5% to prevent both sedimentation and erosion. The canal system featured stone-lined intake structures, distribution weirs with removable gates for directing flow to different field systems, and settling basins to remove sediment before water reached the fields. Archaeological evidence shows the Moche repaired and expanded their canal systems over centuries, with at least three major construction phases visible in the archaeological record. The system's sophistication—including the use of inverted siphons to cross small valleys—demonstrates engineering knowledge comparable to contemporary Roman hydraulic engineering on the other side of the world.",
+              rarity: "epic",
+              historicalPeriod: "Moche Period (100-700 CE)",
+              significance: "30 km canal network irrigating 15,000+ hectares of coastal desert with Roman-level engineering sophistication",
+              yearBCE: -300,
+              category: "irrigation"
+            },
+            {
+              id: "moche-aqueduct-precursor",
+              name: "La Cumbre Aqueduct Precursor",
+              description: "The Moche initiated the earliest phase of what would become the famous La Cumbre Canal, later expanded and completed by the Chimú Empire. Archaeological surveys reveal that the Moche constructed the initial 20-kilometer section of this intervalley transfer canal, attempting to connect the Chicama River valley with the Moche River valley to supplement their water supply during drought years. The early Moche sections feature simpler construction techniques—unlined earth channels with stone-reinforced sections at critical points—compared to the more sophisticated stone-lined channels built by the later Chimú. The canal's route followed natural contours along ridgelines between the two valleys, requiring the engineers to survey and maintain a consistent gradient across extremely challenging terrain including desert slopes, ravines, and exposed ridgelines subject to wind erosion. Though the Moche never completed the full intervalley connection, their initial engineering work and route selection laid the foundation for one of the most remarkable hydraulic achievements in the pre-Columbian Americas.",
+              rarity: "rare",
+              historicalPeriod: "Moche Period (300-600 CE)",
+              significance: "Precursor to the Chimú La Cumbre Canal; earliest intervalley water transfer attempt in the Americas",
+              yearBCE: -400,
+              category: "aqueduct"
+            },
+            {
+              id: "moche-flood-protection",
+              name: "Huaca Flood Protection Systems",
+              description: "The Moche developed sophisticated flood protection for their massive adobe pyramid complexes—structures that were highly vulnerable to water damage since they were constructed entirely from sun-dried mud bricks. El Niño events, occurring every 2–7 years, could deliver catastrophic rainfall to the normally bone-dry coastal desert, threatening to dissolve the enormous Huaca del Sol (the largest adobe structure in the Americas, containing an estimated 143 million bricks). Moche engineers designed integrated drainage systems including stone-lined channels along pyramid bases, graded surfaces to direct runoff away from structures, sacrificial erosion channels that allowed controlled water flow to protect critical sections, and thick plastered surfaces that shed water before it could penetrate the adobe core. Despite these measures, archaeological evidence shows multiple catastrophic flood episodes that required extensive rebuilding, suggesting the Moche were engaged in a continuous engineering battle against El Niño throughout their 600-year history.",
+              rarity: "epic",
+              historicalPeriod: "Moche Period (100-700 CE)",
+              significance: "Protected the Americas' largest adobe structure (143M bricks) from El Niño floods",
+              yearBCE: -200,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "yoruba-civilization",
+      name: "Yoruba Civilization",
+      description: "The Yoruba civilization (1200 CE–present), centered in southwestern Nigeria, developed sophisticated urban water management systems to support some of the largest pre-colonial cities in sub-Saharan Africa. The ancient city of Ile-Ife, regarded as the spiritual homeland of the Yoruba people, featured elaborate drainage systems, sacred groves protecting water sources, and urban planning that integrated water management into the fabric of city life. The Oyo Empire (1300–1836 CE), the most powerful Yoruba state, constructed defensive moats and managed river systems across a territory spanning over 150,000 square kilometers. Yoruba cities like Ife, Oyo, and Benin (a related Edo culture) were among the most urbanized settlements in pre-colonial Africa, with populations reaching 50,000–100,000 people, requiring sophisticated water supply, sanitation, and flood control systems. The Yoruba approach to water management was deeply integrated with religious practice—rivers and springs were associated with powerful orishas (deities) such as Oshun (river goddess) and Yemoja (ocean mother), creating a spiritual framework that protected water sources through sacred law and taboo rather than secular legislation.",
+      position: [2, 0, 6],
+      color: "#8B6914",
+      era: "medieval",
+      dateRange: "1200 CE - Present",
+      locations: [
+        {
+          id: "ile-ife",
+          name: "Ile-Ife",
+          description: "Sacred city and center of Yoruba urban water engineering",
+          historicalContext: "Spiritual capital of the Yoruba people with advanced urban water systems",
+          coordinates: { lat: 7.4820, lng: 4.5624 },
+          artifacts: [
+            {
+              id: "ife-urban-drainage",
+              name: "Ile-Ife Urban Drainage System",
+              description: "The ancient city of Ile-Ife developed an integrated urban drainage system that ranks among the most sophisticated in pre-colonial Africa. Archaeological excavations have revealed a network of stone-lined and pottery-pipe drains running beneath streets and courtyards, directing rainwater and gray water away from residential compounds and sacred precincts. The drainage system at the Ita Yemoo excavation site shows multiple phases of construction spanning several centuries, with increasingly sophisticated engineering: early phases used simple open channels, while later phases incorporated covered stone drains, settling chambers, and graded outfall channels directing water to the Osun River. The system was integrated with the city's famous pavement of potsherds—millions of pottery fragments laid in herringbone patterns that served as both durable road surfaces and permeable drainage layers, allowing rainwater to percolate through to subsurface drains rather than pooling on streets during the intense tropical rains. This combination of surface permeability and subsurface drainage represents a remarkably modern approach to urban stormwater management.",
+              rarity: "epic",
+              historicalPeriod: "1200-1500 CE",
+              significance: "Sophisticated pre-colonial African urban drainage with potsherd-paved permeable surfaces",
+              yearBCE: -1300,
+              category: "sanitation"
+            },
+            {
+              id: "yoruba-sacred-groves",
+              name: "Sacred Grove Water Protection (Igbo Irunmale)",
+              description: "The Yoruba system of sacred groves (igbo irunmale)—forest patches surrounding springs, river sources, and watersheds that were protected by religious taboo—represents one of the world's oldest forms of watershed conservation. Each grove was dedicated to a specific orisha (deity) and maintained by designated priests who enforced strict rules against farming, logging, or polluting within the sacred boundaries. The Osun-Osogbo Sacred Grove, now a UNESCO World Heritage site, protects a critical stretch of the Osun River and its associated springs, maintaining water quality and flow for downstream communities. Scientific studies have shown that Yoruba sacred groves preserve significantly higher biodiversity and maintain more consistent stream flows than surrounding deforested areas, validating the ecological wisdom embedded in the religious framework. This system of protecting water sources through spiritual authority rather than secular legislation proved remarkably effective over centuries, maintaining water quality in areas where purely utilitarian approaches failed.",
+              rarity: "rare",
+              historicalPeriod: "1200 CE - Present",
+              significance: "UNESCO-recognized watershed conservation through sacred law; Osun-Osogbo Grove is World Heritage",
+              yearBCE: -1200,
+              category: "irrigation"
+            },
+            {
+              id: "oyo-defensive-moats",
+              name: "Oyo Empire Defensive Moats",
+              description: "The Oyo Empire constructed some of the largest earthwork fortifications in West Africa, featuring deep moats (kòdì) that served dual purposes as military defenses and water management infrastructure. The walls and moats of Old Oyo (Oyo-Ile) enclosed an area of approximately 65 square kilometers, with moats reaching 6 meters deep and 20 meters wide in some sections. These moats were connected to natural drainage systems, filling with rainwater during the wet season to create formidable defensive barriers. During dry periods, sections of the moat system were used for fish farming and irrigated agriculture, demonstrating the Yoruba integration of military and agricultural water management. The nearby Eredo earthworks in Ijebu territory, dating to around 1000 CE, feature a moat system enclosing 400 square kilometers—one of the largest pre-colonial earthwork constructions in Africa, requiring the excavation of an estimated 3.5 million cubic meters of earth.",
+              rarity: "epic",
+              historicalPeriod: "1300-1800 CE",
+              significance: "65 km² fortified area with 6m-deep moats; Eredo earthworks enclosed 400 km² with 3.5M cubic meters excavated",
+              yearBCE: -1400,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "funan-kingdom",
+      name: "Funan Kingdom",
+      description: "The Funan Kingdom (1st–6th century CE) was the first major Indianized state in Southeast Asia, controlling the lower Mekong Delta and establishing the hydraulic engineering traditions that would later be perfected by the Khmer Empire. Centered around the port city of Oc Eo in what is now southern Vietnam, Funan's engineers transformed one of the world's most challenging hydrological environments—the vast, seasonally flooded Mekong Delta—into a productive agricultural landscape and thriving maritime trading hub connected to trade routes stretching from Rome to China. Chinese historical records describe Funan as a prosperous kingdom where 'the people live in houses raised on stilts' and 'they make canals to facilitate the flow of water.' Archaeological surveys, particularly aerial photography from the 1920s-1940s and modern satellite imagery, have revealed an extensive network of canals connecting Oc Eo to the coast and inland regions, demonstrating large-scale hydraulic landscape engineering comparable to contemporary Roman and Chinese canal systems. Funan's innovations in delta management, tidal agriculture, and canal-based transportation laid the foundations for Southeast Asian hydraulic civilization, influencing the successor Chenla and Khmer states that would create the extraordinary water systems at Angkor.",
+      position: [24, 0, 6],
+      color: "#5F9EA0",
+      era: "ancient",
+      dateRange: "1st-6th Century CE",
+      locations: [
+        {
+          id: "oc-eo",
+          name: "Oc Eo",
+          description: "Major port city and center of Funan hydraulic engineering",
+          historicalContext: "Hub of maritime Silk Road trade with canal network connecting coast to interior",
+          coordinates: { lat: 10.2520, lng: 105.1510 },
+          artifacts: [
+            {
+              id: "oc-eo-canal-network",
+              name: "Oc Eo Canal Network",
+              description: "The canal network radiating from the port city of Oc Eo represents the earliest large-scale hydraulic engineering in Southeast Asia. Aerial surveys revealed over 200 kilometers of canals connecting Oc Eo to the Gulf of Thailand coast (90 km to the west), to inland rice-growing areas (50 km to the east), and to other population centers throughout the lower Mekong Delta. The main canal, running straight for nearly 90 kilometers from Oc Eo to the coast at Ta Keo, is remarkably straight—suggesting the use of surveying techniques possibly adopted from contact with Roman or Indian engineers through maritime trade. The canals served multiple functions: transportation of trade goods (Roman coins, Indian jewelry, and Chinese ceramics have been found at Oc Eo), irrigation of rice paddies through controlled flooding, drainage of seasonally waterlogged land, and defensive barriers around major settlements. The engineering challenge was immense—the Mekong Delta's elevation varies by less than 2 meters across its entire 40,000 square kilometer extent, meaning canal gradients had to be engineered with extraordinary precision to maintain flow in such flat terrain.",
+              rarity: "legendary",
+              historicalPeriod: "1st-6th Century CE",
+              significance: "200+ km canal network; earliest large-scale hydraulic engineering in Southeast Asia; connected Roman and Chinese trade routes",
+              yearBCE: -200,
+              category: "canal"
+            },
+            {
+              id: "funan-tidal-agriculture",
+              name: "Funan Tidal Rice Agriculture",
+              description: "Funan's engineers developed a sophisticated system of tidal rice agriculture that exploited the Mekong Delta's unique hydrology—where tidal influence extends over 100 kilometers inland during the dry season. By constructing low levees and gated channels, farmers controlled the twice-daily tidal flow of brackish water into and out of rice paddies, using the tides as a natural irrigation pump that required no mechanical energy. During the wet season (June-November), when the Mekong's flow reverses the tidal pattern and freshwater floods extend across the delta, the same infrastructure managed flood levels to protect crops while allowing beneficial sediment deposition on fields. This dual-season water management system—tidal irrigation in the dry season, flood management in the wet season—was uniquely adapted to the Mekong Delta's hydrological regime and could not have been developed anywhere else in the world. The system supported rice yields sufficient to generate surplus for export, with Chinese records noting that Funan exported rice to trading partners across Southeast Asia.",
+              rarity: "epic",
+              historicalPeriod: "1st-6th Century CE",
+              significance: "Unique tidal irrigation system exploiting Mekong Delta hydrology; used tides as natural irrigation pump",
+              yearBCE: -100,
+              category: "irrigation"
+            },
+            {
+              id: "funan-port-hydraulics",
+              name: "Oc Eo Port Water Management",
+              description: "The port city of Oc Eo required sophisticated water management to function as a major international trading hub in the challenging Mekong Delta environment. Archaeological evidence reveals a rectangular city plan of approximately 450 hectares, surrounded by a moat and canal system that provided both defense and water management. The port facilities included canal-based docking systems where ocean-going vessels could navigate inland through controlled waterways, freshwater supply systems separating drinking water from the brackish canal water, and drainage infrastructure to manage the extreme seasonal variation between dry-season low water and wet-season floods that could raise water levels by 4-5 meters. Excavations have uncovered stone-lined water channels, brick-built reservoirs, and ceramic pipe systems within the city, demonstrating urban water infrastructure comparable to contemporary Roman provincial cities. The discovery of Roman medallions, Indian beads, and Chinese mirrors at Oc Eo confirms its role as a nexus of global maritime trade, facilitated by its engineered waterway connections.",
+              rarity: "epic",
+              historicalPeriod: "1st-6th Century CE",
+              significance: "450-hectare port city with canal docking system; connected Roman, Indian, and Chinese maritime trade networks",
+              yearBCE: -200,
+              category: "canal"
             }
           ]
         }

@@ -117,6 +117,9 @@ export const civilizationImages: Record<string, string> = {
   "toltec-empire": "/images/civilizations/mesoamerica.jpg",
   "khwarezmian-empire": "/images/civilizations/persia.jpg",
   "liao-jin-yuan": "/images/civilizations/china.jpg",
+  "moche-civilization": "/images/civilizations/south-america.png",
+  "yoruba-civilization": "/images/civilizations/africa.png",
+  "funan-kingdom": "/images/civilizations/southeast-asia.png",
 };
 
 export function getCivilizationImage(civilizationId: string): string {

@@ -80,6 +80,9 @@ const geographicPositions: Record<string, [number, number, number]> = {
   "majapahit": [26, 0.5, 7],
   "kanem-bornu": [6, 0.5, 4],
   "benin-kingdom": [2, 0.5, 6],
+  "moche-civilization": [-21, 0.5, 7],
+  "yoruba-civilization": [2, 0.5, 5],
+  "funan-kingdom": [25, 0.5, 5],
 };
 
 export default function WorldMap() {
