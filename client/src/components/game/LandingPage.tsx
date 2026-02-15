@@ -17,17 +17,27 @@ const FEATURED_INVENTIONS = [
 export default function LandingPage({ onSelectJourney }: LandingPageProps) {
   return (
     <div className="min-h-screen bg-[var(--deep-ocean)] text-[var(--parchment)] flex flex-col">
-      <header className="text-center py-12 px-4">
-        <h1 className="font-heading text-4xl md:text-5xl text-[var(--gold)] mb-4">
-          Historical Mystery
-        </h1>
-        <p className="text-xl text-[var(--aqua)] mb-2">
-          Discover How Water Shaped Civilization
-        </p>
-        <p className="text-[var(--parchment)]/70 max-w-2xl mx-auto">
-          Explore 99 civilizations, 350+ water inventions across 6 continents and 40,000+ years. 
-          From Aboriginal fish traps to Korean ondol to Nan Madol's mysterious canals.
-        </p>
+      <header className="relative text-center overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/hero-banner.png')" }}
+        />
+        <div 
+          className="absolute inset-0"
+          style={{ background: 'linear-gradient(to bottom, rgba(26, 58, 82, 0.7) 0%, rgba(26, 58, 82, 0.85) 100%)' }}
+        />
+        <div className="relative z-10 py-16 px-4">
+          <h1 className="font-heading text-4xl md:text-5xl text-[var(--gold)] mb-4">
+            Historical Mystery
+          </h1>
+          <p className="text-xl text-[var(--aqua)] mb-2">
+            Discover How Water Shaped Civilization
+          </p>
+          <p className="max-w-2xl mx-auto" style={{ color: 'rgba(245, 240, 225, 0.85)' }}>
+            Explore 99 civilizations, 350+ water inventions across 6 continents and 40,000+ years. 
+            From Aboriginal fish traps to Korean ondol to Nan Madol's mysterious canals.
+          </p>
+        </div>
       </header>
 
       <main className="flex-1 px-4 pb-8">

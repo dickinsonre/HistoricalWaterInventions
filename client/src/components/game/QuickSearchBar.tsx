@@ -145,7 +145,8 @@ export default function QuickSearchBar({ onSelectCivilization, onSelectInvention
             onFocus={() => setIsOpen(true)}
             onKeyDown={handleKeyDown}
             placeholder={activeCategory === "all" ? "Search 300+ inventions & 92+ civilizations..." : `Search ${inventionCount} ${activeCategory} inventions...`}
-            className="w-full pl-12 pr-12 py-3 rounded-full bg-[var(--deep-ocean)]/80 border-2 border-[var(--aqua)]/40 text-[var(--parchment)] placeholder-[var(--parchment)]/50 focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/50 text-base"
+            className="w-full pl-12 pr-12 py-3 rounded-full border-2 border-[var(--aqua)] focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)] text-base"
+            style={{ backgroundColor: 'rgba(26, 58, 82, 0.95)', color: '#f5f0e1' }}
           />
           {query && (
             <button
@@ -153,7 +154,8 @@ export default function QuickSearchBar({ onSelectCivilization, onSelectInvention
                 setQuery("");
                 setIsOpen(false);
               }}
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-[var(--parchment)]/50 hover:text-[var(--parchment)]"
+              className="absolute right-4 top-1/2 -translate-y-1/2 hover:opacity-100"
+              style={{ color: 'rgba(245, 240, 225, 0.5)' }}
             >
               <X size={20} />
             </button>
@@ -164,8 +166,9 @@ export default function QuickSearchBar({ onSelectCivilization, onSelectInvention
           className={`px-4 py-3 rounded-full transition-colors flex items-center gap-2 ${
             showFilters || activeCategory !== "all"
               ? 'bg-[var(--cerulean)] text-white'
-              : 'bg-[var(--deep-ocean)]/80 border-2 border-[var(--aqua)]/40 text-[var(--parchment)]'
+              : 'border-2 border-[var(--aqua)] text-[var(--parchment)]'
           }`}
+          style={!(showFilters || activeCategory !== "all") ? { backgroundColor: 'rgba(26, 58, 82, 0.95)' } : undefined}
           title="Filter by category"
         >
           <Filter size={20} />

@@ -126,3 +126,7 @@ canvas {
 .ripple {
   animation: water-ripple 2s ease-in-out infinite;
 }
+
+input::placeholder {
+  color: rgba(245, 240, 225, 0.5) !important;
+}

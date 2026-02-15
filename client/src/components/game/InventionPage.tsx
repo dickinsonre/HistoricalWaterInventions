@@ -133,44 +133,48 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
           </div>
         </div>
 
-        <Card className="water-card">
-          <CardContent className="p-6">
-            <div className="flex items-center gap-3 mb-2">
-              <Droplets className="text-[var(--aqua)]" size={32} />
-              <div>
-                <h1 className="font-heading text-2xl text-[var(--gold)]">{artifact.name}</h1>
-                <div className="flex items-center gap-3 text-sm text-[var(--parchment)]/70">
-                  <span className="flex items-center gap-1">
-                    <MapPin size={14} />
-                    {regionInfo?.region.name || "Unknown"}
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Calendar size={14} />
-                    {formatYear(artifact.yearBCE)}
-                  </span>
-                  <span className={`px-2 py-0.5 rounded-full text-xs ${rarityColors[artifact.rarity]}`}>
-                    {artifact.rarity}
-                  </span>
-                  {swmmModel && (
-                    <span className="px-2 py-0.5 rounded-full text-xs bg-[var(--cerulean)]/20 text-[var(--cerulean)] flex items-center gap-1">
-                      <FileCode size={12} />
-                      SWMM5 Model
+        <Card className="water-card overflow-hidden">
+          <div className="relative h-36 md:h-48 overflow-hidden">
+            <div 
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ 
+                backgroundImage: `url('${categoryImages[artifact.category] || "/images/hero-aqueduct.png"}')`,
+                backgroundSize: 'cover'
+              }}
+            />
+            <div 
+              className="absolute inset-0"
+              style={{ background: 'linear-gradient(to bottom, rgba(26, 58, 82, 0.3) 0%, rgba(26, 58, 82, 0.9) 100%)' }}
+            />
+            <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
+              <div className="flex items-center gap-3">
+                <Droplets className="text-[var(--aqua)]" size={32} />
+                <div>
+                  <h1 className="font-heading text-2xl text-[var(--gold)]">{artifact.name}</h1>
+                  <div className="flex items-center gap-3 text-sm" style={{ color: 'rgba(245, 240, 225, 0.7)' }}>
+                    <span className="flex items-center gap-1">
+                      <MapPin size={14} />
+                      {regionInfo?.region.name || "Unknown"}
                     </span>
-                  )}
+                    <span className="flex items-center gap-1">
+                      <Calendar size={14} />
+                      {formatYear(artifact.yearBCE)}
+                    </span>
+                    <span className={`px-2 py-0.5 rounded-full text-xs ${rarityColors[artifact.rarity]}`}>
+                      {artifact.rarity}
+                    </span>
+                    {swmmModel && (
+                      <span className="px-2 py-0.5 rounded-full text-xs bg-[var(--cerulean)]/20 text-[var(--cerulean)] flex items-center gap-1">
+                        <FileCode size={12} />
+                        SWMM5 Model
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
-
-            {categoryImages[artifact.category] && (
-              <div className="mb-4 rounded-lg overflow-hidden">
-                <img 
-                  src={categoryImages[artifact.category]} 
-                  alt={artifact.category}
-                  className="w-full h-40 object-cover opacity-80"
-                />
-              </div>
-            )}
-
+          </div>
+          <CardContent className="p-6">
             <div className="bg-[var(--gold)]/10 border border-[var(--gold)]/30 rounded-lg p-3 mb-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">

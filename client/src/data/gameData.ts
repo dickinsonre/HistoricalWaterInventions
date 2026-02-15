@@ -2573,7 +2573,7 @@ export const gameData: GameData = {
     {
       id: "cambodia-khmer",
       name: "Cambodia (Khmer)",
-      description: "Angkor's massive barays and hydraulic city",
+      description: "The Khmer Empire (802–1431 CE) built the largest pre-industrial city on Earth at Angkor, supported by the most ambitious hydraulic infrastructure of the medieval world. The West Baray reservoir (8 km × 2 km, holding 56 million cubic meters) remains the largest hand-dug reservoir in history and still holds water today. Over 1,000 km of canals connected barays to rice fields, enabling 3–4 harvests per year and supporting a population exceeding 1 million. Angkor Wat's 200-meter-wide moat served both as a symbolic ocean around the sacred mountain and as structural protection against foundation erosion. The empire's collapse around 1431 CE is now attributed partly to failure of this hydraulic network during severe droughts revealed by tree-ring analysis.",
       position: [16, 0, 7],
       color: "#E91E63",
       era: "medieval",
@@ -2589,30 +2589,30 @@ export const gameData: GameData = {
             {
               id: "west-baray",
               name: "West Baray Reservoir",
-              description: "8km x 2km reservoir holding 56 million cubic meters",
+              description: "The largest hand-dug reservoir in human history, measuring 8 km × 2.1 km and holding 56 million cubic meters of water—enough to fill 22,400 Olympic swimming pools. Constructed under King Suryavarman I around 1050 CE, the embankment walls rise 5+ meters and required moving an estimated 10 million cubic meters of earth by hand. The baray collected monsoon rainfall and river overflow, releasing it through sluice gates during the 6-month dry season to irrigate thousands of hectares of rice paddies. Remarkably, the West Baray still holds water today, nearly 1,000 years after construction. The earlier East Baray (7.5 km × 1.8 km, built 889 CE) served a similar function but is now dry.",
               rarity: "legendary",
               historicalPeriod: "1050 CE",
-              significance: "Largest hand-dug reservoir in history; still holds water today",
+              significance: "Largest hand-dug reservoir in history; 56 million m³ capacity; 10 million m³ of earth moved by hand; still holds water after 1,000 years",
               yearBCE: -1050,
               category: "dam"
             },
             {
               id: "angkor-moat",
               name: "Angkor Wat Moat",
-              description: "200m wide moat surrounding the temple complex",
+              description: "A 200-meter-wide moat surrounding the Angkor Wat temple complex on all four sides, forming a rectangle 1.5 km × 1.3 km. Holding approximately 1.5 million cubic meters of water, it served multiple engineering functions: symbolically representing the cosmic ocean around Mount Meru (the sacred mountain at the center of the Hindu universe), stabilizing the sandy soil foundations through constant water pressure, preventing differential settlement that would crack the massive stone towers, and providing a defensible barrier. The moat is fed by the Siem Reap River through an ingenious diversion channel. Built under Suryavarman II (1113–1150 CE), it remains water-filled year-round—a testament to its hydraulic design.",
               rarity: "epic",
               historicalPeriod: "12th century CE",
-              significance: "Symbolic ocean around sacred mountain; also prevented foundation erosion",
+              significance: "200 m wide; 1.5 million m³ capacity; stabilizes temple foundations; still water-filled after 900 years",
               yearBCE: -1150,
               category: "canal"
             },
             {
               id: "khmer-canals",
               name: "Khmer Canal Network",
-              description: "1,000+ km of canals connecting barays to rice fields",
+              description: "An interconnected hydraulic network of over 1,000 km of canals linking the massive barays (reservoirs) to rice paddies across the Angkor plain. The system included primary distribution canals (5–10 m wide), secondary channels to individual field blocks, and tertiary ditches feeding individual paddies. Sluice gates and weirs at key junctions controlled flow direction and volume. This infrastructure enabled 3–4 rice harvests per year (versus the typical 1–2 with rain-fed farming), generating the agricultural surplus that supported a million residents and funded the construction of hundreds of stone temples. LIDAR surveys since 2012 have revealed the full extent of this network, showing a planned urban-agricultural landscape covering 1,000+ km².",
               rarity: "epic",
               historicalPeriod: "9th-13th century CE",
-              significance: "Supported population of 1 million; enabled 3-4 rice harvests per year",
+              significance: "1,000+ km of canals; 3-4 rice harvests/year; supported 1 million people; LIDAR revealed 1,000+ km² planned landscape",
               yearBCE: -900,
               category: "canal"
             }
@@ -2623,7 +2623,7 @@ export const gameData: GameData = {
     {
       id: "burma-myanmar",
       name: "Burma (Myanmar)",
-      description: "Dry zone irrigation and Inle Lake floating gardens",
+      description: "Burma's hydraulic engineering centers on two remarkable traditions. The Kyaukse Weir System (9th–11th century CE) diverted the Zawgyi River through stone weirs feeding 70 km channels that irrigated 20,000+ hectares of the dry zone—this rice surplus made the Pagan Empire possible, funding the construction of 10,000+ temples at Bagan. On Inle Lake (22 km long, 900 m elevation), the Intha people developed unique floating gardens (ye-chan) built on mats of decomposing water hyacinth anchored to lake-bed poles, producing tomatoes, flowers, and vegetables year-round. The Intha's distinctive leg-rowing technique and stilted villages represent one of the world's most complete lake-based civilizations.",
       position: [14, 0, 6],
       color: "#795548",
       era: "medieval",
@@ -2639,10 +2639,10 @@ export const gameData: GameData = {
             {
               id: "kyaukse-irrigation",
               name: "Kyaukse Weir Irrigation",
-              description: "Stone weirs across Zawgyi River feeding 70km channels",
+              description: "A series of stone-and-earth weirs constructed across the Zawgyi River and its tributaries in the dry zone of central Burma, feeding 70+ km of distribution channels to irrigate 20,000+ hectares of rice paddies. The Kyaukse plain, receiving only 500–750 mm of annual rainfall, would be near-desert without irrigation. King Anawrahta (1044–1077 CE) expanded these weirs to create the agricultural foundation of the Pagan Empire—the rice surplus fed an urban population that built over 10,000 temples and monasteries at Bagan. The weirs were maintained through the corvée labor system (asran), with villages assigned specific sections. Some weirs remained operational into the British colonial period (1885).",
               rarity: "epic",
               historicalPeriod: "9th-11th century CE",
-              significance: "Irrigated 20,000+ hectares; made Pagan Empire possible",
+              significance: "Irrigated 20,000+ hectares in 500mm rainfall zone; rice surplus funded 10,000+ temples at Bagan; maintained through corvée system",
               yearBCE: -850,
               category: "irrigation"
             }
@@ -2651,17 +2651,17 @@ export const gameData: GameData = {
         {
           id: "inle-lake",
           name: "Inle Lake Floating Gardens",
-          description: "Floating agricultural beds on 116 km² lake",
-          historicalContext: "Created farmland where none existed",
+          description: "Floating agricultural beds on a 116 km² freshwater lake at 900 m elevation in the Shan Hills",
+          historicalContext: "The Intha people ('sons of the lake') created productive farmland on open water using decomposing water hyacinth, supporting 70,000+ lake dwellers",
           coordinates: { lat: 20.5353, lng: 96.9108 },
           artifacts: [
             {
               id: "floating-gardens",
-              name: "Inle Floating Gardens",
-              description: "Agricultural beds floating on water hyacinth roots",
+              name: "Inle Floating Gardens (Ye-chan)",
+              description: "The Intha people construct floating garden beds (ye-chan) from decomposing water hyacinth (Eichhornia crassipes) and lake-bottom mud, anchored to the lake bed with bamboo poles to prevent drifting. These beds are 1–2 meters wide and up to 30 meters long, floating in 2–3 meters of water. Tomatoes are the primary crop—Inle produces most of Myanmar's tomato supply. Flowers, beans, and cucumbers are also grown. The decomposing plant matter generates heat, extending the growing season. Farmers navigate between garden strips in flat-bottomed boats, using their distinctive one-legged rowing technique (standing on one leg while wrapping the other around the oar). Over 70,000 Intha live in stilted villages on the lake today.",
               rarity: "rare",
               historicalPeriod: "Traditional",
-              significance: "Grows tomatoes, flowers on lake; farmers row with their legs",
+              significance: "Produces most of Myanmar's tomatoes; 70,000+ lake dwellers; unique leg-rowing technique; farming on open water",
               yearBCE: -1000,
               category: "irrigation"
             }
@@ -2948,7 +2948,7 @@ export const gameData: GameData = {
     {
       id: "malaysia",
       name: "Malaysia",
-      description: "Traditional rice irrigation and innovative hydraulic mining techniques",
+      description: "Malaysia's water story spans from Orang Asli indigenous bamboo gravity aqueducts (zero-energy spring-water delivery) to the colonial-era lombong hydraulic tin mining that made it the world's largest tin producer for decades. The MUDA Irrigation Scheme in Kedah-Perlis irrigates 96,000 hectares of rice paddies, enabling double-cropping that underpins national food security. Traditional tasik/kolam village ponds integrated fish farming, irrigation, and water storage into community life for centuries. In the modern era, Malaysian inventor Ooi Seng Chye created the Greener Water Dispenser—a reverse osmosis system processing raw sewage into drinking water with 99.9% efficiency, representing a leap forward in decentralized water purification.",
       position: [14, 0, 10],
       color: "#FF9800",
       era: "modern",
@@ -2964,20 +2964,20 @@ export const gameData: GameData = {
             {
               id: "lombong",
               name: "Lombong (Hydraulic Tin Mining)",
-              description: "Water jets to extract tin ore from alluvial deposits",
+              description: "High-pressure water jets (monitors) directed at alluvial hillsides to dislodge tin-bearing gravel, which was then sluiced through palong channels for gravity separation. Chinese miners introduced this technique to the Kinta Valley and Larut in the 1850s, transforming Perak into the world's richest tin district. At peak production (1920s–1940s), Malaysia produced over 40% of global tin. The lombong system required elaborate water infrastructure: hilltop reservoirs, bamboo and iron pipelines, and gravel pumps. A single lombong operation could move 1,000+ cubic meters of earth per day using only water pressure and gravity. The technique reshaped entire landscapes visible today as the Kinta Valley limestone lakes.",
               rarity: "epic",
               historicalPeriod: "Colonial Era (1850s-1970s)",
-              significance: "Made Malaysia world's largest tin producer; unique water-powered mining",
+              significance: "Made Malaysia world's largest tin producer (40% of global supply); 1,000+ m³ earth moved per day; created Kinta Valley lake landscape",
               yearBCE: -1850,
               category: "water-lifting"
             },
             {
               id: "palong",
               name: "Palong (Sluice Box System)",
-              description: "Water channels for separating tin ore from soil using gravity",
+              description: "Inclined wooden channels (3–10 m long, 30–60 cm wide) with transverse riffles that trap heavy cassiterite (tin oxide, specific gravity 7.0) while lighter sand and clay wash away. Water flowing at controlled velocity creates density-based separation—the same principle as gold panning but scaled up industrially. Chinese miners refined the palong design with multiple stages: primary separation, secondary concentration, and final cleaning. The dulang (circular pan) provided final hand-separation. Combined with lombong hydraulic mining, the palong system extracted tin at 90%+ recovery rates using only water, gravity, and human skill—no chemicals or electricity required.",
               rarity: "rare",
               historicalPeriod: "Colonial Era (1800s)",
-              significance: "Efficient ore separation using only water and gravity",
+              significance: "90%+ tin recovery using only water and gravity; no chemicals or electricity; Chinese miners refined multi-stage separation",
               yearBCE: -1850,
               category: "canal"
             }
@@ -4134,7 +4134,7 @@ export const gameData: GameData = {
     {
       id: "borneo",
       name: "Borneo Indigenous Civilizations",
-      description: "Sophisticated water management in Earth's wettest environments - 40,000+ years",
+      description: "The world's third-largest island (743,330 km²) hosts some of Earth's wettest environments—receiving 3,000–5,000 mm of annual rainfall—where indigenous Dayak peoples developed extraordinary water management over 40,000+ years. The Iban, Bidayuh, and Kayan-Kenyah built communal longhouses up to 400 meters long on ironwood stilts, designed to withstand seasonal floods of 5–10 meters. In Kalimantan, traditional shallow peat canals (tatah/anjir) maintained water tables to prevent the catastrophic fires that modern deep drainage has caused. The Kadazandusun of Sabah created the tagal fish conservation system—community-managed river sanctuaries producing 3–10× more fish than open waters, now legally recognized across 400+ sites since 2003.",
       position: [16, 0, 6],
       color: "#8BC34A",
       era: "ancient",
@@ -4150,20 +4150,20 @@ export const gameData: GameData = {
             {
               id: "longhouse-settlements",
               name: "Longhouse River Settlement System",
-              description: "Elevated communal dwellings on ironwood stilts housing 20-100 families, withstanding 5-10m floods",
+              description: "The Iban, Bidayuh, and Kayan-Kenyah peoples built communal longhouses up to 400 meters long on ironwood (belian) stilts 3–6 meters above ground, housing 20–100 families under a single roof. Positioned along riverbanks for transport and water access, these structures are engineered to withstand seasonal floods of 5–10 meters. Ironwood piles resist rot for 100+ years in tropical conditions. The ruai (communal gallery) runs the full length, serving as social space, workspace, and flood refuge. Rainwater is collected from the massive roof area into bamboo-pipe systems. Longhouses remain inhabited today across Sarawak and Kalimantan, representing one of the world's oldest continuously used communal architectural traditions.",
               rarity: "epic",
               historicalPeriod: "2000 BCE - Present",
-              significance: "400+ meter structures; entire village under one roof; still inhabited today",
+              significance: "400+ meter structures; ironwood piles last 100+ years; entire village under one roof; still inhabited across Sarawak and Kalimantan",
               yearBCE: 2000,
               category: "dam"
             },
             {
               id: "bamboo-talang",
               name: "Bamboo Aqueduct Systems (Talang)",
-              description: "Gravity-fed water supply using split bamboo channels spanning kilometers",
+              description: "Gravity-fed water supply networks using split bamboo (typically Gigantochloa or Dendrocalamus species, 10–15 cm diameter) lashed together with rattan to span 2+ km from mountain springs to longhouse settlements. The Kelabit and Lun Bawang peoples of the highlands engineer precise gradients by eye, using forked branches as supports at varying heights. Joints are sealed with tree resin. Bamboo sections are replaced every 2–3 years as they weather. The system operates with zero energy cost—pure gravity flow. Some networks include settling chambers made from hollowed logs to remove sediment. This technology spread across Borneo, the Philippines, and parts of mainland Southeast Asia.",
               rarity: "rare",
               historicalPeriod: "Ancient - Present",
-              significance: "Zero energy cost; spans 2+ km; gradient engineering without tools",
+              significance: "Zero energy cost; spans 2+ km; gradient engineering by eye without instruments; bamboo replaced every 2-3 years",
               yearBCE: 2000,
               category: "aqueduct"
             }
@@ -4179,20 +4179,20 @@ export const gameData: GameData = {
             {
               id: "peat-canals",
               name: "Peat Swamp Canal Systems (Tatah/Anjir)",
-              description: "Shallow canals through 15m-deep peat, maintaining water table to prevent fires",
+              description: "Indigenous Banjar and Dayak peoples carved shallow canals (tatah and anjir) through tropical peatlands up to 15 meters deep—the world's largest tropical peat deposits. Traditional canals were deliberately kept shallow (0.5–1.5 m) to maintain the water table at or near the surface, preventing the oxidation and fire that devastate drained peat. The anjir system connects rivers through peat domes, enabling boat transport and fishing while preserving hydrology. Modern industrial drainage canals (3–5 m deep) have lowered water tables catastrophically, causing the 1997 and 2015 peat fire disasters that burned millions of hectares. The traditional system is now recognized as a model for sustainable peatland management.",
               rarity: "rare",
               historicalPeriod: "500 CE - Present",
-              significance: "Traditional shallow canals prevented fires; modern deep drainage caused catastrophic fires",
+              significance: "Traditional shallow canals prevented fires for centuries; modern deep drainage caused catastrophic fires (1997, 2015); now recognized as sustainable model",
               yearBCE: -500,
               category: "canal"
             },
             {
               id: "floating-rice-borneo",
               name: "Floating Rice Cultivation (Padi Pasang Surut)",
-              description: "Rice varieties with stems elongating 5 meters to keep pace with rising floods",
+              description: "An extraordinary example of crop co-evolution with human engineering. Indigenous communities selected and bred rice varieties (Oryza sativa) whose stems elongate up to 5 meters—growing 10+ cm per day—to keep pace with rising floodwaters in tidal zones of southern Kalimantan. Seeds are broadcast onto mudflats as tides recede, then the rice races upward as seasonal floods arrive. No irrigation infrastructure is needed; the tidal cycle provides natural water management. Harvesting is done from boats. These deep-water varieties are now recognized as critical genetic resources for climate adaptation as sea levels rise worldwide.",
               rarity: "rare",
               historicalPeriod: "Ancient - Present",
-              significance: "Stems grow 10+ cm/day; climate-resilient food production",
+              significance: "Stems grow 10+ cm/day; zero irrigation infrastructure needed; critical genetic resource for climate adaptation; harvested from boats",
               yearBCE: 1000,
               category: "irrigation"
             }
@@ -4208,20 +4208,20 @@ export const gameData: GameData = {
             {
               id: "tagal-system",
               name: "Tagal Fish Conservation System",
-              description: "Community river sanctuaries closed 1-5 years, producing 3-10× more fish than open waters",
+              description: "The Kadazandusun and Murut peoples of Sabah developed a community-based river conservation system where stretches of river are declared tagal (off-limits) for 1–5 years, allowing fish populations to recover. Village headmen (ketua kampung) enforce closures; violators face traditional fines. When a section reopens, fish densities are 3–10× higher than continuously fished waters. The system was legally recognized by Sabah's Inland Fisheries and Aquaculture Enactment (2003), with 400+ registered tagal sites across the state. The Sungai Kadamaian near Kota Belud is a famous tagal success story, now a model for community-based fisheries management worldwide.",
               rarity: "epic",
               historicalPeriod: "Ancient - Present",
-              significance: "400+ registered sites; legally backed since 2003; model for global fisheries",
+              significance: "400+ legally registered sites since 2003; 3-10× fish density increase; global model for community-based fisheries management",
               yearBCE: 1000,
               category: "irrigation"
             },
             {
               id: "rattan-fish-traps",
               name: "Rattan Fish Traps (Bubu)",
-              description: "Ingenious basket traps with one-way funnel entrance for sustainable fishing",
+              description: "Woven from rattan strips (Calamus species) and bamboo, these basket traps feature a conical funnel entrance that allows fish to enter but prevents escape. The bubu comes in dozens of specialized designs: river bottom traps (30–60 cm) target catfish and eels; floating traps capture surface-feeding species; and large estuarine bubu (up to 2 m) harvest prawns and crabs. Critically, the woven mesh creates size-selective filtering—juvenile fish escape through gaps, ensuring population sustainability. Fish are captured alive, allowing undersized or unwanted species to be released unharmed. This indigenous technology achieves near-zero bycatch, a goal that modern industrial fishing still struggles to meet.",
               rarity: "common",
               historicalPeriod: "Ancient - Present",
-              significance: "Size-selective (small fish escape); live capture allows release; zero bycatch",
+              significance: "Size-selective design allows juvenile fish escape; live capture enables release; near-zero bycatch; dozens of specialized designs for different species",
               yearBCE: 3000,
               category: "irrigation"
             }

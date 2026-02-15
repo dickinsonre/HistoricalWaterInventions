@@ -42,17 +42,31 @@ export default function CivilizationPage() {
           <ArrowLeft size={16} className="mr-2" /> Back to World Map
         </Button>
 
-        <Card className="water-card">
-          <CardContent className="p-6">
-            <div className="flex items-center gap-3 mb-4">
-              <Droplets className="text-[var(--aqua)]" size={32} />
-              <div>
-                <h1 className="font-heading text-2xl text-[var(--gold)]">{region.name}</h1>
-                <p className="text-[var(--parchment)]/70 text-sm">{region.dateRange} • {region.era}</p>
+        <Card className="water-card overflow-hidden">
+          <div className="relative h-40 md:h-52 overflow-hidden">
+            <div 
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ 
+                backgroundImage: `url('/images/civilizations/${civilizationId}.jpg'), url('/images/hero-map.png')`,
+                backgroundSize: 'cover'
+              }}
+            />
+            <div 
+              className="absolute inset-0"
+              style={{ background: 'linear-gradient(to bottom, rgba(26, 58, 82, 0.4) 0%, rgba(26, 58, 82, 0.9) 100%)' }}
+            />
+            <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
+              <div className="flex items-center gap-3">
+                <Droplets className="text-[var(--aqua)]" size={32} />
+                <div>
+                  <h1 className="font-heading text-2xl text-[var(--gold)]">{region.name}</h1>
+                  <p style={{ color: 'rgba(245, 240, 225, 0.7)', fontSize: '0.875rem' }}>{region.dateRange} • {region.era}</p>
+                </div>
               </div>
             </div>
-
-            <p className="text-[var(--parchment)]/90 mb-6">{region.description}</p>
+          </div>
+          <CardContent className="p-6">
+            <p style={{ color: 'rgba(245, 240, 225, 0.9)' }} className="mb-6">{region.description}</p>
 
             {details && (
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
