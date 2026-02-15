@@ -69,6 +69,16 @@ export default function CivilizationPage() {
           <CardContent className="p-6">
             <p style={{ color: 'rgba(245, 240, 225, 0.9)' }} className="mb-6">{region.description}</p>
 
+            {civilizationId === "dubai-uae" && (
+              <div className="mb-6 rounded-lg overflow-hidden border border-[var(--aqua)]/20">
+                <img 
+                  src="/images/civilizations/dubai-uae-infographic.png" 
+                  alt="UAE Water Engineering Transformation: From Ancient Oases to Desalination Giant" 
+                  className="w-full h-auto"
+                />
+              </div>
+            )}
+
             {details && (
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
                 {details.keyFacts.map((fact: { value: string; label: string }, idx: number) => (
