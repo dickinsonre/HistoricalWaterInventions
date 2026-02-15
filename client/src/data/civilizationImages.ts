@@ -50,7 +50,7 @@ export const civilizationImages: Record<string, string> = {
   "dubai-uae": "/images/civilizations/dubai-uae.png",
   "dilmun": "/images/civilizations/middle-east.png",
   "canaan": "/images/civilizations/middle-east.png",
-  "israel": "/images/civilizations/middle-east.png",
+  "israel": "/images/civilizations/israel.png",
   "syria-orontes": "/images/civilizations/middle-east.png",
   "phoenicia": "/images/civilizations/middle-east.png",
   "sumer": "/images/civilizations/middle-east.png",
