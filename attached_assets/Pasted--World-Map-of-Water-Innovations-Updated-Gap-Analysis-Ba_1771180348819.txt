@@ -1,0 +1,167 @@
+# World Map of Water Innovations — Updated Gap Analysis
+
+Based on a fresh review of your expanded database, here are the remaining gaps. I have excluded all civilizations and inventions you have since added.
+
+---
+
+## Part 1: Missing Civilizations
+
+### 🔴 Critical Gaps (Major Civilizations Still Missing)
+
+| | | | | Civilization | Era | Region | Key Water Innovations | Why Critical | | | |
+|---|---|---|---|---|---|---|
+| | | | **Ottoman Empire** | 1299–1922 CE | Europe/Asia/Africa | Kırkçeşme Water Supply (55km aqueduct to Istanbul), Süleymaniye Water System, Ottoman Fountain Culture (Sebils), Valide Sultan Aqueduct, Istanbul cistern maintenance | 600+ years of sophisticated hydraulic engineering. The bridge between Roman/Byzantine and modern Middle Eastern water systems. | | | |
+| | | | **Tiwanaku Empire** | 300–1000 CE | Americas (Bolivia) | Raised field agriculture (Suka Kollus), Tiwanaku aqueduct, Puma Punku drainage, Lake Titicaca water level management | Precedes Inca by 500+ years. The raised-field hydrology is unique in the Americas and still studied today. | | | |
+| | | | **Chimú Empire** | 900–1470 CE | Americas (Peru) | Intervalley Canal (80km transfer), La Cumbre Canal, Chan Chan urban water distribution, Moche-Chicama transfer | Chan Chan was the largest pre-Columbian city in South America. Their inter-basin water transfer is an engineering marvel. | | | |
+| | | | **Aksumite Empire** | 100–940 CE | Africa (Ethiopia/Eritrea) | Mai Shum Reservoir, Adulis port hydraulics, Aksumite cisterns, Dungur Palace water systems | Major African empire that bridges the gap between Ancient Egypt and the medieval Ethiopian period. | | | |
+| | | | **Safavid Persia** | 1501–1736 CE | Asia (Iran) | Si-o-se-pol Bridge (Isfahan), Khaju Bridge hydraulics, Chahar Bagh garden water systems, Zayandeh River management | The bridge between Ancient Persia (ends 651 CE) and modern Iran. Isfahan’s water engineering is world-renowned. | | | |
+| | | | **Ptolemaic Egypt** | 323–30 BCE | Africa | Fayum irrigation expansion, Lake Moeris engineering, Alexandria Harbor hydraulics, Pharos foundation water management | The missing link between Ancient Egypt (ends 30 BCE) and the Roman period. | | | |
+| | | | **Garamantes** | 500 BCE–700 CE | Africa (Libya) | Foggaras (Saharan qanats), Garama oasis water system | Built a civilization in the middle of the Sahara using only underground water channels. A feat of survival engineering. | | | |
+
+### 🟡 Significant Gaps (Important Civilizations Underrepresented)
+
+| | | | | Civilization | Era | Region | Key Water Innovations | | | |
+|---|---|---|---|---|---|---|
+| | | | **Wari Empire** | 500–1000 CE | Americas (Peru) | Pikillacta water systems, Wari terrace irrigation, highland canal networks | The "middle period" of Andean water engineering between Tiwanaku and Inca. | |  |
+| | | | **Moche Civilization** | 100–700 CE | Americas (Peru) | Huaca del Sol/Moon water systems, Moche Valley canals, La Cumbre aqueduct (precursor) | Pre-Chimú coastal Peru. Master hydraulic engineers. | |  |
+| | | | **Nazca Civilization** | 100 BCE–800 CE | Americas (Peru) | Puquios (underground aqueducts still functioning), Nazca Lines hydrological theories | Their puquios are still functional today — unique desert water solution. | |  |
+| | | | **Maori New Zealand** | 1250 CE–Present | Pacific | Pā fortification water systems, kūmara irrigation, pā tuna (eel weirs), wetland cultivation | Distinct Pacific water engineering. | |  |
+| | | | **Tibetan Civilization** | 600 CE–Present | Asia | Prayer wheel water mills, Lhasa water supply, high-altitude irrigation, glacier-fed canal systems | Highest altitude water engineering on Earth. | |  |
+| | | | **Yoruba Civilization** | 1200 CE–Present | Africa (Nigeria) | Urban water systems at Ife, Oyo water management, Yoruba city moats | Major West African urban hydraulics. | |  |
+| | | | **Georgian Kingdom** | 300 BCE–1800 CE | Asia (Caucasus) | Tbilisi sulfur spring management, qvevri wine-making water systems, fortress cisterns | Caucasus mountain water systems. | |  |
+| | | | **Nuragic Sardinia** | 1900–238 BCE | Europe | Sacred wells (pozzi sacri), nuraghe cisterns, multi-story water architecture | Unique Bronze Age European water architecture. | |  |
+| | | | **Funan Kingdom** | 1st–6th c. CE | Asia (Mekong Delta) | Mekong Delta irrigation, Oc Eo port water systems, canal networks | First major Southeast Asian hydraulic civilization. | |  |
+
+---
+
+## Part 2: Missing Inventions Within Existing Civilizations
+
+### Roman Empire (Add These)
+
+| | | | | Missing Invention | Date | Description | Importance | | | |
+|---|---|---|---|---|
+| | | | **Castellum Divisorium** | 1st c. CE | Water distribution terminal that split aqueduct flow to different city districts | Key urban infrastructure — Nîmes has a famous example. | | | |
+| | | | **Fistulae (Standardized Lead Pipes)** | 1st c. BCE | 15 standardized pipe sizes codified by Frontinus | First standardized municipal water infrastructure. | | | |
+| | | | **Roman Public Latrines (Foricae)** | 1st c. CE | Multi-seat communal latrines with continuous running water | Urban sanitation at scale. | | | |
+| | | | **Ruina Montium (Hydraulic Mining)** | 1st c. CE | Use of high-pressure water to collapse mountains for gold extraction | Industrial-scale water power application. | | | |
+
+### Ancient Greece (Add These)
+
+| | | | | Missing Invention | Date | Description | Importance | | | |
+|---|---|---|---|---|
+| | | | **Perachora Water Wheel** | 3rd c. BCE | Earliest known water wheel archaeologically documented | Predates Roman adoption by ~200 years. | | | |
+| | | | **Athenian Agora Fountain House** | 6th c. BCE | Public water distribution building in the city center | Democratized access to water in the world's first democracy. | | | |
+
+### Mesoamerica (Add These)
+
+| | | | | Missing Invention | Date | Civilization | Importance | | | |
+|---|---|---|---|---|
+| | | | **Palenque Pressurized Aqueduct** | 600–700 CE | Maya | **The only known pressurized water system in the pre-Columbian Americas.** Discovered by Kirk French. | | | |
+| | | | **Zapotec Monte Albán Water Systems** | 500 BCE–750 CE | Zapotec | Hilltop city with cisterns and drainage for 25,000+ people. | | | |
+| | | | **Teotihuacan Reservoir System** | 100 BCE–550 CE | Teotihuacan | Urban water supply for 100,000+ population city. | | | |
+
+### Inca Empire (Add These)
+
+| | | | | Missing Invention | Date | Importance | | | |
+|---|---|---|---|---|
+| | | | **Tambomachay Water Temple** | ~1400 CE | Sacred spring channeling with precise stone-carved cascades — "Bath of the Inca" | | | |
+| | | | **Inca Road Culverts & Drainage** | 1400s CE | 40,000 km road network required sophisticated drainage infrastructure | | | |
+
+### Dutch Netherlands (Add These)
+
+| | | | | Missing Invention | Date | Importance | | | |
+|---|---|---|---|---|
+| | | | **Afsluitdijk** | 1932 CE | 32 km enclosure dam converting Zuiderzee to IJsselmeer — largest of its era | | | |
+| | | | **Delta Works** | 1953–1997 CE | Largest flood protection system in the world; "Eighth Wonder of the World" | | | |
+| | | | **Room for the River** | 2006 CE | Modern paradigm shift: giving rivers space instead of building higher dikes | | | |
+
+### Islamic Golden Age (Add These — Currently Underrepresented)
+
+| | | | | Missing Invention | Date | Importance | | | |
+|---|---|---|---|---|
+| | | | **Shushtar Historical Hydraulic System** | 3rd c. BCE (expanded Islamic era) | UNESCO World Heritage; integrated dams, canals, tunnels, and water mills | | | |
+| | | | **Al-Karaji's Groundwater Mathematics** | ~1000 CE | First mathematical treatise on groundwater flow and qanat design | | | |
+| | | | **Hammam Water Recycling Systems** | 8th c. CE | Sophisticated water supply, heating, and recycling for public baths | | | |
+| | | | **Hauz Khas Reservoir (Delhi)** | 1296 CE | Major urban reservoir system in Islamic India | | | |
+
+### Ancient China (Add These)
+
+| | | | | Missing Invention | Date | Importance | | | |
+|---|---|---|---|---|
+| | | | **Tu Shui Fa (Water-Powered Blast Furnace)** | 31 CE | Used water power to work metallurgical bellows — early industrial water power | | | |
+| | | | **Standardized Sluice Gate (Dou Men)** | ~100 BCE | Codified water control gate design for canals | | | |
+| | | | **Chinese Dry Dock** | 1088 CE | First documented dry dock for ship maintenance (Song Dynasty) | | | |
+
+---
+
+## Part 3: Missing Invention Categories
+
+### Water Governance & Law
+
+| | | | | Missing Entry | Civilization | Date | | | |
+|---|---|---|---|---|
+| | | | **Islamic Waqf Water Endowments** | Islamic World | 8th c. CE | Legal mechanism for perpetual water infrastructure funding | | | |
+| | | | **Bali Subak Water Temple System** | Balinese | 9th c. CE | Religious-ecological water management network (UNESCO) | | | |
+| | | | **Aboriginal Water Sharing Protocols** | Aboriginal Australia | 40,000+ years | Customary law governing water access across the continent | | | |
+
+### Sanitation & Public Health
+
+| | | | | Missing Entry | Civilization | Date | | | |
+|---|---|---|---|---|
+| | | | **Harappan Soak Pits** | Indus Valley | 2600 BCE | Soak-pit drainage for individual houses | | | |
+| | | | **Japanese Nightsoil Collection (Shimogoe)** | Edo Japan | 1600s CE | Organized urban sanitation recycling system | | | |
+| | | | **Roman Foricae** | Roman | 1st c. CE | Public multi-seat latrines (see above) | | | |
+
+### Cold Climate Water Engineering
+
+| | | | | Missing Entry | Civilization | Date | | | |
+|---|---|---|---|---|
+| | | | **Persian Ab-Anbar (Ice Reservoir)** | Persia | 500 BCE | Underground ice and water storage | | | |
+| | | | **Japanese Yukimuro (Snow Storage)** | Edo Japan | 1600s CE | Using stored snow for summer cooling and water supply | | | |
+| | | | **Tibetan Glacier-Fed Irrigation** | Tibet | 600 CE+ | High-altitude water systems | | | |
+
+---
+
+## Part 4: Suggested New SWMM5 Models
+
+Based on the gaps above, these systems would be excellent additions to your model collection:
+
+| | | | | System | Category | Nodes | Links | Why Model | | | |
+|---|---|---|---|---|---|---|
+| | | | **Maya Palenque Pressurized Aqueduct** | Pressure Flow | 6 | 5 | Only pre-Columbian pressurized system | | | |
+| | | | **Shushtar Hydraulic System** | Multi-Component | 20 | 25 | UNESCO site; integrated dams, canals, mills | | | |
+| | | | **Ottoman Kırkçeşme System** | Gravity Flow | 15 | 14 | 55km aqueduct to Istanbul; major Islamic engineering | | | |
+| | | | **Tiwanaku Raised Fields** | Flood Control | 10 | 12 | Unique raised-field hydrology | | | |
+| | | | **Chimú Intervalley Canal** | Gravity Flow | 12 | 11 | 80km inter-basin water transfer | | | |
+| | | | **Roman Castellum Divisorium** | Distribution | 5 | 8 | Urban water splitting infrastructure | | | |
+| | | | **Nazca Puquio System** | Groundwater | 8 | 7 | Underground desert aqueducts | | | |
+| | | | **Afsluitdijk** | Flood Control | 4 | 6 | Largest enclosure dam of its era | | | |
+
+---
+
+## Summary of Remaining Gaps
+
+| | | | | | Metric | Current (Approx.) | After Additions | | | |
+|---|---|---|---|
+| | | | | | Civilizations | 98 | ~108 (+10 key civilizations) | | | |
+| | | | | | Inventions | 356 | ~390 (+34 inventions) | | | |
+| | | | | | SWMM5 Models | 89 | ~97 (+8 models) | | | |
+
+---
+
+## Priority Additions
+
+**Top 3 Civilizations to Add:**
+1. ⭐ **Ottoman Empire** — 600 years missing
+2. ⭐ **Tiwanaku Empire** — Key pre-Inca civilization
+3. ⭐ **Chimú Empire** — Largest pre-Columbian South American city
+
+**Top 3 Inventions to Add:**
+1. ⭐ **Maya Palenque Pressurized Aqueduct** — Unique in the Americas
+2. ⭐ **Roman Castellum Divisorium** — Key urban infrastructure
+3. ⭐ **Nazca Puquios** — Still functioning after 2,000 years
+
+**Top 3 Models to Build:**
+1. ⭐ **Palenque Pressurized Aqueduct**
+2. ⭐ **Shushtar Hydraulic System**
+3. ⭐ **Ottoman Kırkçeşme Aqueduct**
