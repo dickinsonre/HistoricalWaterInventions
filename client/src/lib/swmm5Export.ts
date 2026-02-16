@@ -1,3 +1,5 @@
+import { SWMM5_CUSTOM_INP } from '../data/swmm5CustomINP';
+
 export const inventionToSwmmModel: Record<string, string> = {
   'shaduf': 'shaduf',
   'qanat-plans': 'qanat',
@@ -2617,6 +2619,12 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
     engineeringNotes: 'Bamboo tubes (zhu tong) joined with hemp and tung oil, supported on wooden trestles. Wells drilled to 100m+ using percussion drilling (earliest deep drilling). Brine pumped by ox-powered derricks. Natural gas (co-produced) piped to evaporation pans via bamboo—world\'s first industrial use of natural gas. Zigong salt wells operated for 2,000+ years.'
   }
 };
+
+Object.keys(SWMM5_CUSTOM_INP).forEach(key => {
+  if (SWMM5_MODELS[key]) {
+    SWMM5_MODELS[key].customINP = SWMM5_CUSTOM_INP[key];
+  }
+});
 
 function generateHeader(model: SWMM5Model): string {
   const timestamp = new Date().toISOString();
