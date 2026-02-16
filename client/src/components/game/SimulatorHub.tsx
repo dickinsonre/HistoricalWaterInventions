@@ -9,10 +9,15 @@ import {
   WaterClockSimulator, 
   NoriaWheelSimulator,
   ShishiOdoshiSimulator,
+  QanatSimulator,
+  RomanAqueductSimulator,
+  SakiaSimulator,
+  ChainPumpSimulator,
+  WindmillPumpSimulator,
   availableSimulators 
 } from "./simulators";
 
-type SimulatorId = 'shaduf' | 'archimedes-screw' | 'water-clock' | 'noria-wheel' | 'shishi-odoshi';
+type SimulatorId = 'shaduf' | 'archimedes-screw' | 'water-clock' | 'noria-wheel' | 'shishi-odoshi' | 'qanat' | 'roman-aqueduct' | 'sakia' | 'chain-pump' | 'windmill-pump';
 
 export default function SimulatorHub() {
   const navigate = useNavigate();
@@ -30,6 +35,16 @@ export default function SimulatorHub() {
         return <NoriaWheelSimulator onClose={() => setActiveSimulator(null)} />;
       case 'shishi-odoshi':
         return <ShishiOdoshiSimulator onClose={() => setActiveSimulator(null)} />;
+      case 'qanat':
+        return <QanatSimulator onClose={() => setActiveSimulator(null)} />;
+      case 'roman-aqueduct':
+        return <RomanAqueductSimulator onClose={() => setActiveSimulator(null)} />;
+      case 'sakia':
+        return <SakiaSimulator onClose={() => setActiveSimulator(null)} />;
+      case 'chain-pump':
+        return <ChainPumpSimulator onClose={() => setActiveSimulator(null)} />;
+      case 'windmill-pump':
+        return <WindmillPumpSimulator onClose={() => setActiveSimulator(null)} />;
       default:
         return null;
     }
@@ -40,6 +55,7 @@ export default function SimulatorHub() {
       case 'Very Easy': return 'text-green-400 bg-green-400/10';
       case 'Easy': return 'text-blue-400 bg-blue-400/10';
       case 'Medium-Easy': return 'text-yellow-400 bg-yellow-400/10';
+      case 'Medium': return 'text-orange-400 bg-orange-400/10';
       default: return 'text-gray-400 bg-gray-400/10';
     }
   };
