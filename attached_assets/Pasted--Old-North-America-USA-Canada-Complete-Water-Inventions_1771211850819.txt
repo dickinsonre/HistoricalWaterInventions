@@ -1,0 +1,313 @@
+# Old North America (USA & Canada) — Complete Water Inventions Deep Dive
+
+Going region by region across the entire continent, from 15,000 BCE to pre-contact, with major colonial and modern additions.
+
+---
+
+## Current App Coverage
+
+| | | | | | | | Entry | Inventions | Assessment | | | | | |
+|-------|-----------|------------|
+| | | | | | **Ancestral Puebloans** | 3 | Basic — only reservoir, check dam, ditch | | | | | |
+| | | | | | **Hohokam** | 1 | Very thin — only canal system | | | | | |
+| | | | | | **Mississippian (Cahokia)** | 2 | Basic — reservoir, drainage | | | | | |
+| | | | | | **Pacific Northwest** | 2 | Basic — fish weirs, clam gardens | | | | | |
+| | | | | | **Inuit & Arctic** | 5 | Decent | | | | | |
+| | | | | | **Modern Era** | ~1 (Hoover Dam) | Minimal for USA/Canada | | | | | |
+| | | | | | **TOTAL** | **~14** | **Massive gaps — should be 80+** | | | | | |
+
+---
+
+## Missing Civilizations & Cultures
+
+| | | | | | | | Culture/Nation | Region | Era | Currently in App? | | | | | |
+|---------------|--------|-----|------------------|
+| | | | | | Paleo-Indian | Continent-wide | 15,000–8,000 BCE | ❌ | | | | | |
+| | | | | | Archaic Period peoples | Multiple regions | 8,000–1,000 BCE | ❌ | | | | | |
+| | | | | | Poverty Point | Louisiana | 1700–1100 BCE | ❌ | | | | | |
+| | | | | | Adena | Ohio Valley | 1000–100 BCE | ❌ | | | | | |
+| | | | | | Hopewell | Ohio/Midwest | 200 BCE–500 CE | ❌ | | | | | |
+| | | | | | Haudenosaunee (Iroquois) | Northeast | 1000 CE–present | ❌ | | | | | |
+| | | | | | Algonquin nations | Northeast/Great Lakes | Ancient–present | ❌ | | | | | |
+| | | | | | Cherokee | Southeast | Ancient–present | ❌ | | | | | |
+| | | | | | Creek/Muscogee | Southeast | Ancient–present | ❌ | | | | | |
+| | | | | | Seminole | Florida | 1700s–present | ❌ | | | | | |
+| | | | | | Mandan/Hidatsa | Great Plains | 800 CE–present | ❌ | | | | | |
+| | | | | | Pawnee | Great Plains | 1200–1800 CE | ❌ | | | | | |
+| | | | | | Great Basin peoples | Nevada/Utah | 10,000 BCE–present | ❌ | | | | | |
+| | | | | | California nations | California | 10,000 BCE–present | ❌ | | | | | |
+| | | | | | Salish peoples | Pacific NW | 5,000 BCE–present | ❌ | | | | | |
+| | | | | | Haida/Tlingit | NW Coast/Alaska | 5,000 BCE–present | ❌ | | | | | |
+| | | | | | Chumash | Southern California | 10,000 BCE–present | ❌ | | | | | |
+| | | | | | Canadian First Nations | Canada-wide | Ancient–present | ❌ | | | | | |
+| | | | | | Modern USA | USA | 1700–present | Minimal (Hoover Dam only) | | | | | |
+| | | | | | Modern Canada | Canada | 1700–present | ❌ | | | | | |
+
+---
+
+# PALEO-INDIAN & ARCHAIC (15,000–1,000 BCE)
+
+| | | | | | | | | Invention | Date | Location | People | Description | Significance | | | | | |
+|-----------|------|----------|--------|-------------|-------------|
+| | | | | | | | **Clovis Spring Camp Sites** | 13,000–12,000 BCE | Southwest, Plains | Clovis | Earliest North American settlements concentrated at permanent springs. Murray Springs (AZ) shows modified spring access — cleared pools, stone-lined catchments, directed channels. Springs were the anchor points of Paleo-Indian life. | Oldest water management in North America | | | | | |
+| | | | | | | | **Blackwater Draw Spring Management** | 11,000–7,000 BCE | New Mexico | Multiple | Major spring site occupied for 4,000+ years. Progressive modification of spring access, construction of stone-lined pools, and water-directed game drives. Megafauna (mammoth, bison) hunted at the water's edge. | Longest continuously managed spring site in North America | | | | | |
+| | | | | | | | **Great Basin Wetland Management** | 10,000 BCE onwards | Nevada, Utah, Oregon | Multiple | Paleo-Indians managed marshes and lakeshores for waterfowl hunting, fish trapping, and plant harvesting. Modified channels to expand productive wetland areas. Lovelock Cave (NV) — 4,000-year-old duck decoys found preserved in dry cave near managed wetlands. | Earliest wetland management in the Americas | | | | | |
+| | | | | | | | **Poverty Point Earthworks** | 1700–1100 BCE | Louisiana | Poverty Point culture | Massive earthwork complex with engineered drainage. Six concentric semi-elliptical ridges with aisles between them functioned as a drainage system for the settlement on the Mississippi floodplain. Poverty Point Mound (22 m tall) required water management during construction. UNESCO World Heritage. | Oldest major earthwork water engineering in North America — UNESCO | | | | | |
+| | | | | | | | **Watson Brake Mound Complex** | 3500 BCE | Louisiana | Unknown | Oldest known mound complex in North America — 11 mounds connected by ridges forming an oval. Positioned to manage seasonal flooding from the Ouachita River. Predates Poverty Point by 1,800 years. Predates the Egyptian pyramids. | Oldest mound complex in North America — older than the pyramids | | | | | |
+| | | | | | | | **Boston Back Bay Fish Weir** | 5200–3700 BCE | Massachusetts | Archaic | Over 65,000 wooden stakes discovered beneath Boston's Back Bay — remains of an enormous fish weir complex spanning several acres. Managed tidal flow to trap fish on an industrial scale. One of the largest ancient fish traps ever discovered. | Largest Archaic-period fish trap ever found | | | | | |
+| | | | | | | | **Old Copper Complex Mine Drainage** | 5000–1200 BCE | Lake Superior | Multiple | Oldest known copper mining in the Americas. Open-pit mines required water management: fire-setting and quenching to crack rock, drainage of mine pits, and washing of ore. Some pits 6+ m deep required active water removal. | Earliest industrial water use in North America | | | | | |
+| | | | | | | | **Windover Bog Burial Water** | 6000–5000 BCE | Florida | Early Archaic | Bodies buried in peat bog with stakes pinning them underwater. The anaerobic bog water preserved brain tissue for 7,000 years — the oldest preserved human brain tissue in the Americas. Demonstrates deep understanding of water's preservation properties. | Understanding water chemistry for preservation — 7,000 years ago | | | | | |
+| | | | | | | | **Stallings Island Fish Dam** | 4000 BCE | Georgia | Archaic | Massive stone fish dam across the Savannah River at Stallings Island. One of the earliest known stone fish weirs in eastern North America. Associated with the earliest pottery in North America. | Earliest stone fish weir in eastern North America | | | | | |
+
+---
+
+# WOODLAND PERIOD (1000 BCE – 1000 CE)
+
+## Adena Culture (1000–100 BCE)
+
+| | | | | | | | | Invention | Date | Location | Description | Significance | | | | | |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | | **Adena Mound Water Engineering** | 1000–100 BCE | Ohio Valley | Conical burial mounds (up to 20 m tall) required sophisticated drainage to prevent collapse and protect burials. Stone and clay drainage layers. Mound placement on elevated ground above flood level. Earthen enclosures with managed water features. | First major mound-drainage engineering in eastern North America | | | | | |
+| | | | | | | | **Adena Earthen Enclosure Drainage** | 800–100 BCE | Ohio Valley | Circular and geometric earthen enclosures with managed drainage. Some enclosures incorporated natural springs or water features. The enclosures defined ritual space partly through water management. | Water-defined ritual space | | | | | |
+
+## Hopewell Culture (200 BCE – 500 CE)
+
+| | | | | | | | | Invention | Date | Location | Description | Significance | | | | | |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | | **Newark Earthworks Water Geometry** | 100 BCE–400 CE | Ohio | Massive geometric earthworks covering 12 km² — the largest geometric earthworks in the world. The Great Circle (366 m diameter) encloses a ritual space with managed water. Eagle Mound and Octagon connected by water features. Moats and channels integrated into the geometric design. | Largest geometric earthworks in the world — water-integrated design | | | | | |
+| | | | | | | | **Hopewell Canal Construction** | 200 BCE–500 CE | Ohio/Illinois | Hopewell sites connected by canals and modified waterways. Evidence of channel widening, bank stabilization, and portage improvement. Trade goods moved by water across thousands of kilometers — from the Gulf Coast to the Great Lakes. | Water transportation infrastructure for continental trade | | | | | |
+| | | | | | | | **Fort Ancient River Terraces** | 100 BCE–1650 CE | Ohio | Major Hopewell/Fort Ancient site on terraces above the Little Miami River. Managed spring access, river terrace agriculture, and flood-adapted settlement positioning. The hilltop enclosure (3.5 miles of walls) incorporated water management. | River terrace water management over 1,700 years | | | | | |
+
+---
+
+# MISSISSIPPIAN CIVILIZATION — Expanded (800–1600 CE)
+
+### Currently in App: 2 inventions
+### Should Have: 10+
+
+| | | | | | | | | Invention | Date | Location | Description | Significance | | | | | |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | | **Monks Mound Engineering** | 1050–1200 CE | Cahokia, IL | Largest pre-Columbian earthwork north of Mexico: 30 m tall, 291 × 236 m base. Required extraordinary drainage engineering to prevent collapse. Multiple construction phases with clay cap layers, sloped surfaces, internal drainage channels, and a system of buttresses. Occasional catastrophic slumps required repair engineering. | Engineering challenge matching pyramid construction in complexity | | | | | |
+| | | | | | | | **Cahokia Grand Plaza** | 1050–1200 CE | Cahokia, IL | 19-hectare leveled plaza required filling and draining a natural swamp. Sand and clay layers created a crowned surface directing water to perimeter ditches. The largest engineered flat surface in pre-Columbian North America. Over 50 million liters of earth moved by hand. | Largest engineered flat surface in pre-Columbian North America | | | | | |
+| | | | | | | | **Cahokia Palisade Drainage** | 1175–1275 CE | Cahokia, IL | Four successive wooden palisades (each 3 km perimeter) around the central precinct. Each palisade incorporated drainage channels, bastions positioned at water management points, and gates aligned with water features. | Defensive engineering with integrated water management | | | | | |
+| | | | | | | | **Moundville Water Management** | 1120–1450 CE | Alabama | Second-largest Mississippian center on the Black Warrior River. 29 mounds positioned above flood level on a river bluff. Managed approaches from the river. Flood-adapted agriculture on the surrounding floodplain. Plaza drainage to the river. | Water-adapted urban design on a major river | | | | | |
+| | | | | | | | **Etowah Mound Moat System** | 1000–1550 CE | Georgia | Defensive moat system surrounding the mound center. Borrow pits fed by the Etowah River created moats that doubled as fish ponds. Earthen causeways crossed the moats at controlled points. | Combined defensive moat and aquaculture | | | | | |
+| | | | | | | | **Spiro Mounds River Engineering** | 800–1450 CE | Oklahoma | Major Mississippian center at the confluence of the Arkansas and Poteau Rivers. Positioned to control river trade. Managed landing areas, flood adaptation, and river-bank agriculture. Craig Mound contained the richest burial finds in North America. | River confluence control for continental trade | | | | | |
+| | | | | | | | **Winterville Mounds Delta Drainage** | 1000–1450 CE | Mississippi | Mound complex in the Yazoo Delta — the flattest, most flood-prone landscape in North America. Engineering habitable space in a landscape that floods annually required raised platforms, drainage channels, and flood-adapted construction. | Engineering in North America's most extreme floodplain | | | | | |
+| | | | | | | | **Mississippian Floodplain Agriculture** | 800–1600 CE | Multiple | Deliberate farming of floodplains using the annual flood-deposit cycle. Maize, beans, squash planted in nutrient-rich flood-deposited soil. Field positioning required understanding of flood depth, duration, and sediment patterns. The agricultural basis for Mississippian civilization. | Flood-adapted agriculture feeding the largest pre-contact population north of Mexico | | | | | |
+
+---
+
+# EASTERN WOODLANDS NATIONS (1000 BCE – 1600 CE)
+
+### Currently not in App — Major Gap
+
+## Haudenosaunee (Iroquois) Confederacy
+
+| | | | | | | | | Invention | Date | Description | Significance | | | | | |
+|-----------|------|-------------|-------------|
+| | | | | | | | **Longhouse Village Drainage** | 1000 CE onwards | Longhouse villages on elevated ground with planned drainage. Houses positioned above flood level with drainage ditches directing water away from living areas. Palisaded villages had engineered drainage gaps in walls. Some villages occupied for decades, requiring sustained drainage management. | Planned village water management in the Eastern Woodlands | | | | | |
+| | | | | | | | **Haudenosaunee Fish Weirs (Great Lakes/Rivers)** | Ancient onwards | Stone V-shaped weirs across rivers channeling fish into traps. Some weirs hundreds of meters long, requiring annual community rebuilding. The Kah-na-wa-ke weirs on the St. Lawrence were among the largest in eastern North America. Seasonal construction coordinated by clan mothers. | Largest-scale cooperative water engineering in northeastern North America | | | | | |
+| | | | | | | | **Haudenosaunee Canoe Portage Infrastructure** | Ancient onwards | Maintained portage trails connecting navigable waterways across the Northeast. Trails cleared, bridges built at stream crossings, and canoe landing sites managed. The portage network connected Lake Ontario to the Atlantic via multiple routes. Knowledge of water routes encoded in oral tradition. | Water transportation network across the Northeast | | | | | |
+| | | | | | | | **Three Sisters Moisture Management** | Traditional | Corn-beans-squash polyculture with sophisticated moisture management. Corn provides structure, beans fix nitrogen, squash leaves shade soil retaining moisture. Mounded planting directs water to roots. The system requires 50% less water than monoculture corn. | Water-efficient polyculture agriculture — still studied today | | | | | |
+| | | | | | | | **Maple Sugar Water Processing** | Traditional | Maple syrup production: tapping trees, collecting sap (mostly water), and boiling to concentrate sugar. Required understanding of freeze-thaw water cycles in trees, seasonal sap flow timing, and efficient water evaporation. 40 liters of sap produces 1 liter of syrup — managing water removal is the core process. | North America's first food-processing industry — water removal as technology | | | | | |
+
+## Algonquin Peoples (Great Lakes & Northeast)
+
+| | | | | | | | | Invention | Date | Description | Significance | | | | | |
+|-----------|------|-------------|-------------|
+| | | | | | | | **Birchbark Canoe Water Navigation** | 3000 BCE onwards | Birchbark canoes — light enough to portage yet strong enough for rapids — required deep knowledge of river conditions: current patterns, seasonal water levels, safe channels through rapids, and portage routes. The canoe and its associated water knowledge enabled travel across millions of square kilometers. | Water transportation technology enabling continental-scale travel | | | | | |
+| | | | | | | | **Wild Rice (Manoomin) Water Management** | Traditional | Ojibwe, Menominee, and other nations managed wild rice growing in shallow lakes and slow rivers. Required specific water depth (30–120 cm), flow conditions, and bed composition. Communities maintained rice stands through selective harvesting, seed broadcasting, and water level monitoring. Some nations built small dams to manage rice-bed water depth. | Aquatic crop management — managing water for a water-growing food | | | | | |
+| | | | | | | | **Great Lakes Navigation Knowledge** | Traditional | Navigation of the five Great Lakes — the largest freshwater system on Earth (244,000 km²). Knowledge of currents, seasonal ice patterns, storm wind-water interactions, safe harbors, and portage connections. Multi-day crossings of open lake water in birchbark canoes required precise water knowledge. | Navigation of the world's largest freshwater system | | | | | |
+| | | | | | | | **Wampanoag Herring Run Management** | Traditional | Management of anadromous fish runs through stream clearing, weir placement, and seasonal access control. Understanding of tidal and seasonal water patterns across dozens of streams. Herring runs managed as a shared resource among communities. | Fishery water management in coastal New England | | | | | |
+| | | | | | | | **Mi'kmaq Tidal Fishing (Atlantic Canada)** | Traditional | Mi'kmaq managed tidal fishing along the Bay of Fundy — location of the world's highest tides (16+ m range). Stone and wooden weirs positioned for different tidal stages. Fish harvested at specific tidal levels. Required intimate knowledge of the world's most extreme tidal environment. | Fishing in the world's highest tides | | | | | |
+
+## Cherokee Nation
+
+| | | | | | | | | Invention | Date | Description | Significance | | | | | |
+|-----------|------|-------------|-------------|
+| | | | | | | | **Cherokee River Cane (Arundinaria) Management** | Traditional | Management of river cane (Arundinaria gigantea) as living water infrastructure. Cane stands stabilized river banks, filtered sediment, created fish habitat, and provided building material, food (shoots), and weaving material. Cane maintained through deliberate burning — fire prevented cane from being displaced by trees. | Biological water engineering — managing a plant as water infrastructure | | | | | |
+| | | | | | | | **Cherokee Town House Drainage** | Traditional | Cherokee towns centered on the town house (council house) — a large circular structure with managed drainage. Stone-lined drains beneath the building, courtyard drainage, and managed spring access. Some town houses had associated water features for ritual purification (going to water). | Civic water architecture | | | | | |
+| | | | | | | | **Cherokee "Going to Water" (Ama Diyi)** | Traditional | Ritual purification by immersion in running water — central to Cherokee spiritual practice. Required managed access to streams and rivers: steps carved into banks, cleared approaches, and protected stream sections reserved for ritual. The Cherokee relationship with water was fundamentally spiritual and engineering was inseparable from ceremony. | Sacred water management — engineering inseparable from spirituality | | | | | |
+
+## Southeast Nations (Creek, Choctaw, Chickasaw, Seminole)
+
+| | | | | | | | | Invention | Date | People | Description | Significance | | | | | |
+|-----------|------|--------|-------------|-------------|
+| | | | | | | | **Creek/Muscogee Town Square Drainage** | Traditional | Creek | Creek towns organized around a square ground (ceremonial plaza). Drainage managed to keep the square dry during rain while directing water to garden areas. Some squares had small moats or drainage channels defining the ceremonial space. | Water-defined ceremonial space in the Southeast | | | | | |
+| | | | | | | | **Choctaw Floodplain Agriculture** | Traditional | Choctaw | The Choctaw farmed the rich floodplains of the Mississippi and its tributaries. Fields positioned based on understanding of flood frequency, depth, and sediment deposition. Different crops planted at different distances from the river based on moisture and flooding patterns. | Sophisticated floodplain agriculture in the Lower Mississippi | | | | | |
+| | | | | | | | **Seminole Cypress Swamp Engineering** | 1700s onwards | Seminole | The Seminole, forced into the Florida Everglades, developed remarkable swamp water management. Hammock islands (tree islands in the swamp) managed as habitation sites. Canoe channels maintained through saw grass. Water levels understood across the vast freshwater marsh system. | Survival water engineering in America's largest wetland | | | | | |
+| | | | | | | | **Calusa Canal System (Florida)** | 500 BCE–1500 CE | Calusa | The Calusa kingdom of southwestern Florida built an extensive canal system through mangrove and marsh. The Pine Island Canal — over 3 km long, 6 m wide, 1 m deep — connected coastal settlements. Shell mound construction managed water at settlement sites. Population 20,000+ without agriculture — sustained entirely by water-based fisheries. | Largest pre-contact canal system in eastern North America — no agriculture needed | | | | | |
+
+---
+
+# GREAT PLAINS NATIONS
+
+### Currently not in App
+
+| | | | | | | | | Invention | Date | People | Description | Significance | | | | | |
+|-----------|------|--------|-------------|-------------|
+| | | | | | | | **Mandan/Hidatsa River Bottom Gardens** | 800 CE onwards | Mandan, Hidatsa | Intensive agriculture on Missouri River bottomlands. Fields positioned to benefit from spring flooding. Sunflowers, corn, beans, squash grown in flood-enriched soil. Earthlodge villages positioned on river bluffs above flood level but adjacent to bottomland fields. Lewis and Clark were astonished by the productivity. | Flood-adapted agriculture on the Great Plains — described by Lewis and Clark | | | | | |
+| | | | | | | | **Mandan Earthlodge Water Design** | 800–1800s CE | Mandan | Circular earthlodges (12–18 m diameter) with sophisticated water management: entrance tunnels angled to prevent rain entry, central smoke hole with rain-deflection design, earth-and-grass roof engineered to shed water while insulating. Interior drainage channels beneath the floor. | Architectural water engineering for semi-subterranean structures | | | | | |
+| | | | | | | | **Pawnee Earth Lodge Drainage** | 1200–1800 CE | Pawnee | Semi-subterranean earth lodges required managing groundwater and rainfall. Entrance ramps oriented to prevent water entry. Interior floors packed clay with slight crown for drainage. Lodges positioned on elevated ground. Some lodges had sub-floor drainage channels. | Sub-surface residential water management | | | | | |
+| | | | | | | | **Wichita Grass House Water** | Traditional | Wichita | Large conical grass houses (up to 15 m diameter) with thatched roofs engineered to shed water. Interior drainage. Villages positioned near reliable water. The grass thatch required periodic replacement to maintain waterproofing — a community activity. | Grass architecture water management | | | | | |
+| | | | | | | | **Plains Buffalo Jump Water Knowledge** | Traditional | Blackfoot, etc. | Buffalo jumps (piskun) positioned relative to water sources. Hunters understood bison movement between water sources and used this knowledge to guide herds toward cliffs. Drive lanes sometimes incorporated water features — streams used as natural barriers channeling bison. | Water knowledge as hunting strategy | | | | | |
+| | | | | | | | **Arikara Reservoir Construction** | 1200–1800 CE | Arikara | Arikara villages on the Missouri River included constructed reservoirs for water storage. Earth-lined depressions captured and held water from rain and river proximity. Some reservoirs stone-lined. | Plains village water storage | | | | | |
+
+---
+
+# GREAT BASIN PEOPLES
+
+### Currently not in App
+
+| | | | | | | | | Invention | Date | People | Description | Significance | | | | | |
+|-----------|------|--------|-------------|-------------|
+| | | | | | | | **Paiute/Shoshone Irrigation (Owens Valley)** | 1000+ years | Paiute | Owens Valley Paiute practiced irrigation agriculture — one of the only documented cases of irrigation by a people usually classified as hunter-gatherers. Channels diverted streams to meadows promoting seed-bearing plant growth. Managed burning after irrigation concentrated nutrients. Destroyed when Los Angeles seized Owens Valley water in 1913. | Indigenous irrigation destroyed by modern water appropriation — the Chinatown story | | | | | |
+| | | | | | | | **Paiute Walker River Fish Dam** | Traditional | Paiute | Stone and brush dams across Walker River and tributaries for Lahontan cutthroat trout. Seasonal construction coordinated with fish runs. Entire communities participated. Some dam sites used for thousands of years. | Collaborative river engineering for fisheries | | | | | |
+| | | | | | | | **Great Basin Spring Stewardship** | 10,000 BCE onwards | Multiple | Management of desert springs across the Great Basin. Springs cleaned, access maintained, surrounding vegetation managed. Some springs considered sacred — human remains and offerings found at spring sites dating back thousands of years. Spring ownership governed by kinship and reciprocity. | 12,000 years of desert spring management | | | | | |
+| | | | | | | | **Fremont Culture Irrigation** | 400–1300 CE | Fremont | The Fremont people of Utah practiced canal irrigation for corn agriculture. Canals diverted water from mountain streams to fields in valley floors. The Fremont developed independently from the Puebloan Southwest. | Independent development of irrigation in the Great Basin | | | | | |
+
+---
+
+# CALIFORNIA NATIVE PEOPLES
+
+### Currently not in App — Significant Gap
+
+California had the densest indigenous population north of Mexico — sustained entirely by water management without agriculture (in most areas).
+
+| | | | | | | | | Invention | Date | People | Description | Significance | | | | | |
+|-----------|------|--------|-------------|-------------|
+| | | | | | | | **Chumash Tomol Water Craft** | 1500 BCE onwards | Chumash | Plank-built canoe (tomol) — unique in North America. Sewn plank construction sealed with asphaltum (natural tar). Enabled crossing to Channel Islands (40 km offshore) and coastal fishing. Required understanding of currents, winds, and channel water conditions. | Only plank-built watercraft in indigenous North America | | | | | |
+| | | | | | | | **California Fish Weir Systems** | Ancient | Multiple nations | Elaborate stone and brush fish weirs across Central Valley rivers. Sacramento, San Joaquin, Klamath, and other rivers had weirs at strategic points. Managed salmon, steelhead, and sturgeon runs. Some weirs built cooperatively by multiple nations. | Major river fishery management in California | | | | | |
+| | | | | | | | **Yurok Brush Dam Fisheries** | Traditional | Yurok | Seasonal brush dams across the Klamath River for ceremonial and subsistence salmon harvest. Built and removed on a precise annual schedule governed by the Jump Dance ceremony. Controlled by hereditary fishing rights. The dam construction was a major engineering event requiring entire community participation. | Ceremony-governed river engineering | | | | | |
+| | | | | | | | **Yokuts Tulare Lake Management** | Traditional | Yokuts | Management of Tulare Lake — once the largest freshwater lake west of the Mississippi (1,800 km²). Yokuts managed tule (bulrush) marshes, fish populations, and waterfowl habitat around the lake. Tule balsa boats for navigation. Now completely dry due to irrigation diversion. | Management of a lake now completely destroyed by modern irrigation | | | | | |
+| | | | | | | | **Pomo Tule Boat Water Navigation** | Traditional | Pomo | Tule (bulrush) boats for navigating Clear Lake and coastal waters. Boats constructed from bundled tule reeds, waterproofed with natural pitch. Required understanding of lake currents, wind patterns, and seasonal water conditions. | Freshwater lake navigation in Northern California | | | | | |
+| | | | | | | | **Kumeyaay Water Management (San Diego)** | Traditional | Kumeyaay | Management of seasonal streams and springs in the semi-arid San Diego region. Brush dams for seasonal water storage. Managed burning to improve watershed function. Springs maintained as sacred sites. Oak woodland management for water conservation. | Indigenous water management underlying modern San Diego | | | | | |
+| | | | | | | | **Miwok Prescribed Burn Water Management** | Traditional | Miwok | Prescribed burning in the Sierra Nevada to manage watershed function: reduce fuel loads (preventing catastrophic fire), promote grassland (increasing water yield), and maintain springs and streams. Modern water science confirms that indigenous burning increased water yield 10-30% compared to unmanaged forest. | Fire-water management proven by modern science to increase water yield | | | | | |
+
+---
+
+# PACIFIC NORTHWEST — Expanded
+
+### Currently in App: 2 inventions
+### Should Have: 12+
+
+| | | | | | | | | Invention | Date | People | Description | Significance | | | | | |
+|-----------|------|--------|-------------|-------------|
+| | | | | | | | **Celilo Falls Fishery** | 11,000 BCE–1957 CE | Multiple nations | The largest fishery in North America — 5-10 million salmon annually. Massive wooden platforms and net systems at Celilo Falls on the Columbia River. Multiple nations shared the fishery under complex diplomatic agreements. Deliberately destroyed by The Dalles Dam in 1957. | Oldest and largest fishery in North America — destroyed by a dam | | | | | |
+| | | | | | | | **Salmon Weir Water Level Management** | Traditional | Multiple | Weirs designed for different seasonal salmon runs. Spring runs, summer runs, fall runs each required different weir heights and configurations. Weirs built to allow enough fish to pass upstream to spawn while harvesting sufficient fish downstream. Sustainable management for 10,000+ years. | Sustainable fishery water management for millennia | | | | | |
+| | | | | | | | **Kwakwaka'wakw Tidal Fish Trap Ponds** | Traditional | Kwakwaka'wakw | Stone-walled tidal ponds along the BC coast trapping fish as tides receded. Some ponds large enough to hold hundreds of fish. Walls built from carefully placed stones — no mortar. Required understanding of tidal ranges, fish behavior, and coastal hydrology. | Tidal aquaculture on the Pacific Coast | | | | | |
+| | | | | | | | **Tlingit Ice Management** | Traditional | Tlingit | Management of glacier-fed rivers in Southeast Alaska. Understanding of glacial surge, jökulhlaup (outburst floods), and seasonal glacial melt patterns. Fish camps positioned relative to glacial water conditions. | Glacial water management in Alaska | | | | | |
+| | | | | | | | **Haida Rain Collection** | Traditional | Haida | Cedar bark and wooden trough systems collecting rainwater from longhouse roofs. Water directed to cedar storage containers. Essential on Haida Gwaii islands where some communities lacked freshwater streams. Cedar's natural antimicrobial properties improved water quality. | Rainwater harvesting using naturally antimicrobial material | | | | | |
+| | | | | | | | **Coast Salish Reef Net Fishing** | Traditional | Coast Salish | Unique fishing technology: underwater nets strung between two canoes in established reef net locations. Required precise knowledge of underwater topography, tidal currents, and salmon migration paths. Locations owned by families and passed down for generations. | Underwater net engineering requiring precise hydrological knowledge | | | | | |
+| | | | | | | | **NW Coast Eulachon Oil Water Processing** | Traditional | Multiple nations | Eulachon (candlefish) processed for oil by controlled decomposition in water-filled canoes or pits. Precise water temperature and duration management. The oil was a major trade commodity — "grease trails" connecting coast to interior were major trade routes. | Water-based food processing for the region's most valuable trade good | | | | | |
+
+---
+
+# SOUTHWESTERN NATIONS — Expanded
+
+### Ancestral Puebloans: Currently 3, Should Have 12+
+
+| | | | | | | | | Invention | Date | Location | Description | Significance | | | | | |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | | **Chaco Canyon Water Control** | 850–1150 CE | New Mexico | Elaborate system of diversion dams, canals, and gridded fields. Rincon-type water collection: stone-lined channels diverted runoff from cliff faces into masonry collection boxes, then to agricultural fields. Over 50 documented water control features in Chaco Canyon alone. | Most sophisticated Puebloan water system | | | | | |
+| | | | | | | | **Mesa Verde Reservoir (Mummy Lake)** | 750–1300 CE | Colorado | 90-foot diameter stone-lined reservoir fed by a 1 km intake channel. Collected runoff from the mesa surface. Stored water served a community of 500+ through dry periods. Recently reinterpreted — may have been a ceremonial feature with water management function. | Largest Ancestral Puebloan reservoir | | | | | |
+| | | | | | | | **Zuni Waffle Gardens** | Traditional | New Mexico | Distinctive sunken grid gardens with raised earth borders creating small squares like a waffle. Each cell holds water individually, maximizing moisture retention. Used for growing chili, onions, and other vegetables. Still practiced today. | Unique water-conserving garden design still in use | | | | | |
+| | | | | | | | **Hopi Dry Farming** | Traditional | Arizona | Deep-planting dry farming requiring zero irrigation. Seeds planted 25–30 cm deep using a dibble stick to reach subsurface moisture. Crop varieties specifically bred for drought tolerance over centuries. Sand mulch retains soil moisture. Demonstrates that water engineering includes engineering crops to fit water availability. | Engineering crops to fit water rather than engineering water to fit crops | | | | | |
+| | | | | | | | **Pueblo Bonito Water Engineering** | 850–1150 CE | New Mexico | Largest great house in Chaco Canyon (600+ rooms). Rooftop drainage directed water through internal drains to exterior ground-level canals. Multiple phases of construction show evolving water management. Some rooms may have served as water storage. | Integration of architecture and water engineering | | | | | |
+| | | | | | | | **Sand Canyon Spring Management** | 1250–1280 CE | Colorado | Pueblo built around a natural spring. Masonry structures channeled and protected the spring. Water distributed to residential areas via stone-lined channels. The spring's reliability may have attracted population during the late 13th-century drought. | Spring-based community water supply during drought | | | | | |
+| | | | | | | | **Hovenweep Water Towers** | 1200–1300 CE | Utah/Colorado | Tower structures at Hovenweep positioned at spring heads and pour-off points. May have functioned as water monitoring and control stations. Towers at canyon rims overlooked springs below. The relationship between towers and water sources is consistent across all six Hovenweep clusters. | Possible water monitoring architecture | | | | | |
+| | | | | | | | **Acoma Sky City Water** | 1150 CE onwards | New Mexico | Pueblo built atop a 112 m sandstone mesa — the oldest continuously inhabited settlement in North America. Water carried up the mesa by hand or collected from natural rock cisterns on the mesa top. Stone steps carved into cliff face for water access. Survival at this height required extreme water discipline. | Water management for the oldest continuously inhabited place in North America | | | | | |
+| | | | | | | | **Rio Grande Pueblo Irrigation** | 1200 CE onwards | New Mexico | Rio Grande Pueblos (Taos, San Ildefonso, Ohkay Owingeh, etc.) practiced canal irrigation from the Rio Grande and its tributaries. Community-managed acequia-precursor systems. Spanish colonizers later adapted these systems into the acequia tradition. | Foundation of the Rio Grande irrigation tradition still used today | | | | | |
+
+---
+
+# CANADIAN FIRST NATIONS (Beyond Inuit)
+
+### Currently not in App
+
+| | | | | | | | | Invention | Date | People/Region | Description | Significance | | | | | |
+|-----------|------|-------------|-------------|-------------|
+| | | | | | | | **Cree/Ojibwe Wild Rice Management** | Traditional | Great Lakes/Manitoba | Management of wild rice (manoomin) in thousands of lakes across Ontario, Manitoba, Minnesota, Wisconsin. Required maintaining specific water depths, flow conditions, and lakebed composition. Annual harvesting from canoes. Some nations built small dams to optimize rice-bed conditions. | Largest-scale aquatic crop management in North America | | | | | |
+| | | | | | | | **Anishinaabe Canoe Route Network** | Traditional | Ontario/Quebec | Elaborate canoe route system connecting the Great Lakes to Hudson Bay, the St. Lawrence, and the Ottawa River. Maintained portage trails, cached canoes at key points, and managed rapids approaches. Maps in oral tradition covered millions of square kilometers. Later adopted by French voyageurs. | Water route network later adopted by European fur traders | | | | | |
+| | | | | | | | **West Coast Salmon Management (BC)** | Traditional | Multiple nations | Management of over 400 salmon-bearing rivers in British Columbia. Fish weirs, stone traps, and selective harvesting. Specific clans held hereditary rights to specific rivers. Potlatch ceremonies redistributed salmon wealth. Sustainable management for 5,000+ years. | Most extensive salmon fishery management in the world | | | | | |
+| | | | | | | | **Beothuk Coastal Water Knowledge** | Traditional | Beothuk (Newfoundland) | Beothuk navigation of Newfoundland's coasts and rivers. Understanding of North Atlantic currents, iceberg patterns, fog cycles, and seasonal water conditions. Maritime adaptation in one of the most challenging water environments in North America. The Beothuk are now extinct — their water knowledge was lost. | Lost water knowledge of an extinct people | | | | | |
+| | | | | | | | **Dene/Athabaskan River Knowledge** | Traditional | NW Canada | Dene peoples navigated the Mackenzie, Yukon, and other major northern rivers. Knowledge of seasonal ice conditions, spring breakup timing, safe portage routes, and fish camp locations across subarctic rivers. Required understanding of permafrost effects on water flow. | River navigation in subarctic conditions | | | | | |
+| | | | | | | | **Métis Buffalo Hunt Water Logistics** | 1700–1880 CE | Prairies | Large-scale buffalo hunts by Métis required water logistics for hundreds of people and horses across the prairies. Hunts organized along river routes. Pemmican processing (the primary trade product) required water for meat drying and fat rendering. Red River cart trails followed water courses. | Water logistics for the largest organized hunts in North American history | | | | | |
+| | | | | | | | **Nuu-chah-nulth Whaling Water Knowledge** | Traditional | Vancouver Island | Open-ocean whaling from cedar canoes required extraordinary understanding of Pacific water conditions: currents, swells, wind-water interactions, whale migration relative to water temperature and current. The only indigenous whaling tradition on the Pacific Northwest Coast. | Open-ocean water knowledge for whaling from canoes | | | | | |
+
+---
+
+# MODERN USA & CANADA WATER ENGINEERING
+
+### Currently minimal in App
+
+| | | | | | | | | Invention | Date | Location | Description | Significance | | | | | |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | | **Erie Canal** | 1825 | New York | 584 km artificial waterway connecting Great Lakes to Atlantic. 83 locks overcoming 173 m elevation. Transformed American commerce and westward expansion. Called "Clinton's Ditch" by skeptics — became the most successful infrastructure project in early American history. | Most important canal in American history | | | | | |
+| | | | | | | | **Croton Aqueduct (New York)** | 1842 | New York | 66 km gravity aqueduct from Croton River to Manhattan. First major urban water supply in the United States. Crossed the Harlem River on a 450 m bridge. Enabled New York's growth from 300,000 to 3.4 million in 60 years. | Foundation of New York City's water supply | | | | | |
+| | | | | | | | **Chicago River Reversal** | 1900 | Illinois | The flow of the Chicago River was reversed — away from Lake Michigan (the water supply) and toward the Mississippi basin — to carry sewage away from the city. Required excavating the 45 km Chicago Sanitary and Ship Canal. One of the most dramatic water engineering feats in American history. | Most dramatic river engineering in American history — reversed a river | | | | | |
+| | | | | | | | **Los Angeles Aqueduct** | 1913 | California | 375 km gravity-fed aqueduct from Owens Valley to LA. Designed by William Mulholland. Effectively "stole" water from the Owens Valley — draining Owens Lake dry. The most controversial water project in American history. Inspired the film Chinatown. | Most controversial water project in American history | | | | | |
+| | | | | | | | **Hoover Dam** | 1936 | Nevada/Arizona | Already in app. 221 m tall concrete arch-gravity dam. Created Lake Mead — largest reservoir in USA. 2,080 MW. Changed Western American development. 96 construction deaths officially recorded (higher actual). | Most iconic dam in the world | | | | | |
+| | | | | | | | **Tennessee Valley Authority (TVA)** | 1933 | Tennessee Valley | 29 dams, navigation locks, flood control, and hydropower across the Tennessee Valley. First integrated river basin management authority. Lifted one of America's poorest regions out of poverty. Model for river basin authorities worldwide. | First integrated river basin authority — global model | | | | | |
+| | | | | | | | **Central Arizona Project** | 1973–1993 | Arizona | 541 km canal lifting Colorado River water 825 m to central and southern Arizona. 14 pump stations. Largest and most expensive aqueduct in the US. Delivers 1.8 km³/year. | Largest aqueduct in the United States | | | | | |
+| | | | | | | | **California State Water Project** | 1960–1973 | California | Largest state-built water infrastructure in the US. 34 storage facilities, 20 pumping plants, 5 power plants, 1,100 km of canals. Pumps water over the Tehachapi Mountains — the highest single water lift in the world (588 m at Edmonston Pumping Plant). | Highest water lift in the world | | | | | |
+| | | | | | | | **St. Lawrence Seaway** | 1954–1959 | USA/Canada | 3,700 km navigable waterway from the Atlantic to Lake Superior. 15 locks overcoming 75 m elevation. Joint USA-Canada project. Created 10,000+ MW of hydropower. Transformed Great Lakes shipping. | Largest binational waterway in North America | | | | | |
+| | | | | | | | **James Bay Project** | 1971–1996 | Quebec, Canada | Massive hydroelectric project diverting rivers flowing into James Bay. 215 dams and dikes, 11,000 MW installed capacity. Flooded 11,500 km² of Cree territory. Canada's largest construction project. Deeply controversial — Cree opposition led to environmental reforms. | Largest construction project in Canadian history — and most controversial | | | | | |
+| | | | | | | | **Canadian Oil Sands Tailings Ponds** | 1960s–Present | Alberta | Tailings ponds from oil sands extraction covering 220+ km². Contain toxic water that cannot be returned to the environment. One of the largest water contamination challenges on Earth. Visible from space. | Largest industrial water contamination in North America | | | | | |
+| | | | | | | | **Milwaukee Deep Tunnel** | 1993 | Wisconsin | Deep rock tunnel system storing combined sewage during storms to prevent overflow to Lake Michigan. 32 km of tunnels, 130+ m deep, storing 2.1 billion liters. Model for CSO control nationwide. | Major deep tunnel CSO control system | | | | | |
+| | | | | | | | **NYC Delaware Aqueduct Repair** | 2023 | New York | Repair of the Delaware Aqueduct — the longest tunnel in the world (137 km). Built 1937–1944. Leaking 130 million liters/day. Bypass tunnel drilled 180 m deep beneath the Hudson River. Cost $1 billion+. | Repair of the world's longest water tunnel | | | | | |
+
+---
+
+## Summary
+
+| | | | | | | | Region/Culture | Current | After Additions | Key Additions | | | | | |
+|---------------|---------|-----------------|---------------|
+| | | | | | **Paleo-Indian/Archaic** | 0 | 9+ | Clovis springs, Poverty Point (UNESCO), Watson Brake, Boston weir, Windover | | | | | |
+| | | | | | **Woodland (Adena/Hopewell)** | 0 | 5+ | Newark earthworks, Hopewell canals, Fort Ancient | | | | | |
+| | | | | | **Mississippian (expanded)** | 2 | 10+ | Monks Mound drainage, Grand Plaza, Moundville, Etowah, Spiro | | | | | |
+| | | | | | **Eastern Woodlands** | 0 | 12+ | Iroquois, Algonquin, Cherokee, Creek, Calusa canals, maple sugar | | | | | |
+| | | | | | **Great Plains** | 0 | 6+ | Mandan, Pawnee, Arikara, buffalo jump water | | | | | |
+| | | | | | **Great Basin** | 0 | 4+ | Paiute irrigation, spring stewardship, Fremont | | | | | |
+| | | | | | **California** | 0 | 7+ | Chumash tomol, Yurok dams, Yokuts lake, Miwok burning | | | | | |
+| | | | | | **Pacific NW (expanded)** | 2 | 12+ | Celilo Falls, tidal traps, Salish reef nets, eulachon | | | | | |
+| | | | | | **Southwest (expanded)** | 3 | 12+ | Chaco, Mesa Verde, Zuni waffle, Hopi dry farm, Acoma, Rio Grande | | | | | |
+| | | | | | **Canadian First Nations** | 0 | 7+ | Wild rice, canoe routes, BC salmon, Dene rivers, Nuu-chah-nulth | | | | | |
+| | | | | | **Modern USA** | 1 | 12+ | Erie Canal, Chicago reversal, LA Aqueduct, TVA, CAP, State Water Project | | | | | |
+| | | | | | **Modern Canada** | 0 | 4+ | James Bay, St. Lawrence, oil sands | | | | | |
+| | | | | | **TOTAL** | **~14** | **~100+** | | | | | |  |
+
+---
+
+## Priority Additions
+
+| | | | | | | | Priority | Addition | Why Critical | | | | | |
+|----------|----------|-------------|
+| | | | | | ⭐⭐⭐ | **Poverty Point (UNESCO)** | Oldest major earthwork in North America — predates pyramids | | | | | |
+| | | | | | ⭐⭐⭐ | **Celilo Falls** | Largest fishery in North America for 11,000 years — destroyed 1957 | | | | | |
+| | | | | | ⭐⭐⭐ | **Calusa Canal System** | Largest pre-contact canal system in eastern North America — non-agricultural civilization | | | | | |
+| | | | | | ⭐⭐⭐ | **Chicago River Reversal** | Reversed a river — most dramatic water engineering in US history | | | | | |
+| | | | | | ⭐⭐⭐ | **Chaco Canyon Water Control** | Most sophisticated Puebloan water system — 50+ documented features | | | | | |
+| | | | | | ⭐⭐ | **Paiute Owens Valley Irrigation** | Indigenous irrigation destroyed by LA water grab — the Chinatown story | | | | | |
+| | | | | | ⭐⭐ | **Wild Rice Water Management** | Largest aquatic crop management in North America | | | | | |
+| | | | | | ⭐⭐ | **TVA** | First integrated river basin authority — global model | | | | | |
+| | | | | | ⭐⭐ | **California State Water Project** | Highest water lift in the world | | | | | |
+| | | | | | ⭐⭐ | **Monks Mound Drainage** | Engineering challenge matching pyramid construction | | | | | |
+| | | | | | ⭐ | **Three Sisters Moisture Management** | Still studied for water efficiency — requires 50% less water | | | | | |
+| | | | | | ⭐ | **James Bay Project** | Canada's largest and most controversial construction project | | | | | |
+
+---
+
+## SWMM5 Models to Build
+
+| | | | | | | | Model | Category | Nodes | Links | Why | | | | | |
+|-------|----------|-------|-------|-----|
+| | | | | | **Chaco Canyon Water Control System** | Rainwater Harvesting | 12 | 15 | Most sophisticated Puebloan water — 50+ features | | | | | |
+| | | | | | **Calusa Pine Island Canal** | Navigation/Drainage | 8 | 10 | Largest pre-contact canal in eastern North America | | | | | |
+| | | | | | **Cahokia Monks Mound Drainage** | Sanitation/Drainage | 10 | 12 | Drainage of largest pre-Columbian earthwork | | | | | |
+| | | | | | **Chicago River Reversal** | Urban Drainage | 12 | 14 | Most dramatic river engineering in US history | | | | | |
+| | | | | | **TVA Multi-Dam System** | Flood Control/Hydropower | 20 | 25 | First integrated river basin management | | | | | |
+| | | | | | **LA Aqueduct (Owens Valley)** | Gravity Flow | 15 | 14 | 375 km gravity aqueduct — most controversial US water project | | | | | |
+| | | | | | **Celilo Falls Fishery** | Fishery/Flow Control | 10 | 12 | 11,000-year fishery destroyed by a dam | | | | | |
+| | | | | | **Erie Canal Lock System** | Navigation | 12 | 15 | Most important canal in American history | | | | | |

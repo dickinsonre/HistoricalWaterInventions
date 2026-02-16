@@ -484,6 +484,94 @@ export const gameData: GameData = {
               category: "dam"
             }
           ]
+        },
+        {
+          id: "phaistos-palace",
+          name: "Phaistos Palace",
+          description: "Second-largest Minoan palace",
+          historicalContext: "Independent water system showing multiple engineering approaches",
+          coordinates: { lat: 35.05, lng: 24.81 },
+          artifacts: [
+            {
+              id: "phaistos-water-system",
+              name: "Phaistos Palace Water System",
+              description: "Second-largest Minoan palace with independent water system: cisterns, channels, and drainage beneath central court",
+              rarity: "epic",
+              historicalPeriod: "1700-1400 BCE",
+              significance: "Shows multiple engineering approaches within one civilization",
+              yearBCE: 1700,
+              category: "aqueduct"
+            },
+            {
+              id: "minoan-tapered-pipe",
+              name: "Minoan Tapered Pipe Joint",
+              description: "Terracotta pipes with one end narrowed to fit inside the next creating tight semi-pressurized joints enabling long-distance piped water supply",
+              rarity: "legendary",
+              historicalPeriod: "1900-1400 BCE",
+              significance: "Pipe connection technology still used 3,900 years later in principle",
+              yearBCE: 1900,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "minoan-harbors",
+          name: "Minoan Harbor Sites",
+          description: "Harbor engineering at Amnisos and Kommos",
+          historicalContext: "Bronze Age maritime water management",
+          coordinates: { lat: 35.33, lng: 25.20 },
+          artifacts: [
+            {
+              id: "minoan-sewer-system",
+              name: "Minoan Sewer System (Knossos)",
+              description: "Underground stone-built sewers beneath Knossos large enough for a person to walk through with branch drains, manholes and ventilation shafts",
+              rarity: "legendary",
+              historicalPeriod: "1900-1400 BCE",
+              significance: "Largest Bronze Age sewer system — predates Roman Cloaca Maxima by 1,500 years",
+              yearBCE: 1900,
+              category: "sanitation"
+            },
+            {
+              id: "minoan-harbor-engineering",
+              name: "Minoan Harbor Engineering (Amnisos)",
+              description: "Harbor of Knossos with breakwaters, ship channels, freshwater supply for ships, and managed harbor siltation",
+              rarity: "epic",
+              historicalPeriod: "1900-1400 BCE",
+              significance: "Bronze Age harbor water engineering",
+              yearBCE: 1900,
+              category: "dam"
+            },
+            {
+              id: "minoan-sacred-spring",
+              name: "Minoan Sacred Spring Architecture",
+              description: "Springs managed as sacred sites with architectural enclosures, channels and ritual pools",
+              rarity: "rare",
+              historicalPeriod: "2000-1400 BCE",
+              significance: "Sacred water architecture foundation in Bronze Age Crete",
+              yearBCE: 2000,
+              category: "fountain"
+            },
+            {
+              id: "zakros-palace-cistern",
+              name: "Zakros Palace Cistern",
+              description: "Circular stone-lined cistern at Palace of Zakros, 7m diameter, 5m deep, with staircase access",
+              rarity: "rare",
+              historicalPeriod: "1500-1400 BCE",
+              significance: "Eastern Crete palace water storage",
+              yearBCE: 1500,
+              category: "dam"
+            },
+            {
+              id: "tylissos-aqueduct",
+              name: "Minoan Aqueduct (Tylissos)",
+              description: "Terracotta pipeline from mountain springs to villa complex with settling basins showing aqueduct tech beyond palaces",
+              rarity: "rare",
+              historicalPeriod: "1600-1400 BCE",
+              significance: "Aqueduct technology for non-palace settlements",
+              yearBCE: 1600,
+              category: "aqueduct"
+            }
+          ]
         }
       ]
     },
@@ -10790,6 +10878,416 @@ export const gameData: GameData = {
               significance: "Maritime water knowledge for traditional hunting coordinated across communities",
               yearBCE: -900,
               category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "mycenaean-greece",
+      name: "Mycenaean Greece",
+      description: "The civilization of Agamemnon and the Trojan War — sophisticated water engineers who built the largest hydraulic projects of the Bronze Age.",
+      position: [3, 0, -8],
+      color: "#DAA520",
+      era: "ancient",
+      dateRange: "1600-1100 BCE",
+      locations: [
+        {
+          id: "mycenae-citadel",
+          name: "Mycenae Citadel",
+          description: "Lion Gate citadel and underground cistern",
+          historicalContext: "Siege-proof water for Agamemnon's fortress",
+          coordinates: { lat: 37.73, lng: 22.76 },
+          artifacts: [
+            {
+              id: "mycenae-cistern-tunnel",
+              name: "Mycenae Cistern & Tunnel",
+              description: "Underground cistern via secret rock-cut tunnel descending 18m with 99 steps to spring-fed cistern beneath citadel walls",
+              rarity: "legendary",
+              historicalPeriod: "1250 BCE",
+              significance: "Siege-proof water supply for the Trojan War era citadel",
+              yearBCE: 1250,
+              category: "aqueduct"
+            },
+            {
+              id: "kazarma-bridge-dam",
+              name: "Mycenae Bridge/Dam (Kazarma)",
+              description: "Cyclopean stone bridge-dam 22m long, 5m wide functioning as road bridge and check dam still standing after 3200 years",
+              rarity: "legendary",
+              historicalPeriod: "1300-1200 BCE",
+              significance: "Oldest surviving bridge in Europe — still standing",
+              yearBCE: 1300,
+              category: "dam"
+            },
+            {
+              id: "mycenaean-fountain-houses",
+              name: "Mycenaean Fountain Houses",
+              description: "Public water access points with stone-built enclosures channeling spring water at settlements",
+              rarity: "rare",
+              historicalPeriod: "1300-1200 BCE",
+              significance: "Earliest Greek public water access — precursor to Classical fountain houses",
+              yearBCE: 1300,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "tiryns-fortress",
+          name: "Tiryns Fortress",
+          description: "Cyclopean walls and massive flood control works",
+          historicalContext: "Largest Bronze Age flood control in Greece",
+          coordinates: { lat: 37.60, lng: 22.80 },
+          artifacts: [
+            {
+              id: "tiryns-dam-diversion",
+              name: "Tiryns Dam & River Diversion",
+              description: "Massive cyclopean dam 200+m long 10m high redirecting seasonal river away from citadel via 1.5km diversion channel",
+              rarity: "legendary",
+              historicalPeriod: "1250 BCE",
+              significance: "Largest Bronze Age flood control project in Greece",
+              yearBCE: 1250,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "lake-copais",
+          name: "Lake Copais Basin",
+          description: "Largest Bronze Age drainage project",
+          historicalContext: "Most ambitious Bronze Age hydraulic project in the world",
+          coordinates: { lat: 38.47, lng: 23.05 },
+          artifacts: [
+            {
+              id: "lake-copais-drainage",
+              name: "Lake Copais Drainage",
+              description: "Network of canals dikes and sinkholes to drain seasonal lake covering 250 km² creating thousands of hectares of farmland",
+              rarity: "legendary",
+              historicalPeriod: "1300-1250 BCE",
+              significance: "Most ambitious Bronze Age hydraulic project in the world",
+              yearBCE: 1300,
+              category: "canal"
+            },
+            {
+              id: "gla-fortress-drainage",
+              name: "Gla Fortress Drainage (Copais)",
+              description: "Mycenaean fortress on island in Lake Copais with 3km perimeter walls incorporating drainage",
+              rarity: "epic",
+              historicalPeriod: "1300-1250 BCE",
+              significance: "Fortress water engineering integrated with lake drainage project",
+              yearBCE: 1300,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "pylos-palace",
+          name: "Palace of Nestor (Pylos)",
+          description: "Homeric palace with water systems",
+          historicalContext: "Water engineering referenced in Homer's Odyssey",
+          coordinates: { lat: 37.03, lng: 21.70 },
+          artifacts: [
+            {
+              id: "pylos-palace-water",
+              name: "Pylos Palace Water System",
+              description: "Terracotta pipe supply bathing rooms and drainage. Linear B tablets record water administration. Homer describes Telemachus bathing at Pylos",
+              rarity: "epic",
+              historicalPeriod: "1300-1200 BCE",
+              significance: "Homeric palace water engineering — referenced in the Odyssey",
+              yearBCE: 1300,
+              category: "aqueduct"
+            },
+            {
+              id: "linear-b-water-admin",
+              name: "Linear B Water Administration",
+              description: "Linear B tablets recording water resource allocation irrigation management and water offerings to gods",
+              rarity: "epic",
+              historicalPeriod: "1400-1200 BCE",
+              significance: "Oldest written water governance records in Europe",
+              yearBCE: 1400,
+              category: "irrigation"
+            },
+            {
+              id: "mycenaean-tholos-drainage",
+              name: "Mycenaean Tholos Tomb Drainage",
+              description: "Beehive tombs requiring sophisticated drainage. Treasury of Atreus 13.5m diameter with drainage channels protecting 120-tonne lintel stones",
+              rarity: "epic",
+              historicalPeriod: "1500-1200 BCE",
+              significance: "Water engineering for monumental Bronze Age tombs",
+              yearBCE: 1500,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ancient-cyprus",
+      name: "Ancient Cyprus",
+      description: "12,000 years of water engineering at the crossroads of every major Mediterranean hydraulic tradition — from Neolithic villages to modern desalination.",
+      position: [5, 0, -7],
+      color: "#D2691E",
+      era: "ancient",
+      dateRange: "10,000 BCE - Present",
+      locations: [
+        {
+          id: "khirokitia",
+          name: "Khirokitia",
+          description: "UNESCO World Heritage Neolithic settlement",
+          historicalContext: "One of the Mediterranean's oldest villages",
+          coordinates: { lat: 34.80, lng: 33.35 },
+          artifacts: [
+            {
+              id: "khirokitia-water",
+              name: "Khirokitia Neolithic Water",
+              description: "UNESCO World Heritage. Oldest permanent settlement on Cyprus above Maroni River with stone houses and managed drainage",
+              rarity: "epic",
+              historicalPeriod: "7000-5800 BCE",
+              significance: "Water engineering at one of the Mediterranean's oldest villages",
+              yearBCE: 7000,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "cypriot-copper-mines",
+          name: "Cypriot Copper Mining Sites",
+          description: "4,000 years of mine water management",
+          historicalContext: "Cyprus means copper island",
+          coordinates: { lat: 35.10, lng: 32.90 },
+          artifacts: [
+            {
+              id: "cypriot-copper-mine-water",
+              name: "Cypriot Copper Mine Water Systems",
+              description: "Shaft drainage ore washing smelting cooling and slag processing at mines like Skouriotissa operating for 4000 years",
+              rarity: "epic",
+              historicalPeriod: "3000-30 BCE",
+              significance: "Longest continuous mine water management in the Mediterranean",
+              yearBCE: 3000,
+              category: "water-lifting"
+            }
+          ]
+        },
+        {
+          id: "salamis-city",
+          name: "Salamis",
+          description: "Ancient Cypriot capital with major water supply",
+          historicalContext: "Largest ancient water system on Cyprus",
+          coordinates: { lat: 35.18, lng: 33.90 },
+          artifacts: [
+            {
+              id: "salamis-aqueduct",
+              name: "Salamis Aqueduct & Water System",
+              description: "Stone-lined channels from mountain springs with urban terracotta pipe distribution public baths and fountain houses",
+              rarity: "epic",
+              historicalPeriod: "700-300 BCE",
+              significance: "Largest ancient Cypriot water supply system",
+              yearBCE: 700,
+              category: "aqueduct"
+            },
+            {
+              id: "kition-harbor",
+              name: "Kition (Larnaca) Harbor Engineering",
+              description: "Phoenician-era harbor with ship channels dredging freshwater supply and tidal management",
+              rarity: "rare",
+              historicalPeriod: "1300-300 BCE",
+              significance: "Phoenician harbor water engineering on Cyprus",
+              yearBCE: 1300,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "kourion",
+          name: "Kourion",
+          description: "Best-preserved Roman water system on Cyprus",
+          historicalContext: "Complete system revealed by 365 CE earthquake",
+          coordinates: { lat: 34.66, lng: 32.88 },
+          artifacts: [
+            {
+              id: "kourion-water",
+              name: "Roman Kourion Water System",
+              description: "Aqueduct nymphaeum bathhouse and urban distribution destroyed and preserved by 365 CE earthquake",
+              rarity: "epic",
+              historicalPeriod: "1st century CE",
+              significance: "Best-preserved Roman water system on Cyprus",
+              yearBCE: -50,
+              category: "aqueduct"
+            },
+            {
+              id: "vouni-palace-water",
+              name: "Vouni Palace Water",
+              description: "Hilltop palace with cisterns channels from distant springs and internal distribution showing Persian-Greek hybrid design",
+              rarity: "rare",
+              historicalPeriod: "500-300 BCE",
+              significance: "Hybrid Persian-Greek water engineering",
+              yearBCE: 500,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "modern-cyprus-water",
+          name: "Modern Cyprus Water",
+          description: "Leading EU desalination and water reuse",
+          historicalContext: "One of the most water-scarce EU countries",
+          coordinates: { lat: 34.92, lng: 33.63 },
+          artifacts: [
+            {
+              id: "kamares-aqueduct",
+              name: "Cypriot Aqueduct of Kamares",
+              description: "Ottoman-era 75-arch aqueduct near Larnaca supplying mountain spring water",
+              rarity: "rare",
+              historicalPeriod: "1747 CE",
+              significance: "Finest Ottoman-era aqueduct on Cyprus",
+              yearBCE: -1747,
+              category: "aqueduct"
+            },
+            {
+              id: "cyprus-desalination",
+              name: "Modern Cypriot Desalination",
+              description: "Dhekelia and Limassol plants supplying 50%+ of domestic water combined with wastewater reuse for agriculture",
+              rarity: "epic",
+              historicalPeriod: "1997 onwards",
+              significance: "EU leader in desalination technology adoption",
+              yearBCE: -1997,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "sicily",
+      name: "Sicily",
+      description: "The most layered water engineering history of any Mediterranean island — Greek, Roman, Arab, Norman, and modern traditions superimposed.",
+      position: [2, 0, -6],
+      color: "#CD853F",
+      era: "classical",
+      dateRange: "8000 BCE - Present",
+      locations: [
+        {
+          id: "syracuse",
+          name: "Syracuse",
+          description: "Greatest Greek city in Sicily",
+          historicalContext: "Greek colonial water engineering at its finest",
+          coordinates: { lat: 37.07, lng: 15.29 },
+          artifacts: [
+            {
+              id: "sicilian-greek-aqueducts",
+              name: "Sicilian Greek Aqueducts",
+              description: "Syracuse water supply from Nymphaeum spring via 35+ km aqueduct. Akragas had elaborate water channels",
+              rarity: "legendary",
+              historicalPeriod: "5th century BCE",
+              significance: "Greek colonial water engineering at its finest",
+              yearBCE: 450,
+              category: "aqueduct"
+            },
+            {
+              id: "syracuse-ear-dionysius",
+              name: "Syracuse Ear of Dionysius",
+              description: "Limestone quarry with acoustic and water properties underground springs managed for operations",
+              rarity: "rare",
+              historicalPeriod: "5th century BCE",
+              significance: "Water management in one of the ancient world's great cities",
+              yearBCE: 450,
+              category: "water-lifting"
+            },
+            {
+              id: "sicilian-greek-fountains",
+              name: "Sicilian Greek Fountain Houses",
+              description: "Public fountain houses in every Greek Sicilian city with lion-head spouts basins and drainage",
+              rarity: "epic",
+              historicalPeriod: "6th-3rd century BCE",
+              significance: "Densest concentration of Greek fountain houses outside Greece",
+              yearBCE: 500,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "palermo-arab",
+          name: "Arab Palermo",
+          description: "Islamic water technology in Europe",
+          historicalContext: "Arab Palermo was called a garden of water",
+          coordinates: { lat: 38.12, lng: 13.36 },
+          artifacts: [
+            {
+              id: "sicilian-arab-qanat",
+              name: "Arab-Norman Qanat (Catusi)",
+              description: "Underground qanat water channels irrigated the Conca d'Oro around Palermo combined with noria wheels and citrus irrigation",
+              rarity: "legendary",
+              historicalPeriod: "827-1091 CE",
+              significance: "Islamic water technology transfer to European soil",
+              yearBCE: -827,
+              category: "irrigation"
+            },
+            {
+              id: "palermo-water-gardens",
+              name: "Palermo Arab Water Gardens",
+              description: "Zisa and Cuba palaces with elaborate fountains channels pools and muqarnas ceiling water cooling",
+              rarity: "epic",
+              historicalPeriod: "827-1091 CE",
+              significance: "Arab water-garden culture transplanted to Europe",
+              yearBCE: -827,
+              category: "fountain"
+            },
+            {
+              id: "norman-sicilian-water",
+              name: "Norman Sicilian Hybrid Water",
+              description: "Norman kings maintained and expanded Arab water systems blending Arab features with Norman architecture",
+              rarity: "epic",
+              historicalPeriod: "1061-1198 CE",
+              significance: "Unique hybrid Arab-Norman water engineering",
+              yearBCE: -1061,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "sicily-roman-sites",
+          name: "Roman Sicily Sites",
+          description: "Roman expansion of Greek water infrastructure",
+          historicalContext: "Including Villa Romana del Casale UNESCO site",
+          coordinates: { lat: 37.37, lng: 14.33 },
+          artifacts: [
+            {
+              id: "roman-sicily-water",
+              name: "Roman Sicily Water",
+              description: "Roman expansion of Greek water systems with new aqueducts at Catania and Termini Imerese. Villa Romana del Casale UNESCO with elaborate baths",
+              rarity: "epic",
+              historicalPeriod: "2nd century BCE - 5th century CE",
+              significance: "Roman expansion of Greek water infrastructure",
+              yearBCE: 150,
+              category: "aqueduct"
+            },
+            {
+              id: "sicilian-senia",
+              name: "Sicilian Senia (Water Wheel)",
+              description: "Large wooden water wheels lifting water from wells and rivers for citrus irrigation surviving into 20th century",
+              rarity: "rare",
+              historicalPeriod: "Arab period onwards",
+              significance: "Water wheel technology that created Sicily's citrus economy",
+              yearBCE: -900,
+              category: "water-lifting"
+            }
+          ]
+        },
+        {
+          id: "catania-volcanic",
+          name: "Catania (Mount Etna)",
+          description: "Urban water on active volcano",
+          historicalContext: "Built repeatedly on lava flows",
+          coordinates: { lat: 37.50, lng: 15.09 },
+          artifacts: [
+            {
+              id: "catania-volcanic-water",
+              name: "Catania Volcanic Water Management",
+              description: "Managing hot springs lava-tube drainage and construction on permeable volcanic rock. Amenano River flows partly underground through lava tubes",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Modern",
+              significance: "Urban water management on an active volcano",
+              yearBCE: 500,
+              category: "sanitation"
             }
           ]
         }
