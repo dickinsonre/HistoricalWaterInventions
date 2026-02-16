@@ -7,7 +7,7 @@ import {
   MapPin, ChevronRight, ChevronDown, X, Home, Droplets, VolumeX, Volume2, Search, 
   Backpack, Trophy, Clock, BookOpen, BarChart3, Play, Star, Image, 
   Lightbulb, Info, Globe, Grid3X3, Download, Route, Scroll, Filter, HelpCircle,
-  ArrowUpDown, SortAsc, Calendar, Beaker, Glasses, Tag, GitBranch, Brain, Share2
+  ArrowUpDown, SortAsc, Calendar, Beaker, Glasses, Tag, GitBranch, Brain, Share2, Layers
 } from "lucide-react";
 import { gameData } from "../../data/gameData";
 import { SWMM5_MODELS } from "../../lib/swmm5Export";
@@ -38,6 +38,8 @@ import InventionTags from "./InventionTags";
 import TechnologyTrees from "./TechnologyTrees";
 import QuizSystem from "./QuizSystem";
 import DiffusionMap from "./DiffusionMap";
+import FunFactsStrip from "./FunFactsStrip";
+import StatisticsDashboard from "./StatisticsDashboard";
 import { useAudio } from "../../lib/stores/useAudio";
 import { useProgress } from "../../lib/stores/useProgress";
 
@@ -262,6 +264,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
   const [showTechTrees, setShowTechTrees] = useState(false);
   const [showQuiz, setShowQuiz] = useState(false);
   const [showDiffusion, setShowDiffusion] = useState(false);
+  const [showStatistics, setShowStatistics] = useState(false);
   const [eraFilter, setEraFilter] = useState<string | null>(null);
   const [continentFilter, setContinentFilter] = useState<string | null>(null);
   const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
@@ -462,6 +465,15 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               </Button>
             </TooltipTrigger>
             <TooltipContent className="water-card text-[var(--parchment)]">Did You Know</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowStatistics(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Layers size={16} className="text-[var(--aqua)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Statistics</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -855,6 +867,8 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
         <SWMM5Showcase onViewAll={() => setShowSWMM5(true)} />
       </div>
 
+      <FunFactsStrip />
+
       {/* Modal Components */}
       {showInventory && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowInventory(false)}>
@@ -1003,6 +1017,13 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               onClose={() => setSelectedInvention(null)}
               onNavigate={(id) => setSelectedInvention(id)}
             />
+          </div>
+        </div>
+      )}
+      {showStatistics && (
+        <div className="fixed inset-0 bg-black/70 flex items-start justify-center z-50 p-4 overflow-y-auto" onClick={() => setShowStatistics(false)}>
+          <div onClick={(e) => e.stopPropagation()} className="w-full max-w-5xl">
+            <StatisticsDashboard onClose={() => setShowStatistics(false)} />
           </div>
         </div>
       )}
