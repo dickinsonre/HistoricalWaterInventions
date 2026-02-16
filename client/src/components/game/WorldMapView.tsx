@@ -44,6 +44,7 @@ import DiffusionMap from "./DiffusionMap";
 import FunFactsStrip from "./FunFactsStrip";
 import StatisticsDashboard from "./StatisticsDashboard";
 import WaterSimModels from "./WaterSimModels";
+import LanguageSelector from "./LanguageSelector";
 import { useAudio } from "../../lib/stores/useAudio";
 import { useProgress } from "../../lib/stores/useProgress";
 
@@ -635,6 +636,8 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
             </TooltipTrigger>
             <TooltipContent className="water-card text-[var(--parchment)]">About</TooltipContent>
           </Tooltip>
+
+          <LanguageSelector />
         </div>
 
         {/* Quick Filters */}
