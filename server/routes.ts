@@ -1,11 +1,11 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import OpenAI from "openai";
+import Anthropic from "@anthropic-ai/sdk";
 
-const openai = new OpenAI({
-  apiKey: process.env.AI_INTEGRATIONS_OPENAI_API_KEY,
-  baseURL: process.env.AI_INTEGRATIONS_OPENAI_BASE_URL,
+const anthropic = new Anthropic({
+  apiKey: process.env.AI_INTEGRATIONS_ANTHROPIC_API_KEY,
+  baseURL: process.env.AI_INTEGRATIONS_ANTHROPIC_BASE_URL,
 });
 
 const WATER_ENGINEER_SYSTEM_PROMPT = `You are the Water History Expert, an AI assistant for Historical Mystery — the world's most comprehensive interactive encyclopedia of water engineering history. You have deep knowledge of:
@@ -101,29 +101,28 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(400).json({ error: "No valid messages provided" });
       }
 
-      const chatMessages = [
-        { role: "system" as const, content: WATER_ENGINEER_SYSTEM_PROMPT },
-        ...sanitized.map((m: any) => ({
-          role: m.role as "user" | "assistant",
-          content: m.content,
-        })),
-      ];
+      const chatMessages = sanitized.map((m: any) => ({
+        role: m.role as "user" | "assistant",
+        content: m.content,
+      }));
 
       res.setHeader("Content-Type", "text/event-stream");
       res.setHeader("Cache-Control", "no-cache");
       res.setHeader("Connection", "keep-alive");
 
-      const stream = await openai.chat.completions.create({
-        model: "gpt-4o-mini",
+      const stream = anthropic.messages.stream({
+        model: "claude-sonnet-4-5",
+        max_tokens: 8192,
+        system: WATER_ENGINEER_SYSTEM_PROMPT,
         messages: chatMessages,
-        stream: true,
-        max_tokens: 1024,
       });
 
-      for await (const chunk of stream) {
-        const content = chunk.choices[0]?.delta?.content || "";
-        if (content) {
-          res.write(`data: ${JSON.stringify({ content })}\n\n`);
+      for await (const event of stream) {
+        if (event.type === "content_block_delta" && event.delta.type === "text_delta") {
+          const content = event.delta.text;
+          if (content) {
+            res.write(`data: ${JSON.stringify({ content })}\n\n`);
+          }
         }
       }
 

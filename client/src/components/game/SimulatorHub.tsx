@@ -14,40 +14,52 @@ import {
   SakiaSimulator,
   ChainPumpSimulator,
   WindmillPumpSimulator,
+  DamReservoirSimulator,
+  IrrigationCanalSimulator,
+  CisternRainwaterSimulator,
+  SiphonPipelineSimulator,
+  FloodControlLeveeSimulator,
+  DesalinationSimulator,
+  StepwellSimulator,
+  WaterFiltrationSimulator,
+  FogCollectorSimulator,
+  TidalFishTrapSimulator,
   availableSimulators 
 } from "./simulators";
 
-type SimulatorId = 'shaduf' | 'archimedes-screw' | 'water-clock' | 'noria-wheel' | 'shishi-odoshi' | 'qanat' | 'roman-aqueduct' | 'sakia' | 'chain-pump' | 'windmill-pump';
+type SimulatorId = 'shaduf' | 'archimedes-screw' | 'water-clock' | 'noria-wheel' | 'shishi-odoshi' | 'qanat' | 'roman-aqueduct' | 'sakia' | 'chain-pump' | 'windmill-pump' | 'dam-reservoir' | 'irrigation-canal' | 'cistern-rainwater' | 'siphon-pipeline' | 'flood-control-levee' | 'desalination' | 'stepwell' | 'water-filtration' | 'fog-collector' | 'tidal-fish-trap';
+
+const simulatorComponents: Record<SimulatorId, React.ComponentType<{ onClose?: () => void }>> = {
+  'shaduf': ShadufSimulator,
+  'archimedes-screw': ArchimedesScrewSimulator,
+  'water-clock': WaterClockSimulator,
+  'noria-wheel': NoriaWheelSimulator,
+  'shishi-odoshi': ShishiOdoshiSimulator,
+  'qanat': QanatSimulator,
+  'roman-aqueduct': RomanAqueductSimulator,
+  'sakia': SakiaSimulator,
+  'chain-pump': ChainPumpSimulator,
+  'windmill-pump': WindmillPumpSimulator,
+  'dam-reservoir': DamReservoirSimulator,
+  'irrigation-canal': IrrigationCanalSimulator,
+  'cistern-rainwater': CisternRainwaterSimulator,
+  'siphon-pipeline': SiphonPipelineSimulator,
+  'flood-control-levee': FloodControlLeveeSimulator,
+  'desalination': DesalinationSimulator,
+  'stepwell': StepwellSimulator,
+  'water-filtration': WaterFiltrationSimulator,
+  'fog-collector': FogCollectorSimulator,
+  'tidal-fish-trap': TidalFishTrapSimulator,
+};
 
 export default function SimulatorHub() {
   const navigate = useNavigate();
   const [activeSimulator, setActiveSimulator] = useState<SimulatorId | null>(null);
 
   const renderSimulator = () => {
-    switch (activeSimulator) {
-      case 'shaduf':
-        return <ShadufSimulator onClose={() => setActiveSimulator(null)} />;
-      case 'archimedes-screw':
-        return <ArchimedesScrewSimulator onClose={() => setActiveSimulator(null)} />;
-      case 'water-clock':
-        return <WaterClockSimulator onClose={() => setActiveSimulator(null)} />;
-      case 'noria-wheel':
-        return <NoriaWheelSimulator onClose={() => setActiveSimulator(null)} />;
-      case 'shishi-odoshi':
-        return <ShishiOdoshiSimulator onClose={() => setActiveSimulator(null)} />;
-      case 'qanat':
-        return <QanatSimulator onClose={() => setActiveSimulator(null)} />;
-      case 'roman-aqueduct':
-        return <RomanAqueductSimulator onClose={() => setActiveSimulator(null)} />;
-      case 'sakia':
-        return <SakiaSimulator onClose={() => setActiveSimulator(null)} />;
-      case 'chain-pump':
-        return <ChainPumpSimulator onClose={() => setActiveSimulator(null)} />;
-      case 'windmill-pump':
-        return <WindmillPumpSimulator onClose={() => setActiveSimulator(null)} />;
-      default:
-        return null;
-    }
+    if (!activeSimulator) return null;
+    const Component = simulatorComponents[activeSimulator];
+    return Component ? <Component onClose={() => setActiveSimulator(null)} /> : null;
   };
 
   const getDifficultyColor = (difficulty: string) => {
@@ -128,7 +140,7 @@ export default function SimulatorHub() {
         </div>
 
         <div className="mt-8 text-center text-[var(--deep-ocean)]/60 text-sm">
-          <p>10 interactive simulators — explore ancient hydraulic engineering!</p>
+          <p>20 interactive simulators — explore ancient & modern hydraulic engineering!</p>
         </div>
       </div>
 
