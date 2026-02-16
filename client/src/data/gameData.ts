@@ -7,6 +7,8 @@ export interface ArtifactData {
   significance: string;
   yearBCE?: number;
   category: "irrigation" | "aqueduct" | "water-lifting" | "sanitation" | "dam" | "water-clock" | "fountain" | "canal";
+  unesco?: { siteName: string; yearListed: number };
+  stillWorking?: { age: string; status: string };
 }
 
 export interface LocationData {
@@ -746,7 +748,8 @@ export const gameData: GameData = {
               historicalPeriod: "Roman Kingdom (753-509 BCE)",
               significance: "One of world's earliest sewage systems, still partially in use",
               yearBCE: 600,
-              category: "sanitation"
+              category: "sanitation",
+              stillWorking: { age: "2,600 years", status: "Still draining Rome" }
             },
             {
               id: "roman-thermae",
@@ -1150,6 +1153,76 @@ export const gameData: GameData = {
               significance: "Major Islamic urban reservoir system in South Asia",
               yearBCE: -1296,
               category: "dam"
+            },
+            {
+              id: "baghdad-flood-barriers",
+              name: "Baghdad Flood Barriers",
+              description: "Earthen and brick levee systems constructed along the Tigris River to protect Baghdad from seasonal flooding. Abbasid engineers built reinforced embankments with stone-faced walls and overflow channels that diverted excess floodwater into designated basins outside the city. These defenses were critical for protecting the House of Wisdom and the city's population of over one million.",
+              rarity: "epic",
+              historicalPeriod: "Abbasid Caliphate (8th-13th c. CE)",
+              significance: "Protected the world's largest city and its libraries from Tigris floods",
+              yearBCE: -762,
+              category: "dam"
+            },
+            {
+              id: "islamic-qanat-innovations",
+              name: "Islamic Qanat Innovations",
+              description: "Islamic engineers significantly expanded and improved upon Persian qanat technology, extending networks across North Africa, Spain, and Central Asia. Innovations included improved surveying instruments for calculating tunnel grades, reinforced tunnel linings, and mathematical formulas for predicting water yield. By the 10th century, Islamic qanat networks stretched from Afghanistan to Morocco.",
+              rarity: "epic",
+              historicalPeriod: "Islamic Golden Age (8th-13th c. CE)",
+              significance: "Spread qanat technology across three continents, from Afghanistan to Spain",
+              yearBCE: -800,
+              category: "aqueduct"
+            },
+            {
+              id: "banu-musa-automata",
+              name: "Banu Musa Water Automata",
+              description: "The three Banu Musa brothers authored the 'Book of Ingenious Devices' (Kitab al-Hiyal) around 850 CE, describing over 100 mechanical devices, many water-powered. These included self-trimming oil lamps, automatic fountains, and water-dispensing vessels using float valves, siphons, and feedback control mechanisms that anticipated modern automation principles.",
+              rarity: "legendary",
+              historicalPeriod: "Abbasid Caliphate (850 CE)",
+              significance: "100+ water devices described—precursors to modern hydraulic automation",
+              yearBCE: -850,
+              category: "water-clock"
+            }
+          ]
+        },
+        {
+          id: "cordoba-andalus",
+          name: "Cordoba, Al-Andalus",
+          description: "Islamic water engineering masterpiece in medieval Spain",
+          historicalContext: "Moorish engineers transformed Iberian water infrastructure with advanced irrigation and hydraulic technology",
+          coordinates: { lat: 37.8882, lng: -4.7794 },
+          artifacts: [
+            {
+              id: "cordoba-ablution",
+              name: "Cordoba Great Mosque Ablution System",
+              description: "Elaborate ritual washing facilities at the Great Mosque of Cordoba (begun 784 CE) featuring multiple fountain courtyards with running water fed by aqueducts. The ablution system included heated water channels, marble basins, and underground drains serving thousands of worshippers daily. The Patio de los Naranjos courtyard fountains still flow today.",
+              rarity: "epic",
+              historicalPeriod: "Umayyad Caliphate of Cordoba (784 CE)",
+              significance: "Served thousands of daily worshippers with running water for ritual purification",
+              yearBCE: -784,
+              category: "fountain"
+            },
+            {
+              id: "acequia-irrigation",
+              name: "Acequia Irrigation System",
+              description: "Gravity-fed canal networks (acequias) introduced by Islamic engineers to the Iberian Peninsula, transforming arid Spanish landscapes into productive agricultural zones. The acequia system included main canals, distribution channels, and community-managed water-sharing schedules (tandas). Many acequia systems in Valencia and Granada remain in active use after 1,000+ years.",
+              rarity: "legendary",
+              historicalPeriod: "Islamic Period in Spain (8th-15th c. CE)",
+              significance: "Still operating after 1,000+ years—foundation of Spanish irrigation law",
+              yearBCE: -750,
+              category: "irrigation",
+              stillWorking: { age: "1,200+ years", status: "Active acequia systems still irrigate farms in Valencia and Granada" }
+            },
+            {
+              id: "noria-hama",
+              name: "Noria of Hama",
+              description: "Giant water wheels up to 20 meters in diameter on the Orontes River in Hama, Syria—the largest surviving norias in the world. These current-powered wheels lifted river water into stone aqueducts that distributed it across the city and surrounding orchards. At their peak, 17 norias operated simultaneously along the river.",
+              rarity: "legendary",
+              historicalPeriod: "Islamic Period (12th-13th c. CE)",
+              significance: "Largest surviving norias in the world at 20m diameter—still standing",
+              yearBCE: -1100,
+              category: "water-lifting"
             }
           ]
         },
@@ -1385,6 +1458,26 @@ export const gameData: GameData = {
               significance: "Essential desert water storage technology spanning 2,500+ years",
               yearBCE: 500,
               category: "dam"
+            },
+            {
+              id: "qanat-vertical-shafts",
+              name: "Qanat Vertical Shafts",
+              description: "Access and ventilation shafts spaced every 20-50 meters along qanat tunnels, serving as construction access points, ventilation for workers during excavation, and ongoing maintenance entry points. These shafts, some exceeding 100 meters deep, required precise vertical drilling through rock and soil layers. The surface rings of excavated material around shaft openings are a distinctive landscape feature across Iran.",
+              rarity: "epic",
+              historicalPeriod: "Achaemenid Period (550-330 BCE)",
+              significance: "Engineering feat enabling construction and maintenance of tunnels up to 70 km long",
+              yearBCE: 800,
+              category: "aqueduct"
+            },
+            {
+              id: "payab-system",
+              name: "Payab Water-Drawing System",
+              description: "Underground stairways providing public access to qanat water channels below street level. These stepped corridors, sometimes descending 20+ meters, allowed residents to draw water directly from flowing qanats without pumping. Payabs served as communal gathering points and cool refuges from desert heat, with some featuring vaulted chambers at the water level.",
+              rarity: "rare",
+              historicalPeriod: "Achaemenid-Islamic Period",
+              significance: "Public water access infrastructure—cool underground community gathering spaces",
+              yearBCE: 500,
+              category: "aqueduct"
             }
           ]
         },
@@ -1404,6 +1497,66 @@ export const gameData: GameData = {
               significance: "Protected elaborate stone carvings from water damage for 2,500 years",
               yearBCE: 500,
               category: "sanitation"
+            },
+            {
+              id: "persepolis-stone-channel",
+              name: "Persepolis Stone Water Channel",
+              description: "Precisely carved limestone channels distributing water across the royal terrace platform at Persepolis. These channels, cut directly into the stone platform, directed rainwater and spring water to cisterns and drainage outlets with calculated slopes. The craftsmanship matches the quality of the famous relief carvings on the terrace walls.",
+              rarity: "epic",
+              historicalPeriod: "Achaemenid Period (518-330 BCE)",
+              significance: "Precision stone-carved water distribution matching the finest Achaemenid craftsmanship",
+              yearBCE: 500,
+              category: "aqueduct"
+            },
+            {
+              id: "naqsh-e-rostam-drainage",
+              name: "Naqsh-e Rostam Drainage",
+              description: "Drainage channels engineered to protect the royal tombs of four Achaemenid kings carved into the cliff face at Naqsh-e Rostam. Rock-cut channels above and around the tomb facades diverted rainwater and snowmelt away from the carved reliefs. This protective drainage has preserved the tomb facades for 2,500 years in remarkably good condition.",
+              rarity: "rare",
+              historicalPeriod: "Achaemenid Period (500-330 BCE)",
+              significance: "Preserved four royal tombs from erosion for 2,500 years",
+              yearBCE: 490,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "pasargadae",
+          name: "Pasargadae",
+          description: "First capital of the Achaemenid Empire with pioneering garden irrigation",
+          historicalContext: "Cyrus the Great's capital featured the world's oldest known formal gardens",
+          coordinates: { lat: 30.1938, lng: 53.1670 },
+          artifacts: [
+            {
+              id: "pasargadae-garden-channels",
+              name: "Pasargadae Garden Channels",
+              description: "Stone-lined water channels forming the oldest known formal garden irrigation system, built by Cyrus the Great around 546 BCE. The geometric channel network divided the royal gardens into quadrants (chahar bagh pattern), with water flowing from a central pavilion outward through carved limestone channels. This design became the prototype for all Persian gardens and influenced Islamic garden design worldwide.",
+              rarity: "legendary",
+              historicalPeriod: "Achaemenid Period (546 BCE)",
+              significance: "Oldest known formal garden irrigation—prototype for all Persian and Islamic gardens",
+              yearBCE: 546,
+              category: "irrigation",
+              unesco: { siteName: "Pasargadae", yearListed: 2004 }
+            },
+            {
+              id: "band-e-amir-dams",
+              name: "Band-e Amir Dams",
+              description: "Series of ancient stone and earth dams in Fars province built across river valleys to create reservoirs for irrigation. These band (dam) structures, some dating to the Achaemenid period, demonstrate early Persian mastery of dam engineering. Several have been repaired and maintained continuously for over 2,000 years.",
+              rarity: "epic",
+              historicalPeriod: "Achaemenid Period (550-330 BCE)",
+              significance: "Among the oldest continuously maintained dams in the world",
+              yearBCE: 500,
+              category: "dam"
+            },
+            {
+              id: "jube-channels",
+              name: "Jube Open Channel System",
+              description: "Open stone-lined channels (jubes) running along streets in Persian cities, distributing water from qanats to homes, gardens, and public fountains. These surface channels featured strategically placed diversion gates allowing households to fill private cisterns. The jube system remained the primary urban water distribution method in Iranian cities until the 20th century.",
+              rarity: "rare",
+              historicalPeriod: "Achaemenid-Islamic Period",
+              significance: "Urban water distribution system used continuously for 2,500+ years",
+              yearBCE: 500,
+              category: "canal"
             }
           ]
         }
@@ -1921,6 +2074,56 @@ export const gameData: GameData = {
               significance: "Free public water access for all citizens",
               yearBCE: -500,
               category: "fountain"
+            },
+            {
+              id: "binbirdirek-cistern",
+              name: "Binbirdirek Cistern (1001 Columns)",
+              description: "The second largest surviving Byzantine cistern in Istanbul, built in the 4th-5th century CE with 224 marble columns arranged in 12 rows of 16, plus additional support columns. The cistern measures 64m x 56m and could store an estimated 40,000 cubic meters of water. Known as the 'Cistern of 1001 Columns' due to its forest-like interior, it served as a critical backup water supply for the imperial district.",
+              rarity: "legendary",
+              historicalPeriod: "Byzantine Period (4th-5th c. CE)",
+              significance: "Second largest Byzantine cistern—224 columns supporting a vast underground reservoir",
+              yearBCE: -400,
+              category: "dam"
+            },
+            {
+              id: "theodosian-moat",
+              name: "Theodosian Walls Moat System",
+              description: "Water-filled defensive moat running the full 6.5 km length of Constantinople's Theodosian land walls, built in the early 5th century CE. The moat was 20 meters wide and fed by aqueducts and rainwater collection, with sluice gates controlling water levels. This water barrier formed the outermost of three defensive lines that kept Constantinople unconquered for over 1,000 years.",
+              rarity: "epic",
+              historicalPeriod: "Byzantine Period (413 CE)",
+              significance: "Water-filled moat that helped protect Constantinople for over 1,000 years",
+              yearBCE: -413,
+              category: "canal"
+            },
+            {
+              id: "great-palace-sewers",
+              name: "Great Palace Sewers",
+              description: "Underground waste drainage system beneath the Great Palace of Constantinople, featuring brick-vaulted tunnels that carried sewage and stormwater from the palace complex to the Sea of Marmara. The system included settling chambers, ventilation shafts, and multiple outfall points. These sewers served one of the largest palace complexes in the medieval world for over 800 years.",
+              rarity: "rare",
+              historicalPeriod: "Byzantine Period (4th-12th c. CE)",
+              significance: "Served the largest medieval palace complex for 800+ years",
+              yearBCE: -330,
+              category: "sanitation"
+            },
+            {
+              id: "byzantine-water-mills",
+              name: "Byzantine Water Mills",
+              description: "Industrial-scale water-powered mills along the Golden Horn inlet and the streams feeding into Constantinople. These mills ground grain for the city's bread supply, processed textiles, and powered sawmills. At their peak, dozens of mills operated along the Lycus River and smaller waterways within the city walls.",
+              rarity: "rare",
+              historicalPeriod: "Byzantine Period (6th-15th c. CE)",
+              significance: "Industrial water power feeding a city of 500,000+ inhabitants",
+              yearBCE: -550,
+              category: "water-lifting"
+            },
+            {
+              id: "anastasian-aqueducts",
+              name: "Anastasian Wall Aqueducts",
+              description: "Water supply infrastructure serving the 65 km Anastasian Wall (Long Wall of Thrace), built in the 5th century CE as Constantinople's outer defensive perimeter. Aqueducts and cisterns provided water to the garrisons stationed along this massive defensive line, which stretched from the Black Sea to the Sea of Marmara. The wall's water systems demonstrate Byzantine logistical engineering at landscape scale.",
+              rarity: "epic",
+              historicalPeriod: "Byzantine Period (5th c. CE)",
+              significance: "Water supply for 65 km defensive wall—landscape-scale military hydraulic engineering",
+              yearBCE: -469,
+              category: "aqueduct"
             }
           ]
         }
@@ -2058,6 +2261,26 @@ export const gameData: GameData = {
               significance: "Enabled voyages to Britain and possibly beyond, carrying months of water",
               yearBCE: 1200,
               category: "dam"
+            },
+            {
+              id: "sidon-dye-vats",
+              name: "Sidon Purple Dye Vats",
+              description: "Elaborate water-intensive processing facilities at Sidon for producing Tyrian purple dye from murex sea snails. The process required massive quantities of fresh and salt water for soaking, rinsing, and fermenting thousands of snails to produce tiny amounts of the most valuable dye in the ancient world. Stone vat complexes with dedicated water channels have been excavated along the Sidon coastline.",
+              rarity: "epic",
+              historicalPeriod: "Phoenician Period (1500-300 BCE)",
+              significance: "Water-intensive industry that made Phoenicia wealthy—worth more than gold by weight",
+              yearBCE: 1500,
+              category: "sanitation"
+            },
+            {
+              id: "byblos-sacred-spring",
+              name: "Byblos Sacred Spring",
+              description: "Temple spring complex at ancient Byblos where natural freshwater springs were channeled through sacred precincts and distributed to the surrounding city. The spring was associated with the cult of Adonis and featured stone-lined channels directing water to ritual pools and public fountains. This represents one of the earliest known temple-managed water distribution systems in the Levant.",
+              rarity: "rare",
+              historicalPeriod: "Phoenician Period (1200-300 BCE)",
+              significance: "One of the earliest temple-managed urban water distribution systems",
+              yearBCE: 1200,
+              category: "fountain"
             }
           ]
         }
@@ -2097,6 +2320,26 @@ export const gameData: GameData = {
               historicalPeriod: "Punic Period (300 BCE)",
               significance: "Revolutionary waterproofing technology adopted by Rome",
               yearBCE: 300,
+              category: "aqueduct"
+            },
+            {
+              id: "carthage-cothon",
+              name: "Carthaginian Cothon",
+              description: "Circular inner harbor with an artificial island at its center, connected to a rectangular commercial port. The cothon featured engineered water circulation channels that flushed sediment and maintained water quality, allowing 220 warships to be housed in covered dry docks arranged around the circular basin. This was the most sophisticated naval harbor in the ancient Mediterranean.",
+              rarity: "legendary",
+              historicalPeriod: "Punic Period (300-146 BCE)",
+              significance: "Most advanced naval harbor in the ancient world—housed 220 warships",
+              yearBCE: 300,
+              category: "canal"
+            },
+            {
+              id: "zaghouan-aqueduct",
+              name: "Zaghouan Aqueduct",
+              description: "Massive 132-kilometer aqueduct carrying water from the springs at Zaghouan to Carthage, originally built by the Carthaginians and later rebuilt and expanded by the Roman emperor Hadrian around 128 CE. The aqueduct crossed valleys on arched bridges up to 20 meters high and delivered an estimated 32 million liters per day. It remained in partial use until the medieval period.",
+              rarity: "legendary",
+              historicalPeriod: "Punic-Roman Period (200 BCE - 128 CE)",
+              significance: "One of the longest aqueducts in the ancient world at 132 km",
+              yearBCE: 200,
               category: "aqueduct"
             }
           ]
@@ -2334,7 +2577,8 @@ export const gameData: GameData = {
               historicalPeriod: "9th Century CE - Present",
               significance: "UNESCO World Heritage—proves water management is social organization, not just engineering",
               yearBCE: -900,
-              category: "irrigation"
+              category: "irrigation",
+              unesco: { siteName: "Cultural Landscape of Bali Province", yearListed: 2012 }
             },
             {
               id: "water-temple",
@@ -2973,6 +3217,59 @@ export const gameData: GameData = {
               significance: "11 rock churches carved from single blocks—drainage prevents erosion after 800 years",
               yearBCE: -1200,
               category: "sanitation"
+            },
+            {
+              id: "tis-abay-falls",
+              name: "Tis Abay (Blue Nile Falls) Water Management",
+              description: "Water management systems around Tis Issat ('Water that Smokes'), the Blue Nile Falls near Lake Tana. Local communities engineered channels and diversions to harness the mist and overflow for irrigating crops on the surrounding plateau. The falls drop 45 meters and historically powered grain mills positioned along the river below.",
+              rarity: "epic",
+              historicalPeriod: "Ancient - Present",
+              significance: "Harnessing one of Africa's great waterfalls for agriculture and milling",
+              yearBCE: 300,
+              category: "water-lifting"
+            },
+            {
+              id: "aksum-stelae-drainage",
+              name: "Aksum Stelae Field Drainage",
+              description: "Stormwater channels carved into bedrock around the towering Aksumite stelae field to protect the monumental obelisks from erosion and water damage. These drainage channels directed rainfall away from the bases of stelae up to 33 meters tall, some weighing over 500 tons. The system has preserved these monuments for nearly 2,000 years.",
+              rarity: "epic",
+              historicalPeriod: "3rd-4th Century CE",
+              significance: "Protected Africa's tallest ancient monuments from water damage for 1,700+ years",
+              yearBCE: -300,
+              category: "sanitation"
+            },
+            {
+              id: "gondar-royal-baths",
+              name: "Gondar Royal Baths (Fasilides Bath)",
+              description: "Rectangular stone-lined pool built by Emperor Fasilides in the 17th century, surrounded by a sunken courtyard and connected to the Qaha River via stone channels with sluice gates. The bath is filled annually for the Timkat (Epiphany) celebration, when thousands gather for baptismal ceremonies. This is one of the best-preserved examples of Ethiopian royal hydraulic architecture.",
+              rarity: "legendary",
+              historicalPeriod: "17th Century CE",
+              significance: "Still filled and used annually for Timkat celebrations after 370+ years",
+              yearBCE: -1632,
+              category: "fountain",
+              stillWorking: { age: "390+ years", status: "Filled annually for Timkat religious celebration" }
+            },
+            {
+              id: "konso-terracing",
+              name: "Konso Terracing System",
+              description: "Elaborate stone-walled agricultural terraces built by the Konso people on steep hillsides in southern Ethiopia. These terraces capture and retain rainwater, prevent soil erosion, and create level planting surfaces on gradients exceeding 45 degrees. The system has been continuously maintained for over 400 years and was inscribed as a UNESCO World Heritage Site in 2011.",
+              rarity: "legendary",
+              historicalPeriod: "17th Century CE - Present",
+              significance: "UNESCO World Heritage Site—continuously maintained terracing for 400+ years",
+              yearBCE: -1600,
+              category: "irrigation",
+              unesco: { siteName: "Konso Cultural Landscape", yearListed: 2011 },
+              stillWorking: { age: "400+ years", status: "Actively maintained and farmed by Konso communities" }
+            },
+            {
+              id: "ethiopian-springs",
+              name: "Ethiopian Highland Springs",
+              description: "Sacred community water sources found throughout the Ethiopian Highlands, often marked by ancient trees and stone enclosures. These springs serve as both domestic water supply and spiritual gathering places, with many believed to have healing properties. Community management systems dating back centuries regulate access and maintain water quality.",
+              rarity: "rare",
+              historicalPeriod: "Ancient - Present",
+              significance: "Sacred springs serving as primary community water sources for millennia",
+              yearBCE: 500,
+              category: "fountain"
             }
           ]
         }
@@ -3213,6 +3510,26 @@ export const gameData: GameData = {
               significance: "Dual-function architecture: structural support and water harvesting",
               yearBCE: 1000,
               category: "dam"
+            },
+            {
+              id: "lusong-mortars",
+              name: "Lusong Stone Mortars",
+              description: "Large basalt grinding stones with deep concave basins carved into bedrock or boulders. When not in use for food processing, these bowl-shaped depressions captured and held rainwater, providing supplemental drinking water sources. Multiple lusong at village sites created distributed rainwater collection points across settlements.",
+              rarity: "rare",
+              historicalPeriod: "1000 BCE - 1700 CE",
+              significance: "Dual-purpose food processing and rainwater collection technology",
+              yearBCE: 800,
+              category: "dam"
+            },
+            {
+              id: "chamorro-taro-paddies",
+              name: "Chamorro Spring-fed Taro Paddies",
+              description: "Irrigated wetland agriculture systems fed by natural freshwater springs on Guam and Rota. Chamorro farmers constructed low earthen bunds to channel spring water through terraced taro paddies, maintaining consistent moisture levels for this staple crop. These paddies sustained large populations on small Pacific islands with limited arable land.",
+              rarity: "epic",
+              historicalPeriod: "500 BCE - 1700 CE",
+              significance: "Sustained intensive agriculture on small Pacific islands using spring-fed irrigation",
+              yearBCE: 500,
+              category: "irrigation"
             }
           ]
         }
@@ -3479,7 +3796,8 @@ export const gameData: GameData = {
               historicalPeriod: "1063 CE",
               significance: "Most ornate stepwell ever built; inverted temple going 7 stories underground",
               yearBCE: -1063,
-              category: "dam"
+              category: "dam",
+              unesco: { siteName: "Rani ki Vav (the Queen's Stepwell) at Patan, Gujarat", yearListed: 2014 }
             },
             {
               id: "adalaj-vav",
@@ -3537,7 +3855,8 @@ export const gameData: GameData = {
               historicalPeriod: "2nd century CE",
               significance: "World's oldest water-diversion structure still in use; 329m long stone dam",
               yearBCE: -150,
-              category: "dam"
+              category: "dam",
+              stillWorking: { age: "1,800 years", status: "Still diverting the Kaveri" }
             },
             {
               id: "eri-cascade",
@@ -3932,7 +4251,8 @@ export const gameData: GameData = {
               historicalPeriod: "100 BCE - Present",
               significance: "UNESCO World Heritage Site (1995); ASCE International Historic Civil Engineering Landmark (1997); 20,100 km total wall length; elevation up to 1,500m; slopes up to 70%",
               yearBCE: 100,
-              category: "irrigation"
+              category: "irrigation",
+              unesco: { siteName: "Rice Terraces of the Philippine Cordilleras", yearListed: 1995 }
             },
             {
               id: "bamboo-irrigation",
@@ -4807,7 +5127,9 @@ export const gameData: GameData = {
               historicalPeriod: "Ancient (500 BCE - Present)",
               significance: "UNESCO World Heritage; still irrigates date palms and farms today",
               yearBCE: 500,
-              category: "aqueduct"
+              category: "aqueduct",
+              unesco: { siteName: "Aflaj Irrigation Systems of Oman", yearListed: 2006 },
+              stillWorking: { age: "2,500 years", status: "Still flowing" }
             },
             {
               id: "date-palm-oasis",
@@ -5065,6 +5387,76 @@ export const gameData: GameData = {
               historicalPeriod: "300 - 1450 CE",
               significance: "Largest pre-Columbian irrigation in North America; modern Phoenix follows same routes",
               yearBCE: -300,
+              category: "canal"
+            },
+            {
+              id: "park-four-waters",
+              name: "Park of Four Waters",
+              description: "Ball court reservoir complex at the Pueblo Grande site where a large ball court was repurposed as a water collection basin. The depression captured rainfall and canal overflow, storing water for the surrounding community. This dual-use of ceremonial and hydraulic infrastructure demonstrates Hohokam ingenuity in arid resource management.",
+              rarity: "epic",
+              historicalPeriod: "900 - 1400 CE",
+              significance: "Rare example of ceremonial architecture doubling as water infrastructure",
+              yearBCE: -900,
+              category: "dam"
+            },
+            {
+              id: "hohokam-check-dams",
+              name: "Hohokam Check Dams",
+              description: "Low stone barriers built across desert washes to slow and capture seasonal runoff for ak-chin (dry mouth) farming. These structures allowed floodwater to spread across planting fields, depositing moisture and nutrients. Hundreds of check dams have been documented across the Sonoran Desert.",
+              rarity: "rare",
+              historicalPeriod: "300 - 1450 CE",
+              significance: "Enabled farming in areas too remote for canal irrigation using ephemeral desert runoff",
+              yearBCE: -500,
+              category: "dam"
+            },
+            {
+              id: "snaketown-wells",
+              name: "Snaketown Well System",
+              description: "Hand-dug wells reaching 5 meters deep at Snaketown, one of the largest Hohokam settlements. These wells tapped shallow groundwater recharged by canal seepage and river proximity. The wells supplemented canal water during dry periods and provided reliable domestic water supply.",
+              rarity: "rare",
+              historicalPeriod: "300 - 1100 CE",
+              significance: "Among the earliest known groundwater wells in the American Southwest",
+              yearBCE: -300,
+              category: "fountain"
+            },
+            {
+              id: "hohokam-headgates",
+              name: "Canal Headgates",
+              description: "Woven mat and brush diversion structures placed at canal intakes to regulate water flow from the Salt and Gila Rivers. These temporary but effective gates could be raised or lowered to control the volume of water entering canal systems. Seasonal maintenance was a communal effort requiring coordinated labor.",
+              rarity: "rare",
+              historicalPeriod: "600 - 1450 CE",
+              significance: "Earliest known water diversion control structures in North America",
+              yearBCE: -600,
+              category: "canal"
+            },
+            {
+              id: "hohokam-roasting-pits",
+              name: "Hohokam Roasting Pits",
+              description: "Large pit features used for water-heated food processing, particularly for agave and mesquite. Water was poured over heated rocks to generate steam for slow-cooking plant foods. These communal processing facilities could serve hundreds of people and required reliable water access.",
+              rarity: "rare",
+              historicalPeriod: "500 - 1400 CE",
+              significance: "Demonstrates water's role beyond irrigation in Hohokam daily life",
+              yearBCE: -500,
+              category: "fountain"
+            },
+            {
+              id: "platform-mound-reservoirs",
+              name: "Platform Mound Reservoirs",
+              description: "Elevated platform mounds at sites like Mesa Grande featured associated water storage reservoirs controlled by elite administrators. These reservoirs received canal water and redistributed it to surrounding communities, linking political authority with water control. The mound-reservoir complexes represent centralized water management in later Hohokam society.",
+              rarity: "epic",
+              historicalPeriod: "1100 - 1450 CE",
+              significance: "Evidence of elite water control and social stratification through hydraulic management",
+              yearBCE: -1100,
+              category: "dam"
+            },
+            {
+              id: "casa-grande-junction",
+              name: "Casa Grande Canal Junction",
+              description: "The largest known canal intersection in the Hohokam system, located near Casa Grande where multiple major canals converged to distribute water across a vast agricultural landscape. Engineering features included gradient controls and overflow channels to manage the merging of water flows from different source canals.",
+              rarity: "legendary",
+              historicalPeriod: "1100 - 1450 CE",
+              significance: "Most complex canal intersection in pre-Columbian North America",
+              yearBCE: -1100,
               category: "canal"
             }
           ]
@@ -6591,7 +6983,8 @@ export const gameData: GameData = {
               historicalPeriod: "Urartian Kingdom (800 BCE)",
               significance: "Among oldest continuously functioning canals—still irrigates Van region after 2,800 years",
               yearBCE: 800,
-              category: "canal"
+              category: "canal",
+              stillWorking: { age: "2,800 years", status: "Still carrying water" }
             },
             {
               id: "urartian-cisterns",
@@ -8697,7 +9090,9 @@ export const gameData: GameData = {
               historicalPeriod: "256 BCE",
               significance: "UNESCO World Heritage; still irrigates 5.3 million hectares; feeds 10+ million people; no dam—uses natural river dynamics",
               yearBCE: 256,
-              category: "irrigation"
+              category: "irrigation",
+              unesco: { siteName: "Mount Qingcheng and the Dujiangyan Irrigation System", yearListed: 2000 },
+              stillWorking: { age: "2,280 years", status: "Still irrigating 668,700 hectares" }
             },
             {
               id: "zhengguo-canal",
@@ -8797,7 +9192,8 @@ export const gameData: GameData = {
               historicalPeriod: "587-608 CE",
               significance: "Connected 5 river systems; still used today; UNESCO World Heritage (2014); enabled grain transport to capital",
               yearBCE: -600,
-              category: "canal"
+              category: "canal",
+              unesco: { siteName: "The Grand Canal", yearListed: 2014 }
             },
             {
               id: "flash-lock-gates",

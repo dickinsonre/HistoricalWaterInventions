@@ -1,0 +1,187 @@
+# Water Inventions for the 8 Missing Civilizations
+
+Complete invention lists ready to add to your app.
+
+---
+
+## 1. Ottoman Empire (1299–1922 CE)
+
+**Region:** Asia Minor/Europe/Africa
+**Era:** Medieval/Modern
+**Why Critical:** 600 years of sophisticated hydraulic engineering connecting Roman-Byzantine heritage to the modern Middle East
+
+| | | | | | | # | Invention | Date | Description | | | | | |
+|---|-----------|------|-------------|
+| | | | | | 1 | **Kırkçeşme Water Supply** | 1554 CE | 55 km aqueduct designed by Mimar Sinan from Belgrade Forest to Istanbul. 33 water bridges (kemers) crossing valleys. 4 taksim (distribution terminals) splitting flow to neighborhoods. Served Istanbul for 400 years. Greatest Ottoman hydraulic achievement. | | | | | |
+| | | | | | 2 | **Ottoman Sebil (Public Fountain)** | 15th–19th c. CE | Over 3,000 sebils (public drinking fountains) in Istanbul alone. Each an endowed (waqf) structure providing free water. Architecturally elaborate — some designed by Sinan. Found in every Ottoman city from Sarajevo to Cairo. | | | | | |
+| | | | | | 3 | **Ottoman Hammam Water System** | 14th–19th c. CE | Sophisticated water supply, heating, and recycling for public baths. Cold water heated by furnace, circulated through walls and floors (hypocaust). Used water recycled for toilet flushing and garden irrigation. Some hammams served 500+ bathers daily. | | | | | |
+| | | | | | 4 | **Süleymaniye Complex Water** | 1550–1557 CE | Mimar Sinan's masterpiece mosque complex with integrated water for ablution fountains, hammam, hospital, kitchen, and school. Lead pipes distributed water at precise pressures. Every building in the complex had dedicated water supply. | | | | | |
+| | | | | | 5 | **Ottoman Taksim (Distribution Terminal)** | 16th–19th c. CE | Stone buildings dividing aqueduct water into calibrated flows for different neighborhoods. Each taksim had maximum allocation measured in lüle (standardized water flow unit). Water rights recorded in court registers. First standardized urban water metering. | | | | | |
+| | | | | | 6 | **Mostar Bridge (Stari Most)** | 1566 CE | Mimar Sinan's student Hayruddin built the iconic single-arch bridge spanning 29 m across the Neretva River at 24 m height. Destroyed in 1993 war, rebuilt 2004. UNESCO World Heritage. Represents Ottoman mastery of river-crossing engineering. | | | | | |
+| | | | | | 7 | **Ottoman Jerusalem Water Restoration** | 1536–1541 CE | Suleiman the Magnificent rebuilt Jerusalem's water supply — restoring ancient aqueducts from Solomon's Pools, constructing six public fountains (sabil), repairing city cisterns. Inscriptions still visible. Ottoman restoration of Biblical-era infrastructure. | | | | | |
+| | | | | | 8 | **Ottoman Water Court Records** | 14th–19th c. CE | Thousands of court documents recording water rights, disputes, allocations, endowments, and infrastructure maintenance. Most detailed pre-modern water governance archive anywhere. Water law as written legal tradition across 600 years. | | | | | |
+| | | | | | 9 | **Ottoman Cairo Nile Management** | 16th–19th c. CE | Ottoman governors maintained the Nile flood system — nilometers, canal openings, and the annual "Cutting of the Canal" ceremony. Continuation of Pharaonic water management tradition through 5,000 years under Ottoman administration. | | | | | |
+| | | | | | 10 | **Valide Sultan Aqueduct Expansion** | 1749 CE | Major Istanbul water system expansion including innovative siphon technology crossing the Golden Horn. Added new spring sources. Demonstrated continued Ottoman hydraulic innovation into the 18th century. | | | | | |
+
+---
+
+## 2. Sassanid Empire (224–651 CE)
+
+**Region:** Middle East (Iran/Iraq)
+**Era:** Classical
+**Why Critical:** Bridge between Roman and Islamic water engineering. Directly inspired Islamic-era hydraulic systems.
+
+| | | | | | | # | Invention | Date | Description | | | | | |
+|---|-----------|------|-------------|
+| | | | | | 1 | **Shushtar Historical Hydraulic System** | 3rd–7th c. CE | UNESCO World Heritage. Integrated system of dams, canals, tunnels, bridges, and water mills on the Karun River. Band-e Kaisar bridge-dam (built with Roman prisoner labor). Gargar Canal diversion. Industrial water mills. Called the greatest engineering achievement of the Sassanid period. | | | | | |
+| | | | | | 2 | **Nahrawan Canal** | 3rd–7th c. CE | 250 km canal east of the Tigris irrigating 6,000 km² of farmland. Largest canal system of late antiquity. Fed by the Diyala River through elaborate headworks with settling basins. Destroyed during the Mongol invasion of 1258. | | | | | |
+| | | | | | 3 | **Sassanid Band (Dam) Engineering** | 224–651 CE | Systematic dam construction across Iran. Band-e Amir, Band-e Dokhtar, Band-e Mizan — dozens of stone and mortar dams with sluice gates and spillways. Many survived into the Islamic period and remain visible today. | | | | | |
+| | | | | | 4 | **Sassanid Ab-Anbar (Underground Cistern)** | 224–651 CE | Standardized dome-shaped underground cistern with wind tower (badgir) for cooling, stone-lined interior, and stepped access. Design so effective it remained the Iranian standard for 1,400 years. Some ab-anbar still in use. | | | | | |
+| | | | | | 5 | **Sassanid Qanat Expansion** | 224–651 CE | Government-supported repair and construction of new qanats across the empire. Dedicated water officials. Formal water courts. The qanat network under the Sassanids may have exceeded 40,000 systems. | | | | | |
+| | | | | | 6 | **Sassanid Ice House (Yakhchal) Expansion** | 224–651 CE | Expanded Persian ice-house technology. Dome-shaped structures with walls up to 2 m thick using special mortar (sarooj) resistant to heat. Some yakhchals stored ice year-round at temperatures exceeding 40°C. | | | | | |
+| | | | | | 7 | **Gundishapur Academy Water Science** | 3rd–7th c. CE | The Academy of Gundishapur taught hydraulic engineering alongside medicine and philosophy. Translations of Greek, Indian, and Persian water texts. This academic tradition directly fed the Islamic Golden Age. | | | | | |
+| | | | | | 8 | **Sassanid Water Court System (Mirab)** | 224–651 CE | Formal legal framework for water rights, qanat ownership, and irrigation disputes. Water judges (mirab) adjudicated conflicts. This system was adopted and expanded by Islamic-era governments across the Middle East. | | | | | |
+
+---
+
+## 3. Mycenaean Greece (1600–1100 BCE)
+
+**Region:** Mediterranean (Greece)
+**Era:** Ancient
+**Why Critical:** 500-year gap between Minoan Crete and Classical Greece. Civilization of Agamemnon, the Trojan War, and Homer.
+
+| | | | | | | # | Invention | Date | Description | | | | | |
+|---|-----------|------|-------------|
+| | | | | | 1 | **Mycenae Underground Cistern & Tunnel** | 1250 BCE | Secret rock-cut tunnel descending 18 m beneath the citadel walls via 99 carved steps to a spring-fed cistern. Provided siege-proof water for Agamemnon's fortress. The spring (Perseia) was hidden outside the walls — the tunnel accessed it from within. | | | | | |
+| | | | | | 2 | **Tiryns Dam & River Diversion** | 1250 BCE | Massive cyclopean dam (200+ m long, 10 m high) and 1.5 km diversion channel redirecting the Lakissa River away from the citadel. Largest Bronze Age flood control project in Greece. Protected Tiryns from seasonal torrents. | | | | | |
+| | | | | | 3 | **Lake Copais Drainage** | 1300–1250 BCE | Attempted drainage of Lake Copais — a 250 km² seasonal lake — using canals, dikes, and natural sinkholes (katavothres). Most ambitious Bronze Age hydraulic project in the world. Partially succeeded, creating farmland. Abandoned after the Bronze Age collapse. | | | | | |
+| | | | | | 4 | **Kazarma Bridge-Dam** | 1300–1200 BCE | Cyclopean stone bridge-dam crossing a ravine near Mycenae. 22 m long, 5 m wide. Functions as both road bridge and check dam managing seasonal water flow. Still standing after 3,200 years — oldest surviving bridge in Europe. | | | | | |
+| | | | | | 5 | **Pylos Palace Water System** | 1300–1200 BCE | Palace of Nestor at Pylos with terracotta pipe water supply, bathing rooms (Homer describes Telemachus bathing there), and drainage. Linear B tablets record water-related administrative activity. | | | | | |
+| | | | | | 6 | **Tholos Tomb Drainage** | 1500–1200 BCE | Beehive tombs required drainage to prevent collapse. Treasury of Atreus (13.5 m diameter dome) has drainage channels directing water away from the 120-tonne lintel stones. Water engineering for the most impressive Bronze Age tombs. | | | | | |
+| | | | | | 7 | **Gla Fortress Water (Lake Copais)** | 1300–1250 BCE | Fortress on an island in Lake Copais with 3 km walls incorporating drainage. Administrative center of the Copais drainage project. Internal water management for the fortified compound. | | | | | |
+| | | | | | 8 | **Linear B Water Administration** | 1400–1200 BCE | Linear B tablets from Knossos, Pylos, and Thebes record water-related palace administration: allocation of water resources, irrigation management, and water offerings to gods. Oldest written water governance records in Europe. | | | | | |
+| | | | | | 9 | **Mycenaean Fountain Houses** | 1300–1200 BCE | Public or semi-public water access points at major settlements. Stone-built enclosures channeling spring water. Precursors to the Classical Greek fountain houses. Evidence at Athens, Mycenae, and Tiryns. | | | | | |
+
+---
+
+## 4. Olmec (1500–400 BCE)
+
+**Region:** Americas (Gulf Coast Mexico)
+**Era:** Ancient
+**Why Critical:** Mother culture of Mesoamerica. First aqueducts, first engineered drains, first sacred water architecture in the Americas.
+
+| | | | | | | # | Invention | Date | Description | | | | | |
+|---|-----------|------|-------------|
+| | | | | | 1 | **San Lorenzo Basalt Drain System** | 1200–900 BCE | Elaborate system of carved basalt U-shaped troughs creating water channels. Each block identical — carved from basalt transported 60+ km. Connected to stone-lined reservoirs and ritual pools. First engineered drainage in the Americas. | | | | | |
+| | | | | | 2 | **San Lorenzo Aqueduct** | 1200–900 BCE | Stone-lined aqueduct bringing water from distant springs to the hilltop settlement. Massive basalt blocks carved into identical channel sections lined up to create a continuous water conduit. First aqueduct in the Americas. | | | | | |
+| | | | | | 3 | **San Lorenzo Ritual Water Pool** | 1200–900 BCE | Masonry sunken court with drain that could be filled and emptied as a pool for ritual use. Four representations of the Olmec Maize God surround the pool. Water as sacred medium for ceremony. | | | | | |
+| | | | | | 4 | **El Manatí Sacred Spring** | 1600–1200 BCE | Sacred spring at foot of Cerro Manatí. Massive offerings deposited in spring-fed pool: rubber balls, jadeite axes, wooden busts, infant remains. Represents the first clear sacred mountain-water concept in Mesoamerica — foundation of all subsequent Mesoamerican water religion. | | | | | |
+| | | | | | 5 | **Olmec Vulcanized Rubber** | 1600–1200 BCE | Created vulcanized rubber by mixing latex with morning glory vine juice. Used for waterproof balls (ritual ballgame) and likely waterproofing containers and channels. First vulcanized rubber in the world — 3,500 years before Goodyear. | | | | | |
+| | | | | | 6 | **La Venta Pyramid Water Management** | 900–400 BCE | First pyramid in Mesoamerica built on swampy island. Required water management during construction and use. Massive serpentine offerings buried with drainage arrangements. Channels directed water through the ceremonial complex. | | | | | |
+| | | | | | 7 | **Teopantecuanitlán Water System** | 1400–800 BCE | Olmec-influenced highland site with masonry sunken court lined with four Maize God carvings. Drain enters and exits the court allowing filling and emptying as ritual pool. Combined with agricultural terracing and canal irrigation. | | | | | |
+| | | | | | 8 | **Olmec Water Cosmology** | 1500–400 BCE | Developed the fundamental Mesoamerican water cosmology: rain gods (precursors to Tlaloc/Chaak), sacred mountains containing water, caves as water-world entrances, water-maize-fertility connection. This system governed water management for 3,000 years across all subsequent Mesoamerican civilizations. | | | | | |
+
+---
+
+## 5. Nazca Civilization (100 BCE – 800 CE)
+
+**Region:** Americas (Peru)
+**Era:** Classical
+**Why Critical:** Underground aqueducts (puquios) still functioning after 2,000 years. Unique spiral access design found nowhere else.
+
+| | | | | | | # | Invention | Date | Description | | | | | |
+|---|-----------|------|-------------|
+| | | | | | 1 | **Puquios (Underground Aqueducts)** | 100 BCE–800 CE | Over 40 underground aqueducts accessing the water table through spiral or trench-shaped openings. Stone-lined tunnels connected to surface canals. At least 30 puquios still function today. Total network exceeds 40 km. The only system of its kind in the Americas. | | | | | |
+| | | | | | 2 | **Puquio Ojo (Spiral Eye) Design** | 100 BCE–800 CE | Spiral or funnel-shaped openings providing access to underground tunnels for maintenance, ventilation, and water extraction. Wind funneled into the spirals helped push water through the underground system — acting as ancient pumps. Design found nowhere else in the world. | | | | | |
+| | | | | | 3 | **Nazca Surface Canal Network** | 100 BCE–800 CE | Stone-lined surface canals distributing water from puquio outlets to agricultural fields. Precise gradients maintained over kilometers in one of the driest deserts on Earth (less than 25 mm rainfall per year). | | | | | |
+| | | | | | 4 | **Nazca Filtration Galleries** | 100 BCE–800 CE | Subsurface galleries using gravel and sand layers to filter groundwater before entering the main puquio channels. Ancient water treatment technology ensuring clean water delivery. | | | | | |
+| | | | | | 5 | **Nazca Reservoir (Qocha) System** | 100 BCE–800 CE | Surface reservoirs (qochas) at puquio outlets storing water for distribution. Stone-lined pools with managed inflow and outflow. Provided buffering between variable groundwater supply and agricultural demand. | | | | | |
+| | | | | | 6 | **Nazca Lines Hydrological Theory** | 100 BCE–800 CE | Some researchers believe the Nazca Lines may have marked underground water sources, directed ritual water-seeking activities, or mapped aquifer boundaries. David Johnson's research connects many lines to puquio locations. Debated but significant — the world's largest geoglyphs may be a water map. | | | | | |
+
+---
+
+## 6. Chimú Empire (900–1470 CE)
+
+**Region:** Americas (Peru, North Coast)
+**Era:** Medieval
+**Why Critical:** Chan Chan — largest pre-Columbian city in South America (20 km², 60,000 residents). Most complex pre-Columbian urban water system.
+
+| | | | | | | # | Invention | Date | Description | | | | | |
+|---|-----------|------|-------------|
+| | | | | | 1 | **La Cumbre Intervalley Canal** | 1100–1470 CE | 84 km canal transferring water from the Chicama River valley to the Moche Valley. Crossed desert terrain with precise gradient control (0.1–0.3% slope). Longest inter-basin water transfer in the pre-Columbian Americas. Served Chan Chan's population. | | | | | |
+| | | | | | 2 | **Chan Chan Urban Water Distribution** | 1100–1470 CE | Network of reservoirs, walk-in wells, and distribution channels throughout the largest adobe city in the world. Each of the nine ciudadelas (royal compounds) had its own water infrastructure. Walk-in wells similar to Nazca puquios accessed the water table. | | | | | |
+| | | | | | 3 | **Wachaque (Sunken Gardens)** | 1100–1470 CE | Fields excavated below ground level to reach the water table directly. No irrigation needed — plants' roots accessed groundwater. Found throughout Chan Chan and surrounding areas. Zero-irrigation agriculture in a desert. | | | | | |
+| | | | | | 4 | **Chimú Reservoir Engineering** | 1100–1470 CE | Large constructed reservoirs at Chan Chan and subsidiary centers. Stone-lined with sluice gates for controlled release. Combined rainwater capture with canal-delivered water. | | | | | |
+| | | | | | 5 | **Chimú Flood Control Walls** | 1100–1470 CE | Adobe walls (La Muralla de La Cumbre) protecting Chan Chan from El Niño-driven flooding. 8 feet tall, 6 miles long, positioned perpendicular to flood flow to deflect water around the city. Engineering response to extreme climate events. | | | | | |
+| | | | | | 6 | **Chimú Hydraulic Governance** | 1100–1470 CE | Water management as political power. The Chimú kingdom expanded by conquering river valleys and controlling water distribution. When the Inca conquered the Chimú (~1470 CE), they cut off Chan Chan's water supply — proving water was the empire's critical vulnerability. | | | | | |
+
+---
+
+## 7. Tiwanaku Empire (300–1000 CE)
+
+**Region:** Americas (Bolivia/Peru, Lake Titicaca)
+**Era:** Classical
+**Why Critical:** Pre-Inca raised-field engineering at extreme altitude (3,800 m). Unique thermal-hydraulic agricultural system.
+
+| | | | | | | # | Invention | Date | Description | | | | | |
+|---|-----------|------|-------------|
+| | | | | | 1 | **Suka Kollus (Raised Fields)** | 300–1000 CE | Elevated planting platforms with water-filled channels between them. Water absorbed solar heat during the day and released it at night, protecting crops from frost at 3,800 m altitude where nighttime temperatures drop below freezing. Over 120 km² of raised fields documented around Lake Titicaca. Thermal-hydraulic engineering found nowhere else. | | | | | |
+| | | | | | 2 | **Tiwanaku Urban Aqueduct** | 300–1000 CE | Stone-lined aqueduct bringing freshwater from mountain springs to the urban center. Included settling basins and distribution channels. Supplied water to a city of 30,000–70,000 people at 3,850 m altitude. | | | | | |
+| | | | | | 3 | **Puma Punku Precision Drainage** | 300–1000 CE | Precision-cut stone drainage channels at the monumental complex. Stone blocks fitted so precisely that water flowed through joints without mortar. Some channels cut to tolerances of 1 mm. Highest precision stone-water engineering in the Americas. | | | | | |
+| | | | | | 4 | **Lake Titicaca Water Level Management** | 300–1000 CE | Management of lakefront agriculture responding to Lake Titicaca's seasonal water level changes (up to 1 m variation). Raised fields positioned to benefit from high-water nutrient deposits but protected from permanent flooding. | | | | | |
+| | | | | | 5 | **Tiwanaku Qocha (Mountain Reservoirs)** | 300–1000 CE | Small constructed ponds (qochas) across the altiplano capturing rainfall for livestock and limited irrigation. Thousands documented across the Tiwanaku sphere of influence. Decentralized water storage across a vast territory. | | | | | |
+| | | | | | 6 | **Tiwanaku Perimeter Drainage Canal** | 300–1000 CE | Major drainage canal surrounding the urban core. Managed seasonal floods during the rainy season and provided water supply during the dry season. Sophisticated dual-function infrastructure: flood control AND water supply in one channel. | | | | | |
+
+---
+
+## 8. Sami People (4000 BCE – Present)
+
+**Region:** Scandinavia/Russia (Sápmi)
+**Era:** Ancient through Modern
+**Why Critical:** Europe's Arctic indigenous people. Last nomadic pastoral culture in Europe. Water rights catalyzed indigenous political recognition.
+
+| | | | | | | # | Invention | Date | Description | | | | | |
+|---|-----------|------|-------------|
+| | | | | | 1 | **Sami Reindeer-Water Migration** | 4000 BCE onwards | Annual migration of reindeer herds (up to 5,000 animals) between coast and interior following water availability. Summer grazing near coastal rivers, winter in interior forests near unfrozen streams. Routes cross rivers at specific ford points maintained for millennia. Europe's last nomadic water-dependent migration. | | | | | |
+| | | | | | 2 | **Sami River Fishing (Jokfiske)** | Traditional | Management of Arctic salmon rivers — some of Europe's most productive (Tana/Teno, Alta, Kautokeino). Weirs, nets, and traps at specific river features. Sustainable management for thousands of years. Now threatened by river regulation and climate change. | | | | | |
+| | | | | | 3 | **Sami Lavvu Water Design** | Traditional | The lavvu (portable tent) designed for extreme precipitation: steep angle sheds snow and rain, birch-bark or reindeer-skin cover provides waterproofing, raised door prevents water entry. Can be erected in 30 minutes in any weather. Transported by reindeer across hundreds of kilometers. | | | | | |
+| | | | | | 4 | **Sami Sacred Springs (Sieidi)** | Traditional | Springs, lakes, and rivers as sacred sites central to Sami spirituality. Springs marked with offerings. Water spirits (saivo) inhabit specific water features. Access governed by traditional rules. The connection between Sami spirituality and water is fundamental to their identity. | | | | | |
+| | | | | | 5 | **Sami Lake Ice Fishing** | Traditional | Fishing through frozen Arctic lakes during the polar winter (24-hour darkness). Holes maintained in ice up to 1.5 m thick. Knowledge of fish behavior under ice, optimal depths, and moon-phase feeding patterns. Community activity sustaining nutrition through months of darkness. | | | | | |
+| | | | | | 6 | **Sami Hydropower Resistance** | 1970s–Present | Major hydropower development on Sami rivers (especially the Alta River controversy, 1970–1982). Sami protests against damming sacred rivers led to establishment of the Norwegian Sami Parliament (1989). Water rights became the catalyst for indigenous rights recognition across Scandinavia. A water fight that changed European indigenous politics. | | | | | |
+
+---
+
+## Summary: Total Inventions to Add
+
+| | | | | | | Civilization | Inventions | Era | Region | | | | | |
+|-------------|-----------|-----|--------|
+| | | | | | **Ottoman Empire** | 10 | Medieval/Modern | Asia Minor/Europe | | | | | |
+| | | | | | **Sassanid Empire** | 8 | Classical | Middle East | | | | | |
+| | | | | | **Mycenaean Greece** | 9 | Ancient | Mediterranean | | | | | |
+| | | | | | **Olmec** | 8 | Ancient | Americas | | | | | |
+| | | | | | **Nazca** | 6 | Classical | Americas | | | | | |
+| | | | | | **Chimú** | 6 | Medieval | Americas | | | | | |
+| | | | | | **Tiwanaku** | 6 | Classical | Americas | | | | | |
+| | | | | | **Sami** | 6 | Ancient–Modern | Europe/Arctic | | | | | |
+| | | | | | **TOTAL** | **59 new inventions** | | | | | | | |
+
+Adding these 8 civilizations with 59 inventions would bring your app to **106 civilizations and 415+ inventions**.
+
+---
+
+## SWMM5 Models Already Provided for These Civilizations
+
+| | | | | | | Model | Status | File | | | | | |
+|-------|--------|------|
+| | | | | | Ottoman Kırkçeşme | ✅ Complete .INP provided | |`ottoman-kirkcesme.inp`| | | | | | |
+| | | | | | Sassanid Nahrawan Canal | ✅ Complete .INP provided | |`sassanid-nahrawan-canal.inp`| | | | | | |
+| | | | | | Shushtar Hydraulic System | ✅ Complete .INP provided | |`shushtar-hydraulic-system.inp`| | | | | | |
+| | | | | | Mycenae Underground Cistern | ✅ Complete .INP provided | |`mycenae-underground-cistern.inp`| | | | | | |
+| | | | | | Tiryns Dam & Diversion | ✅ Complete .INP provided | |`tiryns-dam-diversion.inp`| | | | | | |
+| | | | | | Lake Copais Drainage | ✅ Complete .INP provided | |`lake-copais-drainage.inp`| | | | | | |
+| | | | | | Olmec San Lorenzo Drains | ✅ Complete .INP provided | |`olmec-san-lorenzo-drains.inp`| | | | | | |
+| | | | | | Nazca Puquio System | ✅ Complete .INP provided | |`nazca-puquio-system.inp`| | | | | | |
+| | | | | | Chimú La Cumbre Canal | ✅ Complete .INP provided | |`chimu-la-cumbre-canal.inp`| | | | | | |
+| | | | | | Tiwanaku Suka Kollus | ✅ Complete .INP provided | |`tiwanaku-suka-kollus.inp`| | | | | | |
+
+All 8 civilizations already have at least one SWMM5 model provided. The Sami could benefit from a salmon river fish weir model but their water engineering is more about knowledge systems than built infrastructure.
