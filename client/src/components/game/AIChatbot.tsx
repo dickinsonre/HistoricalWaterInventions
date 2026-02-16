@@ -251,7 +251,8 @@ export default function AIChatbot() {
                 placeholder="Ask about water history..."
                 disabled={isLoading}
                 aria-label="Type your question about water history"
-                className="flex-1 bg-[var(--deep-ocean)]/60 border border-[var(--aqua)]/20 rounded-xl px-3 py-2 text-sm text-[var(--parchment)] placeholder-[var(--parchment)]/30 focus:outline-none focus:border-[var(--gold)]/50 focus:ring-1 focus:ring-[var(--gold)]/30 disabled:opacity-50"
+                className="flex-1 rounded-xl px-3 py-2 text-sm focus:outline-none disabled:opacity-50"
+                style={{ backgroundColor: '#0d2538', color: '#ffffff', border: '1px solid rgba(0,200,255,0.3)' }}
               />
               <button
                 onClick={sendMessage}
