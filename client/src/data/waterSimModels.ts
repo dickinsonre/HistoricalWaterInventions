@@ -41,7 +41,7 @@ export const waterSimModels: WaterSimModel[] = [
     year: 1981,
     developer: "Wallingford (UK)",
     firstBecause: "First standardized urban drainage design method. Combined hydrological design methods with computer simulation. Created the framework later commercial models were built upon.",
-    statusToday: "Evolved into InfoWorks CS → InfoWorks ICM",
+    statusToday: "Evolved into HydroWorks (1993) → InfoWorks CS (1998) → InfoWorks ICM (2009)",
     category: "Urban Drainage & Stormwater"
   },
   {
@@ -88,6 +88,16 @@ export const waterSimModels: WaterSimModel[] = [
     firstBecause: "First sewer model fully integrated into CAD/GIS platforms. Ran inside MicroStation and ArcGIS.",
     statusToday: "Active — part of Bentley OpenFlows",
     category: "Urban Drainage & Stormwater"
+  },
+  {
+    id: "hydroworks",
+    name: "HydroWorks",
+    year: 1993,
+    developer: "Wallingford Software (HR Wallingford)",
+    firstBecause: "First Windows-based urban drainage model from Wallingford. Brought the Wallingford Procedure into the GUI era with network visualization, real-time simulation, and integrated hydrology. The commercial bridge between WASSP and InfoWorks.",
+    statusToday: "Evolved into InfoWorks CS (1998) → InfoWorks ICM (2009). No longer sold separately.",
+    category: "Urban Drainage & Stormwater",
+    ancientConnection: "Roman Cloaca Maxima sewer design → HydroWorks urban sewer simulation"
   },
   {
     id: "hec-1",
@@ -225,6 +235,26 @@ export const waterSimModels: WaterSimModel[] = [
     firstBecause: "First water distribution model with transient analysis built in. Combined steady-state and water hammer analysis in one platform.",
     statusToday: "Evolved into InfoWorks WS Pro → Autodesk InfoWorks WS Pro",
     category: "Water Distribution"
+  },
+  {
+    id: "infowater",
+    name: "InfoWater",
+    year: 2003,
+    developer: "MWH Soft / Innovyze",
+    firstBecause: "First water distribution model built directly inside ArcGIS. Instead of importing/exporting GIS data, the model lived inside the GIS — edit a pipe in ArcMap and it updated the hydraulic model instantly. Built on the EPANET engine but added ArcGIS integration, demand forecasting, and optimization.",
+    statusToday: "Evolved into InfoWater Pro (2021) under Autodesk. Legacy InfoWater still used by many utilities.",
+    category: "Water Distribution",
+    ancientConnection: "Roman aqueduct network management → InfoWater pressure zone optimization"
+  },
+  {
+    id: "infowater-pro",
+    name: "InfoWater Pro",
+    year: 2021,
+    developer: "Autodesk (acquired Innovyze)",
+    firstBecause: "First cloud-connected water distribution model with digital twin capabilities. Moved InfoWater from desktop ArcGIS to a standalone platform with real-time SCADA integration, AI-driven demand prediction, and collaboration tools. Part of Autodesk's water infrastructure digital twin strategy.",
+    statusToday: "Active — Autodesk InfoWater Pro 2025. Part of Autodesk Water Infrastructure suite alongside InfoWorks ICM and InfoWorks WS Pro.",
+    category: "Water Distribution",
+    ancientConnection: "Nabataean water distribution networks → InfoWater Pro digital twin modeling"
   },
   {
     id: "kypipe",
