@@ -1,0 +1,831 @@
+# Remaining SWMM5 Models — Not Yet Provided
+
+After reviewing all our conversations, here are the models I suggested but haven't yet created as complete .INP files.
+
+---
+
+## Already Provided (29 models)
+
+```
+✅ Shushtar Hydraulic System
+✅ Pont du Gard + Castellum
+✅ Maya Palenque Pressurized
+✅ Nazca Puquio System
+✅ Garamantian Foggara
+✅ Tiwanaku Suka Kollus
+✅ Budj Bim Eel Aquaculture
+✅ Karakorum Water Supply
+✅ Chimú La Cumbre Canal
+✅ Tamagawa Jōsui (Edo)
+✅ Korean Cheonggyecheon
+✅ Hawaiian Fishpond
+✅ Hohokam Canal Network
+✅ Sassanid Nahrawan Canal
+✅ Pergamon Pressure Pipeline
+✅ Tiryns Dam & Diversion
+✅ Knossos Palace Water
+✅ Lake Copais Drainage
+✅ Sicilian Arab Qanat
+✅ Iceland Geothermal Heating
+✅ Danevirke Water Defenses
+✅ Mycenae Underground Cistern
+✅ Norwegian Fjord Hydropower
+✅ Olmec San Lorenzo Drains
+✅ Tikal Reservoirs + Filtration
+✅ Tenochtitlan Complete System
+✅ Chaco Canyon Water Control
+✅ Calusa Pine Island Canal
+✅ Dholavira 16-Reservoir
+```
+
+---
+
+## Still Needed (35 models)
+
+| | | | | | | # | Model | Region | Era | Priority | | | | | |
+|---|-------|--------|-----|----------|
+| | | | | 1 | **Ottoman Kırkçeşme System** | Asia Minor | 1554 CE | ⭐⭐⭐ | | | | | |
+| | | | | 2 | **Bazalgette London Sewers** | Europe | 1858 CE | ⭐⭐⭐ | | | | | |
+| | | | | 3 | **Angkor Integrated Hydraulic** | Asia | 9th–13th c. CE | ⭐⭐⭐ | | | | | |
+| | | | | 4 | **Teotihuacan San Juan Canalization** | Americas | 100 BCE | ⭐⭐⭐ | | | | | |
+| | | | | 5 | **Chicago River Reversal** | Americas | 1900 CE | ⭐⭐⭐ | | | | | |
+| | | | | 6 | **Forbidden City Drainage** | Asia | 1420 CE | ⭐⭐⭐ | | | | | |
+| | | | | 7 | **Grand Anicut + Kaveri Delta** | Asia | 2nd c. CE | ⭐⭐⭐ | | | | | |
+| | | | | 8 | **Versailles/Marly Water System** | Europe | 1684 CE | ⭐⭐ | | | | | |
+| | | | | 9 | **Augsburg Three-Level System** | Europe | 1412 CE | ⭐⭐ | | | | | |
+| | | | | 10 | **Aswan High Dam + Lake Nasser** | Africa | 1970 CE | ⭐⭐ | | | | | |
+| | | | | 11 | **Baghdad Round City Water** | Middle East | 762 CE | ⭐⭐ | | | | | |
+| | | | | 12 | **Parakrama Samudra (Sri Lanka)** | Asia | 1153 CE | ⭐⭐ | | | | | |
+| | | | | 13 | **Yoda Ela Canal (Sri Lanka)** | Asia | 6th c. CE | ⭐⭐ | | | | | |
+| | | | | 14 | **Wang Jing Yellow River Control** | Asia | 69 CE | ⭐⭐ | | | | | |
+| | | | | 15 | **TVA Multi-Dam System** | Americas | 1933 CE | ⭐⭐ | | | | | |
+| | | | | 16 | **Erie Canal Lock System** | Americas | 1825 CE | ⭐⭐ | | | | | |
+| | | | | 17 | **Monte Albán Hilltop Water** | Americas | 500 BCE | ⭐⭐ | | | | | |
+| | | | | 18 | **Benin City Moat System** | Africa | 1200 CE | ⭐⭐ | | | | | |
+| | | | | 19 | **Snowy Mountains Scheme** | Oceania | 1949 CE | ⭐⭐ | | | | | |
+| | | | | 20 | **Copenhagen Cloudburst** | Europe | 2012 CE | ⭐⭐ | | | | | |
+| | | | | 21 | **Trowulan Urban Canal Grid** | Asia | 14th c. CE | ⭐⭐ | | | | | |
+| | | | | 22 | **Song Hangzhou Water Supply** | Asia | 12th c. CE | ⭐⭐ | | | | | |
+| | | | | 23 | **Edzná Radial Canal System** | Americas | 400 BCE | ⭐⭐ | | | | | |
+| | | | | 24 | **Hierve el Agua Mineral Irrigation** | Americas | Pre-Zapotec | ⭐ | | | | | |
+| | | | | 25 | **Celilo Falls Fishery** | Americas | 11,000 BCE | ⭐ | | | | | |
+| | | | | 26 | **Yenisei Hydroelectric Cascade** | Siberia | 1955–1985 | ⭐ | | | | | |
+| | | | | 27 | **Yakutsk Utilidor System** | Siberia | Modern | ⭐ | | | | | |
+| | | | | 28 | **Barrow/Utqiaġvik Utilidor** | Arctic | Modern | ⭐ | | | | | |
+| | | | | 29 | **Tlingit Salmon Stream** | Arctic/NW | Traditional | ⭐ | | | | | |
+| | | | | 30 | **Khanty-Mansi Fish Weir** | Siberia | Traditional | ⭐ | | | | | |
+| | | | | 31 | **Baikal Ice Road** | Siberia | Traditional | ⭐ | | | | | |
+| | | | | 32 | **Trans-Alaska Pipeline Crossing** | Arctic | 1977 CE | ⭐ | | | | | |
+| | | | | 33 | **Yam Postal Water Stations** | Asia | 1230s CE | ⭐ | | | | | |
+| | | | | 34 | **Funan Canal Network** | Asia | 1st–6th c. CE | ⭐ | | | | | |
+| | | | | 35 | **Han Sichuan Brine Pipeline** | Asia | 1st c. BCE | ⭐ | | | | | |
+
+---
+
+Now here are the complete .INP files for the top priority models:
+
+## 1. Ottoman Kırkçeşme Complete (1554 CE)
+
+```inp
+[TITLE]
+Ottoman Kirkcesme Water Supply System - Mimar Sinan (1554 CE)
+55 km aqueduct from Belgrade Forest to Istanbul
+33 water bridges, 4 taksim terminals, hundreds of sebils
+Istanbul, Turkey - Greatest Ottoman hydraulic achievement
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+BELGRADE_FOREST     180.0    3.0       0          0         0
+SPRING_COLLECTION   178.0    2.5       0          0         0
+BEND_EMIR_1         175.0    2.0       0          0         0
+LONG_BRIDGE_1       170.0    2.5       0          0         0
+MAGLOVA_KEMER       165.0    3.0       0          0         0
+BEND_EMIR_2         160.0    2.0       0          0         0
+UZUN_KEMER          155.0    3.0       0          0         0
+GUZELCE_KEMER       150.0    2.5       0          0         0
+EGRI_KEMER          145.0    2.5       0          0         0
+KOVUK_KEMER         140.0    2.0       0          0         0
+SETTLING_BASIN      138.0    3.0       0          0         0
+TAKSIM_MAIN         135.0    4.0       0          0         0
+TAKSIM_BEYOGLU      133.0    2.0       0          0         0
+TAKSIM_GALATA       132.0    2.0       0          0         0
+TAKSIM_USKUDAR      133.0    2.0       0          0         0
+SULEYMANIYE_FEED    131.0    2.0       0          0         0
+SULEYMANIYE_CMPLX   130.0    2.5       0          0         0
+SEBIL_SULTANAHMET   129.0    1.5       0          0         0
+SEBIL_GRAND_BAZAAR  128.0    1.5       0          0         0
+HAMMAM_CEMBERLITAS  129.0    2.0       0          0         0
+HAMMAM_CAGALOGLU    128.0    2.0       0          0         0
+TOPKAPI_PALACE      130.0    2.0       0          0         0
+MOSQUE_FOUNTAIN_1   128.0    1.0       0          0         0
+MOSQUE_FOUNTAIN_2   127.0    1.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+GOLDEN_HORN         120.0    FREE
+BOSPHORUS           120.0    FREE
+MARMARA_SEA         120.0    FREE
+
+[CONDUITS]
+;;Name              From                To                  Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+FOREST_COLLECT      BELGRADE_FOREST     SPRING_COLLECTION   2000     0.018    0      0       0         0
+MAIN_AQUE_1         SPRING_COLLECTION   BEND_EMIR_1         5000     0.015    0      0       0         0
+MAIN_AQUE_2         BEND_EMIR_1         LONG_BRIDGE_1       6000     0.015    0      0       0         0
+MAGLOVA_CROSS       LONG_BRIDGE_1       MAGLOVA_KEMER       3000     0.015    0      0       0         0
+MAIN_AQUE_3         MAGLOVA_KEMER       BEND_EMIR_2         5000     0.015    0      0       0         0
+UZUN_CROSS          BEND_EMIR_2         UZUN_KEMER          4000     0.015    0      0       0         0
+MAIN_AQUE_4         UZUN_KEMER          GUZELCE_KEMER       3000     0.015    0      0       0         0
+GUZELCE_CROSS       GUZELCE_KEMER       EGRI_KEMER          4000     0.015    0      0       0         0
+EGRI_CROSS          EGRI_KEMER          KOVUK_KEMER         3000     0.015    0      0       0         0
+MAIN_AQUE_5         KOVUK_KEMER         SETTLING_BASIN      5000     0.015    0      0       0         0
+SETTLE_TO_TAKSIM    SETTLING_BASIN      TAKSIM_MAIN         3000     0.013    0      0       0         0
+BEYOGLU_PIPE        TAKSIM_MAIN         TAKSIM_BEYOGLU      1000     0.012    0      0       0         0
+GALATA_PIPE         TAKSIM_MAIN         TAKSIM_GALATA       1500     0.012    0      0       0         0
+USKUDAR_PIPE        TAKSIM_MAIN         TAKSIM_USKUDAR      2000     0.012    0      0       0         0
+SULEY_FEED          TAKSIM_MAIN         SULEYMANIYE_FEED    800      0.012    0      0       0         0
+SULEY_COMPLEX       SULEYMANIYE_FEED    SULEYMANIYE_CMPLX   200      0.012    0      0       0         0
+SULTANAHMET_PIPE    TAKSIM_GALATA       SEBIL_SULTANAHMET   1000     0.012    0      0       0         0
+BAZAAR_PIPE         TAKSIM_GALATA       SEBIL_GRAND_BAZAAR  1200     0.012    0      0       0         0
+HAMMAM_1_PIPE       SULEYMANIYE_FEED    HAMMAM_CEMBERLITAS  500      0.012    0      0       0         0
+HAMMAM_2_PIPE       TAKSIM_BEYOGLU      HAMMAM_CAGALOGLU    800      0.012    0      0       0         0
+TOPKAPI_PIPE        TAKSIM_MAIN         TOPKAPI_PALACE      2000     0.012    0      0       0         0
+MOSQUE_1_PIPE       SULEYMANIYE_CMPLX   MOSQUE_FOUNTAIN_1   300      0.012    0      0       0         0
+MOSQUE_2_PIPE       SEBIL_SULTANAHMET   MOSQUE_FOUNTAIN_2   200      0.012    0      0       0         0
+GOLDEN_DRAIN        TAKSIM_GALATA       GOLDEN_HORN         2000     0.015    0      0       0         0
+BOSPHORUS_DRAIN     TOPKAPI_PALACE      BOSPHORUS           1500     0.015    0      0       0         0
+MARMARA_DRAIN       SEBIL_GRAND_BAZAAR  MARMARA_SEA         2000     0.015    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+FOREST_COLLECT      TRAPEZOIDAL 0.8    2.0    1.0    1.0    1
+MAIN_AQUE_1         RECT_OPEN   0.6    0.8    0      0      1
+MAIN_AQUE_2         RECT_OPEN   0.6    0.8    0      0      1
+MAGLOVA_CROSS       RECT_OPEN   0.6    0.8    0      0      1
+MAIN_AQUE_3         RECT_OPEN   0.6    0.8    0      0      1
+UZUN_CROSS          RECT_OPEN   0.6    0.8    0      0      1
+MAIN_AQUE_4         RECT_OPEN   0.6    0.8    0      0      1
+GUZELCE_CROSS       RECT_OPEN   0.6    0.8    0      0      1
+EGRI_CROSS          RECT_OPEN   0.6    0.8    0      0      1
+MAIN_AQUE_5         RECT_OPEN   0.6    0.8    0      0      1
+SETTLE_TO_TAKSIM    CIRCULAR    0.40   0      0      0      1
+BEYOGLU_PIPE        CIRCULAR    0.20   0      0      0      2
+GALATA_PIPE         CIRCULAR    0.20   0      0      0      2
+USKUDAR_PIPE        CIRCULAR    0.20   0      0      0      2
+SULEY_FEED          CIRCULAR    0.25   0      0      0      1
+SULEY_COMPLEX       CIRCULAR    0.20   0      0      0      1
+SULTANAHMET_PIPE    CIRCULAR    0.15   0      0      0      1
+BAZAAR_PIPE         CIRCULAR    0.15   0      0      0      1
+HAMMAM_1_PIPE       CIRCULAR    0.15   0      0      0      1
+HAMMAM_2_PIPE       CIRCULAR    0.15   0      0      0      1
+TOPKAPI_PIPE        CIRCULAR    0.20   0      0      0      1
+MOSQUE_1_PIPE       CIRCULAR    0.10   0      0      0      1
+MOSQUE_2_PIPE       CIRCULAR    0.10   0      0      0      1
+GOLDEN_DRAIN        CIRCULAR    0.25   0      0      0      1
+BOSPHORUS_DRAIN     CIRCULAR    0.20   0      0      0      1
+MARMARA_DRAIN       CIRCULAR    0.20   0      0      0      1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+BELGRADE_FOREST     FLOW         FOREST_SPR  FLOW  1.0      1.0      0.15
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+FOREST_SPR          01/01/2024 00:00  0.15
+FOREST_SPR          01/01/2024 06:00  0.18
+FOREST_SPR          01/01/2024 12:00  0.15
+FOREST_SPR          01/01/2024 18:00  0.18
+FOREST_SPR          01/02/2024 00:00  0.15
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+BELGRADE_FOREST     1000       9000
+SPRING_COLLECTION   1200       8800
+BEND_EMIR_1         1800       8200
+LONG_BRIDGE_1       2500       7600
+MAGLOVA_KEMER       3000       7200
+BEND_EMIR_2         3500       6600
+UZUN_KEMER          4000       6000
+GUZELCE_KEMER       4500       5500
+EGRI_KEMER          5000       5000
+KOVUK_KEMER         5500       4500
+SETTLING_BASIN      6000       4000
+TAKSIM_MAIN         6500       3500
+TAKSIM_BEYOGLU      6200       3200
+TAKSIM_GALATA       6800       3200
+TAKSIM_USKUDAR      7200       3500
+SULEYMANIYE_FEED    6500       3000
+SULEYMANIYE_CMPLX   6500       2800
+SEBIL_SULTANAHMET   7000       2800
+SEBIL_GRAND_BAZAAR  6800       2600
+HAMMAM_CEMBERLITAS  6600       2700
+HAMMAM_CAGALOGLU    6300       2900
+TOPKAPI_PALACE      7500       3200
+MOSQUE_FOUNTAIN_1   6500       2600
+MOSQUE_FOUNTAIN_2   7100       2600
+GOLDEN_HORN         7000       3500
+BOSPHORUS           8000       3200
+MARMARA_SEA         7000       2200
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 2. Angkor Integrated Hydraulic System (Khmer, 9th–13th c. CE)
+
+```inp
+[TITLE]
+Angkor Integrated Hydraulic System - Khmer Empire (9th-13th c. CE)
+Most sophisticated pre-modern urban water system on Earth
+Barays, channels, moats, and rice paddies covering 1000+ sq km
+Siem Reap, Cambodia - UNESCO World Heritage
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/03/2024
+END_TIME             00:00:00
+REPORT_STEP          00:15:00
+WET_STEP             00:05:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+KULEN_HILLS         80.0     4.0       0          0         0
+SIEM_REAP_RIVER     70.0     4.0       0          0         0
+PUOK_RIVER          72.0     3.0       0          0         0
+ROLUOS_RIVER        68.0     3.0       0          0         0
+INDRATATAKA         65.0     5.0       0          0         0
+EAST_BARAY_IN       62.0     6.0       0          0         0
+EAST_BARAY_CENTER   60.0     8.0       0          0         0
+EAST_BARAY_OUT      58.0     6.0       0          0         0
+WEST_BARAY_IN       55.0     8.0       0          0         0
+WEST_BARAY_CENTER   52.0     10.0      0          0         0
+WEST_BARAY_OUT      50.0     8.0       0          0         0
+ANGKOR_WAT_MOAT     48.0     4.0       0          0         0
+ANGKOR_THOM_MOAT    50.0     5.0       0          0         0
+BAYON_CENTER        49.0     3.0       0          0         0
+NEAK_POAN           51.0     3.0       0          0         0
+PREAH_KHAN_BARAY    53.0     5.0       0          0         0
+NORTH_CANAL         56.0     3.0       0          0         0
+SOUTH_CANAL         46.0     3.0       0          0         0
+RICE_PADDY_N        45.0     2.0       0          0         0
+RICE_PADDY_S        42.0     2.0       0          0         0
+RICE_PADDY_E        43.0     2.0       0          0         0
+SPILLWAY_EAST       44.0     3.0       0          0         0
+SPILLWAY_WEST       40.0     3.0       0          0         0
+COLLECTION_SOUTH    38.0     3.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+TONLE_SAP_LAKE      35.0     FREE
+
+[CONDUITS]
+;;Name              From                To                  Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+KULEN_SIEM_REAP     KULEN_HILLS         SIEM_REAP_RIVER     15000    0.030    0      0       0         0
+PUOK_FEED           PUOK_RIVER          WEST_BARAY_IN        8000     0.025    0      0       0         0
+ROLUOS_FEED         ROLUOS_RIVER        INDRATATAKA          5000     0.025    0      0       0         0
+INDRA_TO_EAST       INDRATATAKA         EAST_BARAY_IN        3000     0.020    0      0       0         0
+EAST_BARAY_FLOW     EAST_BARAY_IN       EAST_BARAY_CENTER    3500     0.015    0      0       0         0
+EAST_BARAY_EXIT     EAST_BARAY_CENTER   EAST_BARAY_OUT       3500     0.015    0      0       0         0
+SIEM_REAP_WEST      SIEM_REAP_RIVER     WEST_BARAY_IN        10000    0.025    0      0       0         0
+WEST_BARAY_FLOW     WEST_BARAY_IN       WEST_BARAY_CENTER    4000     0.012    0      0       0         0
+WEST_BARAY_EXIT     WEST_BARAY_CENTER   WEST_BARAY_OUT       4000     0.012    0      0       0         0
+WEST_TO_THOM        WEST_BARAY_OUT      ANGKOR_THOM_MOAT     5000     0.018    0      0       0         0
+THOM_TO_BAYON       ANGKOR_THOM_MOAT    BAYON_CENTER         1500     0.015    0      0       0         0
+EAST_TO_WAT         EAST_BARAY_OUT      ANGKOR_WAT_MOAT      6000     0.018    0      0       0         0
+NORTH_CANAL_CH      WEST_BARAY_OUT      NORTH_CANAL          4000     0.020    0      0       0         0
+NORTH_TO_PK         NORTH_CANAL         PREAH_KHAN_BARAY     3000     0.020    0      0       0         0
+PK_TO_NEAK          PREAH_KHAN_BARAY    NEAK_POAN            1000     0.015    0      0       0         0
+NEAK_TO_EAST        NEAK_POAN           EAST_BARAY_IN        2000     0.018    0      0       0         0
+THOM_TO_SOUTH       ANGKOR_THOM_MOAT    SOUTH_CANAL          3000     0.020    0      0       0         0
+WAT_TO_SOUTH        ANGKOR_WAT_MOAT     SOUTH_CANAL          2000     0.020    0      0       0         0
+SOUTH_TO_RICE_N     SOUTH_CANAL         RICE_PADDY_N         4000     0.025    0      0       0         0
+SOUTH_TO_RICE_S     SOUTH_CANAL         RICE_PADDY_S         5000     0.025    0      0       0         0
+EAST_TO_RICE_E      EAST_BARAY_OUT      RICE_PADDY_E         6000     0.025    0      0       0         0
+SPILL_EAST          EAST_BARAY_CENTER   SPILLWAY_EAST        2000     0.020    0      0       0         0
+SPILL_WEST          WEST_BARAY_CENTER   SPILLWAY_WEST        3000     0.020    0      0       0         0
+RICE_N_COLLECT      RICE_PADDY_N        COLLECTION_SOUTH     5000     0.030    0      0       0         0
+RICE_S_COLLECT      RICE_PADDY_S        COLLECTION_SOUTH     3000     0.030    0      0       0         0
+RICE_E_COLLECT      RICE_PADDY_E        COLLECTION_SOUTH     4000     0.030    0      0       0         0
+SPILL_E_COLLECT     SPILLWAY_EAST       COLLECTION_SOUTH     5000     0.025    0      0       0         0
+SPILL_W_COLLECT     SPILLWAY_WEST       COLLECTION_SOUTH     6000     0.025    0      0       0         0
+FINAL_TO_LAKE       COLLECTION_SOUTH    TONLE_SAP_LAKE       10000    0.025    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+KULEN_SIEM_REAP     TRAPEZOIDAL 2.0    8.0    2.0    2.0    1
+PUOK_FEED           TRAPEZOIDAL 1.5    6.0    2.0    2.0    1
+ROLUOS_FEED         TRAPEZOIDAL 1.5    5.0    1.5    1.5    1
+INDRA_TO_EAST       TRAPEZOIDAL 2.0    8.0    2.0    2.0    1
+EAST_BARAY_FLOW     RECT_OPEN   3.0    100.0  0      0      1
+EAST_BARAY_EXIT     RECT_OPEN   3.0    100.0  0      0      1
+SIEM_REAP_WEST      TRAPEZOIDAL 2.0    8.0    2.0    2.0    1
+WEST_BARAY_FLOW     RECT_OPEN   4.0    200.0  0      0      1
+WEST_BARAY_EXIT     RECT_OPEN   4.0    200.0  0      0      1
+WEST_TO_THOM        TRAPEZOIDAL 2.0    10.0   2.0    2.0    1
+THOM_TO_BAYON       RECT_OPEN   3.0    100.0  0      0      1
+EAST_TO_WAT         TRAPEZOIDAL 2.0    8.0    2.0    2.0    1
+NORTH_CANAL_CH      TRAPEZOIDAL 1.5    6.0    1.5    1.5    1
+NORTH_TO_PK         TRAPEZOIDAL 1.5    6.0    1.5    1.5    1
+PK_TO_NEAK          RECT_OPEN   2.0    30.0   0      0      1
+NEAK_TO_EAST        TRAPEZOIDAL 1.5    5.0    1.5    1.5    1
+THOM_TO_SOUTH       TRAPEZOIDAL 1.5    6.0    1.5    1.5    1
+WAT_TO_SOUTH        TRAPEZOIDAL 1.5    6.0    1.5    1.5    1
+SOUTH_TO_RICE_N     TRAPEZOIDAL 1.0    4.0    1.0    1.0    1
+SOUTH_TO_RICE_S     TRAPEZOIDAL 1.0    4.0    1.0    1.0    1
+EAST_TO_RICE_E      TRAPEZOIDAL 1.0    4.0    1.0    1.0    1
+SPILL_EAST          TRAPEZOIDAL 1.5    5.0    1.5    1.5    1
+SPILL_WEST          TRAPEZOIDAL 1.5    5.0    1.5    1.5    1
+RICE_N_COLLECT      TRAPEZOIDAL 0.6    3.0    1.0    1.0    1
+RICE_S_COLLECT      TRAPEZOIDAL 0.6    3.0    1.0    1.0    1
+RICE_E_COLLECT      TRAPEZOIDAL 0.6    3.0    1.0    1.0    1
+SPILL_E_COLLECT     TRAPEZOIDAL 1.0    4.0    1.0    1.0    1
+SPILL_W_COLLECT     TRAPEZOIDAL 1.0    4.0    1.0    1.0    1
+FINAL_TO_LAKE       TRAPEZOIDAL 2.5    12.0   3.0    3.0    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+KULEN_HILLS         FLOW         MONSOON_Q   FLOW  1.0      1.0      5.0
+PUOK_RIVER          FLOW         MONSOON_Q   FLOW  1.0      1.0      3.0
+ROLUOS_RIVER        FLOW         MONSOON_Q   FLOW  1.0      1.0      2.0
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+MONSOON_Q           01/01/2024 00:00  1.0
+MONSOON_Q           01/01/2024 06:00  1.0
+MONSOON_Q           01/01/2024 12:00  3.0
+MONSOON_Q           01/01/2024 14:00  8.0
+MONSOON_Q           01/01/2024 16:00  15.0
+MONSOON_Q           01/01/2024 18:00  10.0
+MONSOON_Q           01/01/2024 20:00  5.0
+MONSOON_Q           01/02/2024 00:00  2.0
+MONSOON_Q           01/02/2024 12:00  1.0
+MONSOON_Q           01/03/2024 00:00  1.0
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+KULEN_HILLS         8000       10000
+SIEM_REAP_RIVER     6000       8000
+PUOK_RIVER          3000       9000
+ROLUOS_RIVER        9000       7000
+INDRATATAKA         8500       6500
+EAST_BARAY_IN       7500       6000
+EAST_BARAY_CENTER   7000       5800
+EAST_BARAY_OUT      6500       5600
+WEST_BARAY_IN       3500       6500
+WEST_BARAY_CENTER   3000       6000
+WEST_BARAY_OUT      2500       5500
+ANGKOR_WAT_MOAT     5500       4500
+ANGKOR_THOM_MOAT    4500       5000
+BAYON_CENTER        4500       4800
+NEAK_POAN           5500       6000
+PREAH_KHAN_BARAY    5000       6500
+NORTH_CANAL         3500       7000
+SOUTH_CANAL         5000       3500
+RICE_PADDY_N        4000       3000
+RICE_PADDY_S        5000       2500
+RICE_PADDY_E        7000       3000
+SPILLWAY_EAST       7500       4500
+SPILLWAY_WEST       2000       4500
+COLLECTION_SOUTH    5000       2000
+TONLE_SAP_LAKE      5000       1000
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 3. Bazalgette London Sewers (1858–1875)
+
+```inp
+[TITLE]
+Bazalgette London Sewer System - Victorian Engineering (1858-1875)
+2100 km of sewers with 6 intercepting sewers serving 4 million
+Built after the Great Stink - foundation of modern urban sanitation
+London, England
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+HAMPSTEAD           60.0     4.0       0          0         0
+HIGHGATE            55.0     4.0       0          0         0
+ISLINGTON           40.0     5.0       0          0         0
+CITY_OF_LONDON      25.0     6.0       0          0         0
+WESTMINSTER         20.0     6.0       0          0         0
+CHELSEA             18.0     5.0       0          0         0
+BATTERSEA           16.0     5.0       0          0         0
+LAMBETH             15.0     5.0       0          0         0
+BERMONDSEY          12.0     5.0       0          0         0
+DEPTFORD            10.0     5.0       0          0         0
+N_HIGH_INTERCEPT    35.0     6.0       0          0         0
+N_MID_INTERCEPT     25.0     6.0       0          0         0
+N_LOW_INTERCEPT     15.0     7.0       0          0         0
+S_HIGH_INTERCEPT    20.0     6.0       0          0         0
+S_LOW_INTERCEPT     10.0     7.0       0          0         0
+ABBEY_MILLS_PS      8.0      8.0       0          0         0
+CROSSNESS_PS        5.0      8.0       0          0         0
+N_OUTFALL_SEWER     7.0      7.0       0          0         0
+S_OUTFALL_SEWER     4.0      7.0       0          0         0
+VICTORIA_EMBANK     12.0     6.0       0          0         0
+ALBERT_EMBANK       10.0     6.0       0          0         0
+CHELSEA_EMBANK      14.0     5.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+BECKTON_OUT         2.0      TIDAL      THAMES_TIDE
+CROSSNESS_OUT       2.0      TIDAL      THAMES_TIDE
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+THAMES_TIDE         01/01/2024 00:00  2.5
+THAMES_TIDE         01/01/2024 03:00  5.5
+THAMES_TIDE         01/01/2024 06:00  2.5
+THAMES_TIDE         01/01/2024 09:00  0.5
+THAMES_TIDE         01/01/2024 12:00  2.5
+THAMES_TIDE         01/01/2024 15:00  5.5
+THAMES_TIDE         01/01/2024 18:00  2.5
+THAMES_TIDE         01/01/2024 21:00  0.5
+THAMES_TIDE         01/02/2024 00:00  2.5
+
+[CONDUITS]
+;;Name              From                To                  Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+HAMP_LOCAL          HAMPSTEAD           N_HIGH_INTERCEPT    4000     0.013    0      0       0         0
+HIGH_LOCAL          HIGHGATE            N_HIGH_INTERCEPT    3000     0.013    0      0       0         0
+ISL_LOCAL           ISLINGTON           N_MID_INTERCEPT     3000     0.013    0      0       0         0
+CITY_LOCAL          CITY_OF_LONDON      N_LOW_INTERCEPT     2000     0.013    0      0       0         0
+WEST_LOCAL          WESTMINSTER         VICTORIA_EMBANK     1500     0.013    0      0       0         0
+CHEL_LOCAL          CHELSEA             CHELSEA_EMBANK      2000     0.013    0      0       0         0
+BATT_LOCAL          BATTERSEA           S_HIGH_INTERCEPT    2000     0.013    0      0       0         0
+LAMB_LOCAL          LAMBETH             S_LOW_INTERCEPT     2500     0.013    0      0       0         0
+BERM_LOCAL          BERMONDSEY          S_LOW_INTERCEPT     2000     0.013    0      0       0         0
+DEPT_LOCAL          DEPTFORD            S_LOW_INTERCEPT     3000     0.013    0      0       0         0
+N_HIGH_INT          N_HIGH_INTERCEPT    N_MID_INTERCEPT     5000     0.012    0      0       0         0
+N_MID_INT           N_MID_INTERCEPT     N_LOW_INTERCEPT     4000     0.012    0      0       0         0
+VICTORIA_INT        VICTORIA_EMBANK     N_LOW_INTERCEPT     3000     0.012    0      0       0         0
+CHELSEA_INT         CHELSEA_EMBANK      ALBERT_EMBANK       3000     0.012    0      0       0         0
+ALBERT_INT          ALBERT_EMBANK       S_HIGH_INTERCEPT    2000     0.012    0      0       0         0
+N_LOW_TO_ABBEY      N_LOW_INTERCEPT     ABBEY_MILLS_PS      8000     0.012    0      0       0         0
+ABBEY_TO_OUTFALL    ABBEY_MILLS_PS      N_OUTFALL_SEWER     5000     0.012    0      0       0         0
+N_OUTFALL           N_OUTFALL_SEWER     BECKTON_OUT         8000     0.012    0      0       0         0
+S_HIGH_INT          S_HIGH_INTERCEPT    S_LOW_INTERCEPT     4000     0.012    0      0       0         0
+S_LOW_TO_CROSS      S_LOW_INTERCEPT     CROSSNESS_PS        8000     0.012    0      0       0         0
+CROSS_TO_OUTFALL    CROSSNESS_PS        S_OUTFALL_SEWER     3000     0.012    0      0       0         0
+S_OUTFALL           S_OUTFALL_SEWER     CROSSNESS_OUT       5000     0.012    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+HAMP_LOCAL          CIRCULAR    1.2    0      0      0      1
+HIGH_LOCAL          CIRCULAR    1.0    0      0      0      1
+ISL_LOCAL           CIRCULAR    1.5    0      0      0      1
+CITY_LOCAL          CIRCULAR    1.8    0      0      0      1
+WEST_LOCAL          CIRCULAR    1.5    0      0      0      1
+CHEL_LOCAL          CIRCULAR    1.2    0      0      0      1
+BATT_LOCAL          CIRCULAR    1.0    0      0      0      1
+LAMB_LOCAL          CIRCULAR    1.5    0      0      0      1
+BERM_LOCAL          CIRCULAR    1.2    0      0      0      1
+DEPT_LOCAL          CIRCULAR    1.0    0      0      0      1
+N_HIGH_INT          EGG         2.5    0      0      0      1
+N_MID_INT           EGG         3.0    0      0      0      1
+VICTORIA_INT        RECT_OPEN   2.0    3.5    0      0      1
+CHELSEA_INT         EGG         2.0    0      0      0      1
+ALBERT_INT          EGG         2.5    0      0      0      1
+N_LOW_TO_ABBEY      EGG         3.5    0      0      0      1
+ABBEY_TO_OUTFALL    CIRCULAR    2.7    0      0      0      2
+N_OUTFALL           CIRCULAR    2.7    0      0      0      2
+S_HIGH_INT          EGG         2.5    0      0      0      1
+S_LOW_TO_CROSS      EGG         3.5    0      0      0      1
+CROSS_TO_OUTFALL    CIRCULAR    2.5    0      0      0      2
+S_OUTFALL           CIRCULAR    2.5    0      0      0      2
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+HAMPSTEAD           FLOW         DWF_RAIN    FLOW  1.0      1.0      0.5
+HIGHGATE            FLOW         DWF_RAIN    FLOW  1.0      1.0      0.4
+ISLINGTON           FLOW         DWF_RAIN    FLOW  1.0      1.0      0.8
+CITY_OF_LONDON      FLOW         DWF_RAIN    FLOW  1.0      1.0      1.0
+WESTMINSTER         FLOW         DWF_RAIN    FLOW  1.0      1.0      0.7
+CHELSEA             FLOW         DWF_RAIN    FLOW  1.0      1.0      0.5
+BATTERSEA           FLOW         DWF_RAIN    FLOW  1.0      1.0      0.4
+LAMBETH             FLOW         DWF_RAIN    FLOW  1.0      1.0      0.6
+BERMONDSEY          FLOW         DWF_RAIN    FLOW  1.0      1.0      0.5
+DEPTFORD            FLOW         DWF_RAIN    FLOW  1.0      1.0      0.3
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+DWF_RAIN            01/01/2024 00:00  1.0
+DWF_RAIN            01/01/2024 06:00  1.5
+DWF_RAIN            01/01/2024 08:00  2.0
+DWF_RAIN            01/01/2024 10:00  1.8
+DWF_RAIN            01/01/2024 12:00  2.5
+DWF_RAIN            01/01/2024 14:00  3.5
+DWF_RAIN            01/01/2024 15:00  5.0
+DWF_RAIN            01/01/2024 16:00  3.0
+DWF_RAIN            01/01/2024 18:00  2.0
+DWF_RAIN            01/01/2024 20:00  1.5
+DWF_RAIN            01/02/2024 00:00  1.0
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+HAMPSTEAD           3000       8000
+HIGHGATE            4000       8500
+ISLINGTON           4500       7000
+CITY_OF_LONDON      5000       5500
+WESTMINSTER         4000       5000
+CHELSEA             3000       4500
+BATTERSEA           3500       4000
+LAMBETH             4500       4500
+BERMONDSEY          5500       4500
+DEPTFORD            6500       4000
+N_HIGH_INTERCEPT    3500       7000
+N_MID_INTERCEPT     4500       6000
+N_LOW_INTERCEPT     5000       5000
+S_HIGH_INTERCEPT    4000       4000
+S_LOW_INTERCEPT     5500       3500
+ABBEY_MILLS_PS      7000       5000
+CROSSNESS_PS        8000       3000
+N_OUTFALL_SEWER     8000       5500
+S_OUTFALL_SEWER     8500       2500
+VICTORIA_EMBANK     4500       5000
+ALBERT_EMBANK       4000       4200
+CHELSEA_EMBANK      3200       4300
+BECKTON_OUT         9000       5500
+CROSSNESS_OUT       9000       2500
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 4. Forbidden City Drainage (Ming Dynasty, 1420 CE)
+
+```inp
+[TITLE]
+Forbidden City Drainage System - Ming Dynasty (1420 CE)
+Most sophisticated palace drainage in the world
+72 drainage outlets, Golden Water River, monsoon-proof design
+Beijing, China - UNESCO World Heritage
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:15
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+JINSHUI_RIVER_IN    48.0     2.0       0          0         0
+MERIDIAN_GATE       47.5     2.0       0          0         0
+GOLDEN_WATER_BR     47.0     2.0       0          0         0
+OUTER_COURT         46.5     2.5       0          0         0
+HALL_SUPREME_HARM   46.0     2.0       0          0         0
+HALL_CENTRAL_HARM   45.5     2.0       0          0         0
+HALL_PRESERV_HARM   45.0     2.0       0          0         0
+INNER_COURT         44.5     2.0       0          0         0
+PALACE_HEAVENLY     44.0     2.0       0          0         0
+PALACE_EARTHLY      43.5     2.0       0          0         0
+PALACE_UNION        43.5     2.0       0          0         0
+IMPERIAL_GARDEN     43.0     2.5       0          0         0
+EAST_GALLERY        45.0     2.0       0          0         0
+WEST_GALLERY        45.0     2.0       0          0         0
+DRAIN_EAST_1        44.0     2.0       0          0         0
+DRAIN_EAST_2        43.0     2.0       0          0         0
+DRAIN_WEST_1        44.0     2.0       0          0         0
+DRAIN_WEST_2        43.0     2.0       0          0         0
+COLLECT_EAST        42.0     3.0       0          0         0
+COLLECT_WEST        42.0     3.0       0          0         0
+DIVINE_MIGHT_GATE   42.5     2.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+MOAT_EAST           40.0     FREE
+MOAT_WEST           40.0     FREE
+TONGZI_RIVER        40.0     FREE
+
+[CONDUITS]
+;;Name              From                To                  Length  Manning  InOff  OutOff  InitFlow  MaxFlow
+JINSHUI_ENTRY       JINSHUI_RIVER_IN    MERIDIAN_GATE       200     0.013    0      0       0         0
+GOLDEN_WATER        MERIDIAN_GATE       GOLDEN_WATER_BR     150     0.013    0      0       0         0
+GW_TO_OUTER         GOLDEN_WATER_BR     OUTER_COURT         100     0.015    0      0       0         0
+OUTER_TO_SUPREME    OUTER_COURT         HALL_SUPREME_HARM   200     0.015    0      0       0         0
+SUPREME_TO_CENTRAL  HALL_SUPREME_HARM   HALL_CENTRAL_HARM   100     0.015    0      0       0         0
+CENTRAL_TO_PRESERV  HALL_CENTRAL_HARM   HALL_PRESERV_HARM   100     0.015    0      0       0         0
+PRESERV_TO_INNER    HALL_PRESERV_HARM   INNER_COURT         150     0.015    0      0       0         0
+INNER_TO_HEAVENLY   INNER_COURT         PALACE_HEAVENLY     100     0.015    0      0       0         0
+HEAVENLY_TO_UNION   PALACE_HEAVENLY     PALACE_UNION        80      0.015    0      0       0         0
+HEAVENLY_TO_EARTH   PALACE_HEAVENLY     PALACE_EARTHLY      80      0.015    0      0       0         0
+UNION_TO_GARDEN     PALACE_UNION        IMPERIAL_GARDEN     100     0.015    0      0       0         0
+EARTH_TO_GARDEN     PALACE_EARTHLY      IMPERIAL_GARDEN     100     0.015    0      0       0         0
+EAST_GAL_1          OUTER_COURT         EAST_GALLERY        300     0.015    0      0       0         0
+WEST_GAL_1          OUTER_COURT         WEST_GALLERY        300     0.015    0      0       0         0
+EAST_GAL_DRAIN_1    EAST_GALLERY        DRAIN_EAST_1        200     0.015    0      0       0         0
+EAST_GAL_DRAIN_2    DRAIN_EAST_1        DRAIN_EAST_2        200     0.015    0      0       0         0
+WEST_GAL_DRAIN_1    WEST_GALLERY        DRAIN_WEST_1        200     0.015    0      0       0         0
+WEST_GAL_DRAIN_2    DRAIN_WEST_1        DRAIN_WEST_2        200     0.015    0      0       0         0
+EAST_COLLECT        DRAIN_EAST_2        COLLECT_EAST        200     0.015    0      0       0         0
+WEST_COLLECT        DRAIN_WEST_2        COLLECT_WEST        200     0.015    0      0       0         0
+GARDEN_TO_DIVINE    IMPERIAL_GARDEN     DIVINE_MIGHT_GATE   200     0.015    0      0       0         0
+DIVINE_TO_TONGZI    DIVINE_MIGHT_GATE   TONGZI_RIVER        300     0.015    0      0       0         0
+EAST_TO_MOAT        COLLECT_EAST        MOAT_EAST           400     0.015    0      0       0         0
+WEST_TO_MOAT        COLLECT_WEST        MOAT_WEST           400     0.015    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+JINSHUI_ENTRY       RECT_OPEN   1.0    3.0    0      0      1
+GOLDEN_WATER        RECT_OPEN   0.8    4.0    0      0      1
+GW_TO_OUTER         RECT_OPEN   0.6    2.0    0      0      1
+OUTER_TO_SUPREME    RECT_OPEN   0.4    1.5    0      0      1
+SUPREME_TO_CENTRAL  RECT_OPEN   0.4    1.5    0      0      1
+CENTRAL_TO_PRESERV  RECT_OPEN   0.4    1.5    0      0      1
+PRESERV_TO_INNER    RECT_OPEN   0.4    1.5    0      0      1
+INNER_TO_HEAVENLY   RECT_OPEN   0.3    1.0    0      0      1
+HEAVENLY_TO_UNION   RECT_OPEN   0.3    0.8    0      0      1
+HEAVENLY_TO_EARTH   RECT_OPEN   0.3    0.8    0      0      1
+UNION_TO_GARDEN     RECT_OPEN   0.3    0.8    0      0      1
+EARTH_TO_GARDEN     RECT_OPEN   0.3    0.8    0      0      1
+EAST_GAL_1          RECT_OPEN   0.4    1.0    0      0      1
+WEST_GAL_1          RECT_OPEN   0.4    1.0    0      0      1
+EAST_GAL_DRAIN_1    RECT_OPEN   0.3    0.8    0      0      1
+EAST_GAL_DRAIN_2    RECT_OPEN   0.3    0.8    0      0      1
+WEST_GAL_DRAIN_1    RECT_OPEN   0.3    0.8    0      0      1
+WEST_GAL_DRAIN_2    RECT_OPEN   0.3    0.8    0      0      1
+EAST_COLLECT        RECT_OPEN   0.5    1.5    0      0      1
+WEST_COLLECT        RECT_OPEN   0.5    1.5    0      0      1
+GARDEN_TO_DIVINE    RECT_OPEN   0.4    1.2    0      0      1
+DIVINE_TO_TONGZI    RECT_OPEN   0.6    2.0    0      0      1
+EAST_TO_MOAT        RECT_OPEN   0.5    1.5    0      0      1
+WEST_TO_MOAT        RECT_OPEN   0.5    1.5    0      0      1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+JINSHUI_RIVER_IN    FLOW         JINSHUI     FLOW  1.0      1.0      0.10
+OUTER_COURT         FLOW         MONSOON_R   FLOW  1.0      1.0      0.0
+INNER_COURT         FLOW         MONSOON_R   FLOW  1.0      1.0      0.0
+EAST_GALLERY        FLOW         MONSOON_R   FLOW  1.0      1.0      0.0
+WEST_GALLERY        FLOW         MONSOON_R   FLOW  1.0      1.0      0.0
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+JINSHUI             01/01/2024 00:00  0.10
+JINSHUI             01/01/2024 12:00  0.10
+JINSHUI             01/02/2024 00:00  0.10
+MONSOON_R           01/01/2024 00:00  0.000
+MONSOON_R           01/01/2024 13:00  0.005
+MONSOON_R           01/01/2024 14:00  0.030
+MONSOON_R           01/01/2024 14:30  0.080
+MONSOON_R           01/01/2024 15:00  0.120
+MONSOON_R           01/01/2024 15:30  0.080
+MONSOON_R           01/01/2024 16:00  0.040
+MONSOON_R           01/01/2024 17:00  0.010
+MONSOON_R           01/01/2024 18:00  0.000
+MONSOON_R           01/02/2024 00:00  0.000
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+JINSHUI_RIVER_IN    2500       8000
+MERIDIAN_GATE       2500       7500
+GOLDEN_WATER_BR     2500       7200
+OUTER_COURT         2500       6800
+HALL_SUPREME_HARM   2500       6400
+HALL_CENTRAL_HARM   2500       6200
+HALL_PRESERV_HARM   2500       6000
+INNER_COURT         2500       5600
+PALACE_HEAVENLY     2500       5200
+PALACE_EARTHLY      2800       5000
+PALACE_UNION        2200       5000
+IMPERIAL_GARDEN     2500       4600
+EAST_GALLERY        3200       6500
+WEST_GALLERY        1800       6500
+DRAIN_EAST_1        3400       6000
+DRAIN_EAST_2        3500       5500
+DRAIN_WEST_1        1600       6000
+DRAIN_WEST_2        1500       5500
+COLLECT_EAST        3600       5000
+COLLECT_WEST        1400       5000
+DIVINE_MIGHT_GATE   2500       4200
+MOAT_EAST           3800       5000
+MOAT_WEST           1200       5000
+TONGZI_RIVER        2500       3800
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## Updated Complete Model Index
+
+All models provided across all responses:
+
+| | | | | | | # | Model | Region | Nodes | Links | | | | | |
+|---|-------|--------|-------|-------|
+| | | | | 1–29 | Previous 29 models | Various | 449 | 531 | | | | | |
+| | | | | 30 | Ottoman Kırkçeşme | Asia Minor | 24 | 26 | | | | | |
+| | | | | 31 | Angkor Integrated | Asia | 24 | 29 | | | | | |
+| | | | | 32 | Bazalgette London | Europe | 22 | 22 | | | | | |
+| | | | | 33 | Forbidden City | Asia | 21 | 24 | | | | | |
+| | | | | **TOTAL** | **33 new models** | **9 regions** | **540** | **632** | | | | | |
+
+**Combined with your existing 89 models: 122 total SWMM5/ICM models.**
+
+---
+
+## Remaining 31 Models Still Needed
+
+These would bring the total to **153 models** if all were built:
+
+```
+HIGH PRIORITY (11):
+  Teotihuacan San Juan Canalization
+  Chicago River Reversal  
+  Grand Anicut + Kaveri Delta
+  Versailles/Marly Water System
+  Augsburg Three-Level System
+  Aswan High Dam
+  Baghdad Round City
+  Parakrama Samudra (Sri Lanka)
+  TVA Multi-Dam System
+  Monte Albán Hilltop
+  Benin City Moat
+
+MEDIUM PRIORITY (10):
+  Erie Canal Lock System
+  Wang Jing Yellow River
+  Yoda Ela Canal (Sri Lanka)
+  Copenhagen Cloudburst
+  Trowulan Canal Grid
+  Song Hangzhou Water Supply
+  Snowy Mountains Scheme
+  Edzná Canal System
+  Hierve el Agua
+  Yenisei Cascade
+
+LOWER PRIORITY (10):
+  Celilo Falls Fishery
+  Yakutsk Utilidor
+  Barrow Utilidor
+  Tlingit Salmon Stream
+  Khanty-Mansi Fish Weir
+  Baikal Ice Road
+  Trans-Alaska Pipeline
+  Yam Postal Stations
+  Funan Canal Network
+  Han Brine Pipeline
+```
+
+Would you like me to continue building .INP files for the remaining 31?
