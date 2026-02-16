@@ -10080,6 +10080,720 @@ export const gameData: GameData = {
           ]
         }
       ]
+    },
+    {
+      id: "pre-viking-scandinavia",
+      name: "Pre-Viking Scandinavia",
+      description: "10,000 years of water engineering before the Viking Age, from Mesolithic fish traps to Iron Age bog iron processing.",
+      position: [-3, 0, -15],
+      color: "#6B8E23",
+      era: "ancient",
+      dateRange: "10,000 BCE - 700 CE",
+      locations: [
+        {
+          id: "ertebolle-coast",
+          name: "Ertebølle Coastal Sites",
+          description: "Mesolithic coastal fish trap sites",
+          historicalContext: "Among the oldest fish trap systems in Northern Europe",
+          coordinates: { lat: 56.6, lng: 10.3 },
+          artifacts: [
+            {
+              id: "ertebolle-fish-traps",
+              name: "Mesolithic Coastal Fish Traps (Ertebølle)",
+              description: "Elaborate wicker and wooden fish traps in coastal lagoons managing tidal water for systematic fishing",
+              rarity: "epic",
+              historicalPeriod: "Mesolithic (5400-3900 BCE)",
+              significance: "Some traps spanned entire fjord narrows; thousands of stake fragments found in Danish waters",
+              yearBCE: 5400,
+              category: "dam"
+            },
+            {
+              id: "neolithic-pile-dwellings",
+              name: "Neolithic Pile Dwellings",
+              description: "Lake and marsh dwellings on wooden platforms requiring water level management and bank stabilization",
+              rarity: "rare",
+              historicalPeriod: "Neolithic (4000-800 BCE)",
+              significance: "Earliest Scandinavian water-adapted architecture adapted to Northern conditions",
+              yearBCE: 4000,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "bronze-age-scandinavia",
+          name: "Bronze Age Scandinavian Settlements",
+          description: "Coastal settlements with rock-cut wells",
+          historicalContext: "Early Scandinavian groundwater engineering",
+          coordinates: { lat: 57.7, lng: 12.0 },
+          artifacts: [
+            {
+              id: "bronze-age-rock-wells",
+              name: "Bronze Age Rock-Cut Wells",
+              description: "Wells cut into bedrock in coastal settlements precisely positioned to access freshwater lenses above saltwater",
+              rarity: "rare",
+              historicalPeriod: "Bronze Age (1800-500 BCE)",
+              significance: "Required understanding of groundwater dynamics on coastal and island sites",
+              yearBCE: 1800,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "iron-age-bog",
+          name: "Scandinavian Bog Iron Sites",
+          description: "Iron extraction from bogs requiring water management",
+          historicalContext: "Water-dependent metallurgy that enabled the Viking expansion",
+          coordinates: { lat: 59.0, lng: 15.0 },
+          artifacts: [
+            {
+              id: "bog-iron-water-processing",
+              name: "Iron Age Bog Iron Water Processing",
+              description: "Iron extraction from bogs requiring draining sections to access ore, washing and roasting ore, and using water in smelting",
+              rarity: "epic",
+              historicalPeriod: "Iron Age (500 BCE - 800 CE)",
+              significance: "Bog iron fueled the weapons that enabled the Viking Age expansion",
+              yearBCE: 500,
+              category: "water-lifting"
+            },
+            {
+              id: "migration-period-boat-graves",
+              name: "Migration Period Boat Graves",
+              description: "Ship burials requiring water engineering for launching ships onto land and managing groundwater around burial mounds",
+              rarity: "rare",
+              historicalPeriod: "Migration Period (400-700 CE)",
+              significance: "Oseberg ship preserved in waterlogged blue clay for 1100 years; water conditions as preservation technology",
+              yearBCE: -400,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "fjord-harbors-pre-viking",
+          name: "Pre-Viking Fjord Harbor Sites",
+          description: "Early harbor structures in Norwegian fjords",
+          historicalContext: "Foundation of Norse maritime infrastructure",
+          coordinates: { lat: 60.0, lng: 6.0 },
+          artifacts: [
+            {
+              id: "iron-age-fjord-harbors",
+              name: "Iron Age Fjord Harbor Construction",
+              description: "Pre-Viking harbor structures including stone jetties, boat shelters, and managed landing beaches",
+              rarity: "rare",
+              historicalPeriod: "Iron Age (500 BCE - 700 CE)",
+              significance: "Required understanding of tidal patterns, storm surge, and fjord currents",
+              yearBCE: 500,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "iceland",
+      name: "Iceland",
+      description: "From Viking settlement springs to the world's largest geothermal heating system — 1,100 years of extraordinary water engineering on a volcanic island.",
+      position: [-8, 0, -16],
+      color: "#4169E1",
+      era: "medieval",
+      dateRange: "874 CE - Present",
+      locations: [
+        {
+          id: "reykjavik-settlement",
+          name: "Reykjavík Settlement",
+          description: "Viking settlement site chosen for its geothermal steam",
+          historicalContext: "Ingólfur Arnarson chose Reykjavík for hot springs visible from sea",
+          coordinates: { lat: 64.15, lng: -21.95 },
+          artifacts: [
+            {
+              id: "viking-settlement-water",
+              name: "Viking Settlement Water Selection",
+              description: "Norse settlers chose farm sites based on hot springs for bathing and heating, cold springs for drinking, rivers for fishing",
+              rarity: "epic",
+              historicalPeriod: "Norse Settlement (874 CE onwards)",
+              significance: "Water determined Iceland's settlement pattern; Reykjavík means Smoky Bay",
+              yearBCE: -874,
+              category: "aqueduct"
+            },
+            {
+              id: "reykjavik-geothermal-heating",
+              name: "Reykjavík Geothermal District Heating",
+              description: "World's largest geothermal district heating system with 200 km of pipelines beneath Reykjavík",
+              rarity: "legendary",
+              historicalPeriod: "Modern (1930 onwards)",
+              significance: "Over 90% of Iceland's buildings heated by geothermal hot water at 80-130°C",
+              yearBCE: -1930,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "reykholt",
+          name: "Reykholt",
+          description: "Snorri Sturluson's estate with Europe's oldest named swimming pool",
+          historicalContext: "Hot spring bathing has defined Icelandic culture for 1100 years",
+          coordinates: { lat: 64.66, lng: -21.30 },
+          artifacts: [
+            {
+              id: "snorralaug-hot-pool",
+              name: "Icelandic Hot Spring Bathing (Snorralaug)",
+              description: "Snorri Sturluson's hot pool at Reykholt — stone-lined, spring-fed, connected to his hall by covered passage",
+              rarity: "legendary",
+              historicalPeriod: "Medieval (1200 CE)",
+              significance: "Oldest known named swimming pool in Europe; 1000+ years of geothermal bathing culture",
+              yearBCE: -1200,
+              category: "fountain"
+            },
+            {
+              id: "icelandic-irrigation",
+              name: "Icelandic Irrigation (Veitingakerfi)",
+              description: "Gravity-fed irrigation of hayfields using diverted stream water to accelerate grass growth in short growing season",
+              rarity: "rare",
+              historicalPeriod: "Medieval onwards",
+              significance: "Northernmost historical irrigation in the world; managed through traditional community water rights",
+              yearBCE: -1000,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "thingvellir",
+          name: "Þingvellir (Thingvellir)",
+          description: "Site of the world's oldest parliament defined by water",
+          historicalContext: "UNESCO World Heritage — water landscape as foundation of democracy",
+          coordinates: { lat: 64.26, lng: -21.13 },
+          artifacts: [
+            {
+              id: "thingvellir-water-landscape",
+              name: "Þingvellir Water Landscape",
+              description: "Althing parliament site defined by Öxarárfoss waterfall and Öxará River diverted by settlers to flow through the assembly site",
+              rarity: "legendary",
+              historicalPeriod: "930 CE onwards",
+              significance: "UNESCO World Heritage; world's oldest parliament met at a site defined by water and rift geology",
+              yearBCE: -930,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "iceland-turf-houses",
+          name: "Icelandic Turf House Sites",
+          description: "Turf architecture with sophisticated drainage systems",
+          historicalContext: "Without proper drainage turf houses would collapse within years",
+          coordinates: { lat: 65.0, lng: -18.5 },
+          artifacts: [
+            {
+              id: "turf-house-drainage",
+              name: "Icelandic Turf House Water Management",
+              description: "Stone-lined channels beneath walls, gravel drainage layers, and sloped turf roofs directing water away from living spaces",
+              rarity: "rare",
+              historicalPeriod: "874 CE onwards",
+              significance: "Arctic building water management — survival architecture for sub-Arctic conditions",
+              yearBCE: -874,
+              category: "sanitation"
+            },
+            {
+              id: "stong-farm-water",
+              name: "Stöng Medieval Farm Water System",
+              description: "Viking-era farm at Stöng with channeled spring water, stone-lined dairy cooling pools, and drainage beneath longhouse",
+              rarity: "epic",
+              historicalPeriod: "Pre-1104 CE (buried by Hekla eruption)",
+              significance: "Best-preserved example of Norse farm water engineering; volcanic tephra preserved site perfectly",
+              yearBCE: -1000,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "iceland-modern-water",
+          name: "Icelandic Hydropower & Geothermal Sites",
+          description: "Modern geothermal and hydroelectric infrastructure",
+          historicalContext: "Near-total renewable energy production",
+          coordinates: { lat: 65.0, lng: -18.0 },
+          artifacts: [
+            {
+              id: "icelandic-hydropower",
+              name: "Icelandic Hydropower",
+              description: "Over 70% of Iceland's electricity from hydropower with massive reservoirs in the highlands",
+              rarity: "epic",
+              historicalPeriod: "1904 onwards",
+              significance: "Kárahnjúkar Dam 193m tall — Iceland's largest; near-total renewable hydro energy production",
+              yearBCE: -1904,
+              category: "dam"
+            },
+            {
+              id: "icelandic-geothermal-greenhouse",
+              name: "Icelandic Geothermal Greenhouse",
+              description: "Geothermal hot water for greenhouse heating producing vegetables and even bananas at 64°N latitude",
+              rarity: "rare",
+              historicalPeriod: "1924 onwards",
+              significance: "Over 200 hectares of geothermal-heated greenhouses; world leader in geothermal agricultural water use",
+              yearBCE: -1924,
+              category: "irrigation"
+            },
+            {
+              id: "jokulhlaup-management",
+              name: "Icelandic Jökulhlaup Management",
+              description: "Glacial outburst floods from volcanic eruptions beneath glaciers with traditional and modern monitoring systems",
+              rarity: "epic",
+              historicalPeriod: "Traditional - Modern",
+              significance: "1996 Grímsvötn jökulhlaup released 45,000 m³/second — rivaling the Amazon; most extreme floods in Europe",
+              yearBCE: -1996,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "norse-greenland",
+      name: "Norse Greenland",
+      description: "450 years of survival at the western edge of medieval European civilization, where water and climate determined everything.",
+      position: [-12, 0, -16],
+      color: "#2E8B57",
+      era: "medieval",
+      dateRange: "985-1450 CE",
+      locations: [
+        {
+          id: "eastern-settlement",
+          name: "Eastern Settlement (Eystribyggð)",
+          description: "Main Norse colony in Greenland",
+          historicalContext: "Water availability determined Norse Greenland's 450-year existence",
+          coordinates: { lat: 61.0, lng: -45.0 },
+          artifacts: [
+            {
+              id: "erik-red-water-selection",
+              name: "Erik the Red's Settlement Water Selection",
+              description: "Settlement sites chosen based on sheltered fjords with freshwater streams, grass-covered slopes irrigated by meltwater",
+              rarity: "epic",
+              historicalPeriod: "985 CE onwards",
+              significance: "Water availability determined Norse Greenland's 450-year existence",
+              yearBCE: -985,
+              category: "irrigation"
+            },
+            {
+              id: "norse-greenland-irrigation",
+              name: "Norse Greenland Irrigation",
+              description: "Irrigated hayfields using meltwater from glaciers and snowfields via channels to accelerate grass growth in brief Arctic summer",
+              rarity: "rare",
+              historicalPeriod: "985-1450 CE",
+              significance: "Westernmost medieval European irrigation — at the edge of survival",
+              yearBCE: -985,
+              category: "irrigation"
+            },
+            {
+              id: "norse-greenland-hot-springs",
+              name: "Norse Greenland Hot Spring Use",
+              description: "Settlements near hot springs used for bathing, cooking, and possibly cheese-making similar to Icelandic pattern",
+              rarity: "rare",
+              historicalPeriod: "985-1450 CE",
+              significance: "Geothermal water use at the western edge of medieval European civilization",
+              yearBCE: -985,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "western-settlement",
+          name: "Western Settlement (Vestribyggð)",
+          description: "Remote Norse colony in Greenland",
+          historicalContext: "500+ km from Eastern Settlement requiring detailed fjord navigation",
+          coordinates: { lat: 64.2, lng: -51.7 },
+          artifacts: [
+            {
+              id: "norse-greenland-fjord-navigation",
+              name: "Norse Greenland Fjord Navigation",
+              description: "Navigation of complex fjord systems understanding currents, ice patterns, tidal influences, and seasonal changes",
+              rarity: "rare",
+              historicalPeriod: "985-1450 CE",
+              significance: "Arctic maritime water navigation; sailing route between settlements was 500+ km",
+              yearBCE: -985,
+              category: "canal"
+            },
+            {
+              id: "norse-greenland-collapse",
+              name: "Norse Greenland Collapse — Water/Climate",
+              description: "Colonies collapsed due to cooling temperatures, expanded sea ice blocking navigation, and changing precipitation",
+              rarity: "epic",
+              historicalPeriod: "~1350-1450 CE",
+              significance: "History's most dramatic example of water-climate civilization collapse (Little Ice Age)",
+              yearBCE: -1350,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "modern-norway",
+      name: "Modern Norway",
+      description: "From medieval stave churches to 98% hydroelectric power — Norway's fjord geography creates unique water engineering challenges and opportunities.",
+      position: [-1, 0, -16],
+      color: "#BA2025",
+      era: "modern",
+      dateRange: "1150 CE - Present",
+      locations: [
+        {
+          id: "norwegian-hydropower",
+          name: "Norwegian Hydropower Network",
+          description: "98% of electricity from hydropower — highest in Europe",
+          historicalContext: "Fjord geography provides massive natural elevation drops",
+          coordinates: { lat: 59.3, lng: 6.2 },
+          artifacts: [
+            {
+              id: "norwegian-fjord-hydropower",
+              name: "Norwegian Fjord Hydropower",
+              description: "Norway generates 98% of electricity from hydropower with over 1,600 plants and 33,000 MW installed capacity",
+              rarity: "legendary",
+              historicalPeriod: "1882 onwards",
+              significance: "Highest renewable hydro percentage of any European nation; Tonstad largest at 960 MW",
+              yearBCE: -1882,
+              category: "dam"
+            },
+            {
+              id: "norwegian-salmon-farming",
+              name: "Norwegian Salmon Farming",
+              description: "Pioneered modern salmon aquaculture in fjords managing water quality, temperature, and currents",
+              rarity: "epic",
+              historicalPeriod: "1970 onwards",
+              significance: "World's largest salmon producer with 1.4 million tonnes annual production",
+              yearBCE: -1970,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "stave-church-sites",
+          name: "Norwegian Stave Church Sites",
+          description: "Medieval wooden churches with sophisticated water drainage",
+          historicalContext: "28 surviving stave churches — oldest wooden buildings in Northern Europe",
+          coordinates: { lat: 60.8, lng: 7.8 },
+          artifacts: [
+            {
+              id: "stave-church-water",
+              name: "Norwegian Stave Church Water Engineering",
+              description: "Stone foundations with drainage channels, raised sills, and angled siding to shed water preserving wooden structures",
+              rarity: "epic",
+              historicalPeriod: "1150-1350 CE",
+              significance: "Water management preserving 900-year-old wooden buildings",
+              yearBCE: -1150,
+              category: "sanitation"
+            },
+            {
+              id: "norwegian-stockfish",
+              name: "Norwegian Stockfish Water Processing",
+              description: "Wind-dried cod requiring specific coastal drying conditions, fish soaked in freshwater before consumption",
+              rarity: "rare",
+              historicalPeriod: "Medieval onwards",
+              significance: "Bergen's Bryggen UNESCO was the stockfish trading hub; water-dependent food processing",
+              yearBCE: -1200,
+              category: "water-lifting"
+            }
+          ]
+        },
+        {
+          id: "norway-subsea",
+          name: "Norwegian Subsea Technology",
+          description: "World leader in subsea engineering from oil/gas industry",
+          historicalContext: "Technology transferred to water applications",
+          coordinates: { lat: 60.4, lng: 3.5 },
+          artifacts: [
+            {
+              id: "norwegian-subsea-tech",
+              name: "Norwegian Subsea Water Technology",
+              description: "World leader in subsea engineering with technology transferred to desalination, deepwater pipelines, and offshore energy",
+              rarity: "epic",
+              historicalPeriod: "Modern",
+              significance: "Troll A platform stands in 303m of water; subsea expertise from oil industry",
+              yearBCE: -1990,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "sweden",
+      name: "Sweden",
+      description: "From medieval copper mine drainage that funded an empire to the Göta Canal connecting seas — Sweden's water engineering shaped Northern European power.",
+      position: [0, 0, -15],
+      color: "#006AA7",
+      era: "modern",
+      dateRange: "1080 CE - Present",
+      locations: [
+        {
+          id: "falun-mine",
+          name: "Falun Copper Mine",
+          description: "UNESCO World Heritage mine requiring elaborate water management",
+          historicalContext: "Mine water engineering that funded a European empire",
+          coordinates: { lat: 60.6, lng: 15.6 },
+          artifacts: [
+            {
+              id: "falun-mine-drainage",
+              name: "Falun Copper Mine Drainage",
+              description: "Horse-powered pumps, wooden pipe drainage, and adits for Sweden's most important mine producing 2/3 of Europe's copper",
+              rarity: "legendary",
+              historicalPeriod: "1080-1992 CE",
+              significance: "UNESCO World Heritage; mine water management enabled Swedish great-power status",
+              yearBCE: -1080,
+              category: "water-lifting"
+            }
+          ]
+        },
+        {
+          id: "gota-canal",
+          name: "Göta Canal",
+          description: "190 km canal connecting North Sea to Baltic",
+          historicalContext: "Sweden's most ambitious water engineering project",
+          coordinates: { lat: 58.5, lng: 15.5 },
+          artifacts: [
+            {
+              id: "gota-canal",
+              name: "Göta Canal",
+              description: "190 km canal connecting North Sea to Baltic through Sweden with 58 locks overcoming 91.5m elevation",
+              rarity: "legendary",
+              historicalPeriod: "1810-1832",
+              significance: "22 years and 58,000 soldiers to build; uses Lakes Vänern and Vättern as part of route",
+              yearBCE: -1810,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "stockholm-water",
+          name: "Stockholm Water System",
+          description: "Water management for an archipelago city on 14 islands",
+          historicalContext: "Urban water engineering for a city built on islands",
+          coordinates: { lat: 59.33, lng: 18.07 },
+          artifacts: [
+            {
+              id: "stockholm-water-system",
+              name: "Stockholm Water System",
+              description: "Lake Mälaren managed as water supply for a city built on 14 islands requiring bridges, tunnels, and water management",
+              rarity: "epic",
+              historicalPeriod: "1858 onwards",
+              significance: "Modern treatment plants serve 1 million+ people on an archipelago",
+              yearBCE: -1858,
+              category: "aqueduct"
+            },
+            {
+              id: "swedish-sami-water",
+              name: "Swedish Sami Water Knowledge",
+              description: "Sami reindeer herders possess deep knowledge of river crossing points, lake ice conditions, and spring melt timing",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Indigenous Arctic water knowledge; migration routes follow water across 500+ km",
+              yearBCE: 1000,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "denmark",
+      name: "Denmark",
+      description: "From Viking-age water defenses to the world's most comprehensive cloudburst management plan — Denmark pioneers urban water innovation.",
+      position: [-1, 0, -13],
+      color: "#C60C30",
+      era: "modern",
+      dateRange: "1873 CE - Present",
+      locations: [
+        {
+          id: "lammefjorden",
+          name: "Lammefjorden Reclamation",
+          description: "Fjord-to-farmland conversion using Dutch-inspired techniques",
+          historicalContext: "Dutch poldering technique applied in Scandinavia",
+          coordinates: { lat: 55.8, lng: 11.5 },
+          artifacts: [
+            {
+              id: "danish-reclamation",
+              name: "Danish Reclamation (Lammefjorden)",
+              description: "Draining of the Lammefjord converting a fjord to farmland using Dutch-inspired steam pumping",
+              rarity: "epic",
+              historicalPeriod: "1873",
+              significance: "Created some of Denmark's most productive agricultural land",
+              yearBCE: -1873,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "copenhagen-water",
+          name: "Copenhagen Water Innovation",
+          description: "Pioneer in urban water planning and climate adaptation",
+          historicalContext: "Global model for urban water climate adaptation",
+          coordinates: { lat: 55.68, lng: 12.57 },
+          artifacts: [
+            {
+              id: "copenhagen-finger-plan",
+              name: "Copenhagen Finger Plan Water",
+              description: "Urban plan preserving green fingers of waterways between development providing water management, recreation, and ecology",
+              rarity: "epic",
+              historicalPeriod: "1947 onwards",
+              significance: "Pioneering integration of water into urban planning",
+              yearBCE: -1947,
+              category: "canal"
+            },
+            {
+              id: "copenhagen-cloudburst",
+              name: "Copenhagen Cloudburst Management",
+              description: "300-project climate adaptation plan where parks double as retention basins and climate streets have underground storage",
+              rarity: "legendary",
+              historicalPeriod: "2012 onwards",
+              significance: "World's most comprehensive urban cloudburst management plan after 2011 €1 billion damage event",
+              yearBCE: -2012,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "oresund",
+          name: "Øresund Bridge-Tunnel",
+          description: "16 km combined bridge-tunnel crossing",
+          historicalContext: "Major underwater infrastructure water management",
+          coordinates: { lat: 55.57, lng: 12.85 },
+          artifacts: [
+            {
+              id: "oresund-bridge-tunnel",
+              name: "Øresund Bridge Tunnel Water Engineering",
+              description: "16 km combined bridge-tunnel crossing with managed water ingress and artificial island from dredged material",
+              rarity: "epic",
+              historicalPeriod: "2000",
+              significance: "Major underwater infrastructure water management between Denmark and Sweden",
+              yearBCE: -2000,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "finland",
+      name: "Finland",
+      description: "The land of 188,000 lakes, the sauna, and one of the world's longest water tunnels — Finland's identity is inseparable from water.",
+      position: [2, 0, -16],
+      color: "#003580",
+      era: "modern",
+      dateRange: "7000 BCE - Present",
+      locations: [
+        {
+          id: "finnish-sauna",
+          name: "Finnish Sauna Culture",
+          description: "UNESCO intangible heritage — water-steam engineering as cultural identity",
+          historicalContext: "Over 3 million saunas for 5.5 million people",
+          coordinates: { lat: 61.5, lng: 24.0 },
+          artifacts: [
+            {
+              id: "finnish-sauna-water",
+              name: "Finnish Sauna Water Culture",
+              description: "Water thrown on hot stones creates löyly steam; requires managed water supply, drainage, and temperature control",
+              rarity: "legendary",
+              historicalPeriod: "7000 BCE onwards",
+              significance: "UNESCO Intangible Heritage 2020; 3 million saunas for 5.5 million people; fundamentally a water engineering device",
+              yearBCE: 7000,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "saimaa-canal-site",
+          name: "Saimaa Canal",
+          description: "Connecting Finland's interior to the sea",
+          historicalContext: "Finland's most important waterway",
+          coordinates: { lat: 61.05, lng: 28.2 },
+          artifacts: [
+            {
+              id: "saimaa-canal",
+              name: "Saimaa Canal",
+              description: "43 km canal connecting Lake Saimaa to Gulf of Finland with 8 locks overcoming 76m elevation enabling timber export",
+              rarity: "epic",
+              historicalPeriod: "1856 (rebuilt 1963)",
+              significance: "Transformed Finnish economy by enabling interior timber export",
+              yearBCE: -1856,
+              category: "canal"
+            },
+            {
+              id: "finnish-tar-burning",
+              name: "Finnish Tar Burning Water",
+              description: "Pine tar production requiring log floating on rivers, water-cooled condensation, and transport by water",
+              rarity: "rare",
+              historicalPeriod: "16th-19th century CE",
+              significance: "Finland's primary export for centuries literally floated on water",
+              yearBCE: -1500,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "helsinki-water-tunnel",
+          name: "Helsinki Water Supply",
+          description: "One of the world's longest water tunnels",
+          historicalContext: "120 km rock tunnel serving 1 million people",
+          coordinates: { lat: 60.17, lng: 24.94 },
+          artifacts: [
+            {
+              id: "helsinki-paijanne-tunnel",
+              name: "Helsinki Päijänne Water Tunnel",
+              description: "120 km rock tunnel from Lake Päijänne to Helsinki — one of longest continuous rock tunnels in the world",
+              rarity: "legendary",
+              historicalPeriod: "1982",
+              significance: "One of the longest water tunnels in the world; serves 1 million people",
+              yearBCE: -1982,
+              category: "aqueduct"
+            },
+            {
+              id: "finnish-lake-management",
+              name: "Finnish Lake Management",
+              description: "Management of 188,000 lakes with traditional fish weirs, log floating channels, and modern environmental monitoring",
+              rarity: "rare",
+              historicalPeriod: "Traditional - Modern",
+              significance: "Management of the most lake-dense country on Earth",
+              yearBCE: 1000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "faroe-islands",
+      name: "Faroe Islands",
+      description: "Norse settlers on remote North Atlantic islands managing extreme water conditions for over 1,200 years.",
+      position: [-5, 0, -15],
+      color: "#0065BD",
+      era: "medieval",
+      dateRange: "825 CE - Present",
+      locations: [
+        {
+          id: "faroese-farming",
+          name: "Faroese Stream-Fed Farms",
+          description: "Mountain stream management for agriculture on thin soil",
+          historicalContext: "Sub-Arctic stream management for survival",
+          coordinates: { lat: 62.0, lng: -7.0 },
+          artifacts: [
+            {
+              id: "faroese-stream-farming",
+              name: "Faroese Stream-Fed Farming",
+              description: "Norse settlers channeled mountain streams to irrigate infields for hay and grain on thin soil over basalt",
+              rarity: "rare",
+              historicalPeriod: "825 CE onwards",
+              significance: "Extremely wet climate (1500mm/yr) required drainage more than irrigation; sub-Arctic agriculture",
+              yearBCE: -825,
+              category: "irrigation"
+            },
+            {
+              id: "faroese-grindadrap-water",
+              name: "Faroese Grindadráp Water Knowledge",
+              description: "Traditional pilot whale drives requiring intimate knowledge of fjord currents, depth, tidal state, and whale behavior",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Maritime water knowledge for traditional hunting coordinated across communities",
+              yearBCE: -900,
+              category: "canal"
+            }
+          ]
+        }
+      ]
     }
   ]
 };

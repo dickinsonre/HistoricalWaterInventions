@@ -1,0 +1,270 @@
+# Mesoamerican Water Inventions — Complete Deep Dive
+
+The Olmec, Maya, and other Mesoamerican civilizations had far more sophisticated water engineering than most histories acknowledge. Your app has 8 inventions under a single "Mesoamerica" entry — the reality is closer to 80+ inventions across 10+ distinct civilizations spanning 3,500 years.
+
+---
+
+## Current App Coverage
+
+| | | | | | | Entry | Inventions | Assessment | | | |  |
+|-------|-----------|------------|
+| | | | | | **Mesoamerica** | 8 | Single entry covering 2,700 years and 10+ civilizations. Aztec-heavy. Maya, Olmec, Zapotec, Teotihuacan, Toltec, Mixtec, Totonac, Purépecha all missing or barely represented. | | | |  |
+
+### Currently Listed:
+1. Chinampa Farming Tools (Aztec)
+2. Chapultepec Aqueduct Stone (Aztec)
+3. Tenochtitlan Dike System (Aztec)
+4. Aguada Reservoir Plan (Maya)
+5. + 4 more (likely Aztec/Maya mix)
+
+---
+
+## Recommended Restructuring
+
+Instead of one "Mesoamerica" entry, split into distinct civilizations:
+
+| | | | | | | New Entry | Era | Suggested Inventions | | | |  |
+|-----------|-----|---------------------|
+| | | | | | **Olmec** | 1500–400 BCE | 8+ | | | |  |
+| | | | | | **Maya Classic** | 250–900 CE | 15+ | | | |  |
+| | | | | | **Maya Preclassic** | 2000 BCE–250 CE | 5+ | | | |  |
+| | | | | | **Maya Postclassic** | 900–1524 CE | 4+ | | | |  |
+| | | | | | **Teotihuacan** | 100 BCE–550 CE | 6+ | | | |  |
+| | | | | | **Zapotec** | 500 BCE–750 CE | 5+ | | | |  |
+| | | | | | **Mixtec** | 900–1521 CE | 3+ | | | |  |
+| | | | | | **Toltec** | 900–1168 CE | 3+ | | | |  |
+| | | | | | **Aztec/Mexica** | 1325–1521 CE | 12+ | | | |  |
+| | | | | | **Purépecha/Tarascan** | 1300–1530 CE | 3+ | | | |  |
+| | | | | | **Totonac** | 100–1521 CE | 3+ | | | |  |
+| | | | | | **Epi-Olmec/Tres Zapotes** | 400 BCE–100 CE | 2+ | | | |  |
+
+---
+
+# OLMEC (1500–400 BCE)
+
+## Currently not in App — Critical Gap
+
+The Olmec are the "mother culture" of Mesoamerica. Your search results specifically mention their water engineering, yet they have no entry. This is the biggest Mesoamerican gap in the app.
+
+| | | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | **San Lorenzo Basalt Drain System** | 1200–900 BCE | San Lorenzo, Veracruz | Elaborate system of basalt stone drains atop the San Lorenzo plateau. U-shaped basalt troughs carved from massive stone blocks with precise dimensions — each block identical — lined up side by side to create water channels. The drain system connected to stone-lined reservoirs and ritual pools. Required transporting basalt blocks from mountains 60+ km away. | Oldest engineered water drainage system in Mesoamerica — and among the most sophisticated of its age anywhere | | | |  |
+| | | | | | | **San Lorenzo Aqueduct** | 1200–900 BCE | San Lorenzo | Stone-lined aqueduct bringing water from distant springs to the hilltop settlement. The Olmec "laboriously carved massive pieces of stone into identical blocks with a trough on one end; they then lined these blocks up side by side to create a channel for water to flow." Required precision stone-cutting and surveying. | First aqueduct in the Americas | | | |  |
+| | | | | | | **San Lorenzo Ritual Water Pool** | 1200–900 BCE | San Lorenzo | A masonry sunken court fitted with a drain that could be "easily filled and emptied of water to serve as a pool for ritual use." Four explicit representations of the Olmec maize god surround the pool. Water rituals central to Olmec religion. | Earliest known ritual water architecture in the Americas | | | |  |
+| | | | | | | **El Manatí Sacred Spring Complex** | 1600–1200 BCE | Southern Veracruz | Sacred spring site at the foot of Cerro Manatí hill. The Olmec deposited massive offerings in a spring-fed pool: rubber balls (for the ballgame), jadeite axes, wooden busts, and infant remains. The spring represented a "sacred mountain of abundance" — the first clear example of this concept in Mesoamerica. | Oldest documented sacred water site in Mesoamerica — origin of the sacred mountain-water concept | | | |  |
+| | | | | | | **Olmec Vulcanized Rubber for Water Use** | 1600–1200 BCE | Gulf Coast | The Olmec created vulcanized rubber by mixing latex from rubber trees (Castilla elastica) with juice from morning glory vines. This rubber was used to create waterproof balls for the ritual ballgame and likely for waterproofing containers and possibly channels. | First vulcanized rubber in the world — with water engineering applications | | | |  |
+| | | | | | | **La Venta Pyramid & Water Management** | 900–400 BCE | Tabasco | The first pyramid in Mesoamerica (Complex C at La Venta) required water management during construction and use. The site was built on a swampy island surrounded by water. Massive offerings of serpentine blocks were buried in elaborate drainage arrangements. Channels directed water around and through the ceremonial complex. | Water management for the first Mesoamerican pyramid | | | |  |
+| | | | | | | **La Venta Massive Stone Offering Drainage** | 900–400 BCE | Tabasco | Thousands of serpentine blocks arranged in elaborate patterns and buried in pits with sophisticated drainage. These "massive offerings" demonstrate water management knowledge — the blocks were placed in patterns that may represent water cosmology (flowing water, pools, rivers). | Integration of water cosmology with engineering | | | |  |
+| | | | | | | **Teopantecuanitlán Water System** | 1400–800 BCE | Guerrero | Olmec-influenced site with an elaborate masonry sunken court lined with four carved images of the Olmec maize god. A drain enters and exits the court, allowing it to be filled and emptied as a ritual pool. Combined with agricultural terracing and canal irrigation. | Olmec water engineering technology transferred to highland Mexico | | | |  |
+| | | | | | | **Olmec Water Cosmology System** | 1500–400 BCE | Gulf Coast | The Olmec developed the fundamental Mesoamerican water cosmology: rain gods (precursors to Tlaloc/Chaak), sacred mountains containing water, caves as water-world entrances, and the water-maize-fertility connection. Eight supernatural beings identified, including the Water God. This cosmological system governed water management for 3,000 years. | Foundation of all subsequent Mesoamerican water theology and governance | | | |  |
+
+---
+
+# MAYA — Preclassic Period (2000 BCE – 250 CE)
+
+### Currently not well represented
+
+| | | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | **Edzná Canal System** | 400 BCE–150 CE | Campeche | 31 canals totaling 22 km draining swampland, channeling water to reservoirs, and creating agricultural chinampas. Radial pattern centered on the monumental core. The earliest large-scale hydraulic engineering in the Maya world. | Oldest major Maya water engineering | | | |  |
+| | | | | | | **Cerros Raised Field Agriculture** | 400 BCE–150 CE | Belize | Raised agricultural platforms in coastal wetlands. Channels between raised beds managed freshwater-saltwater interaction. Combined marine and freshwater resources. One of the earliest examples of Maya wetland modification. | Earliest Maya coastal wetland engineering | | | |  |
+| | | | | | | **Nakbé Causeways (Sacbeob)** | 600 BCE | Petén, Guatemala | Earliest known Maya causeways (sacbeob). Raised limestone roads connecting ceremonial centers also functioned as dams and water management features — channeling water to reservoirs on one side while keeping ceremonial spaces dry. | Dual-purpose infrastructure — roads as water control | | | |  |
+| | | | | | | **El Mirador Bajo System** | 600 BCE–150 CE | Petén, Guatemala | The largest Preclassic Maya city. Extensive bajo (seasonal swamp) management for agriculture. Canals, berms, and check dams controlled water in and around bajos covering hundreds of square kilometers. The Danta pyramid (72 m) required massive water management during construction. | Water management for the largest Preclassic Maya city | | | |  |
+| | | | | | | **Ceibal Early Water Management** | 1000 BCE | Petén, Guatemala | One of the earliest Maya ceremonial centers shows water management from the very beginning. Recent research shows Ceibal developed simultaneously with Olmec La Venta — not later — suggesting independent water engineering innovation. | Evidence of independent Maya water engineering parallel to the Olmec | | | |  |
+
+---
+
+# MAYA — Classic Period (250–900 CE)
+
+### Most inventions belong here — massive expansion needed
+
+| | | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | **Tikal Reservoir System** | 250–900 CE | Guatemala | Six major reservoirs holding estimated 900,000 m³ of water. Palace Reservoir, Temple Reservoir, Hidden Reservoir, and Corriental Reservoir were the largest. Positioned to catch maximum runoff from plastered plaza surfaces. Elaborate inlet channels with sand filtration. Served 60,000+ people through 6-month dry seasons. | Largest Maya urban water system | | | |  |
+| | | | | | | **Tikal Water Filtration (Corriental)** | 250–900 CE | Guatemala | Quartz sand and zeolite filtration system discovered at Tikal's Corriental reservoir. Zeolite and coarse crystalline quartz imported from 30 km away specifically for water purification. The first known water filtration system in the Western Hemisphere. Published in Scientific Reports (2020). | First water purification technology in the Americas — zeolite filtration | | | |  |
+| | | | | | | **Palenque Pressurized Aqueduct** | 600–700 CE | Chiapas | Underground aqueduct with a constriction point creating water pressure. Discovered by Kirk French (2006). The channel narrows from approximately 10 m² to 0.5 m² cross-section, accelerating flow and creating pressure. Could have produced fountain-like effects. The only known pressurized water system in pre-Columbian Americas. | Only known pressurized water in pre-Columbian Americas | | | |  |
+| | | | | | | **Palenque Nine-Aqueduct System** | 600–800 CE | Chiapas | Not just one aqueduct — Palenque had nine mapped subterranean aqueducts managing 56 springs within the city. The Otolum River was channeled underground beneath the Palace. Total mapped underground channel length exceeds 2 km. | Most extensive underground water infrastructure in the Maya world | | | |  |
+| | | | | | | **Calakmul Aguada System** | 250–900 CE | Campeche, Mexico | Chain of 13 reservoirs (aguadas) managed for urban water supply. Limestone-lined, clay-sealed bottoms prevented seepage. Some had sand filtration. Total storage estimated at 200,000+ m³. Served a population rivaling Tikal. | Second-largest Maya urban water system | | | |  |
+| | | | | | | **Caracol Agricultural Terracing** | 600–900 CE | Belize | Terraced hillsides with check dams and reservoirs covering 200+ km². Supported a population of 100,000+ — larger than most contemporary European cities. Recent LiDAR surveys revealed the enormous extent of this engineered landscape. | Maya engineering supported populations larger than medieval London | | | |  |
+| | | | | | | **Maya Chultun (Underground Cistern)** | 600 BCE–900 CE | Multiple sites | Bottle-shaped underground cisterns carved into limestone bedrock. Plastered interior (using sascab lime plaster) prevented seepage. Openings on plaza surfaces captured runoff. Individual capacity: 25,000–75,000 liters. Thousands documented across the Maya Lowlands. | Most widespread Maya water storage technology | | | |  |
+| | | | | | | **Copán Drainage System** | 400–800 CE | Honduras | Elaborate stone-lined drainage beneath the Acropolis. Multiple channels directing water through the monumental core. Stone-capped drains beneath plazas. Some channels large enough for maintenance access. The collapse of Copán's engineering infrastructure may have contributed to the city's abandonment. | Drainage engineering beneath a UNESCO World Heritage site | | | |  |
+| | | | | | | **Quiriguá Flood Management** | 400–810 CE | Guatemala | Located on the Motagua River floodplain — one of the most flood-prone locations of any major Maya city. Quiriguá's monumental stelae (the tallest in the Maya world at 10.6 m) were positioned on raised platforms above flood level. Channels and berms directed floodwater around the ceremonial center. | Flood management for a river-bottom ceremonial center | | | |  |
+| | | | | | | **Kaminaljuyú Canal Irrigation** | 400 BCE–200 CE | Guatemala (Highland) | Highland Maya city with canal irrigation from Lake Miraflores. Channels directed water to agricultural fields and urban areas. One of the earliest examples of Maya canal-based irrigation (as opposed to rainwater management). | Earliest Maya canal irrigation | | | |  |
+| | | | | | | **Puuc Region Chultun Network** | 600–1000 CE | Yucatán | The Puuc hills of Yucatán have no surface water — no rivers, lakes, or springs. Maya cities like Uxmal, Kabah, and Sayil depended entirely on chultun cisterns and aguadas. Uxmal had over 100 chultuns. The entire Puuc civilization was built on rainwater harvesting. | Complete civilization built on harvested rainwater — no natural water sources | | | |  |
+| | | | | | | **Uxmal Water Collection** | 700–1000 CE | Yucatán | Uxmal's Nunnery Quadrangle and Governor's Palace positioned to maximize rainwater collection. Plastered surfaces directed water to underground cisterns. The Pyramid of the Magician may have served partly as a water collection structure. Carved Chaak (rain god) masks cover building facades — literally hundreds of rain god images. | Architecture designed as rainwater harvesting infrastructure | | | |  |
+| | | | | | | **Maya Sacbe as Water Management** | 250–900 CE | Multiple sites | Raised limestone causeways (sacbeob) connecting Maya cities served dual functions: transportation AND water management. Sacbeob acted as dams, channeling water to one side while keeping the other dry. The 100 km sacbe from Cobá to Yaxuná is the longest. | Roads engineered as linear water control features | | | |  |
+| | | | | | | **Dos Pilas Defensive Water** | 761 CE | Guatemala | After military defeat, the Maya at Dos Pilas dismantled their own temples to build defensive walls and used water as a defensive feature — flooding approaches and channeling attackers into kill zones. One of the most dramatic examples of water weaponization in Maya history. | Maya water warfare — defensive flooding | | | |  |
+| | | | | | | **Maya Water Lily Symbolism-Engineering** | Classic Period | Multiple | The water lily (Nymphaea ampla) appears throughout Maya art and was cultivated in reservoirs. Beyond symbolism, water lilies served practical functions: they indicated clean water, provided food (seeds and roots), and their presence helped maintain water quality through phytoremediation. | Water lilies as biological water quality indicators | | | |  |
+
+---
+
+# MAYA — Postclassic Period (900–1524 CE)
+
+| | | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | **Cenote Management (Yucatán)** | 900–1524 CE | Northern Yucatán | Cenotes (natural sinkholes accessing groundwater) were the primary water source for Postclassic Maya cities. Chichén Itzá's Sacred Cenote was both ritual offering site and water source. Communities managed cenote access, maintained paths, built stairs into cenote walls, and in some cases modified cenote shape and depth. | Groundwater access via natural geological features — managed as infrastructure | | | |  |
+| | | | | | | **Chichén Itzá Water System** | 900–1200 CE | Yucatán | Chichén Itzá had four cenotes plus constructed chultuns. The Xtoloc Cenote served as the primary drinking water source. The Sacred Cenote was for ritual offerings. Sacbeob connected cenotes to the ceremonial center. Stone-lined paths with carved steps descended to water. | Water infrastructure for the largest Postclassic Maya city | | | |  |
+| | | | | | | **Mayapán Water Management** | 1200–1441 CE | Yucatán | The last major Maya capital. Built around a cenote. Over 4,000 structures within a defensive wall. Water management included cenote access, chultuns, and a managed aguada. When the city fell in 1441, its water infrastructure was deliberately destroyed. | Water for the last great Maya capital | | | |  |
+| | | | | | | **Maya Water Purification with Sand and Lilies** | Traditional | Multiple | UNESCO interview with Dr. Yolanda López-Maldonado describes Maya water purification: "use of sand and water lilies to clean water and the use of a mixture of zeolite and coarse, sand-sized crystalline quartz to filter drinking water." Mayan cities could "determine chemically distinct water sources for agricultural, sacred and domestic uses." | Sophisticated multi-method water purification | | | |  |
+
+---
+
+# TEOTIHUACAN (100 BCE – 550 CE)
+
+### Currently not in App — Critical Gap
+
+| | | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | | **San Juan River Canalization** | 100 BCE–550 CE | The San Juan River was completely straightened and channeled through the city center in a man-made channel. Aligned precisely with Teotihuacan's urban grid on a 15.5° east-of-north axis. The river was literally moved to fit the city plan. One of the earliest examples of urban river canalization in the Americas. | First urban river channelization in the Americas | | | |  |
+| | | | | | | **Teotihuacan Underground Drainage** | 100 BCE–550 CE | Extensive underground stone-lined drainage beneath the Avenue of the Dead and major buildings. Some tunnels large enough for a person to walk through. Recent discoveries beneath the Pyramid of the Sun reveal elaborate underground water tunnels and chambers with ritual significance. | Most extensive pre-Columbian underground drainage | | | |  |
+| | | | | | | **Teotihuacan Spring Management** | 100 BCE–550 CE | Natural springs in the Teotihuacan Valley were managed and channeled for urban water supply. The city's location was chosen partly for spring access. Spring-fed canals distributed water to residential compounds. | Spring-based urban water supply for 100,000+ people | | | |  |
+| | | | | | | **Apartment Compound Water** | 100 BCE–550 CE | Over 2,000 apartment compounds (each housing 60-100 people) had internal courtyards with drainage, shared water access, and connection to the city's main drainage system. Standardized design across the entire city. | Standardized residential water infrastructure for a pre-Columbian megacity | | | |  |
+| | | | | | | **Pyramid of the Sun Water Tunnel** | 100 BCE–550 CE | A natural cave/tunnel beneath the Pyramid of the Sun was extensively modified and used for water-related rituals. The tunnel leads to a chamber shaped like a four-petaled flower — symbolizing the four directions and water origins. Water may have been deliberately introduced into this chamber. | Underground ritual water engineering beneath the largest pyramid in Mesoamerica | | | |  |
+| | | | | | | **Teotihuacan Irrigation Canals** | 100–550 CE | Canal systems in the surrounding valley irrigating agricultural fields. Fed by springs and the San Juan River. Combined with chinampas-like raised fields in marshy areas south of the city. | Agricultural water supply for a city of 100,000-200,000 | | | |  |
+
+---
+
+# ZAPOTEC (500 BCE – 750 CE)
+
+### Currently not in App
+
+| | | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | **Monte Albán Hilltop Water** | 500 BCE–750 CE | Oaxaca | City of 25,000+ built on a mountaintop with NO natural water source. Water management included: carved stone cisterns, plastered catchment surfaces, check dams in ravines, and channels directing runoff to storage. The Main Plaza (300 × 150 m) functioned as a giant catchment surface. | Engineering urban water supply on a mountaintop with zero natural water | | | |  |
+| | | | | | | **Zapotec Underground Drainage (Tombs)** | 500 BCE–750 CE | Oaxaca | Elaborate stone-built tombs beneath Monte Albán's buildings required sophisticated drainage to prevent flooding. Stone-lined channels directed water away from tomb entrances. Some tombs had multiple drainage channels. | Drainage engineering for sub-surface architecture | | | |  |
+| | | | | | | **Hierve el Agua Mineral Springs** | Pre-Zapotec–Zapotec | Oaxaca | Irrigation canals at Hierve el Agua using naturally mineral-rich (calcium carbonate) spring water. As water flowed through canals, minerals precipitated out, creating natural "petrified waterfalls" — spectacular cascades of white mineral deposits. The canals literally built themselves up through mineral deposition. | Ancient irrigation with self-building mineral channels — unique in the world | | | |  |
+| | | | | | | **Zapotec Valley Irrigation** | 500 BCE–750 CE | Oaxaca Valley | Canal-based irrigation across the Oaxaca Valley floor. Well-documented canal systems at Xoxocotlán and other valley sites. Managed the seasonal Atoyac River for dry-season agriculture. | Valley-floor irrigation in the Zapotec heartland | | | |  |
+| | | | | | | **Zapotec Cloud People Water Cosmology** | 500 BCE–750 CE | Oaxaca | The Zapotecs called themselves "Be'ena' Za'a" — "Cloud People." Their origin mythology places their ancestors in clouds, rain, and water. This cosmology directly influenced water management — Cocijo (lightning/rain god) was the most important deity, and water management was a sacred duty. | Water cosmology governing engineering practice | | | |  |
+
+---
+
+# TOLTEC (900–1168 CE)
+
+### Currently not in App
+
+| | | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | | **Tula Urban Water System** | 900–1168 CE | The Toltec capital Tula (population 30,000–60,000) had managed water from the Tula River. Canal systems, reservoirs, and distribution channels. The Coatepantli (Serpent Wall) may have had water management functions. | Capital city water for the Toltec Empire | | | |  |
+| | | | | | | **Tula Dam and Reservoir** | 900–1168 CE | Stone and earth dam across a tributary of the Tula River creating a reservoir for urban and agricultural supply. Sluice-like openings for controlled release. | Pre-Aztec dam engineering in central Mexico | | | |  |
+| | | | | | | **Toltec Cave Water Rituals** | 900–1168 CE | Cave-spring sites near Tula used for water rituals. Caves were understood as entrances to the water world (Tlalocan). Offerings deposited in springs within caves. The Toltec continued and elaborated Olmec-Teotihuacan cave-water traditions. | Continuation of Mesoamerican sacred water cave tradition | | | |  |
+
+---
+
+# AZTEC/MEXICA — Expanded (1325–1521 CE)
+
+### Currently in App: ~5 inventions
+### Should Have: 15+
+
+| | | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | | **Tenochtitlan Island City Water** | 1325–1521 CE | The Aztec capital was built on an island in Lake Texcoco — a saline lake. The fundamental challenge: how to supply freshwater to 200,000+ people living in the middle of a salt lake. Every water decision was existential. | Most extreme urban water challenge in the pre-Columbian world | | | |  |
+| | | | | | | **Nezahualcóyotl's Great Dike (Albarradón)** | 1449 CE | Already in app. 16 km stone and earth dike separating fresh and salt water in Lake Texcoco. Sluice gates regulated water levels. Built after catastrophic 1449 flooding. Designed by Nezahualcóyotl, king of Texcoco — poet, philosopher, and engineer. | Largest freshwater-saltwater separation in the pre-Columbian world | | | |  |
+| | | | | | | **Chapultepec Aqueduct** | 1466 CE | Already in app but deserves expansion. Double-barreled stone aqueduct carrying freshwater 3.5 km from Chapultepec springs to Tenochtitlan. Two parallel channels: one operated while the other was cleaned. Stone-and-mortar construction on raised platforms across the lake causeway. | Dual-channel redundancy — engineering for zero downtime | | | |  |
+| | | | | | | **Coyoacán Springs Aqueduct** | 1503 CE | Second major aqueduct built by Ahuitzotl from Coyoacán springs. When it brought too much water and flooded Tenochtitlan, Ahuitzotl had to engineer emergency drainage. The flood killed many including (possibly) Ahuitzotl himself. Demonstrates both achievement and risk. | Over-engineering with catastrophic consequences | | | |  |
+| | | | | | | **Chinampa Agriculture System** | 1200–1521 CE | Already partially in app. Raised agricultural beds built in shallow lake waters. Layers of vegetation, mud, and soil anchored by willow trees. Canals between chinampas provided irrigation, transportation, and fish habitat. Some chinampas positioned over freshwater springs. Peak chinampa area: 9,000+ hectares supporting 200,000+ people. | Most productive pre-modern agricultural system in the world (per hectare) | | | |  |
+| | | | | | | **Aztec Causeway-Dikes** | 1325–1521 CE | Three major causeways connected Tenochtitlan to the mainland: Tepeyac (north), Tacuba (west), and Iztapalapa (south). Each causeway also functioned as a dike managing lake water levels. Removable bridge sections allowed water flow and provided defense. | Multi-function infrastructure: road + dike + bridge + defense | | | |  |
+| | | | | | | **Aztec Flood Control System (Post-1449)** | 1449–1521 CE | After the catastrophic 1449 flood, a comprehensive system was built: the Great Dike, improved causeway-dikes, sluice gates, and emergency overflow channels. The system managed water from five interconnected lakes at different elevations (Zumpango, Xaltocan, Texcoco, Xochimilco, Chalco). | First comprehensive multi-lake urban flood management | | | |  |
+| | | | | | | **Tenochtitlan Urban Sanitation** | 1325–1521 CE | Organized human waste collection by canoe. Professional waste collectors (who purchased waste from households) transported it to chinampa fields as fertilizer. Public latrines along causeways. Streets swept daily by 1,000+ workers. Hernán Cortés described Tenochtitlan as cleaner than any European city. | Pre-Columbian urban sanitation surpassing contemporary Europe | | | |  |
+| | | | | | | **Aztec Aqueduct Maintenance Ritual** | Annual | Annual ceremonies accompanied aqueduct cleaning and repair. Priests blessed the water channels. Aqueduct maintenance was a state religious duty — not just engineering. Water officials (atepanecatl) managed both the physical and spiritual aspects of water. | Integration of engineering maintenance with state religion | | | |  |
+| | | | | | | **Xochimilco Freshwater Spring Agriculture** | 1200–1521 CE | Some chinampas in Lake Xochimilco were positioned directly over freshwater springs (ojos de agua). Spring water welled up through chinampa soil, providing constant moisture and nutrients without surface irrigation. These spring-fed chinampas were the most productive. | Natural artesian irrigation beneath floating fields | | | |  |
+| | | | | | | **Aztec Salt Production** | 1325–1521 CE | Lake Texcoco's saline water was evaporated in managed salt pans for salt production — a major trade commodity. Required careful water-level management and seasonal timing. Combined with the freshwater-saltwater separation system. | Industrial saltwater management | | | |  |
+| | | | | | | **Aztec Lake Dredging** | 1325–1521 CE | Continuous dredging of lake beds and canals. Dredged material used to build chinampas and raise causeways. Required fleets of canoes and organized labor. The entire city was, in a sense, continuously rebuilt from its own lake bed. | Continuous landscape construction from hydraulic dredging | | | |  |
+
+---
+
+# PURÉPECHA/TARASCAN (1300–1530 CE)
+
+### Currently not in App
+
+| | | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | **Lake Pátzcuaro Fishery Management** | 1300–1530 CE | Michoacán | Sophisticated management of Lake Pátzcuaro's fisheries. Stone and wooden weirs. Seasonal fishing regulations. Butterfly net fishing (still practiced today) required deep knowledge of fish behavior and water conditions. | Lake fishery management — Purépecha specialty | | | |  |
+| | | | | | | **Purépecha Spring Management** | 1300–1530 CE | Michoacán | Management of the numerous springs in volcanic Michoacán. Stone-lined spring enclosures, channels to settlements, and ritual spring sites. The Purépecha fire god Curicaueri was also connected to water — fire and water in balance. | Volcanic spring management | | | |  |
+| | | | | | | **Tzintzuntzan Lake-Side Urban Water** | 1300–1530 CE | Michoacán | The Purépecha capital on Lake Pátzcuaro had lake-based water management: boat landings, fish weirs, managed lakeshore, and urban drainage to the lake. Five yácatas (pyramid platforms) overlooked the lake — visual dominance over the water source. | Lake-based capital city water management | | | |  |
+
+---
+
+# TOTONAC (100–1521 CE)
+
+### Currently not in App
+
+| | | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | **El Tajín Drainage System** | 600–1200 CE | Veracruz | Elaborate drainage at the Totonac capital El Tajín — one of the wettest sites in Mesoamerica (2,000+ mm/year). Ball court drainage, pyramid drainage, and urban channels managed extreme rainfall. The Pyramid of the Niches (365 niches) has sophisticated water management preventing structural damage. | Water engineering in the wettest major Mesoamerican city | | | |  |
+| | | | | | | **Totonac Vanilla Cultivation Water** | Traditional | Veracruz | Vanilla (Vanilla planifolia) — first cultivated by the Totonacs — requires specific water conditions: high humidity, filtered light, and consistent moisture. Totonac vanilla gardens managed micro-climate water conditions through forest management and irrigation. | Water management for the world's most valuable spice crop | | | |  |
+| | | | | | | **Cempoala Urban Water** | 1200–1521 CE | Veracruz | The Totonac capital at Cempoala (Cortés's first major ally) had canal-based urban water management. Aqueduct from nearby river. Internal channels through the city. The first Mesoamerican city that Cortés's conquistadors encountered. | First Mesoamerican urban water system seen by Europeans | | | |  |
+
+---
+
+# MIXTEC (900–1521 CE)
+
+### Currently not in App
+
+| | | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | | **Mixtec Lama-Bordo Terrace Agriculture** | 900–1521 CE | Lama-bordo terracing: stone check dams across ravines creating small level areas that fill with water-carried sediment. Over time, terraces build up naturally behind each dam. Still visible across the Mixteca Alta. Among the most elegant low-intervention agricultural water systems. | Self-building terrace agriculture — water does the construction work | | | |  |
+| | | | | | | **Yagul/Mitla Cave Water Systems** | 900–1521 CE | Cave and rock-shelter sites with managed springs and cisterns. Water from caves considered especially sacred — connected to the underworld. Stone-carved channels directing spring water through caves to ritual areas. | Cave-spring water management in the Mixteca | | | |  |
+| | | | | | | **Mixtec Codex Water Records** | 900–1521 CE | Mixtec codices (among the few surviving pre-Columbian books) contain detailed records of water features: rivers, springs, lakes, and water-related place names. The codices map water resources across the Mixteca — functioning as geographic water databases. | Pre-Columbian written water records | | | |  |
+
+---
+
+# EPI-OLMEC & TRANSITIONAL (400 BCE – 100 CE)
+
+### Currently not in App
+
+| | | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | **Tres Zapotes Water Management** | 400 BCE–100 CE | Veracruz | Successor to San Lorenzo. Continued Olmec water engineering traditions. Stone-lined channels, reservoirs, and managed springs. One of the sites where the Long Count calendar was developed — the calendar that tracked agricultural water cycles. | Transitional Olmec-to-Classic water engineering | | | |  |
+| | | | | | | **Izapa Water Cosmology** | 300 BCE–100 CE | Chiapas | Izapa — key transitional site between Olmec and Maya — has elaborate stone monuments depicting water cosmology: flood myths, rain gods, and water-world imagery. The site's water management includes channels from the Izapa River. | Bridge between Olmec and Maya water traditions | | | |  |
+
+---
+
+## Summary of All Mesoamerican Additions
+
+| | | | | | | Civilization | Current | After Additions | Key Additions | | | |  |
+|-------------|---------|-----------------|---------------|
+| | | | | **Olmec** | 0 | 9+ | San Lorenzo drains/aqueduct, El Manatí, La Venta, rubber, water cosmology | | | |  |
+| | | | | **Maya Preclassic** | 0 | 5+ | Edzná canals, El Mirador, Cerros, Nakbé sacbeob, Ceibal | | | |  |
+| | | | | **Maya Classic** | ~2 | 15+ | Tikal filtration, Palenque pressure, Calakmul, Caracol, chultuns, Puuc, Uxmal | | | |  |
+| | | | | **Maya Postclassic** | 0 | 4+ | Cenote management, Chichén Itzá, Mayapán, sand/lily purification | | | |  |
+| | | | | **Teotihuacan** | 0 | 6+ | San Juan canalization, underground drainage, springs, apartments, Pyramid tunnel | | | |  |
+| | | | | **Zapotec** | 0 | 5+ | Monte Albán hilltop, Hierve el Agua, valley irrigation, tomb drainage | | | |  |
+| | | | | **Toltec** | 0 | 3+ | Tula water, dam, cave rituals | | | |  |
+| | | | | **Aztec (expanded)** | ~5 | 15+ | Sanitation, flood system, spring chinampas, salt production, dredging, maintenance | | | |  |
+| | | | | **Purépecha** | 0 | 3+ | Lake Pátzcuaro, spring management, Tzintzuntzan | | | |  |
+| | | | | **Totonac** | 0 | 3+ | El Tajín drainage, vanilla water, Cempoala | | | |  |
+| | | | | **Mixtec** | 0 | 3+ | Lama-bordo terraces, cave water, codex records | | | |  |
+| | | | | **Epi-Olmec** | 0 | 2+ | Tres Zapotes, Izapa | | | |  |
+| | | | | **TOTAL** | **~8** | **~75+** | | | | | |
+
+---
+
+## Priority Additions
+
+| | | | | | | Priority | Addition | Why Critical | | | |  |
+|----------|----------|-------------|
+| | | | | ⭐⭐⭐ | **Olmec (entire civilization)** | "Mother culture" of Mesoamerica — first aqueducts, first drains, first sacred water in the Americas. Currently zero entries. | | | |  |
+| | | | | ⭐⭐⭐ | **Tikal Water Filtration** | First water purification in the Americas — zeolite filtration published in Science (2020) | | | |  |
+| | | | | ⭐⭐⭐ | **Palenque Pressurized Aqueduct** | Only pressurized water in pre-Columbian Americas | | | |  |
+| | | | | ⭐⭐⭐ | **Teotihuacan** | Water for 100,000-200,000 people — first river canalization in the Americas | | | |  |
+| | | | | ⭐⭐ | **Zapotec Monte Albán** | City of 25,000 on a mountaintop with no natural water | | | |  |
+| | | | | ⭐⭐ | **Aztec expanded** | Currently only 5 entries for the most complex pre-Columbian urban water system | | | |  |
+| | | | | ⭐⭐ | **Maya Puuc chultun network** | Entire civilization built on rainwater harvesting | | | |  |
+| | | | | ⭐⭐ | **Hierve el Agua** | Self-building mineral irrigation channels — unique globally | | | |  |
+| | | | | ⭐ | **Purépecha** | Lake fishery management | | | |  |
+| | | | | ⭐ | **Totonac El Tajín** | Drainage in extreme rainfall | | | |  |
+
+---
+
+## SWMM5 Models to Build
+
+| | | | | | | Model | Category | Nodes | Links | Why | | | |  |
+|-------|----------|-------|-------|-----|
+| | | | | **Olmec San Lorenzo Drain System** | Sanitation + Ritual | 10 | 12 | First engineered drainage in the Americas — basalt stone channels | | | |  |
+| | | | | **Tikal 6-Reservoir System + Filtration** | Reservoir + Treatment | 15 | 18 | Largest Maya water system with zeolite filtration | | | |  |
+| | | | | **Palenque 9-Aqueduct System** | Pressure + Gravity | 12 | 14 | Only pressurized water in pre-Columbian Americas | | | |  |
+| | | | | **Teotihuacan San Juan Canalization** | Urban Drainage | 12 | 15 | First urban river canalization in the Americas | | | |  |
+| | | | | **Monte Albán Hilltop Water** | Rainwater Harvesting | 10 | 12 | City with no natural water — complete rainwater dependence | | | |  |
+| | | | | **Tenochtitlan Complete System** | Multi-Component | 20 | 25 | Dike + aqueducts + chinampas + causeways + sanitation | | | |  |
+| | | | | **Edzná Radial Canal System** | Drainage + Irrigation | 10 | 14 | Oldest major Maya hydraulic project | | | |  |
+| | | | | **Hierve el Agua Mineral Irrigation** | Irrigation | 6 | 8 | Self-building mineral channels — unique globally | | | |  |
