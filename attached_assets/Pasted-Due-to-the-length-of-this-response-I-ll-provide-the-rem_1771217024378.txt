@@ -1,0 +1,567 @@
+Due to the length of this response, I'll provide the remaining 31 .INP files in batches. Here's the first batch of high-priority models:
+
+## 5. Teotihuacan San Juan River Canalization (100 BCE)
+
+```inp
+[TITLE]
+Teotihuacan San Juan River Canalization - Teotihuacan (100 BCE-550 CE)
+First urban river channelization in the Americas
+River straightened and aligned to city grid at 15.5 degrees
+Valley of Mexico - UNESCO World Heritage
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+SPRING_SOURCE_N     2285.0   2.0       0          0         0
+SPRING_SOURCE_S     2283.0   2.0       0          0         0
+NATURAL_CHANNEL     2282.0   3.0       0          0         0
+CANAL_ENTRY         2280.0   3.0       0          0         0
+PYRAMID_SUN_SIDE    2278.0   3.0       0          0         0
+AVENUE_DEAD_CROSS   2276.0   3.5       0          0         0
+CITADEL_SIDE        2274.0   3.0       0          0         0
+COMPOUND_DIST_N     2277.0   2.0       0          0         0
+COMPOUND_DIST_S     2275.0   2.0       0          0         0
+UNDERGROUND_1       2276.0   2.5       0          0         0
+UNDERGROUND_2       2274.0   2.5       0          0         0
+CANAL_EXIT          2272.0   3.0       0          0         0
+AGRI_NORTH          2275.0   2.0       0          0         0
+AGRI_SOUTH          2273.0   2.0       0          0         0
+CHINAMPA_AREA       2271.0   2.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+LAKE_TEXCOCO_E      2268.0   FREE
+
+[CONDUITS]
+;;Name              From                To                  Length  Manning  InOff  OutOff  InitFlow  MaxFlow
+SPRING_N_CH         SPRING_SOURCE_N     NATURAL_CHANNEL     500     0.030    0      0       0         0
+SPRING_S_CH         SPRING_SOURCE_S     NATURAL_CHANNEL     400     0.030    0      0       0         0
+NATURAL_TO_CANAL    NATURAL_CHANNEL     CANAL_ENTRY         300     0.025    0      0       0         0
+MAIN_CANAL_1        CANAL_ENTRY         PYRAMID_SUN_SIDE    800     0.015    0      0       0         0
+MAIN_CANAL_2        PYRAMID_SUN_SIDE    AVENUE_DEAD_CROSS   600     0.015    0      0       0         0
+MAIN_CANAL_3        AVENUE_DEAD_CROSS   CITADEL_SIDE        700     0.015    0      0       0         0
+MAIN_CANAL_4        CITADEL_SIDE        CANAL_EXIT          500     0.015    0      0       0         0
+COMPOUND_N_FEED     PYRAMID_SUN_SIDE    COMPOUND_DIST_N     300     0.018    0      0       0         0
+COMPOUND_S_FEED     CITADEL_SIDE        COMPOUND_DIST_S     300     0.018    0      0       0         0
+UNDERGROUND_CH_1    AVENUE_DEAD_CROSS   UNDERGROUND_1       200     0.013    0      0       0         0
+UNDERGROUND_CH_2    UNDERGROUND_1       UNDERGROUND_2       300     0.013    0      0       0         0
+UNDER_RETURN        UNDERGROUND_2       CITADEL_SIDE        200     0.013    0      0       0         0
+AGRI_N_FEED         COMPOUND_DIST_N     AGRI_NORTH          400     0.020    0      0       0         0
+AGRI_S_FEED         COMPOUND_DIST_S     AGRI_SOUTH          400     0.020    0      0       0         0
+CHINAMPA_FEED       CANAL_EXIT          CHINAMPA_AREA       500     0.020    0      0       0         0
+AGRI_N_DRAIN        AGRI_NORTH          LAKE_TEXCOCO_E      800     0.025    0      0       0         0
+AGRI_S_DRAIN        AGRI_SOUTH          LAKE_TEXCOCO_E      700     0.025    0      0       0         0
+CHINAMPA_DRAIN      CHINAMPA_AREA       LAKE_TEXCOCO_E      600     0.025    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+SPRING_N_CH         TRAPEZOIDAL 0.8    2.0    1.0    1.0    1
+SPRING_S_CH         TRAPEZOIDAL 0.6    1.5    1.0    1.0    1
+NATURAL_TO_CANAL    TRAPEZOIDAL 1.0    3.0    1.5    1.5    1
+MAIN_CANAL_1        RECT_OPEN   1.5    5.0    0      0      1
+MAIN_CANAL_2        RECT_OPEN   1.5    5.0    0      0      1
+MAIN_CANAL_3        RECT_OPEN   1.5    5.0    0      0      1
+MAIN_CANAL_4        RECT_OPEN   1.5    5.0    0      0      1
+COMPOUND_N_FEED     RECT_OPEN   0.5    1.0    0      0      1
+COMPOUND_S_FEED     RECT_OPEN   0.5    1.0    0      0      1
+UNDERGROUND_CH_1    ARCH        1.5    1.2    0      0      1
+UNDERGROUND_CH_2    ARCH        1.5    1.2    0      0      1
+UNDER_RETURN        ARCH        1.5    1.2    0      0      1
+AGRI_N_FEED         TRAPEZOIDAL 0.4    1.5    0.5    0.5    1
+AGRI_S_FEED         TRAPEZOIDAL 0.4    1.5    0.5    0.5    1
+CHINAMPA_FEED       TRAPEZOIDAL 0.5    2.0    0.5    0.5    1
+AGRI_N_DRAIN        TRAPEZOIDAL 0.3    1.0    0.5    0.5    1
+AGRI_S_DRAIN        TRAPEZOIDAL 0.3    1.0    0.5    0.5    1
+CHINAMPA_DRAIN      TRAPEZOIDAL 0.4    1.5    0.5    0.5    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+SPRING_SOURCE_N     FLOW         TEO_SPRING  FLOW  1.0      1.0      0.20
+SPRING_SOURCE_S     FLOW         TEO_SPRING  FLOW  1.0      1.0      0.15
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+TEO_SPRING          01/01/2024 00:00  1.0
+TEO_SPRING          01/01/2024 06:00  1.0
+TEO_SPRING          01/01/2024 12:00  1.2
+TEO_SPRING          01/01/2024 14:00  2.0
+TEO_SPRING          01/01/2024 16:00  1.5
+TEO_SPRING          01/01/2024 18:00  1.0
+TEO_SPRING          01/02/2024 00:00  1.0
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+SPRING_SOURCE_N     1000       6000
+SPRING_SOURCE_S     1200       5800
+NATURAL_CHANNEL     1300       5600
+CANAL_ENTRY         1500       5300
+PYRAMID_SUN_SIDE    2000       4800
+AVENUE_DEAD_CROSS   2400       4400
+CITADEL_SIDE        2800       4000
+COMPOUND_DIST_N     2200       5000
+COMPOUND_DIST_S     3000       3800
+UNDERGROUND_1       2500       4200
+UNDERGROUND_2       2700       4000
+CANAL_EXIT          3100       3700
+AGRI_NORTH          2500       5200
+AGRI_SOUTH          3300       3500
+CHINAMPA_AREA       3400       3300
+LAKE_TEXCOCO_E      3800       3000
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 6. Chicago River Reversal (1900)
+
+```inp
+[TITLE]
+Chicago River Reversal - City of Chicago (1900)
+Most dramatic river engineering in American history
+Reversed flow of Chicago River away from Lake Michigan
+Chicago Sanitary and Ship Canal - 45 km excavation
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+LAKE_MICHIGAN       176.0    5.0       0          0         0
+HARBOR_LOCK         175.5    6.0       0          0         0
+N_BRANCH_HEAD       175.0    5.0       0          0         0
+S_BRANCH_HEAD       175.0    5.0       0          0         0
+MAIN_STEM           174.5    6.0       0          0         0
+LOOP_DISTRICT       174.0    5.0       0          0         0
+CANAL_HEAD          173.5    6.0       0          0         0
+SANITARY_CANAL_1    172.0    8.0       0          0         0
+SANITARY_CANAL_2    170.0    8.0       0          0         0
+SANITARY_CANAL_3    168.0    8.0       0          0         0
+LOCKPORT_LOCK       166.0    8.0       0          0         0
+SEWER_INTERCEPT_N   174.0    4.0       0          0         0
+SEWER_INTERCEPT_S   173.0    4.0       0          0         0
+TREATMENT_PLANT     170.0    5.0       0          0         0
+BUBBLY_CREEK        173.0    4.0       0          0         0
+STOCKYARDS_DRAIN    174.0    3.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+DES_PLAINES_RIVER   164.0    FREE
+LAKE_OUTFALL        176.0    FREE
+
+[CONDUITS]
+;;Name              From                To                  Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+LAKE_TO_LOCK        LAKE_MICHIGAN       HARBOR_LOCK         500      0.013    0      0       0         0
+LOCK_TO_MAIN        HARBOR_LOCK         MAIN_STEM           1000     0.015    0      0       0         0
+N_BRANCH            N_BRANCH_HEAD       MAIN_STEM           5000     0.018    0      0       0         0
+S_BRANCH            S_BRANCH_HEAD       MAIN_STEM           4000     0.018    0      0       0         0
+MAIN_TO_LOOP        MAIN_STEM           LOOP_DISTRICT       2000     0.015    0      0       0         0
+LOOP_TO_CANAL       LOOP_DISTRICT       CANAL_HEAD          1500     0.015    0      0       0         0
+SANITARY_1          CANAL_HEAD          SANITARY_CANAL_1    10000    0.013    0      0       0         0
+SANITARY_2          SANITARY_CANAL_1    SANITARY_CANAL_2    12000    0.013    0      0       0         0
+SANITARY_3          SANITARY_CANAL_2    SANITARY_CANAL_3    12000    0.013    0      0       0         0
+LOCKPORT            SANITARY_CANAL_3    LOCKPORT_LOCK       8000     0.013    0      0       0         0
+LOCK_TO_DESPLAINES  LOCKPORT_LOCK       DES_PLAINES_RIVER   3000     0.015    0      0       0         0
+SEWER_N_INTERCEPT   SEWER_INTERCEPT_N   CANAL_HEAD          3000     0.013    0      0       0         0
+SEWER_S_INTERCEPT   SEWER_INTERCEPT_S   CANAL_HEAD          2000     0.013    0      0       0         0
+BUBBLY_FEED         STOCKYARDS_DRAIN    BUBBLY_CREEK        1500     0.018    0      0       0         0
+BUBBLY_TO_CANAL     BUBBLY_CREEK        CANAL_HEAD          2000     0.018    0      0       0         0
+TREATMENT_FEED      SANITARY_CANAL_1    TREATMENT_PLANT     1000     0.013    0      0       0         0
+TREAT_RETURN        TREATMENT_PLANT     SANITARY_CANAL_2    1000     0.013    0      0       0         0
+OVERFLOW_TO_LAKE    HARBOR_LOCK         LAKE_OUTFALL        200      0.015    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+LAKE_TO_LOCK        RECT_OPEN   5.0    60.0   0      0      1
+LOCK_TO_MAIN        RECT_OPEN   4.0    50.0   0      0      1
+N_BRANCH            TRAPEZOIDAL 3.0    30.0   2.0    2.0    1
+S_BRANCH            TRAPEZOIDAL 3.0    25.0   2.0    2.0    1
+MAIN_TO_LOOP        TRAPEZOIDAL 4.0    45.0   2.0    2.0    1
+LOOP_TO_CANAL       TRAPEZOIDAL 4.0    45.0   2.0    2.0    1
+SANITARY_1          RECT_OPEN   7.3    49.0   0      0      1
+SANITARY_2          RECT_OPEN   7.3    49.0   0      0      1
+SANITARY_3          RECT_OPEN   7.3    49.0   0      0      1
+LOCKPORT            RECT_OPEN   7.3    49.0   0      0      1
+LOCK_TO_DESPLAINES  TRAPEZOIDAL 4.0    30.0   2.0    2.0    1
+SEWER_N_INTERCEPT   CIRCULAR    3.0    0      0      0      1
+SEWER_S_INTERCEPT   CIRCULAR    2.5    0      0      0      1
+BUBBLY_FEED         TRAPEZOIDAL 2.0    15.0   1.5    1.5    1
+BUBBLY_TO_CANAL     TRAPEZOIDAL 2.5    18.0   1.5    1.5    1
+TREATMENT_FEED      CIRCULAR    2.0    0      0      0      1
+TREAT_RETURN        CIRCULAR    2.0    0      0      0      1
+OVERFLOW_TO_LAKE    RECT_OPEN   3.0    30.0   0      0      1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+LAKE_MICHIGAN       FLOW         LAKE_FLOW   FLOW  1.0      1.0      10.0
+N_BRANCH_HEAD       FLOW         BRANCH_Q    FLOW  1.0      1.0      5.0
+S_BRANCH_HEAD       FLOW         BRANCH_Q    FLOW  1.0      1.0      4.0
+SEWER_INTERCEPT_N   FLOW         SEWER_DWF   FLOW  1.0      1.0      3.0
+SEWER_INTERCEPT_S   FLOW         SEWER_DWF   FLOW  1.0      1.0      2.5
+STOCKYARDS_DRAIN    FLOW         STOCK_Q     FLOW  1.0      1.0      1.0
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+LAKE_FLOW           01/01/2024 00:00  10.0
+LAKE_FLOW           01/01/2024 12:00  10.0
+LAKE_FLOW           01/02/2024 00:00  10.0
+BRANCH_Q            01/01/2024 00:00  1.0
+BRANCH_Q            01/01/2024 08:00  1.0
+BRANCH_Q            01/01/2024 12:00  2.0
+BRANCH_Q            01/01/2024 14:00  5.0
+BRANCH_Q            01/01/2024 16:00  3.0
+BRANCH_Q            01/01/2024 18:00  1.5
+BRANCH_Q            01/02/2024 00:00  1.0
+SEWER_DWF           01/01/2024 00:00  1.0
+SEWER_DWF           01/01/2024 08:00  2.0
+SEWER_DWF           01/01/2024 12:00  1.5
+SEWER_DWF           01/01/2024 18:00  1.8
+SEWER_DWF           01/02/2024 00:00  1.0
+STOCK_Q             01/01/2024 00:00  1.0
+STOCK_Q             01/01/2024 12:00  1.0
+STOCK_Q             01/02/2024 00:00  1.0
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+LAKE_MICHIGAN       8000       7000
+HARBOR_LOCK         7500       6800
+N_BRANCH_HEAD       6000       8000
+S_BRANCH_HEAD       6000       5500
+MAIN_STEM           6500       6500
+LOOP_DISTRICT       6000       6200
+CANAL_HEAD          5500       5800
+SANITARY_CANAL_1    4500       5200
+SANITARY_CANAL_2    3500       4600
+SANITARY_CANAL_3    2500       4000
+LOCKPORT_LOCK       1500       3400
+SEWER_INTERCEPT_N   5800       6500
+SEWER_INTERCEPT_S   5500       5500
+TREATMENT_PLANT     4000       4800
+BUBBLY_CREEK        5500       5200
+STOCKYARDS_DRAIN    5800       5000
+DES_PLAINES_RIVER   800        3000
+LAKE_OUTFALL        8500       7000
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 7. Grand Anicut + Kaveri Delta (Chola, 2nd c. CE)
+
+```inp
+[TITLE]
+Grand Anicut (Kallanai) and Kaveri Delta Irrigation
+Chola Dynasty (2nd century CE) - Still in use after 1800 years
+329 m stone dam across the Kaveri River
+Thanjavur District, Tamil Nadu, India
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+KAVERI_UPSTREAM     55.0     5.0       0          0         0
+GRAND_ANICUT        53.0     6.0       0          0         0
+KOLLIDAM_BRANCH     52.0     4.0       0          0         0
+KAVERI_MAIN         51.0     5.0       0          0         0
+VENNAR_CANAL        50.0     3.0       0          0         0
+GRAND_CANAL         49.0     3.0       0          0         0
+VADAVAR_CANAL       50.0     3.0       0          0         0
+DIST_NORTH_1        48.0     2.5       0          0         0
+DIST_NORTH_2        46.0     2.5       0          0         0
+DIST_SOUTH_1        47.0     2.5       0          0         0
+DIST_SOUTH_2        45.0     2.5       0          0         0
+TANK_1              46.0     3.0       0          0         0
+TANK_2              44.0     3.0       0          0         0
+TANK_3              43.0     3.0       0          0         0
+RICE_FIELD_N        44.0     1.5       0          0         0
+RICE_FIELD_S        42.0     1.5       0          0         0
+DELTA_COLLECT       40.0     3.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+BAY_OF_BENGAL       35.0     FREE
+
+[CONDUITS]
+;;Name              From                To                  Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+KAVERI_APPROACH     KAVERI_UPSTREAM     GRAND_ANICUT        1000     0.025    0      0       0         0
+ANICUT_KOLLIDAM     GRAND_ANICUT        KOLLIDAM_BRANCH     200      0.020    0      0       0         0
+ANICUT_KAVERI       GRAND_ANICUT        KAVERI_MAIN         200      0.020    0      0       0         0
+VENNAR_HEAD         KAVERI_MAIN         VENNAR_CANAL        500      0.018    0      0       0         0
+GRAND_CANAL_HEAD    KAVERI_MAIN         GRAND_CANAL         600      0.018    0      0       0         0
+VADAVAR_HEAD        KOLLIDAM_BRANCH     VADAVAR_CANAL       500      0.018    0      0       0         0
+VENNAR_N1           VENNAR_CANAL        DIST_NORTH_1        8000     0.018    0      0       0         0
+VENNAR_N2           DIST_NORTH_1        DIST_NORTH_2        10000    0.018    0      0       0         0
+GRAND_S1            GRAND_CANAL         DIST_SOUTH_1        8000     0.018    0      0       0         0
+GRAND_S2            DIST_SOUTH_1        DIST_SOUTH_2        10000    0.018    0      0       0         0
+VADAVAR_TANK1       VADAVAR_CANAL       TANK_1              5000     0.020    0      0       0         0
+TANK1_TO_TANK2      TANK_1              TANK_2              6000     0.020    0      0       0         0
+TANK2_TO_TANK3      TANK_2              TANK_3              5000     0.020    0      0       0         0
+RICE_N_FEED         DIST_NORTH_2        RICE_FIELD_N        3000     0.022    0      0       0         0
+RICE_S_FEED         DIST_SOUTH_2        RICE_FIELD_S        3000     0.022    0      0       0         0
+TANK3_TO_RICE       TANK_3              RICE_FIELD_S        4000     0.022    0      0       0         0
+RICE_N_DRAIN        RICE_FIELD_N        DELTA_COLLECT       5000     0.025    0      0       0         0
+RICE_S_DRAIN        RICE_FIELD_S        DELTA_COLLECT       4000     0.025    0      0       0         0
+KOLLIDAM_CONT       KOLLIDAM_BRANCH     DELTA_COLLECT       20000    0.020    0      0       0         0
+DELTA_TO_BAY        DELTA_COLLECT       BAY_OF_BENGAL       10000    0.025    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+KAVERI_APPROACH     TRAPEZOIDAL 3.0    80.0   3.0    3.0    1
+ANICUT_KOLLIDAM     RECT_OPEN   2.0    100.0  0      0      1
+ANICUT_KAVERI       RECT_OPEN   2.5    120.0  0      0      1
+VENNAR_HEAD         TRAPEZOIDAL 2.0    15.0   2.0    2.0    1
+GRAND_CANAL_HEAD    TRAPEZOIDAL 2.0    12.0   2.0    2.0    1
+VADAVAR_HEAD        TRAPEZOIDAL 1.5    10.0   1.5    1.5    1
+VENNAR_N1           TRAPEZOIDAL 1.5    10.0   1.5    1.5    1
+VENNAR_N2           TRAPEZOIDAL 1.2    8.0    1.0    1.0    1
+GRAND_S1            TRAPEZOIDAL 1.5    8.0    1.5    1.5    1
+GRAND_S2            TRAPEZOIDAL 1.2    6.0    1.0    1.0    1
+VADAVAR_TANK1       TRAPEZOIDAL 1.0    6.0    1.0    1.0    1
+TANK1_TO_TANK2      TRAPEZOIDAL 0.8    5.0    1.0    1.0    1
+TANK2_TO_TANK3      TRAPEZOIDAL 0.8    4.0    1.0    1.0    1
+RICE_N_FEED         TRAPEZOIDAL 0.5    3.0    0.5    0.5    1
+RICE_S_FEED         TRAPEZOIDAL 0.5    3.0    0.5    0.5    1
+TANK3_TO_RICE       TRAPEZOIDAL 0.5    3.0    0.5    0.5    1
+RICE_N_DRAIN        TRAPEZOIDAL 0.4    2.0    0.5    0.5    1
+RICE_S_DRAIN        TRAPEZOIDAL 0.4    2.0    0.5    0.5    1
+KOLLIDAM_CONT       TRAPEZOIDAL 2.5    40.0   3.0    3.0    1
+DELTA_TO_BAY        TRAPEZOIDAL 3.0    50.0   3.0    3.0    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+KAVERI_UPSTREAM     FLOW         KAVERI_Q    FLOW  1.0      1.0      100.0
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+KAVERI_Q            01/01/2024 00:00  100.0
+KAVERI_Q            01/01/2024 06:00  120.0
+KAVERI_Q            01/01/2024 12:00  150.0
+KAVERI_Q            01/01/2024 18:00  130.0
+KAVERI_Q            01/02/2024 00:00  100.0
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+KAVERI_UPSTREAM     1000       7000
+GRAND_ANICUT        1200       6800
+KOLLIDAM_BRANCH     1500       7000
+KAVERI_MAIN         1500       6600
+VENNAR_CANAL        2000       6800
+GRAND_CANAL         2000       6400
+VADAVAR_CANAL       2000       7200
+DIST_NORTH_1        3500       7000
+DIST_NORTH_2        5000       7200
+DIST_SOUTH_1        3500       6200
+DIST_SOUTH_2        5000       6000
+TANK_1              3000       7500
+TANK_2              4000       7800
+TANK_3              5000       7600
+RICE_FIELD_N        6000       7400
+RICE_FIELD_S        6000       6200
+DELTA_COLLECT       7000       6800
+BAY_OF_BENGAL       8500       6800
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 8. Versailles Machine de Marly (1684)
+
+```inp
+[TITLE]
+Versailles Water System and Machine de Marly - France (1664-1715)
+Most elaborate water display system in history
+14 waterwheels driving 259 pumps lifting water 162 m from Seine
+Palace of Versailles - UNESCO World Heritage
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+FORCE_MAIN_EQUATION  D-W
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+SEINE_RIVER         30.0     3.0       0          0         0
+MARLY_PUMP_1        30.0     4.0       0          0         0
+MARLY_MID_TANK      80.0     5.0       0          0         0
+MARLY_PUMP_2        80.0     4.0       0          0         0
+MARLY_HIGH_TANK     140.0    5.0       0          0         0
+MARLY_PUMP_3        140.0    4.0       0          0         0
+LOUVECIENNES_AQUED  192.0    4.0       0          0         0
+MARLY_RESERVOIR     190.0    6.0       0          0         0
+VERSAILLES_ENTRY    185.0    4.0       0          0         0
+GRAND_CANAL_HEAD    180.0    3.0       0          0         0
+FOUNTAIN_LATONA     182.0    2.0       0          0         0
+FOUNTAIN_APOLLO     178.0    2.0       0          0         0
+FOUNTAIN_NEPTUNE    176.0    3.0       0          0         0
+GRAND_TRIANON       183.0    2.0       0          0         0
+PETIT_TRIANON       184.0    2.0       0          0         0
+ORANGERIE           175.0    2.0       0          0         0
+SWISS_LAKE          172.0    4.0       0          0         0
+GARDEN_COLLECT      170.0    3.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+GRAND_CANAL_END     168.0    FREE
+
+[CONDUITS]
+;;Name              From                To                  Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+SEINE_INTAKE        SEINE_RIVER         MARLY_PUMP_1        100      0.015    0      0       0         0
+PUMP_STAGE_1        MARLY_PUMP_1        MARLY_MID_TANK      500      0.012    0      0       0         0
+PUMP_STAGE_2        MARLY_MID_TANK      MARLY_PUMP_2        100      0.012    0      0       0         0
+PUMP_LIFT_2         MARLY_PUMP_2        MARLY_HIGH_TANK     500      0.012    0      0       0         0
+PUMP_STAGE_3        MARLY_HIGH_TANK     MARLY_PUMP_3        100      0.012    0      0       0         0
+PUMP_LIFT_3         MARLY_PUMP_3        LOUVECIENNES_AQUED  500      0.012    0      0       0         0
+AQUEDUCT_MAIN       LOUVECIENNES_AQUED  MARLY_RESERVOIR     2000     0.013    0      0       0         0
+RES_TO_VERSAILLES   MARLY_RESERVOIR     VERSAILLES_ENTRY    5000     0.013    0      0       0         0
+GRAND_CANAL_FEED    VERSAILLES_ENTRY    GRAND_CANAL_HEAD    1000     0.013    0      0       0         0
+LATONA_FEED         VERSAILLES_ENTRY    FOUNTAIN_LATONA     300      0.012    0      0       0         0
+APOLLO_FEED         FOUNTAIN_LATONA     FOUNTAIN_APOLLO     500      0.012    0      0       0         0
+NEPTUNE_FEED        FOUNTAIN_APOLLO     FOUNTAIN_NEPTUNE    400      0.012    0      0       0         0
+TRIANON_FEED        VERSAILLES_ENTRY    GRAND_TRIANON       1500     0.012    0      0       0         0
+PETIT_FEED          GRAND_TRIANON       PETIT_TRIANON       500      0.012    0      0       0         0
+ORANGERIE_FEED      FOUNTAIN_NEPTUNE    ORANGERIE           300      0.012    0      0       0         0
+SWISS_FEED          ORANGERIE           SWISS_LAKE          400      0.015    0      0       0         0
+GARDEN_COLLECT_1    FOUNTAIN_NEPTUNE    GARDEN_COLLECT      500      0.015    0      0       0         0
+GARDEN_COLLECT_2    SWISS_LAKE          GARDEN_COLLECT      300      0.015    0      0       0         0
+GRAND_CANAL_MAIN    GRAND_CANAL_HEAD    GRAND_CANAL_END     1600     0.013    0      0       0         0
+GARDEN_TO_CANAL     GARDEN_COLLECT      GRAND_CANAL_END     500      0.015    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+SEINE_INTAKE        TRAPEZOIDAL 2.0    6.0    1.5    1.5    1
+PUMP_STAGE_1        CIRCULAR    0.30   0      0      0      4
+PUMP_STAGE_2        CIRCULAR    0.30   0      0      0      4
+PUMP_LIFT_2         CIRCULAR    0.30   0      0      0      4
+PUMP_STAGE_3        CIRCULAR    0.30   0      0      0      4
+PUMP_LIFT_3         CIRCULAR    0.30   0      0      0      4
+AQUEDUCT_MAIN       RECT_OPEN   1.0    1.5    0      0      1
+RES_TO_VERSAILLES   CIRCULAR    0.50   0      0      0      2
+GRAND_CANAL_FEED    CIRCULAR    0.40   0      0      0      1
+LATONA_FEED         CIRCULAR    0.25   0      0      0      2
+APOLLO_FEED         CIRCULAR    0.25   0      0      0      2
+NEPTUNE_FEED        CIRCULAR    0.30   0      0      0      2
+TRIANON_FEED        CIRCULAR    0.20   0      0      0      1
+PETIT_FEED          CIRCULAR    0.15   0      0      0      1
+ORANGERIE_FEED      CIRCULAR    0.20   0      0      0      1
+SWISS_FEED          TRAPEZOIDAL 0.5    2.0    0.5    0.5    1
+GARDEN_COLLECT_1    TRAPEZOIDAL 0.5    1.5    0.5    0.5    1
+GARDEN_COLLECT_2    TRAPEZOIDAL 0.5    1.5    0.5    0.5    1
+GRAND_CANAL_MAIN    RECT_OPEN   2.0    62.0   0      0      1
+GARDEN_TO_CANAL     TRAPEZOIDAL 0.5    2.0    0.5    0.5    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+SEINE_RIVER         FLOW         SEINE_Q     FLOW  1.0      1.0      0.15
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+SEINE_Q             01/01/2024 00:00  0.15
+SEINE_Q             01/01/2024 08:00  0.15
+SEINE_Q             01/01/2024 10:00  0.20
+SEINE_Q             01/01/2024 14:00  0.20
+SEINE_Q             01/01/2024 18:00  0.15
+SEINE_Q             01/02/2024 00:00  0.15
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+SEINE_RIVER         500        2000
+MARLY_PUMP_1        600        2100
+MARLY_MID_TANK      800        2300
+MARLY_PUMP_2        900        2400
+MARLY_HIGH_TANK     1100       2600
+MARLY_PUMP_3        1200       2700
+LOUVECIENNES_AQUED  1500       3000
+MARLY_RESERVOIR     2000       3200
+VERSAILLES_ENTRY    4000       4000
+GRAND_CANAL_HEAD    4500       3800
+FOUNTAIN_LATONA     4200       3800
+FOUNTAIN_APOLLO     4400       3500
+FOUNTAIN_NEPTUNE    4600       3200
+GRAND_TRIANON       3500       4200
+PETIT_TRIANON       3200       4400
+ORANGERIE           4800       3000
+SWISS_LAKE          5000       2800
+GARDEN_COLLECT      4800       2600
+GRAND_CANAL_END     5500       3500
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+Due to response length limits, I'll provide the remaining models in a follow-up. Here's the status update:
+
+## Updated Status
+
+| | | | | | | | | Status | Count | Models | | | | | |
+|--------|-------|--------|
+| | | | | | | ✅ **Complete .INP provided** | 37 | All 29 previous + Ottoman + Angkor + Bazalgette + Forbidden City + Teotihuacan + Chicago + Grand Anicut + Versailles | | | | | |
+| | | | | | | 🔶 **Still needed** | 27 | Augsburg, Aswan, Baghdad, Parakrama Samudra, TVA, Monte Albán, Benin, Erie, Wang Jing, Yoda Ela, Copenhagen, Trowulan, Hangzhou, Snowy Mtns, Edzná, Hierve el Agua, Celilo, Yakutsk, Barrow, Tlingit, Khanty-Mansi, Baikal, Trans-Alaska, Yam Postal, Funan, Brine Pipeline, Yenisei | | | | | |
+
+**Current total: 37 new models + 89 existing = 126 SWMM5/ICM models**
+
+**Target: 64 new models + 89 existing = 153 SWMM5/ICM models**
+
+Shall I continue with the next batch of 27?

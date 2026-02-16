@@ -255,7 +255,73 @@ export const inventionToSwmmModel: Record<string, string> = {
   'mesa-verde-reservoir': 'chaco-canyon-water-control',
   'calusa-canal-system': 'calusa-pine-island-canal',
   'dholavira-reservoir-cascade': 'dholavira-reservoir-cascade',
-  'dholavira-water-system': 'dholavira-reservoir-cascade'
+  'dholavira-water-system': 'dholavira-reservoir-cascade',
+  'angkor-wat-hydraulics': 'angkor-integrated',
+  'angkor-barays': 'angkor-integrated',
+  'angkor-moat-system': 'angkor-integrated',
+  'teotihuacan-water': 'teotihuacan-canalization',
+  'san-juan-river': 'teotihuacan-canalization',
+  'chicago-sanitary-canal': 'chicago-river-reversal',
+  'chicago-river-engineering': 'chicago-river-reversal',
+  'forbidden-city-water': 'forbidden-city-drainage',
+  'golden-water-river': 'forbidden-city-drainage',
+  'versailles-water': 'versailles-marly',
+  'machine-de-marly': 'versailles-marly',
+  'augsburg-water': 'augsburg-three-level',
+  'augsburg-canals': 'augsburg-three-level',
+  'aswan-dam': 'aswan-high-dam',
+  'lake-nasser': 'aswan-high-dam',
+  'nile-flood-control': 'aswan-high-dam',
+  'baghdad-canals': 'baghdad-round-city',
+  'round-city-water': 'baghdad-round-city',
+  'parakrama-samudra-reservoir': 'parakrama-samudra',
+  'polonnaruwa-reservoir': 'parakrama-samudra',
+  'yoda-ela': 'yoda-ela-canal',
+  'sri-lanka-canal': 'yoda-ela-canal',
+  'wang-jing-levees': 'wang-jing-yellow-river',
+  'yellow-river-control': 'wang-jing-yellow-river',
+  'tva-dams': 'tva-multi-dam',
+  'tennessee-valley': 'tva-multi-dam',
+  'erie-canal': 'erie-canal-locks',
+  'erie-locks': 'erie-canal-locks',
+  'monte-alban-water': 'monte-alban-hilltop',
+  'zapotec-water': 'monte-alban-hilltop',
+  'benin-moat': 'benin-city-moat',
+  'benin-earthworks': 'benin-city-moat',
+  'snowy-hydro': 'snowy-mountains-scheme',
+  'snowy-mountains': 'snowy-mountains-scheme',
+  'copenhagen-climate': 'copenhagen-cloudburst',
+  'cloudburst-plan': 'copenhagen-cloudburst',
+  'trowulan-canals': 'trowulan-canal-grid',
+  'majapahit-water': 'trowulan-canal-grid',
+  'hangzhou-water': 'song-hangzhou-water',
+  'west-lake-supply': 'song-hangzhou-water',
+  'edzna-canals': 'edzna-radial-canals',
+  'edzna-water': 'edzna-radial-canals',
+  'hierve-el-agua-terraces': 'hierve-el-agua',
+  'mineral-irrigation': 'hierve-el-agua',
+  'celilo-falls': 'celilo-falls-fishery',
+  'celilo-fishery': 'celilo-falls-fishery',
+  'yenisei-dams': 'yenisei-hydro-cascade',
+  'sayano-shushenskaya': 'yenisei-hydro-cascade',
+  'yakutsk-water': 'yakutsk-utilidor',
+  'yakutsk-permafrost': 'yakutsk-utilidor',
+  'barrow-water': 'barrow-utilidor',
+  'utqiagvik-utilidor': 'barrow-utilidor',
+  'tlingit-salmon': 'tlingit-salmon-stream',
+  'salmon-stream-management': 'tlingit-salmon-stream',
+  'khanty-fish-weir': 'khanty-mansi-fish-weir',
+  'mansi-fish-weir': 'khanty-mansi-fish-weir',
+  'baikal-ice': 'baikal-ice-road',
+  'baikal-water': 'baikal-ice-road',
+  'trans-alaska-water': 'trans-alaska-pipeline',
+  'alaska-pipeline-crossings': 'trans-alaska-pipeline',
+  'yam-stations': 'yam-postal-stations',
+  'mongol-postal-water': 'yam-postal-stations',
+  'funan-canals': 'funan-canal-network',
+  'oc-eo-canals': 'funan-canal-network',
+  'han-brine': 'han-brine-pipeline',
+  'sichuan-brine': 'han-brine-pipeline'
 };
 
 export function getSwmmModelForInvention(inventionId: string): SWMM5Model | null {
@@ -2068,6 +2134,486 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       roughness: 0.018
     },
     engineeringNotes: '18 nodes, 21 links. UNESCO World Heritage (2021). Rock-cut channels, cascade reservoirs, citadel/middle/lower town distribution, great bath, and monsoon storm overflow. Model by Robert Dickinson, PE.'
+  },
+  'angkor-integrated': {
+    name: 'Angkor Integrated Hydraulic System',
+    description: 'Massive 1000+ sq km water management network of barays, channels, moats, and rice paddies supporting 750,000+ people',
+    civilization: 'Khmer Empire',
+    period: '9th-13th c. CE',
+    parameters: {
+      length: 40000,
+      slope: 0.0008,
+      flowRate: 15.0,
+      channelWidth: 25.0,
+      channelDepth: 4.0,
+      roughness: 0.025
+    },
+    engineeringNotes: 'West Baray (8x2.1 km) held 50M m³. East Baray similar scale. Interconnected by hundreds of km of canals distributing monsoon water year-round. LIDAR revealed network far larger than previously known. Collapse linked to infrastructure failure during 14th c. mega-droughts.'
+  },
+  'teotihuacan-canalization': {
+    name: 'Teotihuacan San Juan River Canalization',
+    description: 'Channelized river diverted through gridded city of 100,000+ people with stormwater drainage',
+    civilization: 'Mesoamerica',
+    period: '100 BCE-550 CE',
+    parameters: {
+      length: 3500,
+      slope: 0.005,
+      flowRate: 2.5,
+      channelWidth: 8.0,
+      channelDepth: 2.0,
+      roughness: 0.022
+    },
+    engineeringNotes: 'San Juan River realigned to match city grid at 15.5° east of north. Stone-lined channels with plaster waterproofing. Multi-room apartment compounds had internal drains connecting to main channels. Population ~125,000 at peak.'
+  },
+  'chicago-river-reversal': {
+    name: 'Chicago River Reversal',
+    description: 'Engineering marvel that reversed the flow of the Chicago River away from Lake Michigan to protect drinking water',
+    civilization: 'United States',
+    period: '1900 CE',
+    parameters: {
+      length: 45000,
+      slope: 0.0002,
+      flowRate: 280.0,
+      channelWidth: 50.0,
+      channelDepth: 7.5,
+      roughness: 0.020
+    },
+    engineeringNotes: 'Chicago Sanitary and Ship Canal: 45 km long, moved more earth than the Panama Canal. Reversed river flow to send sewage to Mississippi watershed instead of Lake Michigan. Triggered interstate lawsuit (Missouri v. Illinois, 1906). Still operates today.'
+  },
+  'forbidden-city-drainage': {
+    name: 'Forbidden City Drainage System',
+    description: 'Imperial palace complex with 72 drainage outlets, Golden Water River, and elaborate stormwater management for 720,000 sq m',
+    civilization: 'Ming Dynasty China',
+    period: '1420 CE',
+    parameters: {
+      length: 4500,
+      slope: 0.008,
+      flowRate: 3.0,
+      channelWidth: 3.5,
+      channelDepth: 1.2,
+      roughness: 0.016
+    },
+    engineeringNotes: 'Inner Golden Water River (Nei Jin Shui He) crosses courtyards in ornamental marble channels. 72 drainage outlets through outer walls. Underground brick culverts total 15 km. Three-level system: surface gutters, underground pipes, main sewers. Handles 200mm/hr rainfall events.'
+  },
+  'versailles-marly': {
+    name: 'Versailles/Machine de Marly Water System',
+    description: '14 massive waterwheels lifting Seine water 150m to supply 1,400 fountains at Versailles Palace',
+    civilization: 'France',
+    period: '1684 CE',
+    parameters: {
+      length: 6500,
+      slope: 0.023,
+      flowRate: 0.05,
+      channelWidth: 1.5,
+      channelDepth: 0.8,
+      roughness: 0.014
+    },
+    engineeringNotes: 'Machine de Marly: 14 waterwheels, 259 pumps, lifting water 150m in 3 stages. Designed by Arnold de Ville and Rennequin Sualem. Could pump 3,200 m³/day but typically delivered only 1/3 capacity. Cost equivalent of a warship. Supplemented by 35 km aqueduct from Eure River (never completed).'
+  },
+  'augsburg-three-level': {
+    name: 'Augsburg Three-Level Water System',
+    description: 'UNESCO World Heritage three-tier water management separating drinking water, craft/industrial water, and wastewater',
+    civilization: 'Germany',
+    period: '1412 CE',
+    parameters: {
+      length: 5000,
+      slope: 0.006,
+      flowRate: 1.8,
+      channelWidth: 2.0,
+      channelDepth: 0.9,
+      roughness: 0.016
+    },
+    engineeringNotes: 'UNESCO World Heritage since 2019. Three Lech River canal levels: upper for drinking (with water towers from 1416), middle for craftsmen (tanners, dyers), lower for waste removal. Featured monumental fountains (1594-1602) and earliest separated water system in Europe.'
+  },
+  'aswan-high-dam': {
+    name: 'Aswan High Dam + Lake Nasser',
+    description: 'Modern mega-dam controlling Nile floods and creating 550 km long Lake Nasser, generating 2.1 GW hydroelectric power',
+    civilization: 'Egypt',
+    period: '1970 CE',
+    parameters: {
+      length: 3830,
+      slope: 0.0001,
+      flowRate: 2830.0,
+      channelWidth: 980.0,
+      channelDepth: 111.0,
+      roughness: 0.018
+    },
+    engineeringNotes: 'Dam is 3,830m long, 111m tall, 980m thick at base. Lake Nasser: 550 km long, 169 km³ storage. 12 turbines generating 2.1 GW. Ended annual Nile floods but trapped 98% of sediment. Required relocation of Abu Simbel temples. Annual evaporation loss: 10 km³.'
+  },
+  'baghdad-round-city': {
+    name: 'Baghdad Round City Water System',
+    description: 'Concentric canal rings feeding the circular City of Peace through Tigris diversions and underground qanats',
+    civilization: 'Abbasid Caliphate',
+    period: '762 CE',
+    parameters: {
+      length: 8000,
+      slope: 0.002,
+      flowRate: 3.0,
+      channelWidth: 4.0,
+      channelDepth: 1.5,
+      roughness: 0.020
+    },
+    engineeringNotes: 'Madinat al-Salam (City of Peace): perfectly circular, 2 km diameter. Four gates aligned to cardinal directions. Concentric moats doubled as water supply/defense. Tigris and Euphrates connected via Nahrawan Canal (300 km). Supported 1.5 million people at peak—largest city in world.'
+  },
+  'parakrama-samudra': {
+    name: 'Parakrama Samudra',
+    description: 'Giant 2,400 hectare reservoir built by King Parakramabahu I — "not one drop of water shall reach the sea without serving man"',
+    civilization: 'Sri Lanka',
+    period: '1153 CE',
+    parameters: {
+      length: 14000,
+      slope: 0.0005,
+      flowRate: 8.0,
+      channelWidth: 12.0,
+      channelDepth: 3.5,
+      roughness: 0.022
+    },
+    engineeringNotes: 'Actually three linked reservoirs: Topa Wewa, Eravurru Wewa, Dumbutulu Wewa. Dam 14 km long, 12m high. Surface area 2,400 hectares. Sluice gates (bisokotuwa) controlled flow to 18,000 hectares of paddy. Part of cascade of 2,500+ interconnected tanks.'
+  },
+  'yoda-ela-canal': {
+    name: 'Yoda Ela Canal',
+    description: '87 km trans-basin irrigation canal with precise gradient — one of the longest ancient canals in the world',
+    civilization: 'Sri Lanka',
+    period: '6th c. CE',
+    parameters: {
+      length: 87000,
+      slope: 0.00006,
+      flowRate: 2.0,
+      channelWidth: 8.0,
+      channelDepth: 2.0,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Gradient of 10-20 cm per km over 87 km—extraordinary surveying precision. Trans-basin diversion from Amban Ganga to Kala Wewa reservoir. Built by King Dhatusena. Still partially functional after 1,500 years. Demonstrates ancient Sri Lankan mastery of hydraulic engineering.'
+  },
+  'wang-jing-yellow-river': {
+    name: 'Wang Jing Yellow River Control',
+    description: 'Systematic levee and dike system that tamed Yellow River flooding for 60+ years under Han Dynasty engineer Wang Jing',
+    civilization: 'Han Dynasty China',
+    period: '69 CE',
+    parameters: {
+      length: 25000,
+      slope: 0.0003,
+      flowRate: 500.0,
+      channelWidth: 200.0,
+      channelDepth: 8.0,
+      roughness: 0.028
+    },
+    engineeringNotes: 'Wang Jing organized 100,000+ laborers to build paired levees with spillways. Introduced "bundle of sticks" (saobing) technique for rapid breach repair. Yellow River carried 1.6 billion tons of sediment annually. His system held for 60 years—exceptional given the river shifted course 26 times in recorded history.'
+  },
+  'tva-multi-dam': {
+    name: 'TVA Multi-Dam System',
+    description: 'Integrated river basin management with 49 dams controlling floods, generating power, and enabling navigation across 7 states',
+    civilization: 'United States',
+    period: '1933 CE',
+    parameters: {
+      length: 50000,
+      slope: 0.0004,
+      flowRate: 1500.0,
+      channelWidth: 150.0,
+      channelDepth: 10.0,
+      roughness: 0.022
+    },
+    engineeringNotes: '49 dams across Tennessee River watershed (106,000 km²). First integrated river basin development. 29 hydroelectric dams generating 5,400 MW. 9-foot navigation channel: 1,050 km. Reduced flood damage by $8 billion. Model for worldwide river basin development.'
+  },
+  'erie-canal-locks': {
+    name: 'Erie Canal Lock System',
+    description: '584 km canal with 83 locks overcoming 172m elevation change connecting Great Lakes to Atlantic Ocean',
+    civilization: 'United States',
+    period: '1825 CE',
+    parameters: {
+      length: 584000,
+      slope: 0.0003,
+      flowRate: 1.5,
+      channelWidth: 12.0,
+      channelDepth: 1.2,
+      roughness: 0.018
+    },
+    engineeringNotes: 'Original: 12m wide, 1.2m deep, 83 locks, 18 aqueducts. Cut travel time NYC-Buffalo from 2 weeks to 5 days. Freight costs dropped 95%. Called "Clinton\'s Ditch." Enlarged twice (1862, 1918). Sparked canal-building boom across America. Made NYC dominant US port.'
+  },
+  'monte-alban-hilltop': {
+    name: 'Monte Albán Hilltop Water System',
+    description: 'Ingenious water management on a flattened mountaintop supporting 17,000+ people with no natural springs',
+    civilization: 'Zapotec',
+    period: '500 BCE-700 CE',
+    parameters: {
+      length: 1500,
+      slope: 0.015,
+      flowRate: 0.08,
+      channelWidth: 0.6,
+      channelDepth: 0.4,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Hilltop artificially flattened (400m x 200m platform). No natural water source—relied entirely on rainwater harvesting. Stone-lined channels directed runoff to plastered cisterns. Dam across natural ravine created reservoir. Supported 17,000 people at 1,940m elevation.'
+  },
+  'benin-city-moat': {
+    name: 'Benin City Moat System',
+    description: 'Largest earthwork construction in the world — 16,000 km of moats and walls surrounding the Benin Kingdom',
+    civilization: 'Benin Kingdom',
+    period: '1200-1500 CE',
+    parameters: {
+      length: 16000,
+      slope: 0.002,
+      flowRate: 1.5,
+      channelWidth: 15.0,
+      channelDepth: 6.0,
+      roughness: 0.030
+    },
+    engineeringNotes: '16,000 km of earthworks—more than 4x the Great Wall length. Walls up to 20m high with moats 15m wide and 6m deep. Described by 15th c. Europeans as rivaling any city. Regulated water drainage in tropical forest zone. Largely destroyed during British punitive expedition of 1897.'
+  },
+  'snowy-mountains-scheme': {
+    name: 'Snowy Mountains Scheme',
+    description: 'Trans-mountain hydroelectric and irrigation scheme with 16 dams, 7 power stations, and 225 km of tunnels and aqueducts',
+    civilization: 'Australia',
+    period: '1949-1974 CE',
+    parameters: {
+      length: 225000,
+      slope: 0.004,
+      flowRate: 120.0,
+      channelWidth: 8.0,
+      channelDepth: 4.5,
+      roughness: 0.015
+    },
+    engineeringNotes: '16 major dams, 7 power stations (4,100 MW), 225 km of tunnels/aqueducts, 80 km of pipelines. Diverts Snowy River westward through Great Dividing Range. Involved 100,000 workers from 30+ countries. T2 tunnel: 23 km at 1,100m depth. Symbol of multicultural Australia.'
+  },
+  'copenhagen-cloudburst': {
+    name: 'Copenhagen Cloudburst Management Plan',
+    description: 'Climate adaptation masterplan transforming 300+ city streets and parks into integrated stormwater infrastructure',
+    civilization: 'Denmark',
+    period: '2012 CE',
+    parameters: {
+      length: 5000,
+      slope: 0.008,
+      flowRate: 5.0,
+      channelWidth: 6.0,
+      channelDepth: 1.0,
+      roughness: 0.020
+    },
+    engineeringNotes: 'Response to July 2011 cloudburst (150mm in 2 hours, €800M damage). 300 projects across 7 watersheds. Streets designed as flood corridors. Parks double as retention basins. Green roofs mandatory. Cost €1.5 billion over 20 years but prevents €2.7 billion in damage. Global model for climate-adaptive cities.'
+  },
+  'trowulan-canal-grid': {
+    name: 'Trowulan Urban Canal Grid',
+    description: 'Orthogonal canal network of 60+ km serving the capital of the Majapahit Empire with water supply, transport, and drainage',
+    civilization: 'Majapahit Empire',
+    period: '14th c. CE',
+    parameters: {
+      length: 60000,
+      slope: 0.001,
+      flowRate: 2.5,
+      channelWidth: 5.0,
+      channelDepth: 1.5,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Grid-patterned canals at regular 400-600m intervals. Segaran pool (375x175m) served as ceremonial reservoir. Brick-lined channels with settling basins. Supported 500,000+ population. Connected to Brantas River system. Rediscovered through LIDAR and aerial photography.'
+  },
+  'song-hangzhou-water': {
+    name: 'Song Dynasty Hangzhou Water Supply',
+    description: 'West Lake managed as urban water supply reservoir with 6 wells, bamboo pipelines, and sluice gate regulation for 1M+ residents',
+    civilization: 'Song Dynasty China',
+    period: '12th c. CE',
+    parameters: {
+      length: 8000,
+      slope: 0.003,
+      flowRate: 1.5,
+      channelWidth: 2.5,
+      channelDepth: 1.0,
+      roughness: 0.018
+    },
+    engineeringNotes: 'West Lake (6.5 km²) served as reservoir for Lin\'an (Hangzhou), world\'s largest city (~1.5M). Governor Su Shi (Su Dongpo) built Su Causeway (1089 CE) for water regulation. Six wells with bamboo pipelines distributed water. Dredging program maintained lake capacity. Marco Polo called it finest city in world.'
+  },
+  'edzna-radial-canals': {
+    name: 'Edzná Radial Canal System',
+    description: 'Radial canal network draining 22 km² catchment into central aguada — earliest large-scale Maya hydraulic engineering',
+    civilization: 'Maya',
+    period: '400 BCE-250 CE',
+    parameters: {
+      length: 12000,
+      slope: 0.002,
+      flowRate: 0.8,
+      channelWidth: 4.0,
+      channelDepth: 1.5,
+      roughness: 0.028
+    },
+    engineeringNotes: '31 canals radiating from central ceremonial center. Largest canal 12 km long, 50m wide, 1.5m deep. Drained seasonal swamp for agriculture while storing water in central reservoir. Moved 1.75 million m³ of earth. Among earliest Maya monumental construction projects.'
+  },
+  'hierve-el-agua': {
+    name: 'Hierve el Agua Mineral Irrigation',
+    description: 'Pre-Zapotec mineral spring terraces channeling supersaturated mineral water for agricultural irrigation at 2,500m elevation',
+    civilization: 'Pre-Zapotec',
+    period: '500 BCE',
+    parameters: {
+      length: 800,
+      slope: 0.08,
+      flowRate: 0.03,
+      channelWidth: 0.3,
+      channelDepth: 0.15,
+      roughness: 0.020
+    },
+    engineeringNotes: 'Natural mineral springs (calcium carbonate supersaturated) create petrified waterfalls. Ancient channels directed mineral-rich water across agricultural terraces. Calcite deposits preserved 2,500-year-old canal system. Located at 2,500m in Oaxaca mountains. Water emerges at 24°C—appears to boil (hence name).'
+  },
+  'celilo-falls-fishery': {
+    name: 'Celilo Falls Fishery Management',
+    description: 'Oldest continuously inhabited site in North America — sophisticated stream management for salmon fishery spanning 11,000+ years',
+    civilization: 'Pacific Northwest Nations',
+    period: '11000 BCE-1957 CE',
+    parameters: {
+      length: 2000,
+      slope: 0.015,
+      flowRate: 5500.0,
+      channelWidth: 400.0,
+      channelDepth: 5.0,
+      roughness: 0.035
+    },
+    engineeringNotes: 'Columbia River at Celilo Falls: 5,500 CMS average flow. Indigenous peoples built wooden platforms over falls, managed fish weirs, and maintained stream channels. Annual catch: 15-20 million salmon. Drowned by The Dalles Dam in 1957. 11,000+ years of continuous occupation—longest in North America.'
+  },
+  'yenisei-hydro-cascade': {
+    name: 'Yenisei Hydroelectric Cascade',
+    description: 'World\'s largest hydroelectric cascade — 5 dams producing 25+ GW on the Yenisei River in Siberia',
+    civilization: 'Soviet Union/Russia',
+    period: '1955-1985 CE',
+    parameters: {
+      length: 35000,
+      slope: 0.0005,
+      flowRate: 18600.0,
+      channelWidth: 800.0,
+      channelDepth: 25.0,
+      roughness: 0.018
+    },
+    engineeringNotes: 'Sayano-Shushenskaya (6,400 MW, 245m tall—largest in Russia), Krasnoyarsk (6,000 MW), Bratsk (4,500 MW), Ust-Ilimsk (3,840 MW), Boguchany (2,997 MW). Total: 25+ GW. Yenisei: world\'s 5th longest river, 18,600 CMS discharge. 2009 turbine failure at Sayano-Shushenskaya killed 75 workers.'
+  },
+  'yakutsk-utilidor': {
+    name: 'Yakutsk Utilidor System',
+    description: 'Above-ground insulated utility corridors delivering water and sewer services in the coldest city on Earth (-50°C winters)',
+    civilization: 'Russia',
+    period: 'Modern (1950s-present)',
+    parameters: {
+      length: 3000,
+      slope: 0.005,
+      flowRate: 0.3,
+      channelWidth: 1.2,
+      channelDepth: 1.0,
+      roughness: 0.012
+    },
+    engineeringNotes: 'Yakutsk: coldest city (300,000 pop), -50°C winters, 300m continuous permafrost. All buildings on stilts. Utilidors (above-ground insulated boxes) carry heated water, sewer, and steam pipes. Cannot bury pipes—permafrost would thaw and destabilize. Electric heat tracing prevents freezing. Water delivered at 60°C minimum.'
+  },
+  'barrow-utilidor': {
+    name: 'Barrow/Utqiaġvik Utilidor System',
+    description: 'Arctic water and sewer delivery system above permafrost for northernmost US city at 71°N latitude',
+    civilization: 'Alaska, USA',
+    period: 'Modern (1970s-present)',
+    parameters: {
+      length: 2500,
+      slope: 0.003,
+      flowRate: 0.15,
+      channelWidth: 0.8,
+      channelDepth: 0.6,
+      roughness: 0.012
+    },
+    engineeringNotes: 'Utqiaġvik (Barrow): northernmost US city, 71°N. Continuous permafrost to 400m depth. Aluminum-jacketed utilidors on wooden supports. Triple-insulated water pipes with electric heat trace. Vacuum sewer system minimizes water use. Annual maintenance: $4,000 per connection. Only 40% of buildings connected.'
+  },
+  'tlingit-salmon-stream': {
+    name: 'Tlingit Salmon Stream Management',
+    description: 'Traditional stream enhancement practices for salmon spawning habitat management spanning thousands of years',
+    civilization: 'Tlingit/Pacific Northwest',
+    period: 'Traditional (3000+ years)',
+    parameters: {
+      length: 1500,
+      slope: 0.012,
+      flowRate: 2.0,
+      channelWidth: 5.0,
+      channelDepth: 0.8,
+      roughness: 0.035
+    },
+    engineeringNotes: 'Tlingit and neighboring nations actively managed salmon streams: placed boulders for spawning gravel, removed log jams selectively, built stone fish traps and weirs. Clan ownership of streams with hereditary management rights. Sustainable harvest for 3,000+ years. Modern fisheries science now validates many traditional practices.'
+  },
+  'khanty-mansi-fish-weir': {
+    name: 'Khanty-Mansi Fish Weir System',
+    description: 'Traditional Siberian river fish trapping using wooden weir systems across Ob River tributaries',
+    civilization: 'Khanty-Mansi (Western Siberia)',
+    period: 'Traditional (2000+ years)',
+    parameters: {
+      length: 800,
+      slope: 0.001,
+      flowRate: 15.0,
+      channelWidth: 20.0,
+      channelDepth: 2.0,
+      roughness: 0.035
+    },
+    engineeringNotes: 'Khanty and Mansi peoples built elaborate wooden weir systems (zapora) across Ob tributaries. V-shaped fences directed fish into basket traps. Seasonal camps at weir sites. Managed sturgeon, nelma, and muksun runs. Sustainable harvest protocols passed through generations. Ob-Irtysh system: world\'s 7th longest river.'
+  },
+  'baikal-ice-road': {
+    name: 'Baikal Ice Road Water System',
+    description: 'Traditional ice road water management on Lake Baikal — winter transport routes across world\'s deepest lake',
+    civilization: 'Lake Baikal Communities',
+    period: 'Traditional-Modern',
+    parameters: {
+      length: 30000,
+      slope: 0.0001,
+      flowRate: 0.5,
+      channelWidth: 10.0,
+      channelDepth: 1.0,
+      roughness: 0.012
+    },
+    engineeringNotes: 'Lake Baikal: world\'s deepest lake (1,642m), contains 20% of world\'s fresh surface water. Ice roads (zimnik) up to 30 km across lake, operational December-March. Ice thickness monitored: minimum 30 cm for vehicles. Traditional Buryat knowledge of ice conditions, pressure ridges, and safe crossings. Water holes (prorus) maintained for fishing and water supply.'
+  },
+  'trans-alaska-pipeline': {
+    name: 'Trans-Alaska Pipeline River Crossings',
+    description: 'Elevated pipeline crossing 800+ rivers and streams with thermal management to prevent permafrost thaw',
+    civilization: 'Alaska, USA',
+    period: '1977 CE',
+    parameters: {
+      length: 1300000,
+      slope: 0.001,
+      flowRate: 0.25,
+      channelWidth: 1.2,
+      channelDepth: 1.2,
+      roughness: 0.012
+    },
+    engineeringNotes: '1,300 km pipeline: Prudhoe Bay to Valdez. Crosses 800+ rivers/streams including Yukon River (610m span). 676 km elevated on vertical support members with passive ammonia thermosyphons preventing permafrost thaw. Yukon River crossing: special refrigerated supports. Withstood M7.9 Denali earthquake (2002) without rupture.'
+  },
+  'yam-postal-stations': {
+    name: 'Yam Postal Water Stations',
+    description: 'Mongol Empire relay station network with water supply infrastructure spanning 50,000+ km of routes',
+    civilization: 'Mongol Empire',
+    period: '1230s CE',
+    parameters: {
+      length: 3000,
+      slope: 0.005,
+      flowRate: 0.1,
+      channelWidth: 0.8,
+      channelDepth: 0.4,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Yam system: 1,500+ relay stations across Eurasia, spaced 25-45 km apart. Each station required reliable water for horses (200+ per station), riders, and livestock. Wells, cisterns, and stream diversions at each stop. Messages traveled 300+ km/day. Marco Polo described system in detail. Facilitated largest contiguous empire in history.'
+  },
+  'funan-canal-network': {
+    name: 'Funan Canal Network',
+    description: '180+ km canal system connecting inland cities to coast, enabling Southeast Asia\'s first major maritime trading state',
+    civilization: 'Funan Kingdom (SE Asia)',
+    period: '1st-6th c. CE',
+    parameters: {
+      length: 180000,
+      slope: 0.0002,
+      flowRate: 5.0,
+      channelWidth: 15.0,
+      channelDepth: 3.0,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Canals linked Oc Eo port to Angkor Borei (inland capital), 90 km. Additional canal network of 90+ km for rice irrigation in Mekong Delta. Chinese envoy Kang Tai (245 CE) described "cities linked by great canals." Predecessor to Angkor hydraulic system. First major canal builders of mainland SE Asia.'
+  },
+  'han-brine-pipeline': {
+    name: 'Han Dynasty Sichuan Brine Pipeline',
+    description: 'Bamboo pipeline system transporting salt brine from deep wells to evaporation pans — world\'s first industrial pipeline',
+    civilization: 'Han Dynasty China',
+    period: '1st c. BCE',
+    parameters: {
+      length: 5000,
+      slope: 0.01,
+      flowRate: 0.02,
+      channelWidth: 0.15,
+      channelDepth: 0.15,
+      roughness: 0.020
+    },
+    engineeringNotes: 'Bamboo tubes (zhu tong) joined with hemp and tung oil, supported on wooden trestles. Wells drilled to 100m+ using percussion drilling (earliest deep drilling). Brine pumped by ox-powered derricks. Natural gas (co-produced) piped to evaporation pans via bamboo—world\'s first industrial use of natural gas. Zigong salt wells operated for 2,000+ years.'
   }
 };
 
