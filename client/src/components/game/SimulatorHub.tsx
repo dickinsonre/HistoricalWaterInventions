@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 import { ArrowLeft, Play, Beaker, Info, X } from "lucide-react";
+import { useTranslation } from "../../hooks/useTranslation";
+import LanguageSelector from "./LanguageSelector";
 import { 
   ShadufSimulator, 
   ArchimedesScrewSimulator, 
@@ -54,6 +56,7 @@ const simulatorComponents: Record<SimulatorId, React.ComponentType<{ onClose?: (
 
 export default function SimulatorHub() {
   const navigate = useNavigate();
+  const t = useTranslation();
   const [activeSimulator, setActiveSimulator] = useState<SimulatorId | null>(null);
 
   const renderSimulator = () => {
@@ -83,12 +86,13 @@ export default function SimulatorHub() {
             className="text-[var(--parchment)] hover:bg-[var(--river-blue)]"
           >
             <ArrowLeft size={16} className="mr-1" />
-            Back to Map
+            {t.nav.back}
           </Button>
           <div className="flex-1">
-            <h1 className="text-2xl font-cinzel text-[var(--gold)]">Interactive Simulators</h1>
-            <p className="text-[var(--parchment)]/70 text-sm">Explore ancient hydraulic engineering with physics-based simulations</p>
+            <h1 className="text-2xl font-cinzel text-[var(--gold)]">{t.simulator.title}</h1>
+            <p className="text-[var(--parchment)]/70 text-sm">{t.simulator.subtitle}</p>
           </div>
+          <LanguageSelector />
           <Beaker size={32} className="text-[var(--gold)]" />
         </div>
       </div>
@@ -132,7 +136,7 @@ export default function SimulatorHub() {
                   className="w-full bg-[var(--cerulean)] hover:bg-[var(--cerulean)]/80 group-hover:bg-[var(--gold)] group-hover:text-[var(--deep-ocean)] transition-colors"
                 >
                   <Play size={14} className="mr-1" />
-                  Launch Simulator
+                  {t.simulator.launch}
                 </Button>
               </CardContent>
             </Card>

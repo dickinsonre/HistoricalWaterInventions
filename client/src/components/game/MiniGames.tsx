@@ -15,6 +15,8 @@ import {
   Zap
 } from "lucide-react";
 import { gameData } from "@/data/gameData";
+import { useTranslation } from "../../hooks/useTranslation";
+import LanguageSelector from "./LanguageSelector";
 
 interface MiniGamesProps {
   onBack: () => void;
@@ -166,6 +168,7 @@ function shuffleArray<T>(array: T[]): T[] {
 }
 
 export default function MiniGames({ onBack }: MiniGamesProps) {
+  const t = useTranslation();
   const [currentGame, setCurrentGame] = useState<GameType>("menu");
   const [score, setScore] = useState(0);
   const [highScores, setHighScores] = useState<Record<string, number>>({
@@ -215,20 +218,23 @@ export default function MiniGames({ onBack }: MiniGamesProps) {
           <div>
             <h1 className="font-heading text-2xl text-[var(--gold)] flex items-center gap-2">
               <Gamepad2 className="text-[var(--aqua)]" />
-              Educational Mini-Games
+              {t.miniGames.title}
             </h1>
             <p className="text-[var(--parchment)]/70 text-sm">
-              Learn hydraulic concepts through fun challenges
+              {t.miniGames.subtitle}
             </p>
           </div>
-          <Button
-            onClick={onBack}
-            variant="outline"
-            className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
-          >
-            <ArrowLeft size={16} className="mr-2" />
-            Back
-          </Button>
+          <div className="flex items-center gap-2">
+            <LanguageSelector />
+            <Button
+              onClick={onBack}
+              variant="outline"
+              className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30"
+            >
+              <ArrowLeft size={16} className="mr-2" />
+              {t.nav.back}
+            </Button>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-4 mb-8">
@@ -240,13 +246,13 @@ export default function MiniGames({ onBack }: MiniGamesProps) {
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[var(--cerulean)]/20 flex items-center justify-center group-hover:bg-[var(--cerulean)]/40 transition-colors">
                 <Brain size={32} className="text-[var(--aqua)]" />
               </div>
-              <h3 className="font-heading text-lg text-[var(--gold)] mb-2">Water Flow Quiz</h3>
+              <h3 className="font-heading text-lg text-[var(--gold)] mb-2">{t.miniGames.waterFlowQuiz}</h3>
               <p className="text-[var(--parchment)]/70 text-sm mb-4">
-                Test your knowledge of ancient hydraulic engineering
+                {t.miniGames.waterFlowQuizDesc}
               </p>
               <div className="flex items-center justify-center gap-2 text-xs text-[var(--aqua)]">
                 <Star size={14} />
-                <span>High Score: {highScores.quiz}</span>
+                <span>{t.miniGames.highScore}: {highScores.quiz}</span>
               </div>
             </CardContent>
           </Card>
@@ -259,13 +265,13 @@ export default function MiniGames({ onBack }: MiniGamesProps) {
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[var(--terracotta)]/20 flex items-center justify-center group-hover:bg-[var(--terracotta)]/40 transition-colors">
                 <Clock size={32} className="text-[var(--terracotta)]" />
               </div>
-              <h3 className="font-heading text-lg text-[var(--gold)] mb-2">Timeline Challenge</h3>
+              <h3 className="font-heading text-lg text-[var(--gold)] mb-2">{t.miniGames.timelineChallenge}</h3>
               <p className="text-[var(--parchment)]/70 text-sm mb-4">
-                Arrange water inventions in chronological order
+                {t.miniGames.timelineChallengeDesc}
               </p>
               <div className="flex items-center justify-center gap-2 text-xs text-[var(--aqua)]">
                 <Star size={14} />
-                <span>High Score: {highScores.timeline}</span>
+                <span>{t.miniGames.highScore}: {highScores.timeline}</span>
               </div>
             </CardContent>
           </Card>
@@ -278,13 +284,13 @@ export default function MiniGames({ onBack }: MiniGamesProps) {
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[var(--gold)]/20 flex items-center justify-center group-hover:bg-[var(--gold)]/40 transition-colors">
                 <MapPin size={32} className="text-[var(--gold)]" />
               </div>
-              <h3 className="font-heading text-lg text-[var(--gold)] mb-2">Match the Civilization</h3>
+              <h3 className="font-heading text-lg text-[var(--gold)] mb-2">{t.miniGames.matchCivilization}</h3>
               <p className="text-[var(--parchment)]/70 text-sm mb-4">
-                Connect water inventions to their origins
+                {t.miniGames.matchCivilizationDesc}
               </p>
               <div className="flex items-center justify-center gap-2 text-xs text-[var(--aqua)]">
                 <Star size={14} />
-                <span>High Score: {highScores.match}</span>
+                <span>{t.miniGames.highScore}: {highScores.match}</span>
               </div>
             </CardContent>
           </Card>
@@ -294,7 +300,7 @@ export default function MiniGames({ onBack }: MiniGamesProps) {
           <CardContent className="p-6">
             <h3 className="font-heading text-lg text-[var(--gold)] mb-4 flex items-center gap-2">
               <Droplets className="text-[var(--aqua)]" />
-              Why These Games Matter
+              {t.miniGames.whyMatter}
             </h3>
             <div className="grid md:grid-cols-2 gap-4 text-sm text-[var(--parchment)]/80">
               <div>

@@ -1,9 +1,11 @@
 import { useState, useRef, useEffect } from "react";
 import { Globe } from "lucide-react";
 import { useLanguage, LANGUAGES, type LanguageCode } from "../../lib/stores/useLanguage";
+import { useTranslation } from "../../hooks/useTranslation";
 
 export default function LanguageSelector() {
   const { language, setLanguage } = useLanguage();
+  const t = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -24,7 +26,7 @@ export default function LanguageSelector() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border border-[var(--aqua)]/30 transition-colors text-sm"
-        title="Change Language"
+        title={t.nav.language}
       >
         <Globe size={15} className="text-[var(--aqua)]" />
         <span className="hidden sm:inline">{currentLang?.nativeName}</span>

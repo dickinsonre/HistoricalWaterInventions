@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useParams, useNavigate } from "react-rout
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useAudio } from "./lib/stores/useAudio";
 import { useProgress } from "./lib/stores/useProgress";
+import { useLanguage, LANGUAGES } from "./lib/stores/useLanguage";
 import WorldMapView from "./components/game/WorldMapView";
 import CivilizationPage from "./components/game/CivilizationPage";
 import InventionPage from "./components/game/InventionPage";
@@ -48,12 +49,27 @@ function GameContent() {
   );
 }
 
+function RTLProvider({ children }: { children: React.ReactNode }) {
+  const { language } = useLanguage();
+  const langInfo = LANGUAGES.find(l => l.code === language);
+  const dir = langInfo?.dir || "ltr";
+
+  useEffect(() => {
+    document.documentElement.setAttribute("dir", dir);
+    document.documentElement.setAttribute("lang", language);
+  }, [dir, language]);
+
+  return <>{children}</>;
+}
+
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
-        <GameContent />
-        <AIChatbot />
+        <RTLProvider>
+          <GameContent />
+          <AIChatbot />
+        </RTLProvider>
       </BrowserRouter>
     </QueryClientProvider>
   );

@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useGameState } from "../../lib/stores/useGameState";
 import { useProgress } from "../../lib/stores/useProgress";
 import { useAudio } from "../../lib/stores/useAudio";
+import { useTranslation } from "../../hooks/useTranslation";
+import LanguageSelector from "./LanguageSelector";
 import Inventory from "./Inventory";
 import ProgressTracker from "./ProgressTracker";
 import Achievements from "./Achievements";
@@ -54,6 +56,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
   const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
   const [selectedCivilization, setSelectedCivilization] = useState<string | null>(null);
 
+  const t = useTranslation();
   const totalArtifacts = progress.discoveredArtifacts.length;
   const totalLocations = progress.exploredLocations.length;
   const totalRegions = progress.unlockedRegions.length;
@@ -78,7 +81,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                   </Button>
                 </TooltipTrigger>
                 <TooltipContent className="water-card text-[var(--parchment)]">
-                  Back to Home
+                  {t.nav.home}
                 </TooltipContent>
               </Tooltip>
             )}
@@ -123,7 +126,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                {isMuted ? "Unmute Sound" : "Mute Sound"}
+                {isMuted ? t.gameui.unmute : t.gameui.mute}
               </TooltipContent>
             </Tooltip>
 
@@ -139,7 +142,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Smart Search
+                {t.gameui.search}
               </TooltipContent>
             </Tooltip>
             
@@ -156,7 +159,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Water Inventions Collection
+                {t.gameui.inventory}
               </TooltipContent>
             </Tooltip>
             
@@ -173,7 +176,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Exploration Progress
+                {t.gameui.progress}
               </TooltipContent>
             </Tooltip>
 
@@ -189,7 +192,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Achievements & Badges
+                {t.gameui.achievements}
               </TooltipContent>
             </Tooltip>
 
@@ -205,7 +208,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Timeline Filter
+                {t.gameui.timeline}
               </TooltipContent>
             </Tooltip>
 
@@ -221,7 +224,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Technology Encyclopedia
+                {t.gameui.library}
               </TooltipContent>
             </Tooltip>
 
@@ -237,7 +240,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Water Museum
+                {t.gameui.museum}
               </TooltipContent>
             </Tooltip>
 
@@ -253,7 +256,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Time Travel Mode
+                {t.gameui.timeTravel}
               </TooltipContent>
             </Tooltip>
 
@@ -269,7 +272,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Compare Inventions
+                {t.gameui.comparison}
               </TooltipContent>
             </Tooltip>
 
@@ -285,7 +288,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Featured Discoveries
+                {t.gameui.featured}
               </TooltipContent>
             </Tooltip>
 
@@ -301,7 +304,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Challenge Modes
+                {t.gameui.challenges}
               </TooltipContent>
             </Tooltip>
 
@@ -317,7 +320,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                SWMM5 Hydraulic Models
+                {t.gameui.swmm5}
               </TooltipContent>
             </Tooltip>
 
@@ -333,7 +336,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Did You Know?
+                {t.gameui.facts}
               </TooltipContent>
             </Tooltip>
 
@@ -349,7 +352,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                About This Project
+                {t.gameui.about}
               </TooltipContent>
             </Tooltip>
 
@@ -365,7 +368,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Why This Matters Today
+                {t.gameui.whyMatters}
               </TooltipContent>
             </Tooltip>
 
@@ -381,7 +384,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
                 </Button>
               </TooltipTrigger>
               <TooltipContent className="water-card text-[var(--parchment)]">
-                Explore Civilizations
+                {t.landing.civilizations}
               </TooltipContent>
             </Tooltip>
           </div>
@@ -389,7 +392,7 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
         <div className="flex gap-2 flex-wrap justify-end">
           <Badge variant="secondary" className="water-card text-[var(--parchment)] border-[var(--aqua)]/30">
             <span className="text-[var(--aqua)]">{totalRegions}</span>
-            <span className="ml-1 text-[var(--parchment)]/70">of {gameData.regions.length} Civilizations</span>
+            <span className="ml-1 text-[var(--parchment)]/70">of {gameData.regions.length} {t.landing.civilizations}</span>
           </Badge>
           <Badge variant="secondary" className="water-card text-[var(--parchment)] border-[var(--aqua)]/30">
             <span className="text-[var(--cerulean)]">{totalLocations}</span>
@@ -397,8 +400,9 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
           </Badge>
           <Badge variant="secondary" className="water-card text-[var(--parchment)] border-[var(--aqua)]/30">
             <span className="text-[var(--gold)]">{totalArtifacts}</span>
-            <span className="ml-1 text-[var(--parchment)]/70">of {allArtifacts.length} Inventions</span>
+            <span className="ml-1 text-[var(--parchment)]/70">of {allArtifacts.length} {t.landing.inventions}</span>
           </Badge>
+          <LanguageSelector />
         </div>
       </div>
 
@@ -407,19 +411,19 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
           <div className="flex items-center gap-2 text-[var(--parchment)]">
             <Droplets className="text-[var(--aqua)]" size={20} />
             <span className="font-heading text-lg text-[var(--gold)]">{allArtifacts.length}+</span>
-            <span className="text-sm opacity-80">Inventions</span>
+            <span className="text-sm opacity-80">{t.landing.inventions}</span>
           </div>
           <div className="w-px bg-[var(--aqua)]/30" />
           <div className="flex items-center gap-2 text-[var(--parchment)]">
             <Building className="text-[var(--terracotta)]" size={20} />
             <span className="font-heading text-lg text-[var(--gold)]">{gameData.regions.length}</span>
-            <span className="text-sm opacity-80">Civilizations</span>
+            <span className="text-sm opacity-80">{t.landing.civilizations}</span>
           </div>
           <div className="w-px bg-[var(--aqua)]/30" />
           <div className="flex items-center gap-2 text-[var(--parchment)]">
             <Clock className="text-[var(--cerulean)]" size={20} />
             <span className="font-heading text-lg text-[var(--gold)]">8000+</span>
-            <span className="text-sm opacity-80">Years</span>
+            <span className="text-sm opacity-80">{t.landing.yearsOfHistory}</span>
           </div>
           <div className="w-px bg-[var(--aqua)]/30" />
           <div className="flex items-center gap-2 text-[var(--parchment)]">
@@ -442,10 +446,10 @@ export default function GameUI({ onBackToLanding }: GameUIProps) {
             </Button>
             <CardContent className="p-4">
               <h3 className="font-heading text-lg text-[var(--gold)] mb-2">
-                Discover How Water Shaped History
+                {t.gameui.introTitle}
               </h3>
               <p className="text-[var(--parchment)]/90 text-sm mb-3">
-                Explore 200+ civilizations and discover 1,000+ water inventions across 6 continents. From 300,000-year-old spring camps to Dutch polders to Indian stepwells.
+                {t.gameui.introText}
               </p>
               <div className="flex gap-2">
                 <Button

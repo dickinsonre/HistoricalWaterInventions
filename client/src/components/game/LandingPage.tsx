@@ -1,6 +1,8 @@
 import { Globe, BookOpen, Clock, Gamepad2, ExternalLink, Droplets, MapPin, ChevronRight } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 import { gameData, getAllArtifacts } from "../../data/gameData";
+import { useTranslation } from "../../hooks/useTranslation";
+import LanguageSelector from "./LanguageSelector";
 
 interface LandingPageProps {
   onSelectJourney: (journey: "3d-world" | "encyclopedia" | "timeline" | "minigames") => void;
@@ -15,8 +17,12 @@ const FEATURED_INVENTIONS = [
 ];
 
 export default function LandingPage({ onSelectJourney }: LandingPageProps) {
+  const t = useTranslation();
   return (
     <div className="min-h-screen bg-[var(--deep-ocean)] text-[var(--parchment)] flex flex-col">
+      <div className="absolute top-4 right-4 z-20">
+        <LanguageSelector />
+      </div>
       <header className="relative text-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -28,14 +34,13 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
         />
         <div className="relative z-10 py-16 px-4">
           <h1 className="font-heading text-4xl md:text-5xl text-[var(--gold)] mb-4">
-            Historical Mystery
+            {t.app.title}
           </h1>
           <p className="text-xl text-[var(--aqua)] mb-2">
-            Discover How Water Shaped Civilization
+            {t.app.subtitle}
           </p>
           <p className="max-w-2xl mx-auto" style={{ color: 'rgba(245, 240, 225, 0.85)' }}>
-            Explore 139 civilizations, 680+ water inventions across 6 continents and 40,000+ years. 
-            From Aboriginal fish traps to Korean ondol to Nan Madol's mysterious canals.
+            {t.app.description}
           </p>
         </div>
       </header>
@@ -43,7 +48,7 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
       <main className="flex-1 px-4 pb-8">
         <section className="max-w-5xl mx-auto">
           <h2 className="font-heading text-2xl text-center text-[var(--parchment)] mb-8">
-            Choose Your Journey
+            {t.landing.chooseJourney}
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -56,13 +61,13 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                   <Globe className="w-8 h-8 text-[var(--parchment)]" />
                 </div>
                 <h3 className="font-heading text-xl text-[var(--gold)] mb-2">
-                  World Map Explorer
+                  {t.landing.worldMap}
                 </h3>
                 <p className="text-[var(--parchment)]/80 text-sm mb-4">
-                  Explore 139 civilizations on an interactive map with 680+ water inventions
+                  {t.landing.worldMapDesc}
                 </p>
                 <span className="inline-block px-3 py-1 bg-[var(--cerulean)]/30 rounded-full text-xs text-[var(--aqua)] border border-[var(--aqua)]/30">
-                  Interactive Map
+                  {t.landing.worldMapTag}
                 </span>
               </CardContent>
             </Card>
@@ -76,13 +81,13 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                   <BookOpen className="w-8 h-8 text-[var(--parchment)]" />
                 </div>
                 <h3 className="font-heading text-xl text-[var(--gold)] mb-2">
-                  Technology Encyclopedia
+                  {t.landing.encyclopedia}
                 </h3>
                 <p className="text-[var(--parchment)]/80 text-sm mb-4">
-                  Deep-dive into 100+ water technologies with technical details
+                  {t.landing.encyclopediaDesc}
                 </p>
                 <span className="inline-block px-3 py-1 bg-[var(--cerulean)]/30 rounded-full text-xs text-[var(--aqua)] border border-[var(--aqua)]/30">
-                  Reference Guide
+                  {t.landing.encyclopediaTag}
                 </span>
               </CardContent>
             </Card>
@@ -96,13 +101,13 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                   <Clock className="w-8 h-8 text-[var(--parchment)]" />
                 </div>
                 <h3 className="font-heading text-xl text-[var(--gold)] mb-2">
-                  Interactive Timeline
+                  {t.landing.timeline}
                 </h3>
                 <p className="text-[var(--parchment)]/80 text-sm mb-4">
-                  See how water technology evolved across 8,000 years
+                  {t.landing.timelineDesc}
                 </p>
                 <span className="inline-block px-3 py-1 bg-[var(--cerulean)]/30 rounded-full text-xs text-[var(--aqua)] border border-[var(--aqua)]/30">
-                  Historical View
+                  {t.landing.timelineTag}
                 </span>
               </CardContent>
             </Card>
@@ -116,13 +121,13 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                   <Gamepad2 className="w-8 h-8 text-[var(--parchment)]" />
                 </div>
                 <h3 className="font-heading text-xl text-[var(--gold)] mb-2">
-                  Mini-Games
+                  {t.landing.miniGames}
                 </h3>
                 <p className="text-[var(--parchment)]/80 text-sm mb-4">
-                  Learn hydraulics through fun quizzes and challenges
+                  {t.landing.miniGamesDesc}
                 </p>
                 <span className="inline-block px-3 py-1 bg-[var(--terracotta)]/30 rounded-full text-xs text-[var(--gold)] border border-[var(--gold)]/30">
-                  Educational Games
+                  {t.landing.miniGamesTag}
                 </span>
               </CardContent>
             </Card>
@@ -210,19 +215,19 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                 <div className="space-y-4">
                   <div className="text-center p-3 bg-[var(--deep-ocean)]/50 rounded-lg">
                     <div className="text-3xl font-heading text-[var(--gold)]">{gameData.regions.length}</div>
-                    <div className="text-[var(--parchment)]/70 text-xs">Civilizations</div>
+                    <div className="text-[var(--parchment)]/70 text-xs">{t.landing.civilizations}</div>
                   </div>
                   <div className="text-center p-3 bg-[var(--deep-ocean)]/50 rounded-lg">
                     <div className="text-3xl font-heading text-[var(--aqua)]">{getAllArtifacts().length}+</div>
-                    <div className="text-[var(--parchment)]/70 text-xs">Water Inventions</div>
+                    <div className="text-[var(--parchment)]/70 text-xs">{t.landing.inventions}</div>
                   </div>
                   <div className="text-center p-3 bg-[var(--deep-ocean)]/50 rounded-lg">
                     <div className="text-3xl font-heading text-[var(--terracotta)]">6</div>
-                    <div className="text-[var(--parchment)]/70 text-xs">Continents</div>
+                    <div className="text-[var(--parchment)]/70 text-xs">{t.landing.continents}</div>
                   </div>
                   <div className="text-center p-3 bg-[var(--deep-ocean)]/50 rounded-lg">
                     <div className="text-3xl font-heading text-[var(--cerulean)]">40,000+</div>
-                    <div className="text-[var(--parchment)]/70 text-xs">Years of History</div>
+                    <div className="text-[var(--parchment)]/70 text-xs">{t.landing.yearsOfHistory}</div>
                   </div>
                 </div>
               </CardContent>

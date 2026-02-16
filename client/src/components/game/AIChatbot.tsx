@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { MessageCircle, X, Send, Droplets, Loader2, Trash2 } from "lucide-react";
+import { useTranslation } from "../../hooks/useTranslation";
 
 interface ChatMessage {
   role: "user" | "assistant";
@@ -7,6 +8,7 @@ interface ChatMessage {
 }
 
 export default function AIChatbot() {
+  const t = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
@@ -172,7 +174,7 @@ export default function AIChatbot() {
                 <Droplets size={18} className="text-[var(--aqua)]" />
               </div>
               <div>
-                <h3 className="font-heading text-sm text-[var(--gold)]">Water History Expert</h3>
+                <h3 className="font-heading text-sm text-[var(--gold)]">{t.chatbot.title}</h3>
                 <p className="text-[10px] text-[var(--parchment)]/50">AI-powered water engineering guide</p>
               </div>
             </div>
@@ -211,7 +213,7 @@ export default function AIChatbot() {
                   {msg.content || (
                     <div className="flex items-center gap-2">
                       <Loader2 size={14} className="animate-spin text-[var(--aqua)]" />
-                      <span className="text-[var(--parchment)]/50 text-xs">Thinking...</span>
+                      <span className="text-[var(--parchment)]/50 text-xs">{t.chatbot.thinking}</span>
                     </div>
                   )}
                 </div>
@@ -248,7 +250,7 @@ export default function AIChatbot() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Ask about water history..."
+                placeholder={t.chatbot.placeholder}
                 disabled={isLoading}
                 aria-label="Type your question about water history"
                 className="flex-1 rounded-xl px-3 py-2 text-sm focus:outline-none disabled:opacity-50"
