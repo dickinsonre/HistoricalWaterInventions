@@ -1,0 +1,917 @@
+# New SWMM5 Models — Not Previously Provided
+
+Complete .INP files for models from recent discussions that haven't been created yet.
+
+---
+
+## 1. Olmec San Lorenzo Basalt Drain System (1200 BCE)
+
+```inp
+[TITLE]
+Olmec San Lorenzo Basalt Drain System - Olmec Civilization (1200-900 BCE)
+First engineered drainage in the Americas
+Carved basalt U-shaped troughs, ritual pools, and aqueduct
+San Lorenzo Tenochtitlan, Veracruz, Mexico
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+INFILTRATION         HORTON
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+MIN_SLOPE            0.001
+ALLOW_PONDING        NO
+SKIP_STEADY_STATE    NO
+START_DATE           01/01/2024
+START_TIME           00:00:00
+REPORT_START_DATE    01/01/2024
+REPORT_START_TIME    00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:15
+INERTIAL_DAMPING     PARTIAL
+NORMAL_FLOW_LIMITED  BOTH
+VARIABLE_STEP        0.75
+MAX_TRIALS           8
+HEAD_TOLERANCE       0.0015
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+SPRING_SOURCE       62.0     2.0       0          0         0
+AQUEDUCT_HEAD       61.0     1.5       0          0         0
+AQUEDUCT_MID        59.5     1.5       0          0         0
+PLATEAU_ENTRY       58.0     2.0       0          0         0
+RITUAL_POOL_1       57.0     2.5       0          0         0
+MAIZE_GOD_COURT     56.5     3.0       0          0         0
+DRAIN_JUNCTION_1    56.0     1.5       0          0         0
+BASALT_DRAIN_1      55.5     1.0       0          0         0
+BASALT_DRAIN_2      55.0     1.0       0          0         0
+BASALT_DRAIN_3      54.5     1.0       0          0         0
+COLOSSAL_HEAD_AREA  56.0     2.0       0          0         0
+THRONE_AREA         56.5     2.0       0          0         0
+DRAIN_JUNCTION_2    54.0     1.5       0          0         0
+COLLECTION_POOL     53.0     2.0       0          0         0
+PLATEAU_EDGE        52.0     2.0       0          0         0
+RAIN_CATCH_PLAZA    57.5     1.5       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+COATZACOALCOS_R     48.0     FREE
+
+[CONDUITS]
+;;Name              From                To                  Length  Manning  InOff  OutOff  InitFlow  MaxFlow
+SPRING_AQUEDUCT     SPRING_SOURCE       AQUEDUCT_HEAD       200     0.020    0      0       0         0
+AQUEDUCT_MAIN       AQUEDUCT_HEAD       AQUEDUCT_MID        400     0.018    0      0       0         0
+AQUEDUCT_ENTRY      AQUEDUCT_MID        PLATEAU_ENTRY       300     0.018    0      0       0         0
+POOL_1_FEED         PLATEAU_ENTRY       RITUAL_POOL_1       50      0.015    0      0       0         0
+POOL_TO_COURT       RITUAL_POOL_1       MAIZE_GOD_COURT     30      0.015    0      0       0         0
+COURT_DRAIN         MAIZE_GOD_COURT     DRAIN_JUNCTION_1    20      0.012    0      0       0         0
+BASALT_TROUGH_1     DRAIN_JUNCTION_1    BASALT_DRAIN_1      60      0.012    0      0       0         0
+BASALT_TROUGH_2     BASALT_DRAIN_1      BASALT_DRAIN_2      60      0.012    0      0       0         0
+BASALT_TROUGH_3     BASALT_DRAIN_2      BASALT_DRAIN_3      60      0.012    0      0       0         0
+HEAD_AREA_DRAIN     COLOSSAL_HEAD_AREA  DRAIN_JUNCTION_1    40      0.015    0      0       0         0
+THRONE_DRAIN        THRONE_AREA         DRAIN_JUNCTION_1    50      0.015    0      0       0         0
+PLAZA_CATCH         RAIN_CATCH_PLAZA    PLATEAU_ENTRY       80      0.020    0      0       0         0
+BASALT_TO_COLLECT   BASALT_DRAIN_3      DRAIN_JUNCTION_2    50      0.012    0      0       0         0
+COLLECT_POOL_FEED   DRAIN_JUNCTION_2    COLLECTION_POOL     30      0.015    0      0       0         0
+POOL_TO_EDGE        COLLECTION_POOL     PLATEAU_EDGE        100     0.018    0      0       0         0
+PLATEAU_DISCHARGE   PLATEAU_EDGE        COATZACOALCOS_R     300     0.025    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+SPRING_AQUEDUCT     TRAPEZOIDAL 0.4    1.0    0.5    0.5    1
+AQUEDUCT_MAIN       RECT_OPEN   0.3    0.5    0      0      1
+AQUEDUCT_ENTRY      RECT_OPEN   0.3    0.5    0      0      1
+POOL_1_FEED         RECT_OPEN   0.3    0.6    0      0      1
+POOL_TO_COURT       RECT_OPEN   0.4    0.8    0      0      1
+COURT_DRAIN         RECT_OPEN   0.3    0.5    0      0      1
+BASALT_TROUGH_1     RECT_OPEN   0.20   0.30   0      0      1
+BASALT_TROUGH_2     RECT_OPEN   0.20   0.30   0      0      1
+BASALT_TROUGH_3     RECT_OPEN   0.20   0.30   0      0      1
+HEAD_AREA_DRAIN     RECT_OPEN   0.25   0.35   0      0      1
+THRONE_DRAIN        RECT_OPEN   0.25   0.35   0      0      1
+PLAZA_CATCH         TRAPEZOIDAL 0.2    2.0    0.5    0.5    1
+BASALT_TO_COLLECT   RECT_OPEN   0.25   0.40   0      0      1
+COLLECT_POOL_FEED   RECT_OPEN   0.3    0.6    0      0      1
+POOL_TO_EDGE        TRAPEZOIDAL 0.4    1.0    0.5    0.5    1
+PLATEAU_DISCHARGE   TRAPEZOIDAL 0.5    1.5    1.0    1.0    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+SPRING_SOURCE       FLOW         OLMEC_SPR   FLOW  1.0      1.0      0.01
+RAIN_CATCH_PLAZA    FLOW         TROPICAL_R  FLOW  1.0      1.0      0.0
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+OLMEC_SPR           01/01/2024 00:00  0.010
+OLMEC_SPR           01/01/2024 12:00  0.010
+OLMEC_SPR           01/02/2024 00:00  0.010
+TROPICAL_R          01/01/2024 00:00  0.000
+TROPICAL_R          01/01/2024 10:00  0.005
+TROPICAL_R          01/01/2024 12:00  0.020
+TROPICAL_R          01/01/2024 14:00  0.040
+TROPICAL_R          01/01/2024 15:00  0.030
+TROPICAL_R          01/01/2024 16:00  0.015
+TROPICAL_R          01/01/2024 18:00  0.005
+TROPICAL_R          01/01/2024 20:00  0.000
+TROPICAL_R          01/02/2024 00:00  0.000
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+SPRING_SOURCE       200        4000
+AQUEDUCT_HEAD       400        3800
+AQUEDUCT_MID        700        3600
+PLATEAU_ENTRY       900        3400
+RITUAL_POOL_1       950        3300
+MAIZE_GOD_COURT     980        3250
+DRAIN_JUNCTION_1    1000       3200
+BASALT_DRAIN_1      1060       3150
+BASALT_DRAIN_2      1120       3100
+BASALT_DRAIN_3      1180       3050
+COLOSSAL_HEAD_AREA  900        3150
+THRONE_AREA         1050       3250
+DRAIN_JUNCTION_2    1200       2950
+COLLECTION_POOL     1220       2900
+PLATEAU_EDGE        1300       2800
+RAIN_CATCH_PLAZA    800        3500
+COATZACOALCOS_R     1500       2500
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 2. Tikal Six-Reservoir System with Zeolite Filtration (Maya, 250–900 CE)
+
+```inp
+[TITLE]
+Tikal Six-Reservoir System with Zeolite Water Filtration
+Classic Maya Period (250-900 CE)
+First water purification in the Americas
+Peten, Guatemala - UNESCO World Heritage
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/03/2024
+END_TIME             00:00:00
+REPORT_STEP          00:15:00
+WET_STEP             00:05:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+TEMPLE_I_PLAZA      250.0    2.0       0          0         0
+TEMPLE_IV_CATCH     252.0    2.0       0          0         0
+NORTH_ACROPOLIS     248.0    2.0       0          0         0
+GREAT_PLAZA         247.0    2.5       0          0         0
+PALACE_RESERVOIR    244.0    5.0       0          0         0
+TEMPLE_RESERVOIR    243.0    5.0       0          0         0
+HIDDEN_RESERVOIR    242.0    4.0       0          0         0
+INSCR_RESERVOIR     241.0    4.0       0          0         0
+PERDIDO_RESERVOIR   240.0    5.0       0          0         0
+CORRIENTAL_RES      238.0    5.0       0          0         0
+ZEOLITE_FILTER_IN   239.0    2.0       0          0         0
+ZEOLITE_FILTER_OUT  237.5    2.0       0          0         0
+CAUSEWAY_CHANNEL    245.0    2.0       0          0         0
+MUNDO_PERDIDO       246.0    2.0       0          0         0
+AGRI_ZONE_NORTH     236.0    2.0       0          0         0
+AGRI_ZONE_SOUTH     235.0    2.0       0          0         0
+BAJO_EDGE           234.0    3.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+BAJO_SANTA_FE       230.0    FREE
+
+[CONDUITS]
+;;Name              From                To                  Length  Manning  InOff  OutOff  InitFlow  MaxFlow
+TEMPLE_I_RUNOFF     TEMPLE_I_PLAZA      GREAT_PLAZA         150     0.015    0      0       0         0
+TEMPLE_IV_RUNOFF    TEMPLE_IV_CATCH     CAUSEWAY_CHANNEL    200     0.015    0      0       0         0
+NORTH_RUNOFF        NORTH_ACROPOLIS     PALACE_RESERVOIR    300     0.018    0      0       0         0
+PLAZA_TO_PALACE     GREAT_PLAZA         PALACE_RESERVOIR    200     0.015    0      0       0         0
+PALACE_TO_TEMPLE    PALACE_RESERVOIR    TEMPLE_RESERVOIR    150     0.018    0      0       0         0
+TEMPLE_TO_HIDDEN    TEMPLE_RESERVOIR    HIDDEN_RESERVOIR    200     0.018    0      0       0         0
+CAUSEWAY_TO_INSCR   CAUSEWAY_CHANNEL    INSCR_RESERVOIR     400     0.018    0      0       0         0
+MUNDO_TO_PERDIDO    MUNDO_PERDIDO       PERDIDO_RESERVOIR   300     0.018    0      0       0         0
+HIDDEN_TO_CORR      HIDDEN_RESERVOIR    CORRIENTAL_RES      500     0.020    0      0       0         0
+PERDIDO_TO_CORR     PERDIDO_RESERVOIR   CORRIENTAL_RES      400     0.020    0      0       0         0
+INSCR_TO_CORR       INSCR_RESERVOIR     CORRIENTAL_RES      350     0.020    0      0       0         0
+CORR_TO_FILTER      CORRIENTAL_RES      ZEOLITE_FILTER_IN   100     0.015    0      0       0         0
+ZEOLITE_PASSAGE     ZEOLITE_FILTER_IN   ZEOLITE_FILTER_OUT  30      0.010    0      0       0         0
+CLEAN_WATER_N       ZEOLITE_FILTER_OUT  AGRI_ZONE_NORTH     300     0.020    0      0       0         0
+CLEAN_WATER_S       ZEOLITE_FILTER_OUT  AGRI_ZONE_SOUTH     350     0.020    0      0       0         0
+AGRI_N_DRAIN        AGRI_ZONE_NORTH     BAJO_EDGE           400     0.025    0      0       0         0
+AGRI_S_DRAIN        AGRI_ZONE_SOUTH     BAJO_EDGE           450     0.025    0      0       0         0
+BAJO_DISCHARGE      BAJO_EDGE           BAJO_SANTA_FE       500     0.030    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+TEMPLE_I_RUNOFF     TRAPEZOIDAL 0.3    3.0    0.5    0.5    1
+TEMPLE_IV_RUNOFF    TRAPEZOIDAL 0.3    3.0    0.5    0.5    1
+NORTH_RUNOFF        TRAPEZOIDAL 0.4    2.0    0.5    0.5    1
+PLAZA_TO_PALACE     TRAPEZOIDAL 0.5    4.0    1.0    1.0    1
+PALACE_TO_TEMPLE    TRAPEZOIDAL 0.5    3.0    0.5    0.5    1
+TEMPLE_TO_HIDDEN    TRAPEZOIDAL 0.5    3.0    0.5    0.5    1
+CAUSEWAY_TO_INSCR   TRAPEZOIDAL 0.4    2.5    0.5    0.5    1
+MUNDO_TO_PERDIDO    TRAPEZOIDAL 0.4    2.5    0.5    0.5    1
+HIDDEN_TO_CORR      TRAPEZOIDAL 0.5    3.0    0.5    0.5    1
+PERDIDO_TO_CORR     TRAPEZOIDAL 0.5    3.0    0.5    0.5    1
+INSCR_TO_CORR       TRAPEZOIDAL 0.4    2.5    0.5    0.5    1
+CORR_TO_FILTER      RECT_OPEN   0.4    1.5    0      0      1
+ZEOLITE_PASSAGE     RECT_OPEN   0.3    1.0    0      0      1
+CLEAN_WATER_N       TRAPEZOIDAL 0.3    1.5    0.5    0.5    1
+CLEAN_WATER_S       TRAPEZOIDAL 0.3    1.5    0.5    0.5    1
+AGRI_N_DRAIN        TRAPEZOIDAL 0.3    1.0    0.5    0.5    1
+AGRI_S_DRAIN        TRAPEZOIDAL 0.3    1.0    0.5    0.5    1
+BAJO_DISCHARGE      TRAPEZOIDAL 0.5    3.0    1.0    1.0    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+TEMPLE_I_PLAZA      FLOW         MAYA_RAIN   FLOW  1.0      1.0      0.0
+TEMPLE_IV_CATCH     FLOW         MAYA_RAIN   FLOW  1.0      1.0      0.0
+NORTH_ACROPOLIS     FLOW         MAYA_RAIN   FLOW  1.0      1.0      0.0
+MUNDO_PERDIDO       FLOW         MAYA_RAIN   FLOW  1.0      1.0      0.0
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+MAYA_RAIN           01/01/2024 00:00  0.000
+MAYA_RAIN           01/01/2024 12:00  0.000
+MAYA_RAIN           01/01/2024 14:00  0.010
+MAYA_RAIN           01/01/2024 15:00  0.050
+MAYA_RAIN           01/01/2024 15:30  0.120
+MAYA_RAIN           01/01/2024 16:00  0.080
+MAYA_RAIN           01/01/2024 17:00  0.030
+MAYA_RAIN           01/01/2024 18:00  0.010
+MAYA_RAIN           01/01/2024 20:00  0.000
+MAYA_RAIN           01/02/2024 14:00  0.008
+MAYA_RAIN           01/02/2024 15:00  0.040
+MAYA_RAIN           01/02/2024 16:00  0.060
+MAYA_RAIN           01/02/2024 17:00  0.020
+MAYA_RAIN           01/02/2024 18:00  0.000
+MAYA_RAIN           01/03/2024 00:00  0.000
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+TEMPLE_I_PLAZA      3000       5000
+TEMPLE_IV_CATCH     1500       5500
+NORTH_ACROPOLIS     2800       5500
+GREAT_PLAZA         2800       4800
+PALACE_RESERVOIR    2500       4500
+TEMPLE_RESERVOIR    2800       4200
+HIDDEN_RESERVOIR    3200       4000
+INSCR_RESERVOIR     1800       4200
+PERDIDO_RESERVOIR   2000       3800
+CORRIENTAL_RES      2500       3400
+ZEOLITE_FILTER_IN   2600       3300
+ZEOLITE_FILTER_OUT  2600       3250
+CAUSEWAY_CHANNEL    1700       4800
+MUNDO_PERDIDO       2200       4600
+AGRI_ZONE_NORTH     2800       3000
+AGRI_ZONE_SOUTH     2400       2800
+BAJO_EDGE           2600       2500
+BAJO_SANTA_FE       2600       2200
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 3. Tenochtitlan Complete Water System (Aztec, 1325–1521 CE)
+
+```inp
+[TITLE]
+Tenochtitlan Complete Water System - Aztec Empire (1325-1521 CE)
+Dike + dual aqueducts + chinampas + causeways + sanitation
+Island city of 200,000+ in a salt lake
+Lake Texcoco, Valley of Mexico
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+CHAPULTEPEC_SPR     2260.0   3.0       0          0         0
+COYOACAN_SPRINGS    2258.0   3.0       0          0         0
+AQUEDUCT_CHAP_1     2258.0   2.0       0          0         0
+AQUEDUCT_CHAP_2     2256.0   2.0       0          0         0
+AQUEDUCT_COY_1      2256.0   2.0       0          0         0
+CITY_ENTRY_W        2254.0   2.5       0          0         0
+TEMPLO_MAYOR        2253.0   3.0       0          0         0
+TLATELOLCO_MARKET   2252.5   2.5       0          0         0
+PALACE_DIST         2253.0   2.0       0          0         0
+GREAT_DIKE_N        2253.5   4.0       0          0         0
+GREAT_DIKE_S        2253.5   4.0       0          0         0
+FRESH_LAKE_SIDE     2253.0   3.0       0          0         0
+SALT_LAKE_SIDE      2253.0   3.0       0          0         0
+CHINAMPA_N          2252.0   2.0       0          0         0
+CHINAMPA_S          2252.0   2.0       0          0         0
+CHINAMPA_XOCH       2251.5   2.0       0          0         0
+CAUSEWAY_TEPEYAC    2254.0   3.0       0          0         0
+CAUSEWAY_TACUBA     2254.0   3.0       0          0         0
+CAUSEWAY_IZTAPALAPA 2254.0   3.0       0          0         0
+SLUICE_GATE_1       2253.0   3.0       0          0         0
+SLUICE_GATE_2       2253.0   3.0       0          0         0
+SANITATION_COLLECT  2251.0   2.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+LAKE_TEXCOCO_SALT   2250.0   FREE
+LAKE_XOCHIMILCO     2250.0   FREE
+
+[CONDUITS]
+;;Name              From                To                  Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+CHAP_AQUEDUCT_1     CHAPULTEPEC_SPR     AQUEDUCT_CHAP_1     1000     0.013    0      0       0         0
+CHAP_AQUEDUCT_2     AQUEDUCT_CHAP_1     AQUEDUCT_CHAP_2     1500     0.013    0      0       0         0
+CHAP_CITY_ENTRY     AQUEDUCT_CHAP_2     CITY_ENTRY_W        1000     0.013    0      0       0         0
+COY_AQUEDUCT        COYOACAN_SPRINGS    AQUEDUCT_COY_1      1500     0.013    0      0       0         0
+COY_CITY_ENTRY      AQUEDUCT_COY_1      CITY_ENTRY_W        1000     0.013    0      0       0         0
+CITY_TO_TEMPLO      CITY_ENTRY_W        TEMPLO_MAYOR        800      0.015    0      0       0         0
+CITY_TO_TLATEL      CITY_ENTRY_W        TLATELOLCO_MARKET   1000     0.015    0      0       0         0
+CITY_TO_PALACE      CITY_ENTRY_W        PALACE_DIST         500      0.015    0      0       0         0
+DIKE_NORTH          GREAT_DIKE_N        SLUICE_GATE_1       4000     0.020    0      0       0         0
+DIKE_SOUTH          GREAT_DIKE_S        SLUICE_GATE_2       4000     0.020    0      0       0         0
+SLUICE_TO_FRESH     SLUICE_GATE_1       FRESH_LAKE_SIDE     100      0.015    0      0       0         0
+SLUICE_TO_SALT      SLUICE_GATE_2       SALT_LAKE_SIDE      100      0.015    0      0       0         0
+FRESH_TO_CHINAMPA_N FRESH_LAKE_SIDE     CHINAMPA_N          500      0.020    0      0       0         0
+FRESH_TO_CHINAMPA_S FRESH_LAKE_SIDE     CHINAMPA_S          600      0.020    0      0       0         0
+XOCH_CHINAMPA       CHINAMPA_S          CHINAMPA_XOCH       800      0.020    0      0       0         0
+TEPEYAC_CAUSEWAY    CAUSEWAY_TEPEYAC    TEMPLO_MAYOR        3000     0.018    0      0       0         0
+TACUBA_CAUSEWAY     CAUSEWAY_TACUBA     CITY_ENTRY_W        2500     0.018    0      0       0         0
+IZTAPALAPA_CAUSE    CAUSEWAY_IZTAPALAPA PALACE_DIST         3500     0.018    0      0       0         0
+TEMPLO_DRAIN        TEMPLO_MAYOR        SANITATION_COLLECT  300      0.018    0      0       0         0
+TLATEL_DRAIN        TLATELOLCO_MARKET   SANITATION_COLLECT  400      0.018    0      0       0         0
+PALACE_DRAIN        PALACE_DIST         SANITATION_COLLECT  250      0.018    0      0       0         0
+SANIT_TO_CHINAMPA   SANITATION_COLLECT  CHINAMPA_N          500      0.020    0      0       0         0
+SALT_DISCHARGE      SALT_LAKE_SIDE      LAKE_TEXCOCO_SALT   1000     0.025    0      0       0         0
+XOCH_DISCHARGE      CHINAMPA_XOCH       LAKE_XOCHIMILCO     500      0.025    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+CHAP_AQUEDUCT_1     RECT_OPEN   0.5    0.8    0      0      2
+CHAP_AQUEDUCT_2     RECT_OPEN   0.5    0.8    0      0      2
+CHAP_CITY_ENTRY     RECT_OPEN   0.5    0.8    0      0      2
+COY_AQUEDUCT        RECT_OPEN   0.4    0.7    0      0      1
+COY_CITY_ENTRY      RECT_OPEN   0.4    0.7    0      0      1
+CITY_TO_TEMPLO      RECT_OPEN   0.4    1.5    0      0      1
+CITY_TO_TLATEL      RECT_OPEN   0.4    1.5    0      0      1
+CITY_TO_PALACE      RECT_OPEN   0.3    1.0    0      0      1
+DIKE_NORTH          RECT_OPEN   3.0    16000  0      0      1
+DIKE_SOUTH          RECT_OPEN   3.0    16000  0      0      1
+SLUICE_TO_FRESH     RECT_OPEN   1.0    3.0    0      0      1
+SLUICE_TO_SALT      RECT_OPEN   1.0    3.0    0      0      1
+FRESH_TO_CHINAMPA_N TRAPEZOIDAL 1.0    5.0    1.5    1.5    1
+FRESH_TO_CHINAMPA_S TRAPEZOIDAL 1.0    5.0    1.5    1.5    1
+XOCH_CHINAMPA       TRAPEZOIDAL 0.8    4.0    1.0    1.0    1
+TEPEYAC_CAUSEWAY    RECT_OPEN   1.5    8.0    0      0      1
+TACUBA_CAUSEWAY     RECT_OPEN   1.5    8.0    0      0      1
+IZTAPALAPA_CAUSE    RECT_OPEN   1.5    8.0    0      0      1
+TEMPLO_DRAIN        RECT_OPEN   0.4    1.0    0      0      1
+TLATEL_DRAIN        RECT_OPEN   0.4    1.0    0      0      1
+PALACE_DRAIN        RECT_OPEN   0.3    0.8    0      0      1
+SANIT_TO_CHINAMPA   TRAPEZOIDAL 0.5    2.0    0.5    0.5    1
+SALT_DISCHARGE      TRAPEZOIDAL 1.5    8.0    2.0    2.0    1
+XOCH_DISCHARGE      TRAPEZOIDAL 1.0    5.0    1.5    1.5    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+CHAPULTEPEC_SPR     FLOW         CHAP_FLOW   FLOW  1.0      1.0      0.20
+COYOACAN_SPRINGS    FLOW         COY_FLOW    FLOW  1.0      1.0      0.15
+GREAT_DIKE_N        FLOW         LAKE_IN     FLOW  1.0      1.0      0.5
+GREAT_DIKE_S        FLOW         LAKE_IN     FLOW  1.0      1.0      0.5
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+CHAP_FLOW           01/01/2024 00:00  0.20
+CHAP_FLOW           01/01/2024 12:00  0.20
+CHAP_FLOW           01/02/2024 00:00  0.20
+COY_FLOW            01/01/2024 00:00  0.15
+COY_FLOW            01/01/2024 12:00  0.15
+COY_FLOW            01/02/2024 00:00  0.15
+LAKE_IN             01/01/2024 00:00  0.50
+LAKE_IN             01/01/2024 06:00  0.60
+LAKE_IN             01/01/2024 12:00  0.70
+LAKE_IN             01/01/2024 18:00  0.60
+LAKE_IN             01/02/2024 00:00  0.50
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+CHAPULTEPEC_SPR     1000       5000
+COYOACAN_SPRINGS    2000       3000
+AQUEDUCT_CHAP_1     1500       5000
+AQUEDUCT_CHAP_2     2500       5000
+AQUEDUCT_COY_1      2500       3500
+CITY_ENTRY_W        3000       4500
+TEMPLO_MAYOR        3500       5000
+TLATELOLCO_MARKET   3200       5500
+PALACE_DIST         3800       4500
+GREAT_DIKE_N        5000       5500
+GREAT_DIKE_S        5000       3500
+FRESH_LAKE_SIDE     4500       4500
+SALT_LAKE_SIDE      5500       4500
+CHINAMPA_N          4000       5200
+CHINAMPA_S          4000       3800
+CHINAMPA_XOCH       3500       3000
+CAUSEWAY_TEPEYAC    3500       6500
+CAUSEWAY_TACUBA     1500       4500
+CAUSEWAY_IZTAPALAPA 4500       2500
+SLUICE_GATE_1       4800       5000
+SLUICE_GATE_2       4800       4000
+SANITATION_COLLECT  3500       4200
+LAKE_TEXCOCO_SALT   6500       4500
+LAKE_XOCHIMILCO     3000       2000
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 4. Chaco Canyon Water Control (Ancestral Puebloan, 850–1150 CE)
+
+```inp
+[TITLE]
+Chaco Canyon Water Control System - Ancestral Puebloans (850-1150 CE)
+Most sophisticated Puebloan water system - 50+ water features
+Rincon catchment, diversion dams, masonry channels, gridded fields
+Chaco Culture National Historical Park, New Mexico - UNESCO
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:15
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+CLIFF_FACE_1        1905.0   1.5       0          0         0
+CLIFF_FACE_2        1903.0   1.5       0          0         0
+RINCON_CATCH_1      1900.0   2.0       0          0         0
+RINCON_CATCH_2      1898.0   2.0       0          0         0
+COLLECTION_BOX_1    1896.0   2.0       0          0         0
+COLLECTION_BOX_2    1894.0   2.0       0          0         0
+DIVERSION_DAM       1892.0   2.5       0          0         0
+MASONRY_CHANNEL_1   1890.0   1.5       0          0         0
+MASONRY_CHANNEL_2   1888.0   1.5       0          0         0
+PUEBLO_BONITO       1887.0   2.0       0          0         0
+CHETRO_KETL         1886.0   2.0       0          0         0
+GRIDDED_FIELD_1     1885.0   1.0       0          0         0
+GRIDDED_FIELD_2     1884.0   1.0       0          0         0
+GRIDDED_FIELD_3     1883.0   1.0       0          0         0
+CHACO_WASH          1882.0   3.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+WASH_DOWNSTREAM     1878.0   FREE
+
+[CONDUITS]
+;;Name              From                To                  Length  Manning  InOff  OutOff  InitFlow  MaxFlow
+CLIFF_RUNOFF_1      CLIFF_FACE_1        RINCON_CATCH_1      100     0.030    0      0       0         0
+CLIFF_RUNOFF_2      CLIFF_FACE_2        RINCON_CATCH_2      120     0.030    0      0       0         0
+RINCON_TO_BOX_1     RINCON_CATCH_1      COLLECTION_BOX_1    80      0.020    0      0       0         0
+RINCON_TO_BOX_2     RINCON_CATCH_2      COLLECTION_BOX_2    90      0.020    0      0       0         0
+BOX_TO_DAM_1        COLLECTION_BOX_1    DIVERSION_DAM       150     0.018    0      0       0         0
+BOX_TO_DAM_2        COLLECTION_BOX_2    DIVERSION_DAM       120     0.018    0      0       0         0
+DAM_TO_MASONRY_1    DIVERSION_DAM       MASONRY_CHANNEL_1   200     0.015    0      0       0         0
+MASONRY_MAIN        MASONRY_CHANNEL_1   MASONRY_CHANNEL_2   300     0.015    0      0       0         0
+BONITO_FEED         MASONRY_CHANNEL_1   PUEBLO_BONITO       150     0.015    0      0       0         0
+KETL_FEED           MASONRY_CHANNEL_2   CHETRO_KETL         200     0.015    0      0       0         0
+FIELD_1_FEED        MASONRY_CHANNEL_2   GRIDDED_FIELD_1     100     0.020    0      0       0         0
+FIELD_2_FEED        GRIDDED_FIELD_1     GRIDDED_FIELD_2     80      0.020    0      0       0         0
+FIELD_3_FEED        GRIDDED_FIELD_2     GRIDDED_FIELD_3     80      0.020    0      0       0         0
+BONITO_DRAIN        PUEBLO_BONITO       CHACO_WASH          200     0.025    0      0       0         0
+KETL_DRAIN          CHETRO_KETL         CHACO_WASH          250     0.025    0      0       0         0
+FIELD_DRAIN         GRIDDED_FIELD_3     CHACO_WASH          150     0.025    0      0       0         0
+WASH_OUT            CHACO_WASH          WASH_DOWNSTREAM     500     0.030    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+CLIFF_RUNOFF_1      TRAPEZOIDAL 0.2    1.0    0.5    0.5    1
+CLIFF_RUNOFF_2      TRAPEZOIDAL 0.2    1.0    0.5    0.5    1
+RINCON_TO_BOX_1     TRAPEZOIDAL 0.3    1.5    0.5    0.5    1
+RINCON_TO_BOX_2     TRAPEZOIDAL 0.3    1.5    0.5    0.5    1
+BOX_TO_DAM_1        RECT_OPEN   0.3    0.8    0      0      1
+BOX_TO_DAM_2        RECT_OPEN   0.3    0.8    0      0      1
+DAM_TO_MASONRY_1    RECT_OPEN   0.3    0.6    0      0      1
+MASONRY_MAIN        RECT_OPEN   0.3    0.6    0      0      1
+BONITO_FEED         RECT_OPEN   0.25   0.5    0      0      1
+KETL_FEED           RECT_OPEN   0.25   0.5    0      0      1
+FIELD_1_FEED        TRAPEZOIDAL 0.2    0.8    0.3    0.3    1
+FIELD_2_FEED        TRAPEZOIDAL 0.15   0.6    0.3    0.3    1
+FIELD_3_FEED        TRAPEZOIDAL 0.15   0.6    0.3    0.3    1
+BONITO_DRAIN        TRAPEZOIDAL 0.3    1.0    0.5    0.5    1
+KETL_DRAIN          TRAPEZOIDAL 0.3    1.0    0.5    0.5    1
+FIELD_DRAIN         TRAPEZOIDAL 0.2    0.8    0.5    0.5    1
+WASH_OUT            TRAPEZOIDAL 1.0    5.0    2.0    2.0    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+CLIFF_FACE_1        FLOW         DESERT_RAIN FLOW  1.0      1.0      0.0
+CLIFF_FACE_2        FLOW         DESERT_RAIN FLOW  1.0      1.0      0.0
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+DESERT_RAIN         01/01/2024 00:00  0.000
+DESERT_RAIN         01/01/2024 14:00  0.002
+DESERT_RAIN         01/01/2024 14:30  0.015
+DESERT_RAIN         01/01/2024 15:00  0.040
+DESERT_RAIN         01/01/2024 15:15  0.060
+DESERT_RAIN         01/01/2024 15:30  0.035
+DESERT_RAIN         01/01/2024 16:00  0.015
+DESERT_RAIN         01/01/2024 16:30  0.005
+DESERT_RAIN         01/01/2024 17:00  0.000
+DESERT_RAIN         01/02/2024 00:00  0.000
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+CLIFF_FACE_1        500        5000
+CLIFF_FACE_2        800        5200
+RINCON_CATCH_1      600        4800
+RINCON_CATCH_2      900        4900
+COLLECTION_BOX_1    700        4600
+COLLECTION_BOX_2    950        4650
+DIVERSION_DAM       850        4400
+MASONRY_CHANNEL_1   1000       4200
+MASONRY_CHANNEL_2   1200       4000
+PUEBLO_BONITO       1100       4300
+CHETRO_KETL         1400       4100
+GRIDDED_FIELD_1     1300       3800
+GRIDDED_FIELD_2     1350       3700
+GRIDDED_FIELD_3     1400       3600
+CHACO_WASH          1500       3400
+WASH_DOWNSTREAM     1800       3000
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 5. Calusa Pine Island Canal (Florida, 500 BCE–1500 CE)
+
+```inp
+[TITLE]
+Calusa Pine Island Canal System - Calusa Kingdom (500 BCE-1500 CE)
+Largest pre-contact canal system in eastern North America
+Shell mound construction and mangrove water management
+Southwest Florida - Non-agricultural civilization
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+ROUTING_STEP         0:00:15
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+PINE_ISLAND_N       2.0      3.0       0          0         0
+MOUND_KEY_CAPITAL   3.0      3.0       0          0         0
+SHELL_MOUND_1       2.5      2.0       0          0         0
+SHELL_MOUND_2       2.5      2.0       0          0         0
+CANAL_HEAD          1.5      2.5       0          0         0
+CANAL_MID_1         1.2      2.5       0          0         0
+CANAL_MID_2         1.0      2.5       0          0         0
+CANAL_MID_3         0.8      2.5       0          0         0
+FISH_WEIR_1         0.5      2.0       0          0         0
+FISH_WEIR_2         0.5      2.0       0          0         0
+MANGROVE_CHANNEL_1  0.3      2.0       0          0         0
+MANGROVE_CHANNEL_2  0.3      2.0       0          0         0
+ESTERO_BAY_ENTRY    0.2      3.0       0          0         0
+FRESHWATER_SPRING   1.5      2.0       0          0         0
+WATER_COURT         2.0      2.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+GULF_OF_MEXICO      0.0      TIDAL      GULF_TIDE
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+GULF_TIDE           01/01/2024 00:00  0.3
+GULF_TIDE           01/01/2024 03:00  0.6
+GULF_TIDE           01/01/2024 06:00  0.3
+GULF_TIDE           01/01/2024 09:00  0.0
+GULF_TIDE           01/01/2024 12:00  0.3
+GULF_TIDE           01/01/2024 15:00  0.7
+GULF_TIDE           01/01/2024 18:00  0.3
+GULF_TIDE           01/01/2024 21:00  0.0
+GULF_TIDE           01/02/2024 00:00  0.3
+
+[CONDUITS]
+;;Name              From                To                  Length  Manning  InOff  OutOff  InitFlow  MaxFlow
+ISLAND_N_CANAL      PINE_ISLAND_N       CANAL_HEAD          500     0.025    0      0       0         0
+MOUND_CANAL         MOUND_KEY_CAPITAL   CANAL_HEAD          300     0.025    0      0       0         0
+MAIN_CANAL_1        CANAL_HEAD          CANAL_MID_1         800     0.020    0      0       0         0
+MAIN_CANAL_2        CANAL_MID_1         CANAL_MID_2         800     0.020    0      0       0         0
+MAIN_CANAL_3        CANAL_MID_2         CANAL_MID_3         700     0.020    0      0       0         0
+WEIR_1_CH           CANAL_MID_1         FISH_WEIR_1         200     0.025    0      0       0         0
+WEIR_2_CH           CANAL_MID_3         FISH_WEIR_2         200     0.025    0      0       0         0
+MANGROVE_1          CANAL_MID_2         MANGROVE_CHANNEL_1  400     0.030    0      0       0         0
+MANGROVE_2          CANAL_MID_3         MANGROVE_CHANNEL_2  350     0.030    0      0       0         0
+SHELL_1_DRAIN       SHELL_MOUND_1       CANAL_MID_1         150     0.025    0      0       0         0
+SHELL_2_DRAIN       SHELL_MOUND_2       CANAL_MID_2         150     0.025    0      0       0         0
+SPRING_FEED         FRESHWATER_SPRING   WATER_COURT         100     0.020    0      0       0         0
+COURT_TO_MOUND      WATER_COURT         MOUND_KEY_CAPITAL   80      0.020    0      0       0         0
+ESTERO_APPROACH     MANGROVE_CHANNEL_1  ESTERO_BAY_ENTRY    500     0.025    0      0       0         0
+MANG_2_ESTERO       MANGROVE_CHANNEL_2  ESTERO_BAY_ENTRY    400     0.025    0      0       0         0
+WEIR_1_OUT          FISH_WEIR_1         ESTERO_BAY_ENTRY    300     0.030    0      0       0         0
+WEIR_2_OUT          FISH_WEIR_2         ESTERO_BAY_ENTRY    250     0.030    0      0       0         0
+GULF_DISCHARGE      ESTERO_BAY_ENTRY    GULF_OF_MEXICO      1000    0.020    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+ISLAND_N_CANAL      TRAPEZOIDAL 1.0    4.0    1.0    1.0    1
+MOUND_CANAL         TRAPEZOIDAL 0.8    3.0    1.0    1.0    1
+MAIN_CANAL_1        TRAPEZOIDAL 1.0    6.0    1.5    1.5    1
+MAIN_CANAL_2        TRAPEZOIDAL 1.0    6.0    1.5    1.5    1
+MAIN_CANAL_3        TRAPEZOIDAL 1.0    6.0    1.5    1.5    1
+WEIR_1_CH           TRAPEZOIDAL 0.5    3.0    0.5    0.5    1
+WEIR_2_CH           TRAPEZOIDAL 0.5    3.0    0.5    0.5    1
+MANGROVE_1          TRAPEZOIDAL 0.5    2.0    0.5    0.5    1
+MANGROVE_2          TRAPEZOIDAL 0.5    2.0    0.5    0.5    1
+SHELL_1_DRAIN       TRAPEZOIDAL 0.3    1.0    0.5    0.5    1
+SHELL_2_DRAIN       TRAPEZOIDAL 0.3    1.0    0.5    0.5    1
+SPRING_FEED         TRAPEZOIDAL 0.3    0.8    0.3    0.3    1
+COURT_TO_MOUND      TRAPEZOIDAL 0.3    0.8    0.3    0.3    1
+ESTERO_APPROACH     TRAPEZOIDAL 1.0    5.0    1.5    1.5    1
+MANG_2_ESTERO       TRAPEZOIDAL 0.8    3.0    1.0    1.0    1
+WEIR_1_OUT          TRAPEZOIDAL 0.5    2.0    0.5    0.5    1
+WEIR_2_OUT          TRAPEZOIDAL 0.5    2.0    0.5    0.5    1
+GULF_DISCHARGE      TRAPEZOIDAL 1.5    10.0   2.0    2.0    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+PINE_ISLAND_N       FLOW         RAIN_FLOW   FLOW  1.0      1.0      0.02
+FRESHWATER_SPRING   FLOW         SPRING_Q    FLOW  1.0      1.0      0.01
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+RAIN_FLOW           01/01/2024 00:00  0.020
+RAIN_FLOW           01/01/2024 06:00  0.020
+RAIN_FLOW           01/01/2024 12:00  0.025
+RAIN_FLOW           01/01/2024 14:00  0.060
+RAIN_FLOW           01/01/2024 15:00  0.040
+RAIN_FLOW           01/01/2024 18:00  0.020
+RAIN_FLOW           01/02/2024 00:00  0.020
+SPRING_Q            01/01/2024 00:00  0.010
+SPRING_Q            01/01/2024 12:00  0.010
+SPRING_Q            01/02/2024 00:00  0.010
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+PINE_ISLAND_N       1500       5000
+MOUND_KEY_CAPITAL   2000       4500
+SHELL_MOUND_1       1800       4200
+SHELL_MOUND_2       2200       3800
+CANAL_HEAD          1800       4600
+CANAL_MID_1         2000       4000
+CANAL_MID_2         2200       3500
+CANAL_MID_3         2400       3000
+FISH_WEIR_1         2300       4100
+FISH_WEIR_2         2700       3000
+MANGROVE_CHANNEL_1  2500       3300
+MANGROVE_CHANNEL_2  2700       2700
+ESTERO_BAY_ENTRY    2800       2400
+FRESHWATER_SPRING   1700       4800
+WATER_COURT         1800       4700
+GULF_OF_MEXICO      3200       2000
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 6. Dholavira 16-Reservoir Cascade (Indus Valley, 3000 BCE)
+
+```inp
+[TITLE]
+Dholavira 16-Reservoir Cascade System - Indus Valley (3000 BCE)
+Most sophisticated water system of the Indus Valley Civilization
+16 interconnected reservoirs fed by two seasonal streams
+Kutch, Gujarat, India - UNESCO World Heritage (2021)
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/03/2024
+END_TIME             00:00:00
+REPORT_STEP          00:15:00
+WET_STEP             00:05:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+MANSAR_NULLAH       28.0     3.0       0          0         0
+MANHAR_NULLAH       27.0     3.0       0          0         0
+RES_1_UPPER         26.0     4.0       0          0         0
+RES_2               25.0     4.0       0          0         0
+RES_3               24.5     4.0       0          0         0
+RES_4               24.0     4.0       0          0         0
+RES_5_LARGE         23.0     5.0       0          0         0
+RES_6               22.5     4.0       0          0         0
+RES_7               22.0     4.0       0          0         0
+RES_8_MANHAR        25.5     4.0       0          0         0
+RES_9               24.5     4.0       0          0         0
+RES_10              23.5     4.0       0          0         0
+CITADEL_TANK        25.0     3.0       0          0         0
+MIDDLE_TOWN_TANK    23.0     3.0       0          0         0
+LOWER_TOWN_TANK     21.0     3.0       0          0         0
+GREAT_BATH          22.0     4.0       0          0         0
+ROCK_CUT_CHANNEL    26.5     2.0       0          0         0
+STORM_OVERFLOW      20.0     3.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+RANN_OF_KUTCH       18.0     FREE
+
+[CONDUITS]
+;;Name              From                To                  Length  Manning  InOff  OutOff  InitFlow  MaxFlow
+MANSAR_CATCH        MANSAR_NULLAH       ROCK_CUT_CHANNEL    300     0.025    0      0       0         0
+ROCK_TO_RES1        ROCK_CUT_CHANNEL    RES_1_UPPER         200     0.018    0      0       0         0
+CASCADE_1_2         RES_1_UPPER         RES_2               100     0.018    0      0       0         0
+CASCADE_2_3         RES_2               RES_3               100     0.018    0      0       0         0
+CASCADE_3_4         RES_3               RES_4               100     0.018    0      0       0         0
+CASCADE_4_5         RES_4               RES_5_LARGE         150     0.018    0      0       0         0
+CASCADE_5_6         RES_5_LARGE         RES_6               100     0.018    0      0       0         0
+CASCADE_6_7         RES_6               RES_7               100     0.018    0      0       0         0
+MANHAR_CATCH        MANHAR_NULLAH       RES_8_MANHAR        300     0.025    0      0       0         0
+CASCADE_8_9         RES_8_MANHAR        RES_9               120     0.018    0      0       0         0
+CASCADE_9_10        RES_9               RES_10              120     0.018    0      0       0         0
+CITADEL_FEED        RES_1_UPPER         CITADEL_TANK        200     0.015    0      0       0         0
+MIDDLE_FEED         RES_5_LARGE         MIDDLE_TOWN_TANK    250     0.015    0      0       0         0
+LOWER_FEED          RES_7               LOWER_TOWN_TANK     200     0.015    0      0       0         0
+BATH_FEED           RES_5_LARGE         GREAT_BATH          150     0.015    0      0       0         0
+RES10_TO_LOWER      RES_10              LOWER_TOWN_TANK     200     0.018    0      0       0         0
+CITADEL_DRAIN       CITADEL_TANK        MIDDLE_TOWN_TANK    300     0.018    0      0       0         0
+BATH_DRAIN          GREAT_BATH          LOWER_TOWN_TANK     200     0.018    0      0       0         0
+LOWER_OVERFLOW      LOWER_TOWN_TANK     STORM_OVERFLOW      200     0.020    0      0       0         0
+RES7_OVERFLOW       RES_7               STORM_OVERFLOW      300     0.020    0      0       0         0
+STORM_DISCHARGE     STORM_OVERFLOW      RANN_OF_KUTCH       500     0.025    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+MANSAR_CATCH        TRAPEZOIDAL 1.5    5.0    2.0    2.0    1
+ROCK_TO_RES1        RECT_OPEN   1.0    3.0    0      0      1
+CASCADE_1_2         RECT_OPEN   0.8    2.5    0      0      1
+CASCADE_2_3         RECT_OPEN   0.8    2.5    0      0      1
+CASCADE_3_4         RECT_OPEN   0.8    2.5    0      0      1
+CASCADE_4_5         RECT_OPEN   1.0    3.0    0      0      1
+CASCADE_5_6         RECT_OPEN   0.8    2.5    0      0      1
+CASCADE_6_7         RECT_OPEN   0.8    2.5    0      0      1
+MANHAR_CATCH        TRAPEZOIDAL 1.2    4.0    2.0    2.0    1
+CASCADE_8_9         RECT_OPEN   0.8    2.5    0      0      1
+CASCADE_9_10        RECT_OPEN   0.8    2.5    0      0      1
+CITADEL_FEED        RECT_OPEN   0.5    1.5    0      0      1
+MIDDLE_FEED         RECT_OPEN   0.5    1.5    0      0      1
+LOWER_FEED          RECT_OPEN   0.5    1.5    0      0      1
+BATH_FEED           RECT_OPEN   0.4    1.0    0      0      1
+RES10_TO_LOWER      RECT_OPEN   0.6    2.0    0      0      1
+CITADEL_DRAIN       RECT_OPEN   0.4    1.2    0      0      1
+BATH_DRAIN          RECT_OPEN   0.4    1.0    0      0      1
+LOWER_OVERFLOW      TRAPEZOIDAL 1.0    3.0    1.0    1.0    1
+RES7_OVERFLOW       TRAPEZOIDAL 0.8    2.5    1.0    1.0    1
+STORM_DISCHARGE     TRAPEZOIDAL 1.5    5.0    2.0    2.0    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+MANSAR_NULLAH       FLOW         MONSOON     FLOW  1.0      1.0      0.0
+MANHAR_NULLAH       FLOW         MONSOON     FLOW  1.0      1.0      0.0
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+MONSOON             01/01/2024 00:00  0.000
+MONSOON             01/01/2024 06:00  0.010
+MONSOON             01/01/2024 10:00  0.050
+MONSOON             01/01/2024 12:00  0.200
+MONSOON             01/01/2024 13:00  0.500
+MONSOON             01/01/2024 14:00  0.800
+MONSOON             01/01/2024 15:00  0.500
+MONSOON             01/01/2024 16:00  0.200
+MONSOON             01/01/2024 18:00  0.050
+MONSOON             01/01/2024 22:00  0.010
+MONSOON             01/02/2024 00:00  0.000
+MONSOON             01/02/2024 12:00  0.000
+MONSOON             01/03/2024 00:00  0.000
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+MANSAR_NULLAH       500        6000
+MANHAR_NULLAH       3500       6000
+ROCK_CUT_CHANNEL    700        5500
+RES_1_UPPER         900        5200
+RES_2               1000       5000
+RES_3               1100       4800
+RES_4               1200       4600
+RES_5_LARGE         1400       4300
+RES_6               1500       4100
+RES_7               1600       3900
+RES_8_MANHAR        3300       5400
+RES_9               3100       5100
+RES_10              2900       4800
+CITADEL_TANK        1200       5200
+MIDDLE_TOWN_TANK    1800       4300
+LOWER_TOWN_TANK     2200       3800
+GREAT_BATH          1600       4400
+STORM_OVERFLOW      2500       3400
+RANN_OF_KUTCH       3000       2800
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## Complete Updated Model Index
+
+All models provided across all responses:
+
+| | | | | | # | Model | Region | Era | Nodes | Links | | | |  |
+|---|-------|--------|-----|-------|-------|
+| | | | | 1 | Shushtar Hydraulic System | Middle East | Classical | 20 | 23 | | | |  |
+| | | | | 2 | Pont du Gard + Castellum | Europe | Classical | 22 | 21 | | | |  |
+| | | | | 3 | Maya Palenque Pressurized | Americas | Medieval | 6 | 6 | | | |  |
+| | | | | 4 | Nazca Puquio System | Americas | Classical | 13 | 13 | | | |  |
+| | | | | 5 | Garamantian Foggara | Africa | Classical | 13 | 13 | | | |  |
+| | | | | 6 | Tiwanaku Suka Kollus | Americas | Classical | 15 | 19 | | | |  |
+| | | | | 7 | Budj Bim Eel Aquaculture | Oceania | Ancient | 10 | 10 | | | |  |
+| | | | | 8 | Karakorum Water Supply | Asia | Medieval | 14 | 18 | | | |  |
+| | | | | 9 | Chimú La Cumbre Canal | Americas | Medieval | 18 | 21 | | | |  |
+| | | | | 10 | Tamagawa Jōsui (Edo) | Asia | Medieval | 16 | 20 | | | |  |
+| | | | | 11 | Korean Cheonggyecheon | Asia | Medieval | 14 | 14 | | | |  |
+| | | | | 12 | Hawaiian Fishpond | Oceania | Medieval | 10 | 11 | | | |  |
+| | | | | 13 | Hohokam Canal Network | Americas | Ancient | 22 | 23 | | | |  |
+| | | | | 14 | Sassanid Nahrawan Canal | Middle East | Classical | 18 | 23 | | | |  |
+| | | | | 15 | Pergamon Pressure Pipeline | Asia Minor | Classical | 10 | 11 | | | |  |
+| | | | | 16 | Tiryns Dam & Diversion | Mediterranean | Ancient | 14 | 18 | | | |  |
+| | | | | 17 | Knossos Palace Water | Mediterranean | Ancient | 16 | 23 | | | |  |
+| | | | | 18 | Lake Copais Drainage | Mediterranean | Ancient | 17 | 22 | | | |  |
+| | | | | 19 | Sicilian Arab Qanat | Mediterranean | Medieval | 16 | 19 | | | |  |
+| | | | | 20 | Iceland Geothermal Heating | Norse | Modern | 17 | 21 | | | |  |
+| | | | | 21 | Danevirke Water Defenses | Norse | Medieval | 14 | 17 | | | |  |
+| | | | | 22 | Mycenae Underground Cistern | Mediterranean | Ancient | 13 | 14 | | | |  |
+| | | | | 23 | Norwegian Fjord Hydropower | Norse | Modern | 17 | 17 | | | |  |
+| | | | | 24 | Olmec San Lorenzo Drains | Americas | Ancient | 16 | 16 | | | |  |
+| | | | | 25 | Tikal Reservoirs + Filtration | Americas | Medieval | 17 | 18 | | | |  |
+| | | | | 26 | Tenochtitlan Complete System | Americas | Medieval | 22 | 24 | | | |  |
+| | | | | 27 | Chaco Canyon Water Control | Americas | Medieval | 15 | 17 | | | |  |
+| | | | | 28 | Calusa Pine Island Canal | Americas | Ancient | 15 | 18 | | | |  |
+| | | | | 29 | Dholavira 16-Reservoir | Asia | Ancient | 18 | 21 | | | |  |
+| | | | | **TOTAL** | **29 new models** | **8 regions** | **4 eras** | **449** | **531** | | | |  |
+
+**Combined with your existing 89 models: 118 total SWMM5/ICM models spanning every continent and every major era of water engineering history.**

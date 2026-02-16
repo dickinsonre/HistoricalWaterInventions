@@ -20,12 +20,14 @@ export default function StatisticsDashboard({ onClose }: StatisticsDashboardProp
 
     const continentMap: Record<string, string> = {};
     const continents: Record<string, string[]> = {
-      "Africa": ["ancient-egypt", "ptolemaic-egypt", "aksumite-empire", "great-zimbabwe", "ancient-nubia", "engaruka", "garamantes", "kanem-bornu", "benin-kingdom", "yoruba-civilization"],
-      "Europe": ["ancient-greece", "ancient-rome", "minoan-crete", "byzantine-empire", "dutch-netherlands", "venetian-republic", "pre-roman-iberia", "basque-country", "celtic-europe", "germanic-europe", "etruscan", "viking", "nuragic-sardinia"],
-      "Asia": ["ancient-china", "xia-shang-dynasty", "zhou-qin-dynasty", "han-dynasty", "sui-tang-dynasty", "song-yuan-dynasty", "ming-qing-dynasty", "angkor-empire", "ancient-japan", "ancient-korea", "sri-lankan-hydraulics", "ancient-india", "mughal-empire", "delhi-sultanate", "safavid-persia", "ancient-indonesia", "majapahit", "funan-kingdom", "tibetan-civilizations", "georgian-kingdom", "liao-jin-yuan"],
-      "Middle East": ["mesopotamia", "sumer", "hittites", "canaan", "syria-orontes", "mongol-steppe", "assyria", "babylonia", "nabataean", "islamic-golden-age", "ottoman-empire", "khwarezmian-empire"],
-      "Americas": ["aztec-empire", "inca-empire", "maya-civilization", "hohokam", "ancestral-puebloans", "tiwanaku-empire", "chimu-empire", "wari-empire", "moche-civilization", "toltec-empire"],
+      "Africa": ["ancient-egypt", "ptolemaic-egypt", "aksumite-empire", "great-zimbabwe", "ancient-nubia", "engaruka", "garamantes", "kanem-bornu", "benin-kingdom", "yoruba-civilization", "sudd-nilotic", "horn-of-africa", "san-bushmen", "ethiopia-gerd"],
+      "Europe": ["ancient-greece", "ancient-rome", "minoan-crete", "byzantine-empire", "dutch-netherlands", "venetian-republic", "pre-roman-iberia", "basque-country", "celtic-europe", "germanic-europe", "etruscan", "viking", "nuragic-sardinia", "malta-water", "swiss-alps-water", "canary-islands", "sami-people"],
+      "Asia": ["ancient-china", "xia-shang-dynasty", "zhou-qin-dynasty", "han-dynasty", "sui-tang-dynasty", "song-yuan-dynasty", "ming-qing-dynasty", "angkor-empire", "ancient-japan", "ancient-korea", "sri-lankan-hydraulics", "ancient-india", "mughal-empire", "delhi-sultanate", "safavid-persia", "ancient-indonesia", "majapahit", "funan-kingdom", "tibetan-civilizations", "georgian-kingdom", "liao-jin-yuan", "himalayan-kingdoms", "kurdish-water", "china-south-north-transfer", "maldives-water", "ainu-water"],
+      "Middle East": ["mesopotamia", "sumer", "hittites", "canaan", "syria-orontes", "mongol-steppe", "assyria", "babylonia", "nabataean", "islamic-golden-age", "ottoman-empire", "khwarezmian-empire", "berber-amazigh-expanded", "libya-gmmr"],
+      "Americas": ["aztec-empire", "inca-empire", "maya-civilization", "hohokam", "ancestral-puebloans", "tiwanaku-empire", "chimu-empire", "wari-empire", "moche-civilization", "toltec-empire", "colombian-civilizations", "caribbean-indigenous", "tierra-del-fuego", "paleo-indian-archaic", "woodland-period", "eastern-woodlands", "great-plains-nations", "great-basin-california", "algonquin-canadian", "pacific-northwest-expanded", "modern-usa", "modern-canada"],
       "Oceania": ["polynesian", "aboriginal-australia", "maori-new-zealand", "lapita-culture"],
+      "Arctic": ["inupiat-north-alaska", "yupik-western-alaska", "aleut-unangan", "athabascan-interior", "tlingit-se-alaska", "haida-gwaii", "canadian-inuit-expanded", "greenlandic-inuit", "modern-arctic-engineering"],
+      "Global": ["space-water", "modern-mega-projects", "fertile-crescent-agriculture", "east-asia-rice-water", "americas-corn-water"],
     };
 
     for (const [cont, ids] of Object.entries(continents)) {

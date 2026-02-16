@@ -43,7 +43,7 @@ const achievements: Achievement[] = [
   {
     id: "global-citizen",
     name: "Global Citizen",
-    description: "Unlock all 92+ civilizations",
+    description: "Unlock all 180+ civilizations",
     icon: <Globe className="w-6 h-6" />,
     category: "explorer",
     requirement: (progress) => progress.unlockedRegions.length >= 30,

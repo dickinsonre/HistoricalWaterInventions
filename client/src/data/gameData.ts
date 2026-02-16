@@ -1784,6 +1784,95 @@ export const gameData: GameData = {
               category: "canal"
             }
           ]
+        },
+        {
+          id: "chaco-canyon",
+          name: "Chaco Canyon",
+          description: "Most sophisticated Puebloan water system",
+          historicalContext: "50+ documented water control features",
+          coordinates: { lat: 36.06, lng: -107.97 },
+          artifacts: [
+            {
+              id: "chaco-water-control",
+              name: "Chaco Canyon Water Control",
+              description: "Elaborate system of diversion dams canals and gridded fields with stone-lined channels from cliff faces into masonry collection boxes. 50+ documented features",
+              rarity: "legendary",
+              historicalPeriod: "850-1150 CE",
+              significance: "Most sophisticated Puebloan water system",
+              yearBCE: -850,
+              category: "irrigation"
+            },
+            {
+              id: "mesa-verde-reservoir",
+              name: "Mesa Verde Reservoir (Mummy Lake)",
+              description: "90-foot diameter stone-lined reservoir fed by 1 km intake channel serving 500+ people",
+              rarity: "epic",
+              historicalPeriod: "750-1300 CE",
+              significance: "Largest Ancestral Puebloan reservoir",
+              yearBCE: -750,
+              category: "dam"
+            },
+            {
+              id: "zuni-waffle-gardens",
+              name: "Zuni Waffle Gardens",
+              description: "Sunken grid gardens with raised borders creating cells maximizing moisture retention. Still practiced today",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Unique water-conserving garden design still in use",
+              yearBCE: -800,
+              category: "irrigation"
+            },
+            {
+              id: "hopi-dry-farming",
+              name: "Hopi Dry Farming",
+              description: "Seeds planted 25-30cm deep using dibble stick to reach subsurface moisture with varieties bred for drought over centuries. Zero irrigation",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Engineering crops to fit water rather than engineering water to fit crops",
+              yearBCE: -800,
+              category: "irrigation"
+            },
+            {
+              id: "pueblo-bonito-water",
+              name: "Pueblo Bonito Water Engineering",
+              description: "600+ room great house with rooftop drainage through internal drains to exterior canals",
+              rarity: "epic",
+              historicalPeriod: "850-1150 CE",
+              significance: "Integration of architecture and water engineering",
+              yearBCE: -850,
+              category: "sanitation"
+            },
+            {
+              id: "hovenweep-water-towers",
+              name: "Hovenweep Water Towers",
+              description: "Towers at spring heads and pour-off points possibly functioning as water monitoring stations across all six clusters",
+              rarity: "rare",
+              historicalPeriod: "1200-1300 CE",
+              significance: "Possible water monitoring architecture",
+              yearBCE: -1200,
+              category: "dam"
+            },
+            {
+              id: "acoma-sky-city-water",
+              name: "Acoma Sky City Water",
+              description: "Pueblo on 112m mesa — oldest continuously inhabited settlement in NA. Water carried up by hand or collected from rock cisterns",
+              rarity: "epic",
+              historicalPeriod: "1150 CE onwards",
+              significance: "Water management for the oldest continuously inhabited place in North America",
+              yearBCE: -1150,
+              category: "dam"
+            },
+            {
+              id: "rio-grande-pueblo-irrigation",
+              name: "Rio Grande Pueblo Irrigation",
+              description: "Pueblos practicing canal irrigation from Rio Grande — foundation of acequia tradition adapted by Spanish colonizers and still used today",
+              rarity: "epic",
+              historicalPeriod: "1200 CE onwards",
+              significance: "Foundation of the Rio Grande irrigation tradition still used today",
+              yearBCE: -1200,
+              category: "irrigation"
+            }
+          ]
         }
       ]
     },
@@ -11288,6 +11377,3876 @@ export const gameData: GameData = {
               significance: "Urban water management on an active volcano",
               yearBCE: 500,
               category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "olmec",
+      name: "Olmec Civilization",
+      description: "The 'mother culture' of Mesoamerica — first aqueducts, first engineered drains, first sacred water architecture in the Americas.",
+      position: [-15, 0, 2],
+      color: "#556B2F",
+      era: "ancient",
+      dateRange: "1600-400 BCE",
+      locations: [
+        {
+          id: "san-lorenzo",
+          name: "San Lorenzo",
+          description: "First major Olmec capital",
+          historicalContext: "Oldest engineered water drainage in the Americas",
+          coordinates: { lat: 17.75, lng: -94.77 },
+          artifacts: [
+            {
+              id: "san-lorenzo-drain",
+              name: "San Lorenzo Basalt Drain System",
+              description: "U-shaped basalt troughs carved from massive stone blocks transported 60+ km creating elaborate water drainage atop the plateau connected to reservoirs and ritual pools",
+              rarity: "legendary",
+              historicalPeriod: "1200-900 BCE",
+              significance: "Oldest engineered water drainage in the Americas",
+              yearBCE: 1200,
+              category: "sanitation"
+            },
+            {
+              id: "san-lorenzo-aqueduct",
+              name: "San Lorenzo Aqueduct",
+              description: "Stone-lined aqueduct bringing water from distant springs with precision-cut identical stone blocks lined up to create water channels",
+              rarity: "legendary",
+              historicalPeriod: "1200-900 BCE",
+              significance: "First aqueduct in the Americas",
+              yearBCE: 1200,
+              category: "aqueduct"
+            },
+            {
+              id: "san-lorenzo-ritual-pool",
+              name: "San Lorenzo Ritual Water Pool",
+              description: "Masonry sunken court with drain for filling and emptying as ritual pool surrounded by four maize god representations",
+              rarity: "epic",
+              historicalPeriod: "1200-900 BCE",
+              significance: "Earliest known ritual water architecture in the Americas",
+              yearBCE: 1200,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "el-manati",
+          name: "El Manatí Sacred Spring",
+          description: "Oldest documented sacred water site in Mesoamerica",
+          historicalContext: "Origin of sacred mountain-spring concept in Mesoamerica",
+          coordinates: { lat: 17.70, lng: -94.80 },
+          artifacts: [
+            {
+              id: "el-manati-spring",
+              name: "El Manatí Sacred Spring Complex",
+              description: "Sacred spring where Olmec deposited rubber balls jadeite axes wooden busts and offerings representing sacred mountain of abundance",
+              rarity: "legendary",
+              historicalPeriod: "1600-1200 BCE",
+              significance: "Oldest documented sacred water site in Mesoamerica — origin of sacred mountain concept",
+              yearBCE: 1600,
+              category: "fountain"
+            },
+            {
+              id: "olmec-rubber-water",
+              name: "Olmec Vulcanized Rubber for Water Use",
+              description: "First vulcanized rubber by mixing latex with morning glory vine juice creating waterproof balls and possibly waterproofing containers",
+              rarity: "epic",
+              historicalPeriod: "1600-1200 BCE",
+              significance: "First vulcanized rubber in the world with water engineering applications",
+              yearBCE: 1600,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "la-venta",
+          name: "La Venta",
+          description: "Second Olmec capital with first Mesoamerican pyramid",
+          historicalContext: "Pyramid built on swampy island requiring water management",
+          coordinates: { lat: 18.10, lng: -94.04 },
+          artifacts: [
+            {
+              id: "la-venta-pyramid-water",
+              name: "La Venta Pyramid & Water Management",
+              description: "First pyramid in Mesoamerica built on swampy island with channels directing water through the ceremonial complex",
+              rarity: "epic",
+              historicalPeriod: "900-400 BCE",
+              significance: "Water management for the first Mesoamerican pyramid",
+              yearBCE: 900,
+              category: "canal"
+            },
+            {
+              id: "la-venta-drainage",
+              name: "La Venta Massive Stone Offering Drainage",
+              description: "Thousands of serpentine blocks buried in elaborate drainage patterns representing water cosmology",
+              rarity: "rare",
+              historicalPeriod: "900-400 BCE",
+              significance: "Integration of water cosmology with engineering",
+              yearBCE: 900,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "teopantecuanitlan",
+          name: "Teopantecuanitlán",
+          description: "Olmec-influenced highland site",
+          historicalContext: "Technology transfer to highland Mexico",
+          coordinates: { lat: 17.95, lng: -99.55 },
+          artifacts: [
+            {
+              id: "teopantecuanitlan-water",
+              name: "Teopantecuanitlán Water System",
+              description: "Olmec-influenced masonry sunken court as ritual pool combined with agricultural terracing and canal irrigation",
+              rarity: "epic",
+              historicalPeriod: "1400-800 BCE",
+              significance: "Olmec water engineering technology transferred to highland Mexico",
+              yearBCE: 1400,
+              category: "irrigation"
+            },
+            {
+              id: "olmec-water-cosmology",
+              name: "Olmec Water Cosmology System",
+              description: "Fundamental Mesoamerican water cosmology: rain gods sacred mountains caves as water-world entrances and water-maize-fertility connection governing water management for 3000 years",
+              rarity: "legendary",
+              historicalPeriod: "1500-400 BCE",
+              significance: "Foundation of all subsequent Mesoamerican water theology and engineering",
+              yearBCE: 1500,
+              category: "fountain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "maya-preclassic",
+      name: "Maya Preclassic",
+      description: "The earliest Maya water engineering — massive canal systems, causeways as dams, and the foundations of Classic Maya hydraulic civilization.",
+      position: [-13, 0, 3],
+      color: "#228B22",
+      era: "ancient",
+      dateRange: "2000 BCE - 250 CE",
+      locations: [
+        {
+          id: "edzna",
+          name: "Edzná",
+          description: "Oldest major Maya hydraulic engineering",
+          historicalContext: "31 canals totaling 22 km",
+          coordinates: { lat: 19.60, lng: -90.23 },
+          artifacts: [
+            {
+              id: "edzna-canal-system",
+              name: "Edzná Canal System",
+              description: "31 canals totaling 22 km draining swampland channeling water to reservoirs and creating agricultural chinampas in radial pattern",
+              rarity: "legendary",
+              historicalPeriod: "400 BCE-150 CE",
+              significance: "Oldest major Maya water engineering",
+              yearBCE: 400,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "el-mirador",
+          name: "El Mirador",
+          description: "Largest Preclassic Maya city",
+          historicalContext: "Massive bajo management and the Danta pyramid",
+          coordinates: { lat: 17.76, lng: -89.92 },
+          artifacts: [
+            {
+              id: "el-mirador-bajo",
+              name: "El Mirador Bajo System",
+              description: "Extensive bajo (seasonal swamp) management with canals berms and check dams across hundreds of square kilometers supporting the largest Preclassic city",
+              rarity: "epic",
+              historicalPeriod: "600 BCE-150 CE",
+              significance: "Water management for the largest Preclassic Maya city",
+              yearBCE: 600,
+              category: "irrigation"
+            },
+            {
+              id: "nakbe-causeways",
+              name: "Nakbé Causeways (Sacbeob)",
+              description: "Earliest known Maya causeways functioning as dams channeling water to reservoirs while keeping ceremonial spaces dry",
+              rarity: "epic",
+              historicalPeriod: "600 BCE",
+              significance: "Dual-purpose infrastructure — roads as water control",
+              yearBCE: 600,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "cerros-site",
+          name: "Cerros",
+          description: "Earliest Maya coastal wetland engineering",
+          historicalContext: "Managing freshwater-saltwater interaction",
+          coordinates: { lat: 18.38, lng: -88.32 },
+          artifacts: [
+            {
+              id: "cerros-raised-fields",
+              name: "Cerros Raised Field Agriculture",
+              description: "Raised agricultural platforms in coastal wetlands with channels managing freshwater-saltwater interaction",
+              rarity: "rare",
+              historicalPeriod: "400 BCE-150 CE",
+              significance: "Earliest Maya coastal wetland engineering",
+              yearBCE: 400,
+              category: "irrigation"
+            },
+            {
+              id: "ceibal-water",
+              name: "Ceibal Early Water Management",
+              description: "One of earliest Maya ceremonial centers with water management developing simultaneously with Olmec La Venta",
+              rarity: "rare",
+              historicalPeriod: "1000 BCE",
+              significance: "Evidence of independent Maya water engineering parallel to the Olmec",
+              yearBCE: 1000,
+              category: "dam"
+            },
+            {
+              id: "kaminaljuyu-irrigation",
+              name: "Kaminaljuyú Canal Irrigation",
+              description: "Highland Maya canal irrigation from Lake Miraflores directing water to agricultural fields and urban areas",
+              rarity: "rare",
+              historicalPeriod: "400 BCE-200 CE",
+              significance: "Earliest Maya canal irrigation",
+              yearBCE: 400,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "maya-classic",
+      name: "Maya Classic Period",
+      description: "The golden age of Maya water engineering — reservoir systems for 60,000+ people, the first water filtration in the Americas, and the only pressurized water in pre-Columbian history.",
+      position: [-13, 0, 4],
+      color: "#006400",
+      era: "classical",
+      dateRange: "250-900 CE",
+      locations: [
+        {
+          id: "tikal",
+          name: "Tikal",
+          description: "Largest Maya urban water system",
+          historicalContext: "Six reservoirs holding 900,000 m³ for 60,000+ people",
+          coordinates: { lat: 17.22, lng: -89.62 },
+          artifacts: [
+            {
+              id: "tikal-reservoir",
+              name: "Tikal Reservoir System",
+              description: "Six major reservoirs holding 900,000 m³ with elaborate inlet channels and sand filtration serving 60,000+ people through 6-month dry seasons",
+              rarity: "legendary",
+              historicalPeriod: "250-900 CE",
+              significance: "Largest Maya urban water system",
+              yearBCE: -250,
+              category: "dam"
+            },
+            {
+              id: "tikal-water-filtration",
+              name: "Tikal Water Filtration (Corriental)",
+              description: "Quartz sand and zeolite filtration at Corriental reservoir — zeolite imported from 30 km away specifically for water purification",
+              rarity: "legendary",
+              historicalPeriod: "250-900 CE",
+              significance: "First water purification technology in the Americas — zeolite filtration",
+              yearBCE: -250,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "palenque",
+          name: "Palenque",
+          description: "Only known pressurized water in pre-Columbian Americas",
+          historicalContext: "Nine subterranean aqueducts managing 56 springs",
+          coordinates: { lat: 17.48, lng: -92.05 },
+          artifacts: [
+            {
+              id: "palenque-pressurized",
+              name: "Palenque Pressurized Aqueduct",
+              description: "Underground aqueduct with constriction narrowing from 10 m² to 0.5 m² creating water pressure and possible fountain effects",
+              rarity: "legendary",
+              historicalPeriod: "600-700 CE",
+              significance: "Only known pressurized water system in pre-Columbian Americas",
+              yearBCE: -600,
+              category: "aqueduct"
+            },
+            {
+              id: "palenque-nine-aqueducts",
+              name: "Palenque Nine-Aqueduct System",
+              description: "Nine subterranean aqueducts managing 56 springs with Otolum River channeled underground. Over 2 km mapped underground channels",
+              rarity: "legendary",
+              historicalPeriod: "600-800 CE",
+              significance: "Most extensive underground water infrastructure in the Maya world",
+              yearBCE: -600,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "calakmul",
+          name: "Calakmul",
+          description: "Second-largest Maya urban water system",
+          historicalContext: "Chain of 13 reservoirs with sand filtration",
+          coordinates: { lat: 18.11, lng: -89.81 },
+          artifacts: [
+            {
+              id: "calakmul-aguada",
+              name: "Calakmul Aguada System",
+              description: "Chain of 13 limestone-lined clay-sealed reservoirs with sand filtration storing 200,000+ m³",
+              rarity: "epic",
+              historicalPeriod: "250-900 CE",
+              significance: "Second-largest Maya urban water system",
+              yearBCE: -250,
+              category: "dam"
+            },
+            {
+              id: "maya-chultun",
+              name: "Maya Chultun (Underground Cistern)",
+              description: "Bottle-shaped underground cisterns carved into limestone with plastered interior. Capacity 25,000-75,000 liters each. Thousands across Maya Lowlands",
+              rarity: "epic",
+              historicalPeriod: "600 BCE-900 CE",
+              significance: "Most widespread Maya water storage technology",
+              yearBCE: -300,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "caracol",
+          name: "Caracol",
+          description: "Maya engineering supporting 100,000+ people",
+          historicalContext: "Terraced hillsides covering 200+ km²",
+          coordinates: { lat: 16.76, lng: -89.12 },
+          artifacts: [
+            {
+              id: "caracol-terracing",
+              name: "Caracol Agricultural Terracing",
+              description: "Terraced hillsides with check dams and reservoirs covering 200+ km² supporting 100,000+ people — larger than most contemporary European cities",
+              rarity: "epic",
+              historicalPeriod: "600-900 CE",
+              significance: "Maya engineering supported populations larger than medieval London",
+              yearBCE: -600,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "copan",
+          name: "Copán",
+          description: "UNESCO World Heritage Maya drainage",
+          historicalContext: "Stone-lined drainage beneath the Acropolis",
+          coordinates: { lat: 14.84, lng: -89.14 },
+          artifacts: [
+            {
+              id: "copan-drainage",
+              name: "Copán Drainage System",
+              description: "Elaborate stone-lined drainage beneath the Acropolis with stone-capped drains beneath plazas some large enough for maintenance access",
+              rarity: "epic",
+              historicalPeriod: "400-800 CE",
+              significance: "Drainage engineering beneath a UNESCO World Heritage site",
+              yearBCE: -400,
+              category: "sanitation"
+            },
+            {
+              id: "dos-pilas-defensive",
+              name: "Dos Pilas Defensive Water",
+              description: "Maya dismantled own temples to build walls using flooding as defense channeling attackers into kill zones",
+              rarity: "epic",
+              historicalPeriod: "761 CE",
+              significance: "Maya water warfare — defensive flooding",
+              yearBCE: -761,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "puuc-region",
+          name: "Puuc Region (Uxmal)",
+          description: "Civilization built entirely on harvested rainwater",
+          historicalContext: "No rivers lakes or springs — only chultun cisterns",
+          coordinates: { lat: 20.36, lng: -89.77 },
+          artifacts: [
+            {
+              id: "puuc-chultun-network",
+              name: "Puuc Region Chultun Network",
+              description: "Puuc hills with no surface water — cities like Uxmal Kabah and Sayil depended entirely on chultun cisterns. Uxmal had over 100 chultuns",
+              rarity: "epic",
+              historicalPeriod: "600-1000 CE",
+              significance: "Complete civilization built on harvested rainwater — no natural water sources",
+              yearBCE: -600,
+              category: "dam"
+            },
+            {
+              id: "uxmal-water-collection",
+              name: "Uxmal Water Collection",
+              description: "Nunnery Quadrangle and Governor's Palace positioned to maximize rainwater collection. Pyramid of Magician may have served partly as water collection. Hundreds of Chaak rain god masks on facades",
+              rarity: "epic",
+              historicalPeriod: "700-1000 CE",
+              significance: "Architecture designed as rainwater harvesting infrastructure",
+              yearBCE: -700,
+              category: "dam"
+            },
+            {
+              id: "maya-sacbe-water",
+              name: "Maya Sacbe as Water Management",
+              description: "Raised limestone causeways serving as transportation AND water management acting as dams. The 100 km Cobá-Yaxuná sacbe is the longest",
+              rarity: "epic",
+              historicalPeriod: "250-900 CE",
+              significance: "Roads engineered as linear water control features",
+              yearBCE: -250,
+              category: "canal"
+            },
+            {
+              id: "quirigua-flood",
+              name: "Quiriguá Flood Management",
+              description: "City on Motagua River floodplain with tallest Maya stelae positioned on raised platforms above flood level with channels directing floodwater",
+              rarity: "rare",
+              historicalPeriod: "400-810 CE",
+              significance: "Flood management for a river-bottom ceremonial center",
+              yearBCE: -400,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "maya-postclassic",
+      name: "Maya Postclassic",
+      description: "From cenote-dependent cities to the last great Maya capital — water management through natural sinkholes and ritual offerings.",
+      position: [-12, 0, 5],
+      color: "#32CD32",
+      era: "medieval",
+      dateRange: "900-1524 CE",
+      locations: [
+        {
+          id: "chichen-itza",
+          name: "Chichén Itzá",
+          description: "Largest Postclassic Maya city",
+          historicalContext: "Four cenotes plus constructed chultuns",
+          coordinates: { lat: 20.68, lng: -88.57 },
+          artifacts: [
+            {
+              id: "cenote-management",
+              name: "Cenote Management (Yucatán)",
+              description: "Natural sinkholes as primary water source. Communities managed access maintained paths built stairs into cenote walls and modified shape",
+              rarity: "epic",
+              historicalPeriod: "900-1524 CE",
+              significance: "Groundwater access via natural geological features managed as infrastructure",
+              yearBCE: -900,
+              category: "aqueduct"
+            },
+            {
+              id: "chichen-itza-water",
+              name: "Chichén Itzá Water System",
+              description: "Four cenotes plus chultuns. Xtoloc Cenote for drinking Sacred Cenote for ritual. Sacbeob connected cenotes to ceremonial center",
+              rarity: "legendary",
+              historicalPeriod: "900-1200 CE",
+              significance: "Water infrastructure for the largest Postclassic Maya city",
+              yearBCE: -900,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "mayapan",
+          name: "Mayapán",
+          description: "Last great Maya capital",
+          historicalContext: "4,000 structures built around a cenote",
+          coordinates: { lat: 20.63, lng: -89.46 },
+          artifacts: [
+            {
+              id: "mayapan-water",
+              name: "Mayapán Water Management",
+              description: "Last major Maya capital built around a cenote with 4000 structures within defensive wall. Water infrastructure deliberately destroyed when city fell in 1441",
+              rarity: "epic",
+              historicalPeriod: "1200-1441 CE",
+              significance: "Water for the last great Maya capital",
+              yearBCE: -1200,
+              category: "dam"
+            },
+            {
+              id: "maya-water-purification",
+              name: "Maya Water Purification with Sand and Lilies",
+              description: "Maya water purification using sand water lilies and zeolite-quartz mixtures determining chemically distinct water sources for different uses",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Sophisticated multi-method water purification",
+              yearBCE: -500,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "teotihuacan-city",
+      name: "Teotihuacan",
+      description: "First urban river channelization in the Americas — water for 100,000-200,000 people with the San Juan River literally moved to fit the city plan.",
+      position: [-14, 0, 3],
+      color: "#8B4513",
+      era: "classical",
+      dateRange: "100 BCE - 550 CE",
+      locations: [
+        {
+          id: "teotihuacan-center",
+          name: "Teotihuacan City Center",
+          description: "Largest pre-Columbian city in the Americas",
+          historicalContext: "First urban river channelization in the Americas",
+          coordinates: { lat: 19.69, lng: -98.84 },
+          artifacts: [
+            {
+              id: "san-juan-canalization",
+              name: "San Juan River Canalization",
+              description: "San Juan River completely straightened and channeled through city center aligned with urban grid on 15.5° axis — river literally moved to fit city plan",
+              rarity: "legendary",
+              historicalPeriod: "100 BCE-550 CE",
+              significance: "First urban river channelization in the Americas",
+              yearBCE: 100,
+              category: "canal"
+            },
+            {
+              id: "teotihuacan-underground-drainage",
+              name: "Teotihuacan Underground Drainage",
+              description: "Extensive stone-lined drainage beneath Avenue of the Dead with tunnels large enough to walk through and ritual underground water chambers",
+              rarity: "legendary",
+              historicalPeriod: "100 BCE-550 CE",
+              significance: "Most extensive pre-Columbian underground drainage",
+              yearBCE: 100,
+              category: "sanitation"
+            },
+            {
+              id: "teotihuacan-spring-mgmt",
+              name: "Teotihuacan Spring Management",
+              description: "Natural springs managed and channeled via canals to 2000+ apartment compounds each housing 60-100 people with standardized drainage",
+              rarity: "epic",
+              historicalPeriod: "100 BCE-550 CE",
+              significance: "Spring-based urban water supply for 100,000+ people",
+              yearBCE: 100,
+              category: "aqueduct"
+            },
+            {
+              id: "pyramid-sun-tunnel",
+              name: "Pyramid of the Sun Water Tunnel",
+              description: "Natural cave beneath Pyramid of Sun modified for water rituals leading to four-petaled flower chamber symbolizing water origins",
+              rarity: "epic",
+              historicalPeriod: "100 BCE-550 CE",
+              significance: "Underground ritual water engineering beneath largest Mesoamerican pyramid",
+              yearBCE: 100,
+              category: "fountain"
+            },
+            {
+              id: "teotihuacan-irrigation-canals",
+              name: "Teotihuacan Irrigation Canals",
+              description: "Canal systems fed by springs and San Juan River irrigating agricultural fields combined with raised fields in marshy areas",
+              rarity: "rare",
+              historicalPeriod: "100-550 CE",
+              significance: "Agricultural water supply for 100,000-200,000 people",
+              yearBCE: -100,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "zapotec",
+      name: "Zapotec Civilization",
+      description: "The Cloud People who built a city of 25,000 on a mountaintop with no natural water source — and irrigation channels that literally built themselves.",
+      position: [-14, 0, 1],
+      color: "#CD5C5C",
+      era: "classical",
+      dateRange: "500 BCE - 750 CE",
+      locations: [
+        {
+          id: "monte-alban",
+          name: "Monte Albán",
+          description: "Mountaintop city with zero natural water",
+          historicalContext: "25,000+ people with only harvested rainwater",
+          coordinates: { lat: 17.04, lng: -96.77 },
+          artifacts: [
+            {
+              id: "monte-alban-water",
+              name: "Monte Albán Hilltop Water",
+              description: "City of 25,000+ on mountaintop with no natural water. Carved stone cisterns plastered catchment surfaces check dams. Main Plaza (300x150m) as giant catchment",
+              rarity: "legendary",
+              historicalPeriod: "500 BCE-750 CE",
+              significance: "Engineering urban water on a mountaintop with zero natural water",
+              yearBCE: 500,
+              category: "dam"
+            },
+            {
+              id: "zapotec-tomb-drainage",
+              name: "Zapotec Underground Drainage (Tombs)",
+              description: "Elaborate stone-built tombs requiring sophisticated drainage with stone-lined channels directing water away from tomb entrances",
+              rarity: "rare",
+              historicalPeriod: "500 BCE-750 CE",
+              significance: "Drainage engineering for sub-surface architecture",
+              yearBCE: 500,
+              category: "sanitation"
+            },
+            {
+              id: "zapotec-water-cosmology",
+              name: "Zapotec Cloud People Water Cosmology",
+              description: "Zapotecs called themselves Be'ena Za'a (Cloud People) with Cocijo lightning-rain god as most important deity making water management a sacred duty",
+              rarity: "rare",
+              historicalPeriod: "500 BCE-750 CE",
+              significance: "Water cosmology governing engineering practice",
+              yearBCE: 500,
+              category: "fountain"
+            }
+          ]
+        },
+        {
+          id: "hierve-el-agua",
+          name: "Hierve el Agua",
+          description: "Self-building mineral irrigation channels",
+          historicalContext: "Unique globally — channels that build themselves",
+          coordinates: { lat: 16.87, lng: -96.28 },
+          artifacts: [
+            {
+              id: "hierve-el-agua",
+              name: "Hierve el Agua Mineral Springs",
+              description: "Irrigation using calcium carbonate spring water that precipitates creating petrified waterfalls and self-building channels",
+              rarity: "legendary",
+              historicalPeriod: "Pre-Zapotec-Zapotec",
+              significance: "Ancient irrigation with self-building mineral channels — unique in the world",
+              yearBCE: 600,
+              category: "irrigation"
+            },
+            {
+              id: "zapotec-valley-irrigation",
+              name: "Zapotec Valley Irrigation",
+              description: "Canal-based irrigation across Oaxaca Valley managing seasonal Atoyac River for dry-season agriculture",
+              rarity: "rare",
+              historicalPeriod: "500 BCE-750 CE",
+              significance: "Valley-floor irrigation in the Zapotec heartland",
+              yearBCE: 500,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "toltec-civilization",
+      name: "Toltec Civilization",
+      description: "Warrior-merchants who bridged the gap between Teotihuacan and the Aztecs with their capital at Tula.",
+      position: [-14, 0, 2],
+      color: "#A0522D",
+      era: "medieval",
+      dateRange: "900-1168 CE",
+      locations: [
+        {
+          id: "tula",
+          name: "Tula",
+          description: "Toltec capital with managed river water",
+          historicalContext: "Bridge between Teotihuacan and Aztec water traditions",
+          coordinates: { lat: 20.06, lng: -99.34 },
+          artifacts: [
+            {
+              id: "tula-water-system",
+              name: "Tula Urban Water System",
+              description: "Toltec capital with canal systems reservoirs and distribution from the Tula River serving 30,000-60,000 people",
+              rarity: "epic",
+              historicalPeriod: "900-1168 CE",
+              significance: "Capital city water for the Toltec Empire",
+              yearBCE: -900,
+              category: "canal"
+            },
+            {
+              id: "tula-dam-reservoir",
+              name: "Tula Dam and Reservoir",
+              description: "Stone and earth dam across tributary with sluice-like openings for controlled release",
+              rarity: "epic",
+              historicalPeriod: "900-1168 CE",
+              significance: "Pre-Aztec dam engineering in central Mexico",
+              yearBCE: -900,
+              category: "dam"
+            },
+            {
+              id: "toltec-cave-water",
+              name: "Toltec Cave Water Rituals",
+              description: "Cave-spring sites near Tula used for water rituals continuing Olmec-Teotihuacan cave-water traditions",
+              rarity: "rare",
+              historicalPeriod: "900-1168 CE",
+              significance: "Continuation of Mesoamerican sacred water cave tradition",
+              yearBCE: -900,
+              category: "fountain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "aztec-mexica",
+      name: "Aztec/Mexica Empire",
+      description: "200,000+ people living on an island in a salt lake — the most extreme urban water challenge in the pre-Columbian world, solved with dikes, dual aqueducts, chinampas, and sanitation surpassing contemporary Europe.",
+      position: [-15, 0, 3],
+      color: "#B22222",
+      era: "medieval",
+      dateRange: "1325-1521 CE",
+      locations: [
+        {
+          id: "tenochtitlan-aztec",
+          name: "Tenochtitlan",
+          description: "Aztec island capital in Lake Texcoco",
+          historicalContext: "Most extreme urban water challenge in the pre-Columbian world",
+          coordinates: { lat: 19.43, lng: -99.13 },
+          artifacts: [
+            {
+              id: "tenochtitlan-island-city",
+              name: "Tenochtitlan Island City Water",
+              description: "Capital built on island in saline Lake Texcoco requiring freshwater supply for 200,000+ people in the middle of salt water",
+              rarity: "legendary",
+              historicalPeriod: "1325-1521 CE",
+              significance: "Most extreme urban water challenge in the pre-Columbian world",
+              yearBCE: -1325,
+              category: "aqueduct"
+            },
+            {
+              id: "nezahualcoyotl-dike",
+              name: "Nezahualcóyotl's Great Dike",
+              description: "16 km stone and earth dike separating fresh and salt water in Lake Texcoco with sluice gates designed by poet-philosopher-engineer king",
+              rarity: "legendary",
+              historicalPeriod: "1449 CE",
+              significance: "Largest freshwater-saltwater separation in the pre-Columbian world",
+              yearBCE: -1449,
+              category: "dam"
+            },
+            {
+              id: "coyoacan-aqueduct",
+              name: "Coyoacán Springs Aqueduct",
+              description: "Second major aqueduct from Coyoacán springs that brought too much water flooding Tenochtitlan requiring emergency drainage",
+              rarity: "epic",
+              historicalPeriod: "1503 CE",
+              significance: "Over-engineering with catastrophic consequences",
+              yearBCE: -1503,
+              category: "aqueduct"
+            },
+            {
+              id: "aztec-causeway-dikes",
+              name: "Aztec Causeway-Dikes",
+              description: "Three major causeways connecting Tenochtitlan to mainland functioning as dikes with removable bridge sections for water flow and defense",
+              rarity: "epic",
+              historicalPeriod: "1325-1521 CE",
+              significance: "Multi-function infrastructure: road + dike + bridge + defense",
+              yearBCE: -1325,
+              category: "dam"
+            },
+            {
+              id: "aztec-flood-control",
+              name: "Aztec Flood Control System (Post-1449)",
+              description: "Comprehensive system managing water from five interconnected lakes at different elevations after catastrophic 1449 flood",
+              rarity: "legendary",
+              historicalPeriod: "1449-1521 CE",
+              significance: "First comprehensive multi-lake urban flood management",
+              yearBCE: -1449,
+              category: "dam"
+            },
+            {
+              id: "tenochtitlan-sanitation",
+              name: "Tenochtitlan Urban Sanitation",
+              description: "Organized waste collection by canoe transporting to chinampas as fertilizer. Public latrines on causeways. Streets swept by 1000+ workers daily. Cleaner than any European city per Cortés",
+              rarity: "legendary",
+              historicalPeriod: "1325-1521 CE",
+              significance: "Pre-Columbian urban sanitation surpassing contemporary Europe",
+              yearBCE: -1325,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "xochimilco",
+          name: "Xochimilco",
+          description: "Chinampa agriculture heartland",
+          historicalContext: "Most productive pre-modern agriculture per hectare",
+          coordinates: { lat: 19.26, lng: -99.10 },
+          artifacts: [
+            {
+              id: "chinampa-system",
+              name: "Chinampa Agriculture System",
+              description: "Raised beds in shallow lake anchored by willows with canals for irrigation and transport. 9000+ hectares supporting 200,000+ people. Some over freshwater springs",
+              rarity: "legendary",
+              historicalPeriod: "1200-1521 CE",
+              significance: "Most productive pre-modern agricultural system in the world per hectare",
+              yearBCE: -1200,
+              category: "irrigation"
+            },
+            {
+              id: "xochimilco-spring-agriculture",
+              name: "Xochimilco Freshwater Spring Agriculture",
+              description: "Chinampas positioned directly over freshwater springs with water welling up through soil providing constant moisture without surface irrigation",
+              rarity: "epic",
+              historicalPeriod: "1200-1521 CE",
+              significance: "Natural artesian irrigation beneath floating fields",
+              yearBCE: -1200,
+              category: "irrigation"
+            },
+            {
+              id: "aztec-salt-production",
+              name: "Aztec Salt Production",
+              description: "Lake Texcoco saline water evaporated in managed salt pans combined with freshwater-saltwater separation system",
+              rarity: "rare",
+              historicalPeriod: "1325-1521 CE",
+              significance: "Industrial saltwater management",
+              yearBCE: -1325,
+              category: "water-lifting"
+            },
+            {
+              id: "aztec-lake-dredging",
+              name: "Aztec Lake Dredging",
+              description: "Continuous dredging of lake beds and canals with material used to build chinampas and raise causeways. Entire city rebuilt from its own lake bed",
+              rarity: "rare",
+              historicalPeriod: "1325-1521 CE",
+              significance: "Continuous landscape construction from hydraulic dredging",
+              yearBCE: -1325,
+              category: "canal"
+            },
+            {
+              id: "aztec-aqueduct-ritual",
+              name: "Aztec Aqueduct Maintenance Ritual",
+              description: "Annual ceremonies accompanying aqueduct cleaning with priests blessing channels and water officials managing physical and spiritual aspects",
+              rarity: "rare",
+              historicalPeriod: "Annual",
+              significance: "Integration of engineering maintenance with state religion",
+              yearBCE: -1400,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "purepecha",
+      name: "Purépecha/Tarascan",
+      description: "Lake-based civilization of Michoacán with sophisticated fishery management and volcanic spring engineering.",
+      position: [-16, 0, 2],
+      color: "#8B0000",
+      era: "medieval",
+      dateRange: "1300-1530 CE",
+      locations: [
+        {
+          id: "lake-patzcuaro",
+          name: "Lake Pátzcuaro",
+          description: "Purépecha lake civilization",
+          historicalContext: "Sophisticated lake fishery management",
+          coordinates: { lat: 19.52, lng: -101.61 },
+          artifacts: [
+            {
+              id: "patzcuaro-fishery",
+              name: "Lake Pátzcuaro Fishery Management",
+              description: "Sophisticated management with stone and wooden weirs seasonal regulations and butterfly net fishing requiring deep water knowledge",
+              rarity: "epic",
+              historicalPeriod: "1300-1530 CE",
+              significance: "Lake fishery management — Purépecha specialty",
+              yearBCE: -1300,
+              category: "dam"
+            },
+            {
+              id: "purepecha-spring",
+              name: "Purépecha Spring Management",
+              description: "Management of volcanic springs with stone-lined enclosures channels to settlements and ritual sites",
+              rarity: "rare",
+              historicalPeriod: "1300-1530 CE",
+              significance: "Volcanic spring management",
+              yearBCE: -1300,
+              category: "aqueduct"
+            },
+            {
+              id: "tzintzuntzan-water",
+              name: "Tzintzuntzan Lake-Side Urban Water",
+              description: "Capital on Lake Pátzcuaro with boat landings fish weirs managed lakeshore and five yácata platforms overlooking lake",
+              rarity: "epic",
+              historicalPeriod: "1300-1530 CE",
+              significance: "Lake-based capital city water management",
+              yearBCE: -1300,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "totonac",
+      name: "Totonac Civilization",
+      description: "Water engineering in the wettest major Mesoamerican city and managers of the world's most valuable spice crop.",
+      position: [-13, 0, 2],
+      color: "#FF6347",
+      era: "classical",
+      dateRange: "100-1521 CE",
+      locations: [
+        {
+          id: "el-tajin",
+          name: "El Tajín",
+          description: "Totonac capital — wettest major Mesoamerican city",
+          historicalContext: "2,000+ mm rainfall annually requiring extreme drainage",
+          coordinates: { lat: 20.45, lng: -97.38 },
+          artifacts: [
+            {
+              id: "el-tajin-drainage",
+              name: "El Tajín Drainage System",
+              description: "Elaborate drainage managing 2000+ mm annual rainfall with ball court drainage pyramid drainage and urban channels. Pyramid of Niches with 365 niches has sophisticated water management",
+              rarity: "epic",
+              historicalPeriod: "600-1200 CE",
+              significance: "Water engineering in the wettest major Mesoamerican city",
+              yearBCE: -600,
+              category: "sanitation"
+            },
+            {
+              id: "totonac-vanilla-water",
+              name: "Totonac Vanilla Cultivation Water",
+              description: "Vanilla planifolia requiring specific humidity filtered light and consistent moisture managed through forest and irrigation",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Water management for the world's most valuable spice crop",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "cempoala-water",
+              name: "Cempoala Urban Water",
+              description: "Canal-based urban water with aqueduct from nearby river — first Mesoamerican urban water system seen by Europeans",
+              rarity: "rare",
+              historicalPeriod: "1200-1521 CE",
+              significance: "First Mesoamerican urban water system seen by Europeans",
+              yearBCE: -1200,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "mixtec",
+      name: "Mixtec Civilization",
+      description: "Master scribes who recorded water resources in codices and invented self-building agricultural terraces.",
+      position: [-14, 0, 0],
+      color: "#DAA520",
+      era: "medieval",
+      dateRange: "900-1521 CE",
+      locations: [
+        {
+          id: "mixteca-alta",
+          name: "Mixteca Alta",
+          description: "Mixtec highland territory",
+          historicalContext: "Self-building terraces and pre-Columbian water records",
+          coordinates: { lat: 17.30, lng: -97.20 },
+          artifacts: [
+            {
+              id: "mixtec-lama-bordo",
+              name: "Mixtec Lama-Bordo Terrace Agriculture",
+              description: "Stone check dams across ravines creating level areas that fill with water-carried sediment. Terraces build up naturally behind each dam",
+              rarity: "epic",
+              historicalPeriod: "900-1521 CE",
+              significance: "Self-building terrace agriculture — water does the construction work",
+              yearBCE: -900,
+              category: "irrigation"
+            },
+            {
+              id: "mixtec-cave-water",
+              name: "Yagul/Mitla Cave Water Systems",
+              description: "Cave and rock-shelter sites with managed springs cisterns and stone-carved channels directing water through caves to ritual areas",
+              rarity: "rare",
+              historicalPeriod: "900-1521 CE",
+              significance: "Cave-spring water management in the Mixteca",
+              yearBCE: -900,
+              category: "aqueduct"
+            },
+            {
+              id: "mixtec-codex-water",
+              name: "Mixtec Codex Water Records",
+              description: "Surviving pre-Columbian codices containing records of rivers springs lakes and water-related place names functioning as geographic water databases",
+              rarity: "legendary",
+              historicalPeriod: "900-1521 CE",
+              significance: "Pre-Columbian written water records",
+              yearBCE: -900,
+              category: "water-clock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "epi-olmec",
+      name: "Epi-Olmec & Transitional",
+      description: "The bridge between the Olmec mother culture and the Classic Maya — inheriting and refining water engineering traditions.",
+      position: [-14, 0, 1.5],
+      color: "#6B8E23",
+      era: "classical",
+      dateRange: "400 BCE - 100 CE",
+      locations: [
+        {
+          id: "tres-zapotes",
+          name: "Tres Zapotes",
+          description: "Successor to San Lorenzo",
+          historicalContext: "Transitional Olmec-to-Classic water engineering",
+          coordinates: { lat: 18.47, lng: -95.43 },
+          artifacts: [
+            {
+              id: "tres-zapotes-water",
+              name: "Tres Zapotes Water Management",
+              description: "Successor to San Lorenzo continuing Olmec water traditions with stone-lined channels reservoirs and managed springs",
+              rarity: "rare",
+              historicalPeriod: "400 BCE-100 CE",
+              significance: "Transitional Olmec-to-Classic water engineering",
+              yearBCE: 400,
+              category: "canal"
+            },
+            {
+              id: "izapa-water-cosmology",
+              name: "Izapa Water Cosmology",
+              description: "Key transitional site with stone monuments depicting flood myths rain gods and water-world imagery plus channels from Izapa River",
+              rarity: "rare",
+              historicalPeriod: "300 BCE-100 CE",
+              significance: "Bridge between Olmec and Maya water traditions",
+              yearBCE: 300,
+              category: "fountain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "paleo-indian-archaic",
+      name: "Paleo-Indian & Archaic North America",
+      description: "15,000 years of water management from Clovis spring camps to the oldest mound complex in the Americas.",
+      position: [-18, 0, -5],
+      color: "#8B4513",
+      era: "ancient",
+      dateRange: "15,000-1,000 BCE",
+      locations: [
+        {
+          id: "clovis-springs",
+          name: "Clovis Spring Sites",
+          description: "Earliest North American water management",
+          historicalContext: "Earliest North American water management",
+          coordinates: { lat: 31.5, lng: -110.0 },
+          artifacts: [
+            {
+              id: "clovis-spring-camps",
+              name: "Clovis Spring Camp Sites",
+              description: "Earliest evidence of water management at spring sites in North America by Clovis people",
+              rarity: "epic",
+              historicalPeriod: "13,000-12,000 BCE",
+              significance: "Oldest water management in North America",
+              yearBCE: 13000,
+              category: "aqueduct"
+            },
+            {
+              id: "blackwater-draw",
+              name: "Blackwater Draw Spring Management",
+              description: "Continuously managed spring site used by successive cultures for thousands of years",
+              rarity: "epic",
+              historicalPeriod: "11,000-7,000 BCE",
+              significance: "Longest continuously managed spring",
+              yearBCE: 11000,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "poverty-point",
+          name: "Poverty Point",
+          description: "UNESCO oldest major earthwork in North America",
+          historicalContext: "UNESCO oldest major earthwork in North America",
+          coordinates: { lat: 32.63, lng: -91.41 },
+          artifacts: [
+            {
+              id: "poverty-point-earthworks",
+              name: "Poverty Point Earthworks",
+              description: "Massive earthwork complex with concentric ridges and mounds for water management and drainage",
+              rarity: "legendary",
+              historicalPeriod: "1700-1100 BCE",
+              significance: "Oldest major earthwork water engineering in North America — UNESCO",
+              yearBCE: 1700,
+              category: "sanitation"
+            },
+            {
+              id: "watson-brake-mounds",
+              name: "Watson Brake Mound Complex",
+              description: "Oldest mound complex in North America predating the Egyptian pyramids",
+              rarity: "legendary",
+              historicalPeriod: "3500 BCE",
+              significance: "Oldest mound complex in North America — older than the pyramids",
+              yearBCE: 3500,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "archaic-sites",
+          name: "Archaic Period Sites",
+          description: "Diverse water management sites from the Archaic period across eastern North America",
+          historicalContext: "Archaic period water engineering across North America",
+          coordinates: { lat: 42.35, lng: -71.06 },
+          artifacts: [
+            {
+              id: "boston-fish-weir",
+              name: "Boston Back Bay Fish Weir",
+              description: "Massive ancient fish trap discovered beneath modern Boston covering over 2 acres",
+              rarity: "legendary",
+              historicalPeriod: "5200-3700 BCE",
+              significance: "Largest ancient fish trap ever discovered",
+              yearBCE: 5200,
+              category: "dam"
+            },
+            {
+              id: "old-copper-mine-drainage",
+              name: "Old Copper Complex Mine Drainage",
+              description: "Water management systems for copper mining operations in the Great Lakes region",
+              rarity: "epic",
+              historicalPeriod: "5000-1200 BCE",
+              significance: "Earliest industrial water use in North America",
+              yearBCE: 5000,
+              category: "water-lifting"
+            },
+            {
+              id: "windover-bog-burial",
+              name: "Windover Bog Burial Water",
+              description: "Understanding of water chemistry for preservation of burials in peat bogs",
+              rarity: "epic",
+              historicalPeriod: "6000-5000 BCE",
+              significance: "Understanding water chemistry for preservation",
+              yearBCE: 6000,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "woodland-period",
+      name: "Woodland Period (Adena & Hopewell)",
+      description: "Mound builders who created the largest geometric earthworks in the world.",
+      position: [-17, 0, -6],
+      color: "#556B2F",
+      era: "ancient",
+      dateRange: "1000 BCE - 500 CE",
+      locations: [
+        {
+          id: "newark-earthworks",
+          name: "Newark Earthworks",
+          description: "Largest geometric earthworks in the world built by Hopewell culture",
+          historicalContext: "Hopewell geometric earthworks with water alignment",
+          coordinates: { lat: 40.05, lng: -82.40 },
+          artifacts: [
+            {
+              id: "newark-earthworks-water",
+              name: "Newark Earthworks Water Geometry",
+              description: "Massive geometric earthworks aligned with water features and astronomical events",
+              rarity: "legendary",
+              historicalPeriod: "100 BCE-400 CE",
+              significance: "Largest geometric earthworks in the world",
+              yearBCE: 100,
+              category: "canal"
+            },
+            {
+              id: "hopewell-canals",
+              name: "Hopewell Canal Construction",
+              description: "Canal systems enabling water transportation for continental-scale trade networks",
+              rarity: "epic",
+              historicalPeriod: "200 BCE-500 CE",
+              significance: "Water transportation for continental trade",
+              yearBCE: 200,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "adena-mounds",
+          name: "Adena Mound Sites",
+          description: "Early mound-building culture with water engineering",
+          historicalContext: "Adena culture mound construction and drainage",
+          coordinates: { lat: 39.33, lng: -82.10 },
+          artifacts: [
+            {
+              id: "adena-mound-water",
+              name: "Adena Mound Water Engineering",
+              description: "Engineering of mound drainage systems to protect burial and ceremonial structures",
+              rarity: "epic",
+              historicalPeriod: "1000-100 BCE",
+              significance: "First major mound-drainage engineering",
+              yearBCE: 1000,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "eastern-woodlands",
+      name: "Eastern Woodlands Nations",
+      description: "From Haudenosaunee fish weirs to Calusa canals.",
+      position: [-17, 0, -4],
+      color: "#2E8B57",
+      era: "medieval",
+      dateRange: "1000 BCE - 1600 CE",
+      locations: [
+        {
+          id: "haudenosaunee-territory",
+          name: "Haudenosaunee Territory",
+          description: "Homeland of the Haudenosaunee Confederacy with cooperative water engineering",
+          historicalContext: "Haudenosaunee cooperative water management",
+          coordinates: { lat: 43.0, lng: -76.0 },
+          artifacts: [
+            {
+              id: "haudenosaunee-fish-weirs",
+              name: "Haudenosaunee Fish Weirs",
+              description: "Large cooperative stone and wood fish weir systems across rivers of the northeast",
+              rarity: "epic",
+              historicalPeriod: "Ancient onwards",
+              significance: "Largest cooperative water engineering in NE North America",
+              yearBCE: 500,
+              category: "dam"
+            },
+            {
+              id: "three-sisters-moisture",
+              name: "Three Sisters Moisture Management",
+              description: "Polyculture planting system of corn beans and squash that conserves soil moisture through companion planting",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Water-efficient polyculture — 50% less water",
+              yearBCE: -500,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "calusa-territory",
+          name: "Calusa Territory Florida",
+          description: "Calusa canal and waterway system in southwest Florida",
+          historicalContext: "Calusa water engineering in Florida",
+          coordinates: { lat: 26.6, lng: -82.2 },
+          artifacts: [
+            {
+              id: "calusa-canal-system",
+              name: "Calusa Canal System",
+              description: "Extensive canal system connecting barrier islands to the mainland for trade and transport",
+              rarity: "legendary",
+              historicalPeriod: "500 BCE-1500 CE",
+              significance: "Largest pre-contact canal in eastern NA",
+              yearBCE: 500,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "cherokee-territory",
+          name: "Cherokee Territory",
+          description: "Cherokee water management and sacred water traditions",
+          historicalContext: "Cherokee sacred water practices",
+          coordinates: { lat: 35.5, lng: -83.5 },
+          artifacts: [
+            {
+              id: "cherokee-going-to-water",
+              name: "Cherokee Going to Water (Ama Diyi)",
+              description: "Sacred purification ceremony involving immersion in flowing water integrated with water management practices",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Sacred water management",
+              yearBCE: -500,
+              category: "fountain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "great-plains-nations",
+      name: "Great Plains Nations",
+      description: "Flood-adapted agriculture on the Missouri River.",
+      position: [-18, 0, -7],
+      color: "#DEB887",
+      era: "medieval",
+      dateRange: "800-1800 CE",
+      locations: [
+        {
+          id: "missouri-river-villages",
+          name: "Missouri River Villages",
+          description: "Mandan and Hidatsa river villages with flood-adapted agriculture",
+          historicalContext: "Missouri River flood-adapted agriculture",
+          coordinates: { lat: 47.3, lng: -101.0 },
+          artifacts: [
+            {
+              id: "mandan-river-gardens",
+              name: "Mandan/Hidatsa River Bottom Gardens",
+              description: "Agricultural gardens in river bottom lands engineered to take advantage of annual flooding cycles",
+              rarity: "epic",
+              historicalPeriod: "800 CE onwards",
+              significance: "Flood-adapted agriculture",
+              yearBCE: -800,
+              category: "irrigation"
+            },
+            {
+              id: "mandan-earthlodge",
+              name: "Mandan Earthlodge Water Design",
+              description: "Earthlodge architecture designed to manage water runoff and drainage",
+              rarity: "rare",
+              historicalPeriod: "800-1800s CE",
+              significance: "Architectural water engineering",
+              yearBCE: -800,
+              category: "sanitation"
+            },
+            {
+              id: "plains-buffalo-jump-water",
+              name: "Plains Buffalo Jump Water Knowledge",
+              description: "Strategic use of water knowledge in buffalo hunting including drive lines along waterways",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Water knowledge as hunting strategy",
+              yearBCE: 1000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "great-basin-california",
+      name: "Great Basin & California Peoples",
+      description: "From hunter-gatherer irrigation to the densest indigenous population north of Mexico.",
+      position: [-20, 0, -5],
+      color: "#CD853F",
+      era: "ancient",
+      dateRange: "10,000 BCE - Present",
+      locations: [
+        {
+          id: "owens-valley",
+          name: "Owens Valley",
+          description: "Paiute and Shoshone irrigation systems in the Owens Valley",
+          historicalContext: "Indigenous irrigation in the Great Basin",
+          coordinates: { lat: 37.0, lng: -118.3 },
+          artifacts: [
+            {
+              id: "paiute-owens-irrigation",
+              name: "Paiute/Shoshone Irrigation",
+              description: "Sophisticated irrigation system diverting streams to water wild seed-bearing plants later destroyed by the LA Aqueduct water grab",
+              rarity: "legendary",
+              historicalPeriod: "1000+ years",
+              significance: "Indigenous irrigation destroyed by LA water grab",
+              yearBCE: 1000,
+              category: "irrigation"
+            },
+            {
+              id: "great-basin-spring",
+              name: "Great Basin Spring Stewardship",
+              description: "12,000 years of continuous desert spring management and stewardship across the Great Basin",
+              rarity: "epic",
+              historicalPeriod: "10,000 BCE onwards",
+              significance: "12,000 years of desert spring management",
+              yearBCE: 10000,
+              category: "aqueduct"
+            }
+          ]
+        },
+        {
+          id: "california-coast",
+          name: "California Coastal Sites",
+          description: "Water engineering by California coastal peoples",
+          historicalContext: "California indigenous water management",
+          coordinates: { lat: 34.4, lng: -119.7 },
+          artifacts: [
+            {
+              id: "chumash-tomol",
+              name: "Chumash Tomol Water Craft",
+              description: "Only plank-built watercraft in indigenous North America sewn together with plant fiber and sealed with tar",
+              rarity: "legendary",
+              historicalPeriod: "1500 BCE onwards",
+              significance: "Only plank-built watercraft in indigenous North America",
+              yearBCE: 1500,
+              category: "canal"
+            },
+            {
+              id: "yurok-brush-dam",
+              name: "Yurok Brush Dam Fisheries",
+              description: "River engineering using brush dams governed by ceremonial protocols for sustainable salmon fishery",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Ceremony-governed river engineering",
+              yearBCE: 500,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "algonquin-canadian",
+      name: "Algonquin & Canadian First Nations",
+      description: "Navigation of the world's largest freshwater system.",
+      position: [-17, 0, -9],
+      color: "#006400",
+      era: "ancient",
+      dateRange: "5000 BCE - Present",
+      locations: [
+        {
+          id: "great-lakes",
+          name: "Great Lakes Region",
+          description: "Water management across the Great Lakes freshwater system",
+          historicalContext: "Great Lakes indigenous water management",
+          coordinates: { lat: 45.0, lng: -84.0 },
+          artifacts: [
+            {
+              id: "wild-rice-management",
+              name: "Wild Rice (Manoomin) Water Management",
+              description: "Management of wild rice beds across the Great Lakes including water level regulation and harvesting protocols",
+              rarity: "legendary",
+              historicalPeriod: "Traditional",
+              significance: "Largest aquatic crop management in North America",
+              yearBCE: 1000,
+              category: "irrigation"
+            },
+            {
+              id: "birchbark-canoe-nav",
+              name: "Birchbark Canoe Water Navigation",
+              description: "Continental-scale water travel network using birchbark canoes across rivers and lakes",
+              rarity: "epic",
+              historicalPeriod: "3000 BCE onwards",
+              significance: "Continental-scale travel",
+              yearBCE: 3000,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "bc-coast",
+          name: "British Columbia Coast",
+          description: "West Coast salmon management and whaling traditions",
+          historicalContext: "British Columbia First Nations water management",
+          coordinates: { lat: 54.0, lng: -128.0 },
+          artifacts: [
+            {
+              id: "bc-salmon-management",
+              name: "West Coast Salmon Management",
+              description: "Most extensive salmon fishery management system in the world including weirs traps and selective harvesting",
+              rarity: "legendary",
+              historicalPeriod: "Traditional",
+              significance: "Most extensive salmon fishery management in the world",
+              yearBCE: 3000,
+              category: "dam"
+            },
+            {
+              id: "nuu-chah-nulth-whaling",
+              name: "Nuu-chah-nulth Whaling Water Knowledge",
+              description: "Open-ocean water knowledge for whaling from canoes including currents tides and weather patterns",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Open-ocean water knowledge for whaling from canoes",
+              yearBCE: 1000,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "pacific-northwest-expanded",
+      name: "Pacific Northwest Nations",
+      description: "11,000 years of salmon fishery management.",
+      position: [-21, 0, -7],
+      color: "#4682B4",
+      era: "ancient",
+      dateRange: "11,000 BCE - Present",
+      locations: [
+        {
+          id: "celilo-falls",
+          name: "Celilo Falls",
+          description: "Oldest and largest fishery in North America destroyed by The Dalles Dam in 1957",
+          historicalContext: "11,000 years of continuous fishery management at Celilo Falls",
+          coordinates: { lat: 45.65, lng: -120.98 },
+          artifacts: [
+            {
+              id: "celilo-falls-fishery",
+              name: "Celilo Falls Fishery",
+              description: "Oldest and largest fishery in North America continuously operated for 11,000 years before destruction by The Dalles Dam in 1957",
+              rarity: "legendary",
+              historicalPeriod: "11,000 BCE-1957 CE",
+              significance: "Oldest and largest fishery in NA — destroyed by a dam",
+              yearBCE: 11000,
+              category: "dam"
+            },
+            {
+              id: "salmon-weir-management",
+              name: "Salmon Weir Water Level Management",
+              description: "Sophisticated weir systems managing water levels for sustainable salmon fishery across millennia",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Sustainable fishery for millennia",
+              yearBCE: 5000,
+              category: "dam"
+            },
+            {
+              id: "coast-salish-reef-net",
+              name: "Coast Salish Reef Net Fishing",
+              description: "Underwater net engineering system anchored to reef structures for salmon interception",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Underwater net engineering",
+              yearBCE: 2000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "modern-usa",
+      name: "Modern USA Water Engineering",
+      description: "From the Erie Canal to the Chicago River Reversal.",
+      position: [-19, 0, -5],
+      color: "#3C3B6E",
+      era: "modern",
+      dateRange: "1825 - Present",
+      locations: [
+        {
+          id: "eastern-usa-water",
+          name: "Eastern USA Water Projects",
+          description: "Major water engineering projects in eastern United States",
+          historicalContext: "American water infrastructure development",
+          coordinates: { lat: 42.8, lng: -76.5 },
+          artifacts: [
+            {
+              id: "erie-canal",
+              name: "Erie Canal",
+              description: "363-mile canal connecting the Great Lakes to the Atlantic Ocean transforming American commerce",
+              rarity: "legendary",
+              historicalPeriod: "1825",
+              significance: "Most important canal in American history",
+              yearBCE: -1825,
+              category: "canal"
+            },
+            {
+              id: "croton-aqueduct",
+              name: "Croton Aqueduct",
+              description: "41-mile aqueduct bringing clean water to New York City ending cholera epidemics",
+              rarity: "epic",
+              historicalPeriod: "1842",
+              significance: "Foundation of NYC water supply",
+              yearBCE: -1842,
+              category: "aqueduct"
+            },
+            {
+              id: "chicago-river-reversal",
+              name: "Chicago River Reversal",
+              description: "Engineering feat that reversed the flow of the Chicago River away from Lake Michigan to protect drinking water",
+              rarity: "legendary",
+              historicalPeriod: "1900",
+              significance: "Most dramatic river engineering in American history",
+              yearBCE: -1900,
+              category: "canal"
+            }
+          ]
+        },
+        {
+          id: "western-usa-water",
+          name: "Western USA Water Projects",
+          description: "Major water engineering projects in western United States",
+          historicalContext: "Western American water infrastructure",
+          coordinates: { lat: 36.0, lng: -114.7 },
+          artifacts: [
+            {
+              id: "la-aqueduct",
+              name: "Los Angeles Aqueduct",
+              description: "233-mile aqueduct bringing water from the Owens Valley to Los Angeles sparking the California Water Wars",
+              rarity: "legendary",
+              historicalPeriod: "1913",
+              significance: "Most controversial water project in American history",
+              yearBCE: -1913,
+              category: "aqueduct"
+            },
+            {
+              id: "tva-system",
+              name: "Tennessee Valley Authority",
+              description: "Integrated system of dams and hydroelectric plants across the Tennessee River watershed",
+              rarity: "legendary",
+              historicalPeriod: "1933",
+              significance: "First integrated river basin authority",
+              yearBCE: -1933,
+              category: "dam"
+            },
+            {
+              id: "california-state-water",
+              name: "California State Water Project",
+              description: "Largest state-built water and power development and conveyance system in the United States lifting water 2,000 feet over the Tehachapi Mountains",
+              rarity: "legendary",
+              historicalPeriod: "1960-1973",
+              significance: "Highest water lift in the world",
+              yearBCE: -1960,
+              category: "water-lifting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "modern-canada",
+      name: "Modern Canada Water Engineering",
+      description: "The St. Lawrence Seaway and James Bay Project.",
+      position: [-17, 0, -10],
+      color: "#FF0000",
+      era: "modern",
+      dateRange: "1954 - Present",
+      locations: [
+        {
+          id: "canada-water-projects",
+          name: "Canadian Mega-Projects",
+          description: "Major Canadian water engineering mega-projects",
+          historicalContext: "Canadian water infrastructure development",
+          coordinates: { lat: 53.0, lng: -77.0 },
+          artifacts: [
+            {
+              id: "st-lawrence-seaway",
+              name: "St. Lawrence Seaway",
+              description: "System of locks canals and channels permitting ocean-going vessels to travel from the Atlantic to the Great Lakes",
+              rarity: "legendary",
+              historicalPeriod: "1954-1959",
+              significance: "Largest binational waterway in North America",
+              yearBCE: -1954,
+              category: "canal"
+            },
+            {
+              id: "james-bay-project",
+              name: "James Bay Project",
+              description: "Massive hydroelectric project in northern Quebec diverting rivers and creating reservoirs across an area the size of New York State",
+              rarity: "legendary",
+              historicalPeriod: "1971-1996",
+              significance: "Largest construction project in Canadian history",
+              yearBCE: -1971,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "colombian-civilizations",
+      name: "Colombian Water Civilizations",
+      description: "From Zenú's 500,000-hectare wetland to Tairona's Lost City — the Americas' most diverse water engineering.",
+      position: [-10, 0, 2],
+      color: "#228B22",
+      era: "ancient",
+      dateRange: "200 BCE - 1600 CE",
+      locations: [
+        {
+          id: "zenu-wetlands",
+          name: "Zenú Hydraulic Landscape",
+          description: "Largest managed wetland in pre-Columbian Americas",
+          historicalContext: "Largest managed wetland in pre-Columbian Americas",
+          coordinates: { lat: 8.5, lng: -75.5 },
+          artifacts: [
+            {
+              id: "zenu-hydraulic-landscape",
+              name: "Zenú Hydraulic Landscape (San Jorge)",
+              description: "Largest managed wetland in pre-Columbian Americas — 500,000 hectares",
+              rarity: "legendary",
+              historicalPeriod: "200 BCE-1600 CE",
+              significance: "Largest managed wetland in pre-Columbian Americas — 500,000 hectares",
+              yearBCE: 200,
+              category: "irrigation"
+            },
+            {
+              id: "zenu-fish-weir-networks",
+              name: "Zenú Fish Weir Networks",
+              description: "Integrated wetland agriculture and aquaculture at continental scale",
+              rarity: "epic",
+              historicalPeriod: "200 BCE-1600 CE",
+              significance: "Integrated wetland agriculture and aquaculture at continental scale",
+              yearBCE: 200,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "tairona-territory",
+          name: "Tairona Ciudad Perdida",
+          description: "Most sophisticated pre-Columbian mountain city water system in northern South America",
+          historicalContext: "Most sophisticated pre-Columbian mountain city water system in northern South America",
+          coordinates: { lat: 11.0, lng: -73.9 },
+          artifacts: [
+            {
+              id: "ciudad-perdida-water",
+              name: "Ciudad Perdida Water System",
+              description: "169 terraces with integrated stone drainage — rediscovered 1972",
+              rarity: "legendary",
+              historicalPeriod: "800 CE",
+              significance: "169 terraces with integrated stone drainage — rediscovered 1972",
+              yearBCE: -800,
+              category: "sanitation"
+            },
+            {
+              id: "tairona-terrace-drainage",
+              name: "Tairona Terrace Drainage",
+              description: "Tropical mountain drainage in extreme rainfall (3000+ mm/year)",
+              rarity: "epic",
+              historicalPeriod: "200-1600 CE",
+              significance: "Tropical mountain drainage in extreme rainfall (3000+ mm/year)",
+              yearBCE: -200,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "muisca-highlands",
+          name: "Muisca Confederation",
+          description: "High-altitude civilization supporting 500,000+ people",
+          historicalContext: "High-altitude civilization supporting 500,000+ people",
+          coordinates: { lat: 5.0, lng: -73.8 },
+          artifacts: [
+            {
+              id: "guatavita-sacred-water",
+              name: "Lake Guatavita Sacred Water",
+              description: "Origin of the El Dorado legend — water as sacred medium",
+              rarity: "legendary",
+              historicalPeriod: "600-1600 CE",
+              significance: "Origin of the El Dorado legend — water as sacred medium",
+              yearBCE: -600,
+              category: "fountain"
+            },
+            {
+              id: "muisca-highland-irrigation",
+              name: "Muisca Highland Irrigation",
+              description: "High-altitude irrigation at 2600 m supporting 500,000+ people",
+              rarity: "epic",
+              historicalPeriod: "600-1600 CE",
+              significance: "High-altitude irrigation at 2600 m supporting 500,000+ people",
+              yearBCE: -600,
+              category: "irrigation"
+            },
+            {
+              id: "muisca-salt-processing",
+              name: "Muisca Salt Water Processing",
+              description: "Industrial water processing — salt more valued than gold",
+              rarity: "epic",
+              historicalPeriod: "600-1600 CE",
+              significance: "Industrial water processing — salt more valued than gold",
+              yearBCE: -600,
+              category: "water-lifting"
+            }
+          ]
+        },
+        {
+          id: "warao-delta",
+          name: "Warao Orinoco Delta",
+          description: "Water-adapted culture in the Orinoco Delta",
+          historicalContext: "One of Earth's most water-adapted cultures",
+          coordinates: { lat: 9.0, lng: -61.0 },
+          artifacts: [
+            {
+              id: "warao-stilt-houses",
+              name: "Warao Stilt House Water Living",
+              description: "People who live entirely on water — one of Earth's most water-adapted cultures",
+              rarity: "legendary",
+              historicalPeriod: "Ancient-Present",
+              significance: "People who live entirely on water — one of Earth's most water-adapted cultures",
+              yearBCE: 2000,
+              category: "sanitation"
+            },
+            {
+              id: "warao-canoe-culture",
+              name: "Warao Canoe Culture",
+              description: "Most water-dependent culture in the Americas — 25,000 km² delta navigation",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Most water-dependent culture in the Americas — 25,000 km² delta navigation",
+              yearBCE: 2000,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "caribbean-indigenous",
+      name: "Caribbean Indigenous Peoples",
+      description: "Taíno water agriculture that fed 3 million people across the Caribbean.",
+      position: [-9, 0, -1],
+      color: "#20B2AA",
+      era: "medieval",
+      dateRange: "800-1500 CE",
+      locations: [
+        {
+          id: "caribbean-islands",
+          name: "Caribbean Island Water Sites",
+          description: "Caribbean indigenous water management sites",
+          historicalContext: "Water management across the Caribbean islands",
+          coordinates: { lat: 19.0, lng: -72.0 },
+          artifacts: [
+            {
+              id: "taino-conuco",
+              name: "Taíno Conuco Water Agriculture",
+              description: "Caribbean indigenous agriculture — water-managed mounds feeding 3 million",
+              rarity: "epic",
+              historicalPeriod: "800-1500 CE",
+              significance: "Caribbean indigenous agriculture — water-managed mounds feeding 3 million",
+              yearBCE: -800,
+              category: "irrigation"
+            },
+            {
+              id: "taino-cenote-cave",
+              name: "Taíno Cenote/Cave Water Management",
+              description: "Cave-based water management on Caribbean limestone islands",
+              rarity: "rare",
+              historicalPeriod: "800-1500 CE",
+              significance: "Cave-based water management on Caribbean limestone islands",
+              yearBCE: -800,
+              category: "aqueduct"
+            },
+            {
+              id: "carib-maritime-knowledge",
+              name: "Carib Maritime Water Knowledge",
+              description: "Open-ocean water knowledge across the Caribbean Sea",
+              rarity: "epic",
+              historicalPeriod: "Pre-contact",
+              significance: "Open-ocean water knowledge across the Caribbean Sea",
+              yearBCE: 500,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "sudd-nilotic",
+      name: "Sudd & Nilotic Peoples",
+      description: "Managing one of the largest wetlands on Earth — 57,000 km² in flood season.",
+      position: [5, 0, 2],
+      color: "#6B8E23",
+      era: "ancient",
+      dateRange: "Ancient - Present",
+      locations: [
+        {
+          id: "sudd-wetland",
+          name: "The Sudd (South Sudan)",
+          description: "One of the largest wetlands on Earth",
+          historicalContext: "One of the largest wetlands on Earth",
+          coordinates: { lat: 7.0, lng: 30.0 },
+          artifacts: [
+            {
+              id: "nuer-cattle-camp-water",
+              name: "Nuer Cattle Camp Water Management",
+              description: "Largest pastoral population organized around a wetland — 2 million+ people",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Largest pastoral population organized around a wetland — 2 million+ people",
+              yearBCE: 2000,
+              category: "irrigation"
+            },
+            {
+              id: "dinka-flood-recession",
+              name: "Dinka Flood-Recession Agriculture",
+              description: "Agriculture in Africa's largest wetland",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Agriculture in Africa's largest wetland",
+              yearBCE: 2000,
+              category: "irrigation"
+            },
+            {
+              id: "sudd-papyrus-channels",
+              name: "Sudd Papyrus Channel Management",
+              description: "Channel management in the world's largest papyrus swamp",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Channel management in the world's largest papyrus swamp",
+              yearBCE: 2000,
+              category: "canal"
+            },
+            {
+              id: "shilluk-river-management",
+              name: "Shilluk Kingdom River Management",
+              description: "River control as political power — 600 km of the White Nile",
+              rarity: "rare",
+              historicalPeriod: "15th century CE onwards",
+              significance: "River control as political power — 600 km of the White Nile",
+              yearBCE: -1400,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "horn-of-africa",
+      name: "Horn of Africa Water Engineering",
+      description: "From Somali berkads to the Afar Depression — water survival in Earth's hottest places.",
+      position: [8, 0, 2],
+      color: "#DAA520",
+      era: "ancient",
+      dateRange: "Ancient - Present",
+      locations: [
+        {
+          id: "horn-sites",
+          name: "Horn of Africa Water Sites",
+          description: "Water engineering sites across the Horn of Africa",
+          historicalContext: "Water survival in Earth's hottest places",
+          coordinates: { lat: 5.0, lng: 45.0 },
+          artifacts: [
+            {
+              id: "somali-berkad",
+              name: "Somali Berkad Underground Cistern",
+              description: "Primary water technology for 15 million people",
+              rarity: "legendary",
+              historicalPeriod: "Ancient-Present",
+              significance: "Primary water technology for 15 million people",
+              yearBCE: 2000,
+              category: "dam"
+            },
+            {
+              id: "somali-dhow-water",
+              name: "Somali War Dhow Water Logistics",
+              description: "Maritime water logistics across the Indian Ocean",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Maritime water logistics across the Indian Ocean",
+              yearBCE: 1000,
+              category: "canal"
+            },
+            {
+              id: "afar-salt-lake-water",
+              name: "Afar Salt Lake Water Management",
+              description: "Water management in Earth's hottest inhabited place",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Water management in Earth's hottest inhabited place",
+              yearBCE: 2000,
+              category: "water-lifting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "malta-water",
+      name: "Malta Water Engineering",
+      description: "7,000 years of water innovation on a dry Mediterranean island with no permanent rivers.",
+      position: [2, 0, -3],
+      color: "#B8860B",
+      era: "ancient",
+      dateRange: "3600 BCE - Present",
+      locations: [
+        {
+          id: "malta-island",
+          name: "Malta Island Water Sites",
+          description: "Water engineering sites across Malta",
+          historicalContext: "7,000 years of water innovation on a dry island",
+          coordinates: { lat: 35.9, lng: 14.5 },
+          artifacts: [
+            {
+              id: "ggantija-temple-water",
+              name: "Neolithic Temple Water (Ġgantija)",
+              description: "Water engineering for some of the oldest monumental structures on Earth",
+              rarity: "legendary",
+              historicalPeriod: "3600 BCE",
+              significance: "Water engineering for some of the oldest monumental structures on Earth",
+              yearBCE: 3600,
+              category: "fountain"
+            },
+            {
+              id: "punic-roman-cisterns",
+              name: "Punic-Roman Cistern Networks",
+              description: "Entire national water supply from cisterns for 2800+ years",
+              rarity: "epic",
+              historicalPeriod: "800 BCE-400 CE",
+              significance: "Entire national water supply from cisterns for 2800+ years",
+              yearBCE: 800,
+              category: "dam"
+            },
+            {
+              id: "knights-malta-water",
+              name: "Knights of Malta Water Engineering",
+              description: "Military water engineering for the Mediterranean's greatest fortress",
+              rarity: "epic",
+              historicalPeriod: "1530-1798 CE",
+              significance: "Military water engineering for the Mediterranean's greatest fortress",
+              yearBCE: -1530,
+              category: "aqueduct"
+            },
+            {
+              id: "maltese-reverse-osmosis",
+              name: "Maltese Reverse Osmosis",
+              description: "Small-island desalination pioneer — 60%+ domestic water from sea",
+              rarity: "rare",
+              historicalPeriod: "1982 onwards",
+              significance: "Small-island desalination pioneer — 60%+ domestic water from sea",
+              yearBCE: -1982,
+              category: "water-lifting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "himalayan-kingdoms",
+      name: "Himalayan Kingdoms",
+      description: "Water engineering in the world's steepest terrain — from Nepal's 25,000 water mills to Ladakh's ice stupas.",
+      position: [12, 0, -3],
+      color: "#8B4513",
+      era: "ancient",
+      dateRange: "Ancient - Present",
+      locations: [
+        {
+          id: "himalayan-sites",
+          name: "Himalayan Water Sites",
+          description: "Water engineering sites across the Himalayas",
+          historicalContext: "Water engineering in the world's steepest terrain",
+          coordinates: { lat: 28.5, lng: 84.0 },
+          artifacts: [
+            {
+              id: "nepali-raj-kulo",
+              name: "Nepali Raj Kulo (Royal Canal)",
+              description: "Community irrigation governance in the world's steepest terrain",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Community irrigation governance in the world's steepest terrain",
+              yearBCE: 1000,
+              category: "irrigation"
+            },
+            {
+              id: "bhutanese-dzong-water",
+              name: "Bhutanese Dzong Water Systems",
+              description: "Fortress water engineering in the world's highest kingdom",
+              rarity: "epic",
+              historicalPeriod: "1600s onwards",
+              significance: "Fortress water engineering in the world's highest kingdom",
+              yearBCE: -1600,
+              category: "aqueduct"
+            },
+            {
+              id: "ladakhi-glacier-irrigation",
+              name: "Ladakhi Glacier-Fed Irrigation",
+              description: "Highest-altitude irrigation in the world (3000-4500 m)",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Highest-altitude irrigation in the world (3000-4500 m)",
+              yearBCE: 1000,
+              category: "irrigation"
+            },
+            {
+              id: "ice-stupa-glaciers",
+              name: "Ice Stupa Artificial Glaciers",
+              description: "Modern innovation addressing climate change at extreme altitude",
+              rarity: "legendary",
+              historicalPeriod: "2013-Present",
+              significance: "Modern innovation addressing climate change at extreme altitude",
+              yearBCE: -2013,
+              category: "dam"
+            },
+            {
+              id: "nepali-ghatta",
+              name: "Nepali Water Mill (Ghatta)",
+              description: "Highest density of traditional water mills on Earth — 25,000+",
+              rarity: "rare",
+              historicalPeriod: "Ancient-Present",
+              significance: "Highest density of traditional water mills on Earth — 25,000+",
+              yearBCE: 1000,
+              category: "water-lifting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "canary-islands",
+      name: "Canary Islands Water",
+      description: "2,000 years of isolated island water engineering — from Guanche cisterns to volcanic water tunnels.",
+      position: [-2, 0, -4],
+      color: "#FF8C00",
+      era: "ancient",
+      dateRange: "200 BCE - Present",
+      locations: [
+        {
+          id: "canary-sites",
+          name: "Canary Islands Water Sites",
+          description: "Water engineering sites across the Canary Islands",
+          historicalContext: "2,000 years of isolated island water engineering",
+          coordinates: { lat: 28.1, lng: -15.4 },
+          artifacts: [
+            {
+              id: "guanche-water",
+              name: "Guanche Water Management",
+              description: "Isolated island water engineering — 2,000 years of independent development",
+              rarity: "epic",
+              historicalPeriod: "200 BCE-1500 CE",
+              significance: "Isolated island water engineering — 2,000 years of independent development",
+              yearBCE: 200,
+              category: "dam"
+            },
+            {
+              id: "canary-galerias",
+              name: "Canary Island Galerías (Water Tunnels)",
+              description: "Volcanic qanat-equivalent — 1,600 tunnels totaling 1,700+ km",
+              rarity: "epic",
+              historicalPeriod: "1500s-Present",
+              significance: "Volcanic qanat-equivalent — 1,600 tunnels totaling 1,700+ km",
+              yearBCE: -1500,
+              category: "aqueduct"
+            },
+            {
+              id: "canary-fog-harvest",
+              name: "Canary Island Fog Harvesting",
+              description: "Atlantic island fog harvesting — traditional and modern",
+              rarity: "rare",
+              historicalPeriod: "Traditional-Modern",
+              significance: "Atlantic island fog harvesting — traditional and modern",
+              yearBCE: 500,
+              category: "water-lifting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "libya-gmmr",
+      name: "Libya Great Man-Made River",
+      description: "The largest irrigation project in the world — mining 40,000-year-old fossil water beneath the Sahara.",
+      position: [3, 0, -4],
+      color: "#C19A6B",
+      era: "modern",
+      dateRange: "1984 - Present",
+      locations: [
+        {
+          id: "gmmr-sites",
+          name: "Great Man-Made River",
+          description: "Great Man-Made River pipeline system",
+          historicalContext: "Mining ancient fossil water beneath the Sahara Desert",
+          coordinates: { lat: 27.0, lng: 17.0 },
+          artifacts: [
+            {
+              id: "great-man-made-river",
+              name: "Great Man-Made River (Libya)",
+              description: "Largest irrigation project in the world — 2,800 km of 4m-diameter pipeline mining ancient fossil water",
+              rarity: "legendary",
+              historicalPeriod: "1984-Present",
+              significance: "Largest irrigation project in the world — 2,800 km of 4m-diameter pipeline mining ancient fossil water",
+              yearBCE: -1984,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "china-south-north-transfer",
+      name: "China South-North Water Transfer",
+      description: "The most expensive infrastructure project in human history — redirecting a continent's hydrology.",
+      position: [17, 0, -4],
+      color: "#DE2910",
+      era: "modern",
+      dateRange: "2002 - Present",
+      locations: [
+        {
+          id: "south-north-transfer",
+          name: "South-North Water Transfer Project",
+          description: "South-North Water Transfer Project",
+          historicalContext: "The most expensive infrastructure project in human history",
+          coordinates: { lat: 35.0, lng: 113.0 },
+          artifacts: [
+            {
+              id: "south-north-water-transfer",
+              name: "South-North Water Transfer Project",
+              description: "Most expensive water project ever built — $80+ billion redirecting a continent's hydrology",
+              rarity: "legendary",
+              historicalPeriod: "2002-Present",
+              significance: "Most expensive water project ever built — $80+ billion redirecting a continent's hydrology",
+              yearBCE: -2002,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ethiopia-gerd",
+      name: "Grand Ethiopian Renaissance Dam",
+      description: "Africa's largest dam — threatening war between nations over Nile water.",
+      position: [7, 0, 1],
+      color: "#009639",
+      era: "modern",
+      dateRange: "2011 - Present",
+      locations: [
+        {
+          id: "gerd-site",
+          name: "GERD Site",
+          description: "Grand Ethiopian Renaissance Dam site",
+          historicalContext: "Africa's largest dam and most politically contentious water project",
+          coordinates: { lat: 11.2, lng: 35.1 },
+          artifacts: [
+            {
+              id: "grand-ethiopian-renaissance-dam",
+              name: "Grand Ethiopian Renaissance Dam",
+              description: "Africa's largest dam (6,450 MW) — most politically contentious water project on Earth",
+              rarity: "legendary",
+              historicalPeriod: "2011-Present",
+              significance: "Africa's largest dam (6,450 MW) — most politically contentious water project on Earth",
+              yearBCE: -2011,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "tierra-del-fuego",
+      name: "Tierra del Fuego Water Peoples",
+      description: "The southernmost people on Earth — surviving in the most extreme maritime environment.",
+      position: [-11, 0, 12],
+      color: "#4169E1",
+      era: "ancient",
+      dateRange: "6,000 BCE - Present",
+      locations: [
+        {
+          id: "tierra-sites",
+          name: "Tierra del Fuego",
+          description: "Tierra del Fuego water sites",
+          historicalContext: "The southernmost people on Earth surviving in extreme maritime conditions",
+          coordinates: { lat: -54.8, lng: -68.3 },
+          artifacts: [
+            {
+              id: "yaghan-canoe-water",
+              name: "Yaghan Canoe Water Life",
+              description: "Water survival at the extreme end of the habitable world — 4°C diving",
+              rarity: "legendary",
+              historicalPeriod: "6,000 BCE-Present",
+              significance: "Water survival at the extreme end of the habitable world — 4°C diving",
+              yearBCE: 6000,
+              category: "canal"
+            },
+            {
+              id: "selknam-guanaco-water",
+              name: "Selk'nam Guanaco-Water Knowledge",
+              description: "Lost water knowledge — genocide destroyed an entire water tradition",
+              rarity: "epic",
+              historicalPeriod: "Ancient-1900s",
+              significance: "Lost water knowledge — genocide destroyed an entire water tradition",
+              yearBCE: 2000,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "maldives-water",
+      name: "Maldives Water Engineering",
+      description: "Water management for the world's most vulnerable nation to sea-level rise.",
+      position: [12, 0, 3],
+      color: "#00693E",
+      era: "ancient",
+      dateRange: "Ancient - Present",
+      locations: [
+        {
+          id: "maldives-sites",
+          name: "Maldives Atolls",
+          description: "Maldives Atolls water sites",
+          historicalContext: "Water management for the world's lowest country",
+          coordinates: { lat: 3.2, lng: 73.2 },
+          artifacts: [
+            {
+              id: "maldivian-freshwater-lens",
+              name: "Maldivian Freshwater Lens Management",
+              description: "Water management for the world's lowest country — 1.5 m above sea level",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Water management for the world's lowest country — 1.5 m above sea level",
+              yearBCE: 1000,
+              category: "aqueduct"
+            },
+            {
+              id: "maldivian-rainwater",
+              name: "Maldivian Rainwater Harvesting",
+              description: "National survival dependent on rainwater",
+              rarity: "rare",
+              historicalPeriod: "Traditional-Modern",
+              significance: "National survival dependent on rainwater",
+              yearBCE: 1000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "swiss-alps-water",
+      name: "Swiss Alps Water Engineering",
+      description: "From prehistoric lake dwellings to the world's tallest gravity dam.",
+      position: [1, 0, -5],
+      color: "#FF0000",
+      era: "ancient",
+      dateRange: "4000 BCE - Present",
+      locations: [
+        {
+          id: "swiss-sites",
+          name: "Swiss Water Sites",
+          description: "Swiss Alps water engineering sites",
+          historicalContext: "From prehistoric lake dwellings to modern mega-dams",
+          coordinates: { lat: 46.2, lng: 7.6 },
+          artifacts: [
+            {
+              id: "bisse-suonen",
+              name: "Bisse/Suonen Alpine Irrigation",
+              description: "Most dramatic irrigation channels in Europe — clinging to Alpine cliff faces",
+              rarity: "legendary",
+              historicalPeriod: "13th century CE onwards",
+              significance: "Most dramatic irrigation channels in Europe — clinging to Alpine cliff faces",
+              yearBCE: -1200,
+              category: "irrigation"
+            },
+            {
+              id: "swiss-pile-dwellings",
+              name: "Swiss Pile Dwellings",
+              description: "UNESCO — largest concentration of prehistoric lakeside settlements",
+              rarity: "legendary",
+              historicalPeriod: "4000-800 BCE",
+              significance: "UNESCO — largest concentration of prehistoric lakeside settlements",
+              yearBCE: 4000,
+              category: "sanitation"
+            },
+            {
+              id: "grande-dixence",
+              name: "Grande Dixence Dam",
+              description: "World's tallest gravity dam (285 m) — greatest hydraulic head",
+              rarity: "legendary",
+              historicalPeriod: "1961",
+              significance: "World's tallest gravity dam (285 m) — greatest hydraulic head",
+              yearBCE: -1961,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "kurdish-water",
+      name: "Kurdish Water Traditions",
+      description: "10,000+ karez systems — many deliberately destroyed as a weapon of genocide.",
+      position: [7, 0, -4],
+      color: "#F0E68C",
+      era: "ancient",
+      dateRange: "Ancient - Present",
+      locations: [
+        {
+          id: "kurdish-sites",
+          name: "Kurdistan Water Sites",
+          description: "Kurdish water engineering sites",
+          historicalContext: "Karez systems across Kurdistan spanning four modern nations",
+          coordinates: { lat: 36.4, lng: 44.4 },
+          artifacts: [
+            {
+              id: "kurdish-karez",
+              name: "Kurdish Karez Systems",
+              description: "10,000+ karez in Iraqi Kurdistan — many destroyed by Anfal campaign as genocide tool",
+              rarity: "legendary",
+              historicalPeriod: "Ancient-Present",
+              significance: "10,000+ karez in Iraqi Kurdistan — many destroyed by Anfal campaign as genocide tool",
+              yearBCE: 2000,
+              category: "aqueduct"
+            },
+            {
+              id: "kurdish-mountain-springs",
+              name: "Kurdish Mountain Spring Management",
+              description: "Mountain water management across four modern nations",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Mountain water management across four modern nations",
+              yearBCE: 2000,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "space-water",
+      name: "Space Water Engineering",
+      description: "The most extreme water recycling — in orbit and beyond.",
+      position: [0, 0, -12],
+      color: "#000080",
+      era: "modern",
+      dateRange: "1998 - Present",
+      locations: [
+        {
+          id: "space-sites",
+          name: "Space Water Systems",
+          description: "Space-based water recycling and prospecting systems",
+          historicalContext: "Water engineering for human survival beyond Earth",
+          coordinates: { lat: 0.0, lng: 0.0 },
+          artifacts: [
+            {
+              id: "iss-water-recycling",
+              name: "ISS Water Recycling System",
+              description: "Most extreme water recycling ever built — 93% recovery in space",
+              rarity: "legendary",
+              historicalPeriod: "1998-Present",
+              significance: "Most extreme water recycling ever built — 93% recovery in space",
+              yearBCE: -1998,
+              category: "sanitation"
+            },
+            {
+              id: "lunar-mars-water",
+              name: "Lunar/Mars Water Prospecting",
+              description: "Water engineering for human civilization beyond Earth",
+              rarity: "epic",
+              historicalPeriod: "2009-Present",
+              significance: "Water engineering for human civilization beyond Earth",
+              yearBCE: -2009,
+              category: "water-lifting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "berber-amazigh-expanded",
+      name: "Berber/Amazigh Water Heritage",
+      description: "UNESCO foggaras, jessour terraces, and 800-year-old underground granaries.",
+      position: [2, 0, -3],
+      color: "#B8860B",
+      era: "ancient",
+      dateRange: "Ancient - Present",
+      locations: [
+        {
+          id: "north-africa-berber",
+          name: "North African Berber Sites",
+          description: "Berber/Amazigh water heritage sites across North Africa",
+          historicalContext: "Ancient water traditions of the Amazigh peoples",
+          coordinates: { lat: 32.5, lng: 3.6 },
+          artifacts: [
+            {
+              id: "algerian-foggara",
+              name: "Algerian Foggara Systems",
+              description: "UNESCO — most complete traditional water community in North Africa — 900+ foggaras",
+              rarity: "legendary",
+              historicalPeriod: "Ancient-Present",
+              significance: "UNESCO — most complete traditional water community in North Africa — 900+ foggaras",
+              yearBCE: 1000,
+              category: "aqueduct"
+            },
+            {
+              id: "tunisian-jessour",
+              name: "Tunisian Jessour System",
+              description: "Largest dryland terrace system in North Africa — 400,000 hectares",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Largest dryland terrace system in North Africa — 400,000 hectares",
+              yearBCE: 1000,
+              category: "irrigation"
+            },
+            {
+              id: "amazigh-underground-granary",
+              name: "Amazigh Underground Granary Water",
+              description: "Water management for food security across centuries — 800+ year operation",
+              rarity: "rare",
+              historicalPeriod: "Ancient-Present",
+              significance: "Water management for food security across centuries — 800+ year operation",
+              yearBCE: 1000,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "modern-mega-projects",
+      name: "Modern Water Mega-Projects & Crises",
+      description: "From Belo Monte to Flint — the triumphs and failures of modern water engineering.",
+      position: [0, 0, -8],
+      color: "#808080",
+      era: "modern",
+      dateRange: "1987 - Present",
+      locations: [
+        {
+          id: "mega-dams",
+          name: "Modern Mega-Dam Projects",
+          description: "Modern mega-dam projects around the world",
+          historicalContext: "The largest and most controversial modern dam projects",
+          coordinates: { lat: -3.5, lng: -51.8 },
+          artifacts: [
+            {
+              id: "belo-monte-dam",
+              name: "Belo Monte Dam",
+              description: "Third-largest dam in the world — most controversial in the Amazon",
+              rarity: "legendary",
+              historicalPeriod: "2011-2019",
+              significance: "Third-largest dam in the world — most controversial in the Amazon",
+              yearBCE: -2011,
+              category: "dam"
+            },
+            {
+              id: "sardar-sarovar-dam",
+              name: "Sardar Sarovar Dam (Narmada)",
+              description: "India's most fought-over dam — decades of protest",
+              rarity: "legendary",
+              historicalPeriod: "1987-2017",
+              significance: "India's most fought-over dam — decades of protest",
+              yearBCE: -1987,
+              category: "dam"
+            },
+            {
+              id: "mekong-dam-cascade",
+              name: "Mekong Dam Cascade",
+              description: "Most geopolitically contested river system — affecting 60 million people",
+              rarity: "legendary",
+              historicalPeriod: "1990s-Present",
+              significance: "Most geopolitically contested river system — affecting 60 million people",
+              yearBCE: -1990,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "water-crises",
+          name: "Modern Water Crises",
+          description: "Modern water governance failures and infrastructure challenges",
+          historicalContext: "Water crises that exposed failures in modern water management",
+          coordinates: { lat: 43.0, lng: -83.7 },
+          artifacts: [
+            {
+              id: "flint-water-crisis",
+              name: "Flint Michigan Water Crisis",
+              description: "Most infamous water governance failure in modern America — environmental racism",
+              rarity: "legendary",
+              historicalPeriod: "2014-2019",
+              significance: "Most infamous water governance failure in modern America — environmental racism",
+              yearBCE: -2014,
+              category: "sanitation"
+            },
+            {
+              id: "cape-town-day-zero",
+              name: "Cape Town Day Zero",
+              description: "Near-complete urban water failure in a major city",
+              rarity: "epic",
+              historicalPeriod: "2018",
+              significance: "Near-complete urban water failure in a major city",
+              yearBCE: -2018,
+              category: "sanitation"
+            },
+            {
+              id: "thames-tideway-tunnel",
+              name: "Thames Tideway Tunnel",
+              description: "Largest water infrastructure project in London since Victorian era — 25 km super sewer",
+              rarity: "epic",
+              historicalPeriod: "2016-2025",
+              significance: "Largest water infrastructure project in London since Victorian era — 25 km super sewer",
+              yearBCE: -2016,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ainu-water",
+      name: "Ainu Water Traditions",
+      description: "Indigenous salmon management in northern Japan — the river IS the territory.",
+      position: [22, 0, -6],
+      color: "#8B0000",
+      era: "ancient",
+      dateRange: "Ancient - Present",
+      locations: [
+        {
+          id: "ainu-sites",
+          name: "Ainu Hokkaido Sites",
+          description: "Ainu water and salmon management sites in Hokkaido",
+          historicalContext: "Indigenous salmon management distinct from Japanese traditions",
+          coordinates: { lat: 43.0, lng: 143.0 },
+          artifacts: [
+            {
+              id: "ainu-salmon-management",
+              name: "Ainu Salmon River Management",
+              description: "Indigenous salmon management distinct from Japanese — river as territory",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Indigenous salmon management distinct from Japanese — river as territory",
+              yearBCE: 2000,
+              category: "dam"
+            },
+            {
+              id: "ainu-marep",
+              name: "Ainu Marep (Fish Trap)",
+              description: "Ainu river engineering for the most important food source",
+              rarity: "rare",
+              historicalPeriod: "Ancient-Present",
+              significance: "Ainu river engineering for the most important food source",
+              yearBCE: 2000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "san-bushmen",
+      name: "San/Bushmen Water Knowledge",
+      description: "20,000+ years of desert water technology — the most minimalist and elegant on Earth.",
+      position: [4, 0, 7],
+      color: "#D2B48C",
+      era: "ancient",
+      dateRange: "20,000+ years ago - Present",
+      locations: [
+        {
+          id: "kalahari-sites",
+          name: "Kalahari Desert Sites",
+          description: "San/Bushmen water technology sites in the Kalahari",
+          historicalContext: "The oldest continuous water knowledge tradition on Earth",
+          coordinates: { lat: -22.0, lng: 23.0 },
+          artifacts: [
+            {
+              id: "san-sip-well",
+              name: "San Sip Well Technology",
+              description: "Most minimalist water extraction technology ever devised",
+              rarity: "legendary",
+              historicalPeriod: "20,000+ years",
+              significance: "Most minimalist water extraction technology ever devised",
+              yearBCE: 20000,
+              category: "water-lifting"
+            },
+            {
+              id: "san-tsamma-melon",
+              name: "San Tsamma Melon Water",
+              description: "Plant-based water survival in the world's second-largest desert",
+              rarity: "epic",
+              historicalPeriod: "20,000+ years",
+              significance: "Plant-based water survival in the world's second-largest desert",
+              yearBCE: 20000,
+              category: "aqueduct"
+            },
+            {
+              id: "san-bi-root",
+              name: "San Bi! Root Water",
+              description: "Emergency water extraction from underground plant storage",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Emergency water extraction from underground plant storage",
+              yearBCE: 10000,
+              category: "water-lifting"
+            },
+            {
+              id: "san-eggshell-cache",
+              name: "San Ostrich Eggshell Water Cache Network",
+              description: "Underground water reserve network across a desert — oldest logistics system",
+              rarity: "legendary",
+              historicalPeriod: "20,000+ years",
+              significance: "Underground water reserve network across a desert — oldest logistics system",
+              yearBCE: 20000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "inupiat-north-alaska",
+      name: "Iñupiat (North Alaska Coast)",
+      description: "Sea ice navigation, whale hunting, and permafrost engineering on the Arctic Ocean.",
+      position: [-22, 0, -11],
+      color: "#4682B4",
+      era: "ancient",
+      dateRange: "2000 BCE - Present",
+      locations: [
+        {
+          id: "north-slope",
+          name: "North Slope/Utqiaġvik",
+          description: "Iñupiat homeland on the Arctic Ocean coast",
+          historicalContext: "Center of Arctic sea ice navigation and whale hunting culture",
+          coordinates: { lat: 71.3, lng: -156.8 },
+          artifacts: [
+            {
+              id: "inupiat-sea-ice-nav",
+              name: "Iñupiat Sea Ice Water Navigation",
+              description: "Iñupiat Sea Ice Water Navigation",
+              rarity: "legendary",
+              historicalPeriod: "2000 BCE onwards",
+              significance: "Most complex ice-water navigation knowledge on Earth",
+              yearBCE: 2000,
+              category: "canal"
+            },
+            {
+              id: "inupiat-umiak",
+              name: "Iñupiat Umiak (Large Skin Boat)",
+              description: "Iñupiat Umiak (Large Skin Boat)",
+              rarity: "epic",
+              historicalPeriod: "2000 BCE onwards",
+              significance: "Large-scale Arctic maritime vessel for whale hunting",
+              yearBCE: 2000,
+              category: "canal"
+            },
+            {
+              id: "inupiat-whale-hunting",
+              name: "Iñupiat Whale Hunting Water Knowledge",
+              description: "Iñupiat Whale Hunting Water Knowledge",
+              rarity: "legendary",
+              historicalPeriod: "2000 BCE onwards",
+              significance: "Reading ice-water conditions for the most consequential hunt in the Arctic",
+              yearBCE: 2000,
+              category: "dam"
+            },
+            {
+              id: "inupiat-ice-cellar",
+              name: "Iñupiat Ice Cellar (Siġḷuaq)",
+              description: "Iñupiat Ice Cellar (Siġḷuaq)",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Permafrost food-water preservation now threatened by climate change",
+              yearBCE: 2000,
+              category: "sanitation"
+            },
+            {
+              id: "inupiat-freshwater-ice",
+              name: "Iñupiat Freshwater Ice Selection",
+              description: "Iñupiat Freshwater Ice Selection",
+              rarity: "rare",
+              historicalPeriod: "Ancient-Present",
+              significance: "Ice literacy — reading ice properties for water safety",
+              yearBCE: 2000,
+              category: "water-lifting"
+            },
+            {
+              id: "barrow-whaling-camp",
+              name: "Barrow/Utqiaġvik Whaling Camp Water",
+              description: "Barrow/Utqiaġvik Whaling Camp Water",
+              rarity: "rare",
+              historicalPeriod: "Ancient-Present",
+              significance: "Water logistics for camps on floating sea ice",
+              yearBCE: 2000,
+              category: "sanitation"
+            },
+            {
+              id: "inupiat-coastal-erosion",
+              name: "Iñupiat Coastal Erosion Response",
+              description: "Iñupiat Coastal Erosion Response",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Indigenous coastal water management overwhelmed by climate change",
+              yearBCE: 2000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "yupik-western-alaska",
+      name: "Yup'ik (Western Alaska)",
+      description: "Life on one of the world's largest river deltas — 129,500 km² of waterscape.",
+      position: [-23, 0, -10],
+      color: "#2E8B57",
+      era: "ancient",
+      dateRange: "2000 BCE - Present",
+      locations: [
+        {
+          id: "yk-delta",
+          name: "Yukon-Kuskokwim Delta",
+          description: "One of the world's largest river deltas",
+          historicalContext: "Yup'ik homeland on the vast Yukon-Kuskokwim Delta waterscape",
+          coordinates: { lat: 61.5, lng: -163.0 },
+          artifacts: [
+            {
+              id: "yupik-delta-water-life",
+              name: "Yup'ik Yukon-Kuskokwim Delta Water Life",
+              description: "Yup'ik Yukon-Kuskokwim Delta Water Life",
+              rarity: "legendary",
+              historicalPeriod: "2000 BCE onwards",
+              significance: "Life on one of the world's largest river deltas — 38,000 people in 56 villages",
+              yearBCE: 2000,
+              category: "canal"
+            },
+            {
+              id: "yupik-fish-camp",
+              name: "Yup'ik Fish Camp Water Management",
+              description: "Yup'ik Fish Camp Water Management",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Salmon processing water management for winter food supply",
+              yearBCE: 1000,
+              category: "dam"
+            },
+            {
+              id: "yupik-qasgiq",
+              name: "Yup'ik Qasgiq Steam Bath",
+              description: "Yup'ik Qasgiq Steam Bath",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Steam-water engineering as the center of community life",
+              yearBCE: 1000,
+              category: "fountain"
+            },
+            {
+              id: "yupik-tundra-nav",
+              name: "Yup'ik Tundra Water Navigation",
+              description: "Yup'ik Tundra Water Navigation",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Navigating a landscape that is half water",
+              yearBCE: 1000,
+              category: "canal"
+            },
+            {
+              id: "yupik-permafrost",
+              name: "Yup'ik Permafrost Water Understanding",
+              description: "Yup'ik Permafrost Water Understanding",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Indigenous permafrost hydrology — now essential for climate science",
+              yearBCE: 1000,
+              category: "aqueduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "aleut-unangan",
+      name: "Aleut/Unangan (Aleutian Islands)",
+      description: "The most hydrodynamically advanced kayak ever built — for the most dangerous ocean.",
+      position: [-24, 0, -9],
+      color: "#708090",
+      era: "ancient",
+      dateRange: "9000 BCE - Present",
+      locations: [
+        {
+          id: "aleutian-islands",
+          name: "Aleutian Islands",
+          description: "Volcanic island chain in the North Pacific",
+          historicalContext: "Unangan homeland on one of the most dangerous maritime environments on Earth",
+          coordinates: { lat: 52.0, lng: -174.0 },
+          artifacts: [
+            {
+              id: "unangan-baidarka",
+              name: "Unangan Baidarka (Kayak)",
+              description: "Unangan Baidarka (Kayak)",
+              rarity: "legendary",
+              historicalPeriod: "4000+ BCE",
+              significance: "Most hydrodynamically advanced kayak design ever created",
+              yearBCE: 4000,
+              category: "canal"
+            },
+            {
+              id: "unangan-kamleika",
+              name: "Unangan Gut-Skin Waterproofing (Kamleika)",
+              description: "Unangan Gut-Skin Waterproofing (Kamleika)",
+              rarity: "legendary",
+              historicalPeriod: "Ancient-Present",
+              significance: "Most effective pre-modern waterproof clothing — survival technology",
+              yearBCE: 4000,
+              category: "sanitation"
+            },
+            {
+              id: "unangan-volcanic-water",
+              name: "Unangan Volcanic Island Water",
+              description: "Unangan Volcanic Island Water",
+              rarity: "epic",
+              historicalPeriod: "9000 BCE onwards",
+              significance: "Water management on treeless volcanic islands in extreme maritime climate",
+              yearBCE: 9000,
+              category: "aqueduct"
+            },
+            {
+              id: "unangan-tidal",
+              name: "Unangan Tidal Knowledge",
+              description: "Unangan Tidal Knowledge",
+              rarity: "epic",
+              historicalPeriod: "Ancient-Present",
+              significance: "Tidal navigation in one of the most dangerous maritime environments",
+              yearBCE: 4000,
+              category: "canal"
+            },
+            {
+              id: "unangan-kelp-forest",
+              name: "Unangan Kelp Forest Water Knowledge",
+              description: "Unangan Kelp Forest Water Knowledge",
+              rarity: "rare",
+              historicalPeriod: "Ancient-Present",
+              significance: "Using kelp forests as water condition indicators",
+              yearBCE: 4000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "athabascan-interior",
+      name: "Athabascan/Dene (Interior Alaska)",
+      description: "River-organized civilization — 12,000+ years on the Yukon, Tanana, and Copper rivers.",
+      position: [-22, 0, -10],
+      color: "#8B4513",
+      era: "ancient",
+      dateRange: "12,000 BCE - Present",
+      locations: [
+        {
+          id: "interior-alaska",
+          name: "Interior Alaska Rivers",
+          description: "Major river systems of interior Alaska",
+          historicalContext: "Athabascan homeland organized around the Yukon, Tanana, and Copper rivers",
+          coordinates: { lat: 64.0, lng: -149.0 },
+          artifacts: [
+            {
+              id: "athabascan-river-life",
+              name: "Athabascan River Life",
+              description: "Athabascan River Life",
+              rarity: "epic",
+              historicalPeriod: "12,000+ BCE",
+              significance: "River-organized civilization across interior Alaska",
+              yearBCE: 12000,
+              category: "canal"
+            },
+            {
+              id: "athabascan-fish-wheel",
+              name: "Athabascan Fish Wheel",
+              description: "Athabascan Fish Wheel",
+              rarity: "rare",
+              historicalPeriod: "1900s CE (adopted)",
+              significance: "Adapted technology becoming essential to indigenous subsistence",
+              yearBCE: -1900,
+              category: "dam"
+            },
+            {
+              id: "athabascan-ice-bridge",
+              name: "Athabascan Ice Bridge Navigation",
+              description: "Athabascan Ice Bridge Navigation",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Ice-road navigation on major interior rivers",
+              yearBCE: 5000,
+              category: "canal"
+            },
+            {
+              id: "gwich-in-caribou-water",
+              name: "Gwich'in Caribou-Water Knowledge",
+              description: "Gwich'in Caribou-Water Knowledge",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Water knowledge for largest land animal migration in North America",
+              yearBCE: 5000,
+              category: "dam"
+            },
+            {
+              id: "athabascan-birchbark",
+              name: "Athabascan Birchbark Canoe (Interior Design)",
+              description: "Athabascan Birchbark Canoe (Interior Design)",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "River-specific canoe design — each river requires different engineering",
+              yearBCE: 3000,
+              category: "canal"
+            },
+            {
+              id: "denaina-hybrid-water",
+              name: "Dena'ina Coastal-Interior Hybrid Water",
+              description: "Dena'ina Coastal-Interior Hybrid Water",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Only Athabascan people managing both ocean and river water",
+              yearBCE: 3000,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "tlingit-se-alaska",
+      name: "Tlingit (Southeast Alaska)",
+      description: "Water ownership as the foundation of social hierarchy — in one of North America's wettest environments.",
+      position: [-21, 0, -9],
+      color: "#006400",
+      era: "ancient",
+      dateRange: "5000 BCE - Present",
+      locations: [
+        {
+          id: "se-alaska",
+          name: "Southeast Alaska",
+          description: "Temperate rainforest coast of Southeast Alaska",
+          historicalContext: "Tlingit homeland in one of the wettest environments in North America",
+          coordinates: { lat: 58.3, lng: -134.4 },
+          artifacts: [
+            {
+              id: "tlingit-rainforest-water",
+              name: "Tlingit Rainforest Water Management",
+              description: "Tlingit Rainforest Water Management",
+              rarity: "epic",
+              historicalPeriod: "5000 BCE onwards",
+              significance: "Water management in 3,000-5,000 mm rainfall — among wettest in North America",
+              yearBCE: 5000,
+              category: "sanitation"
+            },
+            {
+              id: "tlingit-salmon-ownership",
+              name: "Tlingit Salmon Stream Ownership",
+              description: "Tlingit Salmon Stream Ownership",
+              rarity: "legendary",
+              historicalPeriod: "Traditional",
+              significance: "Water ownership as the foundation of social hierarchy",
+              yearBCE: 3000,
+              category: "dam"
+            },
+            {
+              id: "tlingit-fish-trap",
+              name: "Tlingit Fish Trap (Stone and Wood)",
+              description: "Tlingit Fish Trap (Stone and Wood)",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Sustainable fishery with built-in escapement",
+              yearBCE: 3000,
+              category: "dam"
+            },
+            {
+              id: "tlingit-glacial-nav",
+              name: "Tlingit Glacial River Navigation",
+              description: "Tlingit Glacial River Navigation",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Glacial river navigation later adopted by Gold Rush miners",
+              yearBCE: 3000,
+              category: "canal"
+            },
+            {
+              id: "tlingit-canoe",
+              name: "Tlingit Canoe Construction",
+              description: "Tlingit Canoe Construction",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Using water (steam) to build water vehicles (canoes)",
+              yearBCE: 3000,
+              category: "canal"
+            },
+            {
+              id: "tlingit-hot-springs",
+              name: "Tlingit Hot Spring Management",
+              description: "Tlingit Hot Spring Management",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Sacred hot spring management in the temperate rainforest",
+              yearBCE: 3000,
+              category: "fountain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "haida-gwaii",
+      name: "Haida (Haida Gwaii/SE Alaska)",
+      description: "Largest indigenous watercraft in North America — 20 m canoes for 1,000+ km ocean voyages.",
+      position: [-21, 0, -8],
+      color: "#191970",
+      era: "ancient",
+      dateRange: "5000 BCE - Present",
+      locations: [
+        {
+          id: "haida-gwaii-sites",
+          name: "Haida Gwaii",
+          description: "Haida Gwaii archipelago off the coast of British Columbia",
+          historicalContext: "Haida homeland known for monumental art and ocean-going canoes",
+          coordinates: { lat: 53.2, lng: -132.0 },
+          artifacts: [
+            {
+              id: "haida-ocean-canoe",
+              name: "Haida Ocean-Going Canoe",
+              description: "Haida Ocean-Going Canoe",
+              rarity: "legendary",
+              historicalPeriod: "Traditional",
+              significance: "Largest indigenous watercraft in North America — up to 20 m",
+              yearBCE: 3000,
+              category: "canal"
+            },
+            {
+              id: "haida-rainwater",
+              name: "Haida Gwaii Rainwater Collection",
+              description: "Haida Gwaii Rainwater Collection",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Rainwater harvesting using naturally antimicrobial cedar",
+              yearBCE: 3000,
+              category: "dam"
+            },
+            {
+              id: "haida-intertidal",
+              name: "Haida Intertidal Management",
+              description: "Haida Intertidal Management",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Intertidal zone as managed landscape — farming the tide zone",
+              yearBCE: 3000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "canadian-inuit-expanded",
+      name: "Canadian Inuit (Expanded)",
+      description: "Ice-road navigation across the largest archipelago on Earth — the iglu as water-phase engineering.",
+      position: [-16, 0, -11],
+      color: "#87CEEB",
+      era: "ancient",
+      dateRange: "4000 BCE - Present",
+      locations: [
+        {
+          id: "canadian-arctic",
+          name: "Canadian Arctic Archipelago",
+          description: "Vast Arctic archipelago of northern Canada",
+          historicalContext: "Inuit homeland across the largest archipelago on Earth",
+          coordinates: { lat: 69.0, lng: -85.0 },
+          artifacts: [
+            {
+              id: "inuit-qamutiik",
+              name: "Inuit Qamutiik Ice-Road Travel",
+              description: "Inuit Qamutiik Ice-Road Travel",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Ice-road navigation across the largest archipelago on Earth",
+              yearBCE: 4000,
+              category: "canal"
+            },
+            {
+              id: "inuit-iglu-water",
+              name: "Inuit Iglu Water-Phase Engineering",
+              description: "Inuit Iglu Water-Phase Engineering",
+              rarity: "legendary",
+              historicalPeriod: "Traditional",
+              significance: "Converting snow to ice using thermal engineering — most elegant water-phase architecture",
+              yearBCE: 4000,
+              category: "sanitation"
+            },
+            {
+              id: "inuit-saputit",
+              name: "Inuit Saputit (Stone Fish Weir)",
+              description: "Inuit Saputit (Stone Fish Weir)",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Fish weir for the most extreme seasonal water variation on Earth",
+              yearBCE: 4000,
+              category: "dam"
+            },
+            {
+              id: "inuit-polynya",
+              name: "Inuit Polynya Knowledge",
+              description: "Inuit Polynya Knowledge",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Knowledge of ice-free water in a frozen ocean — critical hunting infrastructure",
+              yearBCE: 4000,
+              category: "dam"
+            },
+            {
+              id: "nunavut-water-challenge",
+              name: "Nunavut Community Water Challenges",
+              description: "Nunavut Community Water Challenges",
+              rarity: "rare",
+              historicalPeriod: "Modern",
+              significance: "Most extreme municipal water delivery in the developed world",
+              yearBCE: -1950,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "greenlandic-inuit",
+      name: "Greenlandic Inuit",
+      description: "30+ kayak rolling techniques and harvesting ancient freshwater from icebergs.",
+      position: [-8, 0, -11],
+      color: "#ADD8E6",
+      era: "ancient",
+      dateRange: "2500 BCE - Present",
+      locations: [
+        {
+          id: "greenland-sites",
+          name: "Greenland",
+          description: "World's largest island — Greenlandic Inuit homeland",
+          historicalContext: "Inuit culture adapted to the world's largest island with ice sheet and fjords",
+          coordinates: { lat: 64.2, lng: -51.7 },
+          artifacts: [
+            {
+              id: "greenlandic-qajaq",
+              name: "Greenlandic Kayak (Qajaq) Mastery",
+              description: "Greenlandic Kayak (Qajaq) Mastery",
+              rarity: "legendary",
+              historicalPeriod: "Traditional",
+              significance: "Most refined kayak design and rolling techniques in the world",
+              yearBCE: 2500,
+              category: "canal"
+            },
+            {
+              id: "greenlandic-iceberg",
+              name: "Greenlandic Iceberg Freshwater",
+              description: "Greenlandic Iceberg Freshwater",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Harvesting ancient freshwater from icebergs",
+              yearBCE: 2500,
+              category: "water-lifting"
+            },
+            {
+              id: "greenlandic-fjord-nav",
+              name: "Greenlandic Fjord Navigation",
+              description: "Greenlandic Fjord Navigation",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Fjord navigation in the world's largest island — Scoresby Sund 350 km",
+              yearBCE: 2500,
+              category: "canal"
+            },
+            {
+              id: "greenlandic-climate",
+              name: "Greenlandic Climate Adaptation",
+              description: "Greenlandic Climate Adaptation",
+              rarity: "rare",
+              historicalPeriod: "Modern",
+              significance: "Front line of climate-change water adaptation",
+              yearBCE: -2000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "sami-people",
+      name: "Sami People (Scandinavia)",
+      description: "Europe's last nomadic water-dependent migration — and the catalyst for indigenous rights.",
+      position: [3, 0, -9],
+      color: "#0000CD",
+      era: "ancient",
+      dateRange: "4000 BCE - Present",
+      locations: [
+        {
+          id: "sami-territory",
+          name: "Sami Territory (Sápmi)",
+          description: "Sami homeland across northern Scandinavia",
+          historicalContext: "Europe's indigenous Arctic people with water-dependent reindeer migration",
+          coordinates: { lat: 68.5, lng: 22.0 },
+          artifacts: [
+            {
+              id: "sami-reindeer-water",
+              name: "Sami Reindeer-Water Migration",
+              description: "Sami Reindeer-Water Migration",
+              rarity: "legendary",
+              historicalPeriod: "4000 BCE onwards",
+              significance: "Europe's last nomadic water-dependent migration",
+              yearBCE: 4000,
+              category: "irrigation"
+            },
+            {
+              id: "sami-river-fishing",
+              name: "Sami River Fishing (Jokfiske)",
+              description: "Sami River Fishing (Jokfiske)",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Indigenous management of Europe's most productive Arctic salmon rivers",
+              yearBCE: 3000,
+              category: "dam"
+            },
+            {
+              id: "sami-lavvu",
+              name: "Sami Lavvu Water Design",
+              description: "Sami Lavvu Water Design",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Portable shelter water engineering for Europe's most extreme weather",
+              yearBCE: 3000,
+              category: "sanitation"
+            },
+            {
+              id: "sami-spring-ceremony",
+              name: "Sami Spring Water Ceremony",
+              description: "Sami Spring Water Ceremony",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Sacred water tradition in Europe's far north",
+              yearBCE: 3000,
+              category: "fountain"
+            },
+            {
+              id: "sami-lake-ice-fishing",
+              name: "Sami Lake Ice Fishing",
+              description: "Sami Lake Ice Fishing",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Fishing through extreme ice in polar darkness",
+              yearBCE: 3000,
+              category: "dam"
+            },
+            {
+              id: "sami-hydropower-resistance",
+              name: "Sami Hydropower Resistance",
+              description: "Sami Hydropower Resistance",
+              rarity: "epic",
+              historicalPeriod: "1970s-Present",
+              significance: "Water rights as catalyst for indigenous political recognition in Europe",
+              yearBCE: -1970,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "modern-arctic-engineering",
+      name: "Modern Alaska & Arctic Engineering",
+      description: "From the Trans-Alaska Pipeline to the first climate refugee relocation in America.",
+      position: [-22, 0, -12],
+      color: "#696969",
+      era: "modern",
+      dateRange: "1974 - Present",
+      locations: [
+        {
+          id: "alaska-engineering",
+          name: "Alaska Engineering Projects",
+          description: "Major modern engineering projects in Alaska",
+          historicalContext: "Modern water engineering challenges in Arctic Alaska",
+          coordinates: { lat: 64.0, lng: -149.0 },
+          artifacts: [
+            {
+              id: "trans-alaska-pipeline",
+              name: "Trans-Alaska Pipeline Water Engineering",
+              description: "Trans-Alaska Pipeline Water Engineering",
+              rarity: "legendary",
+              historicalPeriod: "1974-1977",
+              significance: "Largest pipeline in North America — water the primary engineering challenge",
+              yearBCE: -1974,
+              category: "aqueduct"
+            },
+            {
+              id: "alaska-rural-water",
+              name: "Alaska Rural Water/Sanitation Crisis",
+              description: "Alaska Rural Water/Sanitation Crisis",
+              rarity: "legendary",
+              historicalPeriod: "Present",
+              significance: "Most severe water infrastructure crisis in the developed world",
+              yearBCE: -1970,
+              category: "sanitation"
+            },
+            {
+              id: "barrow-utilidor",
+              name: "Barrow Utilidor System",
+              description: "Barrow Utilidor System",
+              rarity: "epic",
+              historicalPeriod: "1950s onwards",
+              significance: "Most expensive water delivery infrastructure per capita in the US",
+              yearBCE: -1950,
+              category: "aqueduct"
+            },
+            {
+              id: "exxon-valdez",
+              name: "Exxon Valdez Oil Spill Water Response",
+              description: "Exxon Valdez Oil Spill Water Response",
+              rarity: "legendary",
+              historicalPeriod: "1989",
+              significance: "Most consequential water pollution event in Arctic history",
+              yearBCE: -1989,
+              category: "sanitation"
+            },
+            {
+              id: "newtok-relocation",
+              name: "Newtok Village Relocation",
+              description: "Newtok Village Relocation",
+              rarity: "legendary",
+              historicalPeriod: "2019-Present",
+              significance: "First climate-driven community relocation in the United States",
+              yearBCE: -2019,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "pan-arctic",
+          name: "Pan-Arctic Challenges",
+          description: "Pan-Arctic environmental and engineering challenges",
+          historicalContext: "Climate change impacts across the entire Arctic region",
+          coordinates: { lat: 75.0, lng: 0.0 },
+          artifacts: [
+            {
+              id: "permafrost-thaw",
+              name: "Permafrost Thaw Water Challenges",
+              description: "Permafrost Thaw Water Challenges",
+              rarity: "epic",
+              historicalPeriod: "Present",
+              significance: "Climate change creating water conditions unprecedented in human Arctic history",
+              yearBCE: -2000,
+              category: "sanitation"
+            },
+            {
+              id: "arctic-sea-route",
+              name: "Arctic Sea Route Navigation",
+              description: "Arctic Sea Route Navigation",
+              rarity: "epic",
+              historicalPeriod: "2007-Present",
+              significance: "Climate change opening new ocean navigation routes",
+              yearBCE: -2007,
+              category: "canal"
+            },
+            {
+              id: "svalbard-seed-vault",
+              name: "Svalbard Seed Vault Water Protection",
+              description: "Svalbard Seed Vault Water Protection",
+              rarity: "epic",
+              historicalPeriod: "2008",
+              significance: "Climate change threatening the world's food security backup — with water",
+              yearBCE: -2008,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "fertile-crescent-agriculture",
+      name: "Fertile Crescent Agricultural Water",
+      description: "The hidden water inventions of cereal farming — from 23,000 BCE grain-water observation to the first irrigation canal.",
+      position: [6, 0, -4],
+      color: "#DAA520",
+      era: "ancient",
+      dateRange: "23,000-6,000 BCE",
+      locations: [
+        {
+          id: "ohalo-natufian",
+          name: "Ohalo II & Natufian Sites",
+          description: "Earliest cereal harvesting and the birth of agricultural water knowledge",
+          historicalContext: "Earliest cereal harvesting and the birth of agricultural water knowledge",
+          coordinates: { lat: 32.7, lng: 35.6 },
+          artifacts: [
+            {
+              id: "water-grain-connection",
+              name: "Recognition of Water-Grain Connection",
+              description: "Recognition of Water-Grain Connection",
+              rarity: "legendary",
+              historicalPeriod: "23,000 BCE",
+              significance: "The first agricultural observation — grain concentrates where water is",
+              yearBCE: 23000,
+              category: "irrigation"
+            },
+            {
+              id: "seasonal-water-monitoring",
+              name: "Seasonal Water-Level Monitoring",
+              description: "Seasonal Water-Level Monitoring",
+              rarity: "epic",
+              historicalPeriod: "23,000 BCE",
+              significance: "First hydrological monitoring — watching water to predict food",
+              yearBCE: 23000,
+              category: "irrigation"
+            },
+            {
+              id: "post-harvest-water-avoidance",
+              name: "Post-Harvest Rain Avoidance",
+              description: "Post-Harvest Rain Avoidance",
+              rarity: "epic",
+              historicalPeriod: "23,000 BCE",
+              significance: "First grain shelter — a roof to keep water off food",
+              yearBCE: 23000,
+              category: "sanitation"
+            },
+            {
+              id: "flood-recession-planting",
+              name: "Flood-Recession Planting",
+              description: "Flood-Recession Planting",
+              rarity: "legendary",
+              historicalPeriod: "12,000 BCE",
+              significance: "Planting in moist soil left by receding floodwater — zero infrastructure irrigation",
+              yearBCE: 12000,
+              category: "irrigation"
+            },
+            {
+              id: "deliberate-seed-water",
+              name: "Deliberate Seed Scattering Near Water",
+              description: "Deliberate Seed Scattering Near Water",
+              rarity: "legendary",
+              historicalPeriod: "12,500 BCE",
+              significance: "The step between gathering and farming — choosing where water already exists",
+              yearBCE: 12500,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "ppnb-agriculture",
+          name: "Pre-Pottery Neolithic Agricultural Sites",
+          description: "First water diversions and grain processing",
+          historicalContext: "First water diversions and grain processing",
+          coordinates: { lat: 36.0, lng: 39.0 },
+          artifacts: [
+            {
+              id: "first-water-diversion",
+              name: "First Water Diversion (Tiny Scale)",
+              description: "First Water Diversion (Tiny Scale)",
+              rarity: "legendary",
+              historicalPeriod: "10,500 BCE",
+              significance: "A scratch in the dirt redirecting a trickle of water — ancestor of all irrigation",
+              yearBCE: 10500,
+              category: "irrigation"
+            },
+            {
+              id: "soil-moisture-assessment",
+              name: "Soil Moisture Assessment by Hand",
+              description: "Soil Moisture Assessment by Hand",
+              rarity: "epic",
+              historicalPeriod: "10,500 BCE",
+              significance: "Squeezing soil to test moisture — still used by farmers 12,500 years later",
+              yearBCE: 10500,
+              category: "irrigation"
+            },
+            {
+              id: "first-runoff-capture",
+              name: "First Runoff Capture (Berm)",
+              description: "First Runoff Capture (Berm)",
+              rarity: "legendary",
+              historicalPeriod: "10,000 BCE",
+              significance: "A line of dirt — ancestor of every dam, levee, and terrace wall ever built",
+              yearBCE: 10000,
+              category: "dam"
+            },
+            {
+              id: "seed-soaking",
+              name: "Seed Soaking Before Planting",
+              description: "Seed Soaking Before Planting",
+              rarity: "rare",
+              historicalPeriod: "10,000 BCE",
+              significance: "Pre-soaking seeds in water to accelerate germination",
+              yearBCE: 10000,
+              category: "irrigation"
+            },
+            {
+              id: "first-grain-drying",
+              name: "First Grain Drying Floor",
+              description: "First Grain Drying Floor",
+              rarity: "epic",
+              historicalPeriod: "10,000 BCE",
+              significance: "Water removal from grain — grain above 14% moisture rots in storage",
+              yearBCE: 10000,
+              category: "sanitation"
+            },
+            {
+              id: "sealed-grain-storage",
+              name: "First Sealed Grain Storage",
+              description: "First Sealed Grain Storage",
+              rarity: "epic",
+              historicalPeriod: "10,000 BCE",
+              significance: "Waterproofing technology for food security — plaster-lined pits",
+              yearBCE: 10000,
+              category: "sanitation"
+            },
+            {
+              id: "beer-bread-water",
+              name: "Beer/Bread Water Processing",
+              description: "Beer/Bread Water Processing",
+              rarity: "legendary",
+              historicalPeriod: "10,000 BCE",
+              significance: "Water-grain-yeast chemistry — some argue beer drove grain domestication",
+              yearBCE: 10000,
+              category: "water-lifting"
+            },
+            {
+              id: "basin-irrigation-proto",
+              name: "Basin Irrigation (Proto-form)",
+              description: "Basin Irrigation (Proto-form)",
+              rarity: "epic",
+              historicalPeriod: "8,000 BCE",
+              significance: "Field surrounded by earthen walls, flooded, then drained — precursor to Egyptian basins",
+              yearBCE: 8000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "east-asia-rice-water",
+      name: "East Asia Rice Water Engineering",
+      description: "Every step of rice domestication is a water management step — from wetland reading to paddy construction.",
+      position: [18, 0, -3],
+      color: "#228B22",
+      era: "ancient",
+      dateRange: "12,000-1,000 BCE",
+      locations: [
+        {
+          id: "yangtze-early-rice",
+          name: "Yangtze Early Rice Sites",
+          description: "Where rice farming and water management co-evolved",
+          historicalContext: "Where rice farming and water management co-evolved",
+          coordinates: { lat: 30.0, lng: 120.0 },
+          artifacts: [
+            {
+              id: "wetland-water-reading",
+              name: "Wetland Water-Level Reading for Rice",
+              description: "Wetland Water-Level Reading for Rice",
+              rarity: "legendary",
+              historicalPeriod: "12,000 BCE",
+              significance: "Specialized wetland hydrology — knowing optimal depths for wild rice",
+              yearBCE: 12000,
+              category: "irrigation"
+            },
+            {
+              id: "deliberate-wetland-mod",
+              name: "Deliberate Wetland Water Modification",
+              description: "Deliberate Wetland Water Modification",
+              rarity: "legendary",
+              historicalPeriod: "10,000 BCE",
+              significance: "Blocking outlets to raise water — first rice farming was managing natural wetlands",
+              yearBCE: 10000,
+              category: "dam"
+            },
+            {
+              id: "fish-rice-synergy",
+              name: "Fish-Rice Water Synergy",
+              description: "Fish-Rice Water Synergy",
+              rarity: "epic",
+              historicalPeriod: "9,000 BCE",
+              significance: "Earliest aquaculture-agriculture integration — still practiced as rice-fish farming",
+              yearBCE: 9000,
+              category: "irrigation"
+            },
+            {
+              id: "first-bunded-field",
+              name: "First Bunded Field (Proto-Paddy)",
+              description: "First Bunded Field (Proto-Paddy)",
+              rarity: "legendary",
+              historicalPeriod: "7,000 BCE",
+              significance: "Most important water invention in Asian agricultural history — mud ridge around wet ground",
+              yearBCE: 7000,
+              category: "irrigation"
+            },
+            {
+              id: "water-inlet-outlet",
+              name: "Water Inlet/Outlet Control",
+              description: "Water Inlet/Outlet Control",
+              rarity: "epic",
+              historicalPeriod: "7,000 BCE",
+              significance: "First water control gate — ancestor of every sluice and valve, adapted for rice",
+              yearBCE: 7000,
+              category: "irrigation"
+            },
+            {
+              id: "multi-stage-depth",
+              name: "Multi-Stage Water Depth Management",
+              description: "Multi-Stage Water Depth Management",
+              rarity: "epic",
+              historicalPeriod: "6,000 BCE",
+              significance: "Core skill of rice farming — different depths for germination, tillering, harvest",
+              yearBCE: 6000,
+              category: "irrigation"
+            },
+            {
+              id: "paddy-puddling",
+              name: "Paddy Field Puddling",
+              description: "Paddy Field Puddling",
+              rarity: "epic",
+              historicalPeriod: "5,000 BCE",
+              significance: "Creating impermeable clay hardpan — water buffalo may have been domesticated for this",
+              yearBCE: 5000,
+              category: "irrigation"
+            },
+            {
+              id: "rice-terrace-proto",
+              name: "Terrace Construction for Rice",
+              description: "Terrace Construction for Rice",
+              rarity: "legendary",
+              historicalPeriod: "5,000 BCE",
+              significance: "Self-contained water management units on hillsides — precursor to Banaue",
+              yearBCE: 5000,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "rice-processing",
+          name: "Rice Water Processing",
+          description: "Water as the key to rice food chemistry",
+          historicalContext: "Water as the key to rice food chemistry",
+          coordinates: { lat: 31.0, lng: 117.0 },
+          artifacts: [
+            {
+              id: "rice-soaking-processing",
+              name: "Rice Soaking for Processing",
+              description: "Rice Soaking for Processing",
+              rarity: "rare",
+              historicalPeriod: "7,000 BCE",
+              significance: "Different soaking times produce different products — milling, fermentation, flour",
+              yearBCE: 7000,
+              category: "water-lifting"
+            },
+            {
+              id: "rice-wine-water",
+              name: "Rice Wine Fermentation Water Control",
+              description: "Rice Wine Fermentation Water Control",
+              rarity: "epic",
+              historicalPeriod: "5,000 BCE",
+              significance: "Precise water ratios in fermentation — food-water chemistry dating to 7,000 BCE (Jiahu)",
+              yearBCE: 5000,
+              category: "water-lifting"
+            },
+            {
+              id: "monsoon-timing",
+              name: "Monsoon Timing Calendar",
+              description: "Monsoon Timing Calendar",
+              rarity: "epic",
+              historicalPeriod: "5,000 BCE",
+              significance: "The monsoon calendar IS the rice calendar — early or late monsoon determines survival",
+              yearBCE: 5000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "americas-corn-water",
+      name: "Americas Corn/Maize Water Engineering",
+      description: "The Three Sisters as biological water engineering — and nixtamalization as water chemistry.",
+      position: [-13, 0, 1],
+      color: "#FFD700",
+      era: "ancient",
+      dateRange: "9,000-1,000 BCE",
+      locations: [
+        {
+          id: "balsas-valley",
+          name: "Balsas River Valley (Teosinte Origin)",
+          description: "Where corn domestication required water innovation",
+          historicalContext: "Where corn domestication required water innovation",
+          coordinates: { lat: 18.2, lng: -100.5 },
+          artifacts: [
+            {
+              id: "seasonal-streamside-planting",
+              name: "Seasonal Streamside Planting",
+              description: "Seasonal Streamside Planting",
+              rarity: "legendary",
+              historicalPeriod: "9,000 BCE",
+              significance: "First corn farmers planted teosinte near streams — not irrigation, but deliberate water placement",
+              yearBCE: 9000,
+              category: "irrigation"
+            },
+            {
+              id: "rainy-season-timing",
+              name: "Rainy Season Timing Knowledge",
+              description: "Rainy Season Timing Knowledge",
+              rarity: "epic",
+              historicalPeriod: "9,000 BCE",
+              significance: "Corn depends entirely on seasonal rain — knowing when rains begin determines survival",
+              yearBCE: 9000,
+              category: "irrigation"
+            },
+            {
+              id: "drought-tolerance-selection",
+              name: "Drought Tolerance Selection",
+              description: "Drought Tolerance Selection",
+              rarity: "epic",
+              historicalPeriod: "9,000-5,500 BCE",
+              significance: "Selecting teosinte-to-corn for deeper roots and water efficiency — genetics as water engineering",
+              yearBCE: 9000,
+              category: "irrigation"
+            },
+            {
+              id: "soil-mulching",
+              name: "Soil Moisture Management by Mulching",
+              description: "Soil Moisture Management by Mulching",
+              rarity: "epic",
+              historicalPeriod: "8,000 BCE",
+              significance: "Simplest water conservation — covering soil to reduce evaporation",
+              yearBCE: 8000,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "milpa-system",
+          name: "Milpa/Three Sisters System",
+          description: "Agriculture as water engineering through plant selection",
+          historicalContext: "Agriculture as water engineering through plant selection",
+          coordinates: { lat: 17.0, lng: -96.0 },
+          artifacts: [
+            {
+              id: "three-sisters-water",
+              name: "Three Sisters Water Synergy",
+              description: "Three Sisters Water Synergy",
+              rarity: "legendary",
+              historicalPeriod: "3,000 BCE",
+              significance: "Squash leaves reduce water loss by 50% — biological water conservation technology",
+              yearBCE: 3000,
+              category: "irrigation"
+            },
+            {
+              id: "mound-planting-water",
+              name: "Mound Planting Water Management",
+              description: "Mound Planting Water Management",
+              rarity: "epic",
+              historicalPeriod: "3,000 BCE",
+              significance: "Raised mounds designed for water — channels between capture and direct rainwater",
+              yearBCE: 3000,
+              category: "irrigation"
+            },
+            {
+              id: "nixtamalization",
+              name: "Nixtamalization — Lime-Water Processing",
+              description: "Nixtamalization — Lime-Water Processing",
+              rarity: "legendary",
+              historicalPeriod: "1,500 BCE",
+              significance: "Without this water-chemistry process, corn-dependent populations get pellagra",
+              yearBCE: 1500,
+              category: "water-lifting"
+            },
+            {
+              id: "chicha-corn-beer",
+              name: "Corn Beer (Chicha) Water Processing",
+              description: "Corn Beer (Chicha) Water Processing",
+              rarity: "epic",
+              historicalPeriod: "3,000 BCE",
+              significance: "Water-corn-saliva chemistry — central to Andean ceremony and politics",
+              yearBCE: 3000,
+              category: "water-lifting"
+            },
+            {
+              id: "slash-burn-water-cycle",
+              name: "Slash-and-Burn Water Cycle Understanding",
+              description: "Slash-and-Burn Water Cycle Understanding",
+              rarity: "epic",
+              historicalPeriod: "5,000 BCE",
+              significance: "The entire milpa cycle IS a water cycle — burn, rain, plant, exhaust, rest, repeat",
+              yearBCE: 5000,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "arid-corn",
+          name: "Arid Environment Corn Adaptation",
+          description: "When corn reached the desert, water engineering became critical",
+          historicalContext: "When corn reached the desert, water engineering became critical",
+          coordinates: { lat: 35.0, lng: -110.0 },
+          artifacts: [
+            {
+              id: "deep-planting-moisture",
+              name: "Deep Planting for Subsurface Moisture",
+              description: "Deep Planting for Subsurface Moisture",
+              rarity: "legendary",
+              historicalPeriod: "2,000 BCE",
+              significance: "Hopi plant corn 25-30 cm deep — engineering the plant to reach water at depth",
+              yearBCE: 2000,
+              category: "irrigation"
+            },
+            {
+              id: "sand-mulch-conservation",
+              name: "Sand Mulch Water Conservation",
+              description: "Sand Mulch Water Conservation",
+              rarity: "epic",
+              historicalPeriod: "2,000 BCE",
+              significance: "Sand layer reduces evaporation by 60-80% — still used by Hopi farmers today",
+              yearBCE: 2000,
+              category: "irrigation"
+            },
+            {
+              id: "ak-chin-farming",
+              name: "Ak-Chin (Floodwater) Farming",
+              description: "Ak-Chin (Floodwater) Farming",
+              rarity: "epic",
+              historicalPeriod: "2,000 BCE",
+              significance: "Positioning fields where flash flood water naturally concentrates — zero infrastructure",
+              yearBCE: 2000,
+              category: "irrigation"
             }
           ]
         }

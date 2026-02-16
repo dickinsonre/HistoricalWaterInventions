@@ -114,7 +114,6 @@ export const inventionToSwmmModel: Record<string, string> = {
   'lagoon-management': 'singapore-barrage',
   'karez-system': 'qanat',
   'aztec-dike': 'aztec-dike',
-  'nezahualcoyotl-dike': 'aztec-dike',
   'tenochtitlan-dike': 'aztec-dike',
   'lake-texcoco': 'aztec-dike',
   'chinampas': 'aztec-dike',
@@ -236,7 +235,27 @@ export const inventionToSwmmModel: Record<string, string> = {
   'reykjavik-geothermal-heating': 'iceland-geothermal-heating',
   'faroese-grindadrap-water': 'danevirke-water-defenses',
   'mycenae-cistern-tunnel': 'mycenae-underground-cistern',
-  'norwegian-fjord-hydropower': 'norwegian-fjord-hydropower'
+  'norwegian-fjord-hydropower': 'norwegian-fjord-hydropower',
+  'san-lorenzo-drain': 'olmec-san-lorenzo-drains',
+  'san-lorenzo-aqueduct': 'olmec-san-lorenzo-drains',
+  'san-lorenzo-ritual-pool': 'olmec-san-lorenzo-drains',
+  'la-venta-drainage': 'olmec-san-lorenzo-drains',
+  'tikal-reservoir': 'tikal-reservoir-filtration',
+  'tikal-water-filtration': 'tikal-reservoir-filtration',
+  'calakmul-aguada': 'tikal-reservoir-filtration',
+  'maya-chultun': 'tikal-reservoir-filtration',
+  'tenochtitlan-island-city': 'tenochtitlan-water-system',
+  'nezahualcoyotl-dike': 'tenochtitlan-water-system',
+  'chinampa-system': 'tenochtitlan-water-system',
+  'aztec-flood-control': 'tenochtitlan-water-system',
+  'tenochtitlan-sanitation': 'tenochtitlan-water-system',
+  'coyoacan-aqueduct': 'tenochtitlan-water-system',
+  'chaco-water-control': 'chaco-canyon-water-control',
+  'pueblo-bonito-water': 'chaco-canyon-water-control',
+  'mesa-verde-reservoir': 'chaco-canyon-water-control',
+  'calusa-canal-system': 'calusa-pine-island-canal',
+  'dholavira-reservoir-cascade': 'dholavira-reservoir-cascade',
+  'dholavira-water-system': 'dholavira-reservoir-cascade'
 };
 
 export function getSwmmModelForInvention(inventionId: string): SWMM5Model | null {
@@ -1959,6 +1978,96 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       roughness: 0.012
     },
     engineeringNotes: 'Powering over 1,600 plants with massive elevation drops from mountain to fjord. 98% renewable energy.'
+  },
+  'olmec-san-lorenzo-drains': {
+    name: 'Olmec San Lorenzo Basalt Drain System',
+    description: 'First engineered drainage in the Americas — carved basalt U-shaped troughs, ritual pools, and aqueduct',
+    civilization: 'Olmec Civilization',
+    period: '1200-900 BCE',
+    parameters: {
+      length: 1500,
+      slope: 0.015,
+      flowRate: 0.02,
+      channelWidth: 0.3,
+      channelDepth: 0.2,
+      roughness: 0.012
+    },
+    engineeringNotes: '16 nodes, 16 links. Carved basalt troughs transported 60+ km. Oldest engineered water drainage in the Americas. Model by Robert Dickinson, PE.'
+  },
+  'tikal-reservoir-filtration': {
+    name: 'Tikal Six-Reservoir System with Zeolite Filtration',
+    description: 'First water purification in the Americas — six reservoirs holding 900,000 m³ with zeolite-quartz sand filtration',
+    civilization: 'Classic Maya',
+    period: '250-900 CE',
+    parameters: {
+      length: 3000,
+      slope: 0.005,
+      flowRate: 0.1,
+      channelWidth: 3.0,
+      channelDepth: 0.5,
+      roughness: 0.018
+    },
+    engineeringNotes: '17 nodes, 18 links. UNESCO World Heritage. Zeolite imported 30 km for water purification. Supported 60,000+ people through 6-month dry seasons. Model by Robert Dickinson, PE.'
+  },
+  'tenochtitlan-water-system': {
+    name: 'Tenochtitlan Complete Water System',
+    description: 'Aztec island city water: dual aqueducts, 16 km dike, chinampas, causeways, and sanitation for 200,000+ people in a salt lake',
+    civilization: 'Aztec/Mexica Empire',
+    period: '1325-1521 CE',
+    parameters: {
+      length: 10000,
+      slope: 0.001,
+      flowRate: 0.35,
+      channelWidth: 0.8,
+      channelDepth: 0.5,
+      roughness: 0.013
+    },
+    engineeringNotes: '22 nodes, 24 links. Dual aqueducts from Chapultepec and Coyoacán springs. 16 km Nezahualcóyotl dike separating fresh and salt water. Sanitation surpassing contemporary Europe. Model by Robert Dickinson, PE.'
+  },
+  'chaco-canyon-water-control': {
+    name: 'Chaco Canyon Water Control System',
+    description: 'Most sophisticated Puebloan water system — 50+ documented water features including diversion dams, masonry channels, and gridded fields',
+    civilization: 'Ancestral Puebloans',
+    period: '850-1150 CE',
+    parameters: {
+      length: 800,
+      slope: 0.02,
+      flowRate: 0.04,
+      channelWidth: 0.6,
+      channelDepth: 0.3,
+      roughness: 0.015
+    },
+    engineeringNotes: '15 nodes, 17 links. UNESCO World Heritage. Rincon catchment with cliff-face runoff, masonry collection boxes, diversion dams, and gridded agricultural fields. Model by Robert Dickinson, PE.'
+  },
+  'calusa-pine-island-canal': {
+    name: 'Calusa Pine Island Canal System',
+    description: 'Largest pre-contact canal system in eastern North America — tidal management for a non-agricultural civilization',
+    civilization: 'Calusa Kingdom',
+    period: '500 BCE-1500 CE',
+    parameters: {
+      length: 3000,
+      slope: 0.0005,
+      flowRate: 0.06,
+      channelWidth: 6.0,
+      channelDepth: 1.0,
+      roughness: 0.020
+    },
+    engineeringNotes: '15 nodes, 18 links. Tidal outfall to Gulf of Mexico. Shell mound construction, mangrove channels, and fish weirs. 20,000+ people sustained without agriculture. Model by Robert Dickinson, PE.'
+  },
+  'dholavira-reservoir-cascade': {
+    name: 'Dholavira 16-Reservoir Cascade System',
+    description: 'Most sophisticated water system of the Indus Valley Civilization — 16 interconnected reservoirs fed by two seasonal streams',
+    civilization: 'Indus Valley Civilization',
+    period: '3000 BCE',
+    parameters: {
+      length: 2000,
+      slope: 0.01,
+      flowRate: 0.5,
+      channelWidth: 2.5,
+      channelDepth: 0.8,
+      roughness: 0.018
+    },
+    engineeringNotes: '18 nodes, 21 links. UNESCO World Heritage (2021). Rock-cut channels, cascade reservoirs, citadel/middle/lower town distribution, great bath, and monsoon storm overflow. Model by Robert Dickinson, PE.'
   }
 };
 

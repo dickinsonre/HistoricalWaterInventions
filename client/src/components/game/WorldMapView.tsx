@@ -239,7 +239,27 @@ const civilizationContinents: Record<string, string> = {
   "medieval-eastern-europe": "Europe", "dong-son": "Asia", "champa-kingdom": "Asia",
   "pyu-city-states": "Asia", "dvaravati-kingdom": "Asia", "srivijaya-empire": "Asia",
   "sundaland": "Asia",
-  "funan-oc-eo": "Asia"
+  "funan-oc-eo": "Asia",
+  "colombian-civilizations": "Americas", "caribbean-indigenous": "Americas",
+  "sudd-nilotic": "Africa", "horn-of-africa": "Africa", "san-bushmen": "Africa",
+  "malta-water": "Europe", "himalayan-kingdoms": "Asia", "canary-islands": "Europe",
+  "libya-gmmr": "Africa", "china-south-north-transfer": "Asia", "ethiopia-gerd": "Africa",
+  "tierra-del-fuego": "Americas", "maldives-water": "Asia", "swiss-alps-water": "Europe",
+  "kurdish-water": "Asia", "space-water": "Americas", "berber-amazigh-expanded": "Africa",
+  "modern-mega-projects": "Americas", "ainu-water": "Asia", "sami-people": "Europe",
+  "inupiat-north-alaska": "Americas", "yupik-western-alaska": "Americas",
+  "aleut-unangan": "Americas", "athabascan-interior": "Americas",
+  "tlingit-se-alaska": "Americas", "haida-gwaii": "Americas",
+  "canadian-inuit-expanded": "Americas", "greenlandic-inuit": "Americas",
+  "modern-arctic-engineering": "Americas",
+  "paleo-indian-archaic": "Americas", "woodland-period": "Americas",
+  "eastern-woodlands": "Americas", "great-plains-nations": "Americas",
+  "great-basin-california": "Americas", "algonquin-canadian": "Americas",
+  "pacific-northwest-expanded": "Americas", "modern-usa": "Americas",
+  "modern-canada": "Americas",
+  "fertile-crescent-agriculture": "Asia",
+  "east-asia-rice-water": "Asia",
+  "americas-corn-water": "Americas"
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {
@@ -627,7 +647,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
             <div>
               <h1 className="font-heading text-2xl text-[var(--gold)]">World Map of Water Innovations</h1>
               <p className="text-[var(--parchment)]/70 text-sm">
-                Explore <span onClick={scrollToCivilizations} className="text-[var(--aqua)] font-semibold cursor-pointer hover:underline">{gameData.regions.length} civilizations</span> • <span className="text-[var(--cerulean)] font-semibold">{allArtifacts.length}+ water inventions</span> • <span className="text-[var(--gold)] font-semibold">{Object.keys(SWMM5_MODELS).length} SWMM5, ICM, Civil 3D networks</span> • 40,000 years of hydraulic engineering
+                Explore <span onClick={scrollToCivilizations} className="text-[var(--aqua)] font-semibold cursor-pointer hover:underline">{gameData.regions.length} civilizations</span> • <span className="text-[var(--cerulean)] font-semibold">{allArtifacts.length}+ water inventions</span> • <span className="text-[var(--gold)] font-semibold">{Object.keys(SWMM5_MODELS).length} SWMM5, ICM, Civil 3D networks</span> • 300,000 years of water engineering
               </p>
             </div>
           </div>
@@ -771,7 +791,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               <div className="text-[var(--parchment)]/70 text-sm">Continents</div>
             </div>
             <div>
-              <div className="text-3xl font-heading text-[var(--cerulean)]">40,000+</div>
+              <div className="text-3xl font-heading text-[var(--cerulean)]">300,000+</div>
               <div className="text-[var(--parchment)]/70 text-sm">Years of History</div>
             </div>
           </div>
