@@ -1,0 +1,340 @@
+# Indian & Chinese Water Inventions — Complete Deep Dive
+
+Both India and China have water engineering traditions spanning 5,000+ years that are significantly underrepresented in global histories. Here's everything your app should include.
+
+---
+
+# INDIA
+
+## Current App Coverage (~30 inventions across 8 entries)
+
+Your app already has good structural coverage with separate entries for Indus Valley, Vedic & Mauryan, Chola, Delhi Sultanate, Mughal, Medieval India, Ancient India, Rajasthan, and Sri Lanka. But many landmark inventions are missing within those entries, and several important periods and regions have no entry at all.
+
+---
+
+## Indus Valley Civilization (3300–1300 BCE)
+
+### Currently in App: 3 inventions
+### Should Have: 10+
+
+| | | | | Invention | Date | Location | Description | Why Add | |  |
+|-----------|------|----------|-------------|---------|
+| | | | **Great Bath of Mohenjo-Daro** | 2600 BCE | Sindh | 12 m × 7 m × 2.4 m waterproofed pool with bitumen lining, inlet and outlet channels, and surrounding changing rooms. Earliest known public water facility. | The most famous Indus invention — currently listed only as "Great Bath Seal" | |  |
+| | | | **Dholavira Reservoir Complex** | 3000 BCE | Gujarat | 16 interconnected reservoirs fed by two seasonal streams. Total storage estimated at 300,000 m³. Rock-cut channels with precise slopes directed rainwater to cascading reservoirs. | Largest and most sophisticated Indus water system discovered — a UNESCO World Heritage site | |  |
+| | | | **Mohenjo-Daro Covered Drain Network** | 2600 BCE | Sindh | Brick-lined underground drains running beneath every major street. Individual houses connected via clay pipe to main drains. Manholes at regular intervals for cleaning. | Most advanced urban drainage system for 3,000 years after its construction | |  |
+| | | | **Harappan Household Bathrooms** | 2600 BCE | Multiple sites | Nearly every excavated Harappan house had a dedicated bathroom with sloped brick floor draining to the street sewer. Some had seated latrines. | First civilization with universal household sanitation | |  |
+| | | | **Harappan Well Engineering** | 2600 BCE | Multiple sites | Over 700 wells excavated at Mohenjo-Daro alone. Cylindrical brick-lined wells with precise construction. Wells at regular intervals — roughly one per three houses. | Highest well density of any ancient city | |  |
+| | | | **Lothal Dock/Tidal Basin** | 2400 BCE | Gujarat | 37 m × 22 m engineered tidal dock — the world's oldest known dock. Inlet channel, sluice gate, and spillway managed tidal water levels for maritime trade. | Oldest engineered tidal water management structure | |  |
+| | | | **Harappan Soak Pits** | 2600 BCE | Multiple sites | Clay jar soak pits buried in courtyards for greywater disposal. Perforated jars allowed water to seep into ground without surface contamination. | First engineered groundwater recharge/disposal system | |  |
+| | | | **Harappan Rainwater Harvesting** | 2600 BCE | Dholavira | Rooftop and courtyard collection channels directing rainwater to underground cisterns. Calculated catchment areas and storage volumes. | Earliest known systematic rooftop rainwater harvesting | |  |
+| | | | **Harappan Precision Slopes** | 2600 BCE | Multiple sites | Drain slopes of precisely 1:40 (2.5%) maintained across entire city blocks. Required surveying instruments and standardized construction methods. | Engineering precision not matched again for millennia | |  |
+| | | | **Kalibangan Fire Altar Drains** | 2600 BCE | Rajasthan | Ritual fire altar platforms with dedicated drainage channels for water used in purification ceremonies. | Earliest known ritual water drainage engineering | |  |
+
+---
+
+## Vedic & Mauryan Period (1500 BCE – 185 BCE)
+
+### Currently in App: 3 inventions
+### Should Have: 8+
+
+| | | | | Invention | Date | Source/Location | Description | Why Add | |  |
+|-----------|------|---------------|-------------|---------|
+| | | | **Sudarshana Lake Dam** | ~300 BCE | Gujarat | Already in app — but underrated. Built by Chandragupta Maurya's governor Pushyagupta. Repaired by Rudradaman I (150 CE) and Skandagupta (455 CE). Survived 800+ years. | One of the longest-serving dams in ancient history | |  |
+| | | | **Arthashastra Water Engineering Manual** | ~300 BCE | Mauryan Empire | Kautilya's treatise contains detailed chapters on dam construction, reservoir management, canal engineering, water pricing, and penalties for water theft. Specifies dam dimensions, spillway design, and sluice placement. | The world's first engineering manual for water infrastructure | |  |
+| | | | **Mauryan Water Pricing System** | ~300 BCE | Mauryan Empire | Arthashastra specifies water taxes based on irrigation method: river water (free), canal water (1/5 of crop), reservoir water (1/4), well water (1/3), carried water (variable). | First documented water pricing system in history | |  |
+| | | | **Mauryan Rainfall Measurement** | ~300 BCE | Mauryan Empire | Arthashastra describes standardized rain gauges (adhaka vessel) and requires officials to record rainfall for agricultural planning and tax assessment. | Among the earliest systematic rainfall measurement | |  |
+| | | | **Sringaverapura Water Works** | 1st c. BCE | Uttar Pradesh | Sophisticated three-tank water filtration and storage system near the Ganges. Water entered via a wide inlet, passed through settling tanks, and was stored in a brick-lined reservoir. | Earliest known multi-stage water treatment system in India | |  |
+| | | | **Vedic Water Divination (Dakargala)** | 1500–500 BCE | Vedic texts | Varahamihira's Brihat Samhita describes methods for locating groundwater based on vegetation, soil type, ant hills, and rock formations. Remarkably accurate hydrogeological indicators. | Earliest documented groundwater exploration methodology | |  |
+| | | | **Mauryan Canal Network (Bihar)** | 300 BCE | Bihar | State-directed canal construction connecting Ganges tributaries for irrigation across the Gangetic plain. Maintained by dedicated water officials (nayaka). | First state-managed large-scale canal system in India | |  |
+| | | | **Anicut (Weir) Tradition Origin** | ~300 BCE | South India | Stone weirs across rivers diverting flow into canals. The tradition that eventually produced the Grand Anicut (Kallanai). | Foundation of India's most enduring irrigation technology | |  |
+
+---
+
+## South Indian Kingdoms (300 BCE – 1600 CE)
+
+### Currently in App: 3 inventions (Chola)
+### Should Have: 12+ across multiple kingdoms
+
+| | | | | Invention | Date | Kingdom | Description | Why Add | |  |
+|-----------|------|---------|-------------|---------|
+| | | | **Grand Anicut (Kallanai)** | ~2nd c. CE | Chola | Already in app. 329 m long stone dam across the Kaveri River. Diverts water into irrigation canals serving the Thanjavur delta. Still in use after 1,800 years. | One of the oldest functioning dams in the world | |  |
+| | | | **Kaveri Delta Irrigation System** | 2nd–12th c. CE | Chola/Pallava | Complete irrigation network downstream of the Grand Anicut. Thousands of kilometers of canals, tanks, and distribution channels feeding the "rice bowl of Tamil Nadu." | Among the largest pre-modern irrigation systems in the world | |  |
+| | | | **Eri (Tank) System of Tamil Nadu** | 300 BCE onwards | Multiple | Over 39,000 tanks (eri) across Tamil Nadu forming interconnected cascade systems. Each tank feeds the next downstream. Community-managed with hereditary water managers (neerkatti). | Largest interconnected tank system in the world | |  |
+| | | | **Pallava Rock-Cut Water Temples** | 7th–9th c. CE | Pallava | Mahabalipuram and Kanchipuram temples with integrated rock-cut water channels, sacred tanks, and ritual bathing pools. Engineering carved from living rock. | Unique stone-carved water infrastructure | |  |
+| | | | **Vijayanagara Royal Water System** | 14th–16th c. CE | Vijayanagara | Hampi's water infrastructure included aqueducts, stepped tanks, and a sophisticated canal system diverting the Tungabhadra River. Pushkarini (sacred tanks) integrated into every temple. | Water system for one of the world's largest medieval cities (500,000+) | |  |
+| | | | **Kalyani (Stepped Tank)** | 6th c. CE onwards | Multiple (Karnataka) | Square or rectangular stepped tanks with symmetrical staircases on all four sides. Served ritual, recreational, and practical water storage functions. | Distinctive South Indian water architecture | |  |
+| | | | **Pandya Kingdom Irrigation** | 3rd c. BCE–14th c. CE | Pandya | Canal systems in the Vaigai River basin. Madurai's famous Vandiyur Teppakulam tank (temple tank) is one of the largest in India. | Key southern irrigation tradition | |  |
+| | | | **Kerala Backwater Management** | Traditional | Kerala | Management of the Kerala backwaters — a 900 km network of interconnected canals, rivers, lakes, and inlets. Includes traditional bund systems controlling saltwater-freshwater interaction. | Largest managed estuarine system in India | |  |
+| | | | **Hoysala Tank Engineering** | 12th–14th c. CE | Hoysala | Precisely engineered tanks with sculptural sluice gates and overflow channels at Belur, Halebidu, and Somnathpur temples. | Integration of engineering precision with artistic expression | |  |
+| | | | **Satavahana Irrigation** | 1st c. BCE–3rd c. CE | Satavahana | Inscription evidence of state-sponsored irrigation in the Deccan. Dam construction at Nanaghat and other sites. | Earliest Deccan irrigation documentation | |  |
+
+---
+
+## North Indian & Gangetic Innovations
+
+### Currently underrepresented
+
+| | | | | Invention | Date | Dynasty/Region | Description | Why Add | |  |
+|-----------|------|--------------|-------------|---------|
+| | | | **Nalanda University Water System** | 5th–12th c. CE | Gupta/Pala | The world's first university had sophisticated water supply, drainage, and sanitation for 10,000 students and 2,000 teachers. Multiple wells, drains, and storage tanks. | Water engineering for the ancient world's largest educational institution | |  |
+| | | | **Pataliputra Timber-Palisade Flood Walls** | 300 BCE | Mauryan | Megasthenes (Greek ambassador) described massive timber palisade walls along the Ganges protecting the Mauryan capital from flooding. 570 towers, 64 gates. | First documented urban flood protection walls | |  |
+| | | | **Ghats of Varanasi** | ~800 CE onwards | Various | Over 80 stone-stepped ghats along the Ganges riverfront. Engineered to handle extreme seasonal water level variations (10+ meters between monsoon and dry season). | Largest system of engineered river access structures | |  |
+| | | | **Bengal Tank Excavation (Dighi)** | 8th c. CE onwards | Pala/Sena | Large rectangular tanks excavated across Bengal for fish farming, irrigation, and water supply. The pukur (pond) culture of Bengal. | Foundation of Bengali aquaculture and water culture | |  |
+| | | | **Bhojtal Lake (Bhopal)** | 11th c. CE | Paramara | One of the largest artificial lakes of the medieval world. Created by damming the Kolans River. 32 km² at full capacity. Supplied water to Bhopal for 800+ years. | Among the largest medieval artificial lakes globally | |  |
+
+---
+
+## Rajasthan & Desert Water Harvesting — Expanded
+
+### Currently in App: 3 inventions
+### Should Have: 8+
+
+| | | | | Invention | Date | Description | Why Add | |  |
+|-----------|------|-------------|---------|
+| | | | **Chand Baori Stepwell** | 8th–9th c. CE | 3,500 steps descending 13 stories (30 m) deep. One of the deepest and largest stepwells in India. Geometric precision of staircase design is architecturally extraordinary. | Most visually iconic water structure in India | |  |
+| | | | **Rani ki Vav (Patan)** | 1063 CE | Already in Medieval India entry. UNESCO World Heritage. Seven stories deep, richly carved. Designed as an inverted temple honoring the sanctity of water. | UNESCO site deserving cross-reference | |  |
+| | | | **Naadi (Village Pond)** | Traditional | Community ponds at the center of every Rajasthani village. Catchment areas defined by tradition. Silt removal and maintenance governed by community rules. | Foundation of desert community water management | |  |
+| | | | **Bavdi (Small Stepwell)** | Traditional | Smaller stepwells in individual neighborhoods or farms. Less ornate than large vav but functionally identical. Thousands survive across Rajasthan. | Demonstrates widespread engineering knowledge | |  |
+| | | | **Khadin (Desert Runoff Farming)** | 15th c. CE | Earthen embankments across gentle slopes capturing desert runoff. Water soaks into soil, allowing crop growth in subsequent dry season. Developed in Jaisalmer. | Unique desert runoff capture — found nowhere else | |  |
+| | | | **Beri (Shallow Well)** | Traditional | Shallow dug wells in sandy terrain, lined with stone or timber. Targeted shallow aquifers recharged by seasonal rains. | Simplest and most widespread desert water access | |  |
+| | | | **Nadi (Ephemeral Lake)** | Traditional | Engineered depressions that fill during monsoon. Embankments on downhill side hold water for months. Some hold water year-round. | Large-scale seasonal water storage in desert | |  |
+| | | | **Paar System** | Traditional | Underground dykes built across subsurface streams in sandy riverbeds. Forces underground water to the surface, creating accessible pools. | Invisible engineering — manipulating underground flow | |  |
+
+---
+
+## Delhi Sultanate & Mughal — Expanded
+
+### Currently in App: 6 inventions total
+### Should Have: 12+
+
+| | | | | Invention | Date | Dynasty | Description | Why Add | |  |
+|-----------|------|---------|-------------|---------|
+| | | | **Hauz Khas Reservoir** | 1296 CE | Khalji | Large urban reservoir in Delhi. Alauddin Khalji built it to supply water to the growing capital. Firoz Shah Tughlaq later restored and expanded it. | Major medieval urban water infrastructure | |  |
+| | | | **Tughlaqabad Fort Water System** | 1321 CE | Tughlaq | Massive fort with integrated reservoir, aqueduct, and distribution network. Underground channels connected to an artificial lake. | Most sophisticated Sultanate-era military water engineering | |  |
+| | | | **Firoz Shah's Canal Restoration** | 1355 CE | Tughlaq | Firoz Shah Tughlaq restored and extended two major canals from the Yamuna and Sutlej rivers. The Western Yamuna Canal fed Delhi and irrigated thousands of hectares. | Largest medieval canal restoration in India | |  |
+| | | | **Mughal Char Bagh (Four-Garden) System** | 16th–17th c. CE | Mughal | Quadrilateral garden design with central water channels dividing the space into four parts. Water features (fountains, cascades, pools) fed by gravity from elevated tanks. Used at Taj Mahal, Shalimar, Humayun's Tomb. | Global influence on garden water design | |  |
+| | | | **Mughal Fountain Technology** | 16th–17th c. CE | Mughal | Copper pipes, adjustable nozzles, and gravity-fed pressure systems creating elaborate fountain displays. Some Mughal gardens had 400+ fountains operating simultaneously. | Advanced pressure-pipe engineering | |  |
+| | | | **Red Fort Water System** | 1648 CE | Mughal | Shah Jahan's Red Fort in Delhi had the Nahr-i-Bihisht ("Stream of Paradise") — a canal fed by the Yamuna running through the palace complex, supplying gardens, baths, and cooling systems. | Integration of water into palatial architecture | |  |
+| | | | **Mughal Ice Transport System** | 17th c. CE | Mughal | Systematic transport of ice from Himalayan glaciers to Delhi and Agra via insulated runners. Ice stored in underground chambers for imperial use. | Long-distance cold-chain water logistics | |  |
+
+---
+
+## Sri Lanka — Expanded
+
+### Currently in App: 3 inventions
+### Should Have: 8+
+
+| | | | | Invention | Date | Description | Why Add | |  |
+|-----------|------|-------------|---------|
+| | | | **Biso Kotuwa (Valve Pit)** | 300 BCE–1000 CE | Already in app. Underwater valve tower controlling reservoir outflow using hydraulic pressure. The shaft contains a series of openings at different heights, allowing precise water level control without draining the reservoir. | Perhaps the most sophisticated single hydraulic device in the ancient world | |  |
+| | | | **Parakrama Samudra (Sea of Parakrama)** | 1153 CE | Massive reservoir (22.6 km²) built by King Parakramabahu I. Still the largest ancient irrigation reservoir in Sri Lanka. The king reportedly said: "Let not even a small quantity of rainwater go to the sea without being made useful to man." | One of the largest pre-modern reservoirs in the world | |  |
+| | | | **Yoda Ela (Giant Canal)** | 6th c. CE | 87 km canal with a gradient of just 10 cm per km (0.01%). Fed the Minneriya and Kaudulla tanks. One of the longest ancient canals in the world. | Extraordinary precision over extreme length | |  |
+| | | | **Tank Cascade System — Expanded** | 300 BCE onwards | Already in app. But the scale is remarkable: over 30,000 tanks across Sri Lanka, organized into cascading watersheds. Each tank spills into the next downstream. | Largest interconnected reservoir system in the ancient world | |  |
+| | | | **Bisokotuwa Variations** | Various | Multiple valve pit designs found across Sri Lanka — some with lateral openings, some with vertical shafts, some with multiple chambers. Shows continuous engineering innovation. | Demonstrates ongoing refinement of a unique technology | |  |
+| | | | **Sandstone Sluice Technology** | 300 BCE onwards | Precisely carved sandstone sluice gates with grooved channels for wooden or stone shutters. Some gates survived 2,000 years and are still operable. | Durable precision engineering | |  |
+| | | | **Abhaya Wewa (Tank)** | 4th c. BCE | One of the oldest reservoirs in Sri Lanka, built by King Pandukabhaya at Anuradhapura. Part of the elaborate city water supply. | Earliest documented Sri Lankan reservoir | |  |
+| | | | **Sigiriya Water Gardens** | 5th c. CE | Elaborate hydraulic gardens at the base of Sigiriya rock fortress. Gravity-fed fountains, symmetrical water pools, and underground conduits. The fountains still operate during rainy season. | Ancient fountains that still function after 1,500 years | |  |
+
+---
+
+# CHINA
+
+## Current App Coverage (~25 inventions across 7 dynasty entries + Ancient China)
+
+Your dynasty-by-dynasty structure is excellent. But each dynasty has only 2–3 inventions when most had 5–10 significant water innovations.
+
+---
+
+## Xia & Shang Dynasties (2070–1046 BCE)
+
+### Currently in App: 3 inventions
+### Should Have: 6+
+
+| | | | | Invention | Date | Description | Why Add | |  |
+|-----------|------|-------------|---------|
+| | | | **Yu the Great's Flood Philosophy** | ~2200 BCE | Already in app. Yu (legendary) rejected his father Gun's approach of building dams and instead dredged channels to direct floodwater to the sea. "Control water by guiding it, not blocking it." | Foundation of Chinese hydraulic philosophy for 4,000 years | |  |
+| | | | **Oracle Bone Flood Records** | 1300–1046 BCE | Shang dynasty oracle bones contain the earliest written flood records and weather observations in Chinese history. Questions to ancestors about flood timing and severity. | Earliest written hydrological records in China | |  |
+| | | | **Shang Bronze Vessel Water Rituals** | 1600–1046 BCE | Elaborate bronze vessels (ding, gui, jue) used in water-offering ceremonies to river gods. Demonstrates the centrality of water management to Shang political legitimacy. | Water governance as political power | |  |
+| | | | **Shang City Moat Engineering** | 1600–1046 BCE | Already partially in app. Zhengzhou Shang city walls surrounded by moats 20+ m wide. Served drainage, defense, and transportation functions. | First documented Chinese urban moat systems | |  |
+| | | | **Shang Irrigation Ditches** | 1300–1046 BCE | Oracle bone inscriptions reference irrigation ditches (gou) and field water management. Evidence of systematic agricultural water control. | Earliest textual evidence of Chinese irrigation | |  |
+| | | | **Yangtze Flood Mythology Integration** | 2000+ BCE | Myths of Gun and Yu reflect actual engineering debates — dam vs. channel. This philosophical framework guided Chinese water policy for millennia. | Unique integration of myth and engineering policy | |  |
+
+---
+
+## Zhou & Qin Dynasties (1046–206 BCE)
+
+### Currently in App: 3 inventions
+### Should Have: 8+
+
+| | | | | Invention | Date | Description | Why Add | |  |
+|-----------|------|-------------|---------|
+| | | | **Dujiangyan Irrigation System** | 256 BCE | Already in app. Fish Mouth divider, Flying Sand Fence, Bottle-Neck Channel. Still irrigates 668,700 hectares. UNESCO World Heritage. | The most important single water engineering project in Chinese history | |  |
+| | | | **Zhengguo Canal** | 246 BCE | Already in app. 150 km canal in Shaanxi irrigating 270,000 hectares. Originally a Qin-commissioned project to exhaust Han resources — instead it made Qin the most powerful state. | Engineering as geopolitical strategy | |  |
+| | | | **Lingqu Canal** | 214 BCE | Already in app. Connected the Yangtze and Pearl River basins via a mountain pass. Enabled Qin conquest of southern China. Used a plough-shaped diversion dam. | First canal connecting two major river systems | |  |
+| | | | **Zheng Guo Silt Irrigation** | 246 BCE | The Zhengguo Canal deliberately used silt-laden water to deposit fertile sediment on alkaline soil. Not just irrigation — soil improvement through hydraulic engineering. | First documented deliberate silt irrigation | |  |
+| | | | **Qin Standardized Canal Dimensions** | 221–206 BCE | Qin Shi Huang standardized canal widths, depths, and gradients across the empire — along with weights, measures, and axle widths. | First standardized hydraulic infrastructure specifications | |  |
+| | | | **Bai Qi's Military Flooding** | 279 BCE | Qin general Bai Qi diverted the Zhang River to flood the Chu capital of Yan (Ying), killing hundreds of thousands. Largest deliberate military flooding in ancient China. | Water as weapon of mass destruction | |  |
+| | | | **Zhou Li Water Officials** | 1046–256 BCE | The Zhou Li (Rites of Zhou) codified water management officials: Situ (water and soil), Sizhong (flood control), Sishui (water distribution). | First bureaucratic water governance structure | |  |
+| | | | **Well-Field System (Jing Tian)** | Zhou Dynasty | Agricultural land divided into nine squares like the character 井 (well). Central square irrigated communally. Outer eight squares farmed individually. Water shared from central well/channel. | Integration of water access into land ownership structure | |  |
+
+---
+
+## Han Dynasty (206 BCE – 220 CE)
+
+### Currently in App: 3 inventions
+### Should Have: 10+
+
+| | | | | Invention | Date | Description | Why Add | |  |
+|-----------|------|-------------|---------|
+| | | | **Chain Pump (翻车 Fanche)** | ~100 CE | Already in app. Square-pallet chain pump — continuous water lifting using linked wooden pallets in a trough. Operated by foot treadle or hand crank. Could lift water 1–5 meters. | The most important water-lifting device in Chinese history | |  |
+| | | | **Water-Powered Blast Furnace Bellows (水排 Shuipai)** | 31 CE | Du Shi, Prefect of Nanyang, invented a water-powered reciprocating bellows for iron smelting. Water wheel drove a crank mechanism that operated bellows. | First industrial application of water power — 1,200 years before Europe | |  |
+| | | | **Deep Borehole Drilling (Sichuan)** | 1st c. BCE | Han engineers in Sichuan developed percussion drilling for brine wells reaching 100+ meters deep. By Song dynasty, wells exceeded 1,000 meters. Used bamboo derricks, iron bits, and bamboo casing. | Deepest drilling technology in the ancient world | |  |
+| | | | **Han Aqueduct (Bailiang)** | 129 BCE | Emperor Wu built the Bailiang (White Beam) aqueduct across a mountain gorge to supply Chang'an. Stone and timber channel on raised supports. | One of the earliest Chinese aqueducts | |  |
+| | | | **Yellow River Levee System** | ~100 BCE | Already in app. Systematic earthen levee construction along the Yellow River. The Han established the first dedicated river management bureaucracy. | Beginning of China's 2,000-year battle with Yellow River flooding | |  |
+| | | | **Kunming Lake (Artificial)** | 120 BCE | Emperor Wu built an artificial lake near Chang'an for naval training and irrigation. Excavated by 100,000 workers. | One of the largest artificial lakes in the ancient world | |  |
+| | | | **Dragon Bone Water Wheel (龙骨水车)** | 2nd c. CE | Improved chain pump design using interlocking wooden "dragon bones." More efficient than square-pallet design. Remained in use for 1,800 years. | The standard Chinese water-lifting device for two millennia | |  |
+| | | | **Wang Jing's Yellow River Control** | 69 CE | Wang Jing (王景) engineered a comprehensive Yellow River management project that kept the river stable for 800 years — the longest period of stability in the river's history. | Most successful Yellow River engineering project ever | |  |
+| | | | **Han Terrace Agriculture (Titian)** | 200 BCE onwards | Systematic terracing of hillsides for irrigated agriculture. Government-sponsored programs expanded terraced farming across southern China. | Foundation of Chinese terrace agriculture | |  |
+| | | | **Salt Well Water Management** | 1st c. BCE | Sichuan brine wells required pumping, storage, and evaporation systems. Bamboo pipelines transported brine from wells to evaporation pans. Some pipelines extended 10+ km. | First long-distance pipeline systems in the world | |  |
+
+---
+
+## Three Kingdoms, Jin & Southern Dynasties (220–589 CE)
+
+### Currently not in App
+### Should Have: 4+
+
+| | | | | Invention | Date | Description | Why Add | |  |
+|-----------|------|-------------|---------|
+| | | | **Du Yu's Multi-Sluice Dam** | 280 CE | Du Yu (杜预) designed a dam with multiple adjustable sluice gates on the Han River. Allowed precise water level control for navigation and irrigation simultaneously. | First documented multi-gate dam design | |  |
+| | | | **Southern Dynasties Polder Agriculture** | 3rd–6th c. CE | Large-scale diking and draining of Yangtze Delta wetlands for rice cultivation. Created the agricultural foundation for southern China's economic dominance. | Beginning of China's southward agricultural shift | |  |
+| | | | **Jingjiang Levees** | 3rd c. CE onwards | Levee construction along the Jingjiang (middle Yangtze) reach. Continuous expansion and maintenance for 1,700 years. | Longest continuously maintained levee system in the world | |  |
+| | | | **Ma Jun's Water-Powered Mechanical Garden** | ~230 CE | Ma Jun (马钧) built a water-powered mechanical puppet theater for the Wei emperor. Water wheel drove complex gear trains operating dozens of moving figures. | Earliest documented water-powered automata — predates al-Jazari by 900 years | |  |
+
+---
+
+## Sui & Tang Dynasties (581–907 CE)
+
+### Currently in App: 3 inventions
+### Should Have: 8+
+
+| | | | | Invention | Date | Description | Why Add | |  |
+|-----------|------|-------------|---------|
+| | | | **Grand Canal (大运河)** | 587–608 CE | Already in app. 1,776 km connecting Beijing to Hangzhou across 5 river basins. Required 5.5 million laborers. UNESCO World Heritage. | Longest canal in the world — still in use after 1,400 years | |  |
+| | | | **Flash Lock Gates (Tang)** | 618–907 CE | Already in app. Single-gate navigation locks using a hinged gate that created a rush of water carrying boats downstream (or requiring hauling upstream). | Precursor to the pound lock | |  |
+| | | | **Tang Chang'an Water System** | 618–907 CE | Already in app. Water supply for the world's largest city (1 million+). Eight canals from the Wei and Chan rivers fed parks, palace moats, and public fountains. | Urban water supply for the largest city on Earth at the time | |  |
+| | | | **Sui-Tang Grain Transport System** | 7th–9th c. CE | Integrated canal-river system transporting 300,000+ tons of grain annually from the Yangtze Delta to Chang'an. Required lock systems, towpaths, and grain warehouses. | Largest waterborne logistics system in the pre-modern world | |  |
+| | | | **Tang Dynasty Rice Paddy Management Manuals** | 8th c. CE | Agricultural treatises specifying optimal water depths for rice at different growth stages (seedling 2 cun, tillering 3 cun, etc.). Distributed by government. | First standardized irrigation scheduling | |  |
+| | | | **Tujia Weir System (Sichuan)** | Tang period | System of weirs on Min River tributaries expanding Dujiangyan's reach. Added new irrigated areas without modifying the original system. | Shows continuous innovation around a masterwork | |  |
+| | | | **Li Bing Temple Maintenance Rituals** | Tang onwards | Annual "Water-Releasing Festival" (放水节) at Dujiangyan combining religious ceremony with engineering maintenance. Silt removal and channel inspection codified as ritual. | Integration of engineering maintenance into cultural practice | |  |
+| | | | **Tang Maritime Navigation Water Knowledge** | 7th–9th c. CE | Tang navigators used water color, temperature, depth, and current to navigate the South China Sea. Recorded in texts like Jia Dan's maritime routes. | Hydrological knowledge applied to navigation | |  |
+
+---
+
+## Song Dynasty (960–1279 CE)
+
+### Currently in App: 3 inventions
+### Should Have: 10+
+
+| | | | | Invention | Date | Description | Why Add | |  |
+|-----------|------|-------------|---------|
+| | | | **Pound Lock (984 CE)** | 984 CE | Already in app. Qiao Weiyue (乔维岳) invented the double-gate pound lock on the Grand Canal. Two gates with a chamber between them. Boats enter, gates close, water level adjusts. | One of the most important inventions in navigation history | |  |
+| | | | **Su Song's Water Clock Tower** | 1088 CE | Already in app. 12 m tall hydro-mechanical astronomical clock tower. Water-powered escapement mechanism drove armillary sphere, celestial globe, and time-announcing automata. | Most complex water-powered machine of the medieval world | |  |
+| | | | **Song Deep Borehole Drilling (1,000+ m)** | 11th c. CE | Song-era drilling in Sichuan reached over 1,000 meters depth using percussion methods. Bamboo derricks 30+ meters tall. Would not be matched by Western technology until the 19th century. | Deepest drilling anywhere on Earth for 800 years | |  |
+| | | | **Song Dynasty Tidal Mills** | ~1050 CE | Already in app. Mills powered by tidal flow along the Zhejiang coast. Reversible mechanisms operated on both incoming and outgoing tides. | Among the earliest tidal power applications | |  |
+| | | | **Shen Kuo's Hydrological Observations** | 1088 CE | Shen Kuo (沈括) in Dream Pool Essays described sedimentation, erosion, fossil evidence of ancient waterways, and the hydrological cycle with remarkable accuracy. | Earliest scientific descriptions of the hydrological cycle in China | |  |
+| | | | **Song Polder System (Weitian)** | 10th–13th c. CE | Large-scale empoldering of Yangtze Delta. Surrounded low-lying fields with dikes, drained internal water, created productive farmland. Some polders exceeded 10 km². | Chinese equivalent of Dutch polders — 300 years earlier | |  |
+| | | | **Song Urban Water Supply (Hangzhou)** | 12th c. CE | West Lake (西湖) managed as Hangzhou's primary water supply. Six wells, bamboo pipelines, and brick-lined channels distributed water throughout the city. Population: 1+ million. | Urban water engineering for the world's largest city | |  |
+| | | | **Song Seawall Technology** | 11th–13th c. CE | Stone seawalls along Hangzhou Bay protecting farmland from tidal surges. Used interlocking stone construction and wooden pile foundations. | Advanced coastal flood protection | |  |
+| | | | **Song Fire-Fighting Water Systems** | 12th c. CE | Hangzhou and Kaifeng had organized fire brigades with water supply infrastructure — watchtowers, bucket brigades, and stored water at street intersections. | First organized urban fire-water systems | |  |
+| | | | **Noria Adoption (Song South)** | 10th–13th c. CE | Large water wheels (筒车 tongche) adopted along southern rivers. Some wheels exceeded 10 meters in diameter, lifting water 5+ meters to irrigate terraces. | Industrial-scale water lifting | |  |
+
+---
+
+## Yuan Dynasty (1271–1368 CE)
+
+### Currently not in App
+### Should Have: 3+
+
+| | | | | Invention | Date | Description | Why Add | |  |
+|-----------|------|-------------|---------|
+| | | | **Guo Shoujing's Grand Canal Survey** | 1291 CE | Guo Shoujing (郭守敬) conducted the most precise survey of the Grand Canal, redesigning sections for improved navigation. Also designed the Tonghui Canal connecting Beijing to the Grand Canal system. | Most important canal survey in Chinese history | |  |
+| | | | **Mongol-Era Hydraulic Technology Transfer** | 13th–14th c. CE | The Mongol Empire facilitated transfer of hydraulic technology between China, Persia, and Central Asia. Persian engineers worked in China; Chinese techniques spread westward. | Largest pre-modern technology transfer network | |  |
+| | | | **Yuan Coastal Grain Transport** | 13th c. CE | When the Grand Canal was damaged, Yuan engineers developed coastal sea routes for grain transport. Required harbor engineering, breakwaters, and freshwater supply stations. | Maritime hydraulic infrastructure | |  |
+
+---
+
+## Ming Dynasty (1368–1644 CE)
+
+### Currently in App: 2 inventions
+### Should Have: 7+
+
+| | | | | Invention | Date | Description | Why Add | |  |
+|-----------|------|-------------|---------|
+| | | | **Pan Jixun's Yellow River Control** | 16th c. CE | Already in app. Pan Jixun (潘季驯) developed the "束水攻沙" strategy — constricting the river to increase flow velocity, which scoured sediment and deepened the channel. Genius approach. | Most influential Yellow River management strategy | |  |
+| | | | **Ming Coastal Seawalls** | 1368–1644 CE | Already in app. Extensive stone seawall construction along the Zhejiang and Jiangsu coasts. | Coastal flood protection at scale | |  |
+| | | | **Ming Great Wall Water Engineering** | 15th–17th c. CE | The Great Wall incorporated water management: strategic positioning above river crossings, water gates (水关) allowing rivers to pass through walls, and moat systems. | Integration of military and hydraulic engineering | |  |
+| | | | **Forbidden City Water System** | 1420 CE | The Forbidden City's drainage system uses 72 drainage outlets and an elaborate internal canal network. The Golden Water River (金水河) flows through the palace. Designed to handle the heaviest monsoon rainfall. | Most sophisticated palace water system in the world | |  |
+| | | | **Ming Grand Canal Maintenance** | 1368–1644 CE | Systematic maintenance regime for the 1,776 km Grand Canal. Dedicated maintenance corps, scheduled dredging, lock repair, and embankment reinforcement. Annual investment equivalent to a modern mega-project. | Largest continuous infrastructure maintenance program in the pre-modern world | |  |
+| | | | **Song Yingxing's Water Technology Manual** | 1637 CE | Tiangong Kaiwu (天工开物) — "The Exploitation of the Works of Nature." Detailed illustrations and descriptions of every major Chinese water technology: pumps, wells, irrigation, water power. | Most comprehensive pre-modern water technology encyclopedia | |  |
+| | | | **Ming Desalination Experiments** | 16th c. CE | Records of experiments boiling seawater to produce fresh water on naval vessels during Zheng He's voyages and subsequent naval operations. | Early documented desalination attempts | |  |
+
+---
+
+## Qing Dynasty (1644–1912 CE)
+
+### Currently not in App
+### Should Have: 5+
+
+| | | | | Invention | Date | Description | Why Add | |  |
+|-----------|------|-------------|---------|
+| | | | **Kangxi Emperor's Flood Maps** | 1690s CE | Emperor Kangxi commissioned detailed maps of the entire Yellow River system and personally inspected flood control works six times. Resulted in comprehensive hydraulic surveys. | First emperor to personally direct hydraulic surveys | |  |
+| | | | **Jin Fu's Yellow River Diversion** | 1677–1688 CE | Jin Fu (靳辅) engineered a massive Yellow River management project that re-established the river's course and restored Grand Canal navigation. | Major hydraulic intervention at imperial scale | |  |
+| | | | **Qing Lijin (Grain Tribute) Water Infrastructure** | 17th–19th c. CE | Maintained and expanded the Grand Canal grain transport system. Employed 120,000+ workers permanently maintaining locks, channels, and levees. | Largest permanent hydraulic workforce in history | |  |
+| | | | **Lin Zexu's Karez Expansion (Xinjiang)** | 1845 CE | Lin Zexu (林则徐), exiled to Xinjiang, promoted karez (qanat) construction. Expanded the underground irrigation network that still serves the Turpan region. | Cross-cultural hydraulic technology adoption | |  |
+| | | | **Dujiangyan Sand-Clearing Festival Codification** | Qing period | Annual maintenance of Dujiangyan formally codified: every year at Qingming Festival, the coffer dam is breached, channels are cleared of silt, structures inspected and repaired. System maintained for 2,200+ years through this practice. | Engineering maintenance as cultural institution | |  |
+
+---
+
+## Summary of Additions
+
+### India
+
+| | | | Period | Current | Suggested Total | Key Additions | |  |
+|--------|---------|-----------------|----------------|
+| | | Indus Valley | 3 | 10+ | Dholavira, Great Bath detail, Lothal Dock, wells, drains, soak pits | |  |
+| | | Vedic & Mauryan | 3 | 8+ | Water pricing, rainfall measurement, Sringaverapura, groundwater divination | |  |
+| | | South Indian | 3 (Chola only) | 12+ | Eri system, Vijayanagara, Kaveri Delta, Kerala backwaters, Pallava, Hoysala | |  |
+| | | North Indian | 0 | 5+ | Nalanda, Pataliputra, Varanasi ghats, Bengal tanks, Bhojtal | |  |
+| | | Rajasthan | 3 | 8+ | Chand Baori, Khadin, Paar, Bavdi, Naadi | |  |
+| | | Delhi/Mughal | 6 | 12+ | Hauz Khas, Tughlaqabad, Red Fort, fountain technology, ice transport | |  |
+| | | Sri Lanka | 3 | 8+ | Parakrama Samudra, Yoda Ela, Sigiriya, Abhaya Wewa | |  |
+| | | **Total** | **~30** | **~65+** | | | |
+
+### China
+
+| | | | Period | Current | Suggested Total | Key Additions | |  |
+|--------|---------|-----------------|----------------|
+| | | Xia & Shang | 3 | 6+ | Oracle bone records, bronze rituals, irrigation ditches | |  |
+| | | Zhou & Qin | 3 | 8+ | Silt irrigation, standardized dimensions, military flooding, water officials | |  |
+| | | Han | 3 | 10+ | Water-powered bellows, deep drilling, Wang Jing, Kunming Lake, salt pipelines | |  |
+| | | Three Kingdoms–S. Dynasties | 0 | 4+ | Multi-sluice dam, polder agriculture, Ma Jun's automata, Jingjiang levees | |  |
+| | | Sui & Tang | 3 | 8+ | Grain transport, rice manuals, maintenance rituals, maritime water knowledge | |  |
+| | | Song | 3 | 10+ | Deep drilling, Shen Kuo hydrology, polders, Hangzhou water, seawalls, fire systems | |  |
+| | | Yuan | 0 | 3+ | Guo Shoujing survey, technology transfer, coastal transport | |  |
+| | | Ming | 2 | 7+ | Forbidden City, Great Wall water, Song Yingxing manual, canal maintenance | |  |
+| | | Qing | 0 | 5+ | Kangxi maps, Jin Fu diversion, Lin Zexu karez, maintenance codification | |  |
+| | | **Total** | **~25** | **~60+** | | | |
+
+### SWMM5 Model Suggestions
+
+| | | | Model | Category | Nodes | Links | Why | |  |
+|-------|----------|-------|-------|-----|
+| | | **Dholavira 16-Reservoir System** | Reservoir | 20 | 22 | Most complex Indus water system | |  |
+| | | **Grand Anicut + Kaveri Delta** | Gravity Flow + Irrigation | 15 | 20 | 1,800-year-old system still functioning | |  |
+| | | **Parakrama Samudra + Distribution** | Reservoir | 10 | 12 | Largest ancient Sri Lankan reservoir | |  |
+| | | **Forbidden City Drainage** | Sanitation | 12 | 15 | Most sophisticated palace drainage | |  |
+| | | **Song Dynasty Hangzhou Water Supply** | Urban Supply | 15 | 18 | Water for 1 million people | |  |
+| | | **Han Sichuan Brine Pipeline** | Pressure Flow | 8 | 10 | First long-distance pipelines | |  |
+| | | **Wang Jing's Yellow River Control** | Flood Control | 20 | 25 | 800 years of river stability | |  |
+| | | **Yoda Ela Canal (Sri Lanka)** | Gravity Flow | 10 | 9 | 87 km at 0.01% gradient | |  |

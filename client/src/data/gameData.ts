@@ -1257,6 +1257,66 @@ export const gameData: GameData = {
               significance: "Combined water engineering with healthcare; still used in rain ceremonies",
               yearBCE: -1191,
               category: "fountain"
+            },
+            {
+              id: "east-baray",
+              name: "East Baray",
+              description: "Massive reservoir (7.5 km × 1.8 km) built by Yasovarman I in 889 CE. Held ~37 million m³ of water. Combined with West Baray, these reservoirs anchored the Angkor hydraulic system.",
+              rarity: "legendary",
+              historicalPeriod: "889 CE",
+              significance: "Among the largest pre-industrial reservoirs ever built",
+              yearBCE: -889,
+              category: "dam"
+            },
+            {
+              id: "angkor-hydraulic-network",
+              name: "Angkor's Integrated Hydraulic Network",
+              description: "Complete system of barays, channels, moats, and rice paddies covering 1,000+ km². Supported a population of 750,000+ — the largest pre-industrial city on Earth.",
+              rarity: "legendary",
+              historicalPeriod: "9th-13th c. CE",
+              significance: "Most sophisticated pre-modern urban water system ever built",
+              yearBCE: -900,
+              category: "canal"
+            },
+            {
+              id: "khmer-spillway",
+              name: "Khmer Spillway Engineering",
+              description: "Precisely engineered overflow spillways controlling water levels in barays. Stone-lined channels with calculated gradients distributed water to agricultural zones downstream.",
+              rarity: "epic",
+              historicalPeriod: "10th-13th c. CE",
+              significance: "Demonstrates advanced hydraulic engineering knowledge",
+              yearBCE: -1000,
+              category: "dam"
+            },
+            {
+              id: "khmer-bridge-dams",
+              name: "Khmer Bridge-Dams (Spean)",
+              description: "Laterite and sandstone bridge-dams crossing rivers and canals. Spean Thma at Angkor served both transportation and water control functions.",
+              rarity: "epic",
+              historicalPeriod: "12th c. CE",
+              significance: "Dual-purpose infrastructure — unique Khmer innovation",
+              yearBCE: -1150,
+              category: "dam"
+            },
+            {
+              id: "preah-khan-baray",
+              name: "Preah Khan Baray",
+              description: "Reservoir at Preah Khan temple with island shrine (Neak Poan) designed as a symbolic healing bath and practical water distribution hub.",
+              rarity: "epic",
+              historicalPeriod: "12th c. CE",
+              significance: "Sacred-hydraulic integration at its finest",
+              yearBCE: -1150,
+              category: "dam"
+            },
+            {
+              id: "koh-ker-reservoir",
+              name: "Koh Ker Reservoir",
+              description: "Massive 1,200 × 560 m reservoir at the temporary Khmer capital Koh Ker. Built in just 16 years — demonstrating rapid hydraulic deployment capability.",
+              rarity: "rare",
+              historicalPeriod: "928-944 CE",
+              significance: "Shows Khmer could build major water infrastructure quickly for new capitals",
+              yearBCE: -928,
+              category: "dam"
             }
           ]
         },
@@ -2068,6 +2128,26 @@ export const gameData: GameData = {
               significance: "Later adopted by Chinese—became dominant East Asian sail design",
               yearBCE: 300,
               category: "canal"
+            },
+            {
+              id: "austronesian-taro-irrigation",
+              name: "Austronesian Taro Irrigation",
+              description: "As Austronesians expanded southward from Taiwan through Philippines to Indonesia, they brought systematic taro pondfield irrigation — channeling mountain streams into leveled terraces.",
+              rarity: "epic",
+              historicalPeriod: "3500-2000 BCE",
+              significance: "The agricultural technology that enabled Pacific colonization",
+              yearBCE: 3500,
+              category: "irrigation"
+            },
+            {
+              id: "austronesian-freshwater-voyaging",
+              name: "Austronesian Freshwater Voyaging Storage",
+              description: "Bamboo water containers, coconut shell vessels, and carved wooden water tanks carried on outrigger canoes for ocean crossings. Without reliable freshwater storage, the Austronesian expansion would have been impossible.",
+              rarity: "epic",
+              historicalPeriod: "3500 BCE onwards",
+              significance: "Enabled the greatest maritime migration in human history",
+              yearBCE: 3500,
+              category: "dam"
             }
           ]
         }
@@ -2737,6 +2817,26 @@ export const gameData: GameData = {
               significance: "Bangkok called 'Venice of the East'—canals were main transport until 20th century",
               yearBCE: -1238,
               category: "canal"
+            },
+            {
+              id: "ayutthaya-floating-markets",
+              name: "Ayutthaya Floating Markets",
+              description: "Canal-based commerce requiring managed water levels, docking infrastructure, and tidal regulation. The klong network supported a population of 1 million.",
+              rarity: "epic",
+              historicalPeriod: "1351-1767 CE",
+              significance: "Largest canal-based commerce system in pre-modern SE Asia",
+              yearBCE: -1351,
+              category: "canal"
+            },
+            {
+              id: "ayutthaya-flood-architecture",
+              name: "Ayutthaya Flood Adaptation Architecture",
+              description: "Buildings constructed on stilts with flood-resistant foundations. Temples built on raised platforms with integrated drainage. The city was designed to flood seasonally and recover.",
+              rarity: "rare",
+              historicalPeriod: "1351-1767 CE",
+              significance: "Deliberate flood-adaptive urban design",
+              yearBCE: -1400,
+              category: "sanitation"
             }
           ]
         },
@@ -2766,6 +2866,16 @@ export const gameData: GameData = {
               significance: "One of the oldest dams in Southeast Asia, shows Thai hydraulic knowledge",
               yearBCE: -1250,
               category: "dam"
+            },
+            {
+              id: "sukhothai-traphang",
+              name: "Sukhothai Traphang (Pond) System",
+              description: "Network of rectangular ponds (traphang) surrounding the royal city. Fed by natural springs and rainfall, connected by channels. Over 30 traphang identified.",
+              rarity: "rare",
+              historicalPeriod: "1238-1438 CE",
+              significance: "Unique Thai urban water design — part spiritual, part practical",
+              yearBCE: -1238,
+              category: "dam"
             }
           ]
         },
@@ -2794,6 +2904,75 @@ export const gameData: GameData = {
               historicalPeriod: "Traditional",
               significance: "Unique water-based economy and lifestyle continuing today",
               yearBCE: -1800,
+              category: "canal"
+            },
+            {
+              id: "bhumibol-dam",
+              name: "Bhumibol Dam (Rama IX)",
+              description: "Thailand's largest dam (154 m). Multi-purpose: flood control, irrigation, hydropower. Named after the late king.",
+              rarity: "epic",
+              historicalPeriod: "1964",
+              significance: "Thailand's largest multi-purpose dam",
+              yearBCE: -1964,
+              category: "dam"
+            },
+            {
+              id: "royal-rainmaking",
+              name: "Royal Rainmaking Project",
+              description: "King Bhumibol's cloud seeding program. Three-stage process: 'Disturbing,' 'Fattening,' and 'Attacking' clouds. Internationally recognized.",
+              rarity: "rare",
+              historicalPeriod: "1955-Present",
+              significance: "Internationally recognized cloud seeding program",
+              yearBCE: -1955,
+              category: "irrigation"
+            },
+            {
+              id: "monkey-cheeks",
+              name: "Monkey Cheeks (Kaem Ling)",
+              description: "King Bhumibol's concept of using natural retention areas (like monkey cheeks storing food) to temporarily store floodwater. Implemented across Central Thailand.",
+              rarity: "rare",
+              historicalPeriod: "2006-Present",
+              significance: "Innovative floodwater retention concept",
+              yearBCE: -2006,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "northern-thailand",
+          name: "Northern Thailand",
+          description: "Ancient water management traditions of the Lanna Kingdom and prehistoric settlements",
+          historicalContext: "Northern Thai civilizations developed unique irrigation and agricultural water systems",
+          coordinates: { lat: 18.8, lng: 98.9 },
+          artifacts: [
+            {
+              id: "lanna-muang-fai",
+              name: "Lanna Kingdom Irrigation (Muang Fai)",
+              description: "Northern Thai gravity-fed weir irrigation system. Community-managed with traditional water allocation rules. Still functioning today.",
+              rarity: "rare",
+              historicalPeriod: "13th c. CE onwards",
+              significance: "Living example of traditional community water governance",
+              yearBCE: -1250,
+              category: "irrigation"
+            },
+            {
+              id: "ban-chiang-rice",
+              name: "Ban Chiang Rice Paddy Management",
+              description: "Bronze Age rice cultivation with water control at Ban Chiang, a UNESCO World Heritage site — one of the earliest centers of bronze metallurgy and rice agriculture.",
+              rarity: "epic",
+              historicalPeriod: "3600-300 BCE",
+              significance: "Demonstrates independent agricultural water innovation",
+              yearBCE: 3600,
+              category: "irrigation"
+            },
+            {
+              id: "iron-age-moated-settlements",
+              name: "Iron Age Moated Settlements",
+              description: "Circular moated sites (over 50 identified) combining defensive, water storage, and agricultural irrigation functions. Some exceed 1 km in diameter.",
+              rarity: "rare",
+              historicalPeriod: "500 BCE-500 CE",
+              significance: "Unique to mainland SE Asia — hundreds of sites across the Khorat Plateau",
+              yearBCE: 500,
               category: "canal"
             }
           ]
@@ -2994,6 +3173,45 @@ export const gameData: GameData = {
               category: "irrigation"
             }
           ]
+        },
+        {
+          id: "bagan-temples",
+          name: "Bagan Temples",
+          description: "Temple city with integrated water infrastructure across thousands of structures",
+          historicalContext: "Bagan's 3,000+ temples relied on sophisticated water management for construction and maintenance",
+          coordinates: { lat: 21.17, lng: 94.87 },
+          artifacts: [
+            {
+              id: "kyaukse-weir-expanded",
+              name: "Kyaukse Integrated Weir System",
+              description: "Not just one weir but an integrated system of 12+ weirs on 4 rivers in the Kyaukse district. Fed a canal network irrigating the rice bowl that sustained the Bagan empire's 200,000+ population.",
+              rarity: "legendary",
+              historicalPeriod: "11th-13th c. CE",
+              significance: "Most important single irrigation system in pre-modern Myanmar",
+              yearBCE: -1050,
+              category: "irrigation"
+            },
+            {
+              id: "bagan-temple-tanks",
+              name: "Bagan Temple Tank Systems",
+              description: "Over 3,000 temples at Bagan, many with integrated water tanks (kan) for ritual use, cooling, and local water supply. Stone-lined and brick-lined tanks with filtration systems.",
+              rarity: "epic",
+              historicalPeriod: "11th-13th c. CE",
+              significance: "Largest concentration of temple-water infrastructure in SE Asia",
+              yearBCE: -1050,
+              category: "dam"
+            },
+            {
+              id: "meiktila-lake",
+              name: "Meiktila Lake Management",
+              description: "Managed natural lake with engineered embankments, sluices, and distribution canals. Key water source for dry-zone agriculture.",
+              rarity: "rare",
+              historicalPeriod: "11th c. CE onwards",
+              significance: "Demonstrates dry-zone water conservation engineering",
+              yearBCE: -1050,
+              category: "dam"
+            }
+          ]
         }
       ]
     },
@@ -3060,6 +3278,85 @@ export const gameData: GameData = {
               historicalPeriod: "Ancient",
               significance: "Adapted to annual 4-6m flooding; unique Vietnamese innovation",
               yearBCE: 500,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "dai-viet-capital",
+          name: "Dai Viet Capital",
+          description: "Water engineering of the Dai Viet kingdoms and modern Vietnam",
+          historicalContext: "Vietnamese dynasties built extensive dike, dam, and reservoir systems to manage the Red River",
+          coordinates: { lat: 21.03, lng: 105.85 },
+          artifacts: [
+            {
+              id: "dong-son-bronze-drums",
+              name: "Dong Son Bronze Drums",
+              description: "Elaborate bronze drums used in rain-calling ceremonies depicting boats, water, and agricultural scenes — evidence that water management was central to Dong Son identity.",
+              rarity: "epic",
+              historicalPeriod: "1000-200 BCE",
+              significance: "Earliest bronze-age water ritual technology in SE Asia",
+              yearBCE: 1000,
+              category: "water-clock"
+            },
+            {
+              id: "de-dike-system",
+              name: "Đê (Dike) System Expansion",
+              description: "Emperor Lý Nhân Tông ordered the systematic expansion and standardization of the Red River dike system in 1108 CE. Created the đê quai (sea dike) and đê sông (river dike) classification system.",
+              rarity: "epic",
+              historicalPeriod: "1108 CE",
+              significance: "First codified dike classification in SE Asia",
+              yearBCE: -1108,
+              category: "dam"
+            },
+            {
+              id: "dap-dam-systems",
+              name: "Đập (Dam) Systems",
+              description: "Small weir-dams across tributaries for rice irrigation. Thousands built across the Red River Delta and central lowlands.",
+              rarity: "rare",
+              historicalPeriod: "11th-15th c. CE",
+              significance: "Decentralized irrigation at massive scale",
+              yearBCE: -1100,
+              category: "dam"
+            },
+            {
+              id: "ho-reservoir-engineering",
+              name: "Hồ (Reservoir) Engineering",
+              description: "Royal reservoirs at Thăng Long (Hanoi) combining urban water supply, flood control, and ornamental gardens. Hồ Tây (West Lake) was actively managed.",
+              rarity: "epic",
+              historicalPeriod: "11th-15th c. CE",
+              significance: "Urban water planning for one of Asia's great capitals",
+              yearBCE: -1100,
+              category: "dam"
+            },
+            {
+              id: "salt-production-water",
+              name: "Salt Production Water Systems",
+              description: "Coastal salt pans with managed seawater evaporation — tidal gates, levees, and evaporation basins.",
+              rarity: "rare",
+              historicalPeriod: "11th c. CE onwards",
+              significance: "Industrial water management for trade economy",
+              yearBCE: -1100,
+              category: "irrigation"
+            },
+            {
+              id: "hoa-binh-dam",
+              name: "Hòa Bình Dam",
+              description: "Largest dam in Southeast Asia at time of completion. 128 m tall, 1,920 MW.",
+              rarity: "epic",
+              historicalPeriod: "1994",
+              significance: "Largest dam in Southeast Asia at completion",
+              yearBCE: -1994,
+              category: "dam"
+            },
+            {
+              id: "mekong-sluice-network",
+              name: "Mekong Delta Sluice Gate Network",
+              description: "Extensive network of cống (sluice gates) managing saltwater intrusion, freshwater supply, and tidal flooding across the delta. Over 1,000 gates.",
+              rarity: "rare",
+              historicalPeriod: "Modern",
+              significance: "Over 1,000 sluice gates managing saltwater intrusion",
+              yearBCE: -1950,
               category: "irrigation"
             }
           ]
@@ -3200,6 +3497,46 @@ export const gameData: GameData = {
               significance: "Dry-fitted walls up to 6 meters high using no mortar; withstand monsoon hydrostatic pressure; knowledge transmitted orally for 2,000+ years",
               yearBCE: -100,
               category: "dam"
+            },
+            {
+              id: "ifugao-lidi",
+              name: "Ifugao Communal Water Law (Lidi)",
+              description: "Codified water allocation rules governing the Banaue Rice Terraces. Water rights linked to social obligations. Violators face community sanctions.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "One of the oldest codified water law systems in Southeast Asia",
+              yearBCE: -200,
+              category: "irrigation"
+            },
+            {
+              id: "visayan-bunsod",
+              name: "Visayan Fish Corral Systems (Bunsod)",
+              description: "Elaborate bamboo fish corrals in tidal zones of the Visayan Islands. Managed tidal water flow to trap fish.",
+              rarity: "common",
+              historicalPeriod: "Traditional",
+              significance: "Unique tidal fishery management system",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "ilocano-dammang",
+              name: "Ilocano Dammang (Check Dam)",
+              description: "Stone check dams across mountain streams in Ilocos region for rice irrigation. Community-maintained.",
+              rarity: "common",
+              historicalPeriod: "Traditional",
+              significance: "Community-maintained mountain stream irrigation",
+              yearBCE: -500,
+              category: "dam"
+            },
+            {
+              id: "tagalog-pilapil",
+              name: "Tagalog Pilapil (Rice Paddy Dike)",
+              description: "Earthen dikes creating bunded rice paddies in Luzon lowlands. Combined with communal water sharing systems.",
+              rarity: "common",
+              historicalPeriod: "Traditional",
+              significance: "Foundation of Luzon lowland rice agriculture",
+              yearBCE: -500,
+              category: "irrigation"
             }
           ]
         },
@@ -4727,6 +5064,26 @@ export const gameData: GameData = {
               significance: "Zero energy cost; spans 2+ km; gradient engineering by eye without instruments; bamboo replaced every 2-3 years",
               yearBCE: 2000,
               category: "aqueduct"
+            },
+            {
+              id: "dayak-headwater-protection",
+              name: "Dayak Headwater Forest Protection",
+              description: "Deliberately maintained forest cover at river headwaters to ensure year-round flow to downstream communities. Early ecological water management.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Early ecological water management practice",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "malay-sultanate-ports",
+              name: "Malay Sultanate Port-River Cities",
+              description: "Brunei, Pontianak, and other river-mouth sultanate capitals with sophisticated tidal management, floating settlements, and freshwater supply systems.",
+              rarity: "rare",
+              historicalPeriod: "15th c. CE onwards",
+              significance: "Sophisticated tidal management at river-mouth capitals",
+              yearBCE: -1450,
+              category: "canal"
             }
           ]
         },
@@ -5061,6 +5418,56 @@ export const gameData: GameData = {
               historicalPeriod: "Majapahit Period (1293-1527 CE)",
               significance: "Rice surplus funded maritime empire controlling spice trade",
               yearBCE: -1300,
+              category: "irrigation"
+            },
+            {
+              id: "mataram-irrigation",
+              name: "Mataram Kingdom Irrigation",
+              description: "Inscription evidence of royal irrigation projects in central Java (8th-10th c. CE). Rice tax systems based on irrigated vs. rain-fed land suggest extensive managed water networks.",
+              rarity: "rare",
+              historicalPeriod: "8th-10th c. CE",
+              significance: "Earliest documented Javanese irrigation management",
+              yearBCE: -800,
+              category: "irrigation"
+            },
+            {
+              id: "borobudur-drainage",
+              name: "Borobudur Drainage Engineering",
+              description: "The world's largest Buddhist monument required sophisticated drainage to prevent collapse. Multi-level hidden drainage channels move water through the 9-tier structure. UNESCO World Heritage.",
+              rarity: "legendary",
+              historicalPeriod: "~800 CE",
+              significance: "Drainage engineering for the world's largest Buddhist monument",
+              yearBCE: -800,
+              category: "sanitation"
+            },
+            {
+              id: "prambanan-water",
+              name: "Prambanan Temple Water System",
+              description: "Hindu temple complex with integrated reservoir, canal, and ritual bathing systems. Stone-carved water channels with precise gradients.",
+              rarity: "epic",
+              historicalPeriod: "~850 CE",
+              significance: "Integration of Hindu sacred water practices with engineering",
+              yearBCE: -850,
+              category: "fountain"
+            },
+            {
+              id: "trowulan-water-grid",
+              name: "Trowulan Urban Water Grid",
+              description: "Majapahit's capital featured a grid of canals 20-40 m wide covering 100 km². Combined transport, sanitation, flood control, and water supply functions for a city of 500,000+.",
+              rarity: "legendary",
+              historicalPeriod: "14th c. CE",
+              significance: "100 km² urban water grid for a city of 500,000+",
+              yearBCE: -1350,
+              category: "canal"
+            },
+            {
+              id: "javanese-dawuhan",
+              name: "Javanese Sluice Gate (Dawuhan)",
+              description: "Stone and brick sluice gates controlling water flow in sawah (rice terrace) systems. Some still in use.",
+              rarity: "rare",
+              historicalPeriod: "9th c. CE onwards",
+              significance: "Still-functioning medieval sluice technology",
+              yearBCE: -900,
               category: "irrigation"
             }
           ]
@@ -6336,6 +6743,346 @@ export const gameData: GameData = {
       ]
     },
     {
+      id: "sundaland",
+      name: "Sundaland (Pre-Historic Southeast Asia)",
+      description: "Before sea levels rose ~7,000 BCE, the area west of Makassar Strait was a vast lowland plain called Sundaland — connecting modern Borneo, Java, Sumatra, and the Malay Peninsula. When the seas rose 50+ meters, entire civilizations and their water systems were submerged. Evidence from Spirit Cave, Niah Cave, and Hoabinhian sites reveals the world's oldest tropical water management traditions, from 50,000 BCE freshwater systems to the earliest aquaculture management in the tropics.",
+      position: [17, 0, 12],
+      color: "#5D4037",
+      era: "ancient",
+      dateRange: "50,000 - 3,000 BCE",
+      locations: [
+        {
+          id: "sundaland-sites",
+          name: "Sundaland Sites",
+          description: "Archaeological sites across the former Sundaland landmass",
+          historicalContext: "Pre-historic tropical water management spanning tens of thousands of years",
+          coordinates: { lat: 2.0, lng: 110.0 },
+          artifacts: [
+            {
+              id: "sundaland-freshwater",
+              name: "Sundaland Freshwater Management",
+              description: "River-based settlement systems across what was the largest tropical lowland on Earth. Freshwater springs, river confluences, and lake margins served as settlement anchors.",
+              rarity: "legendary",
+              historicalPeriod: "50,000-7,000 BCE",
+              significance: "Oldest tropical water management tradition — predates all known agricultural water systems",
+              yearBCE: 50000,
+              category: "irrigation"
+            },
+            {
+              id: "hoabinhian-shellfish",
+              name: "Hoabinhian Shellfish Water Gardens",
+              description: "Hoabinhian culture managed coastal freshwater-saltwater boundaries for shellfish cultivation. Stone tools found across the region show remarkable similarity — suggesting shared water-management knowledge.",
+              rarity: "epic",
+              historicalPeriod: "13,000-5,000 BCE",
+              significance: "Earliest known aquaculture management in the tropics",
+              yearBCE: 13000,
+              category: "irrigation"
+            },
+            {
+              id: "spirit-cave-water",
+              name: "Spirit Cave Water Collection",
+              description: "Evidence of systematic rainwater collection and storage at Spirit Cave and related sites in Northern Thailand. Associated with some of the earliest plant cultivation in the world.",
+              rarity: "rare",
+              historicalPeriod: "10,000 BCE",
+              significance: "Links water management to the origins of agriculture",
+              yearBCE: 10000,
+              category: "dam"
+            },
+            {
+              id: "niah-cave-freshwater",
+              name: "Niah Cave Freshwater Systems",
+              description: "One of the oldest human habitation sites in Southeast Asia, in Borneo (Sarawak). Freshwater management within and around the cave complex supported continuous habitation for tens of thousands of years.",
+              rarity: "legendary",
+              historicalPeriod: "40,000 BCE",
+              significance: "Among the oldest evidence of human water management anywhere",
+              yearBCE: 40000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "dong-son",
+      name: "Dong Son Culture",
+      description: "The Dong Son civilization (1000-200 BCE) of Northern Vietnam produced elaborate bronze drums used in rain-calling ceremonies — evidence that water management was central to their identity. They developed systematic wet rice cultivation with bunded fields in the Red River Delta, and the Co Loa Citadel's triple-ring moat system with an 8 km outer perimeter was the largest ancient moat in mainland Southeast Asia.",
+      position: [17, 0, 4],
+      color: "#BF360C",
+      era: "ancient",
+      dateRange: "1000 - 200 BCE",
+      locations: [
+        {
+          id: "red-river-valley",
+          name: "Red River Valley",
+          description: "Heartland of Dong Son bronze-age civilization",
+          historicalContext: "Center of wet rice cultivation and bronze drum culture in Northern Vietnam",
+          coordinates: { lat: 21.0, lng: 105.8 },
+          artifacts: [
+            {
+              id: "dong-son-drums",
+              name: "Dong Son Bronze Drums & Rain Ritual",
+              description: "Elaborate bronze drums used in rain-calling ceremonies. The drums depict boats, water, and agricultural scenes — evidence that water management was central to Dong Son identity.",
+              rarity: "epic",
+              historicalPeriod: "1000-200 BCE",
+              significance: "Earliest bronze-age water ritual technology in SE Asia",
+              yearBCE: 1000,
+              category: "water-clock"
+            },
+            {
+              id: "dong-son-rice-paddies",
+              name: "Dong Son Wet Rice Paddies",
+              description: "Systematic wet rice cultivation with bunded fields and water control in the Red River Delta — among the earliest in mainland Southeast Asia.",
+              rarity: "rare",
+              historicalPeriod: "1000 BCE",
+              significance: "Foundation of Vietnamese agricultural civilization",
+              yearBCE: 1000,
+              category: "irrigation"
+            },
+            {
+              id: "co-loa-moat",
+              name: "Co Loa Citadel Moat System",
+              description: "Triple-ring moat system surrounding the ancient Âu Lạc capital. Combined defensive and water management functions. 8 km outer perimeter.",
+              rarity: "epic",
+              historicalPeriod: "257 BCE",
+              significance: "Largest ancient moat system in mainland SE Asia",
+              yearBCE: 257,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "funan-kingdom",
+      name: "Funan Kingdom",
+      description: "The Funan Kingdom (1st-6th century CE) was the first large-scale hydraulic civilization in Southeast Asia. Based in the Mekong Delta, Funan built massive canal networks connecting the port city of Oc Eo to inland cities, wide enough for large boats according to Chinese records. Their sophisticated freshwater-saltwater management at Oc Eo port enabled trade with Rome, India, and China. Funan pioneered flood-recession rice cultivation that became the foundation of all subsequent Mekong Delta agriculture.",
+      position: [16, 0, 8],
+      color: "#00695C",
+      era: "classical",
+      dateRange: "1st - 6th century CE",
+      locations: [
+        {
+          id: "mekong-delta",
+          name: "Mekong Delta",
+          description: "Center of Funan hydraulic civilization",
+          historicalContext: "First large-scale canal networks in Southeast Asia connecting port cities to inland settlements",
+          coordinates: { lat: 10.5, lng: 105.5 },
+          artifacts: [
+            {
+              id: "funan-canals",
+              name: "Funan Canal Network",
+              description: "Massive canal system in the Mekong Delta connecting Oc Eo port to inland cities. Chinese records describe canals wide enough for large boats. Archaeological surveys reveal networks spanning hundreds of kilometers.",
+              rarity: "legendary",
+              historicalPeriod: "1st-6th c. CE",
+              significance: "First large-scale hydraulic civilization in Southeast Asia",
+              yearBCE: -200,
+              category: "canal"
+            },
+            {
+              id: "oc-eo-port",
+              name: "Oc Eo Port Water Management",
+              description: "Major international trading port with sophisticated freshwater-saltwater management, harbor drainage, and canal-based urban water supply. Traded with Rome, India, and China.",
+              rarity: "epic",
+              historicalPeriod: "1st-6th c. CE",
+              significance: "Connected SE Asian water engineering to global maritime trade",
+              yearBCE: -200,
+              category: "canal"
+            },
+            {
+              id: "funan-flood-rice",
+              name: "Funan Flood-Recession Rice",
+              description: "Managed seasonal Mekong flooding for deep-water rice cultivation. Fields were engineered to flood to specific depths and drain on predictable schedules.",
+              rarity: "rare",
+              historicalPeriod: "1st-6th c. CE",
+              significance: "Foundation of all subsequent Mekong Delta agriculture",
+              yearBCE: -300,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "champa-kingdom",
+      name: "Champa Kingdom",
+      description: "The Champa Kingdom (4th-15th century CE) of Central Vietnam combined sacred and practical water engineering. Their brick temple-towers at Mỹ Sơn featured integrated reservoir and canal systems for ritual water supply and irrigation. Champa developed unique steep-gradient tropical irrigation on the narrow coastal plain using short rivers from the Annam Mountains. Their port cities were precursors to Hội An, with tidal water management linking India and China trade routes.",
+      position: [17, 0, 6],
+      color: "#E65100",
+      era: "medieval",
+      dateRange: "4th - 15th century CE",
+      locations: [
+        {
+          id: "central-vietnam-coast",
+          name: "Central Vietnam Coast",
+          description: "Heartland of Champa water engineering and maritime trade",
+          historicalContext: "Champa combined sacred temple water systems with practical coastal irrigation",
+          coordinates: { lat: 15.9, lng: 108.3 },
+          artifacts: [
+            {
+              id: "cham-tower-reservoirs",
+              name: "Cham Tower Reservoir Systems",
+              description: "Brick temple-towers (such as Mỹ Sơn) with integrated reservoir and canal systems for ritual water supply and agricultural irrigation.",
+              rarity: "epic",
+              historicalPeriod: "4th-15th c. CE",
+              significance: "Combined sacred and practical water engineering",
+              yearBCE: -400,
+              category: "dam"
+            },
+            {
+              id: "cham-coastal-irrigation",
+              name: "Cham Coastal Irrigation",
+              description: "Narrow coastal plain irrigation using short rivers flowing from the Annam Mountains to the South China Sea. Systems engineered for rapid runoff control in steep terrain.",
+              rarity: "rare",
+              historicalPeriod: "4th-15th c. CE",
+              significance: "Unique steep-gradient tropical irrigation",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "cham-harbors",
+              name: "Cham Maritime Harbors",
+              description: "Port cities (Hội An precursors) with tidal water management, freshwater supply, and harbor silting control.",
+              rarity: "rare",
+              historicalPeriod: "4th-15th c. CE",
+              significance: "Maritime water infrastructure linking India and China trade routes",
+              yearBCE: -400,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "dvaravati-kingdom",
+      name: "Dvaravati Kingdom",
+      description: "The Dvaravati Kingdom (6th-11th century CE) of Central Thailand built large oval moated settlements in the Chao Phraya basin. U Thong, Nakhon Pathom, and other sites feature multi-ring moats combining defense, water storage, and irrigation. Their canal-fed rice agriculture in the Central Thai lowlands was the precursor to Thai klong (canal) culture.",
+      position: [15, 0, 7],
+      color: "#827717",
+      era: "medieval",
+      dateRange: "6th - 11th century CE",
+      locations: [
+        {
+          id: "chao-phraya-basin",
+          name: "Chao Phraya Basin",
+          description: "Center of Dvaravati moated city civilization",
+          historicalContext: "Oval moated settlements combining defense, water storage, and irrigation in Central Thailand",
+          coordinates: { lat: 14.0, lng: 100.1 },
+          artifacts: [
+            {
+              id: "dvaravati-moated-cities",
+              name: "Dvaravati Moated Cities",
+              description: "Large oval moated settlements in the Chao Phraya basin. U Thong, Nakhon Pathom, and other sites feature multi-ring moats combining defense, water storage, and irrigation.",
+              rarity: "epic",
+              historicalPeriod: "6th-11th c. CE",
+              significance: "Bridge between Iron Age moated sites and Khmer-era hydraulic cities",
+              yearBCE: -600,
+              category: "canal"
+            },
+            {
+              id: "dvaravati-canal-agriculture",
+              name: "Dvaravati Canal Agriculture",
+              description: "Canal-fed rice agriculture in the Central Thai lowlands. Early hydraulic management of the Chao Phraya floodplain.",
+              rarity: "rare",
+              historicalPeriod: "6th-11th c. CE",
+              significance: "Precursor to Thai klong (canal) culture",
+              yearBCE: -600,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "pyu-city-states",
+      name: "Pyu City-States (Myanmar)",
+      description: "The Pyu City-States (2nd century BCE-9th century CE) created the largest pre-Bagan urban water systems in Myanmar. Sri Ksetra (UNESCO World Heritage) had massive urban water infrastructure serving a city of 18 km² — one of the largest ancient cities in Southeast Asia. Their gravity irrigation diverted Irrawaddy tributaries for rice cultivation, and the triple-moat Beikthano fortification was among the earliest urban water systems in mainland SE Asia.",
+      position: [13, 0, 6],
+      color: "#33691E",
+      era: "classical",
+      dateRange: "2nd c. BCE - 9th c. CE",
+      locations: [
+        {
+          id: "irrawaddy-valley",
+          name: "Irrawaddy Valley",
+          description: "Heartland of Pyu city-state civilization in Myanmar",
+          historicalContext: "Largest pre-Bagan urban water systems including UNESCO World Heritage Sri Ksetra",
+          coordinates: { lat: 18.8, lng: 95.3 },
+          artifacts: [
+            {
+              id: "sri-ksetra-reservoir",
+              name: "Sri Ksetra Reservoir & Canal System",
+              description: "Massive urban water infrastructure at Sri Ksetra (near modern Pyay). Reservoirs, canals, and moats served a city of 18 km² — one of the largest ancient cities in Southeast Asia. UNESCO World Heritage.",
+              rarity: "legendary",
+              historicalPeriod: "5th-9th c. CE",
+              significance: "Largest pre-Bagan urban water system in Myanmar",
+              yearBCE: -500,
+              category: "dam"
+            },
+            {
+              id: "pyu-gravity-irrigation",
+              name: "Pyu Gravity Irrigation",
+              description: "Canal systems diverting Irrawaddy tributaries for rice cultivation. Engineering principles later adopted by Bagan kingdom.",
+              rarity: "rare",
+              historicalPeriod: "5th-9th c. CE",
+              significance: "Foundation of Burmese irrigation tradition",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "beikthano-moat",
+              name: "Beikthano Moat System",
+              description: "Triple-moat fortification with integrated water management at one of the oldest Pyu cities.",
+              rarity: "epic",
+              historicalPeriod: "2nd c. BCE-9th c. CE",
+              significance: "Among the earliest urban water systems in mainland SE Asia",
+              yearBCE: 200,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "srivijaya-empire",
+      name: "Srivijaya Maritime Empire",
+      description: "The Srivijaya Maritime Empire (7th-13th century CE) controlled the Strait of Malacca from Sumatra and the Malay Peninsula. Their river-port cities managed tidal influences, silting, and freshwater supply in estuarine environments. Understanding of monsoon water patterns for maritime trade timing required freshwater supply infrastructure for ships waiting months for seasonal wind shifts.",
+      position: [14, 0, 11],
+      color: "#1565C0",
+      era: "medieval",
+      dateRange: "7th - 13th century CE",
+      locations: [
+        {
+          id: "palembang",
+          name: "Palembang",
+          description: "Capital of the Srivijaya Maritime Empire",
+          historicalContext: "River-port city controlling the Strait of Malacca with sophisticated estuarine water management",
+          coordinates: { lat: -2.9, lng: 104.7 },
+          artifacts: [
+            {
+              id: "srivijaya-river-port",
+              name: "Srivijaya River-Port Water Management",
+              description: "Palembang and other river-port cities managed tidal influences, silting, and freshwater supply in estuarine environments. Controlled river traffic through canal systems.",
+              rarity: "epic",
+              historicalPeriod: "7th-13th c. CE",
+              significance: "Earliest large-scale estuarine water management in SE Asia",
+              yearBCE: -700,
+              category: "canal"
+            },
+            {
+              id: "srivijaya-monsoon-navigation",
+              name: "Srivijaya Monsoon Navigation",
+              description: "Understanding of monsoon water patterns for maritime trade timing. Ships waited in port cities for seasonal wind and current shifts — requiring freshwater supply infrastructure for extended stays.",
+              rarity: "rare",
+              historicalPeriod: "7th-13th c. CE",
+              significance: "Water knowledge as maritime commerce infrastructure",
+              yearBCE: -700,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "ancient-indonesia",
       name: "Ancient Indonesia (Nusantara)",
       description: "The Indonesian archipelago developed unique water management systems adapted to tropical monsoons, volcanic landscapes, and maritime environments across 17,000+ islands. From the Subak irrigation cooperatives of Bali (see also Balinese Subak entry) to the massive Segaran reservoir of the Majapahit Empire at Trowulan, Indonesian civilizations created diverse solutions to water challenges spanning 4,000 years.",
@@ -6419,6 +7166,75 @@ export const gameData: GameData = {
               significance: "Ritual purification + public bathing + water storage; gravity-fed from volcanic springs; Borobudur/Prambanan era",
               yearBCE: -800,
               category: "fountain"
+            },
+            {
+              id: "jakarta-flood-canal",
+              name: "Jakarta Flood Canal System",
+              description: "Western and Eastern Flood Canals (Banjir Kanal) managing flooding in a megacity largely below sea level. Ongoing expansion.",
+              rarity: "epic",
+              historicalPeriod: "1918-Present",
+              significance: "Managing flooding in a megacity below sea level",
+              yearBCE: -1918,
+              category: "canal"
+            },
+            {
+              id: "jatiluhur-dam",
+              name: "Jatiluhur Dam",
+              description: "Indonesia's largest dam (105 m). Supplies irrigation for 240,000 hectares and drinking water for Jakarta.",
+              rarity: "epic",
+              historicalPeriod: "1967",
+              significance: "Indonesia's largest dam; supplies Jakarta's drinking water",
+              yearBCE: -1967,
+              category: "dam"
+            },
+            {
+              id: "ncicd-sea-wall",
+              name: "NCICD (Giant Sea Wall Jakarta)",
+              description: "Proposed 32 km sea wall to protect Jakarta from flooding and sea level rise. One of the largest coastal defense projects in the world.",
+              rarity: "rare",
+              historicalPeriod: "2014-Present",
+              significance: "One of the largest coastal defense projects in the world",
+              yearBCE: -2014,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "sumatra",
+          name: "Sumatra",
+          description: "Water management traditions across Sumatra's diverse cultures and landscapes",
+          historicalContext: "Sumatran civilizations developed unique water systems adapted to volcanic highlands, tropical lowlands, and coastal environments",
+          coordinates: { lat: -0.5, lng: 101.4 },
+          artifacts: [
+            {
+              id: "minangkabau-tabek",
+              name: "Minangkabau Tabek (Pond) System",
+              description: "Highland pond systems in West Sumatra. Community-managed water collection and distribution for rice cultivation in volcanic highland terrain.",
+              rarity: "rare",
+              historicalPeriod: "Pre-colonial",
+              significance: "Community-managed volcanic highland water system",
+              yearBCE: -500,
+              category: "dam"
+            },
+            {
+              id: "batak-toba-fishery",
+              name: "Batak Toba Lake Fishery Management",
+              description: "Management of Lake Toba (the world's largest volcanic lake) fisheries through traditional water governance.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Water governance for the world's largest volcanic lake",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "acehnese-canals",
+              name: "Acehnese Canal Systems",
+              description: "Northern Sumatra canal networks for pepper and rice cultivation. Managed by the Aceh Sultanate.",
+              rarity: "rare",
+              historicalPeriod: "13th c. CE onwards",
+              significance: "Sultanate-era agricultural canal networks",
+              yearBCE: -1250,
+              category: "canal"
             }
           ]
         }

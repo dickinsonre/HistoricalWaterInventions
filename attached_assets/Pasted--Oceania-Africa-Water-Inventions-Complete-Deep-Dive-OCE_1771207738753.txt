@@ -1,0 +1,511 @@
+# Oceania & Africa Water Inventions — Complete Deep Dive
+
+---
+
+# OCEANIA
+
+## Current App Coverage
+
+| | | | | Civilization | Inventions | Coverage Assessment | | | |
+|-------------|-----------|---------------------|
+| | | | **Aboriginal Australia** | 3 | Basic — Brewarrina, Gnamma, Wells | | | |
+| | | | **Papua New Guinea** | 7 | Good — Kuk, terraces, taro | | | |
+| | | | **Hawaiian** | 2 | Basic — Lo'i, 'Auwai | | | |
+| | | | **Nan Madol** | 2 | Basic — canals, freshwater | | | |
+| | | | **Chamorro** | 1 | Minimal — Latte stone only | | | |
+| | | | **Austronesian Peoples** | 2 | Basic — Outrigger, Junk Rig | | | |
+| | | | **Total Oceania** | ~17 | Significant gaps across the Pacific | | | |
+
+---
+
+## Aboriginal Australia — Expanded (65,000 BCE – Present)
+
+### Currently in App: 3 inventions
+### Should Have: 12+
+
+The Aboriginal Australians managed water across an entire continent for 65,000 years — the longest continuous water management tradition on Earth. Your current 3 inventions barely scratch the surface.
+
+| | | | | | Invention | Date | Location | Description | Significance | | | |
+|-----------|------|----------|-------------|-------------|
+| | | | | **Brewarrina Fish Traps (Baiame's Ngunnhu)** | 40,000+ BCE | NSW | Already in app. Stone weir structures across the Barwon River creating pools and channels to trap fish. Extends over 500 m. Possibly the oldest human-engineered structure on Earth. | Oldest known water engineering structure in the world | | | |
+| | | | | **Gnamma Holes** | 10,000+ BCE | Western Australia | Already in app. Natural rock depressions enlarged and modified to collect and store rainwater. Some sealed with stone caps to reduce evaporation. Aboriginal people memorized the locations of thousands across the desert. | Distributed desert water storage network maintained for millennia | | | |
+| | | | | **Aboriginal Wells (Native Wells)** | 40,000+ BCE | Multiple | Already in app. Hand-dug wells accessing shallow aquifers. Some wells in Western Australia reach 3+ meters depth. Maintained and concealed across generations. | Among the oldest water wells on Earth | | | |
+| | | | | **Fire-Stick Farming for Water Management** | 65,000 BCE onwards | Continent-wide | Systematic burning to manage vegetation, which in turn managed water flow, soil moisture, and groundwater recharge. Burns created mosaic landscapes with diverse water retention characteristics. Changed the hydrology of an entire continent. | Largest-scale landscape hydrology management in human history | | | |
+| | | | | **Songline Water Navigation** | 65,000 BCE onwards | Continent-wide | Oral mapping system encoding the locations of water sources across thousands of kilometers of desert. Songlines (dreaming tracks) contain precise hydrological information — spring locations, seasonal water availability, well depths — embedded in songs, stories, and ceremonies. | Most sophisticated oral hydrological database ever created | | | |
+| | | | | **Desert Soak Wells (Yuu)** | 10,000+ BCE | Western Desert | Shallow wells dug into dry riverbeds to access subsurface flow. Covered with branches and sand to reduce evaporation and prevent animal contamination. Locations known only to initiated adults. | Secret water infrastructure — concealment as engineering | | | |
+| | | | | **Budj Bim Eel Aquaculture System** | 6,600 BCE | Victoria | Volcanic stone channels, weirs, and ponds managing water flow to trap and farm eels. Over 100 km² of engineered wetland. UNESCO World Heritage. One of the oldest aquaculture systems in the world. Predates agriculture in Mesopotamia. | Oldest known aquaculture system in the world — UNESCO site | | | |
+| | | | | **Toolondo Aboriginal Canal System** | Pre-contact | Victoria | Stone-lined channels connecting wetlands and directing water flow across the Western District. Some channels extend several kilometers. | Pre-contact canal engineering in southeastern Australia | | | |
+| | | | | **Dampier Peninsula Tidal Fish Traps** | 1000+ BCE | Western Australia | Stone walls built in intertidal zones trapping fish as tides recede. Multiple configurations for different tidal conditions. Some walls extend hundreds of meters. | Tidal water engineering for fisheries | | | |
+| | | | | **Murray-Darling Bark Canoe Navigation** | 10,000+ BCE | Southeast Australia | Bark canoes (nawi) for river navigation requiring deep knowledge of river currents, seasonal water levels, and channel conditions across Australia's largest river system. | River navigation knowledge spanning 2,500+ km of waterways | | | |
+| | | | | **Aboriginal Water Sharing Protocols** | 65,000 BCE onwards | Continent-wide | Complex customary law governing water access, sharing obligations, and resource management. Different nations had different protocols depending on environment. Violations could result in severe sanctions. | Oldest continuous water governance system on Earth | | | |
+| | | | | **Rainwater Tree Collection** | Traditional | Arid regions | Specific tree species known to collect and channel rainwater down trunks into root hollows. Aboriginal people maintained these trees and harvested water from root cavities. | Biological water harvesting | | | |
+| | | | | **Sand Filtering for Water Purification** | Traditional | Multiple | Digging shallow wells near but not in waterbodies — using sand and soil as natural filters. Water seeping through ground to the well was cleaner than surface water. | Natural filtration water purification | | | |
+| | | | | **Desert Dew Collection** | Traditional | Central Australia | Collecting morning dew from grass and leaves using absorbent materials (animal skins, plant fiber), then wringing water into containers. | Atmospheric water harvesting | | | |
+
+---
+
+## Papua New Guinea — Expanded (50,000 BCE – Present)
+
+### Currently in App: 7 inventions
+### Should Have: 12+
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Kuk Swamp Drainage Agriculture** | 7000 BCE | Already in app. Systematic drainage of highland swamp for taro and banana cultivation. Earliest known agricultural drainage in the world. UNESCO World Heritage. | Oldest documented agricultural water engineering on Earth | | | |
+| | | | | **Wahgi Valley Ditch Systems** | 4000 BCE | Extensive ditch networks in the Wahgi Valley connecting to Kuk drainage. Progressively more sophisticated over 6,000 years — from simple ditches to integrated channel systems. | Shows continuous hydraulic innovation over millennia | | | |
+| | | | | **Highland Terrace Irrigation** | 2000 BCE onwards | Already in app. Terraced hillsides with gravity-fed irrigation from mountain streams. Wola and Huli peoples developed distinctive terrace styles. | Independent invention of terracing | | | |
+| | | | | **Sepik River Fish Trap Systems** | Ancient | Already in app. Elaborate fish traps in the Sepik River using seasonal flood patterns. Traps positioned during rising waters, harvested during falling waters. | Flood-cycle fishery management | | | |
+| | | | | **PNG Sago Swamp Management** | Traditional | Management of sago palm swamps for food production. Requires maintaining specific water levels — too dry kills the palms, too wet makes harvesting impossible. Channels control water flow through sago stands. | Wetland management for tree-crop agriculture | | | |
+| | | | | **Highland Sweet Potato Mound Irrigation** | 1600 CE onwards | After sweet potato introduction, highlanders developed mound cultivation with irrigation ditches between mounds. Mounds raised crops above waterlogged soil while ditches provided water access. | Rapid adaptation of new crop to existing water infrastructure | | | |
+| | | | | **Trobriand Islands Yam Garden Water Management** | Traditional | Ritual and practical water management for yam cultivation. Gardens positioned relative to water table, with drainage channels. Yam houses (liku) designed to keep harvested yams dry. | Integration of ritual and practical water management | | | |
+| | | | | **Coastal Mangrove Fish Ponds** | Traditional | Managed fish ponds in coastal mangrove zones. Channels control tidal water flow, trapping fish as tides recede. Some communities maintain multiple ponds for different species. | Tidal aquaculture in mangrove ecosystems | | | |
+| | | | | **Highland Fog-Drip Collection** | Traditional | Deliberate maintenance of montane forest for fog-drip water collection. Trees in cloud forest capture atmospheric moisture, which drips into streams. Deforestation is controlled to maintain water supply. | Ecological water harvesting through forest management | | | |
+
+---
+
+## Polynesian Civilizations (1500 BCE – Present)
+
+### Currently mostly missing from App — Critical Gap
+
+| | | | | | Invention | Date | People/Location | Description | Significance | | | |
+|-----------|------|---------------|-------------|-------------|
+| | | | | **Polynesian Voyaging Water Storage** | 1500 BCE onwards | Pan-Polynesian | Gourd containers, bamboo tubes, and coconut shell vessels for ocean voyaging. Some voyages required 30+ days of freshwater supply for crews of 20+. Managed water rationing across thousands of kilometers. | Enabled the greatest maritime migration in human history | | | |
+| | | | | **Lo'i Kalo (Taro Pondfield)** | 400 CE onwards | Hawaii | Already in app. Flooded terrace fields for taro cultivation. Water flowing continuously through fields brought nutrients and controlled temperature. Systems managed by ahupua'a (watershed district) governance. | Most sophisticated Polynesian agricultural water system | | | |
+| | | | | **'Auwai (Irrigation Ditch)** | 400 CE onwards | Hawaii | Already in app. Channels diverting stream water to lo'i fields. Some 'auwai extend several kilometers with precise gradients. Community-maintained under konohiki (resource manager) direction. | Community-managed irrigation at watershed scale | | | |
+| | | | | **Ahupua'a Watershed Governance** | 400 CE onwards | Hawaii | Land division system running from mountaintop to sea. Each ahupua'a managed as an integrated watershed — forest, stream, agricultural land, fishpond, and reef. The most sophisticated traditional watershed management system in the Pacific. | Most complete traditional watershed governance in the world | | | |
+| | | | | **Hawaiian Fishpond (Loko i'a)** | 1400 CE onwards | Hawaii | Massive stone-walled fishponds along coastlines. Over 400 documented across the Hawaiian Islands. Walls up to 3 m tall with makaha (sluice gates) controlling tidal water flow and fish movement. Some ponds exceeded 200 hectares. | Largest and most sophisticated pre-contact aquaculture in the Pacific | | | |
+| | | | | **Samoan Star Mound Water Systems** | 1000–1800 CE | Samoa | Large star-shaped stone mounds associated with pigeon catching. Positioned on ridges with water collection and drainage features. Recent research suggests hydrological functions. | Possible ceremonial-hydrological dual-purpose structures | | | |
+| | | | | **Tongan Water Management** | 1000 BCE onwards | Tonga | Management of freshwater lenses on coral atolls. Wells dug to precise depths to access fresh water floating above saltwater. Over-extraction would contaminate the lens. | Freshwater lens management on coral islands | | | |
+| | | | | **Rapa Nui (Easter Island) Water Management** | 400–1600 CE | Easter Island | Moai ahu (platforms) positioned near coastal freshwater seeps. Chicken houses (hare moa) with stone-lined water collection. Taheta (carved stone water basins). Manavai (stone-walled garden enclosures) retaining soil moisture. | Water management on one of the most isolated islands on Earth | | | |
+| | | | | **Tahitian Valley Irrigation** | 800 CE onwards | Tahiti | Terraced taro fields in narrow volcanic valleys. Channels diverting mountain streams through stepped fields. Breadfruit tree planting for watershed protection. | Volcanic island gravity irrigation | | | |
+| | | | | **Māori Pā Tuna (Eel Weirs)** | 1250 CE onwards | New Zealand | Stone and wooden weirs across streams and wetland outlets to catch migrating eels. Hīnaki (eel pots) placed in channels. Managed on seasonal cycles coordinated by tohunga (experts). | New Zealand's most important pre-contact fishery technology | | | |
+| | | | | **Māori Kūmara Irrigation** | 1250 CE onwards | New Zealand | Gravity-fed channels irrigating kūmara (sweet potato) gardens. Positioned on warm north-facing slopes for temperature management. Stone-lined channels and gravel mulch retained warmth. | Southernmost Polynesian irrigation — at the limits of tropical crop cultivation | | | |
+| | | | | **Māori Pā Fortification Water Systems** | 1250 CE onwards | New Zealand | Fortified villages (pā) with internal water storage — wells, springs, and rainwater collection. Some pā were designed for extended siege conditions with dedicated water reserves. | Defensive water infrastructure | | | |
+| | | | | **Cook Islands Taro Swamp Gardens** | 800 CE onwards | Cook Islands | Excavated taro gardens in swampy lowlands. Drainage and irrigation channels managed water depth for optimal taro growth. Some gardens terraced to manage slope. | Wetland agricultural engineering on small islands | | | |
+
+---
+
+## Micronesian Civilizations
+
+### Currently in App: 3 inventions (Nan Madol + Chamorro)
+### Should Have: 10+
+
+| | | | | | Invention | Date | People/Location | Description | Significance | | | |
+|-----------|------|---------------|-------------|-------------|
+| | | | | **Nan Madol Canal System** | 1200–1500 CE | Pohnpei | Already in app. Network of canals and channels connecting 92 artificial islets. Built from basalt columns stacked to create walls. Canals served as transportation routes, drainage, and urban water management. | Venice of the Pacific — unique urban water engineering | | | |
+| | | | | **Nan Madol Freshwater Management** | 1200–1500 CE | Pohnpei | Already in app. Freshwater springs on islets managed for drinking water. Rainwater collection from basalt structures. Separation of freshwater and saltwater environments. | Freshwater management on an artificial island city | | | |
+| | | | | **Latte Stone Rain Catchers** | 1000 BCE–1700 CE | Mariana Islands | Already in app. Mushroom-shaped stone pillars supporting raised structures. The capstone (tasa) collected and directed rainwater. | Architectural rainwater harvesting | | | |
+| | | | | **Yapese Stone Money Quarry Water Systems** | Pre-contact | Yap/Palau | Quarrying massive stone discs (rai) on Palau required freshwater supply for workers and stone-cutting. Managed springs and rainwater collection at quarry sites. | Water infrastructure for monumental stone production | | | |
+| | | | | **Palauan Taro Terraces (Mesei)** | Traditional | Palau | Terraced taro fields (mesei) in freshwater swamps and along streams. Elaborate systems of channels, dikes, and sluices controlling water flow. Some terrace systems cover several hectares. | Most sophisticated taro irrigation in Micronesia | | | |
+| | | | | **Kosraean Canal Agriculture** | Traditional | Kosrae | Canal systems in coastal lowlands managing tidal and freshwater for taro and breadfruit cultivation. Channels separate freshwater irrigation from saltwater tidal zones. | Freshwater-saltwater separation engineering | | | |
+| | | | | **Marshallese Freshwater Lens Management** | Traditional | Marshall Islands | On low-lying coral atolls (average elevation 2 m), Marshallese managed the Ghyben-Herzberg freshwater lens. Wells dug to precise depths. Over-extraction monitored by taste. Rainwater cisterns supplemented groundwater. | Water management at sea level — existentially important | | | |
+| | | | | **Kiribati Babai Pit Agriculture** | Traditional | Kiribati | Giant taro (babai) grown in excavated pits dug to the freshwater lens. Pits composted with organic matter. Water level managed by pit depth. Mulch layers retained moisture. | Agriculture at the water table on coral atolls | | | |
+| | | | | **Chuukese Breadfruit Pit Fermentation** | Traditional | Chuuk | Breadfruit preservation in water-saturated pits. Fermented breadfruit (mahr) stored in stone-lined underwater pits for months or years. Required precise water level management. | Food preservation using water saturation | | | |
+
+---
+
+## Melanesian Civilizations (Beyond PNG)
+
+### Currently not in App
+
+| | | | | | Invention | Date | People/Location | Description | Significance | | | |
+|-----------|------|---------------|-------------|-------------|
+| | | | | **Fijian Taro Irrigation (Vuci)** | 1000 BCE onwards | Fiji | Irrigated taro terraces in highland Viti Levu. Stone-lined channels, check dams, and distribution networks. Some systems still in use. Nakauvadra mountain systems are the most extensive. | Most complex agricultural water system in Melanesia outside PNG | | | |
+| | | | | **New Caledonian Taro Terraces** | 1000 BCE onwards | Kanak (New Caledonia) | Stone-walled taro terraces in highland valleys. Irrigated by gravity channels from mountain streams. Among the most elaborate in the Pacific. Archaeological evidence suggests continuous use for 3,000 years. | 3,000 years of continuous terrace irrigation | | | |
+| | | | | **Solomon Islands Artificial Island Construction** | 1000 CE onwards | Lau Lagoon (Malaita) | Over 60 artificial islands built in lagoons using coral rock. Required freshwater management — rainwater collection and transport from mainland springs. Some islands house 500+ people with no natural freshwater source. | Creating habitable islands from scratch — water as existential challenge | | | |
+| | | | | **Vanuatu Banyan Water Collection** | Traditional | Multiple islands | Banyan tree roots directed rainwater into natural rock cisterns. Trees deliberately planted near rock formations to maximize water collection. | Biological-geological water harvesting partnership | | | |
+| | | | | **New Ireland Tidal Fish Traps** | Traditional | New Ireland (PNG) | Stone-walled tidal traps along reef-fringed coasts. Some walls extend hundreds of meters, creating large pools as tides recede. | Large-scale tidal fishery engineering | | | |
+
+---
+
+## Modern Oceania
+
+### Currently not well represented
+
+| | | | | | Invention | Date | Location | Description | Significance | | | |
+|-----------|------|----------|-------------|-------------|
+| | | | | **Snowy Mountains Hydroelectric Scheme** | 1949–1974 | Australia | 16 dams, 7 power stations, 225 km of tunnels and aqueducts. Diverts water from eastern rivers through the Great Dividing Range to western irrigated areas. One of the largest engineering projects of the 20th century. | Largest water engineering project in Australian history | | | |
+| | | | | **Perth Groundwater Replenishment** | 2017 | Western Australia | Injecting treated wastewater into deep aquifers for future extraction as drinking water. Among the first full-scale groundwater replenishment systems in the world. | Leading-edge indirect potable reuse | | | |
+| | | | | **Melbourne Desalination Plant** | 2012 | Victoria | Reverse osmosis plant capable of supplying 150 GL/year — one-third of Melbourne's water needs. Built in response to the Millennium Drought. | Drought-response megaproject | | | |
+| | | | | **New Zealand Hydroelectric System** | 1904 onwards | NZ | Over 80% of New Zealand's electricity from hydroelectric. Includes massive lake storage systems (Lake Pukaki, Taupo). | Among the highest renewable-hydro percentages of any developed nation | | | |
+| | | | | **Tokelau Rainwater Harvesting** | Modern | Tokelau | Entire national water supply from rainwater harvesting. 12,000 m² of collection surface for 1,500 people. Combined with desalination backup. | Entire nation dependent on rainwater engineering | | | |
+| | | | | **Kiribati Climate Adaptation** | 2010s onwards | Kiribati | Freshwater lens protection, raised water storage, and managed retreat from saltwater intrusion. Existential water management for a nation averaging 2 m above sea level. | Water engineering for national survival under climate change | | | |
+
+---
+
+## Oceania Summary
+
+| | | | | Subregion | Current | After Additions | Key Additions | | | |
+|-----------|---------|-----------------|---------------|
+| | | | **Aboriginal Australia** | 3 | 14+ | Budj Bim (UNESCO), fire-stick farming, songline navigation, desert wells | | | |
+| | | | **Papua New Guinea** | 7 | 12+ | Wahgi Valley, sago management, fog-drip collection | | | |
+| | | | **Polynesia (all)** | 2 (Hawaiian only) | 14+ | Ahupua'a, fishponds, Māori weirs, Rapa Nui, voyaging water storage | | | |
+| | | | **Micronesia** | 3 | 10+ | Palauan terraces, freshwater lens, babai pits, Yapese quarry water | | | |
+| | | | **Melanesia** | 0 (beyond PNG) | 5+ | Fijian terraces, New Caledonian terraces, Solomon artificial islands | | | |
+| | | | **Modern Oceania** | 0 | 6+ | Snowy Mountains, Perth recharge, NZ hydro, Kiribati adaptation | | | |
+| | | | **TOTAL** | **~17** | **~65+** | | | |  |
+
+---
+
+---
+
+# AFRICA
+
+## Current App Coverage
+
+| | | | | Civilization | Inventions | Coverage Assessment | | | |
+|-------------|-----------|---------------------|
+| | | | **Ancient Egypt** | 7 | Good but could expand | | | |
+| | | | **Nubia** | 3 | Basic | | | |
+| | | | **Ethiopian Highlands** | 2 | Thin | | | |
+| | | | **Great Zimbabwe** | 2 | Basic | | | |
+| | | | **Engaruka (Tanzania)** | 2 | Basic | | | |
+| | | | **Sahel Africa** | 2 | Thin | | | |
+| | | | **Swahili Coast** | 2 | Basic | | | |
+| | | | **Kongo Kingdom** | 2 | Basic | | | |
+| | | | **Mali Empire** | 2 | Basic | | | |
+| | | | **Morocco (Khettara)** | 6 | Good | | | |
+| | | | **Benin Kingdom** | 2 | Basic | | | |
+| | | | **Kanem-Bornu** | 2 | Basic | | | |
+| | | | **Total Africa** | ~34 | Major gaps across the continent | | | |
+
+Africa has 54 countries and thousands of years of water engineering — 34 inventions across 12 entries is significantly under-representative.
+
+---
+
+## Ancient Egypt — Expanded (3100–30 BCE)
+
+### Currently in App: 7 inventions
+### Should Have: 12+
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Bahr Yussef (Joseph's Canal)** | ~1850 BCE | 350 km natural-artificial channel connecting the Nile to the Fayum Oasis. Pharaohs of the 12th Dynasty engineered control structures to regulate flow. Still in use today after 3,850 years. | One of the oldest continuously functioning canals in the world | | | |
+| | | | | **Lake Moeris (Birket Qarun)** | ~1850 BCE | Massive artificial lake in the Fayum depression. Originally 1,700 km² — larger than modern Lake Geneva. Used for flood storage, irrigation supply, and fisheries. Regulated by canals and sluices from the Nile. | One of the largest ancient water storage projects in the world | | | |
+| | | | | **Sadd el-Kafara Dam** | ~2600 BCE | Oldest known large-scale dam. 14 m high, 113 m long. Built across Wadi al-Garawi. Failed due to inadequate spillway — but represents the first attempt at major dam engineering in human history. | Oldest known dam — failed but historically critical | | | |
+| | | | | **Elephantine Nilometer** | ~3000 BCE | Graduated stone staircase measuring Nile water levels. Used for flood prediction, agricultural planning, and tax assessment. Multiple nilometers at different locations provided a network of river gauges. | World's first hydrological monitoring network | | | |
+| | | | | **Egyptian Basin Irrigation** | 3000 BCE onwards | Systematic flooding of diked basins along the Nile. Fields divided into basins by earthen walls. Nile floods filled basins, depositing silt. Water held for 40–60 days, then drained. | Foundation of Egyptian agriculture for 5,000 years | | | |
+
+---
+
+## Nubia & Kingdom of Kush — Expanded (3000 BCE – 350 CE)
+
+### Currently in App: 3 inventions
+### Should Have: 7+
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Meroitic Hafir (Reservoir)** | 300 BCE–350 CE | Large circular or rectangular reservoirs excavated into clay soils. Some hafirs held millions of liters. Stone-lined intake channels directed seasonal runoff into reservoirs. Used for urban water supply, livestock, and irrigation. | Largest ancient reservoirs in sub-Saharan Africa | | | |
+| | | | | **Nubian Nile Flood Agriculture** | 3000 BCE onwards | Managed flood-recession farming along the Nile in Upper Nubia. Fields positioned to receive flood silt. Different crop zones based on distance from river and flood depth. | Independent development of basin irrigation | | | |
+| | | | | **Jebel Barkal Sacred Water Systems** | 1500 BCE–300 CE | Water management at the sacred mountain of Jebel Barkal — temples with ritual pools, channels from the Nile, and underground water storage. | Sacred water engineering at Nubia's most important religious site | | | |
+| | | | | **Musawwarat es-Sufra Hafir** | 300 BCE | One of the largest single ancient reservoirs in Africa. Part of a temple complex in the semi-arid Butana region. Engineered to capture seasonal rainfall from a large catchment area. | Largest single pre-modern reservoir in sub-Saharan Africa | | | |
+
+---
+
+## Aksumite Empire (100–940 CE)
+
+### Currently not in App — Critical Gap
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Mai Shum Reservoir** | 1st–4th c. CE | Large rock-cut reservoir near Aksum. 17 m deep with staircase access. Fed by channeled surface runoff. Traditionally associated with the Queen of Sheba but archaeologically dated to the Aksumite period. | Largest rock-cut reservoir in East Africa | | | |
+| | | | | **Aksumite Cistern Engineering** | 1st–7th c. CE | Underground and semi-underground cisterns carved into rock across the Aksumite highlands. Plastered interiors, settling chambers, and overflow channels. | Systematic urban water storage in highland Africa | | | |
+| | | | | **Aksumite Terrace Agriculture** | 1st–7th c. CE | Stone-walled agricultural terraces on highland slopes with gravity-fed irrigation from springs. Prevented erosion and managed water distribution across steep terrain. | Highland terrace engineering in East Africa | | | |
+| | | | | **Adulis Port Water Systems** | 1st–7th c. CE | Red Sea port city with freshwater supply from highland springs via aqueduct. Managed water for ships, residents, and traders from Rome, India, and Arabia. | International port water infrastructure | | | |
+| | | | | **Dungur Palace Water Architecture** | 4th–6th c. CE | Royal palace complex with integrated water features — channels, pools, and drainage systems built from precisely cut stone. | Monumental water architecture in East Africa | | | |
+
+---
+
+## Ethiopian Highlands — Expanded (500 BCE – Present)
+
+### Currently in App: 2 inventions
+### Should Have: 7+
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Konso Terrace Agriculture** | 400+ years | Stone-walled terraces covering hillsides in southern Ethiopia. UNESCO World Heritage. Generations of accumulated labor. Gravity-fed irrigation from springs and seasonal streams. Community-maintained with traditional governance. | UNESCO-recognized living terrace system | | | |
+| | | | | **Ethiopian Spring Management (Ayn)** | Traditional | Sacred and practical management of springs across the highlands. Springs enclosed in stone structures, channels directed to fields, and access governed by community rules and religious tradition. | Integration of sacred and practical spring management | | | |
+| | | | | **Lake Tana Island Monastery Water** | Medieval | Island monasteries on Lake Tana with rainwater collection, spring management, and boat-based water transport. Self-sufficient water systems for isolated religious communities. | Island water self-sufficiency | | | |
+| | | | | **Harar Walled City Water System** | 16th c. CE | Historic walled city with integrated rainwater harvesting, underground cisterns, and 82 mosques each with ablution water facilities. One of the oldest continuously inhabited cities in Africa. | Medieval Islamic-African urban water infrastructure | | | |
+| | | | | **Ethiopian Church Drainage (Lalibela)** | 12th c. CE | Already in app but underrated. Rock-hewn churches of Lalibela with sophisticated drainage preventing water damage. Channels carved into living rock direct water away from structures and into ceremonial pools. UNESCO site. | Engineering drainage for structures carved from solid rock | | | |
+
+---
+
+## West African Civilizations — Expanded
+
+### Currently in App: Benin (2), Mali (2), Kongo (2), Kanem-Bornu (2)
+### Major gaps across the region
+
+### Ghana Empire / Soninke (300–1200 CE)
+
+### Currently not in App
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Koumbi Saleh Well Systems** | 300–1200 CE | Deep wells in the Sahel capital of the Ghana Empire. Some wells reached 60+ meters through sandstone to access the water table. Wells served a city of 20,000+ in a semi-arid environment. | Deepest pre-modern wells in West Africa | | | |
+| | | | | **Soninke Gold Mining Water Systems** | 300–1200 CE | Alluvial gold mining along the Senegal and Niger rivers required water management — diversion channels, settling pools, and seasonal flood management for mining operations. | Industrial water use in medieval Africa | | | |
+
+### Mali Empire — Expanded (1235–1600 CE)
+
+### Currently in App: 2 inventions
+### Should Have: 5+
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Niger Inland Delta Flood Agriculture** | 3000 BCE–Present | Already in app. One of the world's largest inland deltas (36,000 km²). Seasonal flooding creates productive grazing and farming land. Communities manage flood cycles through traditional channels and embankments. | One of the largest traditional flood management systems in the world | | | |
+| | | | | **Djenné Flood-Adapted Architecture** | 800 CE onwards | The Great Mosque of Djenné — world's largest mud-brick building — and the entire city are built to handle annual Niger River flooding. Foundations raised, walls sloped to shed water, annual re-plastering seals against moisture. | Largest flood-adapted urban architecture in Africa | | | |
+| | | | | **Malian Bourgou Pasture Management** | Traditional | Management of bourgou grass (Echinochloa stagnina) in the Niger Delta. This aquatic grass grows in standing water and provides crucial dry-season livestock fodder. Communities manage water levels to optimize bourgou growth. | Aquatic pasture management — unique to the Niger Delta | | | |
+| | | | | **Mopti Fisheries Water Management** | Traditional | Management of seasonal fish migration in the Niger Delta. Communities build channels and barriers to direct fish during flood recession. Annual fishing festivals (like the Sanké Mon at San) are coordinated water management events. | Integration of fisheries and flood management | | | |
+
+### Benin Kingdom — Expanded (1180–1897 CE)
+
+### Currently in App: 2 inventions
+### Should Have: 5+
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Benin City Walls and Moats** | 1200–1500 CE | Already in app. But the scale is extraordinary: over 16,000 km of walls and moats — more than four times the length of the Great Wall of China. The earthwork volume exceeds the Egyptian pyramids. Moats were 20 m wide and 7 m deep. | Largest earthwork complex in the world | | | |
+| | | | | **Benin City Drainage System** | 1400–1800 CE | Already in app. Planned drainage channels running along the city's grid-pattern streets. Stone-lined in places. Connected neighborhoods to the main moat system. | Pre-colonial African urban drainage planning | | | |
+| | | | | **Iya (City Gate) Water Control** | 1200–1897 CE | City gates (iya) incorporated water management — moat crossings, drainage channels, and flood barriers. Gates managed both human and water traffic. | Integrated defensive and hydraulic architecture | | | |
+| | | | | **Benin Rainforest Water Management** | Traditional | Management of rainforest hydrology around Benin City. Sacred groves maintained as watershed protection. Selective clearing managed water flow to agricultural areas. | Forest-based watershed management | | | |
+
+### Yoruba Civilization (1200 CE – Present)
+
+### Currently not in App
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Ife Urban Water Systems** | 1200 CE onwards | Sacred city of Ife-Ife — the spiritual heart of Yoruba civilization — had managed springs, wells, and drainage channels. Pottery pipes for water distribution found in archaeological excavations. | First documented ceramic pipe water distribution in West Africa | | | |
+| | | | | **Yoruba Sacred Grove Water Management** | Traditional | Sacred groves (like the Osun-Osogbo Sacred Grove — UNESCO World Heritage) managed as watershed protection areas. Springs within groves maintained for ritual and practical water supply. | UNESCO-recognized water-sacred landscape | | | |
+| | | | | **Oyo Empire Moat Systems** | 1400–1835 CE | Multiple Yoruba cities fortified with moats. Old Oyo had extensive earthwork defenses incorporating water management. | Urban defensive water infrastructure | | | |
+| | | | | **Yoruba Pottery Pipe Water Systems** | 1200 CE onwards | Terracotta pipes manufactured for water supply and drainage. Found at multiple Yoruba archaeological sites. Some pipes had socketed joints for easy connection. | Manufactured ceramic water pipe technology | | | |
+
+### Igbo & Cross River (Southern Nigeria)
+
+### Currently not in App
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Igbo-Ukwu Bronze Vessel Water Ritual** | 9th c. CE | Elaborate bronze vessels used in water rituals at Igbo-Ukwu. Demonstrates sophisticated metalworking and centrality of water to Igbo spiritual life. | Among the oldest bronze castings in sub-Saharan Africa | | | |
+| | | | | **Nsude Pyramidal Water Structures** | Pre-colonial | Ten clay/mud pyramidal structures at Nsude, Enugu. Some researchers suggest hydrological functions — directing water flow around the village. | Possible ceremonial-hydrological structures | | | |
+| | | | | **Igbo Compound Drainage** | Traditional | Systematically planned drainage in Igbo compound architecture. Rainwater directed from roofs through courtyard channels to garden areas or community drainage. | Household water management at community scale | | | |
+
+### Hausa States (1000–1903 CE)
+
+### Currently not in App
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Kano City Walls and Moat** | 1100–1500 CE | 22 km of walls and moats encircling Kano — one of the oldest continuously inhabited cities in Africa. Moats served drainage, defense, and water storage functions. | One of the largest urban moat systems in West Africa | | | |
+| | | | | **Shaduf Irrigation (Hausa)** | Traditional | Shaduf (adapted from Nile Valley) used for dry-season vegetable irrigation along the Hadejia, Komadugu, and other rivers. Intensive gardens (fadama) along riverbanks. | Technology transfer from Nile Valley to West Africa | | | |
+| | | | | **Birni (Walled City) Water Management** | 1000–1900 CE | Multiple Hausa birni (walled cities) — Kano, Katsina, Zaria, Daura — with integrated water infrastructure: wells, moats, drainage channels, and neighborhood water distribution. | Standardized urban water infrastructure across multiple cities | | | |
+
+---
+
+## East African Civilizations — Expanded
+
+### Swahili Coast — Expanded (100 CE – Present)
+
+### Currently in App: 2 inventions
+### Should Have: 6+
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Swahili Cistern Systems (Birika)** | 1000–1500 CE | Already in app. Stone and coral cisterns beneath Swahili houses and mosques. Fed by rooftop rainwater collection. Some cisterns held 50,000+ liters. Found at Kilwa, Gede, Shanga, and other sites. | Largest pre-colonial cistern systems in East Africa | | | |
+| | | | | **Kilwa Great Mosque Water System** | 12th–15th c. CE | The largest pre-colonial mosque in sub-Saharan Africa had integrated water supply for ablution. Rainwater collection from the domed roof directed to underground cisterns. | Religious water architecture in East Africa | | | |
+| | | | | **Swahili Town Planning Water** | 1000–1600 CE | Swahili stone towns (Kilwa, Lamu, Zanzibar) had planned water infrastructure: public wells, mosque cisterns, and household rainwater collection. Town layout positioned wells at strategic intervals. | Planned urban water distribution in East African cities | | | |
+| | | | | **Gede Ruins Water System** | 13th–17th c. CE | Abandoned Swahili city in Kenya with remarkably preserved water infrastructure: wells, cisterns, bathrooms in every house, and a sophisticated drainage network. | Best-preserved example of Swahili urban water engineering | | | |
+| | | | | **Swahili Coral Rag Wells** | Traditional | Wells dug through coral rock to access freshwater on coral islands. Required understanding of freshwater lens dynamics. Some wells precisely positioned relative to tidal cycles. | Coral island freshwater engineering | | | |
+
+### Great Lakes Region (Rwanda, Burundi, Uganda)
+
+### Currently not in App
+
+| | | | | | Invention | Date | People | Description | Significance | | | |
+|-----------|------|--------|-------------|-------------|
+| | | | | **Rwandan Terrace Agriculture** | Pre-colonial | Multiple | Hillside terracing for erosion control and water management. Extended and modernized in the 20th century. Rwanda's terraces cover thousands of hectares. | Highland water management in the African Great Lakes region | | | |
+| | | | | **Buganda Kingdom Rainwater Harvesting** | Pre-colonial | Buganda | Bark-cloth and banana-leaf water collection systems channeling rain into storage vessels. Royal palace had elaborate water management. | Tropical rainwater harvesting with organic materials | | | |
+| | | | | **Lake Victoria Fishery Management** | Traditional | Multiple | Traditional management of Lake Victoria's fisheries through seasonal access control, sacred fishing grounds, and community-managed landing sites. | Fishery management for the world's second-largest freshwater lake | | | |
+| | | | | **Bunyoro Salt Lake Management** | Pre-colonial | Bunyoro | Management of crater lakes and salt springs in western Uganda. Controlled evaporation, channel management, and seasonal access. Salt was a major trade commodity. | Salt water management as economic infrastructure | | | |
+
+---
+
+## Southern African Civilizations — Expanded
+
+### Great Zimbabwe — Expanded (1100–1450 CE)
+
+### Currently in App: 2 inventions
+### Should Have: 5+
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Great Zimbabwe Drainage Channels** | 11th–15th c. CE | Already in app. Stone-lined channels directing water through and around the Great Enclosure and Hill Complex. Sophisticated control of runoff from the large stone structures. | Water engineering integrated with monumental stone architecture | | | |
+| | | | | **Great Enclosure Well** | 12th c. CE | Already in app. Deep well within the Great Enclosure providing water for the elite residential area. Stone-lined with access via the narrow passage. | Protected water source within defensive architecture | | | |
+| | | | | **Dhaka (Pit Structure) Water Systems** | 11th–15th c. CE | Deep cylindrical pits found across the Zimbabwe Plateau. Some function as wells, others as grain storage. Water-related pits lined with clay (dhaka) to retain water. | Multipurpose water/storage infrastructure | | | |
+| | | | | **Zimbabwe Plateau Cattle Kraal Drainage** | 11th–15th c. CE | Cattle enclosures (kraals) with managed drainage preventing waterlogging. Positioned relative to water sources for livestock access. Dung management prevented water contamination. | Livestock water management | | | |
+| | | | | **Mapungubwe Water Systems** | 1075–1220 CE | Predecessor to Great Zimbabwe. Hilltop settlement with water management infrastructure — access to the Limpopo-Shashe confluence, rainwater collection on the hill, and managed paths to water. | Earliest stone-built water management in southern Africa | | | |
+
+### Zulu & Related Kingdoms (1400–1900 CE)
+
+### Currently not in App
+
+| | | | | | Invention | Date | People | Description | Significance | | | |
+|-----------|------|--------|-------------|-------------|
+| | | | | **Zulu Umuzi (Homestead) Water Management** | 1400s onwards | Zulu | Circular homestead design positioned relative to water sources and drainage. Cattle kraal in center with drainage directing manure-enriched water to garden areas. | Integration of livestock, water, and agriculture | | | |
+| | | | | **Tswana Motse (Town) Water Infrastructure** | Pre-colonial | Tswana | Large towns (some exceeding 20,000 people) with organized water access. Wells, springs, and drainage managed communally under the chief's authority. | Large-scale pre-colonial urban water management | | | |
+| | | | | **Sotho Terrace Agriculture (Matema)** | Traditional | Sotho | Stone-walled terraces on hillsides in Lesotho and Free State. Managed water flow and erosion control in highland environments. | Highland terrace engineering in southern Africa | | | |
+| | | | | **San/Bushmen Water Knowledge** | 20,000+ years | San | Extraordinary knowledge of desert water sources — sip wells (buried grass tubes accessing underground water), tsamma melon water, bi! root water, and seasonal water locations across the Kalahari. | Among the most sophisticated desert water survival knowledge on Earth | | | |
+
+---
+
+## North African Civilizations — Expanded
+
+### Morocco — Already Good (6 inventions)
+### Adding depth to the broader North African picture
+
+### Garamantes (Saharan Libya, 500 BCE – 700 CE)
+
+### Currently not in App — Critical Gap
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Garamantian Foggara System** | 500 BCE–700 CE | Over 600 foggaras (qanats) totaling 3,000+ km of underground tunnels. Accessing fossil water aquifer beneath the Sahara. Supported a civilization of 50,000+ people in the deep desert — cities, agriculture, trade. | Built a civilization in one of the harshest environments on Earth using underground water | | | |
+| | | | | **Garama Oasis Engineering** | 500 BCE–700 CE | Capital city of Garama with sophisticated water distribution — foggara outlets feeding channels, reservoirs, and gardens. Urban water supply for a city of 4,000+ in the Fezzan desert. | Urban water infrastructure in the deep Sahara | | | |
+| | | | | **Garamantian Underground Grain Storage** | 500 BCE–700 CE | Underground granaries utilizing the cool, dry conditions created by proximity to foggaras. Temperature and humidity management using the water table's cooling effect. | Integration of water engineering with food storage | | | |
+| | | | | **Saharan Caravan Water Points** | 500 BCE–700 CE | Garamantes controlled trans-Saharan trade by controlling water access points. Strategic wells and oases along caravan routes were engineered and defended. | Water control as trade control | | | |
+
+### Carthaginian North Africa — Expanded
+
+### Currently in App: 2 inventions
+### Should Have: 4+
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Carthaginian Aqueduct (Zaghouan)** | 2nd c. CE (Roman rebuild of Punic original) | 132 km aqueduct from Zaghouan to Carthage — one of the longest aqueducts in the Roman world. Original Punic water supply infrastructure predated Roman conquest. | Among the longest aqueducts ever built | | | |
+| | | | | **Punic Agricultural Water Manual** | ~200 BCE | Mago's agricultural treatise (28 volumes, now lost but extensively quoted by Roman writers) included sections on irrigation, water management, and hydraulic agriculture. The Romans translated it as their primary agricultural text. | Most influential agricultural water manual of the ancient Mediterranean | | | |
+
+---
+
+## Sahel & Savanna — Expanded
+
+### Currently in App: 2 inventions
+### Should Have: 8+
+
+| | | | | | Invention | Date | Location | Description | Significance | | | |
+|-----------|------|----------|-------------|-------------|
+| | | | | **Zai Pits (Tassa)** | Traditional | Sahel-wide | Already in app. Dug pits (20–30 cm diameter, 10–15 cm deep) that capture rainwater and concentrate it around planted seeds. Can rehabilitate completely degraded land. Yacouba Sawadogo of Burkina Faso modernized the technique. | Sahel's most important water harvesting technology | | | |
+| | | | | **Demi-Lunes (Half-Moons)** | Traditional | Sahel-wide | Already in app. Crescent-shaped earth bunds capturing sheet runoff. Larger scale than zai pits — each demi-lune captures water for a small area of crops or trees. | Landscape-scale water harvesting | | | |
+| | | | | **Stone Bunds (Cordons Pierreux)** | Traditional | Burkina Faso, Niger | Lines of stones placed along contours. Slow sheet runoff, increase infiltration, and trap sediment. Low-cost, community-implemented. | Simplest and most widely adopted Sahelian water technique | | | |
+| | | | | **Teras (Floodwater Farming)** | Traditional | Sudan, Eritrea | Earth embankments across seasonal streams (wadis) capturing floodwater for sorghum and millet cultivation. Some teras systems cover thousands of hectares. | Largest-scale rainfed water harvesting in East Africa | | | |
+| | | | | **Jessour System (Tunisia)** | Ancient | Southern Tunisia | Stone and earth walls across mountain valleys capturing seasonal runoff behind terraced steps. Creates pockets of irrigated land in arid mountains. Olive and fig trees grown behind the jessour. | Mountain runoff capture in arid North Africa | | | |
+| | | | | **Matmata Underground Housing** | Traditional | Tunisia | Underground homes excavated into soft rock. Central courtyard collects rainwater directed to underground cisterns. Natural insulation keeps water cool. | Underground water-cooled architecture | | | |
+| | | | | **Pastoral Well Networks (Sahel)** | Traditional | Sahel-wide | Networks of deep hand-dug wells (some 60+ meters) along pastoral migration routes. Each well maintained by specific communities with traditional access agreements. | Nomadic water infrastructure | | | |
+| | | | | **Fadama Agriculture (Nigeria/Niger)** | Traditional | West Africa | Dry-season irrigation of floodplain depressions (fadama) using shallow wells and shaduf/calabash lifting. Supports year-round vegetable production. | Floodplain irrigation across the West African savanna | | | |
+
+---
+
+## East & Central African Forest Zone
+
+### Currently not well represented
+
+| | | | | | Invention | Date | People/Location | Description | Significance | | | |
+|-----------|------|---------------|-------------|-------------|
+| | | | | **Pygmy Forest Water Knowledge** | Ancient | Congo Basin | BaAka, Mbuti, and other Pygmy peoples possess extraordinary knowledge of forest water sources — underground streams, seasonal springs, vine water, and tree-hole water. Navigation through dense forest using water course knowledge. | Most sophisticated tropical forest water knowledge on Earth | | | |
+| | | | | **Baganda Bark-Cloth Water Collection** | Traditional | Uganda | Bark-cloth (from Ficus natalensis) used to collect and channel rainwater. Combined with banana-leaf guttering to direct roof runoff to storage vessels. | Organic water harvesting materials | | | |
+| | | | | **Congo River Navigation Knowledge** | Traditional | Multiple peoples | Deep knowledge of the Congo River's channels, currents, rapids, and seasonal changes. Navigation of the world's second-largest river by volume. Community-maintained portage routes around rapids. | River navigation knowledge for the world's deepest river | | | |
+| | | | | **Mangbetu Architectural Drainage** | Traditional | Mangbetu (DRC) | Distinctive mushroom-shaped houses with conical roofs designed for maximum rainwater runoff. Central post channels water away from living areas. | Architectural water management in equatorial forest | | | |
+
+---
+
+## Island Africa (Madagascar)
+
+### Currently not in App
+
+| | | | | | Invention | Date | Description | Significance | | | |
+|-----------|------|-------------|-------------|
+| | | | | **Malagasy Rice Terrace Irrigation** | ~500 CE onwards | Terraced rice paddies in the Madagascar Highlands, introduced by Austronesian settlers. Gravity-fed from mountain streams. Among the most extensive in Africa. | Austronesian water technology transplanted to Africa | | | |
+| | | | | **Betsileo Terrace Engineering** | Traditional | The Betsileo people of central Madagascar are renowned irrigators. Terraces carved into steep hillsides with elaborate channel systems. Some valleys have terraces rising 500+ meters. | Most extensive terrace systems in Africa | | | |
+| | | | | **Malagasy Valala (Fish Trap)** | Traditional | Woven bamboo fish traps placed in managed channels. Combined with small weirs to direct fish into traps during seasonal water level changes. | Fishery water management on the world's 4th largest island | | | |
+
+---
+
+## Modern Africa
+
+### Currently underrepresented
+
+| | | | | | Invention | Date | Location | Description | Significance | | | |
+|-----------|------|----------|-------------|-------------|
+| | | | | **Aswan High Dam** | 1970 | Egypt | 111 m tall dam creating Lake Nasser (550 km long). Ended 5,000 years of Nile flooding. Generates 2,100 MW. Controversial — ended natural silt deposition, displaced 100,000 Nubians. | Most consequential dam in African history | | | |
+| | | | | **Kariba Dam** | 1959 | Zambia/Zimbabwe | Double-arch dam creating Lake Kariba — the world's largest artificial lake by volume (185 km³). Generates 1,470 MW. Displaced 57,000 Tonga people. | Largest artificial reservoir in the world | | | |
+| | | | | **Lesotho Highlands Water Project** | 1986–Present | Lesotho/South Africa | Series of dams and tunnels transferring water from Lesotho's highlands to South Africa's Gauteng Province. 200 km of tunnels through mountains. One of the largest inter-country water transfer projects in the world. | Africa's largest water transfer project | | | |
+| | | | | **Windhoek Direct Potable Reuse** | 1968 | Namibia | The world's first direct potable water reuse facility. Windhoek, Namibia, has been recycling wastewater directly into drinking water supply since 1968 — decades before any other city. | World's first and longest-running direct potable reuse | | | |
+| | | | | **South African Acid Mine Drainage Treatment** | 2010s | South Africa | Engineering solutions for treating acid mine water from abandoned gold mines in the Witwatersrand basin. One of the largest mine water treatment challenges in the world. | Engineering response to mining water contamination | | | |
+| | | | | **Warka Water Tower** | 2015 | Ethiopia | Bamboo and mesh fog-catching tower designed by Arturo Vittori. Captures up to 100 liters of water per day from atmospheric moisture. Low-cost, community-assembled. | Modern fog harvesting inspired by traditional observation | | | |
+| | | | | **LHWP Phase II (Polihali Dam)** | 2024 onwards | Lesotho | Continuation of the Lesotho Highlands Water Project. 165 m tall dam — will be the highest dam in Africa when completed. | Africa's highest dam | | | |
+| | | | | **PlayPump** | 2006 | South Africa (concept) | Children's merry-go-round that pumps groundwater when spun. Controversial — many failed in practice, but the concept of play-powered water pumping inspired further innovations. | Innovation through play — lessons learned | | | |
+| | | | | **Hippo Water Roller** | 1991 | South Africa | Barrel-shaped container rolled on the ground, carrying 90 liters of water. Replaces headloading (carrying water on the head) — reduces strain and increases volume carried. | Simple engineering solving a massive daily challenge | | | |
+| | | | | **LifeStraw** | 2005 | Originally for Guinea worm — now global | Personal water filter using hollow-fiber membrane. Filters 99.9% of bacteria and parasites. Over 37 million distributed. | Personal water treatment at scale | | | |
+
+---
+
+## Africa Summary
+
+| | | | | Subregion | Current | After Additions | Key Additions | | | |
+|-----------|---------|-----------------|---------------|
+| | | | **Ancient Egypt** | 7 | 12+ | Bahr Yussef, Lake Moeris, Sadd el-Kafara, basin irrigation | | | |
+| | | | **Nubia/Kush** | 3 | 7+ | Hafir reservoirs, Jebel Barkal, Musawwarat | | | |
+| | | | **Aksumite Empire** | 0 | 5+ | Mai Shum, cisterns, terraces, Adulis, Dungur | | | |
+| | | | **Ethiopian Highlands** | 2 | 7+ | Konso terraces (UNESCO), Harar, spring management | | | |
+| | | | **West Africa** | 8 | 25+ | Yoruba, Igbo, Hausa, Ghana Empire, expanded Mali/Benin | | | |
+| | | | **East Africa** | 4 | 12+ | Swahili expanded, Great Lakes, expanded Great Zimbabwe | | | |
+| | | | **North Africa** | 8 | 14+ | Garamantes, Carthage expanded, Sahel expanded | | | |
+| | | | **Southern Africa** | 2 | 8+ | Zulu, Tswana, Sotho, San, Mapungubwe | | | |
+| | | | **Central Africa** | 2 | 6+ | Congo Basin, Mangbetu, forest peoples | | | |
+| | | | **Island Africa** | 0 | 3+ | Madagascar terraces, Betsileo, Malagasy traps | | | |
+| | | | **Modern Africa** | 0 | 10+ | Aswan, Kariba, Windhoek reuse, LHWP, Warka Tower | | | |
+| | | | **TOTAL** | **~34** | **~110+** | | | |  |
+
+---
+
+## Combined Oceania + Africa Totals
+
+| | | | | Region | Current | After Additions | | | |
+|--------|---------|-----------------|
+| | | | **Oceania** | ~17 | ~65+ | | | |
+| | | | **Africa** | ~34 | ~110+ | | | |
+| | | | **Combined** | **~51** | **~175+** | | | |
+
+---
+
+## Priority Additions
+
+### Civilizations to Add
+
+| | | | | Priority | Civilization | Region | Inventions | | | |
+|----------|-------------|--------|-----------|
+| | | | ⭐⭐⭐ | **Garamantes** | Africa | 4 (foggara, oasis, caravan, storage) | | | |
+| | | | ⭐⭐⭐ | **Aksumite Empire** | Africa | 5 (Mai Shum, cisterns, terraces, port, palace) | | | |
+| | | | ⭐⭐⭐ | **Polynesian Civilizations** | Oceania | 12+ (ahupua'a, fishponds, Māori, Rapa Nui) | | | |
+| | | | ⭐⭐⭐ | **Yoruba** | Africa | 4 (Ife, sacred groves, Oyo moats, ceramic pipes) | | | |
+| | | | ⭐⭐ | **Melanesian (Fiji/New Caledonia)** | Oceania | 5+ (taro terraces, artificial islands) | | | |
+| | | | ⭐⭐ | **Hausa States** | Africa | 3 (Kano, shaduf, birni water) | | | |
+| | | | ⭐⭐ | **Great Lakes Africa** | Africa | 4 (Rwanda terraces, Buganda, Lake Victoria) | | | |
+| | | | ⭐⭐ | **San/Bushmen** | Africa | 3 (sip wells, desert water knowledge) | | | |
+| | | | ⭐⭐ | **Madagascar** | Africa | 3 (Betsileo terraces, rice irrigation, fish traps) | | | |
+| | | | ⭐ | **Modern Oceania** | Oceania | 4+ (Snowy Mountains, Perth, NZ hydro) | | | |
+| | | | ⭐ | **Modern Africa** | Africa | 6+ (Aswan, Kariba, Windhoek reuse, LHWP) | | | |
+
+### SWMM5 Models to Build
+
+| | | | | Model | Category | Region | Nodes | Links | Why | | | |
+|-------|----------|--------|-------|-------|-----|
+| | | | **Garamantian Foggara System** | Groundwater | Africa | 12 | 14 | Civilization built on underground water in the Sahara | | | |
+| | | | **Budj Bim Eel Aquaculture** | Fishery/Flow Control | Oceania | 10 | 12 | Oldest aquaculture — UNESCO World Heritage | | | |
+| | | | **Hawaiian Fishpond (Loko i'a)** | Tidal/Aquaculture | Oceania | 8 | 10 | Largest pre-contact Pacific aquaculture | | | |
+| | | | **Benin City Moat System** | Flood Control/Defense | Africa | 15 | 18 | Largest earthwork in the world | | | |
+| | | | **Kilwa Cistern Network** | Reservoir | Africa | 8 | 10 | Swahili urban water infrastructure | | | |
+| | | | **Aswan High Dam + Lake Nasser** | Flood Control/Storage | Africa | 10 | 12 | Most consequential African dam | | | |
+| | | | **Snowy Mountains Scheme** | Hydropower/Transfer | Oceania | 20 | 25 | Largest Australian water project | | | |
+| | | | **Māori Pā Tuna Eel Weir** | Fishery | Oceania | 6 | 8 | Living New Zealand fishery tradition | | | |
+| | | | **Dholavira Reservoir Cascade** | Reservoir | Already suggested for India | 20 | 22 | Complex multi-reservoir | | | |
+| | | | **Niger Inland Delta Flood System** | Flood/Agriculture | Africa | 12 | 15 | One of world's largest inland deltas | | | |

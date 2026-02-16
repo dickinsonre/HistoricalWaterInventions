@@ -1,0 +1,397 @@
+# North & South American Water Inventions — Complete Deep Dive
+
+Going far beyond what's currently in your app to cover the full breadth of water engineering across the Americas, from 13,000 BCE to the present.
+
+---
+
+## What Your App Currently Has
+
+| | | | | Civilization | Inventions | Coverage Assessment | |  |
+|---|---|---|
+| | | **Mesoamerica** | 8 | Good — Aztec focus, some Maya | |  |
+| | | **Inca Empire** | 8 | Good — Machu Picchu, Tipón | |  |
+| | | **Amazon Basin** | 5 | Good — Camellones, causeways, fish weirs | |  |
+| | | **Hohokam** | 1 | Thin — only canal system | |  |
+| | | **Mississippian (Cahokia)** | 2 | Basic — reservoir, drainage | |  |
+| | | **Ancestral Puebloans** | 3 | Basic — reservoir, check dam, ditch | |  |
+| | | **Pacific Northwest** | 2 | Basic — fish weirs, clam gardens | |  |
+| | | **Inuit & Arctic** | 5 | Good — ice, kayak, fishing | |  |
+| | | **Modern Era** | 5 | Partial — Hoover Dam, etc. | |  |
+| | | **Total Americas** | ~39 inventions | Significant gaps in pre-Columbian cultures | |  |
+
+---
+
+# NORTH AMERICA
+
+## Pre-Clovis & Paleo-Indian (13,000–8000 BCE)
+
+### Currently not in App
+
+| | | | | | Invention | Date | Location | Description | Significance | |  |
+|---|---|---|---|---|---|
+| | | | **Paleo-Indian Spring Camps** | 13,000–8000 BCE | Great Basin, Southwest | Earliest North American settlements clustered around permanent springs. Archaeological evidence shows engineered spring access — cleared pools, stone-lined catchments, and directed channels. | Oldest water management in North America | |  |
+| | | | **Folsom/Clovis Kill-Site Water Management** | 11,000–9000 BCE | Great Plains | Hunters drove megafauna toward water sources. Sites like Murray Springs (AZ) show evidence of spring modification — cleared channels guiding animals to water where they could be ambushed. | Water as hunting infrastructure | |  |
+| | | | **Great Basin Wetland Management** | 10,000 BCE onwards | Nevada, Utah, Oregon | Paleo-Indians managed marshes and lakeshores for waterfowl hunting, fish trapping, and plant harvesting. Modified channels to expand productive wetland areas. | Earliest wetland management in the Americas | |  |
+
+---
+
+## Archaic Period (8000–1000 BCE)
+
+### Currently not in App
+
+| | | | | | Invention | Date | Location | Description | Significance | |  |
+|---|---|---|---|---|---|
+| | | | **Poverty Point Earthworks** | 1700–1100 BCE | Louisiana | Massive earthwork complex with engineered drainage. Six concentric semi-elliptical ridges with aisles between them functioned as a drainage system for the settlement on the Mississippi floodplain. 72-foot-tall Poverty Point Mound required sophisticated water management during construction. | Oldest major earthwork water engineering in North America | |  |
+| | | | **Watson Brake Mounds** | 3500 BCE | Louisiana | Oldest known mound complex in North America. Eleven mounds connected by ridges forming an oval. Positioned to manage seasonal flooding from the Ouachita River. | Predates Egyptian pyramids by 1,000 years | |  |
+| | | | **Archaic Fish Weirs (Boston)** | 5000–3000 BCE | Massachusetts | Over 65,000 wooden stakes discovered in Boston's Back Bay — remains of an enormous fish weir complex. Managed tidal flow to trap fish across several acres. | One of the largest ancient fish traps ever discovered | |  |
+| | | | **Great Lakes Copper Mining Water Systems** | 5000–1200 BCE | Lake Superior | Old Copper Complex miners used water to crack heated rock (fire-setting and quenching). Managed drainage in open-pit mines. Some pits were 20+ feet deep. | Earliest industrial water use in North America | |  |
+| | | | **Southwest Spring-Fed Agriculture** | 3000 BCE onwards | Arizona, New Mexico | Ak-chin (mouth of wash) farming — placing fields at the mouths of arroyos where flash flood water spreads out. Required reading water flow patterns and positioning fields precisely. | Foundation of all Southwest irrigation | |  |
+
+---
+
+## Ancestral Puebloans — Expanded (100–1300 CE)
+
+### Currently in App: 3 inventions
+### Should Have: 10+
+
+| | | | | | Invention | Date | Location | Description | Significance | |  |
+|---|---|---|---|---|---|
+| | | | **Mesa Verde Reservoir System** | 750–1300 CE | Colorado | Mummy Lake/Far View Reservoir — 90-foot diameter stone-lined reservoir fed by a 1-km intake channel. Collected runoff from mesa surface. Served a community of 500+. | Largest Ancestral Puebloan reservoir | |  |
+| | | | **Chaco Canyon Water Control** | 850–1150 CE | New Mexico | Elaborate system of diversion dams, canals, and gridded fields. Rincon-type water collection: stone-lined channels diverted runoff from cliff faces into masonry-lined collection boxes, then to agricultural fields. | Most sophisticated Puebloan water system | |  |
+| | | | **Pueblo Bonito Drainage** | 850–1150 CE | New Mexico | The largest great house in Chaco Canyon (600+ rooms) had rooftop drainage channels directing water through internal drains to exterior ground-level canals. | Integration of architecture and water engineering | |  |
+| | | | **Sand Canyon Pueblo Spring Management** | 1250–1280 CE | Colorado | Pueblo built around a natural spring. Masonry structures channeled and protected the spring. Water distributed to residential areas via stone-lined channels. | Spring-based urban water supply | |  |
+| | | | **Zuni Waffle Gardens** | Traditional | New Mexico | Distinctive sunken grid gardens with raised earth borders creating small squares (like a waffle). Each cell holds water individually. Maximizes moisture retention in arid soil. | Unique water-conserving agricultural design | |  |
+| | | | **Hopi Dry Farming** | Traditional | Arizona | Hopi developed deep-planting dry farming techniques requiring no irrigation. Seeds planted 25–30 cm deep to reach subsurface moisture. Selected crop varieties tolerant of minimal water. | Engineering crops to fit water availability rather than engineering water to fit crops | |  |
+| | | | **Hovenweep Water Towers** | 1200–1300 CE | Utah/Colorado | Tower structures at Hovenweep positioned at spring heads and pour-off points. Functioned as water monitoring and control stations — prehistoric "water towers." | Architectural water monitoring structures | |  |
+
+---
+
+## Hohokam Civilization — Expanded (300–1450 CE)
+
+### Currently in App: 1 invention
+### Should Have: 8+
+
+| | | | | | Invention | Date | Description | Significance | |  |
+|---|---|---|---|---|
+| | | | **Hohokam Canal System** | 300–1450 CE | Already in app. But grossly understated. Over 1,000 km of canals across the Salt River Valley — the most extensive pre-industrial canal network in North America. Main canals up to 27 m wide and 4.5 m deep. Served an estimated 80,000+ people. | Largest pre-Columbian canal system north of Mexico | |  |
+| | | | **Hohokam Headgates** | 600–1450 CE | Stone and brush headgates at canal intakes controlling water flow into distribution canals. Evidence of adjustable gates using wooden posts and brush. | First documented water control gates in North America | |  |
+| | | | **Hohokam Distribution Laterals** | 600–1450 CE | Hierarchical canal system: main canals → distribution canals → field laterals → individual plots. Up to four levels of branching. | Hierarchical water distribution matching modern irrigation design | |  |
+| | | | **Hohokam Platform Mound Water Control** | 1100–1450 CE | Platform mounds positioned at key canal junctions. Elites living on mounds controlled water distribution — water management as political power. | Water control as governance structure | |  |
+| | | | **Hohokam Ball Court Drainage** | 700–1200 CE | Oval ball courts excavated below grade with engineered drainage. Some courts positioned to manage flood flow through villages. | Dual-purpose recreational/hydraulic structures | |  |
+| | | | **Hohokam Reservoir (Snaketown)** | 600–1100 CE | Large constructed reservoirs at Snaketown and other sites for water storage during dry periods between irrigation deliveries. | Off-channel storage supplementing canal supply | |  |
+| | | | **Hohokam Canal Lining** | 600–1450 CE | Canal beds and banks plastered with caliche (calcium carbonate-ceite) to reduce seepage losses. Some canals lost as little as 10% of water to seepage. | First canal lining technology in North America | |  |
+| | | | **Hohokam Flood Control Berms** | 300–1450 CE | Earthen berms along the Salt River protecting canal intakes and fields from flood damage. Evidence of repeated reconstruction after floods. | Flood management integrated with irrigation | |  |
+
+---
+
+## Mississippian Civilization — Expanded (800–1600 CE)
+
+### Currently in App: 2 inventions
+### Should Have: 6+
+
+| | | | | | Invention | Date | Location | Description | Significance | |  |
+|---|---|---|---|---|---|
+| | | | **Cahokia Borrow Pits/Reservoirs** | 1050–1200 CE | Illinois | Already in app. Large excavated pits that served as both construction material sources (earth for mounds) and water reservoirs. Some held water year-round. | Dual-purpose engineering | |  |
+| | | | **Monks Mound Drainage** | 1050–1200 CE | Illinois | The largest pre-Columbian earthwork north of Mexico (30 m tall, 291 × 236 m base) required sophisticated drainage to prevent collapse. Clay cap layers, sloped surfaces, and internal drainage channels managed water flow. | Engineering challenge matching Egyptian pyramid complexity | |  |
+| | | | **Cahokia Grand Plaza Engineering** | 1050–1200 CE | Illinois | 19-hectare leveled plaza required filling and draining a natural swamp. Sand and clay layers created a crowned surface directing water to perimeter ditches. | Largest engineered flat surface in pre-Columbian North America | |  |
+| | | | **Moundville Water Management** | 1120–1450 CE | Alabama | Major Mississippian center on the Black Warrior River. Mounds positioned above flood level with engineered approaches managing seasonal flooding. | Second-largest Mississippian center — water-adapted design | |  |
+| | | | **Etowah Mound Moat System** | 1000–1550 CE | Georgia | Defensive moat and ditch system surrounding the mound center. Managed river-fed water levels for defense and fish management. | Combined military and food-production water infrastructure | |  |
+| | | | **Winterville Mound Drainage** | 1000–1450 CE | Mississippi | Mound complex in the Yazoo Delta with engineered drainage managing extremely flat, flood-prone terrain. | Engineering in the most flood-prone landscape in North America | |  |
+
+---
+
+## Eastern Woodlands Nations (3000 BCE – 1600 CE)
+
+### Currently not in App
+
+| | | | | | Invention | Date | People | Description | Significance | |  |
+|---|---|---|---|---|---|
+| | | | **Iroquois Longhouse Drainage** | 1000 CE onwards | Haudenosaunee | Longhouse villages with planned drainage. Houses positioned on elevated ground with drainage ditches directing water away from living areas. Palisaded villages had engineered drainage gaps. | Planned urban drainage in Eastern Woodlands | |  |
+| | | | **Iroquois/Algonquin Fish Weirs** | 3000 BCE onwards | Multiple nations | Stone V-shaped weirs across rivers channeling fish into traps. Some weirs were hundreds of meters long and required annual community rebuilding. | Largest-scale cooperative water engineering in Eastern North America | |  |
+| | | | **Cherokee River Cane Management** | Traditional | Cherokee | Management of river cane (Arundinaria gigantea) as living water infrastructure. Cane stands stabilized river banks, filtered sediment, and created fish habitat. Deliberately maintained through burning. | Biological water engineering | |  |
+| | | | **Wampanoag Herring Run Management** | Traditional | Wampanoag | Management of anadromous fish runs through stream clearing, weir placement, and seasonal access control. Required understanding of tidal and seasonal water patterns. | Fishery-based water management | |  |
+| | | | **Great Lakes Birchbark Canoe Navigation** | 3000 BCE onwards | Algonquin peoples | Not just a boat — birchbark canoes required deep knowledge of water currents, portage routes, and seasonal water levels. Maintained portage trails with water access infrastructure. | Water knowledge as transportation infrastructure | |  |
+| | | | **Mound Builder Flood-Adapted Agriculture** | 1000 BCE–1600 CE | Multiple nations | Deliberate farming of floodplains using the annual flood-deposit cycle. Fields positioned to receive silt during spring floods, then planted as waters receded. | Flood-recession agriculture in temperate North America | |  |
+
+---
+
+## Pacific Northwest — Expanded
+
+### Currently in App: 2 inventions
+### Should Have: 7+
+
+| | | | | | Invention | Date | People | Description | Significance | |  |
+|---|---|---|---|---|---|
+| | | | **Columbia River Fish Weirs** | 3000 BCE–1850s | Multiple nations | Already in app. Stone and wooden structures channeling salmon to harvest points. Celilo Falls complex was the largest fishery in North America — 5–10 million salmon annually. | Largest freshwater fishery management in the Americas | |  |
+| | | | **Clam Gardens** | 3000 BCE–Present | Coast Salish | Already in app. Rock-walled terraces in intertidal zones creating level clam habitat. Increased clam productivity 4× compared to natural beaches. | Intertidal water and habitat engineering | |  |
+| | | | **Salmon Weir Water Level Management** | Traditional | Multiple nations | Weirs designed to allow specific water levels for salmon passage at different run stages. Spring runs, summer runs, fall runs each required different weir configurations. | Seasonal water level management for fishery optimization | |  |
+| | | | **Tlingit/Haida Rain Collection** | Traditional | Tlingit, Haida | Cedar bark and wooden trough systems collecting rainwater from longhouse roofs. Directed to storage containers. Essential in island communities without freshwater streams. | Rainwater harvesting in temperate rainforest | |  |
+| | | | **Kwakwaka'wakw Fish Trap Ponds** | Traditional | Kwakwaka'wakw | Stone-walled tidal ponds trapping fish as tides receded. Some ponds were large enough to hold hundreds of fish for days. | Tidal aquaculture engineering | |  |
+| | | | **Chinook River Navigation** | Traditional | Chinook | Deep knowledge of Columbia River currents, eddies, and seasonal changes. Used specific water conditions for upstream and downstream travel. Managed portage infrastructure at rapids and falls. | Hydrological knowledge as navigation system | |  |
+| | | | **Yurok Brush Dam Fisheries** | Traditional | Yurok | Seasonal brush dams across the Klamath River for ceremonial and subsistence salmon harvest. Built and removed on a precise annual schedule governed by ceremony. | Integration of ceremony and water engineering | |  |
+
+---
+
+## Great Plains & Prairie Nations
+
+### Currently not in App
+
+| | | | | | Invention | Date | People | Description | Significance | |  |
+|---|---|---|---|---|---|
+| | | | **Mandan/Hidatsa River Bottom Gardens** | 800 CE onwards | Mandan, Hidatsa | Intensive agriculture on Missouri River bottomlands. Fields positioned to benefit from spring flooding. Sunflowers, corn, beans, squash grown in flood-enriched soil. | Flood-adapted agriculture on the Great Plains | |  |
+| | | | **Pawnee Earth Lodge Drainage** | 1200–1800 CE | Pawnee | Semi-subterranean earth lodges with engineered entrance ramps, interior drainage channels, and packed-earth floors designed to manage rain and snowmelt infiltration. | Architectural water management on the treeless plains | |  |
+| | | | **Blackfoot Buffalo Jump Water Knowledge** | Traditional | Blackfoot | Buffalo jumps (piskun) positioned relative to water sources. Hunters understood how bison moved between water sources and used this knowledge to guide herds toward cliffs. | Water knowledge as hunting strategy | |  |
+| | | | **Omaha/Ponca River Crossing Engineering** | Traditional | Omaha, Ponca | Bull boat (round hide boat) river crossings at specific locations where current, depth, and bank conditions were optimal. Maintained crossing sites through bank stabilization. | River crossing infrastructure | |  |
+
+---
+
+## Inuit & Arctic — Expanded
+
+### Currently in App: 5 inventions
+### Should Have: 9+
+
+| | | | | | Invention | Date | Description | Significance | |  |
+|---|---|---|---|---|
+| | | | **Saputit (Fish Weirs)** | 4000 BCE onwards | Stone weirs across Arctic rivers channeling char and salmon to harvest points. Designed to function during extreme seasonal water level changes — frozen in winter, flood flow in spring. | Engineering for the most extreme water conditions on Earth | |  |
+| | | | **Iglu Meltwater Management** | 1000 BCE onwards | Already partially in app. Snow house engineering included ventilation holes positioned to control interior temperature above/below freezing. When interior surfaces began to melt, the iglu was abandoned or the surface was allowed to refreeze into ice, creating a waterproof shell. | Thermodynamic water phase management | |  |
+| | | | **Seal Breathing Hole Ice Engineering** | Traditional | Hunters maintained breathing holes in sea ice — understanding ice thickness, water currents, and seal behavior. Required reading ice and water conditions precisely. | Ice-water interface management | |  |
+| | | | **Permafrost Food Cache Water Systems** | Traditional | Underground food caches excavated into permafrost, lined with stone or bone. Used the permanently frozen layer as natural refrigeration. Required understanding of active layer depth and seasonal melt patterns. | Permafrost as water-temperature engineering tool | |  |
+
+---
+
+# SOUTH AMERICA
+
+## Pre-Ceramic & Formative Period (10,000–500 BCE)
+
+### Currently not in App
+
+| | | | | | Invention | Date | Location | Description | Significance | |  |
+|---|---|---|---|---|---|
+| | | | **Caral-Supe Irrigation** | 3000–1800 BCE | Peru (coast) | The oldest city in the Americas. Caral had irrigation canals diverting the Supe River to fields. Cotton and gourd cultivation required managed water. | Oldest urban water engineering in the Americas | |  |
+| | | | **Zaña Valley Canals** | 5400 BCE | Peru (north coast) | Among the oldest irrigation canals in the Americas. Simple diversion channels from the Zaña River to agricultural fields. | Some of the earliest irrigation in the Western Hemisphere | |  |
+| | | | **Chinchorro Maritime Water Knowledge** | 7000–1500 BCE | Chile (Atacama) | The Chinchorro people of the Atacama Desert — the driest place on Earth — managed freshwater springs along the coast, creating the conditions for the world's oldest known artificial mummies. | Water management in Earth's driest environment | |  |
+| | | | **Valdivia Raised Fields** | 3500–1500 BCE | Ecuador | Raised agricultural platforms in coastal wetlands. Channels between raised beds managed water flow for year-round cultivation. | Early raised-field agriculture in South America | |  |
+| | | | **Huaca Prieta Water Management** | 4000–2500 BCE | Peru | Early coastal site with evidence of managed freshwater access — spring channeling and small reservoir construction. | Among the earliest water management in Peru | |  |
+
+---
+
+## Nazca Civilization (100 BCE – 800 CE)
+
+### Currently not in App — Critical Gap
+
+| | | | | | Invention | Date | Description | Significance | |  |
+|---|---|---|---|---|
+| | | | **Puquios (Underground Aqueducts)** | 100 BCE–800 CE | Over 40 underground aqueducts accessing the water table through spiral or trench-shaped openings. Stone-lined tunnels connected to surface canals for irrigation. At least 30 puquios still function today. Total network exceeds 40 km. | Unique in the Americas — underground aqueducts still working after 2,000 years | |  |
+| | | | **Puquio Eye (Ojo) Design** | 100 BCE–800 CE | Spiral or funnel-shaped openings (ojos) providing access to underground tunnels for maintenance, ventilation, and water extraction. Functionally similar to qanat shaft openings but with a distinctive spiral design found nowhere else. | Architecturally unique water access structures | |  |
+| | | | **Nazca Surface Canals** | 100 BCE–800 CE | Stone-lined surface canals distributing water from puquios to agricultural fields. Precise gradients maintained over kilometers. | Complementary distribution system for underground supply | |  |
+| | | | **Nazca Filtration Galleries** | 100 BCE–800 CE | Subsurface galleries using gravel and sand layers to filter groundwater before it entered the main puquio channels. | Ancient water treatment technology | |  |
+| | | | **Nazca Lines Hydrological Theory** | 100 BCE–800 CE | Some researchers believe the Nazca Lines may have had hydrological functions — marking underground water sources, directing ritual water-seeking activities, or mapping aquifer boundaries. Debated but significant. | Possible integration of ceremonial landscape with water knowledge | |  |
+
+---
+
+## Moche Civilization (100–700 CE)
+
+### Currently not in App
+
+| | | | | | Invention | Date | Description | Significance | |  |
+|---|---|---|---|---|
+| | | | **Moche Valley Intervalley Canal** | 400–700 CE | 113 km canal connecting the Chicama and Moche river valleys — one of the longest pre-Columbian canals in the Americas. Required precise surveying across desert terrain. | Among the longest ancient canals in the Americas | |  |
+| | | | **Huaca del Sol/Huaca de la Luna Drainage** | 100–700 CE | Massive adobe pyramid structures with engineered drainage. Huaca del Sol — the largest adobe structure in the Americas — required drainage during construction and use. | Water engineering for monumental adobe construction | |  |
+| | | | **Moche Aqueduct Architecture** | 100–700 CE | Stone-lined channels carrying water across valleys on raised platforms. Some sections used inverted-siphon principles to cross depressions. | Advanced water conveyance in pre-Columbian Peru | |  |
+| | | | **Moche Agricultural Terracing** | 100–700 CE | Terraced hillsides with gravity-fed irrigation from valley canals. Combined desert-coast and mountain-slope farming. | Desert terrace irrigation technology | |  |
+| | | | **Moche Ceramic Water Vessels** | 100–700 CE | Stirrup-spout vessels and whistling water bottles — ceramic engineering that demonstrates deep understanding of hydraulic principles (siphons, pressure, air flow). | Water science expressed through ceramic art | |  |
+
+---
+
+## Chimú Empire (900–1470 CE)
+
+### Currently not in App — Critical Gap
+
+| | | | | | Invention | Date | Description | Significance | |  |
+|---|---|---|---|---|
+| | | | **La Cumbre Intervalley Canal** | 1100–1470 CE | 84 km canal transferring water from the Chicama River to the Moche Valley. Crossed the intervening desert with precise gradient control (0.1–0.3% slope). Served Chan Chan — the largest pre-Columbian city in South America (20 km², 60,000 residents). | Longest inter-basin water transfer in pre-Columbian Americas | |  |
+| | | | **Chan Chan Urban Water Distribution** | 1100–1470 CE | Network of reservoirs (wachaque — sunken gardens reaching the water table), walk-in wells, and distribution channels throughout the city. Each ciudadela (royal compound) had its own water infrastructure. | Most complex pre-Columbian urban water system | |  |
+| | | | **Wachaque (Sunken Gardens)** | 1100–1470 CE | Fields excavated below ground level to reach the water table. No irrigation needed — plants' roots accessed groundwater directly. Found throughout Chan Chan and surrounding areas. | Unique pre-Columbian agriculture requiring zero irrigation | |  |
+| | | | **Chimú Reservoir Engineering** | 1100–1470 CE | Large constructed reservoirs at Chan Chan and subsidiary centers. Some reservoirs stone-lined with sluice gates for controlled release. | Managed storage for desert city supply | |  |
+| | | | **Chimú Flood Control Walls** | 1100–1470 CE | Adobe walls protecting Chan Chan from El Niño-driven flooding. Positioned perpendicular to flood flow to deflect water around the city. | Flood protection in ENSO-affected desert coast | |  |
+
+---
+
+## Tiwanaku Empire (300–1000 CE)
+
+### Currently not in App — Critical Gap
+
+| | | | | | Invention | Date | Description | Significance | |  |
+|---|---|---|---|---|
+| | | | **Suka Kollus (Raised Fields)** | 300–1000 CE | Elevated planting platforms with water channels between them. Water in channels absorbed solar heat during the day and released it at night, protecting crops from frost at 3,800 m elevation. Over 120 km² of raised fields documented around Lake Titicaca. | Unique thermal-hydraulic agricultural engineering at extreme altitude | |  |
+| | | | **Tiwanaku Aqueduct** | 300–1000 CE | Stone-lined aqueduct bringing freshwater from mountain springs to the urban center. Included settling basins and distribution channels. | High-altitude urban water supply | |  |
+| | | | **Puma Punku Drainage** | 300–1000 CE | Precision-cut stone drainage channels at the monumental complex. Stone blocks fitted so precisely that water flowed through joints without mortar. Some channels cut to tolerances of 1 mm. | Highest precision stone-water engineering in the Americas | |  |
+| | | | **Lake Titicaca Water Level Management** | 300–1000 CE | Management of lakefront agriculture responding to Lake Titicaca's seasonal water level changes. Raised fields positioned to benefit from high-water nutrient deposits but protected from permanent flooding. | Lake-level agricultural adaptation at 3,800 m | |  |
+| | | | **Tiwanaku Qocha (Small Reservoir)** | 300–1000 CE | Small constructed ponds (qochas) across the altiplano capturing rainfall for livestock and limited irrigation. Thousands documented across the Tiwanaku sphere of influence. | Decentralized water storage across a vast territory | |  |
+
+---
+
+## Wari Empire (500–1000 CE)
+
+### Currently not in App
+
+| | | | | | Invention | Date | Description | Significance | |  |
+|---|---|---|---|---|
+| | | | **Wari Terrace Irrigation** | 500–1000 CE | Extensive agricultural terracing in highland valleys with canal irrigation. Pre-Inca terracing at sites like Pikillacta demonstrates sophisticated water management. | Foundation for later Inca terrace engineering | |  |
+| | | | **Pikillacta Water System** | 600–1000 CE | Planned city with internal water channels, drainage, and reservoir. Over 700 buildings in a grid layout with standardized water infrastructure. | Most planned pre-Inca urban water system | |  |
+| | | | **Wari Highland Canal Networks** | 500–1000 CE | Canal systems connecting mountain springs to terraced fields across the Ayacucho and Cusco regions. Some canals later incorporated into the Inca system. | Pre-Inca hydraulic infrastructure later adopted by the Inca | |  |
+
+---
+
+## Inca Empire — Expanded (1438–1533 CE)
+
+### Currently in App: 8 inventions
+### Should Have: 15+
+
+| | | | | | Invention | Date | Description | Significance | |  |
+|---|---|---|---|---|
+| | | | **Tambomachay Water Temple** | ~1400 CE | Sacred spring channeled through precisely carved stone cascades. Water emerges from a hidden source, flows through three stone channels, and converges at a ritual bathing pool. Flow rate is constant year-round. | Sacred water engineering at its finest | |  |
+| | | | **Inca Road Culvert System** | 1400s CE | 40,000 km road network required drainage infrastructure: stone culverts under roads, roadside drainage ditches, and bridges over rivers. Some roads had continuous stone-lined drainage channels for their entire length. | Largest road drainage system in the pre-Columbian world | |  |
+| | | | **Moray Experimental Terraces** | ~1450 CE | Circular concentric terraces descending into natural sinkholes. Temperature varies up to 15°C between top and bottom terraces. Combined with irrigation, this created micro-climate zones for agricultural experimentation. | Ancient agricultural research station using water and elevation | |  |
+| | | | **Ollantaytambo Fountain System** | ~1450 CE | Gravity-fed fountain system using precision stone channels. Water brought from glacial sources 4 km away through a canal maintaining exact gradient. Distributed to baths, fountains, and agricultural terraces. | Integration of glacial water supply with urban design | |  |
+| | | | **Q'eswachaka Suspension Bridge** | ~1400 CE (rebuilt annually) | Grass rope suspension bridge spanning the Apurímac River. Rebuilt every year using traditional methods. Not strictly a water invention but represents mastery of river-crossing engineering. Still rebuilt annually today. | Living example of Inca river engineering — still functioning | |  |
+| | | | **Inca Cochas (Mountain Reservoirs)** | 1400s CE | High-altitude reservoirs (cochas) across the Andes capturing rainfall and snowmelt for dry-season irrigation. Some served as waypoints on the road system. | Distributed mountain water storage network | |  |
+| | | | **Inca Freeze-Drying (Chuño)** | Pre-Inca–Inca | Using altitude, frost, and water to freeze-dry potatoes. Potatoes spread on ground overnight to freeze, stomped to remove water, sun-dried. Requires precise water content management. Chuño stores for years. | Water-phase engineering for food preservation | |  |
+
+---
+
+## Mesoamerica — Expanded
+
+### Currently in App: 8 inventions
+### Should Have: 18+
+
+### Maya (250–900 CE)
+
+| | | | | | Invention | Date | Location | Description | Significance | |  |
+|---|---|---|---|---|---|
+| | | | **Palenque Pressurized Aqueduct** | 600–700 CE | Chiapas | Underground aqueduct with a constriction point that created water pressure — the only known pressurized water system in pre-Columbian Americas. Discovered by Kirk French in 2006. Could have produced fountain-like effects. | Unique in the Americas — pre-Columbian pressure engineering | |  |
+| | | | **Tikal Reservoir System** | 250–900 CE | Guatemala | Six major reservoirs holding an estimated 900,000 m³ of water. Sand filtration systems cleaned incoming water. Served a population of 60,000+. Positioned to catch maximum runoff from plaza surfaces. | Largest Maya urban water system | |  |
+| | | | **Calakmul Aguadas** | 250–900 CE | Mexico | Chain of 13 reservoirs (aguadas) managed for urban water supply. Limestone-lined, clay-sealed bottoms. Some had sand filtration. | Second-largest Maya city water system | |  |
+| | | | **Maya Chultun (Underground Cistern)** | 600 BCE–900 CE | Multiple sites | Bottle-shaped underground cisterns carved into limestone bedrock. Plastered interior prevented seepage. Openings on plaza surfaces captured runoff. Individual capacity: 25,000–75,000 liters. | Thousands still exist across the Maya Lowlands | |  |
+| | | | **Edzná Canal System** | 400 BCE–150 CE | Campeche | 31 canals totaling 22 km draining swampland, channeling water to reservoirs, and creating agricultural chinampas. The earliest large-scale hydraulic engineering in the Maya world. | Oldest major Maya water engineering | |  |
+| | | | **Caracol Agricultural Terracing** | 600–900 CE | Belize | Terraced hillsides with check dams and reservoirs. Supported a population of 100,000+ — larger than most contemporary European cities. | Demonstrates Maya engineering supported huge populations | |  |
+| | | | **Cerros Raised Field Agriculture** | 400 BCE–150 CE | Belize | Raised fields in coastal wetlands with managed water channels. Combined freshwater and saltwater management for agriculture. | Coastal wetland engineering | |  |
+| | | | **Maya Water Filtration (Tikal)** | 250–900 CE | Guatemala | Quartz sand filtration systems discovered at Tikal's Corriental reservoir. Zeolite and quartz imported from 30 km away specifically for water purification. Among the oldest known water filtration systems in the Western Hemisphere. | Earliest known water purification in the Americas | |  |
+
+### Aztec — Expanded
+
+| | | | | | Invention | Date | Description | Significance | |  |
+|---|---|---|---|---|
+| | | | **Chapultepec Aqueduct** | 1466 CE | Already in app. Double-barreled stone aqueduct carrying freshwater 3.5 km from Chapultepec springs to Tenochtitlan. Two channels allowed one to be cleaned while the other operated. | Dual-channel redundancy engineering | |  |
+| | | | **Nezahualcóyotl's Dike** | 1449 CE | Already in app. 16 km dike separating fresh and salt water in Lake Texcoco. Allowed Tenochtitlan to have freshwater on one side and managed saltwater on the other. Sluice gates regulated water levels. | Largest freshwater-saltwater separation structure in the pre-Columbian world | |  |
+| | | | **Aztec Flood Control (1449)** | 1449 CE | After catastrophic flooding, Nezahualcóyotl engineered a comprehensive flood management system including the great dike, causeways with sluice gates, and elevated causeways serving as both transportation and flood barriers. | First comprehensive urban flood management system in the Americas | |  |
+| | | | **Chinampa Freshwater Springs** | Pre-Aztec–Aztec | Chinampas positioned over freshwater springs in Lake Xochimilco. Spring water welled up through chinampa soil, providing constant moisture and nutrients. | Integration of groundwater with raised-bed agriculture | |  |
+| | | | **Tenochtitlan Urban Sanitation** | 1325–1521 CE | Organized human waste collection and removal by canoe. Waste transported to chinampa fields as fertilizer. Public latrines along major causeways. | Pre-Columbian urban sanitation system | |  |
+| | | | **Coyoacán Springs Aqueduct** | 1503 CE | Second major aqueduct built by Ahuitzotl from Coyoacán springs. When it brought too much water and flooded Tenochtitlan, Ahuitzotl had to engineer emergency drainage. | Engineering over-success requiring emergency response | |  |
+
+### Zapotec (500 BCE – 750 CE)
+
+| | | | | | Invention | Date | Description | Significance | |  |
+|---|---|---|---|---|
+| | | | **Monte Albán Water Systems** | 500 BCE–750 CE | Hilltop city at 2,000 m elevation with cisterns, drainage channels, and an artificial dam. Supported 25,000+ people on a mountaintop with no natural water source. | Engineering water supply for a mountaintop city | |  |
+| | | | **Zapotec Underground Drainage** | 500 BCE–750 CE | Stone-lined underground drains beneath plazas and residential areas. Connected to main drainage channels directing water off the mountain. | Systematic urban drainage in difficult terrain | |  |
+| | | | **Hierve el Agua Irrigation** | Pre-Zapotec–Zapotec | Irrigation canals at Hierve el Agua using mineral-rich spring water. The calcium carbonate in the water formed natural "waterfalls" (petrified cascades) as minerals precipitated. | Ancient irrigation with natural mineral engineering | |  |
+
+### Teotihuacan (100 BCE – 550 CE)
+
+| | | | | | Invention | Date | Description | Significance | |  |
+|---|---|---|---|---|
+| | | | **San Juan River Canalization** | 100 BCE–550 CE | The San Juan River was straightened and channeled through the city center — one of the earliest examples of urban river canalization in the Americas. Aligned with the city grid on a precise 15.5° east-of-north axis. | Earliest urban river channelization in the Americas | |  |
+| | | | **Teotihuacan Underground Drainage** | 100 BCE–550 CE | Extensive underground stone-lined drainage beneath the Avenue of the Dead and major buildings. Some tunnels large enough for a person to walk through. | Most extensive pre-Columbian underground urban drainage | |  |
+| | | | **Teotihuacan Apartment Compound Water** | 100 BCE–550 CE | Over 2,000 apartment compounds had internal courtyards with drainage, shared water access, and connection to the city's main drainage system. | Standardized residential water infrastructure for 100,000+ people | |  |
+
+---
+
+## Amazon Basin — Expanded
+
+### Currently in App: 5 inventions
+### Should Have: 10+
+
+| | | | | | Invention | Date | Description | Significance | |  |
+|---|---|---|---|---|
+| | | | **Marajó Island Earthworks** | 400–1300 CE | Massive earthen mounds and channels on Marajó Island at the Amazon's mouth. Raised fields, fish ponds, and drainage channels engineered across 20,000+ km² of seasonal floodplain. | Largest pre-Columbian landscape engineering in the Americas | |  |
+| | | | **Llanos de Mojos Hydraulic Complex** | 400–1400 CE | In the Bolivian Amazon: raised fields (camellones), fish weirs, canals, causeways, and forest islands across 120,000+ km² of seasonal wetland. Supported populations estimated at 350,000+. | Largest area of pre-Columbian landscape modification anywhere | |  |
+| | | | **Amazon Várzea Flood Agriculture** | 3000 BCE onwards | Farming the annually flooded Amazon River margins (várzea). Required precise timing, seed selection for fast growth during low-water season, and retreat to terra firme during floods. | Adaptation to the world's largest river flood cycle | |  |
+| | | | **Xingu People's Fish Dam System** | Traditional | Stone and wooden fish dams across Xingu River tributaries. Seasonal construction and removal. Community-managed with traditional allocation rules. | Living example of indigenous river management | |  |
+| | | | **Kuikuro Fish Pond Engineering** | 1400 CE onwards | Upper Xingu peoples constructed fish ponds in river margins. Controlled water level and fish access through removable barriers. Some ponds exceeded 1 hectare. | Pre-Columbian aquaculture in the Amazon | |  |
+
+---
+
+## Mapuche Civilization (500 CE – Present)
+
+### Currently not in App
+
+| | | | | | Invention | Date | Description | Significance | |  |
+|---|---|---|---|---|
+| | | | **Mapuche Wetland Agriculture (Hualve)** | Traditional | Management of wetlands (hualves) in southern Chile for agriculture. Drainage channels, raised beds, and seasonal flooding management in high-rainfall temperate environments. | Temperate wetland engineering in South America | |  |
+| | | | **Mapuche River Ford Engineering** | Traditional | Managed river crossing points with stone placement and bank stabilization. Critical infrastructure for a civilization spread across numerous river valleys. | River crossing management | |  |
+| | | | **Mapuche Canoe Engineering (Wampo)** | Traditional | Dugout canoes for river navigation in Chile's lake district. Required knowledge of seasonal water levels, rapids, and currents. | River navigation in temperate South America | |  |
+
+---
+
+## Colonial & Modern Americas
+
+### Currently underrepresented
+
+| | | | | | Invention | Date | Location | Description | Significance | |  |
+|---|---|---|---|---|---|
+| | | | **Spanish Colonial Acequia Systems** | 1598 onwards | Southwest US | Irrigation canals built by Spanish colonists drawing on both Spanish (Moorish/Islamic) and Pueblo/Indigenous techniques. Santa Fe's acequia (1610) is the oldest European water system in the US. | Hybrid Indigenous-Islamic water engineering | |  |
+| | | | **Erie Canal** | 1825 | New York | 584 km artificial waterway connecting the Great Lakes to the Atlantic Ocean. 83 locks overcoming 173 m elevation change. Transformed American commerce and westward expansion. | Most important canal in American history | |  |
+| | | | **Los Angeles Aqueduct** | 1913 | California | 375 km gravity-fed aqueduct from the Owens Valley to LA. Designed by William Mulholland. Controversial — effectively "stole" water from the Owens Valley. | Most controversial water project in American history | |  |
+| | | | **Hoover Dam** | 1936 | Nevada/Arizona | Already in app. 221 m tall concrete arch-gravity dam on the Colorado River. Created Lake Mead. Generates 2,080 MW. Changed the course of Western American development. | Most iconic dam in the world | |  |
+| | | | **Tennessee Valley Authority (TVA)** | 1933 | Tennessee Valley | Comprehensive river basin management: 29 dams, navigation locks, flood control, hydropower, and regional development. First integrated river basin authority. | Model for river basin management worldwide | |  |
+| | | | **Central Arizona Project** | 1973–1993 | Arizona | 541 km canal system lifting Colorado River water 825 m to central and southern Arizona. Largest and most expensive aqueduct in the US. | Longest aqueduct in the United States | |  |
+| | | | **Itaipu Dam** | 1984 | Brazil/Paraguay | Second-largest hydroelectric dam in the world (14,000 MW). Supplies 75% of Paraguay's and 17% of Brazil's electricity. Diverted an entire river during construction. | Largest binational water infrastructure project | |  |
+| | | | **Panama Canal** | 1914 | Panama | 82 km ship canal connecting Atlantic and Pacific Oceans through a system of locks. Required creating Gatun Lake — the largest artificial lake at the time. One of the greatest engineering achievements in history. | Most important canal in modern history | |  |
+| | | | **Chilean Fog Catchers (Atrapanieblas)** | 1987–Present | Atacama Desert | Mesh nets capturing fog moisture in the world's driest desert. Produces 5–15 liters per m² per day. Based on ancient observation of fog-drip from vegetation. | Modern water harvesting inspired by indigenous observation | |  |
+
+---
+
+## Summary of Additions
+
+### By Region
+
+| | | | | | Region | Current | After Additions | Key Additions | |  |
+|---|---|---|---|---|
+| | | | **North America (pre-Columbian)** | ~13 | ~45+ | Hohokam expanded, Mississippian expanded, Eastern Woodlands, Paleo-Indian, Plains nations | |  |
+| | | | **Mesoamerica** | 8 | ~25+ | Maya expanded (Palenque, Tikal, filtration), Aztec expanded, Zapotec, Teotihuacan | |  |
+| | | | **Andean South America** | 8 (Inca only) | ~35+ | Nazca, Moche, Chimú, Tiwanaku, Wari, Inca expanded | |  |
+| | | | **Amazon & Lowland SA** | 5 | ~12+ | Marajó, Llanos de Mojos, Xingu, Kuikuro | |  |
+| | | | **Southern South America** | 0 | ~4+ | Mapuche, Chilean fog catchers | |  |
+| | | | **Modern Americas** | ~5 | ~14+ | Erie Canal, LA Aqueduct, TVA, Panama Canal, Itaipu | |  |
+| | | | **TOTAL** | **~39** | **~135+** | | | |
+
+### Missing Civilizations to Add
+
+| | | | | | Civilization | Priority | Inventions | |  |
+|---|---|---|---|
+| | | | ⭐⭐⭐ **Nazca** | Critical | 5 (puquios still functioning) | |  |
+| | | | ⭐⭐⭐ **Chimú** | Critical | 5 (Chan Chan, intervalley canal) | |  |
+| | | | ⭐⭐⭐ **Tiwanaku** | Critical | 5 (raised fields, altitude engineering) | |  |
+| | | | ⭐⭐⭐ **Maya (expanded)** | Critical | 8+ (Palenque pressure, Tikal filtration) | |  |
+| | | | ⭐⭐ **Moche** | Important | 4 (intervalley canal, terracing) | |  |
+| | | | ⭐⭐ **Wari** | Important | 3 (Pikillacta, terraces) | |  |
+| | | | ⭐⭐ **Teotihuacan** | Important | 3 (river canalization, underground drainage) | |  |
+| | | | ⭐⭐ **Zapotec** | Important | 3 (Monte Albán, Hierve el Agua) | |  |
+| | | | ⭐ **Eastern Woodlands** | Worth adding | 4 (fish weirs, river management) | |  |
+| | | | ⭐ **Dong Son/Funan** | Worth adding | 3 (bronze drums, canal network) | |  |
+
+### SWMM5 Models to Build
+
+| | | | | | Model | Category | Nodes | Links | Why | |  |
+|---|---|---|---|---|---|
+| | | | **Nazca Puquio System** | Groundwater | 10 | 12 | Underground aqueducts still functioning | |  |
+| | | | **Chimú La Cumbre Intervalley Canal** | Gravity Flow | 15 | 14 | 84 km inter-basin transfer | |  |
+| | | | **Tiwanaku Suka Kollus** | Flood Control/Thermal | 12 | 15 | Unique thermal-hydraulic system | |  |
+| | | | **Palenque Pressurized Aqueduct** | Pressure Flow | 6 | 5 | Only pre-Columbian pressure system | |  |
+| | | | **Tikal Reservoir + Filtration** | Reservoir + Treatment | 10 | 12 | Ancient water treatment | |  |
+| | | | **Hohokam Canal Network** | Irrigation | 20 | 22 | 1,000+ km canal system | |  |
+| | | | **Chan Chan Wachaque Gardens** | Groundwater | 8 | 10 | Sunken gardens at water table | |  |
+| | | | **Tenochtitlan Dike + Aqueduct** | Flood Control + Supply | 15 | 18 | Complete Aztec urban water system | |  |
+| | | | **Cahokia Monks Mound Drainage** | Sanitation | 8 | 10 | Largest pre-Columbian earthwork | |  |
+| | | | **Panama Canal Lock System** | Navigation | 12 | 14 | Modern engineering icon | |  |
