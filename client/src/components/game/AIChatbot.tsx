@@ -32,14 +32,10 @@ export default function AIChatbot() {
 
   const handleClose = useCallback(() => setIsOpen(false), []);
 
-  useEffect(() => {
-    if (!isOpen) return;
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") handleClose();
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, handleClose]);
+  const handlePanelKeyDown = useCallback((e: React.KeyboardEvent) => {
+    e.stopPropagation();
+    if (e.key === "Escape") handleClose();
+  }, [handleClose]);
 
   const sendMessage = async () => {
     const trimmed = input.trim();
@@ -151,7 +147,7 @@ export default function AIChatbot() {
         <button
           onClick={() => setIsOpen(true)}
           aria-label="Open Water History Expert chat"
-          className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gradient-to-br from-[var(--cerulean)] to-[var(--deep-ocean)] shadow-lg hover:shadow-xl transition-all hover:scale-110 flex items-center justify-center border-2 border-[var(--aqua)]/50 group"
+          className="fixed bottom-6 right-6 z-[9999] w-14 h-14 rounded-full bg-gradient-to-br from-[var(--cerulean)] to-[var(--deep-ocean)] shadow-lg hover:shadow-xl transition-all hover:scale-110 flex items-center justify-center border-2 border-[var(--aqua)]/50 group"
           title="Ask the Water History Expert"
         >
           <MessageCircle size={24} className="text-white group-hover:scale-110 transition-transform" />
@@ -164,7 +160,10 @@ export default function AIChatbot() {
           ref={panelRef}
           role="dialog"
           aria-label="Water History Expert chat"
-          className="fixed bottom-6 right-6 z-50 w-[380px] max-w-[calc(100vw-2rem)] h-[520px] max-h-[calc(100vh-4rem)] flex flex-col rounded-2xl overflow-hidden shadow-2xl border-2 border-[var(--aqua)]/30"
+          onClick={(e) => e.stopPropagation()}
+          onMouseDown={(e) => e.stopPropagation()}
+          onKeyDown={handlePanelKeyDown}
+          className="fixed bottom-6 right-6 z-[9999] w-[380px] max-w-[calc(100vw-2rem)] h-[520px] max-h-[calc(100vh-4rem)] flex flex-col rounded-2xl overflow-hidden shadow-2xl border-2 border-[var(--aqua)]/30"
           style={{ backgroundColor: 'rgba(13, 37, 56, 0.98)' }}
         >
           <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-[var(--deep-ocean)] to-[var(--river-blue)] border-b border-[var(--aqua)]/30">
