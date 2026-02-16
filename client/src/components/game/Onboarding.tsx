@@ -12,10 +12,10 @@ const slides = [
     icon: Droplets,
     title: "Welcome to Historical Mystery",
     subtitle: "Discover How Water Shaped Civilization",
-    content: "Explore 52 civilizations and discover 160+ water inventions across 6 continents. From 40,000-year-old Aboriginal fish traps to Ifugao terraces to Tokyo's G-Cans flood control.",
+    content: "Explore 139 civilizations and discover 680+ water inventions across 6 continents. From 40,000-year-old Aboriginal fish traps to Ifugao terraces to Tokyo's G-Cans flood control.",
     stats: [
-      { value: "52", label: "Civilizations" },
-      { value: "160+", label: "Inventions" },
+      { value: "139", label: "Civilizations" },
+      { value: "680+", label: "Inventions" },
       { value: "40,000+", label: "Years of History" }
     ]
   },

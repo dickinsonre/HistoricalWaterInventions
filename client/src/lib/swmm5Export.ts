@@ -181,7 +181,28 @@ export const inventionToSwmmModel: Record<string, string> = {
   'mughal-canal-restoration': 'indian-tank',
   'kund-system': 'rajasthan-kund',
   'tanka-household': 'rajasthan-kund',
-  'johad-pond': 'indian-tank'
+  'johad-pond': 'indian-tank',
+  'shushtar-hydraulic-system': 'shushtar-hydraulic',
+  'shushtar-water-mills': 'shushtar-hydraulic',
+  'band-e-kaisar': 'shushtar-hydraulic',
+  'pont-du-gard-aqueduct': 'pont-du-gard',
+  'nimes-castellum': 'pont-du-gard',
+  'palenque-pressurized-aqueduct': 'palenque-aqueduct',
+  'maya-palenque-aqueduct': 'palenque-aqueduct',
+  'nazca-puquio-aqueducts': 'nazca-puquio',
+  'nazca-underground-aqueduct': 'nazca-puquio',
+  'garamantes-foggara': 'garamantes-foggara',
+  'garamantian-foggara-system': 'garamantes-foggara',
+  'tiwanaku-raised-fields': 'tiwanaku-suka-kollus',
+  'suka-kollus': 'tiwanaku-suka-kollus',
+  'ottoman-kirkcesme': 'ottoman-kirkcesme',
+  'kirkcesme-water-supply': 'ottoman-kirkcesme',
+  'bazalgette-sewers': 'bazalgette-sewers',
+  'london-sewerage': 'bazalgette-sewers',
+  'bazalgette-intercepting-sewers': 'bazalgette-sewers',
+  'budj-bim-aquaculture': 'budj-bim-aquaculture',
+  'budj-bim-eel-traps': 'budj-bim-aquaculture',
+  'gunditjmara-aquaculture': 'budj-bim-aquaculture'
 };
 
 export function getSwmmModelForInvention(inventionId: string): SWMM5Model | null {
@@ -1531,6 +1552,141 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       cisternVolume: 2000000
     },
     engineeringNotes: 'Limestone catchment beds, gravel filtration. Domed roof prevents evaporation and keeps water cool. Community shared. Some hold 2+ million liters. Tanka household version: ~20,000 liters'
+  },
+  'shushtar-hydraulic': {
+    name: 'Shushtar Historical Hydraulic System',
+    description: 'UNESCO World Heritage integrated water system on the Karun River, Iran',
+    civilization: 'Sassanid Empire',
+    period: '3rd-7th Century CE',
+    parameters: {
+      length: 5000,
+      slope: 0.002,
+      flowRate: 50,
+      channelWidth: 8,
+      channelDepth: 3,
+      roughness: 0.020
+    },
+    engineeringNotes: 'UNESCO World Heritage. Integrated dams, canals, rock-cut tunnels, and water mills. Band-e Kaisar dam is oldest known arch-plan dam.'
+  },
+  'pont-du-gard': {
+    name: 'Pont du Gard Aqueduct',
+    description: 'UNESCO World Heritage Roman aqueduct in Southern France',
+    civilization: 'Roman Empire',
+    period: '19 BCE',
+    parameters: {
+      length: 50000,
+      slope: 0.0004,
+      flowRate: 0.4,
+      channelWidth: 1.3,
+      channelDepth: 1.2,
+      roughness: 0.013
+    },
+    engineeringNotes: '49m tall, 50km aqueduct with 0.04% gradient. Delivered 40,000 m³/day to Nîmes via Castellum Divisorium.'
+  },
+  'palenque-aqueduct': {
+    name: 'Maya Palenque Pressurized Aqueduct',
+    description: 'Pressurized water system in Chiapas, Mexico',
+    civilization: 'Classic Maya',
+    period: '600-700 CE',
+    parameters: {
+      length: 300,
+      slope: 0.02,
+      flowRate: 0.05,
+      channelWidth: 0.3,
+      channelDepth: 0.5,
+      roughness: 0.018
+    },
+    engineeringNotes: 'Only known pressurized water system in pre-Columbian Americas. Channel narrows from 80cm to 15cm creating Venturi-effect pressure rise.'
+  },
+  'nazca-puquio': {
+    name: 'Nazca Puquio Underground Aqueducts',
+    description: 'Underground aqueduct system in Peru still functioning after 2000 years',
+    civilization: 'Nazca Civilization',
+    period: '100 BCE-800 CE',
+    parameters: {
+      length: 3000,
+      slope: 0.005,
+      flowRate: 0.02,
+      channelWidth: 0.8,
+      channelDepth: 0.6,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Underground aqueducts still functioning after 2000 years. Spiral \'ojos\' (eyes) access shafts for maintenance and ventilation.'
+  },
+  'garamantes-foggara': {
+    name: 'Garamantian Foggara System',
+    description: 'Extensive underground water system in Fezzan, Libya',
+    civilization: 'Garamantes',
+    period: '500 BCE-700 CE',
+    parameters: {
+      length: 5000,
+      slope: 0.003,
+      flowRate: 0.008,
+      channelWidth: 0.6,
+      channelDepth: 0.5,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Over 600 foggaras totaling 3000+ km. Supported 10,000+ people in the Sahara Desert using fossil groundwater.'
+  },
+  'tiwanaku-suka-kollus': {
+    name: 'Tiwanaku Suka Kollus Raised Fields',
+    description: 'Raised field agriculture system at Lake Titicaca, Bolivia',
+    civilization: 'Tiwanaku Empire',
+    period: '300-1000 CE',
+    parameters: {
+      length: 500,
+      slope: 0.001,
+      flowRate: 0.1,
+      channelWidth: 0.5,
+      channelDepth: 0.3,
+      roughness: 0.030
+    },
+    engineeringNotes: 'Raised field agriculture at 3800m altitude. Channels acted as thermal mass, protecting crops from frost. Modern recreations yield 3x conventional farming.'
+  },
+  'ottoman-kirkcesme': {
+    name: 'Ottoman Kırkçeşme Water Supply',
+    description: 'Architect Sinan\'s masterwork water supply system in Istanbul, Turkey',
+    civilization: 'Ottoman Empire',
+    period: '1554 CE',
+    parameters: {
+      length: 50000,
+      slope: 0.0005,
+      flowRate: 4.2,
+      channelWidth: 2.0,
+      channelDepth: 1.5,
+      roughness: 0.015
+    },
+    engineeringNotes: 'Architect Sinan\'s masterwork: 50+ km aqueduct, 33 bridges, 50+ distribution points. Supplied 4,200 m³/day to Istanbul.'
+  },
+  'bazalgette-sewers': {
+    name: 'Bazalgette London Sewerage System',
+    description: 'Victorian-era intercepting sewer system in London, UK',
+    civilization: 'Victorian England',
+    period: '1858-1875',
+    parameters: {
+      length: 132000,
+      slope: 0.002,
+      flowRate: 25,
+      channelWidth: 3.6,
+      channelDepth: 3.3,
+      roughness: 0.015
+    },
+    engineeringNotes: '1,100 miles of street sewers feeding 82 miles of intercepting sewers. Ended cholera epidemics and created Thames Embankment.'
+  },
+  'budj-bim-aquaculture': {
+    name: 'Budj Bim Eel Aquaculture System',
+    description: 'UNESCO World Heritage 6,600-year-old aquaculture system in Victoria, Australia',
+    civilization: 'Gunditjmara Aboriginal',
+    period: '4600 BCE',
+    parameters: {
+      length: 2000,
+      slope: 0.001,
+      flowRate: 0.5,
+      channelWidth: 1.5,
+      channelDepth: 0.5,
+      roughness: 0.035
+    },
+    engineeringNotes: 'UNESCO World Heritage. 6,600-year-old aquaculture system. Stone weirs, channels, and basalt-lined ponds for eel farming - one of world\'s oldest aquaculture systems.'
   }
 };
 
@@ -2776,6 +2932,17 @@ export function generateSWMM5File(inventionId: string): string | null {
     case 'inca-tipon':
     case 'andenes':
       content += generateIncaModel(model.parameters);
+      break;
+    case 'shushtar-hydraulic':
+    case 'pont-du-gard':
+    case 'palenque-aqueduct':
+    case 'nazca-puquio':
+    case 'garamantes-foggara':
+    case 'tiwanaku-suka-kollus':
+    case 'ottoman-kirkcesme':
+    case 'bazalgette-sewers':
+    case 'budj-bim-aquaculture':
+      content += generateGenericModel(model.parameters);
       break;
     default:
       content += generateGenericModel(model.parameters);

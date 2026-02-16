@@ -34,7 +34,7 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
             Discover How Water Shaped Civilization
           </p>
           <p className="max-w-2xl mx-auto" style={{ color: 'rgba(245, 240, 225, 0.85)' }}>
-            Explore 99 civilizations, 350+ water inventions across 6 continents and 40,000+ years. 
+            Explore 139 civilizations, 680+ water inventions across 6 continents and 40,000+ years. 
             From Aboriginal fish traps to Korean ondol to Nan Madol's mysterious canals.
           </p>
         </div>
@@ -59,7 +59,7 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                   World Map Explorer
                 </h3>
                 <p className="text-[var(--parchment)]/80 text-sm mb-4">
-                  Explore 99 civilizations on an interactive map with 350+ water inventions
+                  Explore 139 civilizations on an interactive map with 680+ water inventions
                 </p>
                 <span className="inline-block px-3 py-1 bg-[var(--cerulean)]/30 rounded-full text-xs text-[var(--aqua)] border border-[var(--aqua)]/30">
                   Interactive Map
@@ -195,7 +195,7 @@ export default function LandingPage({ onSelectJourney }: LandingPageProps) {
                   onClick={() => onSelectJourney("3d-world")}
                   className="mt-4 text-[var(--aqua)] text-sm hover:text-[var(--gold)] transition-colors flex items-center gap-1"
                 >
-                  Explore all 350+ inventions <ChevronRight size={14} />
+                  Explore all 680+ inventions <ChevronRight size={14} />
                 </button>
               </CardContent>
             </Card>

@@ -232,7 +232,14 @@ const civilizationContinents: Record<string, string> = {
   "khwarezmian-empire": "Asia", "liao-jin-yuan": "Asia", "urartu": "Asia",
   "dilmun": "Asia", "bactria": "Asia", "majapahit": "Asia",
   "kanem-bornu": "Africa", "benin-kingdom": "Africa",
-  "moche-civilization": "Americas", "yoruba-civilization": "Africa", "funan-kingdom": "Asia"
+  "moche-civilization": "Americas", "yoruba-civilization": "Africa", "funan-kingdom": "Asia",
+  "neolithic-anatolia": "Asia", "troy-lydia": "Asia", "phrygian-kingdom": "Asia",
+  "classical-anatolia": "Asia", "seljuk-anatolia": "Asia", "modern-turkey": "Asia",
+  "thracian-dacian": "Europe", "scythian-peoples": "Asia", "slavic-kievan-rus": "Europe",
+  "medieval-eastern-europe": "Europe", "dong-son": "Asia", "champa-kingdom": "Asia",
+  "pyu-city-states": "Asia", "dvaravati-kingdom": "Asia", "srivijaya-empire": "Asia",
+  "sundaland": "Asia",
+  "funan-oc-eo": "Asia"
 };
 
 export default function WorldMapView({ onBack }: WorldMapViewProps) {

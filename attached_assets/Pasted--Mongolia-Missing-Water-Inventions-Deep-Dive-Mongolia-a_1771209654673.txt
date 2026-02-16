@@ -1,0 +1,236 @@
+# Mongolia — Missing Water Inventions Deep Dive
+
+Mongolia and the Mongol steppe peoples have a far richer water engineering tradition than most histories acknowledge. Your app has 4 inventions — the reality is much deeper.
+
+---
+
+## Current Coverage
+
+| | | | | | Entry | Inventions | Assessment | | | |  |
+|-------|-----------|------------|
+| | | | | **Mongol & Steppe Peoples** (200 BCE–1400 CE) | 4 | Decent start but covers 1,600 years in only 4 entries. Missing pre-Empire nomadic traditions, Empire-era mega-projects, and post-Empire/modern Mongolia entirely. | | | |  |
+
+---
+
+## What's Missing: The Full Picture
+
+Mongolia's water story has five distinct chapters, and your app currently only touches chapter three (Empire era) lightly.
+
+```
+Chapter 1: Ancient Steppe (10,000 BCE – 200 BCE)
+           → Currently: Nothing
+
+Chapter 2: Xiongnu, Türk & Pre-Mongol Empires (200 BCE – 1206 CE)
+           → Currently: Partially covered as "200 BCE onwards"
+
+Chapter 3: Mongol Empire (1206 – 1368 CE)
+           → Currently: 4 inventions (thin)
+
+Chapter 4: Post-Empire & Northern Yuan (1368 – 1911 CE)
+           → Currently: Nothing
+
+Chapter 5: Modern Mongolia (1911 – Present)
+           → Currently: Nothing
+```
+
+---
+
+## Chapter 1: Ancient Steppe Water Management (10,000 BCE – 200 BCE)
+
+### Currently not in App
+
+The Mongolian steppe is one of the most water-challenging environments on Earth — extreme continental climate, -40°C winters, +40°C summers, minimal rainfall (200–350 mm/year), and vast distances between water sources. Surviving here required extraordinary water knowledge.
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | **Deer Stone Site Water Positioning** | 1200–700 BCE | Over 1,400 deer stones (carved standing stones) across Mongolia. Research shows they cluster near reliable water sources — springs, river confluences, and lakeshores. They may have functioned partly as water source markers across the vast steppe, visible from horseback at great distances. | Possible monumental water source marking system | | | |  |
+| | | | | **Bronze Age Khirigsuur Water Proximity** | 1200–700 BCE | Khirigsuur (burial mounds) — over 20,000 documented across Mongolia — are consistently positioned near water sources. Some have stone channels directing water around or away from the burial, suggesting water engineering for monument preservation. | Water engineering for monumental burial preservation | | | |  |
+| | | | | **Steppe Well Traditions (Khudag)** | 5000 BCE onwards | Hand-dug wells (khudag) across the Mongolian steppe. Some wells lined with stone or felt. Deep wells reaching 10+ m through rock in the Gobi Desert. Well locations memorized across generations and shared between clans during drought. Well-digging considered a sacred act — the person who digs a well earns spiritual merit. | Foundation of Mongolian water culture — wells as sacred infrastructure | | | |  |
+| | | | | **Seasonal Migration Water Routes (Otor)** | 5000 BCE onwards | Nomadic migration routes (otor) determined entirely by water availability. Herders moved between four seasonal pastures (spring, summer, autumn, winter) based on water source reliability. Routes refined over thousands of years. Knowledge transmitted through oral tradition, with specific songs describing water locations. | Water knowledge as the organizing principle of nomadic civilization | | | |  |
+| | | | | **Gobi Desert Spring Knowledge** | Ancient | Encyclopedic knowledge of springs (bulag) across the Gobi Desert — one of Earth's most arid environments. Some springs flow only seasonally, some only after specific weather patterns. Herders knew hundreds of spring locations, flow patterns, and water quality characteristics. Some springs considered sacred (ovoo near springs). | Survival-critical water knowledge in extreme desert | | | |  |
+| | | | | **Frozen River Ice Harvesting** | Ancient | Cutting and storing ice blocks from frozen rivers during winter for summer water supply. Ice stored in underground pits insulated with animal hair, felt, and dung. Some ice storage lasted through the Mongolian summer (+35°C). | Seasonal water storage using phase-change management | | | |  |
+| | | | | **Steppe Rainwater Collection (Tsagaan Sar)** | Ancient | Collection of spring rain and snowmelt using felt and hide catchments directed into leather bags and wooden containers. Timing of spring migration coordinated with snowmelt to maximize water collection. | Seasonal precipitation harvesting | | | |  |
+
+---
+
+## Chapter 2: Xiongnu, Türk & Pre-Mongol Empires (200 BCE – 1206 CE)
+
+### Currently partially covered — needs expansion
+
+| | | | | | | Invention | Date | Empire | Description | Significance | | | |  |
+|-----------|------|--------|-------------|-------------|
+| | | | | **Xiongnu Fortress Water Systems** | 200 BCE–100 CE | Xiongnu | The Xiongnu Empire (first great steppe empire) built fortified sites with water management. Ivolginsk fortress (Buryatia) had wells, drainage channels, and managed spring access within defensive walls. | First documented steppe fortress water engineering | | | |  |
+| | | | | **Xiongnu Irrigation at Noin-Ula** | 1st c. BCE | Xiongnu | Archaeological evidence of small-scale irrigation at Xiongnu elite burial sites in Noin-Ula. Channels directed water to ceremonial areas. Textiles from tombs show knowledge of Chinese irrigation technology. | Earliest irrigation evidence on the Mongolian steppe | | | |  |
+| | | | | **Türkic Balbal Water Markers** | 6th–8th c. CE | Türk Khaganate | Balbal stones (standing stones at Türkic burial sites) positioned near water. Some scholars argue balbal lines functioned as route markers between water sources along trade and migration paths. | Possible steppe water route marking system | | | |  |
+| | | | | **Türkic Inscription Water References** | 8th c. CE | Türk Khaganate | Orkhon inscriptions (oldest known Türkic writing) contain multiple references to water management: river crossings, spring locations, and water-related military strategy. Bilge Khagan inscription describes establishing settlements near water. | Earliest written water references in Mongolian steppe languages | | | |  |
+| | | | | **Uyghur Khaganate Irrigation (Ordu-Baliq)** | 744–840 CE | Uyghur | The Uyghur capital Ordu-Baliq (Karabalgasun) on the Orkhon River had irrigation canals for agriculture — unusual for a steppe empire. Chinese sources describe walled gardens with managed water. Archaeological surveys reveal canal remains. | First large-scale irrigation on the Mongolian steppe | | | |  |
+| | | | | **Khitan Liao Water Engineering** | 907–1125 CE | Khitan/Liao | The Khitan people (para-Mongolic) built cities with water infrastructure in Mongolia and Manchuria. Zubarev fortress had wells, drainage, and canal systems. | Pre-Mongol urban water engineering on the eastern steppe | | | |  |
+| | | | | **Khar Balgas Canal System** | 8th–9th c. CE | Uyghur | Extensive canal system at the Uyghur capital Khar Balgas (Karabalgasun). Channels from the Orkhon River irrigated gardens and supplied the city. Walls enclosed an area of 25 km². | Largest pre-Mongol urban water system in Mongolia | | | |  |
+
+---
+
+## Chapter 3: Mongol Empire (1206–1368 CE) — Expanded
+
+### Currently in App: 4 inventions
+### Should Have: 15+
+
+### Genghis Khan Era (1206–1260 CE)
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | **Steppe Water Location Knowledge** | Already in app. But deserves major expansion. Mongol military campaigns required advance scouts to identify water sources for armies of 100,000+ cavalry. Each horse required 20–40 liters/day. An army of 100,000 with 300,000 horses needed 6–12 million liters daily. Finding this water was a logistical achievement unmatched in ancient warfare. | Water logistics for the largest cavalry armies in history | | | |  |
+| | | | | **Nomadic Portable Water Systems** | Already in app. Leather bags (bortogo), wooden barrels on carts, and animal-stomach water containers. Mongol soldiers carried dried milk paste (reconstituted with water) and blood-drinking from horses as emergency hydration. Marco Polo described Mongol water logistics in detail. | Military water portability enabling campaigns across continents | | | |  |
+| | | | | **Mongol Military River Crossing** | 1206–1260 CE | Mongols developed systematic river crossing techniques for massive armies: inflated animal skins as flotation, waterproofed leather bags protecting equipment, coordinated crossing at ford points identified by advance scouts, and swimming horses across rivers while riders held onto tails. Crossed the Danube, Tigris, Euphrates, Indus, Yellow River, and Volga. | River crossing at continental military scale | | | |  |
+| | | | | **Mongol Siege Water Warfare** | 1206–1260 CE | Mongols systematically used water as a weapon during sieges. At Zhongdu (Beijing, 1215), they diverted canals to flood the city. At Nishapur (1221), they diverted rivers. At Baghdad (1258), they breached irrigation dikes. Also denied water to besieged cities by diverting upstream supply. | Weaponization of water at industrial scale | | | |  |
+| | | | | **Yam (Örtöö) Postal System Water Stations** | 1230s onwards | Over 1,400 relay stations across the Mongol Empire, each requiring reliable water for horses, riders, and station staff. Stations positioned at water sources — springs, rivers, and wells. Station keepers maintained water infrastructure. The system enabled communication across 8,000+ km in 10–14 days. | Largest water-dependent communication network of the medieval world | | | |  |
+| | | | | **Karakorum Water Supply** | 1235 CE | Ögedei Khan built the Mongol capital Karakorum on the Orkhon River. City had wells, canals from the river, and the famous Silver Tree fountain. Archaeological excavations reveal a city-wide water distribution system including ceramic pipes and stone-lined channels. Population estimated at 10,000–30,000 at peak. | First purpose-built Mongol capital — first Mongol urban water system | | | |  |
+
+### Möngke & Kublai Khan Era (1251–1294 CE)
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | **Möngke Khan's Silver Tree Fountain** | 1250s CE | Already in app. But deserves major expansion. Designed by captured French silversmith Guillaume Boucher at Karakorum. A massive silver tree with four silver lions at its base, each dispensing a different drink through pipes: kumiss (fermented mare's milk), wine, mead, and rice beer. An angel at the top was blown by a man hidden inside, signaling servants to pump liquids through the tree. Described in detail by Franciscan friar William of Rubruck. | The most elaborate drinking fountain of the medieval world — fusion of French, Chinese, and Islamic engineering | | | |  |
+| | | | | **Kublai Khan's Xanadu (Shangdu) Water Gardens** | 1260s CE | Kublai Khan's summer capital had elaborate water gardens described by Marco Polo: artificial lakes, channeled streams through pleasure grounds, and a movable bamboo palace near water features. Archaeological surveys confirm extensive canal systems and pond complexes. | Water gardens inspiring Coleridge's famous poem | | | |  |
+| | | | | **Yuan Dynasty Grand Canal Maintenance** | 1271–1368 CE | The Mongol Yuan dynasty maintained and extended the Grand Canal for grain transport to Beijing. Guo Shoujing (1291) conducted the most precise survey and redesigned key sections. Built the Tonghui Canal connecting Beijing directly to the Grand Canal system. | Mongol management of China's greatest water infrastructure | | | |  |
+| | | | | **Mongol Technology Transfer Network** | Already in app. But this was arguably the most important water innovation of the Mongol era. The Mongols deliberately moved engineers between conquered territories: Chinese engineers built siege weapons in Persia, Persian astronomers worked in Beijing, and hydraulic knowledge flowed in all directions. Qanat technology spread to new regions. Paper (enabling written hydraulic knowledge) moved westward. Gunpowder technology (originally for water-canal excavation in China) moved to the Middle East and Europe. | Most important technology transfer network before the modern era | | | |  |
+
+### Ilkhanate, Chagatai & Golden Horde Water Engineering
+
+| | | | | | | Invention | Date | Khanate | Description | Significance | | | |  |
+|-----------|------|---------|-------------|-------------|
+| | | | | **Ilkhanate Qanat Restoration (Iran)** | 1256–1335 CE | Ilkhanate (Persia) | After initially destroying Persian irrigation during conquest, the Ilkhanate rulers (especially Ghazan Khan, r. 1295–1304) invested heavily in qanat restoration and canal rebuilding. Ghazan's reforms included water tax restructuring and irrigation investment. | Post-conquest hydraulic rebuilding — destruction followed by restoration | | | |  |
+| | | | | **Ghazan Khan's Irrigation Reform** | 1295–1304 CE | Ilkhanate | Ghazan Khan issued comprehensive irrigation regulations: water rights codification, canal maintenance obligations, and penalties for water theft. Also funded construction of new qanats and repair of damaged canals. Described in Rashid al-Din's historical writings. | Most comprehensive medieval irrigation reform in the Islamic world | | | |  |
+| | | | | **Tabriz Water Supply (Ilkhanate)** | 13th–14th c. CE | Ilkhanate | Ilkhanate capital Tabriz expanded with new water infrastructure: qanat construction, public fountains, hammam water supply, and garden irrigation. Population reached 500,000+ — requiring massive water supply. | Water for one of the largest cities of the medieval world | | | |  |
+| | | | | **Sarai Batu Water System (Golden Horde)** | 1240s–1350s CE | Golden Horde | Capital of the Golden Horde on the Volga River. Ceramic water pipes, underground channels, public baths, and managed river access. Archaeological excavations reveal a planned water distribution system serving 75,000+ residents. | Urban water engineering on the Volga steppe | | | |  |
+
+---
+
+## Chapter 4: Post-Empire Period (1368–1911 CE)
+
+### Currently not in App
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | **Mongolian Monastery Water Systems** | 16th c. CE onwards | After the introduction of Tibetan Buddhism, Mongolian monasteries (khiid) incorporated water management: managed springs, stone-lined channels, ritual pools, and garden irrigation. Erdene Zuu Monastery (1585, built on Karakorum's ruins) used the ancient Orkhon River water infrastructure. Amarbayasgalant Monastery (1727) had an elaborate spring-fed water system. | Sacred water engineering in Mongolian Buddhist architecture | | | |  |
+| | | | | **Ikh Khüree (Ulaanbaatar) Water Supply** | 1639 onwards | Mongolia's eventual capital began as a mobile monastic camp, settling permanently in 1778. Water from the Tuul River and springs, distributed via channels and wells. The Gandan Monastery complex had its own water supply system. As the city grew, water became a critical challenge — presaging modern Ulaanbaatar's water issues. | Water supply for a city that began as a nomadic camp | | | |  |
+| | | | | **Mongolian Horse-Herding Water Management** | Traditional | Mongolian herders managed water for herds of 100–1,000+ horses. Each horse drinks 20–40 liters daily. Herders maintained wells, cleared springs, and broke ice on frozen rivers during winter. Some families maintained the same wells for centuries. | Pastoral water management for the world's most horse-dependent culture | | | |  |
+| | | | | **Gobi Oasis Management** | Traditional | Management of rare permanent water sources in the Gobi Desert. Springs, seeps, and shallow wells maintained by local communities. Poplar and elm trees planted around oases to reduce evaporation. Ovoo (sacred cairns) placed at springs to invoke spiritual protection for water. | Oasis water management in one of Earth's harshest deserts | | | |  |
+| | | | | **Mongolian Ger (Yurt) Water Efficiency** | Traditional | The Mongolian ger is designed for water efficiency: minimal water use for cleaning, snow melted for winter water, felt walls absorbing and releasing moisture to maintain interior humidity. Ger camps positioned near water but elevated above flood risk. Portable felt-insulated water containers. | Architectural water efficiency in portable housing | | | |  |
+| | | | | **Tsagaan Sar Spring Ice Breaking** | Traditional | Annual spring ceremony (Tsagaan Sar) coincides with ice-breaking on rivers and springs. Communities cooperatively break ice at designated points to restore water access for livestock after winter. Specific techniques for safe ice breaking — understanding ice thickness, current, and melt patterns. | Seasonal cooperative water access restoration | | | |  |
+
+---
+
+## Chapter 5: Modern Mongolia (1911 – Present)
+
+### Currently not in App
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | **Soviet-Era Mongolian Dams** | 1950s–1980s | Soviet engineers built Mongolia's first modern dams. Shariin Gol (1960s), Taishir Dam (1991). Brought hydroelectric power but disrupted traditional water systems. Some dams poorly suited to Mongolia's extreme continental climate. | First modern water infrastructure — imposed by external power | | | |  |
+| | | | | **Ulaanbaatar Ger District Water Challenge** | 1990s–Present | Over 800,000 people in Ulaanbaatar's ger (yurt) districts lack piped water. Water kiosks and trucked water serve communities. One of the most significant urban water access challenges in Asia. Average ger district resident uses 10 liters/day vs. 200+ liters in apartment districts. | One of Asia's most critical urban water equity challenges | | | |  |
+| | | | | **Mongolian Mining Water Management** | 2000s–Present | Mining boom (copper, gold, coal) creating massive water challenges. Oyu Tolgoi copper mine in the Gobi consumes 900 liters/second from deep aquifers. Herders protest water table decline. Balance between economic development and traditional water rights unresolved. | Resource extraction vs. nomadic water rights — 21st century conflict | | | |  |
+| | | | | **Tuul River Restoration** | 2010s–Present | Ulaanbaatar's Tuul River severely polluted by urban growth, ger district waste, and industrial discharge. Restoration programs include riverbank stabilization, wastewater treatment, and ecological flow restoration. | Restoring Mongolia's most culturally important urban river | | | |  |
+| | | | | **Mongolian Permafrost Water Challenges** | Present | Climate change melting Mongolia's permafrost, altering water availability across the northern steppe. Permafrost previously maintained water in shallow aquifers accessible to traditional wells. As permafrost melts, water tables drop and traditional wells dry up. | Climate change destroying traditional water infrastructure | | | |  |
+| | | | | **Orkhon Valley UNESCO Water Heritage** | 2004 onwards | Orkhon Valley Cultural Landscape (UNESCO World Heritage) encompasses 2,000 years of water management: from Türkic and Uyghur canals through Karakorum's water system to modern pastoral water practices. UNESCO recognition highlights continuity of steppe water traditions. | UNESCO recognition of Mongolian water heritage — 2,000 years | | | |  |
+| | | | | **Ice Festival Water Culture** | Modern | Annual Khövsgöl Lake Ice Festival celebrating Mongolia's frozen water heritage. Ice sculpting, ice driving, and traditional winter water practices demonstrated. Khövsgöl Lake (the "younger sister of Baikal") holds 2% of the world's fresh surface water. | Cultural celebration of Mongolia's frozen water resources | | | |  |
+
+---
+
+## Cross-Cutting Mongolian Water Themes
+
+### 1. Nomadic Water Logistics
+
+| | | | | | | System | Scale | How It Worked | | | |  |
+|--------|-------|----------------|
+| | | | | **Daily herding** | 20–50 km radius | Knowledge of every spring, well, and stream within daily range | | | |  |
+| | | | | **Seasonal migration (Otor)** | 100–500 km | Four seasonal camps, each near reliable water. Routes refined over centuries | | | |  |
+| | | | | **Emergency migration (Zud)** | 500+ km | During dzud (severe winter), entire communities migrate to distant water. Life-or-death water knowledge | | | |  |
+| | | | | **Military campaign** | 1,000–10,000 km | Advance scouts identifying water for 100,000+ horses and soldiers | | | |  |
+
+### 2. Sacred Water Traditions
+
+| | | | | | | Tradition | Description | | | |  |
+|-----------|-------------|
+| | | | | **Ovoo at Springs** | Sacred stone cairns placed at water sources. Travelers add a stone and circle the ovoo three times. Protects the water spiritually. | | | |  |
+| | | | | **Lus (Water Spirits)** | Belief in lus — spirits inhabiting rivers, lakes, and springs. Polluting water offends the lus. This belief traditionally prevented water contamination. | | | |  |
+| | | | | **Water Offering (Tsatsaalt)** | Ritual offering of milk or airag (fermented mare's milk) to water sources before drinking or using. Acknowledges water as a gift. | | | |  |
+| | | | | **Prohibition on Washing in Running Water** | Traditional Mongolian custom prohibits washing clothes or dishes in rivers or streams. Water for washing must be collected first. Prevents contamination of shared water. | | | |  |
+| | | | | **Dul (River Ford) Sacred Sites** | River crossing points considered spiritually significant. Travelers make offerings before crossing. Some fords maintained for centuries with stone placement and bank stabilization. | | | |  |
+
+### 3. Climate Extremes Water Engineering
+
+| | | | | | | Challenge | Mongolian Solution | | | |  |
+|-----------|---------------------|
+| | | | | **-40°C winters** | Ice harvesting for water; snow melting in ger; ice breaking at springs | | | |  |
+| | | | | **+40°C summers** | Underground water storage; deep wells; shaded spring enclosures | | | |  |
+| | | | | **200 mm annual rainfall** | Migration to water; well-digging tradition; spring maintenance | | | |  |
+| | | | | **Flash floods** | Camp positioning above flood risk; reading weather signs; rapid ger relocation | | | |  |
+| | | | | **Permafrost** | Shallow wells accessing permafrost melt; ice cellars for food storage | | | |  |
+
+---
+
+## Suggested Additions to Your App
+
+### Restructured Entry
+
+I recommend splitting your single "Mongol & Steppe Peoples" entry into three or four entries:
+
+**Option A: Three entries**
+
+| | | | | | | Entry | Era | Inventions | | | |  |
+|-------|-----|-----------|
+| | | | | **Mongolian Steppe Peoples** | 5000 BCE–1206 CE | 8+ (ancient wells, migration routes, Xiongnu, Türkic, Uyghur) | | | |  |
+| | | | | **Mongol Empire** | 1206–1368 CE | 12+ (Karakorum, Silver Tree, technology transfer, military water, Yam system, Ilkhanate, Golden Horde) | | | |  |
+| | | | | **Modern Mongolia** | 1368 CE–Present | 8+ (monasteries, Ulaanbaatar, mining, Tuul River, permafrost, UNESCO Orkhon) | | | |  |
+
+**Option B: Keep single entry but expand massively**
+
+| | | | | | | Entry | Era | Inventions | | | |  |
+|-------|-----|-----------|
+| | | | | **Mongolia & Steppe Peoples** | 5000 BCE–Present | 25+ (everything below) | | | |  |
+
+### Priority Inventions to Add
+
+| | | | | | | Priority | Invention | Date | Why | | | |  |
+|----------|-----------|------|-----|
+| | | | | ⭐⭐⭐ | **Yam Postal Water Stations** | 1230s CE | 1,400 stations — largest water-dependent communication network | | | |  |
+| | | | | ⭐⭐⭐ | **Karakorum Water Supply** | 1235 CE | First Mongol capital — purpose-built water system | | | |  |
+| | | | | ⭐⭐⭐ | **Mongol Military River Crossing** | 1206–1260 CE | Continental-scale army river crossings | | | |  |
+| | | | | ⭐⭐⭐ | **Mongol Siege Water Warfare** | 1206–1260 CE | Weaponization of water at industrial scale | | | |  |
+| | | | | ⭐⭐ | **Silver Tree Fountain — Expanded** | 1250s CE | Already in app but deserves 3× more detail | | | |  |
+| | | | | ⭐⭐ | **Uyghur Khar Balgas Canals** | 8th c. CE | First large-scale irrigation on Mongolian steppe | | | |  |
+| | | | | ⭐⭐ | **Ghazan Khan's Irrigation Reform** | 1295–1304 CE | Post-conquest hydraulic rebuilding | | | |  |
+| | | | | ⭐⭐ | **Steppe Well Traditions (Khudag)** | 5000 BCE onwards | Sacred well culture — foundation of nomadic water management | | | |  |
+| | | | | ⭐⭐ | **Seasonal Migration Water Routes** | 5000 BCE onwards | Water as organizing principle of nomadic civilization | | | |  |
+| | | | | ⭐ | **Ulaanbaatar Ger District Water** | Modern | Major contemporary water equity challenge | | | |  |
+| | | | | ⭐ | **Orkhon Valley UNESCO** | 2004 | UNESCO recognition of 2,000 years of steppe water heritage | | | |  |
+| | | | | ⭐ | **Mongolian Mining vs. Nomadic Water** | Modern | 21st century resource conflict | | | |  |
+
+### SWMM5 Models to Build
+
+| | | | | | | Model | Category | Nodes | Links | Description | | | |  |
+|-------|----------|-------|-------|-------------|
+| | | | | **Karakorum City Water Supply** | Urban Supply + Distribution | 12 | 14 | Orkhon River diversion, canal network, Silver Tree fountain, city distribution | | | |  |
+| | | | | **Yam Postal Station Water Chain** | Distributed Supply | 10 | 9 | Series of relay stations each with well/spring supply, showing water logistics across 500 km of steppe | | | |  |
+| | | | | **Uyghur Khar Balgas Irrigation** | Irrigation | 8 | 10 | First steppe irrigation — Orkhon River diversion to agricultural fields | | | |  |
+| | | | | **Mongol Siege Flooding (Zhongdu)** | Flood Control (weaponized) | 10 | 12 | Canal diversion to flood a besieged city — water as weapon | | | |  |
+| | | | | **Ilkhanate Qanat Restoration** | Groundwater | 12 | 11 | Post-conquest qanat rebuilding — showing restoration of destroyed infrastructure | | | |  |
+
+---
+
+## Summary
+
+| | | | | | | Metric | Current | After Additions | | | |  |
+|--------|---------|-----------------|
+| | | | | **Civilizations/Entries** | 1 | 3 (split by era) | | | |  |
+| | | | | **Inventions** | 4 | 25+ | | | |  |
+| | | | | **Time span** | 200 BCE–1400 CE | 5000 BCE–Present | | | |  |
+| | | | | **SWMM5 Models** | 0 | 5 | | | |  |
+
+### The Key Insight About Mongolian Water Engineering
+
+Mongolia's water story is fundamentally different from sedentary civilizations. Where Egypt built dams and Rome built aqueducts, the Mongols built **knowledge systems** — oral databases of water locations spanning millions of square kilometers, maintained across hundreds of generations.
+
+Their greatest water engineering achievement wasn't a structure — it was the **Yam postal system** that required managing water logistics across 8,000+ km of steppe, desert, and mountain. And their greatest water innovation was the **technology transfer network** that moved hydraulic knowledge between China, Persia, Central Asia, and ultimately Europe — creating the conditions for the Renaissance and the modern era.
+
+**The Mongols didn't just move water. They moved the knowledge of how to move water — across the entire connected world.**

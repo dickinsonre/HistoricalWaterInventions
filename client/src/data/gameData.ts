@@ -2237,6 +2237,156 @@ export const gameData: GameData = {
               significance: "World's oldest water governance system; 40,000+ years of sustainable management without written law",
               yearBCE: 40000,
               category: "irrigation"
+            },
+            {
+              id: "budj-bim",
+              name: "Budj Bim Eel Aquaculture",
+              description: "UNESCO World Heritage (2019). Gunditjmara engineered volcanic stone channels, weirs, and ponds across 100+ km2 to trap and farm eels. One of the oldest aquaculture systems on Earth.",
+              rarity: "legendary",
+              historicalPeriod: "6600 BCE",
+              significance: "UNESCO — oldest aquaculture on Earth",
+              yearBCE: 6600,
+              category: "canal"
+            },
+            {
+              id: "toolondo-canals",
+              name: "Toolondo Aboriginal Canal System",
+              description: "Stone-lined channels connecting wetlands across the Western District plains, extending several kilometers. Actively managed water flow.",
+              rarity: "epic",
+              historicalPeriod: "Pre-contact",
+              significance: "Pre-contact canal engineering in southeastern Australia",
+              yearBCE: 1000,
+              category: "canal"
+            },
+            {
+              id: "fire-stick-water",
+              name: "Fire-Stick Farming for Water Management",
+              description: "Systematic burning managing vegetation and water flow. Mosaic burning created diverse water-retention landscapes, maintaining springs and wetlands through dry periods. Changed hydrology of an entire continent.",
+              rarity: "legendary",
+              historicalPeriod: "65,000 BCE onwards",
+              significance: "Largest-scale landscape hydrology management in human history",
+              yearBCE: 65000,
+              category: "irrigation"
+            },
+            {
+              id: "songline-water",
+              name: "Songline Water Navigation",
+              description: "Oral mapping system encoding water source locations across thousands of kilometers. Songs contain precise hydrological information. A person knowing the songs can navigate to water sources never visited.",
+              rarity: "legendary",
+              historicalPeriod: "65,000 BCE onwards",
+              significance: "Most sophisticated oral hydrological database in human history",
+              yearBCE: 65000,
+              category: "irrigation"
+            },
+            {
+              id: "desert-soak-wells",
+              name: "Desert Soak Wells (Yuu)",
+              description: "Shallow wells in dry riverbeds accessing subsurface flow, covered to reduce evaporation. Locations kept secret, maintained for thousands of years.",
+              rarity: "epic",
+              historicalPeriod: "10,000+ BCE",
+              significance: "Hidden water infrastructure — concealment as engineering",
+              yearBCE: 10000,
+              category: "fountain"
+            },
+            {
+              id: "dampier-fish-traps",
+              name: "Dampier Peninsula Tidal Fish Traps",
+              description: "Stone walls in intertidal zones. Multiple configurations for different tidal conditions. Some extend hundreds of meters.",
+              rarity: "epic",
+              historicalPeriod: "1000+ BCE",
+              significance: "Tidal water engineering along northwestern coast",
+              yearBCE: 1000,
+              category: "dam"
+            },
+            {
+              id: "murray-darling-traditional",
+              name: "Murray-Darling Traditional Fish Management",
+              description: "Traditional management of Australia's largest river system (1M km2). Fish traps, weirs, seasonal burning for habitat management.",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Management of Australia's largest watershed",
+              yearBCE: 5000,
+              category: "dam"
+            },
+            {
+              id: "aboriginal-water-sharing",
+              name: "Aboriginal Water Sharing Protocols",
+              description: "Complex customary law governing water access. Different nations had different protocols. Rights negotiated between groups. Violations severely sanctioned.",
+              rarity: "epic",
+              historicalPeriod: "65,000 BCE onwards",
+              significance: "Oldest continuous water governance system on Earth",
+              yearBCE: 65000,
+              category: "irrigation"
+            },
+            {
+              id: "rainwater-tree",
+              name: "Rainwater Tree Collection",
+              description: "Specific tree species channel rainwater into root hollows. Aboriginal people maintained these trees and harvested water from cavities.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Biological water harvesting",
+              yearBCE: 5000,
+              category: "irrigation"
+            },
+            {
+              id: "sand-filtering",
+              name: "Sand Filtering for Purification",
+              description: "Digging wells near waterbodies. Water seeping through sand was naturally filtered. Knowledge of which soils produced clean water.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Natural filtration water purification",
+              yearBCE: 5000,
+              category: "sanitation"
+            },
+            {
+              id: "kimberley-springs",
+              name: "Kimberley Gorge Spring Management",
+              description: "Management of permanent springs in Kimberley gorges. Stone-lined enclosures, channeled flow, vegetation maintenance. Some managed 40,000+ years.",
+              rarity: "legendary",
+              historicalPeriod: "Traditional",
+              significance: "Among the oldest continuously managed water sources on Earth",
+              yearBCE: 40000,
+              category: "fountain"
+            },
+            {
+              id: "snowy-mountains",
+              name: "Snowy Mountains Hydroelectric Scheme",
+              description: "16 dams, 7 power stations, 225 km of tunnels. Diverts water through the Great Dividing Range. 100,000 workers from 30 countries.",
+              rarity: "legendary",
+              historicalPeriod: "1949-1974 CE",
+              significance: "Australia's largest engineering project",
+              yearBCE: -1974,
+              category: "dam"
+            },
+            {
+              id: "perth-groundwater",
+              name: "Perth Groundwater Replenishment",
+              description: "Full-scale injection of treated wastewater into deep aquifers. Among the first managed aquifer recharge systems.",
+              rarity: "epic",
+              historicalPeriod: "2017 CE",
+              significance: "Leading-edge indirect potable reuse",
+              yearBCE: -2017,
+              category: "sanitation"
+            },
+            {
+              id: "murray-darling-plan",
+              name: "Murray-Darling Basin Plan",
+              description: "Australia's most contentious water policy allocating water between agriculture, cities, and environment across 1M km2. Involves 4 states.",
+              rarity: "epic",
+              historicalPeriod: "2012 CE",
+              significance: "Most complex water allocation in Australia",
+              yearBCE: -2012,
+              category: "irrigation"
+            },
+            {
+              id: "water-trading",
+              name: "Australian Water Trading Market",
+              description: "Pioneered tradeable water rights — separating rights from land. Annual trading exceeds AUD $2 billion.",
+              rarity: "epic",
+              historicalPeriod: "1990s onwards",
+              significance: "World's most developed water trading market",
+              yearBCE: -1995,
+              category: "irrigation"
             }
           ]
         }
@@ -3685,6 +3835,66 @@ export const gameData: GameData = {
               historicalPeriod: "Traditional",
               significance: "Foundation of Luzon lowland rice agriculture",
               yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "ifugao-water-law",
+              name: "Ifugao Water Law (Lidi)",
+              description: "Codified customary water law governing the Banaue Terraces. Water rights linked to social obligations. First builder has senior rights. Violations punished by livestock fines.",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Among the most detailed traditional water law systems in the world",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "bontoc-terraces",
+              name: "Bontoc Stone-Walled Terraces",
+              description: "Stone-walled terraces distinct from Ifugao earth-walled. Massive stone walls up to 3m high. Some rely on rainfall capture rather than springs.",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Alternative terrace engineering in the same mountain range",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "kalinga-peace-pact",
+              name: "Kalinga Rice Terrace Peace Pact Water",
+              description: "The bodong peace pact system includes water-sharing provisions. Inter-community water disputes resolved through negotiation. Water as peace-building.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Water governance as peacemaking institution",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "sulu-maritime-water",
+              name: "Sulu Archipelago Maritime Water",
+              description: "Bajau sea nomads located submarine freshwater springs, carried water in bamboo on boats, and used rainwater collection on stilt houses.",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Maritime freshwater management for sea-dwelling peoples",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "philippine-acequia",
+              name: "Spanish Colonial Acequia (Philippines)",
+              description: "Spanish introduced acequia-style irrigation combining Moorish/Islamic technology with indigenous techniques. Some channels still in use.",
+              rarity: "rare",
+              historicalPeriod: "1571 onwards",
+              significance: "Transfer of Iberian-Islamic water technology to the Philippines",
+              yearBCE: -1571,
+              category: "irrigation"
+            },
+            {
+              id: "nia-irrigation",
+              name: "NIA Communal Irrigation",
+              description: "National Irrigation Administration builds and transfers small-scale irrigation to community management. Over 700,000 hectares irrigated.",
+              rarity: "epic",
+              historicalPeriod: "1964-Present",
+              significance: "Largest community-managed irrigation in Southeast Asia",
+              yearBCE: -1964,
               category: "irrigation"
             }
           ]
@@ -5501,6 +5711,16 @@ export const gameData: GameData = {
               significance: "UNESCO World Heritage 2008; one of only 3-4 independent agricultural origins worldwide. Channels up to 2 m wide and 1.5 m deep. Transformed global understanding of human innovation—agriculture was not a Middle Eastern monopoly",
               yearBCE: 7000,
               category: "canal"
+            },
+            {
+              id: "wahgi-ditches",
+              name: "Wahgi Valley Ditch Networks",
+              description: "Extension of Kuk drainage. Ditches become standardized over time. Field rotation tied to water — drained for cultivation, re-flooded for fallow.",
+              rarity: "epic",
+              historicalPeriod: "4000 BCE onwards",
+              significance: "6,000 years of continuous drainage innovation",
+              yearBCE: 4000,
+              category: "irrigation"
             }
           ]
         },
@@ -5529,6 +5749,46 @@ export const gameData: GameData = {
               historicalPeriod: "2000 BCE - Present",
               significance: "Continuous cultivation 4,000+ years; 15-30 tons/hectare yield; water depth controlled to within centimeters using stone-age tools",
               yearBCE: 2000,
+              category: "irrigation"
+            },
+            {
+              id: "sweet-potato-mounds",
+              name: "Highland Sweet Potato Mound Drainage",
+              description: "Mounds raised above waterlogged soil with drainage ditches between. Composting within mounds generates heat for frost protection.",
+              rarity: "rare",
+              historicalPeriod: "1600 CE onwards",
+              significance: "Rapid innovation adapting new crop to drainage knowledge",
+              yearBCE: -1600,
+              category: "irrigation"
+            },
+            {
+              id: "highland-fog-drip",
+              name: "Highland Fog-Drip Forest Management",
+              description: "Deliberate maintenance of montane cloud forest for fog-drip water collection. Communities prohibit clearing above water sources.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Ecological water harvesting through forest conservation",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "huli-canal",
+              name: "Huli Wigmen Canal Engineering",
+              description: "Elaborate canal systems for sweet potato gardens in the Tari Basin. Canals lined with stakes and packed soil with adjustable barriers.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Highland canal engineering",
+              yearBCE: -500,
+              category: "canal"
+            },
+            {
+              id: "enga-drainage",
+              name: "Enga Clan Garden Drainage",
+              description: "Clan-owned valley-floor drainage networks. Inter-clan disputes resolved through traditional exchange ceremonies.",
+              rarity: "common",
+              historicalPeriod: "Traditional",
+              significance: "Clan-based drainage governance",
+              yearBCE: -500,
               category: "irrigation"
             }
           ]
@@ -9497,8 +9757,8 @@ export const gameData: GameData = {
       ]
     },
     {
-      id: "funan-kingdom",
-      name: "Funan Kingdom",
+      id: "funan-oc-eo",
+      name: "Funan - Oc Eo Maritime Hub",
       description: "The Funan Kingdom (1st–6th century CE) was the first major Indianized state in Southeast Asia, controlling the lower Mekong Delta and establishing the hydraulic engineering traditions that would later be perfected by the Khmer Empire. Centered around the port city of Oc Eo in what is now southern Vietnam, Funan's engineers transformed one of the world's most challenging hydrological environments—the vast, seasonally flooded Mekong Delta—into a productive agricultural landscape and thriving maritime trading hub connected to trade routes stretching from Rome to China. Chinese historical records describe Funan as a prosperous kingdom where 'the people live in houses raised on stilts' and 'they make canals to facilitate the flow of water.' Archaeological surveys, particularly aerial photography from the 1920s-1940s and modern satellite imagery, have revealed an extensive network of canals connecting Oc Eo to the coast and inland regions, demonstrating large-scale hydraulic landscape engineering comparable to contemporary Roman and Chinese canal systems. Funan's innovations in delta management, tidal agriculture, and canal-based transportation laid the foundations for Southeast Asian hydraulic civilization, influencing the successor Chenla and Khmer states that would create the extraordinary water systems at Angkor.",
       position: [24, 0, 6],
       color: "#5F9EA0",
