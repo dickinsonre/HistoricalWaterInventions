@@ -6,6 +6,10 @@ import { ar } from "./ar";
 import { hi } from "./hi";
 import { ja } from "./ja";
 import { pt } from "./pt";
+import { ta } from "./ta";
+import { de } from "./de";
+import { ko } from "./ko";
+import { th } from "./th";
 import type { LanguageCode } from "../lib/stores/useLanguage";
 
 const translations: Record<LanguageCode, TranslationKeys> = {
@@ -17,6 +21,10 @@ const translations: Record<LanguageCode, TranslationKeys> = {
   hi,
   ja,
   pt,
+  ta,
+  de,
+  ko,
+  th,
 };
 
 export function getTranslations(lang: LanguageCode): TranslationKeys {

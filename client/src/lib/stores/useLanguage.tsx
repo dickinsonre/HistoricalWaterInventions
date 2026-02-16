@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-export type LanguageCode = "en" | "es" | "fr" | "zh" | "ar" | "hi" | "ja" | "pt";
+export type LanguageCode = "en" | "es" | "fr" | "zh" | "ar" | "hi" | "ja" | "pt" | "ta" | "de" | "ko" | "th";
 
 export interface LanguageInfo {
   code: LanguageCode;
@@ -18,6 +18,10 @@ export const LANGUAGES: LanguageInfo[] = [
   { code: "hi", name: "Hindi", nativeName: "\u0939\u093f\u0928\u094d\u0926\u0940", dir: "ltr" },
   { code: "ja", name: "Japanese", nativeName: "\u65e5\u672c\u8a9e", dir: "ltr" },
   { code: "pt", name: "Portuguese", nativeName: "Portugu\u00eas", dir: "ltr" },
+  { code: "ta", name: "Tamil", nativeName: "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd", dir: "ltr" },
+  { code: "de", name: "German", nativeName: "Deutsch", dir: "ltr" },
+  { code: "ko", name: "Korean", nativeName: "\ud55c\uad6d\uc5b4", dir: "ltr" },
+  { code: "th", name: "Thai", nativeName: "\u0e44\u0e17\u0e22", dir: "ltr" },
 ];
 
 interface LanguageState {
