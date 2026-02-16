@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-export type LanguageCode = "en" | "es" | "fr" | "zh" | "ar" | "hi" | "ja" | "pt" | "ta" | "de" | "ko" | "th";
+export type LanguageCode = "en" | "es" | "fr" | "zh" | "ar" | "hi" | "ja" | "pt" | "ta" | "de" | "ko" | "th" | "tr" | "el" | "it" | "pl" | "ms" | "vi" | "tl" | "id" | "fa";
 
 export interface LanguageInfo {
   code: LanguageCode;
@@ -22,6 +22,15 @@ export const LANGUAGES: LanguageInfo[] = [
   { code: "de", name: "German", nativeName: "Deutsch", dir: "ltr" },
   { code: "ko", name: "Korean", nativeName: "\ud55c\uad6d\uc5b4", dir: "ltr" },
   { code: "th", name: "Thai", nativeName: "\u0e44\u0e17\u0e22", dir: "ltr" },
+  { code: "tr", name: "Turkish", nativeName: "T\u00fcrk\u00e7e", dir: "ltr" },
+  { code: "el", name: "Greek", nativeName: "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac", dir: "ltr" },
+  { code: "it", name: "Italian", nativeName: "Italiano", dir: "ltr" },
+  { code: "pl", name: "Polish", nativeName: "Polski", dir: "ltr" },
+  { code: "ms", name: "Malay", nativeName: "Bahasa Melayu", dir: "ltr" },
+  { code: "vi", name: "Vietnamese", nativeName: "Ti\u1ebfng Vi\u1ec7t", dir: "ltr" },
+  { code: "tl", name: "Tagalog", nativeName: "Tagalog", dir: "ltr" },
+  { code: "id", name: "Indonesian", nativeName: "Bahasa Indonesia", dir: "ltr" },
+  { code: "fa", name: "Farsi", nativeName: "\u0641\u0627\u0631\u0633\u06cc", dir: "rtl" },
 ];
 
 interface LanguageState {
