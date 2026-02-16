@@ -966,29 +966,29 @@ export const gameData: GameData = {
           ]
         },
         {
-          id: "grand-canal",
-          name: "Grand Canal",
-          description: "World's longest artificial waterway",
-          historicalContext: "Connecting Beijing to Hangzhou",
+          id: "grand-canal-ref",
+          name: "Grand Canal & Pound Lock (Cross-references)",
+          description: "These inventions postdate Ancient China (1600 BCE–220 CE). See the correct dynasty entries for full details.",
+          historicalContext: "Grand Canal: see Sui & Tang Dynasties entry. Pound Lock: see Song Dynasty entry.",
           coordinates: { lat: 35.0000, lng: 117.0000 },
           artifacts: [
             {
               id: "canal-lock",
-              name: "Pound Lock Design",
-              description: "Revolutionary lock gate mechanism",
+              name: "Pound Lock (Cross-reference → Song Dynasty)",
+              description: "Invented by Qiao Weiyue in 984 CE—this belongs to the Song Dynasty (960–1279 CE), not Ancient China. See Song Dynasty entry for full details.",
               rarity: "epic",
-              historicalPeriod: "Song Dynasty (960-1279 CE)",
-              significance: "Invention of modern canal lock system",
+              historicalPeriod: "Song Dynasty (984 CE)",
+              significance: "See Song Dynasty entry for full details on Qiao Weiyue's pound lock invention",
               yearBCE: -984,
               category: "canal"
             },
             {
               id: "grand-canal-system",
-              name: "Grand Canal (大运河)",
-              description: "World's longest artificial waterway at 1,776 km connecting Beijing to Hangzhou. Sui Dynasty (605-610 CE) unified earlier sections using 5 million workers. Enabled grain transport from south to feed northern capitals for 1,400 years.",
+              name: "Grand Canal (Cross-reference → Sui & Tang Dynasties)",
+              description: "Built 605–610 CE under the Sui Dynasty—this belongs to Sui & Tang Dynasties (581–907 CE), not Ancient China. See Sui & Tang Dynasties entry for full details.",
               rarity: "legendary",
               historicalPeriod: "Sui Dynasty (581-618 CE)",
-              significance: "Longest canal in world—still operational, now UNESCO World Heritage",
+              significance: "See Sui & Tang Dynasties entry for full details on the 1,776 km Grand Canal",
               yearBCE: -610,
               category: "canal"
             }
@@ -1177,11 +1177,11 @@ export const gameData: GameData = {
     {
       id: "mesoamerica",
       name: "Mesoamerica",
-      description: "Aztec and Maya water masters (2000 BCE-1521 CE). Aztec chinampas (floating gardens) fed Tenochtitlan's 200,000 people from artificial islands. Maya built aguadas (reservoirs) and the world's first known pressurized water system at Palenque palace.",
+      description: "Aztec and Maya water masters spanning Pre-Classic through Post-Classic periods (1200 BCE–1521 CE). Aztec chinampas (floating gardens) fed Tenochtitlan's 200,000 people from artificial islands. Maya built aguadas (reservoirs) and the world's first known pressurized water system at Palenque palace.",
       position: [-8, 0, 8],
       color: "#20B2AA",
-      era: "medieval",
-      dateRange: "1200 BCE - 1521 CE",
+      era: "classical",
+      dateRange: "1200 BCE - 1521 CE (Pre-Classic to Post-Classic)",
       locations: [
         {
           id: "tenochtitlan",
@@ -2631,12 +2631,12 @@ export const gameData: GameData = {
     },
     {
       id: "ancient-japan",
-      name: "Ancient Japan",
-      description: "Masters of water gardens: from rice paddies to zen reflection pools",
+      name: "Japan (Yayoi to Edo)",
+      description: "Masters of water gardens spanning 1,900 years: from Yayoi-era rice paddy irrigation (300 BCE) through Nara-Heian imperial water systems to Edo-period castle town engineering (1600 CE). Encompasses rice paddies, zen reflection pools, and sophisticated urban water supply.",
       position: [18, 0, 2],
       color: "#DC143C",
-      era: "medieval",
-      dateRange: "300 BCE - 1600 CE",
+      era: "classical",
+      dateRange: "300 BCE - 1600 CE (Yayoi through Edo)",
       locations: [
         {
           id: "nara-region",

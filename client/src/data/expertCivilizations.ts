@@ -863,7 +863,7 @@ export const expertCivilizationsDatabase: CivilizationsDatabase = {
     },
     {
       id: "ancient-japan",
-      name: "Ancient Japan",
+      name: "Japan (Yayoi to Edo)",
       region: "Japanese Archipelago",
       period: {
         start: -300,

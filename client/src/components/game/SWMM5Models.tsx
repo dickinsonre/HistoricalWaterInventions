@@ -29,7 +29,7 @@ const civilizationColors: Record<string, string> = {
   "Inca Empire": "bg-amber-700",
   "Balinese (Subak)": "bg-green-500",
   "Aboriginal Australia": "bg-orange-700",
-  "Ancient Japan": "bg-red-500",
+  "Japan (Yayoi to Edo)": "bg-red-500",
   "Dutch Netherlands": "bg-orange-500",
   "Ancient India": "bg-orange-600",
   "Hawaiian": "bg-teal-500",
