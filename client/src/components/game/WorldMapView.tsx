@@ -47,6 +47,7 @@ import WaterSimModels from "./WaterSimModels";
 import LanguageSelector from "./LanguageSelector";
 import { useAudio } from "../../lib/stores/useAudio";
 import { useProgress } from "../../lib/stores/useProgress";
+import { useTranslation } from "../../hooks/useTranslation";
 
 interface WorldMapViewProps {
   onBack: () => void;
@@ -280,6 +281,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
   
   const { isMuted, toggleMute } = useAudio();
   const { progress } = useProgress();
+  const t = useTranslation();
   
   const [showInventory, setShowInventory] = useState(false);
   const [showProgress, setShowProgress] = useState(false);
@@ -386,7 +388,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Home size={16} className="text-[var(--gold)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Back to Home</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.backToHome}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -395,7 +397,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <HelpCircle size={16} className="text-[var(--aqua)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Tutorial</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.tutorial}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -404,7 +406,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 {isMuted ? <VolumeX size={16} className="text-[var(--terracotta)]" /> : <Volume2 size={16} className="text-[var(--cerulean)]" />}
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">{isMuted ? "Unmute" : "Mute"}</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{isMuted ? t.gameui.unmute : t.gameui.mute}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -413,7 +415,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Search size={16} className="text-[var(--cerulean)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Smart Search</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.smartSearch}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -423,7 +425,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <span className="ml-1 text-[var(--gold)]">{allArtifacts.length}</span>
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Inventions ({allArtifacts.length})</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.inventions} ({allArtifacts.length})</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -433,7 +435,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <span className="ml-1 text-[var(--gold)]">{gameData.regions.length}</span>
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Civilizations ({gameData.regions.length})</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.civilizations} ({gameData.regions.length})</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -443,7 +445,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <span className="ml-1">{totalLocations}</span>
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Progress</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.progress}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -452,7 +454,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Star size={16} className="text-[var(--gold)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Achievements</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.achievements}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -461,7 +463,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Clock size={16} className="text-[var(--cerulean)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Timeline</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.timeline}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -470,7 +472,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Calendar size={16} className="text-[var(--gold)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Timeline Slider</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.timelineSlider}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -479,7 +481,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <BookOpen size={16} className="text-[var(--aqua)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Encyclopedia</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.encyclopedia}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -488,7 +490,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <BarChart3 size={16} className="text-[var(--cerulean)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Compare</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.compare}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -497,7 +499,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Play size={16} className="text-[var(--gold)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Time Travel</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.timeTravel}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -506,7 +508,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Image size={16} className="text-[var(--terracotta)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Featured</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.featured}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -515,7 +517,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Lightbulb size={16} className="text-[var(--gold)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Did You Know</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.didYouKnow}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -524,7 +526,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Layers size={16} className="text-[var(--aqua)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Statistics</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.statistics}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -534,7 +536,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <span className="absolute -top-2 -right-2 bg-[var(--cerulean)] text-white text-[9px] font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1">{waterSimModels.length}</span>
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Water Computer Models ({waterSimModels.length})</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.waterModels} ({waterSimModels.length})</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -544,7 +546,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <span className="absolute -top-2 -right-2 bg-[var(--terracotta)] text-white text-[9px] font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1">{Object.keys(SWMM5_MODELS).length}</span>
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">SWMM5 Models ({Object.keys(SWMM5_MODELS).length})</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.swmm5Models} ({Object.keys(SWMM5_MODELS).length})</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -553,7 +555,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Route size={16} className="text-[var(--cerulean)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Thematic Pathways</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.thematicPathways}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -562,7 +564,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Scroll size={16} className="text-[var(--gold)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Story Quests</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.storyQuests}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -571,7 +573,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Grid3X3 size={16} className="text-[var(--terracotta)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Mini-Games</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.miniGames}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -580,7 +582,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Beaker size={16} className="text-[var(--gold)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Interactive Simulators</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.simulators}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -589,7 +591,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Glasses size={16} className="text-[var(--cerulean)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">VR Experience</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.vrExperience}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -598,7 +600,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Tag size={16} className="text-[var(--aqua)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Invention Tags</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.inventionTags}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -607,7 +609,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <GitBranch size={16} className="text-[var(--cerulean)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Technology Trees</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.techTrees}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -616,7 +618,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Brain size={16} className="text-[var(--gold)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Quiz & Assessment</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.quiz}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -625,7 +627,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Share2 size={16} className="text-[var(--terracotta)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Innovation Diffusion</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.diffusion}</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -634,7 +636,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 <Info size={16} className="text-[var(--cerulean)]" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">About</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.about}</TooltipContent>
           </Tooltip>
 
           <LanguageSelector />
@@ -642,7 +644,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
 
         {/* Quick Filters */}
         <div className="flex items-center justify-center gap-2 mb-4 flex-wrap">
-          <span className="text-[var(--parchment)]/60 text-xs mr-2">Filter by Era:</span>
+          <span className="text-[var(--parchment)]/60 text-xs mr-2">{t.toolbar.filterByEra}:</span>
           {["Ancient", "Classical", "Medieval", "Modern"].map(era => (
             <Button 
               key={era}
@@ -655,7 +657,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
             </Button>
           ))}
           <span className="text-[var(--parchment)]/40 mx-2">|</span>
-          <span className="text-[var(--parchment)]/60 text-xs mr-2">Region:</span>
+          <span className="text-[var(--parchment)]/60 text-xs mr-2">{t.toolbar.region}:</span>
           {["Africa", "Asia", "Europe", "Americas", "Pacific"].map(continent => (
             <Button 
               key={continent}
@@ -674,7 +676,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               onClick={() => { setEraFilter(null); setContinentFilter(null); }}
               className="text-xs text-[var(--aqua)] hover:text-[var(--gold)]"
             >
-              Clear
+              {t.toolbar.clear}
             </Button>
           )}
         </div>
@@ -682,9 +684,9 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
         <div className="mb-4">
           <div className="flex items-center justify-between mb-3">
             <div>
-              <h1 className="font-heading text-2xl text-[var(--gold)]">World Map of Water Innovations</h1>
+              <h1 className="font-heading text-2xl text-[var(--gold)]">{t.toolbar.worldMapTitle}</h1>
               <p className="text-[var(--parchment)]/70 text-sm">
-                Explore <span onClick={scrollToCivilizations} className="text-[var(--aqua)] font-semibold cursor-pointer hover:underline">{gameData.regions.length} civilizations</span> • <span className="text-[var(--cerulean)] font-semibold">{allArtifacts.length}+ water inventions</span> • <span className="text-[var(--gold)] font-semibold">{Object.keys(SWMM5_MODELS).length} SWMM5, ICM, Civil 3D networks</span> • 300,000 years of water engineering
+                {t.toolbar.exploreDesc} <span onClick={scrollToCivilizations} className="text-[var(--aqua)] font-semibold cursor-pointer hover:underline">{gameData.regions.length} {t.toolbar.civilizations}</span> • <span className="text-[var(--cerulean)] font-semibold">{allArtifacts.length}+ {t.toolbar.waterInventionsPlus}</span> • <span className="text-[var(--gold)] font-semibold">{Object.keys(SWMM5_MODELS).length} {t.toolbar.swmm5Networks}</span> • 300,000 {t.toolbar.yearsOfEngineering}
               </p>
             </div>
           </div>
