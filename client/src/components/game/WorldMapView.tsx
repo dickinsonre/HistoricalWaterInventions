@@ -7,7 +7,7 @@ import {
   MapPin, ChevronRight, ChevronDown, X, Home, Droplets, VolumeX, Volume2, Search, 
   Backpack, Trophy, Clock, BookOpen, BarChart3, Play, Star, Image, 
   Lightbulb, Info, Globe, Grid3X3, Download, Route, Scroll, Filter, HelpCircle,
-  ArrowUpDown, SortAsc, Calendar, Beaker, Glasses, Tag, GitBranch, Brain, Share2, Layers
+  ArrowUpDown, SortAsc, Calendar, Beaker, Glasses, Tag, GitBranch, Brain, Share2, Layers, Monitor
 } from "lucide-react";
 import { gameData } from "../../data/gameData";
 import { SWMM5_MODELS } from "../../lib/swmm5Export";
@@ -40,6 +40,7 @@ import QuizSystem from "./QuizSystem";
 import DiffusionMap from "./DiffusionMap";
 import FunFactsStrip from "./FunFactsStrip";
 import StatisticsDashboard from "./StatisticsDashboard";
+import WaterSimModels from "./WaterSimModels";
 import { useAudio } from "../../lib/stores/useAudio";
 import { useProgress } from "../../lib/stores/useProgress";
 
@@ -120,7 +121,13 @@ const civilizationCoords: Record<string, { lat: number; lng: number; region: str
   "mississippian-cahokia": { lat: 38.7, lng: -90.1, region: "Mississippi Valley" },
   "hohokam": { lat: 33.4, lng: -111.9, region: "Arizona Desert" },
   "pacific-northwest": { lat: 47.6, lng: -122.3, region: "US/Canada Pacific Coast" },
-  "siberia-yakutia": { lat: 62.0, lng: 129.7, region: "Russian Far East" },
+  "ancient-siberia": { lat: 51.4, lng: 84.7, region: "Altai Mountains" },
+  "lake-baikal": { lat: 53.5, lng: 108.0, region: "Lake Baikal" },
+  "siberian-river-peoples": { lat: 61.0, lng: 69.0, region: "Western Siberia" },
+  "amur-river-peoples": { lat: 52.0, lng: 135.0, region: "Russian Far East" },
+  "kamchatka-peninsula": { lat: 56.0, lng: 160.0, region: "Kamchatka" },
+  "siberian-tundra-peoples": { lat: 74.0, lng: 100.0, region: "Taimyr Peninsula" },
+  "modern-siberia": { lat: 60.0, lng: 105.0, region: "Siberia" },
   "inuit-arctic": { lat: 71.3, lng: -156.8, region: "Arctic Circle" },
   "swahili-coast": { lat: -6.2, lng: 39.2, region: "East Africa Coast" },
   "kongo-kingdom": { lat: -4.3, lng: 15.3, region: "Congo Basin" },
@@ -213,7 +220,7 @@ const civilizationContinents: Record<string, string> = {
   "nan-madol": "Pacific", "chamorro": "Pacific",
   "borneo": "Asia", "papua-new-guinea": "Pacific",
   "amazon-basin": "Americas", "mississippian-cahokia": "Americas", "hohokam": "Americas",
-  "pacific-northwest": "Americas", "siberia-yakutia": "Asia", "inuit-arctic": "Americas",
+  "pacific-northwest": "Americas", "ancient-siberia": "Asia", "lake-baikal": "Asia", "siberian-river-peoples": "Asia", "amur-river-peoples": "Asia", "kamchatka-peninsula": "Asia", "siberian-tundra-peoples": "Asia", "modern-siberia": "Asia", "inuit-arctic": "Americas",
   "swahili-coast": "Africa", "kongo-kingdom": "Africa", "mali-timbuktu": "Africa",
   "morocco": "Africa", "al-andalus": "Europe", "ancient-yemen": "Asia", "bengal": "Asia",
   "central-asia": "Asia", "chinook": "Americas", "dubai-uae": "Asia", "inuit": "Americas",
@@ -292,6 +299,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
   const [showQuiz, setShowQuiz] = useState(false);
   const [showDiffusion, setShowDiffusion] = useState(false);
   const [showStatistics, setShowStatistics] = useState(false);
+  const [showWaterModels, setShowWaterModels] = useState(false);
   const [eraFilter, setEraFilter] = useState<string | null>(null);
   const [continentFilter, setContinentFilter] = useState<string | null>(null);
   const [selectedInvention, setSelectedInvention] = useState<string | null>(null);
@@ -501,6 +509,15 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               </Button>
             </TooltipTrigger>
             <TooltipContent className="water-card text-[var(--parchment)]">Statistics</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowWaterModels(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Monitor size={16} className="text-[var(--aqua)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Water Computer Models</TooltipContent>
           </Tooltip>
 
           <Tooltip>
@@ -1053,6 +1070,9 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
             <StatisticsDashboard onClose={() => setShowStatistics(false)} />
           </div>
         </div>
+      )}
+      {showWaterModels && (
+        <WaterSimModels onClose={() => setShowWaterModels(false)} />
       )}
     </div>
     </TooltipProvider>

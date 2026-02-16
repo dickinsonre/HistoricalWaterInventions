@@ -73,7 +73,7 @@ const continentMap: Record<string, string> = {
   "kanem-bornu": "Africa", "benin-kingdom": "Africa", "nan-madol": "Oceania",
   "chamorro": "Oceania", "austronesian": "Oceania", "papua-new-guinea": "Oceania",
   "aboriginal-australia": "Oceania", "mongol-steppe": "East Asia",
-  "central-asia": "Middle East", "siberia-yakutia": "East Asia",
+  "central-asia": "Middle East", "ancient-siberia": "East Asia", "lake-baikal": "East Asia", "siberian-river-peoples": "East Asia", "amur-river-peoples": "East Asia", "kamchatka-peninsula": "East Asia", "siberian-tundra-peoples": "East Asia", "modern-siberia": "East Asia",
   "urartu": "Middle East", "dilmun": "Middle East", "bactria": "Middle East",
   "majapahit": "Southeast Asia", "syria-orontes": "Middle East",
   "colombian-civilizations": "South America", "caribbean-indigenous": "Central America",
