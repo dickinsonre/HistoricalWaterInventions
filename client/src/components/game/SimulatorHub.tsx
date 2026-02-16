@@ -61,7 +61,7 @@ export default function SimulatorHub() {
   };
 
   return (
-    <div className="min-h-screen bg-[var(--parchment)]">
+    <div className="min-h-screen bg-[var(--parchment)] overflow-y-auto">
       <div className="bg-[var(--deep-ocean)] text-[var(--parchment)] p-4">
         <div className="max-w-6xl mx-auto flex items-center gap-4">
           <Button 
@@ -128,7 +128,7 @@ export default function SimulatorHub() {
         </div>
 
         <div className="mt-8 text-center text-[var(--deep-ocean)]/60 text-sm">
-          <p>More simulators coming soon: Roman Siphon, Qanat System, Check Dam, Biso Kotuwa</p>
+          <p>10 interactive simulators — explore ancient hydraulic engineering!</p>
         </div>
       </div>
 

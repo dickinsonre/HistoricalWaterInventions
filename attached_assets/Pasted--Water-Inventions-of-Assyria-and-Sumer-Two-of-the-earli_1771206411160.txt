@@ -1,0 +1,150 @@
+# Water Inventions of Assyria and Sumer
+
+Two of the earliest and most influential water engineering civilizations, both located in Mesopotamia between the Tigris and Euphrates rivers.
+
+---
+
+## Sumer (4500–1900 BCE)
+
+### Listed in Your App (5 inventions)
+
+| | | Invention | Date | Description | |
+|-----------|------|-------------|
+| | **Sumerian Irrigation Canals** | 6000 BCE onwards | The world's first engineered water distribution networks. Complex systems of canals with dams constructed of reeds, palm trunks, and mud. Gates could be opened or closed to regulate flow of water. The first settlements of Kish, Lagash, Ur, Umma, and Uruk benefited from a single irrigation system supplying adequate water flow. | |
+| | **Sumerian Levees & Flood Control** | 4000 BCE onwards | Engineered earthen barriers to control seasonal flooding from the Tigris and Euphrates. Land was checkerboarded with small basins defined by a system of dikes. During the warmer season, melting ice from Anatolia caused water levels to rise, and large amounts of silt accumulated within the flat riverbed. | |
+| | **Sumerian Water Laws** | 2100–1790 BCE | The earliest codified water governance. Disputes over water between city-states like Umma and Lagash eventually led to Hammurabi's Code (1790 BCE), which devoted hundreds of laws to irrigation systems, water theft, and negligence. | |
+| | **Sumerian Shadoof (Precursor)** | 3000 BCE | Early lever-based water lifting device — a counterweighted pole with a bucket, used to raise water from canals to fields. Precursor to the Egyptian shaduf. | |
+| | **+1 more** | — | Likely related to canal maintenance or water distribution governance | |
+
+### Additional Sumerian Innovations (From Historical Sources)
+
+| | | Innovation | Date | Details | |
+|------------|------|---------|
+| | **Waterproof Canal Lining** | 4000 BCE+ | Canals lined with mud brick or clay to prevent water loss into sandy soil — essential in the arid climate. Without lining, water would waste into sand dunes. | |
+| | **Regulated Gate Systems** | 4000 BCE+ | Dam gates that could be opened or closed to control water flow timing and volume — earliest known water control infrastructure. | |
+| | **Sexagesimal Water Measurement** | 3000 BCE+ | Sumerians used their base-60 number system to measure water volumes and canal dimensions — the foundation of hydraulic engineering mathematics. | |
+| | **City-State Water Sharing Agreements** | 2500 BCE | Formal agreements between cities (Umma, Lagash, Ur) sharing a single irrigation system — earliest known inter-jurisdictional water governance. | |
+| | **Silt Management Techniques** | 4000 BCE+ | Methods to handle massive silt accumulation from the Euphrates (which sat at higher elevation than the Tigris), including settling basins and periodic canal dredging. | |
+| | **Flood-Recession Agriculture** | 6000 BCE+ | Using natural flood cycles to deposit fertile silt on fields — the agricultural method that gave rise to the first cities. | |
+
+### Why Sumer Matters
+
+The Sumerians essentially invented water engineering as a discipline:
+
+- **First irrigation canals** in the world (6000 BCE)
+- **First water laws** codifying rights and responsibilities
+- **First urban water systems** supporting cities of 40,000+ people
+- **First inter-city water disputes** — and first water treaties
+- **First mathematical approach** to water measurement (base-60)
+
+The Euphrates River sat at a higher elevation than the Tigris, causing it to frequently overflow into settlements on the Tigris side. This geographic challenge forced the Sumerians to develop systematic water control — necessity drove innovation.
+
+---
+
+## Assyria (2500–609 BCE)
+
+### Listed in Your App (4 inventions)
+
+| | | Invention | Date | Description | |
+|-----------|------|-------------|
+| | **Jerwan Aqueduct** | 690 BCE | The oldest known aqueduct in the world. Constructed by King Sennacherib I between 703 and 690 BCE. At the site of Khinis, where the Gomel River emerges from a narrow gorge at the foot of the Zagros Mountains, Sennacherib built a dam that diverted waters into a canal feeding a series of waterways snaking approximately 60 miles across the plains to his capital at Nineveh. | |
+| | **Assyrian Canal Network** | 705–690 BCE | Extensive canal system serving Nineveh and surrounding agricultural lands. The plain below the canals was home to Neo-Assyrian villages inhabited by herders tending sheep and goats and farmers growing olives, grapes, wheat, and barley. These farmers depended on the steady water supply from the canal system. | |
+| | **Assyrian Water Warfare** | 720–609 BCE | The Assyrians pioneered the systematic use of water as a military weapon. They developed a tradition of putting down civil unrest and defeating enemies by withholding water from expanding populations. Multiple documented examples across two centuries of conquest. | |
+| | **Assyrian Qanat Expansion** | 700 BCE | Sargon II, invading Armenia in 714 BCE, discovered the qanat (Arabic) or kariz (Persian) — a tunnel system bringing water from underground sources in hills down to foothills. He destroyed the Armenian systems but brought the concept back to Assyria, spreading it throughout the empire. | |
+
+### Additional Assyrian Innovations (From Historical Sources)
+
+| | | Innovation | Date | Details | |
+|------------|------|---------|
+| | **Sennacherib's Babylon Destruction** | 689 BCE | Sennacherib leveled Babylon and diverted an irrigation canal "so that water would wash over the ruins" — using hydraulic engineering as a weapon of total destruction. | |
+| | **Sennacherib's Revenge Canal** | 683 BCE | Six years after destroying Babylon's canals, Sennacherib further destroyed the city's water supply canals in retribution for his murdered son. | |
+| | **Assurbanipal's Well Seizure Strategy** | ~650 BCE | King Assurbanipal seized water wells as a deliberate war strategy against Arabia — cutting off enemy water access as a military tactic. | |
+| | **Siege Water Denial (Tyre)** | 7th century BCE | Assyria cut off water supplies during the siege of the city of Tyre — demonstrating sophisticated understanding of urban water dependency. | |
+| | **Rock Relief Celebrations** | 883–609 BCE | Celebratory rock reliefs discovered near irrigation projects dating to the Neo-Assyrian Empire. At Khinis, rock carvings portray the king paying homage to his gods amid a procession of mythical animals along the canal. These served as both propaganda and engineering documentation. | |
+| | **Nineveh Irrigation System** | 705–681 BCE | A comprehensive regional water system serving the "Assyrian Triangle" — multiple interconnected canals, aqueducts, and distribution networks serving the capital and surrounding agricultural zones. | |
+| | **Jerusalem Counter-Engineering** | ~701 BCE | When Sennacherib besieged Jerusalem, the defenders dug a conduit (Hezekiah's Tunnel) from wells outside the city walls to cut off enemy water access — forcing the Assyrians to develop counter-strategies. | |
+| | **Glasswork & Glazing Technology** | 700 BCE+ | The Assyrians developed glasswork and glazes for pottery, including waterproofing techniques for water infrastructure. | |
+
+### Assyrian Water Warfare — A Detailed Timeline
+
+The Assyrians were unique in systematically weaponizing water:
+
+| | | Date | Event | Method | |
+|------|-------|--------|
+| | **714 BCE** | Sargon II invades Armenia | Destroys qanat systems, captures the technology | |
+| | **~701 BCE** | Sennacherib besieges Jerusalem | Attempts to cut off city water; defenders build Hezekiah's Tunnel in response | |
+| | **695 BCE** | Sennacherib attacks Babylon | Diverts irrigation canal to flood the ruins | |
+| | **689 BCE** | Sennacherib destroys Babylon's water | Systematically demolishes water supply canals | |
+| | **~650 BCE** | Assurbanipal campaigns against Arabia | Seizes water wells as strategic military targets | |
+| | **7th c. BCE** | Siege of Tyre | Cuts off water supplies to the besieged city | |
+
+---
+
+## Sumer vs Assyria — Comparison
+
+| | | Aspect | Sumer (4500–1900 BCE) | Assyria (2500–609 BCE) | |
+|--------|------------------------|------------------------|
+| | **Primary focus** | Agriculture and urban supply | Military power and imperial supply | |
+| | **Engineering style** | Community-built canals and levees | State-directed mega-projects | |
+| | **Scale** | City-state networks (10–50 km) | Imperial networks (60+ miles) | |
+| | **Innovation** | Invented irrigation, water law, flood control | Invented the aqueduct, weaponized water, imported qanat | |
+| | **Water governance** | Collaborative (inter-city treaties) | Authoritarian (king-directed) | |
+| | **Water as weapon** | Disputes between city-states | Systematic military doctrine | |
+| | **Legacy** | Foundation of all subsequent Mesopotamian water engineering | Spread qanat technology; inspired defensive counter-engineering | |
+| | **Key ruler** | Multiple city-state leaders | Sennacherib (704–681 BCE) — greatest Assyrian hydraulic engineer | |
+| | **Oldest achievement** | First irrigation canals (6000 BCE) | Oldest known aqueduct (690 BCE) | |
+| | **Materials** | Reeds, palm trunks, mud, clay | Stone, brick, advanced masonry | |
+
+---
+
+## Combined Legacy
+
+Together, Sumer and Assyria represent the foundation of hydraulic engineering:
+
+**Sumer gave the world:**
+- Irrigation canals (the concept)
+- Water law (the governance)
+- Levees and flood control (the protection)
+- Mathematical water measurement (the science)
+- Urban water supply (the infrastructure)
+
+**Assyria gave the world:**
+- The aqueduct (long-distance water transport)
+- Qanat technology transfer (from Armenia to the empire)
+- Water warfare doctrine (strategic military application)
+- Monumental hydraulic engineering (state-directed mega-projects)
+- Rock relief documentation (engineering as propaganda)
+
+**Together they established:**
+- Water as the foundation of civilization
+- Water engineering as a state function
+- Water control as political power
+- Water denial as military strategy
+- Water law as social infrastructure
+
+Every subsequent civilization's water engineering — Persian, Roman, Chinese, Islamic — built on principles first developed between the Tigris and Euphrates by Sumer and Assyria.
+
+---
+
+## Suggested Additions to Your App
+
+### For Sumer (currently 5 — suggest adding 2)
+
+| | | Invention | Date | Why Add | |
+|-----------|------|---------|
+| | **Waterproof Canal Lining** | 4000 BCE | First known use of clay/brick to prevent canal water loss | |
+| | **Inter-City Water Treaties** | 2500 BCE | Earliest documented water-sharing agreements between jurisdictions | |
+
+### For Assyria (currently 4 — suggest adding 2)
+
+| | | Invention | Date | Why Add | |
+|-----------|------|---------|
+| | **Khinis Rock Relief Engineering Documentation** | 700 BCE | First known public documentation of hydraulic engineering achievements | |
+| | **Sennacherib's Hydraulic Destruction of Babylon** | 689 BCE | Most dramatic example of water as weapon of total war | |
+
+### For SWMM5 Model Collection
+
+| | | Model | Category | Nodes | Links | Description | |
+|-------|----------|-------|-------|-------------|
+| | **Jerwan Aqueduct + Nineveh Distribution** | Gravity Flow | 12 | 11 | 60-mile aqueduct system from Khinis dam to Nineveh | |
+| | **Sumerian City-State Canal Network** | Irrigation | 15 | 18 | Shared canal system serving Kish, Lagash, Ur, Umma, Uruk | |

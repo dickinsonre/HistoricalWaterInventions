@@ -5781,7 +5781,7 @@ export const gameData: GameData = {
     {
       id: "sumer",
       name: "Sumer",
-      description: "Pioneers of water management technology in southern Mesopotamia",
+      description: "The Sumerians (4500–1900 BCE) essentially invented water engineering as a discipline in southern Mesopotamia between the Tigris and Euphrates rivers. They built the world's first irrigation canals (6000 BCE), codified the first water laws governing rights and responsibilities, created the first urban water systems supporting cities of 40,000+ people, and developed the first mathematical approach to water measurement using their base-60 number system. The Euphrates River sat at a higher elevation than the Tigris, causing frequent overflow into settlements — this geographic challenge forced the Sumerians to develop systematic water control. Their city-states of Kish, Lagash, Ur, Umma, and Uruk were all connected by a single irrigation system, and disputes over water between these cities led to the world's first water treaties and eventually to Hammurabi's Code, which devoted hundreds of laws to irrigation.",
       position: [9, 0, -7],
       color: "#CD853F",
       era: "ancient",
@@ -5842,6 +5842,66 @@ export const gameData: GameData = {
               historicalPeriod: "3500 BCE",
               significance: "First combined planting and irrigation system; dramatically increased crop yields",
               yearBCE: 3500,
+              category: "irrigation"
+            },
+            {
+              id: "sumerian-canal-lining",
+              name: "Waterproof Canal Lining",
+              description: "Canals lined with mud brick or fired clay to prevent water seepage into sandy desert soil",
+              rarity: "rare",
+              historicalPeriod: "4000 BCE onwards",
+              significance: "First known waterproofing of irrigation infrastructure; essential in arid Mesopotamia where unlined canals lost most water to sand",
+              yearBCE: 4000,
+              category: "canal"
+            },
+            {
+              id: "sumerian-water-treaties",
+              name: "Inter-City Water Treaties",
+              description: "Formal water-sharing agreements between city-states sharing a single irrigation network",
+              rarity: "legendary",
+              historicalPeriod: "2500 BCE",
+              significance: "Earliest documented inter-jurisdictional water governance; cities like Umma, Lagash, and Ur negotiated canal access rights — the world's first water diplomacy",
+              yearBCE: 2500,
+              category: "canal"
+            },
+            {
+              id: "sumerian-gate-systems",
+              name: "Regulated Gate Systems",
+              description: "Dam gates constructed of reeds, palm trunks, and mud that could be opened or closed to control water flow timing and volume",
+              rarity: "rare",
+              historicalPeriod: "4000 BCE onwards",
+              significance: "Earliest known water control infrastructure; allowed farmers to schedule irrigation and prevent flooding",
+              yearBCE: 4000,
+              category: "dam"
+            },
+            {
+              id: "sumerian-silt-management",
+              name: "Silt Management Techniques",
+              description: "Settling basins and periodic canal dredging to handle massive silt deposits from the Euphrates",
+              rarity: "common",
+              historicalPeriod: "4000 BCE onwards",
+              significance: "The Euphrates sat higher than the Tigris, causing frequent overflow and silt accumulation; systematic dredging kept canals functional for millennia",
+              yearBCE: 4000,
+              category: "canal"
+            },
+            {
+              id: "sumerian-sexagesimal-measurement",
+              name: "Sexagesimal Water Measurement",
+              description: "Base-60 number system applied to measuring water volumes, canal dimensions, and flow rates",
+              rarity: "epic",
+              historicalPeriod: "3000 BCE",
+              significance: "Foundation of hydraulic engineering mathematics; Sumerians could calculate canal capacity, water allocation, and seasonal flow volumes",
+              yearBCE: 3000,
+              category: "irrigation"
+            },
+            {
+              id: "sumerian-flood-recession-agriculture",
+              name: "Flood-Recession Agriculture",
+              description: "Using natural flood cycles to deposit fertile silt on fields before planting — the agricultural method that gave rise to the first cities",
+              rarity: "common",
+              historicalPeriod: "6000 BCE onwards",
+              significance: "Precursor to all irrigation; farmers learned to exploit natural flooding patterns before developing engineered canal systems",
+              yearBCE: 6000,
               category: "irrigation"
             }
           ]
@@ -6108,7 +6168,7 @@ export const gameData: GameData = {
     {
       id: "assyria",
       name: "Assyria",
-      description: "Military engineers who transformed water into both a tool of empire-building and a weapon of war",
+      description: "The Assyrian Empire (2500–609 BCE) were military engineers who transformed water into both a tool of empire-building and a weapon of total war. King Sennacherib constructed the Jerwan Aqueduct — the world's oldest known stone aqueduct, predating Roman aqueducts by 500 years — as part of an 80+ km canal system snaking across the plains from the Zagros Mountains to his capital at Nineveh. The Assyrians pioneered systematic water warfare: Sennacherib diverted canals to flood the ruins of Babylon (689 BCE), Assurbanipal seized wells during Arabian campaigns, and siege tactics routinely targeted water supplies. When Sargon II invaded Armenia in 714 BCE, he destroyed qanat systems but brought the technology back to Assyria, spreading underground water tunnels throughout the empire. Rock reliefs at Khinis document these hydraulic achievements — the world's earliest engineering records.",
       position: [9, 0, -5],
       color: "#4A0E4E",
       era: "ancient",
@@ -6160,6 +6220,56 @@ export const gameData: GameData = {
               significance: "Reliable water supply in semi-arid regions; protected from evaporation and enemy interference",
               yearBCE: 700,
               category: "aqueduct"
+            },
+            {
+              id: "khinis-rock-reliefs",
+              name: "Khinis Rock Relief Engineering Documentation",
+              description: "Celebratory rock carvings near the Jerwan Aqueduct depicting King Sennacherib paying homage to gods amid a procession of mythical animals along the canal",
+              rarity: "epic",
+              historicalPeriod: "700 BCE",
+              significance: "First known public documentation of hydraulic engineering achievements; served as both propaganda and engineering records — the world's earliest 'as-built drawings'",
+              yearBCE: 700,
+              category: "aqueduct"
+            },
+            {
+              id: "sennacherib-babylon-destruction",
+              name: "Sennacherib's Hydraulic Destruction of Babylon",
+              description: "In 689 BCE, Sennacherib diverted an irrigation canal so water would wash over the ruins of Babylon — using hydraulic engineering as a weapon of total destruction",
+              rarity: "legendary",
+              historicalPeriod: "689 BCE",
+              significance: "Most dramatic example of water as weapon of total war; six years later he further destroyed Babylon's water supply canals in retribution for his murdered son",
+              yearBCE: 689,
+              category: "dam"
+            },
+            {
+              id: "assyrian-nineveh-system",
+              name: "Nineveh Regional Irrigation System",
+              description: "Comprehensive water network serving the 'Assyrian Triangle' — multiple interconnected canals, aqueducts, and distribution networks serving the capital and surrounding agricultural zones",
+              rarity: "epic",
+              historicalPeriod: "705-681 BCE",
+              significance: "Fed 100,000+ residents and surrounding farmland growing olives, grapes, wheat, and barley; villages of herders and farmers depended on its steady supply",
+              yearBCE: 700,
+              category: "irrigation"
+            },
+            {
+              id: "assyrian-well-seizure",
+              name: "Assurbanipal's Well Seizure Strategy",
+              description: "King Assurbanipal seized water wells as a deliberate military strategy during campaigns against Arabia — cutting off enemy water access as systematic warfare",
+              rarity: "rare",
+              historicalPeriod: "~650 BCE",
+              significance: "Demonstrated sophisticated understanding of desert water dependency; wells were strategic military targets equivalent to modern supply line interdiction",
+              yearBCE: 650,
+              category: "dam"
+            },
+            {
+              id: "assyrian-siege-water-denial",
+              name: "Siege Water Denial Tactics",
+              description: "Systematic cutting of water supplies during sieges — documented at Tyre and Jerusalem, where defenders built Hezekiah's Tunnel as a counter-measure",
+              rarity: "rare",
+              historicalPeriod: "7th century BCE",
+              significance: "Pioneered the doctrine of water denial in siege warfare; forced besieged cities to develop counter-engineering solutions",
+              yearBCE: 701,
+              category: "dam"
             }
           ]
         }
