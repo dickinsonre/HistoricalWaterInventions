@@ -132,7 +132,6 @@ export const inventionToSwmmModel: Record<string, string> = {
   'varzea-agriculture': 'subak',
   'cahokia-reservoir': 'roman-aqueduct',
   'mississippian-drainage': 'roman-aqueduct',
-  'hohokam-canals': 'hohokam-canal',
   'columbia-fish-weirs': 'subak',
   'clam-gardens': 'subak',
   'yakutian-ice-houses': 'nabataean-cistern',
@@ -202,7 +201,31 @@ export const inventionToSwmmModel: Record<string, string> = {
   'bazalgette-intercepting-sewers': 'bazalgette-sewers',
   'budj-bim-aquaculture': 'budj-bim-aquaculture',
   'budj-bim-eel-traps': 'budj-bim-aquaculture',
-  'gunditjmara-aquaculture': 'budj-bim-aquaculture'
+  'gunditjmara-aquaculture': 'budj-bim-aquaculture',
+  'karakorum-water-supply': 'karakorum-water',
+  'silver-tree-fountain': 'karakorum-water',
+  'mongol-city-water': 'karakorum-water',
+  'chimu-la-cumbre-canal': 'chimu-la-cumbre',
+  'la-cumbre-intervalley-canal': 'chimu-la-cumbre',
+  'chan-chan-water': 'chimu-la-cumbre',
+  'tamagawa-josui': 'tamagawa-josui',
+  'tamagawa-aqueduct': 'tamagawa-josui',
+  'edo-water-supply': 'tamagawa-josui',
+  'cheonggyecheon-stream': 'cheonggyecheon',
+  'cheonggyecheon-restoration': 'cheonggyecheon',
+  'ogansumun-water-gate': 'cheonggyecheon',
+  'hawaiian-fishpond': 'hawaiian-fishpond',
+  'loko-ia': 'hawaiian-fishpond',
+  'makaha-sluice-gate': 'hawaiian-fishpond',
+  'hohokam-canals': 'hohokam-canal-network',
+  'hohokam-irrigation': 'hohokam-canal-network',
+  'snaketown-canals': 'hohokam-canal-network',
+  'nahrawan-canal': 'nahrawan-canal',
+  'sassanid-nahrawan': 'nahrawan-canal',
+  'ctesiphon-water': 'nahrawan-canal',
+  'pergamon-pipeline': 'pergamon-pipeline',
+  'pergamon-pressure-aqueduct': 'pergamon-pipeline',
+  'hellenistic-pressure-pipe': 'pergamon-pipeline'
 };
 
 export function getSwmmModelForInvention(inventionId: string): SWMM5Model | null {
@@ -1687,6 +1710,127 @@ export const SWMM5_MODELS: Record<string, SWMM5Model> = {
       roughness: 0.035
     },
     engineeringNotes: 'UNESCO World Heritage. 6,600-year-old aquaculture system. Stone weirs, channels, and basalt-lined ponds for eel farming - one of world\'s oldest aquaculture systems.'
+  },
+  'karakorum-water': {
+    name: 'Karakorum City Water Supply',
+    description: 'Orkhon River water distribution for the Mongol capital',
+    civilization: 'Mongol Empire',
+    period: '1235 CE',
+    parameters: {
+      length: 2000,
+      slope: 0.003,
+      flowRate: 2.0,
+      channelWidth: 2.5,
+      channelDepth: 1.0,
+      roughness: 0.018
+    },
+    engineeringNotes: 'First purpose-built Mongol capital. Included Silver Tree Fountain by Guillaume Boucher with pipe-fed beverage dispensing. Multi-faith quarter water distribution.'
+  },
+  'chimu-la-cumbre': {
+    name: 'Chimú La Cumbre Intervalley Canal',
+    description: '84 km canal transferring water between valleys in Peru',
+    civilization: 'Chimú Empire',
+    period: '1100-1470 CE',
+    parameters: {
+      length: 84000,
+      slope: 0.0006,
+      flowRate: 3.0,
+      channelWidth: 3.0,
+      channelDepth: 1.0,
+      roughness: 0.020
+    },
+    engineeringNotes: '84 km canal transferring water from Chicama to Moche Valley. Served Chan Chan, largest pre-Columbian city in South America with 60,000 residents.'
+  },
+  'tamagawa-josui': {
+    name: 'Tamagawa Jōsui Aqueduct',
+    description: '43 km open-channel aqueduct serving Edo (Tokyo)',
+    civilization: 'Edo Period Japan',
+    period: '1653 CE',
+    parameters: {
+      length: 43000,
+      slope: 0.0003,
+      flowRate: 1.5,
+      channelWidth: 3.0,
+      channelDepth: 1.2,
+      roughness: 0.018
+    },
+    engineeringNotes: '43 km open-channel aqueduct serving 1 million people in Edo. Wooden pipe (mokkan) distribution network and fire cistern system.'
+  },
+  'cheonggyecheon': {
+    name: 'Cheonggyecheon Stream Engineering',
+    description: 'Urban stream management and drainage through central Seoul',
+    civilization: 'Joseon Dynasty',
+    period: '1411 CE',
+    parameters: {
+      length: 5800,
+      slope: 0.003,
+      flowRate: 0.3,
+      channelWidth: 8.0,
+      channelDepth: 1.5,
+      roughness: 0.018
+    },
+    engineeringNotes: '600 years of urban stream management through central Seoul. King Taejong\'s drainage with Ogansumun 5-arch water gate. Restored in 2005.'
+  },
+  'hawaiian-fishpond': {
+    name: 'Hawaiian Fishpond (Loko i\'a)',
+    description: 'Stone-walled tidal fishponds with sluice gate technology',
+    civilization: 'Ancient Hawaii',
+    period: '1400 CE onwards',
+    parameters: {
+      length: 500,
+      slope: 0.001,
+      flowRate: 0.08,
+      channelWidth: 1.5,
+      channelDepth: 0.6,
+      roughness: 0.025
+    },
+    engineeringNotes: 'Stone-walled tidal fishponds with makaha (sluice gates). Over 400 fishponds documented across Hawaiian Islands. Sustainable aquaculture feeding 1M+ people.'
+  },
+  'hohokam-canal-network': {
+    name: 'Hohokam Canal Network',
+    description: 'Largest pre-industrial canal system in North America',
+    civilization: 'Hohokam Civilization',
+    period: '300-1450 CE',
+    parameters: {
+      length: 50000,
+      slope: 0.0004,
+      flowRate: 15.0,
+      channelWidth: 6.0,
+      channelDepth: 1.5,
+      roughness: 0.020
+    },
+    engineeringNotes: '1000+ km of canals. Largest pre-industrial canal system in North America. Some canals 10m wide and 4.5m deep.'
+  },
+  'nahrawan-canal': {
+    name: 'Sassanid Nahrawan Canal',
+    description: '250 km canal east of Tigris irrigating 6000 sq km',
+    civilization: 'Sassanid Empire',
+    period: '3rd-7th c. CE',
+    parameters: {
+      length: 250000,
+      slope: 0.00005,
+      flowRate: 30.0,
+      channelWidth: 10.0,
+      channelDepth: 2.5,
+      roughness: 0.018
+    },
+    engineeringNotes: '250 km canal east of Tigris irrigating 6000 sq km. Largest canal system of late antiquity. Fed Ctesiphon capital and water mills.'
+  },
+  'pergamon-pipeline': {
+    name: 'Pergamon Pressure Pipeline',
+    description: 'Lead pipe under extreme pressure crossing a 190m deep valley',
+    civilization: 'Hellenistic Period',
+    period: '3rd-2nd c. BCE',
+    parameters: {
+      length: 7500,
+      slope: 0.002,
+      flowRate: 0.015,
+      pipeDiameter: 0.18,
+      valleyDepth: 190,
+      headPressure: 20,
+      roughness: 0.012
+    },
+    engineeringNotes: 'Lead pipe under 20 atmospheres pressure crossing 190m deep valley. Triple-barrel pipeline from Madra Dağ springs to Acropolis.'
   }
 };
 
@@ -2942,6 +3086,16 @@ export function generateSWMM5File(inventionId: string): string | null {
     case 'ottoman-kirkcesme':
     case 'bazalgette-sewers':
     case 'budj-bim-aquaculture':
+      content += generateGenericModel(model.parameters);
+      break;
+    case 'karakorum-water':
+    case 'chimu-la-cumbre':
+    case 'tamagawa-josui':
+    case 'cheonggyecheon':
+    case 'hawaiian-fishpond':
+    case 'hohokam-canal-network':
+    case 'nahrawan-canal':
+    case 'pergamon-pipeline':
       content += generateGenericModel(model.parameters);
       break;
     default:
