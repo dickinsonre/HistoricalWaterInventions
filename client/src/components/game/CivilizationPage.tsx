@@ -33,7 +33,7 @@ export default function CivilizationPage() {
   const allArtifacts = region.locations.flatMap(loc => loc.artifacts);
 
   return (
-    <div className="min-h-screen bg-[var(--deep-ocean)] p-4">
+    <div className="fixed inset-0 bg-[var(--deep-ocean)] p-4 overflow-y-auto z-10">
       <div className="max-w-4xl mx-auto">
         <Button 
           onClick={() => navigate("/")} 

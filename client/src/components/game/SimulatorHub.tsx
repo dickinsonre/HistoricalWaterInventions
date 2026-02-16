@@ -61,7 +61,7 @@ export default function SimulatorHub() {
   };
 
   return (
-    <div className="min-h-screen bg-[var(--parchment)] overflow-y-auto">
+    <div className="fixed inset-0 bg-[var(--parchment)] overflow-y-auto z-10">
       <div className="bg-[var(--deep-ocean)] text-[var(--parchment)] p-4">
         <div className="max-w-6xl mx-auto flex items-center gap-4">
           <Button 

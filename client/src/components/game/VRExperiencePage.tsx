@@ -7,7 +7,7 @@ export default function VRExperiencePage() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[var(--deep-ocean)] via-[var(--river-blue)] to-[var(--deep-ocean)] p-4">
+    <div className="fixed inset-0 bg-gradient-to-b from-[var(--deep-ocean)] via-[var(--river-blue)] to-[var(--deep-ocean)] p-4 overflow-y-auto z-10">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-3">
