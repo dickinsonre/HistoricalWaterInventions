@@ -84,9 +84,12 @@ Preferred communication style: Simple, everyday language.
 - **TechnologyTrees**: Visual tech progression trees (7 paths: Water Lifting, Irrigation, Aqueducts, Sanitation, Dams, Water Clocks, Canals).
 - **QuizSystem**: 6 quiz modes (Civilization, Era, Invention, Category, Geography, Mixed Challenge) with timer and scoring.
 - **DiffusionMap**: Technology diffusion visualization showing geographic spread of 8 key technologies over time.
+- **SimulatorHub**: 20 interactive physics simulators (Shaduf, Archimedes Screw, Water Clock, Noria, Shishi-odoshi, Qanat, Roman Aqueduct, Sakia, Chain Pump, Windmill Pump, Dam & Reservoir, Irrigation Canal, Cistern Rainwater, Siphon Pipeline, Flood Control Levee, Desalination, Stepwell, Water Filtration, Fog Collector, Tidal Fish Trap).
+- **AIChatbot**: Claude Haiku 4.5-powered water engineering expert with streaming SSE responses and multilingual support (responds in user's language, includes native civilization names).
+- **Multilingual Names**: Native-language/script names for all 209 civilizations displayed on cards, tooltips, and detail pages (Arabic, Chinese, Greek, Sanskrit, Khmer, Latin, etc.).
 
 ### Data Structure
-- **Regions**: 139 civilizations with era, date range, position, color.
+- **Regions**: 210 civilizations with era, date range, position, color.
 - **Locations**: Historical sites with coordinates and context.
 - **Artifacts**: Water inventions with category, rarity, year, significance.
 - **Categories**: irrigation, aqueduct, water-lifting, sanitation, dam, water-clock, fountain, canal.
@@ -102,5 +105,6 @@ Preferred communication style: Simple, everyday language.
 - **React Query**
 - **Express.js**
 - **Vite**
+- **@anthropic-ai/sdk** (Claude AI chatbot via Replit AI Integrations)
 - **EPA SWMM5** (for model compatibility)
 - **InfoWorks ICM** (for model import)
