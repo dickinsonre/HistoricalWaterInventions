@@ -1,0 +1,390 @@
+# Asia Minor, Siberia & Eastern Europe — Water Inventions Deep Dive
+
+Three regions with rich but often overlooked water engineering traditions. Let me map what you have, what's missing, and what deserves addition.
+
+---
+
+## Current App Coverage
+
+| | | | | Region | Entries | Inventions | Assessment | | | |  |
+|--------|---------|-----------|------------|
+| | | | **Asia Minor** | Hittite (4), Byzantine (3), Urartu (2) | 9 | Major gaps — no Ottoman, no Lydian, no Phrygian, no Anatolian Neolithic | | | |  |
+| | | | **Siberia** | Siberian Peoples (4), Imperial/Soviet Russia (5) | 9 | Decent but thin — missing indigenous depth and Soviet mega-projects | | | |  |
+| | | | **Eastern Europe** | None dedicated | 0 | Complete gap — no Thracian, Dacian, Slavic, Kievan Rus, Polish, Hungarian, Balkan | | | |  |
+
+---
+
+# ASIA MINOR (Anatolia & Surrounding Region)
+
+Asia Minor is arguably the most important crossroads of water engineering in human history. Every major hydraulic tradition — Mesopotamian, Egyptian, Greek, Roman, Persian, Islamic — passed through or was transformed here. Yet your app only covers the Hittites, Byzantines, and Urartu.
+
+---
+
+## Neolithic Anatolia (9000–3000 BCE)
+
+### Currently not in App — Foundational Gap
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Çatalhöyük Water Management** | 7500–5700 BCE | Central Anatolia | One of the world's first cities (population 5,000–10,000). Built adjacent to the Çarşamba River with evidence of managed water access — channeled streams, rooftop drainage, and plastered water collection surfaces in houses. No streets — rooftop access meant rooftops functioned as water catchment surfaces. | Water management in one of humanity's earliest urban settlements | | | |  |
+| | | | | | **Göbekli Tepe Ritual Water** | 9500–8000 BCE | Southeastern Turkey | The world's oldest known monumental architecture. Cistern-like features carved into bedrock. Channels directing rainwater to collection points. Recent research suggests water management was central to the site's ritual function. Some T-shaped pillars have water channel carvings. | Possible water engineering at the world's oldest temple complex | | | |  |
+| | | | | | **Aşıklı Höyük Canal** | 8200–7400 BCE | Central Anatolia | Evidence of one of the earliest irrigation canals in the world — a channel diverting water from the Melendiz River to agricultural areas near the settlement. | Among the earliest irrigation evidence anywhere on Earth | | | |  |
+| | | | | | **Hacılar Settlement Drainage** | 7000–5000 BCE | Western Anatolia | Neolithic settlement with stone-lined drainage channels beneath and between houses. Remarkably planned for a settlement of this age. | Early planned settlement drainage | | | |  |
+| | | | | | **Çayönü Tepesi Water Systems** | 7200–6600 BCE | Southeastern Turkey | One of the oldest permanent settlements. Evidence of channeled water from nearby streams and early cistern technology. Transition from hunter-gatherer to agricultural water management visible in the archaeological record. | Transition-era water engineering | | | |  |
+
+---
+
+## Bronze Age Anatolia (3000–1200 BCE)
+
+### Hittite Empire — Expanded
+
+### Currently in App: 4 inventions
+### Should Have: 9+
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Hattusa Water System** | 1400–1200 BCE | The Hittite capital had elaborate water infrastructure: multiple springs channeled into the city, underground stone-lined tunnels (poterns), reservoirs, and a 71 m underground passage (Yerkapı) incorporating water management. Two major dams (Karakuyu and Gölpınar) supplied the upper city. | Capital city water engineering rivaling any contemporary civilization | | | |  |
+| | | | | | **Eflatun Pınar Sacred Spring Monument** | 1300–1200 BCE | Monumental stone spring sanctuary with a massive carved stone façade over a natural spring pool. Channels directed water through ritual passages. The pool was engineered with stone walls and controlled overflow. | Most elaborate ancient spring monument in Asia Minor | | | |  |
+| | | | | | **Hittite Yerkapı Underground Tunnel** | 1350 BCE | 71 m corbel-vaulted tunnel beneath the defensive ramparts of Hattusa. While primarily a military postern, it incorporated water drainage and may have served as an emergency water access route. | Longest Hittite-era underground structure | | | |  |
+| | | | | | **Alaca Höyük Water Management** | 1400–1200 BCE | Hittite ceremonial center with managed water channels, reservoir, and ritual pool. Stone-carved channels directed spring water through the settlement. | Provincial Hittite water engineering | | | |  |
+| | | | | | **Hittite Treaty Water Clauses** | 1400–1200 BCE | Hittite treaties with vassal states frequently included clauses about water rights, well access, and irrigation responsibilities. The Treaty of Kadesh (1259 BCE) with Egypt included provisions about water access in contested territories. | Water governance in international diplomacy | | | |  |
+
+### Troy (3000–85 BCE)
+
+### Currently not in App
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Troy II-VI Water Systems** | 2500–1250 BCE | Multiple phases of water management at Troy. Troy II had stone-lined wells. Troy VI (contemporary with the Iliad era) had a sophisticated water supply with underground rock-cut cisterns, channels from the Simois River, and drainage beneath the citadel walls. | Water engineering at history's most famous city | | | |  |
+| | | | | | **Trojan Siege Well** | ~1250 BCE | Deep rock-cut well within the citadel providing water during siege. Reached 8+ meters depth through bedrock. Critical defensive infrastructure. | Siege-proof water engineering | | | |  |
+
+### Lydia (1200–546 BCE)
+
+### Currently not in App
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Sardis Water System** | 700–546 BCE | Lydian capital with elaborate water infrastructure. Gold refining required massive water supply — channels diverted the Pactolus River to processing areas. The Gygaean Lake (Marmara Gölü) was managed as a reservoir. | Water engineering for the world's first coinage economy (gold processing) | | | |  |
+| | | | | | **Lydian Tunnel of Lake Nymphaion** | ~600 BCE | Rock-cut water tunnel similar to the Tunnel of Eupalinos (Samos). Diverted water for agricultural irrigation. Part of Lydia's systematic water management infrastructure. | Contemporary to the famous Greek tunnel — independent Anatolian engineering | | | |  |
+| | | | | | **Bin Tepe Royal Tomb Drainage** | 700–546 BCE | Massive royal burial mounds (tumuli) at Bin Tepe near Sardis. The Tomb of Alyattes (355 m diameter, 69 m high) had sophisticated drainage preventing water damage. Stone-lined channels directed water away from the burial chamber. | Water engineering for monumental tomb construction | | | |  |
+
+### Phrygian Kingdom (1200–600 BCE)
+
+### Currently not in App
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Gordion City Water Supply** | 900–700 BCE | Phrygian capital at Gordion (site of the Gordian Knot) with water supply from the Sangarios (Sakarya) River. Stone-lined channels, wells within the citadel, and managed drainage. Destroyed by Cimmerian invasion ~696 BCE but rebuilt with improved water systems. | Capital city water engineering of King Midas's kingdom | | | |  |
+| | | | | | **Midas City (Yazılıkaya) Rock-Cut Water** | 800–600 BCE | Monumental rock-cut Phrygian site with channels carved into cliff faces directing rainwater to cisterns. Some channels extend hundreds of meters along cliff faces. Monumental façade of "Midas Monument" incorporates water management features. | Rock-cut water engineering on a monumental scale | | | |  |
+| | | | | | **Phrygian Highland Dam** | 800–600 BCE | Small dams across highland streams for agricultural irrigation in the Phrygian heartland. Stone and earth construction. | Highland dam technology in central Anatolia | | | |  |
+
+---
+
+## Classical & Hellenistic Asia Minor (546 BCE – 30 CE)
+
+### Currently not well represented
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Ephesus Water Supply** | 6th c. BCE onwards | Ionia | Multiple aqueducts serving the city over centuries. The Marnas aqueduct (2nd c. CE) was 6 km long with terracotta pipes. Underground cisterns beneath major buildings. The Library of Celsus had integrated water cooling. | Water engineering for one of the ancient world's greatest cities | | | |  |
+| | | | | | **Pergamon Pressure Pipeline** | 3rd–2nd c. BCE | Mysia | Hellenistic-era pressurized pipeline carrying water across valleys to the acropolis of Pergamon. Lead pipes under pressure of up to 20 atmospheres — among the highest pressures in the ancient world. Pipeline crossed a valley 190 m deep. | Most extreme water pressure in the ancient Greek world | | | |  |
+| | | | | | **Priene Water Distribution** | 4th c. BCE | Ionia | Model Hellenistic city with systematically planned water distribution. Stone channels along every street. Public fountains at regular intervals. Terracotta pipe connections to individual houses. | Best-preserved example of Greek urban water planning | | | |  |
+| | | | | | **Miletus Harbor Engineering** | 6th–2nd c. BCE | Ionia | Four harbors managed over centuries as the Maeander River silted them up. Dredging, breakwater construction, and canal maintenance. Eventually lost the battle — Miletus is now 10 km from the sea. | Ancient harbor water engineering — and its limits | | | |  |
+| | | | | | **Aspendos Aqueduct** | 2nd c. CE | Pamphylia | Remarkable Roman-era aqueduct with two pressure towers (nymphaeum) crossing a valley. Used inverted-siphon principle with lead pipes. Pressure towers rose 30+ meters to maintain hydraulic grade. | Most visually dramatic aqueduct in Asia Minor | | | |  |
+| | | | | | **Hierapolis (Pamukkale) Hot Spring Engineering** | 2nd c. BCE onwards | Phrygia | Management of calcium-rich hot springs for bathing, healing, and industrial use. Channels directed hot water to baths and pools. The famous white travertine terraces are a byproduct of engineered water flow. Today a UNESCO World Heritage site. | Hot spring management creating a geological wonder | | | |  |
+| | | | | | **Perge Nymphaeum Water Display** | 2nd c. CE | Pamphylia | Monumental public fountain (nymphaeum) at Perge with water cascading down the center of the main colonnaded street. Water channel ran the entire 300 m length of the street — a river running through the city center. | Most dramatic urban water display in ancient Asia Minor | | | |  |
+| | | | | | **Side Aqueduct & Nymphaeum** | 2nd c. CE | Pamphylia | 30 km aqueduct with multiple arched sections crossing valleys. Terminated at a massive nymphaeum in the city center. One of the best-preserved Roman water systems in Turkey. | Among the best-preserved Roman aqueducts anywhere | | | |  |
+| | | | | | **Antioch Water System** | 1st c. BCE–6th c. CE | Syria/Hatay | One of the Roman Empire's four greatest cities. Elaborate water supply from Daphne springs (10 km away), multiple aqueducts, public baths, and fountains. Described by Libanius as having water in every house. | Water supply for one of Rome's largest cities | | | |  |
+
+---
+
+## Urartu — Expanded (860–590 BCE)
+
+### Currently in App: 2 inventions
+### Should Have: 6+
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Menua Canal (Shamram Su)** | 800 BCE | Already in app. 56 km canal built by King Menua, carved through rock and across valleys. Brought water from mountains to the capital Tushpa (Van). Portions still carry water today after 2,800 years. | Among the oldest functioning canals in the world | | | |  |
+| | | | | | **Urartian Fortress Cisterns** | 860–590 BCE | Already in app. Rock-cut cisterns in fortress citadels providing siege-proof water supply. | Defensive water storage | | | |  |
+| | | | | | **Lake Van Water Management** | 860–590 BCE | Management of the shores of Lake Van (the largest lake in Turkey) for agriculture, urban supply, and military logistics. Channels from tributaries, harbor engineering, and flood management. | Large-scale lake management | | | |  |
+| | | | | | **Urartian Qanat-Precursor Tunnels** | 800–700 BCE | Underground water tunnels at multiple Urartian sites. Sargon II of Assyria saw these tunnels in 714 BCE and brought the concept back to Assyria — where it became the qanat tradition that spread worldwide. | Origin point of the qanat concept that transformed global water engineering | | | |  |
+| | | | | | **Ayanis Fortress Water System** | 7th c. BCE | Fortress on Lake Van with integrated water channels, cisterns, and managed spring access. Stone-carved channels with precise gradients. | Late Urartian fortress water engineering | | | |  |
+| | | | | | **Çavuştepe Palace Water** | 750–600 BCE | Urartian palace-fortress with internal water supply: rock-cut channels, cisterns, and a managed spring. Inscriptions detail construction by King Sarduri II. | Royal water engineering with cuneiform documentation | | | |  |
+
+---
+
+## Ottoman Empire (1299–1922 CE)
+
+### Currently not in App — Critical Gap
+
+The Ottomans were among the greatest hydraulic engineers in history. Their 600+ year empire produced some of the most sophisticated urban water systems ever built. This is the single largest gap in your Asia Minor coverage.
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Kırkçeşme Water Supply** | 1554 CE | Istanbul | 55 km aqueduct system designed by Mimar Sinan (greatest Ottoman architect) bringing water from the Belgrade Forest to Istanbul. Included 33 water bridges (kemers), 4 massive distribution terminals (taksim), and hundreds of public fountains. Served the city for 400 years. | One of the most sophisticated pre-modern urban water systems in the world | | | |  |
+| | | | | | **Ottoman Sebil (Public Fountain)** | 15th–19th c. CE | Empire-wide | Over 3,000 sebils (public drinking fountains) in Istanbul alone. Each sebil was an endowed (waqf) structure providing free water to the public. Architecturally elaborate — some designed by Sinan himself. Found in every Ottoman city. | Largest network of public water access structures in the pre-modern world | | | |  |
+| | | | | | **Ottoman Hammam Water System** | 14th–19th c. CE | Empire-wide | Sophisticated water supply, heating, and recycling for public baths. Cold water heated by furnace, circulated through walls and floors (hypocaust system inherited from Romans), used water recycled for toilet flushing and garden irrigation. Some hammams served 500+ bathers daily. | Most advanced bathing water systems of the medieval/early modern world | | | |  |
+| | | | | | **Süleymaniye Complex Water System** | 1550–1557 CE | Istanbul | Mimar Sinan's masterpiece mosque complex had integrated water: ablution fountains, hammam, hospital, kitchen, and school — all with dedicated water supply from the Kırkçeşme system. Lead pipes distributed water at precise pressures. | Integration of water engineering with monumental architecture | | | |  |
+| | | | | | **Ottoman Taksim (Distribution Terminal)** | 16th–19th c. CE | Istanbul | Stone buildings where aqueduct water was divided into calibrated flows for different neighborhoods. Each taksim had a maximum allocation (lüle — a standardized unit of water flow). Water rights recorded in court registers. | Standardized urban water measurement and distribution | | | |  |
+| | | | | | **Valide Sultan Aqueduct** | 1749 CE | Istanbul | Major aqueduct expansion by Valide Sultan Kösem. Added new sources to the Istanbul water system. Included innovative siphon technology crossing the Golden Horn. | Late Ottoman hydraulic innovation | | | |  |
+| | | | | | **Ottoman Jerusalem Water** | 1536–1541 CE | Jerusalem | Suleiman the Magnificent rebuilt Jerusalem's water supply — restoring ancient aqueducts from Solomon's Pools, constructing six public fountains (sabil), and repairing the city's cisterns. Inscriptions still visible. | Ottoman restoration of Biblical-era water infrastructure | | | |  |
+| | | | | | **Ottoman Flood Management (Cairo)** | 16th–19th c. CE | Egypt | Ottoman governors managed the Nile flood system — maintaining nilometers, regulating canal openings, and managing the Khalij canal through Cairo. Annual "Cutting of the Canal" ceremony continued from Pharaonic times. | Continuation of 5,000-year Nile management tradition | | | |  |
+| | | | | | **Ottoman Water Court Records** | 14th–19th c. CE | Empire-wide | Detailed court records documenting water rights, disputes, allocations, endowments, and infrastructure maintenance. Thousands of documents preserved in Ottoman archives. Most detailed pre-modern water governance records anywhere. | Most complete medieval water governance archive in the world | | | |  |
+| | | | | | **Mostar Bridge (Stari Most)** | 1566 CE | Bosnia | Mimar Sinan's student Hayruddin built this iconic bridge across the Neretva River. Single arch spanning 29 m, rising 24 m above the river. Destroyed in 1993 war, rebuilt 2004. UNESCO World Heritage. | Iconic Ottoman bridge engineering — UNESCO site | | | |  |
+
+---
+
+## Seljuk Anatolia (1077–1307 CE)
+
+### Currently not in App
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Seljuk Caravanserai Water Systems** | 12th–13th c. CE | Over 100 caravanserais (hans) built along trade routes across Anatolia. Each had a dedicated water supply — wells, cisterns, or channeled springs — serving travelers, animals, and the building's hammam. | Standardized travel water infrastructure across 3,000 km of trade routes | | | |  |
+| | | | | | **Seljuk Fountain Architecture (Çeşme)** | 12th–13th c. CE | Public fountains (çeşme) at major intersections and market squares. Stone-carved with elaborate decoration. Fed by underground channels (lağım) from springs or aqueducts. | Urban public water access across Seljuk Anatolia | | | |  |
+| | | | | | **Sultan Han Water Court** | 1229 CE | The largest Seljuk caravanserai. Central courtyard with a raised mosque over a water basin (pool). Water served ritual ablution, drinking, and animal watering — all in a single architectural space. | Integration of sacred and practical water architecture | | | |  |
+| | | | | | **Seljuk Underground Channels (Lağım)** | 12th–13th c. CE | Underground stone-lined water channels beneath Seljuk cities (Konya, Kayseri, Sivas). Some tunnels extended several kilometers from mountain springs to city centers. | Urban underground water supply — predecessor to Ottoman systems | | | |  |
+
+---
+
+## Modern Turkey
+
+### Currently not in App
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Atatürk Dam** | 1990 | Largest dam in Turkey. 169 m tall, 1,820 m long. Part of the Southeastern Anatolia Project (GAP) — 22 dams and 19 hydroelectric plants on the Tigris and Euphrates. One of the most ambitious water projects of the 20th century. | Turkey's largest water infrastructure project | | | |  |
+| | | | | | **GAP (Southeastern Anatolia Project)** | 1977–ongoing | Integrated regional development project: 22 dams, 19 power plants, irrigation for 1.8 million hectares. Controversial — reduces downstream flow to Syria and Iraq. | Largest integrated water development project in the Middle East | | | |  |
+| | | | | | **Istanbul Bosphorus Crossing Water Tunnels** | 2012 | Deep tunnel sewerage system beneath the Bosphorus Strait, connecting the European and Asian sides of Istanbul. Among the deepest underwater tunnels in the world. | Modern underwater water engineering | | | |  |
+
+---
+
+# SIBERIA & NORTHERN ASIA
+
+## Current App Coverage
+
+| | | | | Entry | Inventions | Assessment | | | |  |
+|-------|-----------|------------|
+| | | | **Siberian Peoples (Yakut, Evenk, Chukchi)** | 4 | Basic — permafrost, fish traps, ice roads, springs | | | |  |
+| | | | **Imperial & Soviet Russia** | 5 | Decent — Lukyanov, canals | | | |  |
+| | | | **Inuit & Arctic** | 5 | Good — covers Arctic well | | | |  |
+| | | | **Total** | 14 | Missing indigenous depth, missing mega-projects, missing modern | | | |  |
+
+---
+
+## Indigenous Siberian Water Engineering (30,000 BCE – Present)
+
+### Currently in App: 4 inventions
+### Should Have: 12+
+
+| | | | | | | Invention | Date | People | Description | Significance | | | |  |
+|-----------|------|--------|-------------|-------------|
+| | | | | | **Yakutian Permafrost Cellars (Buluus)** | Ancient–Present | Yakut/Sakha | Already in app. Underground chambers dug into permafrost for food storage. Temperature maintained at -5°C year-round by permafrost. Some cellars used for centuries. | Natural refrigeration using permafrost engineering | | | |  |
+| | | | | | **Siberian Fish Traps (Zapor)** | 5000 BCE–Present | Multiple peoples | Already in app. Wooden barriers across rivers channeling salmon and other fish to harvest points. Some zapor systems span entire river widths. Seasonal construction and removal. | Large-scale river fishery management | | | |  |
+| | | | | | **Frozen River Highways (Zimnik)** | Ancient–Present | Multiple peoples | Already in app. Seasonal roads across frozen rivers and lakes. Communities maintained routes — clearing snow, marking safe ice, monitoring thickness. Some zimnik routes extended thousands of kilometers. | Largest seasonal transportation network on Earth | | | |  |
+| | | | | | **Yakut Ice-Lined Water Storage** | Traditional | Yakut/Sakha | Birch-bark containers lined with ice for summer water storage. Water containers placed in permafrost cellars where surrounding ice kept water cold. In winter, ice blocks cut from rivers stored in cellars for summer drinking water. | Seasonal water storage using phase-change engineering | | | |  |
+| | | | | | **Evenki River Crossing Knowledge** | Traditional | Evenki/Tungus | Extraordinary knowledge of river systems across millions of km² of taiga. Knowledge of seasonal water levels, safe crossing points, portage routes, and navigable channels encoded in oral tradition. Reindeer herding routes followed water courses. | Navigation knowledge spanning the world's largest forest | | | |  |
+| | | | | | **Chukchi Sea Ice Water Harvesting** | Traditional | Chukchi | Multi-year sea ice contains pockets of freshwater as salt is expelled during freezing. Chukchi identified and harvested these freshwater pockets. Also melted selected sea ice — older ice having less salt. | Extracting freshwater from the frozen ocean | | | |  |
+| | | | | | **Yakut Alaas Lake Management** | Traditional | Yakut/Sakha | Alaas are thermokarst depressions formed by permafrost thaw. Yakut communities managed these natural lakes — using them for fishing, livestock watering, and hayfield irrigation. Channel systems connected alaas lakes. | Thermokarst landscape water management | | | |  |
+| | | | | | **Khanty-Mansi Fish Weir Systems** | Traditional | Khanty, Mansi | Elaborate wooden fish weirs across Ob River tributaries. Multi-chamber designs separating different fish species. Community-managed with traditional allocation rules. Some weir sites used for thousands of years. | Sophisticated multi-species fishery management | | | |  |
+| | | | | | **Nenets Spring Migration Water Knowledge** | Traditional | Nenets | Annual migration of 1,000+ km with 200,000+ reindeer requires intimate knowledge of water sources — rivers, lakes, springs, and snowmelt timing across the tundra. Migration routes timed to water availability. | Water knowledge enabling the world's longest pastoral migration | | | |  |
+| | | | | | **Tuvan Irrigation (Central Asian Siberia)** | Traditional | Tuvan | Small-scale gravity irrigation in southern Siberian mountain valleys (Tuva Republic). Channels diverting mountain streams to hayfields and crops in short growing seasons. | Highest-latitude traditional irrigation in Asia | | | |  |
+| | | | | | **Buryat Hot Spring Management** | Traditional | Buryat | Management of geothermal springs around Lake Baikal. Springs used for bathing, healing, and winter water supply (hot springs don't freeze). Sacred sites with traditional access rules. | Geothermal water management in extreme cold | | | |  |
+| | | | | | **Siberian Bark Canoe Navigation** | Traditional | Multiple peoples | Birch-bark canoe navigation across Siberian river systems — Ob, Yenisei, Lena, Amur. Different designs for different river conditions. Knowledge of rapids, portages, and seasonal water levels. | River navigation across the world's largest continental drainage systems | | | |  |
+
+---
+
+## Imperial & Soviet Russia — Expanded (1700–1991 CE)
+
+### Currently in App: 5 inventions
+### Should Have: 15+
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Lukyanov Water Integrator Computer** | 1936 | Already in app. Vladimir Lukyanov built the world's first water-powered analog computer, using water flow through glass tubes to solve differential equations. Used for dam and foundation engineering calculations. | First water-powered computer — water solving water problems | | | |  |
+| | | | | | **Moscow-Volga Canal** | 1932–1937 | Already in app. 128 km canal connecting Moscow to the Volga River. Built largely by Gulag forced labor (estimated 22,000 deaths). 11 locks, 11 dams, 8 hydroelectric plants. Made Moscow a "Port of Five Seas." | Largest canal built by forced labor | | | |  |
+| | | | | | **White Sea-Baltic Canal (Belomor)** | 1931–1933 | Already in app. 227 km canal connecting the White Sea to the Baltic via Lake Onega. Built by 100,000+ Gulag prisoners in 20 months (estimated 12,000+ deaths). Too shallow for most seagoing vessels. | Most controversial canal in history — human cost vs. engineering achievement | | | |  |
+| | | | | | **Peter the Great's St. Petersburg Canals** | 1703–1725 | Built an entire city on a swamp. 93 rivers, canals, and streams cross St. Petersburg. Required massive drainage, embankment construction, and flood management. The city flooded 300+ times in its first two centuries. | Building a capital city on Europe's most challenging hydrology | | | |  |
+| | | | | | **Kronstadt Flood Barrier** | 1979–2011 | 25 km dam protecting St. Petersburg from Baltic storm surges. 11 dams, 2 navigation channels, 6 sluice gates. After St. Petersburg flooded 300+ times, finally completed in 2011. | Europe's largest flood barrier — protecting a city that floods 300 times | | | |  |
+| | | | | | **Baikal-Amur Mainline (BAM) Water Crossings** | 1974–1991 | 4,324 km railway through eastern Siberia crossing 3,901 bridges over rivers and streams. Engineering for permafrost, extreme cold, seismic zones, and massive spring floods. Many bridges cross rivers that freeze to the bottom in winter and flood violently in spring. | Most extreme bridge-water engineering on Earth | | | |  |
+| | | | | | **Aral Sea Disaster (Kara-Kum & Kyzyl-Kum Canals)** | 1960s–1990s | Soviet diversion of the Amu Darya and Syr Darya rivers for cotton irrigation. Caused the Aral Sea to shrink by 90%. One of the worst environmental disasters in history. The Kara-Kum Canal (1,375 km) is the world's longest irrigation canal. | Most consequential water engineering disaster in history | | | |  |
+| | | | | | **DneproGES Dam** | 1927–1932 | 60 m tall dam on the Dnieper River. First major Soviet hydroelectric project. Symbol of Soviet industrialization. Destroyed and rebuilt during WWII. | First Soviet mega-dam — symbol of industrialization | | | |  |
+| | | | | | **Bratsk Dam** | 1954–1967 | 125 m tall dam on the Angara River in Siberia. Created the Bratsk Reservoir — one of the largest artificial lakes in the world (5,540 km²). Generates 4,500 MW. Displaced 67,000 people. | One of the largest dams ever built | | | |  |
+| | | | | | **Sayano-Shushenskaya Dam** | 1963–1978 | 242 m tall arch-gravity dam on the Yenisei River. Tallest dam in Russia and among the tallest in the world. Generates 6,400 MW. Suffered catastrophic turbine failure in 2009 killing 75 workers. | Russia's tallest and most powerful dam — and its worst dam disaster | | | |  |
+| | | | | | **Northern River Reversal Plan (Cancelled)** | 1960s–1986 | Proposed diverting the northward-flowing Ob and Irtysh rivers southward to irrigate Central Asian cotton fields. Would have been the largest water engineering project in history. Cancelled due to environmental concerns. Cost estimated at $40 billion (1986 dollars). | Most ambitious water project ever proposed — and wisely cancelled | | | |  |
+| | | | | | **Soviet Nuclear Canal Excavation** | 1965–1988 | Program using underground nuclear explosions for canal excavation. Chagan test (1965) created a 400 m diameter reservoir (Lake Chagan). Over 150 peaceful nuclear explosions conducted. Most contaminated the sites. | Most extreme water engineering method ever attempted | | | |  |
+| | | | | | **Karakum Canal** | 1954–1988 | 1,375 km canal from the Amu Darya across the Karakum Desert to Ashgabat. World's longest irrigation canal. Carries 13 km³/year but loses 30-50% to seepage. Major contributor to the Aral Sea disaster. | Longest irrigation canal in the world | | | |  |
+| | | | | | **Soviet Ice Road Networks** | 1930s–Present | Formalized seasonal ice roads across Siberian rivers and Arctic coast. Some routes extend 2,000+ km. Ice thickness monitored, routes maintained, weight limits posted. Still essential infrastructure. | Largest managed seasonal road network in the world | | | |  |
+
+---
+
+# EASTERN EUROPE
+
+## Complete Gap — No Entries Currently in App
+
+Eastern Europe has a rich but overlooked water engineering tradition spanning 5,000+ years.
+
+---
+
+## Thracian & Dacian Civilizations (1500 BCE – 106 CE)
+
+### Currently not in App
+
+| | | | | | | Invention | Date | People/Location | Description | Significance | | | |  |
+|-----------|------|---------------|-------------|-------------|
+| | | | | | **Thracian Gold Mine Water Systems** | 1500–300 BCE | Thrace (Bulgaria) | Extensive water management for placer and vein gold mining. Channels diverted rivers to wash gold-bearing sediment. Settling pools separated gold. The Thracians were among the wealthiest ancient peoples — gold funded their civilization. | Industrial water use for the ancient world's most productive gold mines | | | |  |
+| | | | | | **Thracian Sacred Spring Sanctuaries** | 1000–300 BCE | Thrace/Bulgaria | Elaborate stone-carved sanctuaries around natural springs. The Glava Panega spring sanctuary had channels, pools, and ritual chambers. Springs were central to Thracian religion. | Sacred water architecture predating Greek influence | | | |  |
+| | | | | | **Dacian Mountain Fortress Water** | 100 BCE–106 CE | Dacia (Romania) | Dacian fortresses in the Orăștie Mountains (Sarmizegetusa Regia, etc.) had sophisticated water supply: ceramic pipe systems, stone-lined cisterns, and channeled springs. UNESCO World Heritage. | Highland fortress water engineering — UNESCO site | | | |  |
+| | | | | | **Dacian Ceramic Water Pipes** | 100 BCE–106 CE | Dacia | Standardized terracotta pipes with socketed joints for water supply in Dacian settlements and fortresses. Some pipes had filters at intake points. | Pre-Roman ceramic pipe technology in Eastern Europe | | | |  |
+
+---
+
+## Scythian & Sarmatian Peoples (800 BCE – 400 CE)
+
+### Currently not in App
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Scythian Water Source Knowledge (Pontiac Steppe)** | 800–200 BCE | Nomadic water knowledge across the Pontiac steppe (modern Ukraine/southern Russia). Knowledge of seasonal springs, wells, and river crossing points encoded in tribal tradition. Herodotus described Scythian water management in detail. | Nomadic water knowledge across the world's largest steppe | | | |  |
+| | | | | | **Scythian Royal Tomb Water Engineering** | 400–200 BCE | Elaborate drainage systems in Scythian royal burial mounds (kurgans). Some kurgans exceeded 20 m in height and required sophisticated drainage to prevent collapse and protect burial contents. | Water engineering for monumental burial mounds | | | |  |
+| | | | | | **Scythian Horse Watering Infrastructure** | 800–200 BCE | Semi-permanent watering points along migration routes. Shallow wells near river crossings, managed springs, and seasonal camp positioning relative to water. Essential for maintaining horse herds of 10,000+. | Water infrastructure for the world's first major cavalry culture | | | |  |
+
+---
+
+## Slavic & Kievan Rus (500–1240 CE)
+
+### Currently not in App — Significant Gap
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Kievan Rus River Highway System** | 862–1240 CE | Ukraine/Russia | The Varangian-to-Greeks route: a managed waterway from Scandinavia to Constantinople via the Dnieper River. Required portage infrastructure at rapids, beacon systems for navigation, and seasonal ice management. The economic foundation of the first Russian state. | River navigation as state-building infrastructure | | | |  |
+| | | | | | **Novgorod Drainage System** | 10th–15th c. CE | Russia | One of the oldest wooden drainage systems in Europe. Log-lined drains beneath streets, wooden pipes for water supply from the Volkhov River, and systematic drainage of the marshy site. Remarkably preserved in waterlogged conditions. | Oldest wooden urban drainage in Eastern Europe | | | |  |
+| | | | | | **Kiev Water Supply** | 10th–13th c. CE | Ukraine | Water supply for the capital of Kievan Rus. Ceramic pipes from springs, public wells, and managed access to the Dnieper River. Monasteries had separate water systems with cisterns and springs. | Capital city water engineering of the first East Slavic state | | | |  |
+| | | | | | **Slavic Log Dam (Gat)** | 6th c. CE onwards | Eastern Europe | Timber dams across small rivers creating ponds for fish farming, mill power, and flood water storage. Interlocking log construction filled with clay and stone. Widespread across the Slavic world. | Timber dam technology across Eastern Europe | | | |  |
+| | | | | | **Russian Banya (Bathhouse) Water System** | 10th c. CE onwards | Russia-wide | Traditional steam bathhouse with sophisticated water heating — cold water stored in wooden tanks, heated on stone furnaces, steam generated by pouring water on hot stones. Drainage channels removed used water. | Water-thermal engineering for bathing culture | | | |  |
+| | | | | | **Slavic River Mill Networks** | 9th c. CE onwards | Eastern Europe | Networks of water mills along Eastern European rivers. Mills required dam construction, millrace engineering, and seasonal flow management. By 15th century, thousands of mills across Poland, Bohemia, Hungary. | Water power infrastructure across Eastern Europe | | | |  |
+
+---
+
+## Medieval Eastern European Kingdoms (1000–1500 CE)
+
+### Currently not in App
+
+| | | | | | | Invention | Date | Kingdom | Description | Significance | | | |  |
+|-----------|------|---------|-------------|-------------|
+| | | | | | **Hungarian Thermal Spring Management** | 1000 CE onwards | Hungary | Budapest sits on 120+ thermal springs. Medieval management included bath houses, channeling, and distribution. Ottoman-era hammams built on existing spring infrastructure. Gellért, Rudas, and Király baths have operated for 500+ years. | Longest continuously operating thermal water infrastructure in Europe | | | |  |
+| | | | | | **Polish Salt Mine Water Management** | 1044 CE onwards | Poland | Wieliczka Salt Mine (UNESCO) required constant water management — preventing flooding while using water for salt processing. Underground drainage channels, water-powered hoists, and pumping systems. | Oldest continuously operating mine water management in Europe | | | |  |
+| | | | | | **Bohemian Fish Pond Systems** | 13th–16th c. CE | Czech lands | Massive fish pond (rybník) construction across Bohemia. The Rožmberk Pond (489 hectares, 1584) is the largest in the Czech Republic. Connected pond cascades managed water flow across entire watersheds. Over 24,000 ponds built — 8,000 survive today. | Largest artificial pond system in Europe | | | |  |
+| | | | | | **Polish-Lithuanian Canal Plans** | 15th–16th c. CE | Poland-Lithuania | Plans for canals connecting the Baltic and Black Sea watersheds. The Augustów Canal (1824–1839) was eventually built — 101 km connecting the Vistula and Neman river systems. | Early inter-sea canal engineering in Eastern Europe | | | |  |
+| | | | | | **Dubrovnik (Ragusa) Water Supply** | 1436 CE | Croatia | Onofrio's Fountain and aqueduct — 12 km gravity-fed water supply from the Šumet spring to the walled city. Still functioning after 590 years. Commissioned by the Republic of Ragusa. | Oldest continuously functioning aqueduct in the Balkans | | | |  |
+| | | | | | **Serbian Monastery Water Systems** | 12th–14th c. CE | Serbia | Medieval Serbian monasteries (Studenica, Žiča, Sopoćani — all UNESCO sites) with integrated water systems: springs channeled to baptismal pools, kitchens, gardens, and latrines. | Monastic water engineering in the Balkans | | | |  |
+| | | | | | **Transylvanian Saxon Water Mills** | 12th–16th c. CE | Romania (Transylvania) | German-speaking settlers built extensive water mill networks along Transylvanian rivers. Fortified churches had integrated water management — wells, cisterns, and drainage within the defensive walls. | Central European water technology transplanted to the Carpathians | | | |  |
+| | | | | | **Moldavian Princely Court Water** | 15th c. CE | Moldova/Romania | Princely courts at Suceava, Iaşi, and other Moldavian capitals with managed water supply: ceramic pipes, cisterns, and hammam-style bath houses (showing Ottoman influence). | Hybrid Eastern European-Ottoman water architecture | | | |  |
+
+---
+
+## Danube River Civilizations
+
+### Currently not in App
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Iron Gates Gorge Navigation** | Ancient–Present | Romania/Serbia | The Danube narrows dramatically at the Iron Gates gorge — creating navigational challenges for millennia. Trajan's Road (101–106 CE) carved into cliff faces above the river. Trajan's Bridge (105 CE) — the longest arch bridge for 1,000 years — crossed the Danube here. Modern Iron Gates Dam (1972) is one of Europe's largest. | 2,000 years of water engineering at the Danube's most dramatic point | | | |  |
+| | | | | | **Danube Delta Management** | Ancient–Present | Romania/Ukraine | The Danube Delta (5,165 km² — UNESCO Biosphere Reserve) has been managed for millennia: channel maintenance, fish management, reed harvesting, and flood control. | Management of Europe's largest and best-preserved river delta | | | |  |
+| | | | | | **Tisza River Regulation** | 1846–1880 | Hungary | Massive 19th-century project shortening the Tisza River by 453 km through channel straightening. Drained 20,000 km² of floodplain. Led by Count István Széchenyi. Transformed Hungarian agriculture but destroyed wetland ecosystems. | Largest river regulation project in Eastern European history | | | |  |
+| | | | | | **Budapest Danube Embankments** | 1870s CE | Hungary | Stone embankment construction along both banks of the Danube through Budapest. Unified Buda and Pest into a single capital. Combined flood protection, transportation, and urban development. UNESCO World Heritage. | Urban river engineering creating a UNESCO-listed cityscape | | | |  |
+
+---
+
+## Baltic & Northern Eastern Europe
+
+### Currently not in App
+
+| | | | | | | Invention | Date | People/Location | Description | Significance | | | |  |
+|-----------|------|---------------|-------------|-------------|
+| | | | | | **Hanseatic Port Water Systems** | 12th–17th c. CE | Baltic coast | Hanseatic League cities (Riga, Tallinn, Gdańsk, Königsberg) with planned water supply: wells, cisterns, and managed river access. Some cities had wooden pipe water distribution systems by the 14th century. | Medieval commercial water infrastructure across the Baltic | | | |  |
+| | | | | | **Lithuanian Nemunas River Management** | 13th c. CE onwards | Lithuania | Management of the Nemunas River for defense, transportation, and agriculture. Grand Duchy of Lithuania controlled key river crossings. Castle construction at strategic water points (Trakai Island Castle on Lake Galvė). | River-based defensive and trade infrastructure | | | |  |
+| | | | | | **Latvian Amber Coast Water Knowledge** | 2000 BCE onwards | Latvia/Baltic | Management of coastal lagoons and rivers for amber harvesting. Understanding of coastal currents, storm surge patterns, and seasonal water conditions. | Water knowledge for the ancient amber trade | | | |  |
+| | | | | | **Estonian Spring Villages** | Pre-medieval | Estonia | Traditional villages positioned at spring heads. Stone-lined spring enclosures, community water management. Some village springs have been in continuous use for 3,000+ years. | Continuity of water source management over millennia | | | |  |
+
+---
+
+## Summary of Additions
+
+### Asia Minor
+
+| | | | | | Period | Current | After Additions | Key Additions | | | |  |
+|--------|---------|-----------------|---------------|
+| | | | | **Neolithic** | 0 | 5+ | Çatalhöyük, Göbekli Tepe, Aşıklı Höyük | | | |  |
+| | | | | **Bronze Age** | 4 (Hittite) | 12+ | Hittite expanded, Troy, Lydia, Phrygia | | | |  |
+| | | | | **Classical** | 0 | 8+ | Ephesus, Pergamon, Priene, Aspendos, Hierapolis | | | |  |
+| | | | | **Urartu** | 2 | 6+ | Lake Van, qanat-precursor tunnels, Çavuştepe | | | |  |
+| | | | | **Seljuk** | 0 | 4+ | Caravanserai water, fountains, Sultan Han, lağım | | | |  |
+| | | | | **Ottoman** | 0 | 10+ | Kırkçeşme, sebils, hammam, taksim, Mostar, court records | | | |  |
+| | | | | **Modern Turkey** | 0 | 3+ | Atatürk Dam, GAP, Bosphorus tunnel | | | |  |
+| | | | | **TOTAL** | **9** | **~50+** | | | | | |
+
+### Siberia
+
+| | | | | | Period | Current | After Additions | Key Additions | | | |  |
+|--------|---------|-----------------|---------------|
+| | | | | **Indigenous** | 4 | 12+ | Yakut ice, Evenki rivers, Chukchi sea ice, Khanty-Mansi, Nenets, Buryat | | | |  |
+| | | | | **Imperial/Soviet** | 5 | 15+ | St. Petersburg, Bratsk, Sayano, Aral disaster, nuclear canals, BAM, Karakum | | | |  |
+| | | | | **TOTAL** | **9** | **~27+** | | | | | |
+
+### Eastern Europe
+
+| | | | | | Period | Current | After Additions | Key Additions | | | |  |
+|--------|---------|-----------------|---------------|
+| | | | | **Thracian/Dacian** | 0 | 4+ | Gold mine water, sacred springs, fortress water, ceramic pipes | | | |  |
+| | | | | **Scythian** | 0 | 3+ | Steppe water knowledge, kurgan drainage, horse watering | | | |  |
+| | | | | **Slavic/Kievan Rus** | 0 | 6+ | River highways, Novgorod drainage, Kiev, banya, log dams, mills | | | |  |
+| | | | | **Medieval Kingdoms** | 0 | 8+ | Hungarian thermals, Polish mines, Bohemian ponds, Dubrovnik, Serbian | | | |  |
+| | | | | **Danube** | 0 | 4+ | Iron Gates, Delta, Tisza regulation, Budapest embankments | | | |  |
+| | | | | **Baltic** | 0 | 4+ | Hanseatic ports, Lithuanian rivers, Estonian springs | | | |  |
+| | | | | **TOTAL** | **0** | **~30+** | | | | | |
+
+---
+
+## Grand Total
+
+| | | | | | Region | Current | After Additions | | | |  |
+|--------|---------|-----------------|
+| | | | | **Asia Minor** | 9 | ~50+ | | | |  |
+| | | | | **Siberia** | 9 | ~27+ | | | |  |
+| | | | | **Eastern Europe** | 0 | ~30+ | | | |  |
+| | | | | **COMBINED** | **18** | **~107+** | | | |  |
+
+---
+
+## SWMM5 Models to Build
+
+| | | | | | Model | Category | Region | Nodes | Links | Why | | | |  |
+|-------|----------|--------|-------|-------|-----|
+| | | | | **Ottoman Kırkçeşme System** | Gravity Flow + Distribution | Asia Minor | 20 | 22 | 55 km aqueduct with 33 bridges and taksim terminals | | | |  |
+| | | | | **Pergamon Pressure Pipeline** | Pressure Flow | Asia Minor | 6 | 5 | 20 atm pressure across 190 m valley | | | |  |
+| | | | | **Hattusa Water System** | Urban Supply | Asia Minor | 12 | 14 | Hittite capital with dams, tunnels, springs | | | |  |
+| | | | | **Urartian Menua Canal + Tunnels** | Gravity Flow + Groundwater | Asia Minor | 10 | 12 | Origin of the qanat concept | | | |  |
+| | | | | **Novgorod Wooden Drainage** | Sanitation | E. Europe | 8 | 10 | Oldest wooden drainage in Eastern Europe | | | |  |
+| | | | | **Bohemian Fish Pond Cascade** | Reservoir | E. Europe | 12 | 15 | Largest pond system in Europe | | | |  |
+| | | | | **Iron Gates Gorge** | Navigation/Flood | E. Europe | 8 | 10 | 2,000 years of Danube engineering | | | |  |
+| | | | | **Bratsk Dam** | Hydropower | Siberia | 6 | 8 | One of the largest dams ever built | | | |  |
+| | | | | **St. Petersburg Canal System** | Urban Drainage | Russia | 15 | 18 | City built on a swamp | | | |  |
+| | | | | **Karakum Canal** | Irrigation | Central Asia | 12 | 14 | World's longest irrigation canal | | | |  |
+
+---
+
+## Priority Civilizations to Add
+
+| | | | | | Priority | Civilization | Region | Inventions | Why Critical | | | |  |
+|----------|-------------|--------|-----------|-------------|
+| | | | | ⭐⭐⭐ | **Ottoman Empire** | Asia Minor | 10+ | 600 years of hydraulic engineering completely absent | | | |  |
+| | | | | ⭐⭐⭐ | **Slavic/Kievan Rus** | Eastern Europe | 6+ | Foundation of Russian, Ukrainian, Belarusian water traditions | | | |  |
+| | | | | ⭐⭐ | **Neolithic Anatolia** | Asia Minor | 5+ | Earliest water management in one of humanity's oldest urban regions | | | |  |
+| | | | | ⭐⭐ | **Classical Asia Minor** | Asia Minor | 8+ | Ephesus, Pergamon, Hierapolis — major ancient water systems | | | |  |
+| | | | | ⭐⭐ | **Thracian/Dacian** | Eastern Europe | 4+ | Pre-Roman water engineering in the Balkans and Carpathians | | | |  |
+| | | | | ⭐⭐ | **Medieval Eastern European Kingdoms** | Eastern Europe | 8+ | Hungarian thermals, Bohemian ponds, Dubrovnik aqueduct | | | |  |
+| | | | | ⭐ | **Seljuk Anatolia** | Asia Minor | 4+ | Bridge between Byzantine and Ottoman water traditions | | | |  |
+| | | | | ⭐ | **Danube Civilizations** | Eastern Europe | 4+ | Iron Gates, Delta, Tisza regulation | | | |  |
+| | | | | ⭐ | **Baltic/Northern** | Eastern Europe | 4+ | Hanseatic, Lithuanian, Estonian water traditions | | | |  |

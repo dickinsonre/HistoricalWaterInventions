@@ -295,6 +295,56 @@ export const gameData: GameData = {
               significance: "Earliest known systematic urban wastewater treatment",
               yearBCE: 2600,
               category: "sanitation"
+            },
+            {
+              id: "great-bath-expanded",
+              name: "Great Bath of Mohenjo-Daro",
+              description: "12m × 7m × 2.4m waterproofed pool with bitumen lining, inlet and outlet channels, and surrounding changing rooms. Earliest known public water facility.",
+              rarity: "legendary",
+              historicalPeriod: "2600 BCE",
+              significance: "Most famous Indus water invention — earliest public water facility",
+              yearBCE: 2600,
+              category: "fountain"
+            },
+            {
+              id: "mohenjo-daro-drains",
+              name: "Mohenjo-Daro Covered Drain Network",
+              description: "Brick-lined underground drains running beneath every major street. Individual houses connected via clay pipe to main drains. Manholes at regular intervals for cleaning.",
+              rarity: "epic",
+              historicalPeriod: "2600 BCE",
+              significance: "Most advanced urban drainage for 3,000 years after construction",
+              yearBCE: 2600,
+              category: "sanitation"
+            },
+            {
+              id: "harappan-bathrooms",
+              name: "Harappan Household Bathrooms",
+              description: "Nearly every excavated Harappan house had a dedicated bathroom with sloped brick floor draining to the street sewer. Some had seated latrines.",
+              rarity: "epic",
+              historicalPeriod: "2600 BCE",
+              significance: "First civilization with universal household sanitation",
+              yearBCE: 2600,
+              category: "sanitation"
+            },
+            {
+              id: "harappan-wells",
+              name: "Harappan Well Engineering",
+              description: "Over 700 wells excavated at Mohenjo-Daro alone. Cylindrical brick-lined wells with precise construction, at regular intervals — roughly one per three houses.",
+              rarity: "epic",
+              historicalPeriod: "2600 BCE",
+              significance: "Highest well density of any ancient city",
+              yearBCE: 2600,
+              category: "fountain"
+            },
+            {
+              id: "harappan-precision-slopes",
+              name: "Harappan Precision Drain Slopes",
+              description: "Drain slopes of precisely 1:40 (2.5%) maintained across entire city blocks. Required surveying instruments and standardized construction methods.",
+              rarity: "rare",
+              historicalPeriod: "2600 BCE",
+              significance: "Engineering precision not matched again for millennia",
+              yearBCE: 2600,
+              category: "sanitation"
             }
           ]
         },
@@ -314,6 +364,55 @@ export const gameData: GameData = {
               significance: "16 reservoirs storing monsoon water year-round",
               yearBCE: 2300,
               category: "dam"
+            },
+            {
+              id: "dholavira-reservoir-complex",
+              name: "Dholavira 16-Reservoir Complex",
+              description: "16 interconnected reservoirs fed by two seasonal streams. Total storage ~300,000 m³. Rock-cut channels with precise slopes directed rainwater to cascading reservoirs. UNESCO World Heritage site.",
+              rarity: "legendary",
+              historicalPeriod: "3000 BCE",
+              significance: "Largest and most sophisticated Indus water system — UNESCO site",
+              yearBCE: 3000,
+              category: "dam"
+            },
+            {
+              id: "harappan-rainwater-harvesting",
+              name: "Harappan Rainwater Harvesting",
+              description: "Rooftop and courtyard collection channels directing rainwater to underground cisterns. Calculated catchment areas and storage volumes.",
+              rarity: "rare",
+              historicalPeriod: "2600 BCE",
+              significance: "Earliest known systematic rooftop rainwater harvesting",
+              yearBCE: 2600,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "lothal",
+          name: "Lothal",
+          description: "Ancient Harappan port city with tidal dock",
+          historicalContext: "Maritime trade hub of the Indus Valley Civilization",
+          coordinates: { lat: 21.97, lng: 72.25 },
+          artifacts: [
+            {
+              id: "lothal-dock",
+              name: "Lothal Tidal Dock",
+              description: "37m × 22m engineered tidal dock — world's oldest known dock. Inlet channel, sluice gate, and spillway managed tidal water levels for maritime trade.",
+              rarity: "legendary",
+              historicalPeriod: "2400 BCE",
+              significance: "Oldest engineered tidal water management structure in the world",
+              yearBCE: 2400,
+              category: "canal"
+            },
+            {
+              id: "kalibangan-drains",
+              name: "Kalibangan Fire Altar Drains",
+              description: "Ritual fire altar platforms with dedicated drainage channels for water used in purification ceremonies at Kalibangan, Rajasthan.",
+              rarity: "rare",
+              historicalPeriod: "2600 BCE",
+              significance: "Earliest known ritual water drainage engineering",
+              yearBCE: 2600,
+              category: "sanitation"
             }
           ]
         }
@@ -1494,6 +1593,56 @@ export const gameData: GameData = {
               historicalPeriod: "Anuradhapura Period (300 BCE - 1000 CE)",
               significance: "Solved dam erosion problems that plagued other civilizations",
               yearBCE: 250,
+              category: "dam"
+            },
+            {
+              id: "parakrama-samudra",
+              name: "Parakrama Samudra (Sea of Parakrama)",
+              description: "Massive reservoir (22.6 km²) built by King Parakramabahu I in 1153 CE. Still the largest ancient irrigation reservoir in Sri Lanka.",
+              rarity: "legendary",
+              historicalPeriod: "1153 CE",
+              significance: "One of the largest pre-modern reservoirs in the world",
+              yearBCE: -1153,
+              category: "dam"
+            },
+            {
+              id: "yoda-ela",
+              name: "Yoda Ela (Giant Canal)",
+              description: "87 km canal with gradient of just 10 cm per km (0.01%). Fed the Minneriya and Kaudulla tanks.",
+              rarity: "legendary",
+              historicalPeriod: "6th c. CE",
+              significance: "Extraordinary precision over extreme length — among longest ancient canals",
+              yearBCE: -550,
+              category: "canal"
+            },
+            {
+              id: "sigiriya-water-gardens",
+              name: "Sigiriya Water Gardens",
+              description: "Elaborate hydraulic gardens at Sigiriya rock fortress. Gravity-fed fountains, symmetrical water pools, underground conduits. Fountains still operate during rainy season.",
+              rarity: "legendary",
+              historicalPeriod: "5th c. CE",
+              significance: "Ancient fountains still functioning after 1,500 years",
+              yearBCE: -477,
+              category: "fountain"
+            },
+            {
+              id: "abhaya-wewa",
+              name: "Abhaya Wewa (Ancient Tank)",
+              description: "One of the oldest reservoirs in Sri Lanka, built by King Pandukabhaya at Anuradhapura. Part of the elaborate city water supply.",
+              rarity: "epic",
+              historicalPeriod: "4th c. BCE",
+              significance: "Earliest documented Sri Lankan reservoir",
+              yearBCE: 350,
+              category: "dam"
+            },
+            {
+              id: "sandstone-sluices",
+              name: "Sandstone Sluice Technology",
+              description: "Precisely carved sandstone sluice gates with grooved channels for wooden or stone shutters. Some survived 2,000 years and are still operable.",
+              rarity: "epic",
+              historicalPeriod: "300 BCE onwards",
+              significance: "Durable precision engineering lasting millennia",
+              yearBCE: 300,
               category: "dam"
             }
           ]
@@ -7584,6 +7733,56 @@ export const gameData: GameData = {
               significance: "Varuna god of waters; rivers sacred (Ganga, Yamuna, Saraswati); monsoon as Indra's gift",
               yearBCE: 1500,
               category: "fountain"
+            },
+            {
+              id: "arthashastra-water-engineering",
+              name: "Arthashastra Water Engineering Manual",
+              description: "Kautilya's treatise with detailed chapters on dam construction, reservoir management, canal engineering, water pricing, and penalties for water theft.",
+              rarity: "legendary",
+              historicalPeriod: "~300 BCE",
+              significance: "World's first engineering manual for water infrastructure",
+              yearBCE: 300,
+              category: "dam"
+            },
+            {
+              id: "mauryan-water-pricing",
+              name: "Mauryan Water Pricing System",
+              description: "Arthashastra specifies water taxes based on irrigation method: river water (free), canal water (1/5 crop), reservoir (1/4), well (1/3), carried (variable).",
+              rarity: "epic",
+              historicalPeriod: "~300 BCE",
+              significance: "First documented water pricing system in history",
+              yearBCE: 300,
+              category: "irrigation"
+            },
+            {
+              id: "mauryan-rainfall",
+              name: "Mauryan Rainfall Measurement",
+              description: "Arthashastra describes standardized rain gauges (adhaka vessel) requiring officials to record rainfall for agricultural planning and tax assessment.",
+              rarity: "epic",
+              historicalPeriod: "~300 BCE",
+              significance: "Among earliest systematic rainfall measurement systems",
+              yearBCE: 300,
+              category: "irrigation"
+            },
+            {
+              id: "sringaverapura-waterworks",
+              name: "Sringaverapura Water Works",
+              description: "Sophisticated three-tank water filtration and storage system near the Ganges. Water entered via wide inlet, passed through settling tanks, stored in brick-lined reservoir.",
+              rarity: "epic",
+              historicalPeriod: "1st c. BCE",
+              significance: "Earliest multi-stage water treatment system in India",
+              yearBCE: 100,
+              category: "sanitation"
+            },
+            {
+              id: "vedic-water-divination",
+              name: "Vedic Water Divination (Dakargala)",
+              description: "Varahamihira's Brihat Samhita describes methods for locating groundwater based on vegetation, soil type, ant hills, and rock formations.",
+              rarity: "rare",
+              historicalPeriod: "1500-500 BCE",
+              significance: "Earliest documented groundwater exploration methodology",
+              yearBCE: 1500,
+              category: "irrigation"
             }
           ]
         }
@@ -7684,6 +7883,36 @@ export const gameData: GameData = {
               significance: "Built in arid regions of Rajasthan and Deccan; protected from evaporation",
               yearBCE: -1300,
               category: "aqueduct"
+            },
+            {
+              id: "hauz-khas",
+              name: "Hauz Khas Reservoir",
+              description: "Large urban reservoir in Delhi built by Alauddin Khalji in 1296 CE. Firoz Shah Tughlaq later restored and expanded it.",
+              rarity: "epic",
+              historicalPeriod: "1296 CE",
+              significance: "Major medieval urban water infrastructure",
+              yearBCE: -1296,
+              category: "dam"
+            },
+            {
+              id: "tughlaqabad-water",
+              name: "Tughlaqabad Fort Water System",
+              description: "Massive fort with integrated reservoir, aqueduct, and distribution network. Underground channels connected to an artificial lake.",
+              rarity: "epic",
+              historicalPeriod: "1321 CE",
+              significance: "Most sophisticated Sultanate-era military water engineering",
+              yearBCE: -1321,
+              category: "aqueduct"
+            },
+            {
+              id: "firoz-shah-canals",
+              name: "Firoz Shah's Canal Restoration",
+              description: "Restored and extended two major canals from the Yamuna and Sutlej rivers. Western Yamuna Canal fed Delhi and irrigated thousands of hectares.",
+              rarity: "epic",
+              historicalPeriod: "1355 CE",
+              significance: "Largest medieval canal restoration in India",
+              yearBCE: -1355,
+              category: "canal"
             }
           ]
         }
@@ -7732,6 +7961,46 @@ export const gameData: GameData = {
               rarity: "rare",
               historicalPeriod: "17th century CE",
               significance: "Restored ancient channels; expanded irrigation; supplied Delhi",
+              yearBCE: -1650,
+              category: "canal"
+            },
+            {
+              id: "mughal-char-bagh",
+              name: "Mughal Char Bagh Garden Water System",
+              description: "Quadrilateral garden design with central water channels dividing space into four parts. Gravity-fed fountains, cascades, pools at Taj Mahal, Shalimar, Humayun's Tomb.",
+              rarity: "legendary",
+              historicalPeriod: "16th-17th c. CE",
+              significance: "Global influence on garden water design",
+              yearBCE: -1550,
+              category: "fountain"
+            },
+            {
+              id: "mughal-fountains",
+              name: "Mughal Fountain Technology",
+              description: "Copper pipes, adjustable nozzles, and gravity-fed pressure systems creating elaborate fountain displays. Some gardens had 400+ fountains operating simultaneously.",
+              rarity: "epic",
+              historicalPeriod: "16th-17th c. CE",
+              significance: "Advanced pressure-pipe engineering",
+              yearBCE: -1550,
+              category: "fountain"
+            },
+            {
+              id: "red-fort-water",
+              name: "Red Fort Water System (Nahr-i-Bihisht)",
+              description: "Shah Jahan's Red Fort had the 'Stream of Paradise' — a canal fed by the Yamuna running through the palace complex, supplying gardens, baths, and cooling systems.",
+              rarity: "epic",
+              historicalPeriod: "1648 CE",
+              significance: "Integration of water into palatial architecture",
+              yearBCE: -1648,
+              category: "canal"
+            },
+            {
+              id: "mughal-ice-transport",
+              name: "Mughal Ice Transport System",
+              description: "Systematic transport of ice from Himalayan glaciers to Delhi and Agra via insulated runners. Ice stored in underground chambers for imperial use.",
+              rarity: "rare",
+              historicalPeriod: "17th c. CE",
+              significance: "Long-distance cold-chain water logistics",
               yearBCE: -1650,
               category: "canal"
             }
@@ -7784,6 +8053,56 @@ export const gameData: GameData = {
               significance: "Recharged groundwater; community maintained; connected in chains across watersheds",
               yearBCE: -1200,
               category: "dam"
+            },
+            {
+              id: "chand-baori",
+              name: "Chand Baori Stepwell",
+              description: "3,500 steps descending 13 stories (30m) deep. One of the deepest and largest stepwells in India. Geometric precision of staircase design is architecturally extraordinary.",
+              rarity: "legendary",
+              historicalPeriod: "8th-9th c. CE",
+              significance: "Most visually iconic water structure in India",
+              yearBCE: -800,
+              category: "fountain"
+            },
+            {
+              id: "naadi-village-pond",
+              name: "Naadi (Village Pond)",
+              description: "Community ponds at center of every Rajasthani village. Catchment areas defined by tradition. Silt removal and maintenance governed by community rules.",
+              rarity: "common",
+              historicalPeriod: "Traditional",
+              significance: "Foundation of desert community water management",
+              yearBCE: -500,
+              category: "dam"
+            },
+            {
+              id: "bavdi-stepwell",
+              name: "Bavdi (Small Stepwell)",
+              description: "Smaller stepwells in individual neighborhoods or farms. Less ornate than large vav but functionally identical. Thousands survive across Rajasthan.",
+              rarity: "common",
+              historicalPeriod: "Traditional",
+              significance: "Demonstrates widespread engineering knowledge",
+              yearBCE: -500,
+              category: "fountain"
+            },
+            {
+              id: "khadin-farming",
+              name: "Khadin (Desert Runoff Farming)",
+              description: "Earthen embankments across gentle slopes capturing desert runoff. Water soaks into soil, allowing crop growth in subsequent dry season. Developed in Jaisalmer.",
+              rarity: "epic",
+              historicalPeriod: "15th c. CE",
+              significance: "Unique desert runoff capture found nowhere else",
+              yearBCE: -1400,
+              category: "irrigation"
+            },
+            {
+              id: "paar-system",
+              name: "Paar System (Underground Dykes)",
+              description: "Underground dykes built across subsurface streams in sandy riverbeds. Forces underground water to the surface, creating accessible pools.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Invisible engineering — manipulating underground water flow",
+              yearBCE: -500,
+              category: "irrigation"
             }
           ]
         }
