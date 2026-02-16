@@ -1,0 +1,307 @@
+# Indonesia, Japan, Korea, Philippines, New Guinea & Australia — Missing Water Inventions
+
+---
+
+## Current Coverage
+
+| | | | | | Country | Entries | Inventions | Assessment | | | |  |
+|---------|---------|-----------|------------|
+| | | | | **Indonesia** | 4 entries (Nusantara 6, Subak 2, Majapahit 2, Borneo 6) | 16 | Decent structure but thin per-entry | | | |  |
+| | | | | **Japan** | 2 entries (Ancient 3, Modern 2) | 5 | Very thin — 2,000+ years covered by 5 inventions | | | |  |
+| | | | | **Korea** | 1 entry (Ancient Korea 3) | 3 | Very thin — 2,200 years in 3 inventions | | | |  |
+| | | | | **Philippines** | 1 entry (3) | 3 | Basic — only Cordillera terraces | | | |  |
+| | | | | **New Guinea** | 1 entry (7) | 7 | Good but could expand | | | |  |
+| | | | | **Australia** | 1 entry (Aboriginal 3) | 3 | Very thin for 65,000 years of water management | | | |  |
+| | | | | **TOTAL** | | **37** | **Major gaps across all six countries** | | | |  |
+
+---
+
+# INDONESIA
+
+## Ancient Indonesia (Nusantara) — Expanded
+
+### Currently in App: 6 inventions
+### Should Have: 12+
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Subak Irrigation System** | 900 CE onwards | Bali | Already in app. UNESCO World Heritage (2012). Democratic water management governed by water temples. Each subak (water society) manages a section of terraced rice paddies. Over 1,200 subaks across Bali. Water allocation determined by temple priests based on ecological and spiritual principles. | UNESCO — most complete traditional irrigation governance on Earth | | | |  |
+| | | | | | **Sawah (Wet Rice Terraces)** | 2000 BCE onwards | Java, Bali, Sumatra | Already in app. Bunded flooded fields for rice cultivation. Water maintained at precise depths for different growth stages. Requires intricate channel networks, division structures, and community management. | Foundation of Indonesian civilization — fed hundreds of millions | | | |  |
+| | | | | | **Telaga (Sacred Pools)** | 100 CE onwards | Java, Bali | Already in app. Natural springs managed as sacred sites with engineered pools, channels, and bathing areas. Tirta Empul (Bali) is the most famous — purification temple with holy spring water channeled through 30 spouts. | Sacred water engineering still actively used | | | |  |
+| | | | | | **Segaran Reservoir (Majapahit)** | 14th c. CE | East Java | Already in app. Large artificial reservoir at the Majapahit capital Trowulan. Brick-lined, approximately 375 × 175 m. Served urban water supply and possibly ritual functions. | Largest known reservoir in pre-colonial Indonesia | | | |  |
+| | | | | | **Jolotundo Sacred Bathing Pool** | 977 CE | East Java | Stone-carved bathing complex fed by a mountain spring on the slopes of Mount Penanggungan. Dated inscription makes it the oldest precisely dated water structure in Indonesia. Stone-carved channels with precise gradients, settling basins, and multiple bathing pools. | Oldest precisely dated water structure in Indonesia | | | |  |
+| | | | | | **Trowulan Canal Grid** | 14th c. CE | East Java | Already partially in app. But the scale deserves emphasis: grid of canals 20–40 m wide covering 100 km². Combined transport, sanitation, flood control, and water supply for a city estimated at 500,000 people. Archaeological surveys reveal standardized canal dimensions across the entire grid. | Largest pre-colonial urban canal system in Southeast Asia | | | |  |
+| | | | | | **Javanese Dawuhan (Sluice Gate)** | 9th c. CE onwards | Java | Stone and brick sluice gates controlling water flow in sawah systems. Some gates had multiple openings at different heights for precise water level control. Inscription evidence of royal regulation of sluice gate construction. | First standardized water control gates in Indonesia | | | |  |
+| | | | | | **Candi (Temple) Drainage Engineering** | 8th–15th c. CE | Java | Hindu-Buddhist temples (Borobudur, Prambanan, Candi Sukuh) with sophisticated drainage preventing water damage to stone structures. Borobudur has hidden drainage channels on every level directing water through the 9-tier monument. | Engineering drainage for the world's largest Buddhist monument | | | |  |
+| | | | | | **Mataram Kingdom Royal Irrigation** | 8th–10th c. CE | Central Java | Stone inscriptions (prasasti) documenting royal irrigation projects, water taxes, and canal construction. The Mantyasih inscription (907 CE) details a complex irrigation system with named canals and designated water officials. | Earliest documented state irrigation bureaucracy in Indonesia | | | |  |
+| | | | | | **Srivijaya River-Port Engineering** | 7th–13th c. CE | South Sumatra | Palembang-based maritime empire managed the Musi River for port operations: channel dredging, tidal management, freshwater-saltwater control, and canal networks connecting inland settlements to the river. Chinese accounts describe canals wide enough for large trading vessels. | Maritime water engineering for Southeast Asia's greatest trading empire | | | |  |
+| | | | | | **Minangkabau Tabek (Highland Pond)** | Traditional | West Sumatra | Community pond systems in volcanic highlands. Rainwater and spring water collected in stone-lined ponds. Distribution managed by adat (customary law). Each nagari (village) maintained multiple tabek for rice irrigation, fish farming, and water supply. | Highland community water engineering with matrilineal governance | | | |  |
+| | | | | | **Torajan Rice Terrace Irrigation** | Traditional | South Sulawesi | Highland terraces carved into steep volcanic slopes. Bamboo channels and stone-lined canals distribute water from mountain springs. Managed by traditional tongkonan (ancestral house) governance. | Unique highland irrigation in eastern Indonesia | | | |  |
+| | | | | | **Batak Lake Toba Management** | Traditional | North Sumatra | Traditional management of Lake Toba — the world's largest volcanic lake. Fishery management, lakeshore agriculture, and hot spring utilization. Lake level fluctuations managed through traditional knowledge of volcanic water cycles. | Water management of the world's largest volcanic lake | | | |  |
+| | | | | | **Sasak Irrigation (Lombok)** | Traditional | Lombok | Subak-like irrigation systems on Lombok (called subak in local usage as well but independently developed). Community water management with distinct governance from Balinese subak. | Independent development of communal irrigation | | | |  |
+| | | | | | **Dayak Headwater Forest Protection** | Traditional | Kalimantan | Deliberate maintenance of primary forest at river headwaters to ensure year-round water flow. Tana' Ulen (protected forest) concept reserves headwater forests from all exploitation. Communities downstream depend on upstream forest for water. | Indigenous watershed protection — ecological water engineering | | | |  |
+| | | | | | **Bugis Maritime Water Knowledge** | Traditional | South Sulawesi | Bugis seafarers possessed extraordinary knowledge of currents, tides, freshwater sources at sea (submarine springs), and seasonal water patterns across the Indonesian archipelago and beyond. Navigated to Australia, Madagascar, and throughout the Pacific using water knowledge. | Maritime water knowledge spanning the Indian and Pacific Oceans | | | |  |
+
+---
+
+## Borneo Indigenous — Expanded
+
+### Currently in App: 6 inventions
+### Should Have: 10+
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Peat Swamp Canal Systems (Tatah/Anjir)** | 500 CE onwards | Already in app. Canals dug through peat swamp connecting rivers and settlements. Some canals extended tens of kilometers. Managed water levels critical — too much drainage destroys peat, too little blocks navigation. | Unique wetland canal engineering | | | |  |
+| | | | | | **Bidayuh Bamboo Aqueduct (Talang)** | Traditional | Bamboo pipe systems carrying water from mountain springs to longhouse communities. Pipes made from large-diameter bamboo with joint connections. Some systems extend 2+ km with multiple branching points. Gravity-fed with precise gradient control. | Engineering rivaling Roman aqueducts in elegance — using bamboo | | | |  |
+| | | | | | **Iban Padi Paya (Swamp Rice)** | Traditional | Rice cultivation in managed swamp environments. Requires precise water depth control — too deep drowns rice, too shallow allows weeds. Channels and small dams regulate water throughout growing season. | Swamp-rice water management unique to Borneo | | | |  |
+| | | | | | **Kenyah/Kayan River Damming (Belawing)** | Traditional | Temporary river dams made from logs and stones for communal fish harvesting. Built cooperatively, used for one season, then removed to allow fish migration. Location selection based on deep knowledge of river hydrology. | Seasonal cooperative river engineering | | | |  |
+| | | | | | **Penan Nomadic Water Knowledge** | Traditional | Last nomadic people of Borneo. Encyclopedic knowledge of every water source across their territory — springs, seasonal streams, vine water, pitcher plant water, and rain-collecting tree hollows. Navigate entirely by water course knowledge. | Most detailed tropical forest water knowledge in the world | | | |  |
+
+---
+
+# JAPAN
+
+## Ancient & Medieval Japan — Expanded
+
+### Currently in App: 3 inventions (all Edo period)
+### Should Have: 20+
+
+Japan has one of the richest water engineering traditions in Asia, spanning from Yayoi-period rice paddies to Edo-era urban water supply. Three inventions is drastically insufficient.
+
+### Yayoi & Kofun Periods (300 BCE – 710 CE)
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Yayoi Wet Rice Paddy Engineering** | 300 BCE onwards | Systematic flooded rice cultivation introduced from continental Asia. Required leveling fields, building bunds (aze), digging channels, and managing water depth through the growing season. Transformed Japan from hunter-gatherer to agricultural civilization. | Agricultural technology that created Japanese civilization | | | |  |
+| | | | | | **Yayoi Moat Settlements** | 300 BCE–300 CE | Large ring-moat settlements (kango shūraku) combining defense and water management. Yoshinogari site (Saga Prefecture) had triple moats and managed water supply. | Earliest Japanese urban water engineering | | | |  |
+| | | | | | **Kofun Period Irrigation Ponds (Tameike)** | 300–710 CE | Artificial ponds for irrigation storage. Sayama-ike (Osaka, 616 CE) is one of the oldest surviving tameike — still in use after 1,400 years. Over 200,000 tameike eventually built across Japan. | Japan's most numerous water infrastructure — 200,000+ ponds | | | |  |
+| | | | | | **Mannō-ike Reservoir** | 701 CE (rebuilt 821 CE by Kūkai) | Japan's largest irrigation reservoir. Originally built in 701 CE, rebuilt by the Buddhist monk Kūkai (Kōbō Daishi) in 821 CE using advanced arch-dam technology learned in China. Still functioning. | Oldest major dam in Japan — rebuilt by a Buddhist saint | | | |  |
+
+### Nara & Heian Periods (710–1185 CE)
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Nara Capital Water System** | 710–784 CE | Water supply for Japan's first permanent capital. Channels from the Yoshino River, wells throughout the grid-plan city, and drainage beneath streets. Modeled on Chinese Tang Dynasty capital Chang'an. | First planned Japanese urban water system | | | |  |
+| | | | | | **Heian-kyō (Kyoto) Water Grid** | 794 CE onwards | Kyoto's grid-plan city incorporated a systematic water channel network. The Kamo River and Takano River managed through the city. Garden streams (yarimizu) in aristocratic estates used channeled river water. | Water grid for Japan's capital for 1,000+ years | | | |  |
+| | | | | | **Japanese Garden Water Engineering (Sakuteiki)** | 1050s CE | The Sakuteiki ("Records of Garden Making") — the world's oldest surviving garden design manual — devotes extensive sections to water features: stream design (yarimizu), pond construction, waterfall engineering, and island placement. Specific instructions for water flow, stone placement in streams, and pond depth. | World's oldest garden water engineering manual | | | |  |
+| | | | | | **Shinto Sacred Water (Temizu/Misogi)** | Ancient onwards | Every Shinto shrine has a temizuya (water pavilion) for ritual purification. Natural springs at shrine sites managed for millennia. Misogi (waterfall purification) sites engineered with access paths, pools, and channeled water. | Sacred water management integral to Japanese religion | | | |  |
+
+### Kamakura & Muromachi Periods (1185–1573 CE)
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Kamakura Ingen (Well) Engineering** | 1185–1333 CE | Deep hand-dug wells lined with stone or wood serving the samurai capital. Some wells at Kamakura reached 10+ m through rock. Public wells (ido) at major intersections. | Medieval Japanese well engineering | | | |  |
+| | | | | | **Castle Moat Engineering** | 1400s onwards | Japanese castles (shiro) incorporated elaborate moat systems: multiple concentric moats, managed water levels, stone-lined banks, and controlled entry points. Osaka Castle had triple moats totaling 8 km. | Defensive water engineering integrated with monumental architecture | | | |  |
+| | | | | | **Muromachi Garden Water Art** | 1336–1573 CE | Zen garden water engineering reached its peak. Dry gardens (karesansui) at Ryōan-ji used stone and gravel to represent water. Wet gardens at Kinkaku-ji (Golden Pavilion) and Ginkaku-ji used elaborate water circulation. | Water as art — the highest expression of garden engineering | | | |  |
+
+### Edo Period (1603–1868 CE)
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Tamagawa Jōsui (Aqueduct)** | 1653 CE | 43 km open-channel aqueduct from the Tama River to central Edo (Tokyo). Supplied water to over 1 million people — the world's largest city at the time. Branching distribution system with wooden pipes (mokkan). | Water supply for the world's largest city | | | |  |
+| | | | | | **Kanda Jōsui (Aqueduct)** | 1590 CE | Earliest major aqueduct in Edo. Fed by the Inokashira spring via underground stone-lined channels. Distributed through wooden pipe networks. Combined with the Tamagawa Jōsui to serve all of Edo. | First major Tokyo water supply | | | |  |
+| | | | | | **Edo Wooden Pipe Network** | 17th c. CE | Extensive underground wooden pipe (mokkan) distribution network beneath Edo's streets. Made from hollowed pine or cedar logs with socketed joints. Archaeological excavations have uncovered thousands of pipe sections. | Largest pre-modern wooden pipe water system in the world | | | |  |
+| | | | | | **Japanese Nightsoil Collection (Shimogoe)** | Edo period | Organized collection and sale of human waste as agricultural fertilizer. Professional collectors purchased nightsoil from households and sold to farmers. Created a closed-loop sanitation system with zero waste. Edo was the cleanest major city in the pre-modern world. | Most efficient pre-modern urban sanitation recycling system | | | |  |
+| | | | | | **Tanada (Terraced Rice Paddies)** | Already in app. Terraces carved into steep hillsides. Japan has over 54,000 hectares of tanada. Maruyama Senmaida (Mie Prefecture) has 1,340 terraces on a single hillside. | Living landscape engineering — many still cultivated | | | |  |
+| | | | | | **Suido (Water Conduit System)** | Already in app. Generic term for water supply conduit. Multiple suido systems served different cities throughout the Edo period. | Foundation of Japanese urban water supply | | | |  |
+| | | | | | **Shishi-odoshi (Deer Scarer)** | Already in app. Bamboo water timer/scarer. A tube fills with water, tips to empty, then strikes a stone. Originally practical (scarecrow), became a garden art form. | Iconic Japanese water device — practical art | | | |  |
+| | | | | | **Kakehashi (Mountain Stream Bridges)** | Edo period | Covered wooden bridges channeling mountain streams across valleys for irrigation. Some kakehashi served as both pedestrian bridges and water conduits. Tsūjun Bridge (Kumamoto, 1854) is the most famous — a stone aqueduct bridge. | Dual-purpose bridge-aqueduct engineering | | | |  |
+| | | | | | **Tsūjun Bridge Aqueduct** | 1854 CE | Stone arch bridge-aqueduct in Kumamoto. 76 m long, 20 m high. Stone pipe through the arch uses inverted-siphon principle to carry water across the valley. One of the finest stone aqueducts in Asia. | Japan's most famous stone aqueduct — siphon principle | | | |  |
+| | | | | | **Edo Fire Prevention Water Storage** | Edo period | After devastating fires, Edo established water storage requirements: fire cisterns (bōka suisō) at street intersections, fire boats on canals, and mandatory well access in every neighborhood. | Fire-water infrastructure for a city that burned repeatedly | | | |  |
+| | | | | | **Japanese Hot Spring (Onsen) Engineering** | Ancient onwards | Management of volcanic hot springs for bathing, heating, and cooking. Stone-lined pools, bamboo pipe distribution of hot water, temperature mixing from multiple springs. Beppu (Oita Prefecture) has 2,300+ hot spring sources. | Largest geothermal water management tradition in the world | | | |  |
+| | | | | | **Yukimuro (Snow Storage)** | Edo period | Underground or insulated buildings storing compressed snow for summer cooling and water supply. Particularly important in Japan Sea coast regions (Niigata, Akita) with heavy snowfall. Snow stored through summer provided both cold water and cooling. | Seasonal water-phase engineering using snow | | | |  |
+
+### Modern Japan — Expanded
+
+### Currently in App: 2 inventions
+### Should Have: 8+
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **G-Cans Underground Flood Control** | 1993–2006 | Already in app. Metropolitan Area Outer Underground Discharge Channel — the world's largest underground flood diversion facility. 6.3 km of tunnels, 65 m deep. Giant underground cathedral-like surge tank with 59 massive pillars. Protects Tokyo suburbs from typhoon flooding. | World's largest underground flood control facility — "Underground Temple" | | | |  |
+| | | | | | **Super Levees** | 1987 onwards | Already in app. Levees rebuilt with 30:1 slope ratio (30 m wide for every 1 m of height). Even if overtopped, they don't collapse catastrophically. Urban development built on top of the super levee. | Paradigm shift in flood protection design | | | |  |
+| | | | | | **Kurobe Dam** | 1963 | Japan's tallest dam (186 m). Arch dam in the Northern Alps. Construction killed 171 workers. Powers the Kurobe River No. 4 hydroelectric plant. Featured in the famous film "The Kurobe Sun." | Japan's tallest dam — built in extreme alpine conditions | | | |  |
+| | | | | | **Tokyo Bay Aqua-Line** | 1997 | 15.1 km highway across Tokyo Bay: 9.6 km undersea tunnel + 4.4 km bridge + artificial island (Umihotaru). Tunnel drainage pumps handle 10,000+ m³/day of seepage. | Major undersea tunnel water management | | | |  |
+| | | | | | **Japanese Tsunami Warning & Seawall System** | Post-2011 | After the 2011 Tōhoku tsunami, Japan rebuilt coastal defenses: 395 km of seawalls (some 15 m high), tsunami gates, and evacuation infrastructure. Most extensive coastal defense system in the world. | World's most comprehensive tsunami water defense | | | |  |
+| | | | | | **Sabo (Erosion Control) Dams** | 1868 onwards | Over 90,000 sabo dams across Japan controlling debris flows and erosion on steep volcanic slopes. Unique to Japan — no other country has this density of check dams. | Highest density of erosion-control dams anywhere on Earth | | | |  |
+
+---
+
+# KOREA
+
+## Ancient & Medieval Korea — Expanded
+
+### Currently in App: 3 inventions
+### Should Have: 15+
+
+### Three Kingdoms & Unified Silla (57 BCE – 935 CE)
+
+| | | | | | | Invention | Date | Kingdom | Description | Significance | | | |  |
+|-----------|------|---------|-------------|-------------|
+| | | | | | **Byeokgolje Reservoir** | 330 BCE | Baekje precursor | Already in app. One of the oldest reservoirs in East Asia. 3.3 km long embankment. Irrigated the Gimje Plain — Korea's most productive agricultural region. Rebuilt and expanded multiple times over 2,000 years. | Oldest documented reservoir in Korea | | | |  |
+| | | | | | **Silla Anapji (Wolji) Pond** | 674 CE | Unified Silla | Artificial pond complex at the Silla capital Gyeongju. Three artificial islands, stone-lined banks, and inlet/outlet channels. Water circulated continuously. 200 × 180 m. Recently restored and now a UNESCO World Heritage buffer zone. | Most elaborate ancient Korean water garden | | | |  |
+| | | | | | **Silla Cheomseongdae Observatory Well** | 647 CE | Unified Silla | The world's oldest surviving astronomical observatory in Gyeongju incorporated a water-level well at its base — possibly for reflection-based astronomical observation and/or water clock calibration. | Water engineering integrated with astronomy | | | |  |
+| | | | | | **Goguryeo Fortress Water Systems** | 37 BCE–668 CE | Goguryeo | Mountain fortress cities (sanseong) with internal water supply: managed springs, rock-cut cisterns, and channels. Hwando Mountain City and Gungnae City had elaborate water infrastructure for siege resistance. | Korean mountain fortress water engineering | | | |  |
+| | | | | | **Baekje Irrigation Networks** | 18 BCE–660 CE | Baekje | Systematic rice paddy irrigation in the Chungcheong and Jeolla regions. Stone weirs across rivers, distribution canals, and community water management. Byeokgolje was the largest but hundreds of smaller systems existed. | Foundation of Korean agricultural irrigation | | | |  |
+| | | | | | **Unified Silla Water Clock (Muldokki)** | 718 CE | Unified Silla | Water clock installed at the Silla court for timekeeping. Used to regulate court schedules and agricultural calendars. Based on Chinese designs but with Korean modifications. | Korean adaptation of water clock technology | | | |  |
+
+### Goryeo Dynasty (918–1392 CE)
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Goryeo Celadon Water Vessels** | 10th–13th c. CE | Goryeo celadon (considered the finest ceramics of their era) included water vessels with sophisticated designs: water droppers for calligraphy, wine ewers with built-in filters, and lotus-shaped water basins. | Water technology expressed through the world's finest ceramics | | | |  |
+| | | | | | **Goryeo Canal and Irrigation Expansion** | 918–1392 CE | State-directed expansion of irrigation across the Korean Peninsula. Government officials assigned to each province managed water infrastructure. Tax records document canal construction and maintenance. | Bureaucratic irrigation management | | | |  |
+| | | | | | **Goryeo Coastal Salt Production** | 918–1392 CE | Managed saltwater evaporation ponds along the western coast. Tidal flat management, seawater channeling, and solar evaporation engineering. Korea's west coast has extreme tidal ranges (8+ m) requiring sophisticated management. | Tidal salt water engineering in extreme tidal range | | | |  |
+
+### Joseon Dynasty (1392–1897 CE)
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Cheonggyecheon Stream Engineering** | 1411 CE (restoration) | Already in app. King Taejong ordered the engineering of Cheonggyecheon — dredging, stone embankment construction, and bridge building through central Seoul. Served drainage, water supply, and transportation for 600 years. Covered in 1958, restored as urban stream in 2005. | 600 years of urban stream engineering — now a global restoration model | | | |  |
+| | | | | | **Jang Yeong-sil's Automated Rain Gauge (Cheugugi)** | 1441 CE | World's first standardized rain gauge — invented 200 years before Benedetto Castelli's European version (1639). Bronze cylinder on a stone base, placed at every county seat. Standardized measurements reported to the central government for flood prediction and agricultural planning. | World's first standardized rain measurement network | | | |  |
+| | | | | | **Joseon Water Clock (Jagyeongnu)** | 1434 CE | Jang Yeong-sil's automated water clock with mechanical time-announcing figures. Water flow drove gears that triggered wooden balls, which struck drums and gongs at designated hours. Displayed at Gyeongbokgung Palace. | Most sophisticated water clock in Korean history | | | |  |
+| | | | | | **Hwaseong Fortress Water System** | 1796 CE | Suwon Hwaseong (UNESCO World Heritage) incorporated water management: a reservoir (Yongyeon) at the north gate, drainage channels through the walls, and managed stream flow through the fortress. Designed by Jeong Yak-yong using advanced engineering principles. | UNESCO fortress with integrated water engineering | | | |  |
+| | | | | | **Joseon Palace Water Systems** | 1395–1897 CE | Gyeongbokgung, Changdeokgung (UNESCO), and other palaces had elaborate water supply: channeled springs, artificial streams (geumcheon — forbidden stream), lotus ponds, and drainage. Changdeokgung's Biwon (Secret Garden) has sophisticated water circulation. | Royal water engineering — UNESCO sites | | | |  |
+| | | | | | **Ondol Underfloor Heating Water Integration** | Already in app but could expand. Ondol heating required water for the clay floor construction and humid air management. Some systems incorporated water channels beneath heated floors for both heating and moisture control. | Thermal-water integration unique to Korea | | | |  |
+| | | | | | **Joseon Tidal Flat (Gaetbeol) Management** | Joseon period | Management of Korea's extensive tidal flats (gaetbeol) for salt production, shellfish cultivation, and land reclamation. Korea has 2,550 km² of tidal flats — the second largest after the Wadden Sea. | Management of the world's second-largest tidal flat system | | | |  |
+| | | | | | **Joseon Fire Prevention Water System** | 1426 CE onwards | After devastating palace fires, King Sejong established fire cisterns (geumhwa) throughout Seoul. Stone-lined underground tanks filled by rainwater collection. Later expanded with pumping systems. | Urban fire-water infrastructure | | | |  |
+
+### Modern Korea
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Cheonggyecheon Restoration** | 2003–2005 | Removal of an elevated highway to restore the ancient Cheonggyecheon stream through central Seoul. 5.8 km restored urban waterway with water recycled from the Han River and subway groundwater. Global model for urban stream restoration. | World's most famous urban stream restoration | | | |  |
+| | | | | | **Saemangeum Seawall** | 1991–2010 | 33.9 km seawall — the world's longest — enclosing 401 km² of tidal flat in the Yellow Sea. Controversial — destroyed ecologically important tidal flat but created new land and freshwater reservoir. | World's longest seawall | | | |  |
+| | | | | | **South Korean Smart Water Grid** | 2010s onwards | Integrated ICT-based water management system monitoring supply, demand, leakage, and quality in real-time across urban networks. Among the most advanced digital water systems globally. | Leading smart water technology | | | |  |
+| | | | | | **Incheon Tidal Power Plant** | 2011 (proposed) | 254 MW tidal power plant proposed at Incheon — would be the world's largest. Korea already operates the Sihwa Lake Tidal Power Station (254 MW, 2011) — the world's largest tidal power plant. | World's largest tidal power station (Sihwa) | | | |  |
+
+---
+
+# PHILIPPINES
+
+## Philippines — Expanded
+
+### Currently in App: 3 inventions
+### Should Have: 12+
+
+| | | | | | | Invention | Date | People/Location | Description | Significance | | | |  |
+|-----------|------|---------------|-------------|-------------|
+| | | | | | **Banaue Rice Terraces** | 2000 years ago | Ifugao, Cordillera | Already in app. UNESCO World Heritage. Called the "Eighth Wonder of the World." 10,360 km² of terraces carved into mountains reaching 1,500 m elevation. If placed end to end, the terrace walls would circle half the globe. Fed by water from mountaintop forests through elaborate channel systems. | UNESCO — among the most extensive terrace systems on Earth | | | |  |
+| | | | | | **Ifugao Bamboo Pipe System** | Traditional | Ifugao | Already in app. Bamboo pipes carrying water from springs and streams to terraces. Sections joined with wooden connectors sealed with tree resin. Some pipelines extend several kilometers through forest. Maintained by community labor (ubbu). | Sophisticated bamboo hydraulic engineering | | | |  |
+| | | | | | **Muyong (Forest Watershed)** | Traditional | Ifugao | Already in app. Privately owned forest patches above rice terraces. Each terrace owner maintains the muyong above their terrace to ensure water supply. Cutting trees in a muyong is a serious offense. This is indigenous watershed protection — the forest IS the water infrastructure. | Forest as engineered water infrastructure — the muyong is the technology | | | |  |
+| | | | | | **Ifugao Water Law (Lidi)** | Traditional | Ifugao | Codified customary water law governing the Banaue Terraces. Water rights linked to social obligations. The first person to build a terrace has senior water rights. Disputes resolved by community elders. Violations punishable by fines of livestock. | Among the most detailed traditional water law systems in the world | | | |  |
+| | | | | | **Bontoc Stone-Walled Terraces** | Traditional | Bontoc, Cordillera | Stone-walled terraces distinct from Ifugao earth-walled terraces. Massive stone walls up to 3 m high retaining terrace fill. Different irrigation technique — some terraces rely on rainfall capture rather than spring-fed channels. | Alternative terrace engineering tradition in the same mountain range | | | |  |
+| | | | | | **Kalinga Rice Terrace Peace Pact Water** | Traditional | Kalinga, Cordillera | The bodong (peace pact) system between Kalinga communities includes specific water-sharing provisions. Inter-community water disputes resolved through bodong negotiations. Water as peace-building tool. | Water governance as peacemaking institution | | | |  |
+| | | | | | **Ilocano Dammang (Check Dam)** | Traditional | Ilocos Region | Small stone check dams across mountain streams. Slow water flow, capture sediment, and divert water to rice paddies through side channels. Community-built and maintained. | Simple but effective stream management technology | | | |  |
+| | | | | | **Visayan Fish Corral (Bunsod)** | Traditional | Visayan Islands | Elaborate bamboo fish corrals in tidal zones. V-shaped structures channel fish into enclosed areas as tides recede. Some corrals span hundreds of meters. Managed by families with hereditary rights. | Large-scale tidal fishery engineering | | | |  |
+| | | | | | **Tagalog Pilapil (Rice Paddy Dike)** | Traditional | Central Luzon | Earthen dikes creating bunded rice paddies in the Luzon lowlands. Pilapil raised above flood level with water control openings. Combined with communal water sharing (bayanihan) for maintenance. | Lowland rice water management | | | |  |
+| | | | | | **Sulu Archipelago Maritime Water** | Traditional | Tausug/Bajau | Maritime peoples of the Sulu Sea managed freshwater on islands and boats. Bajau (sea nomads) located submarine freshwater springs, carried water in bamboo containers on boats, and used rainwater collection on boats and stilt houses. | Maritime freshwater management for sea-dwelling peoples | | | |  |
+| | | | | | **Spanish Colonial Acequia (Philippines)** | 1571 onwards | Luzon, Visayas | Spanish introduced acequia-style irrigation to the Philippines, combining Moorish/Islamic technology with indigenous techniques. Some colonial-era channels still in use. | Transfer of Iberian-Islamic water technology to the Philippines | | | |  |
+| | | | | | **NIA Communal Irrigation** | 1964–Present | Nationwide | National Irrigation Administration (NIA) communal irrigation program. Builds and transfers small-scale irrigation systems to community management. Over 700,000 hectares irrigated. Philippines' primary rural water infrastructure. | Largest community-managed irrigation program in Southeast Asia | | | |  |
+
+---
+
+# PAPUA NEW GUINEA
+
+## Papua New Guinea — Expanded
+
+### Currently in App: 7 inventions
+### Should Have: 12+
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Kuk Swamp Drainage Agriculture** | 7000 BCE onwards | Already in app. UNESCO World Heritage. Systematic drainage of highland swamp for taro and banana cultivation. Archaeological evidence shows progressively more sophisticated drainage over 9,000 years: from simple ditches to gridded channel systems with controlled water depth. | Oldest documented agricultural drainage on Earth — UNESCO | | | |  |
+| | | | | | **Wahgi Valley Ditch Networks** | 4000 BCE onwards | Extension and evolution of Kuk drainage traditions. Ditches become more standardized over time. Evidence of field rotation tied to water management — fields drained for cultivation, then re-flooded for fallow recovery. | 6,000 years of continuous drainage innovation | | | |  |
+| | | | | | **Highland Sweet Potato Mound Drainage** | 1600 CE onwards | After sweet potato introduction, highlanders developed mound cultivation in wet valley floors. Mounds raised above waterlogged soil, ditches between mounds drained excess water and provided channels for nutrient-rich water circulation. Composting within mounds generated heat (protecting from frost) and nutrients. | Rapid innovation adapting new crop to existing drainage knowledge | | | |  |
+| | | | | | **Sepik River Flood Adaptation** | Traditional | The Sepik River floods annually across a vast floodplain. Communities build houses on stilts, maintain elevated gardens, and move between wet-season and dry-season settlements. Fish traps positioned during rising water, gardens planted during falling water. | Living with one of the world's great flood rivers | | | |  |
+| | | | | | **PNG Sago Swamp Management** | Traditional | Sago palm (Metroxylon sagu) grows in managed swamps. Communities control water levels: too dry kills palms, too wet makes harvesting impossible. Channels connect sago stands to rivers. Sago provides the staple carbohydrate for lowland PNG — over 100,000 tonnes annually. | Wetland management for a staple food crop | | | |  |
+| | | | | | **Trobriand Islands Yam Garden Water** | Traditional | Yam gardens managed with precise water control: raised beds in low-lying areas, drainage channels, and mulching to retain moisture in upland areas. Water management tied to the elaborate yam exchange (kula) system — better water management produces bigger yams, which bring higher social status. | Water engineering tied to social prestige | | | |  |
+| | | | | | **PNG Coastal Mangrove Fish Ponds** | Traditional | Managed fish ponds in coastal mangrove zones. Channels control tidal water flow. Fish trapped as tides recede. Communities maintain multiple ponds for different species. Combined with managed mangrove harvesting for building materials. | Integrated mangrove-fishery management | | | |  |
+| | | | | | **Highland Fog-Drip Forest Management** | Traditional | Deliberate maintenance of montane cloud forest for fog-drip water collection. Trees in cloud forest capture atmospheric moisture, which drips from leaves and branches into streams. Communities prohibit clearing of cloud forest above water sources. Deforestation visibly reduces stream flow. | Ecological water harvesting through deliberate forest conservation | | | |  |
+| | | | | | **Huli Wigmen Canal Engineering** | Traditional | Huli people of the Southern Highlands maintain elaborate canal systems for sweet potato gardens in the Tari Basin. Canals lined with stakes and packed soil. Water level managed by adjustable stone and wood barriers. | Highland canal engineering in the world's most linguistically diverse region | | | |  |
+| | | | | | **Enga Clan Garden Drainage** | Traditional | Enga people maintain clan-owned garden drainage systems in the Western Highlands. Each clan manages its section of a valley-floor drainage network. Inter-clan water disputes resolved through traditional exchange ceremonies. | Clan-based drainage governance | | | |  |
+
+---
+
+# AUSTRALIA
+
+## Aboriginal Australia — Expanded
+
+### Currently in App: 3 inventions
+### Should Have: 14+
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Brewarrina Fish Traps** | 40,000+ BCE | NSW | Already in app. Stone weir structures across the Barwon River. Extends over 500 m. Multiple connected pools trap fish as water levels change. Maintained and modified over tens of thousands of years. The oldest human-engineered structure on Earth. | Oldest known water engineering on Earth | | | |  |
+| | | | | | **Gnamma Holes** | 10,000+ BCE | Western Australia | Already in app. Natural rock depressions enlarged, deepened, and modified. Some sealed with stone caps to reduce evaporation. Over 1,000 known gnamma across the Western Australian desert. Locations memorized and shared through songlines. | Distributed desert water storage network | | | |  |
+| | | | | | **Aboriginal Wells (Native Wells)** | 40,000+ BCE | Multiple | Already in app. Hand-dug wells in sandy soil or rock, some reaching 3+ m depth. Often concealed to prevent contamination and unauthorized use. | Among the oldest wells on Earth | | | |  |
+| | | | | | **Budj Bim Eel Aquaculture** | 6,600 BCE | Victoria | UNESCO World Heritage (2019). Gunditjmara people engineered volcanic stone channels, weirs, and holding ponds across 100+ km² to trap and farm short-finned eels (kooyang). Stone channels directed water from Lake Condah through a series of traps. One of the oldest aquaculture systems in the world. | UNESCO — oldest aquaculture on Earth | | | |  |
+| | | | | | **Toolondo Aboriginal Canal System** | Pre-contact | Victoria | Stone-lined channels connecting wetlands across the Western District plains. Some channels extend several kilometers. Direction of water flow actively managed to expand productive wetland areas. | Pre-contact canal engineering in southeastern Australia | | | |  |
+| | | | | | **Fire-Stick Farming for Water Management** | 65,000 BCE onwards | Continent-wide | Systematic burning to manage vegetation, which in turn managed water flow, soil moisture, and groundwater recharge. Mosaic burning created diverse water-retention landscapes: burned areas shed water to unburned refugia, maintaining springs and wetlands through dry periods. Changed the hydrology of an entire continent. | Largest-scale landscape hydrology management in human history | | | |  |
+| | | | | | **Songline Water Navigation** | 65,000 BCE onwards | Continent-wide | Oral mapping system encoding locations of water sources across thousands of kilometers. Songlines (dreaming tracks) contain precise hydrological information embedded in songs, stories, ceremonies, and kinship networks. A person who knows the songs can navigate desert routes between water sources they have never visited. | Most sophisticated oral hydrological database in human history | | | |  |
+| | | | | | **Desert Soak Wells (Yuu)** | 10,000+ BCE | Western Desert | Shallow wells dug into dry riverbeds to access subsurface flow. Covered with branches and sand to reduce evaporation and prevent animal contamination. Some wells maintained for thousands of years with locations kept secret. | Hidden water infrastructure — concealment as engineering strategy | | | |  |
+| | | | | | **Dampier Peninsula Tidal Fish Traps** | 1000+ BCE | Western Australia | Stone walls built in intertidal zones along the Dampier Peninsula. Multiple configurations for different tidal conditions. Some walls extend hundreds of meters. Fish trapped as tides recede, harvested at low tide. | Tidal water engineering along Australia's northwestern coast | | | |  |
+| | | | | | **Murray-Darling Fish Management** | Traditional | SE Australia | Traditional management of Australia's largest river system (1 million km² basin). Fish traps, weirs, and seasonal burning along riverbanks to manage fish habitat. Deep knowledge of flood cycles, fish migration, and seasonal water availability. | Management of Australia's largest watershed | | | |  |
+| | | | | | **Aboriginal Water Sharing Protocols** | 65,000 BCE onwards | Continent-wide | Complex customary law governing water access. Different nations had different protocols: some waters shared freely, some restricted by season, some reserved for specific ceremonies. Rights negotiated between neighboring groups. Violations sanctioned severely. | Oldest continuous water governance system on Earth | | | |  |
+| | | | | | **Rainwater Tree Collection** | Traditional | Arid regions | Specific tree species known to collect and channel rainwater down trunks into root hollows. Aboriginal people maintained these trees and harvested water from root-base cavities and trunk forks. Desert oaks (Allocasuarina) and river red gums particularly valued. | Biological water harvesting | | | |  |
+| | | | | | **Sand Filtering for Purification** | Traditional | Multiple | Digging shallow wells near but not in waterbodies. Water seeping through sand to the well was naturally filtered. Knowledge of which soils produced clean water and which didn't. | Natural filtration water purification knowledge | | | |  |
+| | | | | | **Kimberley Gorge Spring Management** | Traditional | Kimberley, WA | Management of permanent springs in Kimberley gorges. Stone-lined spring enclosures, channeled flow to camping areas, and maintenance of surrounding vegetation for shade and water retention. Some springs managed continuously for 40,000+ years. | Among the oldest continuously managed water sources on Earth | | | |  |
+
+### Modern Australia
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Snowy Mountains Hydroelectric Scheme** | 1949–1974 | 16 dams, 7 power stations, 225 km of tunnels and aqueducts. Diverts water from eastern-flowing rivers through the Great Dividing Range to western irrigation areas. One of the most complex civil engineering projects of the 20th century. Employed 100,000 workers from 30 countries. | Australia's largest engineering project — nation-building infrastructure | | | |  |
+| | | | | | **Perth Groundwater Replenishment** | 2017 | Full-scale injection of treated wastewater into deep aquifers for future extraction as drinking water. Among the first operational managed aquifer recharge systems in the world. | Leading-edge indirect potable reuse | | | |  |
+| | | | | | **Melbourne Desalination Plant** | 2012 | Reverse osmosis plant producing 150 GL/year. Built during the Millennium Drought as climate-independent water supply. Powered by renewable energy. | Climate-adaptation water infrastructure | | | |  |
+| | | | | | **Murray-Darling Basin Plan** | 2012 | Australia's most contentious water policy. Allocates water between agriculture, cities, and environmental flows across the continent's largest river system. Involves 4 states, thousands of irrigators, and billion-dollar environmental water purchases. | Most complex water allocation challenge in Australia | | | |  |
+| | | | | | **Australian Water Trading Market** | 1990s onwards | Australia pioneered tradeable water rights — separating water rights from land ownership. Water allocations bought and sold on open markets. Annual trading value exceeds AUD $2 billion. | World's most developed water trading market | | | |  |
+
+---
+
+## Summary of All Additions
+
+| | | | | | Country | Current | After Additions | Key Additions | | | |  |
+|---------|---------|-----------------|---------------|
+| | | | | **Indonesia** | 16 | 32+ | Jolotundo, Trowulan expanded, Srivijaya, Mataram, regional traditions | | | |  |
+| | | | | **Japan** | 5 | 25+ | Tamagawa Jōsui, Edo pipes, nightsoil, onsen, tsunam, sabo dams, terraces, gardens | | | |  |
+| | | | | **Korea** | 3 | 18+ | Rain gauge (world's first), Joseon water clock, Silla ponds, Hwaseong, Saemangeum | | | |  |
+| | | | | **Philippines** | 3 | 12+ | Ifugao water law, Bontoc terraces, Kalinga peace pact, Visayan fish corrals | | | |  |
+| | | | | **Papua New Guinea** | 7 | 12+ | Wahgi expanded, Huli canals, Enga drainage, sago management | | | |  |
+| | | | | **Australia** | 3 | 18+ | Budj Bim (UNESCO), fire-stick, songlines, Toolondo, modern systems | | | |  |
+| | | | | **TOTAL** | **37** | **~117+** | | | | | |
+
+---
+
+## Priority Additions
+
+| | | | | | Priority | Addition | Country | Why Critical | | | |  |
+|----------|----------|---------|-------------|
+| | | | | ⭐⭐⭐ | **Jang Yeong-sil's Rain Gauge (1441)** | Korea | World's first standardized rain measurement — 200 years before Europe | | | |  |
+| | | | | ⭐⭐⭐ | **Budj Bim Eel Aquaculture** | Australia | UNESCO 2019 — oldest aquaculture on Earth — currently missing | | | |  |
+| | | | | ⭐⭐⭐ | **Tamagawa Jōsui Aqueduct** | Japan | Water for the world's largest city (Edo/Tokyo, 1 million+) | | | |  |
+| | | | | ⭐⭐⭐ | **Edo Nightsoil System** | Japan | Most efficient pre-modern urban sanitation | | | |  |
+| | | | | ⭐⭐⭐ | **Aboriginal Fire-Stick Water Management** | Australia | 65,000 years of continent-scale hydrology management | | | |  |
+| | | | | ⭐⭐⭐ | **Ifugao Water Law (Lidi)** | Philippines | Among the world's most detailed traditional water law | | | |  |
+| | | | | ⭐⭐ | **Songline Water Navigation** | Australia | Most sophisticated oral hydrological database ever | | | |  |
+| | | | | ⭐⭐ | **Cheonggyecheon Restoration** | Korea | World's most famous urban stream restoration | | | |  |
+| | | | | ⭐⭐ | **Tsūjun Bridge Aqueduct** | Japan | Japan's finest stone aqueduct — siphon principle | | | |  |
+| | | | | ⭐⭐ | **Srivijaya River-Port Engineering** | Indonesia | SE Asia's greatest trading empire — water-based | | | |  |
+| | | | | ⭐⭐ | **G-Cans expanded detail** | Japan | World's largest underground flood facility deserves more detail | | | |  |
+| | | | | ⭐ | **Korean Smart Water Grid** | Korea | Leading global smart water technology | | | |  |
+| | | | | ⭐ | **Snowy Mountains Scheme** | Australia | Australia's largest engineering project | | | |  |
+
+---
+
+## SWMM5 Models to Build
+
+| | | | | | Model | Category | Country | Nodes | Links | Why | | | |  |
+|-------|----------|---------|-------|-------|-----|
+| | | | | **Tamagawa Jōsui + Edo Distribution** | Gravity + Distribution | Japan | 15 | 18 | Water for 1 million people via wooden pipes | | | |  |
+| | | | | **Budj Bim Eel Aquaculture** | Fishery/Flow Control | Australia | 10 | 12 | UNESCO — oldest aquaculture | | | |  |
+| | | | | **Banaue Rice Terrace Cascade** | Irrigation | Philippines | 12 | 15 | UNESCO — among the most extensive terraces on Earth | | | |  |
+| | | | | **Joseon Cheonggyecheon** | Urban Drainage | Korea | 10 | 12 | 600-year urban stream — now global restoration model | | | |  |
+| | | | | **Trowulan Canal Grid** | Urban Supply/Transport | Indonesia | 20 | 24 | 100 km² canal grid for 500,000 people | | | |  |
+| | | | | **Kuk Swamp Drainage** | Agricultural Drainage | PNG | 12 | 14 | UNESCO — oldest agricultural drainage | | | |  |
+| | | | | **G-Cans Underground System** | Flood Control | Japan | 8 | 10 | World's largest underground flood diversion | | | |  |
+| | | | | **Snowy Mountains Scheme** | Hydropower/Transfer | Australia | 20 | 25 | Australia's largest water project | | | |  |

@@ -4759,6 +4759,86 @@ export const gameData: GameData = {
               significance: "Primary protein source for millions; sophisticated ice-hole fishing techniques",
               yearBCE: 5000,
               category: "irrigation"
+            },
+            {
+              id: "yakut-ice-storage",
+              name: "Yakut Ice-Lined Water Storage",
+              description: "Birch-bark containers lined with ice for summer water storage in permafrost cellars.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Seasonal water storage using phase-change engineering",
+              yearBCE: -500,
+              category: "dam"
+            },
+            {
+              id: "evenki-river-knowledge",
+              name: "Evenki River Crossing Knowledge",
+              description: "Extraordinary knowledge of river systems across millions of km2 of taiga encoded in oral tradition.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Navigation knowledge spanning the world's largest forest",
+              yearBCE: -1000,
+              category: "canal"
+            },
+            {
+              id: "chukchi-ice-water",
+              name: "Chukchi Sea Ice Water Harvesting",
+              description: "Harvesting freshwater pockets from multi-year sea ice as salt is expelled during freezing.",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Extracting freshwater from the frozen ocean",
+              yearBCE: -1000,
+              category: "irrigation"
+            },
+            {
+              id: "yakut-alaas-lakes",
+              name: "Yakut Alaas Lake Management",
+              description: "Thermokarst depressions managed for fishing, livestock, and irrigation. Channel systems connected alaas lakes.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Thermokarst landscape water management",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "khanty-mansi-weirs",
+              name: "Khanty-Mansi Fish Weir Systems",
+              description: "Elaborate wooden fish weirs across Ob River tributaries with multi-chamber designs.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Sophisticated multi-species fishery management",
+              yearBCE: -1000,
+              category: "dam"
+            },
+            {
+              id: "nenets-migration-water",
+              name: "Nenets Spring Migration Water Knowledge",
+              description: "Annual 1,000+ km migration with 200,000+ reindeer requires intimate knowledge of water sources.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Water knowledge for the world's longest pastoral migration",
+              yearBCE: -1000,
+              category: "irrigation"
+            },
+            {
+              id: "tuvan-irrigation",
+              name: "Tuvan Mountain Irrigation",
+              description: "Small-scale gravity irrigation in southern Siberian mountain valleys for hayfields.",
+              rarity: "common",
+              historicalPeriod: "Traditional",
+              significance: "Highest-latitude traditional irrigation in Asia",
+              yearBCE: -500,
+              category: "irrigation"
+            },
+            {
+              id: "buryat-hot-springs",
+              name: "Buryat Hot Spring Management",
+              description: "Management of geothermal springs around Lake Baikal for bathing, healing, and winter water supply.",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Geothermal water management in extreme cold",
+              yearBCE: -500,
+              category: "fountain"
             }
           ]
         },
@@ -4875,6 +4955,106 @@ export const gameData: GameData = {
               historicalPeriod: "1930s-1952",
               significance: "6,500 km navigable waterway; ships travel from St. Petersburg to Astrakhan; largest inland waterway system in Europe",
               yearBCE: -1952,
+              category: "canal"
+            },
+            {
+              id: "st-petersburg-canals",
+              name: "Peter the Great's St. Petersburg Canals",
+              description: "Built a capital city on a swamp. 93 rivers, canals, and streams cross St. Petersburg.",
+              rarity: "legendary",
+              historicalPeriod: "1703-1725 CE",
+              significance: "Building a capital on Europe's most challenging hydrology",
+              yearBCE: -1703,
+              category: "canal"
+            },
+            {
+              id: "kronstadt-flood-barrier",
+              name: "Kronstadt Flood Barrier",
+              description: "25km dam protecting St. Petersburg. 11 dams, 2 navigation channels, 6 sluice gates.",
+              rarity: "legendary",
+              historicalPeriod: "1979-2011 CE",
+              significance: "Europe's largest flood barrier",
+              yearBCE: -2011,
+              category: "dam"
+            },
+            {
+              id: "bam-water-crossings",
+              name: "BAM Railway Water Crossings",
+              description: "4,324km railway crossing 3,901 bridges through permafrost and extreme cold.",
+              rarity: "epic",
+              historicalPeriod: "1974-1991 CE",
+              significance: "Most extreme bridge-water engineering on Earth",
+              yearBCE: -1991,
+              category: "canal"
+            },
+            {
+              id: "aral-sea-disaster",
+              name: "Aral Sea Disaster",
+              description: "Soviet river diversions for cotton caused the Aral Sea to shrink by 90%.",
+              rarity: "legendary",
+              historicalPeriod: "1960s-1990s",
+              significance: "Most consequential water engineering disaster in history",
+              yearBCE: -1970,
+              category: "irrigation"
+            },
+            {
+              id: "dneproges-dam",
+              name: "DneproGES Dam",
+              description: "60m dam on the Dnieper. First major Soviet hydroelectric project. Destroyed and rebuilt in WWII.",
+              rarity: "epic",
+              historicalPeriod: "1927-1932 CE",
+              significance: "First Soviet mega-dam",
+              yearBCE: -1932,
+              category: "dam"
+            },
+            {
+              id: "bratsk-dam",
+              name: "Bratsk Dam",
+              description: "125m dam creating 5,540 km2 reservoir. Generates 4,500 MW.",
+              rarity: "epic",
+              historicalPeriod: "1954-1967 CE",
+              significance: "One of the largest dams ever built",
+              yearBCE: -1967,
+              category: "dam"
+            },
+            {
+              id: "sayano-shushenskaya-dam",
+              name: "Sayano-Shushenskaya Dam",
+              description: "242m arch-gravity dam. Tallest in Russia. 6,400 MW. Catastrophic failure in 2009.",
+              rarity: "legendary",
+              historicalPeriod: "1963-1978 CE",
+              significance: "Russia's tallest dam and worst dam disaster",
+              yearBCE: -1978,
+              category: "dam"
+            },
+            {
+              id: "karakum-canal",
+              name: "Karakum Canal",
+              description: "1,375km — world's longest irrigation canal. Major contributor to Aral Sea disaster.",
+              rarity: "legendary",
+              historicalPeriod: "1954-1988 CE",
+              significance: "Longest irrigation canal in the world",
+              yearBCE: -1988,
+              category: "canal"
+            },
+            {
+              id: "soviet-nuclear-excavation",
+              name: "Soviet Nuclear Canal Excavation",
+              description: "Underground nuclear explosions for canal excavation. Chagan test created 400m crater.",
+              rarity: "epic",
+              historicalPeriod: "1965-1988 CE",
+              significance: "Most extreme water engineering method ever attempted",
+              yearBCE: -1965,
+              category: "canal"
+            },
+            {
+              id: "soviet-ice-roads",
+              name: "Soviet Ice Road Networks",
+              description: "Formalized seasonal ice roads across Siberian rivers. Some routes extend 2,000+ km.",
+              rarity: "rare",
+              historicalPeriod: "1930s-Present",
+              significance: "Largest managed seasonal road network",
+              yearBCE: -1940,
               category: "canal"
             }
           ]
@@ -5448,6 +5628,46 @@ export const gameData: GameData = {
               significance: "Strategic water storage was key to Urartu's military survival",
               yearBCE: 800,
               category: "dam"
+            },
+            {
+              id: "lake-van-management",
+              name: "Lake Van Water Management",
+              description: "Management of Lake Van (largest lake in Turkey) for agriculture, urban supply, and military logistics.",
+              rarity: "epic",
+              historicalPeriod: "860-590 BCE",
+              significance: "Large-scale lake management",
+              yearBCE: 860,
+              category: "irrigation"
+            },
+            {
+              id: "urartian-qanat-precursor",
+              name: "Urartian Qanat-Precursor Tunnels",
+              description: "Underground water tunnels. Sargon II saw these in 714 BCE and brought the concept to Assyria — origin of the qanat tradition.",
+              rarity: "legendary",
+              historicalPeriod: "800-700 BCE",
+              significance: "Origin point of the qanat concept that transformed global water engineering",
+              yearBCE: 800,
+              category: "canal"
+            },
+            {
+              id: "ayanis-fortress-water",
+              name: "Ayanis Fortress Water System",
+              description: "Fortress on Lake Van with integrated water channels, cisterns, and managed spring access.",
+              rarity: "rare",
+              historicalPeriod: "7th c. BCE",
+              significance: "Late Urartian fortress water engineering",
+              yearBCE: 650,
+              category: "aqueduct"
+            },
+            {
+              id: "cavustepe-palace-water",
+              name: "Cavustepe Palace Water System",
+              description: "Palace-fortress with rock-cut channels, cisterns, and managed spring. Cuneiform inscriptions detail construction.",
+              rarity: "epic",
+              historicalPeriod: "750-600 BCE",
+              significance: "Royal water engineering with cuneiform documentation",
+              yearBCE: 750,
+              category: "aqueduct"
             }
           ]
         }
@@ -6519,6 +6739,46 @@ export const gameData: GameData = {
               significance: "Advanced sanitation; cleaning holes prevented blockages; strict cleanliness laws—negligence punishable by death",
               yearBCE: 1400,
               category: "sanitation"
+            },
+            {
+              id: "hattusa-water-system",
+              name: "Hattusa Water System",
+              description: "The Hittite capital had elaborate water infrastructure: multiple springs channeled into the city, underground stone-lined tunnels, reservoirs, and a 71m underground passage incorporating water management. Two major dams supplied the upper city.",
+              rarity: "legendary",
+              historicalPeriod: "1400-1200 BCE",
+              significance: "Capital city water engineering rivaling any contemporary civilization",
+              yearBCE: 1400,
+              category: "aqueduct"
+            },
+            {
+              id: "eflatun-pinar",
+              name: "Eflatun Pinar Sacred Spring Monument",
+              description: "Monumental stone spring sanctuary with a massive carved stone facade over a natural spring pool. Channels directed water through ritual passages. The pool was engineered with stone walls and controlled overflow.",
+              rarity: "epic",
+              historicalPeriod: "1300-1200 BCE",
+              significance: "Most elaborate ancient spring monument in Asia Minor",
+              yearBCE: 1300,
+              category: "fountain"
+            },
+            {
+              id: "hittite-yerkapi-tunnel",
+              name: "Hittite Yerkapi Underground Tunnel",
+              description: "71m corbel-vaulted tunnel beneath the defensive ramparts of Hattusa. Incorporated water drainage and may have served as emergency water access route.",
+              rarity: "epic",
+              historicalPeriod: "1350 BCE",
+              significance: "Longest Hittite-era underground structure",
+              yearBCE: 1350,
+              category: "canal"
+            },
+            {
+              id: "hittite-treaty-water",
+              name: "Hittite Treaty Water Clauses",
+              description: "Hittite treaties with vassal states frequently included clauses about water rights, well access, and irrigation. The Treaty of Kadesh (1259 BCE) with Egypt included water access provisions.",
+              rarity: "rare",
+              historicalPeriod: "1400-1200 BCE",
+              significance: "Water governance in international diplomacy",
+              yearBCE: 1400,
+              category: "irrigation"
             }
           ]
         }
@@ -8163,6 +8423,76 @@ export const gameData: GameData = {
               significance: "Longest Ottoman aqueduct at 50+ km; supplied water to the imperial capital for over 300 years",
               yearBCE: -1554,
               category: "aqueduct"
+            },
+            {
+              id: "kirkcessme-water",
+              name: "Kirkcessme Water Supply",
+              description: "55km aqueduct by Mimar Sinan from Belgrade Forest to Istanbul. 33 water bridges, 4 distribution terminals, hundreds of fountains.",
+              rarity: "legendary",
+              historicalPeriod: "1554 CE",
+              significance: "One of the most sophisticated pre-modern urban water systems",
+              yearBCE: -1554,
+              category: "aqueduct"
+            },
+            {
+              id: "ottoman-sebil",
+              name: "Ottoman Sebil (Public Fountain)",
+              description: "Over 3,000 sebils in Istanbul alone, each an endowed (waqf) structure providing free water.",
+              rarity: "epic",
+              historicalPeriod: "15th-19th c. CE",
+              significance: "Largest network of public water access in the pre-modern world",
+              yearBCE: -1450,
+              category: "fountain"
+            },
+            {
+              id: "ottoman-hammam-water",
+              name: "Ottoman Hammam Water System",
+              description: "Sophisticated water supply, heating, and recycling for baths. Hypocaust system. Some served 500+ bathers daily.",
+              rarity: "epic",
+              historicalPeriod: "14th-19th c. CE",
+              significance: "Most advanced bathing water systems of the medieval world",
+              yearBCE: -1400,
+              category: "sanitation"
+            },
+            {
+              id: "suleymaniye-water",
+              name: "Suleymaniye Complex Water System",
+              description: "Mimar Sinan's masterpiece with integrated water: ablution fountains, hammam, hospital, kitchen, school.",
+              rarity: "legendary",
+              historicalPeriod: "1550-1557 CE",
+              significance: "Integration of water engineering with monumental architecture",
+              yearBCE: -1554,
+              category: "fountain"
+            },
+            {
+              id: "ottoman-taksim",
+              name: "Ottoman Taksim (Distribution Terminal)",
+              description: "Stone buildings dividing aqueduct water into calibrated flows with standardized lule units.",
+              rarity: "epic",
+              historicalPeriod: "16th-19th c. CE",
+              significance: "Standardized urban water measurement and distribution",
+              yearBCE: -1550,
+              category: "aqueduct"
+            },
+            {
+              id: "ottoman-jerusalem-water",
+              name: "Ottoman Jerusalem Water",
+              description: "Suleiman rebuilt Jerusalem's water — restoring ancient aqueducts from Solomon's Pools and building six public fountains.",
+              rarity: "epic",
+              historicalPeriod: "1536-1541 CE",
+              significance: "Ottoman restoration of Biblical-era water infrastructure",
+              yearBCE: -1538,
+              category: "aqueduct"
+            },
+            {
+              id: "mostar-bridge",
+              name: "Mostar Bridge (Stari Most)",
+              description: "Iconic bridge across the Neretva River. Single arch spanning 29m, rising 24m. UNESCO World Heritage.",
+              rarity: "epic",
+              historicalPeriod: "1566 CE",
+              significance: "Iconic Ottoman bridge engineering — UNESCO site",
+              yearBCE: -1566,
+              category: "canal"
             }
           ]
         }
@@ -9212,6 +9542,281 @@ export const gameData: GameData = {
               yearBCE: -200,
               category: "canal"
             }
+          ]
+        }
+      ]
+    },
+    {
+      id: "neolithic-anatolia",
+      name: "Neolithic Anatolia",
+      description: "Humanity's earliest settlements developed foundational water management, from Gobekli Tepe (9500 BCE) to Catalhoyuk (7500 BCE).",
+      position: [4, 0, -7],
+      color: "#8B7355",
+      era: "ancient",
+      dateRange: "9500-3000 BCE",
+      locations: [
+        {
+          id: "catalhoyuk",
+          name: "Catalhoyuk & Early Settlements",
+          description: "Among the world's first cities with managed water access",
+          historicalContext: "Population 5,000-10,000",
+          coordinates: { lat: 37.67, lng: 32.83 },
+          artifacts: [
+            { id: "catalhoyuk-water", name: "Catalhoyuk Water Management", description: "One of the world's first cities with managed water — channeled streams, rooftop drainage, plastered water collection.", rarity: "legendary", historicalPeriod: "7500-5700 BCE", significance: "Water management in one of humanity's earliest urban settlements", yearBCE: 7500, category: "irrigation" },
+            { id: "gobekli-tepe-water", name: "Gobekli Tepe Ritual Water", description: "World's oldest known monumental architecture. Cistern-like features carved into bedrock, channels directing rainwater.", rarity: "legendary", historicalPeriod: "9500-8000 BCE", significance: "Water engineering at the world's oldest temple complex", yearBCE: 9500, category: "dam" },
+            { id: "asikli-hoyuk-canal", name: "Asikli Hoyuk Canal", description: "One of the earliest irrigation canals — channel diverting water from the Melendiz River to agriculture.", rarity: "legendary", historicalPeriod: "8200-7400 BCE", significance: "Among the earliest irrigation evidence on Earth", yearBCE: 8200, category: "irrigation" },
+            { id: "hacilar-drainage", name: "Hacilar Settlement Drainage", description: "Neolithic settlement with stone-lined drainage channels beneath and between houses.", rarity: "epic", historicalPeriod: "7000-5000 BCE", significance: "Early planned settlement drainage", yearBCE: 7000, category: "sanitation" },
+            { id: "cayonu-tepesi-water", name: "Cayonu Tepesi Water Systems", description: "One of the oldest permanent settlements with channeled water and early cistern technology.", rarity: "epic", historicalPeriod: "7200-6600 BCE", significance: "Transition-era water engineering", yearBCE: 7200, category: "irrigation" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "troy-lydia",
+      name: "Troy & Lydia",
+      description: "From Troy's siege-proof water systems to Lydia's gold-processing channels at Sardis.",
+      position: [3, 0, -8],
+      color: "#DAA520",
+      era: "ancient",
+      dateRange: "2500-546 BCE",
+      locations: [
+        {
+          id: "troy-citadel",
+          name: "Troy (Hisarlik)",
+          description: "Water engineering at history's most famous city",
+          historicalContext: "Multiple phases from Troy II to Troy VI",
+          coordinates: { lat: 39.96, lng: 26.24 },
+          artifacts: [
+            { id: "troy-water-systems", name: "Troy II-VI Water Systems", description: "Multiple phases of water management. Troy II had stone-lined wells. Troy VI had underground cisterns and drainage beneath citadel walls.", rarity: "epic", historicalPeriod: "2500-1250 BCE", significance: "Water engineering at history's most famous city", yearBCE: 2500, category: "sanitation" },
+            { id: "trojan-siege-well", name: "Trojan Siege Well", description: "Deep rock-cut well within the citadel providing water during siege. Reached 8+ meters through bedrock.", rarity: "rare", historicalPeriod: "~1250 BCE", significance: "Siege-proof water engineering", yearBCE: 1250, category: "fountain" }
+          ]
+        },
+        {
+          id: "sardis",
+          name: "Sardis (Lydia)",
+          description: "Water for the world's first coinage economy",
+          historicalContext: "Gold refining required massive water supply",
+          coordinates: { lat: 38.49, lng: 28.04 },
+          artifacts: [
+            { id: "sardis-water", name: "Sardis Water System", description: "Channels diverted the Pactolus River to gold-processing areas. Gygaean Lake managed as a reservoir.", rarity: "epic", historicalPeriod: "700-546 BCE", significance: "Water for the world's first coinage economy", yearBCE: 700, category: "canal" },
+            { id: "lydian-tunnel", name: "Lydian Tunnel of Lake Nymphaion", description: "Rock-cut water tunnel for irrigation, similar to the Tunnel of Eupalinos.", rarity: "epic", historicalPeriod: "~600 BCE", significance: "Independent Anatolian tunnel engineering", yearBCE: 600, category: "canal" },
+            { id: "bin-tepe-drainage", name: "Bin Tepe Royal Tomb Drainage", description: "Tomb of Alyattes (355m diameter, 69m high) had sophisticated drainage.", rarity: "rare", historicalPeriod: "700-546 BCE", significance: "Water engineering for monumental tomb construction", yearBCE: 700, category: "sanitation" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "phrygian-kingdom",
+      name: "Phrygian Kingdom",
+      description: "King Midas's kingdom developed rock-cut water channels, cisterns, and highland dam technology.",
+      position: [4, 0, -8],
+      color: "#CD853F",
+      era: "ancient",
+      dateRange: "1200-600 BCE",
+      locations: [
+        {
+          id: "gordion",
+          name: "Gordion",
+          description: "Capital of King Midas with river-fed water supply",
+          historicalContext: "Site of the Gordian Knot",
+          coordinates: { lat: 39.65, lng: 31.97 },
+          artifacts: [
+            { id: "gordion-water", name: "Gordion City Water Supply", description: "Phrygian capital with water from the Sangarios River. Stone-lined channels and wells.", rarity: "epic", historicalPeriod: "900-700 BCE", significance: "Capital city water engineering of King Midas's kingdom", yearBCE: 900, category: "aqueduct" },
+            { id: "midas-city-water", name: "Midas City Rock-Cut Water", description: "Channels carved into cliff faces directing rainwater to cisterns, extending hundreds of meters.", rarity: "epic", historicalPeriod: "800-600 BCE", significance: "Rock-cut water engineering on a monumental scale", yearBCE: 800, category: "canal" },
+            { id: "phrygian-highland-dam", name: "Phrygian Highland Dam", description: "Small dams across highland streams for agricultural irrigation.", rarity: "rare", historicalPeriod: "800-600 BCE", significance: "Highland dam technology in central Anatolia", yearBCE: 800, category: "dam" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "classical-anatolia",
+      name: "Classical & Hellenistic Anatolia",
+      description: "From Ephesus to Pergamon to Hierapolis — some of the ancient world's most impressive urban water systems.",
+      position: [3, 0, -6],
+      color: "#4682B4",
+      era: "classical",
+      dateRange: "546 BCE - 400 CE",
+      locations: [
+        {
+          id: "ephesus",
+          name: "Ephesus & Ionian Cities",
+          description: "Water for the ancient world's greatest cities",
+          historicalContext: "Major Greek then Roman cities in Ionia",
+          coordinates: { lat: 37.94, lng: 27.34 },
+          artifacts: [
+            { id: "ephesus-water", name: "Ephesus Water Supply", description: "Multiple aqueducts. The Library of Celsus had integrated water cooling.", rarity: "legendary", historicalPeriod: "6th c. BCE onwards", significance: "Water for one of the ancient world's greatest cities", yearBCE: 500, category: "aqueduct" },
+            { id: "pergamon-pipeline", name: "Pergamon Pressure Pipeline", description: "Pressurized pipeline under 20 atmospheres crossing a 190m-deep valley.", rarity: "legendary", historicalPeriod: "3rd-2nd c. BCE", significance: "Most extreme water pressure in the ancient Greek world", yearBCE: 250, category: "aqueduct" },
+            { id: "priene-distribution", name: "Priene Water Distribution", description: "Stone channels along every street with terracotta pipe connections to houses.", rarity: "epic", historicalPeriod: "4th c. BCE", significance: "Best-preserved Greek urban water planning", yearBCE: 350, category: "sanitation" },
+            { id: "miletus-harbor", name: "Miletus Harbor Engineering", description: "Four harbors managed as the Maeander River silted them. Miletus is now 10km from the sea.", rarity: "epic", historicalPeriod: "6th-2nd c. BCE", significance: "Ancient harbor water engineering and its limits", yearBCE: 500, category: "canal" }
+          ]
+        },
+        {
+          id: "pamphylia-coast",
+          name: "Pamphylia & Southern Coast",
+          description: "Dramatic Roman aqueducts and water displays",
+          historicalContext: "Roman cities with monumental water architecture",
+          coordinates: { lat: 36.94, lng: 30.79 },
+          artifacts: [
+            { id: "aspendos-aqueduct", name: "Aspendos Aqueduct", description: "Roman aqueduct with two pressure towers using inverted-siphon principle. Towers rose 30+ meters.", rarity: "legendary", historicalPeriod: "2nd c. CE", significance: "Most visually dramatic aqueduct in Asia Minor", yearBCE: -150, category: "aqueduct" },
+            { id: "hierapolis-springs", name: "Hierapolis (Pamukkale) Hot Spring Engineering", description: "Management of calcium-rich hot springs creating the famous white travertine terraces. UNESCO site.", rarity: "legendary", historicalPeriod: "2nd c. BCE onwards", significance: "Hot spring management creating a geological wonder", yearBCE: 150, category: "fountain" },
+            { id: "perge-nymphaeum", name: "Perge Nymphaeum Water Display", description: "Water channel ran the entire 300m length of the main colonnaded street.", rarity: "epic", historicalPeriod: "2nd c. CE", significance: "Most dramatic urban water display in ancient Asia Minor", yearBCE: -150, category: "fountain" },
+            { id: "side-aqueduct", name: "Side Aqueduct & Nymphaeum", description: "30km aqueduct with multiple arched sections. Best-preserved Roman water systems in Turkey.", rarity: "epic", historicalPeriod: "2nd c. CE", significance: "Among the best-preserved Roman aqueducts anywhere", yearBCE: -150, category: "aqueduct" },
+            { id: "antioch-water", name: "Antioch Water System", description: "One of Rome's four greatest cities. Elaborate water supply from Daphne springs 10km away.", rarity: "epic", historicalPeriod: "1st c. BCE-6th c. CE", significance: "Water for one of Rome's largest cities", yearBCE: 50, category: "aqueduct" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "seljuk-anatolia",
+      name: "Seljuk Anatolia",
+      description: "Over 100 caravanserais with dedicated water supply across 3,000km of trade routes.",
+      position: [5, 0, -7],
+      color: "#B8860B",
+      era: "medieval",
+      dateRange: "1077-1307 CE",
+      locations: [
+        {
+          id: "seljuk-trade-routes",
+          name: "Seljuk Trade Routes",
+          description: "Water along Silk Road caravanserais",
+          historicalContext: "100+ caravanserais with standardized water",
+          coordinates: { lat: 38.73, lng: 32.49 },
+          artifacts: [
+            { id: "seljuk-caravanserai-water", name: "Seljuk Caravanserai Water Systems", description: "Over 100 caravanserais with wells, cisterns, or channeled springs.", rarity: "epic", historicalPeriod: "12th-13th c. CE", significance: "Standardized travel water across 3,000km", yearBCE: -1200, category: "fountain" },
+            { id: "seljuk-cesme", name: "Seljuk Fountain Architecture (Cesme)", description: "Public fountains at intersections fed by underground channels.", rarity: "rare", historicalPeriod: "12th-13th c. CE", significance: "Urban public water across Seljuk Anatolia", yearBCE: -1200, category: "fountain" },
+            { id: "sultan-han-water", name: "Sultan Han Water Court", description: "Largest Seljuk caravanserai with raised mosque over a water basin.", rarity: "epic", historicalPeriod: "1229 CE", significance: "Sacred and practical water architecture", yearBCE: -1229, category: "fountain" },
+            { id: "seljuk-lagim", name: "Seljuk Underground Channels (Lagim)", description: "Underground stone-lined water channels beneath cities extending kilometers.", rarity: "epic", historicalPeriod: "12th-13th c. CE", significance: "Predecessor to Ottoman water systems", yearBCE: -1200, category: "canal" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "modern-turkey",
+      name: "Modern Turkey",
+      description: "From the massive GAP project to underwater Bosphorus tunnels.",
+      position: [5, 0, -6],
+      color: "#E74C3C",
+      era: "modern",
+      dateRange: "1923 CE - Present",
+      locations: [
+        {
+          id: "gap-project",
+          name: "GAP & Modern Infrastructure",
+          description: "Turkey's largest water projects",
+          historicalContext: "Most ambitious water development in the Middle East",
+          coordinates: { lat: 37.75, lng: 38.27 },
+          artifacts: [
+            { id: "ataturk-dam", name: "Ataturk Dam", description: "Largest dam in Turkey. 169m tall, 1,820m long. Part of GAP — 22 dams and 19 plants.", rarity: "legendary", historicalPeriod: "1990 CE", significance: "Turkey's largest water infrastructure project", yearBCE: -1990, category: "dam" },
+            { id: "gap-project-water", name: "GAP (Southeastern Anatolia Project)", description: "22 dams, 19 power plants, 1.8 million hectares irrigation on Tigris and Euphrates.", rarity: "legendary", historicalPeriod: "1977-ongoing", significance: "Largest integrated water development in the Middle East", yearBCE: -1977, category: "irrigation" },
+            { id: "istanbul-bosphorus-tunnel", name: "Istanbul Bosphorus Water Tunnels", description: "Deep tunnel sewerage beneath the Bosphorus connecting European and Asian Istanbul.", rarity: "epic", historicalPeriod: "2012 CE", significance: "Modern underwater water engineering", yearBCE: -2012, category: "sanitation" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "thracian-dacian",
+      name: "Thracian & Dacian Civilizations",
+      description: "From Thracian gold mine water to Dacian mountain fortress water supply in southeastern Europe.",
+      position: [2, 0, -7],
+      color: "#556B2F",
+      era: "ancient",
+      dateRange: "1500 BCE - 106 CE",
+      locations: [
+        {
+          id: "thrace",
+          name: "Thrace (Bulgaria)",
+          description: "Water for gold mining and sacred springs",
+          historicalContext: "Among the wealthiest ancient peoples",
+          coordinates: { lat: 42.15, lng: 24.75 },
+          artifacts: [
+            { id: "thracian-gold-mine-water", name: "Thracian Gold Mine Water Systems", description: "Channels diverted rivers to wash gold-bearing sediment.", rarity: "epic", historicalPeriod: "1500-300 BCE", significance: "Industrial water for ancient world's most productive gold mines", yearBCE: 1500, category: "canal" },
+            { id: "thracian-springs", name: "Thracian Sacred Spring Sanctuaries", description: "Elaborate stone-carved sanctuaries around natural springs, central to Thracian religion.", rarity: "epic", historicalPeriod: "1000-300 BCE", significance: "Sacred water architecture predating Greek influence", yearBCE: 1000, category: "fountain" }
+          ]
+        },
+        {
+          id: "dacia",
+          name: "Dacia (Romania)",
+          description: "Mountain fortress water engineering",
+          historicalContext: "Dacian fortresses are UNESCO sites",
+          coordinates: { lat: 45.62, lng: 23.20 },
+          artifacts: [
+            { id: "dacian-fortress-water", name: "Dacian Mountain Fortress Water", description: "Dacian fortresses with ceramic pipe systems, cisterns, and channeled springs. UNESCO.", rarity: "epic", historicalPeriod: "100 BCE-106 CE", significance: "Highland fortress water engineering — UNESCO site", yearBCE: 100, category: "aqueduct" },
+            { id: "dacian-ceramic-pipes", name: "Dacian Ceramic Water Pipes", description: "Standardized terracotta pipes with socketed joints and intake filters.", rarity: "rare", historicalPeriod: "100 BCE-106 CE", significance: "Pre-Roman ceramic pipe technology in Eastern Europe", yearBCE: 100, category: "sanitation" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "scythian-peoples",
+      name: "Scythian & Sarmatian Peoples",
+      description: "Nomadic water knowledge across the world's largest steppe.",
+      position: [3, 0, -5],
+      color: "#8B4513",
+      era: "ancient",
+      dateRange: "800 BCE - 400 CE",
+      locations: [
+        {
+          id: "pontiac-steppe",
+          name: "Pontiac Steppe",
+          description: "Nomadic water management across vast grasslands",
+          historicalContext: "World's first major cavalry culture",
+          coordinates: { lat: 47.50, lng: 35.00 },
+          artifacts: [
+            { id: "scythian-water-knowledge", name: "Scythian Water Source Knowledge", description: "Nomadic water knowledge across the steppe. Herodotus described it in detail.", rarity: "rare", historicalPeriod: "800-200 BCE", significance: "Nomadic water knowledge across the world's largest steppe", yearBCE: 800, category: "irrigation" },
+            { id: "scythian-tomb-water", name: "Scythian Royal Tomb Water Engineering", description: "Drainage in kurgans exceeding 20m height.", rarity: "rare", historicalPeriod: "400-200 BCE", significance: "Water engineering for monumental burial mounds", yearBCE: 400, category: "sanitation" },
+            { id: "scythian-horse-watering", name: "Scythian Horse Watering Infrastructure", description: "Watering points along migration routes for herds of 10,000+.", rarity: "common", historicalPeriod: "800-200 BCE", significance: "Water for the world's first major cavalry culture", yearBCE: 800, category: "irrigation" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "slavic-kievan-rus",
+      name: "Slavic & Kievan Rus",
+      description: "From Novgorod's wooden drainage to Kiev's water supply — Eastern Slavic water traditions.",
+      position: [2, 0, -4],
+      color: "#2E8B57",
+      era: "medieval",
+      dateRange: "500-1240 CE",
+      locations: [
+        {
+          id: "novgorod-kiev",
+          name: "Novgorod & Kiev",
+          description: "Medieval Slavic urban water engineering",
+          historicalContext: "Capitals of the first East Slavic states",
+          coordinates: { lat: 58.52, lng: 31.28 },
+          artifacts: [
+            { id: "kievan-rus-river-highway", name: "Kievan Rus River Highway System", description: "Varangian-to-Greeks route: managed waterway from Scandinavia to Constantinople via the Dnieper.", rarity: "legendary", historicalPeriod: "862-1240 CE", significance: "River navigation as state-building infrastructure", yearBCE: -862, category: "canal" },
+            { id: "novgorod-drainage", name: "Novgorod Drainage System", description: "One of the oldest wooden drainage systems in Europe. Log-lined drains beneath streets.", rarity: "epic", historicalPeriod: "10th-15th c. CE", significance: "Oldest wooden urban drainage in Eastern Europe", yearBCE: -950, category: "sanitation" },
+            { id: "kiev-water-supply", name: "Kiev Water Supply", description: "Ceramic pipes from springs, wells, and managed Dnieper access.", rarity: "epic", historicalPeriod: "10th-13th c. CE", significance: "Capital water engineering of the first East Slavic state", yearBCE: -950, category: "aqueduct" },
+            { id: "slavic-log-dam", name: "Slavic Log Dam (Gat)", description: "Timber dams for fish farming, mill power, and flood storage. Interlocking log construction.", rarity: "rare", historicalPeriod: "6th c. CE onwards", significance: "Timber dam technology across Eastern Europe", yearBCE: -550, category: "dam" },
+            { id: "russian-banya-water", name: "Russian Banya Water System", description: "Steam bathhouse with water heating and steam by pouring water on hot stones.", rarity: "rare", historicalPeriod: "10th c. CE onwards", significance: "Water-thermal engineering for bathing culture", yearBCE: -950, category: "sanitation" },
+            { id: "slavic-river-mills", name: "Slavic River Mill Networks", description: "Water mills requiring dam construction, millrace engineering, and seasonal flow management.", rarity: "rare", historicalPeriod: "9th c. CE onwards", significance: "Water power across Eastern Europe", yearBCE: -850, category: "dam" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "medieval-eastern-europe",
+      name: "Medieval Eastern European Kingdoms",
+      description: "From Hungarian thermal baths to Polish salt mine drainage to Bohemian fish ponds.",
+      position: [1, 0, -5],
+      color: "#4169E1",
+      era: "medieval",
+      dateRange: "1000-1500 CE",
+      locations: [
+        {
+          id: "budapest-krakow",
+          name: "Budapest & Central Europe",
+          description: "Thermal springs, salt mines, and fish ponds",
+          historicalContext: "Medieval kingdoms with distinctive water traditions",
+          coordinates: { lat: 47.50, lng: 19.04 },
+          artifacts: [
+            { id: "hungarian-thermal", name: "Hungarian Thermal Spring Management", description: "Budapest sits on 120+ thermal springs. Baths operating 500+ years continuously.", rarity: "epic", historicalPeriod: "1000 CE onwards", significance: "Longest continuously operating thermal water in Europe", yearBCE: -1000, category: "fountain" },
+            { id: "wieliczka-water", name: "Polish Wieliczka Salt Mine Water Management", description: "UNESCO salt mine requiring constant drainage and water-powered hoists.", rarity: "epic", historicalPeriod: "1044 CE onwards", significance: "Oldest mine water management in Europe", yearBCE: -1044, category: "sanitation" },
+            { id: "bohemian-fish-ponds", name: "Bohemian Fish Pond Systems", description: "24,000 ponds built, 8,000 survive. Connected cascades managing watershed water flow.", rarity: "epic", historicalPeriod: "13th-16th c. CE", significance: "Largest artificial pond system in Europe", yearBCE: -1250, category: "dam" },
+            { id: "dubrovnik-water", name: "Dubrovnik (Ragusa) Water Supply", description: "Onofrio's Fountain and 12km aqueduct. Still functioning after 590 years.", rarity: "epic", historicalPeriod: "1436 CE", significance: "Oldest functioning aqueduct in the Balkans", yearBCE: -1436, category: "aqueduct" },
+            { id: "serbian-monastery-water", name: "Serbian Monastery Water Systems", description: "UNESCO monasteries with springs channeled to baptismal pools, kitchens, gardens.", rarity: "rare", historicalPeriod: "12th-14th c. CE", significance: "Monastic water engineering in the Balkans", yearBCE: -1200, category: "fountain" },
+            { id: "transylvanian-mills", name: "Transylvanian Saxon Water Mills", description: "German settlers built water mill networks. Fortified churches had wells and cisterns.", rarity: "rare", historicalPeriod: "12th-16th c. CE", significance: "Central European water technology in Carpathians", yearBCE: -1200, category: "dam" }
           ]
         }
       ]

@@ -1,0 +1,1086 @@
+# SWMM5 .INP Files for Historical Water Systems
+
+Here are complete, runnable SWMM5 .INP files for each suggested model. Copy each into a separate`.inp` file in your Replit project.
+
+---
+
+## 1. Shushtar Hydraulic System (Sassanid, UNESCO)
+
+```inp
+[TITLE]
+Shushtar Historical Hydraulic System - Sassanid Empire (3rd-7th c. CE)
+UNESCO World Heritage - Integrated dams, canals, tunnels, and water mills
+Karun River, Khuzestan, Iran
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+INFILTRATION         HORTON
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+MIN_SLOPE            0.001
+ALLOW_PONDING        NO
+SKIP_STEADY_STATE    NO
+START_DATE           01/01/2024
+START_TIME           00:00:00
+REPORT_START_DATE    01/01/2024
+REPORT_START_TIME    00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+SWEEP_START          01/01
+SWEEP_END            12/31
+DRY_DAYS             0
+REPORT_STEP          00:05:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+NORMAL_FLOW_LIMITED  BOTH
+FORCE_MAIN_EQUATION  H-W
+VARIABLE_STEP        0.75
+LENGTHENING_STEP     0
+MIN_SURFAREA         1.167
+MAX_TRIALS           8
+HEAD_TOLERANCE        0.0015
+SYS_FLOW_TOL        5
+LAT_FLOW_TOL         5
+
+[JUNCTIONS]
+;;Name          Elev    MaxDepth  InitDepth  SurDepth  Aponded
+KARUN_INTAKE    220.0   5.0       0          0         0
+BAND_KAISAR     218.0   6.0       0          0         0
+GARGAR_HEAD     216.0   4.0       0          0         0
+DARIAN_HEAD     217.0   4.0       0          0         0
+TUNNEL_IN       215.0   3.0       0          0         0
+TUNNEL_OUT      210.0   3.0       0          0         0
+MILL_UPPER      212.0   4.0       0          0         0
+MILL_1          210.0   3.0       0          0         0
+MILL_2          208.0   3.0       0          0         0
+MILL_3          206.0   3.0       0          0         0
+SETTLING_1      214.0   3.0       0          0         0
+SETTLING_2      211.0   3.0       0          0         0
+GARGAR_MID      209.0   4.0       0          0         0
+GARGAR_LOWER    205.0   4.0       0          0         0
+DARIAN_MID      210.0   3.0       0          0         0
+DARIAN_LOWER    204.0   3.0       0          0         0
+CITY_DIST       207.0   3.0       0          0         0
+AGRI_DIST       203.0   3.0       0          0         0
+REUNION         200.0   5.0       0          0         0
+
+[OUTFALLS]
+;;Name          Elev    Type       Stage
+KARUN_RETURN    198.0   FREE
+
+[CONDUITS]
+;;Name          From            To              Length  Manning  InOff  OutOff  InitFlow  MaxFlow
+DAM_SPILL       KARUN_INTAKE    BAND_KAISAR     200     0.020    0      0       0         0
+GARGAR_CANAL    BAND_KAISAR     GARGAR_HEAD     500     0.015    0      0       0         0
+DARIAN_CANAL    BAND_KAISAR     DARIAN_HEAD     400     0.015    0      0       0         0
+TUNNEL_ENTRY    GARGAR_HEAD     TUNNEL_IN       300     0.018    0      0       0         0
+ROCK_TUNNEL     TUNNEL_IN       TUNNEL_OUT      800     0.025    0      0       0         0
+SETTLE_CH1      GARGAR_HEAD     SETTLING_1      200     0.015    0      0       0         0
+SETTLE_CH2      SETTLING_1      SETTLING_2      250     0.015    0      0       0         0
+MILL_FEED       TUNNEL_OUT      MILL_UPPER      150     0.015    0      0       0         0
+MILL_DROP1      MILL_UPPER      MILL_1          30      0.020    0      0       0         0
+MILL_DROP2      MILL_1          MILL_2          30      0.020    0      0       0         0
+MILL_DROP3      MILL_2          MILL_3          30      0.020    0      0       0         0
+GARGAR_MID_CH   SETTLING_2      GARGAR_MID      400     0.015    0      0       0         0
+GARGAR_LOW_CH   GARGAR_MID      GARGAR_LOWER    600     0.015    0      0       0         0
+DARIAN_MID_CH   DARIAN_HEAD     DARIAN_MID      500     0.015    0      0       0         0
+DARIAN_LOW_CH   DARIAN_MID      DARIAN_LOWER    700     0.015    0      0       0         0
+CITY_FEED       GARGAR_MID      CITY_DIST       300     0.015    0      0       0         0
+AGRI_FEED       GARGAR_LOWER    AGRI_DIST       400     0.015    0      0       0         0
+MILL_RETURN     MILL_3          REUNION         200     0.015    0      0       0         0
+GARGAR_OUT      GARGAR_LOWER    REUNION         300     0.015    0      0       0         0
+DARIAN_OUT      DARIAN_LOWER    REUNION         400     0.015    0      0       0         0
+CITY_RETURN     CITY_DIST       REUNION         500     0.015    0      0       0         0
+AGRI_RETURN     AGRI_DIST       REUNION         600     0.015    0      0       0         0
+FINAL_RETURN    REUNION         KARUN_RETURN    200     0.015    0      0       0         0
+
+[XSECTIONS]
+;;Link          Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+DAM_SPILL       RECT_OPEN   3.0    15.0   0      0      1
+GARGAR_CANAL    TRAPEZOIDAL 2.5    8.0    1.5    1.5    1
+DARIAN_CANAL    TRAPEZOIDAL 2.0    6.0    1.5    1.5    1
+TUNNEL_ENTRY    RECT_OPEN   2.0    3.0    0      0      1
+ROCK_TUNNEL     ARCH        2.5    2.0    0      0      1
+SETTLE_CH1      TRAPEZOIDAL 1.5    4.0    1.0    1.0    1
+SETTLE_CH2      TRAPEZOIDAL 1.5    4.0    1.0    1.0    1
+MILL_FEED       RECT_OPEN   1.5    2.0    0      0      1
+MILL_DROP1      RECT_OPEN   1.0    1.5    0      0      1
+MILL_DROP2      RECT_OPEN   1.0    1.5    0      0      1
+MILL_DROP3      RECT_OPEN   1.0    1.5    0      0      1
+GARGAR_MID_CH   TRAPEZOIDAL 2.0    6.0    1.5    1.5    1
+GARGAR_LOW_CH   TRAPEZOIDAL 2.0    6.0    1.5    1.5    1
+DARIAN_MID_CH   TRAPEZOIDAL 1.5    5.0    1.0    1.0    1
+DARIAN_LOW_CH   TRAPEZOIDAL 1.5    5.0    1.0    1.0    1
+CITY_FEED       RECT_OPEN   1.0    2.0    0      0      1
+AGRI_FEED       TRAPEZOIDAL 1.5    4.0    1.0    1.0    1
+MILL_RETURN     RECT_OPEN   1.5    2.0    0      0      1
+GARGAR_OUT      TRAPEZOIDAL 2.0    6.0    1.5    1.5    1
+DARIAN_OUT      TRAPEZOIDAL 1.5    5.0    1.0    1.0    1
+CITY_RETURN     RECT_OPEN   1.0    2.0    0      0      1
+AGRI_RETURN     TRAPEZOIDAL 1.0    3.0    1.0    1.0    1
+FINAL_RETURN    TRAPEZOIDAL 3.0    12.0   2.0    2.0    1
+
+[INFLOWS]
+;;Node          Constituent  TimeSeries  Type    Mfactor  Sfactor  Baseline  Pattern
+KARUN_INTAKE    FLOW         KARUN_FLOW  FLOW    1.0      1.0      50.0
+
+[TIMESERIES]
+;;Name          Date      Time   Value
+KARUN_FLOW      01/01/2024 00:00  50.0
+KARUN_FLOW      01/01/2024 06:00  55.0
+KARUN_FLOW      01/01/2024 12:00  65.0
+KARUN_FLOW      01/01/2024 18:00  60.0
+KARUN_FLOW      01/02/2024 00:00  50.0
+
+[COORDINATES]
+;;Node          X-Coord    Y-Coord
+KARUN_INTAKE    1000       5000
+BAND_KAISAR     1200       4800
+GARGAR_HEAD     1500       4600
+DARIAN_HEAD     900        4600
+TUNNEL_IN       1700       4400
+TUNNEL_OUT      2100       4200
+MILL_UPPER      2300       4100
+MILL_1          2350       4000
+MILL_2          2400       3900
+MILL_3          2450       3800
+SETTLING_1      1600       4300
+SETTLING_2      1700       4100
+GARGAR_MID      1800       3800
+GARGAR_LOWER    1900       3400
+DARIAN_MID      800        4200
+DARIAN_LOWER    700        3600
+CITY_DIST       2000       3600
+AGRI_DIST       2100       3200
+REUNION         1500       3000
+KARUN_RETURN    1500       2800
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 2. Pont du Gard + Nîmes Castellum Divisorium
+
+```inp
+[TITLE]
+Pont du Gard Aqueduct and Nimes Castellum Divisorium - Roman Empire (19 BCE)
+UNESCO World Heritage - 49m tall, 50km aqueduct with 0.04% gradient
+Southern France
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+INFILTRATION         HORTON
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name           Elev     MaxDepth  InitDepth  SurDepth  Aponded
+UZES_SPRING      76.00    2.0       0          0         0
+CHANNEL_1        75.80    1.5       0          0         0
+CHANNEL_2        75.60    1.5       0          0         0
+TUNNEL_SECT      75.20    1.5       0          0         0
+BRIDGE_APPR      74.80    1.5       0          0         0
+PONT_DU_GARD     74.60    1.5       0          0         0
+BRIDGE_EXIT      74.40    1.5       0          0         0
+CHANNEL_3        74.00    1.5       0          0         0
+SETTLING         73.60    2.0       0          0         0
+CASTELLUM        71.00    2.0       0          0         0
+DIST_NORTH       70.50    1.0       0          0         0
+DIST_SOUTH       70.50    1.0       0          0         0
+DIST_EAST        70.50    1.0       0          0         0
+DIST_WEST        70.50    1.0       0          0         0
+DIST_CENTER      70.50    1.0       0          0         0
+BATHS_TERM       70.00    1.5       0          0         0
+FORUM_FOUNT      70.00    1.5       0          0         0
+
+[OUTFALLS]
+;;Name           Elev     Type       Stage
+NORTH_OUT        69.0     FREE
+SOUTH_OUT        69.0     FREE
+EAST_OUT         69.0     FREE
+WEST_OUT         69.0     FREE
+CENTER_OUT       69.0     FREE
+
+[CONDUITS]
+;;Name           From            To              Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+AQUE_1           UZES_SPRING     CHANNEL_1       5000     0.013    0      0       0         0
+AQUE_2           CHANNEL_1       CHANNEL_2       5000     0.013    0      0       0         0
+AQUE_TUNNEL      CHANNEL_2       TUNNEL_SECT     3000     0.015    0      0       0         0
+AQUE_3           TUNNEL_SECT     BRIDGE_APPR     5000     0.013    0      0       0         0
+PONT_GARD_UP     BRIDGE_APPR     PONT_DU_GARD    150      0.013    0      0       0         0
+PONT_GARD_DN     PONT_DU_GARD    BRIDGE_EXIT     125      0.013    0      0       0         0
+AQUE_4           BRIDGE_EXIT     CHANNEL_3       8000     0.013    0      0       0         0
+AQUE_5           CHANNEL_3       SETTLING        10000    0.013    0      0       0         0
+AQUE_FINAL       SETTLING        CASTELLUM       5000     0.013    0      0       0         0
+PIPE_NORTH       CASTELLUM       DIST_NORTH      500      0.012    0      0       0         0
+PIPE_SOUTH       CASTELLUM       DIST_SOUTH      500      0.012    0      0       0         0
+PIPE_EAST        CASTELLUM       DIST_EAST       400      0.012    0      0       0         0
+PIPE_WEST        CASTELLUM       DIST_WEST       600      0.012    0      0       0         0
+PIPE_CENTER      CASTELLUM       DIST_CENTER     300      0.012    0      0       0         0
+TO_BATHS         DIST_NORTH      BATHS_TERM      200      0.012    0      0       0         0
+TO_FORUM         DIST_CENTER     FORUM_FOUNT     150      0.012    0      0       0         0
+NORTH_DRAIN      DIST_NORTH      NORTH_OUT       300      0.015    0      0       0         0
+SOUTH_DRAIN      DIST_SOUTH      SOUTH_OUT       300      0.015    0      0       0         0
+EAST_DRAIN       DIST_EAST       EAST_OUT        300      0.015    0      0       0         0
+WEST_DRAIN       DIST_WEST       WEST_OUT        300      0.015    0      0       0         0
+CENTER_DRAIN     DIST_CENTER     CENTER_OUT      300      0.015    0      0       0         0
+
+[XSECTIONS]
+;;Link           Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+AQUE_1           RECT_OPEN   1.2    1.3    0      0      1
+AQUE_2           RECT_OPEN   1.2    1.3    0      0      1
+AQUE_TUNNEL      ARCH        1.3    1.2    0      0      1
+AQUE_3           RECT_OPEN   1.2    1.3    0      0      1
+PONT_GARD_UP     RECT_OPEN   1.2    1.3    0      0      1
+PONT_GARD_DN     RECT_OPEN   1.2    1.3    0      0      1
+AQUE_4           RECT_OPEN   1.2    1.3    0      0      1
+AQUE_5           RECT_OPEN   1.2    1.3    0      0      1
+AQUE_FINAL       RECT_OPEN   1.2    1.3    0      0      1
+PIPE_NORTH       CIRCULAR    0.30   0      0      0      1
+PIPE_SOUTH       CIRCULAR    0.30   0      0      0      1
+PIPE_EAST        CIRCULAR    0.25   0      0      0      1
+PIPE_WEST        CIRCULAR    0.25   0      0      0      1
+PIPE_CENTER      CIRCULAR    0.35   0      0      0      1
+TO_BATHS         CIRCULAR    0.25   0      0      0      1
+TO_FORUM         CIRCULAR    0.20   0      0      0      1
+NORTH_DRAIN      CIRCULAR    0.25   0      0      0      1
+SOUTH_DRAIN      CIRCULAR    0.25   0      0      0      1
+EAST_DRAIN       CIRCULAR    0.20   0      0      0      1
+WEST_DRAIN       CIRCULAR    0.20   0      0      0      1
+CENTER_DRAIN     CIRCULAR    0.30   0      0      0      1
+
+[INFLOWS]
+;;Node           Constituent  TimeSeries  Type    Mfactor  Sfactor  Baseline  Pattern
+UZES_SPRING      FLOW         SPRING_Q    FLOW    1.0      1.0      0.40
+
+[TIMESERIES]
+;;Name           Date       Time   Value
+SPRING_Q         01/01/2024 00:00  0.40
+SPRING_Q         01/01/2024 06:00  0.40
+SPRING_Q         01/01/2024 12:00  0.38
+SPRING_Q         01/01/2024 18:00  0.40
+SPRING_Q         01/02/2024 00:00  0.40
+
+[COORDINATES]
+;;Node           X-Coord    Y-Coord
+UZES_SPRING      0          5000
+CHANNEL_1        1000       4800
+CHANNEL_2        2000       4600
+TUNNEL_SECT      2800       4400
+BRIDGE_APPR      3500       4200
+PONT_DU_GARD     3600       4150
+BRIDGE_EXIT      3700       4100
+CHANNEL_3        4500       3800
+SETTLING         5500       3400
+CASTELLUM        6500       3000
+DIST_NORTH       6500       3200
+DIST_SOUTH       6500       2800
+DIST_EAST        6700       3000
+DIST_WEST        6300       3000
+DIST_CENTER      6500       3000
+BATHS_TERM       6500       3400
+FORUM_FOUNT      6500       2900
+NORTH_OUT        6500       3500
+SOUTH_OUT        6500       2500
+EAST_OUT         7000       3000
+WEST_OUT         6000       3000
+CENTER_OUT       6500       2700
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 3. Maya Palenque Pressurized Aqueduct
+
+```inp
+[TITLE]
+Maya Palenque Pressurized Aqueduct - Classic Maya (600-700 CE)
+Only known pressurized water system in pre-Columbian Americas
+Chiapas, Mexico - Discovered by Kirk French (2006)
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+ROUTING_STEP         0:00:15
+INERTIAL_DAMPING     PARTIAL
+FORCE_MAIN_EQUATION  D-W
+
+[JUNCTIONS]
+;;Name           Elev     MaxDepth  InitDepth  SurDepth  Aponded
+SPRING_SOURCE    66.00    2.0       0          0         0
+CHANNEL_UPPER    65.50    1.5       0          0         0
+CONSTRICT_IN     64.00    1.5       0          0         0
+CONSTRICT_PT     63.80    0.5       0          0         0
+PRESSURE_RISE    63.50    2.0       0          0         0
+PALACE_DIST      62.00    1.5       0          0         0
+
+[OUTFALLS]
+;;Name           Elev     Type       Stage
+OTULUM_RIVER     60.00    FREE
+
+[CONDUITS]
+;;Name           From            To              Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+SPRING_CHANNEL   SPRING_SOURCE   CHANNEL_UPPER   80       0.020    0      0       0         0
+UPPER_CHANNEL    CHANNEL_UPPER   CONSTRICT_IN    120      0.018    0      0       0         0
+CONSTRICTION     CONSTRICT_IN    CONSTRICT_PT    6        0.015    0      0       0         0
+PRESSURE_SECT    CONSTRICT_PT    PRESSURE_RISE   15       0.015    0      0       0         0
+PALACE_FEED      PRESSURE_RISE   PALACE_DIST     60       0.018    0      0       0         0
+PALACE_DRAIN     PALACE_DIST     OTULUM_RIVER    40       0.020    0      0       0         0
+
+[XSECTIONS]
+;;Link           Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+SPRING_CHANNEL   TRAPEZOIDAL 0.5    1.0    0.5    0.5    1
+UPPER_CHANNEL    RECT_OPEN   0.6    0.8    0      0      1
+CONSTRICTION     RECT_OPEN   0.15   0.3    0      0      1
+PRESSURE_SECT    RECT_CLOSED 0.20   0.4    0      0      1
+PALACE_FEED      RECT_OPEN   0.5    0.6    0      0      1
+PALACE_DRAIN     TRAPEZOIDAL 0.4    0.8    0.5    0.5    1
+
+[INFLOWS]
+;;Node           Constituent  TimeSeries  Type    Mfactor  Sfactor  Baseline  Pattern
+SPRING_SOURCE    FLOW         MAYA_SPRING FLOW    1.0      1.0      0.05
+
+[TIMESERIES]
+;;Name           Date       Time   Value
+MAYA_SPRING      01/01/2024 00:00  0.05
+MAYA_SPRING      01/01/2024 04:00  0.05
+MAYA_SPRING      01/01/2024 08:00  0.08
+MAYA_SPRING      01/01/2024 14:00  0.12
+MAYA_SPRING      01/01/2024 18:00  0.08
+MAYA_SPRING      01/02/2024 00:00  0.05
+
+[COORDINATES]
+;;Node           X-Coord    Y-Coord
+SPRING_SOURCE    100        600
+CHANNEL_UPPER    180        560
+CONSTRICT_IN     280        480
+CONSTRICT_PT     286        476
+PRESSURE_RISE    298        466
+PALACE_DIST      340        430
+OTULUM_RIVER     370        400
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 4. Nazca Puquio Underground Aqueduct System
+
+```inp
+[TITLE]
+Nazca Puquio Underground Aqueduct System - Nazca Civilization (100 BCE-800 CE)
+Underground aqueducts still functioning after 2000 years
+Nazca Valley, Peru
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name           Elev     MaxDepth  InitDepth  SurDepth  Aponded
+AQUIFER_TAP      520.0    3.0       0          0         0
+OJO_1            518.0    4.0       0          0         0
+TUNNEL_1         516.0    2.0       0          0         0
+OJO_2            514.0    4.0       0          0         0
+TUNNEL_2         512.0    2.0       0          0         0
+OJO_3            510.0    4.0       0          0         0
+TUNNEL_3         508.0    2.0       0          0         0
+FILTER_GAL       506.0    2.0       0          0         0
+SURFACE_EMERGE   504.0    2.0       0          0         0
+DIST_BASIN       502.0    2.0       0          0         0
+FIELD_NORTH      501.0    1.5       0          0         0
+FIELD_SOUTH      501.0    1.5       0          0         0
+
+[OUTFALLS]
+;;Name           Elev     Type       Stage
+NAZCA_RIVER      499.0    FREE
+
+[CONDUITS]
+;;Name           From            To              Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+PUQUIO_1         AQUIFER_TAP     OJO_1           400      0.025    0      0       0         0
+PUQUIO_2         OJO_1           TUNNEL_1        300      0.025    0      0       0         0
+PUQUIO_3         TUNNEL_1        OJO_2           350      0.025    0      0       0         0
+PUQUIO_4         OJO_2           TUNNEL_2        300      0.025    0      0       0         0
+PUQUIO_5         TUNNEL_2        OJO_3           400      0.025    0      0       0         0
+PUQUIO_6         OJO_3           TUNNEL_3        250      0.025    0      0       0         0
+FILTER_CH        TUNNEL_3        FILTER_GAL      200      0.020    0      0       0         0
+EMERGE_CH        FILTER_GAL      SURFACE_EMERGE  100      0.018    0      0       0         0
+SURFACE_CANAL    SURFACE_EMERGE  DIST_BASIN      300      0.018    0      0       0         0
+NORTH_CANAL      DIST_BASIN      FIELD_NORTH     400      0.020    0      0       0         0
+SOUTH_CANAL      DIST_BASIN      FIELD_SOUTH     400      0.020    0      0       0         0
+RETURN_N         FIELD_NORTH     NAZCA_RIVER     200      0.020    0      0       0         0
+RETURN_S         FIELD_SOUTH     NAZCA_RIVER     200      0.020    0      0       0         0
+
+[XSECTIONS]
+;;Link           Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+PUQUIO_1         ARCH        1.0    0.8    0      0      1
+PUQUIO_2         ARCH        1.0    0.8    0      0      1
+PUQUIO_3         ARCH        1.0    0.8    0      0      1
+PUQUIO_4         ARCH        1.0    0.8    0      0      1
+PUQUIO_5         ARCH        1.0    0.8    0      0      1
+PUQUIO_6         ARCH        1.0    0.8    0      0      1
+FILTER_CH        RECT_OPEN   0.8    0.6    0      0      1
+EMERGE_CH        TRAPEZOIDAL 0.6    1.0    0.5    0.5    1
+SURFACE_CANAL    TRAPEZOIDAL 0.5    1.2    0.5    0.5    1
+NORTH_CANAL      TRAPEZOIDAL 0.4    0.8    0.5    0.5    1
+SOUTH_CANAL      TRAPEZOIDAL 0.4    0.8    0.5    0.5    1
+RETURN_N         TRAPEZOIDAL 0.3    0.6    0.5    0.5    1
+RETURN_S         TRAPEZOIDAL 0.3    0.6    0.5    0.5    1
+
+[INFLOWS]
+;;Node           Constituent  TimeSeries  Type    Mfactor  Sfactor  Baseline  Pattern
+AQUIFER_TAP      FLOW         GW_FLOW     FLOW    1.0      1.0      0.02
+
+[TIMESERIES]
+;;Name           Date       Time   Value
+GW_FLOW          01/01/2024 00:00  0.02
+GW_FLOW          01/01/2024 12:00  0.02
+GW_FLOW          01/02/2024 00:00  0.02
+
+[COORDINATES]
+;;Node           X-Coord    Y-Coord
+AQUIFER_TAP      100        3000
+OJO_1            400        2800
+TUNNEL_1         650        2650
+OJO_2            900        2500
+TUNNEL_2         1100       2350
+OJO_3            1400       2200
+TUNNEL_3         1600       2100
+FILTER_GAL       1750       2000
+SURFACE_EMERGE   1850       1950
+DIST_BASIN       2050       1800
+FIELD_NORTH      2300       2000
+FIELD_SOUTH      2300       1600
+NAZCA_RIVER      2500       1800
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 5. Garamantian Foggara System (Saharan Libya)
+
+```inp
+[TITLE]
+Garamantian Foggara System - Garamantes Civilization (500 BCE-700 CE)
+Underground water tunnels supporting civilization in the Sahara Desert
+Fezzan, Libya - Over 600 foggaras totaling 3000+ km
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name           Elev     MaxDepth  InitDepth  SurDepth  Aponded
+MOTHER_WELL      450.0    15.0      0          0         0
+SHAFT_1          448.0    12.0      0          0         0
+SHAFT_2          446.0    10.0      0          0         0
+SHAFT_3          444.0    8.0       0          0         0
+SHAFT_4          442.0    6.0       0          0         0
+SHAFT_5          440.0    5.0       0          0         0
+SHAFT_6          438.0    4.0       0          0         0
+SURFACE_EMERGE   436.0    2.0       0          0         0
+OASIS_POOL       435.0    2.0       0          0         0
+GARDEN_1         434.5    1.5       0          0         0
+GARDEN_2         434.5    1.5       0          0         0
+GARDEN_3         434.0    1.5       0          0         0
+
+[OUTFALLS]
+;;Name           Elev     Type       Stage
+DESERT_SINK      433.0    FREE
+
+[CONDUITS]
+;;Name           From            To              Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+FOG_TUNNEL_1     MOTHER_WELL     SHAFT_1         400      0.025    0      0       0         0
+FOG_TUNNEL_2     SHAFT_1         SHAFT_2         400      0.025    0      0       0         0
+FOG_TUNNEL_3     SHAFT_2         SHAFT_3         400      0.025    0      0       0         0
+FOG_TUNNEL_4     SHAFT_3         SHAFT_4         400      0.025    0      0       0         0
+FOG_TUNNEL_5     SHAFT_4         SHAFT_5         400      0.025    0      0       0         0
+FOG_TUNNEL_6     SHAFT_5         SHAFT_6         400      0.025    0      0       0         0
+FOG_EMERGE       SHAFT_6         SURFACE_EMERGE  200      0.020    0      0       0         0
+POOL_FEED        SURFACE_EMERGE  OASIS_POOL      50       0.018    0      0       0         0
+GARDEN_CH1       OASIS_POOL      GARDEN_1        100      0.020    0      0       0         0
+GARDEN_CH2       OASIS_POOL      GARDEN_2        120      0.020    0      0       0         0
+GARDEN_CH3       GARDEN_1        GARDEN_3        80       0.020    0      0       0         0
+DRAIN_1          GARDEN_2        DESERT_SINK     150      0.025    0      0       0         0
+DRAIN_2          GARDEN_3        DESERT_SINK     100      0.025    0      0       0         0
+
+[XSECTIONS]
+;;Link           Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+FOG_TUNNEL_1     ARCH        0.8    0.6    0      0      1
+FOG_TUNNEL_2     ARCH        0.8    0.6    0      0      1
+FOG_TUNNEL_3     ARCH        0.8    0.6    0      0      1
+FOG_TUNNEL_4     ARCH        0.8    0.6    0      0      1
+FOG_TUNNEL_5     ARCH        0.8    0.6    0      0      1
+FOG_TUNNEL_6     ARCH        0.8    0.6    0      0      1
+FOG_EMERGE       TRAPEZOIDAL 0.5    0.8    0.3    0.3    1
+POOL_FEED        TRAPEZOIDAL 0.4    0.6    0.3    0.3    1
+GARDEN_CH1       TRAPEZOIDAL 0.3    0.5    0.3    0.3    1
+GARDEN_CH2       TRAPEZOIDAL 0.3    0.5    0.3    0.3    1
+GARDEN_CH3       TRAPEZOIDAL 0.3    0.5    0.3    0.3    1
+DRAIN_1          TRAPEZOIDAL 0.2    0.4    0.3    0.3    1
+DRAIN_2          TRAPEZOIDAL 0.2    0.4    0.3    0.3    1
+
+[INFLOWS]
+;;Node           Constituent  TimeSeries  Type    Mfactor  Sfactor  Baseline  Pattern
+MOTHER_WELL      FLOW         FOSSIL_GW   FLOW    1.0      1.0      0.008
+
+[TIMESERIES]
+;;Name           Date       Time   Value
+FOSSIL_GW        01/01/2024 00:00  0.008
+FOSSIL_GW        01/01/2024 12:00  0.008
+FOSSIL_GW        01/02/2024 00:00  0.008
+
+[COORDINATES]
+;;Node           X-Coord    Y-Coord
+MOTHER_WELL      100        2500
+SHAFT_1          450        2400
+SHAFT_2          800        2300
+SHAFT_3          1150       2200
+SHAFT_4          1500       2100
+SHAFT_5          1850       2000
+SHAFT_6          2200       1900
+SURFACE_EMERGE   2400       1850
+OASIS_POOL       2450       1800
+GARDEN_1         2600       1900
+GARDEN_2         2600       1700
+GARDEN_3         2750       1850
+DESERT_SINK      2800       1800
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 6. Tiwanaku Suka Kollus (Raised Fields)
+
+```inp
+[TITLE]
+Tiwanaku Suka Kollus (Raised Field Agriculture) - Tiwanaku Empire (300-1000 CE)
+Thermal-hydraulic agricultural engineering at 3800m altitude
+Lake Titicaca Basin, Bolivia
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name           Elev     MaxDepth  InitDepth  SurDepth  Aponded
+STREAM_SOURCE    3812.0   1.5       0          0         0
+INTAKE_WEIR      3811.5   1.0       0          0         0
+MAIN_CANAL       3811.0   1.0       0          0         0
+DIST_NORTH       3810.5   1.0       0          0         0
+DIST_SOUTH       3810.5   1.0       0          0         0
+FIELD_CH_N1      3810.0   0.8       0          0         0
+FIELD_CH_N2      3810.0   0.8       0          0         0
+FIELD_CH_N3      3810.0   0.8       0          0         0
+FIELD_CH_S1      3810.0   0.8       0          0         0
+FIELD_CH_S2      3810.0   0.8       0          0         0
+FIELD_CH_S3      3810.0   0.8       0          0         0
+COLLECT_N        3809.5   1.0       0          0         0
+COLLECT_S        3809.5   1.0       0          0         0
+REUNION          3809.0   1.0       0          0         0
+
+[OUTFALLS]
+;;Name           Elev     Type       Stage
+LAKE_TITICACA    3808.0   FREE
+
+[CONDUITS]
+;;Name           From            To              Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+STREAM_CH        STREAM_SOURCE   INTAKE_WEIR     100      0.030    0      0       0         0
+MAIN_FEED        INTAKE_WEIR     MAIN_CANAL      200      0.025    0      0       0         0
+NORTH_FEED       MAIN_CANAL      DIST_NORTH      150      0.025    0      0       0         0
+SOUTH_FEED       MAIN_CANAL      DIST_SOUTH      150      0.025    0      0       0         0
+SUKA_N1          DIST_NORTH      FIELD_CH_N1     80       0.030    0      0       0         0
+SUKA_N2          DIST_NORTH      FIELD_CH_N2     80       0.030    0      0       0         0
+SUKA_N3          DIST_NORTH      FIELD_CH_N3     80       0.030    0      0       0         0
+SUKA_S1          DIST_SOUTH      FIELD_CH_S1     80       0.030    0      0       0         0
+SUKA_S2          DIST_SOUTH      FIELD_CH_S2     80       0.030    0      0       0         0
+SUKA_S3          DIST_SOUTH      FIELD_CH_S3     80       0.030    0      0       0         0
+COLLECT_N_CH     FIELD_CH_N1     COLLECT_N       60       0.030    0      0       0         0
+COLLECT_N_2      FIELD_CH_N2     COLLECT_N       60       0.030    0      0       0         0
+COLLECT_N_3      FIELD_CH_N3     COLLECT_N       60       0.030    0      0       0         0
+COLLECT_S_CH     FIELD_CH_S1     COLLECT_S       60       0.030    0      0       0         0
+COLLECT_S_2      FIELD_CH_S2     COLLECT_S       60       0.030    0      0       0         0
+COLLECT_S_3      FIELD_CH_S3     COLLECT_S       60       0.030    0      0       0         0
+REUNION_N        COLLECT_N       REUNION         100      0.025    0      0       0         0
+REUNION_S        COLLECT_S       REUNION         100      0.025    0      0       0         0
+TO_LAKE          REUNION         LAKE_TITICACA   200      0.025    0      0       0         0
+
+[XSECTIONS]
+;;Link           Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+STREAM_CH        TRAPEZOIDAL 0.5    1.5    1.0    1.0    1
+MAIN_FEED        TRAPEZOIDAL 0.4    1.0    0.5    0.5    1
+NORTH_FEED       TRAPEZOIDAL 0.3    0.8    0.5    0.5    1
+SOUTH_FEED       TRAPEZOIDAL 0.3    0.8    0.5    0.5    1
+SUKA_N1          TRAPEZOIDAL 0.3    0.5    0.5    0.5    1
+SUKA_N2          TRAPEZOIDAL 0.3    0.5    0.5    0.5    1
+SUKA_N3          TRAPEZOIDAL 0.3    0.5    0.5    0.5    1
+SUKA_S1          TRAPEZOIDAL 0.3    0.5    0.5    0.5    1
+SUKA_S2          TRAPEZOIDAL 0.3    0.5    0.5    0.5    1
+SUKA_S3          TRAPEZOIDAL 0.3    0.5    0.5    0.5    1
+COLLECT_N_CH     TRAPEZOIDAL 0.2    0.4    0.5    0.5    1
+COLLECT_N_2      TRAPEZOIDAL 0.2    0.4    0.5    0.5    1
+COLLECT_N_3      TRAPEZOIDAL 0.2    0.4    0.5    0.5    1
+COLLECT_S_CH     TRAPEZOIDAL 0.2    0.4    0.5    0.5    1
+COLLECT_S_2      TRAPEZOIDAL 0.2    0.4    0.5    0.5    1
+COLLECT_S_3      TRAPEZOIDAL 0.2    0.4    0.5    0.5    1
+REUNION_N        TRAPEZOIDAL 0.3    0.8    0.5    0.5    1
+REUNION_S        TRAPEZOIDAL 0.3    0.8    0.5    0.5    1
+TO_LAKE          TRAPEZOIDAL 0.4    1.2    0.5    0.5    1
+
+[INFLOWS]
+;;Node           Constituent  TimeSeries  Type    Mfactor  Sfactor  Baseline  Pattern
+STREAM_SOURCE    FLOW         ALTIPLANO   FLOW    1.0      1.0      0.10
+
+[TIMESERIES]
+;;Name           Date       Time   Value
+ALTIPLANO        01/01/2024 00:00  0.10
+ALTIPLANO        01/01/2024 08:00  0.12
+ALTIPLANO        01/01/2024 14:00  0.15
+ALTIPLANO        01/01/2024 20:00  0.10
+ALTIPLANO        01/02/2024 00:00  0.10
+
+[COORDINATES]
+;;Node           X-Coord    Y-Coord
+STREAM_SOURCE    500        3000
+INTAKE_WEIR      600        2900
+MAIN_CANAL       700        2700
+DIST_NORTH       600        2500
+DIST_SOUTH       800        2500
+FIELD_CH_N1      450        2350
+FIELD_CH_N2      550        2350
+FIELD_CH_N3      650        2350
+FIELD_CH_S1      750        2350
+FIELD_CH_S2      850        2350
+FIELD_CH_S3      950        2350
+COLLECT_N        550        2200
+COLLECT_S        850        2200
+REUNION          700        2050
+LAKE_TITICACA    700        1900
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## How to Add These to Your Replit App
+
+### Step 1: Create the INP Files
+
+In your Replit project, create a directory structure:
+
+```
+/models/
+  /historical/
+    shushtar-hydraulic-system.inp
+    pont-du-gard-castellum.inp
+    maya-palenque-pressurized.inp
+    nazca-puquio-system.inp
+    garamantian-foggara.inp
+    tiwanaku-suka-kollus.inp
+```
+
+### Step 2: Add Model Metadata
+
+In your JavaScript data file where you store model information, add entries like:
+
+```javascript
+{
+  id: 'shushtar-hydraulic',
+  name: 'Shushtar Historical Hydraulic System',
+  civilization: 'Sassanid Empire',
+  category: 'Multi-Component',
+  era: 'classical',
+  date: '3rd-7th century CE',
+  nodes: 20,
+  links: 23,
+  scale: 'UNESCO Site',
+  description: 'Integrated dams, canals, tunnels, and water mills on the Karun River',
+  diagram: '/diagrams/shushtar.png',
+  inpFile: '/models/historical/shushtar-hydraulic-system.inp',
+  tags: ['flood-control', 'gravity-flow', 'sanitation', 'reservoir', 'unesco']
+},
+{
+  id: 'pont-du-gard',
+  name: 'Pont du Gard + Nîmes Castellum',
+  civilization: 'Roman Empire',
+  category: 'Gravity Flow',
+  era: 'classical',
+  date: '19 BCE',
+  nodes: 22,
+  links: 21,
+  scale: '50km',
+  description: '49m tall aqueduct with 0.04% gradient and 5-way water distribution terminal',
+  diagram: '/diagrams/pont-du-gard.png',
+  inpFile: '/models/historical/pont-du-gard-castellum.inp',
+  tags: ['gravity-flow', 'distribution', 'unesco']
+},
+{
+  id: 'palenque-pressurized',
+  name: 'Maya Palenque Pressurized Aqueduct',
+  civilization: 'Classic Maya',
+  category: 'Pressure Flow',
+  era: 'medieval',
+  date: '600-700 CE',
+  nodes: 6,
+  links: 6,
+  scale: '200m',
+  description: 'Only known pressurized water system in pre-Columbian Americas',
+  diagram: '/diagrams/palenque.png',
+  inpFile: '/models/historical/maya-palenque-pressurized.inp',
+  tags: ['pressure-flow', 'unique']
+},
+{
+  id: 'nazca-puquio',
+  name: 'Nazca Puquio Underground Aqueduct',
+  civilization: 'Nazca Civilization',
+  category: 'Groundwater',
+  era: 'classical',
+  date: '100 BCE-800 CE',
+  nodes: 13,
+  links: 13,
+  scale: '3km',
+  description: 'Underground aqueducts with spiral access shafts — still functioning after 2000 years',
+  diagram: '/diagrams/nazca-puquio.png',
+  inpFile: '/models/historical/nazca-puquio-system.inp',
+  tags: ['groundwater', 'still-working']
+},
+{
+  id: 'garamantian-foggara',
+  name: 'Garamantian Foggara System',
+  civilization: 'Garamantes',
+  category: 'Groundwater',
+  era: 'classical',
+  date: '500 BCE-700 CE',
+  nodes: 13,
+  links: 13,
+  scale: '2.5km',
+  description: 'Underground tunnels accessing fossil water beneath the Sahara Desert',
+  diagram: '/diagrams/garamantian-foggara.png',
+  inpFile: '/models/historical/garamantian-foggara.inp',
+  tags: ['groundwater', 'desert']
+},
+{
+  id: 'tiwanaku-suka-kollus',
+  name: 'Tiwanaku Suka Kollus (Raised Fields)',
+  civilization: 'Tiwanaku Empire',
+  category: 'Flood Control',
+  era: 'classical',
+  date: '300-1000 CE',
+  nodes: 15,
+  links: 19,
+  scale: '3800m altitude',
+  description: 'Raised agricultural platforms with thermal-hydraulic frost protection at extreme altitude',
+  diagram: '/diagrams/tiwanaku-suka-kollus.png',
+  inpFile: '/models/historical/tiwanaku-suka-kollus.inp',
+  tags: ['flood-control', 'irrigation', 'thermal']
+}
+```
+
+### Step 3: Update the Copy-to-Clipboard Function
+
+Make sure your existing "Copy .INP" button function can load these files:
+
+```javascript
+async function copyINP(modelId) {
+  try {
+    const model = models.find(m => m.id === modelId);
+    const response = await fetch(model.inpFile);
+    const inpContent = await response.text();
+    await navigator.clipboard.writeText(inpContent);
+    showToast(`${model.name} .INP copied to clipboard`);
+  } catch (err) {
+    console.error('Failed to copy:', err);
+    showToast('Failed to copy — try again', 'error');
+  }
+}
+```
+
+### Step 4: Add Category Badges
+
+Add new category badges for the new model types:
+
+```javascript
+const CATEGORIES = {
+  'Gravity Flow':     { color: '#3498db', icon: '💧' },
+  'Groundwater':      { color: '#27ae60', icon: '🌊' },
+  'Water Lifting':    { color: '#e67e22', icon: '⬆️' },
+  'Flood Control':    { color: '#e74c3c', icon: '🌊' },
+  'Sanitation':       { color: '#9b59b6', icon: '🚿' },
+  'Reservoir':        { color: '#2c3e50', icon: '💧' },
+  'Pressure Flow':    { color: '#c0392b', icon: '⚡' },
+  'Multi-Component':  { color: '#f39c12', icon: '🔧' },  // NEW
+  'Distribution':     { color: '#1abc9c', icon: '🔀' },  // NEW
+  'Irrigation':       { color: '#2ecc71', icon: '🌾' },  // NEW
+  'Navigation':       { color: '#34495e', icon: '⛵' },  // NEW
+  'Thermal':          { color: '#d35400', icon: '🌡️' },  // NEW
+};
+```
+
+### Step 5: Test Each Model
+
+After adding, verify each model runs in SWMM5:
+
+```bash
+# If you have SWMM5 CLI available
+swmm5 shushtar-hydraulic-system.inp shushtar.rpt shushtar.out
+swmm5 pont-du-gard-castellum.inp pontdugard.rpt pontdugard.out
+swmm5 maya-palenque-pressurized.inp palenque.rpt palenque.out
+swmm5 nazca-puquio-system.inp nazca.rpt nazca.out
+swmm5 garamantian-foggara.inp garamantes.rpt garamantes.out
+swmm5 tiwanaku-suka-kollus.inp tiwanaku.rpt tiwanaku.out
+```
+
+Check each`.rpt` file for:
+- Continuity error < 1%
+- No flooding warnings (unless intended)
+- Reasonable flow values
+- All links flowing
+
+---
+
+## Additional Models (Abbreviated — Key Sections Only)
+
+For brevity, here are the critical sections for additional models. Each follows the same full structure as above.
+
+### 7. Ottoman Kırkçeşme System
+
+```inp
+[TITLE]
+Ottoman Kirkcesme Water Supply - Mimar Sinan (1554 CE)
+55km aqueduct with 33 bridges and taksim distribution terminals
+Istanbul, Turkey
+Model by Robert Dickinson, PE
+
+[JUNCTIONS]
+;;Name           Elev     MaxDepth  InitDepth  SurDepth  Aponded
+BELGRADE_FOREST  180.0    3.0       0          0         0
+BEND_1           178.0    2.0       0          0         0
+KEMER_1          175.0    2.0       0          0         0
+MAGLOVA_BRIDGE   170.0    3.0       0          0         0
+KEMER_2          165.0    2.0       0          0         0
+UZUN_KEMER       160.0    3.0       0          0         0
+KEMER_3          155.0    2.0       0          0         0
+EGREKKEMER       150.0    2.0       0          0         0
+SETTLING_TANK    145.0    3.0       0          0         0
+TAKSIM_MAIN      140.0    3.0       0          0         0
+TAKSIM_BEYOGLU   138.0    2.0       0          0         0
+TAKSIM_GALATA    138.0    2.0       0          0         0
+SEBIL_SULTAN     136.0    1.5       0          0         0
+SEBIL_BAZAAR     136.0    1.5       0          0         0
+HAMMAM_SINAN     135.0    2.0       0          0         0
+SULEYMANIYE      134.0    2.0       0          0         0
+MOSQUE_FOUNT     133.0    1.5       0          0         0
+
+[OUTFALLS]
+;;Name           Elev     Type       Stage
+GOLDEN_HORN      130.0    FREE
+BOSPHORUS        130.0    FREE
+```
+
+### 8. Bazalgette London Sewers
+
+```inp
+[TITLE]
+Bazalgette London Sewer System - Victorian Engineering (1858-1875)
+2100km of sewers serving 4 million people after the Great Stink
+London, England
+Model by Robert Dickinson, PE
+
+[JUNCTIONS]
+;;Name           Elev     MaxDepth  InitDepth  SurDepth  Aponded
+HAMPSTEAD        60.0     4.0       0          0         0
+HIGHGATE         55.0     4.0       0          0         0
+CITY_NORTH       30.0     5.0       0          0         0
+WESTMINSTER      20.0     5.0       0          0         0
+CHELSEA          18.0     5.0       0          0         0
+LAMBETH          15.0     5.0       0          0         0
+N_INTERCEPT_1    25.0     6.0       0          0         0
+N_INTERCEPT_2    20.0     6.0       0          0         0
+N_INTERCEPT_3    15.0     6.0       0          0         0
+S_INTERCEPT_1    12.0     6.0       0          0         0
+S_INTERCEPT_2    10.0     6.0       0          0         0
+ABBEY_MILLS      8.0      8.0       0          0         0
+CROSSNESS        5.0      8.0       0          0         0
+
+[OUTFALLS]
+;;Name           Elev     Type       Stage
+BECKTON_OUT      2.0      TIDAL      THAMES_TIDE
+CROSSNESS_OUT    2.0      TIDAL      THAMES_TIDE
+
+[TIMESERIES]
+;;Name           Date       Time   Value
+THAMES_TIDE      01/01/2024 00:00  2.0
+THAMES_TIDE      01/01/2024 06:00  5.0
+THAMES_TIDE      01/01/2024 12:00  2.0
+THAMES_TIDE      01/01/2024 18:00  5.0
+THAMES_TIDE      01/02/2024 00:00  2.0
+```
+
+### 9. Budj Bim Eel Aquaculture (Aboriginal Australia, UNESCO)
+
+```inp
+[TITLE]
+Budj Bim Eel Aquaculture System - Aboriginal Australia (6600 BCE)
+UNESCO World Heritage - One of oldest aquaculture systems on Earth
+Victoria, Australia - Gunditjmara People
+Model by Robert Dickinson, PE
+
+[JUNCTIONS]
+;;Name           Elev     MaxDepth  InitDepth  SurDepth  Aponded
+LAKE_CONDAH      142.0    2.0       0          0         0
+WEIR_1           141.5    1.0       0          0         0
+CHANNEL_1        141.0    1.0       0          0         0
+TRAP_POND_1      140.5    1.5       0          0         0
+WEIR_2           140.0    1.0       0          0         0
+CHANNEL_2        139.5    1.0       0          0         0
+TRAP_POND_2      139.0    1.5       0          0         0
+WEIR_3           138.5    1.0       0          0         0
+CHANNEL_3        138.0    1.0       0          0         0
+HOLDING_POND     137.5    2.0       0          0         0
+
+[OUTFALLS]
+;;Name           Elev     Type       Stage
+DARLOT_CREEK     136.0    FREE
+
+[CONDUITS]
+;;Name           From            To              Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+LAKE_WEIR1       LAKE_CONDAH     WEIR_1          50       0.035    0      0       0         0
+STONE_CH1        WEIR_1          CHANNEL_1       80       0.030    0      0       0         0
+TO_POND1         CHANNEL_1       TRAP_POND_1     40       0.030    0      0       0         0
+POND1_WEIR2      TRAP_POND_1     WEIR_2          30       0.035    0      0       0         0
+STONE_CH2        WEIR_2          CHANNEL_2       80       0.030    0      0       0         0
+TO_POND2         CHANNEL_2       TRAP_POND_2     40       0.030    0      0       0         0
+POND2_WEIR3      TRAP_POND_2     WEIR_3          30       0.035    0      0       0         0
+STONE_CH3        WEIR_3          CHANNEL_3       80       0.030    0      0       0         0
+TO_HOLDING       CHANNEL_3       HOLDING_POND    40       0.030    0      0       0         0
+FINAL_OUT        HOLDING_POND    DARLOT_CREEK    100      0.030    0      0       0         0
+
+[XSECTIONS]
+;;Link           Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+LAKE_WEIR1       RECT_OPEN   0.4    3.0    0      0      1
+STONE_CH1        TRAPEZOIDAL 0.3    0.8    0.5    0.5    1
+TO_POND1         TRAPEZOIDAL 0.3    0.6    0.5    0.5    1
+POND1_WEIR2      RECT_OPEN   0.3    2.0    0      0      1
+STONE_CH2        TRAPEZOIDAL 0.3    0.8    0.5    0.5    1
+TO_POND2         TRAPEZOIDAL 0.3    0.6    0.5    0.5    1
+POND2_WEIR3      RECT_OPEN   0.3    2.0    0      0      1
+STONE_CH3        TRAPEZOIDAL 0.3    0.8    0.5    0.5    1
+TO_HOLDING       TRAPEZOIDAL 0.3    0.6    0.5    0.5    1
+FINAL_OUT        TRAPEZOIDAL 0.4    1.0    0.5    0.5    1
+
+[INFLOWS]
+;;Node           Constituent  TimeSeries  Type    Mfactor  Sfactor  Baseline  Pattern
+LAKE_CONDAH      FLOW         LAKE_FLOW   FLOW    1.0      1.0      0.15
+
+[TIMESERIES]
+;;Name           Date       Time   Value
+LAKE_FLOW        01/01/2024 00:00  0.15
+LAKE_FLOW        01/01/2024 06:00  0.18
+LAKE_FLOW        01/01/2024 12:00  0.20
+LAKE_FLOW        01/01/2024 18:00  0.18
+LAKE_FLOW        01/02/2024 00:00  0.15
+
+[COORDINATES]
+;;Node           X-Coord    Y-Coord
+LAKE_CONDAH      500        2000
+WEIR_1           600        1900
+CHANNEL_1        750        1800
+TRAP_POND_1      850        1700
+WEIR_2           900        1600
+CHANNEL_2        1000       1500
+TRAP_POND_2      1100       1400
+WEIR_3           1150       1300
+CHANNEL_3        1250       1200
+HOLDING_POND     1350       1100
+DARLOT_CREEK     1500       1000
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## Quick Reference: All Suggested Models
+
+| | | | | | Model | File Name | Nodes | Links | Status | | | |  |
+|-------|-----------|-------|-------|--------|
+| | | | | Shushtar Hydraulic System | |`shushtar-hydraulic-system.inp`| | 20 | 23 | ✅ Complete above | | | |  |
+| | | | | Pont du Gard + Castellum | |`pont-du-gard-castellum.inp`| | 22 | 21 | ✅ Complete above | | | |  |
+| | | | | Maya Palenque Pressurized | |`maya-palenque-pressurized.inp`| | 6 | 6 | ✅ Complete above | | | |  |
+| | | | | Nazca Puquio System | |`nazca-puquio-system.inp`| | 13 | 13 | ✅ Complete above | | | |  |
+| | | | | Garamantian Foggara | |`garamantian-foggara.inp`| | 13 | 13 | ✅ Complete above | | | |  |
+| | | | | Tiwanaku Suka Kollus | |`tiwanaku-suka-kollus.inp`| | 15 | 19 | ✅ Complete above | | | |  |
+| | | | | Ottoman Kırkçeşme | |`ottoman-kirkcesme.inp`| | 17 | — | 🔶 Key sections above | | | |  |
+| | | | | Bazalgette London Sewers | |`bazalgette-london-sewers.inp`| | 13 | — | 🔶 Key sections above | | | |  |
+| | | | | Budj Bim Eel Aquaculture | |`budj-bim-eel-aquaculture.inp`| | 10 | 10 | ✅ Complete above | | | |  |

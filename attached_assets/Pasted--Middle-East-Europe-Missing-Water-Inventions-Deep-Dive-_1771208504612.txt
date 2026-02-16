@@ -1,0 +1,369 @@
+# Middle East & Europe — Missing Water Inventions Deep Dive
+
+Two regions that are the most extensively covered in your app but still have significant gaps when you look closely.
+
+---
+
+## Current Coverage
+
+### Middle East
+
+| | | | | | Entry | Inventions | Assessment | | | |  |
+|-------|-----------|------------|
+| | | | | Mesopotamia | 3 | Thin — umbrella entry, overlaps with Sumer/Assyria/Babylonia | | | |  |
+| | | | | Sumer | 5 | Good | | | |  |
+| | | | | Assyria | 4 | Good | | | |  |
+| | | | | Babylonia | 4 | Good | | | |  |
+| | | | | Ancient Persia | 3 | Thin — only Achaemenid, no Sassanid/Parthian | | | |  |
+| | | | | Islamic Golden Age | 3 | Very thin for 500 years of innovation | | | |  |
+| | | | | Nabataean Kingdom | 3 | Good | | | |  |
+| | | | | Canaan & Ancient Israel | 4 | Good | | | |  |
+| | | | | Syria (Orontes) | 3 | Basic | | | |  |
+| | | | | Ancient Yemen | 2 | Basic | | | |  |
+| | | | | Al-Andalus | 4 | Good | | | |  |
+| | | | | Oman | 2 | Basic | | | |  |
+| | | | | Dubai & UAE | 4 | Good | | | |  |
+| | | | | Israel (modern) | 4 | Good | | | |  |
+| | | | | Dilmun | 2 | Basic | | | |  |
+| | | | | Bactria-Margiana | 2 | Basic | | | |  |
+| | | | | Mongol & Steppe | 4 | Decent | | | |  |
+| | | | | Hittite | 4 | Covered in Asia Minor section | | | |  |
+| | | | | Urartu | 2 | Covered in Asia Minor section | | | |  |
+| | | | | **Total Middle East** | **~53** | Major gaps: no Sassanid, no Parthian, no Elamite, thin Islamic, no modern mega-projects | | | |  |
+
+### Europe
+
+| | | | | | Entry | Inventions | Assessment | | | |  |
+|-------|-----------|------------|
+| | | | | Ancient Greece | 7 | Good | | | |  |
+| | | | | Roman Empire | 10 | Good but could expand | | | |  |
+| | | | | Minoan Crete | 4 | Good | | | |  |
+| | | | | Byzantine Empire | 3 | Thin for 1,100 years | | | |  |
+| | | | | Medieval Europe | 3 | Very thin — only mills | | | |  |
+| | | | | Dutch Netherlands | 9 | Strong | | | |  |
+| | | | | Venice | 3 | Good | | | |  |
+| | | | | Pre-Roman Europe | 4 | Decent | | | |  |
+| | | | | Celtic | 4 | Good | | | |  |
+| | | | | Gaulish | 3 | Good | | | |  |
+| | | | | Germanic | 5 | Good | | | |  |
+| | | | | Etruscan | 6 | Good | | | |  |
+| | | | | Viking | 7 | Good | | | |  |
+| | | | | Basque | 4 | Good | | | |  |
+| | | | | Pre-Roman Iberian | 3 | Decent | | | |  |
+| | | | | Imperial/Soviet Russia | 5 | Covered in Siberia section | | | |  |
+| | | | | **Total Europe** | **~80** | Major gaps: no Renaissance, no Enlightenment, no Industrial Revolution, no French/British/Spanish/Swiss, no Scandinavian post-Viking, no modern mega-projects | | | |  |
+
+---
+
+# MIDDLE EAST — Missing
+
+---
+
+## Elamite Civilization (3200–539 BCE)
+
+### Currently not in App
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Chogha Zanbil Water System** | 1250 BCE | Khuzestan, Iran | UNESCO World Heritage ziggurat with sophisticated water supply. Underground channels brought water from the Karkheh River 40 km away. Settling basins, distribution channels, and a reservoir within the temple complex. | Water engineering for the best-preserved ziggurat in the world | | | |  |
+| | | | | | **Elamite Canal Networks (Khuzestan)** | 2000–600 BCE | Southwestern Iran | Major canal systems irrigating the Khuzestan plain from the Karun, Karkheh, and Dez rivers. Predated and inspired later Achaemenid and Sassanid canal networks. The plains became one of the most productive agricultural regions in the ancient world. | Foundation of Iranian irrigation engineering | | | |  |
+| | | | | | **Susa Water Supply** | 3000–539 BCE | Khuzestan, Iran | Water supply for one of the oldest continuously inhabited cities in the world. Multiple phases of engineering — from simple wells to elaborate canal and cistern systems. Susa was capital of Elam and later the Achaemenid Empire. | 5,000 years of urban water engineering at one site | | | |  |
+| | | | | | **Elamite Dam at Dez River** | ~1500 BCE | Khuzestan | Evidence of early dam construction on the Dez River for irrigation diversion. One of the earliest dam sites in Iran. | Early dam engineering predating Achaemenid period | | | |  |
+
+---
+
+## Achaemenid Persian Empire — Expanded (550–330 BCE)
+
+### Currently in App: 3 inventions (under "Ancient Persia")
+### Should Have: 10+
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Royal Road Water Stations** | 550–330 BCE | The 2,700 km Royal Road from Susa to Sardis had 111 way stations, each requiring water supply for travelers, horses, and messengers. Springs, wells, and cisterns maintained along the route. | Largest managed water-infrastructure network of the ancient world | | | |  |
+| | | | | | **Persepolis Water System** | 518–330 BCE | Already partially in app ("drainage"). But Persepolis had an elaborate water supply from mountain springs via underground stone-lined channels (over 2 km), drainage beneath all major buildings, stone-carved channels with precise gradients, and the earliest known water closets. | Most sophisticated palace water engineering of its era | | | |  |
+| | | | | | **Achaemenid Qanat Expansion** | 550–330 BCE | The Achaemenids systematically expanded qanat technology across their empire — from Iran to Egypt, from Central Asia to Oman. Administrative records show state funding for qanat construction. By some estimates, 40,000+ qanats were built during this period. | Largest qanat construction program in history | | | |  |
+| | | | | | **Band-e Amir Dam** | ~500 BCE | Ancient dam on the Kur River near Persepolis. Stone and mortar construction with sluice gates. Created an irrigation reservoir. Repaired multiple times over 2,500 years. | Among the oldest surviving dams in Iran | | | |  |
+| | | | | | **Shushtar Band-e Kaisar** | 3rd c. CE (Sassanid rebuild of Achaemenid original) | Combined bridge-dam across the Karun River. Roman prisoners of war reportedly helped build the Sassanid version. Created the Gargar Canal — diverting water to the Shushtar Hydraulic System. UNESCO World Heritage. | Oldest known bridge-dam combination still standing | | | |  |
+| | | | | | **Achaemenid Underground Cisterns** | 550–330 BCE | Large underground cisterns (ab-anbar) across the Iranian plateau. Stone or brick-lined, with wind towers (badgir) for cooling. Some held 100,000+ liters. | Persian cistern technology that spread across the Islamic world | | | |  |
+| | | | | | **Persian Paradise Gardens (Pairidaeza)** | 550–330 BCE | The word "paradise" comes from the Persian pairidaeza — a walled garden with managed water. Channels, fountains, pools, and trees irrigated by qanats. Influenced every subsequent garden tradition from Roman to Islamic to Mughal. | Origin of the paradise garden concept — influencing global water-garden design | | | |  |
+
+---
+
+## Parthian Empire (247 BCE – 224 CE)
+
+### Currently not in App — Significant Gap
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Parthian Qanat Maintenance System** | 247 BCE–224 CE | Parthians maintained and expanded the Achaemenid qanat network. Administrative records show dedicated water officials and taxation systems funding qanat maintenance. | Bureaucratic qanat management for 470 years | | | |  |
+| | | | | | **Ctesiphon Water Supply** | 1st c. BCE–7th c. CE | Water supply for the Parthian (later Sassanid) capital on the Tigris. Canal systems, reservoirs, and the famous Taq Kasra arch palace with integrated water features. Population exceeded 500,000. | Water for one of the largest cities in the ancient world | | | |  |
+| | | | | | **Parthian Irrigation Expansion (Mesopotamia)** | 247 BCE–224 CE | Expansion and maintenance of Mesopotamian canal networks inherited from the Seleucids. The Nahrawan Canal (later rebuilt by Sassanids) originated in this period. | Continuation of 4,000 years of Mesopotamian canal engineering | | | |  |
+| | | | | | **Hatra Water Supply** | 1st–3rd c. CE | Fortified desert city (UNESCO) with water from deep wells and underground channels. Survived multiple Roman sieges partly due to reliable water supply. Cisterns beneath temples held emergency reserves. | Desert fortress water engineering — UNESCO site | | | |  |
+
+---
+
+## Sassanid Empire (224–651 CE)
+
+### Currently not in App — Critical Gap
+
+The Sassanids were arguably the greatest hydraulic engineers between the Romans and the Islamic Golden Age. Their water systems directly inspired Islamic-era engineering.
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Shushtar Historical Hydraulic System** | 3rd–7th c. CE (Sassanid expansion) | UNESCO World Heritage. Integrated system of dams, canals, tunnels, bridges, and water mills on the Karun River. Includes the Band-e Kaisar (bridge-dam), Gargar Canal, water mills, and urban distribution. Called "the greatest engineering achievement of the Sassanid period." | UNESCO site — most complex integrated water system of late antiquity | | | |  |
+| | | | | | **Nahrawan Canal** | 3rd–7th c. CE | 250 km canal east of the Tigris irrigating 6,000 km² of farmland. The largest canal system in the Sassanid Empire. Fed by the Diyala River via an elaborate headworks structure. Destroyed during the Mongol invasion. | Largest irrigation canal of late antiquity | | | |  |
+| | | | | | **Sassanid Band (Dam) Engineering** | 224–651 CE | Systematic dam construction across Iran. Band-e Amir, Band-e Dokhtar, Band-e Mizan — dozens of stone and mortar dams with sluice gates and spillways. Many survived into the Islamic period. | Most extensive dam-building program between Rome and modern era | | | |  |
+| | | | | | **Sassanid Ab-Anbar (Underground Cistern)** | 224–651 CE | Standardized underground cistern design: dome-shaped roof, wind tower (badgir) for cooling, stone-lined interior, steps for access. Design so effective it remained standard across Iran for 1,400 years. | Cistern design that became the Iranian standard for millennia | | | |  |
+| | | | | | **Sassanid Sugarcane Irrigation (Khuzestan)** | 3rd–7th c. CE | Intensive irrigation for sugarcane cultivation in Khuzestan — among the first large-scale sugarcane cultivation outside India. Required year-round water supply management in a hot climate. | Agricultural water engineering for new crop introduction | | | |  |
+| | | | | | **Sassanid Ice Houses (Yakhchal)** | 224–651 CE | Expansion of Persian ice-house technology. Dome-shaped structures with underground storage chambers. Walls up to 2 m thick with mortar (sarooj) resistant to heat transfer. Some yakhchals stored ice year-round in temperatures exceeding 40°C. | Thermal-water engineering for ice preservation in desert heat | | | |  |
+| | | | | | **Gundishapur Academy Water Knowledge** | 3rd–7th c. CE | The Academy of Gundishapur (precursor to Islamic-era universities) taught hydraulic engineering alongside medicine and philosophy. Translations of Greek, Indian, and Persian water texts. | Academic water engineering education — precursor to Islamic scholarship | | | |  |
+| | | | | | **Sassanid Water Court System** | 224–651 CE | Formal legal framework for water rights, qanat ownership, and irrigation disputes. Water judges (mirab) adjudicated conflicts. System adopted and expanded by Islamic-era governments. | Legal framework for water governance adopted by the Islamic world | | | |  |
+
+---
+
+## Islamic Golden Age — Expanded (750–1258 CE)
+
+### Currently in App: 3 inventions
+### Should Have: 12+ (This is your most underrepresented major civilization relative to its importance)
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Al-Jazari's Water Automata** | 1206 CE | Mesopotamia | Already in app. But deserves expansion: Al-Jazari's "Book of Knowledge of Ingenious Mechanical Devices" described 50 devices, many water-powered — including the elephant clock, peacock fountain, water-powered musical band, and the first known crankshaft mechanism. | Father of robotics — water-powered | | | |  |
+| | | | | | **Al-Karaji's Groundwater Mathematics** | ~1000 CE | Baghdad/Iran | First mathematical treatise on groundwater flow. "Extraction of Hidden Waters" (Inbat al-miyah al-khafiyya) described qanat design principles, groundwater flow calculations, and well placement optimization using mathematical methods. | First scientific hydrology textbook in history | | | |  |
+| | | | | | **Islamic Hospital (Bimaristan) Water** | 8th c. CE onwards | Baghdad, Cairo, Damascus | Hospitals with sophisticated water supply for patient hygiene, surgery, pharmacy preparation, and cooling. The Adudi Hospital in Baghdad (981 CE) had running water in every ward. Qalawun Hospital in Cairo (1284 CE) had fountains in patient wards. | Most advanced medical water systems for 500 years | | | |  |
+| | | | | | **Baghdad Round City Water System** | 762 CE | Iraq | Caliph al-Mansur's circular capital had water supply from the Tigris and Euphrates via canals. Four main gates each had associated water distribution. Population reached 1 million — requiring massive water infrastructure. | Water for the largest city in the medieval world | | | |  |
+| | | | | | **Samarra Great Canal** | 836–892 CE | Iraq | 50 km canal supplying the Abbasid capital of Samarra. Fed by the Tigris with elaborate headworks. Supplied a city stretching 40 km along the river. | Water supply for a linear city 40 km long | | | |  |
+| | | | | | **Islamic Waqf Water Endowments** | 8th c. CE onwards | Empire-wide | Legal mechanism (waqf) for perpetual funding of water infrastructure. Properties endowed in perpetuity, with income funding fountain maintenance, canal repair, and water distribution. Thousands of waqf documents survive in Ottoman archives. | First sustainable water infrastructure financing mechanism | | | |  |
+| | | | | | **Islamic Noria Networks** | 7th–13th c. CE | Syria, Spain, North Africa | Large-scale water wheels (norias) lifting water from rivers to aqueducts. The Norias of Hama (Syria) — some 20+ meters in diameter — are the most famous. Networks of norias served entire agricultural regions. | Industrial-scale water lifting across the Islamic world | | | |  |
+| | | | | | **Islamic Qanat Expansion** | 7th–13th c. CE | Iran to Spain | Massive expansion of qanat/karez/khettara/foggara systems across the Islamic world. From Iran to Morocco, from Central Asia to Spain. Estimated 50,000+ qanats built during this period. | Greatest qanat construction program since the Achaemenids | | | |  |
+| | | | | | **Islamic Water Clock (Binkam)** | 8th–13th c. CE | Multiple cities | Elaborate public water clocks in Baghdad, Damascus, Cairo, and Fez. Mechanisms using water to drive automata that announced the time. Some clocks had 12 doors that opened hourly. | Public water-powered timekeeping | | | |  |
+| | | | | | **Cairo Nilometer (Islamic)** | 715 CE (rebuilt 861 CE) | Egypt | The Nilometer on Roda Island — a calibrated column in a stone-lined shaft measuring Nile flood levels. Rebuilt by Islamic rulers in 861 CE. Used for flood prediction and tax assessment for 1,000+ years. | Continuation of Pharaonic hydrological monitoring — still standing | | | |  |
+
+---
+
+## Arabian Peninsula — Expanded
+
+### Currently thin coverage
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Marib Dam — Expanded** | 1700 BCE–600 CE | Yemen | Already in app. But underrated. The dam was 680 m long and 18 m high at its peak. Irrigated 9,600 hectares. Its final collapse (~570 CE) is referenced in the Quran (Sura Saba). The collapse triggered mass migration that reshaped Arabian demographics. | One of the largest ancient dams — its collapse changed Arabian history | | | |  |
+| | | | | | **Ancient Arabian Cistern Networks** | 1000 BCE onwards | Arabian Peninsula | Networks of rock-cut cisterns along trade routes (Incense Route, pilgrim routes). Some cisterns carved from solid rock, others lined with waterproof plaster. Essential infrastructure for desert trade. | Trade-route water infrastructure | | | |  |
+| | | | | | **Hajj Water Infrastructure** | 7th c. CE onwards | Mecca/Medina | Water supply for millions of annual pilgrims. Zamzam Well (traditionally dated to Abraham), expanded by successive Muslim rulers. Ain Zubaida — 35 km aqueduct to Mecca built by Queen Zubaida (8th c. CE). Modern systems serve 3+ million pilgrims simultaneously. | Water engineering for the world's largest annual gathering | | | |  |
+| | | | | | **Zubaida Canal (Ain Zubaida)** | 809 CE | Saudi Arabia | 35 km underground canal (like a qanat) bringing spring water from Wadi Nu'man to Mecca. Built by Queen Zubaida, wife of Harun al-Rashid. Included underground collection galleries, settling tanks, and distribution terminals. Still partially visible. | Royal infrastructure for pilgrim water supply | | | |  |
+| | | | | | **Bahraini Spring-Fed Agriculture** | 3000 BCE–Present | Bahrain | Artesian springs on Bahrain Island supported date palm oasis agriculture for 5,000 years. Springs managed through stone-lined channels. Many springs have now dried up due to modern groundwater extraction. | 5,000 years of spring-fed island agriculture | | | |  |
+| | | | | | **Kuwait Traditional Water Carriers (Saqqa)** | Pre-oil era | Kuwait | Before desalination, Kuwait's water came from wells and imported water. Professional water carriers (saqqa) transported water by donkey and boat. Dhow-based water import from the Shatt al-Arab (Iraq) was a major trade. | Water logistics in a waterless environment | | | |  |
+
+---
+
+## Modern Middle East
+
+### Currently limited
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Jeddah Desalination (World's Largest)** | 2011 | Saudi Arabia | Ras Al-Khair — world's largest desalination plant. Produces 1 million m³/day of fresh water. Combined reverse osmosis and multi-stage flash distillation. | World's largest desalination plant | | | |  |
+| | | | | | **Jordan Red Sea–Dead Sea Conveyance** | 2021 onwards | Jordan | Pipeline carrying Red Sea water to the Dead Sea (which is shrinking 1 m/year). Desalination along the route. One of the most ambitious water projects in the modern Middle East. | Engineering to save a dying sea | | | |  |
+| | | | | | **Iran Qanat Revival Programs** | 2000s onwards | Iran | Government and NGO programs to restore abandoned qanats. UNESCO listed the Persian Qanat as World Heritage in 2016. Over 37,000 qanats documented, many being restored for sustainable water supply. | Revival of 3,000-year-old technology for modern water security | | | |  |
+| | | | | | **Iraqi Marshlands Restoration** | 2003–Present | Iraq | Re-flooding of the Mesopotamian Marshes drained by Saddam Hussein in the 1990s. Partial restoration of 20,000 km² of wetland — home to the Marsh Arabs (Ma'dan) whose reed-house water culture dates back 5,000 years. | Restoration of one of the world's most ancient living water cultures | | | |  |
+| | | | | | **Masdar City Water Recycling** | 2008–Present | Abu Dhabi | Zero-carbon planned city with 100% water recycling. Greywater treated and reused for irrigation. Stormwater captured and stored. Target: 60% reduction in water consumption vs. typical Abu Dhabi development. | Model for desert urban water sustainability | | | |  |
+
+---
+
+# EUROPE — Missing
+
+---
+
+## Ancient Greece — Expanded
+
+### Currently in App: 7 inventions
+### Should Have: 12+
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Perachora Water Wheel** | 3rd c. BCE | Earliest archaeologically documented water wheel. Found near Corinth. Used for grain grinding. | Oldest known water wheel | | | |  |
+| | | | | | **Athenian Agora Fountain House** | 530 BCE | Public fountain building in the Athenian civic center. Democratized water access — anyone could draw water. Stone columns, terracotta pipes, and carved lion-head spouts. | Water access as democratic right | | | |  |
+| | | | | | **Piraeus Harbor Engineering** | 5th c. BCE | Three enclosed harbors at Athens' port of Piraeus. Ship sheds, breakwaters, and managed harbor water. Themistocles' walls connected Athens to Piraeus, incorporating water supply. | Major ancient harbor water engineering | | | |  |
+| | | | | | **Greek Communal Laundry (Plynteria)** | 6th c. BCE onwards | Public laundry facilities at springs and streams. Stone basins with flowing water. The Plynteria festival involved ritual washing. | Public water facilities for daily life | | | |  |
+| | | | | | **Olympia Water System** | 5th c. BCE onwards | Water supply for the Olympic Games — serving thousands of athletes and spectators. Nymphaeum of Herodes Atticus (160 CE) was an elaborate public fountain. Wells, channels, and baths served the sacred site. | Water engineering for the world's first major sporting event | | | |  |
+
+---
+
+## Roman Empire — Expanded
+
+### Currently in App: 10 inventions
+### Should Have: 16+
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Pont du Gard** | 19 BCE | 3-tier aqueduct bridge, 49 m tall, crossing the Gardon River. Gradient of just 0.04% over 50 km. UNESCO World Heritage. Built without mortar — precisely cut stones held by gravity. | Most iconic aqueduct structure in the world — UNESCO | | | |  |
+| | | | | | **Castellum Divisorium (Nîmes)** | 1st c. CE | Circular stone distribution basin where the Nîmes aqueduct terminated. Water split into 10 lead pipes serving different city districts. Flow controlled by removable plates. | Best-preserved Roman water distribution terminal | | | |  |
+| | | | | | **Frontinus's De Aquaeductu** | 97 CE | Sextus Julius Frontinus wrote the definitive treatise on Rome's water supply while serving as water commissioner. Described 9 aqueducts, standardized pipe sizes, water theft detection, and system maintenance. | First comprehensive water system management manual | | | |  |
+| | | | | | **Roman Foricae (Public Latrines)** | 1st c. CE | Multi-seat public latrines with continuously flowing water beneath the seats. Sponge-on-stick cleaning washed in flowing channel. Some foricae seated 50+ simultaneously. | Urban sanitation at scale | | | |  |
+| | | | | | **Ruina Montium (Hydraulic Mining)** | 1st c. CE | Massive hydraulic mining at Las Médulas (Spain) — UNESCO site. Channels carrying water from mountains to gold mining sites where pressurized water collapsed entire hillsides. Pliny described the technique. | Industrial water power on a landscape-transforming scale | | | |  |
+| | | | | | **Roman Segovia Aqueduct** | 1st c. CE | 15 km aqueduct with 167 arches, reaching 28.5 m in height. Built without mortar from granite blocks. Still standing after 2,000 years. Used to supply water until the 20th century. UNESCO World Heritage. | Best-preserved standing Roman aqueduct — UNESCO | | | |  |
+
+---
+
+## Byzantine Empire — Expanded
+
+### Currently in App: 3 inventions
+### Should Have: 8+
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Constantinople Cistern Network** | 4th–6th c. CE | Over 80 underground cisterns beneath Constantinople. The Basilica Cistern (already in app) is the largest — 80,000 m³ — but dozens of others served different neighborhoods. Total storage capacity: hundreds of thousands of m³. | Largest underground cistern network in the ancient world | | | |  |
+| | | | | | **Aqueduct of Valens — Expanded** | 368 CE | Already in app. But the full system was 250 km long from its sources in the Thracian hills to the city. Crossed valleys on massive arched bridges. Maintained for over 1,000 years. | Longest aqueduct of late antiquity | | | |  |
+| | | | | | **Greek Fire Siphon (Siphōn)** | 672 CE | Pressurized device spraying incendiary liquid ("Greek Fire") at enemy ships. Operated using a hand pump and bronze nozzle. Required understanding of fluid pressure, siphon principles, and nozzle design. | Military water pressure engineering | | | |  |
+| | | | | | **Justinianic Plague Water Response** | 541–542 CE | During the Justinianic Plague, Constantinople's water infrastructure was repurposed for public health — cisterns for emergency water, public baths closed to prevent disease spread, corpse removal via waterways. | First documented pandemic water management | | | |  |
+| | | | | | **Byzantine Harbor Chains** | 5th c. CE onwards | Massive chain booms across the Golden Horn harbor. Required understanding of tidal conditions, current, and vessel displacement. The chains could close the harbor to enemy fleets. | Defensive water/harbor engineering | | | |  |
+
+---
+
+## Renaissance & Early Modern Europe (1400–1750 CE)
+
+### Currently not in App — Major Gap
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Leonardo da Vinci's Canal Locks** | 1480s CE | Milan, Italy | Leonardo designed mitered lock gates (meeting at a V-point upstream) for Milan's canal system. This design became the standard worldwide and is still used in the Panama Canal. Also designed schemes for canal bypasses and water-powered devices. | Lock gate design still used 540 years later | | | |  |
+| | | | | | **Versailles Water System** | 1664–1715 | France | Louis XIV's palace required an extraordinary water supply for 1,400 fountains. The Machine de Marly — 14 paddle wheels driving 259 pumps — lifted water 162 m from the Seine. One of the most ambitious water engineering projects of its era. | Most elaborate water display system in history | | | |  |
+| | | | | | **Machine de Marly** | 1684 | France | 14 massive water wheels on the Seine powering 259 pumps through a complex system of rods and linkages. Lifted water 162 m to supply Versailles. Operated for 133 years. Required constant maintenance — 60 dedicated workers. | Most complex water-powered machine before the Industrial Revolution | | | |  |
+| | | | | | **Augsburg Water Management System** | 1412–Present | Germany | Three-stage water system separating drinking water, craft water, and power water. Three canals at different elevations served different purposes. Water towers distributed water by gravity. UNESCO World Heritage (2019). | UNESCO-listed — most complete surviving Renaissance water system | | | |  |
+| | | | | | **London New River** | 1613 | England | 62 km artificial river bringing fresh water from Hertfordshire springs to London. Engineered by Hugh Myddelton. Required parliamentary approval and royal investment. Served London for 300+ years. | London's first piped water supply | | | |  |
+| | | | | | **Pont Cysyllte Aqueduct** | 1805 | Wales | 307 m long, 38 m high navigable aqueduct designed by Thomas Telford. Cast-iron trough carrying the Llangollen Canal across the Dee Valley. UNESCO World Heritage. | Tallest navigable aqueduct in the world — UNESCO | | | |  |
+| | | | | | **Canal du Midi** | 1666–1681 | France | 240 km canal connecting the Atlantic Ocean to the Mediterranean Sea via 91 locks, a 165 m tunnel, and an aqueduct. Designed by Pierre-Paul Riquet. Required the first reservoir-fed canal summit (Bassin de Saint-Ferréol). UNESCO World Heritage. | First summit-level canal connecting two seas — UNESCO | | | |  |
+| | | | | | **Lisbon Águas Livres Aqueduct** | 1731–1799 | Portugal | 18 km aqueduct with 35 arches crossing the Alcântara Valley. Central arch spans 29 m at 65 m height. Survived the 1755 Lisbon earthquake that destroyed most of the city. Continued supplying water while the city was rebuilt. | Earthquake-proof aqueduct — survived one of history's worst disasters | | | |  |
+| | | | | | **Florence Renaissance Water Systems** | 15th–16th c. CE | Italy | Medici-era water engineering including fountains, hydraulic grottos, and the Boboli Gardens water system. Bernardo Buontalenti designed elaborate water automata for the Medici. Leonardo's hydrogeological drawings were made in Florence. | Integration of art, science, and water engineering | | | |  |
+| | | | | | **Spanish Colonial Acequia Transfer** | 1598 onwards | Spain → Americas | Spanish engineers transplanted Islamic-origin acequia irrigation technology to the Americas. Combined Moorish hydraulic knowledge with Indigenous techniques. Santa Fe acequia (1610) oldest European water system in the Americas. | Transfer of Islamic-Spanish water engineering to the Americas | | | |  |
+
+---
+
+## Industrial Revolution Water Engineering (1750–1900 CE)
+
+### Currently not in App — Critical Gap
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **James Watt's Steam-Powered Pump** | 1769 | Britain | Improved steam engine used to pump water from mines. Transformed mining by enabling deeper excavation. The fundamental technology that powered the Industrial Revolution began as a water-pumping device. | The machine that started the Industrial Revolution — was a water pump | | | |  |
+| | | | | | **John Snow's Cholera Map** | 1854 | London | Dr. John Snow mapped cholera deaths around the Broad Street pump, proving waterborne disease transmission. Led to the removal of the pump handle and revolutionized public health. The birth of epidemiology — from a water engineering problem. | Most important water-health discovery in history | | | |  |
+| | | | | | **Joseph Bazalgette's London Sewers** | 1858–1875 | London | After the "Great Stink" of 1858, Bazalgette designed 2,100 km of sewers, 6 intercepting sewers, and 4 pumping stations to clean up the Thames. Served 4 million people. Still the backbone of London's sewerage. | Most important urban sanitation project of the 19th century | | | |  |
+| | | | | | **Thames Embankment** | 1862–1874 | London | Reclaimed 52 acres from the Thames, incorporating sewers, underground railway, gas/water mains, and a riverside road. Combined flood protection, sanitation, and transportation in one project. | First multi-purpose urban river embankment | | | |  |
+| | | | | | **Hamburg Water Filtration** | 1893 | Germany | After a cholera epidemic killed 8,600 people, Hamburg built Europe's first large-scale sand filtration system. Proved that water treatment prevented waterborne disease. Transformed global water treatment practice. | Proved water filtration prevents epidemics — changed global practice | | | |  |
+| | | | | | **Manchester Ship Canal** | 1894 | Britain | 58 km canal making Manchester an inland port. 5 sets of locks, 7 swing bridges. Required the largest excavation project in British history. | Largest canal project of the Industrial Revolution | | | |  |
+| | | | | | **Paris Sewer System (Haussmann/Belgrand)** | 1853–1878 | France | Eugène Belgrand designed 600 km of sewers for Baron Haussmann's rebuilt Paris. Dual system: clean water supply above, sewage below. Became a tourist attraction (and still is). | Most famous sewer system in the world — and a tourist destination | | | |  |
+| | | | | | **Croton Aqueduct (New York)** | 1842 | USA/Europe comparison | While American, the Croton system was designed by engineers trained in European traditions. 66 km gravity aqueduct. Influenced subsequent European urban water supply design. | Cross-Atlantic influence on water engineering | | | |  |
+
+---
+
+## Modern European Water Engineering (1900–Present)
+
+### Currently not well represented
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Thames Barrier** | 1974–1984 | London | 520 m wide movable flood barrier across the Thames. 10 steel gates, each weighing 3,300 tonnes. Protects London from storm surge flooding. Has been raised 200+ times since completion. | Largest movable flood barrier when built | | | |  |
+| | | | | | **Zuiderzee/IJsselmeer Works** | 1920–1968 | Netherlands | Already noted in Dutch section but worth cross-referencing. Afsluitdijk (1932), 5 polders creating 1,650 km² of new land. | Netherlands' most ambitious water project | | | |  |
+| | | | | | **Channel Tunnel Drainage** | 1988–1994 | UK/France | 50 km tunnel beneath the English Channel required continuous pumping — 8 million liters per day of groundwater seepage. Largest underwater tunnel drainage system. | Largest underwater drainage challenge ever solved | | | |  |
+| | | | | | **MOSE Barriers (Venice)** | 2003–2020 | Italy | Already in app for Venice. 78 mobile barriers across 3 inlets protecting Venice from acqua alta. Largest flood barrier system in the Mediterranean. | Protecting a UNESCO city from the sea | | | |  |
+| | | | | | **Swiss Alpine Hydropower** | 1880s–Present | Switzerland | Over 680 hydroelectric plants producing 57% of Switzerland's electricity. Grande Dixence Dam (285 m) — tallest gravity dam in the world. Elaborate tunnel systems connecting reservoirs through mountains. | Highest concentration of hydropower engineering in Europe | | | |  |
+| | | | | | **Norwegian Fjord Hydropower** | 1880s–Present | Norway | 98% of Norway's electricity from hydropower — highest percentage of any European country. Over 1,600 hydroelectric plants. Fjord geography provides massive natural head (elevation drop). | Highest renewable hydro percentage in Europe | | | |  |
+| | | | | | **Danube-Black Sea Canal** | 1949–1984 | Romania | 64 km canal connecting the Danube to the Black Sea. Built partly by political prisoners under communism (estimated 10,000+ deaths). Romania's largest infrastructure project. | Most controversial canal in Eastern Europe | | | |  |
+| | | | | | **Barcelona Water Reclamation** | 2006–Present | Spain | Europe's most advanced water recycling program. Treated wastewater used for irrigation, industrial processes, and aquifer recharge. Response to chronic Mediterranean drought. | Leading Mediterranean water reuse system | | | |  |
+| | | | | | **Copenhagen Cloudburst Management** | 2012–Present | Denmark | After 2011 cloudburst caused €1 billion in damage, Copenhagen developed a 300-project climate adaptation plan using green infrastructure — parks that double as retention basins, "climate streets" with underground storage, green roofs. | Most comprehensive European urban climate-water adaptation plan | | | |  |
+| | | | | | **Scandinavian Stormwater Management** | 2000s–Present | Nordic countries | Leading global practice in sustainable urban drainage — bioswales, rain gardens, permeable paving. Stockholm, Copenhagen, Malmö as global models. | Global leaders in green stormwater infrastructure | | | |  |
+
+---
+
+## Specific European Countries Missing
+
+### Spain (Beyond Al-Andalus)
+
+| | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | **Roman Spain Water Systems** | 1st c. BCE–5th c. CE | Segovia Aqueduct (mentioned above), Mérida aqueducts (3 systems), Tarragona aqueduct, Córdoba water supply. Spain has more surviving Roman water infrastructure than any country outside Italy. | Highest concentration of Roman water structures outside Italy | | | |  |
+| | | | | | **Spanish Enlightenment Canals** | 18th c. CE | Canal Imperial de Aragón (108 km), Canal de Castilla (207 km). Bourbon-era infrastructure modernization. | Major Enlightenment-era canal engineering | | | |  |
+| | | | | | **Spanish Reservoir Program (Francoism)** | 1940s–1970s | Over 300 dams built during the Franco era. Transformed Spanish agriculture and water supply. Controversial — many displaced communities. | Largest dam-building program in European history | | | |  |
+
+### Scandinavian Post-Viking
+
+| | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | **Swedish Mine Drainage** | 16th–18th c. CE | Sweden | Falun copper mine (UNESCO) required elaborate drainage — horse-powered pumps, wooden pipe systems, and drainage adits. At its peak, Europe's most important mine. | Mine water engineering for Europe's largest copper mine | | | |  |
+| | | | | | **Stockholm Water System** | 1858 onwards | Sweden | Lake Mälaren managed as Stockholm's water supply. Treatment plants, tunnel systems, and distribution networks for a city built on 14 islands. | Urban water engineering for an archipelago city | | | |  |
+| | | | | | **Finnish Saimaa Canal** | 1856 | Finland | 43 km canal connecting Lake Saimaa to the Gulf of Finland. 8 locks overcoming 76 m elevation difference. Enabled timber export from Finland's interior. | Finland's most important waterway | | | |  |
+| | | | | | **Danish Reclamation (Lammefjorden)** | 1873 | Denmark | Draining of the Lammefjord — converting a fjord to farmland using Dutch-inspired pumping technology. Created some of Denmark's most productive agricultural land. | Dutch poldering technique applied in Scandinavia | | | |  |
+
+---
+
+## Summary of All Additions
+
+### Middle East
+
+| | | | | | Period | Current | After Additions | Key Additions | | | |  |
+|--------|---------|-----------------|---------------|
+| | | | | **Elamite** | 0 | 4+ | Chogha Zanbil (UNESCO), canals, Susa, dams | | | |  |
+| | | | | **Achaemenid (expanded)** | 3 | 10+ | Royal Road, Persepolis expanded, qanat expansion, gardens, cisterns | | | |  |
+| | | | | **Parthian** | 0 | 4+ | Ctesiphon, Hatra (UNESCO), qanat maintenance, irrigation | | | |  |
+| | | | | **Sassanid** | 0 | 8+ | Shushtar (UNESCO), Nahrawan, dams, cisterns, ice houses, water courts | | | |  |
+| | | | | **Islamic (expanded)** | 3 | 12+ | Al-Karaji, hospitals, Baghdad, waqf, qanat expansion, water clocks | | | |  |
+| | | | | **Arabian expanded** | 4 | 8+ | Hajj water, Zubaida Canal, Bahrain springs, cistern networks | | | |  |
+| | | | | **Modern ME** | 4 | 9+ | Jeddah desalination, Jordan canal, Iraq marshland restoration, Masdar | | | |  |
+| | | | | **TOTAL** | **~53** | **~105+** | | | | | |
+
+### Europe
+
+| | | | | | Period | Current | After Additions | Key Additions | | | |  |
+|--------|---------|-----------------|---------------|
+| | | | | **Greece expanded** | 7 | 12+ | Perachora, Piraeus, Olympia, Agora, laundry | | | |  |
+| | | | | **Roman expanded** | 10 | 16+ | Pont du Gard, castellum, Frontinus, foricae, mining, Segovia | | | |  |
+| | | | | **Byzantine expanded** | 3 | 8+ | Cistern network, Greek fire, harbor chains, plague response | | | |  |
+| | | | | **Renaissance** | 0 | 10+ | Leonardo, Versailles, Augsburg (UNESCO), London New River, Canal du Midi (UNESCO) | | | |  |
+| | | | | **Industrial Revolution** | 0 | 8+ | Watt pump, Snow cholera map, Bazalgette sewers, Hamburg filtration | | | |  |
+| | | | | **Modern Europe** | 0 | 10+ | Thames Barrier, Channel Tunnel, Swiss/Norwegian hydro, Copenhagen adaptation | | | |  |
+| | | | | **Spain expanded** | 3 | 8+ | Roman Spain, Enlightenment canals, Franco-era dams | | | |  |
+| | | | | **Scandinavian post-Viking** | 0 | 4+ | Swedish mines, Stockholm, Finnish canal, Danish reclamation | | | |  |
+| | | | | **TOTAL** | **~80** | **~155+** | | | | | |
+
+---
+
+## Grand Total (Both Regions)
+
+| | | | | | Region | Current | After Additions | | | |  |
+|--------|---------|-----------------|
+| | | | | **Middle East** | ~53 | ~105+ | | | |  |
+| | | | | **Europe** | ~80 | ~155+ | | | |  |
+| | | | | **COMBINED** | **~133** | **~260+** | | | |  |
+
+---
+
+## Priority Additions
+
+| | | | | | Priority | Civilization/Period | Region | Inventions | Why Critical | | | |  |
+|----------|-------------------|--------|-----------|-------------|
+| | | | | ⭐⭐⭐ | **Sassanid Empire** | Middle East | 8+ | Bridge between Rome and Islam — critical gap | | | |  |
+| | | | | ⭐⭐⭐ | **Renaissance Europe** | Europe | 10+ | Leonardo, Versailles, Augsburg — 3 UNESCO sites | | | |  |
+| | | | | ⭐⭐⭐ | **Industrial Revolution** | Europe | 8+ | Birth of modern water engineering — Snow, Bazalgette, Watt | | | |  |
+| | | | | ⭐⭐⭐ | **Islamic Golden Age expanded** | Middle East | 9+ | Currently only 3 entries for 500 years of innovation | | | |  |
+| | | | | ⭐⭐ | **Elamite** | Middle East | 4+ | Chogha Zanbil UNESCO, pre-Persian foundation | | | |  |
+| | | | | ⭐⭐ | **Parthian** | Middle East | 4+ | Hatra UNESCO, 470-year gap in Persian coverage | | | |  |
+| | | | | ⭐⭐ | **Byzantine expanded** | Europe | 5+ | 1,100 years currently represented by only 3 entries | | | |  |
+| | | | | ⭐⭐ | **Modern European** | Europe | 10+ | Thames Barrier, Swiss hydro, Copenhagen adaptation | | | |  |
+| | | | | ⭐ | **Scandinavian post-Viking** | Europe | 4+ | Mine drainage, hydropower, canals | | | |  |
+| | | | | ⭐ | **Modern Middle East** | Middle East | 5+ | Mega-desalination, marshland restoration, Masdar | | | |  |
+
+---
+
+## SWMM5 Models to Build
+
+| | | | | | Model | Category | Region | Nodes | Links | Why | | | |  |
+|-------|----------|--------|-------|-------|-----|
+| | | | | **Shushtar Hydraulic System** | Multi-component | Middle East | 20 | 25 | UNESCO — most complex late-antique water system | | | |  |
+| | | | | **Pont du Gard + Nîmes Castellum** | Gravity + Distribution | Europe | 10 | 12 | Most iconic aqueduct + best-preserved distribution terminal | | | |  |
+| | | | | **Versailles/Marly Water System** | Pump + Distribution | Europe | 15 | 18 | Most elaborate pre-modern water display | | | |  |
+| | | | | **Bazalgette London Sewers** | Sanitation | Europe | 20 | 25 | Foundation of modern urban sanitation | | | |  |
+| | | | | **Sassanid Nahrawan Canal** | Irrigation | Middle East | 15 | 18 | Largest canal of late antiquity | | | |  |
+| | | | | **Pergamon Pressure Pipeline** | Pressure Flow | Asia Minor/Europe | 6 | 5 | 20 atm pressure system | | | |  |
+| | | | | **Baghdad Round City Water** | Urban Supply | Middle East | 12 | 15 | Water for 1 million people | | | |  |
+| | | | | **Augsburg Three-Level System** | Urban Supply | Europe | 10 | 12 | UNESCO — separated water grades | | | |  |
+| | | | | **Copenhagen Cloudburst System** | Green Infrastructure | Europe | 15 | 20 | Modern climate adaptation model | | | |  |
