@@ -5112,19 +5112,296 @@ export const gameData: GameData = {
       ]
     },
     {
-      id: "siberia-yakutia",
-      name: "Siberian Peoples (Yakut, Evenk, Chukchi)",
-      description: "Ice engineering masters surviving -60°C winters through permafrost cellars, frozen river highways, and under-ice fishing - 30,000+ years of Arctic innovation",
-      position: [18, 0, -8],
+      id: "ancient-siberia",
+      name: "Ancient Siberia",
+      description: "From Denisova Cave's 300,000-year water management to Pazyryk frozen tombs - the deepest prehistory of water in the world's largest landmass",
+      position: [18, 0, -10],
+      color: "#8D6E63",
+      era: "ancient",
+      dateRange: "300000 BCE - 1600 CE",
+      locations: [
+        {
+          id: "altai-prehistoric",
+          name: "Altai Mountains Prehistoric Sites",
+          description: "Where three human species managed water across 270,000 years",
+          historicalContext: "Denisova Cave and Pazyryk burial mounds - the deepest water prehistory",
+          coordinates: { lat: 51.4, lng: 84.7 },
+          artifacts: [
+            {
+              id: "denisova-cave-water",
+              name: "Denisova Cave Water Management",
+              description: "Three human species (Denisovans, Neanderthals, Homo sapiens) managed the same spring-fed water source across 270,000 years - directing drip water, managing seasonal flooding",
+              rarity: "legendary",
+              historicalPeriod: "300,000-30,000 BCE",
+              significance: "Three human species managing the same water source - deepest water management in Siberia",
+              yearBCE: 300000,
+              category: "fountain"
+            },
+            {
+              id: "pazyryk-frozen-tombs",
+              name: "Pazyryk Frozen Tomb Preservation",
+              description: "Scythian burial mounds using permafrost to preserve tomb contents for 2,500 years. Stone cairns promoted ice lens formation - deliberate cryopreservation technology",
+              rarity: "legendary",
+              historicalPeriod: "500-300 BCE",
+              significance: "Deliberate use of permafrost for preservation - tattooed bodies, horses, textiles preserved 2,500 years",
+              yearBCE: 500,
+              category: "dam"
+            },
+            {
+              id: "altai-glacier-irrigation",
+              name: "Altai Glacier-Fed Irrigation",
+              description: "High-altitude irrigation channels directing glacier and snowmelt to alpine meadows at elevations up to 4,500m for hay and livestock",
+              rarity: "rare",
+              historicalPeriod: "Ancient - Present",
+              significance: "High-altitude irrigation at Siberia's highest mountains",
+              yearBCE: 2000,
+              category: "irrigation"
+            },
+            {
+              id: "altai-gold-panning",
+              name: "Altai River Gold Panning",
+              description: "Gold extraction from Altai rivers using flowing water to separate gold from sediment. Traditional techniques predating Russian arrival - a major gold source for Scythian civilizations",
+              rarity: "rare",
+              historicalPeriod: "Ancient - Present",
+              significance: "Gold extraction using river water - ancient Siberian mining technology",
+              yearBCE: 3000,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "paleolithic-camps",
+          name: "Paleolithic Siberian Water Camps",
+          description: "Mammoth hunter camps at river terraces during the Last Glacial Maximum",
+          historicalContext: "Surviving the coldest period in human history beside Siberian rivers",
+          coordinates: { lat: 52.8, lng: 103.6 },
+          artifacts: [
+            {
+              id: "malta-mammoth-camp",
+              name: "Mal'ta-Buret' Mammoth Hunter Water Camps",
+              description: "Semi-subterranean mammoth-bone houses positioned at Angara River terraces above spring flood level. Fish consumption evidence during Last Glacial Maximum at -50°C",
+              rarity: "legendary",
+              historicalPeriod: "24,000 BCE",
+              significance: "Surviving beside a river during the coldest period in human history",
+              yearBCE: 24000,
+              category: "dam"
+            },
+            {
+              id: "yana-arctic-camp",
+              name: "Yana RHS Arctic Camp Water",
+              description: "Northernmost Paleolithic site in the world (71°N). Mammoth-ivory tools at a river confluence. Ice fishing, snow melting, and river ice reading at extreme latitude 32,000 years ago",
+              rarity: "legendary",
+              historicalPeriod: "32,000 BCE",
+              significance: "Oldest known human habitation in the Arctic - water survival at 71°N",
+              yearBCE: 32000,
+              category: "irrigation"
+            },
+            {
+              id: "berelekh-mammoth-site",
+              name: "Berelekh Mammoth Kill Site",
+              description: "Mammoth bone accumulation at a river crossing point on the Indigirka River. Hunters used the river as a natural barrier to drive mammoths into water. Over 150 mammoth skeletons",
+              rarity: "epic",
+              historicalPeriod: "13,000 BCE",
+              significance: "Using Siberian rivers as mammoth hunting infrastructure",
+              yearBCE: 13000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "lake-baikal",
+      name: "Lake Baikal Cultures",
+      description: "20% of Earth's unfrozen surface freshwater - the deepest, oldest lake sustaining unique water cultures for 8,000+ years",
+      position: [17, 0, -7],
+      color: "#1565C0",
+      era: "ancient",
+      dateRange: "8000 BCE - Present",
+      locations: [
+        {
+          id: "baikal-shores",
+          name: "Lake Baikal Shoreline Communities",
+          description: "Settlements around the world's deepest lake (1,642m) holding more water than all five Great Lakes combined",
+          historicalContext: "8,000+ years of human habitation around Earth's largest freshwater reserve",
+          coordinates: { lat: 53.5, lng: 108.0 },
+          artifacts: [
+            {
+              id: "baikal-neolithic-fishing",
+              name: "Baikal Neolithic Fishing Settlements",
+              description: "Permanent settlements along Baikal's shores with stone net sinkers, bone fishhooks, and harpoons for fishing the world's deepest lake. Species unique to Baikal required specialized deep-lake knowledge",
+              rarity: "epic",
+              historicalPeriod: "8000-5000 BCE",
+              significance: "Fishing the deepest and oldest lake on Earth - unique endemic species",
+              yearBCE: 8000,
+              category: "irrigation"
+            },
+            {
+              id: "baikal-seal-hunting",
+              name: "Baikal Seal (Nerpa) Hunting Water Knowledge",
+              description: "The Baikal seal is the only exclusively freshwater seal on Earth. Hunting requires understanding ice conditions, breathing hole locations, and seasonal movement patterns",
+              rarity: "legendary",
+              historicalPeriod: "8000 BCE - Present",
+              significance: "Hunting the world's only freshwater seal - unique water-ice knowledge",
+              yearBCE: 8000,
+              category: "irrigation"
+            },
+            {
+              id: "baikal-ice-road",
+              name: "Baikal Ice Road Network",
+              description: "Lake Baikal freezes 1-2m thick from January to May becoming an 80km highway connecting communities separated by mountains. Routes avoid thin ice at river inlets and hot spring areas",
+              rarity: "epic",
+              historicalPeriod: "Ancient - Present",
+              significance: "80km ice highway across the world's largest freshwater lake",
+              yearBCE: 3000,
+              category: "canal"
+            },
+            {
+              id: "baikal-hot-springs",
+              name: "Baikal Hot Spring Management",
+              description: "Over 300 hot springs around Lake Baikal managed by Buryat people for bathing, healing, and winter water supply. Springs at Arshan, Goryachinsk, and Khakusy used for thousands of years",
+              rarity: "rare",
+              historicalPeriod: "Ancient - Present",
+              significance: "Geothermal water management surrounding the world's largest freshwater lake",
+              yearBCE: 3000,
+              category: "fountain"
+            },
+            {
+              id: "baikal-storm-knowledge",
+              name: "Baikal Storm Knowledge (Sarma Wind)",
+              description: "Baikal generates sudden violent storms - the sarma wind produces 6m waves in minutes. Navigation requires reading cloud formation, wind shifts, and wave patterns to predict storms",
+              rarity: "epic",
+              historicalPeriod: "Ancient - Present",
+              significance: "Micro-climate water-weather knowledge for the world's most unpredictable lake",
+              yearBCE: 3000,
+              category: "canal"
+            },
+            {
+              id: "angara-ice-free-fishing",
+              name: "Angara River Ice-Free Fishing",
+              description: "The Angara (Baikal's only outlet) flows at 4°C staying ice-free for 15+km downstream even at -40°C. Permanent open water provides year-round fishing when all other water is frozen",
+              rarity: "rare",
+              historicalPeriod: "Ancient - Present",
+              significance: "Year-round fishing at the only ice-free water in winter",
+              yearBCE: 5000,
+              category: "irrigation"
+            },
+            {
+              id: "baikal-water-protection",
+              name: "Modern Baikal Water Protection",
+              description: "UNESCO World Heritage (1996). Baikalsk Pulp Mill closed 2013 after 47 years of pollution. Ongoing threats from tourism, agriculture, and proposed Mongolian dam on the Selenga River",
+              rarity: "epic",
+              historicalPeriod: "1996 - Present",
+              significance: "Protecting the planet's largest freshwater reserve - 20% of Earth's surface freshwater",
+              yearBCE: -1996,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "siberian-river-peoples",
+      name: "Siberian River Peoples",
+      description: "Khanty, Ket, Yakut, Nanai, Nivkh, Yukaghir, and Itelmen - masters of the world's greatest rivers in the harshest conditions",
+      position: [20, 0, -8],
       color: "#90CAF9",
       era: "ancient",
       dateRange: "30000 BCE - Present",
       locations: [
         {
-          id: "yakutsk-region",
-          name: "Yakutia (Sakha Republic)",
-          description: "Coldest permanently inhabited place on Earth - winter temperatures reach -60°C",
-          historicalContext: "Permafrost-based technologies for extreme cold survival; 95% underlain by permafrost",
+          id: "ob-river-peoples",
+          name: "Ob River (Khanty, Mansi)",
+          description: "World's 7th longest river system - home to the most sophisticated freshwater fish sorting technology",
+          historicalContext: "Khanty-Mansi peoples managing the Ob and its tributaries for 7,000+ years",
+          coordinates: { lat: 61.0, lng: 69.0 },
+          artifacts: [
+            {
+              id: "khanty-mansi-weirs",
+              name: "Khanty-Mansi Fish Weir Systems (Zapor)",
+              description: "Elaborate wooden fish weirs across Ob tributaries with multi-chamber designs sorting different fish species. Weirs rebuilt annually after spring ice breakup. Some sites used continuously for 7,000 years",
+              rarity: "epic",
+              historicalPeriod: "5000 BCE - Present",
+              significance: "Most sophisticated freshwater fish sorting technology in northern Eurasia",
+              yearBCE: 5000,
+              category: "dam"
+            },
+            {
+              id: "khanty-dugout-canoe",
+              name: "Khanty Dugout Canoe (Oblas)",
+              description: "Single-log dugout canoes from Siberian pine or cedar with shallow draft for navigating Ob tributaries. Some had outriggers for windy conditions",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "River navigation across the world's 7th longest river system",
+              yearBCE: 3000,
+              category: "canal"
+            },
+            {
+              id: "khanty-sacred-rivers",
+              name: "Khanty Sacred River Sites (Yalpyng)",
+              description: "River confluences, rapids, and deep pools considered sacred. Offerings made to water spirits before fishing or crossing. Some sacred water sites revered for thousands of years",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Sacred water geography across Western Siberia",
+              yearBCE: 3000,
+              category: "fountain"
+            },
+            {
+              id: "ob-spring-breakup",
+              name: "Ob River Spring Breakup Survival",
+              description: "The Ob's spring ice breakup creates instant floods with water rising meters in hours. Communities positioned above maximum flood level, maintained escape routes, and read ice to predict breakup timing",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Surviving one of the most violent spring floods on Earth",
+              yearBCE: 5000,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "yenisei-river-peoples",
+          name: "Yenisei River (Ket, Selkup)",
+          description: "Home to the Ket - last speakers of a unique language family with unmatched water vocabulary",
+          historicalContext: "Ket and Selkup peoples on one of the world's mightiest rivers",
+          coordinates: { lat: 58.0, lng: 92.0 },
+          artifacts: [
+            {
+              id: "ket-river-navigation",
+              name: "Ket River Navigation Knowledge",
+              description: "The Ket people - last surviving speakers of the Yeniseian language family - navigate braided river channels with 15+m seasonal water level variation. Dozens of unique words for water conditions",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Last speakers of a unique language with water vocabulary found nowhere else",
+              yearBCE: 3000,
+              category: "canal"
+            },
+            {
+              id: "selkup-fish-smoking",
+              name: "Selkup Fish-Smoking Water Management",
+              description: "Fish processing requiring precise moisture management: gutted in clean river water, partially dried, then smoked. Water content must reach exactly 35-40% for preservation",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Precise moisture management for food preservation in Siberia",
+              yearBCE: 2000,
+              category: "irrigation"
+            },
+            {
+              id: "yenisei-hydro-cascade",
+              name: "Yenisei Hydroelectric Cascade",
+              description: "Four massive dams: Krasnoyarsk (6,000 MW), Sayano-Shushenskaya (6,400 MW), Mainskaya (321 MW). Sayano-Shushenskaya suffered catastrophic turbine failure in 2009 killing 75 workers",
+              rarity: "legendary",
+              historicalPeriod: "1955-1985 CE",
+              significance: "Largest hydroelectric cascade in Russia - including Russia's worst dam disaster",
+              yearBCE: -1985,
+              category: "dam"
+            }
+          ]
+        },
+        {
+          id: "lena-river-peoples",
+          name: "Lena River (Yakut, Evenki, Yukaghir)",
+          description: "One of the world's largest Arctic river deltas - 32,000 km2 of channels",
+          historicalContext: "Yakut, Evenki, and endangered Yukaghir cultures along the mighty Lena",
           coordinates: { lat: 62.0, lng: 129.7 },
           artifacts: [
             {
@@ -5133,8 +5410,58 @@ export const gameData: GameData = {
               description: "Underground storage chambers carved into permanently frozen ground, maintaining -10°C year-round without energy",
               rarity: "epic",
               historicalPeriod: "Ancient - Present",
-              significance: "Zero energy refrigeration; food preserved for years; influenced Svalbard Global Seed Vault design",
+              significance: "Zero energy refrigeration; food preserved for years",
               yearBCE: 5000,
+              category: "dam"
+            },
+            {
+              id: "yakut-alaas-lakes",
+              name: "Yakut Alaas Lake Management",
+              description: "Thermokarst depressions managed for fishing, livestock, and irrigation. Channel systems connected alaas lakes. Now threatened by accelerating permafrost thaw",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Thermokarst landscape water management - unique to permafrost regions",
+              yearBCE: 2000,
+              category: "irrigation"
+            },
+            {
+              id: "yakut-ice-architecture",
+              name: "Yakut Ice Architecture (Balaghan)",
+              description: "Traditional winter houses with walls of clay and cow dung freezing solid. Windows made of thin river ice providing light. The building literally uses frozen water as construction material",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Architecture using frozen water as building material",
+              yearBCE: 1500,
+              category: "dam"
+            },
+            {
+              id: "lena-delta-navigation",
+              name: "Lena River Delta Navigation",
+              description: "Navigation through one of the world's largest river deltas (32,000 km2) with thousands of channels. Different navigation knowledge for ice travel vs water travel across 7-month frozen period",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Navigating one of the world's largest Arctic river deltas",
+              yearBCE: 3000,
+              category: "canal"
+            },
+            {
+              id: "yukaghir-river-people",
+              name: "Yukaghir River People",
+              description: "One of the smallest indigenous groups (<2,000 people) organized entirely around the Kolyma River. Summer fish camps, winter caribou hunting at river crossings. Language with extensive water vocabulary at risk of extinction",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Endangered water culture - language and knowledge at risk of extinction",
+              yearBCE: 3000,
+              category: "canal"
+            },
+            {
+              id: "lena-pillars-erosion",
+              name: "Lena Pillars Water Erosion (UNESCO)",
+              description: "Dramatic rock columns 150-300m tall along the Lena River carved by 500,000 years of water erosion and freeze-thaw cycles. Used as navigation landmarks and sacred sites for millennia",
+              rarity: "legendary",
+              historicalPeriod: "Natural/Cultural",
+              significance: "UNESCO World Heritage - landscape created by 500,000 years of water and ice",
+              yearBCE: 10000,
               category: "dam"
             },
             {
@@ -5148,84 +5475,204 @@ export const gameData: GameData = {
               category: "irrigation"
             },
             {
-              id: "yakut-ice-storage",
-              name: "Yakut Ice-Lined Water Storage",
-              description: "Birch-bark containers lined with ice for summer water storage in permafrost cellars.",
-              rarity: "rare",
-              historicalPeriod: "Traditional",
-              significance: "Seasonal water storage using phase-change engineering",
-              yearBCE: -500,
-              category: "dam"
-            },
-            {
               id: "evenki-river-knowledge",
               name: "Evenki River Crossing Knowledge",
-              description: "Extraordinary knowledge of river systems across millions of km2 of taiga encoded in oral tradition.",
+              description: "Extraordinary knowledge of river systems across millions of km2 of taiga encoded in oral tradition",
               rarity: "rare",
               historicalPeriod: "Traditional",
               significance: "Navigation knowledge spanning the world's largest forest",
-              yearBCE: -1000,
+              yearBCE: 3000,
               category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "amur-river-peoples",
+      name: "Amur River Peoples (Nanai, Ulchi, Nivkh)",
+      description: "Fish-skin waterproofing, salmon management, and river-ocean-ice interface mastery on Asia's greatest Pacific salmon river",
+      position: [22, 0, -6],
+      color: "#4DB6AC",
+      era: "ancient",
+      dateRange: "5000 BCE - Present",
+      locations: [
+        {
+          id: "amur-lower",
+          name: "Lower Amur & Sakhalin",
+          description: "Where river meets ocean meets ice - the most complex water interface in Asia",
+          historicalContext: "Nanai, Ulchi, and Nivkh peoples mastering freshwater-saltwater-ice transitions",
+          coordinates: { lat: 52.0, lng: 135.0 },
+          artifacts: [
+            {
+              id: "nanai-fish-skin",
+              name: "Nanai Fish-Skin Waterproofing",
+              description: "Waterproof clothing and containers from salmon skin - robes, boots, bags, and boat covers. Naturally waterproof and remarkably durable. Unique to the Amur River peoples",
+              rarity: "legendary",
+              historicalPeriod: "Traditional",
+              significance: "Waterproof technology from fish skin - found nowhere else on Earth",
+              yearBCE: 3000,
+              category: "sanitation"
+            },
+            {
+              id: "nanai-salmon-management",
+              name: "Nanai Amur River Salmon Management",
+              description: "Managing salmon at specific river locations: fish weirs at narrows, smoking camps at traditional sites, and territorial fishing rights governed by clan law. Annual salmon run organized the entire calendar",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Salmon management on Asia's greatest Pacific salmon river",
+              yearBCE: 3000,
+              category: "irrigation"
+            },
+            {
+              id: "nivkh-tidal-river",
+              name: "Nivkh Tidal-River Fishing (Sakhalin)",
+              description: "The Nivkh people of Sakhalin Island managed the river-ocean transition zone. Understanding tidal influence on river levels, salmon behavior at the interface, and ice formation in brackish water",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "River-ocean-ice interface management - three water phases in one location",
+              yearBCE: 3000,
+              category: "irrigation"
+            },
+            {
+              id: "ulchi-birchbark-boats",
+              name: "Ulchi Birchbark Boat Navigation",
+              description: "Large birchbark boats (up to 8m) for navigating the wide, powerful lower Amur with strong currents. Some boats had sails. Knowledge of channels, sandbars, and seasonal flooding essential",
+              rarity: "rare",
+              historicalPeriod: "Traditional",
+              significance: "Large-scale birchbark boat navigation on one of Asia's greatest rivers",
+              yearBCE: 3000,
+              category: "canal"
+            },
+            {
+              id: "amur-flood-management",
+              name: "Amur River Flood Management",
+              description: "The Amur experiences catastrophic floods - 2013 flood displaced 100,000+ people. Traditional communities positioned above max flood level. Climate change increasing flood magnitude",
+              rarity: "epic",
+              historicalPeriod: "Traditional - Present",
+              significance: "Managing floods on one of Asia's most flood-prone rivers",
+              yearBCE: 3000,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "kamchatka-peninsula",
+      name: "Kamchatka Peninsula",
+      description: "Most productive wild salmon rivers in Asia, 2,000+ hot springs, and 30 active volcanoes - where fire meets water on the Pacific Ring of Fire",
+      position: [24, 0, -8],
+      color: "#FF7043",
+      era: "ancient",
+      dateRange: "5000 BCE - Present",
+      locations: [
+        {
+          id: "kamchatka-rivers",
+          name: "Kamchatka River Systems",
+          description: "Last intact wild salmon rivers in Asia - largely undammed",
+          historicalContext: "Itelmen people managing the most productive salmon rivers on the continent",
+          coordinates: { lat: 56.0, lng: 160.0 },
+          artifacts: [
+            {
+              id: "itelmen-salmon-engineering",
+              name: "Itelmen Salmon River Engineering",
+              description: "Stone and wooden weirs managing the most productive wild salmon rivers in Asia. Smoking camps and seasonal fishing at specific river features. Rivers remain largely undammed - one of the last intact wild salmon systems",
+              rarity: "legendary",
+              historicalPeriod: "Traditional",
+              significance: "Managing the most productive wild salmon rivers in Asia - still largely intact",
+              yearBCE: 3000,
+              category: "irrigation"
+            },
+            {
+              id: "kamchatka-hot-springs",
+              name: "Kamchatka Hot Spring Culture",
+              description: "Over 2,000 hot springs and 30 active volcanoes. Springs used for bathing, cooking (boiling food in hot pools), and winter warmth. Valley of Geysers has 90+ geysers - second-largest geyser field after Yellowstone",
+              rarity: "epic",
+              historicalPeriod: "Traditional - Present",
+              significance: "Hot spring water culture on the Pacific Ring of Fire",
+              yearBCE: 3000,
+              category: "fountain"
+            },
+            {
+              id: "kuril-maritime-water",
+              name: "Kuril Islands Maritime Navigation",
+              description: "1,300km island chain between Kamchatka and Japan. Navigation in fog, volcanic currents, tsunamis, and storms. Understanding of the Oyashio Current essential for survival",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Maritime navigation in the Pacific's most dangerous island chain",
+              yearBCE: 3000,
+              category: "canal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "siberian-tundra-peoples",
+      name: "Siberian Tundra & Arctic Coast Peoples",
+      description: "Nganasan, Dolgan, Nenets, and Chukchi - surviving at the edge of the habitable world through ice mastery",
+      position: [19, 0, -12],
+      color: "#B3E5FC",
+      era: "ancient",
+      dateRange: "10000 BCE - Present",
+      locations: [
+        {
+          id: "taimyr-peninsula",
+          name: "Taimyr Peninsula (Nganasan, Dolgan)",
+          description: "Northernmost indigenous peoples in Eurasia - 74°N latitude",
+          historicalContext: "The Nganasan are the northernmost people in Eurasia, living on the Taimyr Peninsula",
+          coordinates: { lat: 74.0, lng: 100.0 },
+          artifacts: [
+            {
+              id: "nganasan-ice-fishing",
+              name: "Nganasan Lake Ice Fishing",
+              description: "The northernmost indigenous people in Eurasia fish through lake ice during 9-month winters. Holes maintained in 2+m thick ice. Knowledge of fish behavior beneath ice across depths, temperatures, and moon phases",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Fishing through the thickest freshwater ice inhabited by humans",
+              yearBCE: 5000,
+              category: "irrigation"
+            },
+            {
+              id: "nganasan-meltwater-navigation",
+              name: "Nganasan Spring Meltwater Navigation",
+              description: "During brief spring thaw the tundra becomes a vast shallow lake. Travel by boat across flooded tundra - landscape frozen for 9 months, underwater for 2 months. Navigate by memorized underwater topography",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Navigating a landscape that transforms from solid to liquid annually",
+              yearBCE: 5000,
+              category: "canal"
+            },
+            {
+              id: "dolgan-balok-water",
+              name: "Dolgan Balok (Mobile House) Water Design",
+              description: "Small wooden house on sled runners pulled by reindeer with waterproof roof, elevated floor above snow and meltwater, positioned relative to wind to prevent snow drift. The only mobile house designed for Arctic tundra water conditions",
+              rarity: "epic",
+              historicalPeriod: "Traditional",
+              significance: "Mobile architecture for Arctic water conditions - unique to the Dolgans",
+              yearBCE: 1000,
+              category: "dam"
             },
             {
               id: "chukchi-ice-water",
               name: "Chukchi Sea Ice Water Harvesting",
-              description: "Harvesting freshwater pockets from multi-year sea ice as salt is expelled during freezing.",
+              description: "Harvesting freshwater pockets from multi-year sea ice as salt is expelled during freezing",
               rarity: "epic",
               historicalPeriod: "Traditional",
               significance: "Extracting freshwater from the frozen ocean",
-              yearBCE: -1000,
+              yearBCE: 5000,
               category: "irrigation"
-            },
-            {
-              id: "yakut-alaas-lakes",
-              name: "Yakut Alaas Lake Management",
-              description: "Thermokarst depressions managed for fishing, livestock, and irrigation. Channel systems connected alaas lakes.",
-              rarity: "rare",
-              historicalPeriod: "Traditional",
-              significance: "Thermokarst landscape water management",
-              yearBCE: -500,
-              category: "irrigation"
-            },
-            {
-              id: "khanty-mansi-weirs",
-              name: "Khanty-Mansi Fish Weir Systems",
-              description: "Elaborate wooden fish weirs across Ob River tributaries with multi-chamber designs.",
-              rarity: "rare",
-              historicalPeriod: "Traditional",
-              significance: "Sophisticated multi-species fishery management",
-              yearBCE: -1000,
-              category: "dam"
             },
             {
               id: "nenets-migration-water",
               name: "Nenets Spring Migration Water Knowledge",
-              description: "Annual 1,000+ km migration with 200,000+ reindeer requires intimate knowledge of water sources.",
+              description: "Annual 1,000+ km migration with 200,000+ reindeer requires intimate knowledge of water sources, river crossings, and seasonal ice conditions",
               rarity: "rare",
               historicalPeriod: "Traditional",
               significance: "Water knowledge for the world's longest pastoral migration",
-              yearBCE: -1000,
+              yearBCE: 3000,
               category: "irrigation"
-            },
-            {
-              id: "tuvan-irrigation",
-              name: "Tuvan Mountain Irrigation",
-              description: "Small-scale gravity irrigation in southern Siberian mountain valleys for hayfields.",
-              rarity: "common",
-              historicalPeriod: "Traditional",
-              significance: "Highest-latitude traditional irrigation in Asia",
-              yearBCE: -500,
-              category: "irrigation"
-            },
-            {
-              id: "buryat-hot-springs",
-              name: "Buryat Hot Spring Management",
-              description: "Management of geothermal springs around Lake Baikal for bathing, healing, and winter water supply.",
-              rarity: "rare",
-              historicalPeriod: "Traditional",
-              significance: "Geothermal water management in extreme cold",
-              yearBCE: -500,
-              category: "fountain"
             }
           ]
         },
@@ -5242,7 +5689,7 @@ export const gameData: GameData = {
               description: "Frozen rivers and constructed ice roads serving as winter transportation network spanning thousands of kilometers",
               rarity: "epic",
               historicalPeriod: "Ancient - Present",
-              significance: "30,000+ km network; supports 80-ton trucks; critical infrastructure connecting remote communities",
+              significance: "30,000+ km network; supports 80-ton trucks; critical infrastructure",
               yearBCE: 5000,
               category: "canal"
             },
@@ -5252,9 +5699,99 @@ export const gameData: GameData = {
               description: "Natural ice formations staying frozen through summer (+30°C), used as community refrigerators and sacred sites",
               rarity: "rare",
               historicalPeriod: "Ancient - Present",
-              significance: "Free summer refrigeration; navigation landmarks; cultural gathering points; still used today",
+              significance: "Free summer refrigeration; navigation landmarks; still used today",
               yearBCE: 10000,
               category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "modern-siberia",
+      name: "Modern Siberian Water Engineering",
+      description: "Oil-water management, Norilsk pollution, permafrost thaw crisis, Trans-Siberian railway, and the Northern Sea Route",
+      position: [20, 0, -10],
+      color: "#546E7A",
+      era: "modern",
+      dateRange: "1700 CE - Present",
+      locations: [
+        {
+          id: "modern-siberia-challenges",
+          name: "Modern Siberia Water Challenges",
+          description: "From the world's largest oil fields to the worst Arctic pollution",
+          historicalContext: "Industrial and climate challenges across 13.1 million km2",
+          coordinates: { lat: 60.0, lng: 105.0 },
+          artifacts: [
+            {
+              id: "western-siberia-oil-water",
+              name: "Western Siberia Oil-Water Management",
+              description: "60%+ of Russia's oil from Western Siberia requires managing produced water, injection water, and environmental contamination. Samotlor oil field produces 7x more water than oil. Over 1 million km2 of wetland affected",
+              rarity: "epic",
+              historicalPeriod: "1960s - Present",
+              significance: "Largest oil-water management challenge in the world",
+              yearBCE: -1965,
+              category: "sanitation"
+            },
+            {
+              id: "norilsk-water-pollution",
+              name: "Norilsk Arctic Water Disaster",
+              description: "Most polluted city in Russia. Daldykan River ran blood-red in 2016 from nickel discharge. 2020 diesel spill released 21,000 tonnes into Arctic rivers. Most severe industrial water contamination in the Arctic",
+              rarity: "legendary",
+              historicalPeriod: "1935 - Present",
+              significance: "Most polluted Arctic city - industrial water contamination at continental scale",
+              yearBCE: -1935,
+              category: "sanitation"
+            },
+            {
+              id: "trans-siberian-water",
+              name: "Trans-Siberian Railway Water Engineering",
+              description: "9,289km railway requiring river crossings (Ob, Yenisei), permafrost track management, and water supply towers every 20-40km across waterless steppe for steam locomotives",
+              rarity: "legendary",
+              historicalPeriod: "1891-1916 CE",
+              significance: "Longest railway in the world - water the primary engineering challenge",
+              yearBCE: -1916,
+              category: "canal"
+            },
+            {
+              id: "yakutsk-permafrost-city",
+              name: "Yakutsk Permafrost City Engineering",
+              description: "Largest city on permafrost (350,000 people). All buildings on 1.5-3m stilts. Water and sewer in above-ground insulated utilidors. Ground beneath is -10°C year-round",
+              rarity: "legendary",
+              historicalPeriod: "1632 - Present",
+              significance: "Largest city on permafrost - every building a water engineering challenge",
+              yearBCE: -1632,
+              category: "sanitation"
+            },
+            {
+              id: "permafrost-thaw-crisis",
+              name: "Siberian Permafrost Thaw Crisis",
+              description: "11 million km2 of permafrost thawing at accelerating rates. Building collapse, new thermokarst lakes, methane release, riverbank erosion. 2020 Norilsk fuel spill caused by tank collapse from permafrost thaw. Cost estimated $50-150 billion by 2050",
+              rarity: "legendary",
+              historicalPeriod: "2000s - Present",
+              significance: "Permafrost thaw threatening $50-150 billion in infrastructure",
+              yearBCE: -2000,
+              category: "dam"
+            },
+            {
+              id: "northern-sea-route",
+              name: "Northern Sea Route",
+              description: "5,600km Arctic coast route increasingly navigable due to ice loss. Nuclear icebreakers (Arktika-class) break 3m ice. Russia plans year-round Arctic shipping by 2035",
+              rarity: "epic",
+              historicalPeriod: "1932 - Present",
+              significance: "Opening of Arctic shipping route - geopolitical water transformation",
+              yearBCE: -1932,
+              category: "canal"
+            },
+            {
+              id: "tuvan-irrigation",
+              name: "Tuvan Mountain Irrigation",
+              description: "Small-scale gravity irrigation in southern Siberian mountain valleys for hayfields",
+              rarity: "common",
+              historicalPeriod: "Traditional",
+              significance: "Highest-latitude traditional irrigation in Asia",
+              yearBCE: 2000,
+              category: "irrigation"
             }
           ]
         }

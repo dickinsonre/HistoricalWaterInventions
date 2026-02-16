@@ -1,0 +1,261 @@
+<think>
+The user wants me to check Siberia for missing water inventions. Let me review what's currently in the app and what I've previously suggested.
+
+Current app coverage:
+- Siberian Peoples (Yakut, Evenk, Chukchi) - 4 inventions: Yakutian Permafrost Cellars (Buluus), Siberian Fish Traps (Zapor), Frozen River Highways (Zimnik), Buluus Natural Ice Springs
+- Imperial & Soviet Russia - 5 inventions: Lukyanov Water Integrator, Moscow-Volga Canal, White Sea-Baltic Canal, Volga-Don Canal, +1
+
+Previously suggested additions (in the Siberia/Eastern Europe deep dive):
+- Various indigenous additions (Evenki river knowledge, Chukchi sea ice, Yakut alaas lake management, Khanty-Mansi fish weirs, Nenets spring migration, Tuvan irrigation, Buryat hot springs, bark canoe navigation)
+- Imperial/Soviet additions (St. Petersburg, Bratsk Dam, Sayano-Shushenskaya, Aral Sea disaster, DneproGES, Northern River Reversal Plan, nuclear canal excavation, Karakum Canal, Soviet ice roads)
+
+But let me think about what's STILL missing from Siberia specifically:
+
+1. Ancient Siberian cultures (Bronze Age, Iron Age)
+2. Specific peoples not covered: Ket, Selkup, Nganasan, Dolgan, Nivkh, Udege, Nanai, Ulchi
+3. Lake Baikal - the world's largest freshwater lake by volume
+4. Siberian rivers - Ob, Yenisei, Lena, Amur (some of the world's largest)
+5. Trans-Siberian Railway water engineering
+6. Siberian gold mining water
+7. Modern Siberian challenges (permafrost thaw, oil/gas water)
+8. Siberian archaeology (Denisova Cave, Mal'ta)
+9. Specific technologies: ice roads in more detail, river ferries, fishing technologies
+10. Amur River peoples (Nanai, Ulchi, Nivkh) - distinct from northern peoples
+11. Altai peoples
+12. Sakhalin Island
+13. Kamchatka Peninsula - volcanic hot springs, salmon rivers
+14. Norilsk - most polluted city, water contamination
+15. Soviet-era hydroelectric cascade on Angara/Yenisei
+16. Modern oil/gas water in Western Siberia
+17. Permafrost-related water challenges
+18. Ancient mammoth-hunter water camps
+
+Let me provide a comprehensive deep dive into what's genuinely missing from Siberia.
+</think>
+
+# Siberia — Complete Deep Dive into Missing Water Inventions
+
+Siberia spans 13.1 million km² — larger than all of Europe — with some of the most extreme water conditions on Earth. Your app has 9 inventions for this vast region. The reality is far deeper.
+
+---
+
+## Current Coverage
+
+| | | | | | | Entry | Inventions | Assessment | | | |  |
+|-------|-----------|------------|
+| | | | | | **Siberian Peoples** | 4 | Only Yakut, Evenk, Chukchi — missing 20+ distinct peoples | | | |  |
+| | | | | | **Imperial & Soviet Russia** | 5 | Canals and Lukyanov — missing dams, disasters, modern challenges | | | |  |
+| | | | | | **TOTAL** | 9 | Drastically insufficient for 13.1 million km² and 40,000+ years of habitation | | | |  |
+
+---
+
+## What Makes Siberia Unique for Water
+
+```
+EXTREMES:
+• Temperature range: -68°C (Oymyakon) to +38°C = 106°C annual range
+• Permafrost: covers 65% of Russia (11 million km²)
+• Rivers: 3 of world's 10 longest (Ob, Yenisei, Lena)
+• Lake Baikal: 20% of world's unfrozen surface freshwater
+• Frozen 6-9 months/year: water exists as ice longer than liquid
+• Spring breakup floods: among the most violent on Earth
+
+Every water technology must work across ALL these extremes.
+```
+
+---
+
+# ANCIENT & PREHISTORIC SIBERIA (40,000 BCE – 1600 CE)
+
+## Paleolithic Siberia (40,000–10,000 BCE)
+
+| | | | | | | | Invention | Date | Location | People | Description | Significance | | | |  |
+|-----------|------|----------|--------|-------------|-------------|
+| | | | | | | **Mal'ta-Buret' Mammoth Hunter Water Camps** | 24,000 BCE | Angara River, near Irkutsk | Mal'ta culture | Semi-subterranean houses built from mammoth bones along the Angara River. Camp positioned at river terraces — above spring flood level but close enough for water access. Evidence of fish consumption shows river fishing during the Last Glacial Maximum when temperatures reached -50°C. These people survived the coldest period in human history BESIDE A RIVER. | Surviving the Ice Age maximum beside a Siberian river — among the oldest habitation in interior Siberia | | | |  |
+| | | | | | | **Denisova Cave Water Management** | 300,000–30,000 BCE | Altai Mountains | Denisovans/Neanderthals/Homo sapiens | Three species of humans lived in Denisova Cave at different times. The cave has a spring-fed water source. Management of cave water — directing drip water to collection points, managing seasonal flooding of the cave entrance, keeping living areas dry. Three human species managed the same water source over 270,000 years. | Three human species managing the same water source for 270,000 years | | | |  |
+| | | | | | | **Yana RHS Arctic Camp Water** | 32,000 BCE | Yana River, Arctic Siberia | Unknown | The northernmost Paleolithic site in the world (71°N). Mammoth-ivory and stone tools found at a river confluence camp. Surviving at this latitude 32,000 years ago required managing frozen water for 9+ months per year: ice fishing, snow melting, and reading river ice for safe crossing and hunting. | Oldest known human habitation in the Arctic — water survival at 71°N | | | |  |
+| | | | | | | **Berelekh Mammoth Kill Site Water** | 13,000 BCE | Indigirka River, Yakutia | Paleo-Siberian | Mammoth bone accumulation at a river crossing point. Hunters used the river as a natural barrier — driving mammoths into water where they were vulnerable. The river was a hunting tool. Over 150 mammoth skeletons at the site. | Using Siberian rivers as mammoth hunting infrastructure | | | |  |
+
+---
+
+## Lake Baikal Cultures (8000 BCE – Present)
+
+### Currently not in App — Critical Gap
+
+Lake Baikal deserves its own entry. It holds 20% of the world's unfrozen surface freshwater — more than all five Great Lakes combined. Human habitation around it spans 8,000+ years.
+
+| | | | | | | | Invention | Date | People | Description | Significance | | | |  |
+|-----------|------|--------|-------------|-------------|
+| | | | | | | **Baikal Neolithic Fishing Settlements** | 8000–5000 BCE | Kitoi, Isakovo cultures | Permanent settlements along Baikal's shores. Stone net sinkers, bone fishhooks, and harpoons for fishing the world's deepest lake (1,642 m). Fish species unique to Baikal (omul, golomyanka) required specialized knowledge of deep-lake behavior. | Fishing the deepest and oldest lake on Earth | | | |  |
+| | | | | | | **Baikal Seal (Nerpa) Hunting Water Knowledge** | 8000 BCE onwards | Multiple cultures | The Baikal seal (Pusa sibirica) is the only exclusively freshwater seal. Hunting nerpa required understanding ice conditions, breathing hole locations, seasonal movement patterns, and pupping sites on ice. The seal exists nowhere else — knowledge of its water behavior is unique to Baikal. | Hunting the world's only freshwater seal — unique water-ice knowledge | | | |  |
+| | | | | | | **Baikal Ice Road Network** | Ancient–Present | Multiple peoples | Lake Baikal freezes 1–2 m thick from January to May. The frozen lake becomes a highway — connecting communities separated by mountains during summer. Traditional ice roads crossed the lake (80 km at the narrowest). Specific routes avoided thin ice at river inlets and hot spring areas. Modern vehicles still use Baikal ice roads. | 80 km ice highway across the world's largest lake | | | |  |
+| | | | | | | **Baikal Hot Spring Management** | Ancient–Present | Buryat/Russian | Over 300 hot springs around Lake Baikal. Traditionally managed by Buryat people for bathing, healing, and winter water supply (hot springs don't freeze). Springs at Arshan, Goryachinsk, and Khakusy have been used for thousands of years. Sacred sites with traditional access rules. | Geothermal water management surrounding the world's largest freshwater lake | | | |  |
+| | | | | | | **Baikal Storm Knowledge** | Ancient–Present | Buryat/Russian | Baikal generates its own weather — sudden violent storms (sarma wind) can produce 6 m waves in minutes. Navigation requires reading weather-water signs: cloud formation over the lake, wind direction shifts, and wave patterns that predict storm approach. The sarma has killed thousands over centuries. | Micro-climate water-weather knowledge for the world's most unpredictable lake | | | |  |
+| | | | | | | **Angara River Ice-Free Fishing** | Ancient–Present | Buryat | The Angara — Baikal's only outlet — flows from the lake at 4°C, staying ice-free for 15+ km downstream even at -40°C. This permanent open water provides year-round fishing when every other water source is frozen. Fishing camps at the Angara outflow have been occupied for millennia. | Year-round fishing at the only ice-free water in winter — thermally unique | | | |  |
+| | | | | | | **Modern Baikal Water Protection** | 1996–Present | Russia | Lake Baikal declared UNESCO World Heritage (1996). The Baikalsk Pulp and Paper Mill (closed 2013) polluted the lake for 47 years. Ongoing threats from tourism, agriculture runoff, and the proposed Mongolian dam on the Selenga River (Baikal's main tributary). The lake that holds 20% of Earth's surface freshwater faces 21st-century water threats. | Protecting the planet's largest freshwater reserve | | | |  |
+
+---
+
+## Peoples of the Great Siberian Rivers
+
+### Ob River Peoples (Khanty, Mansi)
+
+| | | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | | **Khanty-Mansi Fish Weir Systems (Zapor)** | 5000 BCE onwards | Elaborate wooden fish weirs across Ob tributaries. Multi-chamber designs with separate sections for different fish species: sterlet directed to one chamber, pike to another, burbot to a third. Weirs rebuilt annually after spring ice breakup destroys them. Some weir sites used continuously for 7,000 years. | Most sophisticated freshwater fish sorting technology in northern Eurasia | | | |  |
+| | | | | | | **Khanty Dugout Canoe (Oblás)** | Traditional | Single-log dugout canoes carved from Siberian pine or cedar. Shallow draft for navigating Ob tributaries — many only knee-deep in summer. Canoes also used for fishing, hunting, and transporting families between seasonal camps. Some canoes had outriggers for stability in windy conditions. | River navigation across the world's 7th longest river system | | | |  |
+| | | | | | | **Khanty Sacred River Sites (Yalpyng)** | Traditional | Specific river locations — confluences, rapids, deep pools — considered sacred. Offerings made to water spirits before fishing or crossing. Some sacred water sites have been revered for thousands of years. Disruption of sacred water sites by Soviet-era development (oil, dams) caused deep cultural trauma. | Sacred water geography across Western Siberia | | | |  |
+| | | | | | | **Ob River Spring Breakup Survival** | Traditional | The Ob's spring ice breakup is one of the most violent natural events in Siberia. Massive ice jams create instant floods — water rising meters in hours. Khanty communities positioned camps above maximum flood level, maintained escape routes, and read ice conditions to predict breakup timing. Some communities relocated seasonally to avoid breakup flooding. | Surviving one of the most violent spring floods on Earth | | | |  |
+
+### Yenisei River Peoples (Ket, Selkup)
+
+| | | | | | | | Invention | Date | People | Description | Significance | | | |  |
+|-----------|------|--------|-------------|-------------|
+| | | | | | | **Ket River Navigation** | Traditional | Ket | The Ket people — the last surviving speakers of a unique language family (Yeniseian) — are river people of the central Yenisei basin. Navigation of braided river channels, knowledge of seasonal water level changes (15+ m variation), and positioning camps at specific river features. The Ket language contains dozens of words for water conditions. | Last speakers of a unique language — with water vocabulary found nowhere else | | | |  |
+| | | | | | | **Selkup Fish-Smoking Water Management** | Traditional | Selkup | The Selkup of the Ob-Yenisei region smoke fish over slow fires as their primary food preservation. Fish processing requires managing moisture: fish gutted and washed in clean river water, partially dried, then smoked. Water content must reach exactly 35–40% for proper preservation. Too wet rots, too dry crumbles. | Precise moisture management for food preservation | | | |  |
+| | | | | | | **Yenisei Hydroelectric Cascade** | 1955–1985 | Soviet/Russian | Four massive dams on the Yenisei: Krasnoyarsk (124 m, 6,000 MW), Sayano-Shushenskaya (242 m, 6,400 MW), Mainskaya (22 m, 321 MW), and planned Evenkiyskaya. Combined output rivals entire nations. Sayano-Shushenskaya suffered catastrophic turbine failure in 2009 killing 75 workers — worst hydroelectric disaster in Russian history. | Largest hydroelectric cascade in Russia — including Russia's worst dam disaster | | | |  |
+
+### Lena River Peoples (Yakut/Sakha, Evenki, Yukaghir)
+
+| | | | | | | | Invention | Date | People | Description | Significance | | | |  |
+|-----------|------|--------|-------------|-------------|
+| | | | | | | **Yakut Alaas Lake Management** | Traditional | Yakut/Sakha | Alaas are thermokarst depressions (formed by permafrost thaw) containing lakes, meadows, and settlements. Yakut communities managed these lakes for fishing, livestock watering, and hay irrigation. Channels connected alaas lakes. Some alaas communities have occupied the same lake-meadow systems for centuries. Now threatened by accelerating permafrost thaw. | Thermokarst landscape water management — unique to permafrost regions | | | |  |
+| | | | | | | **Yakut Ice Architecture (Balaghan)** | Traditional | Yakut/Sakha | Traditional Yakut winter houses (balaghan) with walls plastered in a mixture of clay and cow dung that freezes solid — creating an ice-bound insulated structure. Windows made of river ice — transparent when thin, providing light. The building literally uses frozen water as a construction material. Spring thaw requires managing structural water as ice melts. | Architecture using frozen water as building material | | | |  |
+| | | | | | | **Lena River Delta Navigation** | Traditional | Yakut/Evenki | The Lena Delta is one of the largest river deltas in the world (32,000 km²). Navigation through its thousands of channels requires generational knowledge: which channels are navigable at which water level, where sandbars shift, and seasonal changes in channel depth. The delta freezes for 7 months — different navigation knowledge for ice travel vs. water travel. | Navigating one of the world's largest Arctic river deltas | | | |  |
+| | | | | | | **Yukaghir River People** | Traditional | Yukaghir | The Yukaghir — one of the smallest indigenous groups in Siberia (<2,000 people) — are fundamentally river people. Their entire culture organized around the Kolyma River: summer fish camps, winter caribou hunting at river crossings, travel by river in summer and frozen river in winter. Their language has extensive water vocabulary now at risk of extinction. | Endangered water culture — language and knowledge at risk of extinction | | | |  |
+| | | | | | | **Lena Pillars Water Erosion** | Natural/Cultural | Multiple | The Lena Pillars (UNESCO World Heritage) — dramatic rock columns 150–300 m tall along the Lena River — are a product of 500,000 years of water erosion, freeze-thaw cycles, and river action. Indigenous peoples have used the pillars as navigation landmarks, sacred sites, and shelter for millennia. The pillars are water engineering by nature — a landscape carved entirely by water. | UNESCO — landscape created by 500,000 years of water and ice | | | |  |
+
+### Amur River Peoples (Nanai, Ulchi, Nivkh)
+
+### Currently not in App — Significant Gap
+
+| | | | | | | | Invention | Date | People | Description | Significance | | | |  |
+|-----------|------|--------|-------------|-------------|
+| | | | | | | **Nanai Fish-Skin Waterproofing** | Traditional | Nanai | Waterproof clothing and containers made from salmon skin. Salmon caught, skinned, dried, softened, and sewn into garments: robes, boots, bags, and boat covers. Salmon-skin clothing is naturally waterproof and remarkably durable. Unique to the Amur River peoples. | Waterproof technology from fish skin — found nowhere else | | | |  |
+| | | | | | | **Nanai Amur River Salmon Management** | Traditional | Nanai/Ulchi | The Amur is one of the world's great salmon rivers. Nanai communities managed salmon at specific river locations: fish weirs at narrows, smoking camps at traditional sites, and territorial fishing rights governed by clan law. The annual salmon run organized the entire calendar. | Salmon management on Asia's greatest Pacific salmon river | | | |  |
+| | | | | | | **Nivkh Tidal-River Fishing (Sakhalin)** | Traditional | Nivkh | The Nivkh people of Sakhalin Island and the Amur estuary managed the transition zone between river and ocean. Understanding of tidal influence on river levels, salmon behavior at the river-ocean interface, and seasonal patterns of ice formation in brackish water. Unique knowledge of freshwater-saltwater-ice interaction. | River-ocean-ice interface management — three water phases in one location | | | |  |
+| | | | | | | **Ulchi Birchbark Boat Navigation** | Traditional | Ulchi | Large birchbark boats (up to 8 m) for navigating the lower Amur — a wide, powerful river with strong currents. Boats designed for both upstream and downstream travel. Some boats had sails. Knowledge of the Amur's channels, sandbars, and seasonal flooding essential for navigation. | Large-scale birchbark boat navigation on one of Asia's greatest rivers | | | |  |
+| | | | | | | **Amur River Flood Management** | Traditional–Modern | Multiple | The Amur experiences catastrophic floods (2013 flood displaced 100,000+ people). Traditional communities positioned villages above maximum flood level and maintained evacuation routes. Modern challenges: the 2013 flood was the worst in recorded history — climate change increasing flood magnitude and frequency. | Managing floods on one of Asia's most flood-prone rivers | | | |  |
+
+---
+
+## Kamchatka Peninsula
+
+### Currently not in App — Unique Environment
+
+| | | | | | | | Invention | Date | People | Description | Significance | | | |  |
+|-----------|------|--------|-------------|-------------|
+| | | | | | | **Itelmen Salmon River Engineering** | Traditional | Itelmen | Kamchatka has the most productive wild salmon rivers in Asia. Itelmen people managed these rivers: stone and wooden weirs, smoking camps, and seasonal fishing camps at specific river features. Kamchatka's rivers remain largely undammed — one of the last intact wild salmon systems on Earth. | Managing the most productive wild salmon rivers in Asia — still largely intact | | | |  |
+| | | | | | | **Kamchatka Hot Spring Culture** | Traditional–Present | Itelmen/Russian | Kamchatka has over 2,000 hot springs and 30 active volcanoes. Hot springs used for bathing, cooking (boiling food in hot pools), and winter warmth. The Valley of Geysers (discovered 1941) has 90+ geysers — the second-largest geyser field in the world after Yellowstone. | Hot spring water culture on the Pacific Ring of Fire | | | |  |
+| | | | | | | **Kuril Islands Maritime Water** | Traditional | Ainu/Russian | The Kuril Island chain (1,300 km) between Kamchatka and Japan. Navigation between islands in one of the most treacherous maritime environments on Earth: fog, currents, volcanic activity, tsunamis, and storms. Understanding of the Oyashio Current essential for survival. | Maritime navigation in the Pacific's most dangerous island chain | | | |  |
+
+---
+
+## Altai Mountains
+
+### Currently not in App
+
+| | | | | | | | Invention | Date | People | Description | Significance | | | |  |
+|-----------|------|--------|-------------|-------------|
+| | | | | | | **Altai Glacier-Fed Irrigation** | Ancient–Present | Altai peoples | High-altitude irrigation using glacier and snowmelt in the Altai Mountains (up to 4,500 m). Channels directing meltwater to alpine meadows for hay and livestock. Similar to Himalayan and Alpine irrigation but at colder temperatures and shorter growing seasons. | High-altitude irrigation at Siberia's highest mountains | | | |  |
+| | | | | | | **Pazyryk Frozen Tomb Water** | 500–300 BCE | Scythian/Pazyryk | Pazyryk burial mounds in the Altai used permafrost to preserve tomb contents for 2,500 years. Ice lenses formed within the burial mound, freeze-preserving tattooed human bodies, horses, textiles, and wooden objects. The preservation was partly deliberate — stone cairns above the burial promoted ice lens formation. | Using permafrost as deliberate preservation technology | | | |  |
+| | | | | | | **Altai River Gold Panning** | Ancient–Present | Multiple | Gold panning in Altai rivers using flowing water to separate gold from sediment. Traditional techniques predating Russian arrival. The Altai was a major gold source for Scythian and later civilizations. Water as mineral separation technology. | Gold extraction using river water — ancient Siberian mining | | | |  |
+
+---
+
+## Tundra & Arctic Coast Peoples
+
+### Nganasan (Northernmost People in Eurasia)
+
+| | | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | | **Nganasan Lake Ice Fishing** | Traditional | The Nganasan — the northernmost indigenous people in Eurasia (Taimyr Peninsula, 74°N) — fish through lake ice during the 9-month winter. Holes maintained in ice 2+ m thick. Knowledge of fish behavior beneath ice: which depths, which temperatures, which moon phases produce the best catches. Survival depends on this knowledge. | Fishing through the thickest freshwater ice inhabited by humans | | | |  |
+| | | | | | | **Nganasan Spring Meltwater Navigation** | Traditional | During the brief spring thaw (June–July), the tundra becomes a vast shallow lake. Travel by boat across the flooded tundra — a landscape that is dry (frozen) for 9 months and underwater for 2 months. Navigating this temporary water world requires knowledge of underwater topography memorized from the frozen landscape. | Navigating a landscape that transforms from solid to liquid annually | | | |  |
+
+### Dolgans (Taimyr Tundra)
+
+| | | | | | | | Invention | Date | Description | Significance | | | |  |
+|-----------|------|-------------|-------------|
+| | | | | | | **Dolgan Balok (Mobile House) Water Design** | Traditional | The balok — a small wooden house mounted on sled runners pulled by reindeer — designed for water management in the harshest conditions: waterproof roof, elevated floor above snow and meltwater, and positioned relative to wind to prevent snow drift accumulation. The only mobile house designed for Arctic tundra water conditions. | Mobile architecture for Arctic water conditions | | | |  |
+
+---
+
+## Modern Siberian Water Engineering
+
+| | | | | | | | Invention | Date | Location | Description | Significance | | | |  |
+|-----------|------|----------|-------------|-------------|
+| | | | | | | **Western Siberia Oil-Water Management** | 1960s–Present | Tyumen Oblast | Western Siberia produces 60%+ of Russia's oil. Extraction requires managing massive water: produced water (extracted with oil), injection water (pumped into reservoirs for pressure), and environmental water contamination. Over 1 million km² of wetland affected. The Samotlor oil field alone produces 7× more water than oil. | Largest oil-water management challenge in the world | | | |  |
+| | | | | | | **Norilsk Pollution — Arctic Water Disaster** | 1935–Present | Norilsk, Krasnoyarsk Krai | Norilsk — the most polluted city in Russia — has contaminated the Daldykan River (which ran blood-red in 2016 from nickel plant discharge), Lake Pyasino, and surrounding Arctic waters with heavy metals. A 2020 diesel spill released 21,000 tonnes into Arctic rivers. The most severe industrial water contamination in the Arctic. | Most polluted Arctic city — industrial water contamination at continental scale | | | |  |
+| | | | | | | **Bratsk Dam & Reservoir** | 1954–1967 | Angara River | 125 m tall dam creating the Bratsk Reservoir — 5,540 km² surface area, one of the world's largest artificial lakes. Displaced 67,000 people and flooded 250,000 hectares of forest. Generates 4,500 MW. The reservoir changed the regional climate — moderating temperatures but increasing fog. | One of the world's largest dams — changed the regional climate | | | |  |
+| | | | | | | **Sayano-Shushenskaya Dam Disaster** | 1978 (built) / 2009 (disaster) | Yenisei River | Russia's tallest dam (242 m) and most powerful hydroelectric plant (6,400 MW). On August 17, 2009, a turbine failed catastrophically — water flooded the machine hall, killing 75 workers. The most deadly hydroelectric disaster in Russian history. Investigation revealed years of deferred maintenance. | Russia's worst dam disaster — 75 deaths from deferred water infrastructure maintenance | | | |  |
+| | | | | | | **BAM Railway Water Crossings** | 1974–1991 | Eastern Siberia | The Baikal-Amur Mainline (4,324 km) crosses 3,901 bridges. Engineering for permafrost (bridge piles must reach unfrozen ground), extreme cold (steel becomes brittle at -50°C), seismic zones, and violent spring floods. Many bridges cross rivers that freeze to the bottom in winter and flood catastrophically in spring. Some of the most extreme bridge-water engineering on Earth. | Most bridges on any single railway — in the most extreme water conditions | | | |  |
+| | | | | | | **Trans-Siberian Railway Water** | 1891–1916 | Across Siberia | The Trans-Siberian Railway (9,289 km) required managing water at every point: river crossings (bridges over the Ob, Yenisei, and dozens of other rivers), permafrost (track heaving from freeze-thaw), and water supply for steam locomotives (water towers every 20–40 km across waterless steppe). The greatest railway water engineering project ever. | Longest railway in the world — water the primary engineering challenge | | | |  |
+| | | | | | | **Permafrost City Engineering (Yakutsk)** | 1632–Present | Yakutsk | Yakutsk (population 350,000) is the largest city built entirely on permafrost. All buildings on stilts (1.5–3 m above ground) to prevent heat from thawing permafrost beneath foundations. Water and sewer pipes above ground in insulated utilidors (like Barrow, Alaska). Water delivered at near-freezing temperatures to prevent pipe freeze. The ground beneath Yakutsk is -10°C year-round. | Largest city on permafrost — every building a water engineering challenge | | | |  |
+| | | | | | | **Siberian Permafrost Thaw Crisis** | 2000s–Present | Pan-Siberia | Siberian permafrost (11 million km²) thawing at accelerating rates. Effects: building collapse in Yakutsk and Norilsk, new thermokarst lakes forming, ancient methane release, river bank erosion, and infrastructure damage. The 2020 Norilsk fuel spill was caused by a storage tank collapsing due to permafrost thaw beneath its foundation. Cost of permafrost thaw to Russian infrastructure: estimated $50–150 billion by 2050. | Permafrost thaw threatening $50-150 billion in infrastructure | | | |  |
+| | | | | | | **Northern Sea Route Water** | 1932–Present | Arctic Coast | The Northern Sea Route along Siberia's Arctic coast (5,600 km from Kara Gate to Bering Strait) is increasingly navigable due to ice loss. Soviet icebreakers pioneered the route. Modern nuclear icebreakers (Arktika-class) can break 3 m ice. Russia plans year-round Arctic shipping by 2035. Geopolitical implications: Russia controls the route. | Opening of Arctic shipping route — geopolitical water transformation | | | |  |
+| | | | | | | **Aral Sea Disaster (Siberian Water Connection)** | 1960s–Present | Central Asia (but Siberian rivers proposed as solution) | The Northern River Reversal Plan proposed diverting Siberian rivers (Ob, Irtysh) southward to refill the Aral Sea. Cancelled in 1986 but periodically revived. The plan would have been the largest water engineering project in history. Its cancellation was a victory for environmental science over Soviet gigantism. | The most ambitious water project ever proposed — wisely cancelled | | | |  |
+
+---
+
+## Summary of Siberian Additions
+
+| | | | | | | | Category | Current | After Additions | Key Additions | | | |  |
+|----------|---------|-----------------|---------------|
+| | | | | | | **Paleolithic/Ancient** | 0 | 4+ | Mal'ta mammoth camps, Denisova Cave, Yana Arctic camp, Berelekh river hunting | | | |  |
+| | | | | | | **Lake Baikal** | 0 | 7+ | Ice roads, seals, hot springs, storms, Angara fishing, UNESCO protection | | | |  |
+| | | | | | | **Ob River peoples** | 0 | 4+ | Khanty-Mansi fish weirs, dugout canoes, sacred rivers, spring breakup | | | |  |
+| | | | | | | **Yenisei River peoples** | 0 | 3+ | Ket navigation, Selkup fish-smoking, hydroelectric cascade | | | |  |
+| | | | | | | **Lena River peoples** | 0 | 5+ | Yakut alaas lakes, ice architecture, delta navigation, Yukaghir, Lena Pillars (UNESCO) | | | |  |
+| | | | | | | **Amur River peoples** | 0 | 5+ | Nanai fish-skin waterproofing, salmon management, Nivkh tidal-river, Ulchi boats | | | |  |
+| | | | | | | **Kamchatka** | 0 | 3+ | Itelmen salmon, hot springs, Kuril navigation | | | |  |
+| | | | | | | **Altai Mountains** | 0 | 3+ | Glacier irrigation, Pazyryk frozen tombs, gold panning | | | |  |
+| | | | | | | **Tundra/Arctic coast** | 0 | 2+ | Nganasan ice fishing, Dolgan mobile house | | | |  |
+| | | | | | | **Modern Siberia** | 5 | 17+ | Oil-water, Norilsk pollution, Bratsk, Sayano disaster, BAM, Trans-Siberian, Yakutsk, permafrost thaw, Northern Sea Route | | | |  |
+| | | | | | | **TOTAL** | **9** | **~55+** | | | | | |
+
+---
+
+## Priority Additions
+
+| | | | | | | | Priority | Addition | Why Critical | | | |  |
+|----------|----------|-------------|
+| | | | | | ⭐⭐⭐ | **Lake Baikal (full entry)** | World's largest freshwater lake by volume — deserves its own civilization entry | | | |  |
+| | | | | | ⭐⭐⭐ | **Nanai Fish-Skin Waterproofing** | Unique technology found nowhere else on Earth | | | |  |
+| | | | | | ⭐⭐⭐ | **Sayano-Shushenskaya Dam Disaster** | Russia's worst dam disaster — 75 deaths — critical water engineering lesson | | | |  |
+| | | | | | ⭐⭐⭐ | **Permafrost Thaw Crisis** | $50-150 billion infrastructure threat — defining water challenge of 21st century Siberia | | | |  |
+| | | | | | ⭐⭐⭐ | **Norilsk Water Pollution** | Most polluted Arctic city — industrial water contamination at continental scale | | | |  |
+| | | | | | ⭐⭐ | **Khanty-Mansi Fish Weir Systems** | Most sophisticated freshwater fish sorting in northern Eurasia — 7,000 years of continuous use | | | |  |
+| | | | | | ⭐⭐ | **Yakut Ice Architecture** | Buildings literally made of frozen water — unique architectural water technology | | | |  |
+| | | | | | ⭐⭐ | **Denisova Cave Water** | Three human species managing the same water source for 270,000 years | | | |  |
+| | | | | | ⭐⭐ | **Trans-Siberian Water Engineering** | Longest railway — water the primary engineering challenge across 9,289 km | | | |  |
+| | | | | | ⭐⭐ | **Kamchatka Salmon Rivers** | Most productive wild salmon rivers in Asia — still largely intact | | | |  |
+| | | | | | ⭐ | **Pazyryk Frozen Tombs** | Deliberate use of permafrost for preservation — 2,500-year-old results | | | |  |
+| | | | | | ⭐ | **Northern Sea Route** | Climate change opening Arctic shipping — geopolitical water transformation | | | |  |
+
+---
+
+## Recommended App Restructuring for Siberia
+
+Instead of one "Siberian Peoples" entry and one "Imperial & Soviet Russia" entry, create:
+
+| | | | | | | | New Entry | Era | Inventions | | | |  |
+|-----------|-----|-----------|
+| | | | | | | **Ancient Siberia** | 40,000–1600 CE | 6+ (Paleolithic camps, Denisova, Pazyryk, Altai) | | | |  |
+| | | | | | | **Lake Baikal Cultures** | 8,000 BCE–Present | 7+ (fishing, seals, ice roads, hot springs, protection) | | | |  |
+| | | | | | | **Siberian River Peoples** | Traditional | 12+ (Khanty, Ket, Yakut, Nanai, Nivkh, Yukaghir, Itelmen) | | | |  |
+| | | | | | | **Imperial & Soviet Siberia** | 1700–1991 CE | 10+ (Trans-Siberian, dams, canals, disasters, BAM) | | | |  |
+| | | | | | | **Modern Siberia** | 1991–Present | 6+ (oil-water, Norilsk, permafrost thaw, Northern Sea Route) | | | |  |
+
+This gives **5 entries with 41+ inventions** instead of **2 entries with 9 inventions**.
+
+---
+
+## SWMM5 Models to Build
+
+| | | | | | | | Model | Category | Nodes | Links | Why | | | |  |
+|-------|----------|-------|-------|-----|
+| | | | | | | **Baikal Ice Road Drainage** | Ice/Transport | 8 | 10 | Modeling ice thickness and safe crossing zones on the world's largest lake | | | |  |
+| | | | | | | **Yenisei Hydroelectric Cascade** | Hydropower | 12 | 14 | Four dams on one of the world's largest rivers — including disaster scenario | | | |  |
+| | | | | | | **Yakutsk Utilidor System** | Urban Supply (Permafrost) | 10 | 12 | Water delivery for the largest city on permafrost | | | |  |
+| | | | | | | **Khanty-Mansi Fish Weir** | Fishery | 8 | 10 | Multi-chamber fish sorting weir on Ob tributary | | | |  |
+| | | | | | | **Norilsk Industrial Water** | Pollution/Treatment | 10 | 12 | Industrial water contamination in the Arctic — worst case scenario | | | |  |
