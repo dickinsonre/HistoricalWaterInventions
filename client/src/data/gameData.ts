@@ -945,11 +945,11 @@ export const gameData: GameData = {
           artifacts: [
             {
               id: "dujiangyan-model",
-              name: "Dujiangyan Irrigation Model",
-              description: "Scale model of the ingenious flood control system",
+              name: "Dujiangyan Irrigation System (Cross-reference)",
+              description: "Scale model of the ingenious flood control system. For full engineering details (Fish Mouth, Flying Sand Weir, Bottle Neck), see Dujiangyan Irrigation System under Zhou & Qin Dynasties entry.",
               rarity: "legendary",
               historicalPeriod: "Warring States (475-221 BCE)",
-              significance: "Still irrigates 5,300 sq km after 2,270 years",
+              significance: "Still irrigates 5,300 sq km after 2,270 years. See Zhou & Qin Dynasties entry for full details.",
               yearBCE: 256,
               category: "irrigation"
             },
@@ -1427,11 +1427,11 @@ export const gameData: GameData = {
           artifacts: [
             {
               id: "west-baray-overview",
-              name: "West Baray Reservoir",
-              description: "Massive rectangular reservoir measuring 8km x 2.2km",
+              name: "West Baray Reservoir (Overview)",
+              description: "Massive rectangular reservoir measuring 8km x 2.2km. For full engineering details (56 million m³ capacity, 10 million m³ earth moved, sluice gate systems), see West Baray Reservoir under Cambodia (Khmer) - Extended.",
               rarity: "legendary",
               historicalPeriod: "Angkor Period (11th century CE)",
-              significance: "Stored monsoon water for year-round rice irrigation; supported millions",
+              significance: "Stored monsoon water for year-round rice irrigation; supported millions. See Cambodia (Khmer) - Extended for full details.",
               yearBCE: -1050,
               category: "dam"
             },
@@ -8483,11 +8483,11 @@ export const gameData: GameData = {
           artifacts: [
             {
               id: "nusantara-subak-system",
-              name: "Subak Irrigation System",
-              description: "Democratic water-sharing cooperatives coordinated by water temples—one farmer, one vote regardless of land size",
+              name: "Subak Irrigation System (Cross-reference)",
+              description: "Democratic water-sharing cooperatives coordinated by water temples—one farmer, one vote regardless of land size. Full details under Balinese (Subak) civilization entry.",
               rarity: "legendary",
               historicalPeriod: "900 CE onwards",
-              significance: "UNESCO World Heritage; no central authority—thousands of farmers coordinate through temple meetings; 'tektek' water allocation formula",
+              significance: "UNESCO World Heritage; see Balinese (Subak) entry for full details on water temple coordination, tektek allocation formula, and democratic governance",
               yearBCE: -900,
               category: "irrigation"
             },
