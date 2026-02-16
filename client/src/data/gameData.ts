@@ -16347,7 +16347,7 @@ export const gameData: GameData = {
           ]
         }
       ]
-    },,
+    },
     {
       id: "nazca",
       name: "Nazca",
