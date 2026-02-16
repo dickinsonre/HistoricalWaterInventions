@@ -423,7 +423,7 @@ export const gameData: GameData = {
     {
       id: "minoan-crete",
       name: "Minoan Crete",
-      description: "Europe's first advanced civilization with sophisticated water and sanitation systems that wouldn't be matched for millennia.",
+      description: "Europe's first advanced plumbing civilization (2000-1400 BCE). Knossos palace featured terracotta pipe networks, flush-type toilets, and zigzag storm drains with sediment traps. Their tapered pipe joints created water pressure systems unmatched in Europe for 1,500 years.",
       position: [6, 0, -3],
       color: "#9333ea",
       era: "ancient",
@@ -717,7 +717,7 @@ export const gameData: GameData = {
     {
       id: "ancient-rome",
       name: "Roman Empire",
-      description: "Masters of aqueducts and large-scale water infrastructure",
+      description: "Built 11 major aqueducts delivering over 1 million cubic meters of water daily to Rome. The Cloaca Maxima sewer, begun in 600 BCE, still drains the Forum today. Lead pipes, public fountains, and monumental thermae bathing complexes served a city of one million people.",
       position: [-12, 0, 0],
       color: "#DC143C",
       era: "classical",
@@ -1081,7 +1081,7 @@ export const gameData: GameData = {
     {
       id: "islamic-golden-age",
       name: "Islamic Golden Age",
-      description: "Innovators of mechanical water devices and fountains",
+      description: "Al-Jazari's 1206 'Book of Ingenious Devices' documented 50 mechanical water inventions including the crankshaft pump. The giant norias of Hama, Syria rose 20 meters to lift river water. Systematic manuals on hydraulics spread water engineering across three continents.",
       position: [8, 0, 8],
       color: "#228B22",
       era: "medieval",
@@ -1684,7 +1684,7 @@ export const gameData: GameData = {
     {
       id: "nubia",
       name: "Nubia",
-      description: "Nile kingdom that pioneered water-lifting technology",
+      description: "Invented the saqia waterwheel around 400 BCE, revolutionizing Nile irrigation with animal-powered continuous water lifting. The Kingdom of Kush built massive reservoirs at Meroe and adapted Egyptian basin irrigation to Upper Nile conditions for over 1,000 years.",
       position: [4, 0, -10],
       color: "#8B0000",
       era: "ancient",
@@ -1743,7 +1743,7 @@ export const gameData: GameData = {
     {
       id: "nabataean",
       name: "Nabataean Kingdom",
-      description: "Desert water harvesting masters who made Petra flourish in one of Earth's driest regions",
+      description: "Carved 200+ cisterns into Petra's sandstone cliffs and built flash-flood channels to capture every drop in a region receiving only 150mm annual rainfall. Their hydraulic engineering supported 30,000 people in one of Earth's driest landscapes, turning desert into a thriving trade capital.",
       position: [10, 0, -6],
       color: "#D2691E",
       era: "classical",
@@ -1893,7 +1893,7 @@ export const gameData: GameData = {
     {
       id: "ancestral-puebloans",
       name: "Ancestral Puebloans",
-      description: "Arid climate water management masters of the American Southwest",
+      description: "Mesa Verde cliff dwellers carved cisterns into sandstone and built check dams to capture scarce rainfall. At Chaco Canyon, 90-foot stone-lined reservoirs and kilometer-long intake channels sustained 500+ people. Dry-farming techniques used 25cm-deep planting to reach subsurface moisture.",
       position: [-14, 0, 4],
       color: "#CD853F",
       era: "medieval",
@@ -2032,7 +2032,7 @@ export const gameData: GameData = {
     {
       id: "byzantine",
       name: "Byzantine Empire",
-      description: "Urban water supply at massive scale in Constantinople",
+      description: "Constantinople held 100+ underground cisterns including the stunning Basilica Cistern with 336 marble columns. The Valens Aqueduct stretched 250 km to supply the capital. Open-air and covered reservoirs stored millions of liters, sustaining a city of 500,000 through sieges.",
       position: [2, 0, -6],
       color: "#800080",
       era: "medieval",
@@ -2229,7 +2229,7 @@ export const gameData: GameData = {
     {
       id: "phoenicia",
       name: "Phoenicia",
-      description: "Maritime masters who engineered artificial harbors and shipboard water systems",
+      description: "Built the ancient world's most advanced harbors at Tyre and Sidon using massive ashlar breakwaters and artificial cothon harbors. Phoenician ships featured bilge pump systems and freshwater storage for trans-Mediterranean voyages spanning 4,000 km to the Atlantic.",
       position: [5, 0, -5],
       color: "#8B4513",
       era: "ancient",
@@ -2289,7 +2289,7 @@ export const gameData: GameData = {
     {
       id: "carthage",
       name: "Carthage",
-      description: "Phoenician colony that built the ancient world's largest cistern network",
+      description: "The Zaghouan aqueduct stretched 132 km to supply Carthage — among the longest in the ancient world. The Maalga cisterns held 50 million liters, and the circular cothon harbor at the city center could dock 220 warships. Phoenician engineering perfected on African soil.",
       position: [3, 0, 0],
       color: "#8B0000",
       era: "classical",
@@ -2349,7 +2349,7 @@ export const gameData: GameData = {
     {
       id: "medieval-europe",
       name: "Medieval Europe",
-      description: "Water power revolution: mills transformed manufacturing and agriculture",
+      description: "By 1086, England's Domesday Book recorded 6,000+ watermills grinding grain and fulling cloth. Overshot and undershot waterwheels powered forges, sawmills, and paper mills across Europe. Monastic orders built elaborate water supply and sewage systems centuries ahead of cities.",
       position: [-2, 0, -8],
       color: "#4A4A4A",
       era: "medieval",
@@ -2816,7 +2816,7 @@ export const gameData: GameData = {
     {
       id: "austronesian",
       name: "Austronesian Peoples",
-      description: "Ocean masters: outrigger canoes enabled the greatest human migration in history",
+      description: "Colonized 26,000+ islands across the Pacific using outrigger canoes and star navigation — the greatest maritime migration in human history. Austronesian peoples carried freshwater in bamboo containers and coconut shells across thousands of kilometers of open ocean.",
       position: [15, 0, 5],
       color: "#4169E1",
       era: "ancient",
@@ -3145,7 +3145,7 @@ export const gameData: GameData = {
     {
       id: "hawaiian",
       name: "Hawaiian",
-      description: "Lo'i kalo: taro pondfields as sustainable aquaculture",
+      description: "The ahupua'a system divided watersheds from mountain to sea, managing water flow through 600+ lo'i kalo (taro pondfield) systems. These engineered wetlands combined irrigation, aquaculture, and nutrient cycling — sustaining 400,000+ people before European contact.",
       position: [8, 0, 10],
       color: "#20B2AA",
       era: "medieval",
@@ -3185,7 +3185,7 @@ export const gameData: GameData = {
     {
       id: "ethiopian",
       name: "Ethiopian Highlands",
-      description: "Ancient water systems at the roof of Africa",
+      description: "Aksum's Mai Shum rock-cut cisterns captured highland rainfall at 2,400m elevation. Ethiopian terracing transformed steep slopes into productive farmland. As the source of the Blue Nile, Ethiopia's water systems influenced civilizations downstream for millennia.",
       position: [6, 0, 6],
       color: "#006400",
       era: "ancient",
@@ -3328,7 +3328,7 @@ export const gameData: GameData = {
     {
       id: "great-zimbabwe",
       name: "Great Zimbabwe",
-      description: "Africa's largest medieval city: stone walls with integrated water systems",
+      description: "Africa's largest medieval stone city supported 18,000+ residents with stone-lined drainage channels integrated into its iconic dry-stone walls. Sophisticated dam systems upstream controlled water flow to the city, and dhaka gardens used gravity-fed irrigation year-round.",
       position: [6, 0, 8],
       color: "#795548",
       era: "medieval",
@@ -3368,7 +3368,7 @@ export const gameData: GameData = {
     {
       id: "engaruka",
       name: "Engaruka (Tanzania)",
-      description: "Mysterious abandoned irrigation city that fed 40,000 people",
+      description: "Over 2,000 hectares of stone-walled irrigation canals and hillside terracing fed up to 40,000 people in this mysteriously abandoned Tanzanian city. Complex furrow networks diverted highland streams across the Rift Valley escarpment — Africa's largest pre-colonial irrigation system.",
       position: [5, 0, 7],
       color: "#4CAF50",
       era: "medieval",
@@ -3408,7 +3408,7 @@ export const gameData: GameData = {
     {
       id: "sahel",
       name: "Sahel Africa",
-      description: "Zai pits and traditional water harvesting: turning desert green",
+      description: "Yacouba Sawadogo revived ancient zai pit techniques, planting seeds in termite-enriched holes that concentrate scarce rainfall. Combined with half-moon bunds and stone lines, these methods have reclaimed over 3 million hectares of Saharan desert across Burkina Faso, Niger, and Mali.",
       position: [4, 0, 5],
       color: "#FFA726",
       era: "ancient",
@@ -3448,7 +3448,7 @@ export const gameData: GameData = {
     {
       id: "nan-madol",
       name: "Nan Madol (Pohnpei)",
-      description: "Venice of the Pacific: mysterious stone city built on coral reef",
+      description: "92 artificial islets built from 750,000 tons of basalt columns transported across open ocean to create a megalithic city on a coral reef lagoon. Stone-walled canals served as streets, and tidal flow management controlled water levels across this 'Venice of the Pacific.'",
       position: [12, 0, 8],
       color: "#00BCD4",
       era: "medieval",
@@ -3488,7 +3488,7 @@ export const gameData: GameData = {
     {
       id: "chamorro",
       name: "Chamorro (Mariana Islands)",
-      description: "Latte stone houses with integrated rainwater harvesting",
+      description: "Limestone latte pillars elevated houses above floods and created rainwater catchment surfaces beneath. Chamorro people engineered tidal fish traps from coral stone walls and managed freshwater lens aquifers on small Pacific islands with remarkable ingenuity.",
       position: [11, 0, 7],
       color: "#9C27B0",
       era: "ancient",
@@ -3538,7 +3538,7 @@ export const gameData: GameData = {
     {
       id: "tokyo-underground",
       name: "Modern Japan",
-      description: "G-Cans: world's largest underground flood control cathedral",
+      description: "The Metropolitan Area Outer Underground Discharge Channel stretches 6.3 km beneath Tokyo with a cathedral-like surge tank 25m tall. This $2 billion system protects 13 million people from typhoon flooding, pumping 200 tons of water per second into the Edogawa River.",
       position: [19, 0, 3],
       color: "#607D8B",
       era: "modern",
@@ -3775,7 +3775,7 @@ export const gameData: GameData = {
     {
       id: "medieval-india",
       name: "Medieval India",
-      description: "Stepwells, tanks, and traditional water harvesting",
+      description: "India built 3,000+ ornate stepwells including the UNESCO-listed Rani ki Vav, a seven-story inverted temple descending 64 meters. Temple tanks, johads, and interconnected tank cascade systems provided water security across monsoon and dry seasons for millions of people.",
       position: [13, 0, 8],
       color: "#FF5722",
       era: "medieval",
@@ -4161,7 +4161,7 @@ export const gameData: GameData = {
     {
       id: "pre-roman-europe",
       name: "Pre-Roman Europe",
-      description: "Celtic, Germanic, and Etruscan water engineering",
+      description: "Etruscans built cuniculi drainage tunnels and urban cisterns centuries before Rome. Celtic peoples venerated sacred springs with elaborate ritual pools and timber-lined wells. Germanic tribes constructed log-boat waterways and crannog lake dwellings across Northern Europe.",
       position: [8, 0, 2],
       color: "#607D8B",
       era: "ancient",
@@ -4478,7 +4478,7 @@ export const gameData: GameData = {
     {
       id: "singapore",
       name: "Singapore",
-      description: "Global leader in water innovation and the 'Four National Taps' system",
+      description: "Singapore's 'Four National Taps' strategy combines imported water, local catchments, NEWater (recycled wastewater), and desalination. The Marina Barrage converted a saltwater bay into a freshwater reservoir, and NEWater plants now supply 40% of the nation's water demand.",
       position: [16, 0, 12],
       color: "#E91E63",
       era: "modern",
@@ -4947,7 +4947,7 @@ export const gameData: GameData = {
     {
       id: "ancient-yemen",
       name: "Ancient Yemen (Sheba)",
-      description: "Land of the legendary Marib Dam and Queen of Sheba",
+      description: "The Great Dam of Marib stood 60 meters wide and irrigated 9,600 hectares of desert, sustaining the wealthy Sabaean kingdom for over 1,000 years. Its catastrophic collapse around 570 CE triggered mass migrations recorded in the Quran and reshaped Arabian history.",
       position: [8, 0, -4],
       color: "#795548",
       era: "ancient",
@@ -4987,7 +4987,7 @@ export const gameData: GameData = {
     {
       id: "bengal",
       name: "Bengal (Bangladesh)",
-      description: "Masters of delta water management and floating agriculture",
+      description: "Bengal's baor (oxbow lake) fisheries and floating gardens called dhap turn monsoon floods into productive agriculture. Farmers build rafts of water hyacinth for growing vegetables, while intricate embankment systems manage one of Earth's largest and most dynamic river deltas.",
       position: [14, 0, 2],
       color: "#4CAF50",
       era: "medieval",
@@ -5037,7 +5037,7 @@ export const gameData: GameData = {
     {
       id: "al-andalus",
       name: "Al-Andalus (Islamic Spain)",
-      description: "Islamic Golden Age water engineering in the Iberian Peninsula",
+      description: "The Alhambra's gravity-fed fountains and gardens showcased Moorish hydraulic artistry. Valencia's acequia tribunal — the oldest court in Europe — still governs irrigation. The great norias of Cordoba lifted Guadalquivir water to feed orchards across the Iberian Peninsula.",
       position: [-6, 0, -8],
       color: "#E91E63",
       era: "medieval",
@@ -5106,7 +5106,7 @@ export const gameData: GameData = {
     {
       id: "oman",
       name: "Oman",
-      description: "Aflaj irrigation system - UNESCO World Heritage",
+      description: "Over 3,000 aflaj (gravity-fed channel) systems have sustained Omani agriculture for 4,000+ years, earning UNESCO World Heritage status. These community-managed water channels distribute groundwater across arid terrain using precisely calculated gradients without any pumping.",
       position: [12, 0, -4],
       color: "#FF5722",
       era: "ancient",
@@ -5148,7 +5148,7 @@ export const gameData: GameData = {
     {
       id: "venice",
       name: "Venice",
-      description: "1,500 years of lagoon city water engineering",
+      description: "Venice survived 1,500 years on a lagoon through artesian wells, rooftop rainwater cisterns, and ingenious saltwater management. Today the MOSE flood barrier — 78 mobile gates — defends the city from acqua alta tides threatening this UNESCO masterpiece of water engineering.",
       position: [-2, 0, -10],
       color: "#3F51B5",
       era: "medieval",
@@ -5198,7 +5198,7 @@ export const gameData: GameData = {
     {
       id: "central-asia",
       name: "Central Asia (Silk Road)",
-      description: "Karez underground channels sustaining oasis cities",
+      description: "The karez system of Turpan, China features 5,000+ km of underground channels tapping snowmelt from the Tian Shan mountains. These gravity-fed tunnels sustained Silk Road oasis cities for 2,000 years, delivering water across scorching deserts without evaporation loss.",
       position: [12, 0, 2],
       color: "#9C27B0",
       era: "ancient",
@@ -5238,7 +5238,7 @@ export const gameData: GameData = {
     {
       id: "amazon-basin",
       name: "Amazon Basin",
-      description: "Sophisticated civilizations that engineered water, soil, and landscape on massive scale",
+      description: "Amazonian peoples created terra preta (black earth) soils, built raised agricultural fields above seasonal floods, and engineered fish weirs across major tributaries. Recent lidar surveys reveal vast geometric earthworks and water management systems hidden beneath the canopy.",
       position: [-10, 0, 4],
       color: "#2E7D32",
       era: "ancient",
@@ -5326,7 +5326,7 @@ export const gameData: GameData = {
     {
       id: "mississippian",
       name: "Mississippian (Cahokia)",
-      description: "North America's largest pre-Columbian city with engineered water systems",
+      description: "Cahokia supported 20,000+ residents near modern St. Louis with engineered drainage plazas, borrow-pit reservoirs, and Woodhenge solar calendar posts. Monks Mound, the largest earthwork in the Americas, required sophisticated water management to prevent erosion of its 30m height.",
       position: [-8, 0, -6],
       color: "#8D6E63",
       era: "medieval",
@@ -5366,7 +5366,7 @@ export const gameData: GameData = {
     {
       id: "hohokam",
       name: "Hohokam Civilization",
-      description: "Built the largest pre-Columbian irrigation system in North America",
+      description: "The Hohokam built over 1,000 km of irrigation canals in the Phoenix basin — the largest pre-Columbian canal system in North America. Some canals were 3 meters deep and 10 meters wide, diverting the Salt and Gila Rivers to irrigate 40,000+ hectares of desert farmland.",
       position: [-12, 0, -4],
       color: "#FF7043",
       era: "ancient",
@@ -5466,7 +5466,7 @@ export const gameData: GameData = {
     {
       id: "chinook",
       name: "Pacific Northwest Nations",
-      description: "Engineered one of world's most productive fisheries",
+      description: "Chinook peoples built elaborate wooden fish weirs and stone traps across the Columbia River, managing annual salmon runs of 10-16 million fish. Their selective harvesting practices sustained one of Earth's most productive fisheries for thousands of years before Euro-American contact.",
       position: [-14, 0, -8],
       color: "#00796B",
       era: "ancient",
@@ -5605,7 +5605,7 @@ export const gameData: GameData = {
     {
       id: "lake-baikal",
       name: "Lake Baikal Cultures",
-      description: "20% of Earth's unfrozen surface freshwater - the deepest, oldest lake sustaining unique water cultures for 8,000+ years",
+      description: "Lake Baikal holds 20% of Earth's unfrozen surface freshwater — the deepest (1,642m) and oldest lake on the planet. For 8,000+ years, Buryat and Evenki peoples built birch-bark boats, ice roads, and seal-hunting water camps along its 2,100 km shoreline.",
       position: [17, 0, -7],
       color: "#1565C0",
       era: "ancient",
@@ -5695,7 +5695,7 @@ export const gameData: GameData = {
     {
       id: "siberian-river-peoples",
       name: "Siberian River Peoples",
-      description: "Khanty, Ket, Yakut, Nanai, Nivkh, Yukaghir, and Itelmen - masters of the world's greatest rivers in the harshest conditions",
+      description: "Khanty, Ket, Yakut, and Nanai peoples mastered the Ob, Yenisei, and Lena — the world's greatest Arctic-flowing rivers. They built fish traps under ice, seasonal river camps, and birch-bark watercraft navigating 4,000+ km river systems in temperatures below -50C.",
       position: [20, 0, -8],
       color: "#90CAF9",
       era: "ancient",
@@ -5883,7 +5883,7 @@ export const gameData: GameData = {
     {
       id: "amur-river-peoples",
       name: "Amur River Peoples (Nanai, Ulchi, Nivkh)",
-      description: "Fish-skin waterproofing, salmon management, and river-ocean-ice interface mastery on Asia's greatest Pacific salmon river",
+      description: "Nanai and Ulchi peoples invented fish-skin waterproof clothing and managed Pacific salmon runs on Asia's greatest salmon river. Their river-ocean-ice interface mastery enabled year-round survival where freshwater, saltwater, and frozen water converge along the 2,824 km Amur.",
       position: [22, 0, -6],
       color: "#4DB6AC",
       era: "ancient",
@@ -6003,7 +6003,7 @@ export const gameData: GameData = {
     {
       id: "siberian-tundra-peoples",
       name: "Siberian Tundra & Arctic Coast Peoples",
-      description: "Nganasan, Dolgan, Nenets, and Chukchi - surviving at the edge of the habitable world through ice mastery",
+      description: "Nganasan, Dolgan, Nenets, and Chukchi peoples survived at the edge of the habitable world through ice mastery. They read snow density for drinking water, built ice-block shelters, and navigated frozen rivers as highways across the vast Siberian tundra for 30,000+ years.",
       position: [19, 0, -12],
       color: "#B3E5FC",
       era: "ancient",
@@ -6102,7 +6102,7 @@ export const gameData: GameData = {
     {
       id: "modern-siberia",
       name: "Modern Siberian Water Engineering",
-      description: "Oil-water management, Norilsk pollution, permafrost thaw crisis, Trans-Siberian railway, and the Northern Sea Route",
+      description: "Modern Siberia faces the crisis of permafrost thaw releasing ancient methane, Norilsk's catastrophic mining pollution, and oil-water management across 13 million km2. The Trans-Siberian Railway and Northern Sea Route depend on managing water in its frozen state.",
       position: [20, 0, -10],
       color: "#546E7A",
       era: "modern",
@@ -6192,7 +6192,7 @@ export const gameData: GameData = {
     {
       id: "imperial-soviet-russia",
       name: "Imperial & Soviet Russia",
-      description: "From Peter the Great's naval ambitions to Soviet megaprojects connecting five seas",
+      description: "Peter the Great built St. Petersburg on swampland, and Soviet engineers connected five seas via canal megaprojects. The White Sea-Baltic Canal cost 25,000 lives, while the Aral Sea diversion became history's worst irrigation disaster, shrinking it to 10% of its original size.",
       position: [14, 0, -6],
       color: "#D32F2F",
       era: "modern",
@@ -6380,7 +6380,7 @@ export const gameData: GameData = {
     {
       id: "inuit",
       name: "Inuit & Arctic Peoples",
-      description: "Turned ice and frozen water from obstacles into essential resources",
+      description: "Inuit peoples transformed ice and frozen water from obstacles into essential resources — building iglus as water-phase engineering, cutting ice fishing holes with bone tools, and reading sea ice conditions to navigate the Arctic. Their qamutik sleds travel frozen ocean highways.",
       position: [-6, 0, -12],
       color: "#B3E5FC",
       era: "ancient",
@@ -6450,7 +6450,7 @@ export const gameData: GameData = {
     {
       id: "swahili-coast",
       name: "Swahili Coast",
-      description: "Monsoon water harvesting supporting major Indian Ocean trade cities",
+      description: "Swahili coast cities like Kilwa, Mombasa, and Zanzibar engineered coral-stone cisterns and monsoon rainwater harvesting to support thriving Indian Ocean trade ports. Underground channels and rooftop collection systems sustained populations of 20,000+ on coral islands.",
       position: [8, 0, 6],
       color: "#26A69A",
       era: "medieval",
@@ -6490,7 +6490,7 @@ export const gameData: GameData = {
     {
       id: "kongo-kingdom",
       name: "Kongo Kingdom",
-      description: "Water management in the world's second-largest rainforest",
+      description: "The Kongo Kingdom managed water across the world's second-largest rainforest, engineering raised agricultural mounds in seasonal floodplains and building elaborate palm-fiber aqueducts. Their mbanza capitals featured drainage systems supporting populations of 100,000+.",
       position: [2, 0, 6],
       color: "#66BB6A",
       era: "medieval",
@@ -6530,7 +6530,7 @@ export const gameData: GameData = {
     {
       id: "mali-timbuktu",
       name: "Mali Empire & Timbuktu",
-      description: "Niger River systems making Timbuktu a city of 100,000 at desert's edge",
+      description: "The Niger River's inland delta sustained Timbuktu as a city of 100,000 at the Sahara's edge. Mali's engineers built canal networks connecting desert trade routes to river commerce, while Djenne-Djenno's flood-recession farming fed West Africa's largest medieval cities.",
       position: [-2, 0, 2],
       color: "#FFA726",
       era: "medieval",
@@ -6579,7 +6579,7 @@ export const gameData: GameData = {
     {
       id: "morocco",
       name: "Morocco (Khettara)",
-      description: "Ancient underground water channels sustaining life in North Africa's arid regions",
+      description: "Morocco's khettara underground water channels, similar to Persian qanats, have sustained oasis agriculture for 2,000+ years. The elaborate water distribution systems of Fez, Marrakech, and the Draa Valley supported caravan trade routes connecting sub-Saharan Africa to the Mediterranean.",
       position: [-5, 0, 8],
       color: "#E65100",
       era: "ancient",
@@ -7293,7 +7293,7 @@ export const gameData: GameData = {
     {
       id: "pre-roman-iberia",
       name: "Pre-Roman Iberian Civilizations",
-      description: "Before Rome conquered Hispania, diverse peoples developed sophisticated water systems for mining, agriculture, and urban life",
+      description: "Before Rome, Iberian peoples built sophisticated cisterns, Tartessian canal networks fed mining operations, and Celtiberian hillfort water systems sustained mountain communities. Las Medulas gold mines used hydraulic mining techniques later adopted by Roman engineers.",
       position: [-12, 0, -8],
       color: "#CD853F",
       era: "ancient",
@@ -7352,7 +7352,7 @@ export const gameData: GameData = {
     {
       id: "basque-country",
       name: "Basque Civilization",
-      description: "Europe's oldest continuous culture with unique water engineering adapted to steep, rainy mountains",
+      description: "Europe's oldest continuous culture engineered water across the steep, rain-drenched Pyrenees and Cantabrian mountains. Basque water mills, terraced irrigation, and harbor engineering at Bilbao and San Sebastian sustained maritime trade and agriculture for 5,000+ years.",
       position: [-10, 0, -6],
       color: "#8B0000",
       era: "classical",
@@ -7421,7 +7421,7 @@ export const gameData: GameData = {
     {
       id: "celtic-europe",
       name: "Celtic Civilizations",
-      description: "Dominated Europe for 800 years; sophisticated water management for ritual, agriculture, and mining",
+      description: "Celtic peoples dominated Europe for 800 years, building sacred spring sanctuaries, timber-lined wells, and advanced mining drainage. Their oak-lined ritual pools at sites like Bath and Bibracte combined spiritual water veneration with practical hydraulic engineering.",
       position: [-6, 0, -8],
       color: "#228B22",
       era: "ancient",
@@ -7499,7 +7499,7 @@ export const gameData: GameData = {
     {
       id: "gaul",
       name: "Gaulish Civilization",
-      description: "Celtic peoples of France with wealthy urban centers and extensive river trade before Caesar's conquest",
+      description: "Gaulish oppida like Bibracte and Alesia featured spring-fed water systems and river port infrastructure. Before Caesar's conquest, Gauls managed the Seine, Loire, and Rhone river networks for trade, built sophisticated wooden bridges, and engineered iron-age harbor facilities.",
       position: [-8, 0, -4],
       color: "#4169E1",
       era: "ancient",
@@ -7567,7 +7567,7 @@ export const gameData: GameData = {
     {
       id: "germanic-europe",
       name: "Germanic Civilizations",
-      description: "Water technologies suited to northern Europe's wet, cold climate - wetland reclamation and bog management",
+      description: "Germanic tribes engineered bog trackways across wetlands, extracted iron from bog ore using water processes, and built terp (artificial mound) settlements to survive North Sea floods. Their wetland reclamation and drainage techniques laid foundations for Dutch polder engineering.",
       position: [-4, 0, -10],
       color: "#708090",
       era: "ancient",
@@ -7655,7 +7655,7 @@ export const gameData: GameData = {
     {
       id: "etruscan",
       name: "Etruscan Civilization",
-      description: "Rome's teachers in hydraulic engineering. Drained marshes, built drainage tunnels, created underground water systems.",
+      description: "Rome's teachers in hydraulic engineering — Etruscans drained the Pontine Marshes, built cuniculi drainage tunnels with precise gradients, and created urban cistern networks. Their rock-cut water channels, terraced hillside agriculture, and temple water systems predated Roman engineering by centuries.",
       position: [-3, 0, -8],
       color: "#8B4513",
       era: "classical",
@@ -7780,7 +7780,7 @@ export const gameData: GameData = {
     {
       id: "viking",
       name: "Viking Civilization",
-      description: "Masters of water in all its forms. Didn't just cross oceans - understood water more deeply than any medieval civilization.",
+      description: "Vikings mastered water in all its forms — navigating open Atlantic in clinker-built longships, portaging rivers across Russia to reach Constantinople, and building watermills in Iceland. Their freshwater management sustained colonies from Greenland to Newfoundland for centuries.",
       position: [-2, 0, -12],
       color: "#4682B4",
       era: "medieval",
@@ -8054,7 +8054,7 @@ export const gameData: GameData = {
     {
       id: "hittites",
       name: "Hittite Empire",
-      description: "Masters of dam construction in the challenging terrain of Anatolia",
+      description: "Hittite engineers built some of antiquity's largest dams in Anatolia's challenging terrain, including the Karakuyu reservoir and Alacahoyuk dam systems. Their water management sustained Hattusa, a capital of 50,000+ people on the semi-arid central Anatolian plateau.",
       position: [6, 0, -3],
       color: "#A0522D",
       era: "ancient",
@@ -8154,7 +8154,7 @@ export const gameData: GameData = {
     {
       id: "canaan",
       name: "Canaan & Ancient Israel",
-      description: "Pioneers of siege-proof urban water systems in a water-scarce land",
+      description: "Canaanite cities pioneered siege-proof water tunnels like Megiddo's 30m deep shaft and Hazor's underground spring access. In a water-scarce land, they carved rock-cut cisterns, built sophisticated tell-city drainage, and developed the alphabet partly to record water rights.",
       position: [7, 0, -5],
       color: "#DEB887",
       era: "ancient",
@@ -8223,7 +8223,7 @@ export const gameData: GameData = {
     {
       id: "syria-orontes",
       name: "Syria (Orontes Valley)",
-      description: "Home of the legendary norias—most efficient pre-industrial water lifting",
+      description: "The Orontes River valley hosted the legendary norias of Hama — massive waterwheels up to 20m in diameter, the most efficient pre-industrial water-lifting devices. Syrian engineers perfected gravity-fed qanat systems and urban water distribution across the Fertile Crescent.",
       position: [8, 0, -4],
       color: "#CD5C5C",
       era: "classical",
@@ -8350,7 +8350,7 @@ export const gameData: GameData = {
     {
       id: "mongol-steppe",
       name: "Mongol & Steppe Peoples",
-      description: "Nomadic transmitters of water technology across Eurasia",
+      description: "Mongol horsemen transmitted water technologies across Eurasia, connecting Chinese canal engineering with Persian qanat knowledge. Their ger camps relied on reading terrain for water sources, and the Mongol postal system (yam) required wells and water stations every 40 km.",
       position: [14, 0, -2],
       color: "#8B0000",
       era: "medieval",
@@ -8529,7 +8529,7 @@ export const gameData: GameData = {
     {
       id: "babylonia",
       name: "Babylonia",
-      description: "Refiners of Sumerian techniques who created the world's first comprehensive water laws",
+      description: "Babylonians refined Sumerian canal techniques and codified the world's first comprehensive water laws in Hammurabi's Code (1754 BCE). The legendary Hanging Gardens — if real — used Archimedean screw-like pumps to raise Euphrates water 20m to terraced rooftop gardens.",
       position: [8, 0, -6],
       color: "#FFD700",
       era: "ancient",
@@ -9087,7 +9087,7 @@ export const gameData: GameData = {
     {
       id: "xia-shang-dynasty",
       name: "Xia & Shang Dynasties",
-      description: "Legendary foundations of Chinese hydraulic engineering—Yu the Great's flood control philosophy",
+      description: "The legendary Emperor Yu tamed the Great Flood by channeling rivers rather than damming them — founding Chinese hydraulic philosophy. Shang Dynasty oracle bones record the earliest systematic flood records, and bronze-age irrigation canals fed the Yellow River heartland.",
       position: [22, 0, -3],
       color: "#8B4513",
       era: "ancient",
@@ -9137,7 +9137,7 @@ export const gameData: GameData = {
     {
       id: "zhou-qin-dynasty",
       name: "Zhou & Qin Dynasties",
-      description: "Systematization of water management—Dujiangyan and the Lingqu Canal",
+      description: "Li Bing's Dujiangyan irrigation system (256 BCE) still waters 5 million hectares today — the oldest working major infrastructure on Earth. The Lingqu Canal linked the Yangtze and Pearl River basins, enabling Qin unification of southern China through water control.",
       position: [20, 0, -4],
       color: "#4169E1",
       era: "ancient",
@@ -11038,7 +11038,7 @@ export const gameData: GameData = {
     {
       id: "neolithic-anatolia",
       name: "Neolithic Anatolia",
-      description: "Humanity's earliest settlements developed foundational water management, from Gobekli Tepe (9500 BCE) to Catalhoyuk (7500 BCE).",
+      description: "Humanity's earliest permanent settlements at Gobekli Tepe (9500 BCE) and Catalhoyuk (7500 BCE) developed foundational water management. Catalhoyuk's 8,000 residents built rooftop rainwater collection, channel drainage, and proto-irrigation — the blueprint for all urban water systems.",
       position: [4, 0, -7],
       color: "#8B7355",
       era: "ancient",
@@ -11063,7 +11063,7 @@ export const gameData: GameData = {
     {
       id: "troy-lydia",
       name: "Troy & Lydia",
-      description: "From Troy's siege-proof water systems to Lydia's gold-processing channels at Sardis.",
+      description: "Troy's deep wells survived decade-long sieges, and Lydian engineers at Sardis built gold-processing channels using water to separate precious metals from ore. King Croesus's legendary wealth depended on hydraulic mining of the Pactolus River's gold-bearing sands.",
       position: [3, 0, -8],
       color: "#DAA520",
       era: "ancient",
@@ -11097,7 +11097,7 @@ export const gameData: GameData = {
     {
       id: "phrygian-kingdom",
       name: "Phrygian Kingdom",
-      description: "King Midas's kingdom developed rock-cut water channels, cisterns, and highland dam technology.",
+      description: "King Midas's Phrygian kingdom engineered rock-cut water channels through volcanic tufa, highland dams for seasonal storage, and sophisticated cistern systems at Gordion. Their water infrastructure sustained major trade routes connecting the Aegean to Mesopotamia for 500 years.",
       position: [4, 0, -8],
       color: "#CD853F",
       era: "ancient",
@@ -11120,7 +11120,7 @@ export const gameData: GameData = {
     {
       id: "classical-anatolia",
       name: "Classical & Hellenistic Anatolia",
-      description: "From Ephesus to Pergamon to Hierapolis — some of the ancient world's most impressive urban water systems.",
+      description: "Ephesus, Pergamon, and Hierapolis showcased the ancient world's most impressive urban water systems. Pergamon's 45 km pressurized pipeline crossed valleys at 180m elevation, while Hierapolis's travertine terraces and Ephesus's marble-paved latrines served 250,000+ residents.",
       position: [3, 0, -6],
       color: "#4682B4",
       era: "classical",
@@ -11158,7 +11158,7 @@ export const gameData: GameData = {
     {
       id: "seljuk-anatolia",
       name: "Seljuk Anatolia",
-      description: "Over 100 caravanserais with dedicated water supply across 3,000km of trade routes.",
+      description: "Seljuk Turks built over 100 caravanserais with dedicated water supply cisterns and fountains across 3,000 km of Anatolian trade routes. Their monumental bridge and waterworks engineering connected East and West, featuring ornate fountain houses (sebils) in every major town.",
       position: [5, 0, -7],
       color: "#B8860B",
       era: "medieval",
@@ -11182,7 +11182,7 @@ export const gameData: GameData = {
     {
       id: "modern-turkey",
       name: "Modern Turkey",
-      description: "From the massive GAP project to underwater Bosphorus tunnels.",
+      description: "Turkey's GAP project — 22 dams and 19 hydroelectric plants on the Tigris and Euphrates — is one of history's largest water infrastructure programs. The Marmaray tunnel crosses the Bosphorus 60m underwater, connecting two continents beneath one of the world's busiest waterways.",
       position: [5, 0, -6],
       color: "#E74C3C",
       era: "modern",
@@ -11205,7 +11205,7 @@ export const gameData: GameData = {
     {
       id: "thracian-dacian",
       name: "Thracian & Dacian Civilizations",
-      description: "From Thracian gold mine water to Dacian mountain fortress water supply in southeastern Europe.",
+      description: "Thracian gold mines used sophisticated hydraulic sluicing, while Dacian mountain fortresses at Sarmizegetusa featured ceramic pipe water supply systems at 1,200m elevation. These southeastern European civilizations engineered water for mining, agriculture, and highland urban settlements.",
       position: [2, 0, -7],
       color: "#556B2F",
       era: "ancient",
@@ -11238,7 +11238,7 @@ export const gameData: GameData = {
     {
       id: "scythian-peoples",
       name: "Scythian & Sarmatian Peoples",
-      description: "Nomadic water knowledge across the world's largest steppe.",
+      description: "Scythian nomads mastered water survival across the world's largest steppe, digging portable wells, reading terrain for hidden springs, and building kurgan burial mounds above flood levels. Their gold artistry depicts intimate knowledge of rivers, marshes, and seasonal water patterns.",
       position: [3, 0, -5],
       color: "#8B4513",
       era: "ancient",
@@ -11261,7 +11261,7 @@ export const gameData: GameData = {
     {
       id: "slavic-kievan-rus",
       name: "Slavic & Kievan Rus",
-      description: "From Novgorod's wooden drainage to Kiev's water supply — Eastern Slavic water traditions.",
+      description: "Novgorod's excavated wooden drainage infrastructure dates to 953 CE — the oldest in Eastern Europe. Kiev's water supply from the Dnieper, wooden aqueducts in medieval Russian cities, and the tradition of banya (bathhouse) culture shaped Slavic water engineering for centuries.",
       position: [2, 0, -4],
       color: "#2E8B57",
       era: "medieval",
@@ -11287,7 +11287,7 @@ export const gameData: GameData = {
     {
       id: "medieval-eastern-europe",
       name: "Medieval Eastern European Kingdoms",
-      description: "From Hungarian thermal baths to Polish salt mine drainage to Bohemian fish ponds.",
+      description: "Hungarian thermal baths like Budapest's Rudas date to Ottoman times over natural hot springs. Polish Wieliczka salt mine drainage systems operated 300m underground, and Bohemian fish pond networks covering 70,000 hectares made medieval Czech lands Europe's aquaculture leaders.",
       position: [1, 0, -5],
       color: "#4169E1",
       era: "medieval",
@@ -11313,7 +11313,7 @@ export const gameData: GameData = {
     {
       id: "pre-viking-scandinavia",
       name: "Pre-Viking Scandinavia",
-      description: "10,000 years of water engineering before the Viking Age, from Mesolithic fish traps to Iron Age bog iron processing.",
+      description: "10,000 years of Scandinavian water engineering before the Viking Age — from Mesolithic coastal fish traps and Bronze Age rock-cut canals to Iron Age bog iron extraction. Stone-lined wells, log boats, and tidal fishing weirs sustained Nordic communities through harsh northern winters.",
       position: [-3, 0, -15],
       color: "#6B8E23",
       era: "ancient",
@@ -11576,7 +11576,7 @@ export const gameData: GameData = {
     {
       id: "norse-greenland",
       name: "Norse Greenland",
-      description: "450 years of survival at the western edge of medieval European civilization, where water and climate determined everything.",
+      description: "Norse Greenland colonists survived 450 years at the western edge of medieval civilization. Freshwater management from glacial streams, seal-hunting along ice edges, and dairy farming dependent on meltwater irrigation sustained 5,000 people until climate cooling ended the colony.",
       position: [-12, 0, -16],
       color: "#2E8B57",
       era: "medieval",
@@ -11987,7 +11987,7 @@ export const gameData: GameData = {
     {
       id: "faroe-islands",
       name: "Faroe Islands",
-      description: "Norse settlers on remote North Atlantic islands managing extreme water conditions for over 1,200 years.",
+      description: "Norse settlers on the remote Faroe Islands engineered stone-lined water channels, peat-bog drainage, and sheep-grazing systems adapted to 300+ annual rain days. For 1,200 years, they harvested seabirds from cliff faces using rope systems and managed freshwater in one of Earth's windiest places.",
       position: [-5, 0, -15],
       color: "#0065BD",
       era: "medieval",
@@ -12437,7 +12437,7 @@ export const gameData: GameData = {
     {
       id: "olmec",
       name: "Olmec Civilization",
-      description: "The 'mother culture' of Mesoamerica — first aqueducts, first engineered drains, first sacred water architecture in the Americas.",
+      description: "The Olmec 'mother culture' of Mesoamerica built the Americas' first stone aqueducts at San Lorenzo (1200 BCE), engineered basalt drain systems, and created sacred water architecture. Their lagoon management and rubber waterproofing techniques spread across all later Mesoamerican civilizations.",
       position: [-15, 0, 2],
       color: "#556B2F",
       era: "ancient",
@@ -12867,7 +12867,7 @@ export const gameData: GameData = {
     {
       id: "maya-postclassic",
       name: "Maya Postclassic",
-      description: "From cenote-dependent cities to the last great Maya capital — water management through natural sinkholes and ritual offerings.",
+      description: "Post-Classic Maya cities like Mayapan and Chichen Itza depended entirely on cenotes — natural limestone sinkholes accessing underground rivers. Sacred cenote offerings to Chaac the rain god combined ritual with practical water management across the porous Yucatan Peninsula.",
       position: [-12, 0, 5],
       color: "#32CD32",
       era: "medieval",
@@ -13085,7 +13085,7 @@ export const gameData: GameData = {
     {
       id: "toltec-civilization",
       name: "Toltec Civilization",
-      description: "Warrior-merchants who bridged the gap between Teotihuacan and the Aztecs with their capital at Tula.",
+      description: "Toltec warrior-merchants at Tula engineered canal irrigation from the Tula River, built reservoir systems for their 60,000-person capital, and spread water management knowledge that later influenced Aztec hydraulic engineering. Their chac mool figures held ritual water offerings.",
       position: [-14, 0, 2],
       color: "#A0522D",
       era: "medieval",
@@ -13274,7 +13274,7 @@ export const gameData: GameData = {
     {
       id: "purepecha",
       name: "Purépecha/Tarascan",
-      description: "Lake-based civilization of Michoacán with sophisticated fishery management and volcanic spring engineering.",
+      description: "The Purepecha built their civilization around Lake Patzcuaro in Michoacan, engineering sophisticated fishery management with butterfly nets and volcanic spring water systems. They resisted Aztec conquest partly through superior lake-fortress defense and aquatic resource management.",
       position: [-16, 0, 2],
       color: "#8B0000",
       era: "medieval",
@@ -13324,7 +13324,7 @@ export const gameData: GameData = {
     {
       id: "totonac",
       name: "Totonac Civilization",
-      description: "Water engineering in the wettest major Mesoamerican city and managers of the world's most valuable spice crop.",
+      description: "The Totonac capital El Tajin received 2,000mm annual rainfall, requiring elaborate drainage engineering. They managed vanilla orchid cultivation — the world's most valuable spice — which requires precise water conditions. Their 365-niche pyramid featured integrated stormwater systems.",
       position: [-13, 0, 2],
       color: "#FF6347",
       era: "classical",
@@ -13374,7 +13374,7 @@ export const gameData: GameData = {
     {
       id: "mixtec",
       name: "Mixtec Civilization",
-      description: "Master scribes who recorded water resources in codices and invented self-building agricultural terraces.",
+      description: "Mixtec codices — among the finest in Mesoamerica — recorded water resources, territorial boundaries along rivers, and irrigation rights. They engineered lama-bordo terraces that self-built through controlled erosion, creating productive farmland from steep Oaxacan mountain slopes.",
       position: [-14, 0, 0],
       color: "#DAA520",
       era: "medieval",
@@ -13424,7 +13424,7 @@ export const gameData: GameData = {
     {
       id: "epi-olmec",
       name: "Epi-Olmec & Transitional",
-      description: "The bridge between the Olmec mother culture and the Classic Maya — inheriting and refining water engineering traditions.",
+      description: "Epi-Olmec civilization bridged the gap between Olmec and Classic Maya cultures, refining aqueduct construction, swamp drainage for agriculture, and ceremonial water architecture. Their Tres Zapotes site shows continuous water engineering innovation from 900 BCE to 200 CE.",
       position: [-14, 0, 1.5],
       color: "#6B8E23",
       era: "classical",
@@ -13464,7 +13464,7 @@ export const gameData: GameData = {
     {
       id: "paleo-indian-archaic",
       name: "Paleo-Indian & Archaic North America",
-      description: "15,000 years of water management from Clovis spring camps to the oldest mound complex in the Americas.",
+      description: "15,000 years of water management — from Clovis hunters camping at springs and Paleoindian well-digging to the Watson Brake mound complex (3500 BCE), the oldest in the Americas. These early peoples tracked seasonal water sources across a continent still shaped by glacial retreat.",
       position: [-18, 0, -5],
       color: "#8B4513",
       era: "ancient",
@@ -13572,7 +13572,7 @@ export const gameData: GameData = {
     {
       id: "woodland-period",
       name: "Woodland Period (Adena & Hopewell)",
-      description: "Mound builders who created the largest geometric earthworks in the world.",
+      description: "Woodland period mound builders created the world's largest geometric earthworks at Newark, Ohio — precisely aligned with lunar cycles. Hopewell and Adena cultures engineered creek-side settlements, ritual water pools, and earthen enclosures managing flood-prone river valleys.",
       position: [-17, 0, -6],
       color: "#556B2F",
       era: "ancient",
@@ -13631,7 +13631,7 @@ export const gameData: GameData = {
     {
       id: "eastern-woodlands",
       name: "Eastern Woodlands Nations",
-      description: "From Haudenosaunee fish weirs to Calusa canals.",
+      description: "Haudenosaunee (Iroquois) nations built elaborate fish weirs across northeastern rivers, while Florida's Calusa engineered canal systems connecting coastal islands. Eastern Woodlands peoples managed waterways for transportation, food production, and territorial boundaries.",
       position: [-17, 0, -4],
       color: "#2E8B57",
       era: "medieval",
@@ -13709,7 +13709,7 @@ export const gameData: GameData = {
     {
       id: "great-plains-nations",
       name: "Great Plains Nations",
-      description: "Flood-adapted agriculture on the Missouri River.",
+      description: "Mandan, Hidatsa, and Arikara nations practiced flood-adapted agriculture along the Missouri River, planting in rich bottomland soils deposited by spring floods. Their earth lodge villages on river bluffs combined strategic water access with flood protection for centuries.",
       position: [-18, 0, -7],
       color: "#DEB887",
       era: "medieval",
@@ -13759,7 +13759,7 @@ export const gameData: GameData = {
     {
       id: "great-basin-california",
       name: "Great Basin & California Peoples",
-      description: "From hunter-gatherer irrigation to the densest indigenous population north of Mexico.",
+      description: "Great Basin Paiute peoples practiced hunter-gatherer irrigation, diverting streams to expand wild seed meadows. California's diverse nations engineered tidal fish traps, acorn-leaching water systems, and managed the densest indigenous population north of Mexico through water mastery.",
       position: [-20, 0, -5],
       color: "#CD853F",
       era: "ancient",
@@ -13828,7 +13828,7 @@ export const gameData: GameData = {
     {
       id: "algonquin-canadian",
       name: "Algonquin & Canadian First Nations",
-      description: "Navigation of the world's largest freshwater system.",
+      description: "Algonquin and Cree nations navigated the world's largest freshwater system — the Great Lakes and their tributaries — using birch-bark canoes. Their portage routes connecting watersheds became the highways of the fur trade and later the path of the Canadian transcontinental railway.",
       position: [-17, 0, -9],
       color: "#006400",
       era: "ancient",
@@ -13897,7 +13897,7 @@ export const gameData: GameData = {
     {
       id: "pacific-northwest-expanded",
       name: "Pacific Northwest Nations",
-      description: "11,000 years of salmon fishery management.",
+      description: "Pacific Northwest nations managed salmon fisheries for 11,000 years with cedar fish weirs, stone traps, and the First Salmon Ceremony — a conservation ritual ensuring sustainable harvests. Their plank houses along rivers were oriented to maximize access to spawning runs.",
       position: [-21, 0, -7],
       color: "#4682B4",
       era: "ancient",
@@ -13947,7 +13947,7 @@ export const gameData: GameData = {
     {
       id: "modern-usa",
       name: "Modern USA Water Engineering",
-      description: "From the Erie Canal to the Chicago River Reversal.",
+      description: "The Erie Canal (1825) transformed American commerce, and the Chicago River Reversal (1900) was the largest civil engineering project of its era. From Hoover Dam to the California Aqueduct, American water projects reshaped an entire continent's hydrology in 200 years.",
       position: [-19, 0, -5],
       color: "#3C3B6E",
       era: "modern",
@@ -14036,7 +14036,7 @@ export const gameData: GameData = {
     {
       id: "modern-canada",
       name: "Modern Canada Water Engineering",
-      description: "The St. Lawrence Seaway and James Bay Project.",
+      description: "The St. Lawrence Seaway opened the Great Lakes to ocean shipping, and the James Bay hydroelectric project dammed rivers across an area the size of New York State. Canada manages 20% of the world's freshwater — and its engineering reflects that continental-scale responsibility.",
       position: [-17, 0, -10],
       color: "#FF0000",
       era: "modern",
@@ -14076,7 +14076,7 @@ export const gameData: GameData = {
     {
       id: "colombian-civilizations",
       name: "Colombian Water Civilizations",
-      description: "From Zenú's 500,000-hectare wetland to Tairona's Lost City — the Americas' most diverse water engineering.",
+      description: "The Zenu civilization engineered 500,000 hectares of wetland drainage canals, while the Tairona built Ciudad Perdida with stone-channel water systems in Colombia's Sierra Nevada. From Muisca sacred lake offerings to Quimbaya goldwork depicting water deities — diverse engineering traditions.",
       position: [-10, 0, 2],
       color: "#228B22",
       era: "ancient",
@@ -14213,7 +14213,7 @@ export const gameData: GameData = {
     {
       id: "caribbean-indigenous",
       name: "Caribbean Indigenous Peoples",
-      description: "Taíno water agriculture that fed 3 million people across the Caribbean.",
+      description: "Taino peoples fed 3 million people across the Caribbean using conuco raised-mound agriculture and freshwater management on coral islands. Their batey ceremonial plazas featured drainage engineering, and cassava processing required sophisticated water-soaking techniques.",
       position: [-9, 0, -1],
       color: "#20B2AA",
       era: "medieval",
@@ -14263,7 +14263,7 @@ export const gameData: GameData = {
     {
       id: "sudd-nilotic",
       name: "Sudd & Nilotic Peoples",
-      description: "Managing one of the largest wetlands on Earth — 57,000 km² in flood season.",
+      description: "Nilotic peoples like the Nuer, Dinka, and Shilluk managed the Sudd — one of Earth's largest wetlands at 57,000 km2 in flood season. Their cattle camps migrate seasonally between flooded and dry zones, and toich grassland management sustains millions of livestock and people.",
       position: [5, 0, 2],
       color: "#6B8E23",
       era: "ancient",
@@ -14323,7 +14323,7 @@ export const gameData: GameData = {
     {
       id: "horn-of-africa",
       name: "Horn of Africa Water Engineering",
-      description: "From Somali berkads to the Afar Depression — water survival in Earth's hottest places.",
+      description: "Somali berkad cisterns collect scarce rainfall in underground chambers, while Afar peoples survive near the Danakil Depression — Earth's hottest inhabited place at 50C+. Ethiopian falaj-style channels and Djiboutian fog-collection support life in extreme arid conditions.",
       position: [8, 0, 2],
       color: "#DAA520",
       era: "ancient",
@@ -14373,7 +14373,7 @@ export const gameData: GameData = {
     {
       id: "malta-water",
       name: "Malta Water Engineering",
-      description: "7,000 years of water innovation on a dry Mediterranean island with no permanent rivers.",
+      description: "Malta's 7,000-year water engineering history spans Neolithic temple cisterns, Phoenician rock-cut channels, and the Knights of Malta's elaborate aqueduct system. On an island with no permanent rivers, every drop was captured, stored, and distributed through ingenious limestone infrastructure.",
       position: [2, 0, -3],
       color: "#B8860B",
       era: "ancient",
@@ -14433,7 +14433,7 @@ export const gameData: GameData = {
     {
       id: "himalayan-kingdoms",
       name: "Himalayan Kingdoms",
-      description: "Water engineering in the world's steepest terrain — from Nepal's 25,000 water mills to Ladakh's ice stupas.",
+      description: "Nepal operated 25,000+ water mills (ghattas) grinding grain with Himalayan stream power. Ladakh's modern ice stupas freeze winter water into 30m towers that melt in spring for irrigation. From Bhutan's rice terraces to Nepali stone spouts — steep-terrain water mastery.",
       position: [12, 0, -3],
       color: "#8B4513",
       era: "ancient",
@@ -14503,7 +14503,7 @@ export const gameData: GameData = {
     {
       id: "canary-islands",
       name: "Canary Islands Water",
-      description: "2,000 years of isolated island water engineering — from Guanche cisterns to volcanic water tunnels.",
+      description: "Guanche peoples carved cisterns into volcanic rock for 2,000 years before Spanish conquest. Today, the Canary Islands use 1,600+ horizontal water tunnels (galerias) drilled into volcanic mountains to tap underground aquifers — a unique adaptation to volcanic island hydrology.",
       position: [-2, 0, -4],
       color: "#FF8C00",
       era: "ancient",
@@ -14553,7 +14553,7 @@ export const gameData: GameData = {
     {
       id: "libya-gmmr",
       name: "Libya Great Man-Made River",
-      description: "The largest irrigation project in the world — mining 40,000-year-old fossil water beneath the Sahara.",
+      description: "Libya's Great Man-Made River mines 40,000-year-old fossil water from beneath the Sahara through 2,820 km of underground pipes — the world's largest irrigation project. Delivering 6.5 million cubic meters daily, it supplies 70% of Libya's freshwater from non-renewable aquifers.",
       position: [3, 0, -4],
       color: "#C19A6B",
       era: "modern",
@@ -14583,7 +14583,7 @@ export const gameData: GameData = {
     {
       id: "china-south-north-transfer",
       name: "China South-North Water Transfer",
-      description: "The most expensive infrastructure project in human history — redirecting a continent's hydrology.",
+      description: "China's South-North Water Transfer Project — the most expensive infrastructure project in history at $80+ billion — redirects 44.8 billion cubic meters annually across 1,400 km. Three canal routes connect the Yangtze to parched northern China, reshaping a continent's hydrology.",
       position: [17, 0, -4],
       color: "#DE2910",
       era: "modern",
@@ -14613,7 +14613,7 @@ export const gameData: GameData = {
     {
       id: "ethiopia-gerd",
       name: "Grand Ethiopian Renaissance Dam",
-      description: "Africa's largest dam — threatening war between nations over Nile water.",
+      description: "Ethiopia's Grand Ethiopian Renaissance Dam (GERD) — Africa's largest at 6,450 MW — generates power from the Blue Nile while threatening downstream Egypt and Sudan's water supply. This $4.8 billion megaproject has reshaped geopolitics over the world's most contested river.",
       position: [7, 0, 1],
       color: "#009639",
       era: "modern",
@@ -14643,7 +14643,7 @@ export const gameData: GameData = {
     {
       id: "tierra-del-fuego",
       name: "Tierra del Fuego Water Peoples",
-      description: "The southernmost people on Earth — surviving in the most extreme maritime environment.",
+      description: "The Yamana and Selk'nam — Earth's southernmost peoples — survived Tierra del Fuego's extreme maritime environment for 10,000 years. They built bark canoes for kelp-forest fishing, maintained fires on watercraft, and navigated some of the planet's most dangerous waters near Cape Horn.",
       position: [-11, 0, 12],
       color: "#4169E1",
       era: "ancient",
@@ -14683,7 +14683,7 @@ export const gameData: GameData = {
     {
       id: "maldives-water",
       name: "Maldives Water Engineering",
-      description: "Water management for the world's most vulnerable nation to sea-level rise.",
+      description: "The Maldives — averaging just 1.5m above sea level — is the world's most vulnerable nation to rising seas. Its 1,192 coral islands rely on fragile freshwater lens aquifers, desalination plants, and rainwater harvesting. Climate change threatens to submerge the entire nation by 2100.",
       position: [12, 0, 3],
       color: "#00693E",
       era: "ancient",
@@ -14723,7 +14723,7 @@ export const gameData: GameData = {
     {
       id: "swiss-alps-water",
       name: "Swiss Alps Water Engineering",
-      description: "From prehistoric lake dwellings to the world's tallest gravity dam.",
+      description: "Swiss engineering spans from prehistoric lake dwellings (pile houses) on Lake Zurich to the 285m Grande Dixence — the world's tallest gravity dam. Alpine hydropower generates 60% of Switzerland's electricity, and glacier-fed water systems supply some of Europe's purest drinking water.",
       position: [1, 0, -5],
       color: "#FF0000",
       era: "ancient",
@@ -14773,7 +14773,7 @@ export const gameData: GameData = {
     {
       id: "kurdish-water",
       name: "Kurdish Water Traditions",
-      description: "10,000+ karez systems — many deliberately destroyed as a weapon of genocide.",
+      description: "Kurdish regions maintained 10,000+ karez underground water systems sustaining agriculture across northern Iraq and southeastern Turkey. Many were deliberately destroyed during the Anfal campaign as a weapon of genocide — targeting water infrastructure to force displacement of populations.",
       position: [7, 0, -4],
       color: "#F0E68C",
       era: "ancient",
@@ -14813,7 +14813,7 @@ export const gameData: GameData = {
     {
       id: "space-water",
       name: "Space Water Engineering",
-      description: "The most extreme water recycling — in orbit and beyond.",
+      description: "The International Space Station recycles 98% of all water — including sweat and urine — through advanced filtration systems. NASA's water recovery technology for Mars missions pushes the limits of closed-loop water systems, turning space into humanity's ultimate water engineering frontier.",
       position: [0, 0, -12],
       color: "#000080",
       era: "modern",
@@ -14853,7 +14853,7 @@ export const gameData: GameData = {
     {
       id: "berber-amazigh-expanded",
       name: "Berber/Amazigh Water Heritage",
-      description: "UNESCO foggaras, jessour terraces, and 800-year-old underground granaries.",
+      description: "Amazigh (Berber) peoples engineered UNESCO-listed foggara underground water channels across the Sahara, jessour terraced dams harvesting flash floods in Tunisia, and 800-year-old agadir granaries with integrated water storage. Their water knowledge sustained trans-Saharan trade for millennia.",
       position: [2, 0, -3],
       color: "#B8860B",
       era: "ancient",
@@ -14903,7 +14903,7 @@ export const gameData: GameData = {
     {
       id: "modern-mega-projects",
       name: "Modern Water Mega-Projects & Crises",
-      description: "From Belo Monte to Flint — the triumphs and failures of modern water engineering.",
+      description: "Modern mega-projects range from Brazil's controversial Belo Monte Dam displacing 20,000 people to the Flint, Michigan water crisis exposing 100,000 to lead. Three Gorges Dam, the Thames Barrier, and desalination megaplants represent humanity's largest-ever water interventions.",
       position: [0, 0, -8],
       color: "#808080",
       era: "modern",
@@ -14992,7 +14992,7 @@ export const gameData: GameData = {
     {
       id: "ainu-water",
       name: "Ainu Water Traditions",
-      description: "Indigenous salmon management in northern Japan — the river IS the territory.",
+      description: "Ainu peoples of Hokkaido managed salmon fisheries where the river defined territorial identity. Their marep stake fishing rights system, itak ceremonies honoring water spirits, and sophisticated weir construction sustained productive fisheries across northern Japan for thousands of years.",
       position: [22, 0, -6],
       color: "#8B0000",
       era: "ancient",
@@ -15032,7 +15032,7 @@ export const gameData: GameData = {
     {
       id: "san-bushmen",
       name: "San/Bushmen Water Knowledge",
-      description: "20,000+ years of desert water technology — the most minimalist and elegant on Earth.",
+      description: "San (Bushmen) peoples survived the Kalahari for 20,000+ years with the most minimalist water technology on Earth — sip wells using hollow reeds, ostrich-egg water caches buried across vast territories, and tsama melon harvesting providing both food and moisture in extreme drought.",
       position: [4, 0, 7],
       color: "#D2B48C",
       era: "ancient",
@@ -15092,7 +15092,7 @@ export const gameData: GameData = {
     {
       id: "inupiat-north-alaska",
       name: "Iñupiat (North Alaska Coast)",
-      description: "Sea ice navigation, whale hunting, and permafrost engineering on the Arctic Ocean.",
+      description: "Inupiat peoples mastered sea ice navigation for bowhead whale hunting on the Arctic Ocean, reading ice conditions across hundreds of kilometers. Their permafrost cellars stored meat and fresh ice, and umiak skin boats carried crews of 30+ through the most dangerous waters on Earth.",
       position: [-22, 0, -11],
       color: "#4682B4",
       era: "ancient",
@@ -15182,7 +15182,7 @@ export const gameData: GameData = {
     {
       id: "yupik-western-alaska",
       name: "Yup'ik (Western Alaska)",
-      description: "Life on one of the world's largest river deltas — 129,500 km² of waterscape.",
+      description: "Yupik peoples thrived on the Yukon-Kuskokwim Delta — 129,500 km2 of waterscape where land and water merge. Their qasgiq (communal houses) were built on permafrost, and they navigated thousands of braided river channels using kayaks optimized for shallow, fast-flowing Arctic waters.",
       position: [-23, 0, -10],
       color: "#2E8B57",
       era: "ancient",
@@ -15252,7 +15252,7 @@ export const gameData: GameData = {
     {
       id: "aleut-unangan",
       name: "Aleut/Unangan (Aleutian Islands)",
-      description: "The most hydrodynamically advanced kayak ever built — for the most dangerous ocean.",
+      description: "Aleut (Unangan) peoples built the most hydrodynamically advanced kayak ever designed — the baidarka — for the North Pacific's most dangerous waters. Their split-bow design cut through 10m waves, and they navigated the 1,800 km Aleutian Island chain using wave-reading and bird-flight patterns.",
       position: [-24, 0, -9],
       color: "#708090",
       era: "ancient",
@@ -15322,7 +15322,7 @@ export const gameData: GameData = {
     {
       id: "athabascan-interior",
       name: "Athabascan/Dene (Interior Alaska)",
-      description: "River-organized civilization — 12,000+ years on the Yukon, Tanana, and Copper rivers.",
+      description: "Athabascan peoples organized their civilization along Interior Alaska's great rivers for 12,000+ years. Fish wheels on the Yukon, birch-bark canoes on the Tanana, and copper tool-making using river-tumbled nuggets from the Copper River defined their water-centered culture.",
       position: [-22, 0, -10],
       color: "#8B4513",
       era: "ancient",
@@ -15402,7 +15402,7 @@ export const gameData: GameData = {
     {
       id: "tlingit-se-alaska",
       name: "Tlingit (Southeast Alaska)",
-      description: "Water ownership as the foundation of social hierarchy — in one of North America's wettest environments.",
+      description: "Tlingit society organized around water ownership — control of salmon streams determined clan rank and wealth in Southeast Alaska's temperate rainforest. Their elaborately carved canoes, fish trap systems, and potlatch ceremonies centered on the redistribution of water-harvested resources.",
       position: [-21, 0, -9],
       color: "#006400",
       era: "ancient",
@@ -15482,7 +15482,7 @@ export const gameData: GameData = {
     {
       id: "haida-gwaii",
       name: "Haida (Haida Gwaii/SE Alaska)",
-      description: "Largest indigenous watercraft in North America — 20 m canoes for 1,000+ km ocean voyages.",
+      description: "Haida master carvers built the largest indigenous watercraft in North America — 20m red cedar canoes capable of 1,000+ km ocean voyages. Their monumental totem poles depicted water creatures, and they managed herring spawn-on-kelp fisheries with sophisticated tidal zone engineering.",
       position: [-21, 0, -8],
       color: "#191970",
       era: "ancient",
@@ -15532,7 +15532,7 @@ export const gameData: GameData = {
     {
       id: "canadian-inuit-expanded",
       name: "Canadian Inuit (Expanded)",
-      description: "Ice-road navigation across the largest archipelago on Earth — the iglu as water-phase engineering.",
+      description: "Canadian Inuit navigated ice roads across the world's largest archipelago, building iglus as masterworks of water-phase engineering — frozen water shaped into shelter. Their knowledge of sea ice thickness, pressure ridges, and polynya (open water) locations sustained Arctic survival for millennia.",
       position: [-16, 0, -11],
       color: "#87CEEB",
       era: "ancient",
@@ -15602,7 +15602,7 @@ export const gameData: GameData = {
     {
       id: "greenlandic-inuit",
       name: "Greenlandic Inuit",
-      description: "30+ kayak rolling techniques and harvesting ancient freshwater from icebergs.",
+      description: "Greenlandic Inuit developed 30+ kayak rolling techniques for survival in frigid North Atlantic waters and harvested ancient freshwater by towing icebergs. Their skin-on-frame kayak design — perfected over 4,000 years — remains the template for modern sea kayaks worldwide.",
       position: [-8, 0, -11],
       color: "#ADD8E6",
       era: "ancient",
@@ -15662,7 +15662,7 @@ export const gameData: GameData = {
     {
       id: "sami-people",
       name: "Sami People (Scandinavia)",
-      description: "Europe's last nomadic water-dependent migration — and the catalyst for indigenous rights.",
+      description: "Sami reindeer herders follow water-dependent migration routes across Arctic Scandinavia, reading river crossings, lake ice, and snowmelt patterns. Their legal battles over Alta River dam rights catalyzed indigenous rights movements across Europe and influenced international water law.",
       position: [3, 0, -9],
       color: "#0000CD",
       era: "ancient",
@@ -15742,7 +15742,7 @@ export const gameData: GameData = {
     {
       id: "modern-arctic-engineering",
       name: "Modern Alaska & Arctic Engineering",
-      description: "From the Trans-Alaska Pipeline to the first climate refugee relocation in America.",
+      description: "The Trans-Alaska Pipeline crosses 800+ waterways with elevated sections to protect permafrost. The village of Newtok became America's first climate refugees as melting permafrost and rising seas forced relocation — a preview of Arctic water engineering challenges facing the 21st century.",
       position: [-22, 0, -12],
       color: "#696969",
       era: "modern",
@@ -15851,7 +15851,7 @@ export const gameData: GameData = {
     {
       id: "fertile-crescent-agriculture",
       name: "Fertile Crescent Agricultural Water",
-      description: "The hidden water inventions of cereal farming — from 23,000 BCE grain-water observation to the first irrigation canal.",
+      description: "The Fertile Crescent's cereal revolution began with 23,000 BCE observations of grain-water relationships. From wild wheat harvesting near springs to the first irrigation canals around 6000 BCE, every step of agriculture's invention was fundamentally a water management innovation.",
       position: [6, 0, -4],
       color: "#DAA520",
       era: "ancient",
@@ -16010,7 +16010,7 @@ export const gameData: GameData = {
     {
       id: "east-asia-rice-water",
       name: "East Asia Rice Water Engineering",
-      description: "Every step of rice domestication is a water management step — from wetland reading to paddy construction.",
+      description: "Rice domestication in the Yangtze Delta (8000 BCE) was fundamentally water engineering — every step from wetland reading to paddy field construction required precise water control. The spread of rice farming across Asia drove the development of terracing, irrigation, and flood management.",
       position: [18, 0, -3],
       color: "#228B22",
       era: "ancient",
@@ -16149,7 +16149,7 @@ export const gameData: GameData = {
     {
       id: "americas-corn-water",
       name: "Americas Corn/Maize Water Engineering",
-      description: "The Three Sisters as biological water engineering — and nixtamalization as water chemistry.",
+      description: "The Three Sisters planting system (corn, beans, squash) was biological water engineering — squash leaves shaded soil to reduce evaporation while bean roots fixed nitrogen. Nixtamalization — soaking corn in alkaline water — unlocked essential nutrients and represents ancient water chemistry.",
       position: [-13, 0, 1],
       color: "#FFD700",
       era: "ancient",
