@@ -677,6 +677,10 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
           />
         </div>
 
+        <div className="mb-4">
+          <FunFactsStrip onSelectCivilization={(id) => setSelectedCiv(id)} />
+        </div>
+
         <Card className="water-card overflow-hidden">
           <CardContent className="p-0">
             <div 
@@ -914,7 +918,6 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
         <SWMM5Showcase onViewAll={() => setShowSWMM5(true)} />
       </div>
 
-      <FunFactsStrip />
 
       {/* Modal Components */}
       {showInventory && (
@@ -957,7 +960,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
       )}
       {showFacts && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowFacts(false)}>
-          <div onClick={(e) => e.stopPropagation()}><DidYouKnow onClose={() => setShowFacts(false)} /></div>
+          <div onClick={(e) => e.stopPropagation()}><DidYouKnow onClose={() => setShowFacts(false)} onSelectCivilization={(id) => { setShowFacts(false); setSelectedCiv(id); }} /></div>
         </div>
       )}
       {showAbout && (

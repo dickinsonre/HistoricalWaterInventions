@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { X, Lightbulb, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, Lightbulb, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 
 interface DidYouKnowProps {
   onClose: () => void;
+  onSelectCivilization?: (id: string) => void;
 }
 
 const waterFacts = [
@@ -12,65 +13,75 @@ const waterFacts = [
     title: "Roman Aqueducts Still Work",
     fact: "Some Roman aqueducts built over 2,000 years ago are still supplying water to modern fountains in Rome.",
     civilization: "Roman Empire",
-    emoji: "🏛️"
+    emoji: "🏛️",
+    civId: "ancient-rome"
   },
   {
     title: "Precision Without Lasers",
     fact: "The Pont du Gard aqueduct has only a 17-meter drop over 50km—a gradient of 1:3000 achieved with ancient surveying tools.",
     civilization: "Roman Empire",
-    emoji: "📐"
+    emoji: "📐",
+    civId: "ancient-rome"
   },
   {
     title: "The First Tax Calculator",
     fact: "Egyptian Nilometers measured flood levels to predict harvests and calculate taxes—ancient data science at work.",
     civilization: "Ancient Egypt",
-    emoji: "📊"
+    emoji: "📊",
+    civId: "ancient-egypt"
   },
   {
     title: "2,270 Years and Counting",
     fact: "The Dujiangyan irrigation system in China, built in 256 BCE, still irrigates 5,300 square kilometers today.",
     civilization: "Ancient China",
-    emoji: "🌾"
+    emoji: "🌾",
+    civId: "ancient-china"
   },
   {
     title: "Underground Rivers",
     fact: "Persian qanats could stretch over 50km underground, delivering water through deserts without a single pump.",
-    civilization: "Mesopotamia",
-    emoji: "🏜️"
+    civilization: "Ancient Persia",
+    emoji: "🏜️",
+    civId: "ancient-persia"
   },
   {
     title: "The First Covered Sewers",
     fact: "Mohenjo-daro had covered drainage systems in 2500 BCE—technology Europe wouldn't match for 4,000 years.",
     civilization: "Indus Valley",
-    emoji: "🚰"
+    emoji: "🚰",
+    civId: "indus-valley"
   },
   {
     title: "Feeding 200,000 People",
     fact: "Aztec chinampas (floating gardens) were so productive they fed the entire population of Tenochtitlan.",
-    civilization: "Mesoamerica",
-    emoji: "🌱"
+    civilization: "Aztec Empire",
+    emoji: "🌱",
+    civId: "aztec-mexica"
   },
   {
     title: "Father of Robotics",
     fact: "Al-Jazari invented water-powered automata in 1206 CE, including programmable humanoid robots and the crankshaft.",
     civilization: "Islamic Golden Age",
-    emoji: "🤖"
+    emoji: "🤖",
+    civId: "islamic-golden-age"
   },
   {
     title: "Archimedes' Living Legacy",
     fact: "The Archimedes screw, invented in 250 BCE, is still used worldwide in irrigation, wastewater treatment, and flood control.",
     civilization: "Ancient Greece",
-    emoji: "🔩"
+    emoji: "🔩",
+    civId: "ancient-greece"
   },
   {
     title: "Jungle Rainwater Genius",
     fact: "Tikal's Maya engineers collected enough rainwater to support 100,000 people in the middle of a jungle with no rivers.",
     civilization: "Mesoamerica",
-    emoji: "🌧️"
+    emoji: "🌧️",
+    civId: "mesoamerica"
   }
 ];
 
-export default function DidYouKnow({ onClose }: DidYouKnowProps) {
+export default function DidYouKnow({ onClose, onSelectCivilization }: DidYouKnowProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextFact = () => {
@@ -82,6 +93,12 @@ export default function DidYouKnow({ onClose }: DidYouKnowProps) {
   };
 
   const currentFact = waterFacts[currentIndex];
+
+  const handleExploreCiv = () => {
+    if (currentFact.civId && onSelectCivilization) {
+      onSelectCivilization(currentFact.civId);
+    }
+  };
 
   return (
     <Card className="water-card max-w-lg w-full">
@@ -108,6 +125,15 @@ export default function DidYouKnow({ onClose }: DidYouKnowProps) {
             <p className="text-[var(--parchment)]/90 text-base leading-relaxed">{currentFact.fact}</p>
             <p className="text-[var(--parchment)]/50 text-sm mt-3">{currentFact.civilization}</p>
           </div>
+
+          {currentFact.civId && onSelectCivilization && (
+            <button
+              onClick={handleExploreCiv}
+              className="mx-auto mt-2 flex items-center gap-2 px-4 py-2 rounded-lg bg-[var(--cerulean)]/20 border border-[var(--cerulean)]/40 text-[var(--gold)] text-sm font-medium hover:bg-[var(--cerulean)]/30 hover:border-[var(--gold)]/50 transition-all"
+            >
+              Explore {currentFact.civilization} <ArrowRight size={14} />
+            </button>
+          )}
         </div>
 
         <div className="flex items-center justify-between mt-6">
