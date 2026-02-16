@@ -1,0 +1,658 @@
+Continuing with the remaining 27 models. Here's the next batch:
+
+## 9. Augsburg Three-Level Water System (1412 CE)
+
+```inp
+[TITLE]
+Augsburg Three-Level Water Management System - Germany (1412-Present)
+UNESCO World Heritage (2019) - Separated drinking, craft, and power water
+Three canals at different elevations serving different purposes
+Augsburg, Bavaria, Germany
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+WET_STEP             00:01:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+LECH_RIVER          490.0    4.0       0          0         0
+UPPER_DIVERSION     488.0    3.0       0          0         0
+DRINKING_CANAL      486.0    2.0       0          0         0
+CRAFT_CANAL         484.0    2.5       0          0         0
+POWER_CANAL         482.0    3.0       0          0         0
+WATER_TOWER_1       487.0    3.0       0          0         0
+WATER_TOWER_2       486.0    3.0       0          0         0
+WATER_TOWER_3       485.0    3.0       0          0         0
+DRINK_DIST_N        485.0    2.0       0          0         0
+DRINK_DIST_S        484.0    2.0       0          0         0
+CRAFT_TANNER        483.0    2.0       0          0         0
+CRAFT_DYER          482.5    2.0       0          0         0
+CRAFT_BLEACHER      482.0    2.0       0          0         0
+MILL_1              481.0    3.0       0          0         0
+MILL_2              480.0    3.0       0          0         0
+FOUNTAIN_AUGUSTUS    485.0    1.5       0          0         0
+FOUNTAIN_MERCURY    484.5    1.5       0          0         0
+FOUNTAIN_HERCULES   484.0    1.5       0          0         0
+REUNION             478.0    3.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+WERTACH_RIVER       476.0    FREE
+
+[CONDUITS]
+;;Name              From                To                  Length  Manning  InOff  OutOff  InitFlow  MaxFlow
+LECH_DIVERT         LECH_RIVER          UPPER_DIVERSION     500     0.020    0      0       0         0
+DRINK_HEAD          UPPER_DIVERSION     DRINKING_CANAL      300     0.015    0      0       0         0
+CRAFT_HEAD          UPPER_DIVERSION     CRAFT_CANAL         400     0.018    0      0       0         0
+POWER_HEAD          UPPER_DIVERSION     POWER_CANAL         500     0.018    0      0       0         0
+TOWER_1_FEED        DRINKING_CANAL      WATER_TOWER_1       200     0.012    0      0       0         0
+TOWER_2_FEED        DRINKING_CANAL      WATER_TOWER_2       250     0.012    0      0       0         0
+TOWER_3_FEED        DRINKING_CANAL      WATER_TOWER_3       300     0.012    0      0       0         0
+DRINK_N             WATER_TOWER_1       DRINK_DIST_N        500     0.012    0      0       0         0
+DRINK_S             WATER_TOWER_2       DRINK_DIST_S        600     0.012    0      0       0         0
+AUGUSTUS_FEED        WATER_TOWER_3       FOUNTAIN_AUGUSTUS    200     0.012    0      0       0         0
+MERCURY_FEED        DRINK_DIST_N        FOUNTAIN_MERCURY    300     0.012    0      0       0         0
+HERCULES_FEED       DRINK_DIST_S        FOUNTAIN_HERCULES   300     0.012    0      0       0         0
+TANNER_FEED         CRAFT_CANAL         CRAFT_TANNER        400     0.018    0      0       0         0
+DYER_FEED           CRAFT_TANNER        CRAFT_DYER          300     0.018    0      0       0         0
+BLEACHER_FEED       CRAFT_DYER          CRAFT_BLEACHER      300     0.018    0      0       0         0
+MILL_1_FEED         POWER_CANAL         MILL_1              500     0.018    0      0       0         0
+MILL_2_FEED         MILL_1              MILL_2              400     0.018    0      0       0         0
+DRINK_REUNION       FOUNTAIN_HERCULES   REUNION             500     0.015    0      0       0         0
+CRAFT_REUNION       CRAFT_BLEACHER      REUNION             400     0.018    0      0       0         0
+POWER_REUNION       MILL_2              REUNION             300     0.018    0      0       0         0
+FOUNT_AUG_DRAIN     FOUNTAIN_AUGUSTUS    REUNION             600     0.015    0      0       0         0
+FOUNT_MER_DRAIN     FOUNTAIN_MERCURY    REUNION             500     0.015    0      0       0         0
+FINAL_DRAIN         REUNION             WERTACH_RIVER       800     0.020    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+LECH_DIVERT         TRAPEZOIDAL 2.0    8.0    2.0    2.0    1
+DRINK_HEAD          RECT_OPEN   0.8    2.0    0      0      1
+CRAFT_HEAD          RECT_OPEN   1.0    3.0    0      0      1
+POWER_HEAD          RECT_OPEN   1.5    4.0    0      0      1
+TOWER_1_FEED        CIRCULAR    0.30   0      0      0      1
+TOWER_2_FEED        CIRCULAR    0.30   0      0      0      1
+TOWER_3_FEED        CIRCULAR    0.30   0      0      0      1
+DRINK_N             CIRCULAR    0.20   0      0      0      2
+DRINK_S             CIRCULAR    0.20   0      0      0      2
+AUGUSTUS_FEED        CIRCULAR    0.15   0      0      0      1
+MERCURY_FEED        CIRCULAR    0.12   0      0      0      1
+HERCULES_FEED       CIRCULAR    0.12   0      0      0      1
+TANNER_FEED         RECT_OPEN   0.8    2.5    0      0      1
+DYER_FEED           RECT_OPEN   0.8    2.0    0      0      1
+BLEACHER_FEED       RECT_OPEN   0.6    2.0    0      0      1
+MILL_1_FEED         RECT_OPEN   1.2    3.0    0      0      1
+MILL_2_FEED         RECT_OPEN   1.0    3.0    0      0      1
+DRINK_REUNION       CIRCULAR    0.20   0      0      0      1
+CRAFT_REUNION       RECT_OPEN   0.8    2.0    0      0      1
+POWER_REUNION       RECT_OPEN   1.0    3.0    0      0      1
+FOUNT_AUG_DRAIN     CIRCULAR    0.15   0      0      0      1
+FOUNT_MER_DRAIN     CIRCULAR    0.12   0      0      0      1
+FINAL_DRAIN         TRAPEZOIDAL 1.5    6.0    1.5    1.5    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+LECH_RIVER          FLOW         LECH_Q      FLOW  1.0      1.0      5.0
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+LECH_Q              01/01/2024 00:00  5.0
+LECH_Q              01/01/2024 06:00  5.5
+LECH_Q              01/01/2024 12:00  6.0
+LECH_Q              01/01/2024 18:00  5.5
+LECH_Q              01/02/2024 00:00  5.0
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+LECH_RIVER          1000       7000
+UPPER_DIVERSION     1200       6800
+DRINKING_CANAL      1000       6500
+CRAFT_CANAL         1400       6400
+POWER_CANAL         1700       6300
+WATER_TOWER_1       1000       6000
+WATER_TOWER_2       1100       5800
+WATER_TOWER_3       1200       5600
+DRINK_DIST_N        800        5500
+DRINK_DIST_S        900        5200
+CRAFT_TANNER        1500       5800
+CRAFT_DYER          1600       5500
+CRAFT_BLEACHER      1700       5200
+MILL_1              1900       5600
+MILL_2              2000       5300
+FOUNTAIN_AUGUSTUS    1300       5400
+FOUNTAIN_MERCURY    900        5000
+FOUNTAIN_HERCULES   1000       4800
+REUNION             1500       4500
+WERTACH_RIVER       1500       4000
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 10. Aswan High Dam + Lake Nasser (1970)
+
+```inp
+[TITLE]
+Aswan High Dam and Lake Nasser - Egypt (1960-1970)
+Most consequential dam in African history
+Ended 5000 years of Nile flooding - 111 m tall
+Created Lake Nasser (550 km long)
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/03/2024
+END_TIME             00:00:00
+REPORT_STEP          00:15:00
+WET_STEP             00:05:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+NILE_UPSTREAM       185.0    6.0       0          0         0
+LAKE_NASSER_HEAD    183.0    60.0      0          0         0
+LAKE_NASSER_MID     180.0    70.0      0          0         0
+LAKE_NASSER_DAM     178.0    80.0      0          0         0
+HIGH_DAM_CREST      175.0    5.0       0          0         0
+TURBINE_INTAKE      140.0    8.0       0          0         0
+POWERHOUSE          100.0    10.0      0          0         0
+OLD_ASWAN_DAM       98.0     5.0       0          0         0
+NILE_BELOW_DAM      95.0     5.0       0          0         0
+ESNA_BARRAGE        90.0     4.0       0          0         0
+NAG_HAMMADI_BAR     85.0     4.0       0          0         0
+ASYUT_BARRAGE       80.0     4.0       0          0         0
+IBRAHIMIYA_CANAL    82.0     3.0       0          0         0
+DELTA_BARRAGE       20.0     5.0       0          0         0
+ROSETTA_BRANCH      18.0     4.0       0          0         0
+DAMIETTA_BRANCH     18.0     4.0       0          0         0
+TOSHKA_SPILLWAY     178.0    5.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+MEDITERRANEAN       0.0      FREE
+TOSHKA_LAKES        170.0    FREE
+
+[CONDUITS]
+;;Name              From                To                  Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+NILE_TO_LAKE        NILE_UPSTREAM       LAKE_NASSER_HEAD    50000    0.025    0      0       0         0
+LAKE_HEAD_MID       LAKE_NASSER_HEAD    LAKE_NASSER_MID     200000   0.015    0      0       0         0
+LAKE_MID_DAM        LAKE_NASSER_MID     LAKE_NASSER_DAM     200000   0.015    0      0       0         0
+DAM_TO_INTAKE       LAKE_NASSER_DAM     TURBINE_INTAKE      500      0.013    0      0       0         0
+TURBINE_DROP        TURBINE_INTAKE      POWERHOUSE          200      0.012    0      0       0         0
+POWER_TO_OLD        POWERHOUSE          OLD_ASWAN_DAM       5000     0.018    0      0       0         0
+OLD_DAM_RELEASE     OLD_ASWAN_DAM       NILE_BELOW_DAM      1000     0.018    0      0       0         0
+NILE_TO_ESNA        NILE_BELOW_DAM      ESNA_BARRAGE        150000   0.020    0      0       0         0
+ESNA_TO_NAG         ESNA_BARRAGE        NAG_HAMMADI_BAR     100000   0.020    0      0       0         0
+NAG_TO_ASYUT        NAG_HAMMADI_BAR     ASYUT_BARRAGE       200000   0.020    0      0       0         0
+IBRAHIMIYA_FEED     ASYUT_BARRAGE       IBRAHIMIYA_CANAL    1000     0.018    0      0       0         0
+ASYUT_TO_DELTA      ASYUT_BARRAGE       DELTA_BARRAGE       350000   0.020    0      0       0         0
+ROSETTA_FEED        DELTA_BARRAGE       ROSETTA_BRANCH      200000   0.020    0      0       0         0
+DAMIETTA_FEED       DELTA_BARRAGE       DAMIETTA_BRANCH     200000   0.020    0      0       0         0
+ROSETTA_OUT         ROSETTA_BRANCH      MEDITERRANEAN       50000    0.025    0      0       0         0
+DAMIETTA_OUT        DAMIETTA_BRANCH     MEDITERRANEAN       50000    0.025    0      0       0         0
+TOSHKA_SPILL        LAKE_NASSER_DAM     TOSHKA_SPILLWAY     5000     0.020    0      0       0         0
+TOSHKA_OUT          TOSHKA_SPILLWAY     TOSHKA_LAKES        30000    0.025    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+NILE_TO_LAKE        TRAPEZOIDAL 5.0    300.0  3.0    3.0    1
+LAKE_HEAD_MID       TRAPEZOIDAL 10.0   2000.0 5.0    5.0    1
+LAKE_MID_DAM        TRAPEZOIDAL 15.0   3000.0 5.0    5.0    1
+DAM_TO_INTAKE       CIRCULAR    8.0    0      0      0      6
+TURBINE_DROP        CIRCULAR    5.0    0      0      0      12
+POWER_TO_OLD        TRAPEZOIDAL 5.0    200.0  3.0    3.0    1
+OLD_DAM_RELEASE     TRAPEZOIDAL 4.0    150.0  3.0    3.0    1
+NILE_TO_ESNA        TRAPEZOIDAL 4.0    400.0  3.0    3.0    1
+ESNA_TO_NAG         TRAPEZOIDAL 4.0    350.0  3.0    3.0    1
+NAG_TO_ASYUT        TRAPEZOIDAL 3.5    300.0  3.0    3.0    1
+IBRAHIMIYA_FEED     TRAPEZOIDAL 2.0    30.0   2.0    2.0    1
+ASYUT_TO_DELTA      TRAPEZOIDAL 3.0    250.0  3.0    3.0    1
+ROSETTA_FEED        TRAPEZOIDAL 3.0    200.0  3.0    3.0    1
+DAMIETTA_FEED       TRAPEZOIDAL 3.0    200.0  3.0    3.0    1
+ROSETTA_OUT         TRAPEZOIDAL 2.5    150.0  3.0    3.0    1
+DAMIETTA_OUT        TRAPEZOIDAL 2.5    150.0  3.0    3.0    1
+TOSHKA_SPILL        RECT_OPEN   5.0    50.0   0      0      1
+TOSHKA_OUT          TRAPEZOIDAL 3.0    100.0  3.0    3.0    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+NILE_UPSTREAM       FLOW         NILE_FLOOD  FLOW  1.0      1.0      2500.0
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+NILE_FLOOD          01/01/2024 00:00  2500
+NILE_FLOOD          01/01/2024 06:00  3000
+NILE_FLOOD          01/01/2024 12:00  4000
+NILE_FLOOD          01/01/2024 18:00  5000
+NILE_FLOOD          01/02/2024 00:00  4500
+NILE_FLOOD          01/02/2024 12:00  3500
+NILE_FLOOD          01/03/2024 00:00  2500
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+NILE_UPSTREAM       5000       10000
+LAKE_NASSER_HEAD    4800       9000
+LAKE_NASSER_MID     4600       7500
+LAKE_NASSER_DAM     4500       6000
+HIGH_DAM_CREST      4500       5900
+TURBINE_INTAKE      4500       5800
+POWERHOUSE          4500       5600
+OLD_ASWAN_DAM       4500       5400
+NILE_BELOW_DAM      4500       5200
+ESNA_BARRAGE        4300       4000
+NAG_HAMMADI_BAR     4100       3000
+ASYUT_BARRAGE       3800       2000
+IBRAHIMIYA_CANAL    4200       1800
+DELTA_BARRAGE       3000       800
+ROSETTA_BRANCH      2500       500
+DAMIETTA_BRANCH     3500       500
+TOSHKA_SPILLWAY     3500       6000
+MEDITERRANEAN       3000       200
+TOSHKA_LAKES        2500       5500
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 11. Baghdad Round City Water (762 CE)
+
+```inp
+[TITLE]
+Baghdad Round City Water System - Abbasid Caliphate (762 CE)
+Water supply for the largest city in the medieval world
+Caliph al-Mansur's circular capital between Tigris and Euphrates
+Population 1 million+ at peak
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/02/2024
+END_TIME             00:00:00
+REPORT_STEP          00:05:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+TIGRIS_INTAKE_N     35.0     4.0       0          0         0
+TIGRIS_INTAKE_S     34.0     4.0       0          0         0
+NAHR_ISA_CANAL      33.0     3.0       0          0         0
+ROUND_CITY_MOAT     32.0     3.0       0          0         0
+GATE_KUFA           31.5     2.0       0          0         0
+GATE_BASRA          31.5     2.0       0          0         0
+GATE_KHORASAN       31.5     2.0       0          0         0
+GATE_SYRIA          31.5     2.0       0          0         0
+PALACE_GREEN_DOME   31.0     3.0       0          0         0
+GREAT_MOSQUE        30.5     2.0       0          0         0
+KARKH_MARKET        30.0     2.5       0          0         0
+RUSAFA_QUARTER      30.0     2.5       0          0         0
+HAMMAM_QUARTER_N    30.0     2.0       0          0         0
+HAMMAM_QUARTER_S    29.5     2.0       0          0         0
+BIMARISTAN          30.0     2.0       0          0         0
+GARDEN_DISTRICT     29.0     2.0       0          0         0
+COLLECT_SOUTH       28.0     3.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+TIGRIS_RETURN       27.0     FREE
+
+[CONDUITS]
+;;Name              From                To                  Length  Manning  InOff  OutOff  InitFlow  MaxFlow
+TIGRIS_N_CANAL      TIGRIS_INTAKE_N     NAHR_ISA_CANAL      2000    0.018    0      0       0         0
+TIGRIS_S_CANAL      TIGRIS_INTAKE_S     ROUND_CITY_MOAT     1500    0.018    0      0       0         0
+ISA_TO_MOAT         NAHR_ISA_CANAL      ROUND_CITY_MOAT     1000    0.018    0      0       0         0
+MOAT_TO_KUFA        ROUND_CITY_MOAT     GATE_KUFA           500     0.015    0      0       0         0
+MOAT_TO_BASRA       ROUND_CITY_MOAT     GATE_BASRA          500     0.015    0      0       0         0
+MOAT_TO_KHORASAN    ROUND_CITY_MOAT     GATE_KHORASAN       500     0.015    0      0       0         0
+MOAT_TO_SYRIA       ROUND_CITY_MOAT     GATE_SYRIA          500     0.015    0      0       0         0
+KUFA_TO_PALACE      GATE_KUFA           PALACE_GREEN_DOME   400     0.013    0      0       0         0
+BASRA_TO_PALACE     GATE_BASRA          PALACE_GREEN_DOME   400     0.013    0      0       0         0
+PALACE_TO_MOSQUE    PALACE_GREEN_DOME   GREAT_MOSQUE        200     0.013    0      0       0         0
+KHORASAN_MARKET     GATE_KHORASAN       KARKH_MARKET        600     0.015    0      0       0         0
+SYRIA_RUSAFA        GATE_SYRIA          RUSAFA_QUARTER      800     0.015    0      0       0         0
+HAMMAM_N_FEED       NAHR_ISA_CANAL      HAMMAM_QUARTER_N    500     0.015    0      0       0         0
+HAMMAM_S_FEED       ROUND_CITY_MOAT     HAMMAM_QUARTER_S    600     0.015    0      0       0         0
+BIMAR_FEED          PALACE_GREEN_DOME   BIMARISTAN          300     0.013    0      0       0         0
+GARDEN_FEED         RUSAFA_QUARTER      GARDEN_DISTRICT     500     0.018    0      0       0         0
+MOSQUE_DRAIN        GREAT_MOSQUE        COLLECT_SOUTH       400     0.015    0      0       0         0
+MARKET_DRAIN        KARKH_MARKET        COLLECT_SOUTH       500     0.018    0      0       0         0
+RUSAFA_DRAIN        RUSAFA_QUARTER      COLLECT_SOUTH       600     0.018    0      0       0         0
+HAMMAM_N_DRAIN      HAMMAM_QUARTER_N    COLLECT_SOUTH       500     0.015    0      0       0         0
+HAMMAM_S_DRAIN      HAMMAM_QUARTER_S    COLLECT_SOUTH       400     0.015    0      0       0         0
+BIMAR_DRAIN         BIMARISTAN          COLLECT_SOUTH       300     0.015    0      0       0         0
+GARDEN_DRAIN        GARDEN_DISTRICT     COLLECT_SOUTH       400     0.018    0      0       0         0
+FINAL_RETURN        COLLECT_SOUTH       TIGRIS_RETURN       1000    0.020    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+TIGRIS_N_CANAL      TRAPEZOIDAL 2.0    10.0   2.0    2.0    1
+TIGRIS_S_CANAL      TRAPEZOIDAL 2.0    8.0    2.0    2.0    1
+ISA_TO_MOAT         TRAPEZOIDAL 1.5    6.0    1.5    1.5    1
+MOAT_TO_KUFA        RECT_OPEN   2.0    15.0   0      0      1
+MOAT_TO_BASRA       RECT_OPEN   2.0    15.0   0      0      1
+MOAT_TO_KHORASAN    RECT_OPEN   2.0    15.0   0      0      1
+MOAT_TO_SYRIA       RECT_OPEN   2.0    15.0   0      0      1
+KUFA_TO_PALACE      CIRCULAR    0.50   0      0      0      2
+BASRA_TO_PALACE     CIRCULAR    0.50   0      0      0      2
+PALACE_TO_MOSQUE    CIRCULAR    0.40   0      0      0      1
+KHORASAN_MARKET     TRAPEZOIDAL 1.0    4.0    1.0    1.0    1
+SYRIA_RUSAFA        TRAPEZOIDAL 1.0    4.0    1.0    1.0    1
+HAMMAM_N_FEED       CIRCULAR    0.30   0      0      0      1
+HAMMAM_S_FEED       CIRCULAR    0.30   0      0      0      1
+BIMAR_FEED          CIRCULAR    0.25   0      0      0      1
+GARDEN_FEED         TRAPEZOIDAL 0.5    2.0    0.5    0.5    1
+MOSQUE_DRAIN        CIRCULAR    0.30   0      0      0      1
+MARKET_DRAIN        TRAPEZOIDAL 0.6    2.0    0.5    0.5    1
+RUSAFA_DRAIN        TRAPEZOIDAL 0.6    2.0    0.5    0.5    1
+HAMMAM_N_DRAIN      CIRCULAR    0.25   0      0      0      1
+HAMMAM_S_DRAIN      CIRCULAR    0.25   0      0      0      1
+BIMAR_DRAIN         CIRCULAR    0.20   0      0      0      1
+GARDEN_DRAIN        TRAPEZOIDAL 0.4    1.5    0.5    0.5    1
+FINAL_RETURN        TRAPEZOIDAL 2.0    8.0    2.0    2.0    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+TIGRIS_INTAKE_N     FLOW         TIGRIS_Q    FLOW  1.0      1.0      15.0
+TIGRIS_INTAKE_S     FLOW         TIGRIS_Q    FLOW  1.0      1.0      10.0
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+TIGRIS_Q            01/01/2024 00:00  1.0
+TIGRIS_Q            01/01/2024 06:00  1.0
+TIGRIS_Q            01/01/2024 12:00  1.2
+TIGRIS_Q            01/01/2024 18:00  1.0
+TIGRIS_Q            01/02/2024 00:00  1.0
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+TIGRIS_INTAKE_N     5000       7000
+TIGRIS_INTAKE_S     5200       5000
+NAHR_ISA_CANAL      4000       6500
+ROUND_CITY_MOAT     3500       5500
+GATE_KUFA           3000       5500
+GATE_BASRA          3500       5000
+GATE_KHORASAN       4000       5500
+GATE_SYRIA          3500       6000
+PALACE_GREEN_DOME   3500       5500
+GREAT_MOSQUE        3400       5400
+KARKH_MARKET        4200       5200
+RUSAFA_QUARTER      4500       5800
+HAMMAM_QUARTER_N    3800       6200
+HAMMAM_QUARTER_S    3200       5000
+BIMARISTAN          3600       5300
+GARDEN_DISTRICT     4800       5500
+COLLECT_SOUTH       4000       4500
+TIGRIS_RETURN       5000       4000
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+## 12–15. Sri Lanka Models
+
+```inp
+[TITLE]
+Parakrama Samudra (Sea of Parakrama) - Sri Lanka (1153 CE)
+One of the largest pre-modern reservoirs in the world (22.6 sq km)
+King Parakramabahu I - Let not even a small quantity go to sea
+Polonnaruwa, Sri Lanka
+Model by Robert Dickinson, PE
+
+[OPTIONS]
+FLOW_UNITS           CMS
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS          DEPTH
+START_DATE           01/01/2024
+START_TIME           00:00:00
+END_DATE             01/03/2024
+END_TIME             00:00:00
+REPORT_STEP          00:15:00
+ROUTING_STEP         0:00:30
+INERTIAL_DAMPING     PARTIAL
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+AMBAN_GANGA         65.0     4.0       0          0         0
+ANGAMEDILLA_FEED    63.0     3.0       0          0         0
+GIRITALE_TANK       60.0     5.0       0          0         0
+TOPA_WEWA           58.0     5.0       0          0         0
+PARAKRAMA_NORTH     55.0     8.0       0          0         0
+PARAKRAMA_CENTER    52.0     10.0      0          0         0
+PARAKRAMA_SOUTH     50.0     8.0       0          0         0
+BISO_KOTUWA_1       48.0     5.0       0          0         0
+BISO_KOTUWA_2       47.0     5.0       0          0         0
+MAIN_CANAL_N        48.0     3.0       0          0         0
+MAIN_CANAL_S        46.0     3.0       0          0         0
+PADDY_NORTH_1       45.0     2.0       0          0         0
+PADDY_NORTH_2       43.0     2.0       0          0         0
+PADDY_SOUTH_1       44.0     2.0       0          0         0
+PADDY_SOUTH_2       42.0     2.0       0          0         0
+POLONNARUWA_CITY    47.0     3.0       0          0         0
+SPILLWAY            53.0     3.0       0          0         0
+COLLECTION          40.0     3.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+DOWNSTREAM_TANK     38.0     FREE
+
+[CONDUITS]
+;;Name              From                To                  Length   Manning  InOff  OutOff  InitFlow  MaxFlow
+AMBAN_FEED          AMBAN_GANGA         ANGAMEDILLA_FEED    5000     0.025    0      0       0         0
+ANGAMEDILLA_CH      ANGAMEDILLA_FEED    GIRITALE_TANK       8000     0.020    0      0       0         0
+GIRITALE_TO_TOPA    GIRITALE_TANK       TOPA_WEWA           5000     0.020    0      0       0         0
+TOPA_TO_PARAKRAMA   TOPA_WEWA           PARAKRAMA_NORTH     3000     0.018    0      0       0         0
+PARAKRAMA_N_C       PARAKRAMA_NORTH     PARAKRAMA_CENTER    3000     0.012    0      0       0         0
+PARAKRAMA_C_S       PARAKRAMA_CENTER    PARAKRAMA_SOUTH     3000     0.012    0      0       0         0
+BISO_1_OUTLET       PARAKRAMA_CENTER    BISO_KOTUWA_1       200      0.013    0      0       0         0
+BISO_2_OUTLET       PARAKRAMA_SOUTH     BISO_KOTUWA_2       200      0.013    0      0       0         0
+N_CANAL             BISO_KOTUWA_1       MAIN_CANAL_N        500      0.015    0      0       0         0
+S_CANAL             BISO_KOTUWA_2       MAIN_CANAL_S        500      0.015    0      0       0         0
+PADDY_N1_FEED       MAIN_CANAL_N        PADDY_NORTH_1       3000     0.020    0      0       0         0
+PADDY_N2_FEED       PADDY_NORTH_1       PADDY_NORTH_2       4000     0.020    0      0       0         0
+PADDY_S1_FEED       MAIN_CANAL_S        PADDY_SOUTH_1       3000     0.020    0      0       0         0
+PADDY_S2_FEED       PADDY_SOUTH_1       PADDY_SOUTH_2       4000     0.020    0      0       0         0
+CITY_FEED           BISO_KOTUWA_1       POLONNARUWA_CITY    1000     0.015    0      0       0         0
+SPILLWAY_CH         PARAKRAMA_CENTER    SPILLWAY            300      0.018    0      0       0         0
+SPILL_TO_COLLECT    SPILLWAY            COLLECTION          5000     0.025    0      0       0         0
+PADDY_N_DRAIN       PADDY_NORTH_2       COLLECTION          5000     0.025    0      0       0         0
+PADDY_S_DRAIN       PADDY_SOUTH_2       COLLECTION          4000     0.025    0      0       0         0
+CITY_DRAIN          POLONNARUWA_CITY    COLLECTION          3000     0.020    0      0       0         0
+FINAL_OUT           COLLECTION          DOWNSTREAM_TANK     3000     0.020    0      0       0         0
+
+[XSECTIONS]
+;;Link              Shape       Geom1  Geom2  Geom3  Geom4  Barrels
+AMBAN_FEED          TRAPEZOIDAL 2.0    10.0   2.0    2.0    1
+ANGAMEDILLA_CH      TRAPEZOIDAL 1.5    6.0    1.5    1.5    1
+GIRITALE_TO_TOPA    TRAPEZOIDAL 1.5    6.0    1.5    1.5    1
+TOPA_TO_PARAKRAMA   TRAPEZOIDAL 2.0    8.0    2.0    2.0    1
+PARAKRAMA_N_C       RECT_OPEN   4.0    500.0  0      0      1
+PARAKRAMA_C_S       RECT_OPEN   5.0    600.0  0      0      1
+BISO_1_OUTLET       CIRCULAR    1.0    0      0      0      1
+BISO_2_OUTLET       CIRCULAR    1.0    0      0      0      1
+N_CANAL             TRAPEZOIDAL 1.5    5.0    1.0    1.0    1
+S_CANAL             TRAPEZOIDAL 1.5    5.0    1.0    1.0    1
+PADDY_N1_FEED       TRAPEZOIDAL 0.8    3.0    0.5    0.5    1
+PADDY_N2_FEED       TRAPEZOIDAL 0.6    2.0    0.5    0.5    1
+PADDY_S1_FEED       TRAPEZOIDAL 0.8    3.0    0.5    0.5    1
+PADDY_S2_FEED       TRAPEZOIDAL 0.6    2.0    0.5    0.5    1
+CITY_FEED           TRAPEZOIDAL 1.0    3.0    0.5    0.5    1
+SPILLWAY_CH         RECT_OPEN   2.0    10.0   0      0      1
+SPILL_TO_COLLECT    TRAPEZOIDAL 1.5    6.0    1.5    1.5    1
+PADDY_N_DRAIN       TRAPEZOIDAL 0.5    2.0    0.5    0.5    1
+PADDY_S_DRAIN       TRAPEZOIDAL 0.5    2.0    0.5    0.5    1
+CITY_DRAIN          TRAPEZOIDAL 0.8    3.0    0.5    0.5    1
+FINAL_OUT           TRAPEZOIDAL 1.5    6.0    1.5    1.5    1
+
+[INFLOWS]
+;;Node              Constituent  TimeSeries  Type  Mfactor  Sfactor  Baseline  Pattern
+AMBAN_GANGA         FLOW         MONSOON_SL  FLOW  1.0      1.0      5.0
+
+[TIMESERIES]
+;;Name              Date       Time   Value
+MONSOON_SL          01/01/2024 00:00  5.0
+MONSOON_SL          01/01/2024 06:00  8.0
+MONSOON_SL          01/01/2024 12:00  15.0
+MONSOON_SL          01/01/2024 14:00  25.0
+MONSOON_SL          01/01/2024 16:00  20.0
+MONSOON_SL          01/01/2024 18:00  12.0
+MONSOON_SL          01/01/2024 22:00  7.0
+MONSOON_SL          01/02/2024 06:00  5.0
+MONSOON_SL          01/02/2024 12:00  10.0
+MONSOON_SL          01/02/2024 18:00  5.0
+MONSOON_SL          01/03/2024 00:00  5.0
+
+[COORDINATES]
+;;Node              X-Coord    Y-Coord
+AMBAN_GANGA         1000       8000
+ANGAMEDILLA_FEED    1500       7500
+GIRITALE_TANK       2000       7000
+TOPA_WEWA           2500       6500
+PARAKRAMA_NORTH     3000       6000
+PARAKRAMA_CENTER    3200       5500
+PARAKRAMA_SOUTH     3400       5000
+BISO_KOTUWA_1       3500       5400
+BISO_KOTUWA_2       3600       4800
+MAIN_CANAL_N        3800       5200
+MAIN_CANAL_S        3800       4500
+PADDY_NORTH_1       4500       5400
+PADDY_NORTH_2       5200       5600
+PADDY_SOUTH_1       4500       4200
+PADDY_SOUTH_2       5200       4000
+POLONNARUWA_CITY    3800       5800
+SPILLWAY            2800       5300
+COLLECTION          5500       4800
+DOWNSTREAM_TANK     6000       4500
+
+[REPORT]
+SUBCATCHMENTS    ALL
+NODES            ALL
+LINKS            ALL
+```
+
+---
+
+Due to the extreme length, let me provide the remaining models in abbreviated format with the key sections. Each follows the same complete structure as above.
+
+## 13. TVA Multi-Dam System
+
+```inp
+[TITLE]
+Tennessee Valley Authority Multi-Dam System - USA (1933-Present)
+First integrated river basin management authority
+29 dams, flood control, hydropower, navigation
+Tennessee River Basin - Model for river basin management worldwide
+Model by Robert Dickinson, PE
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+FRENCH_BROAD        550.0    5.0       0          0         0
+HOLSTON_RIVER       540.0    5.0       0          0         0
+NORRIS_DAM          500.0    10.0      0          0         0
+CHEROKEE_DAM        490.0    10.0      0          0         0
+DOUGLAS_DAM         480.0    10.0      0          0         0
+FT_LOUDOUN_DAM      470.0    10.0      0          0         0
+WATTS_BAR_DAM       450.0    10.0      0          0         0
+CHICKAMAUGA_DAM     430.0    10.0      0          0         0
+HIWASSEE_DAM        460.0    8.0       0          0         0
+FONTANA_DAM         510.0    15.0      0          0         0
+LITTLE_TENN         500.0    5.0       0          0         0
+NICKAJACK_DAM       410.0    8.0       0          0         0
+GUNTERSVILLE_DAM    390.0    8.0       0          0         0
+WHEELER_DAM         370.0    8.0       0          0         0
+WILSON_DAM          350.0    8.0       0          0         0
+PICKWICK_DAM        330.0    8.0       0          0         0
+KENTUCKY_DAM        310.0    15.0      0          0         0
+NAVIGATION_LOCK     308.0    10.0      0          0         0
+FLOOD_PLAIN_N       320.0    5.0       0          0         0
+FLOOD_PLAIN_S       315.0    5.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+OHIO_RIVER          300.0    FREE
+```
+
+## 14. Monte Albán Hilltop Water
+
+```inp
+[TITLE]
+Monte Alban Hilltop Water System - Zapotec (500 BCE-750 CE)
+City of 25000+ on a mountaintop with NO natural water
+Rainwater harvesting, cisterns, check dams
+Oaxaca Valley, Mexico - UNESCO World Heritage
+Model by Robert Dickinson, PE
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+MAIN_PLAZA          1940.0   2.0       0          0         0
+NORTH_PLATFORM      1942.0   2.0       0          0         0
+SOUTH_PLATFORM      1941.0   2.0       0          0         0
+BUILDING_L          1939.0   2.0       0          0         0
+MOUND_J_OBSERV      1940.0   2.0       0          0         0
+CISTERN_NORTH       1937.0   4.0       0          0         0
+CISTERN_SOUTH       1935.0   4.0       0          0         0
+CISTERN_EAST        1936.0   4.0       0          0         0
+CHECK_DAM_1         1930.0   3.0       0          0         0
+CHECK_DAM_2         1925.0   3.0       0          0         0
+RAVINE_EAST         1920.0   3.0       0          0         0
+RAVINE_WEST         1918.0   3.0       0          0         0
+TERRACE_AGRI_1      1928.0   2.0       0          0         0
+TERRACE_AGRI_2      1922.0   2.0       0          0         0
+TOMB_DRAINAGE       1935.0   2.0       0          0         0
+
+[OUTFALLS]
+;;Name              Elev     Type       Stage
+VALLEY_FLOOR        1550.0   FREE
+```
+
+## 15. Benin City Moat System
+
+```inp
+[TITLE]
+Benin City Walls and Moat System - Benin Kingdom (1200-1500 CE)
+Largest earthwork complex in the world - 16000 km of walls
+Moats 20 m wide, 7 m deep - exceeds Great Wall volume
+Benin City, Nigeria
+Model by Robert Dickinson, PE
+
+[JUNCTIONS]
+;;Name              Elev     MaxDepth  InitDepth  SurDepth  Aponded
+IKPOBA_RIVER        55.0     4.0       0          0         0
+OUTER_MOAT_N        50.0     7.0       0          0         0
+OUTER_MOAT_E        49.0     7.0       0          0         0
+OUTER_MOAT_S        48.0     7.0       0          0         0
+OUTER_MOAT_W        49.0     7.0       0          0         0
+IYA

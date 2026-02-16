@@ -367,6 +367,7 @@ export interface SWMM5Model {
   period: string;
   parameters: SWMM5ModelParams;
   engineeringNotes?: string;
+  customINP?: string;
 }
 
 export const SWMM5_MODELS: Record<string, SWMM5Model> = {
@@ -4689,6 +4690,10 @@ export function generateSWMM5File(inventionId: string): string | null {
       }
     };
     return generateHeader(defaultModel) + generateGenericModel(defaultModel.parameters) + generateReport();
+  }
+  
+  if (model.customINP) {
+    return model.customINP;
   }
   
   let content = generateHeader(model);

@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { gameData } from "../../data/gameData";
 import { SWMM5_MODELS } from "../../lib/swmm5Export";
+import { waterSimModels } from "../../data/waterSimModels";
 import CivilizationDetail from "./CivilizationDetail";
 import InventionDetail from "./InventionDetail";
 import Inventory from "./Inventory";
@@ -513,20 +514,22 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant="outline" size="sm" onClick={() => setShowWaterModels(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+              <Button variant="outline" size="sm" onClick={() => setShowWaterModels(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30 relative">
                 <Monitor size={16} className="text-[var(--aqua)]" />
+                <span className="absolute -top-2 -right-2 bg-[var(--cerulean)] text-white text-[9px] font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1">{waterSimModels.length}</span>
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">Water Computer Models</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">Water Computer Models ({waterSimModels.length})</TooltipContent>
           </Tooltip>
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant="outline" size="sm" onClick={() => setShowSWMM5(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+              <Button variant="outline" size="sm" onClick={() => setShowSWMM5(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30 relative">
                 <Download size={16} className="text-[var(--aqua)]" />
+                <span className="absolute -top-2 -right-2 bg-[var(--terracotta)] text-white text-[9px] font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1">{Object.keys(SWMM5_MODELS).length}</span>
               </Button>
             </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">SWMM5 Models</TooltipContent>
+            <TooltipContent className="water-card text-[var(--parchment)]">SWMM5 Models ({Object.keys(SWMM5_MODELS).length})</TooltipContent>
           </Tooltip>
 
           <Tooltip>

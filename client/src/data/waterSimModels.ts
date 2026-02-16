@@ -665,6 +665,16 @@ export const waterSimModels: WaterSimModel[] = [
     firstBecause: "Next generation: open-source governance, multi-platform.",
     statusToday: "In development — next generation SWMM",
     category: "The SWMM Family Tree"
+  },
+  {
+    id: "pyswmm",
+    name: "PySWMM",
+    year: 2016,
+    developer: "Bryant McDonnell, Katherine Ratliff, Abhiram Mullapudi",
+    firstBecause: "First Python wrapper for SWMM5 engine. Enables scripted real-time control, optimization, machine learning integration, and automated scenario testing — all through Python. Opened SWMM to the data science and AI communities.",
+    statusToday: "Active — PySWMM 1.5+ (2024). Open source on GitHub. Growing community. Companion tools: swmmio, swmmtoolbox. Used in research worldwide for real-time control and reinforcement learning applications.",
+    category: "The SWMM Family Tree",
+    ancientConnection: "Ancient sluice gate operators making real-time flow decisions → PySWMM real-time control rules"
   }
 ];
 
