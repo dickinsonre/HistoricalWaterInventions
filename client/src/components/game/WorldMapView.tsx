@@ -312,8 +312,8 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
     civilizationsRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const allArtifacts = gameData.regions.flatMap(r => r.locations.flatMap(l => l.artifacts));
-  const totalLocations = gameData.regions.reduce((acc, r) => acc + r.locations.length, 0);
+  const allArtifacts = gameData.regions.flatMap(r => (r.locations || []).flatMap(l => l.artifacts));
+  const totalLocations = gameData.regions.reduce((acc, r) => acc + (r.locations || []).length, 0);
 
   // Helper function to parse start year from dateRange (e.g., "3000 BCE - 30 BCE" -> -3000)
   const parseStartYear = (dateRange: string): number => {
@@ -711,7 +711,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                 }
 
                 const isHovered = hoveredCiv === region.id;
-                const inventionCount = region.locations.reduce((acc, l) => acc + l.artifacts.length, 0);
+                const inventionCount = (region.locations || []).reduce((acc: number, l: any) => acc + l.artifacts.length, 0);
 
                 return (
                   <div
@@ -753,7 +753,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                         </div>
                         {/* Show first 3 invention names as preview */}
                         <div className="text-xs text-[var(--parchment)]/70 mb-2 space-y-1">
-                          {region.locations.flatMap(l => l.artifacts).slice(0, 3).map((art, i) => (
+                          {(region.locations || []).flatMap((l: any) => l.artifacts).slice(0, 3).map((art: any, i: number) => (
                             <div key={i} className="flex items-center gap-1">
                               <span className="text-[var(--terracotta)]">•</span> {art.name}
                             </div>
@@ -861,7 +861,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {sortedRegions.map(region => {
-            const inventions = region.locations.flatMap(l => l.artifacts);
+            const inventions = (region.locations || []).flatMap((l: any) => l.artifacts);
             const inventionCount = inventions.length;
 
             return (

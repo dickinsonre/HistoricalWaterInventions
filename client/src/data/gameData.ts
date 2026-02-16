@@ -9795,36 +9795,6 @@ export const gameData: GameData = {
               category: "aqueduct"
             },
             {
-              id: "kirkcessme-water",
-              name: "Kirkcessme Water Supply",
-              description: "55km aqueduct by Mimar Sinan from Belgrade Forest to Istanbul. 33 water bridges, 4 distribution terminals, hundreds of fountains.",
-              rarity: "legendary",
-              historicalPeriod: "1554 CE",
-              significance: "One of the most sophisticated pre-modern urban water systems",
-              yearBCE: -1554,
-              category: "aqueduct"
-            },
-            {
-              id: "ottoman-sebil",
-              name: "Ottoman Sebil (Public Fountain)",
-              description: "Over 3,000 sebils in Istanbul alone, each an endowed (waqf) structure providing free water.",
-              rarity: "epic",
-              historicalPeriod: "15th-19th c. CE",
-              significance: "Largest network of public water access in the pre-modern world",
-              yearBCE: -1450,
-              category: "fountain"
-            },
-            {
-              id: "ottoman-hammam-water",
-              name: "Ottoman Hammam Water System",
-              description: "Sophisticated water supply, heating, and recycling for baths. Hypocaust system. Some served 500+ bathers daily.",
-              rarity: "epic",
-              historicalPeriod: "14th-19th c. CE",
-              significance: "Most advanced bathing water systems of the medieval world",
-              yearBCE: -1400,
-              category: "sanitation"
-            },
-            {
               id: "suleymaniye-water",
               name: "Suleymaniye Complex Water System",
               description: "Mimar Sinan's masterpiece with integrated water: ablution fountains, hammam, hospital, kitchen, school.",
@@ -9858,10 +9828,31 @@ export const gameData: GameData = {
               id: "mostar-bridge",
               name: "Mostar Bridge (Stari Most)",
               description: "Iconic bridge across the Neretva River. Single arch spanning 29m, rising 24m. UNESCO World Heritage.",
-              rarity: "epic",
+              rarity: "legendary",
               historicalPeriod: "1566 CE",
               significance: "Iconic Ottoman bridge engineering — UNESCO site",
               yearBCE: -1566,
+              category: "canal",
+              unesco: { siteName: "Old Bridge Area of the Old City of Mostar", yearListed: 2005 }
+            },
+            {
+              id: "ottoman-water-courts",
+              name: "Ottoman Water Court Records",
+              description: "Thousands of court documents recording water rights, disputes, allocations, endowments, and infrastructure maintenance across 600 years. The most detailed pre-modern water governance archive anywhere, documenting water law as a written legal tradition across the entire Ottoman Empire.",
+              rarity: "rare",
+              historicalPeriod: "14th-19th c. CE",
+              significance: "Most detailed pre-modern water governance archive in history",
+              yearBCE: -1400,
+              category: "canal"
+            },
+            {
+              id: "ottoman-cairo-nile",
+              name: "Ottoman Cairo Nile Management",
+              description: "Ottoman governors maintained the Nile flood system—nilometers, canal openings, and the annual 'Cutting of the Canal' ceremony. A continuation of Pharaonic water management traditions through 5,000 years under Ottoman administration from the 16th to 19th centuries.",
+              rarity: "rare",
+              historicalPeriod: "16th-19th c. CE",
+              significance: "Continuation of 5,000-year Pharaonic water management under Ottoman rule",
+              yearBCE: -1550,
               category: "canal"
             }
           ]
@@ -10072,6 +10063,36 @@ export const gameData: GameData = {
               significance: "Managed the world's highest navigable lake for agriculture and aquaculture; supported dense altiplano populations for 700 years",
               yearBCE: -500,
               category: "irrigation"
+            },
+            {
+              id: "puma-punku-drainage",
+              name: "Puma Punku Precision Drainage",
+              description: "Precision-cut stone drainage channels at the monumental complex of Puma Punku. Stone blocks were fitted so precisely that water flowed through joints without mortar, with some channels cut to tolerances of just 1 mm. This represents the highest precision stone-water engineering achieved anywhere in the pre-Columbian Americas.",
+              rarity: "legendary",
+              historicalPeriod: "Tiwanaku Period (300-1000 CE)",
+              significance: "1 mm tolerances in stone drainage — highest precision stone-water engineering in the Americas",
+              yearBCE: -600,
+              category: "sanitation"
+            },
+            {
+              id: "tiwanaku-qocha",
+              name: "Tiwanaku Qocha (Mountain Reservoirs)",
+              description: "Small constructed ponds (qochas) across the altiplano capturing rainfall for livestock and limited irrigation. Thousands of these reservoirs have been documented across the Tiwanaku sphere of influence, providing decentralized water storage across a vast high-altitude territory.",
+              rarity: "rare",
+              historicalPeriod: "Tiwanaku Period (300-1000 CE)",
+              significance: "Thousands of decentralized mountain reservoirs across the Tiwanaku territory",
+              yearBCE: -500,
+              category: "dam"
+            },
+            {
+              id: "tiwanaku-perimeter-canal",
+              name: "Tiwanaku Perimeter Drainage Canal",
+              description: "A major drainage canal surrounding the urban core of Tiwanaku. During the rainy season it managed seasonal floods, and during the dry season it provided water supply — sophisticated dual-function infrastructure serving both flood control and water supply in a single channel system.",
+              rarity: "epic",
+              historicalPeriod: "Tiwanaku Period (300-1000 CE)",
+              significance: "Dual-function canal: flood control in rainy season and water supply in dry season",
+              yearBCE: -500,
+              category: "canal"
             }
           ]
         }
@@ -10122,6 +10143,36 @@ export const gameData: GameData = {
               significance: "Underground filtration galleries removing sediment; demonstrated empirical filtration principles centuries before Western science",
               yearBCE: -1100,
               category: "irrigation"
+            },
+            {
+              id: "wachaque-sunken-gardens",
+              name: "Wachaque (Sunken Gardens)",
+              description: "Fields excavated below ground level to reach the water table directly, requiring no irrigation whatsoever. Plant roots accessed groundwater through capillary action. Found throughout Chan Chan and surrounding areas, these sunken gardens represent zero-irrigation agriculture in one of the driest deserts on Earth.",
+              rarity: "epic",
+              historicalPeriod: "Chimú Period (1100-1470 CE)",
+              significance: "Zero-irrigation desert agriculture — plant roots directly access the water table",
+              yearBCE: -1200,
+              category: "irrigation"
+            },
+            {
+              id: "chimu-flood-walls",
+              name: "Chimú Flood Control Walls",
+              description: "Massive adobe walls (La Muralla de La Cumbre) protecting Chan Chan from El Niño-driven flooding. Standing 8 feet tall and stretching 6 miles long, these walls were positioned perpendicular to flood flow to deflect water around the city — an engineering response to extreme climate events.",
+              rarity: "epic",
+              historicalPeriod: "Chimú Period (1100-1470 CE)",
+              significance: "6-mile flood wall protecting world's largest adobe city from El Niño flooding",
+              yearBCE: -1200,
+              category: "dam"
+            },
+            {
+              id: "chimu-hydraulic-governance",
+              name: "Chimú Hydraulic Governance",
+              description: "Water management as political power. The Chimú kingdom expanded by conquering river valleys and controlling water distribution. When the Inca conquered the Chimú (~1470 CE), they cut off Chan Chan's water supply — proving water was the empire's critical vulnerability and the key to political control.",
+              rarity: "rare",
+              historicalPeriod: "Chimú Period (900-1470 CE)",
+              significance: "Water control as political power — the Inca conquered Chimú by cutting their water supply",
+              yearBCE: -1200,
+              category: "canal"
             }
           ]
         }
@@ -16184,7 +16235,200 @@ export const gameData: GameData = {
           ]
         }
       ]
-    }
+    },
+    {
+      id: "sassanid-empire",
+      name: "Sassanid Empire",
+      description: "Last great pre-Islamic Persian empire (224-651 CE) that perfected qanat technology, built massive canal systems, and created formal water governance. The Shushtar hydraulic system is a UNESCO World Heritage site. Sassanid water engineering traditions directly influenced Islamic Golden Age hydraulics.",
+      position: [28, 0, -6],
+      color: "#4B0082",
+      era: "classical",
+      dateRange: "224-651 CE",
+      locations: [
+        {
+          id: "shushtar-iran",
+          name: "Shushtar, Iran",
+          description: "Greatest Sassanid hydraulic engineering complex",
+          historicalContext: "The Karun River at Shushtar was transformed into an integrated system of dams, canals, tunnels, and water mills — UNESCO World Heritage site since 2009",
+          coordinates: { lat: 32.0456, lng: 48.8566 },
+          artifacts: [
+            {
+              id: "shushtar-hydraulic",
+              name: "Shushtar Historical Hydraulic System",
+              description: "Integrated system of dams, canals, tunnels, bridges, and water mills on the Karun River. Band-e Kaisar bridge-dam built with Roman prisoner labor. Called the greatest engineering of the Sassanid period.",
+              rarity: "legendary",
+              historicalPeriod: "3rd-7th century CE",
+              significance: "Greatest engineering achievement of the Sassanid period — UNESCO World Heritage site",
+              yearBCE: -300,
+              category: "dam",
+              unesco: { siteName: "Shushtar Historical Hydraulic System", yearListed: 2009 },
+              stillWorking: { age: "1,700 years", status: "Parts of the system still channel water today" }
+            },
+            {
+              id: "sassanid-ab-anbar",
+              name: "Sassanid Ab-Anbar (Underground Cistern)",
+              description: "Standardized dome-shaped underground cistern with wind tower (badgir) for cooling, stone-lined interior, and stepped access. Design remained the Iranian standard for 1,400 years.",
+              rarity: "epic",
+              historicalPeriod: "224-651 CE",
+              significance: "Design remained the Iranian standard for 1,400 years",
+              yearBCE: -400,
+              category: "aqueduct",
+              stillWorking: { age: "1,600 years", status: "Some ab-anbar cisterns still in use in Iranian cities" }
+            },
+            {
+              id: "gundishapur-water-science",
+              name: "Gundishapur Academy Water Science",
+              description: "Academy of Gundishapur taught hydraulic engineering alongside medicine and philosophy. Translations of Greek, Indian, and Persian water texts. This tradition directly fed the Islamic Golden Age.",
+              rarity: "rare",
+              historicalPeriod: "3rd-7th century CE",
+              significance: "Hydraulic engineering education that directly fed the Islamic Golden Age",
+              yearBCE: -400,
+              category: "irrigation"
+            },
+            {
+              id: "sassanid-mirab",
+              name: "Sassanid Water Court System (Mirab)",
+              description: "Formal legal framework for water rights, qanat ownership, and irrigation disputes. Water judges (mirab) adjudicated conflicts. System adopted by Islamic-era governments across the Middle East.",
+              rarity: "rare",
+              historicalPeriod: "224-651 CE",
+              significance: "Formal water law system adopted across the Islamic world",
+              yearBCE: -300,
+              category: "irrigation"
+            }
+          ]
+        },
+        {
+          id: "nahrawan-iraq",
+          name: "Nahrawan, Iraq",
+          description: "Largest canal system of late antiquity",
+          historicalContext: "The Nahrawan Canal east of the Tigris was the backbone of Sassanid agriculture in Mesopotamia, irrigating 6,000 km² until its destruction by Mongols in 1258",
+          coordinates: { lat: 33.3, lng: 44.8 },
+          artifacts: [
+            {
+              id: "nahrawan-canal",
+              name: "Nahrawan Canal",
+              description: "250 km canal east of the Tigris irrigating 6,000 km² of farmland. Largest canal system of late antiquity. Fed by the Diyala River through elaborate headworks. Destroyed during the Mongol invasion of 1258.",
+              rarity: "legendary",
+              historicalPeriod: "3rd-7th century CE",
+              significance: "Largest canal system of late antiquity — 250 km irrigating 6,000 km²",
+              yearBCE: -300,
+              category: "canal"
+            },
+            {
+              id: "sassanid-band",
+              name: "Sassanid Band (Dam) Engineering",
+              description: "Systematic dam construction across Iran. Band-e Amir, Band-e Dokhtar, Band-e Mizan—dozens of stone and mortar dams with sluice gates and spillways. Many survived into the Islamic period.",
+              rarity: "epic",
+              historicalPeriod: "224-651 CE",
+              significance: "Dozens of stone dams with sluice gates — many survived into the Islamic period",
+              yearBCE: -350,
+              category: "dam"
+            },
+            {
+              id: "sassanid-qanat-expansion",
+              name: "Sassanid Qanat Expansion",
+              description: "Government-supported repair and construction of new qanats across the empire. Dedicated water officials and formal water courts. The network may have exceeded 40,000 systems.",
+              rarity: "epic",
+              historicalPeriod: "224-651 CE",
+              significance: "Government-supported qanat network possibly exceeding 40,000 systems",
+              yearBCE: -350,
+              category: "aqueduct"
+            },
+            {
+              id: "sassanid-yakhchal",
+              name: "Sassanid Ice House (Yakhchal) Expansion",
+              description: "Expanded Persian ice-house technology. Dome-shaped structures with walls up to 2 m thick using special mortar (sarooj). Some stored ice year-round at temperatures exceeding 40°C.",
+              rarity: "rare",
+              historicalPeriod: "224-651 CE",
+              significance: "Ice storage year-round at temperatures exceeding 40°C",
+              yearBCE: -400,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },,
+    {
+      id: "nazca",
+      name: "Nazca",
+      description: "Desert civilization (100 BCE-800 CE) that built over 40 underground aqueducts (puquios) accessing the water table through unique spiral openings. At least 30 puquios still function today — the only system of its kind in the Americas. Some researchers believe the famous Nazca Lines may have mapped underground water sources.",
+      position: [-32, 0, 12],
+      color: "#8B4513",
+      era: "classical",
+      dateRange: "100 BCE - 800 CE",
+      locations: [
+        {
+          id: "nazca-valley-peru",
+          name: "Nazca Valley, Peru",
+          description: "Desert valley with unique underground aqueduct system",
+          historicalContext: "In one of the driest deserts on Earth, the Nazca built over 40 underground aqueducts with unique spiral openings — at least 30 still function today",
+          coordinates: { lat: -14.836, lng: -75.117 },
+          artifacts: [
+            {
+              id: "nazca-puquios",
+              name: "Puquios (Underground Aqueducts)",
+              description: "Over 40 underground aqueducts accessing the water table through spiral openings. Stone-lined tunnels connected to surface canals. At least 30 puquios still function today. The only system of its kind in the Americas.",
+              rarity: "legendary",
+              historicalPeriod: "100 BCE-800 CE",
+              significance: "Only system of its kind in the Americas — at least 30 still function today",
+              yearBCE: 100,
+              category: "aqueduct",
+              stillWorking: { age: "2,000 years", status: "At least 30 puquios still function today" }
+            },
+            {
+              id: "puquio-ojo",
+              name: "Puquio Ojo (Spiral Eye) Design",
+              description: "Spiral or funnel-shaped openings providing access to underground tunnels for maintenance and ventilation. Wind funneled into the spirals helped push water through the system—acting as ancient pumps. Design found nowhere else.",
+              rarity: "epic",
+              historicalPeriod: "100 BCE-800 CE",
+              significance: "Unique spiral design acting as ancient wind-powered pumps",
+              yearBCE: 100,
+              category: "aqueduct"
+            },
+            {
+              id: "nazca-surface-canals",
+              name: "Nazca Surface Canal Network",
+              description: "Stone-lined surface canals distributing water from puquio outlets to agricultural fields. Precise gradients maintained over kilometers in one of the driest deserts on Earth.",
+              rarity: "rare",
+              historicalPeriod: "100 BCE-800 CE",
+              significance: "Precise irrigation in one of the driest deserts on Earth",
+              yearBCE: 100,
+              category: "canal"
+            },
+            {
+              id: "nazca-filtration",
+              name: "Nazca Filtration Galleries",
+              description: "Subsurface galleries using gravel and sand layers to filter groundwater before entering puquio channels. Ancient water treatment technology ensuring clean water delivery.",
+              rarity: "epic",
+              historicalPeriod: "100 BCE-800 CE",
+              significance: "Ancient water treatment technology using natural filtration",
+              yearBCE: 100,
+              category: "aqueduct"
+            },
+            {
+              id: "nazca-qocha",
+              name: "Nazca Reservoir (Qocha) System",
+              description: "Surface reservoirs at puquio outlets storing water for distribution. Stone-lined pools with managed inflow and outflow. Buffering between variable supply and demand.",
+              rarity: "rare",
+              historicalPeriod: "100 BCE-800 CE",
+              significance: "Buffer storage between variable supply and agricultural demand",
+              yearBCE: 100,
+              category: "dam"
+            },
+            {
+              id: "nazca-lines-hydrology",
+              name: "Nazca Lines Hydrological Theory",
+              description: "Some researchers believe the Nazca Lines may have marked underground water sources or mapped aquifer boundaries. The world's largest geoglyphs may be a water map.",
+              rarity: "epic",
+              historicalPeriod: "100 BCE-800 CE",
+              significance: "World's largest geoglyphs may be a water map",
+              yearBCE: 100,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
   ]
 };
 
