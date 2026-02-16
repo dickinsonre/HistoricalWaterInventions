@@ -522,15 +522,6 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant="outline" size="sm" onClick={() => setShowAbout(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
-                <Info size={16} className="text-[var(--cerulean)]" />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent className="water-card text-[var(--parchment)]">About</TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger asChild>
               <Button variant="outline" size="sm" onClick={() => setShowSWMM5(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
                 <Download size={16} className="text-[var(--aqua)]" />
               </Button>
@@ -617,6 +608,15 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               </Button>
             </TooltipTrigger>
             <TooltipContent className="water-card text-[var(--parchment)]">Innovation Diffusion</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => setShowAbout(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+                <Info size={16} className="text-[var(--cerulean)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">About</TooltipContent>
           </Tooltip>
         </div>
 
