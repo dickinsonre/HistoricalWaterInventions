@@ -7,9 +7,11 @@ import {
   MapPin, ChevronRight, ChevronDown, X, Home, Droplets, VolumeX, Volume2, Search, 
   Backpack, Trophy, Clock, BookOpen, BarChart3, Play, Star, Image, 
   Lightbulb, Info, Globe, Grid3X3, Download, Route, Scroll, Filter, HelpCircle,
-  ArrowUpDown, SortAsc, Calendar, Beaker, Glasses, Tag, GitBranch, Brain, Share2, Layers, Monitor
+  ArrowUpDown, SortAsc, Calendar, Beaker, Glasses, Tag, GitBranch, Brain, Share2, Layers, Monitor,
+  Languages
 } from "lucide-react";
 import { gameData } from "../../data/gameData";
+import { nativeNames } from "../../data/nativeNames";
 import { SWMM5_MODELS } from "../../lib/swmm5Export";
 import { waterSimModels } from "../../data/waterSimModels";
 import CivilizationDetail from "./CivilizationDetail";
@@ -761,7 +763,10 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                       `}
                     >
                       <div className="bg-[var(--deep-ocean)] border border-[var(--aqua)]/30 rounded-lg p-3 min-w-[220px] shadow-xl">
-                        <h3 className="font-heading text-[var(--gold)] text-sm mb-1">{region.name}</h3>
+                        <h3 className="font-heading text-[var(--gold)] text-sm mb-0.5">{region.name}</h3>
+                        {nativeNames[region.name] && (
+                          <p className="text-[var(--aqua)]/70 text-xs mb-1 font-medium">{nativeNames[region.name]}</p>
+                        )}
                         <p className="text-[var(--parchment)]/60 text-xs mb-2">{region.dateRange}</p>
                         <div className="flex items-center gap-2 text-xs text-[var(--aqua)] mb-2">
                           <Droplets size={12} />
@@ -896,6 +901,9 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
                     />
                     <h3 className="font-heading text-base text-[var(--gold)]">{region.name}</h3>
                   </div>
+                  {nativeNames[region.name] && (
+                    <p className="text-[var(--aqua)]/60 text-xs mb-1 ml-6 font-medium">{nativeNames[region.name]}</p>
+                  )}
                   <p className="text-[var(--parchment)]/60 text-xs mb-2">{region.era} • {region.dateRange}</p>
                   <div className="text-xs text-[var(--aqua)] mb-2">{inventionCount} water inventions:</div>
                   <div className="space-y-1 mb-3">

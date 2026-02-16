@@ -2,6 +2,7 @@ import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 import { X, ChevronLeft, ChevronRight, MapPin, Calendar, Quote, AlertTriangle, Lightbulb, ArrowRight, MessageSquare } from "lucide-react";
 import { gameData } from "../../data/gameData";
+import { nativeNames } from "../../data/nativeNames";
 import { getCivilizationDetail } from "../../data/civilizationDetails";
 import { getCivilizationImage } from "../../data/civilizationImages";
 
@@ -64,6 +65,9 @@ export default function CivilizationDetail({ regionId, onClose, onNavigate, onVi
         <div className="flex justify-between items-start mb-6">
           <div>
             <h2 className="font-heading text-3xl text-[var(--gold)]">{region.name}</h2>
+            {nativeNames[region.name] && (
+              <p className="text-[var(--aqua)]/80 text-base font-medium">{nativeNames[region.name]}</p>
+            )}
             {details && (
               <p className="text-[var(--aqua)] text-lg">{details.tagline}</p>
             )}

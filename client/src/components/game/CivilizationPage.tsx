@@ -3,6 +3,7 @@ import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 import { ArrowLeft, ArrowRight, MapPin, Calendar, Droplets, Lightbulb, Image } from "lucide-react";
 import { gameData } from "../../data/gameData";
+import { nativeNames } from "../../data/nativeNames";
 import { getCivilizationDetail } from "../../data/civilizationDetails";
 import { inventionDiagrams } from "../../data/inventionDetails";
 import { getCivilizationImage } from "../../data/civilizationImages";
@@ -61,6 +62,9 @@ export default function CivilizationPage() {
                 <Droplets className="text-[var(--aqua)]" size={32} />
                 <div>
                   <h1 className="font-heading text-2xl text-[var(--gold)]">{region.name}</h1>
+                  {nativeNames[region.name] && (
+                    <p className="text-[var(--aqua)] text-sm font-medium">{nativeNames[region.name]}</p>
+                  )}
                   <p style={{ color: 'rgba(245, 240, 225, 0.7)', fontSize: '0.875rem' }}>{region.dateRange} • {region.era}</p>
                 </div>
               </div>
