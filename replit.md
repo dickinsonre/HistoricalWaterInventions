@@ -2,7 +2,7 @@
 
 ## Overview
 
-Historical Mystery is a 2D interactive educational game focused on exploring humanity's water innovations. The game allows players to discover over 350 water inventions across 99 civilizations spanning 40,000+ years. Its main purpose is to educate users about hydraulic engineering throughout history using an interactive world map, a comprehensive encyclopedia, and downloadable hydraulic simulation models. It also features educational mini-games and expert commentary. The project aims to provide an engaging platform to learn how water shaped human civilization.
+Historical Mystery is a 2D interactive educational game focused on exploring humanity's water innovations. The game allows players to discover over 680 water inventions across 139 civilizations spanning 40,000+ years. Its main purpose is to educate users about hydraulic engineering throughout history using an interactive world map, a comprehensive encyclopedia, and downloadable hydraulic simulation models. It also features educational mini-games and expert commentary. The project aims to provide an engaging platform to learn how water shaped human civilization.
 
 ## User Preferences
 
@@ -52,7 +52,7 @@ Preferred communication style: Simple, everyday language.
 - Instant navigation and real-time filtering.
 
 #### SWMM5/ICM Invention Models
-- 89 unique hydraulic simulation models compatible with EPA SWMM5 and InfoWorks ICM (with 170+ invention mappings).
+- 98 unique hydraulic simulation models compatible with EPA SWMM5 and InfoWorks ICM (with 300+ invention mappings).
 - Copy-to-clipboard functionality to avoid antivirus issues.
 - Option to download all models as a combined .txt file.
 - Covers a wide range of ancient hydraulic engineering examples.
@@ -86,7 +86,7 @@ Preferred communication style: Simple, everyday language.
 - **DiffusionMap**: Technology diffusion visualization showing geographic spread of 8 key technologies over time.
 
 ### Data Structure
-- **Regions**: 124 civilizations with era, date range, position, color.
+- **Regions**: 139 civilizations with era, date range, position, color.
 - **Locations**: Historical sites with coordinates and context.
 - **Artifacts**: Water inventions with category, rarity, year, significance.
 - **Categories**: irrigation, aqueduct, water-lifting, sanitation, dam, water-clock, fountain, canal.
