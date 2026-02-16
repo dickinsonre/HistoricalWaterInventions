@@ -8276,6 +8276,74 @@ export const gameData: GameData = {
               category: "aqueduct"
             }
           ]
+        },
+        {
+          id: "antioch-orontes",
+          name: "Antioch on the Orontes",
+          description: "Ancient capital with sophisticated urban water systems",
+          historicalContext: "Founded 300 BCE; became one of the largest cities of the ancient world with advanced hydraulic infrastructure",
+          coordinates: { lat: 36.2, lng: 36.15 },
+          artifacts: [
+            {
+              id: "antioch-fountain-complex",
+              name: "Antioch Public Fountain Complex",
+              description: "Network of monumental public fountains (nymphaea) fed by aqueducts from Daphne springs",
+              rarity: "epic",
+              historicalPeriod: "300 BCE - 600 CE",
+              significance: "Multiple nymphaea supplied by gravity-fed aqueducts from Daphne springs 8km away; marble basins with continuous flow; served a city of 500,000+",
+              yearBCE: 300,
+              category: "fountain"
+            },
+            {
+              id: "antioch-drainage",
+              name: "Antioch Storm Drainage System",
+              description: "Engineered drainage channels protecting the city from Orontes flooding",
+              rarity: "rare",
+              historicalPeriod: "200 BCE - 500 CE",
+              significance: "Diverted seasonal floodwaters; stone-lined channels under streets; prevented repeated flood damage in low-lying city center",
+              yearBCE: 200,
+              category: "sanitation"
+            }
+          ]
+        },
+        {
+          id: "orontes-irrigation",
+          name: "Orontes Valley Irrigation Belt",
+          description: "Continuous agricultural irrigation zone along 570km of the Orontes River",
+          historicalContext: "The Orontes Valley supported one of the densest agricultural populations in the ancient world",
+          coordinates: { lat: 34.7, lng: 36.7 },
+          artifacts: [
+            {
+              id: "orontes-weirs",
+              name: "Orontes River Weirs",
+              description: "Stone weir dams across the Orontes raising water levels to feed noria wheels and canals",
+              rarity: "epic",
+              historicalPeriod: "500 BCE - Present",
+              significance: "Low dams raised river level 1-2m to power norias; some weirs still in use today; created calm pools for fish farming as secondary benefit",
+              yearBCE: 500,
+              category: "dam"
+            },
+            {
+              id: "orontes-canal-network",
+              name: "Orontes Canal Network",
+              description: "Extensive open-channel irrigation canals distributing water from norias across the valley",
+              rarity: "rare",
+              historicalPeriod: "200 BCE - Present",
+              significance: "Stone-lined and earthen canals extending 5-10km from river; gravity distribution with sluice gates; irrigated wheat, cotton, and fruit orchards",
+              yearBCE: 200,
+              category: "canal"
+            },
+            {
+              id: "bekaa-valley-irrigation",
+              name: "Bekaa Valley Feeder Canals",
+              description: "Cross-valley canals connecting Orontes headwaters to the fertile Bekaa plain",
+              rarity: "rare",
+              historicalPeriod: "100 BCE - 600 CE",
+              significance: "Extended Orontes water to adjacent valleys; Roman-era engineering with precise gradient control; supported wine and olive production",
+              yearBCE: 100,
+              category: "irrigation"
+            }
+          ]
         }
       ]
     },

@@ -9,6 +9,7 @@ import InventionPage from "./components/game/InventionPage";
 import MiniGames from "./components/game/MiniGames";
 import SimulatorHub from "./components/game/SimulatorHub";
 import VRExperiencePage from "./components/game/VRExperiencePage";
+import AIChatbot from "./components/game/AIChatbot";
 import "@fontsource/inter";
 import "./index.css";
 
@@ -52,6 +53,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <GameContent />
+        <AIChatbot />
       </BrowserRouter>
     </QueryClientProvider>
   );
