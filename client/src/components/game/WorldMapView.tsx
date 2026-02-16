@@ -952,7 +952,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
       )}
       {showFeatured && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowFeatured(false)}>
-          <div onClick={(e) => e.stopPropagation()}><FeaturedDiscoveries onClose={() => setShowFeatured(false)} /></div>
+          <div onClick={(e) => e.stopPropagation()}><FeaturedDiscoveries onClose={() => setShowFeatured(false)} onViewInvention={(id) => { setShowFeatured(false); setSelectedInvention(id); }} /></div>
         </div>
       )}
       {showFacts && (
@@ -967,12 +967,12 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
       )}
       {showSearch && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowSearch(false)}>
-          <div onClick={(e) => e.stopPropagation()}><SmartSearch onClose={() => setShowSearch(false)} onSelectInvention={() => setShowSearch(false)} onSelectCivilization={(id) => { setShowSearch(false); setSelectedCiv(id); }} /></div>
+          <div onClick={(e) => e.stopPropagation()}><SmartSearch onClose={() => setShowSearch(false)} onSelectInvention={(id) => { setShowSearch(false); setSelectedInvention(id); }} onSelectCivilization={(id) => { setShowSearch(false); setSelectedCiv(id); }} /></div>
         </div>
       )}
       {showTimeTravel && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowTimeTravel(false)}>
-          <div onClick={(e) => e.stopPropagation()}><TimeTravel onClose={() => setShowTimeTravel(false)} onSelectInvention={() => setShowTimeTravel(false)} /></div>
+          <div onClick={(e) => e.stopPropagation()}><TimeTravel onClose={() => setShowTimeTravel(false)} onSelectInvention={(id) => { setShowTimeTravel(false); setSelectedInvention(id); }} /></div>
         </div>
       )}
       {showChallenges && (
