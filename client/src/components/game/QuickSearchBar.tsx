@@ -144,7 +144,7 @@ export default function QuickSearchBar({ onSelectCivilization, onSelectInvention
             }}
             onFocus={() => setIsOpen(true)}
             onKeyDown={handleKeyDown}
-            placeholder={activeCategory === "all" ? "Search 1,000+ inventions & 200+ civilizations..." : `Search ${inventionCount} ${activeCategory} inventions...`}
+            placeholder={activeCategory === "all" ? `Search ${allArtifacts.length} inventions across ${gameData.regions.length} civilizations...` : `Search ${inventionCount} ${activeCategory} inventions...`}
             className="w-full pl-12 pr-12 py-3 rounded-full border-2 border-[var(--aqua)] focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)] text-base"
             style={{ backgroundColor: 'rgba(26, 58, 82, 0.95)', color: '#f5f0e1' }}
           />

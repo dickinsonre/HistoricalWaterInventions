@@ -328,18 +328,30 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
   };
 
   // Sort civilizations based on selected order
-  const sortedRegions = [...gameData.regions].sort((a, b) => {
-    switch (sortOrder) {
-      case 'alphabetical':
-        return a.name.localeCompare(b.name);
-      case 'oldest':
-        return parseStartYear(a.dateRange) - parseStartYear(b.dateRange);
-      case 'newest':
-        return parseStartYear(b.dateRange) - parseStartYear(a.dateRange);
-      default:
-        return 0; // Keep original order
-    }
-  });
+  const sortedRegions = [...gameData.regions]
+    .filter(region => {
+      if (eraFilter) {
+        const regionEra = region.era.toLowerCase();
+        if (!regionEra.includes(eraFilter.toLowerCase())) return false;
+      }
+      if (continentFilter) {
+        const civContinent = civilizationContinents[region.id];
+        if (civContinent !== continentFilter) return false;
+      }
+      return true;
+    })
+    .sort((a, b) => {
+      switch (sortOrder) {
+        case 'alphabetical':
+          return a.name.localeCompare(b.name);
+        case 'oldest':
+          return parseStartYear(a.dateRange) - parseStartYear(b.dateRange);
+        case 'newest':
+          return parseStartYear(b.dateRange) - parseStartYear(a.dateRange);
+        default:
+          return 0;
+      }
+    });
 
   const selectedRegion = selectedCiv ? gameData.regions.find(r => r.id === selectedCiv) : null;
 
@@ -822,7 +834,9 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
         </div>
 
         <div ref={civilizationsRef} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-          <h2 className="font-heading text-xl text-[var(--gold)]">All Civilizations & Their Inventions</h2>
+          <h2 className="font-heading text-xl text-[var(--gold)]">
+            {(eraFilter || continentFilter) ? `${sortedRegions.length} of ${gameData.regions.length}` : `All ${gameData.regions.length}`} Civilizations & Their Inventions
+          </h2>
           <div className="flex items-center gap-2">
             <span className="text-xs text-[var(--parchment)]/60">Sort by:</span>
             <Button

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { ArrowLeft, ArrowRight, MapPin, Calendar, Droplets, Wrench, Sparkles, History, MessageSquare, Image, ChevronLeft, ChevronRight, FileCode, Download, Eye, X, FileOutput } from "lucide-react";
+import { ArrowLeft, ArrowRight, MapPin, Calendar, Droplets, Wrench, Sparkles, History, MessageSquare, Image, ChevronLeft, ChevronRight, FileCode, Download, Eye, X, FileOutput, Quote, Copy, Check, Share2, Link2 } from "lucide-react";
 import { gameData, getAllArtifacts } from "../../data/gameData";
 import { getInventionDetail, inventionDiagrams } from "../../data/inventionDetails";
 import { getSwmmModelForInvention, downloadSWMM5Model, generateSWMM5File } from "../../lib/swmm5Export";
@@ -41,6 +41,8 @@ interface InventionPageProps {
 export default function InventionPage({ showDiagram }: InventionPageProps) {
   const [showSwmmPreview, setShowSwmmPreview] = useState(false);
   const [showExportFormats, setShowExportFormats] = useState(false);
+  const [showCitation, setShowCitation] = useState(false);
+  const [citationCopied, setCitationCopied] = useState<string | null>(null);
   const { civilizationId, inventionId } = useParams<{ civilizationId: string; inventionId: string }>();
   const navigate = useNavigate();
   
@@ -89,6 +91,62 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
     if (!yearBCE) return "Unknown";
     if (yearBCE > 0) return `${yearBCE} BCE`;
     return `${Math.abs(yearBCE)} CE`;
+  };
+
+  const getPageUrl = () => {
+    if (typeof window !== "undefined") {
+      return window.location.href;
+    }
+    return `/${civilizationId}/${inventionId}/details`;
+  };
+
+  const generateCitations = () => {
+    if (!artifact || !regionInfo) return { apa: "", mla: "", chicago: "", bibtex: "" };
+    const year = new Date().getFullYear();
+    const accessDate = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    const url = getPageUrl();
+    const civName = regionInfo.region.name;
+    const invName = artifact.name;
+    const dateStr = formatYear(artifact.yearBCE);
+
+    const apa = `Dickinson, R. (${year}). ${invName} [${civName}, ${dateStr}]. In Historical Mystery: Water Inventions Explorer. Retrieved ${accessDate}, from ${url}`;
+    const mla = `Dickinson, Robert. "${invName}." Historical Mystery: Water Inventions Explorer, ${year}, ${url}. Accessed ${accessDate}.`;
+    const chicago = `Dickinson, Robert. "${invName}." Historical Mystery: Water Inventions Explorer. ${year}. Accessed ${accessDate}. ${url}.`;
+    const bibtex = `@misc{historicalmystery_${(inventionId || '').replace(/[^a-zA-Z0-9]/g, '_')},
+  author = {Dickinson, Robert},
+  title = {${invName}},
+  year = {${year}},
+  howpublished = {Historical Mystery: Water Inventions Explorer},
+  note = {${civName}, ${dateStr}},
+  url = {${url}}
+}`;
+
+    return { apa, mla, chicago, bibtex };
+  };
+
+  const handleCopyCitation = async (format: string, text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCitationCopied(format);
+      setTimeout(() => setCitationCopied(null), 2000);
+    } catch (e) {
+      console.warn("Clipboard write failed", e);
+    }
+  };
+
+  const handleShareUrl = async () => {
+    const url = getPageUrl();
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: artifact?.name, text: `${artifact?.name} - Historical Mystery`, url });
+      } else {
+        await navigator.clipboard.writeText(url);
+        setCitationCopied("url");
+        setTimeout(() => setCitationCopied(null), 2000);
+      }
+    } catch (e) {
+      console.warn("Share/clipboard failed", e);
+    }
   };
 
   const rarityColors: Record<string, string> = {
@@ -206,6 +264,25 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
                   Export All Formats
                 </Button>
               </div>
+            </div>
+
+            <div className="flex gap-2 mb-4">
+              <Button
+                size="sm"
+                onClick={() => setShowCitation(true)}
+                className="bg-[var(--deep-ocean)] hover:bg-[var(--cerulean)]/20 text-[var(--parchment)] border border-[var(--aqua)]/30"
+              >
+                <Quote size={14} className="mr-1" />
+                Cite This Invention
+              </Button>
+              <Button
+                size="sm"
+                onClick={handleShareUrl}
+                className="bg-[var(--deep-ocean)] hover:bg-[var(--cerulean)]/20 text-[var(--parchment)] border border-[var(--aqua)]/30"
+              >
+                {citationCopied === "url" ? <Check size={14} className="mr-1" /> : <Share2 size={14} className="mr-1" />}
+                {citationCopied === "url" ? "Link Copied!" : "Share Link"}
+              </Button>
             </div>
 
             {swmmModel && (
@@ -444,6 +521,83 @@ export default function InventionPage({ showDiagram }: InventionPageProps) {
             </div>
           </div>
         )}
+
+        {showCitation && artifact && (() => {
+          const citations = generateCitations();
+          return (
+            <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowCitation(false)}>
+              <div onClick={(e) => e.stopPropagation()}>
+                <Card className="water-card max-w-2xl w-full max-h-[85vh] overflow-hidden">
+                  <CardContent className="p-6 overflow-y-auto max-h-[85vh]">
+                    <div className="flex justify-between items-center mb-6">
+                      <div className="flex items-center gap-2">
+                        <Quote className="text-[var(--gold)]" size={24} />
+                        <h2 className="font-heading text-xl text-[var(--gold)]">Cite This Invention</h2>
+                      </div>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        onClick={() => setShowCitation(false)}
+                        className="text-[var(--parchment)] hover:bg-[var(--cerulean)]/30"
+                      >
+                        <X size={20} />
+                      </Button>
+                    </div>
+
+                    <p className="text-[var(--parchment)]/70 text-sm mb-4">
+                      Use these citations to reference <span className="text-[var(--gold)] font-medium">{artifact.name}</span> in your research papers, articles, or academic work.
+                    </p>
+
+                    <div className="flex items-center gap-2 mb-6 p-3 bg-[var(--deep-ocean)]/60 rounded-lg border border-[var(--aqua)]/20">
+                      <Link2 size={14} className="text-[var(--aqua)] flex-shrink-0" />
+                      <span className="text-[var(--aqua)] text-xs truncate flex-1">{getPageUrl()}</span>
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        onClick={handleShareUrl}
+                        className="text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 flex-shrink-0"
+                      >
+                        {citationCopied === "url" ? <Check size={14} /> : <Copy size={14} />}
+                      </Button>
+                    </div>
+
+                    <div className="space-y-4">
+                      {[
+                        { label: "APA (7th Edition)", key: "apa", text: citations.apa },
+                        { label: "MLA (9th Edition)", key: "mla", text: citations.mla },
+                        { label: "Chicago/Turabian", key: "chicago", text: citations.chicago },
+                        { label: "BibTeX", key: "bibtex", text: citations.bibtex }
+                      ].map(({ label, key, text }) => (
+                        <div key={key} className="bg-[var(--deep-ocean)]/60 rounded-lg border border-[var(--aqua)]/20 overflow-hidden">
+                          <div className="flex items-center justify-between px-4 py-2 border-b border-[var(--aqua)]/10">
+                            <span className="text-[var(--aqua)] text-sm font-medium">{label}</span>
+                            <Button
+                              size="sm"
+                              variant="ghost"
+                              onClick={() => handleCopyCitation(key, text)}
+                              className="text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 h-7 text-xs"
+                            >
+                              {citationCopied === key ? (
+                                <><Check size={12} className="mr-1" /> Copied</>
+                              ) : (
+                                <><Copy size={12} className="mr-1" /> Copy</>
+                              )}
+                            </Button>
+                          </div>
+                          <div className="p-4">
+                            <p className={`text-[var(--parchment)]/80 text-sm leading-relaxed ${key === "bibtex" ? "font-mono text-xs whitespace-pre" : ""}`}>
+                              {text}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          );
+        })()}
       </div>
     </div>
   );
