@@ -8,7 +8,7 @@ import {
   Backpack, Trophy, Clock, BookOpen, BarChart3, Play, Star, Image, 
   Lightbulb, Info, Globe, Grid3X3, Download, Route, Scroll, Filter, HelpCircle,
   ArrowUpDown, SortAsc, Calendar, Beaker, Glasses, Tag, GitBranch, Brain, Share2, Layers, Monitor,
-  Languages
+  Languages, Waves
 } from "lucide-react";
 import { gameData } from "../../data/gameData";
 import { nativeNames } from "../../data/nativeNames";
@@ -583,6 +583,15 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               </Button>
             </TooltipTrigger>
             <TooltipContent className="water-card text-[var(--parchment)]">{t.toolbar.simulators}</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="outline" size="sm" onClick={() => navigate('/mannings-n')} className="water-card text-[var(--parchment)] hover:bg-[var(--aqua)]/30 border-[var(--aqua)]/30">
+                <Waves size={16} className="text-[var(--aqua)]" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="water-card text-[var(--parchment)]">Manning's n Coefficient</TooltipContent>
           </Tooltip>
 
           <Tooltip>

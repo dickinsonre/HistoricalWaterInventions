@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
-import { ArrowLeft, Play, Beaker, Info, X } from "lucide-react";
+import { ArrowLeft, Play, Beaker, Info, X, Waves } from "lucide-react";
 import { useTranslation } from "../../hooks/useTranslation";
 import LanguageSelector from "./LanguageSelector";
 import { 
@@ -143,7 +143,19 @@ export default function SimulatorHub() {
           ))}
         </div>
 
-        <div className="mt-8 text-center text-[var(--deep-ocean)]/60 text-sm">
+        <div className="mt-6 flex justify-center">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => navigate('/mannings-n')}
+            className="border-[var(--cerulean)]/40 text-[var(--deep-ocean)] hover:bg-[var(--cerulean)]/10"
+          >
+            <Waves size={14} className="mr-2 text-[var(--cerulean)]" />
+            Manning's n Coefficient Reference & Calculator
+          </Button>
+        </div>
+
+        <div className="mt-4 text-center text-[var(--deep-ocean)]/60 text-sm">
           <p>20 interactive simulators — explore ancient & modern hydraulic engineering!</p>
         </div>
       </div>

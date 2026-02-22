@@ -9,6 +9,7 @@ import CivilizationPage from "./components/game/CivilizationPage";
 import InventionPage from "./components/game/InventionPage";
 import MiniGames from "./components/game/MiniGames";
 import SimulatorHub from "./components/game/SimulatorHub";
+import ManningsNSection from "./components/game/ManningsNSection";
 import VRExperiencePage from "./components/game/VRExperiencePage";
 import AIChatbot from "./components/game/AIChatbot";
 import "@fontsource/inter";
@@ -39,6 +40,7 @@ function GameContent() {
     <Routes>
       <Route path="/" element={<WorldMapView onBack={() => {}} />} />
       <Route path="/simulators" element={<SimulatorHub />} />
+      <Route path="/mannings-n" element={<ManningsNSection />} />
       <Route path="/vr" element={<VRExperiencePage />} />
       <Route path="/minigames" element={<MiniGames onBack={() => window.location.href = '/'} />} />
       <Route path="/:civilizationId" element={<CivilizationPage />} />

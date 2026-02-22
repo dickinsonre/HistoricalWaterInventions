@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import { ZoomIn, ZoomOut, RotateCcw, Info, Move } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { ZoomIn, ZoomOut, RotateCcw, Info, Move, Waves } from "lucide-react";
 import { Button } from "../ui/button";
 
 interface DiagramHotspot {
@@ -8,6 +9,8 @@ interface DiagramHotspot {
   y: number;
   label: string;
   definition: string;
+  manningsN?: number;
+  material?: string;
 }
 
 interface InteractiveDiagramProps {
@@ -22,48 +25,57 @@ const diagramHotspots: Record<string, DiagramHotspot[]> = {
     { id: "counterweight", x: 25, y: 25, label: "Counterweight", definition: "Heavy mud or stone (15-20kg) to offset water weight" },
     { id: "bucket", x: 75, y: 70, label: "Bucket", definition: "Clay or leather container holding 10-20 liters" },
     { id: "pivot", x: 50, y: 45, label: "Fulcrum", definition: "Mud-brick pillar supporting the pivoting beam" },
+    { id: "canal", x: 62, y: 85, label: "Irrigation Ditch", definition: "Earthen canal receiving lifted water for field irrigation", manningsN: 0.030, material: "Rough earth" },
   ],
   "nilometer": [
-    { id: "column", x: 50, y: 50, label: "Measuring Column", definition: "Stone pillar marked with cubits (52.4cm units)" },
+    { id: "column", x: 50, y: 50, label: "Measuring Column", definition: "Stone pillar marked with cubits (52.4cm units)", manningsN: 0.015, material: "Cut stone" },
     { id: "steps", x: 30, y: 70, label: "Staircase", definition: "Access steps for priests to read water levels" },
-    { id: "inlet", x: 70, y: 80, label: "Water Inlet", definition: "Channel connecting to the Nile River" },
+    { id: "inlet", x: 70, y: 80, label: "Water Inlet", definition: "Channel connecting to the Nile River", manningsN: 0.020, material: "Stone-lined channel" },
   ],
   "qanat-plans": [
     { id: "mother-well", x: 15, y: 30, label: "Mother Well", definition: "Deep vertical shaft tapping into the aquifer" },
-    { id: "tunnel", x: 50, y: 60, label: "Underground Channel", definition: "Gently sloping tunnel (0.5-1% grade) for gravity flow" },
+    { id: "tunnel", x: 50, y: 60, label: "Underground Channel", definition: "Gently sloping tunnel (0.5-1% grade) for gravity flow", manningsN: 0.025, material: "Rough-hewn rock" },
     { id: "shaft", x: 35, y: 40, label: "Access Shaft", definition: "Vertical shafts every 20-50m for maintenance" },
-    { id: "outlet", x: 85, y: 70, label: "Outlet", definition: "Surface exit point for irrigation or city water" },
+    { id: "outlet", x: 85, y: 70, label: "Outlet", definition: "Surface exit point for irrigation or city water", manningsN: 0.022, material: "Stone masonry" },
   ],
   "aqueduct": [
-    { id: "channel", x: 50, y: 20, label: "Water Channel", definition: "Stone-lined channel carrying water by gravity" },
+    { id: "channel", x: 50, y: 20, label: "Water Channel", definition: "Stone-lined channel carrying water by gravity", manningsN: 0.015, material: "Cut stone / opus caementicium" },
     { id: "arches", x: 50, y: 60, label: "Arched Supports", definition: "Stone arches distributing weight efficiently" },
     { id: "gradient", x: 75, y: 30, label: "Gradient", definition: "Precise slope (1:200) for steady water flow" },
   ],
   "clepsydra": [
-    { id: "vessel", x: 50, y: 40, label: "Water Vessel", definition: "Terracotta or bronze container for water" },
+    { id: "vessel", x: 50, y: 40, label: "Water Vessel", definition: "Terracotta or bronze container for water", manningsN: 0.011, material: "Smooth terracotta" },
     { id: "hole", x: 50, y: 85, label: "Calibrated Hole", definition: "Precise 1-3mm opening for consistent drainage" },
     { id: "markings", x: 25, y: 50, label: "Time Markings", definition: "Graduated scale showing elapsed time" },
   ],
   "great-bath": [
-    { id: "pool", x: 50, y: 50, label: "Main Pool", definition: "Brick-lined basin 12m x 7m x 2.4m deep" },
+    { id: "pool", x: 50, y: 50, label: "Main Pool", definition: "Brick-lined basin 12m x 7m x 2.4m deep", manningsN: 0.015, material: "Bitumen-sealed fired brick" },
     { id: "waterproofing", x: 30, y: 70, label: "Bitumen Layer", definition: "Natural asphalt sealing between bricks" },
-    { id: "drain", x: 80, y: 80, label: "Drainage System", definition: "Corbeled drain removing used water" },
+    { id: "drain", x: 80, y: 80, label: "Drainage System", definition: "Corbeled drain removing used water", manningsN: 0.018, material: "Brick-lined drain" },
     { id: "steps", x: 50, y: 30, label: "Entry Steps", definition: "Wide steps for ritual descent into water" },
   ],
   "stepwell": [
     { id: "steps", x: 30, y: 40, label: "Descending Steps", definition: "Multiple levels allowing access at any water level" },
-    { id: "well", x: 70, y: 70, label: "Well Shaft", definition: "Deep vertical shaft reaching the water table" },
+    { id: "well", x: 70, y: 70, label: "Well Shaft", definition: "Deep vertical shaft reaching the water table", manningsN: 0.020, material: "Dressed stone" },
     { id: "pavilions", x: 50, y: 20, label: "Rest Pavilions", definition: "Covered platforms for shade and gathering" },
   ],
   "barays": [
     { id: "reservoir", x: 50, y: 50, label: "Reservoir", definition: "Massive artificial lake up to 8km x 2km" },
-    { id: "embankment", x: 20, y: 40, label: "Earthen Dam", definition: "Raised earth walls containing water" },
-    { id: "inlet", x: 80, y: 30, label: "River Diversion", definition: "Channels directing monsoon water inward" },
-    { id: "outlet", x: 80, y: 70, label: "Irrigation Outlet", definition: "Controlled gates releasing water to fields" },
+    { id: "embankment", x: 20, y: 40, label: "Earthen Dam", definition: "Raised earth walls containing water", manningsN: 0.028, material: "Compacted earth" },
+    { id: "inlet", x: 80, y: 30, label: "River Diversion", definition: "Channels directing monsoon water inward", manningsN: 0.025, material: "Earth channel" },
+    { id: "outlet", x: 80, y: 70, label: "Irrigation Outlet", definition: "Controlled gates releasing water to fields", manningsN: 0.022, material: "Stone-lined outlet" },
   ],
 };
 
+const getNColor = (n: number) => {
+  if (n <= 0.013) return "#60a5fa";
+  if (n <= 0.020) return "#4ade80";
+  if (n <= 0.025) return "#facc15";
+  return "#fb923c";
+};
+
 export default function InteractiveDiagram({ src, alt, inventionId }: InteractiveDiagramProps) {
+  const navigate = useNavigate();
   const [zoom, setZoom] = useState(1);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
@@ -73,6 +85,7 @@ export default function InteractiveDiagram({ src, alt, inventionId }: Interactiv
   const containerRef = useRef<HTMLDivElement>(null);
 
   const hotspots = diagramHotspots[inventionId] || [];
+  const hasManningsN = hotspots.some(h => h.manningsN);
 
   const handleZoomIn = () => setZoom(prev => Math.min(prev + 0.25, 3));
   const handleZoomOut = () => setZoom(prev => Math.max(prev - 0.25, 1));
@@ -168,17 +181,30 @@ export default function InteractiveDiagram({ src, alt, inventionId }: Interactiv
             <RotateCcw size={14} />
           </Button>
         </div>
-        {hotspots.length > 0 && (
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setShowLabels(!showLabels)}
-            className={`water-card text-[var(--parchment)] h-8 px-2 text-xs ${showLabels ? 'bg-[var(--gold)]/20' : ''}`}
-          >
-            <Info size={14} className="mr-1" />
-            {showLabels ? 'Hide Labels' : 'Show Labels'}
-          </Button>
-        )}
+        <div className="flex items-center gap-2">
+          {hasManningsN && (
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => navigate('/mannings-n')}
+              className="water-card text-[var(--aqua)] h-8 px-2 text-xs border-[var(--aqua)]/30 hover:bg-[var(--aqua)]/10"
+            >
+              <Waves size={12} className="mr-1" />
+              n values
+            </Button>
+          )}
+          {hotspots.length > 0 && (
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setShowLabels(!showLabels)}
+              className={`water-card text-[var(--parchment)] h-8 px-2 text-xs ${showLabels ? 'bg-[var(--gold)]/20' : ''}`}
+            >
+              <Info size={14} className="mr-1" />
+              {showLabels ? 'Hide Labels' : 'Show Labels'}
+            </Button>
+          )}
+        </div>
       </div>
 
       <div 
@@ -222,13 +248,19 @@ export default function InteractiveDiagram({ src, alt, inventionId }: Interactiv
               onMouseLeave={() => setActiveHotspot(null)}
               onClick={() => setActiveHotspot(activeHotspot?.id === hotspot.id ? null : hotspot)}
             >
-              <div className="w-5 h-5 rounded-full bg-[var(--gold)] border-2 border-white shadow-lg flex items-center justify-center animate-pulse">
-                <span className="text-[10px] text-white font-bold">i</span>
+              <div className={`w-5 h-5 rounded-full border-2 border-white shadow-lg flex items-center justify-center animate-pulse ${
+                hotspot.manningsN ? 'bg-[var(--aqua)]' : 'bg-[var(--gold)]'
+              }`}>
+                {hotspot.manningsN ? (
+                  <Waves size={10} className="text-white" />
+                ) : (
+                  <span className="text-[10px] text-white font-bold">i</span>
+                )}
               </div>
 
               {activeHotspot?.id === hotspot.id && (
                 <div 
-                  className="absolute z-50 bg-[var(--deep-ocean)] border border-[var(--gold)]/50 rounded-lg p-3 shadow-xl min-w-[200px] max-w-[280px]"
+                  className="absolute z-50 bg-[var(--deep-ocean)] border border-[var(--gold)]/50 rounded-lg p-3 shadow-xl min-w-[200px] max-w-[300px]"
                   style={{
                     left: hotspot.x > 50 ? 'auto' : '100%',
                     right: hotspot.x > 50 ? '100%' : 'auto',
@@ -240,6 +272,35 @@ export default function InteractiveDiagram({ src, alt, inventionId }: Interactiv
                 >
                   <h4 className="text-[var(--gold)] font-heading text-sm mb-1">{hotspot.label}</h4>
                   <p className="text-[var(--parchment)]/90 text-xs leading-relaxed">{hotspot.definition}</p>
+                  {hotspot.manningsN && (
+                    <div className="mt-2 pt-2 border-t border-[var(--aqua)]/20">
+                      <div className="flex items-center gap-2 mb-1">
+                        <Waves size={10} style={{ color: getNColor(hotspot.manningsN) }} />
+                        <span className="text-[10px] text-[var(--parchment)]/50">Manning's n</span>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="font-mono text-sm font-bold" style={{ color: getNColor(hotspot.manningsN) }}>
+                          n = {hotspot.manningsN.toFixed(3)}
+                        </span>
+                        {hotspot.material && (
+                          <span className="text-[10px] text-[var(--terracotta)] italic">{hotspot.material}</span>
+                        )}
+                      </div>
+                      <div className="mt-1.5 bg-[var(--deep-ocean)]/80 rounded h-1.5 overflow-hidden">
+                        <div
+                          className="h-full rounded"
+                          style={{
+                            width: `${Math.min(100, (hotspot.manningsN / 0.040) * 100)}%`,
+                            backgroundColor: getNColor(hotspot.manningsN),
+                          }}
+                        />
+                      </div>
+                      <div className="flex justify-between text-[7px] text-[var(--parchment)]/30 mt-0.5">
+                        <span>Smooth</span>
+                        <span>Rough</span>
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
@@ -259,6 +320,13 @@ export default function InteractiveDiagram({ src, alt, inventionId }: Interactiv
           : "Scroll or pinch to zoom • Drag to pan when zoomed"
         }
       </p>
+
+      {hasManningsN && (
+        <p className="text-center text-[var(--aqua)]/50 text-xs mt-1">
+          <Waves size={10} className="inline mr-1" />
+          Cyan markers show Manning's n roughness values for water-carrying components
+        </p>
+      )}
     </div>
   );
 }
