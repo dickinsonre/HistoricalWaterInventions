@@ -52,7 +52,7 @@ export const civilizationImages: Record<string, string> = {
   "canaan": "/images/civilizations/middle-east.png",
   "israel": "/images/civilizations/israel.png",
   "syria-orontes": "/images/civilizations/middle-east.png",
-  "phoenicia": "/images/civilizations/middle-east.png",
+  "phoenicia": "/images/civilizations/phoenicia.png",
   "sumer": "/images/civilizations/middle-east.png",
   "babylonia": "/images/civilizations/middle-east.png",
   "assyria": "/images/civilizations/middle-east.png",
