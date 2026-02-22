@@ -2229,7 +2229,7 @@ export const gameData: GameData = {
     {
       id: "phoenicia",
       name: "Phoenicia",
-      description: "Built the ancient world's most advanced harbors at Tyre and Sidon using massive ashlar breakwaters and artificial cothon harbors. Phoenician ships featured bilge pump systems and freshwater storage for trans-Mediterranean voyages spanning 4,000 km to the Atlantic.",
+      description: "Built the ancient world's most advanced harbors at Tyre and Sidon using massive ashlar breakwaters weighing up to 50 tonnes each, quarried and fitted without mortar. Their artificial cothon harbors — circular enclosed basins carved from bedrock — featured tidal sluice channels cut through solid rock to flush stagnant water and prevent silting. Tyre's island fortress had twin harbors (north and south) serving military and commercial fleets separately. Phoenician ships featured bilge pump systems adapted from the Egyptian shaduf principle, cedar-planked hulls sealed with pine pitch for waterproofing, and stone-lined freshwater cisterns below deck storing up to 2,000 liters for trans-Mediterranean voyages spanning 4,000 km to the Atlantic coast of Morocco and possibly Britain. They pioneered cofferdam construction — building watertight timber enclosures in the sea, pumping them dry, then laying stone foundations on the exposed seabed — a technique still used in modern marine engineering. Sidon's harbor included stone-cut channels that directed freshwater springs into waterfront dye-processing vats, integrating water supply with the lucrative Tyrian purple industry.",
       position: [5, 0, -5],
       color: "#8B4513",
       era: "ancient",
