@@ -83,6 +83,16 @@ export default function CivilizationPage() {
               </div>
             )}
 
+            {civilizationId === "phoenicia" && (
+              <div className="mb-6 rounded-lg overflow-hidden border border-[var(--aqua)]/20">
+                <img 
+                  src="/images/civilizations/phoenicia-engineering.png" 
+                  alt="Phoenician Harbor Engineering: Tyre, Sidon, and Marine Innovations" 
+                  className="w-full h-auto"
+                />
+              </div>
+            )}
+
             {details && (
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
                 {details.keyFacts.map((fact: { value: string; label: string }, idx: number) => (
