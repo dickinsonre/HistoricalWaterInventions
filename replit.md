@@ -73,6 +73,7 @@ Preferred communication style: Simple, everyday language.
 - **QuickSearchBar**: Search for inventions and civilizations.
 - **TimeTravel**: Auto-playback mode for history exploration.
 - **ChallengeModes**: Mini-games.
+- **Educational Mini-Games** (6 games at `/minigames`): Water Flow Quiz (12 questions), Timeline Challenge (chronological ordering), Match the Civilization (invention origins), Aqueduct Engineer (slope/gradient design scenarios for 6 civilizations), Water Crisis Solver (8 historical emergency scenarios with 45-second timer), Pipe Master (4 grid-based path-building puzzles with historical facts).
 - **Inventory**: Water invention collection viewer.
 - **ProgressTracker**: Tracks exploration progress.
 - **Achievements**: Badge system.
