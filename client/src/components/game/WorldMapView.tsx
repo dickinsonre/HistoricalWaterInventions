@@ -569,7 +569,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant="outline" size="sm" onClick={() => setShowChallenges(true)} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
+              <Button variant="outline" size="sm" onClick={() => navigate('/minigames')} className="water-card text-[var(--parchment)] hover:bg-[var(--cerulean)]/30 border-[var(--aqua)]/30">
                 <Grid3X3 size={16} className="text-[var(--terracotta)]" />
               </Button>
             </TooltipTrigger>
