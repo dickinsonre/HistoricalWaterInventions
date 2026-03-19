@@ -209,4 +209,8 @@ export const nativeNames: Record<string, string> = {
   "Sassanid Empire": "شاهنشاهی ساسانی",
   "Nazca": "Nazca",
   "Denisovans": "Денисовцы",
+  "Blombos Cave Coastal Foragers": "Blombos-grot",
+  "Green Sahara Peoples": "الصحراء الخضراء",
+  "Great Zimbabwe": "Dzimba dza mabwe",
+  "Ancient Ethiopia / Aksum": "መንግሥተ አክሱም",
 };

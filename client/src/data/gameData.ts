@@ -1741,6 +1741,226 @@ export const gameData: GameData = {
       ]
     },
     {
+      id: "blombos-cave-foragers",
+      name: "Blombos Cave Coastal Foragers",
+      description: "Among the earliest humans to systematically exploit marine and coastal water resources (100,000+ years ago). At Blombos Cave on South Africa's southern Cape coast, early Homo sapiens harvested shellfish, trapped fish in tidal rock pools, and collected freshwater from coastal springs — creating one of the oldest known records of human dependence on aquatic food sources. Shell middens at the site — layers of discarded mollusc shells meters thick — prove sustained, organized harvesting of intertidal zones over tens of thousands of years. These foragers understood tidal patterns, seasonal shellfish availability, and the locations of freshwater seeps along the coastline. Their ochre-processing workshops (the oldest known 'paint factories' at 100,000 years old) used water as a key ingredient, mixing ground ochre with bone marrow and water in abalone shell containers. Recent evidence suggests the 'Southern Coastal Route' — the path early humans took out of Africa — followed the coastline precisely because it provided reliable water and food. Blombos represents the moment humans first looked at the ocean not as a barrier but as a resource: the birth of humanity's relationship with water as provider.",
+      position: [5, 0, 4],
+      color: "#8B6914",
+      era: "ancient",
+      dateRange: "100,000 - 70,000 BCE",
+      locations: [
+        {
+          id: "blombos-cave-site",
+          name: "Blombos Cave, Southern Cape",
+          description: "One of the most important early human archaeological sites in the world",
+          historicalContext: "Coastal cave overlooking the Indian Ocean, occupied during the Middle Stone Age when early humans developed systematic marine resource exploitation",
+          coordinates: { lat: -34.4131, lng: 21.2219 },
+          artifacts: [
+            {
+              id: "blombos-shell-middens",
+              name: "Blombos Shell Middens",
+              description: "Meters-thick accumulations of harvested shellfish remains at Blombos Cave represent over 30,000 years of systematic intertidal foraging — the longest continuous record of human marine resource exploitation anywhere on Earth. Analysis of species composition reveals sophisticated understanding of seasonal availability: brown mussels dominated winter harvests (when they are fattest), while limpets and whelks were targeted in summer. The sheer volume — estimated at millions of individual shells — proves this was not opportunistic gathering but planned, sustained harvesting requiring knowledge of tidal cycles, lunar phases, and seasonal water temperature changes that affect shellfish distribution. This represents humanity's first 'aquaculture' — not farming water, but systematically managing the harvest of water-based food resources.",
+              rarity: "legendary",
+              historicalPeriod: "Middle Stone Age (100,000-70,000 BCE)",
+              significance: "Oldest sustained record of systematic marine water resource exploitation by humans",
+              yearBCE: 100000,
+              category: "irrigation"
+            },
+            {
+              id: "blombos-tidal-trapping",
+              name: "Tidal Rock Pool Fish Trapping",
+              description: "Archaeological evidence from Blombos and nearby sites shows early humans exploited natural tidal rock pools to trap fish as the tide retreated — a precursor to the constructed stone fish traps built by Aboriginal Australians tens of thousands of years later. Fish bones found at Blombos include species that inhabit shallow intertidal zones, indicating targeted exploitation of tide-dependent water environments rather than deep-water fishing. This required understanding of tidal timing, water depth patterns, and fish behavior — the earliest known human application of hydrological knowledge for food production.",
+              rarity: "epic",
+              historicalPeriod: "Middle Stone Age (100,000-70,000 BCE)",
+              significance: "Earliest evidence of humans using tidal water patterns for food capture",
+              yearBCE: 95000,
+              category: "irrigation"
+            },
+            {
+              id: "blombos-ochre-water",
+              name: "Ochre-Water Processing Workshop",
+              description: "At 100,000 years old, Blombos Cave contains the oldest known human 'workshop' — and water was essential to its function. Two abalone shells were found containing a mixture of ground ochre, crusite (calcium phosphite from heated bone), charcoal, and liquid (water or fat) — the oldest known example of humans using water as an industrial ingredient. The shells served as mixing containers, the ochre was ground on quartzite slabs using water as a lubricant, and the final paste was stored for later use. This represents the earliest evidence of humans deliberately collecting, transporting, and using water as a tool rather than simply drinking it — a conceptual leap that would eventually lead to irrigation, hydraulic cement, and every water-based industrial process.",
+              rarity: "legendary",
+              historicalPeriod: "Middle Stone Age (100,000 BCE)",
+              significance: "Oldest known use of water as an industrial ingredient — the conceptual birth of water technology",
+              yearBCE: 100000,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "green-sahara-peoples",
+      name: "Green Sahara Peoples",
+      description: "During the African Humid Period (11,000–5,000 years ago), the Sahara was not a desert but a vast green savanna dotted with rivers, lakes, and wetlands. Pastoral and fishing communities thrived across what is now the world's largest desert. Lake Mega-Chad — a freshwater body the size of the modern Caspian Sea — supported dense populations of fishers and herders. Rock art from Tassili n'Ajjer (Algeria) and Tibesti (Chad) depicts swimmers, boats, hippos, crocodiles, and cattle herds near water — proof of a vanished water paradise. These peoples developed Africa's earliest cattle herding along seasonal rivers, created the continent's first pottery (for water storage and cooking), and established fishing communities using bone harpoons along now-dry riverbeds. When the Sahara dried out between 5,500 and 4,000 years ago — one of the most dramatic climate shifts in human history — these populations migrated to the Nile Valley, the Niger River basin, and the Lake Chad region, carrying their water management knowledge with them. Many scholars believe this climate refugee event directly catalyzed the rise of Egyptian and West African civilizations. The Green Sahara peoples represent a haunting lesson: that climate change can turn water abundance into water scarcity within generations, transforming a paradise into the world's harshest desert.",
+      position: [2, 0, -4],
+      color: "#6B8E23",
+      era: "ancient",
+      dateRange: "11,000 - 4,000 BCE",
+      locations: [
+        {
+          id: "tassili-rock-art",
+          name: "Tassili n'Ajjer, Algeria",
+          description: "UNESCO World Heritage site with over 15,000 rock paintings documenting the Green Sahara's water-rich past",
+          historicalContext: "Rock art plateau in the central Sahara preserving images of a lush, water-abundant landscape that vanished 5,000 years ago",
+          coordinates: { lat: 25.5000, lng: 8.0000 },
+          artifacts: [
+            {
+              id: "sahara-lake-mega-chad",
+              name: "Lake Mega-Chad Fisheries",
+              description: "During the African Humid Period, Lake Mega-Chad covered approximately 400,000 km² — larger than the modern Caspian Sea and roughly the size of modern Germany. This freshwater mega-lake supported thriving fishing communities who used bone harpoons, woven fiber nets, and dugout canoes. Archaeological sites around the ancient lake shore contain enormous quantities of fish bones (Nile perch, tilapia, catfish), hippo bones, and crocodile remains. Pottery fragments — some of Africa's oldest ceramics (dating to ~9,500 BCE) — were used for cooking fish stew and storing water. When the lake began shrinking around 5,500 years ago, these fishing communities migrated south and east, bringing their water management traditions to the Lake Chad basin, the Niger River, and the Nile Valley. Modern Lake Chad — now just 1,350 km² — is a tiny remnant of this once-vast inland sea.",
+              rarity: "legendary",
+              historicalPeriod: "African Humid Period (9,000-4,000 BCE)",
+              significance: "One of the largest freshwater fisheries in human history — supported civilizations across a region now entirely desert",
+              yearBCE: 9000,
+              category: "irrigation"
+            },
+            {
+              id: "sahara-cattle-pastoralism",
+              name: "Saharan Pastoral Water Tracking",
+              description: "Green Sahara herders developed Africa's earliest pastoral water management — systematic knowledge of seasonal water sources across vast grassland territories. Rock art at Tassili n'Ajjer depicts cattle herds near rivers, lakes, and watering holes, while archaeological evidence shows seasonal migration patterns following predictable water availability. Herders maintained mental maps of hundreds of water sources — springs, seasonal ponds, river crossings — across territories spanning thousands of square kilometers. When the Sahara began drying, this water-tracking knowledge became survival knowledge: communities that could locate remaining water sources persisted longest. This pastoral water expertise was carried to the Nile Valley (contributing to Egyptian cattle culture), the Sahel (informing Fulani and Tuareg water traditions), and the Niger basin (supporting early West African kingdoms). It represents Africa's first systematic 'water mapping' tradition.",
+              rarity: "epic",
+              historicalPeriod: "African Humid Period (8,000-5,000 BCE)",
+              significance: "Africa's earliest systematic water source mapping — pastoral knowledge that seeded multiple later civilizations",
+              yearBCE: 8000,
+              category: "irrigation"
+            },
+            {
+              id: "sahara-swimmers-rock-art",
+              name: "Cave of Swimmers Rock Art",
+              description: "The famous 'Cave of Swimmers' at Wadi Sura in Egypt's Gilf Kebir plateau contains rock paintings (c. 8,000 BCE) depicting human figures swimming — in what is now one of the driest places on Earth, receiving virtually zero rainfall. These images, along with paintings of hippos, crocodiles, and boats at Tassili n'Ajjer, provide direct visual evidence that the Sahara once contained rivers and lakes deep enough for swimming and large enough to support mega-fauna. The swimmers are depicted in recognizable swimming strokes, suggesting regular aquatic activity rather than rare events. Discovered in 1933 by László Almásy (the real 'English Patient'), the Cave of Swimmers remains one of the most dramatic proofs that climate change can transform a water-rich landscape into uninhabitable desert within a few thousand years.",
+              rarity: "epic",
+              historicalPeriod: "African Humid Period (8,000 BCE)",
+              significance: "Most dramatic visual proof of the Sahara's transformation from water paradise to desert — a warning about climate change",
+              yearBCE: 8000,
+              category: "canal"
+            },
+            {
+              id: "sahara-earliest-pottery",
+              name: "Africa's Earliest Pottery (Water Storage)",
+              description: "The oldest known pottery in Africa — and among the oldest in the world — was created by Green Sahara peoples around 9,500 BCE, predating Near Eastern ceramics by over 1,000 years. These round-bottomed, fiber-tempered vessels were primarily used for two purposes: cooking aquatic foods (fish stew, boiled grains) and storing water. Found at sites across the central Sahara including Tagalagal (Niger) and Ounjougou (Mali), these early ceramics represent a fundamental water technology innovation: the ability to carry, store, and heat water. Before pottery, humans were limited to drinking at water sources or carrying water in animal skins. Ceramic vessels allowed communities to transport water across dry stretches, store it for lean periods, and boil it (reducing pathogens) — dramatically expanding the habitable range. This African innovation spread to the Nile Valley and eventually influenced ceramic traditions across the continent.",
+              rarity: "rare",
+              historicalPeriod: "Early African Humid Period (9,500 BCE)",
+              significance: "Among the world's oldest pottery — created primarily for water storage and processing, enabling human expansion",
+              yearBCE: 9500,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "great-zimbabwe",
+      name: "Great Zimbabwe",
+      description: "The largest stone structure in sub-Saharan Africa before modern times (1100–1450 CE), Great Zimbabwe was a thriving city of up to 18,000 people built on the Zimbabwe Plateau — a region with seasonal rainfall that required careful water management. The city's builders created an integrated water system of stone-lined wells, covered drainage channels, and rainwater collection surfaces built into the massive granite walls. The Great Enclosure's outer wall — 11 meters high and 250 meters in circumference, built without mortar — incorporated sophisticated drainage to prevent water damage to foundations while channeling runoff to collection points. The city controlled gold and cattle trade between the interior and the Swahili coast, and water control was central to its power: whoever managed the wells and drainage controlled the city. The dhaka (mud-brick and gravel) floors of residential areas were carefully graded to direct rainwater away from living spaces and toward garden plots. Great Zimbabwe's decline around 1450 CE may have been partly driven by environmental degradation — deforestation and overgrazing reduced the watershed's ability to retain water, a pattern repeated across civilizations worldwide.",
+      position: [6, 0, 5],
+      color: "#8B7355",
+      era: "medieval",
+      dateRange: "1100 - 1450 CE",
+      locations: [
+        {
+          id: "great-zimbabwe-ruins",
+          name: "Great Zimbabwe Ruins",
+          description: "UNESCO World Heritage site — largest pre-colonial stone structure in sub-Saharan Africa",
+          historicalContext: "Capital of a wealthy Shona kingdom controlling gold trade between the African interior and Indian Ocean coast",
+          coordinates: { lat: -20.2674, lng: 30.9338 },
+          artifacts: [
+            {
+              id: "gz-stone-wells",
+              name: "Great Zimbabwe Stone-Lined Wells",
+              description: "Deep wells cut through granite bedrock and lined with dry-stone masonry provided year-round water to the city's 18,000 inhabitants. The wells tapped the seasonal water table of the Zimbabwe Plateau, with depths reaching 5-8 meters to ensure water availability during the 6-month dry season (May-October). Stone lining prevented collapse and contamination, while restricted access points allowed the ruling elite to control water distribution — making water a tool of political power. Archaeological evidence shows the wells were regularly maintained, with sediment periodically cleared and damaged stonework repaired, indicating organized civic water management comparable to contemporary medieval European cities.",
+              rarity: "epic",
+              historicalPeriod: "Great Zimbabwe Period (1100-1450 CE)",
+              significance: "Sub-Saharan Africa's most sophisticated pre-colonial urban water supply system",
+              yearBCE: -1200,
+              category: "irrigation"
+            },
+            {
+              id: "gz-drainage-system",
+              name: "Great Enclosure Drainage System",
+              description: "The Great Enclosure — the most iconic structure at Great Zimbabwe — incorporated an advanced drainage system directly into its massive dry-stone walls. Drainage channels at the base of walls directed rainwater away from foundations to prevent undermining, while the interior floor was carefully graded to channel runoff toward collection basins and garden plots. The wall itself, 11 meters high and up to 5 meters thick, was built with a slight outward lean and incorporated through-channels that prevented water pressure from building up behind the structure during heavy rains. This engineering is remarkable because the walls use no mortar — water management was therefore critical to structural integrity. The system demonstrates that Great Zimbabwe's builders understood hydrostatic pressure, drainage gradients, and the destructive power of uncontrolled water on masonry — knowledge usually attributed only to Roman or Islamic engineers.",
+              rarity: "legendary",
+              historicalPeriod: "Great Zimbabwe Period (1200-1400 CE)",
+              significance: "Advanced drainage engineering in mortarless stone construction — unique in sub-Saharan Africa",
+              yearBCE: -1250,
+              category: "sanitation"
+            },
+            {
+              id: "gz-rainwater-harvesting",
+              name: "Granite Surface Rainwater Collection",
+              description: "Great Zimbabwe's builders exploited the natural properties of the granite kopjes (rocky outcrops) on which the city was built. Smooth granite surfaces served as natural catchment areas, channeling rainwater into crevices and depressions that were enhanced and lined to create storage cisterns. The Hill Complex — the oldest part of the city, perched on a granite hilltop — used the rock surface itself as a giant funnel, collecting rainfall and directing it to reservoirs carved into natural rock hollows. This technique required no imported materials, used the landscape's existing hydrology, and provided clean water free from the parasites common in standing pools. Similar granite rainwater harvesting was used across the Zimbabwe Plateau and is still practiced in rural Zimbabwe today.",
+              rarity: "rare",
+              historicalPeriod: "Great Zimbabwe Period (1100-1450 CE)",
+              significance: "Ingenious use of natural rock hydrology for urban water supply — still practiced today",
+              yearBCE: -1150,
+              category: "dam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ancient-ethiopia-aksum",
+      name: "Ancient Ethiopia / Aksum",
+      description: "The Kingdom of Aksum (100–940 CE) — one of the four great powers of the ancient world alongside Rome, Persia, and China — built its wealth on controlling water in the Ethiopian Highlands. Aksumite engineers constructed massive stone-cut reservoirs (mai shum), terraced hillside agriculture, and elaborate underground cistern networks that supported a city of 20,000 people at over 2,000 meters elevation. The most remarkable Aksumite water innovation was the integration of monumental architecture with hydraulic engineering: the famous Aksumite stelae (obelisks), some standing 33 meters tall, were positioned to channel rainwater along their carved surfaces into underground collection chambers at their bases. Ethiopian highland agriculture developed sophisticated terracing systems — stone-walled platforms descending steep mountainsides — that controlled erosion, retained soil moisture, and directed rainfall to crops in a region where 80% of annual rain falls in just four months. The Falasha (Beta Israel) communities developed unique gravity-fed water systems in the Simien Mountains, while the medieval rock-hewn churches of Lalibela (12th century) incorporated elaborate drainage channels carved directly into the living rock to protect the structures from water damage while collecting runoff for the surrounding community. Ethiopia's water engineering tradition spans over 2,000 years and remains one of Africa's least-recognized contributions to hydraulic science.",
+      position: [7, 0, -2],
+      color: "#228B22",
+      era: "classical",
+      dateRange: "100 - 940 CE",
+      locations: [
+        {
+          id: "aksum-city",
+          name: "Aksum, Ethiopian Highlands",
+          description: "Capital of one of the ancient world's four great powers — built at 2,100m elevation in the Ethiopian Highlands",
+          historicalContext: "Aksumite Empire controlled Red Sea trade routes and developed sophisticated highland water engineering",
+          coordinates: { lat: 14.1209, lng: 38.7468 },
+          artifacts: [
+            {
+              id: "aksum-mai-shum",
+              name: "Mai Shum Royal Reservoir",
+              description: "The Mai Shum (Queen of Sheba's Bath) is a massive stone-cut reservoir in the heart of ancient Aksum, carved from solid rock and measuring approximately 50 meters × 65 meters with a depth of over 3 meters. Still holding water today after nearly 2,000 years, this reservoir collected runoff from surrounding hillsides through a network of stone channels and served as the primary water supply for Aksum's royal complex. The reservoir's design includes carved stone steps for access at varying water levels, overflow channels to prevent flooding during heavy rains, and a settling area where sediment could collect before clean water entered the main pool. It is one of the oldest continuously functioning water reservoirs in Africa and demonstrates engineering precision comparable to Roman cistern construction — achieved independently by Aksumite engineers.",
+              rarity: "legendary",
+              historicalPeriod: "Aksumite Period (200-600 CE)",
+              significance: "One of Africa's oldest functioning reservoirs — still holding water after nearly 2,000 years",
+              yearBCE: -300,
+              category: "dam"
+            },
+            {
+              id: "aksum-stelae-drainage",
+              name: "Stelae Water Collection System",
+              description: "Aksum's famous stelae — monumental carved stone obelisks, the largest standing 24 meters tall and weighing 160 tonnes — served a dual purpose that is often overlooked: they were giant rainwater collectors. The stelae's carved surface decorations (resembling multi-story buildings with doors and windows) created channels and grooves that directed rainfall down the monument's surface and into underground collection chambers at the base. The largest stelae complex included subterranean tomb chambers with sophisticated drainage to prevent water damage to burial goods, while simultaneously channeling excess water to nearby cisterns. This integration of monumental architecture with practical water engineering is unique in the ancient world — no other civilization combined funerary monuments with functional hydraulic systems at this scale.",
+              rarity: "legendary",
+              historicalPeriod: "Aksumite Period (300-500 CE)",
+              significance: "Unique fusion of monumental architecture and water collection — nowhere else in the ancient world combined tombs with hydraulic engineering",
+              yearBCE: -350,
+              category: "aqueduct"
+            },
+            {
+              id: "ethiopian-terracing",
+              name: "Highland Terrace Irrigation",
+              description: "Ethiopian highland terracing — stone-walled agricultural platforms descending steep mountainsides — represents one of Africa's most enduring water management traditions. Developed over at least 2,000 years in the highlands around Aksum, Lalibela, and the Simien Mountains, these terraces transform near-vertical slopes into productive farmland by controlling water at every level. Each terrace wall acts as a miniature dam, slowing rainfall runoff, trapping moisture in the soil, and preventing the catastrophic erosion that strips unprotected hillsides. Overflow channels between terrace levels direct excess water downhill in controlled cascades rather than destructive floods. The system is designed for Ethiopia's extreme seasonality: 80% of annual rainfall arrives in four months (June-September), and terraces must capture and retain enough moisture to sustain crops through eight dry months. In the Konso region of southern Ethiopia (a UNESCO Cultural Landscape), terracing has been maintained continuously for over 400 years, with community labor obligations ensuring perpetual maintenance.",
+              rarity: "epic",
+              historicalPeriod: "Aksumite through Medieval Period (200 BCE - present)",
+              significance: "Africa's most extensive traditional terrace irrigation system — maintained continuously for over 2,000 years",
+              yearBCE: 200,
+              category: "irrigation"
+            },
+            {
+              id: "lalibela-rock-drainage",
+              name: "Lalibela Rock-Hewn Church Drainage",
+              description: "The eleven rock-hewn churches of Lalibela (12th century CE), carved downward from solid volcanic tuff, presented a unique hydraulic challenge: how to prevent water from flooding structures carved below ground level. Medieval Ethiopian engineers solved this with an intricate drainage network carved directly into the living rock — channels, gutters, and tunnels that intercept groundwater seepage, redirect surface runoff, and drain the deep trenches surrounding each church. The system includes cross-channels between churches, vertical drainage shafts, and overflow outlets that discharge water away from the church complex. During the rainy season, these drainage channels handle enormous water volumes, keeping the churches functional for worship. Additionally, baptismal pools within the churches are fed by carefully channeled spring water. This underground drainage engineering, operating continuously for 800+ years without maintenance failures, rivals Roman catacombs in complexity and exceeds them in the challenge of managing water in a subterranean religious complex.",
+              rarity: "legendary",
+              historicalPeriod: "Zagwe Dynasty (12th century CE)",
+              significance: "800-year-old underground drainage system protecting sub-surface architecture — unmatched in medieval engineering",
+              yearBCE: -1200,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "nabataean",
       name: "Nabataean Kingdom",
       description: "Carved 200+ cisterns into Petra's sandstone cliffs and built flash-flood channels to capture every drop in a region receiving only 150mm annual rainfall. Their hydraulic engineering supported 30,000 people in one of Earth's driest landscapes, turning desert into a thriving trade capital.",
