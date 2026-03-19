@@ -213,4 +213,6 @@ export const nativeNames: Record<string, string> = {
   "Green Sahara Peoples": "الصحراء الخضراء",
   "Great Zimbabwe": "Dzimba dza mabwe",
   "Ancient Ethiopia / Aksum": "መንግሥተ አክሱም",
+  "Homo habilis": "Homo habilis",
+  "Neanderthals": "Homo neanderthalensis",
 };

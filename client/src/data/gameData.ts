@@ -2815,6 +2815,116 @@ export const gameData: GameData = {
       ]
     },
     {
+      id: "homo-habilis",
+      name: "Homo habilis",
+      description: "The 'Handy Man' (2.8–1.5 million years ago) — humanity's earliest tool-making ancestor — lived and died by water. Every known Homo habilis site in East Africa's Rift Valley is located near ancient lakeshores or river channels, revealing that our first tool-making relatives were fundamentally water-dependent. At Olduvai Gorge in Tanzania, the legendary site where Louis and Mary Leakey discovered habilis in 1960, the fossil beds sit along the margins of a vanished alkaline lake that once attracted dense concentrations of animals — and the hominins who scavenged and hunted them. Homo habilis created the Oldowan stone tool industry — humanity's first technology — and many of these crude choppers and flakes were made from water-rounded cobblestones collected directly from river beds, meaning rivers were literally the first 'hardware stores.' Their lakeside campsites show concentrated clusters of butchered animal bones alongside stone tools, suggesting habilis understood that water sources were reliable places to find food. Isotopic analysis of habilis teeth reveals they consumed a mix of foods including aquatic resources — marsh plants, freshwater molluscs, and possibly fish stranded in drying pools. They represent the very beginning of the human water story: the first members of our genus to make tools, and they made them from stones shaped by water, at campsites chosen for water access, eating food gathered from water margins. Every water invention that followed — from Egyptian shadufs to Roman aqueducts — descends from this 2.8-million-year-old insight: stay near water, and you survive.",
+      position: [6, 0, -1],
+      color: "#A0522D",
+      era: "ancient",
+      dateRange: "2,800,000 - 1,500,000 BCE",
+      locations: [
+        {
+          id: "olduvai-gorge",
+          name: "Olduvai Gorge, Tanzania",
+          description: "One of the most important paleoanthropological sites on Earth — where the human water story begins",
+          historicalContext: "Ancient lake margin in the East African Rift Valley where Homo habilis lived alongside a now-vanished alkaline lake 1.8 million years ago",
+          coordinates: { lat: -2.9947, lng: 35.3505 },
+          artifacts: [
+            {
+              id: "habilis-lakeside-camps",
+              name: "Olduvai Lakeside Campsites",
+              description: "At Olduvai Gorge's Bed I and Bed II (1.8–1.5 million years ago), excavations reveal dense concentrations of stone tools and butchered animal bones clustered within meters of ancient lake and stream margins. These are among the earliest known 'home bases' in human history, and their consistent placement near water is not coincidental — it reflects the first deliberate human strategy of anchoring life around water sources. The lake margins provided drinking water, attracted game animals for scavenging, supported edible marsh plants and tubers, and offered water-rounded cobblestones for tool-making. Analysis of site distribution across multiple occupation layers shows habilis returned to the same lakeside locations repeatedly over thousands of years, demonstrating the earliest known pattern of habitual water-source fidelity. This represents the foundational human behavior that would eventually lead to permanent settlement, irrigation, and civilization itself.",
+              rarity: "legendary",
+              historicalPeriod: "Lower Paleolithic (1,800,000 BCE)",
+              significance: "Earliest known habitual human campsites — all located at water margins, establishing the pattern for all human settlement",
+              yearBCE: 1800000,
+              category: "irrigation"
+            },
+            {
+              id: "habilis-river-cobble-tools",
+              name: "River Cobblestone Oldowan Tools",
+              description: "The Oldowan stone tool industry — the first technology created by any member of our genus — was built from water. Homo habilis selected smooth, water-rounded cobblestones from ancient river beds and lake shores, then struck them to create sharp-edged choppers and flakes. The preference for water-worn stones was practical: river tumbling pre-shapes cobbles into ergonomic forms with predictable fracture properties, making them easier to knap than angular rock. Archaeological analysis shows habilis transported these river cobbles up to 10 km from their water sources to butchery sites, meaning they understood that rivers were reliable sources of raw material. The oldest Oldowan tools (2.6 million years ago at Gona, Ethiopia) were made from basalt and chert cobbles collected from river gravel bars. In the most literal sense, water shaped the first human technology — rivers were humanity's first quarry.",
+              rarity: "legendary",
+              historicalPeriod: "Lower Paleolithic (2,600,000 BCE)",
+              significance: "First human technology — made from water-shaped stones collected from rivers, the earliest use of water-modified materials",
+              yearBCE: 2600000,
+              category: "irrigation"
+            },
+            {
+              id: "habilis-aquatic-diet",
+              name: "Lakeside Aquatic Foraging",
+              description: "Isotopic analysis of Homo habilis teeth from Olduvai and other East African sites reveals a diet that included significant C4 plant resources — sedges, papyrus roots, and other marsh plants that grow at water margins. Bone accumulations at habilis sites include catfish remains and freshwater mollusc shells, suggesting exploitation of shallow-water aquatic resources. Some researchers propose the 'aquatic foraging hypothesis' — that reliable access to brain-building omega-3 fatty acids from fish and shellfish at lakeshores may have contributed to the brain expansion that distinguishes Homo habilis from earlier australopithecines. Whether or not this hypothesis is fully correct, the dietary evidence is clear: Homo habilis ate from the water. Marsh tubers, stranded fish in drying pools, freshwater snails, turtle eggs on lake beaches — the water margin was not just where habilis lived, it was where habilis ate. This aquatic component of the diet would persist through every subsequent human species.",
+              rarity: "epic",
+              historicalPeriod: "Lower Paleolithic (1,800,000 BCE)",
+              significance: "Earliest evidence of systematic human exploitation of aquatic food resources — may have driven brain evolution",
+              yearBCE: 1800000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "neanderthals",
+      name: "Neanderthals",
+      description: "Humanity's closest extinct relatives (400,000–40,000 years ago) were far more sophisticated in their relationship with water than commonly recognized. Neanderthals invented birch bark tar — the oldest known synthetic material (~200,000 years ago) — by heating birch bark in oxygen-free conditions to produce a waterproof adhesive for hafting stone tools to wooden handles. This required precise control of moisture and heat, representing the first human manipulation of water-related chemistry. Neanderthal sites across Europe and western Asia cluster overwhelmingly near freshwater sources: at Schöningen, Germany (300,000 years ago), they hunted horses along lake margins using the water as a natural game trap. At Gorham's Cave in Gibraltar, they systematically harvested mussels, limpets, and seals from Mediterranean coastal waters — and may have dove for shellfish, demonstrating comfort in the water itself. Their hide-processing technology — scraping and treating animal skins with fat and possibly tannin compounds — was essentially waterproofing technology, critical for surviving European Ice Age winters where keeping water out was as important as finding water to drink. Some Neanderthal sites near thermal springs in southern Europe hint at possible use of geothermally heated water. They were the first humans to transform water-related materials into synthetic products, and their mastery of waterproofing and aquatic foraging across an entire continent laid groundwork that Homo sapiens would build upon.",
+      position: [1, 0, -7],
+      color: "#8B7765",
+      era: "ancient",
+      dateRange: "400,000 - 40,000 BCE",
+      locations: [
+        {
+          id: "schoningen-lake",
+          name: "Schöningen, Germany",
+          description: "Lakeside hunting site with the world's oldest wooden spears — Neanderthals used water as a hunting strategy",
+          historicalContext: "Ancient lake shore where Neanderthals drove horses into shallow water for easier killing, 300,000 years ago",
+          coordinates: { lat: 52.1333, lng: 10.9667 },
+          artifacts: [
+            {
+              id: "neanderthal-birch-tar",
+              name: "Birch Bark Tar (Waterproof Adhesive)",
+              description: "The oldest known synthetic material in human history. Neanderthals heated birch bark to approximately 340-400°C in an oxygen-restricted environment (likely by burying bark under ash or sand) to distill a black, sticky tar used to glue stone tool points to wooden handles. This tar is inherently waterproof — it repels water, doesn't dissolve in rain, and maintains its adhesive properties when wet. Producing it requires understanding of temperature control, moisture exclusion, and material transformation — essentially proto-chemistry. The oldest confirmed birch tar dates to approximately 200,000 years ago at Campitello, Italy, with additional finds at Königsaue, Germany (~80,000 years ago) bearing Neanderthal tooth marks where they chewed the tar to soften it. This represents humanity's first deliberate creation of a waterproof material — the ancestor of every sealant, pitch, and waterproof coating that followed.",
+              rarity: "legendary",
+              historicalPeriod: "Middle Paleolithic (200,000 BCE)",
+              significance: "Oldest synthetic material ever created — and it was waterproof. The first deliberate human manipulation of water-related material science",
+              yearBCE: 200000,
+              category: "sanitation"
+            },
+            {
+              id: "neanderthal-lakeside-hunting",
+              name: "Lakeside Ambush Hunting",
+              description: "At Schöningen, Germany, archaeologists discovered eight perfectly crafted wooden spears (300,000 years old) alongside the butchered remains of at least 20 horses — all at the margin of a Pleistocene lake. The spatial arrangement reveals a deliberate hunting strategy: Neanderthals drove horse herds toward the lake shore where soft mud and shallow water slowed the animals, making them vulnerable to spear attack. This is the earliest clear evidence of humans using water as a tool for hunting — exploiting the way water and mud restrict animal movement. Similar lakeside kill sites appear across Europe, suggesting this was a widespread Neanderthal tactic, not an isolated event. The Schöningen spears themselves — up to 2.3 meters long, balanced for throwing — show advanced planning and craftsmanship. The combination of sophisticated weapons with strategic use of water terrain demonstrates cognitive abilities far beyond the 'brutish caveman' stereotype.",
+              rarity: "legendary",
+              historicalPeriod: "Middle Paleolithic (300,000 BCE)",
+              significance: "Earliest evidence of using water terrain as a hunting strategy — water as a tool, not just a resource",
+              yearBCE: 300000,
+              category: "irrigation"
+            },
+            {
+              id: "neanderthal-coastal-foraging",
+              name: "Gibraltar Coastal Shellfish Harvesting",
+              description: "At Gorham's Cave and Vanguard Cave on Gibraltar's coast, excavations reveal that Neanderthals systematically harvested Mediterranean marine resources for over 100,000 years. Shell middens contain mussels, limpets, whelks, and cockles collected from intertidal rock pools, alongside bones of monk seals, dolphins, and various fish species. Cut marks on seal bones confirm active hunting, not scavenging. The consistent presence of marine resources across multiple occupation layers spanning from ~120,000 to ~40,000 years ago shows this was not opportunistic but a sustained, multigenerational subsistence strategy. Some researchers argue the shellfish were collected during low tide from submerged rock pools, implying Neanderthals waded into the sea — comfortable enough in water to forage in it. This challenges the land-only image of Neanderthals and places them in the same aquatic foraging tradition as contemporary Homo sapiens in Africa.",
+              rarity: "epic",
+              historicalPeriod: "Middle Paleolithic (120,000-40,000 BCE)",
+              significance: "Over 100,000 years of sustained marine resource exploitation — Neanderthals were coastal water foragers, not just inland hunters",
+              yearBCE: 120000,
+              category: "irrigation"
+            },
+            {
+              id: "neanderthal-waterproof-hides",
+              name: "Hide Waterproofing Technology",
+              description: "Surviving European Ice Age winters required keeping water out. Neanderthals developed hide-processing technology — using stone scrapers (racloirs) to remove fat and flesh from animal skins, then treating the hides to make them supple and water-resistant. Lissoirs (bone smoothing tools) found at Neanderthal sites like Abri Peyrony and Pech-de-l'Azé in France are identical in form and function to leather-working tools used by modern tanners. The treated hides served as clothing, shelter coverings, and possibly water-carrying containers. In glacial Europe where temperatures dropped to -30°C, the difference between a waterproof hide shelter and a permeable one was literally life or death: wet clothing and bedding in sub-zero temperatures causes fatal hypothermia within hours. Neanderthal waterproofing technology was therefore not a luxury but a survival necessity — and it represents one of the earliest human technologies specifically designed to control the interaction between water and materials.",
+              rarity: "epic",
+              historicalPeriod: "Middle Paleolithic (200,000-40,000 BCE)",
+              significance: "First deliberate waterproofing of materials for survival — controlling water at the material level",
+              yearBCE: 200000,
+              category: "sanitation"
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "denisovans",
       name: "Denisovans",
       description: "Among the earliest known human relatives to adapt to extreme water environments (300,000–30,000 years ago). Denisovans inhabited a vast range from the frozen rivers of Siberia to the tropical coasts of Southeast Asia, demonstrating remarkable adaptability to radically different water landscapes. At Denisova Cave in the Altai Mountains of Siberia — their namesake site — they lived beside the Anui River, relying on its freshwater for survival through Ice Age winters where temperatures dropped to -40°C. Genetic evidence reveals their most extraordinary water legacy: Denisovans passed the EPAS1 gene to modern Tibetans, enabling survival at high altitudes where water exists primarily as snow, ice, and glacial melt — the only known case of an extinct human species gifting a water-adaptation gene to modern humans. Their DNA is most concentrated in Melanesian, Aboriginal Australian, and Filipino populations — all coastal and island peoples — strongly suggesting Denisovans were skilled coastal foragers who harvested shellfish, fished in river estuaries, and navigated significant ocean crossings to reach islands in Southeast Asia and Oceania. To reach these islands, they must have crossed open water — implying at minimum basic watercraft capability tens of thousands of years before the first known boats. They represent the earliest chapter of the human water story: not engineering water, but following it, adapting to it, and crossing it. Every reservoir, aqueduct, and canal that came later was built on the foundation these earliest humans established — that survival depends on understanding water.",
