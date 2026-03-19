@@ -695,7 +695,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
             <div>
               <h1 className="font-heading text-2xl text-[var(--gold)]">{t.toolbar.worldMapTitle}</h1>
               <p className="text-[var(--parchment)]/70 text-sm">
-                {t.toolbar.exploreDesc} <span onClick={scrollToCivilizations} className="text-[var(--aqua)] font-semibold cursor-pointer hover:underline">{gameData.regions.length} {t.toolbar.civilizations}</span> • <span className="text-[var(--cerulean)] font-semibold">{allArtifacts.length}+ {t.toolbar.waterInventionsPlus}</span> • <span className="text-[var(--gold)] font-semibold">{Object.keys(SWMM5_MODELS).length} {t.toolbar.swmm5Networks}</span> • 300,000 {t.toolbar.yearsOfEngineering}
+                {t.toolbar.exploreDesc} <span onClick={scrollToCivilizations} className="text-[var(--aqua)] font-semibold cursor-pointer hover:underline">{gameData.regions.length} {t.toolbar.civilizations}</span> • <span className="text-[var(--cerulean)] font-semibold">{allArtifacts.length}+ {t.toolbar.waterInventionsPlus}</span> • <span className="text-[var(--gold)] font-semibold">{Object.keys(SWMM5_MODELS).length} {t.toolbar.swmm5Networks}</span> • 2,800,000 {t.toolbar.yearsOfEngineering}
               </p>
             </div>
           </div>
@@ -846,7 +846,7 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
               <div className="text-[var(--parchment)]/70 text-sm">Continents</div>
             </div>
             <div>
-              <div className="text-3xl font-heading text-[var(--cerulean)]">300,000+</div>
+              <div className="text-3xl font-heading text-[var(--cerulean)]">2.8M+</div>
               <div className="text-[var(--parchment)]/70 text-sm">Years of History</div>
             </div>
           </div>

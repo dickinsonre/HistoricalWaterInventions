@@ -34,8 +34,8 @@ export default function AboutSection({ onClose }: AboutSectionProps) {
             <h3 className="font-heading text-xl text-[var(--parchment)] mb-2">What Is This?</h3>
             <p className="text-[var(--parchment)]/90 text-sm leading-relaxed">
               Historical Mystery is the world's most comprehensive interactive encyclopedia of water engineering history. 
-              Explore {totalCivs} civilizations and {totalInventions}+ water inventions spanning over 300,000 years—from 
-              prehistoric rainwater harvesting to modern mega-infrastructure. Every invention includes technical details, 
+              Explore {totalCivs} civilizations and {totalInventions}+ water inventions spanning over 2.8 million years—from 
+              Homo habilis lakeside camps to modern mega-infrastructure. Every invention includes technical details, 
               expert commentary, and downloadable hydraulic simulation models.
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function AboutSection({ onClose }: AboutSectionProps) {
               <div className="flex items-start gap-2">
                 <Compass size={14} className="text-[var(--cerulean)] mt-0.5 flex-shrink-0" />
                 <p className="text-[var(--parchment)]/80">
-                  <strong className="text-[var(--parchment)]">Timeline Explorer</strong> spanning 300,000+ years
+                  <strong className="text-[var(--parchment)]">Timeline Explorer</strong> spanning 2.8 million+ years
                 </p>
               </div>
               <div className="flex items-start gap-2">
