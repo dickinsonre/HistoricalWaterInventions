@@ -658,7 +658,7 @@ export default function ManningsNSection() {
                   Every SWMM5 model includes the correct Manning's n value for that invention's conduit. When you copy or download a model, the roughness coefficient is already set based on historical materials.
                 </p>
                 <p className="text-[var(--parchment)]/60 text-xs">
-                  153 models across 210 civilizations, each with calibrated roughness values.
+                  153 models across 216 civilizations, each with calibrated roughness values.
                 </p>
               </div>
               <div className="bg-[var(--river-blue)]/20 rounded-lg p-4 border border-[var(--aqua)]/20">
