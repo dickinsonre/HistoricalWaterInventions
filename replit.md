@@ -2,7 +2,7 @@
 
 ## Overview
 
-Historical Mystery is a 2D interactive educational game focused on exploring humanity's water innovations. The game allows players to discover 1,140+ water inventions across 218 civilizations spanning 300,000+ years. Its main purpose is to educate users about water engineering throughout history using an interactive world map, a comprehensive encyclopedia, and downloadable hydraulic simulation models. It also features educational mini-games, expert commentary, academic citation tools, and deep-linked URLs for sharing/citing. The project aims to provide an engaging platform to learn how water shaped human civilization.
+Historical Mystery is a 2D interactive educational game focused on exploring humanity's water innovations. The game allows players to discover 1,145+ water inventions across 218 civilizations spanning 300,000+ years. Its main purpose is to educate users about water engineering throughout history using an interactive world map, a comprehensive encyclopedia, and downloadable hydraulic simulation models. It also features educational mini-games, expert commentary, academic citation tools, and deep-linked URLs for sharing/citing. The project aims to provide an engaging platform to learn how water shaped human civilization.
 
 ## User Preferences
 

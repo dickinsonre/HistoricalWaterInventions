@@ -2919,6 +2919,46 @@ export const gameData: GameData = {
               significance: "First deliberate waterproofing of materials for survival — controlling water at the material level",
               yearBCE: 200000,
               category: "sanitation"
+            },
+            {
+              id: "neanderthal-water-containers",
+              name: "Portable Water Containers",
+              description: "Perhaps the most essential yet archaeologically invisible Neanderthal water technology: portable containers for carrying water from sources back to camps. Without them, Neanderthal groups would have been tethered within walking distance of streams and springs — yet archaeological evidence shows they routinely camped kilometers from the nearest water, implying they carried water with them. The most likely materials — animal stomachs, bladders, and intestines — are naturally waterproof, require minimal processing, and are available from any large game kill. Birch bark containers, sealed with Neanderthal birch tar, would have been another option in forested European environments. Ethnographic parallels from historical hunter-gatherers universally show animal-organ water containers as a fundamental technology. The stomach of a single red deer can hold 10-15 liters of water — enough for a small group for a day. Without this simple but transformative invention, Neanderthals could never have exploited the vast interior landscapes of Ice Age Europe, where water sources were seasonal and widely spaced. It is arguably the most important water technology ever 'invented' — and it left almost no archaeological trace.",
+              rarity: "epic",
+              historicalPeriod: "Middle Paleolithic (300,000-40,000 BCE)",
+              significance: "Fundamental but invisible technology — portable water freed hominins from permanent water-source proximity",
+              yearBCE: 300000,
+              category: "irrigation"
+            },
+            {
+              id: "neanderthal-stone-boiling",
+              name: "Hot Stone Water Boiling",
+              description: "Stone boiling — the technique of heating rocks in a fire and dropping them into water-filled containers to bring the water to a boil — was likely a critical Neanderthal innovation. Since organic containers (animal stomachs, bark vessels) cannot be placed directly over fire, the only way to heat water in them is by transferring heat via stones. Fire-cracked rocks (FCR) are abundant at many Neanderthal sites, and while not all cracked stones indicate boiling, the pattern of small, rounded, heat-shattered cobbles clustered near hearths is consistent with stone boiling technology. Boiling water would have been transformative: it makes bone marrow extractable through boiling crushed bones into calorie-rich broth, renders tough roots and tubers digestible, purifies contaminated water (critical near stagnant Ice Age pools), and could produce medicinal infusions from plants like chamomile and yarrow — both found at Neanderthal sites. At El Sidrón cave in Spain, Neanderthal dental calculus contained traces of cooked starchy plants that would have required boiling to process. Stone boiling represents one of the earliest intersections of fire technology and water technology — using one element to transform the other.",
+              rarity: "epic",
+              historicalPeriod: "Middle Paleolithic (250,000-40,000 BCE)",
+              significance: "First technology combining fire and water — stone boiling unlocked nutrition from bones, roots, and contaminated water",
+              yearBCE: 250000,
+              category: "sanitation"
+            },
+            {
+              id: "neanderthal-water-crossings",
+              name: "Mediterranean Water Crossings",
+              description: "One of the most debated questions in Neanderthal studies: did they cross open water? Mousterian-style stone tools (the hallmark of Neanderthal technology) have been found on several Mediterranean islands — including Crete, which has been isolated from the mainland for over 5 million years, meaning any hominins who reached it had to cross at least 40 km of open sea. Similar tool finds on Naxos and other Aegean islands, along with evidence from the Strait of Gibraltar suggesting regular crossings between Africa and Iberia, point toward some form of Neanderthal seafaring. The simplest viable craft would have been log rafts or bundles of reeds lashed together — technologies that require no specialized tools beyond what Neanderthals already possessed. During glacial periods, lower sea levels would have shortened some crossings to as little as 10-12 km, bringing islands tantalizingly close to the visible horizon. If confirmed, Neanderthal water crossings would push the origin of maritime technology back by hundreds of thousands of years and demolish the notion that seafaring was a uniquely Homo sapiens achievement. Whether by deliberate navigation or storm-driven accident, Neanderthals appear to have crossed open water — a feat that demands understanding of currents, winds, and wave patterns.",
+              rarity: "legendary",
+              historicalPeriod: "Middle Paleolithic (200,000-40,000 BCE)",
+              significance: "Possible earliest open-water crossings in human history — Neanderthals may have been the first mariners",
+              yearBCE: 200000,
+              category: "canal"
+            },
+            {
+              id: "neanderthal-landscape-hydrology",
+              name: "Landscape Hydrology & Spring Reading",
+              description: "Surviving for 300,000 years across the dramatically shifting climates of Ice Age Europe required Neanderthals to possess extraordinary knowledge of landscape hydrology — understanding where water could be found, when it flowed, and how seasonal and glacial changes affected its availability. This knowledge left no archaeological trace, but it can be inferred from settlement patterns: Neanderthal sites consistently cluster near springs, river confluences, and aquifer discharge points — locations that provide the most reliable year-round water. During glacial periods when much of Europe's surface water froze, knowledge of spring locations (which flow at constant ground temperature and resist freezing) would have been literally life-saving. Analysis of site selection across hundreds of Neanderthal camps shows statistically significant preference for geological formations associated with spring emergence — limestone karst, sandstone-clay boundaries, and fault lines. This implies sophisticated reading of landscape geology to predict where groundwater would surface. They must have also understood seasonal flood patterns, snowmelt timing, and the relationship between rainfall and river levels. This practical hydrogeological knowledge — passed down through generations over hundreds of millennia — represents the oldest continuous tradition of water science on Earth, predating the first written records by over 295,000 years.",
+              rarity: "epic",
+              historicalPeriod: "Middle Paleolithic (400,000-40,000 BCE)",
+              significance: "300,000 years of accumulated hydrogeological knowledge — the oldest continuous water science tradition",
+              yearBCE: 400000,
+              category: "irrigation"
             }
           ]
         }
