@@ -2595,6 +2595,66 @@ export const gameData: GameData = {
       ]
     },
     {
+      id: "denisovans",
+      name: "Denisovans",
+      description: "Among the earliest known human relatives to adapt to extreme water environments (300,000–30,000 years ago). Denisovans inhabited a vast range from the frozen rivers of Siberia to the tropical coasts of Southeast Asia, demonstrating remarkable adaptability to radically different water landscapes. At Denisova Cave in the Altai Mountains of Siberia — their namesake site — they lived beside the Anui River, relying on its freshwater for survival through Ice Age winters where temperatures dropped to -40°C. Genetic evidence reveals their most extraordinary water legacy: Denisovans passed the EPAS1 gene to modern Tibetans, enabling survival at high altitudes where water exists primarily as snow, ice, and glacial melt — the only known case of an extinct human species gifting a water-adaptation gene to modern humans. Their DNA is most concentrated in Melanesian, Aboriginal Australian, and Filipino populations — all coastal and island peoples — strongly suggesting Denisovans were skilled coastal foragers who harvested shellfish, fished in river estuaries, and navigated significant ocean crossings to reach islands in Southeast Asia and Oceania. To reach these islands, they must have crossed open water — implying at minimum basic watercraft capability tens of thousands of years before the first known boats. They represent the earliest chapter of the human water story: not engineering water, but following it, adapting to it, and crossing it. Every reservoir, aqueduct, and canal that came later was built on the foundation these earliest humans established — that survival depends on understanding water.",
+      position: [8, 0, -5],
+      color: "#6B4423",
+      era: "ancient",
+      dateRange: "300,000 - 30,000 BCE",
+      locations: [
+        {
+          id: "denisova-cave",
+          name: "Denisova Cave, Altai Mountains",
+          description: "Primary Denisovan site in Siberia, occupied for over 200,000 years",
+          historicalContext: "Cave situated beside the Anui River in the Altai Mountains — fresh water access was critical to sustained habitation through Ice Age conditions",
+          coordinates: { lat: 51.3975, lng: 84.6761 },
+          artifacts: [
+            {
+              id: "denisovan-river-camp",
+              name: "Anui River Cave Settlement",
+              description: "Denisova Cave's position beside the Anui River was no accident. Analysis of sediment layers spanning 200,000+ years shows continuous habitation, with animal bones from fish and waterfowl indicating sustained freshwater resource exploitation. The cave's three chambers maintained above-freezing temperatures even in glacial winters, while the adjacent river provided year-round drinking water, fish, and a corridor for migrating game. Stone tools found at the site include implements suited for processing aquatic resources. This represents one of the earliest known examples of deliberate, long-term human settlement selected specifically for reliable water access.",
+              rarity: "legendary",
+              historicalPeriod: "Middle Pleistocene (300,000-50,000 BCE)",
+              significance: "One of humanity's earliest known water-dependent settlements, occupied for 200,000+ years",
+              yearBCE: 300000,
+              category: "irrigation"
+            },
+            {
+              id: "denisovan-epas1-gene",
+              name: "EPAS1 High-Altitude Water Adaptation Gene",
+              description: "The Denisovans' most enduring water legacy is invisible — written into human DNA. The EPAS1 gene variant, inherited from Denisovan interbreeding, allows modern Tibetans to thrive above 4,000 meters where oxygen is scarce and water exists almost exclusively as snow, ice, and glacial meltwater. This gene regulates hemoglobin production, preventing the dangerous blood thickening that kills lowlanders at altitude. Over 80% of Tibetans carry this Denisovan gene variant compared to less than 1% of Han Chinese. It is the clearest known example of adaptive introgression — a gift from an extinct human species that enables survival in one of Earth's most challenging water environments. Without this gene, permanent human habitation of the Tibetan Plateau — and its role as 'Asia's Water Tower' feeding rivers that sustain 2 billion people — would likely be impossible.",
+              rarity: "legendary",
+              historicalPeriod: "Pleistocene genetic legacy (active today)",
+              significance: "Only known water-adaptation gene inherited from an extinct human species — enables life on the Tibetan Plateau",
+              yearBCE: 100000,
+              category: "irrigation"
+            },
+            {
+              id: "denisovan-ocean-crossing",
+              name: "Denisovan Ocean Crossings",
+              description: "Denisovan DNA is found at highest concentrations in Melanesian, Aboriginal Australian, Filipino Aeta, and Papuan populations — all peoples whose ancestors had to cross significant bodies of open water to reach their island homelands. The Wallace Line, a deep-water barrier between the Asian and Australian continental shelves, has never been dry land even during the lowest Ice Age sea levels. Yet Denisovan DNA on both sides of this barrier proves they crossed it, implying some form of watercraft or deliberate ocean navigation at least 65,000 years ago — and possibly much earlier. This represents the oldest indirect evidence of humans using technology to cross water barriers, predating the earliest known boat remains by tens of thousands of years.",
+              rarity: "epic",
+              historicalPeriod: "Late Pleistocene (65,000+ BCE)",
+              significance: "Earliest indirect evidence of deliberate ocean crossing — foundation of all maritime water technology",
+              yearBCE: 65000,
+              category: "canal"
+            },
+            {
+              id: "denisovan-coastal-foraging",
+              name: "Coastal and Freshwater Resource Exploitation",
+              description: "The geographic distribution of Denisovan DNA — concentrated in coastal and island populations across Southeast Asia and Oceania — strongly suggests they were skilled exploiters of aquatic resources. Coastal foraging (shellfish, crabs, sea urchins) and estuary fishing require understanding of tides, seasonal patterns, and water behavior. Archaeological sites in the Denisovan range show evidence of freshwater mussel harvesting, fish bone accumulation, and waterfowl hunting spanning hundreds of thousands of years. While no Denisovan fishing tools have been definitively identified (their artifacts are sparse), the ecological niches their descendants occupied all center on water-resource exploitation. They may represent the earliest human lineage to systematically depend on aquatic food sources.",
+              rarity: "rare",
+              historicalPeriod: "Middle-Late Pleistocene (200,000-30,000 BCE)",
+              significance: "Earliest human lineage potentially dependent on systematic aquatic resource exploitation",
+              yearBCE: 200000,
+              category: "irrigation"
+            }
+          ]
+        }
+      ]
+    },
+    {
       id: "aboriginal-australia",
       name: "Aboriginal Australia",
       description: "World's oldest continuous water culture (40,000+ years). Brewarrina fish traps are humanity's oldest man-made structure. Gnamma holes carved in rock store water for desert crossings. Songlines encode water locations across thousands of kilometers.",

@@ -208,4 +208,5 @@ export const nativeNames: Record<string, string> = {
   "Americas Corn/Maize Water Engineering": "Maíz de las Américas",
   "Sassanid Empire": "شاهنشاهی ساسانی",
   "Nazca": "Nazca",
+  "Denisovans": "Денисовцы",
 };
