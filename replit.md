@@ -2,7 +2,7 @@
 
 ## Overview
 
-Historical Mystery is a 2D interactive educational game focused on exploring humanity's water innovations. The game allows players to discover 1,145+ water inventions across 218 civilizations spanning 2,800,000+ years. Its main purpose is to educate users about water engineering throughout history using an interactive world map, a comprehensive encyclopedia, and downloadable hydraulic simulation models. It also features educational mini-games, expert commentary, academic citation tools, and deep-linked URLs for sharing/citing. The project aims to provide an engaging platform to learn how water shaped human civilization.
+Historical Mystery is a 2D interactive educational game focused on exploring humanity's water innovations. The game allows players to discover 1,143+ water inventions across 217 civilizations spanning 2,800,000+ years. Its main purpose is to educate users about water engineering throughout history using an interactive world map, a comprehensive encyclopedia, and downloadable hydraulic simulation models. It also features educational mini-games, expert commentary, academic citation tools, and deep-linked URLs for sharing/citing. The project aims to provide an engaging platform to learn how water shaped human civilization.
 
 ## User Preferences
 
@@ -88,10 +88,10 @@ Preferred communication style: Simple, everyday language.
 - **SimulatorHub**: 20 interactive physics simulators (Shaduf, Archimedes Screw, Water Clock, Noria, Shishi-odoshi, Qanat, Roman Aqueduct, Sakia, Chain Pump, Windmill Pump, Dam & Reservoir, Irrigation Canal, Cistern Rainwater, Siphon Pipeline, Flood Control Levee, Desalination, Stepwell, Water Filtration, Fog Collector, Tidal Fish Trap).
 - **ManningsNSection**: Dedicated Manning's n coefficient page at `/mannings-n` with three tabs: Reference Table (20 materials, filterable by category, searchable), Interactive Calculator (live canvas animation, adjustable n/slope/width/depth, real-time Manning's equation results, preset buttons for ancient systems), and Ancient Inventions (12 historical water systems with n values, material descriptions, and links to invention pages). Integrated with InteractiveDiagram hotspots showing n values on channel/conduit components with color-coded badges. Linked from WorldMapView toolbar and SimulatorHub.
 - **AIChatbot**: Claude Haiku 4.5-powered water engineering expert with streaming SSE responses and multilingual support (responds in user's language, includes native civilization names).
-- **Multilingual Names**: Native-language/script names for all 218 civilizations displayed on cards, tooltips, and detail pages (Arabic, Chinese, Greek, Sanskrit, Khmer, Latin, etc.).
+- **Multilingual Names**: Native-language/script names for all 217 civilizations displayed on cards, tooltips, and detail pages (Arabic, Chinese, Greek, Sanskrit, Khmer, Latin, etc.).
 
 ### Data Structure
-- **Regions**: 218 civilizations with era, date range, position, color.
+- **Regions**: 217 civilizations with era, date range, position, color.
 - **Locations**: Historical sites with coordinates and context.
 - **Artifacts**: Water inventions with category, rarity, year, significance.
 - **Categories**: irrigation, aqueduct, water-lifting, sanitation, dam, water-clock, fountain, canal.

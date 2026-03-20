@@ -45,6 +45,7 @@ import FunFactsStrip from "./FunFactsStrip";
 import StatisticsDashboard from "./StatisticsDashboard";
 import WaterSimModels from "./WaterSimModels";
 import LanguageSelector from "./LanguageSelector";
+import Sidebar from "./Sidebar";
 import { useAudio } from "../../lib/stores/useAudio";
 import { useProgress } from "../../lib/stores/useProgress";
 import { useTranslation } from "../../hooks/useTranslation";
@@ -317,6 +318,36 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
     civilizationsRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleSidebarAction = (action: string) => {
+    const actionMap: Record<string, () => void> = {
+      home: () => window.scrollTo({ top: 0, behavior: 'smooth' }),
+      search: () => setShowSearch(true),
+      civilizations: () => scrollToCivilizations(),
+      inventory: () => setShowInventory(true),
+      library: () => setShowLibrary(true),
+      featured: () => setShowFeatured(true),
+      tags: () => setShowTags(true),
+      timeline: () => setShowTimeline(true),
+      timelineSlider: () => setShowTimelineSlider(true),
+      timeTravel: () => setShowTimeTravel(true),
+      diffusion: () => setShowDiffusion(true),
+      comparison: () => setShowComparison(true),
+      techTrees: () => setShowTechTrees(true),
+      pathways: () => setShowPathways(true),
+      quests: () => setShowQuests(true),
+      facts: () => setShowFacts(true),
+      statistics: () => setShowStatistics(true),
+      waterModels: () => setShowWaterModels(true),
+      swmm5: () => setShowSWMM5(true),
+      quiz: () => setShowQuiz(true),
+      progress: () => setShowProgress(true),
+      achievements: () => setShowAchievements(true),
+      tutorial: () => setShowTutorial(true),
+      about: () => setShowAbout(true),
+    };
+    actionMap[action]?.();
+  };
+
   const allArtifacts = gameData.regions.flatMap(r => (r.locations || []).flatMap(l => l.artifacts));
   const totalLocations = gameData.regions.reduce((acc, r) => acc + (r.locations || []).length, 0);
 
@@ -379,6 +410,15 @@ export default function WorldMapView({ onBack }: WorldMapViewProps) {
   return (
     <TooltipProvider>
     <div className="h-screen bg-[var(--deep-ocean)] overflow-y-auto">
+      <Sidebar
+        onAction={handleSidebarAction}
+        badges={{
+          civilizations: String(gameData.regions.length),
+          inventions: String(allArtifacts.length),
+          waterModels: String(waterSimModels.length),
+          swmm5: String(Object.keys(SWMM5_MODELS).length),
+        }}
+      />
       <div className="max-w-6xl mx-auto p-4">
         {/* Toolbar */}
         <div className="flex items-center justify-center gap-2 mb-4 flex-wrap">

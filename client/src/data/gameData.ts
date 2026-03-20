@@ -3756,46 +3756,6 @@ export const gameData: GameData = {
       ]
     },
     {
-      id: "great-zimbabwe",
-      name: "Great Zimbabwe",
-      description: "Africa's largest medieval stone city supported 18,000+ residents with stone-lined drainage channels integrated into its iconic dry-stone walls. Sophisticated dam systems upstream controlled water flow to the city, and dhaka gardens used gravity-fed irrigation year-round.",
-      position: [6, 0, 8],
-      color: "#795548",
-      era: "medieval",
-      dateRange: "11th-15th Century CE",
-      locations: [
-        {
-          id: "great-enclosure",
-          name: "Great Enclosure",
-          description: "Largest pre-colonial structure in sub-Saharan Africa",
-          historicalContext: "Capital of the Kingdom of Zimbabwe, controlled gold trade",
-          coordinates: { lat: -20.2674, lng: 30.9339 },
-          artifacts: [
-            {
-              id: "zimbabwe-drainage",
-              name: "Great Zimbabwe Drainage Channels",
-              description: "Stone-lined drains integrated into massive curved walls",
-              rarity: "epic",
-              historicalPeriod: "11th-15th Century CE",
-              significance: "Sophisticated urban planning in a city of 10,000-20,000 people",
-              yearBCE: -1100,
-              category: "sanitation"
-            },
-            {
-              id: "zimbabwe-well",
-              name: "Great Enclosure Well",
-              description: "Stone-lined well providing water within fortress walls",
-              rarity: "rare",
-              historicalPeriod: "12th Century CE",
-              significance: "Enabled year-round habitation of the royal compound",
-              yearBCE: -1200,
-              category: "irrigation"
-            }
-          ]
-        }
-      ]
-    },
-    {
       id: "engaruka",
       name: "Engaruka (Tanzania)",
       description: "Over 2,000 hectares of stone-walled irrigation canals and hillside terracing fed up to 40,000 people in this mysteriously abandoned Tanzanian city. Complex furrow networks diverted highland streams across the Rift Valley escarpment — Africa's largest pre-colonial irrigation system.",
